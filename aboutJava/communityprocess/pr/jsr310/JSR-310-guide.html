@@ -1,0 +1,709 @@
+
+<!-- ** BEGIN: header.jsp ** //-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3c.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+<head>
+    
+
+   
+    <link href="/includes/css/menu.css" rel="stylesheet" type="text/css"></link>
+    <link href="/includes/css/style.css" rel="stylesheet" type="text/css"></link>
+    <!--[if lt IE 6]><link href="/includes/css/style5.css" rel="stylesheet" type="text/css" ></link><![endif]-->
+    <!--[if gte IE 5]><link href="/includes/css/style6.css" rel="stylesheet" type="text/css" ></link><![endif]-->
+    <link href="/includes/css/tabs.css"  rel="stylesheet" type="text/css"></link>
+
+    <script type="text/javascript" src="/includes/scripts/tabs.js"></script>
+    <script type="text/javascript" src="/includes/scripts/menu.js"></script>
+   
+
+    
+
+    
+        <title>The Java Community Process(SM) Program - communityprocess - pr</title>
+    
+
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+
+
+<body onload="P7_initPM(0,1,0,0,-1)">
+
+    <a name="top"></a>
+
+    <div id="header">
+	<div id="logo">
+		<a href="/en/home/index"><img src="/images/spacer.gif" alt="Java Community Process" height="81" width="151"></a>
+	</div>
+	<div id="tools">
+		<div class="search">
+			<form name="search" action="/en/jsr/summary" method="get" onsubmit="return validate_search()">
+				<input name="id" value="Search JSRs" size="16" class="form" onfocus="nullify_if_equal(this, 'Search JSRs')" type="text">
+				<a href="javascript:document.search.submit()" onclick="return validate_search()"><img src="/images/button_go.gif" width="21" height="16" border="0" alt="Submit this Search" name="sub_search"></a>
+			</form>
+		</div>
+		<div class="tools">
+			<a href="/en/press/pressroom">Press Room</a> &nbsp;|&nbsp;
+			<a href="http://java.com/java/download/index.jsp?cid=jdp78399">Get Java Here</a> &nbsp;|&nbsp;
+			<!-- <a href="javascript:void(0)">Print Format</a> &nbsp;|&nbsp;&nbsp; -->
+		</div>
+
+	</div>
+	<div style="clear: right;"></div>
+
+        
+
+	<div class="topbar"><img src="/images/spacer.gif" alt="" height="3" width="154"></div>
+	<div id="update"> </div>
+    </div>
+
+
+    
+
+        <!-- ** BEGIN: Content Table ** //-->
+
+        <table width="100%" border="0" cellpadding="0" cellspacing="0">
+
+            <tr>
+
+                <!-- ** BEGIN: Navigation Column ** //-->
+                <td width="150" id="leftcontent" valign="top">
+                    <!-- Navigation Placeholder //-->
+
+                    
+
+                    <div class="bar"><img src="/images/hr_dots1.gif" alt="" height="3" width="150"></div>
+
+        <!-- begin find JSRs form -->
+        <!-- IMPORTANT! do not convert this form to Struts < html : form > tag.  javascript change of form.action property fails. -->
+        <img src="/images/hd_find-jsrs.gif" alt="Find JSRs" height="18" width="150">
+        <form name="findjsr" action="/en/jsr/summary" method="get" class="pt5" onsubmit="return validate_findjsr()">
+            <input name="id" size="18" class="form" value="Search JSRs" onfocus="nullify_if_equal(this, 'Search JSRs')" type="text">
+	    <a href="javascript:document.findjsr.submit()" onclick="return validate_findjsr()"><img src="/images/button_go.gif" width="21" height="16" border="0" alt="Submit this Search" name="sub_search"></a>
+        </form><br><br>
+
+        <!-- ** Menu Start ** //-->
+
+        <ul id="p7PMnav">
+            <li><a href="/en/jsr/platform">JSRs by Platform</a></li>
+            <li><a href="/en/jsr/tech">JSRs by Technology</a></li>
+            <li><a href="/en/jsr/stage">JSRs by Stage</a></li>
+            <li><a href="/en/jsr/ec">JSRs by Committee</a></li>
+            <li><a href="/en/jsr/all">List of All JSRs</a></li>
+
+            <!--end find JSRs form -->
+            <div style="clear: both;"><img src="/images/spacer.gif" alt="" height="25" width="1"></div>
+
+            <!--begin my JCP -->
+            <img src="/images/hd_my-jcp.gif" alt="My JCP" height="18" width="150">
+            
+
+          <form name="login" method="get" action="/en/user/login" >
+            <input name="Sign-in" type="submit" title="Sign-in" value="Sign-in" />
+          </form>
+
+            <div style="clear:both"><img src="/images/global/spacer.gif" width="1" height="3" alt=""></div>
+            <div class="noNav">
+                <a href="/en/user/register">Register for Site</a>
+            </div>
+
+             <div class="bar"><img src="/images/hr_dots1.gif" alt="" height="3" width="150"></div>
+           <div class="noNav" style="color: #666666; padding: 0;">
+              Use of JCP site is subject to the
+              <a href="/en/home/terms" style="display:inline;padding: 0">JCP Terms of Use</a> and the
+              <a href="http://www.oracle.com/us/legal/privacy/index.html" style="display:inline;padding: 0" href="">Oracle Privacy Policy</a>
+          </div>
+
+            
+
+            <div style="clear:both"><img src="/images/global/spacer.gif" width="1" height="25" alt=""></div>
+
+            <!--begin JCP info -->
+            <img src="/images/hd_jcp-info.gif" alt="JCP Info" height="18" width="150">
+
+            <li><a href="/en/procedures/overview" class="p7PMtrg">About JCP</a>
+                <ul>
+                    <li><a href="/en/procedures/overview">Program Overview</a></li>
+                    <li><a href="/en/procedures/jcp2">JCP Process Document</a></li>
+                    <li><a href="/en/whatsnew/calendar">Calendar</a></li>
+                    <li><a href="/en/participation/members">JCP Members</a></li>
+                    <li><a href="/en/participation/committee">Executive Committee</a></li>
+                    <li><a href="/en/whatsnew/elections">Elections</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/en/participation/overview" class="p7PMtrg">Get Involved</a>
+		<ul>
+                    <li><a href="/en/participation/overview">Overview</a></li>
+                    <li><a href="/en/participation/membership">Becoming a JCP Member</a></li>
+		</ul>
+            </li>
+
+            <li><a href="/en/resources/contents" class="p7PMtrg">Community Resources</a>
+                <ul>
+                    <li><a href="/en/resources/contents">Overview</a></li>
+                    <li><a href="/en/resources/tutorials">Tutorials</a></li>
+                    <li><a href="/en/resources/multimedia">JCP Podcasts</a></li>
+                    <li><a href="/en/resources/guide">Spec Lead Guide</a></li>
+                    <li><a href="/en/resources/tdk">TCK Tool & Info</a></li>
+                    <li><a href="/en/resources/license_reference">License Reference</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/en/press/pmo" class="p7PMtrg">Community News</a>
+                <ul>
+                    <li><a href="/en/press/pmo">News</a></li>
+                    <li><a href="/en/press/news/awards/awards_main">Programs &amp; Awards</a></li>
+                    <li><a href="/en/press/releases">Press Releases</a></li>
+                    <li><a href="/en/press/success">Success Stories</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/en/introduction/faq">FAQ</a></li>
+
+            <li><a href="/en/resources/contacts">Contact Us</a></li>
+
+            <div style="clear: both;"><img src="/images/spacer.gif" alt="" height="25" width="1"></div>
+
+            <!--[if lte IE 6]><style>#p7PMnav a{height:1em;}#p7PMnav li{height:1em;float:left;clear:both;width:100%}</style><![endif]-->
+            <!--[if IE 6]><style>#p7PMnav li{clear:none;}</style><![endif]-->
+            <!--[if IE 7]><style>#p7PMnav a{zoom:100%;}#p7PMnav li{float:left;clear:both;width:100%;}</style><![endif]-->
+        </ul>
+
+        
+
+        <!--begin ad space -->
+        <div class="ads">
+            <a href="http://java.com/java/download/index.jsp?cid=jdp78399" target="_blank"><img style="display: ;" src="/images/ad_banner2.gif" alt="Ad Banner" border="1" height="70" width="150"></a>
+        </div>
+        <!--end ad space -->
+
+<!-- ** Menu End ** //-->
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;<br>
+
+    
+
+                    &nbsp;<br>
+                    <img src="/images/common/trans.gif" alt="" width="1" height="150"><br>
+
+              
+
+
+
+                </td>
+                <!-- ** END: Navigation Column ** //-->
+
+                <!-- ** BEGIN: Gutter Column ** //-->
+		<td width="10" nowrap><img src="/images/common/trans.gif" alt="" width="10" height="1"></td>
+                <!-- ** END: Gutter Column ** //-->
+
+                <!-- ** BEGIN: Content Column ** //-->
+                <td width="100%" valign="top">
+
+    
+<script type="text/javascript">
+
+String.prototype.trim = function() {
+        return this.replace(/^\s+|\s+$/g,"");
+}
+String.prototype.ltrim = function() {
+        return this.replace(/^\s+/,"");
+}
+String.prototype.rtrim = function() {
+        return this.replace(/\s+$/,"");
+}
+
+function validate_search() {
+	if (document.search.id.value == "Search JSRs" || document.search.id.value.trim().length == 0) {
+		alert("Search terms must be entered first");
+		return false;
+	}
+	return true;
+}
+
+function validate_findjsr() {
+	if (document.findjsr.id.value == "Search JSRs" || document.findjsr.id.value.trim().length == 0) {
+		alert("Search terms must be entered first");
+		return false;
+	}
+	return true;
+}
+
+function nullify_if_equal(field, str) {
+	// alert("val=" + field.value);
+	if (field.value == str) {
+		field.value = "";
+	}
+}
+
+</script>
+<!-- ** END: header.jsp ** //-->
+
+
+
+
+
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<HEAD>
+	<META HTTP-EQUIV="CONTENT-TYPE" CONTENT="text/html; charset=utf-8">
+	<TITLE>JSR-310 Specification v0.7</TITLE>
+	<META NAME="GENERATOR" CONTENT="OpenOffice.org 3.2  (Linux)">
+	<META NAME="CREATED" CONTENT="0;0">
+	<META NAME="CHANGEDBY" CONTENT="Roger Riggs">
+	<META NAME="CHANGED" CONTENT="20131023;9470900">
+	<META NAME="CHANGEDBY" CONTENT="Roger Riggs">
+	<STYLE TYPE="text/css">
+	<!--
+		P { color: #000000; font-family: "Verdana"; font-size: 10pt }
+		H2 { border: none; padding: 0in; color: #000000; font-family: "Verdana"; font-size: 14pt; line-height: 100%; text-align: left }
+		H3 { border: none; padding: 0in; color: #000000; font-family: "Verdana"; font-size: 12pt; line-height: 100%; text-align: left }
+		H4 { border: none; padding: 0in; color: #000000; font-family: "Verdana"; font-size: 10pt; line-height: 100%; text-align: left }
+	-->
+	</STYLE>
+</HEAD>
+<BODY LANG="en-US" DIR="LTR">
+<P ALIGN=CENTER><FONT SIZE=6>JSR-310 Date and Time API</FONT></P>
+<P ALIGN=CENTER><FONT SIZE=6>Public Review ��� Version 0.8</FONT></P>
+<P ALIGN=CENTER><FONT SIZE=6>Draft Guide</FONT></P>
+<H2>NOTE: The Java Time API defined by JSR 310 is provided as part of
+JDK-8. The specification is the Javadocs for the java.time packages.
+This guide introduces the API for the purpose of review.</H2>
+<H2>1. Introduction</H2>
+<P>Many Java applications require logic to store and manipulate dates
+and times. At present, Java SE provides a number of disparate APIs
+for this purpose, including Date, Calendar, SQL Date/Time/Timestamp
+and XML Duration/XMLGregorianCalendar. JSR improves on these APIs and
+covers many additional use cases needed by developers.</P>
+<P>As an example, Java developers currently have no standard Java SE
+class to represent the concept of a date without a time, a time
+without a date or a duration. The result of these missing features
+has been widespread abuse of the facilities which are provided, such
+as using the Date or Calendar class with the time set to midnight to
+represent a date without a time. Such an approach is very error-prone
+- there are certain time zones where midnight does not exist once a
+year due to the daylight saving time cutover!</P>
+<P>JSR-310 tackles this by providing a comprehensive set of date and
+time classes suitable for Java SE today. The API includes:</P>
+<OL>
+	<LI><P STYLE="margin-bottom: 0in">Date and Time</P>
+	<LI><P STYLE="margin-bottom: 0in">Date without Time</P>
+	<LI><P STYLE="margin-bottom: 0in">Time without Date</P>
+	<LI><P STYLE="margin-bottom: 0in">Offset from UTC</P>
+	<LI><P STYLE="margin-bottom: 0in">Time Zone</P>
+	<LI><P STYLE="margin-bottom: 0in">Durations</P>
+	<LI><P STYLE="margin-bottom: 0in">Periods</P>
+	<LI><P STYLE="margin-bottom: 0in">Formatting and Parsing</P>
+	<LI><P>A selection of calendar systems</P>
+</OL>
+<P ALIGN=LEFT>This document is an introduction to the full API, which
+consists of the Javadoc. The Javadoc specification is available via
+the JCP <A HREF="http://jcp.org/en/jsr/detail?id=310">JSR 310 Date
+and Time API </A>. The early access reference implementation included
+in <A HREF="http://openjdk.java.net/projects/jdk8/">JDK 8</A> is
+available for <A HREF="https://jdk8.java.net/download.html">download</A>.
+Additional information related to JSR 310 can be found at the
+<A HREF="http://threeten.github.io/">Threeten Project</A> on GitHub.
+</P>
+<P STYLE="margin-bottom: 0in">This draft guide is released to gain
+feedback. Since it is a draft, readers are advised to take care when
+referencing it.</P>
+<HR>
+<H2>2. Date and Time terminology</H2>
+<P>The domain of dates, times and other temporal concepts is large
+and complex - much more complex than is often apparent. A key aim of
+the JSR is to allow the API to explain this complexity simply by the
+way that the features are exposed. In this way, the user of the API
+is guided to make the correct choice, minimising the potential for
+bugs.</P>
+<P>Part of this process is determining and using a consistent
+terminology. For this purpose, JSR-310 is building upon the excellent
+work of the ISO-8601 standard. However, we have changed a few terms,
+thus the entire terminology is defined here for clarity:</P>
+<P>Time line</P>
+<P>The single line or axis of time from the past to the future.</P>
+<P>Instant</P>
+<P>A single instantaneous point on the time line.&nbsp;</P>
+<P>Duration</P>
+<P>A quantity of time equal to the directed difference between any
+two instants on the time line.</P>
+<P>Epoch</P>
+<P>A known, well-defined, instant that can be used as a reference
+point to measure other instants from.</P>
+<P>Time-scale</P>
+<P>A system of assigning meaningful values to instants in relation to
+a known epoch.</P>
+<P>Continuous time-scale</P>
+<P>A time-scale fundamentally based on a single incrementing number.
+This is usually defined as a duration relative to an epoch.</P>
+<P>International Atomic Time (TAI)</P>
+<P>The primary continuous time-scale intended for scientific and
+technical purposes, defined by international standard. It is agreed
+internationally based on atomic clocks and is completely continuous.
+All days have exactly 86400 seconds. The time-scale is measured in
+terms of the SI second unit.</P>
+<P>Coordinated Universal Time (UTC)</P>
+<P>The standard time-scale intended for civil purposes, defined by
+international standard. It follows TAI except for the insertion or
+removal of an integral number of leap seconds which are intended to
+keep UTC closer to the real and variable length of a solar day. Most
+days have 86400 seconds, but some have 86399 or 86401 seconds. The
+time-scale is measured in terms of the SI second unit.</P>
+<P>Simplified &quot;UTC&quot;</P>
+<P>A time-scale that is not defined by international standard, but is
+widely implemented by computer systems. This time-scale treats all
+days as having exactly 86400 seconds while staying in tune with UTC.
+This definition is, of course, not actually possible, however it is a
+suitable approximation for most normal computing use cases.</P>
+<P>The time-scale is typically implemented by relying on the fact
+that clocks in most computers are not accurate and the functions that
+tell the time are loosely specified. One approach is to slow time
+down around a leap second, a second is to make time go back one
+second, while another is to make the system hang for a second.</P>
+<P>Coordinated Universal Time with Smoothed Leap Seconds (UTC-SLS)</P>
+<P>An <A HREF="http://www.cl.cam.ac.uk/%7Emgk25/time/utc-sls/draft-kuhn-leapsecond-00.txt">internet
+draft</A> that defines a way to map UTC (with leap seconds) to
+simplified &quot;UTC&quot; (without leap seconds). The approach
+smooths leap seconds over the last 1000 seconds of the day. This
+provides an exact mapping between a highly accurate clock and the
+form of time that is useful to computer programmers. This approach,
+like any that changes the meaning of the second, is referred to as
+rubber seconds.</P>
+<P>Rubber seconds</P>
+<P>A second that is slightly longer (or shorter) than the SI unit of
+a second. This can be used to hide the existence of a leap second.</P>
+<P>JSR 310 time-scale</P>
+<P>A simple time-scale designed to provide the time-of-day to an
+accuracy suitable for most Java applications. The Java Time scale is
+described fully in java.time.Instant, summarized here as:</P>
+<OL>
+	<LI><P STYLE="margin-bottom: 0in">midday will always be exactly as
+	defined by the agreed international civil time</P>
+	<LI><P STYLE="margin-bottom: 0in">other times during the day will be
+	broadly in line with agreed international civil time</P>
+	<LI><P STYLE="margin-bottom: 0in">the day will be divided into
+	exactly 86400 subdivisions, referred to as &quot;seconds&quot;</P>
+	<LI><P>the Java &quot;second&quot; may differ from an SI second</P>
+</OL>
+<P>The UTC-SLS draft standard is one way to implement the JSR-310
+time-scale if the application has access to an accurate underlying
+clock.</P>
+<P>Chronology</P>
+<P>A way of defining time that is meaningful to humans and used in
+everyday life, also known as a calendar system. It uses individual
+fields, such as year, month, day, hour minute and second. There are
+many chronologies, each defining fields in different ways.</P>
+<P>Period</P>
+<P>A quantity of time, expressed in terms of the fields of a
+particular calendar system, such as &quot;five years.&quot;</P>
+<P>Zone offset</P>
+<P>A period, usually between +14 and -12 hours, that a given location
+differs from UTC at any given instant. The offset used for a
+particular location is controlled by government. The value used
+originally aimed to ensure that the calendar system time of midday
+(12:00) was equivalent to the solar midday. Today, the offset is
+influenced by many other factors.</P>
+<P>Daylight Saving Time (DST)</P>
+<P>A change to the zone offset that typically occurs each summer. The
+standard approach is to move clocks forward in the Spring and back in
+the Autumn/Fall. The two periods are generally known as Summer and
+Winter time. Whether a given location does this, and on what dates is
+controlled by local authorities.</P>
+<P>Gap and Overlap</P>
+<P>A gap occurs in the local time-line when clocks move forwards,
+typically in Spring due to DST. An overlap occurs in the local
+time-line when clocks move back, typically in Autumn/Fall due to DST.</P>
+<P>Time zone</P>
+<P>An area of the planet that uses the same zone offset and observes
+the same rules for changing it due to daylight savings time. A time
+zone is controlled by government. Some countries have multiple time
+zones, others share a time zone with their neighbours.</P>
+<P>Time zone rules</P>
+<P>A set of rules, for each time zone, that determine how the zone
+offset varies. A simple set of rules consist solely of a fixed, year
+round, offset. More complex rules include annual daylight savings
+changes, historical data and predicted future changes. There are
+multiple sources of time zone rule data.</P>
+<P>Local date/time</P>
+<P>A date or time defined solely using calendar system fields. A
+local date or time does not represent a fixed instant, or range of
+instants. For example the local date of 3rd December 2009 will start
+at one instant in Australia, a later instant in the UK, and an even
+later instant in the USA. In all cases however, the same local date
+is referred to.</P>
+<P>Offset date/time</P>
+<P>A date or time defined using calendar system fields and a zone
+offset. Unlike a local date or time, an offset date or time can be
+converted to and from an instant. For example the local date of 3rd
+December 2009 refers to a specific instant once the zone offset of 1
+hour ahead of UTC is specified.</P>
+<P>Zoned date-time</P>
+<P>A date-time defined using calendar system fields, zone offset and
+time zone. As with an offset date or time, a zoned date-time can be
+converted to and from an instant. In addition, the presence of a time
+zone allows accurate calculations of related date-times, such as
+adding 6 months (which may cause the zone offset to alter).</P>
+<HR>
+<H2>3. Design Goals</H2>
+<P>Immutable</P>
+<P>The JSR-310 classes should be immutable wherever possible.
+Experience over time has shown that APIs at this level should consist
+of simple immutable objects. These are simple to use, can be easily
+shared, are inherently thread-safe, friendly to the garbage collector
+and tend to have fewer bugs due to the limited state-space.</P>
+<P>Fluent API</P>
+<P>The API strives to be fluent within the standard patterns of Java
+SE. A fluent API has methods that are easy to read and understand,
+specifically when chained together. The key goal here is to simplify
+the use and enhance the readability of the API.</P>
+<P>Clear, explicit and expected</P>
+<P>Each method in the API should be well-defined and clear in what it
+does. This is not just a question of good Javadoc, but also of
+ensuring that the method can be called in isolation successfully and
+meaningfully.</P>
+<P>Extensible</P>
+<P>The API should be extensible in well defined ways by application
+developers, not just JSR authors. The reasoning is simple - there are
+just far too many weird and wonderful ways to manipulate time. A JSR
+cannot capture all of them, but an extensible JSR design can allow
+for them to be added as required by application developers or open
+source projects.</P>
+<HR>
+<H2>4. Machine and Human</H2>
+<P>We classify dates and times into two basic use cases -
+machine-scale and human-scale.</P>
+<H3>4.1 Machine-scale time</H3>
+<P>Machine-scale time represents the passage of time using a single,
+continually incrementing number. The rules that determine how the
+scale is measured and communicated are typically defined by
+international scientific standards organizations.</P>
+<P>Two key classes are defined to represent machine-scale time:</P>
+<OL>
+	<LI><P STYLE="margin-bottom: 0in">Instant - An instant on the
+	time-line</P>
+	<LI><P>Duration - A duration of time</P>
+</OL>
+<P>These classes use nanosecond precision. The classes have
+sufficient accuracy to represent any nanosecond instant within the
+current age of the universe. The epoch used is 1970-01-01T00:00:00Z
+(midnight at the start of 1 January 1970 UTC), as per the current
+Java SE date and time classes.</P>
+<H3>4.2 Human-scale time</H3>
+<P>Human-scale time represents the passage of time using a number of
+named fields, such as year, month, day, hour, minute and second. The
+rules that determine how the fields work together are defined in a
+calendar system.</P>
+<P>The design adopted splits the classes into value types and
+fields/units. Simple applications will not need to be concerned with
+fields and units.</P>
+<H4>4.2.1 Value types</H4>
+<P>The high level API contains the following key classes:</P>
+<OL>
+	<LI><P STYLE="margin-bottom: 0in">LocalDate - A date, with no time
+	nor zone-offset</P>
+	<LI><P STYLE="margin-bottom: 0in">LocalTime - A time, with no date
+	nor zone-offset</P>
+	<LI><P>LocalDateTime - A date-time, with no zone-offset</P>
+</OL>
+<OL>
+	<LI><P STYLE="margin-bottom: 0in">OffsetTime - A time and
+	zone-offset, with no date</P>
+	<LI><P STYLE="margin-bottom: 0in">OffsetDateTime - A date-time and
+	zone-offset</P>
+	<LI><P STYLE="margin-bottom: 0in">ZonedDateTime - A date-time,
+	zone-offset and time-zone</P>
+	<LI><P STYLE="margin-bottom: 0in">ZoneOffset - An offset from the
+	time in UTC/GMT</P>
+	<LI><P STYLE="margin-bottom: 0in">ZoneId - A time-zone identifier,
+	used to find the underlying rules</P>
+</OL>
+<P STYLE="margin-bottom: 0in"><BR>
+</P>
+<P>Each of these date-time classes represent time in the ISO calendar
+system, defined by ISO-8601. This is also known as the proleptic
+Gregorian calendar system, and is the de facto civil calendar system
+used today in the vast majority of the world.</P>
+<P>Each date-time field can be represented as a value, which is
+expressed as a long. Some fields also have an enum defined for code
+clarity and safety. These include month, day of week, am/pm and
+quarter.</P>
+<P>Although there are lots of classes and each class has lots of
+methods, the &quot;conceptual weight&quot; of the API is greatly
+reduced through consistent use of method name prefixes. Some of these
+prefixes differ from JavaBean conventions because the classes are
+immutable:</P>
+<OL>
+	<LI><P STYLE="margin-bottom: 0in">get - Gets the specified value</P>
+	<LI><P STYLE="margin-bottom: 0in">with - Returns a copy of the
+	object with the specified value changed</P>
+	<LI><P STYLE="margin-bottom: 0in">plus/minus - Returns a copy of the
+	object with the specified value added/subtracted</P>
+	<LI><P STYLE="margin-bottom: 0in">multipliedBy/dividedBy/negated -
+	Returns a copy of the object with the specified value
+	multiplied/divided/negated</P>
+	<LI><P STYLE="margin-bottom: 0in">to - Converts the object to
+	another related type</P>
+	<LI><P STYLE="margin-bottom: 0in">at - Returns a new object
+	consisting of this date-time at the specified argument, acting as
+	the builder pattern</P>
+	<LI><P STYLE="margin-bottom: 0in">of - Factory methods that don't
+	involve data conversion</P>
+	<LI><P>from - Factory methods that do involve data conversion</P>
+</OL>
+<P>Applications will also commonly use the TemporalAdjuster interface
+and the standard implementations provided in TemporalAdjusters. These
+pre-packaged common manipulation functions like ���next Wednesday���
+or the ���last day of the month���. They are especially valuable in
+capturing the intent of business logic.</P>
+<H4>4.2.2 Fields and units</H4>
+<P>Dates and times are formed from fields and units.</P>
+<P>A unit is a measurable unit of time, such as a year, month or
+hour. The set of known units can be extended by applications.</P>
+<P>A field is used to express part of a larger date-time, such as
+year, month-of-year or second-of-minute. The set of known fields can
+also be extended by applications.</P>
+<P>Fields and units work together with the abstractions Temporal and
+TemporalAccessor provide access to date-time classes in a generic
+manner.</P>
+<H4><A NAME="h.30u7w3fsdpb9"></A>4.2.3 Chronologies</H4>
+<P>Other calendar systems are supported with a separate
+calendar-neutral API. This is focused on the Chronology and
+ChronoLocalDate classes. These do not have the same breadth or depth
+as the main ISO calendar system API.</P>
+<P>It is recommended that applications use the classes in the main
+API for all communication between systems and subsystems, including
+public APIs, storage to a database and communication across the
+network. The calendar neutral API should be used primarily for user
+localization.</P>
+<H3>4.3 Machine/Human comparison</H3>
+<P>The division in the API between machine-scale and human-scale is
+deliberate and necessary, as the two time-scales represent different
+ways of looking at time.</P>
+<P>The machine-scale approach is very time-line focused. For example,
+Instant simply represents an instant on the time-line. The only
+meaningful operations on the class are to check whether the instant
+is before or after another instant. These classes will be of most use
+for recording event timestamps and logging.</P>
+<P>The human-scale approach is very focused on what the time means to
+a human, through the use of the fields. In addition to getting and
+setting the field values, methods are provided to perform
+mathematical operations, such as adding three days to a date. These
+classes will be of most use in business logic, such as representing
+the departure time of a train or a customer's birthday.</P>
+<H3>4.4 Calendar/Joda-Time comparison</H3>
+<P>The design adopted is notably different to the Java SE Calendar
+API and the Joda-Time API.</P>
+<P>The Java SE Calendar API has a single base class that represents
+both the date-time and the calendar system. Different calendar
+systems are implemented as subclasses. This design is flawed as
+calendar systems are too different to be properly treated as
+subclasses.</P>
+<P>The Joda-Time API has simple date-time classes with a plug-in
+calendar system (chronology). This design, while better than
+Calendar, is also flawed because each method on the API is unable to
+properly define its result. For example, the getMonthOfYear() method
+normally returns a value from 1 to 12, however if the Coptic calendar
+system has been &quot;plugged in&quot; then the method will return
+results from 1 to 13.</P>
+<P>The JSR-310 design ensures that each method on the core API is
+able to fully define its input and output by focusing the entire
+class on a single calendar system. Instead, users with advanced
+requirements have to study the API a little more closely and use the
+low-level temporal classes.</P>
+<HR>
+<H2>5. Feedback</H2>
+<P>The ThreeTen project and JSR-310 needs feedback! We need reviewers
+to read the guide and Javadoc, and where possible, try out the code
+(in the JDK 8 Early Access Releases).</P>
+<P>Specifically, we need to know if</P>
+<OL>
+	<LI><P STYLE="margin-bottom: 0in">whether there are key use cases
+	that are missing (or you can't find)</P>
+	<LI><P STYLE="margin-bottom: 0in">specific method names are unclear</P>
+	<LI><P STYLE="margin-bottom: 0in">the API is clear, unclear or about
+	right</P>
+	<LI><P>anything else that is an issue</P>
+</OL>
+<P>Feedback and comments on the Public Review draft should be sent to
+    <a HREF="mailto:threeten-develop@lists.sourceforge.net">
+        threeten-develop@lists.sourceforge.net</a>.</P>
+<P>Feedback is public information on a trust and respect basis for
+the public good and may be used by anyone in any way forever.</P>
+</BODY>
+</HTML>
+
+
+<!-- ** BEGIN: footer.jsp ** //-->
+
+
+
+
+
+
+
+
+</td>
+</tr>
+</table>
+
+<!-- ** END: Content Table ** //-->
+
+<!-- ** BEGIN: Footer Table ** //-->
+
+<div id="footer" style="clear: both;">
+    <div class="footleft">
+        <a href="/en/resources/contacts">Contact Us</a>
+    </div>
+	
+    <div class="botbar"><img src="/images/spacer.gif" alt="" height="23" width="1"></div>
+
+    <div class="footleft2">
+         &copy; 2019, Oracle Corporation and/or its affiliates. 
+        <a href="/en/home/terms">Terms of Use</a>. <a href="http://www.oracle.com/us/legal/privacy/index.html">Privacy Policy</a>. <a href="http://www.oracle.com/us/legal/third-party-trademarks/third-party-trademarks-078568.html">Trademarks</a>
+    </div>
+
+    <div class="footright">
+        <img src="/images/common/logo_oracle_footer.gif" alt="Oracle Corporation" height="22" width="91">
+    </div>
+
+    <div style="clear: both;"><img src="/images/spacer.gif" alt="" height="30" width="1"></div>
+</div>
+
+<!-- ** END: Footer Table ** //-->
+
+
+
+<!-- ** Menu Start ** //-->
+
+
+
+</body>
+</html>
+<!-- ** END: footer.jsp ** //-->
+

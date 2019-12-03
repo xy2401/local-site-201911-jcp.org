@@ -1,0 +1,664 @@
+
+
+
+
+<!-- ** BEGIN: header.jsp ** //-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3c.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+<head>
+    
+
+   
+    <link href="/includes/css/menu.css" rel="stylesheet" type="text/css"></link>
+    <link href="/includes/css/style.css" rel="stylesheet" type="text/css"></link>
+    <!--[if lt IE 6]><link href="/includes/css/style5.css" rel="stylesheet" type="text/css" ></link><![endif]-->
+    <!--[if gte IE 5]><link href="/includes/css/style6.css" rel="stylesheet" type="text/css" ></link><![endif]-->
+    <link href="/includes/css/tabs.css"  rel="stylesheet" type="text/css"></link>
+
+    <script type="text/javascript" src="/includes/scripts/tabs.js"></script>
+    <script type="text/javascript" src="/includes/scripts/menu.js"></script>
+   
+
+    
+
+    
+        <title>The Java Community Process(SM) Program - JSRs: Java Specification Requests - results</title>
+    
+
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+
+
+<body onload="P7_initPM(0,1,0,0,-1)">
+
+    <a name="top"></a>
+
+    <div id="header">
+	<div id="logo">
+		<a href="/en/home/index"><img src="/images/spacer.gif" alt="Java Community Process" height="81" width="151"></a>
+	</div>
+	<div id="tools">
+		<div class="search">
+			<form name="search" action="/en/jsr/summary" method="get" onsubmit="return validate_search()">
+				<input name="id" value="Search JSRs" size="16" class="form" onfocus="nullify_if_equal(this, 'Search JSRs')" type="text">
+				<a href="javascript:document.search.submit()" onclick="return validate_search()"><img src="/images/button_go.gif" width="21" height="16" border="0" alt="Submit this Search" name="sub_search"></a>
+			</form>
+		</div>
+		<div class="tools">
+			<a href="/en/press/pressroom">Press Room</a> &nbsp;|&nbsp;
+			<a href="http://java.com/java/download/index.jsp?cid=jdp78399">Get Java Here</a> &nbsp;|&nbsp;
+			<!-- <a href="javascript:void(0)">Print Format</a> &nbsp;|&nbsp;&nbsp; -->
+		</div>
+
+	</div>
+	<div style="clear: right;"></div>
+
+        
+
+	<div class="topbar"><img src="/images/spacer.gif" alt="" height="3" width="154"></div>
+	<div id="update"> </div>
+    </div>
+
+
+    
+
+        <!-- ** BEGIN: Content Table ** //-->
+
+        <table width="100%" border="0" cellpadding="0" cellspacing="0">
+
+            <tr>
+
+                <!-- ** BEGIN: Navigation Column ** //-->
+                <td width="150" id="leftcontent" valign="top">
+                    <!-- Navigation Placeholder //-->
+
+                    
+
+                    <div class="bar"><img src="/images/hr_dots1.gif" alt="" height="3" width="150"></div>
+
+        <!-- begin find JSRs form -->
+        <!-- IMPORTANT! do not convert this form to Struts < html : form > tag.  javascript change of form.action property fails. -->
+        <img src="/images/hd_find-jsrs.gif" alt="Find JSRs" height="18" width="150">
+        <form name="findjsr" action="/en/jsr/summary" method="get" class="pt5" onsubmit="return validate_findjsr()">
+            <input name="id" size="18" class="form" value="Search JSRs" onfocus="nullify_if_equal(this, 'Search JSRs')" type="text">
+	    <a href="javascript:document.findjsr.submit()" onclick="return validate_findjsr()"><img src="/images/button_go.gif" width="21" height="16" border="0" alt="Submit this Search" name="sub_search"></a>
+        </form><br><br>
+
+        <!-- ** Menu Start ** //-->
+
+        <ul id="p7PMnav">
+            <li><a href="/en/jsr/platform">JSRs by Platform</a></li>
+            <li><a href="/en/jsr/tech">JSRs by Technology</a></li>
+            <li><a href="/en/jsr/stage">JSRs by Stage</a></li>
+            <li><a href="/en/jsr/ec">JSRs by Committee</a></li>
+            <li><a href="/en/jsr/all">List of All JSRs</a></li>
+
+            <!--end find JSRs form -->
+            <div style="clear: both;"><img src="/images/spacer.gif" alt="" height="25" width="1"></div>
+
+            <!--begin my JCP -->
+            <img src="/images/hd_my-jcp.gif" alt="My JCP" height="18" width="150">
+            
+
+          <form name="login" method="get" action="/en/user/login" >
+            <input name="Sign-in" type="submit" title="Sign-in" value="Sign-in" />
+          </form>
+
+            <div style="clear:both"><img src="/images/global/spacer.gif" width="1" height="3" alt=""></div>
+            <div class="noNav">
+                <a href="/en/user/register">Register for Site</a>
+            </div>
+
+             <div class="bar"><img src="/images/hr_dots1.gif" alt="" height="3" width="150"></div>
+           <div class="noNav" style="color: #666666; padding: 0;">
+              Use of JCP site is subject to the
+              <a href="/en/home/terms" style="display:inline;padding: 0">JCP Terms of Use</a> and the
+              <a href="http://www.oracle.com/us/legal/privacy/index.html" style="display:inline;padding: 0" href="">Oracle Privacy Policy</a>
+          </div>
+
+            
+
+            <div style="clear:both"><img src="/images/global/spacer.gif" width="1" height="25" alt=""></div>
+
+            <!--begin JCP info -->
+            <img src="/images/hd_jcp-info.gif" alt="JCP Info" height="18" width="150">
+
+            <li><a href="/en/procedures/overview" class="p7PMtrg">About JCP</a>
+                <ul>
+                    <li><a href="/en/procedures/overview">Program Overview</a></li>
+                    <li><a href="/en/procedures/jcp2">JCP Process Document</a></li>
+                    <li><a href="/en/whatsnew/calendar">Calendar</a></li>
+                    <li><a href="/en/participation/members">JCP Members</a></li>
+                    <li><a href="/en/participation/committee">Executive Committee</a></li>
+                    <li><a href="/en/whatsnew/elections">Elections</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/en/participation/overview" class="p7PMtrg">Get Involved</a>
+		<ul>
+                    <li><a href="/en/participation/overview">Overview</a></li>
+                    <li><a href="/en/participation/membership">Becoming a JCP Member</a></li>
+		</ul>
+            </li>
+
+            <li><a href="/en/resources/contents" class="p7PMtrg">Community Resources</a>
+                <ul>
+                    <li><a href="/en/resources/contents">Overview</a></li>
+                    <li><a href="/en/resources/tutorials">Tutorials</a></li>
+                    <li><a href="/en/resources/multimedia">JCP Podcasts</a></li>
+                    <li><a href="/en/resources/guide">Spec Lead Guide</a></li>
+                    <li><a href="/en/resources/tdk">TCK Tool & Info</a></li>
+                    <li><a href="/en/resources/license_reference">License Reference</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/en/press/pmo" class="p7PMtrg">Community News</a>
+                <ul>
+                    <li><a href="/en/press/pmo">News</a></li>
+                    <li><a href="/en/press/news/awards/awards_main">Programs &amp; Awards</a></li>
+                    <li><a href="/en/press/releases">Press Releases</a></li>
+                    <li><a href="/en/press/success">Success Stories</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/en/introduction/faq">FAQ</a></li>
+
+            <li><a href="/en/resources/contacts">Contact Us</a></li>
+
+            <div style="clear: both;"><img src="/images/spacer.gif" alt="" height="25" width="1"></div>
+
+            <!--[if lte IE 6]><style>#p7PMnav a{height:1em;}#p7PMnav li{height:1em;float:left;clear:both;width:100%}</style><![endif]-->
+            <!--[if IE 6]><style>#p7PMnav li{clear:none;}</style><![endif]-->
+            <!--[if IE 7]><style>#p7PMnav a{zoom:100%;}#p7PMnav li{float:left;clear:both;width:100%;}</style><![endif]-->
+        </ul>
+
+        
+
+        <!--begin ad space -->
+        <div class="ads">
+            <a href="http://java.com/java/download/index.jsp?cid=jdp78399" target="_blank"><img style="display: ;" src="/images/ad_banner2.gif" alt="Ad Banner" border="1" height="70" width="150"></a>
+        </div>
+        <!--end ad space -->
+
+<!-- ** Menu End ** //-->
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;<br>
+
+    
+
+                    &nbsp;<br>
+                    <img src="/images/common/trans.gif" alt="" width="1" height="150"><br>
+
+              
+
+
+
+                </td>
+                <!-- ** END: Navigation Column ** //-->
+
+                <!-- ** BEGIN: Gutter Column ** //-->
+		<td width="10" nowrap><img src="/images/common/trans.gif" alt="" width="10" height="1"></td>
+                <!-- ** END: Gutter Column ** //-->
+
+                <!-- ** BEGIN: Content Column ** //-->
+                <td width="100%" valign="top">
+
+    
+<script type="text/javascript">
+
+String.prototype.trim = function() {
+        return this.replace(/^\s+|\s+$/g,"");
+}
+String.prototype.ltrim = function() {
+        return this.replace(/^\s+/,"");
+}
+String.prototype.rtrim = function() {
+        return this.replace(/\s+$/,"");
+}
+
+function validate_search() {
+	if (document.search.id.value == "Search JSRs" || document.search.id.value.trim().length == 0) {
+		alert("Search terms must be entered first");
+		return false;
+	}
+	return true;
+}
+
+function validate_findjsr() {
+	if (document.findjsr.id.value == "Search JSRs" || document.findjsr.id.value.trim().length == 0) {
+		alert("Search terms must be entered first");
+		return false;
+	}
+	return true;
+}
+
+function nullify_if_equal(field, str) {
+	// alert("val=" + field.value);
+	if (field.value == str) {
+		field.value = "";
+	}
+}
+
+</script>
+<!-- ** END: header.jsp ** //-->
+
+
+
+
+<b>
+  <font color="#663399" size="+1">
+    JSR #258<br>
+    Mobile User Interface Customization API<br>
+    JSR Review Ballot<br>
+  </font>
+  Ballot duration: 2004-11-02&nbsp;&nbsp; to: 2004-11-15<br>
+</b>
+
+<P>
+
+
+
+
+
+
+
+These are the final results of the JSR Review Ballot for JSR #258.
+
+	
+
+The <a href="/en/participation/committee#ME">Executive Committee for ME</a> has  approved this ballot.
+
+	
+
+
+</P>
+
+<h3>Votes</h3><BR>
+<table width="600" border="0" cellspacing="0" cellpadding="3">
+  <tr>
+    <td>
+
+<B>ME</B>
+
+<table width="600" border="1" cellspacing="0" cellpadding="5">
+  <tr>
+
+  <td>
+    <table width="100%">
+      <tr>
+        <td align="left"><font size="2">Ericsson AB</font></td>
+        <td align="right"><img src="/images/common/abstain.gif" width="23" height="23" alt="Abstain"></td>
+      </tr>
+    </table>
+  </td>
+
+  <td>
+    <table width="100%">
+      <tr>
+        <td align="left"><font size="2">IBM</font></td>
+        <td align="right"><img src="/images/common/yes.gif" width="23" height="23" alt="Yes"></td>
+      </tr>
+    </table>
+  </td>
+
+  <td>
+    <table width="100%">
+      <tr>
+        <td align="left"><font size="2">Insignia Solutions</font></td>
+        <td align="right"><img src="/images/common/abstain.gif" width="23" height="23" alt="Abstain"></td>
+      </tr>
+    </table>
+  </td>
+
+  <td>
+    <table width="100%">
+      <tr>
+        <td align="left"><font size="2">Intel Corp.</font></td>
+        <td align="right"><img src="/images/common/yes.gif" width="23" height="23" alt="Yes"></td>
+      </tr>
+    </table>
+  </td>
+  </tr>
+  <tr>
+
+  <td>
+    <table width="100%">
+      <tr>
+        <td align="left"><font size="2">Matsushita Electric Industrial Co., Ltd.</font></td>
+        <td align="right"><img src="/images/common/no.gif" width="23" height="23" alt="No"></td>
+      </tr>
+    </table>
+  </td>
+
+  <td>
+    <table width="100%">
+      <tr>
+        <td align="left"><font size="2">Motorola</font></td>
+        <td align="right"><img src="/images/common/no.gif" width="23" height="23" alt="No"></td>
+      </tr>
+    </table>
+  </td>
+
+  <td>
+    <table width="100%">
+      <tr>
+        <td align="left"><font size="2">Nokia Corporation</font></td>
+        <td align="right"><img src="/images/common/yes.gif" width="23" height="23" alt="Yes"></td>
+      </tr>
+    </table>
+  </td>
+
+  <td>
+    <table width="100%">
+      <tr>
+        <td align="left"><font size="2">Philips Electronics UK Ltd</font></td>
+        <td align="right"><img src="/images/common/no.gif" width="23" height="23" alt="No"></td>
+      </tr>
+    </table>
+  </td>
+  </tr>
+  <tr>
+
+  <td>
+    <table width="100%">
+      <tr>
+        <td align="left"><font size="2">Research In Motion, LTD (RIM)</font></td>
+        <td align="right"><img src="/images/common/abstain.gif" width="23" height="23" alt="Abstain"></td>
+      </tr>
+    </table>
+  </td>
+
+  <td>
+    <table width="100%">
+      <tr>
+        <td align="left"><font size="2">Siemens AG</font></td>
+        <td align="right"><img src="/images/common/yes.gif" width="23" height="23" alt="Yes"></td>
+      </tr>
+    </table>
+  </td>
+
+  <td>
+    <table width="100%">
+      <tr>
+        <td align="left"><font size="2">Sony Ericsson Mobile Communications AB</font></td>
+        <td align="right"><img src="/images/common/yes.gif" width="23" height="23" alt="Yes"></td>
+      </tr>
+    </table>
+  </td>
+
+  <td>
+    <table width="100%">
+      <tr>
+        <td align="left"><font size="2">Sony International (Europe) GmbH</font></td>
+        <td align="right"><img src="/images/common/none21.gif" width="23" height="23" alt="No Vote"></td>
+      </tr>
+    </table>
+  </td>
+  </tr>
+  <tr>
+
+  <td>
+    <table width="100%">
+      <tr>
+        <td align="left"><font size="2">Sun Microsystems, Inc.</font></td>
+        <td align="right"><img src="/images/common/no.gif" width="23" height="23" alt="No"></td>
+      </tr>
+    </table>
+  </td>
+
+  <td>
+    <table width="100%">
+      <tr>
+        <td align="left"><font size="2">Symbian Ltd</font></td>
+        <td align="right"><img src="/images/common/abstain.gif" width="23" height="23" alt="Abstain"></td>
+      </tr>
+    </table>
+  </td>
+
+  <td>
+    <table width="100%">
+      <tr>
+        <td align="left"><font size="2">Texas Instruments Inc.</font></td>
+        <td align="right"><img src="/images/common/yes.gif" width="23" height="23" alt="Yes"></td>
+      </tr>
+    </table>
+  </td>
+
+  <td>
+    <table width="100%">
+      <tr>
+        <td align="left"><font size="2">Vodafone Group Services Limited</font></td>
+        <td align="right"><img src="/images/common/no.gif" width="23" height="23" alt="No"></td>
+      </tr>
+    </table>
+  </td>
+  </tr>
+
+</table>
+<br>
+
+
+
+</td>
+<td width="20"><img src="/images/common/pixel.gif" width="20" height="1" alt=""></td>
+<td valign="top">
+  <table border="0" cellspacing="0" cellpadding="5" height="100%">
+    <tr align="left">
+      <td colspan="2">
+        <b>Icon Legend</b>
+      </td>
+    </tr>
+    <tr valign="top">
+      <td alt="left">Yes</td>
+      <td align="right"><img src="/images/common/yes.gif" width="23" height="23" alt="Yes"></td>
+    </tr>
+    <tr valign="top">
+      <td align="left">No</td>
+      <td align="right"><img src="/images/common/no.gif" width="23" height="23" alt="No"></td>
+    </tr>
+    <tr valign="top">
+      <td>Abstain</td>
+      <td align="right"><img src="/images/common/abstain.gif" width="23" height="23" alt="Abstain"></td>
+    </tr>
+    <tr valign="top">
+      <td>Not voted</td>
+      <td align="right"><img src="/images/common/none21.gif" width="23" height="23" alt="Not voted"></td>
+   </tr>
+ </table>
+</td>
+</tr>
+</table>
+<br>
+
+
+<HR NOSHADE ALIGN="left" WIDTH="70%">
+<h3>View Vote Log</h3>
+<BR>
+
+<FORM>
+
+
+
+
+<br><br>
+
+
+<strong>ME</strong><br>
+<TEXTAREA ROWS="10" COLS="80" WRAP="soft" READONLY>On 2004-11-12 Intel Corp. voted Yes with the following comment:
+While there doesn't appear to be overlap between the JSR 258 proposal and the JSR 209 Early Draft, the JSR 258 Spec Lead should coordinate with the JSR 209 Spec Lead to ensure there is no unnecessary duplication and especially that solutions do not unnecessarily deviate from J2SE.
+------------------------------------------------------------------------------
+On 2004-11-15 Ericsson AB voted Abstain with the following comment:
+Ericsson Mobile Platforms supports the intention behind JSR-258 proposal. When we had reviewed the JSR-258 proposal, we found no overlap of functionality mostly because pluggable look and feel was not part of JSR-209. The interesting feature of JSR-258 was that it proposed to be independent of the underlying UI Toolkit and addressed CLDC as well. There has been lots of discussions on the ME Executive Committee mailing list since then and we have been exposed to new information that we were not aware of when we had supported this JSR. We have come to know that the discussion on pluggable look and feel is still on-going in the JSR-209 EG and that there has been liaison from OMTP to JSR-209 EG for UI customization. We abstain from this voting since we would like to see this discussion be concluded in JSR-209. We feel that in the best interest of the community this discussion needs to happen before this JSR is started.
+------------------------------------------------------------------------------
+On 2004-11-04 Nokia Corporation voted Yes with no comment.
+------------------------------------------------------------------------------
+On 2004-11-12 Siemens AG voted Yes with the following comment:
+Siemens assumes that the JSR 258 and JSR 209 specification will not overlap, in the area of CDC, with relevant customization aspects considered by JSR 209.
+------------------------------------------------------------------------------
+On 2004-11-12 Motorola voted No with the following comment:
+Motorola does not see a need for JSR 258.  We believe that it is confusing to the community to open up another customization JSR when JSR 209 is already considering these aspects. Additionally, we are not convinced that there is even a need for a standardized programmatic control of deep customization. If there is a need we feel it will be better addressed by XML which can be standardized outside of the JCP.
+
+------------------------------------------------------------------------------
+On 2004-11-12 Vodafone Group Services Limited voted No with the following comment:
+JSR 258 is an attempt by Nokia to take control of the UI customisation
+UI customisation is in scope of JSR 209. We beleive Nokia's 258 is really an attempt to limit UI customisability rather than to provide it.
+
+JSR 258 is not needed
+JSR 209 is already working on UI customisation issues PLaF for deep customisation, and SYNTH (XML) for theming/skinning. SYNTH is available in Swing for J2SE, so there is no reason why 209 should not consider it for the CDC
+Deep customisation of native UI widgets can be achieved using XML, which can be standardised outside of the JCP (W3C, OMA, or OSGi)
+We have to question whether another body other that the JCP should address some of these issues detailed within 258.
+
+Operators don't want 258
+Vodafone is a large operator. We don't want it and have not heard of any other operator who want it. OMTP is liaising with JSR 209 regardng UI customization ans theming/skinning. JSR 209 is where the operator interest, in the subject of UI customisation is directed
+
+More detail
+The OMTPconsortium has opened a dialog this year to communicate requirements to JSR 209 regarding these issues and Nokia is participating in both OMTP and JSR 209.
+If PLaF is removed from JSR 209 and replaced with functionality coming from JSR 258 then manufacturers will face extra licensing costs.
+In order to provide the same level of customisation as is available via SWING PLaF, JSR 258 will cause the same implementation burden which has been addressed as one of the reasons to be removed from the JSR 209.
+SWING PLaF provides a very good level of UI customisability grater than what is currently available with native terminal UI toolkit (including EPOC. It is impractical to attempt to equal the same depth of customisability using XML.
+Some native UI implementations could require shutdown and restart in order to affect UI customisation, So it is only practical to provide this type of customisation by way of a configuration file (XML) rather than by java.
+
+
+------------------------------------------------------------------------------
+On 2004-11-12 IBM voted Yes with no comment.
+------------------------------------------------------------------------------
+On 2004-11-12 Sun Microsystems, Inc. voted No with the following comment:
+Sun believes that it is important for the community to step back
+and get clarity on the relationship of this proposed JSR-258 to
+JSR-209, given their apparent overlap of scope.
+
+The JSR-209 EG is already in the process of discussing UI skinning
+requirements with the community, and this work should not be
+preempted by another JSR. Additionally, the JSR-209 EG has been
+aware (and more so now) of the need for an architecturally neutral
+UI skinning solution. We should be careful to not introduce 
+fragmentation into J2ME with overlapping JSRs addressing similar
+requirements.
+
+Finally, it appears that JSR-258 has not been adequately socialized
+with the participants in JSR-209, -216, -217 and other related EGs.
+We are voting "no" in the hopes that Nokia will better align their
+proposal with existing J2ME activities.
+
+------------------------------------------------------------------------------
+On 2004-11-15 Research In Motion, LTD (RIM) voted Abstain with the following comment:
+We would strongly suggest that the potential overlap issue between JSR209 and JSR258 be resolved before JSR258 to initiate.
+
+------------------------------------------------------------------------------
+On 2004-11-15 Sony Ericsson Mobile Communications AB voted Yes with the following comment:
+Sony Ericsson belives there is a need for JSR-258. We think that this JSR will not overlap with JSR-209 but we think that there is a need to coordinate with JSR-209 to make sure no overlap is created. JSR-209 has only planned to address the CDC space and it has not been clear in the charter of JSR-209 that this issue belongs to the JSR-209 domain.
+
+We also believe that it is vital for this JSR to listen to the needs of the operators in this area and it will be important to listen to requirements from OMTP and other operator forums.
+
+If the progress in this expert group      indicates that the problems are not solved, we think that it would be OK to start another JSR in the same functinal space with a different setup.
+
+We also think that it will be very hard to get a working and broad agreement on how to do a comming customization format and model. If this goal is not met, the JSR should not go to final with a washed out proposal that does not create a good level of commonalities. Still, in the spirit of innovation - we like to see what can be done and we would cooperato to create a good specification. Therefore we vote "yes" to this JSR review balot.
+
+
+
+
+------------------------------------------------------------------------------
+On 2004-11-15 Texas Instruments Inc. voted Yes with the following comment:
+TI believes that well-formed JSRs that unify the J2ME API space are most important for the health of the J2ME developers community. JSR-258 offers hope of this.
+------------------------------------------------------------------------------
+On 2004-11-15 Symbian Ltd voted Abstain with no comment.
+------------------------------------------------------------------------------
+On 2004-11-15 Philips Electronics UK Ltd voted No with the following comment:
+While we support the principle of this JSR, we are unable to support it in its current form due to the apparent extensive overlap with discussions already in progress within the JSR-209 EG and in progress between the JSR-209 EG and an external organisation. We believe more time and consultation is needed to define a rational relationship between -209 and this JSR or any successor.
+
+We support the principles that any UI customisation API defined by JCP must be independent of the UI toolkit concerned and must not be specific to swing (or indeed UI toolkits written in Java) or specific to CDC. It seems to us that these principles may be easier to achieve in a stand-alone JSR (which is able to define new APIs) than in JSR-209 however we do not have enough visibility of the discussions in -209 to have formed a real conclusion. More information & discussion is needed here.
+------------------------------------------------------------------------------
+On 2004-11-15 Insignia Solutions voted Abstain with the following comment:
+There are many operators that desire a method to deeply brand the subscriber experience. A method to seamlessly and securely execute this functionality OTA will be essential.
+
+Frankly, this adds yet another reason to deploy sophisticated device management platforms, so it is in Insignia's best interests to see the technology come to market, one way or the other.
+
+However, the political elements of 209 and 258 are clear, too clear perhaps. My primary concern is the impact of control and licensing fees on this important aspect of the platform.
+
+Therefore a resolution on how this will be addressed should be concluded before another JSR in this area is started.   
+------------------------------------------------------------------------------
+On 2004-11-15 Matsushita Electric Industrial Co., Ltd. voted No with the following comment:
+We strongly recommend that the potential overlap issue between JSR209 and 258 be resolved before starting JSR258.
+------------------------------------------------------------------------------
+</TEXTAREA>
+
+
+</FORM>
+
+
+
+
+
+<!-- ** BEGIN: footer.jsp ** //-->
+
+
+
+
+
+
+
+
+</td>
+</tr>
+</table>
+
+<!-- ** END: Content Table ** //-->
+
+<!-- ** BEGIN: Footer Table ** //-->
+
+<div id="footer" style="clear: both;">
+    <div class="footleft">
+        <a href="/en/resources/contacts">Contact Us</a>
+    </div>
+	
+    <div class="botbar"><img src="/images/spacer.gif" alt="" height="23" width="1"></div>
+
+    <div class="footleft2">
+         &copy; 2019, Oracle Corporation and/or its affiliates. 
+        <a href="/en/home/terms">Terms of Use</a>. <a href="http://www.oracle.com/us/legal/privacy/index.html">Privacy Policy</a>. <a href="http://www.oracle.com/us/legal/third-party-trademarks/third-party-trademarks-078568.html">Trademarks</a>
+    </div>
+
+    <div class="footright">
+        <img src="/images/common/logo_oracle_footer.gif" alt="Oracle Corporation" height="22" width="91">
+    </div>
+
+    <div style="clear: both;"><img src="/images/spacer.gif" alt="" height="30" width="1"></div>
+</div>
+
+<!-- ** END: Footer Table ** //-->
+
+
+
+<!-- ** Menu Start ** //-->
+
+
+
+</body>
+</html>
+<!-- ** END: footer.jsp ** //-->
+

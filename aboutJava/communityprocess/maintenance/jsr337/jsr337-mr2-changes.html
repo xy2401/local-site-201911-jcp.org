@@ -1,0 +1,919 @@
+
+<!-- ** BEGIN: header.jsp ** //-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3c.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+<head>
+    
+
+   
+    <link href="/includes/css/menu.css" rel="stylesheet" type="text/css"></link>
+    <link href="/includes/css/style.css" rel="stylesheet" type="text/css"></link>
+    <!--[if lt IE 6]><link href="/includes/css/style5.css" rel="stylesheet" type="text/css" ></link><![endif]-->
+    <!--[if gte IE 5]><link href="/includes/css/style6.css" rel="stylesheet" type="text/css" ></link><![endif]-->
+    <link href="/includes/css/tabs.css"  rel="stylesheet" type="text/css"></link>
+
+    <script type="text/javascript" src="/includes/scripts/tabs.js"></script>
+    <script type="text/javascript" src="/includes/scripts/menu.js"></script>
+   
+
+    
+
+    
+        <title>The Java Community Process(SM) Program - communityprocess - maintenance</title>
+    
+
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+
+
+<body onload="P7_initPM(0,1,0,0,-1)">
+
+    <a name="top"></a>
+
+    <div id="header">
+	<div id="logo">
+		<a href="/en/home/index"><img src="/images/spacer.gif" alt="Java Community Process" height="81" width="151"></a>
+	</div>
+	<div id="tools">
+		<div class="search">
+			<form name="search" action="/en/jsr/summary" method="get" onsubmit="return validate_search()">
+				<input name="id" value="Search JSRs" size="16" class="form" onfocus="nullify_if_equal(this, 'Search JSRs')" type="text">
+				<a href="javascript:document.search.submit()" onclick="return validate_search()"><img src="/images/button_go.gif" width="21" height="16" border="0" alt="Submit this Search" name="sub_search"></a>
+			</form>
+		</div>
+		<div class="tools">
+			<a href="/en/press/pressroom">Press Room</a> &nbsp;|&nbsp;
+			<a href="http://java.com/java/download/index.jsp?cid=jdp78399">Get Java Here</a> &nbsp;|&nbsp;
+			<!-- <a href="javascript:void(0)">Print Format</a> &nbsp;|&nbsp;&nbsp; -->
+		</div>
+
+	</div>
+	<div style="clear: right;"></div>
+
+        
+
+	<div class="topbar"><img src="/images/spacer.gif" alt="" height="3" width="154"></div>
+	<div id="update"> </div>
+    </div>
+
+
+    
+
+        <!-- ** BEGIN: Content Table ** //-->
+
+        <table width="100%" border="0" cellpadding="0" cellspacing="0">
+
+            <tr>
+
+                <!-- ** BEGIN: Navigation Column ** //-->
+                <td width="150" id="leftcontent" valign="top">
+                    <!-- Navigation Placeholder //-->
+
+                    
+
+                    <div class="bar"><img src="/images/hr_dots1.gif" alt="" height="3" width="150"></div>
+
+        <!-- begin find JSRs form -->
+        <!-- IMPORTANT! do not convert this form to Struts < html : form > tag.  javascript change of form.action property fails. -->
+        <img src="/images/hd_find-jsrs.gif" alt="Find JSRs" height="18" width="150">
+        <form name="findjsr" action="/en/jsr/summary" method="get" class="pt5" onsubmit="return validate_findjsr()">
+            <input name="id" size="18" class="form" value="Search JSRs" onfocus="nullify_if_equal(this, 'Search JSRs')" type="text">
+	    <a href="javascript:document.findjsr.submit()" onclick="return validate_findjsr()"><img src="/images/button_go.gif" width="21" height="16" border="0" alt="Submit this Search" name="sub_search"></a>
+        </form><br><br>
+
+        <!-- ** Menu Start ** //-->
+
+        <ul id="p7PMnav">
+            <li><a href="/en/jsr/platform">JSRs by Platform</a></li>
+            <li><a href="/en/jsr/tech">JSRs by Technology</a></li>
+            <li><a href="/en/jsr/stage">JSRs by Stage</a></li>
+            <li><a href="/en/jsr/ec">JSRs by Committee</a></li>
+            <li><a href="/en/jsr/all">List of All JSRs</a></li>
+
+            <!--end find JSRs form -->
+            <div style="clear: both;"><img src="/images/spacer.gif" alt="" height="25" width="1"></div>
+
+            <!--begin my JCP -->
+            <img src="/images/hd_my-jcp.gif" alt="My JCP" height="18" width="150">
+            
+
+          <form name="login" method="get" action="/en/user/login" >
+            <input name="Sign-in" type="submit" title="Sign-in" value="Sign-in" />
+          </form>
+
+            <div style="clear:both"><img src="/images/global/spacer.gif" width="1" height="3" alt=""></div>
+            <div class="noNav">
+                <a href="/en/user/register">Register for Site</a>
+            </div>
+
+             <div class="bar"><img src="/images/hr_dots1.gif" alt="" height="3" width="150"></div>
+           <div class="noNav" style="color: #666666; padding: 0;">
+              Use of JCP site is subject to the
+              <a href="/en/home/terms" style="display:inline;padding: 0">JCP Terms of Use</a> and the
+              <a href="http://www.oracle.com/us/legal/privacy/index.html" style="display:inline;padding: 0" href="">Oracle Privacy Policy</a>
+          </div>
+
+            
+
+            <div style="clear:both"><img src="/images/global/spacer.gif" width="1" height="25" alt=""></div>
+
+            <!--begin JCP info -->
+            <img src="/images/hd_jcp-info.gif" alt="JCP Info" height="18" width="150">
+
+            <li><a href="/en/procedures/overview" class="p7PMtrg">About JCP</a>
+                <ul>
+                    <li><a href="/en/procedures/overview">Program Overview</a></li>
+                    <li><a href="/en/procedures/jcp2">JCP Process Document</a></li>
+                    <li><a href="/en/whatsnew/calendar">Calendar</a></li>
+                    <li><a href="/en/participation/members">JCP Members</a></li>
+                    <li><a href="/en/participation/committee">Executive Committee</a></li>
+                    <li><a href="/en/whatsnew/elections">Elections</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/en/participation/overview" class="p7PMtrg">Get Involved</a>
+		<ul>
+                    <li><a href="/en/participation/overview">Overview</a></li>
+                    <li><a href="/en/participation/membership">Becoming a JCP Member</a></li>
+		</ul>
+            </li>
+
+            <li><a href="/en/resources/contents" class="p7PMtrg">Community Resources</a>
+                <ul>
+                    <li><a href="/en/resources/contents">Overview</a></li>
+                    <li><a href="/en/resources/tutorials">Tutorials</a></li>
+                    <li><a href="/en/resources/multimedia">JCP Podcasts</a></li>
+                    <li><a href="/en/resources/guide">Spec Lead Guide</a></li>
+                    <li><a href="/en/resources/tdk">TCK Tool & Info</a></li>
+                    <li><a href="/en/resources/license_reference">License Reference</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/en/press/pmo" class="p7PMtrg">Community News</a>
+                <ul>
+                    <li><a href="/en/press/pmo">News</a></li>
+                    <li><a href="/en/press/news/awards/awards_main">Programs &amp; Awards</a></li>
+                    <li><a href="/en/press/releases">Press Releases</a></li>
+                    <li><a href="/en/press/success">Success Stories</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/en/introduction/faq">FAQ</a></li>
+
+            <li><a href="/en/resources/contacts">Contact Us</a></li>
+
+            <div style="clear: both;"><img src="/images/spacer.gif" alt="" height="25" width="1"></div>
+
+            <!--[if lte IE 6]><style>#p7PMnav a{height:1em;}#p7PMnav li{height:1em;float:left;clear:both;width:100%}</style><![endif]-->
+            <!--[if IE 6]><style>#p7PMnav li{clear:none;}</style><![endif]-->
+            <!--[if IE 7]><style>#p7PMnav a{zoom:100%;}#p7PMnav li{float:left;clear:both;width:100%;}</style><![endif]-->
+        </ul>
+
+        
+
+        <!--begin ad space -->
+        <div class="ads">
+            <a href="http://java.com/java/download/index.jsp?cid=jdp78399" target="_blank"><img style="display: ;" src="/images/ad_banner2.gif" alt="Ad Banner" border="1" height="70" width="150"></a>
+        </div>
+        <!--end ad space -->
+
+<!-- ** Menu End ** //-->
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;<br>
+
+    
+
+                    &nbsp;<br>
+                    <img src="/images/common/trans.gif" alt="" width="1" height="150"><br>
+
+              
+
+
+
+                </td>
+                <!-- ** END: Navigation Column ** //-->
+
+                <!-- ** BEGIN: Gutter Column ** //-->
+		<td width="10" nowrap><img src="/images/common/trans.gif" alt="" width="10" height="1"></td>
+                <!-- ** END: Gutter Column ** //-->
+
+                <!-- ** BEGIN: Content Column ** //-->
+                <td width="100%" valign="top">
+
+    
+<script type="text/javascript">
+
+String.prototype.trim = function() {
+        return this.replace(/^\s+|\s+$/g,"");
+}
+String.prototype.ltrim = function() {
+        return this.replace(/^\s+/,"");
+}
+String.prototype.rtrim = function() {
+        return this.replace(/\s+$/,"");
+}
+
+function validate_search() {
+	if (document.search.id.value == "Search JSRs" || document.search.id.value.trim().length == 0) {
+		alert("Search terms must be entered first");
+		return false;
+	}
+	return true;
+}
+
+function validate_findjsr() {
+	if (document.findjsr.id.value == "Search JSRs" || document.findjsr.id.value.trim().length == 0) {
+		alert("Search terms must be entered first");
+		return false;
+	}
+	return true;
+}
+
+function nullify_if_equal(field, str) {
+	// alert("val=" + field.value);
+	if (field.value == str) {
+		field.value = "";
+	}
+}
+
+</script>
+<!-- ** END: header.jsp ** //-->
+
+
+
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=us-ascii" />
+  <title>JSR 337 Maintenance Release 2: Java SE 8</title>
+  <meta name="viewport" content="width=device-width, initial-scale=.6" />
+  <link rel="stylesheet" type="text/css"
+    href="http://openjdk.java.net/.fonts/dejavu.css" />
+
+  <style type="text/css">
+
+      HTML, BODY, DIV, SPAN, APPLET, OBJECT, IFRAME, H1, H2, H3, H4, H5, H6, P,
+      BLOCKQUOTE, PRE, A, ABBR, ACRONYM, ADDRESS, BIG, CITE, CODE, DEL, DFN, EM,
+      IMG, INS, KBD, Q, S, SAMP, SMALL, STRIKE, STRONG, SUB, SUP, TT, VAR, B, U,
+      I, CENTER, DL, DT, DD, OL, UL, LI, FIELDSET, FORM, LABEL, LEGEND, TABLE,
+      CAPTION, TBODY, TFOOT, THEAD, TR, TH, TD, ARTICLE, ASIDE, CANVAS, DETAILS,
+      EMBED, FIGURE, FIGCAPTION, FOOTER, HEADER, HGROUP, MENU, NAV, OUTPUT, RUBY,
+      SECTION, SUMMARY, TIME, MARK, AUDIO, VIDEO {
+        margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit;
+        vertical-align: baseline; }
+      ARTICLE, ASIDE, DETAILS, FIGCAPTION, FIGURE,
+      FOOTER, HEADER, HGROUP, MENU, NAV, SECTION { display: block; }
+      BLOCKQUOTE, Q { quotes: none; }
+      BLOCKQUOTE:before, BLOCKQUOTE:after, Q:before, Q:after {
+              content: ''; content: none; }
+      TABLE { border-collapse: collapse; border-spacing: 0; }
+
+      A { text-decoration: none; }
+      A:link { color: #437291; }
+      A:visited { color: #666666; }
+      A.anchor:link, A.anchor:visited { color: black; }
+      A[href]:hover { color: #e76f00; }
+      A IMG { border-width: 0px; }
+
+      HTML { font-size: 20px; } /* baseline grid */
+      HTML > BODY { font-size: 14px; }
+      BODY {
+        background: white;
+        margin: 40px;
+        margin-bottom: 150%;
+        width: 560px;
+        line-height: 20px;
+        -webkit-text-size-adjust: 100%; /* iOS */
+        color: #222;
+      }
+
+      /*BODY { background: url("grid.png") repeat 0 05px; }*/
+
+      BODY { font-family: "DejaVu Serif", "Lucida Bright", "Bookman Old Style",
+                          Georgia, serif; }
+      CODE, TT, .jref, DIV.spec .open, TABLE.profiles {
+        font-family: "DejaVu Sans", "Lucida Sans", Helvetica, sans-serif; }
+      PRE { font-family: "DejaVu Sans Mono", "Bitstream Vera Sans Mono",
+                          Monaco, "Courier New", monospace; }
+
+      @media only screen
+      and (min-device-width: 320px) and (max-device-width: 480px) {
+        BODY { width: 90%; }
+      }
+
+      H1, H2, H3, H4 { color: green; font-weight: bold; }
+
+      I { font-style: italic; }
+      TH { font-weight: bold; }
+
+      P { text-indent: 40px; }
+      P:first-child, UL + P, OL + P, BLOCKQUOTE + P, TABLE + P, P.subsection,
+        P.break, DIV.profiles-table + P { text-indent: 0; }
+      P.break { margin-top: 10px; }
+
+      P.subsection { margin-top: 20px; }
+      P.subsection SPAN.title { font-weight: bold; padding-right: 20px; }
+
+      UL, OL { margin: 10px 0; padding-left: 40px; }
+      LI { margin-bottom: 10px; }
+      UL.compact LI { margin-bottom: 0; }
+
+      PRE { padding: 0; margin: 10px 0 10px 20px; background: #eee; width: 45em; }
+      BLOCKQUOTE { margin: 10px 0; margin-left: 20px; }
+      LI BLOCKQUOTE { margin-left: 0; }
+      UL LI { list-style-type: square; }
+      .todo { color: darkred; text-align: right; }
+      .error { color: red; font-weight: bold; }
+
+      .warn { color: #ee0000; font-weight: bold; }
+      DIV.doctitle { margin-top: -13px;
+        font-size: 22px; line-height: 40px; font-weight: bold; }
+      DIV.twarn { color: #cc0000; font-weight: bold; margin-bottom: 9px; }
+      DIV.subtitle { margin-top: 2px; font-size: 18px; font-weight: bold; }
+      DIV.authors { margin-top: 10px; margin-bottom: 10px; font-size: 16px; }
+      DIV.author A { font-style: italic; }
+      DIV.version { margin-top: 10px; font-size: 12px; }
+      DIV.version, DIV.legal-notice { font-size: 12px; line-height: 15px; }
+      SPAN.hash { font-size: 9px; }
+      DIV.version SPAN.modified { color: green; font-weight: bold; }
+      DIV.head { margin-bottom: 20px; }
+
+      DIV.section > DIV.title, DIV.section DIV.number SPAN {
+        font-size: 15px; font-weight: bold;
+        ZZline-height: 40px; margin-top: 20px; margin-bottom: 10px; }
+
+      DIV.section DIV.number { float: left; width: 20px; }
+      DIV.section DIV.body { margin-left: 20px; }
+
+      DIV.toc { margin: 20px 0; padding-left: 40px; }
+      TABLE.toc { font-size: 13px; } /* Hack to ensure 20px rows */
+      TABLE.toc TD:first-child { font-weight: bold; padding-right: 10px; }
+      TABLE.toc TH { font-weight: bold; text-align: left; }
+      TABLE.toc TD.subcontent { padding-left: 40px; font-size: 11px; }
+
+      SPAN.new { color: #e76f00; font-size: smaller; }
+      SPAN.update { font-size: smaller; }
+
+  </style><style type="text/css">
+
+      A.code { font-family: &#8220;DejaVu Sans&#8221;, &#8220;Lucida Sans&#8221;, Helvetica, sans-serif; }
+
+      P { text-indent: 0; margin-top: 10px; }
+      H2 { font-size: 16px; font-weight: bold;
+           margin-top: 20px; margin-bottom: 10px; color: #222; }
+      H3 { color: #222; font-weight: bold; margin-top: 15px; }
+      H4 { color: #222; font-weight: bold; margin-top: 10px; }
+      B, STRONG { font-weight: bold; }
+      EM { font-style: italic; }
+      PRE { background: #fff; }
+      HR { margin-top: 20px; border: 0; height: 2px; background: #222; }
+
+      .v2  { width: 43em; border: solid #4a4; border-width: 0 .5em 0 0; }
+      .v2 > * { padding-right: 2em; }
+      .v3  { width: 43em; border: solid #46c; border-width: 0 .5em 0 0; }
+      .v3 > * { padding-right: 2em; }
+
+    </style></head><body>
+
+<div class="head">
+  <div class="doctitle">JSR 337 Maintenance Release 2: Java SE 8</div>
+  <div class="subtitle">Change Summary</div>
+  <div></div>
+  <div class="authors">
+  <div class="author">Iris Clark</div>
+  <div class="version">2019/1/31</div>
+  <div class="legal-notice">Copyright &#169; 2019 Oracle and/or its affiliates
+    &#183; All Rights Reserved
+     <!-- &#183; <a href="https://www.oracle.com/technetwork/java/javase/terms/license/java12speclicense.html">XXXLicense</a> -->
+  </div>
+</div></div>
+
+<p> This document describes additional changes to the specification of
+<a href="https://jcp.org/en/jsr/detail?id=337">JSR&#160;337</a> which is
+defined by the
+<a href="https://jcp.org/aboutJava/communityprocess/final/jsr337/index.html"
+>Final Release</a> in March 2014 and
+<a href="https://jcp.org/aboutJava/communityprocess/mrel/jsr337/index.html"
+>Maintenance Release 1</a> in March 2015. When specification text is provided,
+insertions are shown on a
+<span style="background-color:  #ccffcc">light green background</span> and
+deletions are shown
+<span style="text-decoration: line-through; background-color: #fdc6c6"> struck
+through on a light red background</span>. </p>
+
+
+<!--
+<div class="v2" style="width:622px;">
+<p> Changes to this document since the first draft are indicated by
+green changebars in the right margin, as illustrated by this text. </p>
+</div>
+-->
+
+<p>Send comments to
+<a href="https://mail.openjdk.java.net/mailman/listinfo/java-se-mr-spec-comments">
+java-se-mr-spec-comments@openjdk.java.net</a>. </p>
+
+<div class="toc"><table class="toc" summary="Contents">
+<tr><th colspan="2">Contents</th></tr>
+<tr><td>1</td><td><a href="#s1">Version Identification</a></td></tr>
+<tr><td>2</td><td><a href="#s2">Japanese Eras</a></td></tr>
+<tr><td>3</td><td><a href="#s3">Unicode Characters</a></td></tr>
+<tr><td>4</td><td><a href="#s4">Cryptographic Algorithm Names</a></td></tr>
+</table></div>
+
+<div class="section">
+  <div class="number"><span>1</span></div>
+  <div class="title"><span>Version Identification</span>
+    <a name="s1" id="s1">&#160;</a></div>
+
+<div class="body">
+
+<p> There is no change to the values returned by the system
+properties <code>java.specification.version</code> and
+<code>java.vm.specification.version</code>.  They continue to
+report <code>"1.8"</code>. If an application needs to identify the release,
+the system property <code>java.version</code> may be used. </p>
+
+</div></div>
+
+<div class="section">
+  <div class="number"><span>2</span></div>
+  <div class="title"><span>Japanese Eras</span>
+    <a name="s2" id="s2">&#160;</a></div>
+
+<div class="body">
+
+<p> Eras in the Japanese imperial calendar are tied to the reign of the
+emperor.  On 1 May 2019, a new era will be introduced with the ascension of
+the new emperor.  The specification of
+<code><a href="https://docs.oracle.com/javase/8/docs/api/java/time/chrono/JapaneseEra.html"
+>java.time.chrono.JapaneseEra</a></code> was modified so that the singleton
+instances of <code>JapaneseEra</code> returned by <code>values()</code>
+(representing all the eras supported by the Java SE Platform) do not
+necessarily correspond to the static fields declared
+in <code>JapaneseEra</code> for convenience. </p>
+
+<ul>
+
+  <li> <p> Enhance the
+    <a href="https://docs.oracle.com/javase/8/docs/api/java/time/chrono/JapaneseEra.html"
+    ><code>JapaneseEra</code></a> class description:</p>
+
+    <p style="margin-left:20px;"> An era in the Japanese Imperial calendar
+    system. </p>
+
+    <p style="margin-left:20px; text-decoration:line-through;
+    background-color:#fdc6c6">
+    This class defines the valid eras for the Japanese chronology.  Japan
+    introduced the Gregorian calendar starting with Meiji 6.  Only Meiji and
+    later eras are supported; dates before Meiji 6, January 1 are not
+    supported.  </p>
+
+    <p style="margin-left:20px; background-color: #ccffcc"> The Japanese
+    government defines the official name and start date of each era. Eras are
+    consecutive and their date ranges do not overlap, so the end date of one
+    era is always the day before the start date of the next era. </p>
+
+    <p style="margin-left:20px; background-color: #ccffcc"> The Java SE
+    Platform supports all eras defined by the Japanese government, beginning
+    with the Meiji era. Each era is identified in the Platform by an integer
+    value and a name. The
+    <a href="https://docs.oracle.com/javase/8/docs/api/java/time/chrono/JapaneseEra.html#of-int-"
+    ><code>of(int)</code></a> and
+    <a href="https://docs.oracle.com/javase/8/docs/api/java/time/chrono/JapaneseEra.html#valueOf-java.lang.String-"
+    ><code>valueOf(String)</code></a> methods may be used to obtain a
+    singleton instance of JapaneseEra for each era. The
+    <a href="https://docs.oracle.com/javase/8/docs/api/java/time/chrono/JapaneseEra.html#values--"
+    ><code>values()</code></a> method returns the singleton instances of all
+    supported eras. </p>
+
+    <p style="margin-left:20px; background-color: #ccffcc"> For convenience,
+    this class declares a number of public static final fields that refer to
+    singleton instances returned by the values() method. </p>
+
+    <p style="margin-left:20px; background-color: #ccffcc">
+    <strong>API Note:</strong/> </p>
+    <p style="margin-left:20px; background-color: #ccffcc">
+    The fields declared in this class may evolve over time, in line
+    with the results of the
+    <a href="https://docs.oracle.com/javase/8/docs/api/java/time/chrono/JapaneseEra.html#values--"
+    ><code>values()</code></a> method. However, there is not necessarily
+    a 1:1 correspondence between the fields and the singleton instances. </p>
+
+    <p style="margin-left:20px; background-color: #ccffcc">
+    <strong>API Note:</strong/> </p>
+    <p style="margin-left:20px; background-color: #ccffcc">
+    The Japanese government may announce a new era and define its start date
+    but not its official name. In this scenario, the singleton instance that
+    represents the new era may return a name that is not stable until the
+    official name is defined. Developers should exercise caution when relying
+    on the name returned by any singleton instance that does not correspond to
+    a public static final field. </p>
+
+    <p style="margin-left:20px;"> <strong>Implementation
+    Requirements:</strong/> </p>
+    <p style="margin-left:20px;"> This class is immutable and thread-safe. </p>
+
+  </li>
+
+  <li> Modify the
+    <a href="https://docs.oracle.com/javase/8/docs/api/java/time/chrono/JapaneseEra.html#of-int-"
+    ><code>of(int)</code></a> method description:
+
+    <p style="margin-left:20px;">
+    Obtains an instance of <code>JapaneseEra</code> from an <code>int</code>
+    value. </p>
+
+    <p style="margin-left:20px; text-decoration:line-through;
+    background-color:#fdc6c6">
+    The <a href="https://docs.oracle.com/javase/8/docs/api/java/time/chrono/JapaneseEra.html#SHOWA"
+    ><code>SHOWA</code></a> era that contains 1970-01-01 (ISO calendar system)
+    has the  value 1.  Later era is numbered 2
+    (<a href="https://docs.oracle.com/javase/8/docs/api/java/time/chrono/JapaneseEra.html#HEISEI"
+    ><code>HEISEI</code></a>). Earlier eras
+    are numbered 0
+    (<a href="https://docs.oracle.com/javase/8/docs/api/java/time/chrono/JapaneseEra.html#TAISHO"
+    ><code>TAISHO</code></a>), -1
+    (<a href="https://docs.oracle.com/javase/8/docs/api/java/time/chrono/JapaneseEra.html#MEIJI"
+    ><code>MEIJI</code></a>), only Meiji and later eras are supported. </p>
+
+    <ul style="margin-left:20px; background-color: #ccffcc">
+      <li style="background-color: #ccffcc; margin-bottom:0;">
+        The value <code>1</code> is associated with
+        the <code>'Showa'</code> era, because it
+        contains <code>1970-01-01</code> (ISO Calendar System). </li>
+
+      <li style="background-color: #ccffcc; margin-bottom:0;">
+        The values <code>-1</code> and <code>0</code> are associated with
+        two earlier eras, Meiji and Taisho, respectively. </li>
+
+      <li style="background-color: #ccffcc; margin-bottom:0;">
+        A value greater than <code>1</code> is associated with a later era,
+	beginning with Heisei (<code>2</code>). </li>
+    </ul>
+
+    <p style="margin-left:20px; background-color: #ccffcc">
+    Every instance of <code>JapaneseEra</code> that is returned from the
+    <a href="https://docs.oracle.com/javase/8/docs/api/java/time/chrono/JapaneseEra.html#values--"
+    ><code>values()</code></a> method has an int value (available via
+    <a href="https://docs.oracle.com/javase/8/docs/api/java/time/chrono/Era.html#getValue--"
+    ><code>Era.getValue()</code></a> which is accepted by this method. </p>
+
+  </li>
+
+  <li> <p> Modify the definition of the
+    <a href="https://docs.oracle.com/javase/8/docs/api/java/time/chrono/JapaneseEra.html#HEISEI"
+    ><code>HEISEI</code></a> field descriptor:</p>
+    <p style="margin-left: 20px"> The singleton instance for the
+    'Heisei' era (1989-01-08 -
+    <span style="text-decoration:line-through; background-color:#fdc6c6"
+    >current</span>
+    <span style="background-color:#ccffcc">2019-04-30</span>) which has the
+    value <code>2</code>.  </p>
+  </li>
+
+</ul>
+
+<p> The enhancements associated with this change are
+<a href="https://bugs.openjdk.java.net/browse/JDK-8215926">8215926</a>.
+</p>
+
+</div></div>
+
+<div class="section">
+  <div class="number"><span>3</span></div>
+  <div class="title"><span>Unicode Characters</span>
+    <a name="s3" id="s3">&#160;</a></div>
+
+<div class="body">
+
+<p> In the Java SE Platform, support for the Unicode Standard is vested
+mainly in the
+<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Character.html"
+><code>java.lang.Character</code></a>
+class. The specification of <code>Character</code> was modified to permit use
+of the "Currency Symbols" block (<code>U+20A0 - U+20CF</code>) from Unicode
+10.0. The block had evolved materially since Unicode 6.2 (the version
+supported by the Final Release and Maintenance Release 1 of Java SE 8), to
+include currencies such as the Russian Ruble and Bitcoin. </p>
+
+<p> In addition, the specification of <code>Character</code> was modified to
+permit use of the new Japanese Era code point, <code>U+32FF</code>, from the
+first version of the Unicode Standard after 6.2 that assigns the code point.
+An exception was made for the methods of <code>Character</code> that
+<a href="https://docs.oracle.com/javase/specs/jls/se8/html/jls-3.html#jls-3.8-120">determine valid identifiers in the Java programming language</a>;
+those methods were required to support Unicode 6.2 exactly, to maintain source
+compatibility of identifiers in Java programs. </p>
+
+<ul>
+<li> <p> Modify the initial section of the
+  <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Character.html"
+  ><code>Character</code></a> class description: </p>
+
+  <p style="margin-left:20px"> The <code>Character</code> class wraps a value
+  of the primitive type <code>char</code> in an object. An object of
+  <span style="text-decoration:line-through; background-color:#fdc6c6"
+  >type</span>
+  <span style="background-color:#ccffcc">class</span> </strong>
+  <code>Character</code> contains a single field whose type is
+  <code>char</code>. </p>
+
+  <p style="margin-left:20px"> In addition, this class provides
+  <span style="text-decoration:line-through; background-color:#fdc6c6"
+  >several</span>
+  <span style="background-color:#ccffcc">a large number of
+  static </span>
+  methods for determining a character's category (lowercase letter, digit,
+  etc.) and for converting characters from uppercase to lowercase and vice
+  versa.
+  <span style="text-decoration:line-through; background-color:#fdc6c6"
+  >Character information is based on the </span></p>
+
+  <p style="margin-left:20px"><strong> Unicode
+  <span style="text-decoration:line-through; background-color:#fdc6c6"
+  >Standard, version 6.2.</span>
+  <span style="background-color:#ccffcc">Conformance</span> </strong></p>
+
+  <p style="margin-left:20px"> The
+  <span style="background-color:#ccffcc">fields and</span>
+  methods
+  <span style="text-decoration:line-through; background-color:#fdc6c6"
+  >and data</span>
+  of class <code>Character</code> are defined
+  <span style="text-decoration:line-through; background-color:#fdc6c6"
+  >by</span>
+  <span style="background-color:#ccffcc">in terms of character information
+  from </span>
+  the
+  <span style="text-decoration:line-through; background-color:#fdc6c6"
+  >information in</span>
+  <span style="background-color:#ccffcc">Unicode Standard, specifically</span>
+  the <em>UnicodeData</em> file that is part of the Unicode Character Database
+  <span style="text-decoration:line-through; background-color:#fdc6c6"
+  >maintained by the Unicode Consortium</span>.
+  This file specifies
+  <span style="text-decoration:line-through; background-color:#fdc6c6"
+  >various</span>
+  properties including name and
+  <span style="text-decoration:line-through; background-color:#fdc6c6"
+  >general</span>
+  category for every
+  <span style="text-decoration:line-through; background-color:#fdc6c6"
+  >defined</span>
+  <span style="background-color:#ccffcc">assigned</span>
+  Unicode code point or character range. The file
+  <span style="text-decoration:line-through; background-color:#fdc6c6"
+  >and its description are</span>
+  <span style="background-color:#ccffcc">is</span>
+  available from the Unicode Consortium
+  at <a href="http://www.unicode.org">http://www.unicode.org</a>. </p>
+
+  <p style="margin-left:20px; background-color:#ccffcc"> The Java SE 8
+  Platform uses character information from version 6.2 of the Unicode
+  Standard, with two extensions. First, the Java SE 8 Platform allows an
+  implementation of class <code>Character</code> to use the Japanese Era
+  code point, <code>U+32FF</code>, from the first version of the Unicode
+  Standard after 6.2 that assigns the code point. Second, in recognition of
+  the fact that new currencies appear frequently, the Java SE 8 Platform
+  allows an implementation of class <code>Character</code> to use the Currency
+  Symbols block from version 10.0 of the Unicode Standard.  Consequently, the
+  behavior of fields and methods of class <code> Character</code> may vary
+  across implementations of the Java SE 8 Platform when processing the
+  aforementioned code points (outside of version 6.2), except for the
+  following methods that define Java identifiers:
+  <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Character.html#isJavaIdentifierStart-int-"
+  ><code>isJavaIdentifierStart(int)</code></a>,
+  <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Character.html#isJavaIdentifierStart-char-"
+  ><code>isJavaIdentifierStart(char)</code></a>,
+  <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Character.html#isJavaIdentifierPart-int-"
+  ><code>isJavaIdentifierPart(int)</code></a>, and
+  <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Character.html#isJavaIdentifierPart-char-"
+  ><code>isJavaIdentifierPart(char)</code></a>.
+  Code points in Java identifiers must be drawn from version 6.2 of the
+  Unicode Standard. </p>
+
+</li>
+
+<li> Add the following sentence to the
+  <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Character.html#isJavaIdentifierPart-char-"
+  ><code>isJavaIdentifierPart(char)</code></a>,
+  <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Character.html#isJavaIdentifierPart-int-"
+  ><code>isJavaIdentifierPart(int)</code></a>,
+  <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Character.html#isJavaIdentifierStart-char-"
+  ><code>isJavaIdentifierStart(char)</code></a>,
+  <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Character.html#isJavaIdentifierStart-int-"
+  ><code>isJavaIdentifierStart(int)</code></a>,
+  <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Character.html#isJavaLetter-char-"
+  ><code>isJavaLetter(char)</code></a>, and
+  <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Character.html#isJavaLetterOrDigit-char-"
+  ><code>isJavaLetterOrDigit(char)</code></a>
+  method descriptions: </p>
+
+  <p style="margin-left:20px; background-color:#ccffcc"> These conditions
+  are tested against the character information from version 6.2 of the
+  Unicode Standard. </p>
+
+</li>
+</ul>
+
+<p> Additionally, minor corrections were made to the following method
+descriptions: </p>
+
+<ul>
+  <li> <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.html#isJavaLetter(char)"
+    ><code>isJavaLetter(char)</code></a>:
+
+    <p style="margin-left:20px;">
+    A character may start a Java identifier if and only if one of the
+    following
+    <span style="background-color:#ccffcc">conditions</span> is true: </p>
+
+  </li>
+
+  <li> <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.html#isJavaLetterOrDigit(char)"
+    ><code>isJavaLetterOrDigit(char)</code></a>:
+
+    <p style="margin-left:20px;">
+    A character may be part of a Java identifier if and only if any the
+    following
+    <span style="background-color:#ccffcc"> conditions</span> is true: </p>
+
+  </li>
+
+  <li> <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.html#isJavaIdentifierPart(char)"
+    ><code>isJavaIdentifierPart(char)</code></a>:
+
+    <p style="margin-left:20px;">
+    A character may be part of a Java identifier if any of the following
+    <span style="background-color:#ccffcc"> conditions</span> are true: </p>
+
+  </li>
+
+  <li> <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.html#isJavaIdentifierPart(int)"
+    ><code>isJavaIdentifierPart(int)</code></a>:
+
+    <p style="margin-left:20px;">A character may be part of a Java identifier
+    if any of the following
+    <span style="background-color:#ccffcc">conditions</span> are true: </p>
+
+    <ul>
+      <li style="margin-bottom:0;"> ... </li>
+
+      <li style="margin-bottom:0;">
+	<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.html#isIdentifierIgnorable(int)"
+        ><code>isIdentifierIgnorable(codePoint)</code></a>
+        returns <code>true</code> for the
+        <span style="text-decoration:line-through; background-color:#fdc6c6"
+        >character</span>
+        <span style="background-color:#ccffcc">code point</span> </li>
+    </ul>
+
+  </li>
+
+</ul>
+
+<p> The enhancement associated with this change is
+<a href="https://bugs.openjdk.java.net/browse/JDK-8216396">8216396</a>.
+</p>
+
+</div></div>
+
+<div class="section">
+  <div class="number"><span>4</span></div>
+  <div class="title"><span>Cryptographic Algorithm Names</span>
+    <a name="s4" id="s4">&#160;</a></div>
+
+<div class="body">
+
+<p> As industry-wide cryptographic standards evolve, the set of algorithms and
+protocols supported by the security APIs needs to change.  The
+<a href="https://docs.oracle.com/javase/8/docs/technotes/guides/security/StandardNames.html"
+>Java Security Standard Algorithm Names</a> specification defines the set of
+
+String names referencing these standards (e.g. <code>"SHA-256"</code>, <code>"TLSv1.3"</code>).  The
+specification was modified to explicitly allow the addition of names for
+algorithms/protocols defined in later releases.  The following text describes
+revisions to the beginning of the
+<a href="https://docs.oracle.com/javase/8/docs/technotes/guides/security/StandardNames.html#provider">
+"Standard Names"</a> section. </p>
+
+<p style="margin-left:20px;"> The
+<span style="text-decoration:line-through; background-color:#fdc6c6"
+>JDK</span>
+<span style="background-color:#ccffcc">Java SE</span>
+Security API requires and uses a set of standard names for algorithms,
+certificate and keystore types. This specification establishes the following
+names as standard names. </p>
+
+<p style="margin-left:20px; background-color:#ccffcc"> Note that an SE
+implementation may support additional algorithms that are not defined in this
+specification.  As a best practice, if an algorithm is defined in a subsequent
+version of this specification and an implementation of an earlier
+specification supports that algorithm, the implementation should use the
+standard name of the algorithm that is defined in the subsequent
+specification.  Each SE implementation should also document the algorithms
+that it supports or adds support for in subsequent update releases.  The
+algorithms may be documented in release notes or in a separate document such
+as the
+<a href="https://docs.oracle.com/javase/8/docs/technotes/guides/security/SunProviders.html"
+>JDK Security Providers</a> document. </span></p>
+
+<p style="margin-left:20px;"> In some cases naming conventions are given for
+forming names that are not explicitly listed, to facilitate name consistency
+across provider implementations. Items in angle brackets (such
+as <code>&lt;digest&gt;</code> and <code>&lt;encryption&gt;</code>) are
+placeholders to be replaced by a specific message digest, encryption
+algorithm, or other name. </p>
+
+<p style="margin-left:20px;"> <b>Note:</b> Standard names are not
+case-sensitive. </p>
+
+<p> The enhancements associated with this change are
+<a href="https://bugs.openjdk.java.net/browse/JDK-8215320">8215320</a> and
+<a href="https://bugs.openjdk.java.net/browse/JDK-8216071">8216071</a>. </p>
+
+
+</div></div>
+
+</body></html>
+
+
+
+<!-- ** BEGIN: footer.jsp ** //-->
+
+
+
+
+
+
+
+
+</td>
+</tr>
+</table>
+
+<!-- ** END: Content Table ** //-->
+
+<!-- ** BEGIN: Footer Table ** //-->
+
+<div id="footer" style="clear: both;">
+    <div class="footleft">
+        <a href="/en/resources/contacts">Contact Us</a>
+    </div>
+	
+    <div class="botbar"><img src="/images/spacer.gif" alt="" height="23" width="1"></div>
+
+    <div class="footleft2">
+         &copy; 2019, Oracle Corporation and/or its affiliates. 
+        <a href="/en/home/terms">Terms of Use</a>. <a href="http://www.oracle.com/us/legal/privacy/index.html">Privacy Policy</a>. <a href="http://www.oracle.com/us/legal/third-party-trademarks/third-party-trademarks-078568.html">Trademarks</a>
+    </div>
+
+    <div class="footright">
+        <img src="/images/common/logo_oracle_footer.gif" alt="Oracle Corporation" height="22" width="91">
+    </div>
+
+    <div style="clear: both;"><img src="/images/spacer.gif" alt="" height="30" width="1"></div>
+</div>
+
+<!-- ** END: Footer Table ** //-->
+
+
+
+<!-- ** Menu Start ** //-->
+
+
+
+</body>
+</html>
+<!-- ** END: footer.jsp ** //-->
+

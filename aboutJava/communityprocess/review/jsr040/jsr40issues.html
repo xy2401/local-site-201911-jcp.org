@@ -1,0 +1,745 @@
+
+<!-- ** BEGIN: header.jsp ** //-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3c.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+<head>
+    
+
+   
+    <link href="/includes/css/menu.css" rel="stylesheet" type="text/css"></link>
+    <link href="/includes/css/style.css" rel="stylesheet" type="text/css"></link>
+    <!--[if lt IE 6]><link href="/includes/css/style5.css" rel="stylesheet" type="text/css" ></link><![endif]-->
+    <!--[if gte IE 5]><link href="/includes/css/style6.css" rel="stylesheet" type="text/css" ></link><![endif]-->
+    <link href="/includes/css/tabs.css"  rel="stylesheet" type="text/css"></link>
+
+    <script type="text/javascript" src="/includes/scripts/tabs.js"></script>
+    <script type="text/javascript" src="/includes/scripts/menu.js"></script>
+   
+
+    
+
+    
+        <title>The Java Community Process(SM) Program - communityprocess - review</title>
+    
+
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+
+
+<body onload="P7_initPM(0,1,0,0,-1)">
+
+    <a name="top"></a>
+
+    <div id="header">
+	<div id="logo">
+		<a href="/en/home/index"><img src="/images/spacer.gif" alt="Java Community Process" height="81" width="151"></a>
+	</div>
+	<div id="tools">
+		<div class="search">
+			<form name="search" action="/en/jsr/summary" method="get" onsubmit="return validate_search()">
+				<input name="id" value="Search JSRs" size="16" class="form" onfocus="nullify_if_equal(this, 'Search JSRs')" type="text">
+				<a href="javascript:document.search.submit()" onclick="return validate_search()"><img src="/images/button_go.gif" width="21" height="16" border="0" alt="Submit this Search" name="sub_search"></a>
+			</form>
+		</div>
+		<div class="tools">
+			<a href="/en/press/pressroom">Press Room</a> &nbsp;|&nbsp;
+			<a href="http://java.com/java/download/index.jsp?cid=jdp78399">Get Java Here</a> &nbsp;|&nbsp;
+			<!-- <a href="javascript:void(0)">Print Format</a> &nbsp;|&nbsp;&nbsp; -->
+		</div>
+
+	</div>
+	<div style="clear: right;"></div>
+
+        
+
+	<div class="topbar"><img src="/images/spacer.gif" alt="" height="3" width="154"></div>
+	<div id="update"> </div>
+    </div>
+
+
+    
+
+        <!-- ** BEGIN: Content Table ** //-->
+
+        <table width="100%" border="0" cellpadding="0" cellspacing="0">
+
+            <tr>
+
+                <!-- ** BEGIN: Navigation Column ** //-->
+                <td width="150" id="leftcontent" valign="top">
+                    <!-- Navigation Placeholder //-->
+
+                    
+
+                    <div class="bar"><img src="/images/hr_dots1.gif" alt="" height="3" width="150"></div>
+
+        <!-- begin find JSRs form -->
+        <!-- IMPORTANT! do not convert this form to Struts < html : form > tag.  javascript change of form.action property fails. -->
+        <img src="/images/hd_find-jsrs.gif" alt="Find JSRs" height="18" width="150">
+        <form name="findjsr" action="/en/jsr/summary" method="get" class="pt5" onsubmit="return validate_findjsr()">
+            <input name="id" size="18" class="form" value="Search JSRs" onfocus="nullify_if_equal(this, 'Search JSRs')" type="text">
+	    <a href="javascript:document.findjsr.submit()" onclick="return validate_findjsr()"><img src="/images/button_go.gif" width="21" height="16" border="0" alt="Submit this Search" name="sub_search"></a>
+        </form><br><br>
+
+        <!-- ** Menu Start ** //-->
+
+        <ul id="p7PMnav">
+            <li><a href="/en/jsr/platform">JSRs by Platform</a></li>
+            <li><a href="/en/jsr/tech">JSRs by Technology</a></li>
+            <li><a href="/en/jsr/stage">JSRs by Stage</a></li>
+            <li><a href="/en/jsr/ec">JSRs by Committee</a></li>
+            <li><a href="/en/jsr/all">List of All JSRs</a></li>
+
+            <!--end find JSRs form -->
+            <div style="clear: both;"><img src="/images/spacer.gif" alt="" height="25" width="1"></div>
+
+            <!--begin my JCP -->
+            <img src="/images/hd_my-jcp.gif" alt="My JCP" height="18" width="150">
+            
+
+          <form name="login" method="get" action="/en/user/login" >
+            <input name="Sign-in" type="submit" title="Sign-in" value="Sign-in" />
+          </form>
+
+            <div style="clear:both"><img src="/images/global/spacer.gif" width="1" height="3" alt=""></div>
+            <div class="noNav">
+                <a href="/en/user/register">Register for Site</a>
+            </div>
+
+             <div class="bar"><img src="/images/hr_dots1.gif" alt="" height="3" width="150"></div>
+           <div class="noNav" style="color: #666666; padding: 0;">
+              Use of JCP site is subject to the
+              <a href="/en/home/terms" style="display:inline;padding: 0">JCP Terms of Use</a> and the
+              <a href="http://www.oracle.com/us/legal/privacy/index.html" style="display:inline;padding: 0" href="">Oracle Privacy Policy</a>
+          </div>
+
+            
+
+            <div style="clear:both"><img src="/images/global/spacer.gif" width="1" height="25" alt=""></div>
+
+            <!--begin JCP info -->
+            <img src="/images/hd_jcp-info.gif" alt="JCP Info" height="18" width="150">
+
+            <li><a href="/en/procedures/overview" class="p7PMtrg">About JCP</a>
+                <ul>
+                    <li><a href="/en/procedures/overview">Program Overview</a></li>
+                    <li><a href="/en/procedures/jcp2">JCP Process Document</a></li>
+                    <li><a href="/en/whatsnew/calendar">Calendar</a></li>
+                    <li><a href="/en/participation/members">JCP Members</a></li>
+                    <li><a href="/en/participation/committee">Executive Committee</a></li>
+                    <li><a href="/en/whatsnew/elections">Elections</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/en/participation/overview" class="p7PMtrg">Get Involved</a>
+		<ul>
+                    <li><a href="/en/participation/overview">Overview</a></li>
+                    <li><a href="/en/participation/membership">Becoming a JCP Member</a></li>
+		</ul>
+            </li>
+
+            <li><a href="/en/resources/contents" class="p7PMtrg">Community Resources</a>
+                <ul>
+                    <li><a href="/en/resources/contents">Overview</a></li>
+                    <li><a href="/en/resources/tutorials">Tutorials</a></li>
+                    <li><a href="/en/resources/multimedia">JCP Podcasts</a></li>
+                    <li><a href="/en/resources/guide">Spec Lead Guide</a></li>
+                    <li><a href="/en/resources/tdk">TCK Tool & Info</a></li>
+                    <li><a href="/en/resources/license_reference">License Reference</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/en/press/pmo" class="p7PMtrg">Community News</a>
+                <ul>
+                    <li><a href="/en/press/pmo">News</a></li>
+                    <li><a href="/en/press/news/awards/awards_main">Programs &amp; Awards</a></li>
+                    <li><a href="/en/press/releases">Press Releases</a></li>
+                    <li><a href="/en/press/success">Success Stories</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/en/introduction/faq">FAQ</a></li>
+
+            <li><a href="/en/resources/contacts">Contact Us</a></li>
+
+            <div style="clear: both;"><img src="/images/spacer.gif" alt="" height="25" width="1"></div>
+
+            <!--[if lte IE 6]><style>#p7PMnav a{height:1em;}#p7PMnav li{height:1em;float:left;clear:both;width:100%}</style><![endif]-->
+            <!--[if IE 6]><style>#p7PMnav li{clear:none;}</style><![endif]-->
+            <!--[if IE 7]><style>#p7PMnav a{zoom:100%;}#p7PMnav li{float:left;clear:both;width:100%;}</style><![endif]-->
+        </ul>
+
+        
+
+        <!--begin ad space -->
+        <div class="ads">
+            <a href="http://java.com/java/download/index.jsp?cid=jdp78399" target="_blank"><img style="display: ;" src="/images/ad_banner2.gif" alt="Ad Banner" border="1" height="70" width="150"></a>
+        </div>
+        <!--end ad space -->
+
+<!-- ** Menu End ** //-->
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;<br>
+
+    
+
+                    &nbsp;<br>
+                    <img src="/images/common/trans.gif" alt="" width="1" height="150"><br>
+
+              
+
+
+
+                </td>
+                <!-- ** END: Navigation Column ** //-->
+
+                <!-- ** BEGIN: Gutter Column ** //-->
+		<td width="10" nowrap><img src="/images/common/trans.gif" alt="" width="10" height="1"></td>
+                <!-- ** END: Gutter Column ** //-->
+
+                <!-- ** BEGIN: Content Column ** //-->
+                <td width="100%" valign="top">
+
+    
+<script type="text/javascript">
+
+String.prototype.trim = function() {
+        return this.replace(/^\s+|\s+$/g,"");
+}
+String.prototype.ltrim = function() {
+        return this.replace(/^\s+/,"");
+}
+String.prototype.rtrim = function() {
+        return this.replace(/\s+$/,"");
+}
+
+function validate_search() {
+	if (document.search.id.value == "Search JSRs" || document.search.id.value.trim().length == 0) {
+		alert("Search terms must be entered first");
+		return false;
+	}
+	return true;
+}
+
+function validate_findjsr() {
+	if (document.findjsr.id.value == "Search JSRs" || document.findjsr.id.value.trim().length == 0) {
+		alert("Search terms must be entered first");
+		return false;
+	}
+	return true;
+}
+
+function nullify_if_equal(field, str) {
+	// alert("val=" + field.value);
+	if (field.value == str) {
+		field.value = "";
+	}
+}
+
+</script>
+<!-- ** END: header.jsp ** //-->
+
+
+
+
+
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<html>
+
+<head>
+<title>JSR 40 Issues</title>
+</head>
+
+<body link=blue vlink=purple>
+
+<table border=1 cellpadding=3 cellspacing=1 width="100%">
+<tr bgcolor="#cccccc">
+  <td valign="top" align="center"><font size="+1"><b><font color="#333399">Status</font></b></font></td>
+  <td valign="top" align="center"><font size="+1"><b><font color="#333399">Issue ID</font></b></font></td>
+  <td width="37%" align="center"><font size="+1"><b><font color="#333399">Description</font></b></font></td>
+  <td valign="top" align="center"><font size="+1"><b><font color="#333399">Date</font></b></font></td>
+  <td valign="top" align="center"><font size="+1"><b><font color="#333399">Reported by</font></b></font></td>
+  <td valign="top" align="center"><font size="+1"><b><font color="#333399">Notes</font></b></font></td>
+  <td width="27%" align="center"><font size="+1"><b><font color="#333399">Resolution</font></b></font></td>
+ </tr>
+ <tr>
+  <td valign="top">mof</td>
+  <td valign="top">I0013</td>
+  <td valign="top">The
+  'CollectionType' Class is underspecified. �
+    If it is to subsume arrays and collections, then you need more
+  attributes. At least you need to be able to distinguish between a fixed sized
+  array and a variable sized (maybe bounded) sequence.</td>
+  <td valign="top">3/12/01</td>
+  <td valign="top">S. Crawley</td>
+  <td valign="top">&nbsp;</td>
+  <td valign="top">This is an
+  issue with the MOF, and as such, has been forwarded to the MOF RTF (Revision
+  Task Force).</td>
+ </tr>
+ <tr>
+ <td valign="top">mof</td>
+  <td valign="top">I0014</td>
+  <td valign="top">The
+  'StructType' Class is underspecified. �
+    If it can have &quot;members&quot;, you need to specify the
+  restrictions on them.</td>
+  <td valign="top">3/12/01</td>
+  <td valign="top">S. Crawley</td>
+  <td valign="top">&nbsp;</td>
+  <td valign="top">This
+  is an issue with the MOF, and as such, has been forwarded to the MOF RTF
+  (Revision Task Force).</td>
+ </tr>
+ <tr>
+  <td valign="top">mof</td>
+  <td valign="top">I0015</td>
+  <td valign="top">The
+  'PrimitiveType' Class should not support 'java.lang.Object'. This is the same
+  mistake we made ... and later regretted ... when we allowed CORBA Object
+  types (and Any and TypeCode) to be part of the OMG MOF's data type system.
+  Leave it out for now, and put it back in when MOF 2.0 can separate
+  technology-neutral and technology-specific types. - In particular, the use of
+  'Object' in 'Tag' etc is going to be problematical for interoperability.</td>
+  <td valign="top">3/12/01</td>
+  <td valign="top">S. Crawley</td>
+  <td valign="top">&nbsp;</td>
+  <td valign="top">This
+  is an issue with the MOF, and as such, has been forwarded to the MOF RTF
+  (Revision Task Force).</td>
+ </tr>
+ <tr>
+  <td valign="top">resolved</td>
+  <td valign="top">I0016</td>
+  <td valign="top">I
+  do not think it is appropriate for Chapter 3 to be so skinny ... even in a
+  draft for review. �   All the important
+  stuff is hidden in the XMI addendum. �
+    It is unreasonable to expect people to read that!!</td>
+  <td valign="top">3/12/01</td>
+  <td valign="top">S. Crawley</td>
+  <td valign="top">&nbsp;</td>
+  <td valign="top">(7/13/2001)
+  Chapter 3 is to be expanded sufficiently for JMI to be a self contained
+  document, i.e., the reader should not be *required* to read the MOF
+  specification to make sense of JMI. In addition, since JMI is to be based on
+  MOF 1.4 which includes a technology independent type system, Chapter 3 needs
+  to provide an �   introduction to the MOF
+  data types instead of the JMI type system.</td>
+ </tr>
+ <tr>
+  <td valign="top">mof</td>
+  <td valign="top">I0017</td>
+  <td valign="top">It
+  is not clear how the Java Language APIs for the JMI MOF were produced.    
+      �   In particular, I don't see how you told
+  the Model -&gt; Java mapping to suppress the 'typecode' attribute of DataType
+  from the javax.jmi.model.DataType interface ... and friends.    
+      �   [And frankly, I don't think they should be
+  completely suppressed.]</td>
+  <td valign="top">3/12/01</td>
+  <td valign="top">S. Crawley</td>
+  <td valign="top">&nbsp;</td>
+  <td valign="top">This
+  is an issue with the MOF, and as such, has been forwarded to the MOF RTF
+  (Revision Task Force).</td>
+ </tr>
+ <tr>
+  <td valign="top">mof</td>
+  <td valign="top">I0018</td>
+  <td valign="top">The
+  JMI spec says that the typeCode field on DataTypes is ignored. If you stick
+  with this, JMI won't be able to understand DataTypes in XMI from an OMG
+  MOF. �   The same works in reverse.    
+      �   In JMI, DataType effectively becomes
+  'abstract', because all instances will be instances of one of the new
+  Classes; AliasType, PrimitiveType, etc. �
+    But unless these instances have viable TypeCodes, an OMG MOF won't be
+  able to understand XMI from a JMI MOF. I don't know the best solution to
+  this. �   Maybe, the 'typecode' attribute
+  should be informally defined as derived from information in sub-Classes of
+  DataType. The attempt to remove the CORBA dependencies of DataType is
+  problematical. �   While this work needs
+  to be done, in the short term you are creating interoperability problems with
+  the OMG MOF Model, �   and the rest of
+  the OMG metadata framework. The work to remove CORBA data type dependencies
+  really should be done in response to the OMG MOF 2.0 RFP, with JMI tracking
+  the OMG MOF sepc.</td>
+  <td valign="top">3/12/01</td>
+  <td valign="top">S. Crawley</td>
+  <td valign="top">&nbsp;</td>
+  <td valign="top">This
+  is an issue with the MOF, and as such, has been forwarded to the MOF RTF
+  (Revision Task Force).</td>
+ </tr>
+ <tr>
+ <td valign="top">mof</td>
+  <td valign="top">I0019</td>
+  <td valign="top">JSR040
+  has no business using prefixes that start with &quot;org.omg&quot;.</td>
+  <td valign="top">3/12/01</td>
+  <td valign="top">S. Crawley</td>
+  <td valign="top">&nbsp;</td>
+  <td valign="top">This
+  is an issue with the MOF, and as such, has been forwarded to the MOF RTF
+  (Revision Task Force).</td>
+ </tr>
+ <tr>
+  <td valign="top">mof</td>
+  <td valign="top">I0020</td>
+  <td valign="top">Should
+  the metamodel of JMOF be MOF1.3?? The base meta-model is clearly not MOF OMG
+  Model 1.3, since the datatypes are represented in a JMI'ish sort of way.    
+      �   Yet there is no such thing as version 1.4
+  of &quot;Model&quot; ... so the meta-model version element is bogus.    
+      �   Even weirder, the XMI contains a bunch of
+  XMI.Any elements, and even some XMI.CorbaTypeCode elements ... neither of
+  which should be necessary in a JMI meta-model of JMI. Why is it necessary to
+  use CORBA specific types at all? Isn't the JMI Model capable of self
+  description? To be useful, the XMI needs to use a meta-model that is pure JMI
+  Model or pure MOF Model ... not some unspecified hybrid of the two. I think
+  the spec of the JMI Model in terms of the MOF Model is most important right
+  now. �   The OMG MOF Model has a number
+  of existing implementations, and this should allow you to bootstrap the JMI
+  Model and initial tools.</td>
+  <td valign="top">3/12/01</td>
+  <td valign="top">S. Crawley</td>
+  <td valign="top">&nbsp;</td>
+  <td valign="top">This
+  is an issue with the MOF, and as such, has been forwarded to the MOF RTF
+  (Revision Task Force).</td>
+ </tr>
+ <tr>
+  <td valign="top">mof</td>
+  <td valign="top">I0021</td>
+  <td valign="top">The
+  Package &quot;Model&quot; name should be different to that used for the OMG
+  MOF's meta-meta-model. �   Or at the very
+  least the IDL prefix (defined in the XMI) should be different!</td>
+  <td valign="top">3/12/01</td>
+  <td valign="top">S. Crawley</td>
+  <td valign="top">&nbsp;</td>
+  <td valign="top">This
+  is an issue with the MOF, and as such, has been forwarded to the MOF RTF
+  (Revision Task Force).</td>
+ </tr>
+ <tr>
+  <td valign="top">mof</td>
+  <td valign="top">I0022</td>
+  <td valign="top">It
+  would be better if the JMI &quot;Model&quot; Package was defined as a
+  sub-Package of the OMG MOF &quot;Model&quot; Package.    
+      �   As far as I can see from the changes that
+  have been made, this is should be workable [Removing / relaxing Constraints
+  is dubious, but given the lack of definition of Constraints in the MOF spec,
+  it should be ok in practice.]... If the JMI Model Package is a subtype of the
+  OMG MOF Package, then a client of the OMG MOF IDL will be able to talk to a
+  JMI repository with IDL APIs. If not, then this is not possible.    
+      �   Ditto for XMI interchange.</td>
+  <td valign="top">3/12/01</td>
+  <td valign="top">S. Crawley</td>
+  <td valign="top">&nbsp;</td>
+  <td valign="top">This
+  is an issue with the MOF, and as such, has been forwarded to the MOF RTF
+  (Revision Task Force).</td>
+ </tr>
+ <tr>
+  <td valign="top">mof</td>
+  <td valign="top">I0023</td>
+  <td valign="top">The
+  JMI Model should be defined strictly using OMG MOF meta-modeling
+  constructs. �   For example, appears
+  (from skimming the XMI) that you use Model.EnumerationType to define some of
+  the JMI Model data types. - �   If you
+  stick strictly with the MOF Model as the meta-model for the JMI Model, the
+  MOF IDL mapping will work for JMI. If you don't, it won't. This would be a
+  BAD THING!</td>
+  <td valign="top">3/12/01</td>
+  <td valign="top">S. Crawley</td>
+  <td valign="top">&nbsp;</td>
+  <td valign="top">This
+  is an issue with the MOF, and as such, has been forwarded to the MOF RTF
+  (Revision Task Force).</td>
+ </tr>
+ <tr>
+  <td valign="top">mof</td>
+  <td valign="top">I0024</td>
+  <td valign="top">Should
+  we remove verify operation from ModelElement?</td>
+  <td valign="top">4/23/01</td>
+  <td valign="top">C. Plotnikov</td>
+  <td valign="top">&nbsp;</td>
+  <td valign="top">This
+  is an issue with the MOF, and as such, has been forwarded to the MOF RTF
+  (Revision Task Force).</td>
+ </tr>
+ <tr>
+  <td valign="top">mof</td>
+  <td valign="top">I0025</td>
+  <td valign="top">I suggest to remove typecode
+  completly from that class. If corba generator will need to access typecode,
+  it could get it from tagged value.</td>
+  <td valign="top">4/23/01</td>
+  <td valign="top">C. Plotnikov</td>
+  <td valign="top">&nbsp;</td>
+  <td valign="top">This
+  is an issue with the MOF, and as such, has been forwarded to the MOF RTF
+  (Revision Task Force).</td>
+ </tr>
+ <tr>
+  <td valign="top">mof</td>
+  <td valign="top">I0026</td>
+  <td valign="top">I suggest
+  collection type to have multiplicity instead of upper. It will allow to
+  specify ordering, uniques and lower bound too. This will better integrate
+  collections with the rest of the MOF.</td>
+  <td valign="top">4/23/01</td>
+  <td valign="top">C. Plotnikov</td>
+  <td valign="top">&nbsp;</td>
+  <td valign="top">This
+  is an issue with the MOF, and as such, has been forwarded to the MOF RTF
+  (Revision Task Force).</td>
+ </tr>
+ <tr>
+  <td valign="top">resolved</td>
+  <td valign="top">I0027</td>
+  <td valign="top">Page
+  35: I suggest to drop the following statement in the list of
+  set&lt;attributeName&gt; operation restrictions: 'If the attribute's
+  multiplicity has a &quot;lower&quot; value greater than zero, there must be
+  at least that many elements in the collection.' Less elements should also be
+  allowed (e.g. during the model creation)</td>
+  <td valign="top">4/23/01</td>
+  <td valign="top">C. Plotnikov</td>
+  <td valign="top">&nbsp;</td>
+  <td valign="top">(6/22/2001)
+  Modify the spec as proposed.</td>
+ </tr>
+ <tr>
+  <td valign="top">resolved</td>
+  <td valign="top">I0028</td>
+  <td valign="top">Synchronize
+  usage of null values in JMI with MOF (does null = no value?, can it be value
+  of a collection element?, etc.)</td>
+  <td valign="top">4/23/01</td>
+  <td valign="top">C. Plotnikov</td>
+  <td valign="top">Restrictions
+  for set&lt;attrName&gt; operation on page 35 say that it is possible to pass
+  null in collection. Is this correct? // Original text of this issue was
+  &quot;Should we disallow passing null value as element of a
+  collection?&quot;. On the confcall 6/22/2001 we have decided to reformulate
+  this issue as it is more complicated.</td>
+  <td valign="top">(7/20/2001)
+  State clearly that null object references will not be supported in JMI - java
+  null will represent no value in JMI. It will be disallowed to use null
+  elements in collections representing value of multivalued parameters and
+  attributes.</td>
+ </tr>
+ <tr>
+  <td valign="top">resolved</td>
+  <td valign="top">I0029</td>
+  <td valign="top">exists(),
+  add(...) and remove(...) methods in Association template do not carry
+  information about with argument is first and which is second. This will
+  require a knowing metamodel. I suggest to introduct two variants of methods
+  for each role. This will simplify usage of association interface and will
+  make add() and remove() methods similar to other methods in the interface.</td>
+  <td valign="top">4/23/01</td>
+  <td valign="top">C. Plotnikov</td>
+  <td valign="top">&nbsp;</td>
+  <td valign="top">(6/22/2001)
+  Leave it as is.</td>
+ </tr>
+ <tr>
+  <td valign="top">resolved</td>
+  <td valign="top">I0030</td>
+  <td valign="top">Accessor
+  for getting association end is named with just &lt;AssociationEndXName&gt;().
+  This violates common java convention that any method should started from verb
+  or verb phrase.</td>
+  <td valign="top">4/23/01</td>
+  <td valign="top">C. Plotnikov</td>
+  <td valign="top">&nbsp;</td>
+  <td valign="top">(6/22/2001)
+  Change method name to get&lt;AssociationEndXName&gt;().</td>
+ </tr>
+ <tr>
+  <td height=45 class=xl24 style='height:33.75pt;border-top:none'>resolved</td>
+  <td valign="top">I0031</td>
+  <td valign="top">Should
+  we represent unique multivalued attributes/references as java.util.Set?</td>
+  <td valign="top">4/23/01</td>
+  <td valign="top">C. Plotnikov</td>
+  <td valign="top">&nbsp;</td>
+  <td valign="top">(6/22/2001)
+  Leave it as is (don't use java.util.Set).</td>
+ </tr>
+ <tr>
+  <td valign="top">resolved</td>
+  <td valign="top">I0032</td>
+  <td valign="top">If
+  proposal with multiplicity will be adopted, then collection type could be
+  mapped to other types then list depending on ordering, uniques, and
+  multiplicity specifications.</td>
+  <td valign="top">4/23/01</td>
+  <td valign="top">C. Plotnikov</td>
+  <td valign="top">&nbsp;</td>
+  <td valign="top">(7/13/2001)
+  This mapping was agreed to with the fooling comments/recommendations: The
+  interface makes a distinction between orderedness but not of uniqueness
+  because orderedness is a characteristic of the multi-valued
+  attribute/reference, while uniqueness is a constraint on the
+  attribute/reference. This leaves the spec unclear has to what is to be
+  expected when the uniqueness constraint is violated. If a JMI implementation
+  choose to implement the java.util.Set interface for unique multivalued
+  attributes, the Set interface states that the add(...) operation returns
+  false when a duplicate is added, while JMI states that the DuplicateException
+  is to be thrown. To clarify the behavior, the spec will state that the
+  DuplicateException is to be thrown when a duplicate value is added to a (JMI)
+  collection where the isUnique property is true.</td>
+ </tr>
+ <tr>
+  <td valign="top">resolved</td>
+  <td valign="top">I0033</td>
+  <td valign="top">There
+  is an complication with generations of structs. Interfaces to creation
+  structs are complicated and do not support serialization very well because an
+  implementation class should be on other side. I suggest to make struct
+  classes rather then intefaces. This will allow more clear seriliazation
+  interfaces.</td>
+  <td valign="top">4/23/01</td>
+  <td valign="top">C. Plotnikov</td>
+  <td valign="top">&nbsp;</td>
+  <td valign="top">In
+  order to support different implementation requirements, structs and enums
+  will continue to be mapped to interfaces.</td>
+ </tr>
+ <tr>
+  <td valign="top">resolved</td>
+  <td valign="top">I0034</td>
+  <td valign="top">We
+  should consider replacing all RefObject arguments representing meta elements
+  in reflective calls by String arguments representing names of these meta
+  elements.</td>
+  <td valign="top">4/23/01</td>
+  <td valign="top">C. Plotnikov</td>
+  <td valign="top">&nbsp;</td>
+  <td valign="top">(6/22/2001)
+  Leave it as is (don't use strings instead of RefObject)</td>
+ </tr>
+ <tr>
+  <td valign="top">resolved</td>
+  <td valign="top">I0035</td>
+  <td valign="top">Change
+  refTypeName() operation in RefEnum and RefStruct to return &quot;.&quot; or
+  &quot;/&quot; -separated string instead of List.</td>
+  <td valign="top">4/23/01</td>
+  <td valign="top">C. Plotnikov</td>
+  <td valign="top">&nbsp;</td>
+  <td valign="top">(7/27/2001)
+  Return List (keep as is) - this is mainly because MOF does not put any
+  restrictions on characters used in strings.</td>
+ </tr>
+ <tr>
+  <td valign="top">resolved</td>
+  <td valign="top">I0036</td>
+  <td valign="top">It
+  needs to be specified, how the JMI service should handle collections. Will
+  modifications of collections returned from JMI operations modify the JMI
+  object? Will the returned collections be readonly? Will they change when JMI
+  object changes? Will collections passed to JMI calls cause change of object
+  when they are changed? etc.</td>
+  <td valign="top">4/23/01</td>
+  <td valign="top">C. Plotnikov</td>
+  <td valign="top">&nbsp;</td>
+  <td valign="top">(7/13/2001)
+  The collection semantics are as follows: 1 - live collection semantics, i.e.,
+  the user can update the source using the collection API; 2 - live iterator
+  semantics, i.e., the user can update the source using the iterator; and 3 -
+  each operation on a JMI collection (collection returned by a JMI service) is
+  an atomic operation, e.g., �
+    CollectionFromJmiService.toArray(...) is an atomic operation.</td>
+ </tr>
+</table>
+
+</body>
+
+</html>
+
+
+
+<!-- ** BEGIN: footer.jsp ** //-->
+
+
+
+
+
+
+
+
+</td>
+</tr>
+</table>
+
+<!-- ** END: Content Table ** //-->
+
+<!-- ** BEGIN: Footer Table ** //-->
+
+<div id="footer" style="clear: both;">
+    <div class="footleft">
+        <a href="/en/resources/contacts">Contact Us</a>
+    </div>
+	
+    <div class="botbar"><img src="/images/spacer.gif" alt="" height="23" width="1"></div>
+
+    <div class="footleft2">
+         &copy; 2019, Oracle Corporation and/or its affiliates. 
+        <a href="/en/home/terms">Terms of Use</a>. <a href="http://www.oracle.com/us/legal/privacy/index.html">Privacy Policy</a>. <a href="http://www.oracle.com/us/legal/third-party-trademarks/third-party-trademarks-078568.html">Trademarks</a>
+    </div>
+
+    <div class="footright">
+        <img src="/images/common/logo_oracle_footer.gif" alt="Oracle Corporation" height="22" width="91">
+    </div>
+
+    <div style="clear: both;"><img src="/images/spacer.gif" alt="" height="30" width="1"></div>
+</div>
+
+<!-- ** END: Footer Table ** //-->
+
+
+
+<!-- ** Menu Start ** //-->
+
+
+
+</body>
+</html>
+<!-- ** END: footer.jsp ** //-->
+

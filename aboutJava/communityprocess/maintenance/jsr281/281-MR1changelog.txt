@@ -1,0 +1,27 @@
+Id	Change
+--------------
+1036	Clarified allowed top-level media type for BasicReliableMedia and BasicUnreliableMedia MUST be registered with IANA.
+1336	Clarification implementation guidelines mapping of QoS FlowSpecification to UMTS bearer QoS
+1338	Configuration.setRegistry: A call does not affect currently open Core Services objects.
+1339	Correction that creating a core service based on an empty IMS application registry is not allowed.
+1340	CoreService: Create with no Serviceid in the connector string defaults to a core service that has the empty string as name.
+1342	An incoming request with no feature tags at all is out of scope for the JSR; it is handled by the device.
+1345	SessionDescriptor, MediaDescriptor: SDP usage is explained and limitations discussed.
+1347	Change to syntax of the feature tag for ICSI and IARI according to newer 3GPP specifications
+1349	CoreService: now limited to have at most one IARI to be aligned to 3GPP specifications.
+1361	FramedMedia: List of restricted MSRP headers added
+1362	BasicUnreliableMediaListener: JavaDoc change so that it clearly can receive empty packets.
+1363	Subscription: Subscribe possible to call in STATE_ACTIVE to update the subscription. Enables presence.
+1364	Subscription: New method Subscription.poll added that retrieves current event state. Enables presence.
+1365	Subscription: Call to subscribe is buffered until IMS engine finishes current subscription refresh (if any).
+1368	Registration: Call to connector.open is buffered until IMS engine finishes current registration refresh (if any).
+1370	Reference: The referTo URI is no longer erroneously restricted to be only a user id; it can be any URI.
+1372	COnnectionStateListener: Added two methods for when the device suspends resumes a connection because of resource re-allocation.
+1374	TEL URI management: Implementation shall add (missing) phone-context parameter to TEL URI to deal with local numbers based on the operators home network name.
+1379	CoreService, ConnectionState: getReasonPhrase and getReasonCode added to allow an application some diagnostics in case of undesired disconnects.
+1380	Clarifications if there is a NAT/FW between the device and the proxy.
+1396	Improved support to enable combinational services in an application: possibility to retrieve TEL URI from a currently connected voice call, support of media profiles, and capability exchange.
+1406	Definition of a user id is better aligned to SIP and IMS specifications.
+1505	StreamMedia: Removed and clarified error in spec that prevented mobile-terminated streaming media sessions.
+1520	Pushregistry details are clarified to address portability issues.
+1657	Session: Clarified when sessionStartFailed and sessionTerminated shall be called.

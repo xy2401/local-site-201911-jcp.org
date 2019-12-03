@@ -1,0 +1,563 @@
+
+<!-- ** BEGIN: header.jsp ** //-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3c.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+<head>
+    
+
+   
+    <link href="/includes/css/menu.css" rel="stylesheet" type="text/css"></link>
+    <link href="/includes/css/style.css" rel="stylesheet" type="text/css"></link>
+    <!--[if lt IE 6]><link href="/includes/css/style5.css" rel="stylesheet" type="text/css" ></link><![endif]-->
+    <!--[if gte IE 5]><link href="/includes/css/style6.css" rel="stylesheet" type="text/css" ></link><![endif]-->
+    <link href="/includes/css/tabs.css"  rel="stylesheet" type="text/css"></link>
+
+    <script type="text/javascript" src="/includes/scripts/tabs.js"></script>
+    <script type="text/javascript" src="/includes/scripts/menu.js"></script>
+   
+
+    
+
+    
+        <title>The Java Community Process(SM) Program - communityprocess - maintenance</title>
+    
+
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+
+
+<body onload="P7_initPM(0,1,0,0,-1)">
+
+    <a name="top"></a>
+
+    <div id="header">
+	<div id="logo">
+		<a href="/en/home/index"><img src="/images/spacer.gif" alt="Java Community Process" height="81" width="151"></a>
+	</div>
+	<div id="tools">
+		<div class="search">
+			<form name="search" action="/en/jsr/summary" method="get" onsubmit="return validate_search()">
+				<input name="id" value="Search JSRs" size="16" class="form" onfocus="nullify_if_equal(this, 'Search JSRs')" type="text">
+				<a href="javascript:document.search.submit()" onclick="return validate_search()"><img src="/images/button_go.gif" width="21" height="16" border="0" alt="Submit this Search" name="sub_search"></a>
+			</form>
+		</div>
+		<div class="tools">
+			<a href="/en/press/pressroom">Press Room</a> &nbsp;|&nbsp;
+			<a href="http://java.com/java/download/index.jsp?cid=jdp78399">Get Java Here</a> &nbsp;|&nbsp;
+			<!-- <a href="javascript:void(0)">Print Format</a> &nbsp;|&nbsp;&nbsp; -->
+		</div>
+
+	</div>
+	<div style="clear: right;"></div>
+
+        
+
+	<div class="topbar"><img src="/images/spacer.gif" alt="" height="3" width="154"></div>
+	<div id="update"> </div>
+    </div>
+
+
+    
+
+        <!-- ** BEGIN: Content Table ** //-->
+
+        <table width="100%" border="0" cellpadding="0" cellspacing="0">
+
+            <tr>
+
+                <!-- ** BEGIN: Navigation Column ** //-->
+                <td width="150" id="leftcontent" valign="top">
+                    <!-- Navigation Placeholder //-->
+
+                    
+
+                    <div class="bar"><img src="/images/hr_dots1.gif" alt="" height="3" width="150"></div>
+
+        <!-- begin find JSRs form -->
+        <!-- IMPORTANT! do not convert this form to Struts < html : form > tag.  javascript change of form.action property fails. -->
+        <img src="/images/hd_find-jsrs.gif" alt="Find JSRs" height="18" width="150">
+        <form name="findjsr" action="/en/jsr/summary" method="get" class="pt5" onsubmit="return validate_findjsr()">
+            <input name="id" size="18" class="form" value="Search JSRs" onfocus="nullify_if_equal(this, 'Search JSRs')" type="text">
+	    <a href="javascript:document.findjsr.submit()" onclick="return validate_findjsr()"><img src="/images/button_go.gif" width="21" height="16" border="0" alt="Submit this Search" name="sub_search"></a>
+        </form><br><br>
+
+        <!-- ** Menu Start ** //-->
+
+        <ul id="p7PMnav">
+            <li><a href="/en/jsr/platform">JSRs by Platform</a></li>
+            <li><a href="/en/jsr/tech">JSRs by Technology</a></li>
+            <li><a href="/en/jsr/stage">JSRs by Stage</a></li>
+            <li><a href="/en/jsr/ec">JSRs by Committee</a></li>
+            <li><a href="/en/jsr/all">List of All JSRs</a></li>
+
+            <!--end find JSRs form -->
+            <div style="clear: both;"><img src="/images/spacer.gif" alt="" height="25" width="1"></div>
+
+            <!--begin my JCP -->
+            <img src="/images/hd_my-jcp.gif" alt="My JCP" height="18" width="150">
+            
+
+          <form name="login" method="get" action="/en/user/login" >
+            <input name="Sign-in" type="submit" title="Sign-in" value="Sign-in" />
+          </form>
+
+            <div style="clear:both"><img src="/images/global/spacer.gif" width="1" height="3" alt=""></div>
+            <div class="noNav">
+                <a href="/en/user/register">Register for Site</a>
+            </div>
+
+             <div class="bar"><img src="/images/hr_dots1.gif" alt="" height="3" width="150"></div>
+           <div class="noNav" style="color: #666666; padding: 0;">
+              Use of JCP site is subject to the
+              <a href="/en/home/terms" style="display:inline;padding: 0">JCP Terms of Use</a> and the
+              <a href="http://www.oracle.com/us/legal/privacy/index.html" style="display:inline;padding: 0" href="">Oracle Privacy Policy</a>
+          </div>
+
+            
+
+            <div style="clear:both"><img src="/images/global/spacer.gif" width="1" height="25" alt=""></div>
+
+            <!--begin JCP info -->
+            <img src="/images/hd_jcp-info.gif" alt="JCP Info" height="18" width="150">
+
+            <li><a href="/en/procedures/overview" class="p7PMtrg">About JCP</a>
+                <ul>
+                    <li><a href="/en/procedures/overview">Program Overview</a></li>
+                    <li><a href="/en/procedures/jcp2">JCP Process Document</a></li>
+                    <li><a href="/en/whatsnew/calendar">Calendar</a></li>
+                    <li><a href="/en/participation/members">JCP Members</a></li>
+                    <li><a href="/en/participation/committee">Executive Committee</a></li>
+                    <li><a href="/en/whatsnew/elections">Elections</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/en/participation/overview" class="p7PMtrg">Get Involved</a>
+		<ul>
+                    <li><a href="/en/participation/overview">Overview</a></li>
+                    <li><a href="/en/participation/membership">Becoming a JCP Member</a></li>
+		</ul>
+            </li>
+
+            <li><a href="/en/resources/contents" class="p7PMtrg">Community Resources</a>
+                <ul>
+                    <li><a href="/en/resources/contents">Overview</a></li>
+                    <li><a href="/en/resources/tutorials">Tutorials</a></li>
+                    <li><a href="/en/resources/multimedia">JCP Podcasts</a></li>
+                    <li><a href="/en/resources/guide">Spec Lead Guide</a></li>
+                    <li><a href="/en/resources/tdk">TCK Tool & Info</a></li>
+                    <li><a href="/en/resources/license_reference">License Reference</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/en/press/pmo" class="p7PMtrg">Community News</a>
+                <ul>
+                    <li><a href="/en/press/pmo">News</a></li>
+                    <li><a href="/en/press/news/awards/awards_main">Programs &amp; Awards</a></li>
+                    <li><a href="/en/press/releases">Press Releases</a></li>
+                    <li><a href="/en/press/success">Success Stories</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/en/introduction/faq">FAQ</a></li>
+
+            <li><a href="/en/resources/contacts">Contact Us</a></li>
+
+            <div style="clear: both;"><img src="/images/spacer.gif" alt="" height="25" width="1"></div>
+
+            <!--[if lte IE 6]><style>#p7PMnav a{height:1em;}#p7PMnav li{height:1em;float:left;clear:both;width:100%}</style><![endif]-->
+            <!--[if IE 6]><style>#p7PMnav li{clear:none;}</style><![endif]-->
+            <!--[if IE 7]><style>#p7PMnav a{zoom:100%;}#p7PMnav li{float:left;clear:both;width:100%;}</style><![endif]-->
+        </ul>
+
+        
+
+        <!--begin ad space -->
+        <div class="ads">
+            <a href="http://java.com/java/download/index.jsp?cid=jdp78399" target="_blank"><img style="display: ;" src="/images/ad_banner2.gif" alt="Ad Banner" border="1" height="70" width="150"></a>
+        </div>
+        <!--end ad space -->
+
+<!-- ** Menu End ** //-->
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;<br>
+
+    
+
+                    &nbsp;<br>
+                    <img src="/images/common/trans.gif" alt="" width="1" height="150"><br>
+
+              
+
+
+
+                </td>
+                <!-- ** END: Navigation Column ** //-->
+
+                <!-- ** BEGIN: Gutter Column ** //-->
+		<td width="10" nowrap><img src="/images/common/trans.gif" alt="" width="10" height="1"></td>
+                <!-- ** END: Gutter Column ** //-->
+
+                <!-- ** BEGIN: Content Column ** //-->
+                <td width="100%" valign="top">
+
+    
+<script type="text/javascript">
+
+String.prototype.trim = function() {
+        return this.replace(/^\s+|\s+$/g,"");
+}
+String.prototype.ltrim = function() {
+        return this.replace(/^\s+/,"");
+}
+String.prototype.rtrim = function() {
+        return this.replace(/\s+$/,"");
+}
+
+function validate_search() {
+	if (document.search.id.value == "Search JSRs" || document.search.id.value.trim().length == 0) {
+		alert("Search terms must be entered first");
+		return false;
+	}
+	return true;
+}
+
+function validate_findjsr() {
+	if (document.findjsr.id.value == "Search JSRs" || document.findjsr.id.value.trim().length == 0) {
+		alert("Search terms must be entered first");
+		return false;
+	}
+	return true;
+}
+
+function nullify_if_equal(field, str) {
+	// alert("val=" + field.value);
+	if (field.value == str) {
+		field.value = "";
+	}
+}
+
+</script>
+<!-- ** END: header.jsp ** //-->
+
+
+
+
+
+
+<html>
+<head>
+<title>JSR 11 - JAIN TCAP Specification: Change Log</title>
+</head>
+<body>
+<h2>JSR 11<BR>
+JAIN<sup><font size="-2">TM</font></sup> TCAP Specification<BR>
+CHANGE LOG</h2>
+<P>
+<table border>
+<tr>
+<td><B><Center>PROPOSED CHANGES</center></b></td>
+</tr>
+<tr>
+<td>
+GENERAL:<br>
+<ol>
+<li> Comment Clarification.<br>
+<ol type=a>
+    <li> Explain Invoke Id mapping across variants in javadoc for all components.
+    <LI> Explain purpose of lastComponent parameter in javadoc for all components.
+    <LI> Explain absence of setSignalingPointCode in JainTcapStack Interface.
+    <LI> Explain format of Signaling Point code as Long Object.
+    <LI> Expalin Dialogue Portion in more detail.
+    <LI> Outline dialogue Id architecture for UNI Indication.
+</ol><P>
+<li> Change all Addressing types from TcapUserAddress to SccpUserAddress.</ol><P>
+
+
+JAIN TCAP LISTENER<BR>
+<OL>
+
+<LI> Change the return parameter from getUserAddressList from Vector to
+SccpUserAddress[] in the JainTcapListener Interface. Involves adding a copy
+of method with different return type and deprecating old method.<P>
+
+<LI> Remove the Throws NullPointerException on addUserAddress, removeUserAddress,
+processDialogueReqEvent and processComponentReqEvent<P>
+
+<LI> addUserAddress and removeUserAddress methods to throw NoSuchUserAddressException
+and UserAddressLimitException.<P>
+
+<LI> Within the JainTcapListener class added two new Exceptions called:
+NoSuchUserAddressException, UserAddressLimitException, to used in the management of
+a JainTcapListeners own User addresses.</OL><P>
+
+
+JAIN TCAP PROVIDER<BR>
+<OL>
+<LI> The isAttached method in the JainTcapProvider should become deprecated.
+Attach done implicitly in createProvider method call in JainTcapStack.<P>
+
+<LI> ProviderNotAttachedException no longer needed after removal of explicit attach
+and detach method in the JainTcapStack Interface.<P>
+
+<LI> Throw InvalidUserAddress on addJainTcapListener method.<P>
+
+<LI> Remove the Throws NullPointerException on addJainTcapListener, removeJainTcapListener,
+sendDialogueReqEvent and sendComponentReqEvent.<P>
+
+<LI> Deprecate the method getAttachedStack() and replaced with getStack as the
+provider is attached to the stack implicitly.
+</OL><BR>
+
+JAIN TCAP STACK<BR>
+<OL>
+
+<LI> Changed return type of get Signalling Point Code to ne wJAIN Addressing schema.<P>
+
+<LI> Added new method to createProvider, attach should be implicit.<P>
+
+<LI> Deprecate creatAttachedProvider and createDetachedProvider methods, should
+use createProvider and deleteProvider methods instead.<P>
+
+<LI> Deprecate setProtocolVersion and getProtocolVersion methods to avoid
+confusion with the Dialogue Portion protocol version in ANSI.<P>
+
+<LI> Add setStackSpecification and getStackSpecification for above reason.<P>
+
+<LI> Change return type of getProviderList from Vector to JainTcapProvider Array.<P>
+
+<LI> Deprecate attach and detach methods as these can be done implicitly in
+createProvider and deleteProvider methods instead.<P>
+
+<LI> Remove the Throws NullPointerException on deleteProvider method.<P>
+
+<LI> Add Stack specificion constants for setStackSpecification and
+getStackSpecification method in JainTcapStack.</OL><P>
+
+
+TCAP CONSTANTS<BR>
+<OL>
+
+<LI> Add Stack specificion constants for setStackSpecification and
+getStackSpecification method in JainTcapStack.<P>
+
+<LI> Add Routing Indicator constants for TcapUserAddress to determine type of
+routing used.</OL><P>
+
+GLOBALTITLE and GLOBALTITLE INDICATOR CLASSES<BR>
+<OL>
+<LI> Add new constructors as all parameters in the Global title Indicators are
+mandatory.<P>
+
+<LI> Outline difference between the mapping of Global Titile Indicators to the
+ITU and ANSI specifications.<P>
+
+<LI> Deprecate all get methods which had ParameterNotSetException in signature,
+these were replaced that throw the MandatoryParameterNotSetException as all
+parameters are mandatory.<P>
+
+<LI> Deprecate all isPresent methods as all parameters will be present as they
+are mandatory, otherwise an exception will be thrown.<P>
+
+<LI> Add OddIndicator to GTIndicator0001 to differentiate between Odd and Even
+BCD encoding. This is mapped to bit 8 of the Nature of Address Indicator.</OL><P>
+
+
+ERRORIND/REJECTIND/RESULTIND EVENT CLASSES<BR>
+<OL>
+
+<LI> Deprecate link Id methods as they have no function within the class, also
+clarified mapping of invoke id to correlation Id between the standards,</ol><P>
+
+INVOKEIND EVENT CLASS<BR>
+<ol>
+<LI> Deprecate link Id methods and replaced them with linked Id methods which are
+more meaningful. Clarified Linked Id, Invoke Id and correlation Ids across the
+standards.</OL><P>
+
+OPERATION CLASS<BR>
+<OL>
+<LI> Deprecate ANSI specific constants.<P>
+
+<LI> Deprecate Operation Family and Operation Specifier methods. An ANSI
+implementation will now use the operation code method similiar to ITU.<P>
+
+<LI> Add new constructor to acception operation Type and operation Code as
+mandatory paramteers. Deprecated old empty constructor.</OL><P>
+
+
+ADD NEW CLASSES<BR>
+<OL>
+<LI> Added a subsystem address class containing a subsytem number and a signaling
+point code, with error checking.</OL><P>
+
+DEPRECATE CLASSES<BR>
+<OL>
+<LI> ProviderNotAttachedException deprecate after removal of explicit attach and
+detach method in the JainTcapStack Interface.<P>
+
+<LI> DEPRECATE CLASSES
+Deprecate due to the addition of these classes to the SS7 package
+These classes will be as follows:<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;        GlobalTitle<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;        GTIndicator0001<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;        GTIndicator0010<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;        GTIndicator0011<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;        GTIndicator0100<BR>
+<P>
+</ol>
+
+<P>
+<OL>
+<LI> Create new class SubSystemAddress.java. Add a subsystem address class containing
+a subsytem number (short) and a signaling point code (Object), with error checking.<P>
+
+<LI> Create new classes and moved some into the SS7 package, which contains classes to create an SccpUserAddress
+The new classes are as follows:<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;        SccpUserAddress<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;        SubSystemAddress<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;        SignalingPointCode<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;        GlobalTitle<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;        GTIndicator0001<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;        GTIndicator0010<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;        GTIndicator0011<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;        GTIndicator0100<P>
+
+<LI> ProviderNotAttachedException deprecate after removal of explicit attach and
+detach method in the JainTcapStack Interface.<P>
+
+<LI> TCAP USER ADDRESS deprecate due to the addition of the SCCP User Address<P>
+
+<LI> Deprecate Dialogue Id from UniDirectionalIndEvent class<P>
+
+<LI> Eded the get/set StackName(there is no standard stack name as of 1.1) and added get/set VendorName.<P>
+
+<LI> Add constants in for Network Indicator in the AddressConstants class<P>
+
+<LI> Add new exception UserAddressEmptyException to  the tcap package to be use on
+the method getUserAddessList()<P>
+
+<LI> Remove all NullPointer checks for objects supplied to methods and remove the
+throws NullPointerException on all method signatures.<P>
+
+<LI> Restructure Jain Tcap Exceptions to:<BR>
+jain package:<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;                JainException - base class<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;                PeerUnavailableException<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;                ListenerAlreadyRegisteredException<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;                ListenerNotRegisteredException<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;                InvalidAddressException<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;                InvalidIDException<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;                DeleteProviderException<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;                CreateProviderException<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;                MethodNotSupportedException<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;                PlatformException<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;                InvalidArgumentException<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;                ParameterNotSetEception<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;                MandatoryParameterNotSetException<P>
+
+jain.protocol<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;                InvalidPathNameException<P>
+
+jain.protocol.ss7<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;                SS7Exception<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;                VersionNotSupportedException<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;                IdNotAvailableException<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;                UserAddressLimitException<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;                UserAddressEmptyException<P>
+
+and deprecated the old exceptions<P>&nbsp;
+</td>
+</tr>
+<TR>
+<TD><B><CENTER>ACCEPTED CHANGES</center></B></td>
+</tr>
+<tr><td>&nbsp;</td></tr>
+<tr>
+<TD><B><CENTER>DEFERRED CHANGES</CENTER></B></TD>
+</tr>
+</table>
+
+
+
+
+
+
+
+</body>
+</html>
+
+
+
+<!-- ** BEGIN: footer.jsp ** //-->
+
+
+
+
+
+
+
+
+</td>
+</tr>
+</table>
+
+<!-- ** END: Content Table ** //-->
+
+<!-- ** BEGIN: Footer Table ** //-->
+
+<div id="footer" style="clear: both;">
+    <div class="footleft">
+        <a href="/en/resources/contacts">Contact Us</a>
+    </div>
+	
+    <div class="botbar"><img src="/images/spacer.gif" alt="" height="23" width="1"></div>
+
+    <div class="footleft2">
+         &copy; 2019, Oracle Corporation and/or its affiliates. 
+        <a href="/en/home/terms">Terms of Use</a>. <a href="http://www.oracle.com/us/legal/privacy/index.html">Privacy Policy</a>. <a href="http://www.oracle.com/us/legal/third-party-trademarks/third-party-trademarks-078568.html">Trademarks</a>
+    </div>
+
+    <div class="footright">
+        <img src="/images/common/logo_oracle_footer.gif" alt="Oracle Corporation" height="22" width="91">
+    </div>
+
+    <div style="clear: both;"><img src="/images/spacer.gif" alt="" height="30" width="1"></div>
+</div>
+
+<!-- ** END: Footer Table ** //-->
+
+
+
+<!-- ** Menu Start ** //-->
+
+
+
+</body>
+</html>
+<!-- ** END: footer.jsp ** //-->
+

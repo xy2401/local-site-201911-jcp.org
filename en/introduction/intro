@@ -1,0 +1,541 @@
+
+
+<!-- ** BEGIN: header.jsp ** //-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3c.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+<head>
+    
+
+   
+    <link href="/includes/css/menu.css" rel="stylesheet" type="text/css"></link>
+    <link href="/includes/css/style.css" rel="stylesheet" type="text/css"></link>
+    <!--[if lt IE 6]><link href="/includes/css/style5.css" rel="stylesheet" type="text/css" ></link><![endif]-->
+    <!--[if gte IE 5]><link href="/includes/css/style6.css" rel="stylesheet" type="text/css" ></link><![endif]-->
+    <link href="/includes/css/tabs.css"  rel="stylesheet" type="text/css"></link>
+
+    <script type="text/javascript" src="/includes/scripts/tabs.js"></script>
+    <script type="text/javascript" src="/includes/scripts/menu.js"></script>
+   
+
+    
+
+    
+        <title>The Java Community Process(SM) Program - Introduction - intro</title>
+    
+
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+
+
+<body onload="P7_initPM(0,1,0,0,-1)">
+
+    <a name="top"></a>
+
+    <div id="header">
+	<div id="logo">
+		<a href="/en/home/index"><img src="/images/spacer.gif" alt="Java Community Process" height="81" width="151"></a>
+	</div>
+	<div id="tools">
+		<div class="search">
+			<form name="search" action="/en/jsr/summary" method="get" onsubmit="return validate_search()">
+				<input name="id" value="Search JSRs" size="16" class="form" onfocus="nullify_if_equal(this, 'Search JSRs')" type="text">
+				<a href="javascript:document.search.submit()" onclick="return validate_search()"><img src="/images/button_go.gif" width="21" height="16" border="0" alt="Submit this Search" name="sub_search"></a>
+			</form>
+		</div>
+		<div class="tools">
+			<a href="/en/press/pressroom">Press Room</a> &nbsp;|&nbsp;
+			<a href="http://java.com/java/download/index.jsp?cid=jdp78399">Get Java Here</a> &nbsp;|&nbsp;
+			<!-- <a href="javascript:void(0)">Print Format</a> &nbsp;|&nbsp;&nbsp; -->
+		</div>
+
+	</div>
+	<div style="clear: right;"></div>
+
+        
+
+	<div class="topbar"><img src="/images/spacer.gif" alt="" height="3" width="154"></div>
+	<div id="update"> </div>
+    </div>
+
+
+    
+
+        <!-- ** BEGIN: Content Table ** //-->
+
+        <table width="100%" border="0" cellpadding="0" cellspacing="0">
+
+            <tr>
+
+                <!-- ** BEGIN: Navigation Column ** //-->
+                <td width="150" id="leftcontent" valign="top">
+                    <!-- Navigation Placeholder //-->
+
+                    
+
+                    <div class="bar"><img src="/images/hr_dots1.gif" alt="" height="3" width="150"></div>
+
+        <!-- begin find JSRs form -->
+        <!-- IMPORTANT! do not convert this form to Struts < html : form > tag.  javascript change of form.action property fails. -->
+        <img src="/images/hd_find-jsrs.gif" alt="Find JSRs" height="18" width="150">
+        <form name="findjsr" action="/en/jsr/summary" method="get" class="pt5" onsubmit="return validate_findjsr()">
+            <input name="id" size="18" class="form" value="Search JSRs" onfocus="nullify_if_equal(this, 'Search JSRs')" type="text">
+	    <a href="javascript:document.findjsr.submit()" onclick="return validate_findjsr()"><img src="/images/button_go.gif" width="21" height="16" border="0" alt="Submit this Search" name="sub_search"></a>
+        </form><br><br>
+
+        <!-- ** Menu Start ** //-->
+
+        <ul id="p7PMnav">
+            <li><a href="/en/jsr/platform">JSRs by Platform</a></li>
+            <li><a href="/en/jsr/tech">JSRs by Technology</a></li>
+            <li><a href="/en/jsr/stage">JSRs by Stage</a></li>
+            <li><a href="/en/jsr/ec">JSRs by Committee</a></li>
+            <li><a href="/en/jsr/all">List of All JSRs</a></li>
+
+            <!--end find JSRs form -->
+            <div style="clear: both;"><img src="/images/spacer.gif" alt="" height="25" width="1"></div>
+
+            <!--begin my JCP -->
+            <img src="/images/hd_my-jcp.gif" alt="My JCP" height="18" width="150">
+            
+
+          <form name="login" method="get" action="/en/user/login" >
+            <input name="Sign-in" type="submit" title="Sign-in" value="Sign-in" />
+          </form>
+
+            <div style="clear:both"><img src="/images/global/spacer.gif" width="1" height="3" alt=""></div>
+            <div class="noNav">
+                <a href="/en/user/register">Register for Site</a>
+            </div>
+
+             <div class="bar"><img src="/images/hr_dots1.gif" alt="" height="3" width="150"></div>
+           <div class="noNav" style="color: #666666; padding: 0;">
+              Use of JCP site is subject to the
+              <a href="/en/home/terms" style="display:inline;padding: 0">JCP Terms of Use</a> and the
+              <a href="http://www.oracle.com/us/legal/privacy/index.html" style="display:inline;padding: 0" href="">Oracle Privacy Policy</a>
+          </div>
+
+            
+
+            <div style="clear:both"><img src="/images/global/spacer.gif" width="1" height="25" alt=""></div>
+
+            <!--begin JCP info -->
+            <img src="/images/hd_jcp-info.gif" alt="JCP Info" height="18" width="150">
+
+            <li><a href="/en/procedures/overview" class="p7PMtrg">About JCP</a>
+                <ul>
+                    <li><a href="/en/procedures/overview">Program Overview</a></li>
+                    <li><a href="/en/procedures/jcp2">JCP Process Document</a></li>
+                    <li><a href="/en/whatsnew/calendar">Calendar</a></li>
+                    <li><a href="/en/participation/members">JCP Members</a></li>
+                    <li><a href="/en/participation/committee">Executive Committee</a></li>
+                    <li><a href="/en/whatsnew/elections">Elections</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/en/participation/overview" class="p7PMtrg">Get Involved</a>
+		<ul>
+                    <li><a href="/en/participation/overview">Overview</a></li>
+                    <li><a href="/en/participation/membership">Becoming a JCP Member</a></li>
+		</ul>
+            </li>
+
+            <li><a href="/en/resources/contents" class="p7PMtrg">Community Resources</a>
+                <ul>
+                    <li><a href="/en/resources/contents">Overview</a></li>
+                    <li><a href="/en/resources/tutorials">Tutorials</a></li>
+                    <li><a href="/en/resources/multimedia">JCP Podcasts</a></li>
+                    <li><a href="/en/resources/guide">Spec Lead Guide</a></li>
+                    <li><a href="/en/resources/tdk">TCK Tool & Info</a></li>
+                    <li><a href="/en/resources/license_reference">License Reference</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/en/press/pmo" class="p7PMtrg">Community News</a>
+                <ul>
+                    <li><a href="/en/press/pmo">News</a></li>
+                    <li><a href="/en/press/news/awards/awards_main">Programs &amp; Awards</a></li>
+                    <li><a href="/en/press/releases">Press Releases</a></li>
+                    <li><a href="/en/press/success">Success Stories</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/en/introduction/faq">FAQ</a></li>
+
+            <li><a href="/en/resources/contacts">Contact Us</a></li>
+
+            <div style="clear: both;"><img src="/images/spacer.gif" alt="" height="25" width="1"></div>
+
+            <!--[if lte IE 6]><style>#p7PMnav a{height:1em;}#p7PMnav li{height:1em;float:left;clear:both;width:100%}</style><![endif]-->
+            <!--[if IE 6]><style>#p7PMnav li{clear:none;}</style><![endif]-->
+            <!--[if IE 7]><style>#p7PMnav a{zoom:100%;}#p7PMnav li{float:left;clear:both;width:100%;}</style><![endif]-->
+        </ul>
+
+        
+
+        <!--begin ad space -->
+        <div class="ads">
+            <a href="http://java.com/java/download/index.jsp?cid=jdp78399" target="_blank"><img style="display: ;" src="/images/ad_banner2.gif" alt="Ad Banner" border="1" height="70" width="150"></a>
+        </div>
+        <!--end ad space -->
+
+<!-- ** Menu End ** //-->
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;<br>
+
+    
+
+                    &nbsp;<br>
+                    <img src="/images/common/trans.gif" alt="" width="1" height="150"><br>
+
+              
+
+
+
+                </td>
+                <!-- ** END: Navigation Column ** //-->
+
+                <!-- ** BEGIN: Gutter Column ** //-->
+		<td width="10" nowrap><img src="/images/common/trans.gif" alt="" width="10" height="1"></td>
+                <!-- ** END: Gutter Column ** //-->
+
+                <!-- ** BEGIN: Content Column ** //-->
+                <td width="100%" valign="top">
+
+    
+<script type="text/javascript">
+
+String.prototype.trim = function() {
+        return this.replace(/^\s+|\s+$/g,"");
+}
+String.prototype.ltrim = function() {
+        return this.replace(/^\s+/,"");
+}
+String.prototype.rtrim = function() {
+        return this.replace(/\s+$/,"");
+}
+
+function validate_search() {
+	if (document.search.id.value == "Search JSRs" || document.search.id.value.trim().length == 0) {
+		alert("Search terms must be entered first");
+		return false;
+	}
+	return true;
+}
+
+function validate_findjsr() {
+	if (document.findjsr.id.value == "Search JSRs" || document.findjsr.id.value.trim().length == 0) {
+		alert("Search terms must be entered first");
+		return false;
+	}
+	return true;
+}
+
+function nullify_if_equal(field, str) {
+	// alert("val=" + field.value);
+	if (field.value == str) {
+		field.value = "";
+	}
+}
+
+</script>
+<!-- ** END: header.jsp ** //-->
+
+
+
+
+
+
+
+
+
+		<div class="header2">Introduction</div>
+		<div class="header1">Welcome to the new jcp.org web site!</div>		
+
+		&nbsp;<br>
+
+If you are new to the Java Community Process, please read the <a href="/en/procedures/overview">Process Overview</a>.
+<P>
+If you are familiar with the process but want to know more about how to participate, please read the <a href="/en/participation/overview">Getting Involved page</a>.
+<P>
+The new jcp.org web site was launched on 16 June 2009. It introduced a number of new features on the site:
+<ul>
+<li> <a href="#search">improved search</a>
+<li> <a href="#account">user accounts</a>
+<li> <a href="#myjsrs">a personalized list of JSRs</a>
+<li> <a href="#jsr">reorganization of information on the JSR pages</a>
+<li> <a href="#boards">discussion boards</a>
+<li> <a href="#wiki">personal wikis</a>
+</ul>
+
+<P>
+A revision to the web site was launched on 11 November 2009. The features introduced then are:
+<ul>
+<li> <a href="#rss">RSS feeds</a>
+<li> <a href="#stars">content ratings</a>
+</ul>
+<P>
+
+
+<a name="search"></a><h2>Search</h2>
+<table>
+<tr>
+<td width="50">&nbsp;</td>
+<td>
+<img src="/images/introduction/search.jpg"></td>
+</tr></table>
+
+At the top of the navigation bar on your left, you'll see a section called "JSRs". Directly under that is a search field. In this field you can enter a JSR's number, part or all of a JSR's title, or part of a JSR's summary. The system will return a list of JSRs that match your search terms, or the summary page of the JSR if there's only one match for your search. Note that if you enter multiple search terms, the system will return results for each separate term.<P>
+
+<a name="account"></a><h2>User accounts</h2>
+<table>
+<tr>
+<td width="50">&nbsp;</td>
+<td>
+<img src="/images/introduction/myjcp.jpg"></td></tr></table>
+
+Under the section called "JSRs", in the navigation bar on the left you should see a section marked "My JCP". In that section should be a login prompt. If you are already a Spec Lead or participating on an Expert Group, use your login here.<P>
+
+If you are not already a Spec Lead, participating on an Expert Group and have not already done so, you should register for the site. Click the "Register for Site" link, fill out the form and submit it. You'll be prompted to check your e-mail Inbox for a confirmation message; follow the instructions in that message to complete your registration.<P>
+
+Once you've registered, you can create a personalized list of JSRs that interest you, access the discussion boards, and, if you're are an employee of an organization which is already a JCP Member, you can request to be associated with that Membership.<P>
+
+To request to be associated with an existing JCP Member, log in. Then click "My Profile" under "My JCP". This will take you to the "View Profile page where you can review and update your contact information. Near the top of the page is a link labeled "Request Member association". Click this link and fill out the form, selecting the JCP Member which you represent from a list. When the form is submitted, the primary contact of that JCP Member will get a message asking them to confirm your status as an official representative of that Membership.<P>
+
+Once you are officially representing a JCP Member, whether by joining as an new Member or associating yourself to an existing Member successfully, another link will appear on your "View Profile" page: "View Membership Info". Click this link to see a bunch of information about the JCP Member you represent: who else is representing the Member and on which JSRs they serve as Specification Lead or Expert group member, which agreements were signed and their anniversary dates, who is listed as your Member's primary contact (the person who votes in the annual elections).<P>
+
+<a name="myjsrs"></a><h2>My JSRs</h2>
+<table>
+<tr>
+<td width="50">&nbsp;</td>
+<td>
+
+<img src="/images/introduction/watchlist.jpg"></td>
+</tr>
+</table>
+
+When you are logged in, you'll see a link labeled "My JSRs" in the left nav under "My JCP". Click the link and you'll be brought to a page that lists JSRs in three sections: the first section is all of the JSRs you lead as Specification or Maintenance Lead, labeled "Spec Lead". The second section lists all the JSRs on which you serve as an Expert, labeled "Expert". The third section is a form for adding and removing JSRs from your Watch list, labeled "Edit Watch List", and the fourth section lists the JSRs you've added to your Watch List.<P>
+
+<b>Editing your watch list</b><BR>
+To add a JSR to your watch list, enter the number of the JSR you want to add in the search box, click "search". The JSR should appear in the "search results" box. Select the JSR(s) you want to add from that list, then click "add". The JSR(s) you have selected will be added to the "Saved selections" list. When you are satisfied with the list you've created, click "submit" to update the "My JSRs" section.
+
+<a name="jsr"></a><h2>Navigating the new JSR pages</h2><BR>
+
+The information available on a JSR's page has been reorganized as the layout of the page has changed. Go to a JSR page, such as <a href="/en/jsr/detail?id=300">http://jcp.org/en/jsr/detail?id=300</a>.
+
+<table>
+<tr>
+<td width="50">&nbsp;</td>
+<td>
+
+<img src="/images/introduction/jsr-tabs-1.jpg"></td>
+</tr>
+</table>
+
+On this page you'll see three or four tabs: JSR, Update, Expert Group, and (for Specification or Maintenance Leads) Administration. Click the respective tab for that area of the JSR.<P>
+
+<b>JSR</b><BR>
+Just under the tab, you have three options for presenting the JSR proposal information:
+<ul>
+<li>Summary - this shows the status table of the JSR, the Specification Lead(s) and the names of the Members serving on the Expert Group. A link on this page leads to the public discussion board for the JSR. Another link, "I would like to join this Expert Group", leads to a form for nominating yourself to serve as an Expert on the JSR.
+<li>Proposal - this shows the original Java Specification Request, outlining the plans for the specification, its development, the schedule of the JSR, the need for the Specification, the working model of the Expert Group, the license terms, as well as any changes that have been made to the scope of the work.
+<li>Summary & Proposal - combines the other two into one page
+</ul>
+<P>
+
+<B>Update</b><BR>
+Just under the tab, you have four options for viewing the Updates that the Specification Lead and Expert Group have provided directly to the community:
+<ul>
+<li>Community Summary - this is a page that the Spec Lead can edit, to provide updates on the progress of the JSR, links to other sites relevant to the JSR's development, or any other information the Spec Lead wishes to provide to people interested in the JSR.
+<li>Join Community Discussion - this is a form you can submit to request to be added to the JSR's observers discussion board.
+<li>Community Discussion - this will lead you to the JSR's observers discussion board, if you have been added to it.
+<li>Community files - this is a file repository where Spec Leads can upload interim drafts and other files for the community to review in addition to the official JCP milestone drafts.
+</ul>
+<P>
+
+<B>Expert Group</b><BR>
+If you are not on a particular JSR's Expert Group, you will be returned to the My JSRs list or prompted to log in when trying to access this tab. This tab is private to the people who are serving as Experts on that JSR's Expert Group. the layout of the EG tab is substantially similar to the Update tab: there is a page which the Spec Lead may edit, a file repository, and a link to the Expert Group-private discussion board.<P>
+
+<B>Administration</B><BR>
+If you are the Spec Lead of a particular JSR, you will also see the Administration tab. From this tab, you can perform a number of tasks:
+<ul>
+<li>Open or close your Expert Group
+<li>Review, approve and/or reject Expert Group nominations
+<li>Review, approve and/or ignore Observers discussion board requests
+</ul>
+<P>
+
+<a name="boards"></a><h2>Discussion boards</h2>
+<table>
+<tr>
+<td width="50">&nbsp;</td>
+<td>
+
+<img src="/images/introduction/boards.jpg"></td>
+</tr>
+</table>
+
+One of the biggest changes to the jcp.org web site are the new discussion boards. Largely replacing the existing mail aliases, the discussion boards can be reached a number of ways. When you log in to the site, the section of the left navigation bar labeled "My JCP" has a link labeled "My Discussions". Clicking "My Discussions" brings you to a top-level overview page of the boards which you can access, including general topics discussion boards as well as any observer or Expert Group boards which you can access. By default, this list does NOT show the public discussion boards for each JSR, as that would make the page very long with the hundreds of entries. You may, however, click the "List ALL boards" link to get that full list of boards you can access. <P>
+
+<B>General Discussion boards</b><BR>
+At launch there were eight general discussion boards, which each covered a larger topic than just one JSR. They are:
+<ul>
+<li>jcp-announcements: This board is used by the PMO to send out announcements related to the JCP in general; things like milestone postings, JSR releases, ballot results, and such.
+<li>jcp-general-discussion: this board can be used for general discussion about the JCP. Anyone who is registered can read and post to this board.
+<li>technology boards: at launch there were 3 technology categories for discussion: JAIN, OSS and XML. These can be read and posted to by anyone registered on jcp.org.
+<li>Java edition boards: there are 3 boards which correspond to the three Java editions: SE, EE and ME. Anyone registered to jcp.org may read and post to these boards.
+</ul>
+
+<B>JSR Discussion boards</b><BR>
+In addition to the general topics discussion boards, every JSR has three discussion boards:
+<ul>
+<li>jsr-xxx-public: this is a board to which any registered user can post. Some Expert Groups may choose to use these boards for their primary communication on the JSR's development. As an alternative to viewing the long list of all boards, you can also get to a given JSR's public board by clicking the "jsr-xxx-public" link on the JSR's summary page.
+<li>jsr-xxx-observers: this is a board to which any registered user may request to be added, to which the JSR's Spec Lead and experts are automatically subscribed. Some Expert Groups may choose to use these boards for their primary communication on the JSR's development, while still others may use it as a mechanism for providing updates to the particularly interested members of the community. To request to be added to a JSR's observer board, use the <a href="/en/jsr/obsreq">Observers board request form</a> to ask to be added to the board. 
+<li>jsr-xxx-eg: this is a board that is private to the Specification Lead(s) and Expert Group members for that JSR. Some Expert Groups may choose to use these boards for their primary communication on the JSR's development, using the others as mechanisms for community updates.
+</ul>
+<P>
+
+<B>Using the boards</b><BR>
+When you view a given discussion board, you can click the "new thread" link to start your own thread, or you can click on the title of any of the existing threads to read that thread. When you start your own thread, you enter a title for the thread and then the body of the comment. Click "post" when you've finished. The new thread will appear. When you click on the title of an existing thread, the first page of messages in that thread will appear. Next to each message is a set of icons that give you some control over your postings and ways to respond to the postings of others. You can edit or delete your message in the thread. If it is someone else's message, you can reply to their message or reply while quoting the message in question. The reply interface is nearly identical to the add new thread interface; when you've finished entering your message, click "post" to submit it.
+<P>
+
+<B>Using the boards via e-mail</b><BR>
+Many Expert Groups wish to conduct their communications primarily through e-mail. Both the observers and EG-private boards also generate e-mail messages. This allows the people using those boards to choose to use either the board's web interface, or just to interact with the board via e-mail, where it functions like a standard mailing list, or some combination of the two. For instance, if you are on the Expert Group for JSR 500, you could send mail to jsr-500-eg<faketag></faketag>&#64;jcp.org. This message would be distributed to everyone else on the Expert Group via e-mail, as well as being entered in the discussion board for future reference.<P>
+
+<a name="wiki"></a><h2>Wiki pages</h2><P>
+Hand-in-hand with the discussion boards are wiki pages which you can create and edit.<P>
+
+<B>Accessing the wiki</b><BR>
+To get to the wiki, you must login on the left navigation bar. Then click "My Discussions". This will take you to the list of discussion boards. But at the top is a selection of pull-down menus; one of them is "Wiki". Click "wiki" or select "Wiki home" from the pull-down menu to see the top page.<P>
+
+<B>Creating a page</b><BR>
+To create a page in the wiki, select "Create Page" from the wiki pull-down menu. You'll be presented with a form for submitting the page title, summary, and contents. When you've finished entering your new page, click "save" to add it to the wiki.<P>
+
+<B>Editing an existing page</b><BR>
+To edit an existing page, view that page and click the "Edit" icon (looks like a notepad & pencil) to bring up the edit screen, which looks just like the create a page screen except that you can't change the title of the page. An alternative method of getting to the edit screen is to select "List Pages" from the wiki pull-down menu, then click the "edit" icon to the right of the listing for the page you want to edit, without first going to the page itself.<P>
+ 
+<a name="rss"></a><h2>RSS feeds</h2><P>
+
+As you browse the discussion boards and wiki pages, you will see the "RSS" icon. Clicking that icon will give you a feed for you to give to your preferred RSS reader. Note, however, that SSL must be enabled in your reader in order for it to receive the feed. Individual discussion boards, general wiki pages and individual wiki pages all have feeds to which you can subscribe.<P>
+
+<a name="stars"></a><h2>Content Ratings</h2><P>
+
+You can now "rate" discussion board and wiki content with a "star" rating. Simply browse to a jcp.org wiki page or a discussion board. You'll see the five starsthere. Clicking the respective stars adds your rating to an aggregated rating of the content by all users of the JCP web site. One star represents something terrible, which you dislike intensely. Two stars would be something that you just didn't like. Three stars means you felt it was OK: not good, not bad, just OK. Four stars means you liked it, and five stars means you really love it.<P>
+  
+
+&nbsp;<BR>
+&nbsp;<BR>
+&nbsp;<BR>
+&nbsp;<BR>
+&nbsp;<BR>
+&nbsp;<BR>
+&nbsp;<BR>
+&nbsp;<BR>
+&nbsp;<BR>
+&nbsp;<BR>
+&nbsp;<BR>
+&nbsp;<BR>
+&nbsp;<BR>
+&nbsp;<BR>
+&nbsp;<BR>
+&nbsp;<BR>
+&nbsp;<BR>
+&nbsp;<BR>
+&nbsp;<BR>
+&nbsp;<BR>
+&nbsp;<BR>
+&nbsp;<BR>
+&nbsp;<BR>
+&nbsp;<BR>
+&nbsp;<BR>
+&nbsp;<BR>
+&nbsp;<BR>
+&nbsp;<BR>
+&nbsp;<BR>
+&nbsp;<BR>
+&nbsp;<BR>
+&nbsp;<BR>
+&nbsp;<BR>
+
+ 
+
+
+
+</OL>
+               &nbsp;
+<BR>
+&nbsp;<BR>
+	
+<!-- ** BEGIN: footer.jsp ** //-->
+
+
+
+
+
+
+
+
+</td>
+</tr>
+</table>
+
+<!-- ** END: Content Table ** //-->
+
+<!-- ** BEGIN: Footer Table ** //-->
+
+<div id="footer" style="clear: both;">
+    <div class="footleft">
+        <a href="/en/resources/contacts">Contact Us</a>
+    </div>
+	
+    <div class="botbar"><img src="/images/spacer.gif" alt="" height="23" width="1"></div>
+
+    <div class="footleft2">
+         &copy; 2019, Oracle Corporation and/or its affiliates. 
+        <a href="/en/home/terms">Terms of Use</a>. <a href="http://www.oracle.com/us/legal/privacy/index.html">Privacy Policy</a>. <a href="http://www.oracle.com/us/legal/third-party-trademarks/third-party-trademarks-078568.html">Trademarks</a>
+    </div>
+
+    <div class="footright">
+        <img src="/images/common/logo_oracle_footer.gif" alt="Oracle Corporation" height="22" width="91">
+    </div>
+
+    <div style="clear: both;"><img src="/images/spacer.gif" alt="" height="30" width="1"></div>
+</div>
+
+<!-- ** END: Footer Table ** //-->
+
+
+
+<!-- ** Menu Start ** //-->
+
+
+
+</body>
+</html>
+<!-- ** END: footer.jsp ** //-->
+
+

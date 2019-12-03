@@ -1,0 +1,520 @@
+
+<!-- ** BEGIN: header.jsp ** //-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3c.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+<head>
+    
+
+   
+    <link href="/includes/css/menu.css" rel="stylesheet" type="text/css"></link>
+    <link href="/includes/css/style.css" rel="stylesheet" type="text/css"></link>
+    <!--[if lt IE 6]><link href="/includes/css/style5.css" rel="stylesheet" type="text/css" ></link><![endif]-->
+    <!--[if gte IE 5]><link href="/includes/css/style6.css" rel="stylesheet" type="text/css" ></link><![endif]-->
+    <link href="/includes/css/tabs.css"  rel="stylesheet" type="text/css"></link>
+
+    <script type="text/javascript" src="/includes/scripts/tabs.js"></script>
+    <script type="text/javascript" src="/includes/scripts/menu.js"></script>
+   
+
+    
+
+    
+        <title>The Java Community Process(SM) Program - communityprocess - ec-public</title>
+    
+
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+
+
+<body onload="P7_initPM(0,1,0,0,-1)">
+
+    <a name="top"></a>
+
+    <div id="header">
+	<div id="logo">
+		<a href="/en/home/index"><img src="/images/spacer.gif" alt="Java Community Process" height="81" width="151"></a>
+	</div>
+	<div id="tools">
+		<div class="search">
+			<form name="search" action="/en/jsr/summary" method="get" onsubmit="return validate_search()">
+				<input name="id" value="Search JSRs" size="16" class="form" onfocus="nullify_if_equal(this, 'Search JSRs')" type="text">
+				<a href="javascript:document.search.submit()" onclick="return validate_search()"><img src="/images/button_go.gif" width="21" height="16" border="0" alt="Submit this Search" name="sub_search"></a>
+			</form>
+		</div>
+		<div class="tools">
+			<a href="/en/press/pressroom">Press Room</a> &nbsp;|&nbsp;
+			<a href="http://java.com/java/download/index.jsp?cid=jdp78399">Get Java Here</a> &nbsp;|&nbsp;
+			<!-- <a href="javascript:void(0)">Print Format</a> &nbsp;|&nbsp;&nbsp; -->
+		</div>
+
+	</div>
+	<div style="clear: right;"></div>
+
+        
+
+	<div class="topbar"><img src="/images/spacer.gif" alt="" height="3" width="154"></div>
+	<div id="update"> </div>
+    </div>
+
+
+    
+
+        <!-- ** BEGIN: Content Table ** //-->
+
+        <table width="100%" border="0" cellpadding="0" cellspacing="0">
+
+            <tr>
+
+                <!-- ** BEGIN: Navigation Column ** //-->
+                <td width="150" id="leftcontent" valign="top">
+                    <!-- Navigation Placeholder //-->
+
+                    
+
+                    <div class="bar"><img src="/images/hr_dots1.gif" alt="" height="3" width="150"></div>
+
+        <!-- begin find JSRs form -->
+        <!-- IMPORTANT! do not convert this form to Struts < html : form > tag.  javascript change of form.action property fails. -->
+        <img src="/images/hd_find-jsrs.gif" alt="Find JSRs" height="18" width="150">
+        <form name="findjsr" action="/en/jsr/summary" method="get" class="pt5" onsubmit="return validate_findjsr()">
+            <input name="id" size="18" class="form" value="Search JSRs" onfocus="nullify_if_equal(this, 'Search JSRs')" type="text">
+	    <a href="javascript:document.findjsr.submit()" onclick="return validate_findjsr()"><img src="/images/button_go.gif" width="21" height="16" border="0" alt="Submit this Search" name="sub_search"></a>
+        </form><br><br>
+
+        <!-- ** Menu Start ** //-->
+
+        <ul id="p7PMnav">
+            <li><a href="/en/jsr/platform">JSRs by Platform</a></li>
+            <li><a href="/en/jsr/tech">JSRs by Technology</a></li>
+            <li><a href="/en/jsr/stage">JSRs by Stage</a></li>
+            <li><a href="/en/jsr/ec">JSRs by Committee</a></li>
+            <li><a href="/en/jsr/all">List of All JSRs</a></li>
+
+            <!--end find JSRs form -->
+            <div style="clear: both;"><img src="/images/spacer.gif" alt="" height="25" width="1"></div>
+
+            <!--begin my JCP -->
+            <img src="/images/hd_my-jcp.gif" alt="My JCP" height="18" width="150">
+            
+
+          <form name="login" method="get" action="/en/user/login" >
+            <input name="Sign-in" type="submit" title="Sign-in" value="Sign-in" />
+          </form>
+
+            <div style="clear:both"><img src="/images/global/spacer.gif" width="1" height="3" alt=""></div>
+            <div class="noNav">
+                <a href="/en/user/register">Register for Site</a>
+            </div>
+
+             <div class="bar"><img src="/images/hr_dots1.gif" alt="" height="3" width="150"></div>
+           <div class="noNav" style="color: #666666; padding: 0;">
+              Use of JCP site is subject to the
+              <a href="/en/home/terms" style="display:inline;padding: 0">JCP Terms of Use</a> and the
+              <a href="http://www.oracle.com/us/legal/privacy/index.html" style="display:inline;padding: 0" href="">Oracle Privacy Policy</a>
+          </div>
+
+            
+
+            <div style="clear:both"><img src="/images/global/spacer.gif" width="1" height="25" alt=""></div>
+
+            <!--begin JCP info -->
+            <img src="/images/hd_jcp-info.gif" alt="JCP Info" height="18" width="150">
+
+            <li><a href="/en/procedures/overview" class="p7PMtrg">About JCP</a>
+                <ul>
+                    <li><a href="/en/procedures/overview">Program Overview</a></li>
+                    <li><a href="/en/procedures/jcp2">JCP Process Document</a></li>
+                    <li><a href="/en/whatsnew/calendar">Calendar</a></li>
+                    <li><a href="/en/participation/members">JCP Members</a></li>
+                    <li><a href="/en/participation/committee">Executive Committee</a></li>
+                    <li><a href="/en/whatsnew/elections">Elections</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/en/participation/overview" class="p7PMtrg">Get Involved</a>
+		<ul>
+                    <li><a href="/en/participation/overview">Overview</a></li>
+                    <li><a href="/en/participation/membership">Becoming a JCP Member</a></li>
+		</ul>
+            </li>
+
+            <li><a href="/en/resources/contents" class="p7PMtrg">Community Resources</a>
+                <ul>
+                    <li><a href="/en/resources/contents">Overview</a></li>
+                    <li><a href="/en/resources/tutorials">Tutorials</a></li>
+                    <li><a href="/en/resources/multimedia">JCP Podcasts</a></li>
+                    <li><a href="/en/resources/guide">Spec Lead Guide</a></li>
+                    <li><a href="/en/resources/tdk">TCK Tool & Info</a></li>
+                    <li><a href="/en/resources/license_reference">License Reference</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/en/press/pmo" class="p7PMtrg">Community News</a>
+                <ul>
+                    <li><a href="/en/press/pmo">News</a></li>
+                    <li><a href="/en/press/news/awards/awards_main">Programs &amp; Awards</a></li>
+                    <li><a href="/en/press/releases">Press Releases</a></li>
+                    <li><a href="/en/press/success">Success Stories</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/en/introduction/faq">FAQ</a></li>
+
+            <li><a href="/en/resources/contacts">Contact Us</a></li>
+
+            <div style="clear: both;"><img src="/images/spacer.gif" alt="" height="25" width="1"></div>
+
+            <!--[if lte IE 6]><style>#p7PMnav a{height:1em;}#p7PMnav li{height:1em;float:left;clear:both;width:100%}</style><![endif]-->
+            <!--[if IE 6]><style>#p7PMnav li{clear:none;}</style><![endif]-->
+            <!--[if IE 7]><style>#p7PMnav a{zoom:100%;}#p7PMnav li{float:left;clear:both;width:100%;}</style><![endif]-->
+        </ul>
+
+        
+
+        <!--begin ad space -->
+        <div class="ads">
+            <a href="http://java.com/java/download/index.jsp?cid=jdp78399" target="_blank"><img style="display: ;" src="/images/ad_banner2.gif" alt="Ad Banner" border="1" height="70" width="150"></a>
+        </div>
+        <!--end ad space -->
+
+<!-- ** Menu End ** //-->
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;<br>
+
+    
+
+                    &nbsp;<br>
+                    <img src="/images/common/trans.gif" alt="" width="1" height="150"><br>
+
+              
+
+
+
+                </td>
+                <!-- ** END: Navigation Column ** //-->
+
+                <!-- ** BEGIN: Gutter Column ** //-->
+		<td width="10" nowrap><img src="/images/common/trans.gif" alt="" width="10" height="1"></td>
+                <!-- ** END: Gutter Column ** //-->
+
+                <!-- ** BEGIN: Content Column ** //-->
+                <td width="100%" valign="top">
+
+    
+<script type="text/javascript">
+
+String.prototype.trim = function() {
+        return this.replace(/^\s+|\s+$/g,"");
+}
+String.prototype.ltrim = function() {
+        return this.replace(/^\s+/,"");
+}
+String.prototype.rtrim = function() {
+        return this.replace(/\s+$/,"");
+}
+
+function validate_search() {
+	if (document.search.id.value == "Search JSRs" || document.search.id.value.trim().length == 0) {
+		alert("Search terms must be entered first");
+		return false;
+	}
+	return true;
+}
+
+function validate_findjsr() {
+	if (document.findjsr.id.value == "Search JSRs" || document.findjsr.id.value.trim().length == 0) {
+		alert("Search terms must be entered first");
+		return false;
+	}
+	return true;
+}
+
+function nullify_if_equal(field, str) {
+	// alert("val=" + field.value);
+	if (field.value == str) {
+		field.value = "";
+	}
+}
+
+</script>
+<!-- ** END: header.jsp ** //-->
+
+
+
+
+
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+<title>JCP EC Meeting Minutes: August 13, 2019</title>
+
+<link href="../../../docs/PCurranStyles.css" rel="stylesheet" type="text/css" />
+<link href="https://jcp.org/files/PCurranStyles.css" rel="stylesheet" type="text/css" />
+
+</head>
+
+<body>
+<center><H1>Executive Committee Meeting Minutes<BR>for August 13, 2019</H1></center>
+
+<h2>Date</h2>
+
+<p>August 13, 2019</p>
+
+<h2>Location</h2>
+
+<p>Teleconference</p>
+
+<h2>Agenda</h2>
+
+<ul>
+<li><a href="./PMO-topics-August-2019.pdf">PMO Presentation</a></li>
+<p>
+<li>Personnel Changes</li>
+<p>
+<li><a href="./EC_Stats_August2019.pdf">EC Stats</a></li>
+<p>
+<li>EC Elections</li>
+<p>
+<li>JCP Membership Updates</li>
+<p>
+<li>Working Group Updates - JCP.Next, Business Value, Communications</li>
+<p>
+<li>Oracle Code One Related Events and Activities</li>
+<p>
+<li>2020 Calendar</li>
+</ul>
+
+<h2>Attendance</h2>
+
+<table border="1" width="50%">
+   <tbody>
+   <tr>
+      <td><div align="center"><strong>Tuesday, August 13, 2019</strong></td>
+   </tr>
+   <tr>
+      <td><div align="center"><strong>PMO</strong></td>
+   </tr>
+   <tr>
+      <td>
+      <ul>
+         <li><p>Heather VanCura</li>
+      </ul>
+      </td>
+   </tr>
+   <tr>
+      <td><div align="center"><strong>Executive Committee</strong></td>
+   </tr>
+   <tr>
+      <td>
+      <ul>
+      <p>
+      <li>Alibaba - Tianxiao Gu - <em>present</em></li>
+      <li>ARM - Stuart Monteith - <em>present</em></li>
+      <li>Azul Systems - Simon Ritter - <em>present</em></li>
+      <li>BNY Mellon - Chandra Guntur, Nikhil Nanivadekar - <em>present</em></li> 
+      <li><font color="#ff0000">Credit Suisse - <em>not present</em></font></li> 
+      <li>Eclipse Foundation - Paul Buck - <em>present</em></li>
+      <li>Fujitsu - Mike DeNicola - <em>present</em></li>
+      <li>Goldman Sachs - Jessica Man - <em>present</em></li>
+      <li><font color="#ff0000">Ivar Grimstad - <em>not present</em></font></li>
+      <li><font color="#ff0000">Hazelcast - <em>not present</em></font></li>
+      <li>HPE - Soumira Chatterjee, Bala Viswanathan - <em>present</em></li>
+      <li>IBM - Tim Ellison - <em>present</em></li>
+      <li>Intel - Steve Dohrmann - <em>present</em></li>
+      <li>JetBrains -  Trisha Gee - <em>present</em></li>
+      <li><font color="#ff0000">London Java Community - <em>not present</em></font></li>
+      <li>MicroDoc - Bruno Caballero - <em>present</em></li> 
+      <li>Oracle - Anish Karmarkar - <em>present</em></li> 
+      <li>SAP -  Gotz Lindenmaier, Martin Doerr, Volker Simonis - <em>present</em></li>
+      <li>Software AG - Prasad Yendluri - <em>present</em></li>
+      <li>SouJava - Otavio Santana, Bruno Souza - <em>present</em></li>
+      <li>Tomitribe - Amelia Eiras - <em>present</em></li>
+      <li>Twitter -  Tony Printezis - <em>present</em></li>
+      <li>V2COM - Leonardo Lima - <em>present</em></li>
+      </ul>
+      <p>Total Attendance: 19 of 23 voting members<p>
+      </td>
+   </tr>
+   <tr>
+      <td><p>Since 75% of the EC's voting members were present, the EC was <strong>quorate</strong> for this session.</td>
+   </tr>
+</table>
+
+<BR>
+<h2>Minutes</h2>
+
+<h3>Changes in status as a result of attendance at this meeting</h3>
+
+<p>The <a href="http://jcp.org/en/procedures/ec_standing_rules">EC Standing Rules</a> state the following penalties 
+for non-attendance at EC meetings (note that those who participate in face-to-face meetings by phone are officially 
+counted as absent):</p>
+   <ul>
+      <li><p>Missing two meetings in a row results in a loss of voting privileges until two consecutive meetings have been attended.</li>
+      <li><p>Missing five meetings in a row, or missing two-thirds of the meetings in any consecutive 12-month period results in loss of
+	     the EC seat.</li> 
+   </ul>
+
+<p>
+Azul Systems regained their voting privileges as a result of attending this meeting. 
+Credit Suisse lost their voting privileges as a result of not attending this meeting.
+</p>
+
+<h3>Personnel Changes</h3>
+
+<p>
+New primary and alternate for ARM (Stuart Monteith, Thomas Parker); new alternate for Alibaba (Tianxiao Gu); 
+additional new alternate for BNY Mellon (Nikhil Nanivadekar), new alternate for MicroDoc (Bruno Caballero); 
+new primary for SAP (Goetz Lindenmaier - who was previously an alternate); 
+new alternate for SAP (Martin Doerr); new primary for IBM (Mark Little/Red Hat).
+</p>
+
+<p>
+Andres Almiray and Red Hat have resigned their EC Seats.
+</p>
+
+<h3>EC Elections</h3>
+
+<p>
+Heather reviewed the dates and next steps, including the Meet the Candidates session coming up at Code One on 16 September. 
+Heather also summarized the candidates for the Ratified, Elected and Associate seats. 
+See the <a href="./PMO-topics-August-2019.pdf">presentation</a> for details.
+</p>
+
+<h3>EC Stats</h3>
+
+<p>
+Heather presented the usual EC stats (see the <a href="./EC_Stats_August2019.pdf">presentation</a> for details).
+</p>
+
+<h3>Membership Report Update</h3>
+
+<p>
+Heather gave an update on the Membership renewals effort 
+(see the <a href="./PMO-topics-August-2019.pdf">presentation</a> for details). 
+</p>
+
+<h3>JCP EC Working Group Updates</h3>
+
+<p>
+The JCP.Next Working Group met two times to discuss a Maintenance Review of JCP 387, Streamline the JCP program - clarification 
+on allowing multiple Public Reviews and resizing the JCP EC (see the <a href="./PMO-topics-August-2019.pdf">presentation</a> 
+for more details). The Maintenance Review started in July, and the ballot passed on 12 August; a Maintenance Release is planned 
+for later in August. The changes will go into effect in time for the 2019 Elections in November, and will be completed following 
+the 2020 Elections.
+</p>
+
+<p>
+The Business Value Working Group met two times to discuss the business value of the JCP program overall for the continued success 
+of Java - JSRs developed and covered by a Spec License that includes strong compatibility requirements, allowing multiple 
+implementations that create choice; implementations must pass the TCK. 
+</p>
+
+<p>
+Heather suggested the Communications Working Group could meet on September 3 to discuss plans for communications around Code One.
+</p>
+
+<h3>Oracle Code One Activities and Events</h3>
+
+<p>
+We reviewed the plans for JCP related activities at Oracle Code One 
+(see the <a href="./PMO-topics-August-2019.pdf">presentation</a> for details).
+</p>
+
+<h2>Other Business</h2>
+
+<p>
+Heather reviewed the calendar dates for the remaining 2019 JCP EC Meetings and proposed dates and locations for the 
+2020 calendar (see the <a href="./PMO-topics-August-2019.pdf">presentation</a> for details); the September face to face will 
+be in San Francisco hosted by Twitter. For our Spring 2020 face to face meeting, Heather summarized the locations options 
+and will start a poll - BNY Mellon offered to investigate Singapore, SouJava offered to investigate Sao Paulo, Alibaba offered 
+to investigate Hangzhou and IBM, or London Java Community offered to investigate London locations for hosting. Twitter and 
+Alibaba both offered to host the Fall face to face meeting in San Francisco in 2020, dates to be decided based on plans for 
+coinciding with Oracle Code One 2020.
+</p>
+
+<h2>Next Meeting</h2>
+
+<ul>
+   <li>September 13, 2019; 9:30am - 5:00pm PDT, Face to Face Meeting hosted by Twitter in San Francisco, California.</li>
+</ul>
+
+</body>
+</html>
+
+
+
+<!-- ** BEGIN: footer.jsp ** //-->
+
+
+
+
+
+
+
+
+</td>
+</tr>
+</table>
+
+<!-- ** END: Content Table ** //-->
+
+<!-- ** BEGIN: Footer Table ** //-->
+
+<div id="footer" style="clear: both;">
+    <div class="footleft">
+        <a href="/en/resources/contacts">Contact Us</a>
+    </div>
+	
+    <div class="botbar"><img src="/images/spacer.gif" alt="" height="23" width="1"></div>
+
+    <div class="footleft2">
+         &copy; 2019, Oracle Corporation and/or its affiliates. 
+        <a href="/en/home/terms">Terms of Use</a>. <a href="http://www.oracle.com/us/legal/privacy/index.html">Privacy Policy</a>. <a href="http://www.oracle.com/us/legal/third-party-trademarks/third-party-trademarks-078568.html">Trademarks</a>
+    </div>
+
+    <div class="footright">
+        <img src="/images/common/logo_oracle_footer.gif" alt="Oracle Corporation" height="22" width="91">
+    </div>
+
+    <div style="clear: both;"><img src="/images/spacer.gif" alt="" height="30" width="1"></div>
+</div>
+
+<!-- ** END: Footer Table ** //-->
+
+
+
+<!-- ** Menu Start ** //-->
+
+
+
+</body>
+</html>
+<!-- ** END: footer.jsp ** //-->
+

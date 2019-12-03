@@ -1,0 +1,532 @@
+
+<!-- ** BEGIN: header.jsp ** //-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3c.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+<head>
+    
+
+   
+    <link href="/includes/css/menu.css" rel="stylesheet" type="text/css"></link>
+    <link href="/includes/css/style.css" rel="stylesheet" type="text/css"></link>
+    <!--[if lt IE 6]><link href="/includes/css/style5.css" rel="stylesheet" type="text/css" ></link><![endif]-->
+    <!--[if gte IE 5]><link href="/includes/css/style6.css" rel="stylesheet" type="text/css" ></link><![endif]-->
+    <link href="/includes/css/tabs.css"  rel="stylesheet" type="text/css"></link>
+
+    <script type="text/javascript" src="/includes/scripts/tabs.js"></script>
+    <script type="text/javascript" src="/includes/scripts/menu.js"></script>
+   
+
+    
+
+    
+        <title>The Java Community Process(SM) Program - communityprocess - elections</title>
+    
+
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+
+
+<body onload="P7_initPM(0,1,0,0,-1)">
+
+    <a name="top"></a>
+
+    <div id="header">
+	<div id="logo">
+		<a href="/en/home/index"><img src="/images/spacer.gif" alt="Java Community Process" height="81" width="151"></a>
+	</div>
+	<div id="tools">
+		<div class="search">
+			<form name="search" action="/en/jsr/summary" method="get" onsubmit="return validate_search()">
+				<input name="id" value="Search JSRs" size="16" class="form" onfocus="nullify_if_equal(this, 'Search JSRs')" type="text">
+				<a href="javascript:document.search.submit()" onclick="return validate_search()"><img src="/images/button_go.gif" width="21" height="16" border="0" alt="Submit this Search" name="sub_search"></a>
+			</form>
+		</div>
+		<div class="tools">
+			<a href="/en/press/pressroom">Press Room</a> &nbsp;|&nbsp;
+			<a href="http://java.com/java/download/index.jsp?cid=jdp78399">Get Java Here</a> &nbsp;|&nbsp;
+			<!-- <a href="javascript:void(0)">Print Format</a> &nbsp;|&nbsp;&nbsp; -->
+		</div>
+
+	</div>
+	<div style="clear: right;"></div>
+
+        
+
+	<div class="topbar"><img src="/images/spacer.gif" alt="" height="3" width="154"></div>
+	<div id="update"> </div>
+    </div>
+
+
+    
+
+        <!-- ** BEGIN: Content Table ** //-->
+
+        <table width="100%" border="0" cellpadding="0" cellspacing="0">
+
+            <tr>
+
+                <!-- ** BEGIN: Navigation Column ** //-->
+                <td width="150" id="leftcontent" valign="top">
+                    <!-- Navigation Placeholder //-->
+
+                    
+
+                    <div class="bar"><img src="/images/hr_dots1.gif" alt="" height="3" width="150"></div>
+
+        <!-- begin find JSRs form -->
+        <!-- IMPORTANT! do not convert this form to Struts < html : form > tag.  javascript change of form.action property fails. -->
+        <img src="/images/hd_find-jsrs.gif" alt="Find JSRs" height="18" width="150">
+        <form name="findjsr" action="/en/jsr/summary" method="get" class="pt5" onsubmit="return validate_findjsr()">
+            <input name="id" size="18" class="form" value="Search JSRs" onfocus="nullify_if_equal(this, 'Search JSRs')" type="text">
+	    <a href="javascript:document.findjsr.submit()" onclick="return validate_findjsr()"><img src="/images/button_go.gif" width="21" height="16" border="0" alt="Submit this Search" name="sub_search"></a>
+        </form><br><br>
+
+        <!-- ** Menu Start ** //-->
+
+        <ul id="p7PMnav">
+            <li><a href="/en/jsr/platform">JSRs by Platform</a></li>
+            <li><a href="/en/jsr/tech">JSRs by Technology</a></li>
+            <li><a href="/en/jsr/stage">JSRs by Stage</a></li>
+            <li><a href="/en/jsr/ec">JSRs by Committee</a></li>
+            <li><a href="/en/jsr/all">List of All JSRs</a></li>
+
+            <!--end find JSRs form -->
+            <div style="clear: both;"><img src="/images/spacer.gif" alt="" height="25" width="1"></div>
+
+            <!--begin my JCP -->
+            <img src="/images/hd_my-jcp.gif" alt="My JCP" height="18" width="150">
+            
+
+          <form name="login" method="get" action="/en/user/login" >
+            <input name="Sign-in" type="submit" title="Sign-in" value="Sign-in" />
+          </form>
+
+            <div style="clear:both"><img src="/images/global/spacer.gif" width="1" height="3" alt=""></div>
+            <div class="noNav">
+                <a href="/en/user/register">Register for Site</a>
+            </div>
+
+             <div class="bar"><img src="/images/hr_dots1.gif" alt="" height="3" width="150"></div>
+           <div class="noNav" style="color: #666666; padding: 0;">
+              Use of JCP site is subject to the
+              <a href="/en/home/terms" style="display:inline;padding: 0">JCP Terms of Use</a> and the
+              <a href="http://www.oracle.com/us/legal/privacy/index.html" style="display:inline;padding: 0" href="">Oracle Privacy Policy</a>
+          </div>
+
+            
+
+            <div style="clear:both"><img src="/images/global/spacer.gif" width="1" height="25" alt=""></div>
+
+            <!--begin JCP info -->
+            <img src="/images/hd_jcp-info.gif" alt="JCP Info" height="18" width="150">
+
+            <li><a href="/en/procedures/overview" class="p7PMtrg">About JCP</a>
+                <ul>
+                    <li><a href="/en/procedures/overview">Program Overview</a></li>
+                    <li><a href="/en/procedures/jcp2">JCP Process Document</a></li>
+                    <li><a href="/en/whatsnew/calendar">Calendar</a></li>
+                    <li><a href="/en/participation/members">JCP Members</a></li>
+                    <li><a href="/en/participation/committee">Executive Committee</a></li>
+                    <li><a href="/en/whatsnew/elections">Elections</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/en/participation/overview" class="p7PMtrg">Get Involved</a>
+		<ul>
+                    <li><a href="/en/participation/overview">Overview</a></li>
+                    <li><a href="/en/participation/membership">Becoming a JCP Member</a></li>
+		</ul>
+            </li>
+
+            <li><a href="/en/resources/contents" class="p7PMtrg">Community Resources</a>
+                <ul>
+                    <li><a href="/en/resources/contents">Overview</a></li>
+                    <li><a href="/en/resources/tutorials">Tutorials</a></li>
+                    <li><a href="/en/resources/multimedia">JCP Podcasts</a></li>
+                    <li><a href="/en/resources/guide">Spec Lead Guide</a></li>
+                    <li><a href="/en/resources/tdk">TCK Tool & Info</a></li>
+                    <li><a href="/en/resources/license_reference">License Reference</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/en/press/pmo" class="p7PMtrg">Community News</a>
+                <ul>
+                    <li><a href="/en/press/pmo">News</a></li>
+                    <li><a href="/en/press/news/awards/awards_main">Programs &amp; Awards</a></li>
+                    <li><a href="/en/press/releases">Press Releases</a></li>
+                    <li><a href="/en/press/success">Success Stories</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/en/introduction/faq">FAQ</a></li>
+
+            <li><a href="/en/resources/contacts">Contact Us</a></li>
+
+            <div style="clear: both;"><img src="/images/spacer.gif" alt="" height="25" width="1"></div>
+
+            <!--[if lte IE 6]><style>#p7PMnav a{height:1em;}#p7PMnav li{height:1em;float:left;clear:both;width:100%}</style><![endif]-->
+            <!--[if IE 6]><style>#p7PMnav li{clear:none;}</style><![endif]-->
+            <!--[if IE 7]><style>#p7PMnav a{zoom:100%;}#p7PMnav li{float:left;clear:both;width:100%;}</style><![endif]-->
+        </ul>
+
+        
+
+        <!--begin ad space -->
+        <div class="ads">
+            <a href="http://java.com/java/download/index.jsp?cid=jdp78399" target="_blank"><img style="display: ;" src="/images/ad_banner2.gif" alt="Ad Banner" border="1" height="70" width="150"></a>
+        </div>
+        <!--end ad space -->
+
+<!-- ** Menu End ** //-->
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;<br>
+
+    
+
+                    &nbsp;<br>
+                    <img src="/images/common/trans.gif" alt="" width="1" height="150"><br>
+
+              
+
+
+
+                </td>
+                <!-- ** END: Navigation Column ** //-->
+
+                <!-- ** BEGIN: Gutter Column ** //-->
+		<td width="10" nowrap><img src="/images/common/trans.gif" alt="" width="10" height="1"></td>
+                <!-- ** END: Gutter Column ** //-->
+
+                <!-- ** BEGIN: Content Column ** //-->
+                <td width="100%" valign="top">
+
+    
+<script type="text/javascript">
+
+String.prototype.trim = function() {
+        return this.replace(/^\s+|\s+$/g,"");
+}
+String.prototype.ltrim = function() {
+        return this.replace(/^\s+/,"");
+}
+String.prototype.rtrim = function() {
+        return this.replace(/\s+$/,"");
+}
+
+function validate_search() {
+	if (document.search.id.value == "Search JSRs" || document.search.id.value.trim().length == 0) {
+		alert("Search terms must be entered first");
+		return false;
+	}
+	return true;
+}
+
+function validate_findjsr() {
+	if (document.findjsr.id.value == "Search JSRs" || document.findjsr.id.value.trim().length == 0) {
+		alert("Search terms must be entered first");
+		return false;
+	}
+	return true;
+}
+
+function nullify_if_equal(field, str) {
+	// alert("val=" + field.value);
+	if (field.value == str) {
+		field.value = "";
+	}
+}
+
+</script>
+<!-- ** END: header.jsp ** //-->
+
+
+
+
+
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2//EN">
+<html>
+<head>
+<!--#config timefmt="%d-%b-%y" -->
+  <title>Java Community Process: EC Elections 2014</title>
+</head>
+<body alink="#ff0000" bgcolor="#ffffff" link="#0000ff" text="#000000"
+ vlink="#660066">
+<!-- server side include for top part of page -->
+<!--#include virtual="/share/include/normal.header.v4.0.html"--><!-- end server side include for top of page --><!-- begin table for main body navigation and content -->
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+  <tbody>
+    <tr align="left" valign="top">
+      <td> <img src="/images/pixel.gif" alt="" height="20" width="1"><br
+ clear="all">
+<!-- server side include for main java.sun.com navigation -->
+<!--#include virtual="/share/include/navigate.v4.0.html"--><!-- end server side include for main java.sun.com navigation -->
+      </td>
+      <td valign="top" width="100%"><!-- page headline --><font
+ size="+3">
+2014 Executive Committee (EC) Elections</font><br>
+<!-- end page headline -->
+<!-- optional subnav links -->
+      <p><font size="-1"> </font></p>
+<!-- end optional subnav links -->
+<!-- main page content -->
+     
+<p>
+The 2014 Fall Executive Committee (EC) Elections process is now complete. The EC Elections process was
+launched in June 2000. This election was hosted by Votenet and closed on 10 November 2014 at 11:59 PM
+Pacific Time.
+<P>
+
+This year, there were 8 Ratified and 5 Elected Seats open for election. Since we are transitioning to 
+JCP 2.10 in 2015, all those who win Elected Seats will serve a one year term.
+
+<BR><BR><BR>
+Congratulations to the following JCP Members as the new and re-elected EC Members.
+<BR><BR>
+
+<B>Ratified Seats:</B> Freescale, Gemalto M2M GmbH, Goldman Sachs, MicroDoc, SAP, Software AG, TOTVS and V2COM
+<P>
+<B>Open Election Seats:</B> ARM Inc., Azul Systems, Hazelcast, Inc., Werner Keil and Geir Magnusson Jr
+
+<BR><BR><BR>
+Newly elected EC Members take their seats on Tuesday, 25 November 2014.
+<BR><BR>
+
+
+<div class="header1">Detailed Election Results</div><P>
+
+Voting Period: 28 October - 10 November 2014.
+<P>
+Number of Eligible Voters: 818<BR>
+Percent of Eligible Members Casting Votes: 28.24% 
+<BR><BR><BR>
+
+<i><b>Ratified Seats:</b></i><P>
+
+<table cellspacing="8">
+<tr><th>Candidate</th><th>Yes votes (%)</th><th>No votes (%)</th><th>Abstentions</th></tr>
+<tr><td>Freesacle</b></td><td>156 (84)</td><TD>29 (16)</td><td>46</td></tr>
+<tr><td>Gemalto M2M GmbH</b></td><td>161 (84)</td><TD>31 (16)</td><td>39</td></tr>
+<tr><td>Goldman Sachs</b></td><td>141 (70)</td><TD>60 (30)</td><td>30</td></tr>
+<tr><td>MicroDoc</b></td><td>148 (83)</td><TD>31 (17)</td><td>52</td></tr>
+<tr><td>SAP</b></td><td>144 (76)</td><TD>46 (24)</td><td>41</td></tr>
+<tr><td>Software AG</td><td>151 (80)</td><td>38 (20)</td><td>42</td></tr>
+<tr><td>TOTVS</b></td><td>128 (77)</td><td>39 (23)</td><td>64</td></tr>
+<tr><td>V2COM</b></td><td>138 (78)</td><td>39 (22)</td><td>54</td></tr>
+</table>
+
+<P>
+<i><b>Open Election Seats:</b></i><P>
+
+The top five candidates have been elected. 
+<P>
+
+<table cellspacing="8">
+<tr><th>Candidate</th><th>Votes (%)</th></tr>
+<tr><td>Azul Systems</b></td><td>176 (17)</td></tr>
+<tr><td>ARM Inc. </b></td><td>157 (15)</td></tr>
+<tr><td>Werner Keil</td><td>119 (12)</td></tr>
+<tr><td>Geir Magnusson Jr</td><td>113 (11)</td></tr>
+<tr><td>Hazelcast, Inc.</td><td>108 (10)</td></tr>
+<tr><td>MoroccoJUG</td><td>94 (9)</td></tr>
+<tr><td>Jelastic, Inc.</td><td>81 (8)</td></tr>
+<tr><td>Waratek Ltd.</td><td>58 (6)</td></tr>
+<tr><td>Vladimir Safonov</td><td>56 (5)</td></tr>
+<tr><td>Maran Singh Malhi</td><td>44 (4)</td></tr>
+<tr><td>TimeSys Corporation</td><td>27 (3)</td></tr>
+<tr><td>None of the above</td><td>1 (0)</td></tr>
+</table>
+
+<P>
+For more information about the candidates who ran for the 2014 Executive Committee Election, please visit the <a href="/aboutJava/communityprocess/elections/2014-nominees.html">2014 Executive Committee Elections Nominees</a> page.<P>
+
+<BR>
+<table border=1 cellpadding=5>
+<tr><TD colspan=2><CENTER><B>
+TIMELINE FOR 2014 EC ELECTION</b></CENTER></td>
+</tr>
+<TR>
+<TD>
+16 September - 6 October 2014</td>
+<TD>
+Nominations open for Elected Seats</td>
+</TR>
+<TR>
+<TD>
+28 September 2014</td>
+<TD>
+Public EC meeting at JavaOne (EC nominees should attend)</td>
+</TR>
+</TR>
+<TR>
+<TD>
+23 October 2014</td>
+<TD>
+Meet the JCP Executive Committee Candidates Teleconference @ 9:30 AM PDT</td>
+<TR>
+<TD>
+23 October 2014</td>
+<TD>
+Voter eligibility deadline</td>
+</TR>
+<TR>
+<TR>
+<TD>
+28 October - 10 November 2014</td>
+<TD>
+Ballot open for voting</td>
+</TR>
+<TR>
+<TD>
+25 November 2014</td>
+<TD>
+New EC Members take office</td>
+</TR>
+</tr>
+</table>
+
+
+
+<br><br>
+
+<p><B>ABOUT THE JAVA COMMUNITY PROCESS (JCP) EXECUTIVE COMMITTEES</B></p>
+
+<p>After the Executive Committee (EC) Elections in 2012, the SE/EE and ME Executive Committees are merged 
+into a single Executive Committee, as defined by <a href="/en/jsr/detail?id=355">JSR 355</a> and 
+the <a href="/en/procedures/jcp2_9">JCP 2.9 Process Document</a>.  In the merged Executive Committee, 
+there are 16 Ratified Seats, 8 Elected Seats and the permanent seat held by Oracle America. 
+Members serve 2-year terms that are staggered so that 12 of the 24 seats are normally up for 
+ratification/election each year.  
+
+<p>The EC members guide the evolution of the Java technologies. The EC represents a cross-section 
+of both major stakeholders and other members of the Java Community. Duties are: select JSRs for 
+development, approve draft Specifications for Public Review, approve Final Specifications, review 
+TCK appeals, approve Maintenance revisions and possibly defer some features to a new JSR, 
+approve transfer of maintenance duties between members and provide guidance to the Program 
+Management Office (PMO). For more information on the EC, see the 
+<a href="/en/participation/committee">Executive Committee Info</a> page.
+
+<p>
+<P>
+<a href="/aboutJava/communityprocess/elections/2013.html">2013 EC Elections Results</a>
+<P>
+<a href="/aboutJava/communityprocess/elections/2012.html">2012 EC Elections Results</a>
+<P>
+<a href="/aboutJava/communityprocess/elections/2011.html">2011 EC Elections Results</a>
+<P>
+<a href="/aboutJava/communityprocess/elections/2010.html">2010 EC Elections Results</a>
+<P>
+<a href="/aboutJava/communityprocess/elections/2009.html">2009 EC Elections Results</a>
+<P>
+<a href="/aboutJava/communityprocess/elections/2008.html">2008 EC Elections Results</a>
+<P>
+<a href="/aboutJava/communityprocess/elections/2007.html">2007 EC Elections Results</a>
+<P>
+<a href="/aboutJava/communityprocess/elections/2006.html">2006 EC Elections Results</a>
+<P>
+<a href="/aboutJava/communityprocess/elections/2005.html">2005 EC Elections Results</a>
+<P>
+<a href="/aboutJava/communityprocess/elections/2004.html">2004 EC Elections Results</a>
+<P>
+<a href="/aboutJava/communityprocess/elections/2003.html">2003 EC Elections Results</a>
+<P>
+<a href="/aboutJava/communityprocess/elections/2002.html">2002 EC Elections Results</a>
+<P>
+<a href="/aboutJava/communityprocess/elections/2001.html">2001 EC Elections Results</a>
+<P>
+<a href="/aboutJava/communityprocess/jcpec-elections.html">2000 EC Elections Results</a>
+<BR><BR><BR>
+For more information on the JCP, see the 
+<a href="/en/introduction/overview">JCP Overview</a> page.
+<P>
+Contact the PMO for election questions at pmo<fake_tag>&#064;</fake_tag>jcp.org.
+
+</P>
+
+<!-----------------------DIVIDER--------------------------->
+<!-- end main page content --></td>
+<!-- gutter spacing for right side of the page --> <td width="30"><img
+ src="/images/pixel.gif" alt="" height="1" width="30"> </td>
+    </tr>
+  </tbody>
+</table>
+<!-- server side include for page footer -->
+<!--#include virtual="/share/include/normal.footer.v4.0.html"--><!-- end server side include for footer -->
+</body>
+</html>
+
+
+
+<!-- ** BEGIN: footer.jsp ** //-->
+
+
+
+
+
+
+
+
+</td>
+</tr>
+</table>
+
+<!-- ** END: Content Table ** //-->
+
+<!-- ** BEGIN: Footer Table ** //-->
+
+<div id="footer" style="clear: both;">
+    <div class="footleft">
+        <a href="/en/resources/contacts">Contact Us</a>
+    </div>
+	
+    <div class="botbar"><img src="/images/spacer.gif" alt="" height="23" width="1"></div>
+
+    <div class="footleft2">
+         &copy; 2019, Oracle Corporation and/or its affiliates. 
+        <a href="/en/home/terms">Terms of Use</a>. <a href="http://www.oracle.com/us/legal/privacy/index.html">Privacy Policy</a>. <a href="http://www.oracle.com/us/legal/third-party-trademarks/third-party-trademarks-078568.html">Trademarks</a>
+    </div>
+
+    <div class="footright">
+        <img src="/images/common/logo_oracle_footer.gif" alt="Oracle Corporation" height="22" width="91">
+    </div>
+
+    <div style="clear: both;"><img src="/images/spacer.gif" alt="" height="30" width="1"></div>
+</div>
+
+<!-- ** END: Footer Table ** //-->
+
+
+
+<!-- ** Menu Start ** //-->
+
+
+
+</body>
+</html>
+<!-- ** END: footer.jsp ** //-->
+

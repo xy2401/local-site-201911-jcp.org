@@ -1,0 +1,1238 @@
+
+
+<!-- ** BEGIN: header.jsp ** //-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3c.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+<head>
+    
+
+   
+    <link href="/includes/css/menu.css" rel="stylesheet" type="text/css"></link>
+    <link href="/includes/css/style.css" rel="stylesheet" type="text/css"></link>
+    <!--[if lt IE 6]><link href="/includes/css/style5.css" rel="stylesheet" type="text/css" ></link><![endif]-->
+    <!--[if gte IE 5]><link href="/includes/css/style6.css" rel="stylesheet" type="text/css" ></link><![endif]-->
+    <link href="/includes/css/tabs.css"  rel="stylesheet" type="text/css"></link>
+
+    <script type="text/javascript" src="/includes/scripts/tabs.js"></script>
+    <script type="text/javascript" src="/includes/scripts/menu.js"></script>
+   
+
+    
+
+    
+        <title>The Java Community Process(SM) Program - Community Update - View Community Update Information for JSR# 278</title>
+    
+
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+
+
+<body onload="P7_initPM(0,1,0,0,-1)">
+
+    <a name="top"></a>
+
+    <div id="header">
+	<div id="logo">
+		<a href="/en/home/index"><img src="/images/spacer.gif" alt="Java Community Process" height="81" width="151"></a>
+	</div>
+	<div id="tools">
+		<div class="search">
+			<form name="search" action="/en/jsr/summary" method="get" onsubmit="return validate_search()">
+				<input name="id" value="Search JSRs" size="16" class="form" onfocus="nullify_if_equal(this, 'Search JSRs')" type="text">
+				<a href="javascript:document.search.submit()" onclick="return validate_search()"><img src="/images/button_go.gif" width="21" height="16" border="0" alt="Submit this Search" name="sub_search"></a>
+			</form>
+		</div>
+		<div class="tools">
+			<a href="/en/press/pressroom">Press Room</a> &nbsp;|&nbsp;
+			<a href="http://java.com/java/download/index.jsp?cid=jdp78399">Get Java Here</a> &nbsp;|&nbsp;
+			<!-- <a href="javascript:void(0)">Print Format</a> &nbsp;|&nbsp;&nbsp; -->
+		</div>
+
+	</div>
+	<div style="clear: right;"></div>
+
+        
+
+	<div class="topbar"><img src="/images/spacer.gif" alt="" height="3" width="154"></div>
+	<div id="update"> </div>
+    </div>
+
+
+    
+
+        <!-- ** BEGIN: Content Table ** //-->
+
+        <table width="100%" border="0" cellpadding="0" cellspacing="0">
+
+            <tr>
+
+                <!-- ** BEGIN: Navigation Column ** //-->
+                <td width="150" id="leftcontent" valign="top">
+                    <!-- Navigation Placeholder //-->
+
+                    
+
+                    <div class="bar"><img src="/images/hr_dots1.gif" alt="" height="3" width="150"></div>
+
+        <!-- begin find JSRs form -->
+        <!-- IMPORTANT! do not convert this form to Struts < html : form > tag.  javascript change of form.action property fails. -->
+        <img src="/images/hd_find-jsrs.gif" alt="Find JSRs" height="18" width="150">
+        <form name="findjsr" action="/en/jsr/summary" method="get" class="pt5" onsubmit="return validate_findjsr()">
+            <input name="id" size="18" class="form" value="Search JSRs" onfocus="nullify_if_equal(this, 'Search JSRs')" type="text">
+	    <a href="javascript:document.findjsr.submit()" onclick="return validate_findjsr()"><img src="/images/button_go.gif" width="21" height="16" border="0" alt="Submit this Search" name="sub_search"></a>
+        </form><br><br>
+
+        <!-- ** Menu Start ** //-->
+
+        <ul id="p7PMnav">
+            <li><a href="/en/jsr/platform">JSRs by Platform</a></li>
+            <li><a href="/en/jsr/tech">JSRs by Technology</a></li>
+            <li><a href="/en/jsr/stage">JSRs by Stage</a></li>
+            <li><a href="/en/jsr/ec">JSRs by Committee</a></li>
+            <li><a href="/en/jsr/all">List of All JSRs</a></li>
+
+            <!--end find JSRs form -->
+            <div style="clear: both;"><img src="/images/spacer.gif" alt="" height="25" width="1"></div>
+
+            <!--begin my JCP -->
+            <img src="/images/hd_my-jcp.gif" alt="My JCP" height="18" width="150">
+            
+
+          <form name="login" method="get" action="/en/user/login" >
+            <input name="Sign-in" type="submit" title="Sign-in" value="Sign-in" />
+          </form>
+
+            <div style="clear:both"><img src="/images/global/spacer.gif" width="1" height="3" alt=""></div>
+            <div class="noNav">
+                <a href="/en/user/register">Register for Site</a>
+            </div>
+
+             <div class="bar"><img src="/images/hr_dots1.gif" alt="" height="3" width="150"></div>
+           <div class="noNav" style="color: #666666; padding: 0;">
+              Use of JCP site is subject to the
+              <a href="/en/home/terms" style="display:inline;padding: 0">JCP Terms of Use</a> and the
+              <a href="http://www.oracle.com/us/legal/privacy/index.html" style="display:inline;padding: 0" href="">Oracle Privacy Policy</a>
+          </div>
+
+            
+
+            <div style="clear:both"><img src="/images/global/spacer.gif" width="1" height="25" alt=""></div>
+
+            <!--begin JCP info -->
+            <img src="/images/hd_jcp-info.gif" alt="JCP Info" height="18" width="150">
+
+            <li><a href="/en/procedures/overview" class="p7PMtrg">About JCP</a>
+                <ul>
+                    <li><a href="/en/procedures/overview">Program Overview</a></li>
+                    <li><a href="/en/procedures/jcp2">JCP Process Document</a></li>
+                    <li><a href="/en/whatsnew/calendar">Calendar</a></li>
+                    <li><a href="/en/participation/members">JCP Members</a></li>
+                    <li><a href="/en/participation/committee">Executive Committee</a></li>
+                    <li><a href="/en/whatsnew/elections">Elections</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/en/participation/overview" class="p7PMtrg">Get Involved</a>
+		<ul>
+                    <li><a href="/en/participation/overview">Overview</a></li>
+                    <li><a href="/en/participation/membership">Becoming a JCP Member</a></li>
+		</ul>
+            </li>
+
+            <li><a href="/en/resources/contents" class="p7PMtrg">Community Resources</a>
+                <ul>
+                    <li><a href="/en/resources/contents">Overview</a></li>
+                    <li><a href="/en/resources/tutorials">Tutorials</a></li>
+                    <li><a href="/en/resources/multimedia">JCP Podcasts</a></li>
+                    <li><a href="/en/resources/guide">Spec Lead Guide</a></li>
+                    <li><a href="/en/resources/tdk">TCK Tool & Info</a></li>
+                    <li><a href="/en/resources/license_reference">License Reference</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/en/press/pmo" class="p7PMtrg">Community News</a>
+                <ul>
+                    <li><a href="/en/press/pmo">News</a></li>
+                    <li><a href="/en/press/news/awards/awards_main">Programs &amp; Awards</a></li>
+                    <li><a href="/en/press/releases">Press Releases</a></li>
+                    <li><a href="/en/press/success">Success Stories</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/en/introduction/faq">FAQ</a></li>
+
+            <li><a href="/en/resources/contacts">Contact Us</a></li>
+
+            <div style="clear: both;"><img src="/images/spacer.gif" alt="" height="25" width="1"></div>
+
+            <!--[if lte IE 6]><style>#p7PMnav a{height:1em;}#p7PMnav li{height:1em;float:left;clear:both;width:100%}</style><![endif]-->
+            <!--[if IE 6]><style>#p7PMnav li{clear:none;}</style><![endif]-->
+            <!--[if IE 7]><style>#p7PMnav a{zoom:100%;}#p7PMnav li{float:left;clear:both;width:100%;}</style><![endif]-->
+        </ul>
+
+        
+
+        <!--begin ad space -->
+        <div class="ads">
+            <a href="http://java.com/java/download/index.jsp?cid=jdp78399" target="_blank"><img style="display: ;" src="/images/ad_banner2.gif" alt="Ad Banner" border="1" height="70" width="150"></a>
+        </div>
+        <!--end ad space -->
+
+<!-- ** Menu End ** //-->
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;<br>
+
+    
+
+                    &nbsp;<br>
+                    <img src="/images/common/trans.gif" alt="" width="1" height="150"><br>
+
+              
+
+
+
+                </td>
+                <!-- ** END: Navigation Column ** //-->
+
+                <!-- ** BEGIN: Gutter Column ** //-->
+		<td width="10" nowrap><img src="/images/common/trans.gif" alt="" width="10" height="1"></td>
+                <!-- ** END: Gutter Column ** //-->
+
+                <!-- ** BEGIN: Content Column ** //-->
+                <td width="100%" valign="top">
+
+    
+<script type="text/javascript">
+
+String.prototype.trim = function() {
+        return this.replace(/^\s+|\s+$/g,"");
+}
+String.prototype.ltrim = function() {
+        return this.replace(/^\s+/,"");
+}
+String.prototype.rtrim = function() {
+        return this.replace(/\s+$/,"");
+}
+
+function validate_search() {
+	if (document.search.id.value == "Search JSRs" || document.search.id.value.trim().length == 0) {
+		alert("Search terms must be entered first");
+		return false;
+	}
+	return true;
+}
+
+function validate_findjsr() {
+	if (document.findjsr.id.value == "Search JSRs" || document.findjsr.id.value.trim().length == 0) {
+		alert("Search terms must be entered first");
+		return false;
+	}
+	return true;
+}
+
+function nullify_if_equal(field, str) {
+	// alert("val=" + field.value);
+	if (field.value == str) {
+		field.value = "";
+	}
+}
+
+</script>
+<!-- ** END: header.jsp ** //-->
+
+
+
+
+
+
+
+
+
+
+    <!--  BEGIN NAVIGATION TABS -->
+    <div id="p7TP1">
+            <div class="p7TP_tabs">
+                    <div><a href="/en/jsr/summary?id=278">JSR</a></div>
+                    <div id="p7tpb1_1" class="down"><a class="down">Community</a></div>
+                    <div><a href="/en/eg/eghome?id=278">Expert Group</a></div>
+		    
+            <br class="p7TPclear" />
+    </div>
+
+    <div class="p7TPcontent">
+            <div id="p7tpc1_1">
+                    <span>Community Summary</span>
+                    &nbsp;|&nbsp;
+
+                    <a href="/en/egc/egcfiles?id=278">Community Files</a>
+            </div>
+    </div>
+            <!--[if lte IE 6]><style type="text/css">.p7TPpanel div,.p7TPpanel a{height:1%;}.p7TP_tabs a{white-space:nowrap;}</style><![endif]-->
+    </div>
+    <script language="JavaScript">
+            P7_initTP(1,0);
+    </script>
+    
+    <script language="JavaScript">
+			function checkForm(form) {
+				var errors = "";
+
+			
+
+				if (form.content.value == "") {
+					errors += "Please select a file for upload.\n";
+				}
+
+		        
+				if (errors == "") {
+					return true;
+				}
+				else {
+					alert(errors)
+					return false;
+				}
+			}
+
+		</script>
+		<noscript>
+			<p>
+			<font size="+2" color="red">
+			Error: Your JavaScript is currently disabled.
+			</font>
+			<br>
+			JavaScript needs to be enabled for this form submission to work properly.
+		</noscript>
+
+    <!--  END NAVIGATION TABS -->
+
+<div class="anybar"><img src="/images/global/bar_green.gif" alt="" width="12" height="4"></div>
+
+
+<div class="header1">JSR #278 Resource Management API for Java<sup><font size="-2">TM</font></sup> ME <br><br>
+Community Summary <br><br>
+
+</div>
+<br>&nbsp;<br>
+
+
+<div class="anybar"><img src="/images/global/bar_green.gif" alt="" width="12" height="4"></div>
+<br>
+The materials on this page are provided by the Spec Lead of this JSR
+for evaluation and feedback.<br>
+These materials are not final, and are subject to change
+as the JSR progresses through the process.
+<br>&nbsp;<br>
+
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns:dt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=ks_c_5601-1987">
+<meta name=ProgId content=Word.Document>
+<meta name=Generator content="Microsoft Word 11">
+<meta name=Originator content="Microsoft Word 11">
+<link rel=File-List href="RMF%20Proposal_8.files/filelist.xml">
+<link rel=Edit-Time-Data href="RMF%20Proposal_8.files/editdata.mso">
+<!--[if !mso]>
+<style>
+v\:* {behavior:url(#default#VML);}
+o\:* {behavior:url(#default#VML);}
+w\:* {behavior:url(#default#VML);}
+.shape {behavior:url(#default#VML);}
+</style>
+<![endif]-->
+<title>Proposal</title>
+<!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>&#50504;&#54840;&#49437;</o:Author>
+  <o:Template>Normal</o:Template>
+  <o:LastAuthor>&#50504;&#54840;&#49437;</o:LastAuthor>
+  <o:Revision>4</o:Revision>
+  <o:TotalTime>23</o:TotalTime>
+  <o:Created>2006-01-18T06:51:00Z</o:Created>
+  <o:LastSaved>2006-01-18T06:54:00Z</o:LastSaved>
+  <o:Pages>1</o:Pages>
+  <o:Words>1504</o:Words>
+  <o:Characters>8575</o:Characters>
+  <o:Company>Java Group</o:Company>
+  <o:Lines>71</o:Lines>
+  <o:Paragraphs>20</o:Paragraphs>
+  <o:CharactersWithSpaces>10059</o:CharactersWithSpaces>
+  <o:Version>11.6360</o:Version>
+ </o:DocumentProperties>
+ <o:CustomDocumentProperties>
+  <o:_AdHocReviewCycleID dt:dt="float">206191733</o:_AdHocReviewCycleID>
+  <o:_EmailSubject dt:dt="string">JSR 278 &#49444;&#47749; &#44396;&#47928; &#48320;&#44221; &#44288;&#47144; &#44160;&#53664;&#54616;&#50668; &#51452;&#49884;&#44600; &#48148;&#46989;&#45768;&#45796;. </o:_EmailSubject>
+  <o:_AuthorEmail dt:dt="string">cmpark@swc.sec.samsung.co.kr</o:_AuthorEmail>
+  <o:_AuthorEmailDisplayName dt:dt="string">&#48149;&#51333;&#47785;</o:_AuthorEmailDisplayName>
+  <o:_ReviewingToolsShownOnce dt:dt="string"></o:_ReviewingToolsShownOnce>
+ </o:CustomDocumentProperties>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:DisplayHorizontalDrawingGridEvery>0</w:DisplayHorizontalDrawingGridEvery>
+  <w:DisplayVerticalDrawingGridEvery>2</w:DisplayVerticalDrawingGridEvery>
+  <w:ValidateAgainstSchemas/>
+  <w:SaveIfXMLInvalid>false</w:SaveIfXMLInvalid>
+  <w:IgnoreMixedContent>false</w:IgnoreMixedContent>
+  <w:AlwaysShowPlaceholderText>false</w:AlwaysShowPlaceholderText>
+  <w:Compatibility>
+   <w:SpaceForUL/>
+   <w:BalanceSingleByteDoubleByteWidth/>
+   <w:DoNotLeaveBackslashAlone/>
+   <w:ULTrailSpace/>
+   <w:DoNotExpandShiftReturn/>
+   <w:AdjustLineHeightInTable/>
+   <w:SelectEntireFieldWithStartOrEnd/>
+   <w:UseWord2002TableStyleRules/>
+   <w:UseFELayout/>
+  </w:Compatibility>
+  <w:BrowserLevel>MicrosoftInternetExplorer4</w:BrowserLevel>
+ </w:WordDocument>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:LatentStyles DefLockedState="false" LatentStyleCount="156">
+ </w:LatentStyles>
+</xml><![endif]-->
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:&#48148;&#53461;;
+	panose-1:2 3 6 0 0 1 1 1 1 1;
+	mso-font-alt:Batang;
+	mso-font-charset:129;
+	mso-generic-font-family:roman;
+	mso-font-pitch:variable;
+	mso-font-signature:-1342176593 1775729915 48 0 524447 0;}
+@font-face
+	{font-family:&#46027;&#50880;;
+	panose-1:2 11 6 0 0 1 1 1 1 1;
+	mso-font-alt:Dotum;
+	mso-font-charset:129;
+	mso-generic-font-family:modern;
+	mso-font-pitch:variable;
+	mso-font-signature:-1342176593 1775729915 48 0 524447 0;}
+@font-face
+	{font-family:&#44404;&#47548;;
+	panose-1:2 11 6 0 0 1 1 1 1 1;
+	mso-font-alt:Gulim;
+	mso-font-charset:129;
+	mso-generic-font-family:modern;
+	mso-font-pitch:variable;
+	mso-font-signature:-1342176593 1775729915 48 0 524447 0;}
+@font-face
+	{font-family:&#44404;&#47548;&#52404;;
+	panose-1:2 11 6 9 0 1 1 1 1 1;
+	mso-font-charset:129;
+	mso-generic-font-family:modern;
+	mso-font-pitch:fixed;
+	mso-font-signature:-1342176593 1775729915 48 0 524447 0;}
+@font-face
+	{font-family:"\@&#44404;&#47548;";
+	panose-1:2 11 6 0 0 1 1 1 1 1;
+	mso-font-charset:129;
+	mso-generic-font-family:modern;
+	mso-font-pitch:variable;
+	mso-font-signature:-1342176593 1775729915 48 0 524447 0;}
+@font-face
+	{font-family:"\@&#44404;&#47548;&#52404;";
+	panose-1:2 11 6 9 0 1 1 1 1 1;
+	mso-font-charset:129;
+	mso-generic-font-family:modern;
+	mso-font-pitch:fixed;
+	mso-font-signature:-1342176593 1775729915 48 0 524447 0;}
+@font-face
+	{font-family:"\@&#46027;&#50880;";
+	panose-1:2 11 6 0 0 1 1 1 1 1;
+	mso-font-charset:129;
+	mso-generic-font-family:modern;
+	mso-font-pitch:variable;
+	mso-font-signature:-1342176593 1775729915 48 0 524447 0;}
+@font-face
+	{font-family:"\@&#48148;&#53461;";
+	panose-1:2 3 6 0 0 1 1 1 1 1;
+	mso-font-charset:129;
+	mso-generic-font-family:roman;
+	mso-font-pitch:variable;
+	mso-font-signature:-1342176593 1775729915 48 0 524447 0;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-parent:"";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	mso-pagination:none;
+	text-autospace:none;
+	word-break:break-hangul;
+	font-size:10.0pt;
+	mso-bidi-font-size:12.0pt;
+	font-family:&#48148;&#53461;;
+	mso-hansi-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";
+	mso-font-kerning:1.0pt;}
+p.MsoHeader, li.MsoHeader, div.MsoHeader
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	mso-pagination:none;
+	tab-stops:center 212.6pt right 425.2pt;
+	layout-grid-mode:char;
+	text-autospace:none;
+	word-break:break-hangul;
+	font-size:10.0pt;
+	mso-bidi-font-size:12.0pt;
+	font-family:&#48148;&#53461;;
+	mso-hansi-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";
+	mso-font-kerning:1.0pt;}
+p.MsoFooter, li.MsoFooter, div.MsoFooter
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	mso-pagination:none;
+	tab-stops:center 212.6pt right 425.2pt;
+	layout-grid-mode:char;
+	text-autospace:none;
+	word-break:break-hangul;
+	font-size:10.0pt;
+	mso-bidi-font-size:12.0pt;
+	font-family:&#48148;&#53461;;
+	mso-hansi-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";
+	mso-font-kerning:1.0pt;}
+p.MsoTof, li.MsoTof, div.MsoTof
+	{mso-style-update:auto;
+	mso-style-noshow:yes;
+	mso-style-next:&#54364;&#51456;;
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:20.0pt;
+	margin-bottom:.0001pt;
+	text-indent:-20.0pt;
+	mso-pagination:widow-orphan;
+	mso-layout-grid-align:none;
+	punctuation-wrap:simple;
+	text-autospace:none;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:&#44404;&#47548;;
+	font-variant:small-caps;}
+p
+	{mso-margin-top-alt:auto;
+	margin-right:0cm;
+	mso-margin-bottom-alt:auto;
+	margin-left:0cm;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:&#44404;&#47548;;
+	mso-bidi-font-family:&#44404;&#47548;;}
+p.MsoAcetate, li.MsoAcetate, div.MsoAcetate
+	{mso-style-noshow:yes;
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	mso-pagination:none;
+	text-autospace:none;
+	word-break:break-hangul;
+	font-size:9.0pt;
+	font-family:Arial;
+	mso-fareast-font-family:&#46027;&#50880;;
+	mso-bidi-font-family:"Times New Roman";
+	mso-font-kerning:1.0pt;}
+ins
+	{mso-style-type:export-only;
+	text-decoration:none;}
+span.msoIns
+	{mso-style-type:export-only;
+	mso-style-name:"";
+	text-decoration:underline;
+	text-underline:single;}
+ /* Page Definitions */
+ @page
+	{mso-page-border-surround-header:no;
+	mso-page-border-surround-footer:no;
+	mso-footnote-separator:url("RMF%20Proposal_8.files/header.htm") fs;
+	mso-footnote-continuation-separator:url("RMF%20Proposal_8.files/header.htm") fcs;
+	mso-endnote-separator:url("RMF%20Proposal_8.files/header.htm") es;
+	mso-endnote-continuation-separator:url("RMF%20Proposal_8.files/header.htm") ecs;}
+@page Section1
+	{size:595.3pt 841.9pt;
+	margin:99.25pt 3.0cm 3.0cm 3.0cm;
+	mso-header-margin:42.55pt;
+	mso-footer-margin:49.6pt;
+	mso-header:url("RMF%20Proposal_8.files/header.htm") h1;
+	mso-paper-source:0;
+	layout-grid:18.0pt;}
+div.Section1
+	{page:Section1;}
+-->
+</style>
+<!--[if gte mso 10]>
+<style>
+ /* Style Definitions */
+ table.MsoNormalTable
+	{mso-style-name:"&#54364;&#51456; &#54364;";
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-noshow:yes;
+	mso-style-parent:"";
+	mso-padding-alt:0cm 5.4pt 0cm 5.4pt;
+	mso-para-margin:0cm;
+	mso-para-margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";
+	mso-ansi-language:#0400;
+	mso-fareast-language:#0400;
+	mso-bidi-language:#0400;}
+</style>
+<![endif]--><!--[if gte mso 9]><xml>
+ <o:shapedefaults v:ext="edit" spidmax="5122"/>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <o:shapelayout v:ext="edit">
+  <o:idmap v:ext="edit" data="1"/>
+ </o:shapelayout></xml><![endif]-->
+</head>
+
+<body lang=KO style='tab-interval:39.95pt'>
+
+<div class=Section1 style='layout-grid:18.0pt'>
+
+<p class=MsoNormal align=left style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
+auto;text-align:left;mso-pagination:widow-orphan;text-autospace:ideograph-other;
+word-break:keep-all'><b><span lang=EN-US style='font-size:11.0pt;font-family:
+Arial;mso-fareast-font-family:&#44404;&#47548;;color:#333333;mso-font-kerning:0pt'>Section 1:
+Request</span></b><span lang=EN-US style='font-size:11.0pt;font-family:Arial;
+mso-fareast-font-family:&#44404;&#47548;;color:#333333;mso-font-kerning:0pt'><o:p></o:p></span></p>
+
+<p class=MsoNormal align=left style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
+auto;text-align:left;mso-pagination:widow-orphan;text-autospace:ideograph-other;
+word-break:keep-all'><b><span lang=EN-US style='font-size:11.0pt;font-family:
+Arial;mso-fareast-font-family:&#44404;&#47548;;color:#333333;mso-font-kerning:0pt'>Title: </span></b><b><span
+lang=EN-US style='font-size:11.0pt;font-family:Arial;mso-fareast-font-family:
+&#44404;&#47548;;color:red;mso-font-kerning:0pt'>*</span></b><span lang=EN-US
+style='font-size:11.0pt;font-family:Arial;mso-fareast-font-family:&#44404;&#47548;;
+color:#333333;mso-font-kerning:0pt'><br>
+</span><b style='mso-bidi-font-weight:normal'><span lang=EN-US
+style='font-size:11.0pt;font-family:Arial;mso-fareast-font-family:&#44404;&#47548;;
+color:navy;mso-font-kerning:0pt'>Resource Management API for Java<sup>TM</sup>
+ME</span></b><span lang=EN-US style='font-size:11.0pt;font-family:Arial;
+mso-fareast-font-family:&#44404;&#47548;;color:#333333;mso-font-kerning:0pt'><o:p></o:p></span></p>
+
+<p class=MsoNormal><b><span lang=EN-US style='font-size:11.0pt;font-family:
+Arial;mso-fareast-font-family:&#44404;&#47548;;color:#333333;mso-font-kerning:0pt'>Summary: </span></b><b><span
+lang=EN-US style='font-size:11.0pt;font-family:Arial;mso-fareast-font-family:
+&#44404;&#47548;;color:red;mso-font-kerning:0pt'>*</span></b><span lang=EN-US
+style='font-size:11.0pt;font-family:Arial;mso-fareast-font-family:&#44404;&#47548;;
+color:#333333;mso-font-kerning:0pt'><br>
+</span><span lang=EN-US style='font-size:11.0pt;font-family:Arial'>RM API will
+provide a simple interface for resource reclamation, accounting, and
+monitoring?in a Java ME platform that requires resource management for
+multiple applications.</span><span lang=EN-US style='font-size:11.0pt;
+font-family:Arial;mso-fareast-font-family:&#44404;&#47548;;color:#333333;mso-font-kerning:
+0pt'><o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:11.0pt;font-family:Arial;
+mso-fareast-font-family:&#44404;&#47548;;color:#333333;mso-font-kerning:0pt'><o:p>?</o:p></span></p>
+
+<p class=MsoNormal align=left style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
+auto;text-align:left;mso-pagination:widow-orphan;text-autospace:ideograph-other;
+word-break:keep-all'><b><span lang=EN-US style='font-size:11.0pt;font-family:
+Arial;mso-fareast-font-family:&#44404;&#47548;;color:#333333;mso-font-kerning:0pt'>Section 2:
+Request</span></b><span lang=EN-US style='font-size:11.0pt;font-family:Arial;
+mso-fareast-font-family:&#44404;&#47548;;color:#333333;mso-font-kerning:0pt'><o:p></o:p></span></p>
+
+<p class=MsoNormal align=left style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
+auto;text-align:left;mso-pagination:widow-orphan;text-autospace:ideograph-other;
+word-break:keep-all'><span lang=EN-US style='font-size:11.0pt;font-family:Arial;
+mso-fareast-font-family:&#44404;&#47548;;color:blue;mso-font-kerning:0pt'>2.1 Please describe
+the proposed Specification: </span><span lang=EN-US style='font-size:11.0pt;
+font-family:Arial;mso-fareast-font-family:&#44404;&#47548;;color:red;mso-font-kerning:0pt'>*</span><span
+lang=EN-US style='font-size:11.0pt;font-family:Arial;mso-fareast-font-family:
+&#44404;&#47548;;color:blue;mso-font-kerning:0pt'><o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:11.0pt;font-family:Arial;
+mso-fareast-font-family:&#44404;&#47548;;color:#333333;mso-font-kerning:0pt'>Traditionally,
+Java platforms that run in a single operating system process do not provide
+explicit management of resources since it is taken care of by the operating
+system?s intrinsic features. The only resource management facility provided by
+the virtual machine is the Garbage Collector which is solely responsible of
+managing memory for all Java objects (regardless of which application they
+belong to) within a virtual machine. The main limitation of the garbage
+collector is its inability to handle native resources such as files, sockets,
+and native memory allocated by JNI native methods. Furthermore, reachability of
+Java objects may not be sufficient for determining whether an object is indeed
+?alive? or not, since an object may be reachable through a shared collection of
+objects (or repository) and yet be bound to a particular application whose
+lifecycle determines the liveness of the object.<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:11.0pt;font-family:Arial;
+mso-fareast-font-family:&#44404;&#47548;;color:#333333;mso-font-kerning:0pt'><o:p>?</o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:11.0pt;font-family:Arial;
+mso-fareast-font-family:&#44404;&#47548;;color:#333333;mso-font-kerning:0pt'>However, several
+containment frameworks such as Xlet engines typically run in a single virtual
+machine within a single operating system process and provide an environment
+that can initiate, run, and terminate multiple applications. When these
+containment frameworks are embedded in systems requiring high availability,
+they necessitate explicit management of resources in order to provide a robust
+and long running environment.<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:11.0pt;font-family:Arial;
+mso-fareast-font-family:&#44404;&#47548;;color:#333333;mso-font-kerning:0pt'><o:p>?</o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:11.0pt;font-family:Arial;
+mso-fareast-font-family:&#44404;&#47548;;color:#333333;mso-font-kerning:0pt'>The core of this
+API is an interface called ResourceManager which defines an interface that all
+resource managers must provide. The functionality provided by ResourceManager
+is the ability to force the reclamation of all resources bound to a specific
+application execution environment. Also, resource managers (classes
+implementing the ResourceManager interface) may be dynamically added to <span
+class=msoIns><ins cite="mailto:&#48149;&#51333;&#47785;" datetime="2005-08-29T16:29">a repository of
+resource managers which </ins></span><span class=msoIns><ins cite="mailto:&#48149;&#51333;&#47785;"
+datetime="2005-08-29T16:31">is responsible </ins></span><span class=msoIns><ins
+cite="mailto:&#48149;&#51333;&#47785;" datetime="2005-08-29T16:42">for</ins></span><span
+class=msoIns><ins cite="mailto:&#48149;&#51333;&#47785;" datetime="2005-08-29T16:31"> </ins></span><span
+class=msoIns><ins cite="mailto:&#48149;&#51333;&#47785;" datetime="2005-08-29T16:29">control</ins></span><span
+class=msoIns><ins cite="mailto:&#48149;&#51333;&#47785;" datetime="2005-08-29T16:31">ling</ins></span><span
+class=msoIns><ins cite="mailto:&#48149;&#51333;&#47785;" datetime="2005-08-29T16:29"> the resource
+reclamation</ins></span><span class=msoIns><ins cite="mailto:&#48149;&#51333;&#47785;"
+datetime="2005-08-29T16:30"> </ins></span><span class=msoIns><ins
+cite="mailto:&#48149;&#51333;&#47785;" datetime="2005-08-29T16:31">of all resources bound to</ins></span><span
+class=msoIns><ins cite="mailto:&#48149;&#51333;&#47785;" datetime="2005-08-29T16:30"> a specific
+application</ins></span>. <span class=msoIns><ins cite="mailto:&#48149;&#51333;&#47785;"
+datetime="2005-08-29T16:32">This way, the Resource Management API </ins></span>provides
+extensibility<span class=msoIns><ins cite="mailto:&#48149;&#51333;&#47785;"
+datetime="2005-08-29T16:32">, by which</ins></span> new profiles <span
+class=msoIns><ins cite="mailto:&#48149;&#51333;&#47785;" datetime="2005-08-29T16:33">can </ins></span>be
+added to the Java platform and benefit from the integrated resource management <span
+class=msoIns><ins cite="mailto:&#48149;&#51333;&#47785;" datetime="2005-08-29T16:33">features</ins></span>.<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:11.0pt;font-family:Arial;
+mso-fareast-font-family:&#44404;&#47548;;color:#333333;mso-font-kerning:0pt'><o:p>?</o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:11.0pt;font-family:Arial;
+mso-fareast-font-family:&#44404;&#47548;;color:#333333;mso-font-kerning:0pt'>The
+extensibility feature of this API is the most important factor for proposing <span
+class=msoIns><ins cite="mailto:&#48149;&#51333;&#47785;" datetime="2005-08-29T16:33">it</ins></span>
+in the standard JCP process. Any existing or newly profiles that utilizes this
+API will benefit from its functionality and reversely, any Java platform that
+supports this API will be able to provide robustness as long as any plug-in
+profiles support this API.<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:11.0pt;font-family:Arial;
+mso-fareast-font-family:&#44404;&#47548;;color:#333333;mso-font-kerning:0pt'><o:p>?</o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:11.0pt;font-family:Arial;
+mso-fareast-font-family:&#44404;&#47548;;color:#333333;mso-font-kerning:0pt'>This API assumes
+(or may include) the definition of application execution environment, which
+provides a unique isolated computing environment within a virtual machine that
+is particular to each application. The Application Isolation API Specification
+(JSR-121) is particularly well-fit to serve this purpose. It clearly states
+that resource control is not within its scope. <o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:11.0pt;font-family:Arial;
+mso-fareast-font-family:&#44404;&#47548;;color:#333333;mso-font-kerning:0pt'><o:p>?</o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:11.0pt;font-family:Arial;
+mso-fareast-font-family:&#44404;&#47548;;color:#333333;mso-font-kerning:0pt'>This API
+particularly targets J2ME platforms<span class=msoIns><ins cite="mailto:&#48149;&#51333;&#47785;"
+datetime="2005-08-29T16:34">. It </ins></span><span class=msoIns><ins
+cite="mailto:&#48149;&#51333;&#47785;" datetime="2005-08-29T16:37">basically</ins></span><span
+class=msoIns><ins cite="mailto:&#48149;&#51333;&#47785;" datetime="2005-08-29T16:36"> targets</ins></span><span
+class=msoIns><ins cite="mailto:&#48149;&#51333;&#47785;" datetime="2005-08-29T16:34"> </ins></span><span
+class=msoIns><ins cite="mailto:&#48149;&#51333;&#47785;" datetime="2005-08-29T16:37">support for </ins></span><span
+class=msoIns><ins cite="mailto:&#48149;&#51333;&#47785;" datetime="2005-08-29T16:35">explicit </ins></span><span
+class=msoIns><ins cite="mailto:&#48149;&#51333;&#47785;" datetime="2005-08-29T16:34">resource
+management </ins></span><span class=msoIns><ins cite="mailto:&#48149;&#51333;&#47785;"
+datetime="2005-08-29T16:35">feature </ins></span><span class=msoIns><ins
+cite="mailto:&#48149;&#51333;&#47785;" datetime="2005-08-29T16:34">within </ins></span>single
+process <span class=msoIns><ins cite="mailto:&#48149;&#51333;&#47785;" datetime="2005-08-29T16:34">virtual
+machines</ins></span><span class=msoIns><ins cite="mailto:&#48149;&#51333;&#47785;"
+datetime="2005-08-29T16:37">, but the</ins></span><span class=msoIns><ins
+cite="mailto:&#48149;&#51333;&#47785;" datetime="2005-08-29T16:35"> same API may be used to provide
+inter-process resource management capability for multi-process virtual machines
+as well.</ins></span><o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:11.0pt;font-family:Arial;
+mso-fareast-font-family:&#44404;&#47548;;color:#333333;mso-font-kerning:0pt'><o:p>?</o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:11.0pt;font-family:Arial;
+mso-fareast-font-family:&#44404;&#47548;;color:#333333;mso-font-kerning:0pt'>This <span
+class=msoIns><ins cite="mailto:&#48149;&#51333;&#47785;" datetime="2005-08-29T16:37">API </ins></span>will
+focus on the ability to control the usage of resources among different
+applications within a single <span class=msoIns><ins cite="mailto:&#48149;&#51333;&#47785;"
+datetime="2005-08-29T16:37">or multi-process </ins></span>Java Virtual Machine<span
+class=msoIns><ins cite="mailto:&#48149;&#51333;&#47785;" datetime="2005-08-29T16:38">s</ins></span>.
+<span class=msoIns><ins cite="mailto:&#48149;&#51333;&#47785;" datetime="2005-08-29T16:38">RM API </ins></span>will
+have a resource manager for each resource such as file, thread, socket, image,
+etc.<span style='mso-spacerun:yes'>? </span>These resource managers will
+be kept alive as long as the Java VM is running. All the resources which are
+bound to a specific application execution environment will be freed by the
+resource managers upon termination of the environment.<span
+style='mso-spacerun:yes'>? </span>The resource managers should be
+bookkeeping all the resources.<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:11.0pt;font-family:Arial;
+mso-fareast-font-family:&#44404;&#47548;;color:#333333;mso-font-kerning:0pt'>The unit of
+management for the RM API is an application execution environment. The
+abstraction introduced by the Application Isolation API (JSR 121) best serves
+this feature. <o:p></o:p></span></p>
+
+<p class=MsoNormal align=left style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
+auto;text-align:left;mso-pagination:widow-orphan;text-autospace:ideograph-other;
+word-break:keep-all'><span lang=EN-US style='font-size:11.0pt;font-family:Arial;
+mso-fareast-font-family:&#44404;&#47548;;color:blue;mso-font-kerning:0pt'>2.2 What is the
+target Java platform? (i.e., desktop, server, personal, embedded, card, etc.) </span><span
+lang=EN-US style='font-size:11.0pt;font-family:Arial;mso-fareast-font-family:
+&#44404;&#47548;;color:red;mso-font-kerning:0pt'>*</span><span lang=EN-US style='font-size:
+11.0pt;font-family:Arial;mso-fareast-font-family:&#44404;&#47548;;color:blue;mso-font-kerning:
+0pt'><o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:11.0pt;font-family:Arial;
+mso-fareast-font-family:&#44404;&#47548;;color:#333333;mso-font-kerning:0pt'><span
+class=msoIns><ins cite="mailto:&#48149;&#51333;&#47785;" datetime="2005-08-29T16:39">It targets both
+J2ME CLDC and CDC based Java platforms. Typical </ins></span>J2ME CDC-based Home
+devices <span class=msoIns><ins cite="mailto:&#48149;&#51333;&#47785;" datetime="2005-08-29T16:40">include</ins></span>
+<span class=msoIns><ins cite="mailto:&#48149;&#51333;&#47785;" datetime="2005-08-29T16:39">Digital </ins></span>TV,
+Digital Set-top boxes, <span class=msoIns><ins cite="mailto:&#48149;&#51333;&#47785;"
+datetime="2005-08-29T16:40">and </ins></span>Home gateways.<span class=msoIns><ins
+cite="mailto:&#48149;&#51333;&#47785;" datetime="2005-08-29T16:40"> J2ME CLDC-based devices include
+mobile phones</ins></span>.<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:11.0pt;font-family:Arial;
+mso-fareast-font-family:&#44404;&#47548;;color:#333333;mso-font-kerning:0pt'><o:p>?</o:p></span></p>
+
+<p class=MsoNormal align=left style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
+auto;text-align:left;mso-pagination:widow-orphan;text-autospace:ideograph-other;
+word-break:keep-all'><span lang=EN-US style='font-size:11.0pt;font-family:Arial;
+mso-fareast-font-family:&#44404;&#47548;;color:blue;mso-font-kerning:0pt'>2.3 The Executive
+Committees would like to ensure JSR submitters think about how their proposed
+technology relates to all of the Java platform editions. Please provide details
+here for which platform editions are being targeted by this JSR, and how this
+JSR has considered the relationship with the other platform editions.</span><span
+lang=EN-US style='font-size:11.0pt;font-family:Arial;mso-fareast-font-family:
+&#44404;&#47548;;color:red;mso-font-kerning:0pt'>*</span><span lang=EN-US style='font-size:
+11.0pt;font-family:Arial;mso-fareast-font-family:&#44404;&#47548;;color:blue;mso-font-kerning:
+0pt'><o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:11.0pt;font-family:Arial;
+mso-fareast-font-family:&#44404;&#47548;;color:#333333;mso-font-kerning:0pt'><span
+class=msoIns><ins cite="mailto:&#48149;&#51333;&#47785;" datetime="2005-08-29T16:41">The </ins></span>RM
+<span class=msoIns><ins cite="mailto:&#48149;&#51333;&#47785;" datetime="2005-08-29T16:41">API </ins></span>JSR
+targets <span class=msoIns><ins cite="mailto:&#48149;&#51333;&#47785;" datetime="2005-08-29T16:41">both
+</ins></span>J2ME <span class=msoIns><ins cite="mailto:&#48149;&#51333;&#47785;"
+datetime="2005-08-29T16:41">CLDC and </ins></span>CDC. <o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:11.0pt;font-family:Arial;
+mso-fareast-font-family:&#44404;&#47548;;color:#333333;mso-font-kerning:0pt'><o:p>?</o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:11.0pt;font-family:Arial;
+mso-fareast-font-family:&#44404;&#47548;;color:blue;mso-font-kerning:0pt'>2.4 Should this JSR
+be voted on by both Executive Committees? </span><span lang=EN-US
+style='font-size:11.0pt;font-family:Arial;mso-fareast-font-family:&#44404;&#47548;;
+color:red;mso-font-kerning:0pt'>*<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:11.0pt;font-family:Arial;
+mso-fareast-font-family:&#44404;&#47548;;color:#333333;mso-font-kerning:0pt'>No.<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:11.0pt;font-family:Arial;
+mso-fareast-font-family:&#44404;&#47548;;color:#333333;mso-font-kerning:0pt'><o:p>?</o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:11.0pt;font-family:Arial;
+mso-fareast-font-family:&#44404;&#47548;;color:blue;mso-font-kerning:0pt'>2.5 What need of
+the Java community will be addressed by the proposed specification? </span><span
+lang=EN-US style='font-size:11.0pt;font-family:Arial;mso-fareast-font-family:
+&#44404;&#47548;;color:red;mso-font-kerning:0pt'>*<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:11.0pt;font-family:Arial;
+mso-fareast-font-family:&#44404;&#47548;;color:#333333;mso-font-kerning:0pt'>Containment
+frameworks such as Xlet engines require support for robust application
+management and resource control particularly if they are embedded in a system
+requiring high availability. <o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:11.0pt;font-family:Arial;
+mso-fareast-font-family:&#44404;&#47548;;color:#333333;mso-font-kerning:0pt'>J2ME <span
+class=msoIns><ins cite="mailto:&#48149;&#51333;&#47785;" datetime="2005-08-29T16:42">CDC-</ins></span>based
+middlewares such as OCAP (Open Cable Application Platform) and MHP (Multimedia
+Home Platform) necessitate a robust Xlet execution environment that provides
+efficient resource management facilities for dynamic and responsive application
+execution and lifecycle control.<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:11.0pt;font-family:Arial;
+mso-fareast-font-family:&#44404;&#47548;;color:#333333;mso-font-kerning:0pt'><span
+class=msoIns><ins cite="mailto:&#48149;&#51333;&#47785;" datetime="2005-08-29T16:43">J2ME CLDC-based
+containment frameworks require the same level of robustness support as in
+CDC-based middlewares.<o:p></o:p></ins></span></span></p>
+
+<p class=MsoNormal style='mso-list:none;mso-list-ins:&#48149;&#51333;&#47785; 20050829T1643'><span
+lang=EN-US style='font-size:11.0pt;font-family:Arial;mso-fareast-font-family:
+&#44404;&#47548;;color:#333333;mso-font-kerning:0pt'><o:p>?</o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:11.0pt;font-family:Arial;
+mso-fareast-font-family:&#44404;&#47548;;color:blue;mso-font-kerning:0pt'>2.6 Why isn't this need
+met by existing specifications? </span><span lang=EN-US style='font-size:11.0pt;
+font-family:Arial;mso-fareast-font-family:&#44404;&#47548;;color:red;mso-font-kerning:0pt'>*<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:11.0pt;font-family:Arial;
+mso-fareast-font-family:&#44404;&#47548;;color:#333333;mso-font-kerning:0pt'>The Application
+Isolation API Specification (JSR-121) defines the features for supporting
+isolation of application execution environments, but resource management is not
+covered within its scope. Other API specifications are either irrelevant or
+inappropriate for J2ME platforms.<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:11.0pt;font-family:Arial;
+mso-fareast-font-family:&#44404;&#47548;;color:#333333;mso-font-kerning:0pt'><o:p>?</o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:11.0pt;font-family:Arial;
+mso-fareast-font-family:&#44404;&#47548;;color:blue;mso-font-kerning:0pt'>2.7 Please give a
+short description of the underlying technology or technologies: </span><span
+lang=EN-US style='font-size:11.0pt;font-family:Arial;mso-fareast-font-family:
+&#44404;&#47548;;color:red;mso-font-kerning:0pt'>*<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:11.0pt;font-family:Arial;
+mso-fareast-font-family:&#44404;&#47548;;color:#333333;mso-font-kerning:0pt'>The technology
+used to implement this API will vary widely depending on the level of control
+in the resource management functionality. Native implementation is mandatory to
+support efficient management and reclamation of native resources. On the other
+hand, simple Java-based implementations are also viable to support simple
+resource management functionalities.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-list:none;mso-list-ins:&#48149;&#51333;&#47785; 20050829T1644'><span
+lang=EN-US style='font-size:11.0pt;font-family:Arial;mso-fareast-font-family:
+&#44404;&#47548;;color:#333333;mso-font-kerning:0pt'><o:p>?</o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:11.0pt;font-family:Arial;
+mso-fareast-font-family:&#44404;&#47548;;color:blue;mso-font-kerning:0pt'>2.8 Is there a
+proposed package name for the API Specification? (i.e., </span><span
+lang=EN-US style='font-size:11.0pt;font-family:Arial;mso-fareast-font-family:
+&#44404;&#47548;&#52404;;color:blue;mso-font-kerning:0pt'>javapi.something</span><span lang=EN-US
+style='font-size:11.0pt;font-family:Arial;mso-fareast-font-family:&#44404;&#47548;;
+color:blue;mso-font-kerning:0pt'>, </span><span lang=EN-US style='font-size:
+11.0pt;font-family:Arial;mso-fareast-font-family:&#44404;&#47548;&#52404;;color:blue;mso-font-kerning:
+0pt'>org.something</span><span lang=EN-US style='font-size:11.0pt;font-family:
+Arial;mso-fareast-font-family:&#44404;&#47548;;color:blue;mso-font-kerning:0pt'>, etc.) </span><span
+lang=EN-US style='font-size:11.0pt;font-family:Arial;mso-fareast-font-family:
+&#44404;&#47548;;color:red;mso-font-kerning:0pt'>*<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:11.0pt;font-family:Arial;
+mso-fareast-font-family:&#44404;&#47548;;color:#333333;mso-font-kerning:0pt'>javax.microedtion.rm,
+java.lang.rm<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:11.0pt;font-family:Arial;
+mso-fareast-font-family:&#44404;&#47548;;color:#333333;mso-font-kerning:0pt'><o:p>?</o:p></span></p>
+
+<p class=MsoNormal align=left style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
+auto;text-align:left;mso-pagination:widow-orphan;text-autospace:ideograph-other;
+word-break:keep-all'><span lang=EN-US style='font-size:11.0pt;font-family:Arial;
+mso-fareast-font-family:&#44404;&#47548;;color:blue;mso-font-kerning:0pt'>2.9 Does the
+proposed specification have any dependencies on specific operating systems,
+CPUs, or I/O devices that you know of? </span><span lang=EN-US
+style='font-size:11.0pt;font-family:Arial;mso-fareast-font-family:&#44404;&#47548;;
+color:red;mso-font-kerning:0pt'>*</span><span lang=EN-US style='font-size:11.0pt;
+font-family:Arial;mso-fareast-font-family:&#44404;&#47548;;color:#333333;mso-font-kerning:
+0pt'><br>
+</span><span lang=EN-US style='font-size:11.0pt;font-family:&#44404;&#47548;;mso-bidi-font-family:
+Arial;color:#333333;mso-font-kerning:0pt'>No.</span><span lang=EN-US
+style='font-size:11.0pt;font-family:Arial;mso-fareast-font-family:&#44404;&#47548;;
+color:#333333;mso-font-kerning:0pt'><o:p></o:p></span></p>
+
+<p class=MsoNormal align=left style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
+auto;text-align:left;mso-pagination:widow-orphan;text-autospace:ideograph-other;
+word-break:keep-all'><span lang=EN-US style='font-size:11.0pt;font-family:Arial;
+mso-fareast-font-family:&#44404;&#47548;;color:blue;mso-font-kerning:0pt'>2.10 Are there any
+security issues that cannot be addressed by the current security model? </span><span
+lang=EN-US style='font-size:11.0pt;font-family:Arial;mso-fareast-font-family:
+&#44404;&#47548;;color:red;mso-font-kerning:0pt'>*</span><span lang=EN-US style='font-size:
+11.0pt;font-family:Arial;mso-fareast-font-family:&#44404;&#47548;;color:#333333;mso-font-kerning:
+0pt'><br>
+</span><span lang=EN-US style='font-size:11.0pt;font-family:&#44404;&#47548;;mso-bidi-font-family:
+Arial;color:#333333;mso-font-kerning:0pt'>No.</span><span lang=EN-US
+style='font-size:11.0pt;font-family:Arial;mso-fareast-font-family:&#44404;&#47548;;
+color:#333333;mso-font-kerning:0pt'><o:p></o:p></span></p>
+
+<p class=MsoNormal align=left style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
+auto;text-align:left;mso-pagination:widow-orphan;text-autospace:ideograph-other;
+word-break:keep-all'><span lang=EN-US style='font-size:11.0pt;font-family:Arial;
+mso-fareast-font-family:&#44404;&#47548;;color:blue;mso-font-kerning:0pt'>2.11 Are there any
+internationalization or localization issues? </span><span lang=EN-US
+style='font-size:11.0pt;font-family:Arial;mso-fareast-font-family:&#44404;&#47548;;
+color:red;mso-font-kerning:0pt'>*</span><span lang=EN-US style='font-size:11.0pt;
+font-family:Arial;mso-fareast-font-family:&#44404;&#47548;;color:#333333;mso-font-kerning:
+0pt'><br>
+</span><span lang=EN-US style='font-size:11.0pt;font-family:&#44404;&#47548;;mso-bidi-font-family:
+Arial;color:#333333;mso-font-kerning:0pt'>No.</span><span lang=EN-US
+style='font-size:11.0pt;font-family:Arial;mso-fareast-font-family:&#44404;&#47548;;
+color:#333333;mso-font-kerning:0pt'><o:p></o:p></span></p>
+
+<p class=MsoNormal align=left style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
+auto;text-align:left;mso-pagination:widow-orphan;text-autospace:ideograph-other;
+word-break:keep-all'><span lang=EN-US style='font-size:11.0pt;font-family:Arial;
+mso-fareast-font-family:&#44404;&#47548;;color:blue;mso-font-kerning:0pt'>2.12 Are there any existing
+specifications that might be rendered obsolete, deprecated, or in need of
+revision as a result of this work? </span><span lang=EN-US style='font-size:
+11.0pt;font-family:Arial;mso-fareast-font-family:&#44404;&#47548;;color:red;mso-font-kerning:
+0pt'>*</span><span lang=EN-US style='font-size:11.0pt;font-family:Arial;
+mso-fareast-font-family:&#44404;&#47548;;color:#333333;mso-font-kerning:0pt'><br>
+</span><span lang=EN-US style='font-size:11.0pt;font-family:&#44404;&#47548;;mso-bidi-font-family:
+Arial;color:#333333;mso-font-kerning:0pt'>No.</span><span lang=EN-US
+style='font-size:11.0pt;font-family:Arial;mso-fareast-font-family:&#44404;&#47548;;
+color:#333333;mso-font-kerning:0pt'><o:p></o:p></span></p>
+
+<p class=MsoNormal align=left style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
+auto;text-align:left;mso-pagination:widow-orphan;text-autospace:ideograph-other;
+word-break:keep-all'><span lang=EN-US style='font-size:11.0pt;font-family:Arial;
+mso-fareast-font-family:&#44404;&#47548;;color:blue;mso-font-kerning:0pt'>2.13 Please
+describe the anticipated schedule for the development of this specification: </span><span
+lang=EN-US style='font-size:11.0pt;font-family:Arial;mso-fareast-font-family:
+&#44404;&#47548;;color:red;mso-font-kerning:0pt'>*</span><span lang=EN-US style='font-size:
+11.0pt;font-family:Arial;mso-fareast-font-family:&#44404;&#47548;;color:blue;mso-font-kerning:
+0pt'><o:p></o:p></span></p>
+
+<p><span lang=EN-US style='font-size:11.0pt;font-family:Arial'>January 2006: EG
+formed<br>
+April 2006: Early Draft Review<br>
+August 2006: Public Review<br>
+October 2006: Proposed Final Draft<br>
+October 2006: Final Approval Ballot<o:p></o:p></span></p>
+
+<p class=MsoNormal align=left style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
+auto;text-align:left;mso-pagination:widow-orphan;text-autospace:ideograph-other;
+word-break:keep-all'><span lang=EN-US style='font-size:11.0pt;font-family:Arial;
+mso-fareast-font-family:&#44404;&#47548;;mso-font-kerning:0pt'><o:p>?</o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:11.0pt;font-family:Arial;
+mso-fareast-font-family:&#44404;&#47548;;color:blue;mso-font-kerning:0pt'>2.14 Please
+describe the anticipated working model for the Expert Group working on
+developing this specification.: </span><span lang=EN-US style='font-size:11.0pt;
+font-family:Arial;mso-fareast-font-family:&#44404;&#47548;;color:red;mso-font-kerning:0pt'>*<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:11.0pt;font-family:Arial;
+mso-fareast-font-family:&#44404;&#47548;;mso-font-kerning:0pt'>It is anticipated that a combination
+of email discussion, feedback on regular drafts, conference calls and
+face-to-face meetings will work well.<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:11.0pt;font-family:&#44404;&#47548;;
+mso-bidi-font-family:Arial;color:#333333'><o:p>?</o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:11.0pt;font-family:Arial;
+mso-fareast-font-family:&#44404;&#47548;;color:blue;mso-font-kerning:0pt'>2.15 It is
+important to the success of the community and each JSR that the work of the Expert
+Group be handled in a manner which provides the community and the public with
+insight into the work the Expert Group is doing, and the decisions that the
+Expert Group has made. The Executive Committees would like to ensure Spec Leads
+understand the value of this transparency and ask that each JSR have an
+operating plan in place for how their JSR will address the involvement of the
+community and the public. Please provide your plan here, and refer to the Spec
+Lead Guide for a more detailed description and a set of example questions you
+may wish to answer in your plan. </span><span lang=EN-US style='font-size:11.0pt;
+font-family:Arial;mso-fareast-font-family:&#44404;&#47548;;color:red;mso-font-kerning:0pt'>*<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:11.0pt;font-family:Arial;
+mso-fareast-font-family:&#44404;&#47548;;mso-font-kerning:0pt'>Interim drafts of the
+specification will be made available on the JSR community page. The schedule
+will be defined by the expert group.<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:11.0pt;font-family:&#44404;&#47548;;
+mso-bidi-font-family:Arial;color:#333333'><o:p>?</o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:11.0pt;font-family:Arial;
+mso-fareast-font-family:&#44404;&#47548;;color:blue;mso-font-kerning:0pt'>2.16 Please
+describe how the RI and TCK will be delivered, i.e. as part of a profile or
+platform edition, or stand-alone, or both. Include version information for the
+profile or platform in your answer.:</span><span lang=EN-US style='font-size:
+11.0pt;font-family:Arial;mso-fareast-font-family:&#44404;&#47548;;color:red;mso-font-kerning:
+0pt'> *</span><span lang=EN-US style='font-size:11.0pt;font-family:Arial;
+mso-fareast-font-family:&#44404;&#47548;;color:blue;mso-font-kerning:0pt'><o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:11.0pt;font-family:Arial;
+mso-fareast-font-family:&#44404;&#47548;;mso-font-kerning:0pt'>RI and TCK will be produced as
+a part of this JSR with each being licensed separately.<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:11.0pt;font-family:Arial;
+mso-fareast-font-family:&#44404;&#47548;;mso-font-kerning:0pt'><o:p>?</o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:11.0pt;font-family:Arial;
+mso-fareast-font-family:&#44404;&#47548;;color:blue;mso-font-kerning:0pt'>2.17 Please state
+the rationale if previous versions are available stand-alone and you are now
+proposing in 2.16 to only deliver RI and TCK as part of a profile or platform
+edition (See sections 1.1.5 and 1.1.6 of the JCP 2 document).: </span><span
+lang=EN-US style='font-size:11.0pt;font-family:Arial;mso-fareast-font-family:
+&#44404;&#47548;;color:red;mso-font-kerning:0pt'>*<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:11.0pt;font-family:&#44404;&#47548;;
+mso-bidi-font-family:Arial;color:#333333'>N/A</span><span lang=EN-US
+style='font-size:11.0pt;font-family:Arial;mso-fareast-font-family:&#44404;&#47548;;
+color:red;mso-font-kerning:0pt'><o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:11.0pt;font-family:Arial;
+mso-fareast-font-family:&#44404;&#47548;;mso-font-kerning:0pt'><o:p>?</o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:11.0pt;font-family:Arial;
+mso-fareast-font-family:&#44404;&#47548;;color:blue;mso-font-kerning:0pt'>2.18 Please provide
+a description of the business terms for the Specification, RI and TCK that will
+apply when this JSR is final.: </span><span lang=EN-US style='font-size:11.0pt;
+font-family:Arial;mso-fareast-font-family:&#44404;&#47548;;color:red;mso-font-kerning:0pt'>*<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:11.0pt;font-family:Arial;
+mso-fareast-font-family:&#44404;&#47548;;mso-font-kerning:0pt'>We will license to all
+interested parties. TCK and RI will be licensed separately. <o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:11.0pt;font-family:Arial;
+mso-fareast-font-family:&#44404;&#47548;;mso-font-kerning:0pt'>For TCK we will charge a
+single one time fee of max $50000 USD and an annual maintenance fee, max $50000
+USD/pa. TCK will include the binary environment and source code of the test
+suite. Maintenance fee covers limited basic support, first level TCK appeals
+process, bug fixes and updates, which are due to changes in the specification,
+and when made available by the specification lead. Major new releases (esp.
+follower JSR) might be subject to additional single one time fee. <o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:11.0pt;font-family:Arial;
+mso-fareast-font-family:&#44404;&#47548;;mso-font-kerning:0pt'>For RI in source code form we
+will charge one time access fee, and annual maintenance fee. Maintenance covers
+bug fixes, updates and new releases necessary due to spec changes, and when
+made generally available by specification lead.<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:11.0pt;font-family:Arial;
+mso-fareast-font-family:&#44404;&#47548;;mso-font-kerning:0pt'><o:p>?</o:p></span></p>
+
+<p class=MsoNormal align=left style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
+auto;text-align:left;mso-pagination:widow-orphan;text-autospace:ideograph-other;
+word-break:keep-all'><b><span lang=EN-US style='font-size:11.0pt;font-family:
+Arial;mso-fareast-font-family:&#44404;&#47548;;color:#333333;mso-font-kerning:0pt'>Section 3:
+Contributions</span></b><span lang=EN-US style='font-size:11.0pt;font-family:
+Arial;mso-fareast-font-family:&#44404;&#47548;;color:#333333;mso-font-kerning:0pt'><o:p></o:p></span></p>
+
+<p class=MsoNormal align=left style='text-align:left;mso-layout-grid-align:
+none;word-break:keep-all'><span lang=EN-US style='font-size:11.0pt;font-family:
+Arial;mso-fareast-font-family:&#44404;&#47548;;color:blue;mso-font-kerning:0pt'>3.1 Please
+list any existing documents, specifications, or implementations that describe the
+technology. Please include links to the documents if they are publicly
+available. </span><span lang=EN-US style='font-size:11.0pt;font-family:Arial;
+mso-fareast-font-family:&#44404;&#47548;;color:red;mso-font-kerning:0pt'>*<o:p></o:p></span></p>
+
+<p class=MsoNormal align=left style='text-align:left;mso-layout-grid-align:
+none;word-break:keep-all'><span lang=EN-US style='font-size:11.0pt;font-family:
+Arial;mso-fareast-font-family:&#44404;&#47548;;mso-font-kerning:0pt'>JSR 121: Application
+Isolation API Specification<o:p></o:p></span></p>
+
+<p class=MsoNormal align=left style='text-align:left;mso-layout-grid-align:
+none;word-break:keep-all'><span lang=EN-US style='font-size:11.0pt;font-family:
+Arial;mso-fareast-font-family:&#44404;&#47548;;color:blue;mso-font-kerning:0pt'><o:p>?</o:p></span></p>
+
+<p class=MsoNormal align=left style='text-align:left;mso-layout-grid-align:
+none;word-break:keep-all'><span lang=EN-US style='font-size:11.0pt;font-family:
+Arial;mso-fareast-font-family:&#44404;&#47548;;color:blue;mso-font-kerning:0pt'>3.2
+Explanation of how these items might be used as a starting point for the work.</span><span
+lang=EN-US style='font-size:11.0pt;font-family:Arial;mso-fareast-font-family:
+&#44404;&#47548;;color:red;mso-font-kerning:0pt'> *</span><span lang=EN-US style='font-size:
+11.0pt;font-family:Arial;mso-fareast-font-family:&#44404;&#47548;;color:#333333;mso-font-kerning:
+0pt'><br>
+</span><span lang=EN-US style='font-size:11.0pt;font-family:Arial;mso-fareast-font-family:
+&#44404;&#47548;;mso-font-kerning:0pt'>JSR 121: Application Isolation API Specification</span><span
+lang=EN-US style='font-size:11.0pt;font-family:&#44404;&#47548;;mso-bidi-font-family:Arial;
+mso-bidi-font-weight:bold'><o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:11.0pt;font-family:Arial;
+mso-fareast-font-family:&#44404;&#47548;;mso-font-kerning:0pt'><o:p>?</o:p></span></p>
+
+</div>
+
+</body>
+
+</html>
+
+&nbsp;<p>
+
+	<br>
+
+        
+
+	</font>
+
+
+
+    
+
+
+<!-- ** BEGIN: footer.jsp ** //-->
+
+
+
+
+
+
+
+
+</td>
+</tr>
+</table>
+
+<!-- ** END: Content Table ** //-->
+
+<!-- ** BEGIN: Footer Table ** //-->
+
+<div id="footer" style="clear: both;">
+    <div class="footleft">
+        <a href="/en/resources/contacts">Contact Us</a>
+    </div>
+	
+    <div class="botbar"><img src="/images/spacer.gif" alt="" height="23" width="1"></div>
+
+    <div class="footleft2">
+         &copy; 2019, Oracle Corporation and/or its affiliates. 
+        <a href="/en/home/terms">Terms of Use</a>. <a href="http://www.oracle.com/us/legal/privacy/index.html">Privacy Policy</a>. <a href="http://www.oracle.com/us/legal/third-party-trademarks/third-party-trademarks-078568.html">Trademarks</a>
+    </div>
+
+    <div class="footright">
+        <img src="/images/common/logo_oracle_footer.gif" alt="Oracle Corporation" height="22" width="91">
+    </div>
+
+    <div style="clear: both;"><img src="/images/spacer.gif" alt="" height="30" width="1"></div>
+</div>
+
+<!-- ** END: Footer Table ** //-->
+
+
+
+<!-- ** Menu Start ** //-->
+
+
+
+</body>
+</html>
+<!-- ** END: footer.jsp ** //-->
+

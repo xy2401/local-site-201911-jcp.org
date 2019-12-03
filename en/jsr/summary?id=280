@@ -1,0 +1,973 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- ** BEGIN: header.jsp ** //-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3c.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+<head>
+    
+
+   
+    <link href="/includes/css/menu.css" rel="stylesheet" type="text/css"></link>
+    <link href="/includes/css/style.css" rel="stylesheet" type="text/css"></link>
+    <!--[if lt IE 6]><link href="/includes/css/style5.css" rel="stylesheet" type="text/css" ></link><![endif]-->
+    <!--[if gte IE 5]><link href="/includes/css/style6.css" rel="stylesheet" type="text/css" ></link><![endif]-->
+    <link href="/includes/css/tabs.css"  rel="stylesheet" type="text/css"></link>
+
+    <script type="text/javascript" src="/includes/scripts/tabs.js"></script>
+    <script type="text/javascript" src="/includes/scripts/menu.js"></script>
+   
+
+    
+
+    
+        <title>The Java Community Process(SM) Program - JSRs: Java Specification Requests - detail JSR# 280</title>
+    
+
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+
+
+<body onload="P7_initPM(0,1,0,0,-1)">
+
+    <a name="top"></a>
+
+    <div id="header">
+	<div id="logo">
+		<a href="/en/home/index"><img src="/images/spacer.gif" alt="Java Community Process" height="81" width="151"></a>
+	</div>
+	<div id="tools">
+		<div class="search">
+			<form name="search" action="/en/jsr/summary" method="get" onsubmit="return validate_search()">
+				<input name="id" value="Search JSRs" size="16" class="form" onfocus="nullify_if_equal(this, 'Search JSRs')" type="text">
+				<a href="javascript:document.search.submit()" onclick="return validate_search()"><img src="/images/button_go.gif" width="21" height="16" border="0" alt="Submit this Search" name="sub_search"></a>
+			</form>
+		</div>
+		<div class="tools">
+			<a href="/en/press/pressroom">Press Room</a> &nbsp;|&nbsp;
+			<a href="http://java.com/java/download/index.jsp?cid=jdp78399">Get Java Here</a> &nbsp;|&nbsp;
+			<!-- <a href="javascript:void(0)">Print Format</a> &nbsp;|&nbsp;&nbsp; -->
+		</div>
+
+	</div>
+	<div style="clear: right;"></div>
+
+        
+
+	<div class="topbar"><img src="/images/spacer.gif" alt="" height="3" width="154"></div>
+	<div id="update"> </div>
+    </div>
+
+
+    
+
+        <!-- ** BEGIN: Content Table ** //-->
+
+        <table width="100%" border="0" cellpadding="0" cellspacing="0">
+
+            <tr>
+
+                <!-- ** BEGIN: Navigation Column ** //-->
+                <td width="150" id="leftcontent" valign="top">
+                    <!-- Navigation Placeholder //-->
+
+                    
+
+                    <div class="bar"><img src="/images/hr_dots1.gif" alt="" height="3" width="150"></div>
+
+        <!-- begin find JSRs form -->
+        <!-- IMPORTANT! do not convert this form to Struts < html : form > tag.  javascript change of form.action property fails. -->
+        <img src="/images/hd_find-jsrs.gif" alt="Find JSRs" height="18" width="150">
+        <form name="findjsr" action="/en/jsr/summary" method="get" class="pt5" onsubmit="return validate_findjsr()">
+            <input name="id" size="18" class="form" value="Search JSRs" onfocus="nullify_if_equal(this, 'Search JSRs')" type="text">
+	    <a href="javascript:document.findjsr.submit()" onclick="return validate_findjsr()"><img src="/images/button_go.gif" width="21" height="16" border="0" alt="Submit this Search" name="sub_search"></a>
+        </form><br><br>
+
+        <!-- ** Menu Start ** //-->
+
+        <ul id="p7PMnav">
+            <li><a href="/en/jsr/platform">JSRs by Platform</a></li>
+            <li><a href="/en/jsr/tech">JSRs by Technology</a></li>
+            <li><a href="/en/jsr/stage">JSRs by Stage</a></li>
+            <li><a href="/en/jsr/ec">JSRs by Committee</a></li>
+            <li><a href="/en/jsr/all">List of All JSRs</a></li>
+
+            <!--end find JSRs form -->
+            <div style="clear: both;"><img src="/images/spacer.gif" alt="" height="25" width="1"></div>
+
+            <!--begin my JCP -->
+            <img src="/images/hd_my-jcp.gif" alt="My JCP" height="18" width="150">
+            
+
+          <form name="login" method="get" action="/en/user/login" >
+            <input name="Sign-in" type="submit" title="Sign-in" value="Sign-in" />
+          </form>
+
+            <div style="clear:both"><img src="/images/global/spacer.gif" width="1" height="3" alt=""></div>
+            <div class="noNav">
+                <a href="/en/user/register">Register for Site</a>
+            </div>
+
+             <div class="bar"><img src="/images/hr_dots1.gif" alt="" height="3" width="150"></div>
+           <div class="noNav" style="color: #666666; padding: 0;">
+              Use of JCP site is subject to the
+              <a href="/en/home/terms" style="display:inline;padding: 0">JCP Terms of Use</a> and the
+              <a href="http://www.oracle.com/us/legal/privacy/index.html" style="display:inline;padding: 0" href="">Oracle Privacy Policy</a>
+          </div>
+
+            
+
+            <div style="clear:both"><img src="/images/global/spacer.gif" width="1" height="25" alt=""></div>
+
+            <!--begin JCP info -->
+            <img src="/images/hd_jcp-info.gif" alt="JCP Info" height="18" width="150">
+
+            <li><a href="/en/procedures/overview" class="p7PMtrg">About JCP</a>
+                <ul>
+                    <li><a href="/en/procedures/overview">Program Overview</a></li>
+                    <li><a href="/en/procedures/jcp2">JCP Process Document</a></li>
+                    <li><a href="/en/whatsnew/calendar">Calendar</a></li>
+                    <li><a href="/en/participation/members">JCP Members</a></li>
+                    <li><a href="/en/participation/committee">Executive Committee</a></li>
+                    <li><a href="/en/whatsnew/elections">Elections</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/en/participation/overview" class="p7PMtrg">Get Involved</a>
+		<ul>
+                    <li><a href="/en/participation/overview">Overview</a></li>
+                    <li><a href="/en/participation/membership">Becoming a JCP Member</a></li>
+		</ul>
+            </li>
+
+            <li><a href="/en/resources/contents" class="p7PMtrg">Community Resources</a>
+                <ul>
+                    <li><a href="/en/resources/contents">Overview</a></li>
+                    <li><a href="/en/resources/tutorials">Tutorials</a></li>
+                    <li><a href="/en/resources/multimedia">JCP Podcasts</a></li>
+                    <li><a href="/en/resources/guide">Spec Lead Guide</a></li>
+                    <li><a href="/en/resources/tdk">TCK Tool & Info</a></li>
+                    <li><a href="/en/resources/license_reference">License Reference</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/en/press/pmo" class="p7PMtrg">Community News</a>
+                <ul>
+                    <li><a href="/en/press/pmo">News</a></li>
+                    <li><a href="/en/press/news/awards/awards_main">Programs &amp; Awards</a></li>
+                    <li><a href="/en/press/releases">Press Releases</a></li>
+                    <li><a href="/en/press/success">Success Stories</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/en/introduction/faq">FAQ</a></li>
+
+            <li><a href="/en/resources/contacts">Contact Us</a></li>
+
+            <div style="clear: both;"><img src="/images/spacer.gif" alt="" height="25" width="1"></div>
+
+            <!--[if lte IE 6]><style>#p7PMnav a{height:1em;}#p7PMnav li{height:1em;float:left;clear:both;width:100%}</style><![endif]-->
+            <!--[if IE 6]><style>#p7PMnav li{clear:none;}</style><![endif]-->
+            <!--[if IE 7]><style>#p7PMnav a{zoom:100%;}#p7PMnav li{float:left;clear:both;width:100%;}</style><![endif]-->
+        </ul>
+
+        
+
+        <!--begin ad space -->
+        <div class="ads">
+            <a href="http://java.com/java/download/index.jsp?cid=jdp78399" target="_blank"><img style="display: ;" src="/images/ad_banner2.gif" alt="Ad Banner" border="1" height="70" width="150"></a>
+        </div>
+        <!--end ad space -->
+
+<!-- ** Menu End ** //-->
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;<br>
+
+    
+
+                    &nbsp;<br>
+                    <img src="/images/common/trans.gif" alt="" width="1" height="150"><br>
+
+              
+
+
+
+                </td>
+                <!-- ** END: Navigation Column ** //-->
+
+                <!-- ** BEGIN: Gutter Column ** //-->
+		<td width="10" nowrap><img src="/images/common/trans.gif" alt="" width="10" height="1"></td>
+                <!-- ** END: Gutter Column ** //-->
+
+                <!-- ** BEGIN: Content Column ** //-->
+                <td width="100%" valign="top">
+
+    
+<script type="text/javascript">
+
+String.prototype.trim = function() {
+        return this.replace(/^\s+|\s+$/g,"");
+}
+String.prototype.ltrim = function() {
+        return this.replace(/^\s+/,"");
+}
+String.prototype.rtrim = function() {
+        return this.replace(/\s+$/,"");
+}
+
+function validate_search() {
+	if (document.search.id.value == "Search JSRs" || document.search.id.value.trim().length == 0) {
+		alert("Search terms must be entered first");
+		return false;
+	}
+	return true;
+}
+
+function validate_findjsr() {
+	if (document.findjsr.id.value == "Search JSRs" || document.findjsr.id.value.trim().length == 0) {
+		alert("Search terms must be entered first");
+		return false;
+	}
+	return true;
+}
+
+function nullify_if_equal(field, str) {
+	// alert("val=" + field.value);
+	if (field.value == str) {
+		field.value = "";
+	}
+}
+
+</script>
+<!-- ** END: header.jsp ** //-->
+
+
+
+
+
+        <!--  BEGIN NAVIGATION TABS -->
+        <div id="p7TP1">
+                <div class="p7TP_tabs">
+                        <div id="p7tpb1_1" class="down"><a class="down">JSR</a></div>
+                        <div><a href="/en/egc/view?id=280">Community</a></div>
+                        <div><a href="/en/eg/eghome?id=280">Expert Group</a></div>
+			
+
+                <br class="p7TPclear" />
+                </div>
+
+                <div class="p7TPcontent">
+                        <div id="p7tpc1_1">
+
+			
+                                <a href="summary?id=280">Summary</a>
+			
+			
+                                &nbsp;|&nbsp;
+				<a href="proposalDetails?id=280">Proposal</a>
+			
+			
+                                &nbsp;|&nbsp;
+                                <span>Detail (Summary &amp; Proposal)</span>
+			
+		
+                        </div>
+
+                </div>
+                <!--[if lte IE 6]><style type="text/css">.p7TPpanel div,.p7TPpanel a{height:1%;}.p7TP_tabs a{white-space:nowrap;}</style><![endif]-->
+        </div>
+        <script type="text/javascript">
+                P7_initTP(1,0);
+        </script>
+        <!--  END NAVIGATION TABS -->
+
+
+<div class="anybar"><img src="/images/global/bar_green.gif" alt="" width="12" height="4"></div>
+
+<div class="header2">JSRs: Java Specification Requests</div>
+<div class="header1">JSR 280: XML API for Java<sup><font size="-2">TM</font></sup> ME</div>
+<div class="anybar"><img src="/images/global/bar_green.gif" alt="" width="12" height="4"></div>
+<br>
+
+
+
+<!-- ********************************************** -->
+<!--  JSR Status information                        -->
+<!-- ********************************************** -->
+
+
+                <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                    <tr>
+                        <td id="centercontent" valign="top">
+			<tr>
+			<td>
+                            <table class="tbl" cellpadding="4" cellspacing="1" width="100%">
+                                <tr valign="top">
+                                    <td class="bdtl">Stage</td>
+                                    <td class="bdtl">Access</td>
+                                    <td class="bdtl">Start</td>
+                                    <td class="bdtl">Finish</td>
+                                </tr>
+
+				<tr class="bgw" valign="top">
+                                        <td>Final Release </td>
+                                        
+                                            <td><a href="http://jcp.org/aboutJava/communityprocess/final/jsr280/index.html">Download page</a></td>
+                                        
+                                        <td>11 Oct, 2007</td>
+                                        <td>&nbsp;</td>
+				</tr>
+
+				<tr class="bgw" valign="top">
+                                        <td>Final Approval Reconsideration Ballot </td>
+                                        
+                                            <td><a href="results?id=4361">View results</a></td>
+                                        
+                                        <td>04 Sep, 2007</td>
+                                        <td>17 Sep, 2007</td>
+				</tr>
+
+				<tr class="bgw" valign="top">
+                                        <td>Final Approval Ballot </td>
+                                        
+                                            <td><a href="results?id=4298">View results</a></td>
+                                        
+                                        <td>26 Jun, 2007</td>
+                                        <td>09 Jul, 2007</td>
+				</tr>
+
+				<tr class="bgw" valign="top">
+                                        <td>Proposed Final Draft </td>
+                                        
+                                            <td><a href="http://jcp.org/aboutJava/communityprocess/pfd/jsr280/index.html">Download page</a></td>
+                                        
+                                        <td>26 Jan, 2007</td>
+                                        <td>&nbsp;</td>
+				</tr>
+
+				<tr class="bgw" valign="top">
+                                        <td>Public Review Ballot </td>
+                                        
+                                            <td><a href="results?id=4023">View results</a></td>
+                                        
+                                        <td>07 Nov, 2006</td>
+                                        <td>13 Nov, 2006</td>
+				</tr>
+
+				<tr class="bgw" valign="top">
+                                        <td>Public Review </td>
+                                        
+                                            <td><a href="http://jcp.org/aboutJava/communityprocess/pr/jsr280/index.html">Download page</a></td>
+                                        
+                                        <td>13 Oct, 2006</td>
+                                        <td>13 Nov, 2006</td>
+				</tr>
+
+				<tr class="bgw" valign="top">
+                                        <td>Early Draft Review </td>
+                                        
+                                            <td><a href="http://jcp.org/aboutJava/communityprocess/edr/jsr280/index.html">Download page</a></td>
+                                        
+                                        <td>12 May, 2006</td>
+                                        <td>11 Jun, 2006</td>
+				</tr>
+
+				<tr class="bgw" valign="top">
+                                        <td>Expert Group Formation </td>
+                                        
+                                            <td>&nbsp;</td>
+                                        
+                                        <td>02 Aug, 2005</td>
+                                        <td>&nbsp;</td>
+				</tr>
+
+				<tr class="bgw" valign="top">
+                                        <td>JSR Review Ballot </td>
+                                        
+                                            <td><a href="results?id=3282">View results</a></td>
+                                        
+                                        <td>19 Jul, 2005</td>
+                                        <td>01 Aug, 2005</td>
+				</tr>
+
+			</table>
+			</td>
+			</tr>
+                        </td>
+</tr>
+</table>
+
+<!-- ********************************************** -->
+<!--  JCP Version                                   -->
+<!-- ********************************************** -->
+
+<span style="padding: 10px; display: block;">
+
+    <b> Status: </b><a href="/en/introduction/glossary#status"><font color=black><span title="A JSR that has produced a Final Release milestone more than a year ago.">Final</span></font></a><br>
+
+
+
+    
+	<b>JCP version in use:</b> <a href="/procedures/jcp2_6"> 2.6</a><br>
+    
+
+    
+	<b>Java Specification Participation Agreement version in use:</b> 2.0<br>
+    
+
+    <br><br>
+        <b>Description</b>:<br>
+        This JSR provides a common general purpose XML API for the next generation of mobile devices.
+    <br><br>
+
+    <!-- ********************************************** -->
+    <!--  JSR Comments Email excluding JSR 900 and up   -->
+    <!-- ********************************************** -->
+
+	    
+            <b> Please direct comments on this JSR to the Spec Lead(s) </b> <br>
+	    
+
+            </span>
+
+   <!-- ****************************************** -->
+
+                <div id="p7TP52">
+                        <div class="p7TP_tabs2">
+                            <div><span>Team</span></div>
+                            <br class="p7TPclear" />
+                        </div>
+                </div>
+
+                <table bgcolor="#f2f2f2" border="0" cellpadding="5" cellspacing="1" width="100%">
+	
+                    <tr valign="top">
+                            <td colspan="3"><span class="header4">Specification Leads</span></td>
+                    </tr>
+
+
+		
+        
+			<tr valign="top">
+                            
+                            <td width="20" nowrap>&nbsp;</td>
+                            
+                            <td>Jean-Yves&nbsp;Bitterlich</td>
+                            <td>Oracle</td>
+			</tr>
+        
+			<tr valign="top">
+                            
+                            <td width="20" nowrap>&nbsp;</td>
+                            
+                            <td>Pia&nbsp;Niemela</td>
+                            <td>Nokia Corporation</td>
+			</tr>
+        
+
+                <tr valign="top">
+                        <td colspan="4" class="spacerw"><img src="/images/global/spacer.gif" alt="" height="1" width="1"></td>
+                </tr>
+                <tr valign="top">
+                        <td colspan="3"><span class="header4">Expert Group</span></td>
+                </tr>
+
+
+			<tr valign="top">
+                            <td width="20" nowrap>&nbsp;</td> <!-- Gutter //-->
+                            <td>Chopra, Vivek</td>
+     
+
+                            <td>Nokia Corporation</td>
+    
+
+                            <td>Oracle</td>
+			</tr>
+
+
+			<tr valign="top">
+                            <td width="20" nowrap>&nbsp;</td> <!-- Gutter //-->
+                            <td>Research In Motion, LTD (RIM)</td>
+     
+
+                            <td>Sharp Corporation</td>
+    
+
+                            <td>Siegel, Ellen</td>
+			</tr>
+
+
+			<tr valign="top">
+                            <td width="20" nowrap>&nbsp;</td> <!-- Gutter //-->
+                            <td>Slominski, Aleksander</td>
+     
+
+                            <td>Sun Microsystems, Inc.</td>
+    
+
+                            <td>TmaxSoft, Inc.</td>
+			</tr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		</table>
+                    <!-- ********************************************** -->
+                    <!--  Expert Group Status                           -->
+                    <!-- ********************************************** -->
+
+                    <table cellpadding="0" cellspacing="0" border="0">
+                        
+                        <tr><td><ul><li>I would like to <a href="egnom?id=280">join this JSR</a></li></ul></td></tr>
+                        
+                    </table>
+
+   <!-- ****************************************** -->
+
+
+
+
+<!-- ********************************************** -->
+<!--  JSRProposal Info                              -->
+<!-- ********************************************** -->
+<p>
+
+
+<a name="updates"><font size="+2">Updates to the Java Specification Request (JSR)</font></a><p>
+The following information has been updated from <a href="#orig">the original JSR</a>:<P>
+
+<b>2007.02.18</b>:  FAB:  June 2007<P>
+
+<a name="updates"><font size="+2">Updates to the Java Specification Request (JSR)</font></a><p>
+The following information has been updated from <a href="#orig">the original JSR</a>:<P>
+
+<b>2007.02.18</b>:  FAB:  April 2007<P>
+
+<a name="updates"><font size="+2">Updates to the Java Specification Request (JSR)</font></a><p>
+The following information has been updated from <a href="#orig">the original JSR</a>:<P>
+<b>2006.09.15</b>:  PR: October 2006<BR>
+PFD: January 2007<BR>
+FAB: March 2007<BR>
+<font color="red">Note</font> that this information <a
+href="#updates">has been updated</a> from the original JSR.
+
+<P>
+
+<a name="orig"><font size="+2">Original Java Specification Request (JSR)</font></a><p>
+<FONT SIZE="-1">
+
+<!-- BEGIN-SUB TOPICS -->
+
+          <A HREF="#1"> Identification</A>  |
+          <A HREF="#2"> Request</A>  |
+          <A HREF="#3"> Contributions</A>  |
+          <A HREF="#4"> Additional Information</A>
+<BR>
+
+<!-- END-SUB TOPICS -->
+
+</FONT>
+<P>
+
+<!-- BEGIN TEMPLATE -->
+
+<!-- SECTION 1 -->
+
+<A NAME="1"></A>
+
+<P><FONT size=+2>Section 1. Identification</FONT>
+
+<P><b>Submitting Member:</b> Sun Microsystems, Inc / Nokia Corporation</P>
+
+<P><b>Name of Contact Person:</b> Ellen Siegel / Pia Niemela </P>
+
+<P><b>E-Mail Address:</b> ellen.siegel&#64;sun.com / pia.s.niemela&#64;nokia.com</P>
+
+<P><b>Telephone Number:</b> +1 650 585 9510 / +358 50 480 2576
+
+
+</P>
+
+<P><b>Fax Number:</b> +1 650 585 9510 / +358 71 807 0560</P>
+
+<BR>
+<P><b>Specification Lead:</b> Ellen Siegel / Pia Niemela </P>
+
+<P><b>E-Mail Address:</b> ellen.siegel&#64;sun.com / pia.s.niemela&#64;nokia.com</P>
+
+<P><b>Telephone Number:</b> +1 650 585 9510 / +358 50 480 2576
+
+
+</P>
+
+<P><b>Fax Number:</b> +1 650 585 9510 / +358 71 807 0560 </P>
+
+<BR>
+
+<P><B>Initial Expert Group Membership:</B>
+</P>
+
+<P>Sun Microsystems, Inc<BR>
+Nokia</P>
+
+<P><B>Supporting this JSR:</B>
+
+</P>
+
+<P>Sun Microsystems, Inc<BR>
+Nokia</p>
+
+<BR><BR>
+
+<!-- SECTION 2 -->
+
+<A NAME="2"></A>
+
+<P>
+<FONT SIZE="+2">Section 2: Request</FONT><P>
+</P>
+
+<H4>2.1 Please describe the proposed Specification:</H4>
+
+<P>This JSR is designed to provide a general purpose XML API for the next generation of mobile devices. So far, Java XML API support for mobile devices has been fragmented: each JSR that requires XML support has specified its own XML subset API. In addition to enhancing the XML support distributed over several JSRs today, a major goal of this JSR is to avoid further fragmentation by proposing an adequate common set of XML APIs for J2ME.<P>
+
+The proposed XML APIs will support:<BR>
+  1.SAX 2 event handler-based parsing<BR>
+  2.Efficient DOM-style document processing<P>
+
+The API may also include support for application-driven "pull" parsing. <P>
+
+The APIs will support both applications that need to work with small XML fragments and applications that must parse or generate complete XML documents. The intention is to support applications as varied as web services, XML messaging, and Web browsers on mobile devices. <P>
+
+The target devices will have substantially more memory and processing power than many current MIDP devices, but will still be limited compared with non-mobile computers.<P>
+
+As far as possible, the proposed XML API is derived from existing API specifications. However, in some cases, either new APIs or APIs from submitted but not yet approved JSRs are suggested.
+
+
+
+ </P>
+
+<H4>2.2 What is the target Java platform? (i.e., desktop, server, personal, embedded, card, etc.)</H4>
+
+<P>This specification is targeted for the Java ME platform.
+
+
+</P>
+
+<H4>2.3 The Executive Committees would like to ensure JSR submitters think about how their proposed technology relates to all of the Java platform editions. Please provide details here for which platform editions are being targeted by this JSR, and how this JSR has considered the relationship with the other platform editions.</H4>
+
+<P>The target is the CLDC/MIDP and the next generation CDC-based mobile platforms. </P>
+
+<H4>2.4 Should this JSR be voted on by both Executive Committees?</H4>
+
+<P>No</P>
+
+
+<H4>2.5 What need of the Java community will be addressed by the proposed specification?</H4>
+
+<P>Next generation mobile devices need a Java API capable of supporting XML document processing and web services.  XML is by far the most widely used standard for documents and messages interchanged by mobile devices: the XML formats processed by mobile devices include: WML, XHTML, SMIL, SVG, and SyncML, along with special purpose XML markup such as WAP Push service indications. As mobile web services are deployed, SOAP and a potentially unlimited variety of application-specific data formats will also be used. In order for Java applications on advanced mobile devices to participate in this ?XML-connected? universe, they require a complete suite of XML processing APIs.<P>
+
+The requirements are quite varied: web services applications typically need efficient parsing and generation of XML fragments; browsers need to be able to parse relatively complex documents and to support dynamic construction and modification of document contents. The proposed APIs must support all of these use scenarios while adhering to the memory and processing-power limitations of mobile devices.
+
+
+</P>
+
+<H4>2.6 Why isn't this need met by existing specifications?</H4>
+
+<P>Current, general purpose XML APIs (as specified by JAXP) are targeted at full-sized computing platforms. JAXP includes APIs not required for mobile devices and thus has a relatively large footprint. In addition, lack of adequate XML APIs for mobile devices has led to fragmentary specification of XML API subsets by individual JSRs that require them. For example, JSR 172 specifies a SAX subset API to support Web services, and JSR 226 specifies a DOM subset to support SVG. A key goal of this JSR is to provide an adequate common subset of XML APIs that by its existence helps to avoid further fragmentation of the XML specifications for mobile devices. </P>
+
+<H4>2.7 Please give a short description of the underlying technology or technologies:</H4>
+
+<P>The XML API will be derived from existing Java specifications. It will include, at least:<BR>
+  A SAX2 API and javax.xml.parsers APIs<BR>
+  A light-weight DOM API<P>
+
+The API may also include support for "pull" parsing (for example, a subset of JSR 173). <P>
+
+2.7.1 SAX2 and Parser API<BR>
+A basic subset of the SAX2 API and javax.xml.parsers APIs is specified by JSR 172.   This JSR will include the JSR 172 API along with some additional enhancements. <P>
+
+2.7.2 DOM API Subset<BR>
+There are several possible sources for the DOM API specifications. JSR 226 includes a lightweight DOM Level 2 subset that supports minimal manipulation of DOM nodes.  This basic functionality should be usable by many XML applications, including, for example, Web services. However, the JSR 226 version is specifically limited to handle only SVG documents, so, at a minimum, the specification would have to be generalized to allow content from any namespace. Also, the DOM model itself is oriented to whole documents, whereas many applications need only manipulate document fragments. This JSR will include a proper subset of the DOM 2 API, and possibly also some extensions to allow document fragment operations.<P>
+
+2.7.3 Pull Parser  <BR>
+"Pull" parsing is a relatively new approach to XML parsing, but preliminary indications are that it may be well suited for limited resource devices due in part to significantly reduced runtime memory requirements. Should this JSR include a pull parsing API, JSR 173 proposes a pull parsing API for Java SE from which a Java ME subset might be drawn. <P>
+
+2.7.4 Higher-level XML Requirements<BR>
+The XML APIs specified by this JSR cover base, low-level XML parsing functionality for advanced mobile devices. It is anticipated that such devices will also require support for higher-level XML APIs for XML security, Web services, XML data binding and other features. These impose requirements for DOM support, XML exclusive canonization, and other features on the lower-level XML components. The XML APIs in this JSR must provide adequate support for the appropriate higher-level XML APIs.
+
+
+</P>
+
+<H4>2.8 Is there a proposed package name for the API Specification? (i.e., <TT>javapi.something</TT>, <TT>org.something</TT>, etc.)</H4>
+
+<P>Depending on the DOM API chosen, a new package to support DOM fragments may be required. Otherwise, the proposed APIs are subsets of existing Java packages.</P>
+
+<H4>2.9 Does the proposed specification have any dependencies on specific operating systems, CPUs, or I/O devices that you know of?</H4>
+
+<P>None</P>
+
+<H4>2.10 Are there any security issues that cannot be addressed by the current security model?</H4>
+
+<P>None</P>
+
+<H4>2.11 Are there any internationalization or localization issues?</H4>
+
+<P>Support for a sufficient set of character encodings is required.
+
+
+</P>
+
+<H4>2.12 Are there any existing specifications that might be rendered obsolete, deprecated, or in need of revision as a result of this work?</H4>
+
+<P>This JSR might affect the embedded XML APIs of some existing JSRs, such as the JAXP subset of JSR 172 and the DOM subset of JSR 226. There is no intention of breaking compatibility with these existing APIs. </P>
+
+<H4>2.13 Please describe the anticipated schedule for the development of this
+specification.</H4>
+
+<P>August 2005: EG formed<BR>
+January 2006: Early Draft Review<BR>
+<b>2006.09.15</b>:  <BR>
+PR: October 2006<BR>
+PFD: January 2007<BR>
+FAB: March 2007 .<P>
+<font color="red">Note</font> that this information <a
+href="#updates">has been updated</a> from the original JSR.<BR>
+<font color="red">Note</font> that this information <a
+href="#updates">has been updated</a> from the original JSR.<BR>
+April 2006: Public Review<BR>
+June 2006: Proposed Final Draft<BR>
+August 2006: Final Approval Ballot </P>
+
+<H4>2.14 Please describe the anticipated working model for the Expert Group working on developing this
+specification.</H4>
+
+<P>The working interactions will be primarily email communications, with occasional teleconferences/video conferences as appropriate. Face-to-face meetings, which will be tele/videoconferenced, will be arranged as needed and as appropriate.</P>
+
+<H4>2.15 It is important to the success of the community and each JSR that the work of the Expert Group be handled in a manner which provides the community and the public with insight into the work the Expert Group is doing, and the decisions that the Expert Group has made. The Executive Committees would like to ensure Spec Leads understand the value of this transparency and ask that each JSR have an operating plan in place for how their JSR will address the involvement of the community and the public. Please provide your plan here, and refer to the Spec Lead Guide for a more detailed description and a set of example questions you may wish to answer in your plan.</H4>
+
+<P>The transparency plan is:<BR>
+a) JSR community page is used to provide the community with regular updates of the draft specifications and information about the current topics and issues of the Expert Group. <P>
+
+b) An observer alias is maintained for the JCP members outside of the Expert Group. Periodic milestone draft specifications and status are published to this list. The Expert Group may also use the list to request feedback on key issues facing the group. </P>
+
+<H4>2.16 Please describe how the RI and TCK will de delivered, i.e. as part of a profile or platform edition, or stand-alone, or both. Include version information for the profile or platform in your answer.
+</H4>
+
+<P>Both RI and TCK will be delivered as stand-alone packages.
+
+
+</P>
+
+<H4>2.17 Please state the rationale if previous versions are available stand-alone and you are now proposing in 2.13 to only deliver RI and TCK as part of a profile or platform edition (See sections 1.1.5 and 1.1.6 of the JCP 2 document).
+</H4>
+
+<P>N/A</P>
+
+<H4>2.18 Please provide a description of the business terms for the Specification, RI and TCK that will apply when this JSR is final.</H4>
+
+<P>Sun Microsystems, Inc., will make the TCK and RI for the XML API for Java ME available for licensing separately:<P>
+
+TCK<BR>
+Sun will make the XML API for Java ME TCK available on a stand-alone basis at no charge, without support or any trademark license rights, to qualified not-for-profit entities (including not-for-profit academic institutions) and qualified individuals engaged in efforts to create compatible implementations of the Specification.<P>
+
+All other use is deemed commercial.<P>
+
+Sun will also make the XML API for Java ME TCK available for commercial use for a flat fee of US$50,000, with an annual maintenance fee of US$20,000.<P>
+
+RI<BR>
+Sun will make a binary version of the XML API for Java ME Reference Implementation available at no cost to TCK licensees for the purpose of configuring and supporting the TCK. No right to redistribute the reference implementation is provided. </P>
+
+<BR><BR>
+<BR><BR>
+
+<!-- SECTION 3 -->
+
+<A NAME="3"></A>
+
+<P>
+<FONT SIZE="+2">Section 3: Contributions</FONT><P>
+</P>
+
+<H4>3.1 Please list any existing documents, specifications, or implementations that describe the technology. Please include links to the documents if they are publicly available.</H4>
+
+<P>JSR 5: XML Parsing Specification (JAXP): <a href="http://jcp.org/jsr/detail?id=5"> http://jcp.org/jsr/detail?id=5</a><P>
+
+JSR 63: Java API for XML Processing (JAXP) 1.2: <a href="http://jcp.org/jsr/detail?id=5"> http://jcp.org/jsr/detail?id=63</a><P>
+
+JSR 206: Java API for XML Processing (JAXP) 1.3: <a href="http://jcp.org/jsr/detail?id=206"> http://jcp.org/jsr/detail?id=206</a><P>
+
+JSR 173: Streaming API for XML: <a href="http://jcp.org/jsr/detail?id=173"> http://jcp.org/jsr/detail?id=173</a><P>
+
+kXML: <a href="http://kxml.sourceforge.net"> http://kxml.sourceforge.net</a><P>
+
+JSR 102: JDOM 1.0: <a href="http://jcp.org/jsr/detail?id=102"> http://jcp.org/jsr/detail?id=102</a><P>
+
+JSR 172: J2ME Web Services Specification: <a href="http://jcp.org/jsr/detail?id=172"> http://jcp.org/jsr/detail?id=172</a><P>
+
+JSR 226: Scalable 2D Vector Graphics API for J2ME: <a href="http://jcp.org/jsr/detail?id=226"> http://jcp.org/jsr/detail?id=226</a><P>
+
+JSR 31: XML Data Binding Specification (JAXB 1.0): <a href="http://jcp.org/jsr/detail?id=31"> http://jcp.org/jsr/detail?id=31</a><P>
+
+JSR 222: Java Architecture for XML Binding (JAXB) 2.0: <a href="http://jcp.org/jsr/detail?id=222"> http://jcp.org/jsr/detail?id=222</a> <P>
+
+JSR 104: XML Trust Service APIs: <a href="http://jcp.org/jsr/detail?id=104"> http://jcp.org/jsr/detail?id=104</a><P>
+
+JSR 105: XML Digital Signature APIs: <a href="http://jcp.org/jsr/detail?id=105"> http://jcp.org/jsr/detail?id=105</a> <P>
+
+JSR 106: XML Digital Encryption APIs: <a href="http://jcp.org/jsr/detail?id=106"> http://jcp.org/jsr/detail?id=106</a>
+
+
+</P>
+
+<H4>3.2 Explanation of how these items might be used as a starting point for the work.</H4>
+
+<P>Unfortunately, XML support in Java has evolved into a somewhat fragmented set of packages. The basic XML parser APIs are the SAX event-based parser, and W3C DOM. In J2SE these have been packaged, together with XSLT support, as JAXP. This was originally specified in JSR-5, was further refined in JSR-63 (JAXP 1.2) and JSR-206 (JAXP 1.3).<P>
+
+At least two other parser APIs have also been submitted to JCP. JSR 173 proposes a streaming (pull) parser. This is aimed at J2SE, but specifies that the API should not preclude support for J2ME and includes a proposed J2ME subset that is intended to have low dynamic memory usage (cursor API).  Streaming parser implementations (such as kXML) have been popular for small devices because they require less memory. <P>
+
+JDOM is an alternative open source DOM API designed specifically for Java (the W3C DOM API is an abstract specification with multiple language bindings). This has been proposed to the JCP as JSR 102.<P>
+
+JSR 172 (J2ME Web Services) includes a specification for a limited subset of JAXP 1.2 (JSR 63). It includes only a SAX 2.0 subset and explicitly excludes XSLT and DOM. It also excludes useful components of the SAX 2.0 API, such as the XMLReader interface. While this is adequate for the special purposes of JSR 172, it is inadequate for many other XML processing applications. <P>
+
+JSR 172 specifies in addition to XML SAX parsing APIs also Web services APIs for J2ME. This proposal would split the XML and Web services APIs into two separate specifications. This JSR would be proposed as the XML follow-on for JSR 172. This will require close cooperation with the existing JSR 172 working group.<P>
+
+JSR 226 (J2ME SVG) includes a very lightweight DOM subset, which may be useful as a starting point for DOM support. This JSR should coordinate closely with JSR 226 to specify a consistent DOM subset if possible.<P>
+
+As far as possible, the XML APIs in this JSR should be derived from the existing J2ME JSRs (e.g. JSR 172 and JSR 226) and make a consistent superset of them.<P>
+
+Device support for certain higher-level XML APIs will impose specific requirements on the low-level APIs specified by this JSR. Relevant high-level API specifications may include:<BR>
+  JAXB 1.0 (JSR 31 and JSR 222)<BR>
+  XML Security APIs, including JSR 104, JSR 105, and JSR 106. </P>
+
+<BR><BR>
+
+<!-- SECTION 4 -->
+
+<A NAME="4"></A>
+
+<P>
+<FONT SIZE="+2">Section 4: Additional Information (Optional)</FONT><P>
+</P>
+
+<H4>4.1 This section contains any additional information that the submitting Member wishes to include in the JSR.</H4>
+
+<P>None</P>
+
+<BR><BR>
+</p>
+
+
+
+
+
+
+
+
+<!-- ** BEGIN: footer.jsp ** //-->
+
+
+
+
+
+
+
+
+</td>
+</tr>
+</table>
+
+<!-- ** END: Content Table ** //-->
+
+<!-- ** BEGIN: Footer Table ** //-->
+
+<div id="footer" style="clear: both;">
+    <div class="footleft">
+        <a href="/en/resources/contacts">Contact Us</a>
+    </div>
+	
+    <div class="botbar"><img src="/images/spacer.gif" alt="" height="23" width="1"></div>
+
+    <div class="footleft2">
+         &copy; 2019, Oracle Corporation and/or its affiliates. 
+        <a href="/en/home/terms">Terms of Use</a>. <a href="http://www.oracle.com/us/legal/privacy/index.html">Privacy Policy</a>. <a href="http://www.oracle.com/us/legal/third-party-trademarks/third-party-trademarks-078568.html">Trademarks</a>
+    </div>
+
+    <div class="footright">
+        <img src="/images/common/logo_oracle_footer.gif" alt="Oracle Corporation" height="22" width="91">
+    </div>
+
+    <div style="clear: both;"><img src="/images/spacer.gif" alt="" height="30" width="1"></div>
+</div>
+
+<!-- ** END: Footer Table ** //-->
+
+
+
+<!-- ** Menu Start ** //-->
+
+
+
+</body>
+</html>
+<!-- ** END: footer.jsp ** //-->
+

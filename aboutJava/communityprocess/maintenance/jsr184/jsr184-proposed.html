@@ -1,0 +1,1572 @@
+
+<!-- ** BEGIN: header.jsp ** //-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3c.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+<head>
+    
+
+   
+    <link href="/includes/css/menu.css" rel="stylesheet" type="text/css"></link>
+    <link href="/includes/css/style.css" rel="stylesheet" type="text/css"></link>
+    <!--[if lt IE 6]><link href="/includes/css/style5.css" rel="stylesheet" type="text/css" ></link><![endif]-->
+    <!--[if gte IE 5]><link href="/includes/css/style6.css" rel="stylesheet" type="text/css" ></link><![endif]-->
+    <link href="/includes/css/tabs.css"  rel="stylesheet" type="text/css"></link>
+
+    <script type="text/javascript" src="/includes/scripts/tabs.js"></script>
+    <script type="text/javascript" src="/includes/scripts/menu.js"></script>
+   
+
+    
+
+    
+        <title>The Java Community Process(SM) Program - communityprocess - maintenance</title>
+    
+
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+
+
+<body onload="P7_initPM(0,1,0,0,-1)">
+
+    <a name="top"></a>
+
+    <div id="header">
+	<div id="logo">
+		<a href="/en/home/index"><img src="/images/spacer.gif" alt="Java Community Process" height="81" width="151"></a>
+	</div>
+	<div id="tools">
+		<div class="search">
+			<form name="search" action="/en/jsr/summary" method="get" onsubmit="return validate_search()">
+				<input name="id" value="Search JSRs" size="16" class="form" onfocus="nullify_if_equal(this, 'Search JSRs')" type="text">
+				<a href="javascript:document.search.submit()" onclick="return validate_search()"><img src="/images/button_go.gif" width="21" height="16" border="0" alt="Submit this Search" name="sub_search"></a>
+			</form>
+		</div>
+		<div class="tools">
+			<a href="/en/press/pressroom">Press Room</a> &nbsp;|&nbsp;
+			<a href="http://java.com/java/download/index.jsp?cid=jdp78399">Get Java Here</a> &nbsp;|&nbsp;
+			<!-- <a href="javascript:void(0)">Print Format</a> &nbsp;|&nbsp;&nbsp; -->
+		</div>
+
+	</div>
+	<div style="clear: right;"></div>
+
+        
+
+	<div class="topbar"><img src="/images/spacer.gif" alt="" height="3" width="154"></div>
+	<div id="update"> </div>
+    </div>
+
+
+    
+
+        <!-- ** BEGIN: Content Table ** //-->
+
+        <table width="100%" border="0" cellpadding="0" cellspacing="0">
+
+            <tr>
+
+                <!-- ** BEGIN: Navigation Column ** //-->
+                <td width="150" id="leftcontent" valign="top">
+                    <!-- Navigation Placeholder //-->
+
+                    
+
+                    <div class="bar"><img src="/images/hr_dots1.gif" alt="" height="3" width="150"></div>
+
+        <!-- begin find JSRs form -->
+        <!-- IMPORTANT! do not convert this form to Struts < html : form > tag.  javascript change of form.action property fails. -->
+        <img src="/images/hd_find-jsrs.gif" alt="Find JSRs" height="18" width="150">
+        <form name="findjsr" action="/en/jsr/summary" method="get" class="pt5" onsubmit="return validate_findjsr()">
+            <input name="id" size="18" class="form" value="Search JSRs" onfocus="nullify_if_equal(this, 'Search JSRs')" type="text">
+	    <a href="javascript:document.findjsr.submit()" onclick="return validate_findjsr()"><img src="/images/button_go.gif" width="21" height="16" border="0" alt="Submit this Search" name="sub_search"></a>
+        </form><br><br>
+
+        <!-- ** Menu Start ** //-->
+
+        <ul id="p7PMnav">
+            <li><a href="/en/jsr/platform">JSRs by Platform</a></li>
+            <li><a href="/en/jsr/tech">JSRs by Technology</a></li>
+            <li><a href="/en/jsr/stage">JSRs by Stage</a></li>
+            <li><a href="/en/jsr/ec">JSRs by Committee</a></li>
+            <li><a href="/en/jsr/all">List of All JSRs</a></li>
+
+            <!--end find JSRs form -->
+            <div style="clear: both;"><img src="/images/spacer.gif" alt="" height="25" width="1"></div>
+
+            <!--begin my JCP -->
+            <img src="/images/hd_my-jcp.gif" alt="My JCP" height="18" width="150">
+            
+
+          <form name="login" method="get" action="/en/user/login" >
+            <input name="Sign-in" type="submit" title="Sign-in" value="Sign-in" />
+          </form>
+
+            <div style="clear:both"><img src="/images/global/spacer.gif" width="1" height="3" alt=""></div>
+            <div class="noNav">
+                <a href="/en/user/register">Register for Site</a>
+            </div>
+
+             <div class="bar"><img src="/images/hr_dots1.gif" alt="" height="3" width="150"></div>
+           <div class="noNav" style="color: #666666; padding: 0;">
+              Use of JCP site is subject to the
+              <a href="/en/home/terms" style="display:inline;padding: 0">JCP Terms of Use</a> and the
+              <a href="http://www.oracle.com/us/legal/privacy/index.html" style="display:inline;padding: 0" href="">Oracle Privacy Policy</a>
+          </div>
+
+            
+
+            <div style="clear:both"><img src="/images/global/spacer.gif" width="1" height="25" alt=""></div>
+
+            <!--begin JCP info -->
+            <img src="/images/hd_jcp-info.gif" alt="JCP Info" height="18" width="150">
+
+            <li><a href="/en/procedures/overview" class="p7PMtrg">About JCP</a>
+                <ul>
+                    <li><a href="/en/procedures/overview">Program Overview</a></li>
+                    <li><a href="/en/procedures/jcp2">JCP Process Document</a></li>
+                    <li><a href="/en/whatsnew/calendar">Calendar</a></li>
+                    <li><a href="/en/participation/members">JCP Members</a></li>
+                    <li><a href="/en/participation/committee">Executive Committee</a></li>
+                    <li><a href="/en/whatsnew/elections">Elections</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/en/participation/overview" class="p7PMtrg">Get Involved</a>
+		<ul>
+                    <li><a href="/en/participation/overview">Overview</a></li>
+                    <li><a href="/en/participation/membership">Becoming a JCP Member</a></li>
+		</ul>
+            </li>
+
+            <li><a href="/en/resources/contents" class="p7PMtrg">Community Resources</a>
+                <ul>
+                    <li><a href="/en/resources/contents">Overview</a></li>
+                    <li><a href="/en/resources/tutorials">Tutorials</a></li>
+                    <li><a href="/en/resources/multimedia">JCP Podcasts</a></li>
+                    <li><a href="/en/resources/guide">Spec Lead Guide</a></li>
+                    <li><a href="/en/resources/tdk">TCK Tool & Info</a></li>
+                    <li><a href="/en/resources/license_reference">License Reference</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/en/press/pmo" class="p7PMtrg">Community News</a>
+                <ul>
+                    <li><a href="/en/press/pmo">News</a></li>
+                    <li><a href="/en/press/news/awards/awards_main">Programs &amp; Awards</a></li>
+                    <li><a href="/en/press/releases">Press Releases</a></li>
+                    <li><a href="/en/press/success">Success Stories</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/en/introduction/faq">FAQ</a></li>
+
+            <li><a href="/en/resources/contacts">Contact Us</a></li>
+
+            <div style="clear: both;"><img src="/images/spacer.gif" alt="" height="25" width="1"></div>
+
+            <!--[if lte IE 6]><style>#p7PMnav a{height:1em;}#p7PMnav li{height:1em;float:left;clear:both;width:100%}</style><![endif]-->
+            <!--[if IE 6]><style>#p7PMnav li{clear:none;}</style><![endif]-->
+            <!--[if IE 7]><style>#p7PMnav a{zoom:100%;}#p7PMnav li{float:left;clear:both;width:100%;}</style><![endif]-->
+        </ul>
+
+        
+
+        <!--begin ad space -->
+        <div class="ads">
+            <a href="http://java.com/java/download/index.jsp?cid=jdp78399" target="_blank"><img style="display: ;" src="/images/ad_banner2.gif" alt="Ad Banner" border="1" height="70" width="150"></a>
+        </div>
+        <!--end ad space -->
+
+<!-- ** Menu End ** //-->
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;<br>
+
+    
+
+                    &nbsp;<br>
+                    <img src="/images/common/trans.gif" alt="" width="1" height="150"><br>
+
+              
+
+
+
+                </td>
+                <!-- ** END: Navigation Column ** //-->
+
+                <!-- ** BEGIN: Gutter Column ** //-->
+		<td width="10" nowrap><img src="/images/common/trans.gif" alt="" width="10" height="1"></td>
+                <!-- ** END: Gutter Column ** //-->
+
+                <!-- ** BEGIN: Content Column ** //-->
+                <td width="100%" valign="top">
+
+    
+<script type="text/javascript">
+
+String.prototype.trim = function() {
+        return this.replace(/^\s+|\s+$/g,"");
+}
+String.prototype.ltrim = function() {
+        return this.replace(/^\s+/,"");
+}
+String.prototype.rtrim = function() {
+        return this.replace(/\s+$/,"");
+}
+
+function validate_search() {
+	if (document.search.id.value == "Search JSRs" || document.search.id.value.trim().length == 0) {
+		alert("Search terms must be entered first");
+		return false;
+	}
+	return true;
+}
+
+function validate_findjsr() {
+	if (document.findjsr.id.value == "Search JSRs" || document.findjsr.id.value.trim().length == 0) {
+		alert("Search terms must be entered first");
+		return false;
+	}
+	return true;
+}
+
+function nullify_if_equal(field, str) {
+	// alert("val=" + field.value);
+	if (field.value == str) {
+		field.value = "";
+	}
+}
+
+</script>
+<!-- ** END: header.jsp ** //-->
+
+
+
+
+
+
+<!DOCTYPE html PUBLIC "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+  <meta http-equiv="Content-Type"
+ content="text/html; charset=iso-8859-1">
+  <meta name="GENERATOR"
+ content="Mozilla/4.75 [en]C-CCK-MCD {Nokia}  (Windows NT 5.0; U) [Netscape]">
+  <title>JSR-184 Change Log</title>
+</head>
+<body>
+<h2 style="text-align: left; color: rgb(0, 0, 0);">
+JSR-184 Maintenance Release Change Log (25 Feb 2005)</h2>
+&nbsp;
+<table border="1" cellpadding="3" class="Table"
+ style="text-align: left;">
+  <tbody>
+    <tr bgcolor="#c0c0c0">
+      <th style="vertical-align: middle;">#</th>
+      <th style="vertical-align: middle;">Issue</th>
+      <th style="vertical-align: middle;">Description</th>
+      <th style="vertical-align: middle;">Change</th>
+      <th style="vertical-align: middle;">Status</th>
+    </tr>
+    <tr>
+      <td style="vertical-align: middle;"><big><font size="-1"><big>1<br>
+      </big></font> </big></td>
+      <td style="vertical-align: middle;"><big><font size="-1"><big>Group.pick(Camera)
+documentation</big></font><br>
+      <font size="-1"><big> </big></font> </big></td>
+      <td style="vertical-align: middle;"><big><font size="-1"><big>The
+second
+part of the statement "The given Camera and this Group must be in the
+same scene graph, that is, they must have at least one common
+ancestor." is in error. <br>
+      <br>
+If "this" Group is a
+World, then the given Camera must be its descendant. Clearly, the World
+and the Camera are now in the same scene graph, although there is no
+common ancestor.<br>
+      </big></font> </big></td>
+      <td style="vertical-align: middle;"><big><font size="-1"><big>Remove
+the
+erroneous part of the statement. The first part alone is sufficient.<br>
+      </big></font> </big></td>
+      <td style="text-align: center; vertical-align: middle;"><small>PROPOSED<br>
+      </small></td>
+    </tr>
+    <tr>
+      <td style="vertical-align: middle;">2<br>
+      </td>
+      <td style="vertical-align: middle;">-<br>
+      </td>
+      <td style="vertical-align: middle;">-<br>
+      </td>
+      <td style="vertical-align: middle;">-<br>
+      </td>
+      <td style="vertical-align: middle;"><small>-<br>
+      </small></td>
+    </tr>
+    <tr>
+      <td style="vertical-align: middle;"><big><font size="-1"><big>3<br>
+      </big></font> </big></td>
+      <td style="vertical-align: middle;"><big><font size="-1"><big>Background
+image &amp; null crop rectangle<br>
+      </big></font> </big></td>
+      <td style="vertical-align: middle;"><big><font size="-1"><big>What
+happens
+if the Background has an Image2D set, but the crop rectangle has zero
+width or height: how do we clear the color buffer?<br>
+      </big></font> </big></td>
+      <td style="vertical-align: middle;"><big><font size="-1"><big>Explicitly
+specify that clearing should be done with the background color only in
+that special case.<br>
+      </big></font> </big></td>
+      <td style="text-align: center; vertical-align: middle;"><small>PROPOSED<br>
+      </small></td>
+    </tr>
+    <tr>
+      <td style="vertical-align: middle;"><big><font size="-1"><big>4<br>
+      </big></font> </big></td>
+      <td style="vertical-align: middle;"><big><font size="-1"><big>KeyframeSequence
+tangent equations<br>
+      </big></font> </big></td>
+      <td style="vertical-align: middle;"><big><font size="-1"><big>There
+is an
+error in our specification of spline and squad interpolation: the F+
+and F- scaling factors for the outgoing and incoming tangent,
+respectively, have swapped places. This error is inherited from the
+original paper by Kochanek and Bartels.<br>
+      </big></font> </big></td>
+      <td style="vertical-align: middle;"><big><font size="-1"><big>Swap
+the F+
+and F- scaling factors.<br>
+      </big></font> </big></td>
+      <td style="text-align: center; vertical-align: middle;"><small>PROPOSED<br>
+      </small></td>
+    </tr>
+    <tr>
+      <td style="vertical-align: middle;"><big><font size="-1"><big>5<br>
+      </big></font> </big></td>
+      <td style="vertical-align: middle;"><big><font size="-1"><big>Wrong
+variable
+name in Transform.transform<br>
+      </big></font> </big></td>
+      <td style="vertical-align: middle;"><big><font size="-1"><big>The
+@throws
+clauses in Transform.transform(vectors) refer to an input variable
+called "points", although the variable is called "vectors".</big></font>
+      </big></td>
+      <td style="vertical-align: middle;"><big><font size="-1"><big>Change
+the
+name in the @throws clauses to "vectors".<br>
+      </big></font> </big></td>
+      <td style="text-align: center; vertical-align: middle;"><small>PROPOSED<br>
+      </small></td>
+    </tr>
+    <tr>
+      <td style="vertical-align: middle;"><big><font size="-1"><big>6<br>
+      </big></font> </big></td>
+      <td style="vertical-align: middle;"><big><font size="-1"><big>array.length
+statements in @throws clauses<br>
+      </big></font> </big></td>
+      <td style="vertical-align: middle;"><big><font size="-1"><big>There
+is a
+minor error in the @throws clauses of, e.g., Object3D.getReferences.
+The input array is allowed to be null, yet the @throws clause specifies
+that the array must be certain length. Obviously, trying to check the
+length of a null array will result in a NullPointerException.<br>
+      </big></font> </big></td>
+      <td style="vertical-align: middle;"><big><font size="-1"><big>Explicitly
+rule out null arrays when checking for array length: "<code>if (array
+!=
+null) &amp;&amp; (array.length &lt; 3)</code>".<br>
+      <br>
+This affects one or more
+methods in Object3D, VertexBuffer, and all Mesh classes.<br>
+      </big></font> </big></td>
+      <td style="text-align: center; vertical-align: middle;"><small>PROPOSED<br>
+      </small></td>
+    </tr>
+    <tr>
+      <td style="vertical-align: middle;"><big><font size="-1"><big>7<br>
+      </big></font> </big></td>
+      <td style="vertical-align: middle;"><big><font size="-1"><big>Dynamic
+range
+specification<br>
+      </big></font> </big></td>
+      <td style="vertical-align: middle;"><big><font size="-1"><big>The
+valid
+input range is currently specified to be [2<sup>-64</sup>, 2<sup>63</sup>].
+Behavior for values outside of that range is left undefined. However,
+behavior should not really be undefined for negative values, or values
+in [0, 2<sup>-64</sup>]. Also,
+the lower bound </big></font><font size="-1"
+ style="color: rgb(0, 0, 0);"><big>2<sup>-64</sup></big></font><font
+ size="-1" style="color: rgb(0, 0, 0);"><big> should be relaxed to </big></font><font
+ size="-1" style="color: rgb(0, 0, 0);"><big>2<sup>-63</sup></big></font><font
+ size="-1" style="color: rgb(0, 0, 0);"><big> to make the required
+range
+symmetric.</big></font> </big></td>
+      <td style="vertical-align: middle;"><big><font size="-1"><big>Allow
+undefined behavior only for absolute values larger than 2<sup>63</sup>.
+Allow values less than </big></font><font size="-1"
+ style="color: rgb(0, 0, 0);"><big>2<sup>-63</sup> to be flushed
+to zero.</big></font> </big></td>
+      <td style="text-align: center; vertical-align: middle;"><small>PROPOSED<br>
+      </small></td>
+    </tr>
+    <tr>
+      <td style="vertical-align: middle;"><big><font size="-1"><big>8<br>
+      </big></font> </big></td>
+      <td style="vertical-align: middle;"><big><font size="-1"><big>Arithmetic
+operations on zero and one<br>
+      </big></font> </big></td>
+      <td style="vertical-align: middle;"><big><font size="-1"><big>The
+special
+roles of zero and one are not emphasized in the dynamic range and
+accuracy requirements.<br>
+      </big></font> </big></td>
+      <td style="vertical-align: middle;"><big><font size="-1"><big>Specify
+that
+every implementation must guarantee 0*x=0, 1*x=x,&nbsp; 0+x=x, and 0<sup>0</sup>=1.<br>
+      </big></font> </big></td>
+      <td style="text-align: center; vertical-align: middle;"><small>PROPOSED<br>
+      </small></td>
+    </tr>
+    <tr>
+      <td style="vertical-align: middle;">9<br>
+      </td>
+      <td style="vertical-align: middle;">-<br>
+      </td>
+      <td style="vertical-align: middle;">-<br>
+      </td>
+      <td style="vertical-align: middle;">-<br>
+      </td>
+      <td style="vertical-align: middle;"><small>-<br>
+      </small></td>
+    </tr>
+    <tr>
+      <td style="vertical-align: middle;"><big><font size="-1"><big>10<br>
+      </big></font> </big></td>
+      <td style="vertical-align: middle;"><big><font size="-1"><big>removeChild
+vs.
+removeAnimationTrack<br>
+      </big></font> </big></td>
+      <td style="vertical-align: middle;"><big><font size="-1"><big>The
+removeChild method explicitly allows null to be passed in,
+removeAnimationTrack does not. Why is that, and why not make them
+behave the same way?<br>
+      </big></font> </big></td>
+      <td style="vertical-align: middle;"><big><font size="-1"><big>Explicitly
+allow null in both methods. This
+is more in line with the general principle that requests to remove
+something that does not exist should be ignored. It is also backwards
+compatible. See also issue #11.<br>
+      </big></font> </big></td>
+      <td style="text-align: center; vertical-align: middle;"><small>PROPOSED<br>
+      </small></td>
+    </tr>
+    <tr>
+      <td style="vertical-align: middle;"><big><font size="-1"><big>11<br>
+      </big></font> </big></td>
+      <td style="vertical-align: middle;"><big><font size="-1"><big>Unnecessary
+exception in Graphics3D.releaseTarget<br>
+      </big></font> </big></td>
+      <td style="vertical-align: middle;"><big><font size="-1"><big>Graphics3D.releaseTarget
+currently throws an exception if a
+rendering target is not bound. This seems unnecessary. It also
+complicates the usual rendering loop, because an extra try-catch block
+is needed for releaseTarget. This is also why the code example at the
+beginning of Graphics3D does not work (if bindTarget fails,
+releaseTarget will also fail, so you can't put releaseTarget in
+"finally")..<br>
+      </big></font> </big></td>
+      <td style="vertical-align: middle;"><big><font size="-1"><big>Remove
+the
+exception. Requests to remove or release
+something that does not exist are already ignored&nbsp; elsewhere in
+the API (removeAnimationTrack, removeChild), rather than treated as
+errors. See also issue #10.<br>
+      </big></font> </big></td>
+      <td style="text-align: center; vertical-align: middle;"><small>PROPOSED<br>
+      </small></td>
+    </tr>
+    <tr>
+      <td style="vertical-align: middle;"><big><font size="-1"><big>12<br>
+      </big></font> </big></td>
+      <td style="vertical-align: middle;"><big><font size="-1"><big>Rendering
+quality hint combinations in Graphics3D<br>
+      </big></font> </big></td>
+      <td style="vertical-align: middle;"><big> </big>
+      <div><big><font size="-1"><big><span class="002471211-30012004">It
+is
+currently unspecified whether an implementation supporting more than
+one of ANTIALIAS, DITHER and TRUE_COLOR needs to support their
+combinations also. The developer has no way of knowing which
+combinations are supported, other than testing them one-by-one on each
+target device. Furthermore, if more than one hint is given, and no
+combinations are supported, which hint should take precedence?<br>
+      </span></big></font></big></div>
+      <big> </big></td>
+      <td style="vertical-align: middle;"><big> </big>
+      <div dir="ltr"><big><font size="-1"><big><span
+ class="002471211-30012004"><br>
+Make it explicit that
+combinations of hints do not need to be supported.<br>
+      <br>
+Also make the hint
+priorities explicitly unspecified.<br>
+      <br>
+See also issue #19.<br>
+      <br>
+      </span></big></font></big></div>
+      <big> </big></td>
+      <td style="text-align: center; vertical-align: middle;"><small>PROPOSED<br>
+      </small></td>
+    </tr>
+    <tr>
+      <td style="vertical-align: middle;"><big><font size="-1"><big>13<br>
+      </big></font> </big></td>
+      <td style="vertical-align: middle;"><big><font size="-1"><big>Autonormalization
+of vertex normals<br>
+      </big></font> </big></td>
+      <td style="vertical-align: middle;"><big><font size="-1"><big><span
+ class="489495414-20022004">There is no statement in the spec about
+normalization of vertex normals. Should they be normalized
+automatically, and at which point?</span></big></font> </big></td>
+      <td style="vertical-align: middle;"><big> </big>
+      <div><big><font size="-1"><big><span class="489495414-20022004">Yes;
+explicitly specify that normals are normalized
+before they are used in lighting. The original values in VertexArray
+must be preserved, in case they are later read back or used in some
+other role.<br>
+      </span></big></font></big></div>
+      <big> </big></td>
+      <td style="text-align: center; vertical-align: middle;"><small>PROPOSED<br>
+      </small></td>
+    </tr>
+    <tr>
+      <td style="vertical-align: middle;"><big><font size="-1"><big>14<br>
+      </big></font> </big></td>
+      <td style="vertical-align: middle;"><big><font size="-1"><big>VertexBuffer.setNormals
+documentation<br>
+      </big></font> </big></td>
+      <td style="vertical-align: middle;"><big><font size="-1"><big>The
+statement
+in VertexBuffer.setNormals about the mapping of byte and short values
+to [-1, +1] is misleading: the values 127 and 128 only apply for bytes.</big></font></big></td>
+      <td style="vertical-align: middle;"><big><font size="-1"><big>Remove
+the
+offending values.<br>
+      </big></font> </big></td>
+      <td style="text-align: center; vertical-align: middle;"><small>PROPOSED</small></td>
+    </tr>
+    <tr>
+      <td style="vertical-align: middle;"><big><font size="-1"><big>15<br>
+      </big></font> </big></td>
+      <td style="vertical-align: middle;"><big><font size="-1"><big>Fog.set{Density,
+Linear} documentation<br>
+      </big></font> </big></td>
+      <td style="vertical-align: middle;"><big><font size="-1"><big>The
+specification says that the methods have "no effect unless the type of
+the Fog is (or is later set to)" the appropriate type. That is
+incorrect: rendering is unaffected, but the set values can be read back
+at any time using the respective getters.<br>
+      </big></font> </big></td>
+      <td style="vertical-align: middle;"><big><font size="-1"><big>Change
+the
+"no
+effect" part to "no effect on rendering".<br>
+      </big></font> </big></td>
+      <td style="text-align: center; vertical-align: middle;"><small>PROPOSED<br>
+      </small></td>
+    </tr>
+    <tr>
+      <td style="vertical-align: middle;"><big><font size="-1"><big>16<br>
+      </big></font> </big></td>
+      <td style="vertical-align: middle;"><big><font size="-1"><big>Accessing
+bound rendering targets<br>
+      </big></font> </big></td>
+      <td style="vertical-align: middle;"><big> </big>
+      <div><big><font size="-1"><big><span class="236295112-05032004">Graphics3D
+documentation contradicts itself. It first states that accessing a
+bound rendering target via any other interface than the host Graphics3D
+will result in unpredictable behavior. Later it states that modifying
+the origin or clipping rectangle of a bound Graphics has no effect.</span></big></font></big></div>
+      <big> </big></td>
+      <td style="vertical-align: middle;"><big> </big>
+      <div><big><font size="-1"><big><span class="236295112-05032004">The
+second statement is incorrect<span class="201502512-10062004">, and
+should also read "...will result in unpredictable behavior."</span></span></big></font></big></div>
+      <big> </big></td>
+      <td style="text-align: center; vertical-align: middle;"><small>PROPOSED<br>
+      </small></td>
+    </tr>
+    <tr>
+      <td style="vertical-align: middle;"><big><font size="-1"><big>17<br>
+      </big></font> </big></td>
+      <td style="vertical-align: middle;"><big><font size="-1"><big>Can
+Object3D.getReferences return null?<br>
+      </big></font> </big></td>
+      <td style="vertical-align: middle;"><big><font size="-1"><big>Does
+one
+have
+to check for null references in the array returned by getReferences?
+Presumably yes, but should that be changed so that nulls may not be
+returned?<br>
+      </big></font> </big></td>
+      <td style="vertical-align: middle;"><big><font size="-1"><big>Do
+not
+allow
+returning nulls in getReferences.<br>
+      </big></font> </big></td>
+      <td style="text-align: center; vertical-align: middle;"><small>PROPOSED<br>
+      </small></td>
+    </tr>
+    <tr>
+      <td style="vertical-align: middle;"><big><font size="-1"><big>18<br>
+      </big></font> </big></td>
+      <td style="vertical-align: middle;"><big><font size="-1"><big>Default
+projection matrix in Camera<br>
+      </big></font> </big></td>
+      <td style="vertical-align: middle;"><big><font size="-1"><big><span
+ class="655114109-23032004">The documentation of Camera does not
+explicitly state the initial state of the projection matrix. It does
+say that the view volume has its opposite corners at (-1 -1 -1) and (1
+1 1) but it does not state which one is the "near" corner and which one
+is "far". The intention is, of course, that the projection matrix is
+initially set to identity.</span></big></font> </big></td>
+      <td style="vertical-align: middle;"><big><font size="-1"><big><span
+ class="655114109-23032004">Specify in the constructor that the
+projection matrix is initially set to identity</span></big></font><font
+ size="-1"><big><span class="655114109-23032004">, and that the
+projection
+type is
+GENERIC.</span></big></font> </big></td>
+      <td style="text-align: center; vertical-align: middle;"><small>PROPOSED<br>
+      </small></td>
+    </tr>
+    <tr>
+      <td style="vertical-align: middle;"><big><font size="-1"><big>19<br>
+      </big></font> </big></td>
+      <td style="vertical-align: middle;"><big><font size="-1"><big>Different
+target surfaces, only one getProperties<br>
+      </big></font> </big></td>
+      <td style="vertical-align: middle;"><big> </big>
+      <div><big><font size="-1"><big><span class="264235506-15042004">A
+Graphics3D object can be bound to different things, e.g. a 565 surface
+or an 888 image. The underlying rasterizer may have different
+capabilities depending on the target surface. For instance, some
+quality hints may be supported for&nbsp; 888 but not for 565. However,
+getProperties always returns the same set of values, regardless of the
+currently bound target.<br>
+      <br>
+      </span></big></font></big></div>
+      <big> </big>
+      <div><big><font size="-1"><big><span class="264235506-15042004">In
+practice, this means that all underlying rendering contexts must have
+the exact same functionality, or that getProperties must return the
+lowest common denominator.</span></big></font></big></div>
+      <big> </big></td>
+      <td style="vertical-align: middle;"><big><font size="-1"><big>Require
+getProperties to return the <span style="font-weight: bold;">highest</span>
+common denominator instead of the lowest.<br>
+      <br>
+In other words, the implementation <span style="font-weight: bold;">must</span>
+indicate support for a capability,&nbsp; if that capability is
+supported for <span style="font-weight: bold;">at least one</span>
+type of target surface.<br>
+      <br>
+Also change the TCK so that it no longer requires all-or-nothing
+support for quality hints.<br>
+      <br>
+See also issue #12.<br>
+      </big></font> </big></td>
+      <td style="text-align: center; vertical-align: middle;"><small>PROPOSED<br>
+      </small></td>
+    </tr>
+    <tr>
+      <td style="vertical-align: middle;"><big><font size="-1"><big>20<br>
+      </big></font> </big></td>
+      <td style="vertical-align: middle;"><big><font size="-1"><big>PNG
+support
+in
+Loader<br>
+      </big></font> </big></td>
+      <td style="vertical-align: middle;"><big> </big>
+      <div><big><font size="-1"><big><span class="900543611-15042004">The
+behavior of Loader for stand-alone PNG files is currently not well
+defined. The specification says only that an Image2D object is
+returned, but it doesn't tell whether it is immutable or mutable, or
+what pixel format it will have. <br>
+      <br>
+The correspondence of PNG pixel formats
+to Image2D formats should be made explicit. Also, if the intention is
+not to require full PNG support, we should specify which features need
+not be implemented.<br>
+      <br>
+The file format spec says
+that 48-bit pixel formats in PNG need not be supported. This limitation
+is not justified, because MIDP already does require them to be
+supported. </span></big></font></big></div>
+      <big> </big></td>
+      <td style="vertical-align: middle; color: rgb(0, 0, 0);"> <big> </big>
+      <div dir="ltr"> <big> </big>
+      <div>Explicitly specify that all PNG color types and bit
+depths must be supported, including palettes, tRNS chunks, alpha
+channels, and 48-bit colors.<br>
+      <br>
+An Image2D created via
+loading a PNG file with Loader.load must have the same format as the
+PNG file (that is, L, LA, RGB, or RGBA). <br
+ style="color: rgb(0, 0, 0);">
+      <br>
+A color-keyed PNG file must be mapped to LA or RGBA, depending on
+whether the PNG is in L or RGB format, respectively.<br>
+      <br>
+The resulting Image2D must
+always be immutable. </div>
+      <big> </big> </div>
+      <big> </big> </td>
+      <td style="text-align: center; vertical-align: middle;"><small>PROPOSED<br>
+      </small></td>
+    </tr>
+    <tr>
+      <td style="vertical-align: middle;"><big><font size="-1"><big>21<br>
+      </big></font> </big></td>
+      <td style="vertical-align: middle;"><big><font size="-1"><big>Elementary
+arithmetic operations unspecified<br>
+      </big></font> </big></td>
+      <td style="vertical-align: middle;"><big> </big>
+      <div><big><font size="-1"><big><span class="410355311-27042004">The
+dynamic range and accuracy requirements for elementary arithmetic
+operations are specified in the package description, but it is not
+stated anywhere which operations are to be considered elementary.
+Specifically, is division an elementary operation?</span></big></font></big></div>
+      <big> </big></td>
+      <td style="vertical-align: middle;"><big><font size="-1"><big><span
+ class="410355311-27042004">Specify that the elementary operations
+include addition, subtraction, and multiplication.<br>
+      <br>
+Also define the requirements for converting values from IEEE float to
+the internal format in more detail.<br>
+      <br>
+Do not define requirements for division, reciprocal, square root, sine,
+and similar operations at this stage.<br>
+      </span></big></font> </big></td>
+      <td style="text-align: center; vertical-align: middle;"><small>PROPOSED<br>
+      </small></td>
+    </tr>
+    <tr>
+      <td style="vertical-align: middle;"><big><font size="-1"><big>22<br>
+      </big></font> </big></td>
+      <td style="vertical-align: middle;"><big><font size="-1"><big>Target
+surface
+larger than max viewport size<br>
+      </big></font> </big></td>
+      <td style="vertical-align: middle;"><big> </big>
+      <div><big><font size="-1"><big><span class="215125207-04052004"><span
+ class="215125207-04052004">J</span>SR-184, unlike OpenGL, allows the
+binding of rendering targets larger than the maximum viewport
+dimensions. This makes supporting the large rendering targets
+impossible in an implementation built on top of OpenGL ES.<br>
+      </span></big></font></big></div>
+      <big> </big></td>
+      <td style="vertical-align: middle;"><big> </big>
+      <div dir="ltr"><big><font size="-1"><big><span
+ class="215125207-04052004">Make
+bindTarget throw an IllegalArgumentException if the target is larger
+than the maximum viewport size.<br>
+      </span></big></font></big></div>
+      <big> </big></td>
+      <td style="text-align: center; vertical-align: middle;"><small>PROPOSED<br>
+      </small></td>
+    </tr>
+    <tr>
+      <td style="vertical-align: middle;"><big><font size="-1"><big>23<br>
+      </big></font> </big></td>
+      <td style="vertical-align: middle;"><big><font size="-1"><big>Pixel
+format
+conversion from RGBA to ALPHA<br>
+      </big></font> </big></td>
+      <td style="vertical-align: middle;"><big> </big>
+      <div><big><font size="-1"><big><span class="667013212-04052004">In
+the
+Image2D constructor that takes in a MIDP Image, what should be done if
+the source Image is in RGBA format and the specified destination format
+is ALPHA? </span></big></font></big></div>
+      <big> </big></td>
+      <td style="vertical-align: middle;"><big> </big>
+      <div dir="ltr"><big><font size="-1"><big><span
+ class="667013212-04052004">The
+expected behavior is that the RGB components are discarded and the
+Alpha values are copied in as such. </span><span
+ class="667013212-04052004">Make this behavior explicit in the section
+"Pixel format
+conversion" in package description.<br>
+      </span></big></font></big></div>
+      <big> </big></td>
+      <td style="text-align: center; vertical-align: middle;"><small>PROPOSED<br>
+      </small></td>
+    </tr>
+    <tr>
+      <td style="vertical-align: middle;"><big><font size="-1"><big>24<br>
+      </big></font> </big></td>
+      <td style="vertical-align: middle;"><big><font size="-1"><big>Bone
+transform
+changed between addTransforms<br>
+      </big></font> </big></td>
+      <td style="vertical-align: middle;"><big> </big>
+      <div dir="ltr" style="margin-right: 0px;"><big><font size="-1"><big><span
+ class="827090209-18052004">SkinnedMesh.addTransform may be called
+multiple times for the same bone, because bones are often associated
+with disjoint vertex ranges. What happens if a&nbsp;bone's
+transformation is changed between subsequent addTransforms targeting
+that bone? Which transformation should be adopted as the "at rest" bone
+transformation?</span></big></font></big></div>
+      <big> </big></td>
+      <td style="vertical-align: middle;"><big> </big>
+      <div><big><font size="-1"><big><span class="827090209-18052004">Specify
+that bone transformations
+should not be changed between addTransforms, but if they are, the
+results for the affected vertices are undefined.<br>
+      </span></big></font></big></div>
+      <big> </big></td>
+      <td style="text-align: center; vertical-align: middle;"><small>PROPOSED<br>
+      </small></td>
+    </tr>
+    <tr>
+      <td style="vertical-align: middle;"><big><font size="-1"><big>25<br>
+      </big></font> </big></td>
+      <td style="vertical-align: middle;"><big><font size="-1"><big>Out
+of
+bounds
+offsets in Loader.load using byte[]<br>
+      </big></font> </big></td>
+      <td style="vertical-align: middle;"><big> </big>
+      <div><big><font size="-1"><big><span class="201502512-10062004">The
+method Loader.load(byte[] data, int offset) specifies no exceptions for
+the cases where offset lies outside of the array bounds (i.e. offset
+&lt; 0 or offset &gt;= data.length). Most implementations probably
+throw an exception nonetheless.</span></big></font></big></div>
+      <big> </big></td>
+      <td style="vertical-align: middle;"><big> </big>
+      <div dir="ltr"><big><font size="-1"><big><span
+ class="201502512-10062004">@throws
+IndexOutOfBoundsException if <span style="font-family: monospace;">offset
+&lt; 0</span> or <span style="font-family: monospace;">offset &gt;=
+data.length</span></span></big></font></big></div>
+      <big> </big></td>
+      <td style="text-align: center; vertical-align: middle;"><small>PROPOSED<br>
+      </small></td>
+    </tr>
+    <tr>
+      <td style="vertical-align: middle;"><big><font size="-1"><big>26<br>
+      </big></font> </big></td>
+      <td style="vertical-align: middle;"><big><font size="-1"><big>&nbsp;OpenGL
+rendering model and
+rasterization rules<br>
+      </big></font> </big></td>
+      <td style="vertical-align: middle;"><big> </big>
+      <div><big><font size="-1"><big>Although
+there has been a tacit assumption that the M3G
+rendering model is the same as OpenGL's, that has not been put into
+writing. In particular, the spec does not explicitly say </big></font><font
+ size="-1"><big><span class="848563111-03082004">that we follow
+OpenGL's
+polygon rasterization
+rules (chapter 3.5.1). </span></big></font></big></div>
+      <big> </big></td>
+      <td style="vertical-align: middle;"><big><font size="-1"
+ style="color: rgb(0, 0, 0);"><big><span class="848563111-03082004">Add
+a
+section called "Rasterization" under
+"General implementation requirements" in the package description.<br>
+      <br>
+Explicitly state something to the effect of&nbsp; </span></big></font><font
+ size="-1" style="color: rgb(0, 0, 0);"><big>"unless specified
+otherwise,
+vertices, primitives and
+fragments are processed as in OpenGL" and "</big></font><font size="-1"><big><span
+ class="848563111-03082004">rasterization
+must obey section 3.5.1 of the
+OpenGL specification"<br>
+      <br>
+Also move the reference
+pipeline diagrams from Graphics3D to package description.<br>
+      </span></big></font> </big></td>
+      <td style="text-align: center; vertical-align: middle;"><small>PROPOSED<br>
+      </small></td>
+    </tr>
+    <tr>
+      <td style="vertical-align: middle;"><big><font size="-1"><big>27<br>
+      </big></font></big></td>
+      <td style="vertical-align: middle;"><big><font size="-1"><big>Unspecified
+file name case sensitivity in Loader<br>
+      </big></font></big></td>
+      <td style="vertical-align: middle;"><big> </big>
+      <div><big><font size="-1"><big><span class="792551415-09082004">The
+Sony
+Ericsson K700 ignores case in M3G file names, whereas the RI and all
+Nokia phones are case-sensitive. For instance, if the JAR contains
+"test.m3g", then trying to load "test.M3G" will work on the K700 but
+fail on a Nokia phone.</span></big></font></big></div>
+      <big> </big></td>
+      <td style="vertical-align: middle;"><big> </big>
+      <div dir="ltr"><big><font size="-1"><big><span
+ class="792551415-09082004">Require
+that file names be treated case
+sensitive by the Loader.<br>
+      </span></big></font></big></div>
+      <big> </big></td>
+      <td style="text-align: center; vertical-align: middle;"><small>PROPOSED<br>
+      </small></td>
+    </tr>
+    <tr>
+      <td style="vertical-align: middle;">28<br>
+      </td>
+      <td style="vertical-align: middle;">-<br>
+      </td>
+      <td style="vertical-align: middle;">-<br>
+      </td>
+      <td style="vertical-align: middle;">-<br>
+      </td>
+      <td style="vertical-align: middle;"><small>-<br>
+      </small></td>
+    </tr>
+    <tr>
+      <td style="vertical-align: middle;"><big><font size="-1"><big>29<br>
+      </big></font></big></td>
+      <td style="vertical-align: middle;"><big><font size="-1"><big>Negative
+keyframe time stamps<br>
+      </big></font></big></td>
+      <td style="vertical-align: middle;"><big> </big>
+      <div><big><font size="-1"><big><span class="327405511-07092004">There's
+a
+contradiction between the file format spec and the main spec. The file
+format spec uses the data type Int32 (as opposed to UInt32) for
+keyframe time stamps, whereas the method setKeyframe of
+KeyframeSequence specifically disallows negative values of time.<br>
+      </span></big></font></big></div>
+      <big> </big></td>
+      <td style="vertical-align: middle;"><big> </big>
+      <div dir="ltr"><big><font size="-1"><big><span
+ class="327405511-07092004">Change
+the data type in the file format
+spec to <span style="font-family: monospace;">UInt32</span>.<br>
+      <br>
+Allowing negative time stamps in the API would require carefully
+specified changes to how looping is handled, for no real added value.<br>
+      </span></big></font></big></div>
+      <big> </big></td>
+      <td style="text-align: center; vertical-align: middle;"><small>PROPOSED</small></td>
+    </tr>
+    <tr>
+      <td style="vertical-align: middle;"><big><font size="-1"><big>30<br>
+      </big></font></big></td>
+      <td style="vertical-align: middle;"><big><font size="-1"><big>Unnecessary
+error checking in VertexBuffer<br>
+      </big></font></big></td>
+      <td style="vertical-align: middle;"><big> </big>
+      <div><big><font size="-1"><big><span class="502500416-09092004">VertexBuffer
+requires normal vectors to be set for all
+lit meshes (i.e. meshes that have an associated Material). This error
+condition has little value to the developer, because there are so many
+other things that can cause an IllegalStateException while rendering.
+Seeing the erroneously shaded meshes on the screen would probably be
+more useful.<br>
+      <br>
+Also, normal vectors are not even needed if only ambient light is
+applied to the mesh. The current spec requires the normals to be
+present even then.<br>
+      <br>
+Similarly, VertexBuffer requires that texture coordinates be set for
+all enabled texturing units. This does not seem to add any value over
+leaving the values undefined, rather the opposite. </span></big></font></big></div>
+      <big> </big></td>
+      <td style="vertical-align: middle;"><big> </big>
+      <div dir="ltr"><big><font size="-1"><big><span
+ class="502500416-09092004">Relax
+the error conditions: If
+the normal vector array is null, the normals are undefined. If a
+texture coordinate array is null, the coordinates are undefined.<br>
+      </span></big></font></big></div>
+      <big> </big></td>
+      <td style="text-align: center; vertical-align: middle;"><small>PROPOSED&nbsp;<br>
+      </small></td>
+    </tr>
+    <tr>
+      <td style="vertical-align: middle;"><big><font size="-1"><big>31<br>
+      </big></font></big></td>
+      <td style="vertical-align: middle;"><big><font size="-1"><big>Deferred
+exceptions are implementation dependent<br>
+      </big></font></big></td>
+      <td style="vertical-align: middle;"><big><font size="-1"><big>The
+spec is
+ambiguous about error checking while rendering and picking. Currently, o</big></font><font
+ size="-1"><big>bjects that are not rendered (or checked for
+intersection)
+are not required to be in valid state. <br>
+      <br>
+This makes exception behavior implementation dependent. For example,
+some implementations may validate objects that are outside of the view
+frustum while others don't.</big></font></big></td>
+      <td style="vertical-align: middle;"><big><font size="-1"
+ style="color: rgb(0, 0, 0);"><big>1) Objects that are out of scope or
+disabled <span style="font-weight: bold;">must not</span> be validated
+when rendering
+or picking. </big></font><font size="-1" style="color: rgb(0, 0, 0);"><big>Define
+submeshes with null appearances to be disabled. Also define all
+objects to be disabled when rendering from a camera that has zero view
+volume.</big></font><br>
+      <font size="-1"><big><br>
+2) Objects that are not
+rendered or picked, even though they are enabled and within scope, <span
+ style="font-weight: bold;">may</span> be validated.<br>
+      <br>
+3) Any data within on
+object that is actually needed for rendering or picking <span
+ style="font-weight: bold;">must</span> be validated.<br>
+      </big></font></big></td>
+      <td style="vertical-align: middle;"><small>PROPOSED<br>
+      </small></td>
+    </tr>
+    <tr>
+      <td style="vertical-align: middle;"><big><font size="-1"><big>32<br>
+      </big></font></big></td>
+      <td style="vertical-align: middle;"><big><font size="-1"><big>Relative
+paths in Loader<br>
+      </big></font></big></td>
+      <td style="vertical-align: middle;"><big> </big>
+      <p><big><font size="2"><big>If a relative path is passed into
+Class.getResourceAsStream (as used in Loader.load), the name of the
+class on which it is called is used as the basis to which the relative
+path is added. <br>
+      </big></font></big></p>
+      <big> </big>
+      <p><big><font size="2"><big>When a relative path is passed to
+Loader.load, the class on which getResourceAsStream is actually called
+is undefined, and is likely to be an implementation-defined helper
+class. Therefore, using relative paths may result in undefined behavior
+across platforms.</big></font></big></p>
+      <big> </big></td>
+      <td style="vertical-align: middle;"><big><font size="-1"><big>Explicitly
+state that the results are undefined if you pass
+a relative path to a resource as input to Loader.load.</big></font></big></td>
+      <td style="vertical-align: middle;"><small>PROPOSED<br>
+      </small></td>
+    </tr>
+    <tr>
+      <td style="vertical-align: middle;"><big><font size="-1"><big>33<br>
+      </big></font></big></td>
+      <td style="vertical-align: middle;"><big><font size="-1"><big>Variable
+length byte arrays in the file format<br>
+      </big></font></big></td>
+      <td style="vertical-align: middle;"><big><font size="-1"><big>The
+compound datatype "Byte[]" contains the length of the
+array in the beginning. However, the Section and Object headers have an
+extra field for the length of the array. This is redundant and
+confusing. In practice, exporters are not writing the length in the
+beginning of the array, and implementations are not expecting to find
+it.<br>
+      </big></font></big></td>
+      <td style="vertical-align: middle;"><big><font size="-1"><big>Change
+the
+Byte[] in the Section documentation to a
+fixed-length array:<br>
+      <br>
+      </big></font><font style="font-family: monospace;" size="-1"><big>Byte[TotalSectionLength-13]
+Objects</big></font><br>
+      <font size="-1"><big><br>
+Similarly for the Object documentation:<br>
+      <br>
+      <span style="font-family: monospace;">Byte[Length] Data</span><br>
+      </big></font></big></td>
+      <td style="vertical-align: middle;"><small>PROPOSED<br>
+      </small></td>
+    </tr>
+    <tr>
+      <td style="vertical-align: middle;"><big><font size="-1"><big>34<br>
+      </big></font></big></td>
+      <td style="vertical-align: middle;"><big><font size="-1"><big>Handling
+of
+alpha in Image2D constructor<br>
+      </big></font></big></td>
+      <td style="vertical-align: middle;"><big><font size="-1"><big>Assuming
+the proposed solution for&nbsp; issue #23, the
+implementations must be able to distinguish MIDP Images that are in RGB
+format from those that are in RGBA, because their conversion rules to
+ALPHA are different.<br>
+      <br>
+This is problematic, because not all implementations of MIDP make that
+distinction; they can store all images as RGBA, setting the alpha to
+1.0 for all pixels in an RGB image. It is thus impossible for the M3G
+implementation to conclude which conversion rule to use.<br>
+      </big></font></big></td>
+      <td style="vertical-align: middle;"><big><font size="-1"><big>Implementations
+on MIDP 1.0 and 2.0
+must treat all mutable Images as
+RGB and all immutable Images as RGBA.<br>
+      <br>
+If the windowing system
+does make a distinction between image formats, and also provides a
+public method to find out that format, then the implementation must
+respect the original format. Such
+windowing systems include at least AWT and maybe a future version of
+MIDP.<br>
+      </big></font></big></td>
+      <td style="vertical-align: middle;"><small>PROPOSED<br>
+      </small></td>
+    </tr>
+    <tr>
+      <td style="vertical-align: middle;"><big><font size="-1"><big>35<br>
+      </big></font></big></td>
+      <td style="vertical-align: middle;"><big><font size="-1"><big>Documentation
+bug in Camera.setProjection<br>
+      </big></font></big></td>
+      <td style="vertical-align: middle;"><big><font size="-1"><big>The
+letters <span style="font-family: monospace;">w </span>and <span
+ style="font-family: monospace;">h </span>are said to denote the width
+and height of the view frustum,
+although in the matrix they actually represent only half of the width
+and height, respectively.<br>
+      </big></font></big></td>
+      <td style="vertical-align: middle;"><big><font size="-1"><big>Simply
+remove the statement. The mathematical definitions of <span
+ style="font-family: monospace;">w </span>and <span
+ style="font-family: monospace;">h </span>are clear enough.<br>
+      </big></font></big></td>
+      <td style="vertical-align: middle;"><small>PROPOSED<br>
+      </small></td>
+    </tr>
+    <tr>
+      <td style="vertical-align: middle;">36<br>
+      </td>
+      <td style="vertical-align: middle;">-<br>
+      </td>
+      <td style="vertical-align: middle;">-<br>
+      </td>
+      <td style="vertical-align: middle;">-<br>
+      </td>
+      <td style="vertical-align: middle;"><small>-<br>
+      </small></td>
+    </tr>
+    <tr>
+      <td style="vertical-align: middle;"><big><font size="-1"><big>37<br>
+      </big></font></big></td>
+      <td style="vertical-align: middle;"><big><font size="-1"><big>Sprite
+alpha factor<br>
+      </big></font></big></td>
+      <td style="vertical-align: middle;"><big><font size="-1"><big>The
+alpha
+factor currently does not apply to sprites.
+Developers are generally not pleased about that. Alpha factor was
+ignored to keep sprites as simple as possible, but that decision seems
+unfounded, considering that all the different blending modes are
+already supported.<br>
+      </big></font></big></td>
+      <td style="vertical-align: middle;"><big><font size="-1"><big>Define
+that
+the alpha factor also affects sprites, such that the alpha channel of
+the
+sprite image is multiplied with the effective alpha factor.<br>
+      <br>
+      </big></font><font size="-1"><big>For picking, however, the
+alpha values should be used as-is. This is in line with Mesh, where the
+alpha factor has no effect on picking hit/miss status.</big></font><font
+ size="-1"><big><br>
+      </big></font></big></td>
+      <td style="vertical-align: middle;"><small>PROPOSED<br>
+      </small></td>
+    </tr>
+    <tr>
+      <td style="vertical-align: middle;"><big><font size="-1"><big>38<br>
+      </big></font> </big></td>
+      <td style="vertical-align: middle;"><big><font size="-1"><big>Correct
+slerping<br>
+      </big></font> </big></td>
+      <td style="vertical-align: middle;"><big><font size="-1"><big>It
+appears
+that some implementations of SLERP interpolation
+are checking for angles greater than 90 degrees between successive
+quaternion keyframes, and negating one of them&nbsp; if so. <br>
+      <br>
+This is not allowed in the spec, because it breaks down animation
+blending.<br>
+      </big></font> </big></td>
+      <td style="vertical-align: middle;"><big><font size="-1"><big>The
+spec is
+correct as it is, and the formula given for
+slerping is clear. <br>
+      <br>
+However, we should emphasize that there are no provisions for
+"adjusting" the quaternions by flipping their signs, because this is
+such a common mistake.<br>
+      </big></font></big></td>
+      <td style="vertical-align: middle;"><small>PROPOSED<br>
+      </small></td>
+    </tr>
+    <tr>
+      <td style="vertical-align: middle;"><big><font size="-1"><big>39<br>
+      </big></font></big></td>
+      <td style="vertical-align: middle;"><big><font size="-1"><big>References
+to Objects<br>
+      </big></font></big></td>
+      <td style="vertical-align: middle;"><big><font size="-1"><big>The
+package
+description states that all Object3Ds are held
+by reference unless stated otherwise. It does not say anything about
+other Objects, such as arrays. The assumption is that they are copied
+in by default, but this is not stated anywhere.<br>
+      </big></font></big></td>
+      <td style="vertical-align: middle;"><big><font size="-1"><big>Objects
+other than Object3Ds are copied in by default. In
+particular, arrays are always copied in. Emphasize this in the package
+description.<br>
+      <br>
+The User Object in Object3D is, however, held by reference. This is
+already stated, but should be made more explicit.<br>
+      </big></font></big></td>
+      <td style="vertical-align: middle;"><small>PROPOSED<br>
+      </small></td>
+    </tr>
+    <tr>
+      <td style="vertical-align: middle;"><big><font size="-1"><big>40<br>
+      </big></font></big></td>
+      <td style="vertical-align: middle;"><big><font size="-1"><big>Camera
+and
+Light transformations after render(World)<br>
+      </big></font></big></td>
+      <td style="vertical-align: middle;"><big><font size="-1"><big>The
+transformations of the current Camera and Lights are
+currently unspecified after rendering a World.<br>
+      </big></font></big></td>
+      <td style="vertical-align: middle;"><big><font size="-1"><big>The
+expected behavior is that the Lights and the Camera are
+transformed to world space. Make that behavior mandatory.<br>
+      </big></font></big></td>
+      <td style="vertical-align: middle;"><small>PROPOSED<br>
+      </small></td>
+    </tr>
+    <tr>
+      <td style="vertical-align: middle;"><big><font size="-1"><big>41<br>
+      </big></font></big></td>
+      <td style="vertical-align: middle;"><big><font size="-1"><big>Alignment
+references in the file format<br>
+      </big></font></big></td>
+      <td style="vertical-align: middle;"><big><font size="-1"><big>Alignments
+may introduce cyclic references in the scene
+graph. However, cycles are not allowed in the file format. This
+contradiction is not discussed in the file format spec.<br>
+      </big></font></big></td>
+      <td style="vertical-align: middle;"><big><font size="-1"><big>Explain
+in
+the file format spec that there is a workaround
+that involves adding dummy child nodes.<br>
+      </big></font></big></td>
+      <td style="vertical-align: middle;"><small>PROPOSED<br>
+      </small></td>
+    </tr>
+    <tr>
+      <td style="vertical-align: middle;"><big><font size="-1"><big>42<br>
+      </big></font></big></td>
+      <td style="vertical-align: middle;"><big><font size="-1"><big>Maximum
+viewport width and height<br>
+      </big></font></big></td>
+      <td style="vertical-align: middle;"><big><font size="-1"><big>Many
+implementations could potentially support different
+maxima for viewport width and height, but the setViewport and
+getProperties methods in Graphics3D force the larger dimension to be
+clamped to the smaller dimension.<br>
+      </big></font></big></td>
+      <td style="vertical-align: middle;"><big><font size="-1"><big>Change
+setViewport exception behavior so that width and
+height are checked separately.<br>
+      <br>
+      </big></font><font size="-1"><big>Add new entries in the
+getProperties
+table: maxViewportWidth
+and maxViewportHeight. Also keep maxViewportDimension, which is the
+minimum of width and height.<br>
+      </big></font></big></td>
+      <td style="vertical-align: middle;"><small>PROPOSED<br>
+      </small></td>
+    </tr>
+    <tr>
+      <td style="vertical-align: middle;">43<br>
+      </td>
+      <td style="vertical-align: middle;">-<br>
+      </td>
+      <td style="vertical-align: middle;">-<br>
+      </td>
+      <td style="vertical-align: middle;">-<br>
+      </td>
+      <td style="vertical-align: middle;"><small>-<br>
+      </small></td>
+    </tr>
+    <tr>
+      <td style="vertical-align: middle;"><big><font size="-1"><big>44<br>
+      </big></font> </big></td>
+      <td style="vertical-align: middle;"><big><font size="-1"><big>Erroneous
+alignment example (billboards)<br>
+      </big></font> </big></td>
+      <td style="vertical-align: middle;"><big><font size="-1"><big>The
+following example for setAlignment that is supposed to
+create a typical billboard does not work in the usual case:<br>
+      </big></font> </big>
+      <pre class="example"><big><font size="-1"><big>setAlignment(<span
+ class="example_literal">null</span>, <span class="example_class">Node</span>.<span
+ class="example_constant">ORIGIN</span>,<br>            &nbsp;world, <span
+ class="example_class">Node</span>.<span class="example_constant">Y_AXIS</span>);</big></font></big></pre>
+      <big> <font size="-1"><big>The Y alignment is constrained by
+the Z
+alignment , when it should be vice versa.&nbsp; The workaround is to
+have the roles of Z and Y axes reversed, either in the modeling stage
+or by using the M part of the node transformation.</big></font><font
+ size="-1"><big><br>
+      </big></font> </big></td>
+      <td style="vertical-align: middle;"><big><font size="-1"><big>Add
+a code
+comment that the axes must be set up properly.<br>
+      </big></font> </big></td>
+      <td style="vertical-align: middle;"><small>PROPOSED<br>
+      </small></td>
+    </tr>
+    <tr>
+      <td style="vertical-align: middle;"><big><font size="-1"><big>45<br>
+      </big></font></big></td>
+      <td style="vertical-align: middle;"><big><font size="-1"><big>Downscaling
+of sprite and background images<br>
+      </big></font></big></td>
+      <td style="vertical-align: middle;"><big><font size="-1"><big>To
+allow
+sprites and background images to be implemented
+with textures, we should allow implementations to resample images to
+the nearest supported power of two dimension. For&nbsp; large images,
+this means downsampling to the maximum texture size (often 256x256).<br>
+      <br>
+We should also define quality criteria for the resampling method.<br>
+      </big></font></big></td>
+      <td style="vertical-align: middle;"><big><font size="-1"><big>Allow
+resampling of sprites and background images, and
+recommend bilinear filtering or better.<br>
+      <br>
+Also recommend something
+better than point sampling when rendering scaled sprites and background
+images.<br>
+      </big></font></big></td>
+      <td style="vertical-align: middle;"><small>PROPOSED<br>
+      </small></td>
+    </tr>
+    <tr>
+      <td style="vertical-align: middle;"><big><font size="-1"><big>46<br>
+      </big></font></big></td>
+      <td style="vertical-align: middle;"><big><font size="-1"><big>Missing
+getters<br>
+      </big></font></big></td>
+      <td style="vertical-align: middle;"><big><font size="-1"><big>There
+are
+some properties in the API and the file format
+that you can only set, but not read back. This makes it difficult or
+impossible to write comprehensive game engines, middleware, editors, or
+testers based solely on the M3G file format. Instead, applications need
+auxiliary files to store the information that you can't get from M3G.
+This adds to development costs and file size.<br>
+      </big></font></big></td>
+      <td style="vertical-align: middle;"><big><font size="-1"><big>Add
+all
+missing getters: indices, vertices, texture
+filtering modes, keyframe interpolation modes, keyframe values, local
+camera lighting, node alignment.<br>
+      </big></font></big></td>
+      <td style="vertical-align: middle;"><small>PROPOSED<br>
+      </small></td>
+    </tr>
+    <tr>
+      <td style="vertical-align: middle;"><big><font size="-1"><big>47<br>
+      </big></font></big></td>
+      <td style="vertical-align: middle;"><big><font size="-1"><big>The
+effect
+of new getters on getReferences<br>
+      </big></font></big></td>
+      <td style="vertical-align: middle;"><big><font size="-1"><big>If
+we add
+getters for alignment reference nodes, should we
+then change the behavior of Object3D.getReferences so that it also
+returns the references? That could break existing applications that
+rely on not encountering loops when traversing the scene graph.<br>
+      </big></font></big></td>
+      <td style="vertical-align: middle;"><big><font size="-1"><big>Do
+not
+return alignment reference nodes in
+Object3D.getReferences. Applications can retrieve them separately if
+needed. This is also consistent with current behavior: for example,
+parent links are not returned.<br>
+      </big></font></big></td>
+      <td style="vertical-align: middle;"><small>PROPOSED<br>
+      </small></td>
+    </tr>
+    <tr>
+      <td style="vertical-align: middle;"><big><font size="-1"><big>48<br>
+      </big></font></big></td>
+      <td style="vertical-align: middle;"><big><font size="-1"><big>Unnecessary
+error checking in addChild<br>
+      </big></font></big></td>
+      <td style="vertical-align: middle;"><big><font size="-1"><big>Group.addChild
+throws an exception if the node that is being
+added is already a child of that Group. This is annoying and
+unnecessary. <br>
+      </big></font></big></td>
+      <td style="vertical-align: middle;"><big><font size="-1"><big>Relax
+the
+current error condition ("if the given node
+already has a parent") to "...has a parent other than this Group".<br>
+      </big></font></big></td>
+      <td style="vertical-align: middle;"><small>PROPOSED<br>
+      </small></td>
+    </tr>
+    <tr>
+      <td style="vertical-align: middle;">49<br>
+      </td>
+      <td style="color: rgb(0, 0, 0); vertical-align: middle;">Documentation
+on Graphics3D.addLight and setLight<br>
+      </td>
+      <td style="color: rgb(0, 0, 0); vertical-align: middle;">The
+documentation is unclear on how to actually use addLight and setLight;
+why are there two methods, when the documentation suggests they are
+almost identical?<br>
+      </td>
+      <td style="color: rgb(0, 0, 0); vertical-align: middle;">Clarify
+that addLight should be used for creating the set of lights to be used,
+and setLight for making modifications to that set.<br>
+      </td>
+      <td style="vertical-align: middle;"><small>PROPOSED</small></td>
+    </tr>
+    <tr>
+      <td style="vertical-align: middle;">50<br>
+      </td>
+      <td style="color: rgb(0, 0, 0); vertical-align: middle;">Sprite
+crop rectangle documentation<br>
+      </td>
+      <td style="color: rgb(0, 0, 0); vertical-align: middle;">Different
+implementations have interpreted the documentation on the crop
+rectangle differently, and render different results.<br>
+      </td>
+      <td style="color: rgb(0, 0, 0); vertical-align: middle;">Clarify
+that it is the crop rectangle that should be mapped to the projected
+1x1 rectangle, not the 1x1 rectangle that should be cropped.<br>
+      </td>
+      <td style="vertical-align: middle;"><small>PROPOSED</small></td>
+    </tr>
+    <tr>
+      <td style="vertical-align: middle;">51<br>
+      </td>
+      <td style="color: rgb(0, 0, 0); vertical-align: middle;">Graphics3D.bindTarget
+mandates a redundant copy or clear<br>
+      </td>
+      <td style="color: rgb(0, 0, 0); vertical-align: middle;">bindTarget
+requires that the rendering target retains the original pixel data
+after binding. This mandates a redundant color buffer copy or clear for
+applications that fully overwrite the color buffer and wouldn't need
+either one.<br>
+      </td>
+      <td style="color: rgb(0, 0, 0); vertical-align: middle;">Add
+a new hint flag to Graphics3D.bindTarget, allowing the application to
+signal when the color buffer contents can be discarded.<br>
+      </td>
+      <td style="vertical-align: middle;"><small>PROPOSED</small></td>
+    </tr>
+    <tr>
+      <td style="vertical-align: middle;">52<br>
+      </td>
+      <td style="color: rgb(0, 0, 0); vertical-align: middle;">No
+mention of winding in TriangleStripArray<br>
+      </td>
+      <td style="color: rgb(0, 0, 0); vertical-align: middle;">The
+class documentation on TriangleStripArray does not mention that the
+winding of every other triangle should be flipped.<br>
+      </td>
+      <td style="color: rgb(0, 0, 0); vertical-align: middle;">Clarify
+the documentation.<br>
+      </td>
+      <td style="vertical-align: middle;"><small>PROPOSED</small></td>
+    </tr>
+  </tbody>
+</table>
+<blockquote style="color: rgb(0, 0, 0);"> <br>
+</blockquote>
+</body>
+</html>
+
+
+
+<!-- ** BEGIN: footer.jsp ** //-->
+
+
+
+
+
+
+
+
+</td>
+</tr>
+</table>
+
+<!-- ** END: Content Table ** //-->
+
+<!-- ** BEGIN: Footer Table ** //-->
+
+<div id="footer" style="clear: both;">
+    <div class="footleft">
+        <a href="/en/resources/contacts">Contact Us</a>
+    </div>
+	
+    <div class="botbar"><img src="/images/spacer.gif" alt="" height="23" width="1"></div>
+
+    <div class="footleft2">
+         &copy; 2019, Oracle Corporation and/or its affiliates. 
+        <a href="/en/home/terms">Terms of Use</a>. <a href="http://www.oracle.com/us/legal/privacy/index.html">Privacy Policy</a>. <a href="http://www.oracle.com/us/legal/third-party-trademarks/third-party-trademarks-078568.html">Trademarks</a>
+    </div>
+
+    <div class="footright">
+        <img src="/images/common/logo_oracle_footer.gif" alt="Oracle Corporation" height="22" width="91">
+    </div>
+
+    <div style="clear: both;"><img src="/images/spacer.gif" alt="" height="30" width="1"></div>
+</div>
+
+<!-- ** END: Footer Table ** //-->
+
+
+
+<!-- ** Menu Start ** //-->
+
+
+
+</body>
+</html>
+<!-- ** END: footer.jsp ** //-->
+

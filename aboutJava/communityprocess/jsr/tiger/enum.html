@@ -1,0 +1,964 @@
+
+<!-- ** BEGIN: header.jsp ** //-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3c.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+<head>
+    
+
+   
+    <link href="/includes/css/menu.css" rel="stylesheet" type="text/css"></link>
+    <link href="/includes/css/style.css" rel="stylesheet" type="text/css"></link>
+    <!--[if lt IE 6]><link href="/includes/css/style5.css" rel="stylesheet" type="text/css" ></link><![endif]-->
+    <!--[if gte IE 5]><link href="/includes/css/style6.css" rel="stylesheet" type="text/css" ></link><![endif]-->
+    <link href="/includes/css/tabs.css"  rel="stylesheet" type="text/css"></link>
+
+    <script type="text/javascript" src="/includes/scripts/tabs.js"></script>
+    <script type="text/javascript" src="/includes/scripts/menu.js"></script>
+   
+
+    
+
+    
+        <title>The Java Community Process(SM) Program - communityprocess - jsr</title>
+    
+
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+
+
+<body onload="P7_initPM(0,1,0,0,-1)">
+
+    <a name="top"></a>
+
+    <div id="header">
+	<div id="logo">
+		<a href="/en/home/index"><img src="/images/spacer.gif" alt="Java Community Process" height="81" width="151"></a>
+	</div>
+	<div id="tools">
+		<div class="search">
+			<form name="search" action="/en/jsr/summary" method="get" onsubmit="return validate_search()">
+				<input name="id" value="Search JSRs" size="16" class="form" onfocus="nullify_if_equal(this, 'Search JSRs')" type="text">
+				<a href="javascript:document.search.submit()" onclick="return validate_search()"><img src="/images/button_go.gif" width="21" height="16" border="0" alt="Submit this Search" name="sub_search"></a>
+			</form>
+		</div>
+		<div class="tools">
+			<a href="/en/press/pressroom">Press Room</a> &nbsp;|&nbsp;
+			<a href="http://java.com/java/download/index.jsp?cid=jdp78399">Get Java Here</a> &nbsp;|&nbsp;
+			<!-- <a href="javascript:void(0)">Print Format</a> &nbsp;|&nbsp;&nbsp; -->
+		</div>
+
+	</div>
+	<div style="clear: right;"></div>
+
+        
+
+	<div class="topbar"><img src="/images/spacer.gif" alt="" height="3" width="154"></div>
+	<div id="update"> </div>
+    </div>
+
+
+    
+
+        <!-- ** BEGIN: Content Table ** //-->
+
+        <table width="100%" border="0" cellpadding="0" cellspacing="0">
+
+            <tr>
+
+                <!-- ** BEGIN: Navigation Column ** //-->
+                <td width="150" id="leftcontent" valign="top">
+                    <!-- Navigation Placeholder //-->
+
+                    
+
+                    <div class="bar"><img src="/images/hr_dots1.gif" alt="" height="3" width="150"></div>
+
+        <!-- begin find JSRs form -->
+        <!-- IMPORTANT! do not convert this form to Struts < html : form > tag.  javascript change of form.action property fails. -->
+        <img src="/images/hd_find-jsrs.gif" alt="Find JSRs" height="18" width="150">
+        <form name="findjsr" action="/en/jsr/summary" method="get" class="pt5" onsubmit="return validate_findjsr()">
+            <input name="id" size="18" class="form" value="Search JSRs" onfocus="nullify_if_equal(this, 'Search JSRs')" type="text">
+	    <a href="javascript:document.findjsr.submit()" onclick="return validate_findjsr()"><img src="/images/button_go.gif" width="21" height="16" border="0" alt="Submit this Search" name="sub_search"></a>
+        </form><br><br>
+
+        <!-- ** Menu Start ** //-->
+
+        <ul id="p7PMnav">
+            <li><a href="/en/jsr/platform">JSRs by Platform</a></li>
+            <li><a href="/en/jsr/tech">JSRs by Technology</a></li>
+            <li><a href="/en/jsr/stage">JSRs by Stage</a></li>
+            <li><a href="/en/jsr/ec">JSRs by Committee</a></li>
+            <li><a href="/en/jsr/all">List of All JSRs</a></li>
+
+            <!--end find JSRs form -->
+            <div style="clear: both;"><img src="/images/spacer.gif" alt="" height="25" width="1"></div>
+
+            <!--begin my JCP -->
+            <img src="/images/hd_my-jcp.gif" alt="My JCP" height="18" width="150">
+            
+
+          <form name="login" method="get" action="/en/user/login" >
+            <input name="Sign-in" type="submit" title="Sign-in" value="Sign-in" />
+          </form>
+
+            <div style="clear:both"><img src="/images/global/spacer.gif" width="1" height="3" alt=""></div>
+            <div class="noNav">
+                <a href="/en/user/register">Register for Site</a>
+            </div>
+
+             <div class="bar"><img src="/images/hr_dots1.gif" alt="" height="3" width="150"></div>
+           <div class="noNav" style="color: #666666; padding: 0;">
+              Use of JCP site is subject to the
+              <a href="/en/home/terms" style="display:inline;padding: 0">JCP Terms of Use</a> and the
+              <a href="http://www.oracle.com/us/legal/privacy/index.html" style="display:inline;padding: 0" href="">Oracle Privacy Policy</a>
+          </div>
+
+            
+
+            <div style="clear:both"><img src="/images/global/spacer.gif" width="1" height="25" alt=""></div>
+
+            <!--begin JCP info -->
+            <img src="/images/hd_jcp-info.gif" alt="JCP Info" height="18" width="150">
+
+            <li><a href="/en/procedures/overview" class="p7PMtrg">About JCP</a>
+                <ul>
+                    <li><a href="/en/procedures/overview">Program Overview</a></li>
+                    <li><a href="/en/procedures/jcp2">JCP Process Document</a></li>
+                    <li><a href="/en/whatsnew/calendar">Calendar</a></li>
+                    <li><a href="/en/participation/members">JCP Members</a></li>
+                    <li><a href="/en/participation/committee">Executive Committee</a></li>
+                    <li><a href="/en/whatsnew/elections">Elections</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/en/participation/overview" class="p7PMtrg">Get Involved</a>
+		<ul>
+                    <li><a href="/en/participation/overview">Overview</a></li>
+                    <li><a href="/en/participation/membership">Becoming a JCP Member</a></li>
+		</ul>
+            </li>
+
+            <li><a href="/en/resources/contents" class="p7PMtrg">Community Resources</a>
+                <ul>
+                    <li><a href="/en/resources/contents">Overview</a></li>
+                    <li><a href="/en/resources/tutorials">Tutorials</a></li>
+                    <li><a href="/en/resources/multimedia">JCP Podcasts</a></li>
+                    <li><a href="/en/resources/guide">Spec Lead Guide</a></li>
+                    <li><a href="/en/resources/tdk">TCK Tool & Info</a></li>
+                    <li><a href="/en/resources/license_reference">License Reference</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/en/press/pmo" class="p7PMtrg">Community News</a>
+                <ul>
+                    <li><a href="/en/press/pmo">News</a></li>
+                    <li><a href="/en/press/news/awards/awards_main">Programs &amp; Awards</a></li>
+                    <li><a href="/en/press/releases">Press Releases</a></li>
+                    <li><a href="/en/press/success">Success Stories</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/en/introduction/faq">FAQ</a></li>
+
+            <li><a href="/en/resources/contacts">Contact Us</a></li>
+
+            <div style="clear: both;"><img src="/images/spacer.gif" alt="" height="25" width="1"></div>
+
+            <!--[if lte IE 6]><style>#p7PMnav a{height:1em;}#p7PMnav li{height:1em;float:left;clear:both;width:100%}</style><![endif]-->
+            <!--[if IE 6]><style>#p7PMnav li{clear:none;}</style><![endif]-->
+            <!--[if IE 7]><style>#p7PMnav a{zoom:100%;}#p7PMnav li{float:left;clear:both;width:100%;}</style><![endif]-->
+        </ul>
+
+        
+
+        <!--begin ad space -->
+        <div class="ads">
+            <a href="http://java.com/java/download/index.jsp?cid=jdp78399" target="_blank"><img style="display: ;" src="/images/ad_banner2.gif" alt="Ad Banner" border="1" height="70" width="150"></a>
+        </div>
+        <!--end ad space -->
+
+<!-- ** Menu End ** //-->
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;<br>
+
+    
+
+                    &nbsp;<br>
+                    <img src="/images/common/trans.gif" alt="" width="1" height="150"><br>
+
+              
+
+
+
+                </td>
+                <!-- ** END: Navigation Column ** //-->
+
+                <!-- ** BEGIN: Gutter Column ** //-->
+		<td width="10" nowrap><img src="/images/common/trans.gif" alt="" width="10" height="1"></td>
+                <!-- ** END: Gutter Column ** //-->
+
+                <!-- ** BEGIN: Content Column ** //-->
+                <td width="100%" valign="top">
+
+    
+<script type="text/javascript">
+
+String.prototype.trim = function() {
+        return this.replace(/^\s+|\s+$/g,"");
+}
+String.prototype.ltrim = function() {
+        return this.replace(/^\s+/,"");
+}
+String.prototype.rtrim = function() {
+        return this.replace(/\s+$/,"");
+}
+
+function validate_search() {
+	if (document.search.id.value == "Search JSRs" || document.search.id.value.trim().length == 0) {
+		alert("Search terms must be entered first");
+		return false;
+	}
+	return true;
+}
+
+function validate_findjsr() {
+	if (document.findjsr.id.value == "Search JSRs" || document.findjsr.id.value.trim().length == 0) {
+		alert("Search terms must be entered first");
+		return false;
+	}
+	return true;
+}
+
+function nullify_if_equal(field, str) {
+	// alert("val=" + field.value);
+	if (field.value == str) {
+		field.value = "";
+	}
+}
+
+</script>
+<!-- ** END: header.jsp ** //-->
+
+
+
+
+
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML><HEAD><TITLE>
+A Typesafe Enum Facility for the Java<font size=-1><sup>tm</sup></font> Programming Language</h2></TITLE></HEAD>
+
+<body bgcolor="#ffffff">
+<center>
+<h2>A Typesafe Enum Facility for the Java<font size=-1><sup>tm</sup></font> Programming Language</h2>
+</center>
+<hr>
+<br>&nbsp;
+
+<h2>I. Introduction</h2>
+We propose a typesafe enum facility
+for the Java<font size=-1><sup>tm</sup></font> programming language.
+The proposed facility combines ease of use, power, and performance.  In its
+simplest form  it looks a lot like a C/C++ enum declaration:
+<pre>
+    public enum Suit { clubs, diamonds, hearts, spades }
+</pre>
+but it has many advantages over the enum facilities in C, C++, C# and Pascal.
+Internally, the facility is based on the Typesafe Enum pattern described in
+Item 21 of "Effective Java Programming Language Guide."  The proposed facility
+offers all the advantages of this pattern with one deliberate omission
+(hierarchies of typesafe enums):<ol>
+<li>
+Compile-time type safety.
+<li>
+Performance comparable to <tt>int</tt> constants.
+<li>
+Type system provides a namespace for each enum type, so you don't have to
+prefix each constant name.
+<li>
+Typesafe constants aren't compiled into clients, so you can add, 
+reorder or even remove constants without the need to recompile clients.  (If
+you remove a constant that a client is using, you'll fail fast with an
+informative error message.)
+<li>
+Printed values are informative.  (Which would you rather see in a stack
+trace: "Indigo" or "6?")
+<li>
+Enum constants can be used in collections (e.g., as <tt>HashMap</tt> keys).
+<li>
+You can add arbitrary fields and methods to an enum class.
+<li>
+An enum type can be made to implement arbitrary interfaces.
+</ol>
+Additionally, the facility rectifies the two major shortcomings of the
+Typesafe Enum pattern:
+<ol>
+<li>
+The proposed construct is simple and readable.  (The Typesafe Enum pattern 
+described in "Effective Java" involves a large amount of boilerplate code,
+which obscures programmer intent, deters all but the most determined
+programmers from using the pattern, and provides opportunities to introduce
+errors.)
+<li>
+The proposed construct can be used with <tt>switch</tt> statements.
+</ol>
+<p>
+The <tt>enum</tt> declaration is a special kind of class declaration.
+An <i>enum type</i> has public, self-typed members for each of the named
+<i>enum constants</i>.  All enum classes have high-quality <tt>toString</tt>,
+<tt>hashCode</tt>, and <tt>equals</tt> methods. All are <tt>Serializable</tt>,
+<tt>Comparable</tt> and effectively final.  None are
+<tt>Cloneable</tt>. All of the "<tt>Object</tt> methods" except
+<tt>toString</tt> are final: we take care of comparison and serialization,
+and ensure that it's done right.
+<p>
+Arbitrary fields may be added to enum classes, and to individual enum
+constants.  The ability to add such fields will only be used by relatively
+sophisticated programmers, but greatly enhances the power of the facility.  It
+adds nothing to the complexity of the facility for programmers who don't need
+the extra power.
+<p>
+The proposed enum facility requires no JVM changes.  It is
+implemented in the compiler with support from the libraries.  Attributes are
+used to identify enum classes and enum constants in class files (JVMS 4.7).
+The enum facility interacts well with other language work proposed for Tiger,
+notably the <tt>static import</tt> statement, the enhanced <tt>for</tt>
+statement, and generics.
+<p>
+The facility requires a new "primordial enum class" to be added to
+<tt>java.lang</tt>.  This class, called <tt>Eunm</tt>, is subclassed
+by all enum classes.  Additionally, we propose to add special-purpose
+<tt>Set</tt> and <tt>Map</tt> implementations to <tt>java.util</tt>.
+These implementations would be called <tt>EnumSet</tt> and <tt>EnumMap</tt>.
+Instances of these collections require all elements (or keys) to be instances
+of a single enum class.  They combine the power of a general purpose collection
+with the speed of a bit-vector (or array).  Note that enum classes are
+perfectly compatible with the standard collection implementations; the
+special-purpose implementations merely offer better performance.
+<p>
+
+<h2>II. Syntax</h2>
+The following description is not up to JLS standards, but should be
+good enough for present purposes.  A new type of <i>class declaration</i>
+(8.1.1) called an <i>enum declaration</i> is permitted wherever a class
+declaration is now permitted:
+<PRE> 
+   <I>EnumDeclaration:
+        ClassModifiers<sub>opt</sub></I> <b>enum</b> <I>Identifier Interfaces<sub>opt</sub> EnumBody
+
+   EnumBody:</i>
+        <b>{</b> <i>EnumConstants<sub>opt</sub> EnumBodyDeclarations<sub>opt</sub></i> <b>}</b>
+
+   <i>EnumConstants:
+        EnumConstant
+        EnumConstants</i> <b>,</b> <i>EnumConstant
+
+   EnumConstant:
+        Identifier Arguments<sub>opt</sub> ClassBody<sub>opt</sub>
+
+   Arguments:</i>
+        <b>(</b> <i>ArgumentList<sub>opt</sub></i> <b>)</b>
+
+   EnumBodyDeclarations:</i>
+        <b>;</b> <i>ClassBodyDeclarations<sub>opt</sub></i>
+</PRE>
+The use of class modifiers in enum declarations is as for class declarations,
+with a few additional restrictions.  All enum declarations are implicitly
+final unless they contain <i>constant-specific class bodies</i> (which result
+in implicit subclasses).  It is permissible to use the <tt>final</tt>
+modifier on an enum declaration without constant-specific class bodies, but it
+has no effect (and is discouraged).  Enum declarations may not use the class
+modifier <tt>abstract</tt> unless they contain constant-specific class bodies
+for every <i>enum constant</i>, and any abstract methods declared in the
+(optional) <i>class body declarations</i> are overridden in all the
+constant-specific class bodies.  Enum member classes are implicitly static.
+Regardless of what class modifiers are used, it is illegal to explicitly
+instantiate an enum (using <tt>new</tt>).
+<p>
+Any class body declarations in an enum declaration apply to the
+enum type exactly as if they had been present in the class body of an
+ordinary class declaration.
+There are few restrictions on the members that may be declared in the
+class body declarations of an enum type.  Constructors must not chain to a
+superclass constructor--chaining is handled automatically by the compiler.
+Note, however, that one constructor for an enum class may chain to another.
+(The optional class body of an enum constant is effectively an anonymous 
+class declaration, and may not contain any constructors.)
+<p>
+An enum constant may be followed by arguments, which are passed to the
+constructor when the constant is created.  A constructor is chosen using the
+normal overloading rules (15.12.2).  If the arguments are omitted, an empty
+argument list is assumed.  If the enum class has no constructor declarations,
+a parameterless default constructor is provided (which matches the implicit
+empty argument list).
+<p>
+Enum declarations may not contain members that conflict with automatically
+generated members: <tt>VALUES</tt>, <tt>family()</tt>,
+<tt>readObject(ObjectInputStream)</tt>, and
+<tt>writeObject(ObjectOutputStream)</tt>.  (Similarly, enum declarations may
+not contain members that conflict with final methods in
+<tt>java.util.Enum</tt>: <tt>equals(Object)</tt>, <tt>hashCode)()</tt>,
+<tt>clone()</tt>, <tt>compareTo(Object)</tt>, and <tt>readResolve()</tt>.)
+Finally, enum declarations may not contain fields named <tt>ordinal</tt> and
+<tt>name</tt> (which would hide the like-named fields in
+<tt>java.util.Enum</tt>).
+<p>
+The serialized form of an enum constant consists of its name.  If
+deserialization is attempted and no constant of the correct type exists with
+the serialized name, deserialization fails with an
+<tt>InvalidObjectException</tt>.  Deserialization will <i>not</i> be
+compromised by reordering of enum constants, addition of enum constants, or
+removal of unused enum constants.
+<p>
+The syntax of the switch statement (14.10) is extended ever-so-slightly.  The
+type of the <i>Expression</i> is now permitted to be an enum class.  (Note
+that <tt>java.util.Enum</tt> is <i>not</i> an enum class.)  A new production
+is added for <tt>SwitchLabel</tt>:
+<PRE>
+   <i>SwitchLabel:</i>
+        case <i>EnumConst</i> :
+
+   <i>EnumConst:
+        ClassName</i> . <i>Identifier</i>
+        <i>Identifier</i>
+</PRE>
+The <i>ClassName</i> in an <i>EnumConst</i> must refer to an enum class.  The 
+<i>Identifier</i> must correspond to one of its enumeration constants.
+
+<h2>III. Semantics</h2>
+An enum declaration declares an enum class with the same visibility
+as a class declaration at the same point with the same access modifiers.  
+Any members declared in the (optional) class body have the same visibility
+as they would have in a class declaration at the same point with the same
+access modifiers.  Constant-specific class bodies define anonymous classes
+inside enum classes that extend the enclosing enum class.  Thus, 
+instance methods declared in these class bodies are accessible outside
+the bodies only if they override accessible methods in the enclosing enum
+class.  Static methods and fields declared in constant-specific class bodies
+are never accessible outside the class body in which they're declared.
+<p>
+In addition to the members it inherits from <tt>Enum</tt>, the enum class has a
+public static final "self-typed" field for each declared enum constant.  Enum
+classes may not be instantiaged using new, may not be cloned, and
+take full control of the serialization and deserialization process,  This
+ensures that no instances exist beyond those made available via the
+aforementioned fields.  Because there is one instance for each value, it is
+permissible to use the <tt>==</tt> operator in place of the <tt>equals</tt>
+method to determine if at least one of the two object references being
+compared is an enum constant.
+<p>
+The enum class has the following fields generated automatically:
+<pre>
+    /**
+     * An immutable list containing the values comprising this enum class
+     * in the order they're declared.  This field may be used to iterate
+     * over the constants as follows:
+     *
+     *    for(<i>className</i> c : <i>className</i>.VALUES)
+     *        System.out.println(c);
+     */
+    public static List&lt;this enum class&gt; VALUES;
+
+    /**
+     * Returns an immutable list containing the values comprising this enum
+     * class in the order they're declared.  This instance method simply
+     * returns VALUES.  Few programmers should have any need to use this
+     * method.  It is provided for use by sophisticated enum-based data
+     * structures to prevent the need for reflective access to
+     * <tt>VALUES</tt>.
+     * 
+     * @return an immutable list containing the values comprising this enum
+     *         class, in the order they're declared.
+     */
+    public final List&lt;this enum class&gt; family();
+
+    /**
+     * Static factory to return the enum constant pertaining to the
+     * given string name.  The string must match exactly an identifier
+     * used to declare an enum constant in this type.
+     * 
+     * @throws IllegalArgumentException if this enum class has no constant
+     *         with the specified name.
+     */
+     public static &lt;this enum class&gt; valueOf(String name);
+</pre>
+
+<h2>IV. Libraries</h2>
+Here's a first cut at the primordial enum class:
+<pre>
+package java.lang;
+import java.util.*;
+import java.io.*;
+
+/**
+ * The primordial enum class.  Every enum class extends this class, 
+ * but it may not be subclassed manually.
+ */
+public abstract class Enum &lt;T extends Enum&lt;T&gt;&gt;
+        implements Comparable&lt;T&gt;, Serializable {
+    /**
+     * The ordinal of this enumeration constant (its position
+     * in the enum declaration, where the initial constant is assigned
+     * an ordinal of zero).
+     * 
+     * Most programmers will have no use for this field.  It is designed
+     * for use by sophisticated enum-based data structures, such as
+     * {@link java.util.EnumSet and {@link java.util.EnumMap}.
+     */
+    public final transient int ordinal;
+
+    /**
+     * The name of this enum constant, as declared in the enum declaration.
+     * Most programmers should use the {@link toString} method rather than
+     * accessing this field.
+     */
+    public final String name;
+
+    /**
+     * Sole constructor.  Programmers should never invoke this constructor.
+     * It is for use by code emitted by the compiler in response to
+     * enum class declarations.
+     *
+     * @param name - The name of this enum constant, which is the identifier
+     *               used to declare it.
+     * @param ordinal - The ordinal of this enumeration constant (its position
+     *         in the enum declaration, where the initial constant is assigned
+     *         an ordinal of zero).
+     */
+    protected Enum(String name, int ordinal);
+
+    /**
+     * Returns an immutable list of all the enum constants in this
+     * enum constant's enum class.
+     *
+     * @return an immutable list of all of the enum constants in this
+     *         enum constant's enum class.
+     */
+    public abstract List&lt;T&gt; family();
+
+    /**
+     * Returns <tt>true</tt> if the specified object is equal to this
+     * enum constant.
+     *
+     * @param o the object to be compared for equality with this object.
+     * @return  <tt>true</tt> if the specified object is equal to this
+     *          enum constant.
+     */
+    public final boolean equals(Object o);
+
+    /**
+     * Returns a hash code for this enum constant.
+     *
+     * @return a hash code for this enum constant.
+     */
+    public final int hashCode();
+
+    /**
+     * Returns the name of this enum constant, as contained in the
+     * declaration.  This method may be overridden, though it typically
+     * isn't necessary or desirable.  An enum class should override this
+     * method when a more "programmer-friendly" string form exists.
+     *
+     * @return the name of this enum constant
+     */
+    public String toString();
+
+    /**
+     * Compares this enum with the specified object for order.  Returns a
+     * negative integer, zero, or a positive integer as this object is less
+     * than, equal to, or greater than the specified object.
+     *
+     * Enum constants are only comparable to other enum constants of the
+     * same enum class.  The <i>natural order</i> implemented by this
+     * method is the order in which the constants are declared.
+     */
+    public final int compareTo(T o);
+
+    /**
+     * Throws CloneNotSupportedException.  This guarantees that enums
+     * are never cloned, which is necessary to preserve their "singleton"
+     * status.
+     *
+     * @return (never returns)
+     */
+    protected final Object clone() throws CloneNotSupportedException;
+
+    /**
+     * This method ensures proper deserialization of enum constants.
+     * 
+     * @returns the canonical instance of this deserialized enum const.
+     */
+    protected final Object readResolve() throws ObjectStreamException;
+</pre>
+<h2>V. Usage Examples</h2>
+Here is a typical enum declaration:
+<pre>
+    public enum Season { winter, spring, summer, fall }
+</pre>
+
+Here is a slightly more complex enum declaration for an enum type with
+an explicit instance field and an accessor for this field.
+Each member has a different value in the field, and the values are 
+passed in via a constructor.  In this example, the field represents
+the value, in cents, of an American coin.
+<pre>
+public enum Coin {
+    penny(1), nickel(5), dime(10), quarter(25);
+
+    Coin(int value) { this.value = value; }
+
+    private final int value;
+
+    public int value() { return value; }
+}
+</pre>
+Switch statements are useful for simulating the addition of a method to an
+enum type from outside the type.  This example "adds" a <tt>color</tt> method
+to the <tt>Coin</tt> class, and prints a table of coins, their values, and
+their colors.
+<pre>
+import java.util.*;
+
+public class CoinTest {
+    public static void main(String[] args) {
+        for (Iterator&lt;Coin&gt; i = Coin.VALUES.iterator(); i.hasNext(); ) {
+            Coin c = i.next();
+            System.out.println(c + ":   \t"+ c.value() +"c \t" + color(c));
+        }
+    }
+
+    private enum CoinColor { copper, nickel, silver }
+
+    private static CoinColor color(Coin c) {
+        if (c == null)
+            throw new NullPointerException();
+
+        switch(c) {
+          case Coin.penny:
+            return CoinColor.copper;
+          case Coin.nickel:
+            return CoinColor.nickel;
+          case Coin.dime:
+            return CoinColor.silver;
+          case Coin.quarter:
+            return CoinColor.silver;
+        }
+
+        throw new AssertionError("Unknown coin: " + c);
+    }
+}
+</pre>
+Running the program prints:
+<pre>
+penny:   	1c 	copper
+nickel:   	5c 	nickel
+dime:   	10c 	silver
+quarter:   	25c 	silver
+</pre>
+In the followig example, a rich playing card class is built atop two simple
+enum types.  Note that each enum type would be as long as the entire example
+in the absence of the enum facility:
+<pre>
+public class Card implements Comparable, java.io.Serializable {
+    public enum Rank { deuce, three, four, five, six, seven, eight, nine, ten,
+                       jack, queen, king, ace }
+    public enum Suit { clubs, diamonds, hearts, spades }
+
+    private final Rank rank;
+    private final Suit suit;
+
+    private Card(Rank rank, Suit suit) {
+        if (rank == null || suit == null)
+            throw new NullPointerException(rank + ", " + suit);
+        this.rank = rank;
+        this.suit = suit;
+    }
+
+    public Rank rank() { return rank; }
+    public Suit suit() { return suit; }
+
+    public String toString() { return rank + " of " + suit; }
+
+    public int compareTo(Object o) {
+        Card c = (Card)o;
+        int rankCompare = rank.compareTo(c.rank);
+        return rankCompare != 0 ? rankCompare : suit.compareTo(c.suit);
+    }
+
+    private static List&lt;Card&gt; sortedDeck = new ArrayList&lt;Card&gt;(52);
+    static {
+        for (Iterator&lt;Rank&gt; i = Rank.VALUES.iterator(); i.hasNext(); ) {
+            Rank rank = i.next();
+            for (Iterator&lt;Suit&gt; j = Suit.VALUES.iterator(); j.hasNext(); )
+                sortedDeck.add(new Card(rank, j.next()));
+        }
+    }
+
+    // Returns a shuffled deck
+    public static List&lt;Card&gt; newDeck() {
+        List&lt;Card&gt; result = new ArrayList&lt;Card&gt;(sortedDeck);
+        Collections.shuffle(result);
+        return result;
+    }
+}
+</pre>
+If the enhanced for-statement were available, the loop to intialize the
+sorted deck would be much prettier:
+<pre>
+    static {
+        for (Rank rank : Rank.VALUES)
+             for (Suit suit : Suit.VALUES)
+                sortedDeck.add(new Card(rank, suit));
+    }
+</pre>
+Here's a little program that exercises the <tt>Card</tt> class.  It takes two
+integer parameters on the command line, representing the number of hands to
+deal and the number of cards in each hand:
+<pre>
+import java.util.*;
+
+class Deal {
+    public static void main(String args[]) {
+        int numHands     = Integer.parseInt(args[0]);
+        int cardsPerHand = Integer.parseInt(args[1]);
+        List&lt;Card&gt; deck  = Card.newDeck();
+
+        for (int i=0; i &lt; numHands; i++)
+            System.out.println(dealHand(deck, cardsPerHand));
+    }
+
+    /**
+     * Returns a new general-purpose list consisting of the last n
+     * elements of deck.  The returned list is sorted using the
+     * elements natural ordering.
+     */
+    public static &lt;E&gt; List&lt;E&gt; dealHand(List&lt;E&gt; deck, int n) {
+        int deckSize = deck.size();
+        List&lt;E&gt; handView = deck.subList(deckSize-n, deckSize);
+        List&lt;E&gt; hand = new ArrayList&lt;E&gt;(handView);
+        handView.clear();
+        Collections.sort(hand);
+        return hand;
+    }
+}
+</pre>
+Running the program produces results like this:
+<pre>
+java Deal 4 5
+[four of spades, nine of clubs, nine of spades, queen of spades, king of spades]
+[three of diamonds, five of hearts, six of spades, seven of diamonds, king of diamonds]
+[four of diamonds, five of spades, jack of clubs, ace of diamonds, ace of hearts]
+[three of hearts, five of diamonds, ten of hearts, jack of hearts, queen of hearts]
+</pre>
+
+It is also possible to declare methods on individual enum constants to
+attach behaviors to the constants (see "Effective Java", P. 108):
+<pre>
+import java.util.*;
+
+public abstract enum Operation {
+    plus {
+        double eval(double x, double y) { return x + y; }
+    },
+    minus {
+        double eval(double x, double y) { return x - y; }
+    },
+    times {
+        double eval(double x, double y) { return x * y; }
+    },
+    divided_by {
+        double eval(double x, double y) { return x / y; }
+    };
+
+    // Perform arithmetic operation represented by this constant
+    abstract double eval(double x, double y);
+
+    public static void main(String args[]) {
+        double x = Double.parseDouble(args[0]);
+        double y = Double.parseDouble(args[1]);
+
+        for (Iterator&lt;Operation&gt; i = VALUES.iterator(); i.hasNext(); ) {
+            Operation op = i.next();
+            System.out.println(x + " " + op + " " + y + " = " + op.eval(x, y));
+        }
+    }
+}
+</pre>
+Running this program produces the following output:
+<pre>
+java Operation 2.0 4.0
+2.0 plus 4.0 = 6.0
+2.0 minus 4.0 = -2.0
+2.0 times 4.0 = 8.0
+2.0 divided_by 4.0 = 0.5
+</pre>
+The above pattern is suitable for moderately sophisticated programmers.  It is
+admittedly a bit tricky, but it is much safer than using a case statement in
+the base class (<tt>Operation</tt>), as the pattern precludes the possibility
+of forgeting to add a behavior for a new constant (you'd get a compile-time
+error).
+
+<h2>VI. Implementation Notes</h2>
+    Within the same compilation unit containing an enum class declaration,
+switch statements on enums can easily be compiled down to ordinary swtich
+statements, as it is guaranteed that no constants will be added, removed, or
+reordered from the enum class after the switch statement is compiled.  Thus,
+the ordinals implied by the declarations are guaranteed to be correct at run
+time.
+<p>
+Outside of the compilation unit, there are at least two choices. (1) compile
+the switch statement down to a "multiway if-statement":
+<pre>
+    if (&lt;expr&gt;.ordinal == Color.red.ordinal) {
+        ...
+    } else if (&lt;expr&gt;.ordinal == Color.green.ordinal) {
+        ...
+    } else if (&lt;expr&gt;.ordinal == Color.blue.ordinal) {
+        ...
+    } else {
+        ... // default case
+    }
+</pre>
+The <tt>.ordinal</tt> after each enum expression is superfluous, but enables a
+JVM compiler optimization, wherein the JVM compiler recognizes at class
+initialization time that a case statement may be substituted for the
+<tt>if</tt>-statement.  Hotspot does not yet contain this optimization, but
+could be modified to do so.
+<p>
+An intriguing alternative that might offer similar performance with no support
+from the JVM is suggested by the old saw that every problem in Computer
+Science may be solved with an extra layer of indirection.  Each switch
+statement outside of the compilation unit containing the enum class
+declaration will compile down to a switch statement on an array reference.
+The array will be initialized lazily:
+<pre>
+    private static class $whatever {
+        static int[] permutation = new int[Color.VALUES.size()];
+        static {
+            permutation[Color.red.ordinal]   = 1;
+            permutation[Color.blue.ordinal]  = 2;
+            permutation[Color.green.ordinal] = 3;
+        }
+    }
+
+    switch($whatever.permutation[&lt;expr&gt;.ordinal]) {
+      case 1: // red
+        ...
+      case 2: // blue
+        ...
+      case 3: // green
+        ...
+      default:
+        ...
+    }
+</pre>
+This approach has higher "fixed cost" per case-statement and higher footprint,
+but low cost per execution of the cast statement.
+<h2>VII. Open Issues</h2>
+<ol>
+<li>
+Should <tt>name</tt> and <tt>ordinal</tt> in <tt>Enum</tt> be methods rather
+than fields?  It might make sense to replace these fields with accessor
+methods on general principle.
+
+<li>
+Should we provide any support for looping over subranges?  There are several
+possibilities, ranging from adding <tt>successor</tt> and <tt>predecessor</tt>
+methods to <tt>Enum</tt>, to adding a special form of the enhanced
+<tt>for</tt> statement:
+<pre>
+    for (Day d : Day.monday .. Day.friday) // Iterate through workdays
+        ... ;
+</pre>
+I kind of like the latter solution.  Unfortunately, the standard "half-open
+range" loop specification that is standard in the Java programming language
+presents an "impedance mismatch" to enums, which have no sentinels
+above and below the valid values.
+<li>
+Should the convention be that enum constant names are all caps (like other
+constants), or mixed-case?  The latter convention (currently reflected in this
+document) would make for nicer string forms, generally obviating the need for
+a custom <tt>toString</tt> method.  On the other hand, it flies in the face of
+tradition.
+</ol>
+
+<p><font size=-2>
+Copyright 2002 Sun Microsystems, Inc., 901 San Antonio Road, Palo Alto, California 94303 U.S.A. All rights reserved.
+</font>
+</BODY></HTML>
+
+
+
+<!-- ** BEGIN: footer.jsp ** //-->
+
+
+
+
+
+
+
+
+</td>
+</tr>
+</table>
+
+<!-- ** END: Content Table ** //-->
+
+<!-- ** BEGIN: Footer Table ** //-->
+
+<div id="footer" style="clear: both;">
+    <div class="footleft">
+        <a href="/en/resources/contacts">Contact Us</a>
+    </div>
+	
+    <div class="botbar"><img src="/images/spacer.gif" alt="" height="23" width="1"></div>
+
+    <div class="footleft2">
+         &copy; 2019, Oracle Corporation and/or its affiliates. 
+        <a href="/en/home/terms">Terms of Use</a>. <a href="http://www.oracle.com/us/legal/privacy/index.html">Privacy Policy</a>. <a href="http://www.oracle.com/us/legal/third-party-trademarks/third-party-trademarks-078568.html">Trademarks</a>
+    </div>
+
+    <div class="footright">
+        <img src="/images/common/logo_oracle_footer.gif" alt="Oracle Corporation" height="22" width="91">
+    </div>
+
+    <div style="clear: both;"><img src="/images/spacer.gif" alt="" height="30" width="1"></div>
+</div>
+
+<!-- ** END: Footer Table ** //-->
+
+
+
+<!-- ** Menu Start ** //-->
+
+
+
+</body>
+</html>
+<!-- ** END: footer.jsp ** //-->
+

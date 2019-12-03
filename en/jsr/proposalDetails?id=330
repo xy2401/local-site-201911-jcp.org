@@ -1,0 +1,834 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- ** BEGIN: header.jsp ** //-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3c.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+<head>
+    
+
+   
+    <link href="/includes/css/menu.css" rel="stylesheet" type="text/css"></link>
+    <link href="/includes/css/style.css" rel="stylesheet" type="text/css"></link>
+    <!--[if lt IE 6]><link href="/includes/css/style5.css" rel="stylesheet" type="text/css" ></link><![endif]-->
+    <!--[if gte IE 5]><link href="/includes/css/style6.css" rel="stylesheet" type="text/css" ></link><![endif]-->
+    <link href="/includes/css/tabs.css"  rel="stylesheet" type="text/css"></link>
+
+    <script type="text/javascript" src="/includes/scripts/tabs.js"></script>
+    <script type="text/javascript" src="/includes/scripts/menu.js"></script>
+   
+
+    
+
+    
+        <title>The Java Community Process(SM) Program - JSRs: Java Specification Requests - proposalDetails JSR# 330</title>
+    
+
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+
+
+<body onload="P7_initPM(0,1,0,0,-1)">
+
+    <a name="top"></a>
+
+    <div id="header">
+	<div id="logo">
+		<a href="/en/home/index"><img src="/images/spacer.gif" alt="Java Community Process" height="81" width="151"></a>
+	</div>
+	<div id="tools">
+		<div class="search">
+			<form name="search" action="/en/jsr/summary" method="get" onsubmit="return validate_search()">
+				<input name="id" value="Search JSRs" size="16" class="form" onfocus="nullify_if_equal(this, 'Search JSRs')" type="text">
+				<a href="javascript:document.search.submit()" onclick="return validate_search()"><img src="/images/button_go.gif" width="21" height="16" border="0" alt="Submit this Search" name="sub_search"></a>
+			</form>
+		</div>
+		<div class="tools">
+			<a href="/en/press/pressroom">Press Room</a> &nbsp;|&nbsp;
+			<a href="http://java.com/java/download/index.jsp?cid=jdp78399">Get Java Here</a> &nbsp;|&nbsp;
+			<!-- <a href="javascript:void(0)">Print Format</a> &nbsp;|&nbsp;&nbsp; -->
+		</div>
+
+	</div>
+	<div style="clear: right;"></div>
+
+        
+
+	<div class="topbar"><img src="/images/spacer.gif" alt="" height="3" width="154"></div>
+	<div id="update"> </div>
+    </div>
+
+
+    
+
+        <!-- ** BEGIN: Content Table ** //-->
+
+        <table width="100%" border="0" cellpadding="0" cellspacing="0">
+
+            <tr>
+
+                <!-- ** BEGIN: Navigation Column ** //-->
+                <td width="150" id="leftcontent" valign="top">
+                    <!-- Navigation Placeholder //-->
+
+                    
+
+                    <div class="bar"><img src="/images/hr_dots1.gif" alt="" height="3" width="150"></div>
+
+        <!-- begin find JSRs form -->
+        <!-- IMPORTANT! do not convert this form to Struts < html : form > tag.  javascript change of form.action property fails. -->
+        <img src="/images/hd_find-jsrs.gif" alt="Find JSRs" height="18" width="150">
+        <form name="findjsr" action="/en/jsr/summary" method="get" class="pt5" onsubmit="return validate_findjsr()">
+            <input name="id" size="18" class="form" value="Search JSRs" onfocus="nullify_if_equal(this, 'Search JSRs')" type="text">
+	    <a href="javascript:document.findjsr.submit()" onclick="return validate_findjsr()"><img src="/images/button_go.gif" width="21" height="16" border="0" alt="Submit this Search" name="sub_search"></a>
+        </form><br><br>
+
+        <!-- ** Menu Start ** //-->
+
+        <ul id="p7PMnav">
+            <li><a href="/en/jsr/platform">JSRs by Platform</a></li>
+            <li><a href="/en/jsr/tech">JSRs by Technology</a></li>
+            <li><a href="/en/jsr/stage">JSRs by Stage</a></li>
+            <li><a href="/en/jsr/ec">JSRs by Committee</a></li>
+            <li><a href="/en/jsr/all">List of All JSRs</a></li>
+
+            <!--end find JSRs form -->
+            <div style="clear: both;"><img src="/images/spacer.gif" alt="" height="25" width="1"></div>
+
+            <!--begin my JCP -->
+            <img src="/images/hd_my-jcp.gif" alt="My JCP" height="18" width="150">
+            
+
+          <form name="login" method="get" action="/en/user/login" >
+            <input name="Sign-in" type="submit" title="Sign-in" value="Sign-in" />
+          </form>
+
+            <div style="clear:both"><img src="/images/global/spacer.gif" width="1" height="3" alt=""></div>
+            <div class="noNav">
+                <a href="/en/user/register">Register for Site</a>
+            </div>
+
+             <div class="bar"><img src="/images/hr_dots1.gif" alt="" height="3" width="150"></div>
+           <div class="noNav" style="color: #666666; padding: 0;">
+              Use of JCP site is subject to the
+              <a href="/en/home/terms" style="display:inline;padding: 0">JCP Terms of Use</a> and the
+              <a href="http://www.oracle.com/us/legal/privacy/index.html" style="display:inline;padding: 0" href="">Oracle Privacy Policy</a>
+          </div>
+
+            
+
+            <div style="clear:both"><img src="/images/global/spacer.gif" width="1" height="25" alt=""></div>
+
+            <!--begin JCP info -->
+            <img src="/images/hd_jcp-info.gif" alt="JCP Info" height="18" width="150">
+
+            <li><a href="/en/procedures/overview" class="p7PMtrg">About JCP</a>
+                <ul>
+                    <li><a href="/en/procedures/overview">Program Overview</a></li>
+                    <li><a href="/en/procedures/jcp2">JCP Process Document</a></li>
+                    <li><a href="/en/whatsnew/calendar">Calendar</a></li>
+                    <li><a href="/en/participation/members">JCP Members</a></li>
+                    <li><a href="/en/participation/committee">Executive Committee</a></li>
+                    <li><a href="/en/whatsnew/elections">Elections</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/en/participation/overview" class="p7PMtrg">Get Involved</a>
+		<ul>
+                    <li><a href="/en/participation/overview">Overview</a></li>
+                    <li><a href="/en/participation/membership">Becoming a JCP Member</a></li>
+		</ul>
+            </li>
+
+            <li><a href="/en/resources/contents" class="p7PMtrg">Community Resources</a>
+                <ul>
+                    <li><a href="/en/resources/contents">Overview</a></li>
+                    <li><a href="/en/resources/tutorials">Tutorials</a></li>
+                    <li><a href="/en/resources/multimedia">JCP Podcasts</a></li>
+                    <li><a href="/en/resources/guide">Spec Lead Guide</a></li>
+                    <li><a href="/en/resources/tdk">TCK Tool & Info</a></li>
+                    <li><a href="/en/resources/license_reference">License Reference</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/en/press/pmo" class="p7PMtrg">Community News</a>
+                <ul>
+                    <li><a href="/en/press/pmo">News</a></li>
+                    <li><a href="/en/press/news/awards/awards_main">Programs &amp; Awards</a></li>
+                    <li><a href="/en/press/releases">Press Releases</a></li>
+                    <li><a href="/en/press/success">Success Stories</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/en/introduction/faq">FAQ</a></li>
+
+            <li><a href="/en/resources/contacts">Contact Us</a></li>
+
+            <div style="clear: both;"><img src="/images/spacer.gif" alt="" height="25" width="1"></div>
+
+            <!--[if lte IE 6]><style>#p7PMnav a{height:1em;}#p7PMnav li{height:1em;float:left;clear:both;width:100%}</style><![endif]-->
+            <!--[if IE 6]><style>#p7PMnav li{clear:none;}</style><![endif]-->
+            <!--[if IE 7]><style>#p7PMnav a{zoom:100%;}#p7PMnav li{float:left;clear:both;width:100%;}</style><![endif]-->
+        </ul>
+
+        
+
+        <!--begin ad space -->
+        <div class="ads">
+            <a href="http://java.com/java/download/index.jsp?cid=jdp78399" target="_blank"><img style="display: ;" src="/images/ad_banner2.gif" alt="Ad Banner" border="1" height="70" width="150"></a>
+        </div>
+        <!--end ad space -->
+
+<!-- ** Menu End ** //-->
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;<br>
+
+    
+
+                    &nbsp;<br>
+                    <img src="/images/common/trans.gif" alt="" width="1" height="150"><br>
+
+              
+
+
+
+                </td>
+                <!-- ** END: Navigation Column ** //-->
+
+                <!-- ** BEGIN: Gutter Column ** //-->
+		<td width="10" nowrap><img src="/images/common/trans.gif" alt="" width="10" height="1"></td>
+                <!-- ** END: Gutter Column ** //-->
+
+                <!-- ** BEGIN: Content Column ** //-->
+                <td width="100%" valign="top">
+
+    
+<script type="text/javascript">
+
+String.prototype.trim = function() {
+        return this.replace(/^\s+|\s+$/g,"");
+}
+String.prototype.ltrim = function() {
+        return this.replace(/^\s+/,"");
+}
+String.prototype.rtrim = function() {
+        return this.replace(/\s+$/,"");
+}
+
+function validate_search() {
+	if (document.search.id.value == "Search JSRs" || document.search.id.value.trim().length == 0) {
+		alert("Search terms must be entered first");
+		return false;
+	}
+	return true;
+}
+
+function validate_findjsr() {
+	if (document.findjsr.id.value == "Search JSRs" || document.findjsr.id.value.trim().length == 0) {
+		alert("Search terms must be entered first");
+		return false;
+	}
+	return true;
+}
+
+function nullify_if_equal(field, str) {
+	// alert("val=" + field.value);
+	if (field.value == str) {
+		field.value = "";
+	}
+}
+
+</script>
+<!-- ** END: header.jsp ** //-->
+
+
+
+
+
+        <!--  BEGIN NAVIGATION TABS -->
+        <div id="p7TP1">
+                <div class="p7TP_tabs">
+                        <div id="p7tpb1_1" class="down"><a class="down">JSR</a></div>
+                        <div><a href="/en/egc/view?id=330">Community</a></div>
+                        <div><a href="/en/eg/eghome?id=330">Expert Group</a></div>
+			
+
+                <br class="p7TPclear" />
+                </div>
+
+                <div class="p7TPcontent">
+                        <div id="p7tpc1_1">
+
+			
+                                <a href="summary?id=330">Summary</a>
+			
+			
+                                &nbsp;|&nbsp;
+				<span>Proposal</span>
+			
+			
+                                &nbsp;|&nbsp;
+                                <a href="detail?id=330">Detail (Summary &amp; Proposal)</a>
+			
+		
+                        </div>
+
+                </div>
+                <!--[if lte IE 6]><style type="text/css">.p7TPpanel div,.p7TPpanel a{height:1%;}.p7TP_tabs a{white-space:nowrap;}</style><![endif]-->
+        </div>
+        <script type="text/javascript">
+                P7_initTP(1,0);
+        </script>
+        <!--  END NAVIGATION TABS -->
+
+
+<div class="anybar"><img src="/images/global/bar_green.gif" alt="" width="12" height="4"></div>
+
+<div class="header2">JSRs: Java Specification Requests</div>
+<div class="header1">JSR 330: Dependency Injection for Java</div>
+<div class="anybar"><img src="/images/global/bar_green.gif" alt="" width="12" height="4"></div>
+<br>
+
+
+
+
+<!-- ********************************************** -->
+<!--  JSRProposal Info                              -->
+<!-- ********************************************** -->
+<p>
+
+
+<a name="updates"><font size="+2">Updates to the Original JSR</font></a><p>
+
+The following updates have been made to the <a href="#orig">original proposal</a>.<P>
+
+<B><U>2015.01.09</U></b><BR>
+<P><B>Maintenance Lead:</b> Bob Lee
+
+<P><b>E-Mail Address:</b> crazybob<faketag></faketag>&#64;crazybob.org</P>
+
+<P><b>Telephone Number:</b> +1 314 537 6570</P>
+
+<P><b>Fax Number:</b> +1 650 253 0000</P>
+
+<B><U>2010.03.01</U></b><BR>
+<P><B>Maintenance Leads:</b> Bob Lee, VMWare
+
+<P><B>Representatives:</b> Bob Lee, Rod Johnson
+
+<P><b>E-Mail Address:</b> crazybob<faketag></faketag>&#64;crazybob.org, rod.johnson<faketag></faketag>&#64;vmware.com</P>
+
+<P><b>Telephone Number:</b> +1 314 537 6570, +1 415 290 0207</P>
+
+<P><b>Fax Number:</b> +1 650 253 0000, +1 425 944 0045</P>
+<P><HR><P>
+
+<a name="orig"><font size="+2">Original Java Specification Request (JSR)</font></a><p>
+<FONT SIZE="-1">
+
+<!-- BEGIN-SUB TOPICS -->
+
+          <A HREF="#1"> Identification</A>  | 
+          <A HREF="#2"> Request</A>  | 
+          <A HREF="#3"> Contributions</A>  | 
+          <A HREF="#4"> Additional Information</A>
+<BR>
+
+<!-- END-SUB TOPICS -->
+
+</FONT>
+<P>
+
+<!-- BEGIN TEMPLATE -->
+
+<!-- SECTION 1 -->
+
+<A NAME="1"></A>
+
+<P><FONT size=+2>Section 1. Identification</FONT>
+
+<P><b>Submitting Member:</b> Google and SpringSource</P>
+
+<P><b>Name of Contact Person:</b> Bob Lee and Rod Johnson</P>
+
+<P><b>E-Mail Address:</b> atinject<faketag></faketag>&#64;googlegroups.com</P>
+
+<P><b>Telephone Number:</b> +1 650 253 0000</P>
+
+<P><b>Fax Number:</b> +1 650 253 0000</P>
+
+<P><B>Specification Leads:</b> Bob Lee (Google), Rod Johnson (SpringSource)
+
+<P><b>E-Mail Address:</b> atinject<faketag></faketag>&#64;googlegroups.com</P>
+
+<P><b>Telephone Number:</b> +1 650 253 0000</P>
+
+<P><b>Fax Number:</b> +1 650 253 0000</P>
+
+<BR>
+
+<P><B>Initial Expert Group Membership:</B> 
+</P>
+
+<P>-</P>
+
+<P><B>Supporting this JSR:</B>
+
+</P>
+
+<P>
+Joshua Bloch<BR>Paul Hammant (ThoughtWorks, PicoContainer founder)<BR>
+Doug Lea<BR>
+Tim Peierls<BR>
+James Strachan<BR>
+Hani Suleiman<BR>
+Jason van Zyl (Maven, Plexus)<BR>
+Thiago H de Paula Figueiredo (Tapestry IoC)</p>
+
+<BR><BR>
+
+<!-- SECTION 2 -->
+
+<A NAME="2"></A>
+
+<P>
+<FONT SIZE="+2">Section 2: Request</FONT><P>
+</P>
+
+<H4>2.1 Please describe the proposed Specification:</H4>
+
+<P>This JSR will standardize:<br>
+<br>
+<ol><li>A set of annotations for use on injectable classes</li>
+<li>A
+typesafe, user-friendly injector configuration API that provides an
+integration point for higher level dependency injection configuration
+approaches</li>
+</ol>
+
+(see section 4.1 for more information)</P>
+
+<H4>2.2 What is the target Java platform? (i.e., desktop, server, personal, embedded, card, etc.)</H4>
+
+<P>Java SE 5 will be the minimum requirement, but Java SE 6 and 7-specific features will be available on those platforms.
+</P>
+
+<H4>2.3 The Executive Committees would like to ensure JSR submitters think about how their proposed technology relates to all of the Java platform editions. Please provide details here for which platform editions are being targeted by this JSR, and how this JSR has considered the relationship with the other platform editions.</H4>
+
+<P>This JSR targets Java SE, and it will lay a foundation for dependency injection in Java EE.
+</P>
+
+<h4>Should this JSR be voted on by both Executive Committees?</H4>
+
+<P>No.</P>
+
+<H4>2.5 What need of the Java community will be addressed by the proposed specification?</H4>
+
+<P>This specification will bring well proven dependency injection concepts to Java SE. It will lay a foundation upon which further innovation can occur.
+</P>
+
+<H4>2.6 Why isn't this need met by existing specifications?</H4>
+
+<P>Several existing JSRs specify higher level dependency injection configuration mechanisms but none provide the low level foundation necessary to integrate the higher level approaches. This JSR is unique in that it has a high level of consensus from the majority of the dependency injection community. It has the support of dependency injection pioneers like Rod Johnson, Paul Hammant, and Bob Lee. 
+</P>
+
+<H4>2.7 Please give a short description of the underlying technology or technologies:</H4>
+
+<P>Existing approaches configure a dependency injector using XML, annotations or plain Java code. That injector is then used to construct objects and inject dependencies into them. This standard will provide a core API that can be driven at build and run time by higher-level configuration mechanisms such as XML and annotations. Objects configured using the various higher-level mechanisms will be able to freely depend on each other since the mechanisms will share a common foundation.
+</P>
+
+<H4>2.8 Is there a proposed package name for the API Specification? (i.e., <TT>javapi.something</TT>, <TT>org.something</TT>, etc.)</H4>
+
+<P>javax.inject or java.inject</P>
+
+<H4>2.9 Does the proposed specification have any dependencies on specific operating systems, CPUs, or I/O devices that you know of?</H4>
+
+<P>No.</P>
+
+<H4>2.10 Are there any security issues that cannot be addressed by the current security model?</H4>
+
+<P>No.</P>
+
+<H4>2.11 Are there any internationalization or localization issues?</H4>
+
+<P>No.</P>
+
+<H4>2.12 Are there any existing specifications that might be rendered obsolete, deprecated, or in need of revision as a result of this work?</H4>
+
+<P>Other specifications may want to define how their objects get injected. For example, how do I inject dependencies into a servlet?</P>
+
+<H4>2.13 Please describe the anticipated schedule for the development of this 
+specification.</H4>
+
+<P>Early Draft Review would occur in Q3 '09. Public Review during Q4 '09, and Proposed Final Draft in Q1 '10.</P>
+
+<H4>2.14 Please describe the anticipated working model for the Expert Group working on developing this 
+specification.</H4>
+
+<P>All of the work will be done in the open. The mailing list may only allow expert group members to post messages, but anyone will be able to follow and read the archives, and we'll likely have a publicly writable observer mailing list like JSR-294. The specification will be maintained using publicly-accessible source control and the latest snapshot will be available at any time.
+</P>
+
+<H4>2.15 It is important to the success of the community and each JSR that the work of the Expert Group be handled in a manner which provides the community and the public with insight into the work the Expert Group is doing, and the decisions that the Expert Group has made. The Executive Committees would like to ensure Spec Leads understand the value of this transparency and ask that each JSR have an operating plan in place for how their JSR will address the involvement of the community and the public. Please provide your plan here, and refer to the Spec Lead Guide for a more detailed description and a set of example questions you may wish to answer in your plan.</H4>
+
+<P>See 2.14</P>
+
+
+<H4>2.16 Please describe how the RI and TCK will de delivered, i.e. as part of a profile or platform edition, or stand-alone, or both. Include version information for the profile or platform in your answer.
+</H4>
+
+<P>The RI will be standalone but may also be included as a module in Java SE 7. The RI and TCK will be Apache-licensed and freely available.
+</P>
+
+<H4>2.17 Please state the rationale if previous versions are available stand-alone and you are now proposing in 2.13 to only deliver RI and TCK as part of a profile or platform edition (See sections 1.1.5 and 1.1.6 of the JCP 2 document).
+</H4>
+
+<P>N/A</P>
+
+<H4>2.18 Please provide a description of the business terms for the Specification, RI and TCK that will apply when this JSR is final.</H4>
+
+<P>The RI and TCK will be licensed under the Apache 2 license, and the Specification will be licensed under an agreement that satisfies the requirements of the JSPA.</P>
+
+<BR><BR>
+<BR><BR>
+
+<!-- SECTION 3 -->
+
+<A NAME="3"></A>
+
+<P>
+<FONT SIZE="+2">Section 3: Contributions</FONT><P>
+</P>
+
+<H4>3.1 Please list any existing documents, specifications, or implementations that describe the technology. Please include links to the documents if they are publicly available.</H4>
+
+<P>* Spring's dependency injection API: <a href="http://static.springsource.org/spring/docs/2.5.x/api/org/springframework/beans/factory/annotation/package-summary.html">http://static.springsource.org/spring/docs/2.5.x/api/org/springframework/beans/factory/annotation/package-summary.html</a><BR>
+    * A talk given by Bob Lee about DI and Guice specifically: <a href="http://crazybob.org/2007/06/introduction-to-guice-video-redux.html">http://crazybob.org/2007/06/introduction-to-guice-video-redux.html</a><BR>
+    * The Guice user's guide: <a href="http://docs.google.com/Doc?id=dd2fhx4z_5df5hw8 ">http://docs.google.com/Doc?id=dd2fhx4z_5df5hw8</a></P>
+
+<H4>3.2 Explanation of how these items might be used as a starting point for the work.</H4>
+
+<P>This specification will incorporate lessons learned from pre-existing injector implementations. Benefiting from hindsight, it will be simpler and more toolable.</P>
+
+<BR><BR>
+
+<!-- SECTION 4 -->
+
+<A NAME="4"></A>
+
+<P>
+<FONT SIZE="+2">Section 4: Additional Information (Optional)</FONT><P>
+</P>
+
+<H4>4.1 This section contains any additional information that the submitting Member wishes to include in the JSR.</H4>
+
+<P>This JSR will specify a means for obtaining objects in such a way as to
+maximize reusability, testability and maintainability compared to
+traditional approaches such as constructors, factories, and service
+locators (e.g., JNDI). This process, known as d<i id="efxm23">ependency injection,</i> is beneficial to most nontrivial applications.<br>
+ <br>
+ Many types depend on other types. For example, a <span style="font-family: 'Courier New';">Stopwatch</span>&nbsp;might depend on a <span style="font-family: 'Courier New';">TimeSource</span>. The types on which a type depends are known as its&nbsp;<i>dependencies</i>. The process of finding an instance of a dependency to use at run time is known as <i>resolving&nbsp;</i>the dependency. If no such instance can be found, the dependency is said to be <i>unsatisfied</i>, and the application is broken.
+ 
+<div>
+ <br>
+ </div>
+ 
+<div>
+In the absence of dependency injection, an object can resolve its
+dependencies in a few ways. It can invoke a constructor, hard-wiring an
+object directly to its dependency's implementation and life cycle:<br id="efxm28">
+ <br id="efxm29">
+ 
+<div id="efxm30" style="margin-left: 40px;">
+ <span id="efxm31" style="font-family: Courier New;">class&nbsp;<span style="font-family: 'Courier New';">Stopwatch</span>&nbsp;{</span><br id="efxm32" style="font-family: Courier New;">
+ <span id="efxm33" style="font-family: Courier New;">&nbsp;&nbsp; &nbsp;final TimeSource timeSource;</span><br id="efxm34" style="font-family: Courier New;">
+ <span id="efxm35" style="font-family: Courier New;">&nbsp;&nbsp; &nbsp;<span style="font-family: 'Courier New';">Stopwatch</span>&nbsp;() {</span><br id="efxm36" style="font-family: Courier New;">
+ <span id="efxm37" style="font-family: Courier New;">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;timeSource = <b id="efxm38">new AtomicClock(...)</b>;</span><br id="efxm39" style="font-family: Courier New;">
+ <span id="efxm40" style="font-family: Courier New;">&nbsp;&nbsp; &nbsp;}</span><br id="efxm41" style="font-family: Courier New;">
+ <span style="font-family: 'Courier New';">&nbsp;&nbsp; &nbsp;void start() { ... }</span>
+ </div>
+ 
+<div id="efxm30" style="margin-left: 40px;">
+ <span style="font-family: 'Courier New';">&nbsp;&nbsp; &nbsp;long stop() { ... }</span><br id="efxm43" style="font-family: Courier New;">
+ <span id="efxm44" style="font-family: Courier New;">}</span><br id="efxm45">
+ </div>
+ <br id="efxm46">
+ If more flexibility is needed, the object can call out to a factory or service locator:
+ </div>
+ 
+<div>
+ <br>
+ </div>
+ 
+<div>
+ 
+<div id="efxm30" style="margin-left: 40px;">
+ <span id="efxm31" style="font-family: 'Courier New';">class&nbsp;<span style="font-family: 'Courier New';">Stopwatch</span>&nbsp;{</span><br id="efxm32" style="font-family: 'Courier New';">
+ <span id="efxm33" style="font-family: 'Courier New';">&nbsp;&nbsp; &nbsp;final TimeSource timeSource;</span><br id="efxm34" style="font-family: 'Courier New';">
+ <span id="efxm35" style="font-family: 'Courier New';">&nbsp;&nbsp; &nbsp;<span style="font-family: 'Courier New';">Stopwatch</span>&nbsp;() {</span><br id="efxm36" style="font-family: 'Courier New';">
+ <span id="efxm37" style="font-family: 'Courier New';">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;timeSource = <b>DefaultTimeSource.getInstance();</b></span><br id="efxm39" style="font-family: 'Courier New';">
+ <span id="efxm40" style="font-family: 'Courier New';">&nbsp;&nbsp; &nbsp;}</span><br id="efxm41" style="font-family: 'Courier New';">
+ <span style="font-family: 'Courier New';">&nbsp;&nbsp; &nbsp;void start() { ... }</span>
+ </div>
+ 
+<div id="efxm30" style="margin-left: 40px;">
+ <span style="font-family: 'Courier New';">&nbsp;&nbsp; &nbsp;long stop() { ... }</span><br id="efxm43" style="font-family: 'Courier New';">
+ <span id="efxm44" style="font-family: 'Courier New';">}</span>
+ </div>
+ </div>
+ 
+<div>
+ <br id="efxm65">
+In deciding between these traditional approaches to dependency
+resolution, a programmer must make trade-offs. Constructors are more
+concise but restrictive. Factories decouple the client and
+implementation to some extent but require boilerplate code. Service
+locators decouple even further but reduce compile time type safety. All
+three approaches inhibit unit testing. For example, if the programmer
+uses a factory, each test against code that depends on the factory will
+have to mock out the factory and remember to clean up after itself or
+else risk side effects:<br id="efxm66">
+ <br id="efxm67">
+ 
+<div id="efxm68" style="margin-left: 40px; font-family: Courier New;">
+ void testStopwatch() {<br id="efxm69">
+ <b id="efxm70">&nbsp;&nbsp; &nbsp;TimeSource original = DefaultTimeSource.getInstance();</b><br id="efxm71" style="font-weight: bold;">
+ <b id="efxm72">&nbsp;&nbsp; &nbsp;DefaultTimeSource.setInstance(new MockTimeSource());</b><br id="efxm73" style="font-weight: bold;">
+ <b id="efxm74">&nbsp;&nbsp; &nbsp;try {</b><br id="efxm75" style="font-weight: bold;">
+ &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;// Now, we can actually test Stopwatch.<br id="efxm76">
+ &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;Stopwatch sw = new Stopwatch();<br id="efxm77">
+ &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;...<br id="efxm78">
+ <b id="efxm79">&nbsp;&nbsp; &nbsp;} finally {</b><br id="efxm80" style="font-weight: bold;">
+ <b id="efxm81">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;DefaultTimeSource.setInstance(original);</b><br id="efxm82" style="font-weight: bold;">
+ <b id="efxm83">&nbsp;&nbsp; &nbsp;}</b><br id="efxm84" style="font-weight: bold;">
+ }<br id="efxm85">
+ </div>
+ <br id="efxm86">
+In practice, supporting this ability to mock out a factory results in
+even more boilerplate code. Tests that mock out and clean up after
+multiple dependencies quickly get out of hand. To make matters worse, a
+programmer must predict accurately how much flexibility will be needed
+in the future or else suffer the consequences. If a programmer
+initially elects to use a constructor but later decides that more
+flexibility is required, the programmer must replace every call to the
+constructor. If the programmer errs on the side of caution and write
+factories up front, it may result in a lot of unnecessary boilerplate
+code, adding noise, complexity, and error-proneness.<br id="efxm89">
+ <br id="efxm90">
+ <i id="efxm91">Dependency injection</i> addresses all of these issues. Instead of the programmer calling a constructor or factory, a tool called a <i id="efxm92">dependency injector</i> passes dependencies to objects:<br id="efxm93">
+ <br id="efxm94">
+ 
+<div id="efxm95" style="margin-left: 40px;">
+ <span id="efxm96" style="font-family: Courier New;">class Stopwatch {</span><br id="efxm97" style="font-family: Courier New;">
+ <span id="efxm98" style="font-family: Courier New;">&nbsp;&nbsp; &nbsp;final TimeSource timeSource;</span>
+ </div>
+ 
+<div id="efxm95" style="margin-left: 40px;">
+ <span id="efxm100" style="font-family: Courier New;">&nbsp;&nbsp; &nbsp;<b id="efxm101">&#64;Inject Stopwatch</b></span><span id="efxm103" style="font-family: Courier New;">(<b id="efxm104">TimeSource TimeSource</b>) {</span><br id="efxm105" style="font-family: Courier New;">
+ <span id="efxm106" style="font-family: Courier New;">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;this.TimeSource = TimeSource;</span><br id="efxm107" style="font-family: Courier New;">
+ <span id="efxm108" style="font-family: Courier New;">&nbsp;&nbsp; &nbsp;}</span>
+ </div>
+ 
+<div id="efxm95" style="margin-left: 40px;">
+ <span id="efxm108" style="font-family: Courier New;">&nbsp;&nbsp; &nbsp;void start() { ... }</span>
+ </div>
+ 
+<div id="efxm95" style="margin-left: 40px;">
+ <span id="efxm108" style="font-family: Courier New;">&nbsp;&nbsp; &nbsp;long stop() { ... }<br>
+ </span> <span id="efxm112" style="font-family: Courier New;">}</span><br id="efxm113">
+ </div>
+ <br id="efxm114">
+The injector further passes dependencies to other dependencies until it
+constructs the entire object graph. For example, suppose the programmer
+asked an injector to create a <span style="font-family: 'Courier New';">StopwatchWidget </span>instance:<br id="efxm115">
+ <br id="efxm116">
+ 
+<div id="efxm117" style="margin-left: 40px;">
+ <span style="font-family: 'Courier New';">/** GUI for a Stopwatch */</span>
+ </div>
+ 
+<div id="efxm117" style="margin-left: 40px;">
+ <span id="efxm118" style="font-family: Courier New;">class StopwatchWidget {</span><br id="efxm119" style="font-family: Courier New;">
+ <span id="efxm120" style="font-family: Courier New;">&nbsp;&nbsp; &nbsp;&#64;Inject&nbsp;</span><span id="efxm122" style="font-family: Courier New;">StopwatchWidget(Stopwatch sw) { ... }</span><br id="efxm123" style="font-family: Courier New;">
+ <span id="efxm124" style="font-family: Courier New;">&nbsp;&nbsp; &nbsp;...</span><br id="efxm125" style="font-family: Courier New;">
+ <span id="efxm126" style="font-family: Courier New;">}</span><br id="efxm127">
+ </div>
+ <br id="efxm128">
+ The injector might:<br id="efxm129">
+ <br id="efxm130">
+ 
+<ol id="efxm131"><li id="efxm132">
+ Find a <span style="font-family: 'Courier New';">TimeSource </span>
+ </li>
+<li id="efxm133">
+ Construct a <span style="font-family: 'Courier New';">Stopwatch </span>with the <span style="font-family: 'Courier New';">TimeSource </span>
+ </li>
+<li id="efxm134">
+ Construct a <span style="font-family: 'Courier New';">StopwatchWidget </span>with the <span style="font-family: 'Courier New';">Stopwatch</span><br id="efxm135">
+ </li>
+</ol>
+ <br id="efxm136">
+ This leaves the programmer's code clean, flexible, and relatively free of dependency-related infrastructure.<br id="efxm137">
+ <br>
+In unit tests, the programmer can now construct objects directly
+(without an injector) and pass in mock dependencies. The programmer no
+longer needs to set up and tear down factories or service locators in
+each test. This greatly simplifies our unit test:<br id="efxm141">
+ <br id="efxm142">
+ 
+<div id="efxm143" style="margin-left: 40px;">
+ <span id="efxm144" style="font-family: Courier New;">void testStopwatch() {</span><br id="efxm145" style="font-family: Courier New;">
+ <span id="efxm146" style="font-family: Courier New;">&nbsp;&nbsp; &nbsp;Stopwatch sw = new Stopwatch(new MockTimeSource()); </span><br id="efxm147" style="font-family: Courier New;">
+ <span id="efxm148" style="font-family: Courier New;">&nbsp;&nbsp; &nbsp;...</span><br id="efxm149" style="font-family: Courier New;">
+ <span id="efxm150" style="font-family: Courier New;">}</span><br id="efxm151">
+ </div>
+ <br id="efxm152">
+The total decrease in unit-test complexity is proportional to the
+product of the number of unit tests and the number of dependencies.<br id="efxm153">
+ <br id="efxm154">
+ </div>
+ 
+<div>
+Programmers annotate constructors, methods, and fields to advertise
+their injectability (constructor injection is demonstrated in the
+examples above).&nbsp; A dependency injector identifies a class's
+dependencies by inspecting these annotations, and injects the
+dependencies at runtime. Moreover, the injector can verify that all
+dependencies have been satisfied&nbsp;<i>at build time</i>. A service locator, by contrast, cannot detect unsatisfied dependencies until run time.<br>
+<br>
+A
+programmer configures a dependency injector so it knows what to inject.
+Different configuration approaches make sense in different contexts.
+One approach is to search the classpath for dependency implementations,
+avoiding the need for the programmer to write explicit code. This
+approach could be useful in quick-and-dirty prototypes. A programmer
+working on a large, long-lived application might prefer a more
+explicit, compartmentalized approach. For example, the programmer could
+write XML that tells the injector to inject an EJB client proxy named <span style="font-family: 'Courier New';">"NetworkTimeSource"</span> when a class needs a <span style="font-family: Courier New;">TimeSource</span>:</div>
+<div><br>
+<div style="margin-left: 40px;"><span style="font-family: Courier New;">&lt;binding type="TimeSource" ejb="NetworkTimeSource"/&gt;</span><br>
+</div>
+<br>
+It
+often makes sense to use more than one configuration mechanism in the
+the same application. For example, a quick and dirty prototype might
+grow into a real application, and the programmer could incrementally
+migrate to a more maintainable configuration. As another example, a
+program might configure some resources explicitly, while others are
+configured automatically based on an external XML file or database.</div>
+<div><br>
+This
+JSR will standardize a low-level kernel API that can be used directly
+by a user or as an integration point for higher level configuration
+approaches. This approach enables portable Java applications without
+quashing innovation in dependency injector configuration.<br>
+</div>
+ 
+<div>
+ <br>
+ </div>
+ 
+</P>
+
+<BR><BR>
+</p>
+
+
+
+
+
+
+
+
+<!-- ** BEGIN: footer.jsp ** //-->
+
+
+
+
+
+
+
+
+</td>
+</tr>
+</table>
+
+<!-- ** END: Content Table ** //-->
+
+<!-- ** BEGIN: Footer Table ** //-->
+
+<div id="footer" style="clear: both;">
+    <div class="footleft">
+        <a href="/en/resources/contacts">Contact Us</a>
+    </div>
+	
+    <div class="botbar"><img src="/images/spacer.gif" alt="" height="23" width="1"></div>
+
+    <div class="footleft2">
+         &copy; 2019, Oracle Corporation and/or its affiliates. 
+        <a href="/en/home/terms">Terms of Use</a>. <a href="http://www.oracle.com/us/legal/privacy/index.html">Privacy Policy</a>. <a href="http://www.oracle.com/us/legal/third-party-trademarks/third-party-trademarks-078568.html">Trademarks</a>
+    </div>
+
+    <div class="footright">
+        <img src="/images/common/logo_oracle_footer.gif" alt="Oracle Corporation" height="22" width="91">
+    </div>
+
+    <div style="clear: both;"><img src="/images/spacer.gif" alt="" height="30" width="1"></div>
+</div>
+
+<!-- ** END: Footer Table ** //-->
+
+
+
+<!-- ** Menu Start ** //-->
+
+
+
+</body>
+</html>
+<!-- ** END: footer.jsp ** //-->
+
+

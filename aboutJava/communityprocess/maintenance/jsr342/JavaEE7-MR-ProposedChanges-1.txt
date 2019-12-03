@@ -1,0 +1,378 @@
+Java EE 7 Maintenance Review: Proposed Changes
+
+-------------
+
+Section EE.5.2.2.  [Clarify rules for default namespace.]
+
+Replace the first sentence of the sixth paragraph on p. 69, section
+5.2.2, with the following: 
+
+The default JNDI namespace for resource references and resource
+definitions must always be "java:comp/env".  Note that this applies to
+both the case where no name has been supplied so the rules for
+choosing a default name are used, and the case where a name has been
+supplied explicitly but the name does not specify a java: namespace.
+Since the java:comp namespace is not available in some contexts, use
+of that namespace in such a context should result in a deployment
+error.  Likewise, the java:module namespace is not valid in some
+contexts; use of that namespace in such contexts should result in a
+deployment error.
+
+----------
+
+Section 5.3.3. [Clarify the requirements for the specification of
+the lookup and lookup-name elements.]
+
+Add the following to the end of the second paragraph of section
+EE.5.3.3, p. 77:
+
+Deployment should fail if the lookup element of an annotation or the
+lookup-name element in a deployment descriptor entry does not specify
+a name with an explicit java: namespace. 
+
+-------------------
+
+Section EE.5.18.6.1 [Correct editorial error in the second paragraph]
+
+Change the following text on page 140:
+    If a mail session resource has been previously provisioned for the
+    application (e.g., by administrative action), it is the
+    responsibility of the Application Component Provider to specify
+    the mail server host name.
+to:
+    If a mail server resource has been previously provisioned for the
+    application (e.g., by administrative action), it is the
+    responsibility of the Application Component Provider to specify
+    the mail server host name.
+
+------
+
+Sections EE.5.19, EE5.20, EE5.21. [Correct editorial error in third
+paragraph of each of these sections to correctly reflect Application
+Assembler role.]
+
+In EE.5.19, change:
+   The Application Component Provider or Deployer may explicitly bind
+   a DataSource resource reference to the default data source using
+   the lookup element of the Resource annotation or the lookup-name
+   element of the resource-ref deployment descriptor element.
+to:
+   The Application Component Provider or Application Assembler may
+   explicitly bind a DataSource resource reference to the default data
+   source using the lookup element of the Resource annotation or the
+   lookup-name element of the resource-ref deployment descriptor
+   element.
+
+In EE.5.20, change:
+   The Application Component Provider or Deployer may explicitly bind
+   a JMS ConnectionFactory resource reference to the default
+   connection factory using the lookup element of the Resource
+   annotation or the lookup-name element of the resource-ref
+   deployment descriptor element.
+to:
+   The Application Component Provider or Application Assembler may
+   explicitly bind a JMS ConnectionFactory resource reference to the
+   default connection factory using the lookup element of the Resource
+   annotation or the lookup-name element of the resource-ref
+   deployment descriptor element.
+
+In EE.5.21, change:
+   The Application Component Provider or Deployer may explicitly bind
+   a resource reference to a default Concurrency Utilities object
+   using the lookup element of the Resource annotation or the
+   lookup-name element of the resource-ref deployment descriptor
+   element.
+to:
+   The Application Component Provider or Application Assembler may
+   explicitly bind a resource reference to a default Concurrency
+   Utilities object using the lookup element of the Resource
+   annotation or the lookup-name element of the resource-ref
+   deployment descriptor element.
+
+------
+
+Sections EE.5.19.1, EE.5.20.1, EE.5.21.1 [Correct editorial error in
+second paragraph of each of these sections to reflect role of
+Application Assembler.]
+
+In EE.5.19.1, change:
+  If a DataSource resource reference is not mapped to a specific data
+  source by the Application Component Provider or Deployer, it must be
+  mapped by the Java EE Product Provider to a preconfigured data
+  source for the Java EE Product Provider's default database.
+to:
+  If a DataSource resource reference is not mapped to a specific data
+  source by the Application Component Provider, Application Assembler,
+  or Deployer, it must be mapped by the Java EE Product Provider to a
+  preconfigured data source for the Java EE Product Provider's default
+  database.
+
+In EE.5.20.1, change:
+  If a JMS ConnectionFactory resource reference is not mapped to a
+  specific JMS connection factory by the Application Component
+  Provider or Deployer, it must be mapped by the Java EE Product
+  Provider to a preconfigured JMS connection factory for the Java EE
+  Product Provider's default JMS provider.
+to:
+  If a JMS ConnectionFactory resource reference is not mapped to a
+  specific JMS connection factory by the Application Component
+  Provider, Application Assembler, or Deployer, it must be mapped by
+  the Java EE Product Provider to a preconfigured JMS connection
+  factory for the Java EE Product Provider's default JMS provider.
+
+In EE.5.21.1, change:
+  If a Concurrency Utilities object resource environment reference is
+  not mapped to a specific configured object by the Application
+  Component Provider or Deployer, it must be mapped by the Java EE
+  Product Provider to a preconfigured Concurrency Utilities object for
+  the Java EE Product Provider.
+to:
+  If a Concurrency Utilities object resource environment reference is
+  not mapped to a specific configured object by the Application
+  Component Provider, Application Assembler, or Deployer, it must be
+  mapped by the Java EE Product Provider to a preconfigured
+  Concurrency Utilities object for the Java EE Product Provider.
+
+------
+Sections EE.8.1.3., EE.5.19, EE.5.20, EE.5.21, EE.5.3.3.
+[Clarify the rules for the binding of unmapped resources.]
+
+In EE.8.1.3, add the following new paragraphs:
+
+   Every resource reference should be bound to a resource of the
+   required type.
+
+   Some resources have default mapping rules specified; see sections
+   EE.5.19, EE.5.20, and EE.5.21.  By default, a product must map
+   otherwise unmapped resources using these default rules.  A product
+   may include an option to disable or override these default mapping
+   rules.
+
+   Once a resource reference is bound to a resource in the target
+   operational environment, and deployment succeeds, that binding is
+   not expected to change.  A product may provide administrative
+   operations that change the resource bindings that are used by
+   applications.  A product may notify applications of changes to
+   their resource bindings using JNDI events, but this is not
+   required.
+
+   If deployment succeeds, in addition to binding resource references
+   as specified above, every resource definition (see Section EE.5.18)
+   specified by the application or specified or overridden by
+   the deployer must be present in the target operational environment.
+
+In EE.5.19, change the following text:
+         In the absence of such a binding, the mapping of the
+         reference will default to the product's default data source.
+to:
+         In the absence of such a binding, or an equivalent
+         product-specific binding, the mapping of the reference will
+         default to the product's default data source.
+
+In EE.5.20, change the following text:
+         In the absence of such a binding, the mapping of the
+         reference will default to a JMS connection factory for the
+         product's JMS provider.
+to: 
+         In the absence of such a binding, or an equivalent
+         product-specific binding, the mapping of the reference will
+         default to a JMS connection factory for the product's JMS
+         provider.
+
+In EE.5.21, change the following text:
+         In the absence of such a binding, the mapping of the
+         reference will default to the product's default managed
+         executor service.
+to:
+         In the absence of such a binding, or an equivalent
+         product-specific binding, the mapping of the reference will
+         default to the product's default managed executor service.
+
+
+In section EE.5.3.3, add the following to the end of the second paragraph:
+         The Deployer may also use product-specific resource mapping
+         tools, deployment descriptors, rules, or capabilities to
+         bind resource reference entries to resources in the target
+         operational environment.
+
+------
+
+Section EE.6.2.2.6 [Clarify requirements for support of custom
+permissions]:
+
+Add the following to the end of paragraph 3:
+   The Java EE product is not required to support permissions.xml
+   files that specify permission classes that are packaged in the
+   application.
+
+------
+
+Section EE.6.7.  [In the list in paragraph 3, correct the interface
+shown for the third and fourth items.  This should be
+javax.jms.JMSConsumer, not javax.jms.JMSContext].
+
+Replace:
+  javax.jms.JMSContext method getMessageListener
+with
+  javax.jms.JMSConsumer method getMessageListener
+
+Replace:
+  javax.jms.JMSContext method setMessageListener
+with
+  javax.jms.JMSConsumer method setMessageListener
+
+------
+
+ Section EE.6.7. [In the list in paragraph 3, add missing methods for
+ consistency with JMS spec.]
+
+Add:
+javax.jms.JMSProducer setAsync 
+javax.jms.MessageProducer send(Message message, CompletionListener completionListener)
+javax.jms.MessageProducer send(Message message, int deliveryMode, int priority, long timeToLive,
+CompletionListener completionListener)
+javax.jms.MessageProducer send(Destination destination, Message message,
+CompletionListener completionListener)
+javax.jms.MessageProducer send(Destination destination, Message message, int deliveryMode, int priority, long timeToLive, CompletionListener completionListener)
+
+------
+Section EE.8.5.  [Clarify the rules regarding whether an application
+is attempted to be started during deployment].
+
+Replace the first full paragraph on p. 215 with the following:
+
+Deployment may provide an option that controls whether or not an
+application is attempted to be started during deployment.  If no such
+option is provided or if the option to start the application is
+specified, and if deployment is successful, the application modules
+must be initialized as specified in section EE.8.5.4 and the
+application must be started.
+
+If the application is attempted to be started during deployment, the
+Servlet and EJB containers must be initialized during deployment.
+Such initialization must include CDI initialization.  If
+initialization fails, deployment must fail.
+
+If the application is not attempted to be started during deployment,
+these containers must not be initialized during deployment.
+
+In all cases, the deployment and initialization of a Java EE
+application must be complete before the container delivers client
+requests to any of the application's components. The container must
+first initialize all startup-time singleton session bean components
+before delivering any requests to enterprise bean
+components. Containers must deliver requests to web components and
+resource adapters only after initialization of the component has
+completed.
+
+
+------
+Section EE.8.5.  [Clarify the requirements for annotation scanning and
+processing.]
+
+Replace the *first* paragraph of section EE.8.5 on p. 216 with the
+following pragraphs (i.e., break it up as follows and include
+the new text):
+
+Some deployment descriptors are optional. The required deployment
+information is determined by using default rules or by annotations
+present on application class files. Some deployment descriptors that
+are included in an application may exist in either complete or
+incomplete form. A complete deployment descriptor provides a complete
+description of the deployment information; a deployment tool must not
+examine class files for this deployment information. An incomplete
+deployment descriptor provides only a subset of the required
+deployment information; a deployment tool must examine the application
+class files for annotations that specify deployment information. 
+
+If annotations are being processed (as required by table EE.10-1,
+Servlet table 8-1, and EJB tables 16 and 17), *at least* all of the
+classes specified in table EE-5.1 must be scanned for annotations that
+specify deployment information.  As specified in section EE.8.5.2, all
+classes that can be used by the application may optionally be scanned
+for these annotations.  (These are the annotations that specify
+information equivalent to what can be specified in a deployment
+descriptor.  This requirement says nothing about the processing of
+annotations that were defined for other purposes.)  These annotations
+may appear on classes, methods, and fields.  All resources specified
+by resource definition annotations must be created.  All resource
+reference annotations must result in JNDI entries in the corresponding
+namespace.  If the corresponding namespace is not available to the
+class declaring or inheriting the reference, the resulting behavior is
+undefined.  Future versions of this specification may alter this
+behavior.
+
+Any deployment information specified in a deployment descriptor
+overrides any deployment information specified in an application's
+class files. The Java EE component specifications, including this
+specification, describe when deployment descriptors are optional and
+which deployment descriptors may exist in either complete or
+incomplete form. The attribute metadata-complete is used in the
+deployment descriptor to specify whether the descriptor is complete. 
+The metadata-complete attribute in the standard deployment descriptors
+effects *only* the scanning of annotations that specify deployment
+information, including web services deployment information. It has no
+impact on the scanning of other annotations.
+
+------
+
+Section EE.8.5.2.  [Clarify the intended semantics by correcting the
+ambiguity resulting from the use of "JAR" to refer to both modules and
+.jar files referenced from modules.]
+
+Change EE.8.5.2 item 1.d on page 218) from:
+
+d.For all files in the application package with a filename extension
+of .jar, but not contained in the lib directory, do the following:
+
+   i. If the JAR file contains a META-INF/MANIFEST.MF file with a
+   Main-Class attribute, or contains a META-INF/application-client.xml
+   file, consider the JAR file to be an application client module.
+
+   ii. If the JAR file contains a META-INF/ejb-jar.xml file, or
+   contains any class with an EJB component-defining annotation
+   (Stateless, etc.), consider the JAR file to be an EJB module.
+
+   iii. All other JAR files are ignored unless referenced by a JAR
+   file discovered above using one of the JAR file reference
+   mechanisms such as the Class-Path header in a manifest file.
+
+to:
+
+d.For all files in the application package with a filename extension
+of .jar, but not contained in the lib directory, do the following:
+
+   i. If the .jar file contains a META-INF/MANIFEST.MF file with a
+   Main-Class attribute, or contains a META-INF/application-client.xml
+   file, consider the .jar file to be an application client module.
+
+   ii. If the .jar file contains a META-INF/ejb-jar.xml file, or
+   contains any class with an EJB component-defining annotation
+   (Stateless, etc.), consider the .jar file to be an EJB module.
+
+   iii. All other .jar files are ignored unless referenced by a JAR
+   file discovered above using one of the JAR file reference
+   mechanisms such as the Class-Path header in a manifest file.
+
+------
+
+Section EE.10.6 [Correct table to include missing entries for
+application-client_6 and application-client_7.  These should
+be the same as for application-client_5.]
+
+Add the following entries to Table EE.10-1:
+   application-client_6    Yes    No
+   application-client_7    Yes    No
+
+Add the following to the paragraph above this table:
+   Whether or not to process annotations depends on the
+   presence and version of the deployment descriptor and
+   the setting of the metadata-complete attribute.
+
+-------
+
+Figures EE.8-3, EE.10-1 [Corrected inconsistencies with the XML
+schemas.]
+   Replace "connector-resource*" with "connection-factory*" in
+   Figures EE.8-3 and EE.10-1.
+   Add "administered-object*" to Figure EE.10-1.

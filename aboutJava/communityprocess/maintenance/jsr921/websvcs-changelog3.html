@@ -1,0 +1,1268 @@
+
+<!-- ** BEGIN: header.jsp ** //-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3c.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+<head>
+    
+
+   
+    <link href="/includes/css/menu.css" rel="stylesheet" type="text/css"></link>
+    <link href="/includes/css/style.css" rel="stylesheet" type="text/css"></link>
+    <!--[if lt IE 6]><link href="/includes/css/style5.css" rel="stylesheet" type="text/css" ></link><![endif]-->
+    <!--[if gte IE 5]><link href="/includes/css/style6.css" rel="stylesheet" type="text/css" ></link><![endif]-->
+    <link href="/includes/css/tabs.css"  rel="stylesheet" type="text/css"></link>
+
+    <script type="text/javascript" src="/includes/scripts/tabs.js"></script>
+    <script type="text/javascript" src="/includes/scripts/menu.js"></script>
+   
+
+    
+
+    
+        <title>The Java Community Process(SM) Program - communityprocess - maintenance</title>
+    
+
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+
+
+<body onload="P7_initPM(0,1,0,0,-1)">
+
+    <a name="top"></a>
+
+    <div id="header">
+	<div id="logo">
+		<a href="/en/home/index"><img src="/images/spacer.gif" alt="Java Community Process" height="81" width="151"></a>
+	</div>
+	<div id="tools">
+		<div class="search">
+			<form name="search" action="/en/jsr/summary" method="get" onsubmit="return validate_search()">
+				<input name="id" value="Search JSRs" size="16" class="form" onfocus="nullify_if_equal(this, 'Search JSRs')" type="text">
+				<a href="javascript:document.search.submit()" onclick="return validate_search()"><img src="/images/button_go.gif" width="21" height="16" border="0" alt="Submit this Search" name="sub_search"></a>
+			</form>
+		</div>
+		<div class="tools">
+			<a href="/en/press/pressroom">Press Room</a> &nbsp;|&nbsp;
+			<a href="http://java.com/java/download/index.jsp?cid=jdp78399">Get Java Here</a> &nbsp;|&nbsp;
+			<!-- <a href="javascript:void(0)">Print Format</a> &nbsp;|&nbsp;&nbsp; -->
+		</div>
+
+	</div>
+	<div style="clear: right;"></div>
+
+        
+
+	<div class="topbar"><img src="/images/spacer.gif" alt="" height="3" width="154"></div>
+	<div id="update"> </div>
+    </div>
+
+
+    
+
+        <!-- ** BEGIN: Content Table ** //-->
+
+        <table width="100%" border="0" cellpadding="0" cellspacing="0">
+
+            <tr>
+
+                <!-- ** BEGIN: Navigation Column ** //-->
+                <td width="150" id="leftcontent" valign="top">
+                    <!-- Navigation Placeholder //-->
+
+                    
+
+                    <div class="bar"><img src="/images/hr_dots1.gif" alt="" height="3" width="150"></div>
+
+        <!-- begin find JSRs form -->
+        <!-- IMPORTANT! do not convert this form to Struts < html : form > tag.  javascript change of form.action property fails. -->
+        <img src="/images/hd_find-jsrs.gif" alt="Find JSRs" height="18" width="150">
+        <form name="findjsr" action="/en/jsr/summary" method="get" class="pt5" onsubmit="return validate_findjsr()">
+            <input name="id" size="18" class="form" value="Search JSRs" onfocus="nullify_if_equal(this, 'Search JSRs')" type="text">
+	    <a href="javascript:document.findjsr.submit()" onclick="return validate_findjsr()"><img src="/images/button_go.gif" width="21" height="16" border="0" alt="Submit this Search" name="sub_search"></a>
+        </form><br><br>
+
+        <!-- ** Menu Start ** //-->
+
+        <ul id="p7PMnav">
+            <li><a href="/en/jsr/platform">JSRs by Platform</a></li>
+            <li><a href="/en/jsr/tech">JSRs by Technology</a></li>
+            <li><a href="/en/jsr/stage">JSRs by Stage</a></li>
+            <li><a href="/en/jsr/ec">JSRs by Committee</a></li>
+            <li><a href="/en/jsr/all">List of All JSRs</a></li>
+
+            <!--end find JSRs form -->
+            <div style="clear: both;"><img src="/images/spacer.gif" alt="" height="25" width="1"></div>
+
+            <!--begin my JCP -->
+            <img src="/images/hd_my-jcp.gif" alt="My JCP" height="18" width="150">
+            
+
+          <form name="login" method="get" action="/en/user/login" >
+            <input name="Sign-in" type="submit" title="Sign-in" value="Sign-in" />
+          </form>
+
+            <div style="clear:both"><img src="/images/global/spacer.gif" width="1" height="3" alt=""></div>
+            <div class="noNav">
+                <a href="/en/user/register">Register for Site</a>
+            </div>
+
+             <div class="bar"><img src="/images/hr_dots1.gif" alt="" height="3" width="150"></div>
+           <div class="noNav" style="color: #666666; padding: 0;">
+              Use of JCP site is subject to the
+              <a href="/en/home/terms" style="display:inline;padding: 0">JCP Terms of Use</a> and the
+              <a href="http://www.oracle.com/us/legal/privacy/index.html" style="display:inline;padding: 0" href="">Oracle Privacy Policy</a>
+          </div>
+
+            
+
+            <div style="clear:both"><img src="/images/global/spacer.gif" width="1" height="25" alt=""></div>
+
+            <!--begin JCP info -->
+            <img src="/images/hd_jcp-info.gif" alt="JCP Info" height="18" width="150">
+
+            <li><a href="/en/procedures/overview" class="p7PMtrg">About JCP</a>
+                <ul>
+                    <li><a href="/en/procedures/overview">Program Overview</a></li>
+                    <li><a href="/en/procedures/jcp2">JCP Process Document</a></li>
+                    <li><a href="/en/whatsnew/calendar">Calendar</a></li>
+                    <li><a href="/en/participation/members">JCP Members</a></li>
+                    <li><a href="/en/participation/committee">Executive Committee</a></li>
+                    <li><a href="/en/whatsnew/elections">Elections</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/en/participation/overview" class="p7PMtrg">Get Involved</a>
+		<ul>
+                    <li><a href="/en/participation/overview">Overview</a></li>
+                    <li><a href="/en/participation/membership">Becoming a JCP Member</a></li>
+		</ul>
+            </li>
+
+            <li><a href="/en/resources/contents" class="p7PMtrg">Community Resources</a>
+                <ul>
+                    <li><a href="/en/resources/contents">Overview</a></li>
+                    <li><a href="/en/resources/tutorials">Tutorials</a></li>
+                    <li><a href="/en/resources/multimedia">JCP Podcasts</a></li>
+                    <li><a href="/en/resources/guide">Spec Lead Guide</a></li>
+                    <li><a href="/en/resources/tdk">TCK Tool & Info</a></li>
+                    <li><a href="/en/resources/license_reference">License Reference</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/en/press/pmo" class="p7PMtrg">Community News</a>
+                <ul>
+                    <li><a href="/en/press/pmo">News</a></li>
+                    <li><a href="/en/press/news/awards/awards_main">Programs &amp; Awards</a></li>
+                    <li><a href="/en/press/releases">Press Releases</a></li>
+                    <li><a href="/en/press/success">Success Stories</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/en/introduction/faq">FAQ</a></li>
+
+            <li><a href="/en/resources/contacts">Contact Us</a></li>
+
+            <div style="clear: both;"><img src="/images/spacer.gif" alt="" height="25" width="1"></div>
+
+            <!--[if lte IE 6]><style>#p7PMnav a{height:1em;}#p7PMnav li{height:1em;float:left;clear:both;width:100%}</style><![endif]-->
+            <!--[if IE 6]><style>#p7PMnav li{clear:none;}</style><![endif]-->
+            <!--[if IE 7]><style>#p7PMnav a{zoom:100%;}#p7PMnav li{float:left;clear:both;width:100%;}</style><![endif]-->
+        </ul>
+
+        
+
+        <!--begin ad space -->
+        <div class="ads">
+            <a href="http://java.com/java/download/index.jsp?cid=jdp78399" target="_blank"><img style="display: ;" src="/images/ad_banner2.gif" alt="Ad Banner" border="1" height="70" width="150"></a>
+        </div>
+        <!--end ad space -->
+
+<!-- ** Menu End ** //-->
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;<br>
+
+    
+
+                    &nbsp;<br>
+                    <img src="/images/common/trans.gif" alt="" width="1" height="150"><br>
+
+              
+
+
+
+                </td>
+                <!-- ** END: Navigation Column ** //-->
+
+                <!-- ** BEGIN: Gutter Column ** //-->
+		<td width="10" nowrap><img src="/images/common/trans.gif" alt="" width="10" height="1"></td>
+                <!-- ** END: Gutter Column ** //-->
+
+                <!-- ** BEGIN: Content Column ** //-->
+                <td width="100%" valign="top">
+
+    
+<script type="text/javascript">
+
+String.prototype.trim = function() {
+        return this.replace(/^\s+|\s+$/g,"");
+}
+String.prototype.ltrim = function() {
+        return this.replace(/^\s+/,"");
+}
+String.prototype.rtrim = function() {
+        return this.replace(/\s+$/,"");
+}
+
+function validate_search() {
+	if (document.search.id.value == "Search JSRs" || document.search.id.value.trim().length == 0) {
+		alert("Search terms must be entered first");
+		return false;
+	}
+	return true;
+}
+
+function validate_findjsr() {
+	if (document.findjsr.id.value == "Search JSRs" || document.findjsr.id.value.trim().length == 0) {
+		alert("Search terms must be entered first");
+		return false;
+	}
+	return true;
+}
+
+function nullify_if_equal(field, str) {
+	// alert("val=" + field.value);
+	if (field.value == str) {
+		field.value = "";
+	}
+}
+
+</script>
+<!-- ** END: header.jsp ** //-->
+
+
+
+
+
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<HEAD>
+<META name="GENERATOR" content="IBM WebSphere Homepage Builder V5.0.1 for Windows">
+<TITLE>Web Services for J2EE, Version 1.0 Change
+Log</TITLE>
+</HEAD>
+<BODY>
+<H1 align="center">Web Services for J2EE, Version 1.0</H1>
+<H1 align="center">Change Log</H1>
+<P>Document last updated: 07/31/2003</P>
+<H2>Description</H2>
+<P>This document describes the set of change
+requests Proposed, Accepted, and Deferred
+per the <A href="http://www.jcp.org/procedures/jcp2/index.en.jsp#4">JSPA section 4</A>. These are changes to the Web Services for
+J2EE Version 1.0 specification and intended
+to result in a version of the specification
+for integration with J2EE 1.4.</P>
+<H3>Maintenance Lead</H3>
+<P>Jim Knutson, IBM</P>
+<H3>Feedback</H3>
+<P>Comments should be sent to wsee-spec-comments@us.ibm.com.</P>
+<H2>Proposed Changes</H2>
+<P>All changes to the final release must be
+listed here and approved by the EC.</P>
+<TABLE border="1">
+  <TBODY>
+    <TR>
+      <TD><B>Request</B></TD>
+      <TD><B>Summary</B></TD>
+      <TD><B>Specification Changes</B></TD>
+    </TR>
+    <TR>
+      <TD>21</TD>
+      <TD>Add SOAP Header fault mappings</TD>
+      <TD>Section 7.3.5, add part-name element to exception-mappingType to allow for associating a header fault with the actual header in question (by part-name of the message).
+      This is necessary when more than one header is passed.</TD>
+    </TR>
+    <TR>
+      <TD>22</TD>
+      <TD>Add additional JAX-RPC 1.1 type mappings</TD>
+      <TD>Clarifies request 16 and adds support for mapping attribute elements. Section 7.3.5, add xml-attribute-name element, xml-wildattribute element, and xml-wildcard element to variable-mappingType. These are modeled after xml-element-name use.</TD>
+    </TR>
+    <TR>
+      <TD>23</TD>
+      <TD>Clarify how element refs should be handled in variable-mappingType.</TD>
+      <TD>Section 7.3.5, add the following description to xml-element-name:
+			<BLOCKQUOTE>
+			<P>The
+			value of an xml-element-name element must match the value of the ref
+			attribute if mapping an element reference.</P>
+			</BLOCKQUOTE>
+			A similar phrase will be added to xml-attribute-name as part of request 22.</TD>
+    </TR>
+    <TR>
+      <TD>24</TD>
+      <TD>Fix java-xml-type-mapping class-type</TD>
+      <TD>A java-xml-type-mapping can map to more than just a Java class. It can map to primitives and arrays of types. In section 7.3.5, rename  class-type to java-type
+			and change its type to j2ee:java-typeType.</TD>
+    </TR>
+	</TBODY>
+</TABLE>
+<H2>Accepted Changes</H2>
+<P>Changes approved by the EC move to this section.</P>
+<TABLE border="1">
+  <TBODY>
+    <TR>
+      <TD><B>Request</B></TD>
+      <TD><B>Summary</B></TD>
+      <TD><B>Specification Changes</B></TD>
+    </TR>
+    <TR>
+      <TD>1</TD>
+      <TD>Change version to 1.1</TD>
+      <TD>Title page, replace:<BR>
+      <BLOCKQUOTE>Version 1.0</BLOCKQUOTE>
+      With:<BR>
+      <BLOCKQUOTE>Version 1.1</BLOCKQUOTE>
+      Page 2, replace<BR>
+      <BLOCKQUOTE>Version: 1.0</BLOCKQUOTE>
+      With:<BR>
+      <BLOCKQUOTE>Version: 1.1</BLOCKQUOTE>
+      </TD>
+    </TR>
+    <TR>
+      <TD>2</TD>
+      <TD>Add EJB 2.1 web services view.</TD>
+      <TD>Itemize references to EJB remote interface/home
+      interface requirements where the EJB
+      2.1
+      web services client view needs to be
+      injected.
+      <P>Section 3.10, item 1, replace:</P>
+      <BLOCKQUOTE>The service provider implements the
+      Web service
+      business logic by implementing a stateless
+      session EJB. The EJB�s remote interface
+      method
+      signatures must match the method signatures
+      of the Service Endpoint Interface and
+      must
+      include all methods of the Service
+      Endpoint
+      Interface.</BLOCKQUOTE>
+      <P>With:</P>
+      <BLOCKQUOTE>The service provider implements the
+      Web service
+      business logic by creating a stateless
+      session
+      Bean that implements the methods of
+      the Service
+      Endpoint Interface as described in
+      the Enterprise
+      JavaBeans 2.1 specification.</BLOCKQUOTE>
+      <P>Section 8.1 paragraph 6, replace:</P>
+      <BLOCKQUOTE>In general, the deployment tool generates
+      a servlet to handle parsing the incoming
+      SOAP request, create a remote stateless
+      session
+      EJBObject and dispatch the request
+      to the
+      stateless session EJB. The methods
+      of the
+      SEI are described by the remote interface,
+      the deployment tool can generate a
+      servlet
+      that dispatches to the remote interface
+      of
+      the EJB.</BLOCKQUOTE>
+      <P>With:</P>
+      <BLOCKQUOTE>In general, the deployment tool generates
+      a servlet to handle parsing the incoming
+      SOAP request, the servlet obtains a reference
+      to an instance of an appropriate EJBObject
+      and dispatches the request to the stateless
+      session EJB.</BLOCKQUOTE>
+      </TD>
+    </TR>
+    <TR>
+      <TD>3</TD>
+      <TD>Make EJB 2.0 based web services optional.</TD>
+      <TD>Itemize references to EJB remote interface/home
+      interface requirements that need to be made
+      optional. Optional support for J2EE 1.3 based
+      web services is accomplished by referring
+      to the original Web Services for J2EE 1.0
+      specification.
+      <P>Section 3.10 item 1, remove:</P>
+      <BLOCKQUOTE>The EJB�s remote interface method signatures
+      must match the method signatures of
+      the Service
+      Endpoint Interface and must include
+      all methods
+      of the Service Endpoint Interface.</BLOCKQUOTE>
+      <P>Section 5.3.2.1.3, remove entire section:</P>
+      <BLOCKQUOTE>5.3.2.1.3 Exposing an existing EJB<BR>
+      An existing Enterprise JavaBean may be used
+      as a Service Implementation Bean if it meets
+      the following requirements:<BR>
+      � The business methods of the EJB bean class
+      that are exposed on the SEI must meet the
+      Service Implementation Bean requirements
+      defined in section 5.3.1.<BR>
+      � The Service Endpoint Interface methods
+      must be a subset of the remote interface
+      methods of the EJB and the SEI must meet
+      the requirements described in the JAX-RPC
+      specification for Java-&gt;WSDL mapping.<BR>
+      � The transaction attributes of the SEI methods
+      must not include Mandatory.<BR>
+      The developer must package the Web
+      service
+      as described in section 5.4 and must
+      specify
+      an ejb-link from the port in the Web
+      services
+      deployment descriptor to the existing
+      EJB.</BLOCKQUOTE>
+      <P>Section 8.1, 3rd bullet, remove:</P>
+      <BLOCKQUOTE>If the Service Implementation Bean is an
+      EJB, the SEI methods are fully contained
+      by the remote interface.</BLOCKQUOTE>
+      Section 8.2.9, bullet 7, remove:
+      <BLOCKQUOTE>If the Service Implementation Bean is an
+      EJB, the SEI methods are not fully contained
+      by the remote interface.</BLOCKQUOTE>
+      Add Appendix:
+      <BLOCKQUOTE>Optional support for J2EE 1.3 platforms<A name="_Toc20504230"></A>
+      <P class="MsoBodyText">Web Services for J2EE Version 1.1 does not
+      require support for applications built
+      according
+      to the Web Services for J2EE Version
+      1.0
+      specification. A vendor may optionally
+      support
+      Web Services for J2EE 1.0 by implementing
+      that version of the specification.
+      See the
+      Web Services Version 1.0 Change Log
+      for more
+      details on the differences between
+      the two
+      specifications.</P>
+      </BLOCKQUOTE>
+      </TD>
+    </TR>
+    <TR>
+      <TD>4</TD>
+      <TD>Add J2EE 1.4 based XML Schemas</TD>
+      <TD>Create new Chapter 7 info with XML Schema
+      specific info. Describe the general
+      1-1 mapping
+      of DTD to XML Schema elements for most
+      elements
+      and detail where it isn't 1-1 and why.
+      <P>Section 7.1.5, replace DTD with XML Schema</P>
+      <P>Section 7.2.2, 4th bullet, remove:</P>
+      <BLOCKQUOTE>Scope. If the service reference is
+      being
+      defined within an EJB-JAR, the service-ref
+      elements must be defined within a component-scoped-refs
+      element so that the service-ref can be associated
+      with a particular EJB. The association
+      with
+      the EJB is defined by the component-name
+      element.</BLOCKQUOTE>
+      <P>Section 7.2.2?, add note regarding service-endpoint
+      declaration in EJB 2.1 deployment descriptor.</P>
+      <P>Section 7.2.5, replace DTD with XML Schema.</P>
+      <P>Section 7.3.5, replace section name:</P>
+      <BLOCKQUOTE>JAX-RPC Mapping DTD</BLOCKQUOTE>
+      with:
+      <BLOCKQUOTE>JAX-RPC Mapping Schema</BLOCKQUOTE>
+      Section 7.3.5: replace DTD with XML Schema.</TD>
+    </TR>
+    <TR>
+      <TD>5</TD>
+      <TD>Make the DTD based schemas optional.</TD>
+      <TD>See Appendix change in item 3.</TD>
+    </TR>
+    <TR>
+      <TD>6</TD>
+      <TD>Make Holders required for EJB container.</TD>
+      <TD>Modify statement saying that Holders are
+      optional for the EJB container to say
+      they
+      are optional only for an EJB 2.0 container.
+      <P>Section 5.3, first definition list item,
+      move the following to the appendix:</P>
+      <BLOCKQUOTE>Support for OUT and IN/OUT parameters
+      is
+      optional for the EJB container.</BLOCKQUOTE>
+      <P>Section 5.3, second definition list item,
+      move the following to the appendix:</P>
+      <BLOCKQUOTE>Support for Holder parameters is optional
+      for the EJB container.</BLOCKQUOTE>
+      <P>Section 5.3.1, move the last paragraph to
+      the appendix:</P>
+      <BLOCKQUOTE>JAX-RPC defines Holders as non-serializable
+      classes which cannot be implemented
+      by the
+      remote interface of an Enterprise JavaBean.
+      Therefore, support for an SEI which
+      uses
+      Holders for parameters is not required
+      for
+      Port components deployed in the EJB
+      container</BLOCKQUOTE>
+      </TD>
+    </TR>
+    <TR>
+      <TD>7</TD>
+      <TD>Make Handler support required for EJB container</TD>
+      <TD>Remove statement saying that Handlers are
+      optional for the EJB container.
+      <P>Section 6.1, last paragraph, remove:</P>
+      <BLOCKQUOTE>This specification makes Handler support
+      in the EJB container optional due to
+      the
+      required EJB container changes that
+      would
+      be necessary to implement Handler support.
+      It is expected that EJB Handler support
+      will
+      be made required in a future J2EE specification.</BLOCKQUOTE>
+      <P>Section 6.2.4, last paragraph, remove:</P>
+      <BLOCKQUOTE>A container provider is not required
+      to support
+      Handlers for Port component�s that
+      run in
+      the EJB container. It is expected this
+      will
+      be required when this specification
+      is included
+      in J2EE 1.4.</BLOCKQUOTE>
+      </TD>
+    </TR>
+    <TR>
+      <TD>8</TD>
+      <TD>Change references to extension of J2EE 1.3
+      to include integration into J2EE 1.4</TD>
+      <TD>Chapter 2, last paragraph, remove:
+      <BLOCKQUOTE>The relation of this specification to J2EE
+      1.4 is defined in Appendix A.</BLOCKQUOTE>
+      Section 2.1.3, second bullet, replace:
+      <BLOCKQUOTE>The Web service deployment is supported on
+      top of existing J2EE 1.3 environments.</BLOCKQUOTE>
+      With:
+      <P>The Web service deployment is supported on
+      J2EE 1.4 environments.</P>
+      <P>Appendix A, J2EE APIs, replace:</P>
+      <BLOCKQUOTE>Enterprise JavaBeans 2.0 defines the programming
+      model for implementing Web services
+      which
+      run in the EJB container.</BLOCKQUOTE>
+      <BLOCKQUOTE>Servlet 2.3 defines the packaging and container
+      service model for implementing Web
+      services
+      which run in the servlet container.</BLOCKQUOTE>
+      <BLOCKQUOTE>J2EE 1.4, EJB 2.1, and Servlet 2.4 will include
+      the Web services specification defined within
+      this specification. An effort will be made
+      to maintain compatibility and ease migration
+      to J2EE 1.4, but there is no guarantee that
+      compatibility will be ensured. A JSR 109
+      1.1 maintenance release will address XML
+      Schema based deployment descriptors, the
+      EJB 2.1 Web services view, as well as Holder
+      and Handler class usage in the EJB container
+      for use by J2EE 1.4</BLOCKQUOTE><P>With:</P>
+      <BLOCKQUOTE>Enterprise JavaBeans 2.1 defines the programming
+      model for implementing Web services which
+      run in the EJB container.
+      <P>Servlet 2.4 defines the packaging and container
+      service model for implementing Web services
+      which run in the servlet container.</P></BLOCKQUOTE>
+      </TD>
+    </TR>
+    <TR>
+      <TD>9</TD>
+      <TD>Clarify port address requirement.</TD>
+      <TD>Section 4.2.2.4, replace:
+      <BLOCKQUOTE>
+      <P class="MsoBodyText">The port address attribute may be absent
+      from the WSDL or may be a dummy value.</P>
+      </BLOCKQUOTE>
+      with:
+      <BLOCKQUOTE>
+      <P class="MsoBodyText">The port address location attribute may be
+      absent from the WSDL or may be a dummy
+      value.</P>
+      </BLOCKQUOTE>
+      </TD>
+    </TR>
+    <TR>
+      <TD>10</TD>
+      <TD>Clarify publication requirements.</TD>
+      <TD>
+      <P>Section 4.2.6, replace:</P>
+      <BLOCKQUOTE><SPAN style='font-size:10.0pt;font-family:Arial;
+mso-fareast-font-family:"Times New Roman";mso-bidi-font-family:"Times New Roman";
+letter-spacing:-.25pt;mso-ansi-language:EN-US;mso-fareast-language:EN-US;
+mso-bidi-language:AR-SA'>WSDL files are located relative to the root
+      of the module and are typically co-located</SPAN>with the module's deployment descriptor.</BLOCKQUOTE>
+      <P>with:</P>
+      <BLOCKQUOTE><SPAN style='font-size:10.0pt;font-family:Arial;
+mso-fareast-font-family:"Times New Roman";mso-bidi-font-family:"Times New Roman";
+letter-spacing:-.25pt;mso-ansi-language:EN-US;mso-fareast-language:EN-US;
+mso-bidi-language:AR-SA'>WSDL files are located relative to the root
+      of the module and are typically located in
+      the </SPAN><SPAN style='font-size:10.0pt;
+font-family:"Courier New";mso-fareast-font-family:"Times New Roman";letter-spacing:
+-.25pt;mso-ansi-language:EN-US;mso-fareast-language:EN-US;mso-bidi-language:
+AR-SA'>wsdl</SPAN><SPAN style='font-size:10.0pt;font-family:Arial;mso-fareast-font-family:
+"Times New Roman";mso-bidi-font-family:"Times New Roman";letter-spacing:-.25pt;
+mso-ansi-language:EN-US;mso-fareast-language:EN-US;mso-bidi-language:AR-SA'> directory that is co-located with the module
+      deployment descriptor or a subdirectory of
+      it. </SPAN></BLOCKQUOTE>
+      Section 5.4, replace:
+      <BLOCKQUOTE><SPAN style='font-size:10.0pt;font-family:Arial;
+mso-fareast-font-family:"Times New Roman";mso-bidi-font-family:"Times New Roman";
+letter-spacing:-.25pt;mso-ansi-language:EN-US;mso-fareast-language:EN-US;
+mso-bidi-language:AR-SA'>WSDL files are located relative to the root
+      of the module and are typically </SPAN><SPAN style='font-size:10.0pt;font-family:Arial;
+mso-fareast-font-family:"Times New Roman";mso-bidi-font-family:"Times New Roman";
+letter-spacing:-.25pt;mso-ansi-language:EN-US;mso-fareast-language:EN-US;
+mso-bidi-language:AR-SA'>co-located with the module deployment descriptor.
+      </SPAN></BLOCKQUOTE>
+      with:
+      <BLOCKQUOTE><SPAN style='font-size:10.0pt;font-family:Arial;
+mso-fareast-font-family:"Times New Roman";mso-bidi-font-family:"Times New Roman";
+letter-spacing:-.25pt;mso-ansi-language:EN-US;mso-fareast-language:EN-US;
+mso-bidi-language:AR-SA'>WSDL files are located relative to the root
+      of the module and are typically located in
+      the </SPAN><SPAN style='font-size:10.0pt;
+font-family:"Courier New";mso-fareast-font-family:"Times New Roman";letter-spacing:
+-.25pt;mso-ansi-language:EN-US;mso-fareast-language:EN-US;mso-bidi-language:
+AR-SA'>wsdl</SPAN><SPAN style='font-size:10.0pt;font-family:Arial;
+mso-fareast-font-family:"Times New Roman";mso-bidi-font-family:"Times New Roman";
+letter-spacing:-.25pt;mso-ansi-language:EN-US;mso-fareast-language:EN-US;
+mso-bidi-language:AR-SA'> directory that is co-located with the module
+      deployment descriptor or a subdirectory
+      of
+      it. </SPAN></BLOCKQUOTE>
+      Add new section 5.4.1 before current
+      5.4.1
+      (renumber appropriately):
+      <BLOCKQUOTE>
+      <H3><A name="_Ref23326208">5.4.1<SPAN style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      </SPAN>The </A><SPAN style="mso-bookmark:_Ref23326208"><SPAN style='font-family:"Courier New"'>wsdl</SPAN> directory</SPAN></H3>
+      <P class="MsoBodyText">The <SPAN style='font-family:"Courier New"'>wsdl</SPAN> directory is a well-known location that
+      contains WSDL files and any relative content
+      the WSDL files may reference. WSDL files
+      and their relative references will be published
+      during deployment. See section 8.2.4 and
+      8.2.5 for more details.</P>
+      </BLOCKQUOTE>
+      Add to the end of old section number
+      5.4.1
+      EJB Module Packaging (now 5.4.2):
+      <BLOCKQUOTE>
+      <P class="MsoBodyText">The <SPAN style='font-family:"Courier New"'>wsdl </SPAN>directory is located at <SPAN style='font-family:"Courier New"'>META-INF/wsdl</SPAN>.</P>
+      </BLOCKQUOTE>
+      Add to the end of old section number
+      5.4.2
+      Web App Module Packaging (now 5.4.3):
+      <BLOCKQUOTE>
+      <P class="MsoBodyText">The <SPAN style='font-family:"Courier New"'>wsdl</SPAN> directory is located at <SPAN style='font-family:"Courier New"'>WEB-INF/wsdl</SPAN>.<SPAN style='font-size:10.0pt;font-family:Arial;
+mso-fareast-font-family:"Times New Roman";mso-bidi-font-family:"Times New Roman";
+letter-spacing:-.25pt;mso-ansi-language:EN-US;mso-fareast-language:EN-US;
+mso-bidi-language:AR-SA'></SPAN></P>
+      </BLOCKQUOTE>
+      Add to section 7.1.2 <B>Port's WSDL description</B> bullet:
+      <BLOCKQUOTE><SPAN style='font-size:10.0pt;font-family:Arial;
+mso-fareast-font-family:"Times New Roman";mso-bidi-font-family:"Times New Roman";
+letter-spacing:-.25pt;mso-ansi-language:EN-US;mso-fareast-language:EN-US;
+mso-bidi-language:AR-SA'>The WSDL file may reference (e.g. import)
+      other files contained within the module using
+      relative references. It may also reference
+      other files external to the module using
+      an explicit URL. Relative imports are declared
+      relative to the file defining the import.
+      Imported files may import other files as
+      well using relative locations or explicit
+      URLs. It is recommended that the WSDL file
+      and relative referenced files be packaged
+      in the </SPAN><SPAN style='font-size:10.0pt;font-family:"Courier New";mso-fareast-font-family:
+"Times New Roman";letter-spacing:-.25pt;mso-ansi-language:EN-US;mso-fareast-language:
+EN-US;mso-bidi-language:AR-SA'>wsdl</SPAN><SPAN style='font-size:10.0pt;
+font-family:Arial;mso-fareast-font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman";letter-spacing:-.25pt;mso-ansi-language:EN-US;mso-fareast-language:
+EN-US;mso-bidi-language:AR-SA'> directory as described in section </SPAN><SPAN style='font-size:10.0pt;font-family:Arial;mso-fareast-font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman";letter-spacing:-.25pt;mso-ansi-language:
+EN-US;mso-fareast-language:EN-US;mso-bidi-language:AR-SA'>5.4.1</SPAN><SPAN style='font-size:10.0pt;font-family:Arial;mso-fareast-font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman";letter-spacing:-.25pt;mso-ansi-language:
+EN-US;mso-fareast-language:EN-US;mso-bidi-language:AR-SA'>. Relative references must not start with
+      a �/�.</SPAN></BLOCKQUOTE>
+      Add to section 7.2.2 <B>WSDL definition</B> bullet:
+      <BLOCKQUOTE><SPAN style='font-size:10.0pt;font-family:Arial;
+mso-fareast-font-family:"Times New Roman";mso-bidi-font-family:"Times New Roman";
+letter-spacing:-.25pt;mso-ansi-language:EN-US;mso-fareast-language:EN-US;
+mso-bidi-language:AR-SA'><SPAN style="mso-spacerun: yes"></SPAN>The WSDL file may reference (e.g. import)
+      other files contained within the module using
+      relative references. It may also reference
+      other files external to the module using
+      an explicit URL. Relative imports are declared
+      relative to the file defining the import.
+      Imported files may import other files as
+      well using relative locations or explicit
+      URLs. Relative references must not start
+      with a �/�.</SPAN></BLOCKQUOTE>
+      <P>Section 8.2.3, add to end of first paragraph:</P>
+      <BLOCKQUOTE><SPAN style='font-size:10.0pt;font-family:Arial;
+mso-fareast-font-family:"Times New Roman";mso-bidi-font-family:"Times New Roman";
+letter-spacing:-.25pt;mso-ansi-language:EN-US;mso-fareast-language:EN-US;
+mso-bidi-language:AR-SA'><SPAN style="mso-spacerun: yes"></SPAN>The container must not update a WSDL file
+      located in the document root of a WAR file.</SPAN></BLOCKQUOTE>
+      <P>Add new section 8.2.4:</P>
+      <BLOCKQUOTE>
+      <H3>8.2.4<SPAN style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      </SPAN>Publishing the service-ref WSDL</H3>
+      <P class="MsoBodyText">The deployment tool and/or container must
+      make the WSDL document that a <SPAN style='font-family:"Courier New"'>service-ref</SPAN> is bound to available via a <SPAN style='font-family:"Courier New"'>URL</SPAN> returned by the Service Interface <SPAN style='font-family:"Courier New"'>getWSDLDocumentLocation()</SPAN> method. This may or may not be the same
+      WSDL document packaged in the module. The
+      process of publishing the bound <SPAN style='font-family:"Courier New"'>service-ref</SPAN> WSDL is analogous to publishing deployed
+      WSDL, but only the <SPAN style='font-family:"Courier New"'>service-ref</SPAN> that is bound to it is required to have
+      access to it. A Web Services for J2EE provider
+      is required to provide a <SPAN style='font-family:"Courier New"'>URL</SPAN> that maintains the referential integrity
+      of the WSDL document the <SPAN style='font-family:"Courier New"'>service-ref</SPAN> is bound to if the <SPAN style='font-family:"Courier New"'>wsdl-file</SPAN> element refers to a document located in
+      the <SPAN style='font-family:"Courier New"'>wsdl</SPAN> directory or one of its subdirectories.</P>
+      </BLOCKQUOTE>
+      Add to the end of section 8.2.5 (was 8.2.4):
+      <BLOCKQUOTE>
+      <P class="MsoBodyText" style="tab-stops:list 1.5in"><SPAN style='font-size:10.0pt;font-family:Arial;
+mso-fareast-font-family:"Times New Roman";mso-bidi-font-family:"Times New Roman";
+letter-spacing:-.25pt;mso-ansi-language:EN-US;mso-fareast-language:EN-US;
+mso-bidi-language:AR-SA'>A Web Services for J2EE provider is required
+      to support publishing a deployed WSDL document
+      i</SPAN>f the Web services deployment descriptor
+      (<SPAN style='font-family:"Courier New"'>webservices.xml</SPAN>) <SPAN style='font-family:"Courier New"'>wsdl-file</SPAN> element refers to a WSDL file contained
+      in the <SPAN style='font-family:"Courier New"'>wsdl</SPAN> directory or subdirectory, as described
+      in section 5.4.1. <SPAN style='font-size:10.0pt;font-family:Arial;
+mso-fareast-font-family:"Times New Roman";mso-bidi-font-family:"Times New Roman";
+letter-spacing:-.25pt;mso-ansi-language:EN-US;mso-fareast-language:EN-US;
+mso-bidi-language:AR-SA'>A provider may publish</SPAN> the static content (e.g. no JSPs or Servlets)
+      of the entire <SPAN style='font-family:"Courier New"'>wsdl</SPAN> directory and all its subdirectories <SPAN style='font-size:10.0pt;font-family:Arial;
+mso-fareast-font-family:"Times New Roman";mso-bidi-font-family:"Times New Roman";
+letter-spacing:-.25pt;mso-ansi-language:EN-US;mso-fareast-language:EN-US;
+mso-bidi-language:AR-SA'>if the deploy tool cannot compute the minimal
+      set of documents to publish in order to maintain
+      referential integrity</SPAN>. The recommended practice is to place WSDL
+      files referenced by a<SPAN style='font-family:"Courier New"'>wsdl-file</SPAN> element and their relative imported documents
+      under the <SPAN style='font-family:"Courier New"'>wsdl</SPAN> directory.</P>
+      <SPAN style='font-size:10.0pt;font-family:Arial;mso-fareast-font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman";letter-spacing:-.25pt;mso-ansi-language:
+EN-US;mso-fareast-language:EN-US;mso-bidi-language:AR-SA'>Web Services for J2EE providers are free
+      to organize the published WSDL documents
+      however they see fit so long as referential
+      integrity is maintained. For example, the
+      </SPAN><SPAN style='font-size:10.0pt;font-family:"Courier New";mso-fareast-font-family:"Times New Roman";
+letter-spacing:-.25pt;mso-ansi-language:EN-US;mso-fareast-language:EN-US;
+mso-bidi-language:AR-SA'>wsdl</SPAN><SPAN style='font-size:10.0pt;
+font-family:Arial;mso-fareast-font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman";letter-spacing:-.25pt;mso-ansi-language:EN-US;mso-fareast-language:
+EN-US;mso-bidi-language:AR-SA'> directory tree may be collapsed to a flat
+      published directory structure (updating import
+      statements appropriately). Clients should
+      not depend on the </SPAN><SPAN style='font-size:10.0pt;font-family:"Courier New";
+mso-fareast-font-family:"Times New Roman";letter-spacing:-.25pt;mso-ansi-language:
+EN-US;mso-fareast-language:EN-US;mso-bidi-language:AR-SA'>wsdl </SPAN><SPAN style='font-size:10.0pt;font-family:Arial;mso-fareast-font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman";letter-spacing:-.25pt;mso-ansi-language:
+EN-US;mso-fareast-language:EN-US;mso-bidi-language:AR-SA'>directory structure being maintained during
+      publication. Access to relatively imported
+      documents should only be attempted by traversing
+      the published WSDL document at the location
+      chosen by the deployer.</SPAN></BLOCKQUOTE>
+      </TD>
+    </TR>
+		<TR>
+			<TD>11</TD><TD>Clarify resource access from handlers</TD><TD>Section 6.2.3, replace:
+      <BLOCKQUOTE><SPAN style='font-size:10.0pt;font-family:Arial;
+mso-fareast-font-family:"Times New Roman";mso-bidi-font-family:"Times New Roman";
+letter-spacing:-.25pt;mso-ansi-language:EN-US;mso-fareast-language:EN-US;
+mso-bidi-language:AR-SA'>A Handler may access transactional resources
+      in a local transaction mode.</SPAN></BLOCKQUOTE>
+      <P><SPAN style='font-size:10.0pt;font-family:Arial;
+mso-fareast-font-family:"Times New Roman";mso-bidi-font-family:"Times New Roman";
+letter-spacing:-.25pt;mso-ansi-language:EN-US;mso-fareast-language:EN-US;
+mso-bidi-language:AR-SA'></SPAN><SPAN style='font-size:10.0pt;font-family:Arial;
+mso-fareast-font-family:"Times New Roman";mso-bidi-font-family:"Times New Roman";
+letter-spacing:-.25pt;mso-ansi-language:EN-US;mso-fareast-language:EN-US;
+mso-bidi-language:AR-SA'>with</SPAN></P>
+      <BLOCKQUOTE><SPAN style='font-size:10.0pt;font-family:Arial;
+mso-fareast-font-family:"Times New Roman";mso-bidi-font-family:"Times New Roman";
+letter-spacing:-.25pt;mso-ansi-language:EN-US;mso-fareast-language:EN-US;
+mso-bidi-language:AR-SA'>A Handler may access transactional resources
+      defined by a component's resource-refs.</SPAN> <SPAN style='font-size:10.0pt;font-family:Arial;
+mso-fareast-font-family:"Times New Roman";mso-bidi-font-family:"Times New Roman";
+letter-spacing:-.25pt;mso-ansi-language:EN-US;mso-fareast-language:EN-US;
+mso-bidi-language:AR-SA'>Resources are accessed under a transaction
+      context according to section </SPAN><SPAN style='font-size:10.0pt;font-family:Arial;mso-fareast-font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman";letter-spacing:-.25pt;mso-ansi-language:
+EN-US;mso-fareast-language:EN-US;mso-bidi-language:AR-SA'>6.2.2.3</SPAN><SPAN style='font-size:10.0pt;font-family:Arial;mso-fareast-font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman";letter-spacing:-.25pt;mso-ansi-language:
+EN-US;mso-fareast-language:EN-US;mso-bidi-language:AR-SA'>.</SPAN></BLOCKQUOTE>
+      </TD>
+			
+			
+		</TR>
+		<TR>
+			<TD>12</TD><TD>Clarify request 9</TD><TD>
+      <P>Section 4.2.24, replace:</P>
+      <BLOCKQUOTE>The port address location attribute may be
+      absent from the WSDL or may be a dummy
+      value.</BLOCKQUOTE>
+      <P>with:</P>
+      <BLOCKQUOTE>The port address location attribute of a
+      port using a SOAP/HTTP binding must begin
+      with http: or https:.</BLOCKQUOTE>
+      Section 8.1, replace:
+      <BLOCKQUOTE><SPAN style='font-size:10.0pt;font-family:Arial;
+mso-fareast-font-family:"Times New Roman";mso-bidi-font-family:"Times New Roman";
+letter-spacing:-.25pt;mso-ansi-language:EN-US;mso-fareast-language:EN-US;
+mso-bidi-language:AR-SA'>The WSDL port address for the Port component
+      is the combination of the web app </SPAN><SPAN style='font-size:10.0pt;font-family:
+"Courier New";mso-fareast-font-family:"Times New Roman";letter-spacing:-.25pt;
+mso-ansi-language:EN-US;mso-fareast-language:EN-US;mso-bidi-language:AR-SA'>context-root</SPAN><SPAN style='font-size:10.0pt;font-family:Arial;mso-fareast-font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman";letter-spacing:-.25pt;mso-ansi-language:
+EN-US;mso-fareast-language:EN-US;mso-bidi-language:AR-SA'> and servlet </SPAN><SPAN style='font-size:10.0pt;font-family:"Courier New";mso-fareast-font-family:"Times New Roman";
+letter-spacing:-.25pt;mso-ansi-language:EN-US;mso-fareast-language:EN-US;
+mso-bidi-language:AR-SA'>url-pattern.</SPAN></BLOCKQUOTE>
+      <P>with:</P>
+      <BLOCKQUOTE><SPAN style='font-size:10.0pt;font-family:Arial;
+mso-fareast-font-family:"Times New Roman";mso-bidi-font-family:"Times New Roman";
+letter-spacing:-.25pt;mso-ansi-language:EN-US;mso-fareast-language:EN-US;
+mso-bidi-language:AR-SA'>The WSDL port address for the Port component
+      is the combination of the web app </SPAN><SPAN style='font-size:10.0pt;font-family:
+"Courier New";mso-fareast-font-family:"Times New Roman";letter-spacing:-.25pt;
+mso-ansi-language:EN-US;mso-fareast-language:EN-US;mso-bidi-language:AR-SA'>context-root</SPAN><SPAN style='font-size:10.0pt;font-family:Arial;mso-fareast-font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman";letter-spacing:-.25pt;mso-ansi-language:
+EN-US;mso-fareast-language:EN-US;mso-bidi-language:AR-SA'> and </SPAN><SPAN style='font-size:10.0pt;font-family:"Courier New";mso-fareast-font-family:"Times New Roman";
+letter-spacing:-.25pt;mso-ansi-language:EN-US;mso-fareast-language:EN-US;
+mso-bidi-language:AR-SA'>url-pattern of the servlet-mapping.</SPAN></BLOCKQUOTE>
+      </TD>
+			
+			
+		</TR>
+		<TR>
+			<TD>13</TD><TD>Correct WSDL filenames</TD><TD>Section (newly renumbered) 8.2.5, replace:
+      <BLOCKQUOTE><SPAN style='font-size:10.0pt;font-family:"Courier New";
+mso-fareast-font-family:"Times New Roman";letter-spacing:-.25pt;mso-ansi-language:
+EN-US;mso-fareast-language:EN-US;mso-bidi-language:AR-SA'>StockQuoteDescription.xml</SPAN><SPAN style='font-size:10.0pt;font-family:Arial;mso-fareast-font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman";letter-spacing:-.25pt;mso-ansi-language:
+EN-US;mso-fareast-language:EN-US;mso-bidi-language:AR-SA'></SPAN></BLOCKQUOTE>
+      <P>with:</P>
+      <BLOCKQUOTE><SPAN style='font-size:10.0pt;font-family:"Courier New";
+mso-fareast-font-family:"Times New Roman";letter-spacing:-.25pt;mso-ansi-language:
+EN-US;mso-fareast-language:EN-US;mso-bidi-language:AR-SA'>StockQuoteDescription.wsdl</SPAN><SPAN style='font-size:10.0pt;font-family:Arial;mso-fareast-font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman";letter-spacing:-.25pt;mso-ansi-language:
+EN-US;mso-fareast-language:EN-US;mso-bidi-language:AR-SA'></SPAN></BLOCKQUOTE>
+      </TD>
+			
+			
+		</TR>
+		<TR>
+			<TD>14</TD><TD>Remove redundant text.</TD><TD>Section 9.1.1, remove:
+      <BLOCKQUOTE><SPAN style='font-size:10.0pt;font-family:Arial;
+mso-fareast-font-family:"Times New Roman";mso-bidi-font-family:"Times New Roman";
+letter-spacing:-.25pt;mso-ansi-language:EN-US;mso-fareast-language:EN-US;
+mso-bidi-language:AR-SA'>J2EE application server can handle the request
+      similar to how it handles other HTTP
+      requests.</SPAN></BLOCKQUOTE>
+      </TD>
+			
+			
+		</TR>
+		<TR>
+			<TD>15</TD><TD>Clarify request 10</TD><TD>Section 8.2.5, add:
+      <BLOCKQUOTE><SPAN style='font-size:10.0pt;font-family:Arial;
+mso-fareast-font-family:"Times New Roman";mso-bidi-font-family:"Times New Roman";
+letter-spacing:-.25pt;mso-ansi-language:EN-US;mso-fareast-language:EN-US;
+mso-bidi-language:AR-SA'>A vendor may support publication of WSDL
+      files packaged in other locations,
+      but these
+      are considered non-portable. </SPAN></BLOCKQUOTE>
+      </TD>
+			
+			
+		</TR>
+		<TR>
+			<TD>16</TD><TD>Add support for xsd:any</TD><TD>Add  new section 7.3.2.1 Mapping xsd:any:
+			<BLOCKQUOTE>
+			<P><SPAN style='font-size: 10.0pt; font-family: Arial; mso-fareast-font-family: "Times New Roman"; mso-bidi-font-family: "Times New Roman"; letter-spacing: -.25pt; mso-ansi-language: EN-US; mso-fareast-language: EN-US; mso-bidi-language: AR-SA'>Mapping for </SPAN><SPAN class="codeChar"><SPAN style='font-size: 9.0pt; mso-bidi-font-size: 10.0pt; font-family: "Courier New"; mso-fareast-font-family: "Times New Roman"; mso-bidi-font-family: "Times New Roman"'>xsd:any</SPAN></SPAN><SPAN style='font-size: 10.0pt; font-family: Arial; mso-fareast-font-family: "Times New Roman"; mso-bidi-font-family: "Times New Roman"; letter-spacing: -.25pt; mso-ansi-language: EN-US; mso-fareast-language: EN-US; mso-bidi-language: AR-SA'>
+			is described by the JAX-RPC specification.<SPAN style="mso-spacerun: yes">&nbsp; </SPAN>JAX-RPC
+			defines this as a mapping to/from </SPAN><SPAN class="codeChar"><SPAN style='font-size: 9.0pt; mso-bidi-font-size: 10.0pt; font-family: "Courier New"; mso-fareast-font-family: "Times New Roman"; mso-bidi-font-family: "Times New Roman"'>javax.xml.soap.SoapElement</SPAN></SPAN><SPAN style='font-size: 10.0pt; font-family: Arial; mso-fareast-font-family: "Times New Roman"; mso-bidi-font-family: "Times New Roman"; letter-spacing: -.25pt; mso-ansi-language: EN-US; mso-fareast-language: EN-US; mso-bidi-language: AR-SA'>
+			or an array of type </SPAN><SPAN class="codeChar"><SPAN style='font-size: 9.0pt; mso-bidi-font-size: 10.0pt; font-family: "Courier New"; mso-fareast-font-family: "Times New Roman"; mso-bidi-font-family: "Times New Roman"'>SoapElement</SPAN></SPAN><SPAN style='font-size: 10.0pt; font-family: Arial; mso-fareast-font-family: "Times New Roman"; mso-bidi-font-family: "Times New Roman"; letter-spacing: -.25pt; mso-ansi-language: EN-US; mso-fareast-language: EN-US; mso-bidi-language: AR-SA'>.<SPAN style="mso-spacerun: yes">&nbsp; </SPAN></SPAN></P>
+			</BLOCKQUOTE></TD>
+			
+			
+		</TR>
+		<TR>
+			<TD>17</TD><TD>Add support for anonymous types</TD><TD>Add section 7.3.2.2 Mapping anonymous types:
+			<BLOCKQUOTE>
+			<P class="MsoBodyText">Anonymous types require some special handling
+			in order to provide a mapping. Anonymous types have no QName, but
+			dealing with mappings, serializers, and deserializers becomes much
+			easier if they are assigned QNames. Anonymous types are treated as
+			root WSDL types with special QNames and are mapped using the
+			java-xml-type-mapping. In order to achieve some portability in
+			determining what anonymous type a java-xml-type-mapping refers to,
+			the following rules must be used.</P>
+			<P class="MsoListNumber" style="mso-list: l299 level1 lfo478">1.<SPAN style='font: 7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			</SPAN>For type T, the localname of T is determined as follows:</P>
+
+			<P class="Listalpha2"><SPAN style="font-style: normal">a.<SPAN style='font: 7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			</SPAN></SPAN><SPAN style="font-style: normal">If T has a name
+			attribute, then it's name is the value of the name attribute</SPAN></P>
+
+			<P class="Listalpha2"><SPAN style="font-style: normal">b.<SPAN style='font: 7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			</SPAN></SPAN><SPAN style="font-style: normal">If T has no name
+			attribute, then its name is�&gt;E� where E is the name of its
+			enclosing element.</SPAN></P>
+
+			<P class="MsoListNumber">2.<SPAN style='font: 7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			</SPAN>For element E, the localname of E is:</P>
+
+			<P class="MsoListContinue" style="text-indent: 0in; mso-list: l383 level1 lfo479; tab-stops: 1.25in">a.<SPAN style="mso-tab-count: 1"> </SPAN>If E is at the root level, then the
+			name is �N� where N is the value of the name attribute.</P>
+
+			<P class="MsoListContinue" style="text-indent: 0in; mso-list: l156 level1 lfo480; tab-stops: 1.25in">b.<SPAN style="mso-tab-count: 1"> </SPAN>If E is not at the root level, then
+			the name �T&gt;N� where T is the name of the enclosing type and N is
+			the value of the name attribute.</P>
+
+			<P class="MsoListNumber"><A name="_Ref369802480">3.<SPAN style='font: 7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			</SPAN>If element E has a maxOccurs attribute greater than 1, then
+			it also has a 'hidden' anonymous type called A.<SPAN style="mso-spacerun: yes">&nbsp; </SPAN>A is an array of the
+			enclosed type.<SPAN style="mso-spacerun: yes">&nbsp; </SPAN>The name
+			of A is...</A></P>
+
+			<P class="MsoListContinue" style="text-indent: 0in; mso-list: l112 level1 lfo481; tab-stops: 1.25in">a.<SPAN style="mso-tab-count: 1"> </SPAN>If E has a name attribute, then the
+			name of A is
+			&quot;E[&lt;minOccursValue&gt;,&lt;maxOccursValue&gt;]&quot; where E
+			is the value of E�s name attribute.</P>
+
+			<P class="MsoListContinue" style="text-indent: 0in; mso-list: l93 level1 lfo482; tab-stops: 1.25in">b.<SPAN style="mso-tab-count: 1"> </SPAN>If E has no name attribute, then
+			the name of A is
+			&quot;R[&lt;minOccursValue&gt;,&lt;maxOccursValue&gt;]&quot; where R
+			is the name of the referent element.</P>
+
+			<P class="MsoBodyText">Note that only root level types and elements
+			have a namespace, so all anonymous types acquire their namespaces
+			from the enclosing root level element or type.</P>
+
+
+			
+
+			<P class="MsoBodyText">Hidden anonymous array types, as defined in
+			rule 3, are declared in a param-type element as the name of the Java
+			type of type T appended with �[]� if the mapping is to a Java array.
+			This is the only supported and portable mapping for hidden anonymous
+			array types at this time. <SPAN style="mso-spacerun: yes">&nbsp;</SPAN></P>
+			<P class="MsoBodyText">The following example will help illustrate
+			anonymous types and their mappings. Example name rule uses are underlined:</P>
+
+			
+			<P class="code"><SPAN style="color: black">&lt;schema �
+			targetNamespace=�X�&gt;</SPAN></P>
+
+			<P class="code"><SPAN style="color: black">&lt;<U>complexType</U></SPAN><U><SPAN style="font-family: Helv; mso-text-raise: 3.0pt; letter-spacing: 0pt">1</SPAN></U><SPAN style="color: black"> name=�root�&gt;</SPAN></P>
+
+			<P class="code"><SPAN style="color: black"><SPAN style="mso-tab-count: 1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </SPAN>�</SPAN></P>
+
+			<P class="code"><SPAN style="color: black">&lt;/complexType&gt;</SPAN></P>
+
+			<P class="code"><SPAN style="color: black">&lt;</SPAN><U>element</U><U><SPAN style="font-family: Courier; mso-text-raise: 3.0pt">2</SPAN></U><SPAN style="color: black"> name=&quot;root&quot; </SPAN><U><SPAN style="font-family: Courier">minOccurs=&quot;0&quot;
+			maxOccurs=&quot;unbounded&quot;<SPAN style="mso-text-raise: 3.0pt">3</SPAN></SPAN></U><SPAN style="color: black">&gt;</SPAN></P>
+
+			<P class="code"><SPAN style="color: black"><SPAN style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp; </SPAN>&lt;</SPAN><U><SPAN style="font-family: Courier">complexType<SPAN style="mso-text-raise: 3.0pt">4</SPAN></SPAN></U><SPAN style="color: black">&gt;</SPAN></P>
+
+			<P class="code"><SPAN style="color: black"><SPAN style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			</SPAN>&lt;sequence&gt;</SPAN></P>
+
+			<P class="code"><SPAN style="color: black"><SPAN style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			</SPAN>&lt;<U>element</U></SPAN><U><SPAN style="font-family: Courier; mso-text-raise: 3.0pt">5</SPAN></U><SPAN style="color: black"> name=&quot;inside&quot; </SPAN><U><SPAN style="font-family: Courier">maxOccurs=&quot;10&quot;<SPAN style="mso-text-raise: 3.0pt">6</SPAN></SPAN></U><SPAN style="color: black">&gt;</SPAN></P>
+
+			<P class="code"><SPAN style="color: black"><SPAN style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			</SPAN>&lt;</SPAN><U><SPAN style="font-family: Courier">complexType<SPAN style="mso-text-raise: 3.0pt">7</SPAN></SPAN></U><SPAN style="color: black">&gt;</SPAN></P>
+
+			<P class="code"><SPAN style="color: black"><SPAN style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			</SPAN>...</SPAN></P>
+
+			<P class="code"><SPAN style="color: black"><SPAN style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			</SPAN>&lt;/complexType&gt;</SPAN></P>
+
+			<P class="code"><SPAN style="color: black"><SPAN style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			</SPAN>&lt;/element&gt;</SPAN></P>
+
+			<P class="code"><SPAN style="color: black"><SPAN style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			</SPAN>&lt;element ref=&quot;someOtherElement&quot; </SPAN><U><SPAN style="font-family: Courier">maxOccurs=&quot;20&quot;<SPAN style="mso-text-raise: 3.0pt">8</SPAN></SPAN></U><SPAN style="color: black">/&gt;</SPAN></P>
+
+			<P class="code"><SPAN style="color: black"><SPAN style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			</SPAN>&lt;/sequence&gt;</SPAN></P>
+
+			<P class="code"><SPAN style="color: black"><SPAN style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp; </SPAN>&lt;/complexType&gt;</SPAN></P>
+
+			<P class="code"><SPAN style="color: black">&lt;/element&gt;</SPAN></P>
+
+			<P class="code"><SPAN style='font-size: 10.0pt; font-family: Arial; mso-fareast-font-family: "Times New Roman"; mso-bidi-font-family: "Times New Roman"; color: black; letter-spacing: -.25pt; mso-ansi-language: EN-US; mso-fareast-language: EN-US; mso-bidi-language: AR-SA'>&lt;</SPAN><U><SPAN style='font-size: 10.0pt; font-family: Arial; mso-fareast-font-family: "Times New Roman"; mso-bidi-font-family: "Times New Roman"; letter-spacing: -.25pt; mso-ansi-language: EN-US; mso-fareast-language: EN-US; mso-bidi-language: AR-SA'>
+			element</SPAN><SPAN style='font-size: 10.0pt; font-family: Courier; mso-fareast-font-family: "Times New Roman"; mso-bidi-font-family: "Times New Roman"; mso-text-raise: 3.0pt; letter-spacing: -.25pt; mso-ansi-language: EN-US; mso-fareast-language: EN-US; mso-bidi-language: AR-SA'>9</SPAN></U><SPAN style='font-size: 10.0pt; font-family: Arial; mso-fareast-font-family: "Times New Roman"; mso-bidi-font-family: "Times New Roman"; color: black; letter-spacing: -.25pt; mso-ansi-language: EN-US; mso-fareast-language: EN-US; mso-bidi-language: AR-SA'>
+			name=�someOtherElement� type=�xsd:int�&gt;</SPAN></P>
+
+
+
+			<P class="MsoBodyText"><SPAN style='font-size: 10.0pt; font-family: Arial; mso-fareast-font-family: "Times New Roman"; mso-bidi-font-family: "Times New Roman"; letter-spacing: -.25pt; mso-ansi-language: EN-US; mso-fareast-language: EN-US; mso-bidi-language: AR-SA'>There
+			are 9 named types. Their names are defined as:</SPAN></P>
+
+			
+			
+
+			<TABLE border="1" cellspacing="0" cellpadding="0" style="margin-left: .25in; border-collapse: collapse; border: none; mso-border-alt: double black 2.25pt; mso-padding-alt: 0in 5.4pt 0in 5.4pt">
+				<TBODY>
+					<TR>
+						<TD width="81" valign="top" style="width: 60.55pt; border-top: double 2.25pt; border-left: double 2.25pt; border-bottom: solid .75pt; border-right: solid .75pt; border-color: black; padding: 0in 5.4pt 0in 5.4pt">
+						<P class="MsoBodyText" style="margin-left: 0in"><B><SPAN style="text-transform: uppercase">Use case</SPAN></B></P>
+						</TD>
+						<TD width="142" valign="top" style="width: 106.7pt; border-top: double black 2.25pt; border-left: none; border-bottom: solid black .75pt; border-right: solid black .75pt; mso-border-left-alt: solid black .75pt; padding: 0in 5.4pt 0in 5.4pt">
+						<P class="MsoBodyText" style="margin-left: 0in"><B><SPAN style="text-transform: uppercase">Rule based name</SPAN></B></P>
+						</TD>
+						<TD width="121" valign="top" style="width: 90.65pt; border-top: double black 2.25pt; border-left: none; border-bottom: solid black .75pt; border-right: double black 2.25pt; mso-border-left-alt: solid black .75pt; padding: 0in 5.4pt 0in 5.4pt">
+						<P class="MsoBodyText" style="margin-left: 0in"><B><SPAN style="text-transform: uppercase">Based on rule</SPAN></B></P>
+						</TD>
+					</TR>
+					<TR>
+						<TD width="81" valign="top" style="width: 60.55pt; border-top: none; border-left: double black 2.25pt; border-bottom: solid black .75pt; border-right: solid black .75pt; mso-border-top-alt: solid black .75pt; padding: 0in 5.4pt 0in 5.4pt">
+						<P class="MsoBodyText" style="margin-left: 0in"><U><SPAN style="font-family: Helv; mso-text-raise: 3.0pt; letter-spacing: 0pt">1</SPAN></U></P>
+						</TD>
+						<TD width="142" valign="top" style="width: 106.7pt; border-top: none; border-left: none; border-bottom: solid black .75pt; border-right: solid black .75pt; mso-border-top-alt: solid black .75pt; mso-border-left-alt: solid black .75pt; padding: 0in 5.4pt 0in 5.4pt">
+						<P class="MsoBodyText" style="margin-left: 0in">{X}root</P>
+						</TD>
+						<TD width="121" valign="top" style="width: 90.65pt; border-top: none; border-left: none; border-bottom: solid black .75pt; border-right: double black 2.25pt; mso-border-top-alt: solid black .75pt; mso-border-left-alt: solid black .75pt; padding: 0in 5.4pt 0in 5.4pt">
+						<P class="MsoBodyText" style="margin-left: 0in">Rule 1.a</P>
+						</TD>
+					</TR>
+					<TR>
+						<TD width="81" valign="top" style="width: 60.55pt; border-top: none; border-left: double black 2.25pt; border-bottom: solid black .75pt; border-right: solid black .75pt; mso-border-top-alt: solid black .75pt; padding: 0in 5.4pt 0in 5.4pt">
+						<P class="MsoBodyText" style="margin-left: 0in"><U><SPAN style="font-family: Courier; mso-text-raise: 3.0pt">2</SPAN></U></P>
+						</TD>
+						<TD width="142" valign="top" style="width: 106.7pt; border-top: none; border-left: none; border-bottom: solid black .75pt; border-right: solid black .75pt; mso-border-top-alt: solid black .75pt; mso-border-left-alt: solid black .75pt; padding: 0in 5.4pt 0in 5.4pt">
+						<P class="MsoBodyText" style="margin-left: 0in">{X}root</P>
+						</TD>
+						<TD width="121" valign="top" style="width: 90.65pt; border-top: none; border-left: none; border-bottom: solid black .75pt; border-right: double black 2.25pt; mso-border-top-alt: solid black .75pt; mso-border-left-alt: solid black .75pt; padding: 0in 5.4pt 0in 5.4pt">
+						<P class="MsoBodyText" style="margin-left: 0in">Rule 2.a</P>
+						</TD>
+					</TR>
+					<TR>
+						<TD width="81" valign="top" style="width: 60.55pt; border-top: none; border-left: double black 2.25pt; border-bottom: solid black .75pt; border-right: solid black .75pt; mso-border-top-alt: solid black .75pt; padding: 0in 5.4pt 0in 5.4pt">
+						<P class="MsoBodyText" style="margin-left: 0in"><U><SPAN style="font-family: Courier; mso-text-raise: 3.0pt">3</SPAN></U></P>
+						</TD>
+						<TD width="142" valign="top" style="width: 106.7pt; border-top: none; border-left: none; border-bottom: solid black .75pt; border-right: solid black .75pt; mso-border-top-alt: solid black .75pt; mso-border-left-alt: solid black .75pt; padding: 0in 5.4pt 0in 5.4pt">
+						<P class="MsoBodyText" style="margin-left: 0in">{X}root[0,unbounded]</P>
+						</TD>
+						<TD width="121" valign="top" style="width: 90.65pt; border-top: none; border-left: none; border-bottom: solid black .75pt; border-right: double black 2.25pt; mso-border-top-alt: solid black .75pt; mso-border-left-alt: solid black .75pt; padding: 0in 5.4pt 0in 5.4pt">
+						<P class="MsoBodyText" style="margin-left: 0in"><U><SPAN style="font-family: Courier; mso-text-raise: 3.0pt">2</SPAN></U>
+						and rule 3.a</P>
+						</TD>
+					</TR>
+					<TR>
+						<TD width="81" valign="top" style="width: 60.55pt; border-top: none; border-left: double black 2.25pt; border-bottom: solid black .75pt; border-right: solid black .75pt; mso-border-top-alt: solid black .75pt; padding: 0in 5.4pt 0in 5.4pt">
+						<P class="MsoBodyText" style="margin-left: 0in"><U><SPAN style="font-family: Courier; mso-text-raise: 3.0pt">4</SPAN></U></P>
+						</TD>
+						<TD width="142" valign="top" style="width: 106.7pt; border-top: none; border-left: none; border-bottom: solid black .75pt; border-right: solid black .75pt; mso-border-top-alt: solid black .75pt; mso-border-left-alt: solid black .75pt; padding: 0in 5.4pt 0in 5.4pt">
+						<P class="MsoBodyText" style="margin-left: 0in">{X}&gt;root</P>
+						</TD>
+						<TD width="121" valign="top" style="width: 90.65pt; border-top: none; border-left: none; border-bottom: solid black .75pt; border-right: double black 2.25pt; mso-border-top-alt: solid black .75pt; mso-border-left-alt: solid black .75pt; padding: 0in 5.4pt 0in 5.4pt">
+						<P class="MsoBodyText" style="margin-left: 0in"><U><SPAN style="font-family: Courier; mso-text-raise: 3.0pt">2</SPAN></U>
+						and rule 1.b</P>
+						</TD>
+					</TR>
+					<TR>
+						<TD width="81" valign="top" style="width: 60.55pt; border-top: none; border-left: double black 2.25pt; border-bottom: solid black .75pt; border-right: solid black .75pt; mso-border-top-alt: solid black .75pt; padding: 0in 5.4pt 0in 5.4pt">
+						<P class="MsoBodyText" style="margin-left: 0in"><U><SPAN style="font-family: Courier; mso-text-raise: 3.0pt">5</SPAN></U></P>
+						</TD>
+						<TD width="142" valign="top" style="width: 106.7pt; border-top: none; border-left: none; border-bottom: solid black .75pt; border-right: solid black .75pt; mso-border-top-alt: solid black .75pt; mso-border-left-alt: solid black .75pt; padding: 0in 5.4pt 0in 5.4pt">
+						<P class="MsoBodyText" style="margin-left: 0in">{X}&gt;root&gt;inside</P>
+						</TD>
+						<TD width="121" valign="top" style="width: 90.65pt; border-top: none; border-left: none; border-bottom: solid black .75pt; border-right: double black 2.25pt; mso-border-top-alt: solid black .75pt; mso-border-left-alt: solid black .75pt; padding: 0in 5.4pt 0in 5.4pt">
+						<P class="MsoBodyText" style="margin-left: 0in"><U><SPAN style="font-family: Courier; mso-text-raise: 3.0pt">4</SPAN></U>
+						and rule 2.b</P>
+						</TD>
+					</TR>
+					<TR>
+						<TD width="81" valign="top" style="width: 60.55pt; border-top: none; border-left: double black 2.25pt; border-bottom: solid black .75pt; border-right: solid black .75pt; mso-border-top-alt: solid black .75pt; padding: 0in 5.4pt 0in 5.4pt">
+						<P class="MsoBodyText" style="margin-left: 0in"><U><SPAN style="font-family: Courier; mso-text-raise: 3.0pt">6</SPAN></U></P>
+						</TD>
+						<TD width="142" valign="top" style="width: 106.7pt; border-top: none; border-left: none; border-bottom: solid black .75pt; border-right: solid black .75pt; mso-border-top-alt: solid black .75pt; mso-border-left-alt: solid black .75pt; padding: 0in 5.4pt 0in 5.4pt">
+						<P class="MsoBodyText" style="margin-left: 0in">{X}&gt;root&gt;inside[,10]</P>
+						</TD>
+						<TD width="121" valign="top" style="width: 90.65pt; border-top: none; border-left: none; border-bottom: solid black .75pt; border-right: double black 2.25pt; mso-border-top-alt: solid black .75pt; mso-border-left-alt: solid black .75pt; padding: 0in 5.4pt 0in 5.4pt">
+						<P class="MsoBodyText" style="margin-left: 0in"><U><SPAN style="font-family: Courier; mso-text-raise: 3.0pt">5</SPAN></U>
+						and rule 3.a</P>
+						</TD>
+					</TR>
+					<TR>
+						<TD width="81" valign="top" style="width: 60.55pt; border-top: none; border-left: double black 2.25pt; border-bottom: solid black .75pt; border-right: solid black .75pt; mso-border-top-alt: solid black .75pt; padding: 0in 5.4pt 0in 5.4pt">
+						<P class="MsoBodyText" style="margin-left: 0in"><U><SPAN style="font-family: Courier; mso-text-raise: 3.0pt">7</SPAN></U></P>
+						</TD>
+						<TD width="142" valign="top" style="width: 106.7pt; border-top: none; border-left: none; border-bottom: solid black .75pt; border-right: solid black .75pt; mso-border-top-alt: solid black .75pt; mso-border-left-alt: solid black .75pt; padding: 0in 5.4pt 0in 5.4pt">
+						<P class="MsoBodyText" style="margin-left: 0in">{X}&gt;&gt;root&gt;inside</P>
+						</TD>
+						<TD width="121" valign="top" style="width: 90.65pt; border-top: none; border-left: none; border-bottom: solid black .75pt; border-right: double black 2.25pt; mso-border-top-alt: solid black .75pt; mso-border-left-alt: solid black .75pt; padding: 0in 5.4pt 0in 5.4pt">
+						<P class="MsoBodyText" style="margin-left: 0in"><U><SPAN style="font-family: Courier; mso-text-raise: 3.0pt">5</SPAN></U>
+						and rule 1.b</P>
+						</TD>
+					</TR>
+					<TR>
+						<TD width="81" valign="top" style="width: 60.55pt; border-top: none; border-left: double black 2.25pt; border-bottom: solid black .75pt; border-right: solid black .75pt; mso-border-top-alt: solid black .75pt; padding: 0in 5.4pt 0in 5.4pt">
+						<P class="MsoBodyText" style="margin-left: 0in"><U><SPAN style="font-family: Courier; mso-text-raise: 3.0pt">8</SPAN></U></P>
+						</TD>
+						<TD width="142" valign="top" style="width: 106.7pt; border-top: none; border-left: none; border-bottom: solid black .75pt; border-right: solid black .75pt; mso-border-top-alt: solid black .75pt; mso-border-left-alt: solid black .75pt; padding: 0in 5.4pt 0in 5.4pt">
+						<P class="MsoBodyText" style="margin-left: 0in">{X}someOtherElement[,20]</P>
+						</TD>
+						<TD width="121" valign="top" style="width: 90.65pt; border-top: none; border-left: none; border-bottom: solid black .75pt; border-right: double black 2.25pt; mso-border-top-alt: solid black .75pt; mso-border-left-alt: solid black .75pt; padding: 0in 5.4pt 0in 5.4pt">
+						<P class="MsoBodyText" style="margin-left: 0in"><U><SPAN style="font-family: Courier; mso-text-raise: 3.0pt">9</SPAN></U>
+						and rule 3.b</P>
+						</TD>
+					</TR>
+					<TR>
+						<TD width="81" valign="top" style="width: 60.55pt; border-top: none; border-left: double black 2.25pt; border-bottom: double black 2.25pt; border-right: solid black .75pt; mso-border-top-alt: solid black .75pt; padding: 0in 5.4pt 0in 5.4pt">
+						<P class="MsoBodyText" style="margin-left: 0in"><U><SPAN style="font-family: Courier; mso-text-raise: 3.0pt">9</SPAN></U></P>
+						</TD>
+						<TD width="142" valign="top" style="width: 106.7pt; border-top: none; border-left: none; border-bottom: double black 2.25pt; border-right: solid black .75pt; mso-border-top-alt: solid black .75pt; mso-border-left-alt: solid black .75pt; padding: 0in 5.4pt 0in 5.4pt">
+						<P class="MsoBodyText" style="margin-left: 0in">{X}someOtherElement</P>
+						</TD>
+						<TD width="121" valign="top" style="width: 90.65pt; border-top: none; border-left: none; border-bottom: double black 2.25pt; border-right: double black 2.25pt; mso-border-top-alt: solid black .75pt; mso-border-left-alt: solid black .75pt; padding: 0in 5.4pt 0in 5.4pt">
+						<P class="MsoBodyText" style="margin-left: 0in">Rule 2.a</P>
+						</TD>
+					</TR>
+				</TBODY>
+			</TABLE>
+
+			<P class="MsoListBullet" style="margin-left: 0in; text-indent: 0in; mso-list: none; tab-stops: .5in">&nbsp;</P>
+
+
+
+			</BLOCKQUOTE>
+			
+			</TD>
+			
+			
+		</TR>
+		<TR>
+			<TD>18</TD><TD>Update Interoperability Requirements</TD><TD>Section 3.7, add a bullet:<BR>
+			<UL>
+				<LI>WS-I Basic Profile 1.0</LI>
+			</UL>Section 8.1, add a paragraph:
+			<BLOCKQUOTE>It is recommended that containers provide logging functionality similar to that of the WS-I &quot;Monitor&quot; tool. Such contains would log all incoming and outgoing messages in the format defined by the WS-I Testing Tools group and would allow capturing SOAP messages exchanged over the HTTPS protocol in a way that allows analysis by the WS-I tools.</BLOCKQUOTE>
+			Section 8.2.1, add a paragraph:
+			<BLOCKQUOTE>A deployment tool must be able to deploy a WS-I Basic Profile 1.0 compliant application. Validating an application for WS-I Basic Profile 1.0 conformance is considered a value add.</BLOCKQUOTE>New Section 8.2.5, add a paragraph:
+			<BLOCKQUOTE>Requirements for publishing WSDL documents to a UDDI V2 directory are described by the WS-I Basic Profile 1.0 specification.</BLOCKQUOTE></TD>
+			
+			
+		</TR>
+		<TR>
+			<TD>19</TD><TD>Correct namespace</TD><TD>Section 6.2.2.2, replace
+			<BLOCKQUOTE><SPAN style='font-size: 10.0pt; mso-bidi-font-size: 8.5pt; font-family: Courier; mso-fareast-font-family: "Times New Roman"; mso-bidi-font-family: "Times New Roman"; mso-ansi-language: EN-US; mso-fareast-language: EN-US; mso-bidi-language: AR-SA'><A href="http://www.w3.org/2001/09/soap-envelope">http://www.w3.org/2001/09/soap-envelope</A></SPAN></BLOCKQUOTE>with:
+			<BLOCKQUOTE>http://schemas.xmlsoap.org/soap/envelope/</BLOCKQUOTE></TD>
+			
+			
+		</TR>
+		<TR>
+			<TD>20</TD><TD>Clarify interoperability requirements</TD><TD>Section 4.2 and 5.6, add:
+			<BLOCKQUOTE>The container must comply with the JAX-RPC specification Chapter 14 Interoperability requirements.</BLOCKQUOTE>Section 6.1, add:
+			<BLOCKQUOTE>J2EE applications that define one or more port components or service references include WSDL descriptions for each of them as well as application logic and (optionally) SOAP message handlers associated with them. In order for such applications to behave predictably, all three elements (description, handlers and application logic) must be well aligned. Developers should program handlers carefully in order not to create invalid SOAP envelope format that contradicts WS-I BP 1.0 requirements or violates the message schema declared in the WSDL. In particular, containers cannot provide any guarantees beyond those specified as part of the interoperability requirements on the behavior of an application that violates the assumptions embedded in a WSDL document either in its business logic or in SOAP message handlers.</BLOCKQUOTE></TD>
+			
+			
+		</TR>
+	</TBODY>
+</TABLE>
+<P>Note: I looked at the Servlet 2.4 PFD and
+it doesn't appear that any change needs to
+be made to cover it.</P>
+<H2>Deferred Changes</H2>
+<P>Changes deferred by the EC move to this section.</P>
+</BODY>
+</HTML>
+
+
+
+
+<!-- ** BEGIN: footer.jsp ** //-->
+
+
+
+
+
+
+
+
+</td>
+</tr>
+</table>
+
+<!-- ** END: Content Table ** //-->
+
+<!-- ** BEGIN: Footer Table ** //-->
+
+<div id="footer" style="clear: both;">
+    <div class="footleft">
+        <a href="/en/resources/contacts">Contact Us</a>
+    </div>
+	
+    <div class="botbar"><img src="/images/spacer.gif" alt="" height="23" width="1"></div>
+
+    <div class="footleft2">
+         &copy; 2019, Oracle Corporation and/or its affiliates. 
+        <a href="/en/home/terms">Terms of Use</a>. <a href="http://www.oracle.com/us/legal/privacy/index.html">Privacy Policy</a>. <a href="http://www.oracle.com/us/legal/third-party-trademarks/third-party-trademarks-078568.html">Trademarks</a>
+    </div>
+
+    <div class="footright">
+        <img src="/images/common/logo_oracle_footer.gif" alt="Oracle Corporation" height="22" width="91">
+    </div>
+
+    <div style="clear: both;"><img src="/images/spacer.gif" alt="" height="30" width="1"></div>
+</div>
+
+<!-- ** END: Footer Table ** //-->
+
+
+
+<!-- ** Menu Start ** //-->
+
+
+
+</body>
+</html>
+<!-- ** END: footer.jsp ** //-->
+

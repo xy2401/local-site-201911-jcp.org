@@ -1,0 +1,782 @@
+
+<!-- ** BEGIN: header.jsp ** //-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3c.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+<head>
+    
+
+   
+    <link href="/includes/css/menu.css" rel="stylesheet" type="text/css"></link>
+    <link href="/includes/css/style.css" rel="stylesheet" type="text/css"></link>
+    <!--[if lt IE 6]><link href="/includes/css/style5.css" rel="stylesheet" type="text/css" ></link><![endif]-->
+    <!--[if gte IE 5]><link href="/includes/css/style6.css" rel="stylesheet" type="text/css" ></link><![endif]-->
+    <link href="/includes/css/tabs.css"  rel="stylesheet" type="text/css"></link>
+
+    <script type="text/javascript" src="/includes/scripts/tabs.js"></script>
+    <script type="text/javascript" src="/includes/scripts/menu.js"></script>
+   
+
+    
+
+    
+        <title>The Java Community Process(SM) Program - communityprocess - maintenance</title>
+    
+
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+
+
+<body onload="P7_initPM(0,1,0,0,-1)">
+
+    <a name="top"></a>
+
+    <div id="header">
+	<div id="logo">
+		<a href="/en/home/index"><img src="/images/spacer.gif" alt="Java Community Process" height="81" width="151"></a>
+	</div>
+	<div id="tools">
+		<div class="search">
+			<form name="search" action="/en/jsr/summary" method="get" onsubmit="return validate_search()">
+				<input name="id" value="Search JSRs" size="16" class="form" onfocus="nullify_if_equal(this, 'Search JSRs')" type="text">
+				<a href="javascript:document.search.submit()" onclick="return validate_search()"><img src="/images/button_go.gif" width="21" height="16" border="0" alt="Submit this Search" name="sub_search"></a>
+			</form>
+		</div>
+		<div class="tools">
+			<a href="/en/press/pressroom">Press Room</a> &nbsp;|&nbsp;
+			<a href="http://java.com/java/download/index.jsp?cid=jdp78399">Get Java Here</a> &nbsp;|&nbsp;
+			<!-- <a href="javascript:void(0)">Print Format</a> &nbsp;|&nbsp;&nbsp; -->
+		</div>
+
+	</div>
+	<div style="clear: right;"></div>
+
+        
+
+	<div class="topbar"><img src="/images/spacer.gif" alt="" height="3" width="154"></div>
+	<div id="update"> </div>
+    </div>
+
+
+    
+
+        <!-- ** BEGIN: Content Table ** //-->
+
+        <table width="100%" border="0" cellpadding="0" cellspacing="0">
+
+            <tr>
+
+                <!-- ** BEGIN: Navigation Column ** //-->
+                <td width="150" id="leftcontent" valign="top">
+                    <!-- Navigation Placeholder //-->
+
+                    
+
+                    <div class="bar"><img src="/images/hr_dots1.gif" alt="" height="3" width="150"></div>
+
+        <!-- begin find JSRs form -->
+        <!-- IMPORTANT! do not convert this form to Struts < html : form > tag.  javascript change of form.action property fails. -->
+        <img src="/images/hd_find-jsrs.gif" alt="Find JSRs" height="18" width="150">
+        <form name="findjsr" action="/en/jsr/summary" method="get" class="pt5" onsubmit="return validate_findjsr()">
+            <input name="id" size="18" class="form" value="Search JSRs" onfocus="nullify_if_equal(this, 'Search JSRs')" type="text">
+	    <a href="javascript:document.findjsr.submit()" onclick="return validate_findjsr()"><img src="/images/button_go.gif" width="21" height="16" border="0" alt="Submit this Search" name="sub_search"></a>
+        </form><br><br>
+
+        <!-- ** Menu Start ** //-->
+
+        <ul id="p7PMnav">
+            <li><a href="/en/jsr/platform">JSRs by Platform</a></li>
+            <li><a href="/en/jsr/tech">JSRs by Technology</a></li>
+            <li><a href="/en/jsr/stage">JSRs by Stage</a></li>
+            <li><a href="/en/jsr/ec">JSRs by Committee</a></li>
+            <li><a href="/en/jsr/all">List of All JSRs</a></li>
+
+            <!--end find JSRs form -->
+            <div style="clear: both;"><img src="/images/spacer.gif" alt="" height="25" width="1"></div>
+
+            <!--begin my JCP -->
+            <img src="/images/hd_my-jcp.gif" alt="My JCP" height="18" width="150">
+            
+
+          <form name="login" method="get" action="/en/user/login" >
+            <input name="Sign-in" type="submit" title="Sign-in" value="Sign-in" />
+          </form>
+
+            <div style="clear:both"><img src="/images/global/spacer.gif" width="1" height="3" alt=""></div>
+            <div class="noNav">
+                <a href="/en/user/register">Register for Site</a>
+            </div>
+
+             <div class="bar"><img src="/images/hr_dots1.gif" alt="" height="3" width="150"></div>
+           <div class="noNav" style="color: #666666; padding: 0;">
+              Use of JCP site is subject to the
+              <a href="/en/home/terms" style="display:inline;padding: 0">JCP Terms of Use</a> and the
+              <a href="http://www.oracle.com/us/legal/privacy/index.html" style="display:inline;padding: 0" href="">Oracle Privacy Policy</a>
+          </div>
+
+            
+
+            <div style="clear:both"><img src="/images/global/spacer.gif" width="1" height="25" alt=""></div>
+
+            <!--begin JCP info -->
+            <img src="/images/hd_jcp-info.gif" alt="JCP Info" height="18" width="150">
+
+            <li><a href="/en/procedures/overview" class="p7PMtrg">About JCP</a>
+                <ul>
+                    <li><a href="/en/procedures/overview">Program Overview</a></li>
+                    <li><a href="/en/procedures/jcp2">JCP Process Document</a></li>
+                    <li><a href="/en/whatsnew/calendar">Calendar</a></li>
+                    <li><a href="/en/participation/members">JCP Members</a></li>
+                    <li><a href="/en/participation/committee">Executive Committee</a></li>
+                    <li><a href="/en/whatsnew/elections">Elections</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/en/participation/overview" class="p7PMtrg">Get Involved</a>
+		<ul>
+                    <li><a href="/en/participation/overview">Overview</a></li>
+                    <li><a href="/en/participation/membership">Becoming a JCP Member</a></li>
+		</ul>
+            </li>
+
+            <li><a href="/en/resources/contents" class="p7PMtrg">Community Resources</a>
+                <ul>
+                    <li><a href="/en/resources/contents">Overview</a></li>
+                    <li><a href="/en/resources/tutorials">Tutorials</a></li>
+                    <li><a href="/en/resources/multimedia">JCP Podcasts</a></li>
+                    <li><a href="/en/resources/guide">Spec Lead Guide</a></li>
+                    <li><a href="/en/resources/tdk">TCK Tool & Info</a></li>
+                    <li><a href="/en/resources/license_reference">License Reference</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/en/press/pmo" class="p7PMtrg">Community News</a>
+                <ul>
+                    <li><a href="/en/press/pmo">News</a></li>
+                    <li><a href="/en/press/news/awards/awards_main">Programs &amp; Awards</a></li>
+                    <li><a href="/en/press/releases">Press Releases</a></li>
+                    <li><a href="/en/press/success">Success Stories</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/en/introduction/faq">FAQ</a></li>
+
+            <li><a href="/en/resources/contacts">Contact Us</a></li>
+
+            <div style="clear: both;"><img src="/images/spacer.gif" alt="" height="25" width="1"></div>
+
+            <!--[if lte IE 6]><style>#p7PMnav a{height:1em;}#p7PMnav li{height:1em;float:left;clear:both;width:100%}</style><![endif]-->
+            <!--[if IE 6]><style>#p7PMnav li{clear:none;}</style><![endif]-->
+            <!--[if IE 7]><style>#p7PMnav a{zoom:100%;}#p7PMnav li{float:left;clear:both;width:100%;}</style><![endif]-->
+        </ul>
+
+        
+
+        <!--begin ad space -->
+        <div class="ads">
+            <a href="http://java.com/java/download/index.jsp?cid=jdp78399" target="_blank"><img style="display: ;" src="/images/ad_banner2.gif" alt="Ad Banner" border="1" height="70" width="150"></a>
+        </div>
+        <!--end ad space -->
+
+<!-- ** Menu End ** //-->
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;<br>
+
+    
+
+                    &nbsp;<br>
+                    <img src="/images/common/trans.gif" alt="" width="1" height="150"><br>
+
+              
+
+
+
+                </td>
+                <!-- ** END: Navigation Column ** //-->
+
+                <!-- ** BEGIN: Gutter Column ** //-->
+		<td width="10" nowrap><img src="/images/common/trans.gif" alt="" width="10" height="1"></td>
+                <!-- ** END: Gutter Column ** //-->
+
+                <!-- ** BEGIN: Content Column ** //-->
+                <td width="100%" valign="top">
+
+    
+<script type="text/javascript">
+
+String.prototype.trim = function() {
+        return this.replace(/^\s+|\s+$/g,"");
+}
+String.prototype.ltrim = function() {
+        return this.replace(/^\s+/,"");
+}
+String.prototype.rtrim = function() {
+        return this.replace(/\s+$/,"");
+}
+
+function validate_search() {
+	if (document.search.id.value == "Search JSRs" || document.search.id.value.trim().length == 0) {
+		alert("Search terms must be entered first");
+		return false;
+	}
+	return true;
+}
+
+function validate_findjsr() {
+	if (document.findjsr.id.value == "Search JSRs" || document.findjsr.id.value.trim().length == 0) {
+		alert("Search terms must be entered first");
+		return false;
+	}
+	return true;
+}
+
+function nullify_if_equal(field, str) {
+	// alert("val=" + field.value);
+	if (field.value == str) {
+		field.value = "";
+	}
+}
+
+</script>
+<!-- ** END: header.jsp ** //-->
+
+
+
+
+
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<HEAD>
+	<META HTTP-EQUIV="CONTENT-TYPE" CONTENT="text/html; charset=iso-8859-1">
+	<TITLE></TITLE>
+	<META NAME="GENERATOR" CONTENT="StarOffice 7  (Solaris Sparc)">
+	<META NAME="CREATED" CONTENT="20050401;11074400">
+	<META NAME="CHANGED" CONTENT="20051010;10434300">
+</HEAD>
+<BODY LANG="en-US" DIR="LTR">
+<P STYLE="margin-top: 0.17in; page-break-after: avoid"><BR><BR>
+</P>
+
+<H1>JNLP Specification version 6.0 change log</H1>
+<P>This change log represents the proposed changes to The Java
+Network Launching Protocol (JNLP) from version 1.5.0 to version 6.0</P>
+<OL>
+	<LI><P>To allow implementation of a flexible update policy</P>
+</OL>
+<UL>
+	<LI><P>Change the table of contents, to insert a section 3.6 called
+	&ldquo;Application Updates&rdquo;.</P>
+	<LI><P>Modify Section 3, to insert the following section, and to
+	renumber the current sections 3.6 and above.</P>
+
+	<H2>3.6 Application Update</H2>
+</UL>
+<P STYLE="margin-left: 1.58in"><STRONG><CODE>update</CODE> element:</STRONG>
+The update element is used to indicate the preferences for how
+application updates should be handled by the JNLP Client. The <CODE>update</CODE>
+element can contain the following two optional attributes: 
+</P>
+<P STYLE="margin-left: 1.58in"><STRONG><CODE>check</CODE> attributes:</STRONG>
+
+The check attribute indicates the preference for when the JNLP Client
+should check for updates, and can have one of the three values:
+<CODE>&quot;always&quot;</CODE>, <CODE>&quot;timeout&quot;</CODE>,
+and <CODE>&quot;background&quot;</CODE>. 
+</P>
+<P STYLE="margin-left: 1.58in">A value of <CODE>&quot;always&quot;</CODE>
+means to always check for updates before launching the application. 
+</P>
+<P STYLE="margin-left: 1.58in">A value of <CODE>&quot;timeout&quot;</CODE>
+(default) means to check for updates until timeout before launching
+the application. If the update check is not completed before the
+timeout, the application is launched, and the update check will
+continue in the background.</P>
+
+<P STYLE="margin-left: 1.58in">A value of <CODE>&quot;background&quot;</CODE>
+means to launch the application while checking for updates in the
+background. 
+</P>
+<P STYLE="margin-left: 1.58in"><STRONG><CODE>policy</CODE>
+attributes:</STRONG> The <CODE>policy</CODE> attribute indicates the
+preference for how the JNLP Client should handle an application
+update when it is known an update is available before the application
+is launched, and can have one of the following three values:
+<CODE>&quot;always&quot;</CODE>, <CODE>&quot;prompt-update&quot;</CODE>,
+and <CODE>&quot;prompt-run&quot;</CODE>. 
+
+</P>
+<P STYLE="margin-left: 1.58in">A value of <CODE>&quot;always&quot;</CODE>
+(default) means to always download updates without any prompt.</P>
+<P STYLE="margin-left: 1.58in">A value of <CODE>&quot;prompt-update&quot;</CODE>
+means to ask the user if he/she wants to download and run the updated
+version, or launch the cached version.</P>
+<P STYLE="margin-left: 1.58in">A value of <CODE>&quot;prompt-run&quot;</CODE>
+means to ask the user if he/she wants to download and run the updated
+version, or cancel and abort running the application.</P>
+<P STYLE="margin-left: 1.58in">For example: 
+
+</P>
+<BLOCKQUOTE STYLE="margin-left: 1.97in"><A NAME="application"></A><CODE>&lt;update
+check=&quot;always&quot; policy=&quot;prompt-update&quot;/&gt;</CODE></BLOCKQUOTE>
+<UL>
+	<LI><P>Modify the DTD in Appendix C to include the update element in
+	the list of jnlp sub-elements</P>
+	<P><STRONG><CODE>&lt;!ELEMENT jnlp (information+, security?,
+	update?, resources*, (application-desc | applet-desc |
+	component-desc | installer-desc))&gt;</CODE></STRONG></P>
+</UL>
+<UL>
+
+	<LI><P>Modify the DTD in Appendix C to include the update element
+	and it's attributes.</P>
+</UL>
+<P STYLE="margin-left: 1.58in"><CODE>&lt;!--<BR>The update element
+contains the applications preference for application update.<BR>--&gt;</CODE></P>
+<P STYLE="margin-left: 1.58in"><STRONG><CODE>&lt;!ELEMENT update&gt;</CODE></STRONG></P>
+<P STYLE="margin-left: 1.58in"><CODE>&lt;!--<BR>The check attribute
+of the update element indicates the applications preference for when
+to check for updates.<BR>--&gt;</CODE></P>
+<P STYLE="margin-left: 1.58in"><STRONG><CODE>&lt;!ATTLIST update
+check (always | timeout | background) &quot;timeout&quot;&gt;</CODE></STRONG></P>
+
+<P STYLE="margin-left: 1.58in"><CODE>&lt;!--<BR>The policy attribute
+of the update element indicates the applications preference for what
+to do when updates are available.<BR>--&gt;<STRONG>&lt;</STRONG></CODE></P>
+<P STYLE="margin-left: 1.58in"><CODE><STRONG>!ATTLIST update policy
+(always | prompt-update | prompt-run) &quot;always&quot;&gt;</STRONG></CODE></P>
+<OL START=2>
+	<LI><P>To allow the DownloadService api's to access resources that
+	are not listed in the jnlp file, but are resident within the same
+	codebase.</P>
+</OL>
+<UL>
+	<LI><P>Modify text in section 7.2 to replace the third, forth and
+	sixth paragraphs with the following three paragraphs</P>
+</UL>
+
+<P STYLE="margin-left: 1.58in">The following three query methods
+return true if a given resource, a given part, or a given part of a
+given extension is currently cached, respectively. In an untrusted
+environment, these methods must always return false for resources
+that are not from the codebase of current application, and are not
+mentioned in the JNLP file(s) of the application.</P>
+<P STYLE="margin-left: 1.58in">The following three methods instruct
+the JNLP Client to download a given resource, a given part, or a
+given part of a given extension, respectively. The methods block
+until the download is completed or an error occurs. In an untrusted
+environment, these methods must always fail for resources that are
+not from the codebase of current application, and are not mentioned
+in the JNLP file(s) of the application.</P>
+<P STYLE="margin-left: 1.58in">The following three methods instruct
+the JNLP Client to remove a given resource, a given part, or a given
+part of a given extension from the cache, respectively. The remove
+request is a hint to the JNLP Client that the given resource is no
+longer needed. In an untrusted environment, these methods must do
+nothing if a resource is not from the codebase of the current
+application, and is not mentioned in the JNLP file(s) of the
+application.</P>
+<OL START=3>
+	<LI><P>To allow jnlp file to specify icon and description
+	sub-elements of an association element.</P>
+</OL>
+<UL>
+	<LI><P>Modify section to contain the following definition of the
+	association element:</P>
+</UL>
+<P STYLE="margin-left: 1.58in"><STRONG><CODE>association</CODE>
+
+element:</STRONG> The optional <CODE>association</CODE> element is a
+hint to the JNLP client that it wishes to be registered with the
+operating system as the primary handler of certain extensions and a
+certain mime-type. The association element must have the <CODE>extensions</CODE>
+and <CODE>mime-type</CODE> attributes, and may contain the two
+optional sub elements <CODE>description<CODE>, and <CODE>icon<CODE>.</CODE></CODE></CODE></CODE></P>
+
+<P STYLE="margin-left: 1.58in"><STRONG><CODE>description</CODE>
+element:</STRONG> A short discription of the association. 
+</P>
+<P STYLE="margin-left: 1.58in"><STRONG><CODE>icon</CODE> element:</STRONG>
+The icon can be registered with the operating system as the default
+icon for items of this <CODE>mime-type</CODE></P>
+<UL>
+	<LI><P>Modify the DTD in appendix c to include these sub-elements of
+	an association element</P>
+
+</UL>
+<P STYLE="margin-left: 1.58in"><CODE><STRONG>&lt;!ELEMENT association
+(description?, icon?)&gt;</STRONG> </CODE>
+</P>
+<OL START=4>
+	<LI><P>To clarify that the default sandbox is the default set of
+	permissions granted to an untrusted app, and that the jnlp client
+	may extend that set with the users permission.</P>
+</OL>
+<UL>
+	<LI><P>Add a paragraph at the end of section 5.5 to make this
+	clarification:</P>
+</UL>
+<P STYLE="margin-left: 1.58in; text-indent: 0.51in">The sandbox
+environment described above is also the default initial set of
+permissions granted to an untrusted application or applet. The JNLP
+Client may allow the user to grant additional permissions
+interactivly. For example, the JNLP Client may intercept requests for
+printer access, socket connections, or clipboard access in the
+Security Manager, and display dialogs asking the user to grant such
+additional permissions. 
+</P>
+
+<OL START=5>
+	<LI><P>To fix typos in the document, and make certain other
+	clarifications.</P>
+</OL>
+<UL>
+	<LI><P>Change the DTD section C.1 to the following:</P>
+</UL>
+<BLOCKQUOTE STYLE="margin-left: 1.97in"><CODE>&lt;!DOCTYPE jnlp
+PUBLIC &quot;-//Sun Microsystems, Inc//DTD JNLP Descriptor 6.0//EN&quot;&gt;</CODE></BLOCKQUOTE>
+<UL>
+	<LI><P>Fix the definition of related-content element in the DTD to
+	only allow one description and icon:</P>
+
+</UL>
+<P STYLE="margin-left: 1.58in"><CODE><STRONG>&lt;!ELEMENT
+related-content (title?, description?, icon?)&gt;</STRONG> </CODE>
+</P>
+<UL>
+	<LI><P>In section 4.1, replace &ldquo;In This Section&rdquo; with
+	&ldquo;below&rdquo;, and remove the nonexistant &ldquo;part&rdquo;
+	element from the example:</P>
+
+</UL>
+<P STYLE="margin-left: 1.58in">The <CODE>resources</CODE> element has
+6 different possible subelements: jar, nativelib, j2se, property,
+package, and extension. These are all described in detail below.</P>
+<P STYLE="margin-left: 1.58in">A resources definition can be
+restricted to a specific operating system, architecture, or locale
+using the os, arch, and locale attributes. For example:</P>
+<BLOCKQUOTE STYLE="margin-left: 1.97in"><CODE>&lt;resources&gt;<BR>&nbsp;&nbsp;&lt;j2se
+version=&quot;1.2&quot;/&gt;<BR>&nbsp;&nbsp;&lt;jar
+href=&quot;lib/myjar.jar&quot;
+version=&quot;1.2&quot;/&gt;<BR>&nbsp;&nbsp;&lt;extension<BR>&nbsp;&nbsp;&nbsp;&nbsp;name=&quot;coolaudio&quot;
+
+version=&quot;1.0&quot;<BR>&nbsp;&nbsp;&nbsp;&nbsp;href=&quot;http://www.mysite.com/ext/coolaudio&quot;&gt;<BR>&nbsp;&nbsp;&lt;/extension&gt;<BR>&nbsp;&nbsp;&lt;property
+name=&quot;key1&quot; value=&quot;value1&quot;/&gt;<BR>&nbsp;&nbsp;&lt;property
+name=&quot;key2&quot; value=&quot;value2&quot;/&gt;<BR>&lt;/resources&gt;<BR>&lt;resources
+os=&quot;SunOS&quot;&gt;<BR>&nbsp;&nbsp;&lt;jar
+href=&quot;lib/motif-plaf.jar&quot;/&gt;<BR>&lt;/resources&gt;</CODE></BLOCKQUOTE>
+
+<OL START=6>
+	<LI><P>To add the new jnlp element &lt;java&gt; to replace &lt;j2se&gt;
+	for declaring the java version to use, and reflecting the name
+	change of java from &quot;Java 2 Standard Edition&quot; or &quot;J2SE&quot;
+	to &quot;Java[TM] Standard Edition&quot; or &quot;Java[TM] SE&quot;,
+	and to update various examples.</P>
+
+</OL>
+<UL>
+	<LI><P>    in section 0:</P>
+</UL>
+<P STYLE="margin-left: 1.58in">Change &quot;http://java.sun.com/j2se&quot;
+to &quot;http://java.sun.com/javase&quot;    (twice).</P>
+<P STYLE="margin-left: 1.58in">Change
+&quot;http://java.sun.com/j2se/1.5.0/&quot; to
+
+&quot;http://java.sun.com/javase/6&quot;.</P>
+<UL>
+	<LI><P>    in section 0.3:</P>
+</UL>
+<P STYLE="margin-left: 1.58in">Change &quot;Java 2 Platform Standard
+Edition (J2SE)&quot; to &quot;Java Platform, Standard Edition&quot;.</P>
+<P STYLE="margin-left: 1.58in">Change &quot;http://java.sun.com/j2se/&quot;
+
+to &quot;http://java.sun.com/javase&quot; (twice).</P>
+<P STYLE="margin-left: 1.58in">Change &quot;Java 2 Platform
+Enterprise Edition (J2EE).&quot; to &quot;Java Platform, Enterprise
+Edition.&quot;</P>
+<P STYLE="margin-left: 1.58in">Change &quot;http://java.sun.com/j2ee/&quot;
+to &quot;http://java.sun.com/javaee&quot; twice).</P>
+
+<UL>
+	<LI><P>    in section 1:</P>
+</UL>
+<P STYLE="margin-left: 1.58in">Change &quot;Java 2 Technology-based
+applications.&quot; to &quot;Java applications&quot;.</P>
+<UL>
+	<LI><P>    in section 1.1:</P>
+
+</UL>
+<P STYLE="margin-left: 1.58in">Change &quot;Java 2 Platform (JRE)&quot;
+to &quot;Java Runtime Environment (JRE)&quot;</P>
+<UL>
+	<LI><P>    in section 1.2.1:</P>
+</UL>
+<P STYLE="margin-left: 1.58in">Change &quot;Java 2 platform&quot; to
+
+&quot;JRE&quot;.</P>
+<UL>
+	<LI><P>    in section 1.3:</P>
+</UL>
+<P STYLE="margin-left: 1.58in">Change &quot;Java 2 Platform Standard
+Edition&quot; to &quot;JRE&quot;</P>
+<UL>
+	<LI><P>    in section 1.4:</P>
+
+</UL>
+<P STYLE="margin-left: 1.58in">Change &quot;&lt;j2se version=&quot;
+to &quot;&lt;java version=&quot;.</P>
+<P STYLE="margin-left: 1.58in">Change &quot;Java 2 platform&quot; to
+&quot;Java platform&quot;.</P>
+<UL>
+	<LI><P>    in section 1.5:</P>
+
+</UL>
+<P STYLE="margin-left: 1.58in">Change &quot;Java 2 SE&quot; to &quot;Java
+Platform, Standard Edition&quot;.</P>
+<UL>
+	<LI><P>    in section 2:</P>
+</UL>
+<P STYLE="margin-left: 1.58in">Change &quot;Java 2 Standard Edition&quot;
+
+to &quot;Java Platform, Standard Edition&quot;.</P>
+<P STYLE="margin-left: 1.58in">Change &quot;e.g., 1.2.&quot; to
+&quot;e.g., 1.6.0.&quot;.</P>
+<P STYLE="margin-left: 1.58in">Change the sentence: &ldquo;For
+example, &quot;1.2.2* 1.3.0&quot; is a Version string that will match
+the version-id's 1.2.2-w, 1.2.2.0, 1.3.0, and so forth.&rdquo; to
+
+&ldquo;For example, &quot;1.5.0* 1.6.0&quot; is a Version string that
+will match the version-id's 1.5.0, 1.5.0_01, 1.5.0_02, ..., and
+1.6.0.&rdquo;</P>
+<UL>
+	<LI><P>    in section 3.8.1:</P>
+</UL>
+<P STYLE="margin-left: 1.58in">Change &quot;&lt;j2se &quot; to &quot;&lt;java
+&quot;.</P>
+
+<UL>
+	<LI><P>    in section 4.1:</P>
+</UL>
+<P STYLE="margin-left: 1.58in">Change &quot;6&quot; to &quot;7&quot;,
+and insert &quot;java, &quot; before &quot;j2se, &quot;.</P>
+
+<P STYLE="margin-left: 1.58in">In the example change '&lt;j2se
+version=&quot;1.2&quot;/&gt;' to '&lt;java version=&quot;1.6&quot;/&gt;'.</P>
+<UL>
+	<LI><P>    in section 4.6:</P>
+</UL>
+<P STYLE="margin-left: 1.58in">Change &quot;The j2se element&quot; to
+
+&quot;The java element (or the j2se element)&quot;.</P>
+<P STYLE="margin-left: 1.58in">Change &quot;Java 2 SE Runtime
+Environment (JRE)&quot; to &quot;Java Runtime Environment (JRE)&quot;.</P>
+<P STYLE="margin-left: 1.58in">Change (in the example) &quot;j2se&quot;
+to &quot;java&quot; (three times).</P>
+
+<P STYLE="margin-left: 1.58in">Change &quot;j2se&quot; to &quot;java&quot;
+in the two sentences following the example.</P>
+<P STYLE="margin-left: 1.58in">Add sentence before version attribute:
+ &quot;The j2se element can be used interchangeably with java element
+for backward compatibility.&quot;</P>
+<P STYLE="margin-left: 1.58in">Change &quot;j2se element&quot; to
+&quot;java element&quot; (three more times).</P>
+
+<UL>
+	<LI><P>    in section 4.6.1:</P>
+</UL>
+<P STYLE="margin-left: 1.58in">Change example from '&lt;j2se
+version=&quot;1.2&quot;/&gt;' to '&lt;java version=&quot;1.6&quot;/&gt;'.</P>
+<P STYLE="margin-left: 1.58in">Change example from &lt;j2se
+href=&quot;http://java.sun.com/products/j2se&quot; version=&quot;1.2.2+&quot;/&gt;
+
+to &lt;java href=&quot;http://java.sun.com/products/autodl/javase&quot;
+version=&quot;1.6+&quot;/&gt;</P>
+<UL>
+	<LI><P>    in section 4.6.2:</P>
+</UL>
+<P STYLE="margin-left: 1.58in">Change example from:  &lt;j2se
+href=&quot;http://java.sun.com/...&quot; version=&quot;1.2.2-w&quot;&gt;
+
+to &lt;java href=&quot;http://java.sun.com/...&quot;
+version=&quot;1.4.2_07&quot;&gt;, and change &lt;j2se version=&quot;1.3&quot;
+initial-heap-size=&quot;64m&quot;/&gt; to &lt;j2se version=&quot;1.6&quot;
+
+initial-heap-size=&quot;64m&quot;/&gt;</P>
+<P STYLE="margin-left: 1.58in">Change &quot;Sun's Java 2 SE JRE,
+version 1.2.2-w&quot; to &quot;Sun's JRE, version 1.4.2_07&quot;.</P>
+<P STYLE="margin-left: 1.58in">Change &quot;the Java 2 platform,
+version 1.3&quot; to  &quot;the Java Platform, Standard Edition,
+version 6&quot;</P>
+
+<P STYLE="margin-left: 1.58in">Change &quot;j2se element&quot; to
+&quot;java element&quot;. (twice).</P>
+<P STYLE="margin-left: 1.58in">Change &quot;Sun's 1.2.2-w JRE&quot;
+to &quot;Sun's 1.4.2_07 JRE&quot;.</P>
+<UL>
+	<LI><P>    in section 6:</P>
+
+</UL>
+<P STYLE="margin-left: 1.58in">Change &quot;j2se&quot; to &quot;java&quot;
+(in table).</P>
+<UL>
+	<LI><P>    in section 6.1.2:</P>
+</UL>
+<P STYLE="margin-left: 1.58in">Change &quot;j2se&quot; to &quot;java&quot;
+
+(in table).</P>
+<UL>
+	<LI><P>    in section 6.4:</P>
+</UL>
+<P STYLE="margin-left: 1.58in">Change &quot;j2se element&quot; to
+&quot;java element&quot; (in table).</P>
+<P STYLE="margin-left: 1.58in">Change &quot;The j2se element
+contains&quot; to &quot;The java element contains&quot;.</P>
+
+<P STYLE="margin-left: 1.58in">Change '&lt;j2se version=&quot;1.3&quot;'
+to '&lt;java version=&quot;1.3&quot;'(twice).</P>
+<UL>
+	<LI><P>    in Appendix C:</P>
+</UL>
+<P STYLE="margin-left: 0.79in">    In resource element:</P>
+
+<P STYLE="margin-left: 1.58in">Change &quot;j2se | jar | nativelib&quot;
+to &quot;java | j2se | jar | nativelib&quot;.</P>
+<P STYLE="margin-left: 0.79in">   Before the j2se element insert the
+java element and all of it's attributes as follows:</P>
+<P STYLE="margin-left: 1.58in">&lt;!-- The java element describes a
+supported JRE version and an optional resources element to be used by
+the particular JRE.--&gt;</P>
+<P STYLE="margin-left: 1.58in">&lt;!ELEMENT java (resources*)&gt;</P>
+<P STYLE="margin-left: 1.58in">&lt;!-- The version attribute of the
+java element describes the versions of the JRE that this application
+is supported on. --&gt;</P>
+<P STYLE="margin-left: 1.58in">&lt;!ATTLIST java version CDATA
+#REQUIRED&gt;</P>
+
+<P STYLE="margin-left: 1.58in">&lt;!-- The href attribute of the java
+element specifies the location where the JRE should be downloaded
+from. --&gt;</P>
+<P STYLE="margin-left: 1.58in">&lt;!ATTLIST java href CDATA #IMPLIED&gt;</P>
+<P STYLE="margin-left: 1.58in">&lt;!-- The initial-heap-size
+attribute of the java element specifies the initial size of the
+object heap. --&gt;</P>
+<P STYLE="margin-left: 1.58in">&lt;!ATTLIST java initial-heap-size
+CDATA #IMPLIED&gt;</P>
+<P STYLE="margin-left: 1.58in">&lt;!-- The max-heap-size attribute of
+the java element specifies the preferred maximum size of the object
+heap. --&gt;</P>
+<P STYLE="margin-left: 1.58in">&lt;!ATTLIST java max-heap-size CDATA
+#IMPLIED&gt;</P>
+<P STYLE="margin-left: 1.58in">&lt;!-- The java-vm-args attribute of
+the java element specifies a preferred set of virtual machine
+arguments to use when launching java.--&gt;</P>
+<P STYLE="margin-left: 1.58in">&lt;!ATTLIST java java-vm-args CDATA
+#IMPLIED&gt;</P>
+<P STYLE="margin-left: 1.58in"><BR><BR>
+
+</P>
+<P STYLE="margin-left: 1.58in"><BR><BR>
+</P>
+<P><BR><BR>
+</P>
+<P><BR><BR>
+</P>
+<P><BR><BR>
+</P>
+<P><BR><BR>
+</P>
+<P><BR><BR>
+</P>
+<P><BR><BR>
+</P>
+<P>            
+</P>
+
+<P><BR><BR>
+</P>
+<P><BR><BR>
+</P>
+<OL START=6>
+	<LI><P></P>
+</OL>
+<P><BR><BR>
+</P>
+<P><BR><BR>
+</P>
+</BODY>
+</HTML>
+
+
+
+<!-- ** BEGIN: footer.jsp ** //-->
+
+
+
+
+
+
+
+
+</td>
+</tr>
+</table>
+
+<!-- ** END: Content Table ** //-->
+
+<!-- ** BEGIN: Footer Table ** //-->
+
+<div id="footer" style="clear: both;">
+    <div class="footleft">
+        <a href="/en/resources/contacts">Contact Us</a>
+    </div>
+	
+    <div class="botbar"><img src="/images/spacer.gif" alt="" height="23" width="1"></div>
+
+    <div class="footleft2">
+         &copy; 2019, Oracle Corporation and/or its affiliates. 
+        <a href="/en/home/terms">Terms of Use</a>. <a href="http://www.oracle.com/us/legal/privacy/index.html">Privacy Policy</a>. <a href="http://www.oracle.com/us/legal/third-party-trademarks/third-party-trademarks-078568.html">Trademarks</a>
+    </div>
+
+    <div class="footright">
+        <img src="/images/common/logo_oracle_footer.gif" alt="Oracle Corporation" height="22" width="91">
+    </div>
+
+    <div style="clear: both;"><img src="/images/spacer.gif" alt="" height="30" width="1"></div>
+</div>
+
+<!-- ** END: Footer Table ** //-->
+
+
+
+<!-- ** Menu Start ** //-->
+
+
+
+</body>
+</html>
+<!-- ** END: footer.jsp ** //-->
+

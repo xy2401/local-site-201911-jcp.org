@@ -1,0 +1,1329 @@
+
+
+
+<!-- ** BEGIN: header.jsp ** //-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3c.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+<head>
+    
+
+   
+    <link href="/includes/css/menu.css" rel="stylesheet" type="text/css"></link>
+    <link href="/includes/css/style.css" rel="stylesheet" type="text/css"></link>
+    <!--[if lt IE 6]><link href="/includes/css/style5.css" rel="stylesheet" type="text/css" ></link><![endif]-->
+    <!--[if gte IE 5]><link href="/includes/css/style6.css" rel="stylesheet" type="text/css" ></link><![endif]-->
+    <link href="/includes/css/tabs.css"  rel="stylesheet" type="text/css"></link>
+
+    <script type="text/javascript" src="/includes/scripts/tabs.js"></script>
+    <script type="text/javascript" src="/includes/scripts/menu.js"></script>
+   
+
+    
+
+    
+        <title>The Java Community Process(SM) Program - JSRs: Java Specification Requests - List by JCP Stage</title>
+    
+
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+
+
+<body onload="P7_initPM(0,1,0,0,-1)">
+
+    <a name="top"></a>
+
+    <div id="header">
+	<div id="logo">
+		<a href="/en/home/index"><img src="/images/spacer.gif" alt="Java Community Process" height="81" width="151"></a>
+	</div>
+	<div id="tools">
+		<div class="search">
+			<form name="search" action="/en/jsr/summary" method="get" onsubmit="return validate_search()">
+				<input name="id" value="Search JSRs" size="16" class="form" onfocus="nullify_if_equal(this, 'Search JSRs')" type="text">
+				<a href="javascript:document.search.submit()" onclick="return validate_search()"><img src="/images/button_go.gif" width="21" height="16" border="0" alt="Submit this Search" name="sub_search"></a>
+			</form>
+		</div>
+		<div class="tools">
+			<a href="/en/press/pressroom">Press Room</a> &nbsp;|&nbsp;
+			<a href="http://java.com/java/download/index.jsp?cid=jdp78399">Get Java Here</a> &nbsp;|&nbsp;
+			<!-- <a href="javascript:void(0)">Print Format</a> &nbsp;|&nbsp;&nbsp; -->
+		</div>
+
+	</div>
+	<div style="clear: right;"></div>
+
+        
+
+	<div class="topbar"><img src="/images/spacer.gif" alt="" height="3" width="154"></div>
+	<div id="update"> </div>
+    </div>
+
+
+    
+
+        <!-- ** BEGIN: Content Table ** //-->
+
+        <table width="100%" border="0" cellpadding="0" cellspacing="0">
+
+            <tr>
+
+                <!-- ** BEGIN: Navigation Column ** //-->
+                <td width="150" id="leftcontent" valign="top">
+                    <!-- Navigation Placeholder //-->
+
+                    
+
+                    <div class="bar"><img src="/images/hr_dots1.gif" alt="" height="3" width="150"></div>
+
+        <!-- begin find JSRs form -->
+        <!-- IMPORTANT! do not convert this form to Struts < html : form > tag.  javascript change of form.action property fails. -->
+        <img src="/images/hd_find-jsrs.gif" alt="Find JSRs" height="18" width="150">
+        <form name="findjsr" action="/en/jsr/summary" method="get" class="pt5" onsubmit="return validate_findjsr()">
+            <input name="id" size="18" class="form" value="Search JSRs" onfocus="nullify_if_equal(this, 'Search JSRs')" type="text">
+	    <a href="javascript:document.findjsr.submit()" onclick="return validate_findjsr()"><img src="/images/button_go.gif" width="21" height="16" border="0" alt="Submit this Search" name="sub_search"></a>
+        </form><br><br>
+
+        <!-- ** Menu Start ** //-->
+
+        <ul id="p7PMnav">
+            <li><a href="/en/jsr/platform">JSRs by Platform</a></li>
+            <li><a href="/en/jsr/tech">JSRs by Technology</a></li>
+            <li><a href="/en/jsr/stage">JSRs by Stage</a></li>
+            <li><a href="/en/jsr/ec">JSRs by Committee</a></li>
+            <li><a href="/en/jsr/all">List of All JSRs</a></li>
+
+            <!--end find JSRs form -->
+            <div style="clear: both;"><img src="/images/spacer.gif" alt="" height="25" width="1"></div>
+
+            <!--begin my JCP -->
+            <img src="/images/hd_my-jcp.gif" alt="My JCP" height="18" width="150">
+            
+
+          <form name="login" method="get" action="/en/user/login" >
+            <input name="Sign-in" type="submit" title="Sign-in" value="Sign-in" />
+          </form>
+
+            <div style="clear:both"><img src="/images/global/spacer.gif" width="1" height="3" alt=""></div>
+            <div class="noNav">
+                <a href="/en/user/register">Register for Site</a>
+            </div>
+
+             <div class="bar"><img src="/images/hr_dots1.gif" alt="" height="3" width="150"></div>
+           <div class="noNav" style="color: #666666; padding: 0;">
+              Use of JCP site is subject to the
+              <a href="/en/home/terms" style="display:inline;padding: 0">JCP Terms of Use</a> and the
+              <a href="http://www.oracle.com/us/legal/privacy/index.html" style="display:inline;padding: 0" href="">Oracle Privacy Policy</a>
+          </div>
+
+            
+
+            <div style="clear:both"><img src="/images/global/spacer.gif" width="1" height="25" alt=""></div>
+
+            <!--begin JCP info -->
+            <img src="/images/hd_jcp-info.gif" alt="JCP Info" height="18" width="150">
+
+            <li><a href="/en/procedures/overview" class="p7PMtrg">About JCP</a>
+                <ul>
+                    <li><a href="/en/procedures/overview">Program Overview</a></li>
+                    <li><a href="/en/procedures/jcp2">JCP Process Document</a></li>
+                    <li><a href="/en/whatsnew/calendar">Calendar</a></li>
+                    <li><a href="/en/participation/members">JCP Members</a></li>
+                    <li><a href="/en/participation/committee">Executive Committee</a></li>
+                    <li><a href="/en/whatsnew/elections">Elections</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/en/participation/overview" class="p7PMtrg">Get Involved</a>
+		<ul>
+                    <li><a href="/en/participation/overview">Overview</a></li>
+                    <li><a href="/en/participation/membership">Becoming a JCP Member</a></li>
+		</ul>
+            </li>
+
+            <li><a href="/en/resources/contents" class="p7PMtrg">Community Resources</a>
+                <ul>
+                    <li><a href="/en/resources/contents">Overview</a></li>
+                    <li><a href="/en/resources/tutorials">Tutorials</a></li>
+                    <li><a href="/en/resources/multimedia">JCP Podcasts</a></li>
+                    <li><a href="/en/resources/guide">Spec Lead Guide</a></li>
+                    <li><a href="/en/resources/tdk">TCK Tool & Info</a></li>
+                    <li><a href="/en/resources/license_reference">License Reference</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/en/press/pmo" class="p7PMtrg">Community News</a>
+                <ul>
+                    <li><a href="/en/press/pmo">News</a></li>
+                    <li><a href="/en/press/news/awards/awards_main">Programs &amp; Awards</a></li>
+                    <li><a href="/en/press/releases">Press Releases</a></li>
+                    <li><a href="/en/press/success">Success Stories</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/en/introduction/faq">FAQ</a></li>
+
+            <li><a href="/en/resources/contacts">Contact Us</a></li>
+
+            <div style="clear: both;"><img src="/images/spacer.gif" alt="" height="25" width="1"></div>
+
+            <!--[if lte IE 6]><style>#p7PMnav a{height:1em;}#p7PMnav li{height:1em;float:left;clear:both;width:100%}</style><![endif]-->
+            <!--[if IE 6]><style>#p7PMnav li{clear:none;}</style><![endif]-->
+            <!--[if IE 7]><style>#p7PMnav a{zoom:100%;}#p7PMnav li{float:left;clear:both;width:100%;}</style><![endif]-->
+        </ul>
+
+        
+
+        <!--begin ad space -->
+        <div class="ads">
+            <a href="http://java.com/java/download/index.jsp?cid=jdp78399" target="_blank"><img style="display: ;" src="/images/ad_banner2.gif" alt="Ad Banner" border="1" height="70" width="150"></a>
+        </div>
+        <!--end ad space -->
+
+<!-- ** Menu End ** //-->
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;<br>
+
+    
+
+                    &nbsp;<br>
+                    <img src="/images/common/trans.gif" alt="" width="1" height="150"><br>
+
+              
+
+
+
+                </td>
+                <!-- ** END: Navigation Column ** //-->
+
+                <!-- ** BEGIN: Gutter Column ** //-->
+		<td width="10" nowrap><img src="/images/common/trans.gif" alt="" width="10" height="1"></td>
+                <!-- ** END: Gutter Column ** //-->
+
+                <!-- ** BEGIN: Content Column ** //-->
+                <td width="100%" valign="top">
+
+    
+<script type="text/javascript">
+
+String.prototype.trim = function() {
+        return this.replace(/^\s+|\s+$/g,"");
+}
+String.prototype.ltrim = function() {
+        return this.replace(/^\s+/,"");
+}
+String.prototype.rtrim = function() {
+        return this.replace(/\s+$/,"");
+}
+
+function validate_search() {
+	if (document.search.id.value == "Search JSRs" || document.search.id.value.trim().length == 0) {
+		alert("Search terms must be entered first");
+		return false;
+	}
+	return true;
+}
+
+function validate_findjsr() {
+	if (document.findjsr.id.value == "Search JSRs" || document.findjsr.id.value.trim().length == 0) {
+		alert("Search terms must be entered first");
+		return false;
+	}
+	return true;
+}
+
+function nullify_if_equal(field, str) {
+	// alert("val=" + field.value);
+	if (field.value == str) {
+		field.value = "";
+	}
+}
+
+</script>
+<!-- ** END: header.jsp ** //-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<p>
+<div class="header2">JSRs: Java Specification Requests</div>
+<div class="header1"><b>JSRs by Stage</div>
+<div class="anybar"><img src="/images/global/bar_green.gif" alt="" width="12" height="4"></div>
+
+
+
+
+
+
+	<span class="headlinks"><font size="-1">
+<a href="/en/jsr/stage?listBy=jsr">JSR&nbsp;Review&nbsp;(0&nbsp;JSRs)</a>&nbsp;|
+&nbsp;<a href="/en/jsr/stage?listBy=community">Early&nbsp;Draft&nbsp;Review&nbsp;(0&nbsp;JSRs)</a>&nbsp;|
+&nbsp;<a href="/en/jsr/stage?listBy=public">Public&nbsp;Review&nbsp;(0&nbsp;JSRs)</a>&nbsp;|
+&nbsp;<a href="/en/jsr/stage?listBy=proposed">Proposed&nbsp;Final&nbsp;Draft&nbsp;(1&nbsp;JSR)</a>&nbsp;|
+&nbsp;<a href="/en/jsr/stage?listBy=final">Final&nbsp;Release&nbsp;(257&nbsp;JSRs)</a>&nbsp;|
+&nbsp;<a href="/en/jsr/stage?listBy=maint">Maintenance&nbsp;Review&nbsp;(0&nbsp;JSRs)</a>&nbsp;|
+&nbsp;<a href="/en/jsr/stage?listBy=active">Active&nbsp;(11&nbsp;JSRs)</a>&nbsp;|
+&nbsp;<a href="/en/jsr/stage?listBy=inactive">Inactive&nbsp;(0&nbsp;JSRs)</a>&nbsp;|
+&nbsp;<a href="/en/jsr/stage?listBy=dormant">Dormant&nbsp;(25&nbsp;JSRs)</a>&nbsp;|
+&nbsp;<a href="/en/jsr/stage?listBy=withdrawn">Withdrawn&nbsp;(99&nbsp;JSRs)</a>&nbsp;|
+&nbsp;Rejected&nbsp;(14&nbsp;JSRs)
+</font></span>
+<p>
+
+	<p>
+	The following JavaTM Specification Requests (JSRs) have been rejected for the reasons stated. Note that it is possible for a JSR to be Accepted from the JSR Approval Ballot but be rejected in a later ballot.
+	</p>
+
+
+
+
+
+
+
+
+
+
+		<a name="20"></a>
+		<table cellpadding="2" cellspacing="0" border="0" class="listBy_table">
+		<tr>
+			<td class="listBy_tableTitle"><b>20</b></td>
+			<td nowrap><img src="/images/common/trans.gif" alt="" width="20" height="1"></td>
+			<td class="listBy_tableTitle"><b><a href="/en/jsr/detail?id=20">Orthogonal Persistence for the Java<sup><font size="-2">TM</font></sup> Platform</a></b></td>
+			</tr>
+
+			<tr>
+			<td valign="top" class="listBy_tableHeader">Description:</td>
+			<td></td>
+			<td>Orthogonal persistence for the Java<sup><font size="-2">TM</font></sup> platform (OPJ) would have provided persistence for the full computational model specified by the Java<sup><font size="-2">TM</font></sup> Language Specification (JLS).</td>
+			</tr>
+
+			<tr>
+			<td valign="top" class="listBy_tableHeader">Status:</td>
+			<td></td>
+			<td><a href="/en/introduction/glossary#status"><font color=red><span title="A JSR that was not approved by the Executive Committee in one of the ballot stages for that JSR.">Rejected</span></font></a>
+
+			
+			<tr>
+			<td valign="top" class="listBy_tableHeader">Reason:</td>
+			<td></td>
+			<td>This work duplicates functionality to be provided by JSR-000012 Java Data Objects Specification. Work on Orthogonal Persistence continued at SunLabs.</td>
+			</tr>
+			
+
+			
+
+			<tr>
+			<td valign="top" class="listBy_tableHeader">Latest Stage:</td>
+			<td></td>
+			<td>
+			<table border="1" cellpadding="4">
+			<tr>
+			<td>Rejected</td>
+			
+			<td></td>
+			
+			
+			<td>Effective: 1999-08-11</td>
+			<td></td>
+			</tr>
+			</table>
+
+
+			<tr>
+			<td valign="top" class="listBy_tableHeader">Spec Lead:</td>
+
+				<td></td>
+
+			<td>
+Mick&nbsp;Jordan, Oracle</td>
+</tr>
+
+			<tr>
+			  <td colspan="2" valign="top" class="listBy_tableHeader">&nbsp;</td>
+			  <td><img src="/images/jsr/yel-horiz-bar.gif" width="220" height="8" border="0"></td>
+			  </tr>
+		</table>
+
+		&nbsp;<br>
+		&nbsp;<br>
+
+
+
+		<a name="76"></a>
+		<table cellpadding="2" cellspacing="0" border="0" class="listBy_table">
+		<tr>
+			<td class="listBy_tableTitle"><b>76</b></td>
+			<td nowrap><img src="/images/common/trans.gif" alt="" width="20" height="1"></td>
+			<td class="listBy_tableTitle"><b><a href="/en/jsr/detail?id=76">RMI Security for J2SE<sup><font size="-2">TM</font></sup></a></b></td>
+			</tr>
+
+			<tr>
+			<td valign="top" class="listBy_tableHeader">Description:</td>
+			<td></td>
+			<td>Define a high-level API for network security in Java<sup><font size="-2">TM</font></sup> 2 Standard Edition RMI, covering basic security mechanisms: authentication (including delegation), confidentiality, and integrity.</td>
+			</tr>
+
+			<tr>
+			<td valign="top" class="listBy_tableHeader">Status:</td>
+			<td></td>
+			<td><a href="/en/introduction/glossary#status"><font color=red><span title="A JSR that was not approved by the Executive Committee in one of the ballot stages for that JSR.">Rejected</span></font></a>
+
+			
+			<tr>
+			<td valign="top" class="listBy_tableHeader">Reason:</td>
+			<td></td>
+			<td>This JSR was not approved by the SE/EE Executive Committee in Draft Approval/Reconsideration Ballots.</td>
+			</tr>
+			
+
+			
+
+			<tr>
+			<td valign="top" class="listBy_tableHeader">Latest Stage:</td>
+			<td></td>
+			<td>
+			<table border="1" cellpadding="4">
+			<tr>
+			<td>Rejected</td>
+			
+			<td></td>
+			
+			
+			<td>Effective: 2001-02-21</td>
+			<td></td>
+			</tr>
+			</table>
+
+
+			<tr>
+			<td valign="top" class="listBy_tableHeader">Spec Lead:</td>
+
+				<td></td>
+
+			<td>
+Bob&nbsp;Scheifler, Sun Microsystems, Inc.</td>
+</tr>
+
+			<tr>
+			  <td colspan="2" valign="top" class="listBy_tableHeader">&nbsp;</td>
+			  <td><img src="/images/jsr/yel-horiz-bar.gif" width="220" height="8" border="0"></td>
+			  </tr>
+		</table>
+
+		&nbsp;<br>
+		&nbsp;<br>
+
+
+
+		<a name="78"></a>
+		<table cellpadding="2" cellspacing="0" border="0" class="listBy_table">
+		<tr>
+			<td class="listBy_tableTitle"><b>78</b></td>
+			<td nowrap><img src="/images/common/trans.gif" alt="" width="20" height="1"></td>
+			<td class="listBy_tableTitle"><b><a href="/en/jsr/detail?id=78">RMI Custom Remote References</a></b></td>
+			</tr>
+
+			<tr>
+			<td valign="top" class="listBy_tableHeader">Description:</td>
+			<td></td>
+			<td>Provide a general framework in Java<sup><font size="-2">TM</font></sup> 2 Standard Edition RMI for customizing remote invocation behavior.</td>
+			</tr>
+
+			<tr>
+			<td valign="top" class="listBy_tableHeader">Status:</td>
+			<td></td>
+			<td><a href="/en/introduction/glossary#status"><font color=red><span title="A JSR that was not approved by the Executive Committee in one of the ballot stages for that JSR.">Rejected</span></font></a>
+
+			
+			<tr>
+			<td valign="top" class="listBy_tableHeader">Reason:</td>
+			<td></td>
+			<td>This JSR was not approved by the SE/EE Executive Committee in Draft Approval/Reconsideration Ballots.</td>
+			</tr>
+			
+
+			
+
+			<tr>
+			<td valign="top" class="listBy_tableHeader">Latest Stage:</td>
+			<td></td>
+			<td>
+			<table border="1" cellpadding="4">
+			<tr>
+			<td>Rejected</td>
+			
+			<td></td>
+			
+			
+			<td>Effective: 2001-02-21</td>
+			<td></td>
+			</tr>
+			</table>
+
+
+			<tr>
+			<td valign="top" class="listBy_tableHeader">Spec Lead:</td>
+
+				<td></td>
+
+			<td>
+Ann&nbsp;Wollrath, Sun Microsystems, Inc.</td>
+</tr>
+
+			<tr>
+			  <td colspan="2" valign="top" class="listBy_tableHeader">&nbsp;</td>
+			  <td><img src="/images/jsr/yel-horiz-bar.gif" width="220" height="8" border="0"></td>
+			  </tr>
+		</table>
+
+		&nbsp;<br>
+		&nbsp;<br>
+
+
+
+		<a name="85"></a>
+		<table cellpadding="2" cellspacing="0" border="0" class="listBy_table">
+		<tr>
+			<td class="listBy_tableTitle"><b>85</b></td>
+			<td nowrap><img src="/images/common/trans.gif" alt="" width="20" height="1"></td>
+			<td class="listBy_tableTitle"><b><a href="/en/jsr/detail?id=85">Rules-based Authorization and Audit</a></b></td>
+			</tr>
+
+			<tr>
+			<td valign="top" class="listBy_tableHeader">Description:</td>
+			<td></td>
+			<td>Define an API for managing and accessing a rules-based authorization and audit trail service.</td>
+			</tr>
+
+			<tr>
+			<td valign="top" class="listBy_tableHeader">Status:</td>
+			<td></td>
+			<td><a href="/en/introduction/glossary#status"><font color=red><span title="A JSR that was not approved by the Executive Committee in one of the ballot stages for that JSR.">Rejected</span></font></a>
+
+			
+			<tr>
+			<td valign="top" class="listBy_tableHeader">Reason:</td>
+			<td></td>
+			<td>This JSR was not approved by the SE/EE Executive Committee in the JSR Approval Ballot.</td>
+			</tr>
+			
+
+			
+
+			<tr>
+			<td valign="top" class="listBy_tableHeader">Latest Stage:</td>
+			<td></td>
+			<td>
+			<table border="1" cellpadding="4">
+			<tr>
+			<td>Rejected</td>
+			
+			<td></td>
+			
+			
+			<td>Effective: 2000-10-10</td>
+			<td></td>
+			</tr>
+			</table>
+
+
+			<tr>
+			<td valign="top" class="listBy_tableHeader">Spec Lead:</td>
+
+				<td></td>
+
+			<td>
+Hal&nbsp;Lockhart, Entegrity Solutions</td>
+</tr>
+
+			<tr>
+			  <td colspan="2" valign="top" class="listBy_tableHeader">&nbsp;</td>
+			  <td><img src="/images/jsr/yel-horiz-bar.gif" width="220" height="8" border="0"></td>
+			  </tr>
+		</table>
+
+		&nbsp;<br>
+		&nbsp;<br>
+
+
+
+		<a name="143"></a>
+		<table cellpadding="2" cellspacing="0" border="0" class="listBy_table">
+		<tr>
+			<td class="listBy_tableTitle"><b>143</b></td>
+			<td nowrap><img src="/images/common/trans.gif" alt="" width="20" height="1"></td>
+			<td class="listBy_tableTitle"><b><a href="/en/jsr/detail?id=143">JavaDesk</a></b></td>
+			</tr>
+
+			<tr>
+			<td valign="top" class="listBy_tableHeader">Description:</td>
+			<td></td>
+			<td>JavaDesk provides a standard desktop API across platforms using an MVC model.  Applications can control and
+enhance the desktop using the JavaDesk API.</td>
+			</tr>
+
+			<tr>
+			<td valign="top" class="listBy_tableHeader">Status:</td>
+			<td></td>
+			<td><a href="/en/introduction/glossary#status"><font color=red><span title="A JSR that was not approved by the Executive Committee in one of the ballot stages for that JSR.">Rejected</span></font></a>
+
+			
+			<tr>
+			<td valign="top" class="listBy_tableHeader">Reason:</td>
+			<td></td>
+			<td>This JSR was not approved by the SE/EE Executive Committee in the JSR Approval Ballot.</td>
+			</tr>
+			
+
+			
+
+			<tr>
+			<td valign="top" class="listBy_tableHeader">Latest Stage:</td>
+			<td></td>
+			<td>
+			<table border="1" cellpadding="4">
+			<tr>
+			<td>Rejected</td>
+			
+			<td></td>
+			
+			
+			<td>Effective: 2001-08-06</td>
+			<td></td>
+			</tr>
+			</table>
+
+
+			<tr>
+			<td valign="top" class="listBy_tableHeader">Spec Lead:</td>
+
+				<td></td>
+
+			<td>
+Rich&nbsp;Isaac, Bay Equities, Inc.</td>
+</tr>
+
+			<tr>
+			  <td colspan="2" valign="top" class="listBy_tableHeader">&nbsp;</td>
+			  <td><img src="/images/jsr/yel-horiz-bar.gif" width="220" height="8" border="0"></td>
+			  </tr>
+		</table>
+
+		&nbsp;<br>
+		&nbsp;<br>
+
+
+
+		<a name="178"></a>
+		<table cellpadding="2" cellspacing="0" border="0" class="listBy_table">
+		<tr>
+			<td class="listBy_tableTitle"><b>178</b></td>
+			<td nowrap><img src="/images/common/trans.gif" alt="" width="20" height="1"></td>
+			<td class="listBy_tableTitle"><b><a href="/en/jsr/detail?id=178">Mobile Game API</a></b></td>
+			</tr>
+
+			<tr>
+			<td valign="top" class="listBy_tableHeader">Description:</td>
+			<td></td>
+			<td>Defines an optional package that will facilitate the emergence of the market for the development of compelling games on mobile phones. The API shall work with MIDP1.0.</td>
+			</tr>
+
+			<tr>
+			<td valign="top" class="listBy_tableHeader">Status:</td>
+			<td></td>
+			<td><a href="/en/introduction/glossary#status"><font color=red><span title="A JSR that was not approved by the Executive Committee in one of the ballot stages for that JSR.">Rejected</span></font></a>
+
+			
+			<tr>
+			<td valign="top" class="listBy_tableHeader">Reason:</td>
+			<td></td>
+			<td>This JSR was not approved by the ME Executive Committee in the JSR Reconsideration Ballot.</td>
+			</tr>
+			
+
+			
+
+			<tr>
+			<td valign="top" class="listBy_tableHeader">Latest Stage:</td>
+			<td></td>
+			<td>
+			<table border="1" cellpadding="4">
+			<tr>
+			<td>Rejected</td>
+			
+			<td></td>
+			
+			
+			<td>Effective: 2002-05-07</td>
+			<td></td>
+			</tr>
+			</table>
+
+
+			<tr>
+			<td valign="top" class="listBy_tableHeader">Spec Lead:</td>
+
+				<td></td>
+
+			<td>
+Thomas&nbsp;Landspurg, In-Fusio SA</td>
+</tr>
+
+			<tr>
+			  <td colspan="2" valign="top" class="listBy_tableHeader">&nbsp;</td>
+			  <td><img src="/images/jsr/yel-horiz-bar.gif" width="220" height="8" border="0"></td>
+			  </tr>
+		</table>
+
+		&nbsp;<br>
+		&nbsp;<br>
+
+
+
+		<a name="213"></a>
+		<table cellpadding="2" cellspacing="0" border="0" class="listBy_table">
+		<tr>
+			<td class="listBy_tableTitle"><b>213</b></td>
+			<td nowrap><img src="/images/common/trans.gif" alt="" width="20" height="1"></td>
+			<td class="listBy_tableTitle"><b><a href="/en/jsr/detail?id=213">Micro WSCI Framework for J2ME.</a></b></td>
+			</tr>
+
+			<tr>
+			<td valign="top" class="listBy_tableHeader">Description:</td>
+			<td></td>
+			<td>Effort to define another layer of the J2ME Web Service stack, implementing the 'observable' behavior of a choreographed Web Service on the Device, relative to the message exchange requiring support.</td>
+			</tr>
+
+			<tr>
+			<td valign="top" class="listBy_tableHeader">Status:</td>
+			<td></td>
+			<td><a href="/en/introduction/glossary#status"><font color=red><span title="A JSR that was not approved by the Executive Committee in one of the ballot stages for that JSR.">Rejected</span></font></a>
+
+			
+			<tr>
+			<td valign="top" class="listBy_tableHeader">Reason:</td>
+			<td></td>
+			<td>This JSR was not approved by the ME Executive Committee in the JSR Approval Ballot.</td>
+			</tr>
+			
+
+			
+
+			<tr>
+			<td valign="top" class="listBy_tableHeader">Latest Stage:</td>
+			<td></td>
+			<td>
+			<table border="1" cellpadding="4">
+			<tr>
+			<td>Rejected</td>
+			
+			<td></td>
+			
+			
+			<td>Effective: 2003-05-13</td>
+			<td></td>
+			</tr>
+			</table>
+
+
+			<tr>
+			<td valign="top" class="listBy_tableHeader">Spec Lead:</td>
+
+				<td></td>
+
+			<td>
+Ash&nbsp;Parikh, IOPSIS Software Inc.</td>
+</tr>
+
+			<tr>
+			  <td colspan="2" valign="top" class="listBy_tableHeader">&nbsp;</td>
+			  <td><img src="/images/jsr/yel-horiz-bar.gif" width="220" height="8" border="0"></td>
+			  </tr>
+		</table>
+
+		&nbsp;<br>
+		&nbsp;<br>
+
+
+
+		<a name="214"></a>
+		<table cellpadding="2" cellspacing="0" border="0" class="listBy_table">
+		<tr>
+			<td class="listBy_tableTitle"><b>214</b></td>
+			<td nowrap><img src="/images/common/trans.gif" alt="" width="20" height="1"></td>
+			<td class="listBy_tableTitle"><b><a href="/en/jsr/detail?id=214">Micro BPSS for J2ME Devices.</a></b></td>
+			</tr>
+
+			<tr>
+			<td valign="top" class="listBy_tableHeader">Description:</td>
+			<td></td>
+			<td>This JSR is to provide a standard set of APIs for J2ME Devices for representing and manipulating Collaboration Profile and Agreement information described by ebXML CPP/A (Collaboration Protocol Profile/Agreement) documents.</td>
+			</tr>
+
+			<tr>
+			<td valign="top" class="listBy_tableHeader">Status:</td>
+			<td></td>
+			<td><a href="/en/introduction/glossary#status"><font color=red><span title="A JSR that was not approved by the Executive Committee in one of the ballot stages for that JSR.">Rejected</span></font></a>
+
+			
+			<tr>
+			<td valign="top" class="listBy_tableHeader">Reason:</td>
+			<td></td>
+			<td>This JSR was not approved by the ME Executive Committee in the JSR Approval Ballot.</td>
+			</tr>
+			
+
+			
+
+			<tr>
+			<td valign="top" class="listBy_tableHeader">Latest Stage:</td>
+			<td></td>
+			<td>
+			<table border="1" cellpadding="4">
+			<tr>
+			<td>Rejected</td>
+			
+			<td></td>
+			
+			
+			<td>Effective: 2003-05-13</td>
+			<td></td>
+			</tr>
+			</table>
+
+
+			<tr>
+			<td valign="top" class="listBy_tableHeader">Spec Lead:</td>
+
+				<td></td>
+
+			<td>
+Ash&nbsp;Parikh, IOPSIS Software Inc.</td>
+</tr>
+
+			<tr>
+			  <td colspan="2" valign="top" class="listBy_tableHeader">&nbsp;</td>
+			  <td><img src="/images/jsr/yel-horiz-bar.gif" width="220" height="8" border="0"></td>
+			  </tr>
+		</table>
+
+		&nbsp;<br>
+		&nbsp;<br>
+
+
+
+		<a name="275"></a>
+		<table cellpadding="2" cellspacing="0" border="0" class="listBy_table">
+		<tr>
+			<td class="listBy_tableTitle"><b>275</b></td>
+			<td nowrap><img src="/images/common/trans.gif" alt="" width="20" height="1"></td>
+			<td class="listBy_tableTitle"><b><a href="/en/jsr/detail?id=275">Units Specification</a></b></td>
+			</tr>
+
+			<tr>
+			<td valign="top" class="listBy_tableHeader">Description:</td>
+			<td></td>
+			<td>This JSR specifies Java packages for modeling and working with standard measures known as units.</td>
+			</tr>
+
+			<tr>
+			<td valign="top" class="listBy_tableHeader">Status:</td>
+			<td></td>
+			<td><a href="/en/introduction/glossary#status"><font color=red><span title="A JSR that was not approved by the Executive Committee in one of the ballot stages for that JSR.">Rejected</span></font></a>
+
+			
+			<tr>
+			<td valign="top" class="listBy_tableHeader">Reason:</td>
+			<td></td>
+			<td>This JSR was not approved by the SE/EE Executive Committee in the Public Draft Reconsideration Ballot.</td>
+			</tr>
+			
+
+			
+
+			<tr>
+			<td valign="top" class="listBy_tableHeader">Latest Stage:</td>
+			<td></td>
+			<td>
+			<table border="1" cellpadding="4">
+			<tr>
+			<td>Rejected</td>
+			
+			<td></td>
+			
+			
+			<td>Effective: 2010-03-09</td>
+			<td></td>
+			</tr>
+			</table>
+
+
+			<tr>
+			<td valign="top" class="listBy_tableHeader">Spec Lead:</td>
+
+				<td></td>
+
+			<td>
+Jean-Marie&nbsp;Dautelle, Dautelle, Jean-Marie</td>
+</tr>
+
+			<tr>
+			<td valign="top" class="listBy_tableHeader">Spec Lead:</td>
+
+				<td></td>
+
+			<td>
+Werner&nbsp;Keil, Keil, Werner</td>
+</tr>
+
+			<tr>
+			  <td colspan="2" valign="top" class="listBy_tableHeader">&nbsp;</td>
+			  <td><img src="/images/jsr/yel-horiz-bar.gif" width="220" height="8" border="0"></td>
+			  </tr>
+		</table>
+
+		&nbsp;<br>
+		&nbsp;<br>
+
+
+
+		<a name="288"></a>
+		<table cellpadding="2" cellspacing="0" border="0" class="listBy_table">
+		<tr>
+			<td class="listBy_tableTitle"><b>288</b></td>
+			<td nowrap><img src="/images/common/trans.gif" alt="" width="20" height="1"></td>
+			<td class="listBy_tableTitle"><b><a href="/en/jsr/detail?id=288">Adaptive Java<font size="-2"><sup>TM</sup></font> ME System API</a></b></td>
+			</tr>
+
+			<tr>
+			<td valign="top" class="listBy_tableHeader">Description:</td>
+			<td></td>
+			<td>This specification will define a mechanism that enables a systems developer to include multiple Configurations and Profiles on a single device, using one set of developed components.</td>
+			</tr>
+
+			<tr>
+			<td valign="top" class="listBy_tableHeader">Status:</td>
+			<td></td>
+			<td><a href="/en/introduction/glossary#status"><font color=red><span title="A JSR that was not approved by the Executive Committee in one of the ballot stages for that JSR.">Rejected</span></font></a>
+
+			
+			<tr>
+			<td valign="top" class="listBy_tableHeader">Reason:</td>
+			<td></td>
+			<td>This JSR was not approved by the ME Executive Committee in the JSR Approval Ballot and JSR Reconsideration Ballot.</td>
+			</tr>
+			
+
+			
+
+			<tr>
+			<td valign="top" class="listBy_tableHeader">Latest Stage:</td>
+			<td></td>
+			<td>
+			<table border="1" cellpadding="4">
+			<tr>
+			<td>Rejected</td>
+			
+			<td></td>
+			
+			
+			<td>Effective: 2006-02-22</td>
+			<td></td>
+			</tr>
+			</table>
+
+
+			<tr>
+			<td valign="top" class="listBy_tableHeader">Spec Lead:</td>
+
+				<td></td>
+
+			<td>
+Andre&nbsp;Kruetzfeldt, Aplix Corporation</td>
+</tr>
+
+			<tr>
+			  <td colspan="2" valign="top" class="listBy_tableHeader">&nbsp;</td>
+			  <td><img src="/images/jsr/yel-horiz-bar.gif" width="220" height="8" border="0"></td>
+			  </tr>
+		</table>
+
+		&nbsp;<br>
+		&nbsp;<br>
+
+
+
+		<a name="323"></a>
+		<table cellpadding="2" cellspacing="0" border="0" class="listBy_table">
+		<tr>
+			<td class="listBy_tableTitle"><b>323</b></td>
+			<td nowrap><img src="/images/common/trans.gif" alt="" width="20" height="1"></td>
+			<td class="listBy_tableTitle"><b><a href="/en/jsr/detail?id=323">Strong Mobility for Java<sup><font size="-2">TM</font></sup></a></b></td>
+			</tr>
+
+			<tr>
+			<td valign="top" class="listBy_tableHeader">Description:</td>
+			<td></td>
+			<td>Strong Mobility is the movement of code, data and execution state from one location to another.  This specification defines byte-code transformation to achieve Strong Mobility for Java-based programs.</td>
+			</tr>
+
+			<tr>
+			<td valign="top" class="listBy_tableHeader">Status:</td>
+			<td></td>
+			<td><a href="/en/introduction/glossary#status"><font color=red><span title="A JSR that was not approved by the Executive Committee in one of the ballot stages for that JSR.">Rejected</span></font></a>
+
+			
+			<tr>
+			<td valign="top" class="listBy_tableHeader">Reason:</td>
+			<td></td>
+			<td>This JSR was not approved by the SE/EE Executive Committee in the JSR Approval Ballot.</td>
+			</tr>
+			
+
+			
+
+			<tr>
+			<td valign="top" class="listBy_tableHeader">Latest Stage:</td>
+			<td></td>
+			<td>
+			<table border="1" cellpadding="4">
+			<tr>
+			<td>JSR Review Ballot Failed</td>
+			
+			<td></td>
+			
+			
+			<td>Start: 2008-01-22</td>
+			<td></td>
+			</tr>
+			</table>
+
+
+			<tr>
+			<td valign="top" class="listBy_tableHeader">Spec Lead:</td>
+
+				<td></td>
+
+			<td>
+Hiroki&nbsp;Suguri, Suguri, Hiroki</td>
+</tr>
+
+			<tr>
+			  <td colspan="2" valign="top" class="listBy_tableHeader">&nbsp;</td>
+			  <td><img src="/images/jsr/yel-horiz-bar.gif" width="220" height="8" border="0"></td>
+			  </tr>
+		</table>
+
+		&nbsp;<br>
+		&nbsp;<br>
+
+
+
+		<a name="324"></a>
+		<table cellpadding="2" cellspacing="0" border="0" class="listBy_table">
+		<tr>
+			<td class="listBy_tableTitle"><b>324</b></td>
+			<td nowrap><img src="/images/common/trans.gif" alt="" width="20" height="1"></td>
+			<td class="listBy_tableTitle"><b><a href="/en/jsr/detail?id=324">On Screen MIDlet API for Java ME</a></b></td>
+			</tr>
+
+			<tr>
+			<td valign="top" class="listBy_tableHeader">Description:</td>
+			<td></td>
+			<td>This JSR defines the API set for MIDlet activation functionality on idle screen.</td>
+			</tr>
+
+			<tr>
+			<td valign="top" class="listBy_tableHeader">Status:</td>
+			<td></td>
+			<td><a href="/en/introduction/glossary#status"><font color=red><span title="A JSR that was not approved by the Executive Committee in one of the ballot stages for that JSR.">Rejected</span></font></a>
+
+			
+			<tr>
+			<td valign="top" class="listBy_tableHeader">Reason:</td>
+			<td></td>
+			<td>This JSR was not approved by the ME Executive Committee in the JSR Approval Ballot.</td>
+			</tr>
+			
+
+			
+
+			<tr>
+			<td valign="top" class="listBy_tableHeader">Latest Stage:</td>
+			<td></td>
+			<td>
+			<table border="1" cellpadding="4">
+			<tr>
+			<td>Rejected</td>
+			
+			<td></td>
+			
+			
+			<td>Effective: 2008-04-15</td>
+			<td></td>
+			</tr>
+			</table>
+
+
+			<tr>
+			<td valign="top" class="listBy_tableHeader">Spec Lead:</td>
+
+				<td></td>
+
+			<td>
+Dave&nbsp;Kim, SK Telecom Co., Ltd.</td>
+</tr>
+
+			<tr>
+			  <td colspan="2" valign="top" class="listBy_tableHeader">&nbsp;</td>
+			  <td><img src="/images/jsr/yel-horiz-bar.gif" width="220" height="8" border="0"></td>
+			  </tr>
+		</table>
+
+		&nbsp;<br>
+		&nbsp;<br>
+
+
+
+		<a name="350"></a>
+		<table cellpadding="2" cellspacing="0" border="0" class="listBy_table">
+		<tr>
+			<td class="listBy_tableTitle"><b>350</b></td>
+			<td nowrap><img src="/images/common/trans.gif" alt="" width="20" height="1"></td>
+			<td class="listBy_tableTitle"><b><a href="/en/jsr/detail?id=350">Java State Management</a></b></td>
+			</tr>
+
+			<tr>
+			<td valign="top" class="listBy_tableHeader">Description:</td>
+			<td></td>
+			<td>This JSR will develop an API that applications and JavaEE containers can use to offload the responsibility of state management into third party providers with different quality of service characteristics.</td>
+			</tr>
+
+			<tr>
+			<td valign="top" class="listBy_tableHeader">Status:</td>
+			<td></td>
+			<td><a href="/en/introduction/glossary#status"><font color=red><span title="A JSR that was not approved by the Executive Committee in one of the ballot stages for that JSR.">Rejected</span></font></a>
+
+			
+			<tr>
+			<td valign="top" class="listBy_tableHeader">Reason:</td>
+			<td></td>
+			<td>This JSR was not approved to continue by the Executive Committee in the JSR Renewal Ballot.</td>
+			</tr>
+			
+
+			
+
+			<tr>
+			<td valign="top" class="listBy_tableHeader">Latest Stage:</td>
+			<td></td>
+			<td>
+			<table border="1" cellpadding="4">
+			<tr>
+			<td>Rejected</td>
+			
+			<td></td>
+			
+			
+			<td>Effective: 2015-05-12</td>
+			<td></td>
+			</tr>
+			</table>
+
+
+			<tr>
+			<td valign="top" class="listBy_tableHeader">Spec Lead:</td>
+
+				<td></td>
+
+			<td>
+Tim&nbsp;Watson, Oracle</td>
+</tr>
+
+			<tr>
+			  <td colspan="2" valign="top" class="listBy_tableHeader">&nbsp;</td>
+			  <td><img src="/images/jsr/yel-horiz-bar.gif" width="220" height="8" border="0"></td>
+			  </tr>
+		</table>
+
+		&nbsp;<br>
+		&nbsp;<br>
+
+
+
+		<a name="357"></a>
+		<table cellpadding="2" cellspacing="0" border="0" class="listBy_table">
+		<tr>
+			<td class="listBy_tableTitle"><b>357</b></td>
+			<td nowrap><img src="/images/common/trans.gif" alt="" width="20" height="1"></td>
+			<td class="listBy_tableTitle"><b><a href="/en/jsr/detail?id=357">Social Media API</a></b></td>
+			</tr>
+
+			<tr>
+			<td valign="top" class="listBy_tableHeader">Description:</td>
+			<td></td>
+			<td>This specification proposes an API for accessing and providing social information networks</td>
+			</tr>
+
+			<tr>
+			<td valign="top" class="listBy_tableHeader">Status:</td>
+			<td></td>
+			<td><a href="/en/introduction/glossary#status"><font color=red><span title="A JSR that was not approved by the Executive Committee in one of the ballot stages for that JSR.">Rejected</span></font></a>
+
+			
+			<tr>
+			<td valign="top" class="listBy_tableHeader">Reason:</td>
+			<td></td>
+			<td>This JSR was not approved by the SE/EE Executive Committee in the JSR Approval Ballot.</td>
+			</tr>
+			
+
+			
+
+			<tr>
+			<td valign="top" class="listBy_tableHeader">Latest Stage:</td>
+			<td></td>
+			<td>
+			<table border="1" cellpadding="4">
+			<tr>
+			<td>Rejected</td>
+			
+			<td></td>
+			
+			
+			<td>Effective: 2012-03-20</td>
+			<td></td>
+			</tr>
+			</table>
+
+
+			<tr>
+			<td valign="top" class="listBy_tableHeader">Spec Lead:</td>
+
+				<td></td>
+
+			<td>
+Werner&nbsp;Keil, Keil, Werner</td>
+</tr>
+
+			<tr>
+			<td valign="top" class="listBy_tableHeader">Spec Lead:</td>
+
+				<td></td>
+
+			<td>
+Antoine&nbsp;Sabot-Durand, Sabot-Durand, Antoine</td>
+</tr>
+
+			<tr>
+			  <td colspan="2" valign="top" class="listBy_tableHeader">&nbsp;</td>
+			  <td><img src="/images/jsr/yel-horiz-bar.gif" width="220" height="8" border="0"></td>
+			  </tr>
+		</table>
+
+		&nbsp;<br>
+		&nbsp;<br>
+
+
+
+
+
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- ** BEGIN: footer.jsp ** //-->
+
+
+
+
+
+
+
+
+</td>
+</tr>
+</table>
+
+<!-- ** END: Content Table ** //-->
+
+<!-- ** BEGIN: Footer Table ** //-->
+
+<div id="footer" style="clear: both;">
+    <div class="footleft">
+        <a href="/en/resources/contacts">Contact Us</a>
+    </div>
+	
+    <div class="botbar"><img src="/images/spacer.gif" alt="" height="23" width="1"></div>
+
+    <div class="footleft2">
+         &copy; 2019, Oracle Corporation and/or its affiliates. 
+        <a href="/en/home/terms">Terms of Use</a>. <a href="http://www.oracle.com/us/legal/privacy/index.html">Privacy Policy</a>. <a href="http://www.oracle.com/us/legal/third-party-trademarks/third-party-trademarks-078568.html">Trademarks</a>
+    </div>
+
+    <div class="footright">
+        <img src="/images/common/logo_oracle_footer.gif" alt="Oracle Corporation" height="22" width="91">
+    </div>
+
+    <div style="clear: both;"><img src="/images/spacer.gif" alt="" height="30" width="1"></div>
+</div>
+
+<!-- ** END: Footer Table ** //-->
+
+
+
+<!-- ** Menu Start ** //-->
+
+
+
+</body>
+</html>
+<!-- ** END: footer.jsp ** //-->
+

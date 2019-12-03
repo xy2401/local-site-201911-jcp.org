@@ -1,0 +1,692 @@
+
+
+
+<!-- ** BEGIN: header.jsp ** //-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3c.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+<head>
+    
+
+   
+    <link href="/includes/css/menu.css" rel="stylesheet" type="text/css"></link>
+    <link href="/includes/css/style.css" rel="stylesheet" type="text/css"></link>
+    <!--[if lt IE 6]><link href="/includes/css/style5.css" rel="stylesheet" type="text/css" ></link><![endif]-->
+    <!--[if gte IE 5]><link href="/includes/css/style6.css" rel="stylesheet" type="text/css" ></link><![endif]-->
+    <link href="/includes/css/tabs.css"  rel="stylesheet" type="text/css"></link>
+
+    <script type="text/javascript" src="/includes/scripts/tabs.js"></script>
+    <script type="text/javascript" src="/includes/scripts/menu.js"></script>
+   
+
+    
+
+    
+        <title>The Java Community Process(SM) Program - Participation - withdrawn</title>
+    
+
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+
+
+<body onload="P7_initPM(0,1,0,0,-1)">
+
+    <a name="top"></a>
+
+    <div id="header">
+	<div id="logo">
+		<a href="/en/home/index"><img src="/images/spacer.gif" alt="Java Community Process" height="81" width="151"></a>
+	</div>
+	<div id="tools">
+		<div class="search">
+			<form name="search" action="/en/jsr/summary" method="get" onsubmit="return validate_search()">
+				<input name="id" value="Search JSRs" size="16" class="form" onfocus="nullify_if_equal(this, 'Search JSRs')" type="text">
+				<a href="javascript:document.search.submit()" onclick="return validate_search()"><img src="/images/button_go.gif" width="21" height="16" border="0" alt="Submit this Search" name="sub_search"></a>
+			</form>
+		</div>
+		<div class="tools">
+			<a href="/en/press/pressroom">Press Room</a> &nbsp;|&nbsp;
+			<a href="http://java.com/java/download/index.jsp?cid=jdp78399">Get Java Here</a> &nbsp;|&nbsp;
+			<!-- <a href="javascript:void(0)">Print Format</a> &nbsp;|&nbsp;&nbsp; -->
+		</div>
+
+	</div>
+	<div style="clear: right;"></div>
+
+        
+
+	<div class="topbar"><img src="/images/spacer.gif" alt="" height="3" width="154"></div>
+	<div id="update"> </div>
+    </div>
+
+
+    
+
+        <!-- ** BEGIN: Content Table ** //-->
+
+        <table width="100%" border="0" cellpadding="0" cellspacing="0">
+
+            <tr>
+
+                <!-- ** BEGIN: Navigation Column ** //-->
+                <td width="150" id="leftcontent" valign="top">
+                    <!-- Navigation Placeholder //-->
+
+                    
+
+                    <div class="bar"><img src="/images/hr_dots1.gif" alt="" height="3" width="150"></div>
+
+        <!-- begin find JSRs form -->
+        <!-- IMPORTANT! do not convert this form to Struts < html : form > tag.  javascript change of form.action property fails. -->
+        <img src="/images/hd_find-jsrs.gif" alt="Find JSRs" height="18" width="150">
+        <form name="findjsr" action="/en/jsr/summary" method="get" class="pt5" onsubmit="return validate_findjsr()">
+            <input name="id" size="18" class="form" value="Search JSRs" onfocus="nullify_if_equal(this, 'Search JSRs')" type="text">
+	    <a href="javascript:document.findjsr.submit()" onclick="return validate_findjsr()"><img src="/images/button_go.gif" width="21" height="16" border="0" alt="Submit this Search" name="sub_search"></a>
+        </form><br><br>
+
+        <!-- ** Menu Start ** //-->
+
+        <ul id="p7PMnav">
+            <li><a href="/en/jsr/platform">JSRs by Platform</a></li>
+            <li><a href="/en/jsr/tech">JSRs by Technology</a></li>
+            <li><a href="/en/jsr/stage">JSRs by Stage</a></li>
+            <li><a href="/en/jsr/ec">JSRs by Committee</a></li>
+            <li><a href="/en/jsr/all">List of All JSRs</a></li>
+
+            <!--end find JSRs form -->
+            <div style="clear: both;"><img src="/images/spacer.gif" alt="" height="25" width="1"></div>
+
+            <!--begin my JCP -->
+            <img src="/images/hd_my-jcp.gif" alt="My JCP" height="18" width="150">
+            
+
+          <form name="login" method="get" action="/en/user/login" >
+            <input name="Sign-in" type="submit" title="Sign-in" value="Sign-in" />
+          </form>
+
+            <div style="clear:both"><img src="/images/global/spacer.gif" width="1" height="3" alt=""></div>
+            <div class="noNav">
+                <a href="/en/user/register">Register for Site</a>
+            </div>
+
+             <div class="bar"><img src="/images/hr_dots1.gif" alt="" height="3" width="150"></div>
+           <div class="noNav" style="color: #666666; padding: 0;">
+              Use of JCP site is subject to the
+              <a href="/en/home/terms" style="display:inline;padding: 0">JCP Terms of Use</a> and the
+              <a href="http://www.oracle.com/us/legal/privacy/index.html" style="display:inline;padding: 0" href="">Oracle Privacy Policy</a>
+          </div>
+
+            
+
+            <div style="clear:both"><img src="/images/global/spacer.gif" width="1" height="25" alt=""></div>
+
+            <!--begin JCP info -->
+            <img src="/images/hd_jcp-info.gif" alt="JCP Info" height="18" width="150">
+
+            <li><a href="/en/procedures/overview" class="p7PMtrg">About JCP</a>
+                <ul>
+                    <li><a href="/en/procedures/overview">Program Overview</a></li>
+                    <li><a href="/en/procedures/jcp2">JCP Process Document</a></li>
+                    <li><a href="/en/whatsnew/calendar">Calendar</a></li>
+                    <li><a href="/en/participation/members">JCP Members</a></li>
+                    <li><a href="/en/participation/committee">Executive Committee</a></li>
+                    <li><a href="/en/whatsnew/elections">Elections</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/en/participation/overview" class="p7PMtrg">Get Involved</a>
+		<ul>
+                    <li><a href="/en/participation/overview">Overview</a></li>
+                    <li><a href="/en/participation/membership">Becoming a JCP Member</a></li>
+		</ul>
+            </li>
+
+            <li><a href="/en/resources/contents" class="p7PMtrg">Community Resources</a>
+                <ul>
+                    <li><a href="/en/resources/contents">Overview</a></li>
+                    <li><a href="/en/resources/tutorials">Tutorials</a></li>
+                    <li><a href="/en/resources/multimedia">JCP Podcasts</a></li>
+                    <li><a href="/en/resources/guide">Spec Lead Guide</a></li>
+                    <li><a href="/en/resources/tdk">TCK Tool & Info</a></li>
+                    <li><a href="/en/resources/license_reference">License Reference</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/en/press/pmo" class="p7PMtrg">Community News</a>
+                <ul>
+                    <li><a href="/en/press/pmo">News</a></li>
+                    <li><a href="/en/press/news/awards/awards_main">Programs &amp; Awards</a></li>
+                    <li><a href="/en/press/releases">Press Releases</a></li>
+                    <li><a href="/en/press/success">Success Stories</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/en/introduction/faq">FAQ</a></li>
+
+            <li><a href="/en/resources/contacts">Contact Us</a></li>
+
+            <div style="clear: both;"><img src="/images/spacer.gif" alt="" height="25" width="1"></div>
+
+            <!--[if lte IE 6]><style>#p7PMnav a{height:1em;}#p7PMnav li{height:1em;float:left;clear:both;width:100%}</style><![endif]-->
+            <!--[if IE 6]><style>#p7PMnav li{clear:none;}</style><![endif]-->
+            <!--[if IE 7]><style>#p7PMnav a{zoom:100%;}#p7PMnav li{float:left;clear:both;width:100%;}</style><![endif]-->
+        </ul>
+
+        
+
+        <!--begin ad space -->
+        <div class="ads">
+            <a href="http://java.com/java/download/index.jsp?cid=jdp78399" target="_blank"><img style="display: ;" src="/images/ad_banner2.gif" alt="Ad Banner" border="1" height="70" width="150"></a>
+        </div>
+        <!--end ad space -->
+
+<!-- ** Menu End ** //-->
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;<br>
+
+    
+
+                    &nbsp;<br>
+                    <img src="/images/common/trans.gif" alt="" width="1" height="150"><br>
+
+              
+
+
+
+                </td>
+                <!-- ** END: Navigation Column ** //-->
+
+                <!-- ** BEGIN: Gutter Column ** //-->
+		<td width="10" nowrap><img src="/images/common/trans.gif" alt="" width="10" height="1"></td>
+                <!-- ** END: Gutter Column ** //-->
+
+                <!-- ** BEGIN: Content Column ** //-->
+                <td width="100%" valign="top">
+
+    
+<script type="text/javascript">
+
+String.prototype.trim = function() {
+        return this.replace(/^\s+|\s+$/g,"");
+}
+String.prototype.ltrim = function() {
+        return this.replace(/^\s+/,"");
+}
+String.prototype.rtrim = function() {
+        return this.replace(/\s+$/,"");
+}
+
+function validate_search() {
+	if (document.search.id.value == "Search JSRs" || document.search.id.value.trim().length == 0) {
+		alert("Search terms must be entered first");
+		return false;
+	}
+	return true;
+}
+
+function validate_findjsr() {
+	if (document.findjsr.id.value == "Search JSRs" || document.findjsr.id.value.trim().length == 0) {
+		alert("Search terms must be entered first");
+		return false;
+	}
+	return true;
+}
+
+function nullify_if_equal(field, str) {
+	// alert("val=" + field.value);
+	if (field.value == str) {
+		field.value = "";
+	}
+}
+
+</script>
+<!-- ** END: header.jsp ** //-->
+
+
+
+
+<p>
+<h2>JSRs: Java Specification Requests</h2>
+<br>
+<h1>JSRs by Technology</h1>
+</p>
+
+<div class="anybar"><img src="/images/global/bar_green.gif" alt="" width="12" height="4"></div>
+
+The following Java<SUP><FONT SIZE="-2">TM</FONT></SUP> Specification Requests (JSRs) have been withdrawn
+from the Java Community Process<SUP><FONT SIZE="-2">SM</FONT></SUP> Program
+for the reasons stated.</P>
+
+<p>
+<b>PLEASE NOTE</b>: These JSRs represent proposed
+specifications that were either not started or not completed. Those
+that were started, but not completed, are usually being completed
+elsewhere. See below for details. Note that a Java Specification Request may have been <a href="/aboutJava/communityprocess/accepted.html">Accepted</a> from the <a href="/procedures/jcp2/#1.3">JSR Approval Ballot</a> but withdrawn later.
+</p>
+
+<UL TYPE="CIRCLE">
+
+<LI><A href="/jsr/detail/2.jsp">JSR-000002 Boundary-Scan API</A>
+<BR><BR>
+Withdrawn 1999.01.09 at the request of the submitter.
+<BR><BR>
+
+<LI><a href="/en/jsr/detail?id=7">JSR-000007 Industrial Automation Extension</a><BR><BR>
+Withdrawn 2004.10.11 with the consent of the Spec Lead. Difficulties in forming
+an expert group and reaching consensus toward a draft spec hampered the JSR's abilities in successfully navigating the community process.
+<BR><BR>
+
+<LI><A href="/jsr/detail/8.jsp">JSR-000008 Open Services Gateway Specification</a>
+
+<BR><BR>
+Withdrawn 1999.11.16 because work moved to Open Services Gateway consortium
+(<a href="http://www.osgi.org">www.osgi.org</a>) where the specification
+will be completed.
+<BR><BR>
+
+<LI><a href="/en/jsr/detail?id=17">JSR-000017 JAIN<sup><font size="-2">TM</font></sup> ISUP Specification</a><P>
+Withdrawn 2003.02.05. The Spec Lead of this JSR approached other members of
+ the Expert
+Group to see if they might be interested in taking on the role of
+Spec Lead, but there has been no interest. This is due to the
+fact that industry focus has evolved/changed, and as such the
+original scope of the JSR is not as important to the industry as
+originally scoped. The Spec Lead has since left the JCP and the Expert Group has been disbanded.
+</LI>
+<P>
+
+<LI><a href="/jsr/detail/25.jsp">JSR-000025 JAIN Connectivity Management</a>
+<BR><BR>
+Withdrawn 2000.11.21 at the request of the submitter.
+<BR><BR>
+
+<LI><a href="http://jcp.org/en/jsr/detail?id=26">JSR-000026 UML/EJB Mapping Specification</a><BR><BR>
+Withdrawn 2004.03.29 due to lack of interest after the original Spec Lead company was acquired. New Spec Lead company has failed to find a Spec Lead who wants to drive JSR-26 to completion. Expert Group was informed of intent to withdraw JSR-26 and it supported that action.<BR><BR>
+
+<LI><A href="/jsr/detail/27.jsp">JSR-000027 Java Cryptography Extension 1.3</A>
+<BR><BR>
+Withdrawn 1999.11.05 before work began because it describes a cryptographic system and/or a
+crytpographic framework whose implementation would be subject to
+U.S. Export Licensing requirements.
+<BR><BR>
+
+<LI><a href="http://jcp.org/en/jsr/detail?id=29">JSR-000029 JAIN<sup><font size="-2">TM</font></sup> MAP Specification</a><BR><BR>
+Withdrawn 2003.05.30 due to Spec Lead's move to another company and the lack of
+interest from the rest of the Expert Group in driving the spec to Final Release. At the time it was withdrawn, there had been no activity in the JSR since September 2001.<BR><BR>
+
+<LI><A href="/jsr/detail/33.jsp">JSR-000033 InfoBus 2.0 Specification</A>
+<BR><BR>
+Withdrawn 1999.11.08 at the request of the submitter.
+InfoBus 2.0 is no longer under development in the Java Community Process.
+Please direct comments or questions about InfoBus to
+<A HREF="mailto:infobus-comments@java.sun.com">infobus-comments@java.sun.com</A>.
+For information on InfoBus 1.2, see
+<a href="http://java.sun.com/beans/infobus">http://java.sun.com/beans/infobus</a>.
+<BR><BR>
+
+<LI><a href="/jsr/detail/39.jsp">JSR-000039 Java<sup><font size="-2">TM</font></sup>
+Servlet and JSP Performance Benchmark</a><BR><BR>
+Withdrawn 2001.10.02 at the request of the submitter.<BR><BR>
+
+<LI><A href="/jsr/detail/42.jsp">JSR-000042 Travel Industry Reservation Booking
+Foundation API Specification</A>
+<BR><BR>
+Withdrawn 2000.06.13 at the request of the submitter.  Community support
+was not sufficient to form an expert group.
+<BR><BR>
+
+<LI><a href="/jsr/detail/44.jsp">JSR-000044 Braille API Specification</a>
+<BR><BR>
+Withdrawn 2000.11.21 at the request of the submitter.
+Community support was not sufficient to support an Expert Group.
+<BR><BR>
+
+<LI><a href="/en/jsr/summary?id=49">JSR-000049 Web Based Industrial Monitoring Framework</a><P>
+Withdrawn 2010.02.18 as Spec Lead left the JCP and no other Expert Group member was willing to take over as Spec Lead.<P>
+
+<LI><a href="/en/jsr/detail?id=61">JSR-000061 Phonelets API Specification</a><P>Withdrawn 2004.04.09 at the request of the Spec Lead after 4 years with no Expert Group.
+<BR><BR>
+
+<LI><a href="/jsr/detail/64.jsp">JSR-000064 Financial Services Party Component</a>
+<BR><BR>
+Withdrawn 2000.08.30 at the request of the submitter.
+XML party components for this functionality are being developed
+under the Customer Profile Exchange (CPex).
+<BR><BR>
+
+<LI><a href="/jsr/detail/65.jsp">JSR-000065 Concise Object-Array Literals</a><BR><BR>
+Withdrawn 2003.07.25 at the request of the Spec Lead with the agreement of the Expert Group. The community requirements targeted in this JSR are now being addressed as part of autoboxing in <a href="http://jcp.org/en/jsr/detail?id=201">JSR
+201</a>.<br><br>
+
+<LI><a href="/en/jsr/detail?id=69">JSR-000069 Java OLAP Interface</a><P>
+Withdrawn 2012.04.16 at the request of the Specification Lead.
+<BR><BR>
+
+<LI><A href="http://jcp.org/en/jsr/detail?id=70">JSR-000070 IIOP Protocol Adapter for JMX<sup><font size="-2">TM</font></sup> Specification</a><P>
+Withdrawn 2003.10.23 following re-prioritization within the company, IONA could
+no longer commit the resources necessary to complete the specification and build an RI and TCK. In addition, IONA no longer sees a sufficient customer demand for access to JMX MBeans using CORBA clients, so IONA formed the opinion that the
+specification did not address a common need in the marketplace and therefore was unnecessary.<BR><BR>
+
+<LI><A href="/jsr/detail/71.jsp">JSR-000071 JMX-TMN Specification</a><BR><BR>
+
+<LI><a href="http://jcp.org/en/jsr/detail?id=74">JSR-000074 Public Key Crypotography Standards (PKCS) 1.0</a><P>
+Withdrawn 2004.01.14 as the main goals of this JSR have now been achieved and delivered through J2SE and other JCP specifications.<BR><BR>
+
+<LI><a href="/jsr/detail/81.jsp">JSR-000081 JAIN<sup><Font size="-2">TM</font></sup>
+ H323</a><P>
+Due to the general absence of interest in the Community, the Specification Lead
+decided to withdraw the JSR from development.</LI>
+<P>
+
+<LI><a href="en/jsr/detail?id=83">JSR-000083 Multiarray package</a><P>
+Withdrawn 2005.09.06. JSR-83 has shown slow
+progress for several years and has not generated significant industry
+interest or participation. With no outlook for a timely completion of this
+JSR, the Spec Lead decided to withdraw it.</LI>
+<P>
+
+<LI><a href="/en/jsr/detail?id=84">JSR-000084 Floating Point Extensions</a><P>
+Withdrawn 2002.03.01. Due to the general absence of interest in the community, the Specification lead withdrew the JSR.</LI>
+<P>
+
+<LI><a href="/en/jsr/detail?id=92">JSR-000092 Localizable Text</a><P>
+Withdrawn 2005.02.08. The Spec Lead provided the following explanation: "Both JSR-92 and JSR-150 address the issue of "distributed
+internationalization" in the J2EE world. JSR-92 is somewhat client-centric
+in nature while JSR-150 attempts to provide a server-side solution. The
+progress of JSR-92 is rather slow, and some of the issues raised in JSR-92
+can be addressed more elegantly by the technology advocated in JSR-150. The
+existence of two separate JSRs for the same issue of distributed
+internationalization can generate unnecessary confusion. Hence we feel
+JSR-92 should be withdrawn from the JSR space altogether. We will
+incorporate relevant portions of JSR-92 in JSR-150."</LI>
+<P>
+
+<LI><a href="/jsr/detail/96.jsp">JSR-000096 Java<sup><font size="-2">TM</font></sup>
+ Daemons</a><P>
+Following the failed Draft Approval Ballot, the Spec Lead decided not to work on materials for a reconsideration ballot and withdrew the JSR from the Java Community Process.</LI>
+<P>
+
+<LI><a href="/en/jsr/detail?id=100">JSR-000100 JAIN<sup><font size="-2">TM</font></sup> Service Creation Environment</a><P>
+Withdrawn 2006.12.04 when the Spec Lead asked to withdraw and no one from the Expert Group was willing to become the new Spec Lead.</LI>
+<P>
+
+<LI><a href="/en/jsr/detail?id=103">JSR-000103 JAIN<sup><font size="-2">TM</font></sup> User Interaction API</a><P>
+Withdrawn 2003.03.21 following <a href="/aboutJava/communityprocess/withdrawn/austin.txt">decisions at the November 2002 JAIN meeting in Austin</a>.</LI>
+<P>
+
+<LI><a href="/en/jsr/detail?id=104">JSR-000104 XML Trust Service APIs</a><P>
+Withdrawn 2009.06.11. The Spec Lead explains: "The Java world has moved on since 2001 and the need for this JSR has declined."</LI>
+<P>
+
+<LI><a href="/en/jsr/detail?id=108">JSR-000108 Units Specification</a><P>
+Withdrawn 2004.07.23 after the Spec Lead left the JCP and none of the Expert Group took over as Spec Lead.
+</LI>
+<BR><BR>
+
+<LI><a href="/en/jsr/detail?id=111">JSR-000111 Java<sup><font size="-2">TM</font></sup> Services Framework</a><P>
+Withdrawn 2003.08.19 with the <a href="/aboutJava/communityprocess/withdrawn/111.txt">agreement of the Expert Group</a>.</LI>
+<P>
+
+<LI><a href="http://jcp.org/en/jsr/detail?id=117">JSR-000117 J2EE<sup><font size="-2">TM</font></sup> APIs for Continuous Availability</a><P>
+Withdrawn 2003.08.25 with the <a href="/aboutJava/communityprocess/withdrawn/117.txt">agreement of the Expert Group</a>.</LI>
+<P>
+
+<LI><a href="/en/jsr/detail?id=119">JSR-000119 JAIN<sup><font size="-2">TM</font></sup> SPA Integrity Management and Event Notification API</a><P>
+With agreement from the Expert Group, the Spec Lead decided to withdrawn this JSR on 2003.02.24 following <a href="/aboutJava/communityprocess/withdrawn/austin.txt">decisions at the November 2002 JAIN meeting in Austin</a>.</LI>
+<P>
+
+<LI><a href="/en/jsr/detail?id=123">JSR-000123 JAIN<sup><font size="-2">TM</font></sup> Presence and Availability Management (PAM) API</a><P>
+Withdrawn 2004.03.19 after unable to find anyone to take over Specification Lead role. In addition, the differences between the OSA PAM and JAIN PAM specs are sufficiently small that it's not clear that the industry benefits from two specification.</LI>
+<P>
+
+<LI><a href="/en/jsr/detail?id=125">JSR-000125 JAIN<font size="-2"><sup>TM</sup></font> SIP Lite</a><P>
+Withdrawn 2006.03.14 after no one on the Expert Group offered to take over the Spec Lead role. "Because of the resourcing issues, Nortel will like to withdraw from the
+JSR125. We are unable to provide the RI and the TCK, but believe that
+this is the right approach for a Proxy and small footprint SIP
+servers/Clients."</LI>
+<P>
+
+<LI><A href="http://jcp.org/en/jsr/detail?id=126">JSR-000126 Distributed Page Assembly</a><P>
+Withdrawn 2003.11.10. Initial discussions for the JSR 126 EG were deferred when
+they realized that a viable solution in the proposed direction, which is complimentary to JSR 128, required advancements in the underlying technology (Edge Side Includes). At the time, it seemed that discussion about ESI-related standards were sufficiently active that they could wait for the next version of the standard. However, those discussions seemed to stall as attentions were directed to early adoption and other topics. If ESI standards are revised at a later date, then perhaps the objectives of JSR 126 could be pursued through a new JSR.<P>
+
+<LI><A href="/jsr/detail/132.jsp">JSR-000132 JAIN<sup><Font size="-2">TM</font></sup>
+ OAM API Specification v2.0</a><P>
+The JAIN community has decided to encapsulate the management
+functionality for each of the JAIN protocol specifications into their
+own specification as opposed to encapsulating this functionality in a
+separate JSR.</LI>
+<P>
+
+<LI><a href="http://jcp.org/en/jsr/detail?id=134">JSR-000134 Java<sup><font size="-2">TM</font></sup> Game Profile</a><P>
+Withdrawn 2003.07.09. The Spec Lead has chosen to withdraw this JSR. It was determined that the needs of games developers were best served by moving to a pure open source model for game client technologies. This changes in strategy will allow the broadest participation by the game development community, and will focus
+the energies of the community on timely solutions that address a rapidly changing technology landscape. The Spec Lead wishes to thank the Java Community and the Game Developers who supported and showed interest in this effort.</LI>
+<P>
+
+<LI><a href="/en/jsr/detail?id=136">JSR-000136 Java<sup><font size="-2">TM</font></sup> Technology for Service Providers</a><P>
+Withdrawn 2004.03.19 as community support was not sufficient to support an Expert Group.</LI>
+<P>
+
+<LI><A href="/en/jsr/detail?id=137">JSR-000137 JAIN<sup><font size="-2">TM</font></sup> 3G Map Specification</a><P>
+Seeing that there has been no active interest in the JAIN 3G Map APIs recently and because of lack of member contributions to the Expert Group, the Spec Lead decided to withdrawn the JSR on 2003.03.04.</LI>
+<P>
+
+<LI><a href="/en/jsr/detail?id=140">JSR-000140 Service Location Protocol API for Java</a><P>
+Withdrawn 2004.10.05. The Spec Lead was not doing work on the JSR. While several other organizations have done seemingly
+promising Java work in the SLP area, none of them was interested in
+taking over the spec lead position to progress a JSR on it.</LI>
+<P>
+
+<LI><A href="/en/jsr/detail?=145">JSR-000145 JAIN<sup><Font size="-2">TM</font></sup> SPA Cpmmon API</a><P>
+Withdrawn 2003.02.14. Read the <a href="/aboutJava/communityprocess/withdrawn/145.txt">Spec Lead's explanation of the withdrawal here.</a>
+</LI>
+<P>
+
+<LI><a href="/en/jsr/detail?id=146">JSR-000146 WBEM Services: JMX Provider Protocol Adapter</a><P>
+Withdrawn 2003.07.14 by the Spec Lead. After a year and a half of no progress, the Spec Lead suggested withdrawing the JSR and the Expert Group did not object.</LI>
+<P>
+
+<LI><a href="/en/jsr/detail?id=148">JSR-000148 3DMedia Utilities</a><P>
+After over a year of no development, the Spec Lead suggested withdrawing the JSR and the Expert Group did not object.</LI>
+<P>
+
+<LI><a href="/en/jsr/detail?id=149">JSR-000149 Work Area Service for J2EE<font size="-2"><sup>TM</sup></font></a><P>
+Withdrawn 2005.10.26: "JSR-149 has shown slow progress for several years and has not generated significant industry interest or participation. With no outlook for a timely completion of this JSR, the Spec Lead withdrew the JSR once no one in the Expert Group agreed to take over the Spec Lead role.</LI>
+<P>
+
+<LI><a href="/en/jsr/detail?id=150">JSR-000150 Internationalization Service for
+J2EE<sup><font size="-2">TM</font></sup></a><P>
+Withdrawn 2008.10.30: "JSR-150 has been idle for several years now and the existing draft has not kept pace with changes in J2EE. The Spec Lead wishes to withdraw the JSR. None of the EG members has objected."</LI>
+<P>
+
+<LI><a href="/en/jsr/summary?id=155">JSR-000155 Web Services Security Assertions</a><P>
+Withdrawn 2010.02.18 by the JSR 155 Spec Lead due to changing industry focus and continued JSR inactivity.</LI>
+<P>
+
+<LI><a href="/en/jsr/summary?id=156">JSR-000156 Java API for XML Transactions</a><P>
+Withdrawn 2010.02.18 at the request of the Spec Lead.</LI>
+<P>
+ 
+<LI><a href="/en/jsr/detail?id=158">JSR-000158 Java<sup><font size="-2">TM</font></sup> Stream Assembly</a><P>
+Withdrawn 2011.12.14 at the request of the Spec Lead.</LI>
+<P>
+
+<LI><a href="/en/jsr/detail?id=159">JSR-000159 Java<sup><font size="-2">TM</font></sup> Process Component API (JPC)</a><P>
+Withdrawn 2003.05.05 by the <a href="/aboutJava/communityprocess/withdrawn/159.txt">JSR 159 Spec Lead with assent from the Expert Group.</a></LI>
+<P>
+
+<LI><a href="/jsr/detail/162.jsp">JSR-000162 Portlet API</a><P>
+As there is very significant overlap between JSRs 162 & 167, Sun and IBM have reached
+ a mutual agreement regarding the proposals. We have now reached a point where
+ we feel that we have a mutually acceptable new combined JSR proposal, which
+we now wish to seek endorsement of from the existing supporters of JSR 162 and 167.
+</LI>
+<P>
+<LI><a href="/jsr/detail/167.jsp">JSR-000167 Java<sup><font size="-2">TM</font></sup>
+ Portlet Specification</a><P>
+As there is very significant overlap between JSRs 162 & 167, Sun and IBM have reached
+ a mutual agreement regarding the proposals. We have now reached a point where
+ we feel that we have a mutually acceptable new combined JSR proposal, which
+we now wish to seek endorsement of from the existing supporters of JSR 162 and 167.
+</LI><P>
+
+<LI><a href="/en/jsr/detail?id=183">JSR-000183 Web Services Message Security APIs</a><P>
+Withdrawn on 2008.08.05: Web services security (WS-Security) has become the defacto standard to secure web services messages. Lack of a standard in Java to write to these APIs, hasn't caused any interoperability or integration issues across vendor platforms. So, this JSR is being withdrawn.</LI><P>
+
+<LI><a href="/en/jsr/detail?id=189">JSR-000189 Java<font size="-2"><sup>TM</sup></font> 3D API 1.4</a><P>
+Withdrawn on 2005.11.08: The changes to the Java 3D API as originally envisioned by JSR-189 were
+quite significant, and were planned as part of a major API release, for
+which we had planned to form an expert group under the JSR. Due to
+changes in the nature of the project development, this effort was
+discontinued nearly three years ago, a few months after the JSR was
+filed. JSR-189 was left open as a place-holder, but it no longer makes
+sense to leave it open.
+<P>
+
+The Java 3D API is now a community source project on java.net, where all
+new development has happened over the past 18 months. We are actively
+developing the 1.4 API release with help from the Java 3D community on
+java.net. This release is a much more modest undertaking than was
+originally planned, and all new API changes are being designed with
+public input. As such we are closing this JSR, and are doing Java 3D 1.4
+as a maintenance release under the JCP.
+</LI>
+<P>
+
+<LI><A href="/en/jsr/detail?id=191">JSR-000191 JAIN<sup><font size="-2">TM</font></sup> GCCS API</a><P>
+Withdrawn on 2003.03.21 following agreement with the Expert Group after the <a href="/aboutJava/communityprocess/withdrawn/austin.txt">decisions at the November 2002 JAIN meeting in Austin</a>.</LI>
+<P>
+
+<LI><a href="/en/jsr/detail?id=192">JSR-000192 JAIN<sup><font size="-2">TM</font></sup> Service Creation Environment - Java<sup><font size="-2">TM</font></sup>
+PART</a><P>
+Withdrawn on 2004.09.22 by the JSR 192 Spec Lead: "There has not been much progress on this JSR since quite some time. The draft was floated for Expert Group review but there was no response even after several reminders.
+We have now decided not to go ahead with this activity and hence you are request to mark this JSR 192 as WITHDRAWN."</LI>
+<P>
+
+<LI><a href="/jsr/detail/193.jsp">JSR-000193 Client Side Containers (CSC)</a><P>Having noticed the many questions/concerns about this specification proposal, the submitter decided to withdraw the request.
+</LI>
+<P>
+
+<LI><a href="/en/jsr/detail?id=194">JSR-000194 JAIN<sup><font size="-2">TM</font></sup> ULS API</a><P>
+With agreement from his Expert Group, the Spec Lead decided to withdrawn this JSR on 2003.02.21 following <a href="/aboutJava/communityprocess/withdrawn/austin.txt">decisions at the November 2002 JAIN meeting in Austin</a>.</LI>
+<P>
+
+<LI><a href="/en/jsr/detail?id=237">JSR-000237 Work Manager for Application Servers</a><P>
+Withdrawn 2008.06.18. The Spec Leads provided this information: "JSR 237 has been merged with JSR 236, providing a single, consistent specification for Java EE
+concurrency."
+</LI>
+<P>
+
+<LI><a href="/en/jsr/detail?id=261">JSR-000261 Java<sup><font size="-2">TM</font></sup> API for XML Web Services Addressing</a><P>
+Withdrawn 2006.12.15 at the Spec Lead's request; "All the work done under this JSR has been subsumed under JSR 224. This has been conveyed to the EG at earlier instances as well and nobody objected."</LI>
+<P>
+
+<LI><a href="/en/jsr/summary?id=265">JSR-000265 API for Utilizing Web Services Policy</a><P>
+Withdrawn 2010.01.28 at the request of the Spec Lead: "The standardization of policy-based metadata will continue as part of the Service Component Architecture (SCA), which will eventually provide Java-based language bindings as part of separate JSRs."</LI>
+<P>
+ 
+<LI><a href="/en/jsr/detail?id=267">JSR-000267 JSP Tag Library for Web Services</a><P>
+Withdrawn 2008.02.06: at the Spec Lead's request: " - Lack of resources to drive this JSR, produce the RI (Reference Implementation) and TCK (Technology Compatibility Kit)<BR>
+- Waning interest and lack of support  for this technology from the community"</LI>
+<P>
+
+<LI><a href="/en/jsr/detail?id=296">JSR-000296 Swing Application Framework</a><P>
+Withdrawn 2011.06.06 at the Spec Lead's request.
+</LI>
+<P>
+
+<LI><a href="/en/jsr/detail?id=306">JSR-000306 Towards a new version of the JCP</a><P>
+Withdrawn 2010.12.16 at the Spec Lead's request: "This JSR is being withdrawn because it is obsolete. It will be replaced by two new JSRs (to be filed shortly)
+that will develop short-term and longer-term changes to the Process Document and the JSPA. Work from JSR 306 will be incorporated into the new JSRs as appropriate. Patrick Curran will be the Spec Lead for these JSRs, while the Expert Group
+will be the current membership of both the <a href="/en/participation/committee#membership">JCP Executive Committees</a>."
+</LI>
+<P>
+
+<LI><a href="/en/jsr/detail?id=312">JSR-000312 Java<sup><font size="-2">TM</font></sup> Business Integration 2.0</a><P>
+Withdrawn 2010.12.17 at the Spec Lead's request.</LI>
+<P>
+ 
+<LI><a href="/en/jsr/detail?id=313">JSR-000313 Java<sup><font size="-2">TM</font></sup> Platform, Enterprise Edition 6</a><P>
+Withdrawn 2007.04.13 at the Spec Lead's request during the <a href="/en/jsr/results?id=4216">JSR Approval Ballot</a>.</LI>
+<P>
+
+<LI><a href="/en/jsr/detail?id=922">JSR-000922 Java<font size="-2"><sup>TM</sup></font> Communication API</a><P>
+Withdrawn 2002.12.04 after it became clear that changes were to the implementation, not the specification.</LI>
+<P>
+
+</UL>
+
+
+
+<!-- ** BEGIN: footer.jsp ** //-->
+
+
+
+
+
+
+
+
+</td>
+</tr>
+</table>
+
+<!-- ** END: Content Table ** //-->
+
+<!-- ** BEGIN: Footer Table ** //-->
+
+<div id="footer" style="clear: both;">
+    <div class="footleft">
+        <a href="/en/resources/contacts">Contact Us</a>
+    </div>
+	
+    <div class="botbar"><img src="/images/spacer.gif" alt="" height="23" width="1"></div>
+
+    <div class="footleft2">
+         &copy; 2019, Oracle Corporation and/or its affiliates. 
+        <a href="/en/home/terms">Terms of Use</a>. <a href="http://www.oracle.com/us/legal/privacy/index.html">Privacy Policy</a>. <a href="http://www.oracle.com/us/legal/third-party-trademarks/third-party-trademarks-078568.html">Trademarks</a>
+    </div>
+
+    <div class="footright">
+        <img src="/images/common/logo_oracle_footer.gif" alt="Oracle Corporation" height="22" width="91">
+    </div>
+
+    <div style="clear: both;"><img src="/images/spacer.gif" alt="" height="30" width="1"></div>
+</div>
+
+<!-- ** END: Footer Table ** //-->
+
+
+
+<!-- ** Menu Start ** //-->
+
+
+
+</body>
+</html>
+<!-- ** END: footer.jsp ** //-->
+

@@ -1,0 +1,795 @@
+
+
+
+
+<!-- ** BEGIN: header.jsp ** //-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3c.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+<head>
+    
+
+   
+    <link href="/includes/css/menu.css" rel="stylesheet" type="text/css"></link>
+    <link href="/includes/css/style.css" rel="stylesheet" type="text/css"></link>
+    <!--[if lt IE 6]><link href="/includes/css/style5.css" rel="stylesheet" type="text/css" ></link><![endif]-->
+    <!--[if gte IE 5]><link href="/includes/css/style6.css" rel="stylesheet" type="text/css" ></link><![endif]-->
+    <link href="/includes/css/tabs.css"  rel="stylesheet" type="text/css"></link>
+
+    <script type="text/javascript" src="/includes/scripts/tabs.js"></script>
+    <script type="text/javascript" src="/includes/scripts/menu.js"></script>
+   
+
+    
+
+    
+        <title>The Java Community Process(SM) Program - JSRs: Java Specification Requests - results</title>
+    
+
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+
+
+<body onload="P7_initPM(0,1,0,0,-1)">
+
+    <a name="top"></a>
+
+    <div id="header">
+	<div id="logo">
+		<a href="/en/home/index"><img src="/images/spacer.gif" alt="Java Community Process" height="81" width="151"></a>
+	</div>
+	<div id="tools">
+		<div class="search">
+			<form name="search" action="/en/jsr/summary" method="get" onsubmit="return validate_search()">
+				<input name="id" value="Search JSRs" size="16" class="form" onfocus="nullify_if_equal(this, 'Search JSRs')" type="text">
+				<a href="javascript:document.search.submit()" onclick="return validate_search()"><img src="/images/button_go.gif" width="21" height="16" border="0" alt="Submit this Search" name="sub_search"></a>
+			</form>
+		</div>
+		<div class="tools">
+			<a href="/en/press/pressroom">Press Room</a> &nbsp;|&nbsp;
+			<a href="http://java.com/java/download/index.jsp?cid=jdp78399">Get Java Here</a> &nbsp;|&nbsp;
+			<!-- <a href="javascript:void(0)">Print Format</a> &nbsp;|&nbsp;&nbsp; -->
+		</div>
+
+	</div>
+	<div style="clear: right;"></div>
+
+        
+
+	<div class="topbar"><img src="/images/spacer.gif" alt="" height="3" width="154"></div>
+	<div id="update"> </div>
+    </div>
+
+
+    
+
+        <!-- ** BEGIN: Content Table ** //-->
+
+        <table width="100%" border="0" cellpadding="0" cellspacing="0">
+
+            <tr>
+
+                <!-- ** BEGIN: Navigation Column ** //-->
+                <td width="150" id="leftcontent" valign="top">
+                    <!-- Navigation Placeholder //-->
+
+                    
+
+                    <div class="bar"><img src="/images/hr_dots1.gif" alt="" height="3" width="150"></div>
+
+        <!-- begin find JSRs form -->
+        <!-- IMPORTANT! do not convert this form to Struts < html : form > tag.  javascript change of form.action property fails. -->
+        <img src="/images/hd_find-jsrs.gif" alt="Find JSRs" height="18" width="150">
+        <form name="findjsr" action="/en/jsr/summary" method="get" class="pt5" onsubmit="return validate_findjsr()">
+            <input name="id" size="18" class="form" value="Search JSRs" onfocus="nullify_if_equal(this, 'Search JSRs')" type="text">
+	    <a href="javascript:document.findjsr.submit()" onclick="return validate_findjsr()"><img src="/images/button_go.gif" width="21" height="16" border="0" alt="Submit this Search" name="sub_search"></a>
+        </form><br><br>
+
+        <!-- ** Menu Start ** //-->
+
+        <ul id="p7PMnav">
+            <li><a href="/en/jsr/platform">JSRs by Platform</a></li>
+            <li><a href="/en/jsr/tech">JSRs by Technology</a></li>
+            <li><a href="/en/jsr/stage">JSRs by Stage</a></li>
+            <li><a href="/en/jsr/ec">JSRs by Committee</a></li>
+            <li><a href="/en/jsr/all">List of All JSRs</a></li>
+
+            <!--end find JSRs form -->
+            <div style="clear: both;"><img src="/images/spacer.gif" alt="" height="25" width="1"></div>
+
+            <!--begin my JCP -->
+            <img src="/images/hd_my-jcp.gif" alt="My JCP" height="18" width="150">
+            
+
+          <form name="login" method="get" action="/en/user/login" >
+            <input name="Sign-in" type="submit" title="Sign-in" value="Sign-in" />
+          </form>
+
+            <div style="clear:both"><img src="/images/global/spacer.gif" width="1" height="3" alt=""></div>
+            <div class="noNav">
+                <a href="/en/user/register">Register for Site</a>
+            </div>
+
+             <div class="bar"><img src="/images/hr_dots1.gif" alt="" height="3" width="150"></div>
+           <div class="noNav" style="color: #666666; padding: 0;">
+              Use of JCP site is subject to the
+              <a href="/en/home/terms" style="display:inline;padding: 0">JCP Terms of Use</a> and the
+              <a href="http://www.oracle.com/us/legal/privacy/index.html" style="display:inline;padding: 0" href="">Oracle Privacy Policy</a>
+          </div>
+
+            
+
+            <div style="clear:both"><img src="/images/global/spacer.gif" width="1" height="25" alt=""></div>
+
+            <!--begin JCP info -->
+            <img src="/images/hd_jcp-info.gif" alt="JCP Info" height="18" width="150">
+
+            <li><a href="/en/procedures/overview" class="p7PMtrg">About JCP</a>
+                <ul>
+                    <li><a href="/en/procedures/overview">Program Overview</a></li>
+                    <li><a href="/en/procedures/jcp2">JCP Process Document</a></li>
+                    <li><a href="/en/whatsnew/calendar">Calendar</a></li>
+                    <li><a href="/en/participation/members">JCP Members</a></li>
+                    <li><a href="/en/participation/committee">Executive Committee</a></li>
+                    <li><a href="/en/whatsnew/elections">Elections</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/en/participation/overview" class="p7PMtrg">Get Involved</a>
+		<ul>
+                    <li><a href="/en/participation/overview">Overview</a></li>
+                    <li><a href="/en/participation/membership">Becoming a JCP Member</a></li>
+		</ul>
+            </li>
+
+            <li><a href="/en/resources/contents" class="p7PMtrg">Community Resources</a>
+                <ul>
+                    <li><a href="/en/resources/contents">Overview</a></li>
+                    <li><a href="/en/resources/tutorials">Tutorials</a></li>
+                    <li><a href="/en/resources/multimedia">JCP Podcasts</a></li>
+                    <li><a href="/en/resources/guide">Spec Lead Guide</a></li>
+                    <li><a href="/en/resources/tdk">TCK Tool & Info</a></li>
+                    <li><a href="/en/resources/license_reference">License Reference</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/en/press/pmo" class="p7PMtrg">Community News</a>
+                <ul>
+                    <li><a href="/en/press/pmo">News</a></li>
+                    <li><a href="/en/press/news/awards/awards_main">Programs &amp; Awards</a></li>
+                    <li><a href="/en/press/releases">Press Releases</a></li>
+                    <li><a href="/en/press/success">Success Stories</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/en/introduction/faq">FAQ</a></li>
+
+            <li><a href="/en/resources/contacts">Contact Us</a></li>
+
+            <div style="clear: both;"><img src="/images/spacer.gif" alt="" height="25" width="1"></div>
+
+            <!--[if lte IE 6]><style>#p7PMnav a{height:1em;}#p7PMnav li{height:1em;float:left;clear:both;width:100%}</style><![endif]-->
+            <!--[if IE 6]><style>#p7PMnav li{clear:none;}</style><![endif]-->
+            <!--[if IE 7]><style>#p7PMnav a{zoom:100%;}#p7PMnav li{float:left;clear:both;width:100%;}</style><![endif]-->
+        </ul>
+
+        
+
+        <!--begin ad space -->
+        <div class="ads">
+            <a href="http://java.com/java/download/index.jsp?cid=jdp78399" target="_blank"><img style="display: ;" src="/images/ad_banner2.gif" alt="Ad Banner" border="1" height="70" width="150"></a>
+        </div>
+        <!--end ad space -->
+
+<!-- ** Menu End ** //-->
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;<br>
+
+    
+
+                    &nbsp;<br>
+                    <img src="/images/common/trans.gif" alt="" width="1" height="150"><br>
+
+              
+
+
+
+                </td>
+                <!-- ** END: Navigation Column ** //-->
+
+                <!-- ** BEGIN: Gutter Column ** //-->
+		<td width="10" nowrap><img src="/images/common/trans.gif" alt="" width="10" height="1"></td>
+                <!-- ** END: Gutter Column ** //-->
+
+                <!-- ** BEGIN: Content Column ** //-->
+                <td width="100%" valign="top">
+
+    
+<script type="text/javascript">
+
+String.prototype.trim = function() {
+        return this.replace(/^\s+|\s+$/g,"");
+}
+String.prototype.ltrim = function() {
+        return this.replace(/^\s+/,"");
+}
+String.prototype.rtrim = function() {
+        return this.replace(/\s+$/,"");
+}
+
+function validate_search() {
+	if (document.search.id.value == "Search JSRs" || document.search.id.value.trim().length == 0) {
+		alert("Search terms must be entered first");
+		return false;
+	}
+	return true;
+}
+
+function validate_findjsr() {
+	if (document.findjsr.id.value == "Search JSRs" || document.findjsr.id.value.trim().length == 0) {
+		alert("Search terms must be entered first");
+		return false;
+	}
+	return true;
+}
+
+function nullify_if_equal(field, str) {
+	// alert("val=" + field.value);
+	if (field.value == str) {
+		field.value = "";
+	}
+}
+
+</script>
+<!-- ** END: header.jsp ** //-->
+
+
+
+
+<b>
+  <font color="#663399" size="+1">
+    JSR #171<br>
+    Java Community Process<sup><font size="-2">SM</font></sup> (JCP) Program, version 2.5<br>
+    Community Draft Ballot<br>
+  </font>
+  Ballot duration: 2002-08-06&nbsp;&nbsp; to: 2002-08-12<br>
+</b>
+
+<P>
+
+
+
+
+
+
+
+These are the final results of the Community Draft Ballot for JSR #171.
+
+	
+
+The ECs have  approved this ballot.
+
+	
+
+
+</P>
+
+<h3>Votes</h3><BR>
+<table width="600" border="0" cellspacing="0" cellpadding="3">
+  <tr>
+    <td>
+
+<B>SE/EE</B>
+
+<table width="600" border="1" cellspacing="0" cellpadding="5">
+  <tr>
+
+  <td>
+    <table width="100%">
+      <tr>
+        <td align="left"><font size="2">Apache Software Foundation</font></td>
+        <td align="right"><img src="/images/common/yes.gif" width="23" height="23" alt="Yes"></td>
+      </tr>
+    </table>
+  </td>
+
+  <td>
+    <table width="100%">
+      <tr>
+        <td align="left"><font size="2">Apple Computer, Inc.</font></td>
+        <td align="right"><img src="/images/common/none21.gif" width="23" height="23" alt="No Vote"></td>
+      </tr>
+    </table>
+  </td>
+
+  <td>
+    <table width="100%">
+      <tr>
+        <td align="left"><font size="2">BEA Systems</font></td>
+        <td align="right"><img src="/images/common/yes.gif" width="23" height="23" alt="Yes"></td>
+      </tr>
+    </table>
+  </td>
+
+  <td>
+    <table width="100%">
+      <tr>
+        <td align="left"><font size="2">Borland Software Corporation</font></td>
+        <td align="right"><img src="/images/common/yes.gif" width="23" height="23" alt="Yes"></td>
+      </tr>
+    </table>
+  </td>
+  </tr>
+  <tr>
+
+  <td>
+    <table width="100%">
+      <tr>
+        <td align="left"><font size="2">Caldera Systems</font></td>
+        <td align="right"><img src="/images/common/yes.gif" width="23" height="23" alt="Yes"></td>
+      </tr>
+    </table>
+  </td>
+
+  <td>
+    <table width="100%">
+      <tr>
+        <td align="left"><font size="2">Cisco Systems</font></td>
+        <td align="right"><img src="/images/common/yes.gif" width="23" height="23" alt="Yes"></td>
+      </tr>
+    </table>
+  </td>
+
+  <td>
+    <table width="100%">
+      <tr>
+        <td align="left"><font size="2">Compaq Computer Corporation</font></td>
+        <td align="right"><img src="/images/common/none21.gif" width="23" height="23" alt="No Vote"></td>
+      </tr>
+    </table>
+  </td>
+
+  <td>
+    <table width="100%">
+      <tr>
+        <td align="left"><font size="2">Fujitsu Limited</font></td>
+        <td align="right"><img src="/images/common/yes.gif" width="23" height="23" alt="Yes"></td>
+      </tr>
+    </table>
+  </td>
+  </tr>
+  <tr>
+
+  <td>
+    <table width="100%">
+      <tr>
+        <td align="left"><font size="2">Hewlett-Packard</font></td>
+        <td align="right"><img src="/images/common/yes.gif" width="23" height="23" alt="Yes"></td>
+      </tr>
+    </table>
+  </td>
+
+  <td>
+    <table width="100%">
+      <tr>
+        <td align="left"><font size="2">IBM</font></td>
+        <td align="right"><img src="/images/common/no.gif" width="23" height="23" alt="No"></td>
+      </tr>
+    </table>
+  </td>
+
+  <td>
+    <table width="100%">
+      <tr>
+        <td align="left"><font size="2">Lea, Doug</font></td>
+        <td align="right"><img src="/images/common/yes.gif" width="23" height="23" alt="Yes"></td>
+      </tr>
+    </table>
+  </td>
+
+  <td>
+    <table width="100%">
+      <tr>
+        <td align="left"><font size="2">Macromedia, Inc.</font></td>
+        <td align="right"><img src="/images/common/none21.gif" width="23" height="23" alt="No Vote"></td>
+      </tr>
+    </table>
+  </td>
+  </tr>
+  <tr>
+
+  <td>
+    <table width="100%">
+      <tr>
+        <td align="left"><font size="2">Nokia Networks</font></td>
+        <td align="right"><img src="/images/common/yes.gif" width="23" height="23" alt="Yes"></td>
+      </tr>
+    </table>
+  </td>
+
+  <td>
+    <table width="100%">
+      <tr>
+        <td align="left"><font size="2">Oracle</font></td>
+        <td align="right"><img src="/images/common/none21.gif" width="23" height="23" alt="No Vote"></td>
+      </tr>
+    </table>
+  </td>
+
+  <td>
+    <table width="100%">
+      <tr>
+        <td align="left"><font size="2">Progress Software</font></td>
+        <td align="right"><img src="/images/common/yes.gif" width="23" height="23" alt="Yes"></td>
+      </tr>
+    </table>
+  </td>
+
+  <td>
+    <table width="100%">
+      <tr>
+        <td align="left"><font size="2">Sun Microsystems, Inc.</font></td>
+        <td align="right"><img src="/images/common/yes.gif" width="23" height="23" alt="Yes"></td>
+      </tr>
+    </table>
+  </td>
+  </tr>
+
+</table>
+<br>
+
+<B>ME</B>
+
+<table width="600" border="1" cellspacing="0" cellpadding="5">
+  <tr>
+
+  <td>
+    <table width="100%">
+      <tr>
+        <td align="left"><font size="2">BEA Systems</font></td>
+        <td align="right"><img src="/images/common/yes.gif" width="23" height="23" alt="Yes"></td>
+      </tr>
+    </table>
+  </td>
+
+  <td>
+    <table width="100%">
+      <tr>
+        <td align="left"><font size="2">Cisco Systems</font></td>
+        <td align="right"><img src="/images/common/yes.gif" width="23" height="23" alt="Yes"></td>
+      </tr>
+    </table>
+  </td>
+
+  <td>
+    <table width="100%">
+      <tr>
+        <td align="left"><font size="2">Ericsson Inc.</font></td>
+        <td align="right"><img src="/images/common/yes.gif" width="23" height="23" alt="Yes"></td>
+      </tr>
+    </table>
+  </td>
+
+  <td>
+    <table width="100%">
+      <tr>
+        <td align="left"><font size="2">IBM</font></td>
+        <td align="right"><img src="/images/common/no.gif" width="23" height="23" alt="No"></td>
+      </tr>
+    </table>
+  </td>
+  </tr>
+  <tr>
+
+  <td>
+    <table width="100%">
+      <tr>
+        <td align="left"><font size="2">Insignia Solutions</font></td>
+        <td align="right"><img src="/images/common/yes.gif" width="23" height="23" alt="Yes"></td>
+      </tr>
+    </table>
+  </td>
+
+  <td>
+    <table width="100%">
+      <tr>
+        <td align="left"><font size="2">Matsushita Electric Industrial Co., Ltd.</font></td>
+        <td align="right"><img src="/images/common/yes.gif" width="23" height="23" alt="Yes"></td>
+      </tr>
+    </table>
+  </td>
+
+  <td>
+    <table width="100%">
+      <tr>
+        <td align="left"><font size="2">Motorola</font></td>
+        <td align="right"><img src="/images/common/yes.gif" width="23" height="23" alt="Yes"></td>
+      </tr>
+    </table>
+  </td>
+
+  <td>
+    <table width="100%">
+      <tr>
+        <td align="left"><font size="2">Nokia Corporation</font></td>
+        <td align="right"><img src="/images/common/yes.gif" width="23" height="23" alt="Yes"></td>
+      </tr>
+    </table>
+  </td>
+  </tr>
+  <tr>
+
+  <td>
+    <table width="100%">
+      <tr>
+        <td align="left"><font size="2">PalmSource, Inc.</font></td>
+        <td align="right"><img src="/images/common/none21.gif" width="23" height="23" alt="No Vote"></td>
+      </tr>
+    </table>
+  </td>
+
+  <td>
+    <table width="100%">
+      <tr>
+        <td align="left"><font size="2">Philips Electronics UK Ltd</font></td>
+        <td align="right"><img src="/images/common/yes.gif" width="23" height="23" alt="Yes"></td>
+      </tr>
+    </table>
+  </td>
+
+  <td>
+    <table width="100%">
+      <tr>
+        <td align="left"><font size="2">Research In Motion, LTD (RIM)</font></td>
+        <td align="right"><img src="/images/common/yes.gif" width="23" height="23" alt="Yes"></td>
+      </tr>
+    </table>
+  </td>
+
+  <td>
+    <table width="100%">
+      <tr>
+        <td align="left"><font size="2">Siemens AG</font></td>
+        <td align="right"><img src="/images/common/yes.gif" width="23" height="23" alt="Yes"></td>
+      </tr>
+    </table>
+  </td>
+  </tr>
+  <tr>
+
+  <td>
+    <table width="100%">
+      <tr>
+        <td align="left"><font size="2">Sony International (Europe) GmbH</font></td>
+        <td align="right"><img src="/images/common/yes.gif" width="23" height="23" alt="Yes"></td>
+      </tr>
+    </table>
+  </td>
+
+  <td>
+    <table width="100%">
+      <tr>
+        <td align="left"><font size="2">Sun Microsystems, Inc.</font></td>
+        <td align="right"><img src="/images/common/yes.gif" width="23" height="23" alt="Yes"></td>
+      </tr>
+    </table>
+  </td>
+
+  <td>
+    <table width="100%">
+      <tr>
+        <td align="left"><font size="2">Texas Instruments Inc.</font></td>
+        <td align="right"><img src="/images/common/yes.gif" width="23" height="23" alt="Yes"></td>
+      </tr>
+    </table>
+  </td>
+
+  <td>
+    <table width="100%">
+      <tr>
+        <td align="left"><font size="2">Zucotto Wireless</font></td>
+        <td align="right"><img src="/images/common/yes.gif" width="23" height="23" alt="Yes"></td>
+      </tr>
+    </table>
+  </td>
+  </tr>
+
+</table>
+<br>
+
+
+
+</td>
+<td width="20"><img src="/images/common/pixel.gif" width="20" height="1" alt=""></td>
+<td valign="top">
+  <table border="0" cellspacing="0" cellpadding="5" height="100%">
+    <tr align="left">
+      <td colspan="2">
+        <b>Icon Legend</b>
+      </td>
+    </tr>
+    <tr valign="top">
+      <td alt="left">Yes</td>
+      <td align="right"><img src="/images/common/yes.gif" width="23" height="23" alt="Yes"></td>
+    </tr>
+    <tr valign="top">
+      <td align="left">No</td>
+      <td align="right"><img src="/images/common/no.gif" width="23" height="23" alt="No"></td>
+    </tr>
+    <tr valign="top">
+      <td>Abstain</td>
+      <td align="right"><img src="/images/common/abstain.gif" width="23" height="23" alt="Abstain"></td>
+    </tr>
+    <tr valign="top">
+      <td>Not voted</td>
+      <td align="right"><img src="/images/common/none21.gif" width="23" height="23" alt="Not voted"></td>
+   </tr>
+ </table>
+</td>
+</tr>
+</table>
+<br>
+
+
+<HR NOSHADE ALIGN="left" WIDTH="70%">
+<h3>View Vote Log</h3>
+<BR>
+
+<FORM>
+
+
+
+<strong>SE/EE</strong><br>
+<TEXTAREA ROWS="10" COLS="80" WRAP="soft" READONLY>On 2002-08-12 Fujitsu Limited voted Yes with no comment.
+------------------------------------------------------------------------------
+On 2002-08-12 Borland Software Corporation voted Yes with no comment.
+------------------------------------------------------------------------------
+On 2002-08-12 Apache Software Foundation voted Yes with no comment.
+------------------------------------------------------------------------------
+On 2002-08-12 BEA Systems voted Yes with no comment.
+------------------------------------------------------------------------------
+On 2002-08-12 Caldera Systems voted Yes with no comment.
+------------------------------------------------------------------------------
+On 2002-08-12 Progress Software voted Yes with the following comment:
+IONA votes 'Yes' to take this JSR to Community Review with the understanding that the specification will move forward and positively, to remove some of the concerns currently directed as the current version.
+------------------------------------------------------------------------------
+On 2002-08-12 Hewlett-Packard voted Yes with no comment.
+------------------------------------------------------------------------------
+On 2002-08-12 Nokia Networks voted Yes with the following comment:
+Even if Nokia would like to see that a Spec that is independently implementable shall stay like that, we vote yes to make progress in having the new JSR rules in effect. Things are not perfect and we need to continue developing the JCP rules further. Sun's latest JSR 171 JCP process change is addressing the "continued availability" by trying to make the intentions of the Spec Lead visible w/r the independent implementation possibility of the Spec in the future and allowing more time for ECs to consider the decision. We strongly recommend that this information on the JSR Form is made mandatory and that forms which are missing or are not clear with this respect of this information, shall not be brought to the EC ballot at all. This check should be PMO's responsibility in the Process Document. The EC then need to be very conservative with regard to allowing Specs be subsumed by profile of platform edition.
+------------------------------------------------------------------------------
+On 2002-08-10 Cisco Systems voted Yes with the following comment:
+Things aren't always black & white. So long as we move towards positive progress, it is OK to leave a few things out. No doubt there will be more changes in the future and in the meantime we all need to work around the limitations.
+------------------------------------------------------------------------------
+On 2002-08-10 Lea, Doug voted Yes with the following comment:
+As everyone knows, this isn't perfect, but is worthtaking to the next phase, in part to help work outIBM's concerns in light of other feedback we mayreceive.
+------------------------------------------------------------------------------
+On 2002-08-08 IBM voted No with the following comment:
+IBM has consistently worked within the JCP since its inception to create an open environment with a level playing field where no single vendor has the ability to exert unnecessary control over Java technologies for their own proprietary advantage.  JCP 2.5 contains a new provision that ratifies spec leads&#8217; ability to withdraw Java technologies from stand-alone availability, making them available only as a component within a Java Platform.  This action would prohibit licensees&#8217; existing Java products based on those stand-alone JSRs from evolving with the best-of-breed Java technologies, and creates an environment where this ability could be used to create proprietary advantages.  Also, since creating and maintaining complete implementations of Sun&#8217;s enterprise platform specifications in the open source community is unrealistic, this new provision could effectively preclude the open source community from contributing to the evolution of key Java technologies.  While we do not believe this ability would be used intentionally to block access to Java Technologies, IBM - along with the majority of the group given the mission to negotiate this new process document - supported alternatives that addressed the cost issue of the ongoing maintenance of stand-alone technologies while at the same time allowed the stand-alone specification to remain available.  One alternative simply allows another interested member of the Java Community to commit to the spec lead role for evolving the stand-alone spec, effectively addressing both concerns. As a result of the likely impact of this provision on companies that have products dependent on stand-alone Java technologies, and the impact on the open source communities&#8217; participation in the Java community, IBM is voting no.  We hope that Sun Microsystems, as Expert Group leaders, will seriously explore the alternative approach in more depth.
+------------------------------------------------------------------------------
+On 2002-08-06 Sun Microsystems, Inc. voted Yes with no comment.
+------------------------------------------------------------------------------
+</TEXTAREA>
+
+
+<br><br>
+
+
+<strong>ME</strong><br>
+<TEXTAREA ROWS="10" COLS="80" WRAP="soft" READONLY>On 2002-08-12 Ericsson Inc. voted Yes with no comment.
+------------------------------------------------------------------------------
+On 2002-08-12 Zucotto Wireless voted Yes with the following comment:
+Zucotto's YES vote comes with the assumption that the final few detials will be addressed to resolve some of the issues expressed by the EC members. There are some specific details we'd like to see fixed/added including:"Expert Groups that need to quickly create or update a J2ME Building Block should approach the Maintenance Lead for the J2ME Platform Edition Specification with their requests."- who is maintenance lead for J2ME platform? It can&#8217;t be found on JCP web site (at least not easily)1.3 JSR Approval Ballot failure- should bar similar JSRs with duplication of functionality from being resubmitted by others during the 14 day resubmission period if the original submitter has indicated they desire a reconsideration ballotSection 2.0- I&#8217;d like to see EC members provided with access to JSR expert groups to monitor progress and ensure requirements placed on JSR votes are being met- First draft is often too late to make substantive changes/comments3.1"The Spec Lead is responsible for ensuring that all public comments are read and considered. If those comments result in revisions to the draft, and those revisions result in major changes (in the opinion of the Expert Group), then the Specification Lead will send an updated draft (with synopsis of the changes) to the PMO who will post both items to the JCP Web Site and notify both Members and the public"- has this ever happened? - Perhaps all later revisions should be posted for public review to provide a level playing field for all who are implementing the spec prior to final releaseA.4 EC SELECTION PROCESS AND LENGTH OF TERM-we'd like to see the number of elected seats be at least equal or similar to the number of ratified seats to better reflect the community and ensure participants are ready to be actively involved- Perhaps a phased process where 1 ratified seat is converted to an elected seat per year?
+------------------------------------------------------------------------------
+On 2002-08-12 BEA Systems voted Yes with no comment.
+------------------------------------------------------------------------------
+On 2002-08-12 Texas Instruments Inc. voted Yes with no comment.
+------------------------------------------------------------------------------
+On 2002-08-12 Insignia Solutions voted Yes with no comment.
+------------------------------------------------------------------------------
+On 2002-08-12 Philips Electronics UK Ltd voted Yes with the following comment:
+Philips agrees with the various other comments saying that while this isn't perfect, it is a big step forwards and should proceed..
+------------------------------------------------------------------------------
+On 2002-08-12 Sony International (Europe) GmbH voted Yes with no comment.
+------------------------------------------------------------------------------
+On 2002-08-11 Nokia Corporation voted Yes with the following comment:
+Even if Nokia would like to see that a Spec that is independently implementable shall stay like that, we vote yes to make progress in having the new JSR rules in effect. Things are not perfect and we need to continue developing the JCP rules further. Sun's latest JSR 171 JCP process change is addressing the "continued availability" by trying to make the intentions of the Spec Lead visible w/r the independent implementation possibility of the Spec in the future and allowing more time for ECs to consider the decision. We strongly recommend that this information on the JSR Form is made mandatory and that forms which are missing or are not clear with this respect of this information, shall not be brought to the EC ballot at all. This check should be PMO's responsibility in the Process Document. The EC then need to be very conservative with regard to allowing Specs be subsumed by profile of platform edition.
+------------------------------------------------------------------------------
+On 2002-08-11 Research In Motion, LTD (RIM) voted Yes with no comment.
+------------------------------------------------------------------------------
+On 2002-08-11 Cisco Systems voted Yes with no comment.
+------------------------------------------------------------------------------
+On 2002-08-11 Siemens AG voted Yes with no comment.
+------------------------------------------------------------------------------
+On 2002-08-09 Motorola voted Yes with the following comment:
+While JSR-171 may not be perfect, it and the associated JSR-99 are significant steps forward in improving the Java community.
+------------------------------------------------------------------------------
+On 2002-08-08 IBM voted No with the following comment:
+IBM has consistently worked within the JCP since its inception to create an open environment with a level playing field where no single vendor has the ability to exert unnecessary control over Java technologies for their own proprietary advantage.  JCP 2.5 contains a new provision that ratifies spec leads ability to withdraw Java technologies from stand-alone availability, making them available only as a component within a Java Platform.  This action would prohibit licensees existing Java products based on those stand-alone JSRs from evolving with the best-of-breed Java technologies, and creates an environment where this ability could be used to create proprietary advantages.  Also, since creating and maintaining complete implementations of Suns enterprise platform specifications in the open source community is unrealistic, this new provision could effectively preclude the open source community from contributing to the evolution of key Java technologies.  While we do not believe this ability would be used intentionally to block access to Java Technologies, IBM - along with the majority of the group given the mission to negotiate this new process document - supported alternatives that addressed the cost issue of the ongoing maintenance of stand-alone technologies while at the same time allowed the stand-alone specification to remain available.  One alternative simply allows another interested member of the Java Community to commit to the spec lead role for evolving the stand-alone spec, effectively addressing both concerns. As a result of the likely impact of this provision on companies that have products dependent on stand-alone Java technologies, and the impact on the open source communities participation in the Java community, IBM is voting no.  We hope that Sun Microsystems, as Expert Group leaders, will seriously explore the alternative approach in more depth.
+------------------------------------------------------------------------------
+On 2002-08-08 Matsushita Electric Industrial Co., Ltd. voted Yes with the following comment:
+Matsushita approves the community review of JSR 171 especially after the significant progress that has been made in the the writing and discussions on the new JSPA. We hope that such a progress will continue to take into account issues such as the specificities of J2ME platforms and multi- platform JSRs. There is a following unclear point to be clarified by the public review: After the platform edition or profile JSR and EC approves the request for inclusion from a JSR, what actions should be done next?:  Who should deliver the integrated RI and TCK?   Does the existing platform edition or profile JSR which includes a JSR, go to the maintenance steps.
+------------------------------------------------------------------------------
+On 2002-08-06 Sun Microsystems, Inc. voted Yes with no comment.
+------------------------------------------------------------------------------
+</TEXTAREA>
+
+
+</FORM>
+
+
+
+
+
+<!-- ** BEGIN: footer.jsp ** //-->
+
+
+
+
+
+
+
+
+</td>
+</tr>
+</table>
+
+<!-- ** END: Content Table ** //-->
+
+<!-- ** BEGIN: Footer Table ** //-->
+
+<div id="footer" style="clear: both;">
+    <div class="footleft">
+        <a href="/en/resources/contacts">Contact Us</a>
+    </div>
+	
+    <div class="botbar"><img src="/images/spacer.gif" alt="" height="23" width="1"></div>
+
+    <div class="footleft2">
+         &copy; 2019, Oracle Corporation and/or its affiliates. 
+        <a href="/en/home/terms">Terms of Use</a>. <a href="http://www.oracle.com/us/legal/privacy/index.html">Privacy Policy</a>. <a href="http://www.oracle.com/us/legal/third-party-trademarks/third-party-trademarks-078568.html">Trademarks</a>
+    </div>
+
+    <div class="footright">
+        <img src="/images/common/logo_oracle_footer.gif" alt="Oracle Corporation" height="22" width="91">
+    </div>
+
+    <div style="clear: both;"><img src="/images/spacer.gif" alt="" height="30" width="1"></div>
+</div>
+
+<!-- ** END: Footer Table ** //-->
+
+
+
+<!-- ** Menu Start ** //-->
+
+
+
+</body>
+</html>
+<!-- ** END: footer.jsp ** //-->
+

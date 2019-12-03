@@ -1,0 +1,645 @@
+
+<title>JCP EC meeting materials</title>
+
+
+<!-- ** BEGIN: header.jsp ** //-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3c.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+<head>
+    
+
+   
+    <link href="/includes/css/menu.css" rel="stylesheet" type="text/css"></link>
+    <link href="/includes/css/style.css" rel="stylesheet" type="text/css"></link>
+    <!--[if lt IE 6]><link href="/includes/css/style5.css" rel="stylesheet" type="text/css" ></link><![endif]-->
+    <!--[if gte IE 5]><link href="/includes/css/style6.css" rel="stylesheet" type="text/css" ></link><![endif]-->
+    <link href="/includes/css/tabs.css"  rel="stylesheet" type="text/css"></link>
+
+    <script type="text/javascript" src="/includes/scripts/tabs.js"></script>
+    <script type="text/javascript" src="/includes/scripts/menu.js"></script>
+   
+
+    
+
+    
+        <title>The Java Community Process(SM) Program - Community Resources - EC_summaries</title>
+    
+
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+
+
+<body onload="P7_initPM(0,1,0,0,-1)">
+
+    <a name="top"></a>
+
+    <div id="header">
+	<div id="logo">
+		<a href="/en/home/index"><img src="/images/spacer.gif" alt="Java Community Process" height="81" width="151"></a>
+	</div>
+	<div id="tools">
+		<div class="search">
+			<form name="search" action="/en/jsr/summary" method="get" onsubmit="return validate_search()">
+				<input name="id" value="Search JSRs" size="16" class="form" onfocus="nullify_if_equal(this, 'Search JSRs')" type="text">
+				<a href="javascript:document.search.submit()" onclick="return validate_search()"><img src="/images/button_go.gif" width="21" height="16" border="0" alt="Submit this Search" name="sub_search"></a>
+			</form>
+		</div>
+		<div class="tools">
+			<a href="/en/press/pressroom">Press Room</a> &nbsp;|&nbsp;
+			<a href="http://java.com/java/download/index.jsp?cid=jdp78399">Get Java Here</a> &nbsp;|&nbsp;
+			<!-- <a href="javascript:void(0)">Print Format</a> &nbsp;|&nbsp;&nbsp; -->
+		</div>
+
+	</div>
+	<div style="clear: right;"></div>
+
+        
+
+	<div class="topbar"><img src="/images/spacer.gif" alt="" height="3" width="154"></div>
+	<div id="update"> </div>
+    </div>
+
+
+    
+
+        <!-- ** BEGIN: Content Table ** //-->
+
+        <table width="100%" border="0" cellpadding="0" cellspacing="0">
+
+            <tr>
+
+                <!-- ** BEGIN: Navigation Column ** //-->
+                <td width="150" id="leftcontent" valign="top">
+                    <!-- Navigation Placeholder //-->
+
+                    
+
+                    <div class="bar"><img src="/images/hr_dots1.gif" alt="" height="3" width="150"></div>
+
+        <!-- begin find JSRs form -->
+        <!-- IMPORTANT! do not convert this form to Struts < html : form > tag.  javascript change of form.action property fails. -->
+        <img src="/images/hd_find-jsrs.gif" alt="Find JSRs" height="18" width="150">
+        <form name="findjsr" action="/en/jsr/summary" method="get" class="pt5" onsubmit="return validate_findjsr()">
+            <input name="id" size="18" class="form" value="Search JSRs" onfocus="nullify_if_equal(this, 'Search JSRs')" type="text">
+	    <a href="javascript:document.findjsr.submit()" onclick="return validate_findjsr()"><img src="/images/button_go.gif" width="21" height="16" border="0" alt="Submit this Search" name="sub_search"></a>
+        </form><br><br>
+
+        <!-- ** Menu Start ** //-->
+
+        <ul id="p7PMnav">
+            <li><a href="/en/jsr/platform">JSRs by Platform</a></li>
+            <li><a href="/en/jsr/tech">JSRs by Technology</a></li>
+            <li><a href="/en/jsr/stage">JSRs by Stage</a></li>
+            <li><a href="/en/jsr/ec">JSRs by Committee</a></li>
+            <li><a href="/en/jsr/all">List of All JSRs</a></li>
+
+            <!--end find JSRs form -->
+            <div style="clear: both;"><img src="/images/spacer.gif" alt="" height="25" width="1"></div>
+
+            <!--begin my JCP -->
+            <img src="/images/hd_my-jcp.gif" alt="My JCP" height="18" width="150">
+            
+
+          <form name="login" method="get" action="/en/user/login" >
+            <input name="Sign-in" type="submit" title="Sign-in" value="Sign-in" />
+          </form>
+
+            <div style="clear:both"><img src="/images/global/spacer.gif" width="1" height="3" alt=""></div>
+            <div class="noNav">
+                <a href="/en/user/register">Register for Site</a>
+            </div>
+
+             <div class="bar"><img src="/images/hr_dots1.gif" alt="" height="3" width="150"></div>
+           <div class="noNav" style="color: #666666; padding: 0;">
+              Use of JCP site is subject to the
+              <a href="/en/home/terms" style="display:inline;padding: 0">JCP Terms of Use</a> and the
+              <a href="http://www.oracle.com/us/legal/privacy/index.html" style="display:inline;padding: 0" href="">Oracle Privacy Policy</a>
+          </div>
+
+            
+
+            <div style="clear:both"><img src="/images/global/spacer.gif" width="1" height="25" alt=""></div>
+
+            <!--begin JCP info -->
+            <img src="/images/hd_jcp-info.gif" alt="JCP Info" height="18" width="150">
+
+            <li><a href="/en/procedures/overview" class="p7PMtrg">About JCP</a>
+                <ul>
+                    <li><a href="/en/procedures/overview">Program Overview</a></li>
+                    <li><a href="/en/procedures/jcp2">JCP Process Document</a></li>
+                    <li><a href="/en/whatsnew/calendar">Calendar</a></li>
+                    <li><a href="/en/participation/members">JCP Members</a></li>
+                    <li><a href="/en/participation/committee">Executive Committee</a></li>
+                    <li><a href="/en/whatsnew/elections">Elections</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/en/participation/overview" class="p7PMtrg">Get Involved</a>
+		<ul>
+                    <li><a href="/en/participation/overview">Overview</a></li>
+                    <li><a href="/en/participation/membership">Becoming a JCP Member</a></li>
+		</ul>
+            </li>
+
+            <li><a href="/en/resources/contents" class="p7PMtrg">Community Resources</a>
+                <ul>
+                    <li><a href="/en/resources/contents">Overview</a></li>
+                    <li><a href="/en/resources/tutorials">Tutorials</a></li>
+                    <li><a href="/en/resources/multimedia">JCP Podcasts</a></li>
+                    <li><a href="/en/resources/guide">Spec Lead Guide</a></li>
+                    <li><a href="/en/resources/tdk">TCK Tool & Info</a></li>
+                    <li><a href="/en/resources/license_reference">License Reference</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/en/press/pmo" class="p7PMtrg">Community News</a>
+                <ul>
+                    <li><a href="/en/press/pmo">News</a></li>
+                    <li><a href="/en/press/news/awards/awards_main">Programs &amp; Awards</a></li>
+                    <li><a href="/en/press/releases">Press Releases</a></li>
+                    <li><a href="/en/press/success">Success Stories</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/en/introduction/faq">FAQ</a></li>
+
+            <li><a href="/en/resources/contacts">Contact Us</a></li>
+
+            <div style="clear: both;"><img src="/images/spacer.gif" alt="" height="25" width="1"></div>
+
+            <!--[if lte IE 6]><style>#p7PMnav a{height:1em;}#p7PMnav li{height:1em;float:left;clear:both;width:100%}</style><![endif]-->
+            <!--[if IE 6]><style>#p7PMnav li{clear:none;}</style><![endif]-->
+            <!--[if IE 7]><style>#p7PMnav a{zoom:100%;}#p7PMnav li{float:left;clear:both;width:100%;}</style><![endif]-->
+        </ul>
+
+        
+
+        <!--begin ad space -->
+        <div class="ads">
+            <a href="http://java.com/java/download/index.jsp?cid=jdp78399" target="_blank"><img style="display: ;" src="/images/ad_banner2.gif" alt="Ad Banner" border="1" height="70" width="150"></a>
+        </div>
+        <!--end ad space -->
+
+<!-- ** Menu End ** //-->
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;<br>
+
+    
+
+                    &nbsp;<br>
+                    <img src="/images/common/trans.gif" alt="" width="1" height="150"><br>
+
+              
+
+
+
+                </td>
+                <!-- ** END: Navigation Column ** //-->
+
+                <!-- ** BEGIN: Gutter Column ** //-->
+		<td width="10" nowrap><img src="/images/common/trans.gif" alt="" width="10" height="1"></td>
+                <!-- ** END: Gutter Column ** //-->
+
+                <!-- ** BEGIN: Content Column ** //-->
+                <td width="100%" valign="top">
+
+    
+<script type="text/javascript">
+
+String.prototype.trim = function() {
+        return this.replace(/^\s+|\s+$/g,"");
+}
+String.prototype.ltrim = function() {
+        return this.replace(/^\s+/,"");
+}
+String.prototype.rtrim = function() {
+        return this.replace(/\s+$/,"");
+}
+
+function validate_search() {
+	if (document.search.id.value == "Search JSRs" || document.search.id.value.trim().length == 0) {
+		alert("Search terms must be entered first");
+		return false;
+	}
+	return true;
+}
+
+function validate_findjsr() {
+	if (document.findjsr.id.value == "Search JSRs" || document.findjsr.id.value.trim().length == 0) {
+		alert("Search terms must be entered first");
+		return false;
+	}
+	return true;
+}
+
+function nullify_if_equal(field, str) {
+	// alert("val=" + field.value);
+	if (field.value == str) {
+		field.value = "";
+	}
+}
+
+</script>
+<!-- ** END: header.jsp ** //-->
+
+
+
+    <table width="60%" border="0" cellpadding="0" cellspacing="0">
+      <tr>
+        <td width="95%" valign="top"><div class="header1"><strong>JCP EXECUTIVE COMMITTEE MEETING MATERIALS</strong></div>
+				<br /><br />
+The Executive Committee for the Java Community Process meets regularly to discuss the state of the community, the status of certain JSRs, the evolution of the JCP rules and JSPA, and other topics of interest to its Members. The Program Office posts  meeting summaries on this page after the Executive Committee approves them. Starting in September 2008 the Executive Committee agreed to post full minutes and meeting materials rather than simply summaries. (The EC reserved the right to go into <i>Private Session</i> from time to time when sensitive matters are discussed.)
+<BR /><BR /> 
+<p> <b>Meeting Minutes and Materials:</b> </p>
+<UL>
+    <li><a href="https://jcp.org/aboutJava/communityprocess/ec-public/materials/2019-08-13/JCP-EC-Minutes-August-2019.html">August 2019</a> (Teleconference)</li>
+    <li><a href="https://jcp.org/aboutJava/communityprocess/ec-public/materials/2019-05-15/JCP-EC-Minutes-May-2019.html">May 2019</a> (Face to Face)</li>
+    <li><a href="https://jcp.org/aboutJava/communityprocess/ec-public/materials/2019-03-12/JCP-EC-Minutes-March-2019.html">March 2019</a> (Public EC Meeting)</li>
+    <li><a href="https://jcp.org/aboutJava/communityprocess/ec-public/materials/2019-01-08/JCP-EC-Minutes-January-2019.html">January 2019</a> (Teleconference)</li>
+    <li><a href="https://jcp.org/aboutJava/communityprocess/ec-public/materials/2018-12-11/JCP-EC-Minutes-December-2018.html">December 2018</a> (Public EC Meeting)</li>
+    <li><a href="https://jcp.org/aboutJava/communityprocess/ec-public/materials/2018-10-19/JCP-EC-Minutes-October-2018.html">October 2018</a> (Face to Face)</li>
+    <li><a href="https://jcp.org/aboutJava/communityprocess/ec-public/materials/2018-09-11/JCP-EC-Meeting-Minutes-September2018.html">September 2018</a> (Teleconference)</li>
+    <li><a href="https://jcp.org/aboutJava/communityprocess/ec-public/materials/2018-08-14/JCP-EC-Minutes-August-2018.html">August 2018</a> (Teleconference)</li>
+    <li><a href="https://jcp.org/aboutJava/communityprocess/ec-public/materials/2018-07-10/JCP-EC-Minutes-July-2018.html">July 2018</a> (Teleconference)</li>
+    <li><a href="https://jcp.org/aboutJava/communityprocess/ec-public/materials/2018-06-12/JCP-EC-Minutes-June-2018.html">June 2018</a> (Public EC meeting)</li>
+    <li><a href="https://jcp.org/aboutJava/communityprocess/ec-public/materials/2018-05-24/JCP-EC-Minutes-May-2018.html">May 2018</a> (Face to Face)</li>
+    <li><a href="https://jcp.org/aboutJava/communityprocess/ec-public/materials/2018-04-10/JCP-EC-Minutes-April-2018.html">April 2018</a> (Teleconference)</li>
+    <li><a href="https://jcp.org/aboutJava/communityprocess/ec-public/materials/2018-01-30/JCP-EC-Minutes-January-2018.html">January 2018</a> (Face to Face)</li>
+    <li><a href="https://jcp.org/aboutJava/communityprocess/ec-public/materials/2017-12-12/JCP-EC-Minutes-December-2017.html">December 2017</a> (Teleconference)</li>
+	<li><a href="https://jcp.org/aboutJava/communityprocess/ec-public/materials/2017-11-07/JCP-EC-Minutes-November-2017.html">November 2017</a> (Teleconference)</li>
+    <li><a href="https://jcp.org/aboutJava/communityprocess/ec-public/materials/2017-09-28/JCP-EC-Meeting-Minutes-September2017.html">September 2017</a> (Face to Face)</li>
+    <li><a href="https://jcp.org/aboutJava/communityprocess/ec-public/materials/2017-08-15/JCP-EC-Minutes-August-2017.html">August 2017</a> (Teleconference)</li>
+    <li><a href="https://jcp.org/aboutJava/communityprocess/ec-public/materials/2017-07-11/JCP-EC-Minutes-July-2017.html">July 2017</a> (Teleconference)</li>
+    <li><a href="https://jcp.org/aboutJava/communityprocess/ec-public/materials/2017-06-13/JCP-EC-Minutes-June-2017.html">June 2017</a> (Public EC meeting)</li>
+    <li><a href="https://jcp.org/aboutJava/communityprocess/ec-public/materials/2017-05-08/May-2017-Public-Minutes.html">May 2017</a> (Face to Face)</li>
+    <li><a href="https://jcp.org/aboutJava/communityprocess/ec-public/materials/2017-04-04/April-2017-Public-Minutes.html">April 2017</a> (Teleconference)</li>
+    <li><a href="https://jcp.org/aboutJava/communityprocess/ec-public/materials/2017-03-14/March-2017-Public-Minutes.html">March 2017</a> (Teleconference)</li>
+    <li><a href="https://jcp.org/aboutJava/communityprocess/ec-public/materials/2017-02-14/February-2017-Public-Minutes.html">February 2017</a> (Teleconference)</li>
+    <li><a href="https://jcp.org/aboutJava/communityprocess/ec-public/materials/2017-01-1011/January-2017-Public-Minutes.html">January 2017</a> (Face to Face)</li>
+    <li><a href="https://jcp.org/aboutJava/communityprocess/ec-public/materials/2016-12-13/December-2016-Public-Minutes.html">December 2016</a> (Teleconference)</li>
+    <li><a href="https://jcp.org/aboutJava/communityprocess/media/Public-EC-Meeting-December-2016.mp3">December 2016</a> (Public EC meeting)</li>
+    <li><a href="https://jcp.org/aboutJava/communityprocess/ec-public/materials/2016-11-08/November-2016-Public-Minutes.html">November 2016</a> (Teleconference)</li>
+    <li><a href="https://jcp.org/aboutJava/communityprocess/ec-public/materials/2016-09-1516/September-2016-Public-Minutes.html">September 2016</a> (Face to Face)</li>
+    <li><a href="https://jcp.org/aboutJava/communityprocess/ec-public/materials/2016-08-09/August-2016-Public-Minutes.html">August 2016</a> (Teleconference)</li>
+    <li><a href="https://jcp.org/aboutJava/communityprocess/ec-public/materials/2016-07-12/July-2016-Public-Minutes.html">July 2016</a> (Teleconference)</li>
+    <li><a href="https://jcp.org/aboutJava/communityprocess/ec-public/materials/2016-06-14/June-2016-Public-Minutes.html">June 2016</a> (Teleconference)</li>
+    <li><a href="https://jcp.org/aboutJava/communityprocess/ec-public/materials/2016-06-14/June-2016-Public-EC-Meeting-Minutes.html">June 2016</a> (Public EC meeting)</li>
+    <li><a href="https://jcp.org/aboutJava/communityprocess/ec-public/materials/2016-05-1011/May-2016-Public-Minutes.html">May 2016</a> (Face to Face)</li>
+    <li><a href="https://jcp.org/aboutJava/communityprocess/ec-public/materials/2016-04-05/April-2016-Public-Minutes.html">April 2016</a> (Teleconference)</li>
+    <li><a href="https://jcp.org/aboutJava/communityprocess/ec-public/materials/2016-03-01/March-2016-Public-Minutes.html">March 2016</a> (Teleconference)</li>
+    <li><a href="https://jcp.org/aboutJava/communityprocess/ec-public/materials/2016-01-2122/January-2016-Public-Minutes.html">January 2016</a> (Face to Face)</li>
+    <li><a href="https://jcp.org/aboutJava/communityprocess/ec-public/materials/2015-12-15/December-2015-Public-Minutes.html">December 15 2015</a> (Teleconference)</li>
+    <li><a href="https://jcp.org/aboutJava/communityprocess/ec-public/materials/2015-12-15/JCP-EC-Public-Agenda-December-2015.html">December 15 2015</a> (Public EC meeting)</li>
+    <li>The November teleconference was cancelled</li>
+    <li><a href="https://jcp.org/aboutJava/communityprocess/ec-public/materials/2015-10-2223/October-2015-Public-Minutes.html">October 2015</a> (Face to Face)</li>
+    <li><a href="https://jcp.org/aboutJava/communityprocess/ec-public/materials/2015-09-15/September-2015-Public-Minutes.html">September 2015</a> (Teleconference)</li>
+<li>The August teleconference was cancelled</li>
+    <li><a href="/aboutJava/communityprocess/ec-public/materials/2015-07-07/July-2015-Public-Minutes.html">July 2015</a> (Teleconference)</li>
+    <li><a href="/aboutJava/communityprocess/ec-public/materials/2015-06-1516/June-2015-Public-Minutes.html">June 2015</a> (Face to face)</li>
+    <li><a href="/aboutJava/communityprocess/ec-public/materials/2015-05-12/May-2015-Public-Minutes.html">May 12 2015</a> (Teleconference)</li>
+    <li><a href="/aboutJava/communityprocess/ec-public/materials/2015-05-12/JCP-EC-Public-Agenda-May-2015.html">May 12 2015</a> (Public EC meeting)</li>
+    <li><a href="https://jcp.org/aboutJava/communityprocess/ec-public/materials/2015-04-14/April-2015-Public-Minutes.html">April 14 2015</a> (Teleconference)</li>
+    <li><a href="/aboutJava/communityprocess/ec-public/materials/2015-03-10/March-2015-Public-Minutes.html">March 10 2015</a> (Teleconference)</li>
+<li><a href="/aboutJava/communityprocess/ec-public/materials/2015-02-10/February-2015-Public-Minutes.html">February 10 2015</a> (Teleconference)</li>
+    <li><a href="https://jcp.org/aboutJava/communityprocess/ec-public/materials/2015-01-1314/January-2015-Public-Minutes.html">January 13-14 2015</a> (Face to face)</li>
+    <li><a href="/aboutJava/communityprocess/ec-public/materials/2014-12-09/December-2014-Public-Minutes.html">December 9 2014</a> (Teleconference)</li>
+    <li><a href="/aboutJava/communityprocess/ec-public/materials/2014-12-09/JCP-EC-Public-Agenda-December-2014.html">December 9 2014</a> (Public EC meeting)</li>
+    <li><a href="/aboutJava/communityprocess/ec-public/materials/2014-11-04/November-2014-Public-Minutes.html">November 4 2014</a> (Teleconference)</li>
+    <li><a href="/aboutJava/communityprocess/ec-public/materials/2014-09-2526/September-2014-Public-Minutes.html">September 25-26 2014</a> (Face to face)</li>
+    <li><a href="/aboutJava/communityprocess/ec-public/materials/2014-08-12/August-2014-Public-Minutes.html">August 12 2014</a> (Teleconference)</li>
+    <li><a href="/aboutJava/communityprocess/ec-public/materials/2014-07-08/July-2014-Public-Minutes.html">July 10 2014</a> (Teleconference)</li>
+    <li><a href="/aboutJava/communityprocess/ec-public/materials/2014-06-10/June-2014-Public-Minutes.html">June 10 2014</a> (Teleconference)</li>
+    <li><a href="/aboutJava/communityprocess/ec-public/materials/2014-06-10/JCP-EC-Public-Agenda-June-2014.html">June 10 2014</a> (Public EC meeting)</li>
+    <li><a href="/aboutJava/communityprocess/ec-public/materials/2014-05-1314/May-2014-Public-Minutes.html">May 13-14 2014</a> (Face to face)</li>
+    <li><a href="/aboutJava/communityprocess/ec-public/materials/2014-04-15/April-2014-Public-Minutes.html">April 15 2014</a> (Teleconference)</li>
+    <li><a href="/aboutJava/communityprocess/ec-public/materials/2014-03-11/March-2014-Public-Minutes.html">March 11 2014</a> (Teleconference)</li>
+    <li><a href="/aboutJava/communityprocess/ec-public/materials/2014-01-2324/January-2014-Public-Minutes.html">January 23-24    2014</a> (Face to face)</li>
+    <li><a href="/aboutJava/communityprocess/ec-public/materials/2013-12-10/December-2013-Public-Minutes.html">December 12    2013</a> (Teleconference)</li>
+    <li><a href="/aboutJava/communityprocess/ec-public/materials/2013-11-12/November-2013-Public-Minutes.html">November 12    2013</a> (Teleconference)</li>
+    <li><a href="/aboutJava/communityprocess/ec-public/materials/2013-11-12/JCP-EC-Public-Agenda-November-2013.html">November 12    2013</a> (Public EC meeting)</li>
+    <li><a href="/aboutJava/communityprocess/ec-public/materials/2013-10-08/October-2013-Public-Minutes.html">October 8   2013</a> (Teleconference)</li>
+    <li><a href="/aboutJava/communityprocess/ec-public/materials/2013-09-1920/September-2013-Public-Minutes.html">September 19-20  2013</a> (Face to face)</li>
+    <li><a href="/aboutJava/communityprocess/ec-public/materials/2013-08-13/August-2013-Public-Minutes.html">August 13  2013</a> (Teleconference)</li>
+    <li><a href="/aboutJava/communityprocess/ec-public/materials/2013-07-09/July-2013-Public-Minutes.html">July 9 2013</a> (Teleconference)</li>
+    <li><a href="/aboutJava/communityprocess/ec-public/materials/2013-06-11/June-2013-public-minutes.html">June 11 2013</a> (Teleconference)</li>
+    <li><a href="http://jcp.org/en/resources/multimedia#June-11-2013">June 11 2013</a> (Public EC meeting)</li>
+    <li><a href="/aboutJava/communityprocess/ec-public/materials/2013-05-1415/May-2013-public-minutes.html">May 14-15 2013</a> (Face to face)</li>
+    <li><a href="/aboutJava/communityprocess/ec-public/materials/2013-04-09/April-2013-public-minutes.html">April 9 2013</a> (Teleconference)</li>
+    <li><a href="/aboutJava/communityprocess/ec-public/materials/2013-03-12/March-2013-public-minutes.html">March 12 2013</a> (Teleconference)</li>
+    <li><a href="/aboutJava/communityprocess/ec-public/materials/2013-02-12/February-2013-public-minutes.html">February 12 2013</a> (Teleconference)</li>
+    <li><a href="/aboutJava/communityprocess/ec-public/materials/2013-01-1516/January-2013-public-minutes.html">January 15-16 2013</a> (Face to face)</li>
+  <li><a href="/aboutJava/communityprocess/ec-public/materials/2012-12-18/December-2012-public-minutes.html">December
+    18 2012</a> (Teleconference)</li>
+<LI><a href="/aboutJava/communityprocess/ec-public/materials/2012-11-20/November-2012-public-minutes.html">November
+  20 2012</a> (Teleconference)</LI>
+<li><a href="/aboutJava/communityprocess/ec-public/materials/2012-10-16/October-2012-public-minutes.html">October 16 2012</a> (Teleconference)</li>
+<li><a href="/aboutJava/communityprocess/ec-public/materials/2012-09-1112/September-2012-public-minutes.html">September 11-12 2012</a> (Face to face)</LI>
+<li><a href="/aboutJava/communityprocess/summaries/2012/July-2012-public-minutes.html">July 31 2012</a> (Teleconference)</LI>
+<li><a href="/aboutJava/communityprocess/summaries/2012/June2012-public-minutes.html">June 26 2012</a> (Teleconference)</li>
+<li><a href="/aboutJava/communityprocess/summaries/2012/May2012-public-minutes.html">May 16-17 2012</a> (Face to face)</li>
+<li><a href="/aboutJava/communityprocess/summaries/2012/April2012-public-minutes.html">April 10 2012</a> (Teleconference)</li>
+<li><a href="/aboutJava/communityprocess/summaries/2012/March2012-public-minutes.html">March 6 2012</a> (Teleconference)</li>
+<li><a href="/aboutJava/communityprocess/summaries/2012/February2012-public-minutes.html">February 7 2012</a> (Teleconference)</li>
+<li><a href="/aboutJava/communityprocess/summaries/2012/January2012-public-minutes.html">January 10-11 2012</a> (Face to face)</li>
+<li><a href="/aboutJava/communityprocess/summaries/2011/November2011-public-minutes.html">November 22 2011</a> (Teleconference)</li>
+<li><a href="/aboutJava/communityprocess/summaries/2011/September2011-public-minutes.html">September 13-14 2011</a> (Face to face)</li>
+<li><a href="/aboutJava/communityprocess/summaries/2011/August2011-public-minutes.html">August 10 2011</a> (Teleconference)</li>
+<li><a href="/aboutJava/communityprocess/summaries/2011/July2011-public-minutes.html">July 12 2011</a> (Teleconference)</li>
+<li><a href="/aboutJava/communityprocess/summaries/2011/June2011-public-minutes.html">June 7 2011</a> (Teleconference)</li>
+<li><a href="/aboutJava/communityprocess/summaries/2011/May2011-public-minutes.html">May 3-4 2011</a> (Face to face)</li>
+<li><a href="/aboutJava/communityprocess/summaries/2011/March2011-public-minutes.html">March 22 2011</a> (Teleconference)</li>
+<li><a href="/aboutJava/communityprocess/summaries/2011/February2011-public-minutes.html">February 15 2011</a> (Teleconference)</li>
+<li><a href="/aboutJava/communityprocess/summaries/2011/January2011-public-minutes.html">January 11-12 2011</a> (Face to face)</li>
+<li><a href="/aboutJava/communityprocess/summaries/2010/December/December2010-public-minutes.html">December 7 2010</a> (Teleconference) </li>
+<li><a href="/aboutJava/communityprocess/summaries/2010/November2010-public-minutes.html">November 9 2010</a> (Teleconference)</li>
+<li><a href="/aboutJava/communityprocess/summaries/2010/October2010-public-minutes.html">October 5-6 2010</a> (Face to face)</li> 
+<li><a href="/aboutJava/communityprocess/summaries/2010/July2010-public-minutes.html">July 27 2010</a> (Teleconference)</li>
+<li><a href="/aboutJava/communityprocess/summaries/2010/May2010-public-minutes.html">May 11 2010</a> (Teleconference)</li>
+<li><a href="/aboutJava/communityprocess/summaries/2010/February2010-public-minutes.html">February 23 2010</a> (Teleconference)</li>
+<li><a href="/aboutJava/communityprocess/summaries/2010/January10-public-minutes.html">January 12-13 2010</a> (Face to face)</li>
+<li><a href="/aboutJava/communityprocess/summaries/2009/December09-public-minutes.html">December 8 2009</a> (Teleconference)</li>
+<li><a href="/aboutJava/communityprocess/summaries/2009/October09-public-minutes.html">October 20 2009</a> (Teleconference)</li>
+<li><a href="/aboutJava/communityprocess/summaries/2009/September09-public-minutes.html">September 10-11 2009</a> (Face to face)</li>
+<li><a href="/aboutJava/communityprocess/summaries/2009/July09-public-minutes.html">July 21 2009</a> (Teleconference)</li>
+<li><a href="/aboutJava/communityprocess/summaries/2009/May09-public-minutes.html">May 14-15 2009</a> (Face to Face)</li>
+<li><a href="/aboutJava/communityprocess/summaries/2009/April09-public-minutes.html">April 7 2009</a> (Teleconference)</li>
+<li><a href="/aboutJava/communityprocess/summaries/2009/February09-public-minutes.html">February 25 2009</a> (Teleconference)</li>
+<li><a href="/aboutJava/communityprocess/summaries/2009/January09-public-minutes.html">January 13-14 2009</a> (Face to Face)</li>
+<li><a href="/aboutJava/communityprocess/summaries/2008/December08-public-minutes.html">December 9 2008</a> (Teleconference)</LI>
+<li><a href="/aboutJava/communityprocess/summaries/2008/September08-public-minutes.html">September 25-26 2008</a> (Face to Face)</LI>
+</UL>
+<p> <b>Meeting Summaries:</b> </p>
+<UL>
+<li><a href="/aboutJava/communityprocess/summaries/2008/Aug-08.summary.html">August
+5 2008</a> (teleconference) </li>
+<li><a href="/aboutJava/communityprocess/summaries/2008/June-08.summary.html">June
+24 2008</a> (teleconference) </li>
+
+<li><a href="/aboutJava/communityprocess/summaries/2008/May-08.summary.html">20
+- 21 May 2008</a> (face-to-face)<br>
+</li>
+<li><a href="/aboutJava/communityprocess/summaries/2008/April-08.summary.html">
+8 April 2008</a> (teleconference)<br>
+</li>
+<li><a href="/aboutJava/communityprocess/summaries/2008/February-08.summary.html">
+26 February 2008</a> (teleconference)<br>
+</li>
+
+<li><a href="/aboutJava/communityprocess/summaries/2008/January-08-summary.html">
+15 January 2008</a> (teleconference)<br>
+</li>
+<li><a href="/aboutJava/communityprocess/summaries/2007/December07-summary.html">
+4 - 5 December 2007</a> (face-to-face)<br>
+</li>
+<li><a href="/aboutJava/communityprocess/summaries/2007/November07-summary.html">13
+November 2007</a> (teleconference)<br>
+</li>
+
+<li><a href="/aboutJava/communityprocess/summaries/2007/October07-summary.html">23
+October 2007</a> (teleconference)<br>
+</li>
+<li><a href="/aboutJava/communityprocess/summaries/2007/September07-summary.html">25
+September 2007</a> (teleconference)<br>
+</li>
+<li><a href="/aboutJava/communityprocess/summaries/2007/August07-summary.pdf">16-17
+August 2007</a> (face-to-face)<br>
+</li>
+<li>19 June 2007 (teleconference)<br>
+
+</li>
+<li>11 May 2007 (face-to-face)<br>
+</li>
+<li>17 April 2007 (teleconference)<br>
+</li>
+<li><A HREF=/aboutJava/communityprocess/summaries/2007/JCP-EC-Mar-2007-DRAFT.pdf>27 March 2007</a> (teleconference)<br>
+</li>
+<li><A HREF=/aboutJava/communityprocess/summaries/2007/JCP-EC-Feb-2007-DRAFT.pdf>27-28 February 2007</a> (face-to-face)<br>
+</li>
+<li>16 January 2007 (teleconference)<br>
+</li>
+<li><a href="/aboutJava/communityprocess/summaries/2006/JCP-EC-Dec-2006.pdf">12-13
+December 2006</a> (face-to-face)<br>
+
+</li>
+<li><a href="/aboutJava/communityprocess/summaries/2006/JCP-EC-Nov-2006.pdf">21
+November 2006</a> (teleconference)<br>
+</li>
+<li>24 October 2006 (teleconference)<br>
+</li>
+<li>12-13 September 2006 (face-to-face)<br>
+</li>
+<li><a href="/aboutJava/communityprocess/summaries/2006/JCP-EC-August22-2006.pdf">22
+August 2006</a> (teleconference)<br>
+</li>
+
+<li><a href="/aboutJava/communityprocess/summaries/2006/JCP-EC-June-06-27-Summary.pdf">27
+June 2006</a> (teleconference)<br>
+</li>
+<li>7-8 June 2006 (face-to-face)<br>
+</li>
+<li><a href="/aboutJava/communityprocess/summaries/2006/JCP-EC-May-Summary.pdf">9
+May 2006</a> (teleconference)<br>
+</li>
+<li><a href="/aboutJava/communityprocess/summaries/2006/JCP-EC-April-Summary.pdf">11
+April 2006</a> (teleconference)<br>
+
+</li>
+<li><a href="/aboutJava/communityprocess/summaries/2006/JCP-EC-March-Summary.pdf">14
+March 2006</a> (teleconference)<br>
+</li>
+<li><a href="/aboutJava/communityprocess/summaries/2006/JCP-EC-February-Summary.pdf">22
+&amp; 23 February 2006</a> (face-to-face)</li>
+<li>16 January 2006 (teleconference)<br> 
+</li>
+<li><a href="/aboutJava/communityprocess/summaries/2005/JCP_EC_Meeting-05-12-1415-Summary-FINAL.pdf">14
+  
+  &amp; 15 December 2005</a> (face-to-face)<br>
+</li>
+<li><a href="/aboutJava/communityprocess/summaries/2005/JCP_EC_Meeting-05-11-22-Summary-FINAL.pdf">22
+November 2005</a> (teleconference)<br>
+</li>
+<li><a href="/aboutJava/communityprocess/summaries/2005/JCP_EC_Meeting-05-10-25-Summary-FINAL.pdf">25
+October 2005</a> (teleconference)<br>
+</li>
+<li><a href="/aboutJava/communityprocess/summaries/2005/JCP_EC_Meeting-05-09-2122-Summary-FINAL.pdf">21
+
+&amp; 22 September 2005</a> (face-to-face)<br>
+</li>
+<li><a href="/aboutJava/communityprocess/summaries/2005/JCP_EC_Meeting-05-08-16-Summary-FINAL.pdf">16
+August 2005</a> (teleconference)</li>
+<li>14 June 2005 (teleconference)<br>
+</li>
+<li><a href="/aboutJava/communityprocess/summaries/2005/JCP_EC_Meeting-05-05-1819-Summary-FINAL.pdf">18
+  &amp; 19 May 2005</a> (face-to-face)<br>
+  
+</li>
+<li><a href="/aboutJava/communityprocess/summaries/2005/JCP_EC_Meeting-05-04-19-Summary-FINAL.pdf">19
+April 2005 (teleconference)</a><br>
+</li>
+<li><a href="/aboutJava/communityprocess/summaries/2005/JCP_EC_Meeting-05-03-22-Summary-FINAL.pdf">22
+March 2005</a>
+(teleconference)<br>
+</li>
+<li><a href="/aboutJava/communityprocess/summaries/2005/JCP_EC-05-02-16_17-Summary-FINAL.pdf">16
+&amp; 17 February 2005</a> (face-to-face)</li>
+<li><a href="/aboutJava/communityprocess/summaries/2005/JCP_EC-05-01-11-Summary-FINAL.pdf">11
+January 2005</a> (teleconference)</li>
+
+<li><a href="/aboutJava/communityprocess/summaries/2004/JCP_EC-04-12-07-Summary-FINAL.pdf">7
+December 2004</a> (teleconference)</li>
+<li><a href="/aboutJava/communityprocess/summaries/2004/JCP_EC-04-11-09_10-Summary-FINAL.pdf">9
+&amp; 10 November 2004</a> (face-to-face)</li>
+<li><a href="/aboutJava/communityprocess/summaries/2004/JCP_EC-04-10-05-Summary-FINAL.pdf">5
+October 2004</a> (teleconference)<br>
+</li>
+<li><a href="/aboutJava/communityprocess/summaries/2004/JCP_EC-04-08-24-Summary-FINAL.pdf">24
+August 2004</a> (teleconference)<br>
+
+</li>
+<li><a href="/aboutJava/communityprocess/summaries/2004/JCP_EC-04-07-27_28-Summary-FINAL.pdf">27
+&amp; 28 July 2004</a> (face-to-face)<br>
+</li>
+<li><a href="/aboutJava/communityprocess/summaries/2004/JCP_EC-04-06-08-Summary-FINAL.pdf">8
+June 2004</a> (teleconference)<br>
+</li>
+<li><a href="/aboutJava/communityprocess/summaries/2004/JCP_EC-04-05-04-Summary-FINAL.pdf">4
+May 2004</a> (teleconference)<br>
+
+</li>
+<li><a href="/aboutJava/communityprocess/summaries/2004/JCP_EC-04-03-30_31-Summary-FINAL.pdf">30
+&amp; 31 March 2004</a> (face-to-face)<br>
+</li>
+<li><a href="/aboutJava/communityprocess/summaries/2004/JCP_EC-04-02-24-Summary.pdf">24
+February 2004</a> (teleconference) <br>
+</li>
+<li><a href="/aboutJava/communityprocess/summaries/2004/JCP_EC-04-01-20-Summary.pdf">20
+January 2004</a> (teleconference) </li>
+
+<li><a href="/aboutJava/communityprocess/summaries/2003/JCP_EC-03-12-10_11-Summary.pdf">10
+&amp; 11 December 2003</a> (face-to-face) </li>
+<li><a href="/aboutJava/communityprocess/summaries/2003/JCP_EC-03-11-04-Summary.pdf">4
+November 2003</a> (teleconference) </li>
+<li><a href="/aboutJava/communityprocess/summaries/2003/JCP_EC-03-09-30_10-01-Summary.pdf">30
+September &amp; 1 October 2003</a> (face-to-face) </li>
+<li><a href="/aboutJava/communityprocess/summaries/2003/JCP_EC-03-08-26-Summary.pdf">26
+August 2003</a> (teleconference) </li>
+
+<li><a href="/aboutJava/communityprocess/summaries/2003/JCP_EC-03-07-22-Summary.pdf">22
+July
+2003</a> (teleconference) </li>
+<li><a href="/aboutJava/communityprocess/summaries/2003/JCP_EC-03-06-16_17-Summary.pdf">16
+&amp; 17 June 2003</a> (face-to-face) </li>
+<li><a href="/aboutJava/communityprocess/summaries/2003/JCP_EC-03-05-20-Summary.pdf">20
+May
+2003</a> (teleconference) </li>
+<li><a href="/aboutJava/communityprocess/summaries/2003/JCP_EC-03-04-15-Summary.pdf">15
+April
+2003</a> (teleconference) </li>
+
+<li><a href="/aboutJava/communityprocess/summaries/2003/JCP_EC-03-03-11_12-Summary.pdf">11
+&amp; 12 March 2003</a> (face-to-face) </li>
+<li><a href="/aboutJava/communityprocess/summaries/2003/JCP_EC-03-02-11-Summary.pdf">11
+February 2003</a> (teleconference) </li>
+<li><a href="/aboutJava/communityprocess/summaries/2003/JCP_EC-03-01-14-Summary.pdf">14
+January 2003</a> (teleconference) </li>
+<li><a href="/aboutJava/communityprocess/summaries/2002/JCP_EC-02-12-03-Summary.pdf">3
+December 2002</a> (face-to-face) </li>
+
+<li><a href="/aboutJava/communityprocess/summaries/2002/JCP_EC-02-10-22-Summary.pdf">22
+October 2002</a> (teleconference) </li>
+<li><a href="/aboutJava/communityprocess/summaries/2002/JCP_EC-02-09-17-Summary.pdf">17
+September 2002</a> (teleconference) </li>
+<li><a href="/aboutJava/communityprocess/summaries/2002/08-13-2002-summary.pdf">13
+August 2002</a>
+(face-to-face) </li>
+<li><a href="/aboutJava/communityprocess/summaries/2002/june-summary.pdf">25
+June 2002</a>
+(teleconference) </li>
+</UL>
+<br>
+<br>
+<br>
+<!-------------END-CONTENT------->
+<!-- END OF PAGE DATA --><!-------------------------------><!-- End Page Data -->
+<table border="0" width="452">
+<tbody>
+<tr>
+<td align="right" valign="top"><!-------------------------------><!--PLACE LINKS HERE TO RELATED--><!-- DOCUMENTS NOT ALREADY --><!-- LINKED IN SUBTOPICS --><!------------BEGIN-RELATED------>See
+Also<br>
+<font size="-1"> <a href="/en/whatsnew/elections">JCP EC Elections Page</a> <br>
+<a href="/en/participation/committee">JCP EC Contact information Page</a> <br>
+<BR /><BR />
+</table>
+    <!-- ** BEGIN: footer.jsp ** //-->
+
+
+
+
+
+
+
+
+</td>
+</tr>
+</table>
+
+<!-- ** END: Content Table ** //-->
+
+<!-- ** BEGIN: Footer Table ** //-->
+
+<div id="footer" style="clear: both;">
+    <div class="footleft">
+        <a href="/en/resources/contacts">Contact Us</a>
+    </div>
+	
+    <div class="botbar"><img src="/images/spacer.gif" alt="" height="23" width="1"></div>
+
+    <div class="footleft2">
+         &copy; 2019, Oracle Corporation and/or its affiliates. 
+        <a href="/en/home/terms">Terms of Use</a>. <a href="http://www.oracle.com/us/legal/privacy/index.html">Privacy Policy</a>. <a href="http://www.oracle.com/us/legal/third-party-trademarks/third-party-trademarks-078568.html">Trademarks</a>
+    </div>
+
+    <div class="footright">
+        <img src="/images/common/logo_oracle_footer.gif" alt="Oracle Corporation" height="22" width="91">
+    </div>
+
+    <div style="clear: both;"><img src="/images/spacer.gif" alt="" height="30" width="1"></div>
+</div>
+
+<!-- ** END: Footer Table ** //-->
+
+
+
+<!-- ** Menu Start ** //-->
+
+
+
+</body>
+</html>
+<!-- ** END: footer.jsp ** //-->
+

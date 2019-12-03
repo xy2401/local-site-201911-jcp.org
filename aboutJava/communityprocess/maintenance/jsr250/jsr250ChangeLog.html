@@ -1,0 +1,939 @@
+
+<!-- ** BEGIN: header.jsp ** //-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3c.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+<head>
+    
+
+   
+    <link href="/includes/css/menu.css" rel="stylesheet" type="text/css"></link>
+    <link href="/includes/css/style.css" rel="stylesheet" type="text/css"></link>
+    <!--[if lt IE 6]><link href="/includes/css/style5.css" rel="stylesheet" type="text/css" ></link><![endif]-->
+    <!--[if gte IE 5]><link href="/includes/css/style6.css" rel="stylesheet" type="text/css" ></link><![endif]-->
+    <link href="/includes/css/tabs.css"  rel="stylesheet" type="text/css"></link>
+
+    <script type="text/javascript" src="/includes/scripts/tabs.js"></script>
+    <script type="text/javascript" src="/includes/scripts/menu.js"></script>
+   
+
+    
+
+    
+        <title>The Java Community Process(SM) Program - communityprocess - maintenance</title>
+    
+
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+
+
+<body onload="P7_initPM(0,1,0,0,-1)">
+
+    <a name="top"></a>
+
+    <div id="header">
+	<div id="logo">
+		<a href="/en/home/index"><img src="/images/spacer.gif" alt="Java Community Process" height="81" width="151"></a>
+	</div>
+	<div id="tools">
+		<div class="search">
+			<form name="search" action="/en/jsr/summary" method="get" onsubmit="return validate_search()">
+				<input name="id" value="Search JSRs" size="16" class="form" onfocus="nullify_if_equal(this, 'Search JSRs')" type="text">
+				<a href="javascript:document.search.submit()" onclick="return validate_search()"><img src="/images/button_go.gif" width="21" height="16" border="0" alt="Submit this Search" name="sub_search"></a>
+			</form>
+		</div>
+		<div class="tools">
+			<a href="/en/press/pressroom">Press Room</a> &nbsp;|&nbsp;
+			<a href="http://java.com/java/download/index.jsp?cid=jdp78399">Get Java Here</a> &nbsp;|&nbsp;
+			<!-- <a href="javascript:void(0)">Print Format</a> &nbsp;|&nbsp;&nbsp; -->
+		</div>
+
+	</div>
+	<div style="clear: right;"></div>
+
+        
+
+	<div class="topbar"><img src="/images/spacer.gif" alt="" height="3" width="154"></div>
+	<div id="update"> </div>
+    </div>
+
+
+    
+
+        <!-- ** BEGIN: Content Table ** //-->
+
+        <table width="100%" border="0" cellpadding="0" cellspacing="0">
+
+            <tr>
+
+                <!-- ** BEGIN: Navigation Column ** //-->
+                <td width="150" id="leftcontent" valign="top">
+                    <!-- Navigation Placeholder //-->
+
+                    
+
+                    <div class="bar"><img src="/images/hr_dots1.gif" alt="" height="3" width="150"></div>
+
+        <!-- begin find JSRs form -->
+        <!-- IMPORTANT! do not convert this form to Struts < html : form > tag.  javascript change of form.action property fails. -->
+        <img src="/images/hd_find-jsrs.gif" alt="Find JSRs" height="18" width="150">
+        <form name="findjsr" action="/en/jsr/summary" method="get" class="pt5" onsubmit="return validate_findjsr()">
+            <input name="id" size="18" class="form" value="Search JSRs" onfocus="nullify_if_equal(this, 'Search JSRs')" type="text">
+	    <a href="javascript:document.findjsr.submit()" onclick="return validate_findjsr()"><img src="/images/button_go.gif" width="21" height="16" border="0" alt="Submit this Search" name="sub_search"></a>
+        </form><br><br>
+
+        <!-- ** Menu Start ** //-->
+
+        <ul id="p7PMnav">
+            <li><a href="/en/jsr/platform">JSRs by Platform</a></li>
+            <li><a href="/en/jsr/tech">JSRs by Technology</a></li>
+            <li><a href="/en/jsr/stage">JSRs by Stage</a></li>
+            <li><a href="/en/jsr/ec">JSRs by Committee</a></li>
+            <li><a href="/en/jsr/all">List of All JSRs</a></li>
+
+            <!--end find JSRs form -->
+            <div style="clear: both;"><img src="/images/spacer.gif" alt="" height="25" width="1"></div>
+
+            <!--begin my JCP -->
+            <img src="/images/hd_my-jcp.gif" alt="My JCP" height="18" width="150">
+            
+
+          <form name="login" method="get" action="/en/user/login" >
+            <input name="Sign-in" type="submit" title="Sign-in" value="Sign-in" />
+          </form>
+
+            <div style="clear:both"><img src="/images/global/spacer.gif" width="1" height="3" alt=""></div>
+            <div class="noNav">
+                <a href="/en/user/register">Register for Site</a>
+            </div>
+
+             <div class="bar"><img src="/images/hr_dots1.gif" alt="" height="3" width="150"></div>
+           <div class="noNav" style="color: #666666; padding: 0;">
+              Use of JCP site is subject to the
+              <a href="/en/home/terms" style="display:inline;padding: 0">JCP Terms of Use</a> and the
+              <a href="http://www.oracle.com/us/legal/privacy/index.html" style="display:inline;padding: 0" href="">Oracle Privacy Policy</a>
+          </div>
+
+            
+
+            <div style="clear:both"><img src="/images/global/spacer.gif" width="1" height="25" alt=""></div>
+
+            <!--begin JCP info -->
+            <img src="/images/hd_jcp-info.gif" alt="JCP Info" height="18" width="150">
+
+            <li><a href="/en/procedures/overview" class="p7PMtrg">About JCP</a>
+                <ul>
+                    <li><a href="/en/procedures/overview">Program Overview</a></li>
+                    <li><a href="/en/procedures/jcp2">JCP Process Document</a></li>
+                    <li><a href="/en/whatsnew/calendar">Calendar</a></li>
+                    <li><a href="/en/participation/members">JCP Members</a></li>
+                    <li><a href="/en/participation/committee">Executive Committee</a></li>
+                    <li><a href="/en/whatsnew/elections">Elections</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/en/participation/overview" class="p7PMtrg">Get Involved</a>
+		<ul>
+                    <li><a href="/en/participation/overview">Overview</a></li>
+                    <li><a href="/en/participation/membership">Becoming a JCP Member</a></li>
+		</ul>
+            </li>
+
+            <li><a href="/en/resources/contents" class="p7PMtrg">Community Resources</a>
+                <ul>
+                    <li><a href="/en/resources/contents">Overview</a></li>
+                    <li><a href="/en/resources/tutorials">Tutorials</a></li>
+                    <li><a href="/en/resources/multimedia">JCP Podcasts</a></li>
+                    <li><a href="/en/resources/guide">Spec Lead Guide</a></li>
+                    <li><a href="/en/resources/tdk">TCK Tool & Info</a></li>
+                    <li><a href="/en/resources/license_reference">License Reference</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/en/press/pmo" class="p7PMtrg">Community News</a>
+                <ul>
+                    <li><a href="/en/press/pmo">News</a></li>
+                    <li><a href="/en/press/news/awards/awards_main">Programs &amp; Awards</a></li>
+                    <li><a href="/en/press/releases">Press Releases</a></li>
+                    <li><a href="/en/press/success">Success Stories</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/en/introduction/faq">FAQ</a></li>
+
+            <li><a href="/en/resources/contacts">Contact Us</a></li>
+
+            <div style="clear: both;"><img src="/images/spacer.gif" alt="" height="25" width="1"></div>
+
+            <!--[if lte IE 6]><style>#p7PMnav a{height:1em;}#p7PMnav li{height:1em;float:left;clear:both;width:100%}</style><![endif]-->
+            <!--[if IE 6]><style>#p7PMnav li{clear:none;}</style><![endif]-->
+            <!--[if IE 7]><style>#p7PMnav a{zoom:100%;}#p7PMnav li{float:left;clear:both;width:100%;}</style><![endif]-->
+        </ul>
+
+        
+
+        <!--begin ad space -->
+        <div class="ads">
+            <a href="http://java.com/java/download/index.jsp?cid=jdp78399" target="_blank"><img style="display: ;" src="/images/ad_banner2.gif" alt="Ad Banner" border="1" height="70" width="150"></a>
+        </div>
+        <!--end ad space -->
+
+<!-- ** Menu End ** //-->
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;<br>
+
+    
+
+                    &nbsp;<br>
+                    <img src="/images/common/trans.gif" alt="" width="1" height="150"><br>
+
+              
+
+
+
+                </td>
+                <!-- ** END: Navigation Column ** //-->
+
+                <!-- ** BEGIN: Gutter Column ** //-->
+		<td width="10" nowrap><img src="/images/common/trans.gif" alt="" width="10" height="1"></td>
+                <!-- ** END: Gutter Column ** //-->
+
+                <!-- ** BEGIN: Content Column ** //-->
+                <td width="100%" valign="top">
+
+    
+<script type="text/javascript">
+
+String.prototype.trim = function() {
+        return this.replace(/^\s+|\s+$/g,"");
+}
+String.prototype.ltrim = function() {
+        return this.replace(/^\s+/,"");
+}
+String.prototype.rtrim = function() {
+        return this.replace(/\s+$/,"");
+}
+
+function validate_search() {
+	if (document.search.id.value == "Search JSRs" || document.search.id.value.trim().length == 0) {
+		alert("Search terms must be entered first");
+		return false;
+	}
+	return true;
+}
+
+function validate_findjsr() {
+	if (document.findjsr.id.value == "Search JSRs" || document.findjsr.id.value.trim().length == 0) {
+		alert("Search terms must be entered first");
+		return false;
+	}
+	return true;
+}
+
+function nullify_if_equal(field, str) {
+	// alert("val=" + field.value);
+	if (field.value == str) {
+		field.value = "";
+	}
+}
+
+</script>
+<!-- ** END: header.jsp ** //-->
+
+
+
+
+
+
+<html xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=ProgId content=Word.Document>
+<meta name=Generator content="Microsoft Word 11">
+<meta name=Originator content="Microsoft Word 11">
+<link rel=File-List href="jsr250ChangeLog_files/filelist.xml">
+<title>Common Annotations for the Java Platform Maintenance Release 1</title>
+<!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>Nisha Mordani</o:Author>
+  <o:Template>Normal</o:Template>
+  <o:LastAuthor>Rajiv Mordani</o:LastAuthor>
+  <o:Revision>15</o:Revision>
+  <o:TotalTime>148</o:TotalTime>
+  <o:Created>2009-08-31T18:06:00Z</o:Created>
+  <o:LastSaved>2009-10-02T21:28:00Z</o:LastSaved>
+  <o:Pages>1</o:Pages>
+  <o:Words>792</o:Words>
+  <o:Characters>4521</o:Characters>
+  <o:Company> </o:Company>
+  <o:Lines>37</o:Lines>
+  <o:Paragraphs>10</o:Paragraphs>
+  <o:CharactersWithSpaces>5303</o:CharactersWithSpaces>
+  <o:Version>11.5703</o:Version>
+ </o:DocumentProperties>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:Zoom>150</w:Zoom>
+  <w:ValidateAgainstSchemas/>
+  <w:SaveIfXMLInvalid>false</w:SaveIfXMLInvalid>
+  <w:IgnoreMixedContent>false</w:IgnoreMixedContent>
+  <w:AlwaysShowPlaceholderText>false</w:AlwaysShowPlaceholderText>
+  <w:BrowserLevel>MicrosoftInternetExplorer4</w:BrowserLevel>
+ </w:WordDocument>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:LatentStyles DefLockedState="false" LatentStyleCount="156">
+ </w:LatentStyles>
+</xml><![endif]-->
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:Courier;
+	panose-1:2 7 4 9 2 2 5 2 4 4;
+	mso-font-charset:0;
+	mso-generic-font-family:modern;
+	mso-font-format:other;
+	mso-font-pitch:fixed;
+	mso-font-signature:3 0 0 0 1 0;}
+@font-face
+	{font-family:Palatino;
+	panose-1:0 0 0 0 0 0 0 0 0 0;
+	mso-font-charset:0;
+	mso-generic-font-family:roman;
+	mso-font-format:other;
+	mso-font-pitch:variable;
+	mso-font-signature:3 0 0 0 1 0;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-parent:"";
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+p
+	{mso-style-link:"Normal \(Web\) Char";
+	mso-margin-top-alt:auto;
+	margin-right:0in;
+	mso-margin-bottom-alt:auto;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+code
+	{font-family:"Courier New";
+	mso-ascii-font-family:"Courier New";
+	mso-fareast-font-family:"Times New Roman";
+	mso-hansi-font-family:"Courier New";
+	mso-bidi-font-family:"Courier New";}
+pre
+	{margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt;
+	font-size:10.0pt;
+	font-family:"Courier New";
+	mso-fareast-font-family:"Times New Roman";}
+span.NormalWebChar
+	{mso-style-name:"Normal \(Web\) Char";
+	mso-style-locked:yes;
+	mso-style-link:"Normal \(Web\)";
+	mso-ansi-font-size:12.0pt;
+	mso-bidi-font-size:12.0pt;
+	mso-ansi-language:EN-US;
+	mso-fareast-language:EN-US;
+	mso-bidi-language:AR-SA;}
+span.CouriernormalChar
+	{mso-style-name:"Courier+normal Char";
+	mso-style-locked:yes;
+	mso-style-parent:"Normal \(Web\) Char";
+	mso-style-link:Courier+normal;
+	mso-ansi-font-size:12.0pt;
+	mso-bidi-font-size:12.0pt;
+	font-family:Courier;
+	mso-ascii-font-family:Courier;
+	mso-hansi-font-family:Courier;
+	mso-ansi-language:EN-US;
+	mso-fareast-language:EN-US;
+	mso-bidi-language:AR-SA;}
+p.Couriernormal, li.Couriernormal, div.Couriernormal
+	{mso-style-name:Courier+normal;
+	mso-style-parent:"Normal \(Web\)";
+	mso-style-link:"Courier+normal Char";
+	mso-margin-top-alt:auto;
+	margin-right:0in;
+	mso-margin-bottom-alt:auto;
+	margin-left:.75in;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:Courier;
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";}
+@page Section1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.25in 1.0in 1.25in;
+	mso-header-margin:.5in;
+	mso-footer-margin:.5in;
+	mso-paper-source:0;}
+div.Section1
+	{page:Section1;}
+ /* List Definitions */
+ @list l0
+	{mso-list-id:1545605043;
+	mso-list-type:hybrid;
+	mso-list-template-ids:-255269674 67698703 67698713 67698715 67698703 67698713 67698715 67698703 67698713 67698715;}
+@list l0:level1
+	{mso-level-tab-stop:.75in;
+	mso-level-number-position:left;
+	margin-left:.75in;
+	text-indent:-.25in;}
+@list l0:level2
+	{mso-level-tab-stop:1.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l0:level3
+	{mso-level-tab-stop:1.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l0:level4
+	{mso-level-tab-stop:2.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l0:level5
+	{mso-level-tab-stop:2.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l0:level6
+	{mso-level-tab-stop:3.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l0:level7
+	{mso-level-tab-stop:3.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l0:level8
+	{mso-level-tab-stop:4.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l0:level9
+	{mso-level-tab-stop:4.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+ol
+	{margin-bottom:0in;}
+ul
+	{margin-bottom:0in;}
+-->
+</style>
+<!--[if gte mso 10]>
+<style>
+ /* Style Definitions */
+ table.MsoNormalTable
+	{mso-style-name:"Table Normal";
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-noshow:yes;
+	mso-style-parent:"";
+	mso-padding-alt:0in 5.4pt 0in 5.4pt;
+	mso-para-margin:0in;
+	mso-para-margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-ansi-language:#0400;
+	mso-fareast-language:#0400;
+	mso-bidi-language:#0400;}
+table.MsoTableGrid
+	{mso-style-name:"Table Grid";
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	border:solid windowtext 1.0pt;
+	mso-border-alt:solid windowtext .5pt;
+	mso-padding-alt:0in 5.4pt 0in 5.4pt;
+	mso-border-insideh:.5pt solid windowtext;
+	mso-border-insidev:.5pt solid windowtext;
+	mso-para-margin:0in;
+	mso-para-margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-ansi-language:#0400;
+	mso-fareast-language:#0400;
+	mso-bidi-language:#0400;}
+</style>
+<![endif]-->
+</head>
+
+<body lang=EN-US style='tab-interval:.5in'>
+
+<div class=Section1>
+
+<p class=MsoNormal><span style='font-size:20.0pt'>Common Annotations for the Java
+Platform Maintenance Release 1.1<u1:p></u1:p></span><o:p></o:p></p>
+
+<p class=MsoNormal><span style='font-size:20.0pt'><u1:p>&nbsp;</u1:p></span></p>
+
+<p class=MsoNormal style='margin-left:.75in;text-indent:-.25in;mso-list:l0 level1 lfo2;
+tab-stops:list .75in'><![if !supportLists]><span style='mso-list:Ignore'>1.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><![endif]>Update
+Table 2-1 to reflect what the value of TransactionAttribute will be on both the
+methods in all the classses for clarity as follows - </p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<table class=MsoTableGrid border=1 cellspacing=0 cellpadding=0
+ style='margin-left:86.15pt;border-collapse:collapse;border:none;mso-border-alt:
+ solid windowtext .5pt;mso-yfti-tbllook:480;mso-padding-alt:0in 5.4pt 0in 5.4pt;
+ mso-border-insideh:.5pt solid windowtext;mso-border-insidev:.5pt solid windowtext'>
+ <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes'>
+  <td width=295 valign=top style='width:221.4pt;border:solid windowtext 1.0pt;
+  mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal>Methods in derived classes</p>
+  </td>
+  <td width=341 valign=top style='width:255.8pt;border:solid windowtext 1.0pt;
+  border-left:none;mso-border-left-alt:solid windowtext .5pt;mso-border-alt:
+  solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal>Effective TransactionAttribute value</p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:1'>
+  <td width=295 valign=top style='width:221.4pt;border:solid windowtext 1.0pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-family:Courier'>foo() in ABean<o:p></o:p></span></p>
+  </td>
+  <td width=341 valign=top style='width:255.8pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-family:Courier'>REQUIRED (Default
+  TransactionAttribute as defined by the EJB specification).<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:2'>
+  <td width=295 valign=top style='width:221.4pt;border:solid windowtext 1.0pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-family:Courier'>bar() in ABean<o:p></o:p></span></p>
+  </td>
+  <td width=341 valign=top style='width:255.8pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-family:Courier'>@Transaction(REQUIRED)<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:3'>
+  <td width=295 valign=top style='width:221.4pt;border:solid windowtext 1.0pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-family:Courier'>foo() in BBean<o:p></o:p></span></p>
+  </td>
+  <td width=341 valign=top style='width:255.8pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-family:Courier'>@TransactionAttribute(REQUIRES_NEW)<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:4'>
+  <td width=295 valign=top style='width:221.4pt;border:solid windowtext 1.0pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-family:Courier'>bar() in BBean<o:p></o:p></span></p>
+  </td>
+  <td width=341 valign=top style='width:255.8pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-family:Courier'>@TransactionAttribute(REQUIRED)<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:5'>
+  <td width=295 valign=top style='width:221.4pt;border:solid windowtext 1.0pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-family:Courier'>foo() in CBean<o:p></o:p></span></p>
+  </td>
+  <td width=341 valign=top style='width:255.8pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-family:Courier'>@TransactionAttribute(REQUIRES_NEW)<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:6'>
+  <td width=295 valign=top style='width:221.4pt;border:solid windowtext 1.0pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-family:Courier'>bar() in CBean<o:p></o:p></span></p>
+  </td>
+  <td width=341 valign=top style='width:255.8pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-family:Courier'>@TransactionAttribute(REQUIRES_NEW)<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:7'>
+  <td width=295 valign=top style='width:221.4pt;border:solid windowtext 1.0pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-family:Courier'>foo() in DBean<o:p></o:p></span></p>
+  </td>
+  <td width=341 valign=top style='width:255.8pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-family:Courier'>@TransactionAttribute(NEVER)<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:8'>
+  <td width=295 valign=top style='width:221.4pt;border:solid windowtext 1.0pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-family:Courier'>bar() in DBean<o:p></o:p></span></p>
+  </td>
+  <td width=341 valign=top style='width:255.8pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-family:Courier'>@TransactionAttribute(REQUIRES_NEW)<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:9'>
+  <td width=295 valign=top style='width:221.4pt;border:solid windowtext 1.0pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-family:Courier'>foo() in EBean<o:p></o:p></span></p>
+  </td>
+  <td width=341 valign=top style='width:255.8pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-family:Courier'>@TransactionAttribute(NEVER)<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:10;mso-yfti-lastrow:yes'>
+  <td width=295 valign=top style='width:221.4pt;border:solid windowtext 1.0pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-family:Courier'>bar() in EBean<o:p></o:p></span></p>
+  </td>
+  <td width=341 valign=top style='width:255.8pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-family:Courier'>@TransactionAttribute(REQUIRED)<o:p></o:p></span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal style='margin-left:.75in;text-indent:-.25in;mso-list:l0 level1 lfo2;
+tab-stops:list .75in'><![if !supportLists]><span style='mso-list:Ignore'>2.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><![endif]>Change
+the definition of the <span style='font-family:Courier'>@DenyAll</span>
+annotation to allow it to be defined on both type and method targets. </p>
+
+<p class=MsoNormal style='margin-left:.5in'><span style='font-family:Courier'><span
+style='mso-tab-count:1'>���� </span>@Target({TYPE, METHOD})</span></p>
+
+<p class=MsoNormal style='margin-left:.75in;text-indent:-.25in;mso-list:l0 level1 lfo2;
+tab-stops:list .75in'><![if !supportLists]><span style='mso-list:Ignore'>3.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><![endif]>Simplify
+section 2.11 <span style='font-family:Courier'>PermitAll</span>, <span
+style='font-family:Courier'>DenyAll</span> and <span style='font-family:Courier'>RolesAllowed</span>
+interactions, to convey that method targeted annotations always take precedence
+over Class targeted instances of these annotations as follows - </p>
+
+<p class=MsoNormal style='margin-left:.75in;text-indent:-.25in'><span
+style='mso-spacerun:yes'>����� </span>If the <span style='font-family:Courier'>PermitAll,
+RolesAllowed</span>, or <span style='font-family:Courier'>DenyAll</span>
+annotations are applied on methods of a class, then the method level
+annotations take precedence (at the corresponding methods) over any class level
+annotation of type <span style='font-family:Courier'>PermitAll, RoleAllowed,</span>
+or<span style='mso-spacerun:yes'>� </span><span style='font-family:Courier'>DenyAll</span>.</p>
+
+<p class=MsoNormal style='margin-left:.5in'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal style='margin-left:.5in'><u1:p>&nbsp;</u1:p></p>
+
+<p class=MsoNormal style='margin-left:.75in;text-indent:-.25in;mso-list:l0 level1 lfo2;
+tab-stops:list .75in'><![if !supportLists]><span style='mso-list:Ignore'>4.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><![endif]>Add
+a new attribute to the Resource annotation - <span style='font-family:Courier'>String
+lookup() default &quot;&quot;;</span> - The optional <span style='font-family:
+Courier'>lookup</span> attribute specifies the JNDI name of a resource that the
+resource being defined will be bound to. The type of the referenced resource
+must be compatible with that of the resource being defined.</p>
+
+<p class=MsoNormal style='margin-left:.75in;text-indent:-.25in;mso-list:l0 level1 lfo2;
+tab-stops:list .75in'><![if !supportLists]><span style='mso-list:Ignore'>5.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><![endif]>Add
+a new subsection 2.13 to define DataSourceDefinition annotation as follows:</p>
+
+<p class=MsoNormal style='margin-left:.75in;text-indent:-9.0pt'><span
+style='mso-spacerun:yes'>�� </span><span style='font-family:Courier'>javax.annotation.sql.DataSourceDefinition</span><o:p></o:p></p>
+
+<u1:p></u1:p>
+
+<p style='margin-left:.75in'>This annotation is used to define a container <span
+style='font-family:Courier'>DataSource </span>and be registered with JNDI. The <code><span
+style='mso-ansi-font-size:12.0pt;mso-bidi-font-size:12.0pt;font-family:Courier'>DataSource</span></code>
+may be configured by setting the annotation elements for commonly used <code><span
+style='mso-ansi-font-size:12.0pt;mso-bidi-font-size:12.0pt;font-family:Courier'>DataSource</span></code>
+properties. Additional standard and vendor-specific properties may be specified
+using the <code><span style='mso-ansi-font-size:12.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier'>properties</span></code> element. The data source will be
+registered under the name specified in the <span class=CouriernormalChar>name</span>
+element. It may be defined to be in any valid <code><span style='mso-ansi-font-size:
+12.0pt;mso-bidi-font-size:12.0pt;font-family:Courier'>Java EE</span></code>
+namespace, and will determine the accessibility of the data source from other
+components. A JDBC driver implementation class of the appropriate type, either <code><span
+style='mso-ansi-font-size:12.0pt;mso-bidi-font-size:12.0pt;font-family:Courier'>DataSource</span></code><span
+style='font-family:Courier'>, </span><code><span style='mso-ansi-font-size:
+12.0pt;mso-bidi-font-size:12.0pt;font-family:Courier'>ConnectionPoolDataSource</span></code>,
+or <code><span style='mso-ansi-font-size:12.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier'>XADataSource</span></code>, must be indicated by the <code><span
+style='mso-ansi-font-size:12.0pt;font-family:Courier'>className</span></code>
+element. The driver class is not required to be available at deployment&nbsp;
+but&nbsp; must be available at runtime prior to any attempt to access the <span
+style='font-family:Courier'>DataSource.</span></p>
+
+<p style='margin-left:.75in'>The <code><span style='mso-ansi-font-size:12.0pt;
+font-family:Courier'>url</span></code> property should not be specified in
+conjunction with other standard properties for defining the connectivity to the
+database. If the <code><span style='mso-ansi-font-size:12.0pt;font-family:Courier'>url</span></code>
+property is specified along with other standard <code><span style='mso-ansi-font-size:
+12.0pt;font-family:Courier'>DataSource</span></code> properties such as <code><span
+style='mso-ansi-font-size:12.0pt;font-family:Courier'>serverName</span></code>
+and <code><span style='mso-ansi-font-size:12.0pt;font-family:Courier'>portNumber</span></code>,
+the more specific properties will take precedence and <code><span
+style='mso-ansi-font-size:12.0pt;font-family:Courier'>url</span></code> will be
+ignored. <u1:p></u1:p></p>
+
+<p style='margin-left:.75in'>Vendors are not required to support properties
+that do not normally apply to a specific data source type. For example,
+specifying the <code><span style='mso-ansi-font-size:12.0pt;font-family:Courier'>transactional</span></code>
+property to be <code><span style='mso-ansi-font-size:12.0pt;font-family:Courier'>true</span></code>
+but supplying a value for <code><span style='mso-ansi-font-size:12.0pt;
+font-family:Courier'>className</span></code> that implements a data source
+class other than <code><span style='mso-ansi-font-size:12.0pt;font-family:Courier'>XADataSource</span></code>
+may not be supported. <u1:p></u1:p></p>
+
+<p style='margin-left:.75in'>Vendor-specific properties may be combined with or
+used to override standard data source properties defined using this annotation.
+<u1:p></u1:p></p>
+
+<p style='margin-left:.75in'><code><span style='mso-ansi-font-size:12.0pt;
+font-family:Courier'>DataSource</span></code> properties that are specified and
+are not supported in a given configuration or cannot be mapped to a vendor
+specific configuration property may be ignored. <u1:p></u1:p></p>
+
+<p style='margin-left:.75in'>Although the annotation allows you to specify a
+password, it is recommended not to embed passwords in production code. The
+password element in the annotation is provided as a convenience for ease of
+development.</p>
+
+<p style='margin-left:.75in'><o:p>&nbsp;</o:p></p>
+
+<p style='margin-left:.75in'>Examples: <u1:p></u1:p></p>
+
+<pre style='margin-left:.75in'><span style='font-size:12.0pt;mso-bidi-font-size:
+10.0pt;font-family:Courier'><span style='mso-spacerun:yes'>�� </span>@DataSourceDefinition(name=&quot;java:global/MyApp/MyDataSource&quot;,<u1:p></u1:p></span></pre><pre
+style='margin-left:.75in'><span style='font-size:12.0pt;mso-bidi-font-size:
+10.0pt;font-family:Courier'><span style='mso-spacerun:yes'>����� </span>className=&quot;com.foobar.MyDataSource&quot;,<u1:p></u1:p></span></pre><pre
+style='margin-left:.75in'><span style='font-size:12.0pt;mso-bidi-font-size:
+10.0pt;font-family:Courier'><span style='mso-spacerun:yes'>����� </span>portNumber=6689,<u1:p></u1:p></span></pre><pre
+style='margin-left:.75in'><span style='font-size:12.0pt;mso-bidi-font-size:
+10.0pt;font-family:Courier'><span style='mso-spacerun:yes'>����� </span>serverName=&quot;myserver.com&quot;,<u1:p></u1:p></span></pre><pre
+style='margin-left:.75in'><span style='font-size:12.0pt;mso-bidi-font-size:
+10.0pt;font-family:Courier'><span style='mso-spacerun:yes'>����� </span>user=&quot;lance&quot;,<u1:p></u1:p></span></pre><pre
+style='margin-left:.75in'><span style='font-size:12.0pt;mso-bidi-font-size:
+10.0pt;font-family:Courier'><span style='mso-spacerun:yes'>����� </span>password=&quot;secret&quot;<u1:p></u1:p></span></pre><pre
+style='margin-left:.75in'><span style='font-size:12.0pt;mso-bidi-font-size:
+10.0pt;font-family:Courier'><span style='mso-spacerun:yes'>�� </span>)<u1:p></u1:p></span></pre><pre
+style='margin-left:.75in'> <o:p></o:p></pre><pre style='margin-left:.75in'><u1:p></u1:p><span style='mso-spacerun:yes'>�</span><u1:p></u1:p></pre>
+
+<p style='margin-left:.75in;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='mso-spacerun:yes'>��� </span>Using a <code><span style='mso-ansi-font-size:
+12.0pt;font-family:Courier'>URL</span></code>: <u1:p></u1:p></p>
+
+<pre style='margin-left:.75in'><span style='font-size:12.0pt;mso-bidi-font-size:
+10.0pt;font-family:Courier'><span style='mso-spacerun:yes'>� </span>@DataSourceDefinition(name=&quot;java:global/MyApp/MyDataSource&quot;,<u1:p></u1:p></span></pre><pre
+style='margin-left:.75in'><span style='font-size:12.0pt;mso-bidi-font-size:
+10.0pt;font-family:Courier'><span style='mso-spacerun:yes'>��� </span>className=&quot;org.apache.derby.jdbc.ClientDataSource&quot;,<u1:p></u1:p></span></pre><pre
+style='margin-left:.75in'><span style='font-size:12.0pt;mso-bidi-font-size:
+10.0pt;font-family:Courier'><span style='mso-spacerun:yes'>��� </span>url=&quot;jdbc:derby://localhost:1527/myDB&quot;,<u1:p></u1:p></span></pre><pre
+style='margin-left:.75in'><span style='font-size:12.0pt;mso-bidi-font-size:
+10.0pt;font-family:Courier'><span style='mso-spacerun:yes'>��� </span>user=&quot;lance&quot;,<u1:p></u1:p></span></pre><pre
+style='margin-left:.75in'><span style='font-size:12.0pt;mso-bidi-font-size:
+10.0pt;font-family:Courier'><span style='mso-spacerun:yes'>��� </span>password=&quot;secret&quot;<u1:p></u1:p></span></pre><pre
+style='margin-left:.75in'><span style='font-size:12.0pt;mso-bidi-font-size:
+10.0pt;font-family:Courier'><span style='mso-spacerun:yes'>� </span>)<o:p></o:p></span></pre><pre
+style='margin-left:.75in'><span style='font-size:12.0pt;mso-bidi-font-size:
+10.0pt;font-family:Courier'><o:p>&nbsp;</o:p></span></pre><pre><o:p>&nbsp;</o:p></pre><u1:p></u1:p>
+
+<p class=MsoNormal style='margin-left:.75in;text-indent:-9.0pt;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><u1:p><u1:p></u1:p>&nbsp;</u1:p></p>
+
+<p class=MsoNormal style='margin-left:.75in;text-indent:-.25in;mso-list:l0 level1 lfo2;
+tab-stops:list .75in'><![if !supportLists]><span style='mso-list:Ignore'>6.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><![endif]>Add
+a new subsection 2.14 to define DataSourceDefinitions annotation as follows:</p>
+
+<p class=MsoNormal style='margin-left:.75in;text-indent:-9.0pt;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='font-family:Courier'><span
+style='mso-spacerun:yes'>�</span>javax.annotation.sql.DataSourceDefinitions<u1:p></u1:p></span></p>
+
+<p class=MsoNormal style='margin-left:.75in;text-indent:-9.0pt;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='font-family:Courier'><span style='mso-spacerun:yes'>�</span></span><span
+style='mso-bidi-font-size:9.5pt;mso-bidi-font-family:Palatino'>The </span><span
+style='mso-bidi-font-size:9.5pt;font-family:Courier;mso-bidi-font-family:Courier'>DataSourceDefinition</span><span
+style='mso-bidi-font-size:9.5pt;mso-bidi-font-family:Palatino'> annotation is
+used to declare a container </span><span style='mso-bidi-font-size:9.5pt;
+font-family:Courier;mso-bidi-font-family:Palatino'>DataSource</span><span
+style='mso-bidi-font-size:9.5pt;mso-bidi-font-family:Palatino'>. Since repeated
+annotations are not allowed, the </span><span style='mso-bidi-font-size:9.5pt;
+font-family:Courier;mso-bidi-font-family:Courier'>DataSourceDefinitions</span><span
+style='mso-bidi-font-size:9.5pt;mso-bidi-font-family:Palatino'> annotation acts
+as a container for multiple data source declarations.</span><u1:p></u1:p><o:p></o:p></p>
+
+<p class=MsoNormal style='margin-left:.75in;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><u1:p>&nbsp;</u1:p></p>
+
+<p class=MsoNormal style='margin-left:.75in;text-indent:-.25in;mso-list:l0 level1 lfo2;
+tab-stops:list .75in'><![if !supportLists]><span style='mso-list:Ignore'>1.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><![endif]>Add
+a new subsection 2.15 to define Managed Bean annotation as follows:</p>
+
+<p class=MsoNormal style='margin-left:.75in;text-indent:-9.0pt;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='font-family:Courier'><span
+style='mso-spacerun:yes'>�</span>javax.annotation.ManagedBean<u1:p></u1:p></span><o:p></o:p></p>
+
+<p class=MsoNormal style='margin-left:.75in;tab-stops:63.0pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><u1:p>This
+annotation is used to declare a Managed Bean as specified in the Managed Beans
+specification. &nbsp;Managed Beans are container managed objects that support a
+small set of basic services such as resource injection, lifecycle callbacks and
+interceptors. A Managed Bean may optionally have a name, a <span
+style='font-family:"Courier New"'>String </span>specified via the <span
+style='font-family:"Courier New"'>value</span> attribute. <span
+style='font-family:Courier'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.75in;tab-stops:63.0pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='font-family:Courier'>package javax.annotation; <br>
+import static java.lang.annotation.ElementType.*; <br>
+import static java.lang.annotation.RetentionPolicy.*; <br>
+@Target(TYPE) <br>
+@Retention(RUNTIME) <br>
+public @interface ManagedBean { <br>
+&nbsp;&nbsp;&nbsp;&nbsp; String value() default &quot;&quot;; <br>
+} <br style='mso-special-character:line-break'>
+<![if !supportLineBreakNewLine]><br style='mso-special-character:line-break'>
+<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.75in;tab-stops:63.0pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'>Examples:</p>
+
+<p class=MsoNormal style='margin-left:.75in;tab-stops:63.0pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal style='margin-left:.75in;tab-stops:63.0pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='font-family:Courier;mso-bidi-font-family:"Courier New"'>@ManagedBean(�cart�)<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.75in;tab-stops:63.0pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='font-family:Courier;mso-bidi-font-family:"Courier New"'>public class
+ShoppingCart{<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.75in;tab-stops:63.0pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='font-family:Courier'><span style='mso-spacerun:yes'>� </span>...</span><span
+style='font-family:Courier;mso-bidi-font-family:"Courier New"'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.75in;tab-stops:63.0pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='font-family:Courier;mso-bidi-font-family:"Courier New"'>}<o:p></o:p></span></p>
+
+</div>
+
+</body>
+
+</html>
+
+
+
+<!-- ** BEGIN: footer.jsp ** //-->
+
+
+
+
+
+
+
+
+</td>
+</tr>
+</table>
+
+<!-- ** END: Content Table ** //-->
+
+<!-- ** BEGIN: Footer Table ** //-->
+
+<div id="footer" style="clear: both;">
+    <div class="footleft">
+        <a href="/en/resources/contacts">Contact Us</a>
+    </div>
+	
+    <div class="botbar"><img src="/images/spacer.gif" alt="" height="23" width="1"></div>
+
+    <div class="footleft2">
+         &copy; 2019, Oracle Corporation and/or its affiliates. 
+        <a href="/en/home/terms">Terms of Use</a>. <a href="http://www.oracle.com/us/legal/privacy/index.html">Privacy Policy</a>. <a href="http://www.oracle.com/us/legal/third-party-trademarks/third-party-trademarks-078568.html">Trademarks</a>
+    </div>
+
+    <div class="footright">
+        <img src="/images/common/logo_oracle_footer.gif" alt="Oracle Corporation" height="22" width="91">
+    </div>
+
+    <div style="clear: both;"><img src="/images/spacer.gif" alt="" height="30" width="1"></div>
+</div>
+
+<!-- ** END: Footer Table ** //-->
+
+
+
+<!-- ** Menu Start ** //-->
+
+
+
+</body>
+</html>
+<!-- ** END: footer.jsp ** //-->
+

@@ -1,0 +1,194 @@
+
+Change Log for JSR 82 Specification
+
+Changes from 1.0a to 1.1
+1.Appendix A was added, covering JSR 82 and MIDP 2.0 PushRegistry.
+2.Appendix B was added, a table listing the blocking and non-blocking methods in the JSR 82 API.
+3.Sections 8.2.4 and 8.2.5 were updated to better clarify the meaning of the "master" parameter
+4.Section 10.2.1.1 was modified to relax the rules related to L2CAP MTU size negotiation
+5.Section 3.3.4 was modified to clarify the meaning of properties returned by LocalDevice.getProperty(), and also to clarify that these peroperties must also be available from the CLDC System.getProperty() API.
+6.Section 4.1 was modified to further clarify the meaning and intent of pre-known devices.
+7.Section 10.3.1 was modified to clarify the required behavior of multiple connections to a single L2CAP PSM
+8.Section 8.5.1 was modified to clarify the required behavior of multiple connections to a single RFCOMM server channel
+9.Modified Section 5.3.2 to clarify that SDP related values must always be returned to applications in normal Java byte order (big endian)
+10.Added Appendix 1, a table of blocking versus non-blocking methods.
+11.Corrected text in Section 11.4.3 for accepted URL for OBEX over IrDA.
+12.Added Section 3.3.6 to clarify implementation behavior for disabled or powered down Bluetooth devices.
+13.Properties now exist for Bluetooth and OBEX API version, accessible from both the LocalDevice.getProperty() and the CLDC System.getProperty() APIs.
+14.Section 11.3 and 11.4 to correct and clarify the ABNF grammar for OBEX connection strings
+
+Javadoc changes
+1.Modified description of DiscoveryAgent.selectService() to clarify its intended behavior in case of multiple found services.
+2.Added mandatory return of pending acceptAndOpen calls on StreamConnectionNotifier, L2CAPConnectionNotifier, and SessionNotifier after close()
+3.Added developer recommendation to DiscoveryListener for methods that should return immediately.
+4.Added a static method to LocalDevice to retrieve the current power state of the Bluetooth radio.
+5.Added requirement to DiscoveryAgent for CACHED devices list - if the native Bluetooth stack maintains this list, it must be used for DiscoveryAgent.retrieveDevices(). Otherwise the JSR 82 implementation must maintain this list itself. No duplicates are allowed.
+6.In DiscoveryListener, added requirement that deviceDiscovered() be called only once for each individual discovered remote device.
+
+Changes from 1.0 to 1.0a
+
+ All changes both in the Javadocs and the specification itself relates to removing the underscore ("_") in the scheme names.
+ bt_spp was changed to btspp
+ bt_l2cap was changed to btl2cap
+ bt_goep was changed to btgoep
+ irda_obex was changed irda_obex
+ tcp_obex was changed to tcpobex
+ In addition there were a couple of typos. 
+
+Changes from 0.95 to 1.0
+
+Javadoc changes
+
+1.Clarifications in ClientSession 
+
+ClientSession.put() and ClientSession.get() should throw an IOException if the connection is already in an operation.
+ClientSession.setPath() did not specify what the return value means.
+ClientSession.setPath() contained a comment that was no longer valid about the name parameter that was removed.
+2.Table in Service Record was split into two tables - one for Attribute ID and other for Attribute ID offset.
+3.Other minor "cut and paste" errors when doing 0.95
+
+Specification changes
+
+1.Updated the code example - well we actually tried the code out  and made some changes - so now it compiles and works 
+2.Reworked the Index 
+3.Corrected trademark and Copyright issues
+4.Small editorial changes ( yes there were still some). 
+5.Other notable changes: 
+
+Section 3.3.4 
+The label of column 1 in Table 3-2 was changed 
+from "System Properties" to "Device Properties" 
+since the properties are accessed via the LocalDevice 
+class rather than the System class. 
+
+Section 8.2.4 
+Removed references to the term "piconet" because 
+of possible issues related to trademarks. 
+  
+Changes from 0.9 to 0.95
+
+ 0.95 had more changes than I expected, but the expert group received good 
+ comments that we  believed  improved the spec. 
+ 1. A lot of editorial and trademark compliance changes were made. 
+ This was in many places in the spec. 
+ 2. Many places in the Javadocs required clarifications (rewording to 
+  explain things better). 
+
+Obex is one area that went through the most changes. I suggest that 
+ people give a fresh look at this chapter and Javadocs and not compare them 
+ with 0.9 
+
+Below I have listed the significant changes to the Javadocs and the spec. 
+  
+
+Javadoc changes 
+
+javax.bluetooth 
+
+class javax.bluetooth.BluetoothConnectionException 
+- the prefix "CONNECTION_" was removed from all constants 
+- new constructor added that takes a msg parameter 
+
+class javax.bluetooth.DataElement 
+- clarification added to getValue() method; "Modifying the returned 
+  Object will not change this DataElement" 
+
+class javax.bluetooth.DeviceClass 
+- constructor changed from protected to public 
+
+class javax.bluetooth.DiscoveryAgent 
+- the constructor was made private 
+- added the selectService() method 
+- removed the length argument from the startInquiry() method 
+- allow other access codes in startInquiry() in addition to LIAC and 
+  GIAC 
+
+interface javax.bluetooth.DiscoveryListener 
+- added the constant INQUIRY_ERROR 
+
+interface javax.bluetooth.L2CAPConnection 
+- clarified that an empty L2CAP packet will be sent if 
+a zero-length array is used as an argument to send() 
+- InterruptedIOException will be thrown if receive() times out 
+
+class javax.bluetooth.LocalDevice 
+- constructor changed from protected to private 
+- setDiscoverable(mode) changed to allow mode parameter in the range 
+  0x9E3B00 to 0x9E3B3F in addition to LIAC and GIAC 
+- clarify that parked devices are included in the count in the 
+  property bluetooth.connected.devices.max obtained from getProperty() 
+- getDiscoverable() returns values in the range 0x9E3B00 to 0x9E3B3F in 
+  addition to LIAC and GIAC 
+- updateRecord() no longer needs to check for modifications of the 
+  service record handle 
+
+class javax.bluetooth.RemoteDevice 
+- getBluetoothAddress() was made final 
+- documentation of authorize() changed to remove assertions about the 
+  order of authentication and authorization 
+- change getRemoteDevice() to throw NullPointerException 
+
+interface javax.bluetooth.ServiceRecord 
+- changed from class to interface 
+- setAttributeValue() throws an IllegalArgumentException if the 
+  attribute is the ServiceRecordHandle 
+- ServiceRecord.getConnectionURL() returns null if the 
+    ProtocolDescriptorList in this ServiceRecord is not formatted 
+    according to the Bluetooth specification 
+
+class javax.bluetooth.UUID 
+- added a second argument to the string version of the constructor 
+- toString();The string being returned represents a UUID that contains 
+    characters from the hexadecimal set, [0-9, A-F] 
+  
+
+javax.obex
+
+interface javax.obex.Authenticator 
+- changed from abstract class to interface 
+- changed method names to onAuthenticationChallenge() and 
+  onAuthenticationResponse() 
+
+interface javax.obex.ClientSession 
+- removed name argument from setPath() 
+- added delete() method 
+- changed upper bound of argument to setConnectionID() to be 
+  2^32-1 
+
+interface javax.obex.HeaderSet 
+- remove challenge from createAuthenticationChallenge() 
+- changed the order of parameters in the createAuthenticationChallenge() 
+- changed upper bound of headers LENGTH, COUNT, and User Defined to be 
+  2^32-1 
+
+interface javax.obex.Operation 
+- no longer extends the HeaderSet interface 
+- add methods getReceivedHeaders() and sendHeaders() 
+- add method getResponseCode() 
+
+class javax.obex.ResponseCodes 
+- removed constant OBEX_HTTP_CONTINUE 
+
+class javax.obex.ServerRequestHandler 
+- added onDelete() method 
+- added onAuthenticationFailure() method 
+- a second HeaderSet parameter was added to onConnect(), 
+  onDisconnect() and onSetPath() for the headers in the reply 
+- added createHeaderSet() method 
+- added onAuthenticationFailure() method 
+- changed upper bound of argument to setConnectionID() to be 
+  2^32-1 
+
+Specification Changes 
+
+- Changed the boolean parameters in Connector.open() URLs from yes/no 
+to true/false 
+
+- Clarified that an implementation of JSR-82 only needs to support 
+one of 
+   o run-before-connect services 
+   o connect-anytime services 
+
+-Clarifed MTU relationships and conditions in L2CAP chapter for testability. 
+
+

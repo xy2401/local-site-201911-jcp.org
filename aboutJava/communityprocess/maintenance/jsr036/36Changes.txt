@@ -1,0 +1,26 @@
+Proposed Changes for Connected Device Configuration 1.0b maintenance release
+----------------------------------------------------------------------
+
+overview.html, in "Adherence to the Java Language Specification" :
+Change from:
+  The specification is also published in book form by Addison-Wesley,
+  ISBN 0-201-63451-1.
+To:
+  The specification is also published in book form by Addison-Wesley,
+  ISBN 0-201-31008-2.
+
+overview.html, in "Encoding Support" :
+Change from:
+  ISO 8859_1
+To:
+  ISO-8859-1 
+
+
+javax.microedition.io : Add note that this package should be implemented fully on top of the java.io and java.net APIs in order to ensure a secure implementation.
+
+java.util.jar : Fix broken link to "JAR manifest and signature specification"
+
+
+overview.html : Add the following:
+"A conformant implementation need only support loopback communication to the local host.  Network communication to external hosts is not required.  If an implementation does not support network communication to external hosts, the system property java.net.isRestricted shall be set to "true".
+If java.net.isRestricted is set to "true", then the APIs of java.net and java.microedition.io shall throw exceptions as specified (i.e., java.io.IOException and subclasses) at any point that external communication would be required, e.g., resolving a host name or establishing a connection."

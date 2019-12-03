@@ -1,0 +1,1634 @@
+
+<!-- ** BEGIN: header.jsp ** //-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3c.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+<head>
+    
+
+   
+    <link href="/includes/css/menu.css" rel="stylesheet" type="text/css"></link>
+    <link href="/includes/css/style.css" rel="stylesheet" type="text/css"></link>
+    <!--[if lt IE 6]><link href="/includes/css/style5.css" rel="stylesheet" type="text/css" ></link><![endif]-->
+    <!--[if gte IE 5]><link href="/includes/css/style6.css" rel="stylesheet" type="text/css" ></link><![endif]-->
+    <link href="/includes/css/tabs.css"  rel="stylesheet" type="text/css"></link>
+
+    <script type="text/javascript" src="/includes/scripts/tabs.js"></script>
+    <script type="text/javascript" src="/includes/scripts/menu.js"></script>
+   
+
+    
+
+    
+        <title>The Java Community Process(SM) Program - communityprocess - maintenance</title>
+    
+
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+
+
+<body onload="P7_initPM(0,1,0,0,-1)">
+
+    <a name="top"></a>
+
+    <div id="header">
+	<div id="logo">
+		<a href="/en/home/index"><img src="/images/spacer.gif" alt="Java Community Process" height="81" width="151"></a>
+	</div>
+	<div id="tools">
+		<div class="search">
+			<form name="search" action="/en/jsr/summary" method="get" onsubmit="return validate_search()">
+				<input name="id" value="Search JSRs" size="16" class="form" onfocus="nullify_if_equal(this, 'Search JSRs')" type="text">
+				<a href="javascript:document.search.submit()" onclick="return validate_search()"><img src="/images/button_go.gif" width="21" height="16" border="0" alt="Submit this Search" name="sub_search"></a>
+			</form>
+		</div>
+		<div class="tools">
+			<a href="/en/press/pressroom">Press Room</a> &nbsp;|&nbsp;
+			<a href="http://java.com/java/download/index.jsp?cid=jdp78399">Get Java Here</a> &nbsp;|&nbsp;
+			<!-- <a href="javascript:void(0)">Print Format</a> &nbsp;|&nbsp;&nbsp; -->
+		</div>
+
+	</div>
+	<div style="clear: right;"></div>
+
+        
+
+	<div class="topbar"><img src="/images/spacer.gif" alt="" height="3" width="154"></div>
+	<div id="update"> </div>
+    </div>
+
+
+    
+
+        <!-- ** BEGIN: Content Table ** //-->
+
+        <table width="100%" border="0" cellpadding="0" cellspacing="0">
+
+            <tr>
+
+                <!-- ** BEGIN: Navigation Column ** //-->
+                <td width="150" id="leftcontent" valign="top">
+                    <!-- Navigation Placeholder //-->
+
+                    
+
+                    <div class="bar"><img src="/images/hr_dots1.gif" alt="" height="3" width="150"></div>
+
+        <!-- begin find JSRs form -->
+        <!-- IMPORTANT! do not convert this form to Struts < html : form > tag.  javascript change of form.action property fails. -->
+        <img src="/images/hd_find-jsrs.gif" alt="Find JSRs" height="18" width="150">
+        <form name="findjsr" action="/en/jsr/summary" method="get" class="pt5" onsubmit="return validate_findjsr()">
+            <input name="id" size="18" class="form" value="Search JSRs" onfocus="nullify_if_equal(this, 'Search JSRs')" type="text">
+	    <a href="javascript:document.findjsr.submit()" onclick="return validate_findjsr()"><img src="/images/button_go.gif" width="21" height="16" border="0" alt="Submit this Search" name="sub_search"></a>
+        </form><br><br>
+
+        <!-- ** Menu Start ** //-->
+
+        <ul id="p7PMnav">
+            <li><a href="/en/jsr/platform">JSRs by Platform</a></li>
+            <li><a href="/en/jsr/tech">JSRs by Technology</a></li>
+            <li><a href="/en/jsr/stage">JSRs by Stage</a></li>
+            <li><a href="/en/jsr/ec">JSRs by Committee</a></li>
+            <li><a href="/en/jsr/all">List of All JSRs</a></li>
+
+            <!--end find JSRs form -->
+            <div style="clear: both;"><img src="/images/spacer.gif" alt="" height="25" width="1"></div>
+
+            <!--begin my JCP -->
+            <img src="/images/hd_my-jcp.gif" alt="My JCP" height="18" width="150">
+            
+
+          <form name="login" method="get" action="/en/user/login" >
+            <input name="Sign-in" type="submit" title="Sign-in" value="Sign-in" />
+          </form>
+
+            <div style="clear:both"><img src="/images/global/spacer.gif" width="1" height="3" alt=""></div>
+            <div class="noNav">
+                <a href="/en/user/register">Register for Site</a>
+            </div>
+
+             <div class="bar"><img src="/images/hr_dots1.gif" alt="" height="3" width="150"></div>
+           <div class="noNav" style="color: #666666; padding: 0;">
+              Use of JCP site is subject to the
+              <a href="/en/home/terms" style="display:inline;padding: 0">JCP Terms of Use</a> and the
+              <a href="http://www.oracle.com/us/legal/privacy/index.html" style="display:inline;padding: 0" href="">Oracle Privacy Policy</a>
+          </div>
+
+            
+
+            <div style="clear:both"><img src="/images/global/spacer.gif" width="1" height="25" alt=""></div>
+
+            <!--begin JCP info -->
+            <img src="/images/hd_jcp-info.gif" alt="JCP Info" height="18" width="150">
+
+            <li><a href="/en/procedures/overview" class="p7PMtrg">About JCP</a>
+                <ul>
+                    <li><a href="/en/procedures/overview">Program Overview</a></li>
+                    <li><a href="/en/procedures/jcp2">JCP Process Document</a></li>
+                    <li><a href="/en/whatsnew/calendar">Calendar</a></li>
+                    <li><a href="/en/participation/members">JCP Members</a></li>
+                    <li><a href="/en/participation/committee">Executive Committee</a></li>
+                    <li><a href="/en/whatsnew/elections">Elections</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/en/participation/overview" class="p7PMtrg">Get Involved</a>
+		<ul>
+                    <li><a href="/en/participation/overview">Overview</a></li>
+                    <li><a href="/en/participation/membership">Becoming a JCP Member</a></li>
+		</ul>
+            </li>
+
+            <li><a href="/en/resources/contents" class="p7PMtrg">Community Resources</a>
+                <ul>
+                    <li><a href="/en/resources/contents">Overview</a></li>
+                    <li><a href="/en/resources/tutorials">Tutorials</a></li>
+                    <li><a href="/en/resources/multimedia">JCP Podcasts</a></li>
+                    <li><a href="/en/resources/guide">Spec Lead Guide</a></li>
+                    <li><a href="/en/resources/tdk">TCK Tool & Info</a></li>
+                    <li><a href="/en/resources/license_reference">License Reference</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/en/press/pmo" class="p7PMtrg">Community News</a>
+                <ul>
+                    <li><a href="/en/press/pmo">News</a></li>
+                    <li><a href="/en/press/news/awards/awards_main">Programs &amp; Awards</a></li>
+                    <li><a href="/en/press/releases">Press Releases</a></li>
+                    <li><a href="/en/press/success">Success Stories</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/en/introduction/faq">FAQ</a></li>
+
+            <li><a href="/en/resources/contacts">Contact Us</a></li>
+
+            <div style="clear: both;"><img src="/images/spacer.gif" alt="" height="25" width="1"></div>
+
+            <!--[if lte IE 6]><style>#p7PMnav a{height:1em;}#p7PMnav li{height:1em;float:left;clear:both;width:100%}</style><![endif]-->
+            <!--[if IE 6]><style>#p7PMnav li{clear:none;}</style><![endif]-->
+            <!--[if IE 7]><style>#p7PMnav a{zoom:100%;}#p7PMnav li{float:left;clear:both;width:100%;}</style><![endif]-->
+        </ul>
+
+        
+
+        <!--begin ad space -->
+        <div class="ads">
+            <a href="http://java.com/java/download/index.jsp?cid=jdp78399" target="_blank"><img style="display: ;" src="/images/ad_banner2.gif" alt="Ad Banner" border="1" height="70" width="150"></a>
+        </div>
+        <!--end ad space -->
+
+<!-- ** Menu End ** //-->
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;<br>
+
+    
+
+                    &nbsp;<br>
+                    <img src="/images/common/trans.gif" alt="" width="1" height="150"><br>
+
+              
+
+
+
+                </td>
+                <!-- ** END: Navigation Column ** //-->
+
+                <!-- ** BEGIN: Gutter Column ** //-->
+		<td width="10" nowrap><img src="/images/common/trans.gif" alt="" width="10" height="1"></td>
+                <!-- ** END: Gutter Column ** //-->
+
+                <!-- ** BEGIN: Content Column ** //-->
+                <td width="100%" valign="top">
+
+    
+<script type="text/javascript">
+
+String.prototype.trim = function() {
+        return this.replace(/^\s+|\s+$/g,"");
+}
+String.prototype.ltrim = function() {
+        return this.replace(/^\s+/,"");
+}
+String.prototype.rtrim = function() {
+        return this.replace(/\s+$/,"");
+}
+
+function validate_search() {
+	if (document.search.id.value == "Search JSRs" || document.search.id.value.trim().length == 0) {
+		alert("Search terms must be entered first");
+		return false;
+	}
+	return true;
+}
+
+function validate_findjsr() {
+	if (document.findjsr.id.value == "Search JSRs" || document.findjsr.id.value.trim().length == 0) {
+		alert("Search terms must be entered first");
+		return false;
+	}
+	return true;
+}
+
+function nullify_if_equal(field, str) {
+	// alert("val=" + field.value);
+	if (field.value == str) {
+		field.value = "";
+	}
+}
+
+</script>
+<!-- ** END: header.jsp ** //-->
+
+
+
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+  <meta content="text/html; charset=ISO-8859-1"
+ http-equiv="content-type">
+  <title>JSR88 Changelog</title>
+</head>
+<body>
+<h2>JSR 88 (Maintenance Release)
+</h2>
+<br>
+<h3>&nbsp;&nbsp;&nbsp; 1. Introduction
+</h3>
+This JSR 88 Maintenance release document outlines the changes necessary
+to support tools and application server integration with Java EE 5
+features.
+<br>
+<h3>&nbsp;&nbsp;&nbsp; 2. Proposed Changes
+</h3>
+<h4>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Annotations impact
+</h4>
+As Java EE applications can now express their nature or their
+dependencies through standard java annotations, the existence of xml
+deployment descriptors is now optional in deployment archives. The
+possibility of providing partial XML deployment descriptors which
+completes or overrides annotations also complicates how deployment
+information can be represented in Java EE 5.
+<br>
+<br>
+Moreover, when using the current JSR88 APIs, standard deployment
+information was mainly described by the interfaces in the
+javax.enterprise.deploy.model package. These interfaces (mainly
+DeployableObject and DDBean) closely bind deployment descriptors to XML
+by the use of XPath to identify them. Deployment information changes
+are represented with events containing XPath values identifying the
+changed descriptors.
+<br>
+<br>
+In Java EE 5, annotations cannot be represented with such XPath values,
+hence the necessity for the tools to either translate such annotations
+so the current SPI between tools and application servers can be used as
+it is or come up with new interfaces all together. To keep the plugins
+as simple as possible, we would like to push the complexity on the
+hosting tool. We therefore require that tools merge the java
+annotations and optional partial or complete deployment descriptors
+into a model which will support XPath queries.
+<br>
+<br>
+Some tools may choose to translate the annotations into XML then
+process the optional xml deployment descriptors to have what is called
+in the Java EE platform specification a "full" XML deployment
+descriptor. Once this "full" XML deployment descriptors is calculated,
+current APIs can be used as is. Other tools may choose a more
+dynamic approach of translating annotation into XPath when necessary.<br>
+<br>
+Update to paragraph 3.1 of the JSR88 specification 1.1 :
+javax.enterprise.deploy.model interfaces implementation provided by the
+Tool MUST provide access to the full deployment descriptors
+irrespective of their initial representation : annotations, xml or a
+combination of both.<br>
+<br>
+<h4>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; API changes
+</h4>
+<h5>DeploymentManager changes<br>
+</h5>
+With the introduction of descriptor-less archives, the following API on
+javax.enterprise.deploy.spi.DeploymentManager
+<br>
+<br>
+public ProgressObject distribute(Target[] targetList,
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+InputStream moduleArchive,
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+InputStream deploymentPlan)
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+throws IllegalStateException
+<br>
+<br>
+will not allow the implementation to successfully determine the type of
+the archive. For instance, it is impossible to differentiate an .ear
+file from a .jar file (with some libraries at the top level). Therefore
+we propose to deprecate the above API for the following new API :
+<br>
+<br>
+public ProgressObject distribute(Target[] targetList,
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+ModuleType type,
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+InputStream moduleArchive,
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+InputStream deploymentPlan)
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+throws IllegalStateException
+<br>
+<br>
+Please note that the java.io.File version does not carry the same
+issues since the extension of the file is available to the
+implementation and can be used to successfully determine the archive
+type. All Java EE 5 product provider MUST implement the new distribute
+method with the same responsibilities as described in paragraph 4.1 of
+the JSR88 Specification Version 1.1<br>
+<br>
+<h5>DConfigBeanVersionType changes<br>
+</h5>
+A new static was added for the Java EE 5 version.<br>
+<h3>&nbsp;&nbsp;&nbsp; 3. Contact Info</h3>
+<br>
+Contact jerome.dochez@sun.com for comments.<br>
+<br>
+<h3>&nbsp;&nbsp;&nbsp; 4. Changed javadocs </h3>
+<div style="margin-left: 40px;"><a
+ href="JSR88_Changelog.html#DConfigBeanVersionType">DConfigBeanVersionType</a><br>
+<a href="JSR88_Changelog.html#DeploymentManager">DeploymentManager</a><br>
+</div>
+<br>
+<!-- ======== START OF CLASS DATA ======== -->
+<h2><font size="-1"><a name="DConfigBeanVersionType"></a>javax.enterprise.deploy.shared</font>
+<br>
+Class DConfigBeanVersionType</h2>
+<pre>java.lang.Object<br>  <img src="../../../../resources/inherit.gif"
+ alt="extended by "><b>javax.enterprise.deploy.shared.DConfigBeanVersionType</b>
+</pre>
+<hr>
+<dl>
+  <dt>
+    <pre>public class <b>DConfigBeanVersionType</b><dt>extends java.lang.Object</dt></pre>
+  </dt>
+</dl>
+<p>
+Class DConfigBeanVersionTypes defines enumeration values for the J2EE
+Platform version number.
+</p>
+<hr>
+<p><!-- =========== FIELD SUMMARY =========== --><a name="field_summary"><!-- --></a>
+<table summary="" border="1" cellpadding="3" cellspacing="0"
+ width="100%">
+  <tbody>
+    <tr class="TableHeadingColor" bgcolor="#ccccff">
+      <th colspan="2" align="left"><font size="+2"> <b>Field Summary</b></font></th>
+    </tr>
+    <tr class="TableRowColor" bgcolor="white">
+      <td align="right" valign="top" width="1%"><font size="-1"> <code>static&nbsp;<a
+ href="JSR88_Changelog.html#DConfigBeanVersionType"
+ title="class in javax.enterprise.deploy.shared">DConfigBeanVersionType</a></code></font></td>
+      <td><code><b><a
+ href="JSR88_Changelog.html#DConfigBeanVersionType#V1_3">V1_3</a></b></code>
+      <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;J2EE
+Platform version 1.3</td>
+    </tr>
+    <tr class="TableRowColor" bgcolor="white">
+      <td align="right" valign="top" width="1%"><font size="-1"> <code>static&nbsp;<a
+ href="JSR88_Changelog.html#DConfigBeanVersionType"
+ title="class in javax.enterprise.deploy.shared">DConfigBeanVersionType</a></code></font></td>
+      <td><code><b><a
+ href="JSR88_Changelog.html#DConfigBeanVersionType#V1_3_1">V1_3_1</a></b></code>
+      <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;J2EE
+Platform version 1.3.1 THIS CONSTANT SHOULD NEVER BE USED.</td>
+    </tr>
+    <tr class="TableRowColor" bgcolor="white">
+      <td align="right" valign="top" width="1%"><font size="-1"> <code>static&nbsp;<a
+ href="JSR88_Changelog.html#DConfigBeanVersionType"
+ title="class in javax.enterprise.deploy.shared">DConfigBeanVersionType</a></code></font></td>
+      <td><code><b><a
+ href="JSR88_Changelog.html#DConfigBeanVersionType#V1_4">V1_4</a></b></code>
+      <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;J2EE
+Platform version 1.4</td>
+    </tr>
+    <tr class="TableRowColor" bgcolor="white">
+      <td align="right" valign="top" width="1%"><font size="-1"> <code>static&nbsp;<a
+ href="JSR88_Changelog.html#DConfigBeanVersionType"
+ title="class in javax.enterprise.deploy.shared">DConfigBeanVersionType</a></code></font></td>
+      <td><code><b><a
+ href="JSR88_Changelog.html#DConfigBeanVersionType#V5">V5</a></b></code>
+      <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Java EE 5
+Platform version</td>
+    </tr>
+  </tbody>
+</table>
+&nbsp;
+<!-- ======== CONSTRUCTOR SUMMARY ======== --><a
+ name="constructor_summary"><!-- --></a>
+<table summary="" border="1" cellpadding="3" cellspacing="0"
+ width="100%">
+  <tbody>
+    <tr class="TableHeadingColor" bgcolor="#ccccff">
+      <th colspan="2" align="left"><font size="+2"> <b>Constructor
+Summary</b></font></th>
+    </tr>
+    <tr class="TableRowColor" bgcolor="white">
+      <td align="right" valign="top" width="1%"><font size="-1"> <code>protected
+      </code></font></td>
+      <td><code><b><a
+ href="JSR88_Changelog.html#DConfigBeanVersionType#DConfigBeanVersionType%28int%29">DConfigBeanVersionType</a></b>(int&nbsp;value)</code>
+      <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Construct a
+new enumeration value with the given integer value.</td>
+    </tr>
+  </tbody>
+</table>
+&nbsp;
+<!-- ========== METHOD SUMMARY =========== --><a name="method_summary"><!-- --></a>
+<table summary="" border="1" cellpadding="3" cellspacing="0"
+ width="100%">
+  <tbody>
+    <tr class="TableHeadingColor" bgcolor="#ccccff">
+      <th colspan="2" align="left"><font size="+2"> <b>Method Summary</b></font></th>
+    </tr>
+    <tr class="TableRowColor" bgcolor="white">
+      <td align="right" valign="top" width="1%"><font size="-1"> <code>static&nbsp;<a
+ href="JSR88_Changelog.html#DConfigBeanVersionType"
+ title="class in javax.enterprise.deploy.shared">DConfigBeanVersionType</a></code></font></td>
+      <td><code><b><a
+ href="JSR88_Changelog.html#getDConfigBeanVersionType%28int%29">getDConfigBeanVersionType</a></b>(int&nbsp;value)</code>
+      <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Return an
+object of the specified value.</td>
+    </tr>
+    <tr class="TableRowColor" bgcolor="white">
+      <td align="right" valign="top" width="1%"><font size="-1"> <code>protected
+&nbsp;<a href="JSR88_Changelog.html#DConfigBeanVersionType"
+ title="class in javax.enterprise.deploy.shared">DConfigBeanVersionType</a>[]</code></font></td>
+      <td><code><b><a
+ href="JSR88_Changelog.html#getEnumValueTable%28%29">getEnumValueTable</a></b>()</code>
+      <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the
+enumeration value table for class DConfigBeanVersionType</td>
+    </tr>
+    <tr class="TableRowColor" bgcolor="white">
+      <td align="right" valign="top" width="1%"><font size="-1"> <code>protected
+&nbsp;int</code></font></td>
+      <td><code><b><a href="JSR88_Changelog.html#getOffset%28%29">getOffset</a></b>()</code>
+      <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the
+lowest integer value used by this enumeration value's enumeration class.</td>
+    </tr>
+    <tr class="TableRowColor" bgcolor="white">
+      <td align="right" valign="top" width="1%"><font size="-1"> <code>protected
+&nbsp;java.lang.String[]</code></font></td>
+      <td><code><b><a href="JSR88_Changelog.html#getStringTable%28%29">getStringTable</a></b>()</code>
+      <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the
+string table for class DConfigBeanVersionType</td>
+    </tr>
+    <tr class="TableRowColor" bgcolor="white">
+      <td align="right" valign="top" width="1%"><font size="-1"> <code>&nbsp;int</code></font></td>
+      <td><code><b><a href="JSR88_Changelog.html#getValue%28%29">getValue</a></b>()</code>
+      <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns
+this enumeration value's integer value.</td>
+    </tr>
+    <tr class="TableRowColor" bgcolor="white">
+      <td align="right" valign="top" width="1%"><font size="-1"> <code>&nbsp;java.lang.String</code></font></td>
+      <td><code><b><a href="JSR88_Changelog.html#toString%28%29">toString</a></b>()</code>
+      <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Return the
+string name of this DConfigBeanVersionType or the integer value if
+outside the bounds of the table</td>
+    </tr>
+  </tbody>
+</table>
+&nbsp;<a name="methods_inherited_from_class_java.lang.Object"><!-- --></a>
+<table summary="" border="1" cellpadding="3" cellspacing="0"
+ width="100%">
+  <tbody>
+    <tr class="TableSubHeadingColor" bgcolor="#eeeeff">
+      <th align="left"><b>Methods inherited from class java.lang.Object</b></th>
+    </tr>
+    <tr class="TableRowColor" bgcolor="white">
+      <td><code>clone, equals, finalize, getClass, hashCode, notify,
+notifyAll, wait, wait, wait</code></td>
+    </tr>
+  </tbody>
+</table>
+&nbsp;
+</p>
+<p><!-- ============ FIELD DETAIL =========== -->
+<a name="field_detail"><!-- --></a>
+<table summary="" border="1" cellpadding="3" cellspacing="0"
+ width="100%">
+  <tbody>
+    <tr class="TableHeadingColor" bgcolor="#ccccff">
+      <th colspan="1" align="left"><font size="+2"> <b>Field Detail</b></font></th>
+    </tr>
+  </tbody>
+</table>
+<a name="V1_3"><!-- --></a></p>
+<h3>V1_3</h3>
+<pre>public static final <a
+ href="JSR88_Changelog.html#DConfigBeanVersionType"
+ title="class in javax.enterprise.deploy.shared">DConfigBeanVersionType</a> <b>V1_3</b></pre>
+<dl>
+  <dd>J2EE Platform version 1.3
+    <dl>
+    </dl>
+  </dd>
+</dl>
+<hr>
+<a name="V1_3_1"><!-- --></a>
+<h3>V1_3_1</h3>
+<pre>public static final <a
+ href="JSR88_Changelog.html#DConfigBeanVersionType"
+ title="class in javax.enterprise.deploy.shared">DConfigBeanVersionType</a> <b>V1_3_1</b></pre>
+<dl>
+  <dd>J2EE Platform version 1.3.1 THIS CONSTANT SHOULD NEVER BE USED.
+Use V1_3 instead.
+    <dl>
+    </dl>
+  </dd>
+</dl>
+<hr>
+<a name="V1_4"><!-- --></a>
+<h3>V1_4</h3>
+<pre>public static final <a
+ href="JSR88_Changelog.html#DConfigBeanVersionType"
+ title="class in javax.enterprise.deploy.shared">DConfigBeanVersionType</a> <b>V1_4</b></pre>
+<dl>
+  <dd>J2EE Platform version 1.4
+    <dl>
+    </dl>
+  </dd>
+</dl>
+<hr>
+<a name="V5"><!-- --></a>
+<h3>V5</h3>
+<pre>public static final <a
+ href="JSR88_Changelog.html#DConfigBeanVersionType"
+ title="class in javax.enterprise.deploy.shared">DConfigBeanVersionType</a> <b>V5</b></pre>
+<dl>
+  <dd>Java EE 5 Platform version
+    <dl>
+    </dl>
+  </dd>
+</dl>
+<!-- ========= CONSTRUCTOR DETAIL ======== -->
+<a name="constructor_detail"><!-- --></a>
+<table summary="" border="1" cellpadding="3" cellspacing="0"
+ width="100%">
+  <tbody>
+    <tr class="TableHeadingColor" bgcolor="#ccccff">
+      <th colspan="1" align="left"><font size="+2"> <b>Constructor
+Detail</b></font></th>
+    </tr>
+  </tbody>
+</table>
+<a name="DConfigBeanVersionType(int)"><!-- --></a>
+<h3>DConfigBeanVersionType</h3>
+<pre>protected <b>DConfigBeanVersionType</b>(int&nbsp;value)</pre>
+<dl>
+  <dd>Construct a new enumeration value with the given integer value.
+    <dl>
+      <dt><b>Parameters:</b></dt>
+      <dd><code>value</code> - Integer value.</dd>
+    </dl>
+  </dd>
+</dl>
+<!-- ============ METHOD DETAIL ========== -->
+<a name="method_detail"><!-- --></a>
+<table summary="" border="1" cellpadding="3" cellspacing="0"
+ width="100%">
+  <tbody>
+    <tr class="TableHeadingColor" bgcolor="#ccccff">
+      <th colspan="1" align="left"><font size="+2"> <b>Method Detail</b></font></th>
+    </tr>
+  </tbody>
+</table>
+<a name="getValue()"><!-- --></a>
+<h3>getValue</h3>
+<pre><br>public int <b>getValue</b>()</pre>
+<dl>
+  <dd>Returns this enumeration value's integer value. </dd>
+  <dd>
+    <dl>
+      <dt><b>Returns:</b></dt>
+      <dd>the value</dd>
+    </dl>
+  </dd>
+</dl>
+<hr>
+<a name="getStringTable()"><!-- --></a>
+<h3>getStringTable</h3>
+<pre>protected java.lang.String[] <b>getStringTable</b>()</pre>
+<dl>
+  <dd>Returns the string table for class DConfigBeanVersionType </dd>
+  <dd>
+    <dl>
+    </dl>
+  </dd>
+</dl>
+<hr>
+<a name="getEnumValueTable()"><!-- --></a>
+<h3>getEnumValueTable</h3>
+<pre>protected <a href="JSR88_Changelog.html#DConfigBeanVersionType"
+ title="class in javax.enterprise.deploy.shared">DConfigBeanVersionType</a>[] <b>getEnumValueTable</b>()</pre>
+<dl>
+  <dd>Returns the enumeration value table for class
+DConfigBeanVersionType </dd>
+  <dd>
+    <dl>
+    </dl>
+  </dd>
+</dl>
+<hr>
+<a name="getDConfigBeanVersionType(int)"><!-- --></a>
+<h3>getDConfigBeanVersionType</h3>
+<pre>public static <a href="JSR88_Changelog.html#DConfigBeanVersionType"
+ title="class in javax.enterprise.deploy.shared">DConfigBeanVersionType</a> <b>getDConfigBeanVersionType</b>(int&nbsp;value)</pre>
+<dl>
+  <dd>Return an object of the specified value. </dd>
+  <dd>
+    <dl>
+      <dt><b>Parameters:</b></dt>
+      <dd><code>value</code> - a designator for the object.</dd>
+    </dl>
+  </dd>
+</dl>
+<hr>
+<a name="toString()"><!-- --></a>
+<h3>toString</h3>
+<pre>public java.lang.String <b>toString</b>()</pre>
+<dl>
+  <dd>Return the string name of this DConfigBeanVersionType or the
+integer value if outside the bounds of the table </dd>
+  <dd>
+    <dl>
+      <dt><b>Overrides:</b></dt>
+      <dd><code>toString</code> in class <code>java.lang.Object</code></dd>
+    </dl>
+  </dd>
+  <dd>
+    <dl>
+    </dl>
+  </dd>
+</dl>
+<hr>
+<a name="getOffset()"><!-- --></a>
+<h3>getOffset</h3>
+<pre>protected int <b>getOffset</b>()</pre>
+<dl>
+  <dd>Returns the lowest integer value used by this enumeration value's
+enumeration class.
+    <p> The default implementation returns 0. </p>
+  </dd>
+  <dd>
+    <dl>
+      <dt><b>Returns:</b></dt>
+      <dd>the offset of the lowest enumeration value.</dd>
+    </dl>
+  </dd>
+</dl>
+<!-- ========= END OF CLASS DATA ========= -->
+<br>
+<hr>
+<br>
+<hr><!-- ======== START OF CLASS DATA ======== -->
+<h2><font size="-1"><a name="DeploymentManager"></a>javax.enterprise.deploy.spi</font>
+<br>
+Interface DeploymentManager</h2>
+<hr>
+<dl>
+  <dt>
+    <pre>public interface <b>DeploymentManager</b></pre>
+  </dt>
+</dl>
+<p>
+The DeploymentManager object provides the core set of functions a J2EE
+platform must provide for J2EE application deployment. It provides
+server related information, such as, a list of deployment targets, and
+vendor unique runtime configuration information.
+</p>
+<hr>
+<p><!-- ========== METHOD SUMMARY =========== --><a
+ name="method_summary"><!-- --></a>
+<table summary="" border="1" cellpadding="3" cellspacing="0"
+ width="100%">
+  <tbody>
+    <tr class="TableHeadingColor" bgcolor="#ccccff">
+      <th colspan="2" align="left"><font size="+2"> <b>Method Summary</b></font></th>
+    </tr>
+    <tr class="TableRowColor" bgcolor="white">
+      <td align="right" valign="top" width="1%"><font size="-1"> <code>&nbsp;<a
+ href="http://java.sun.com/j2ee/1.4/docs/api/javax/enterprise/deploy/spi/DeploymentConfiguration.html"
+ title="interface in javax.enterprise.deploy.spi">DeploymentConfiguration</a></code></font></td>
+      <td><code><b><a
+ href="./JSR88_Changelog.html#createConfiguration%28javax.enterprise.deploy.model.DeployableObject%29">createConfiguration</a></b>(javax.enterprise.deploy.model.DeployableObject&nbsp;dObj)</code>
+      <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Retrieve
+the object that provides server-specific deployment configuration
+information for the J2EE deployable component.</td>
+    </tr>
+    <tr class="TableRowColor" bgcolor="white">
+      <td align="right" valign="top" width="1%"><font size="-1"> <code>&nbsp;javax.enterprise.deploy.spi.status.ProgressObject</code></font></td>
+      <td><code><b><a
+ href="./JSR88_Changelog.html#distribute%28javax.enterprise.deploy.spi.Target%5B%5D,%20java.io.File,%20java.io.File%29">distribute</a></b>(<a
+ href="http://java.sun.com/j2ee/1.4/docs/api/javax/enterprise/deploy/spi/Target.html"
+ title="interface in javax.enterprise.deploy.spi">Target</a>[]&nbsp;targetList,
+java.io.File&nbsp;moduleArchive, java.io.File&nbsp;deploymentPlan)</code>
+      <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The
+distribute method performs three tasks; it validates the deployment
+configuration data, generates all container specific classes and
+interfaces, and moves the fully baked archive to the designated
+deployment targets.</td>
+    </tr>
+    <tr class="TableRowColor" bgcolor="white">
+      <td align="right" valign="top" width="1%"><font size="-1"> <code>&nbsp;javax.enterprise.deploy.spi.status.ProgressObject</code></font></td>
+      <td><code><b><a
+ href="./JSR88_Changelog.html#distribute%28javax.enterprise.deploy.spi.Target%5B%5D,%20java.io.InputStream,%20java.io.InputStream%29">distribute</a></b>(<a
+ href="http://java.sun.com/j2ee/1.4/docs/api/javax/enterprise/deploy/spi/Target.html"
+ title="interface in javax.enterprise.deploy.spi">Target</a>[]&nbsp;targetList,
+java.io.InputStream&nbsp;moduleArchive,
+java.io.InputStream&nbsp;deploymentPlan)</code> <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>Deprecated.</b>&nbsp;<i>as
+of Java EE 5, replaced with <a
+ href="./JSR88_Changelog.html#distribute%28javax.enterprise.deploy.spi.Target%5B%5D,%20javax.enterprise.deploy.shared.ModuleType,%20java.io.InputStream,%20java.io.InputStream%29"><code>distribute(Target[],
+ModuleType, InputStream, InputStream)</code></a></i></td>
+    </tr>
+    <tr class="TableRowColor" bgcolor="white">
+      <td align="right" valign="top" width="1%"><font size="-1"> <code>&nbsp;javax.enterprise.deploy.spi.status.ProgressObject</code></font></td>
+      <td><code><b><a
+ href="./JSR88_Changelog.html#distribute%28javax.enterprise.deploy.spi.Target%5B%5D,%20javax.enterprise.deploy.shared.ModuleType,%20java.io.InputStream,%20java.io.InputStream%29">distribute</a></b>(<a
+ href="http://java.sun.com/j2ee/1.4/docs/api/javax/enterprise/deploy/spi/Target.html"
+ title="interface in javax.enterprise.deploy.spi">Target</a>[]&nbsp;targetList,
+javax.enterprise.deploy.shared.ModuleType&nbsp;type,
+java.io.InputStream&nbsp;moduleArchive,
+java.io.InputStream&nbsp;deploymentPlan)</code> <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The
+distribute method performs three tasks; it validates the deployment
+configuration data, generates all container specific classes and
+interfaces, and moves the fully baked archive to the designated
+deployment targets.</td>
+    </tr>
+    <tr class="TableRowColor" bgcolor="white">
+      <td align="right" valign="top" width="1%"><font size="-1"> <code>&nbsp;<a
+ href="http://java.sun.com/j2ee/1.4/docs/api/javax/enterprise/deploy/spi/TargetModuleID.html"
+ title="interface in javax.enterprise.deploy.spi">TargetModuleID</a>[]</code></font></td>
+      <td><code><b><a
+ href="./JSR88_Changelog.html#getAvailableModules%28javax.enterprise.deploy.shared.ModuleType,%20javax.enterprise.deploy.spi.Target%5B%5D%29">getAvailableModules</a></b>(javax.enterprise.deploy.shared.ModuleType&nbsp;moduleType,
+      <a
+ href="http://java.sun.com/j2ee/1.4/docs/api/javax/enterprise/deploy/spi/Target.html"
+ title="interface in javax.enterprise.deploy.spi">Target</a>[]&nbsp;targetList)</code>
+      <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Retrieve
+the list of all J2EE application modules running or not running on the
+identified targets.</td>
+    </tr>
+    <tr class="TableRowColor" bgcolor="white">
+      <td align="right" valign="top" width="1%"><font size="-1"> <code>&nbsp;java.util.Locale</code></font></td>
+      <td><code><b><a
+ href="./JSR88_Changelog.html#getCurrentLocale%28%29">getCurrentLocale</a></b>()</code>
+      <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the
+active locale this implementation of javax.enterprise.deploy.spi
+subpackages is running.</td>
+    </tr>
+    <tr class="TableRowColor" bgcolor="white">
+      <td align="right" valign="top" width="1%"><font size="-1"> <code>&nbsp;javax.enterprise.deploy.shared.DConfigBeanVersionType</code></font></td>
+      <td><code><b><a
+ href="./JSR88_Changelog.html#getDConfigBeanVersion%28%29">getDConfigBeanVersion</a></b>()</code>
+      <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the
+J2EE platform version number for which the configuration beans are
+provided.</td>
+    </tr>
+    <tr class="TableRowColor" bgcolor="white">
+      <td align="right" valign="top" width="1%"><font size="-1"> <code>&nbsp;java.util.Locale</code></font></td>
+      <td><code><b><a
+ href="./JSR88_Changelog.html#getDefaultLocale%28%29">getDefaultLocale</a></b>()</code>
+      <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the
+default locale supported by this implementation of
+javax.enterprise.deploy.spi subpackages.</td>
+    </tr>
+    <tr class="TableRowColor" bgcolor="white">
+      <td align="right" valign="top" width="1%"><font size="-1"> <code>&nbsp;<a
+ href="http://java.sun.com/j2ee/1.4/docs/api/javax/enterprise/deploy/spi/TargetModuleID.html"
+ title="interface in javax.enterprise.deploy.spi">TargetModuleID</a>[]</code></font></td>
+      <td><code><b><a
+ href="./JSR88_Changelog.html#getNonRunningModules%28javax.enterprise.deploy.shared.ModuleType,%20javax.enterprise.deploy.spi.Target%5B%5D%29">getNonRunningModules</a></b>(javax.enterprise.deploy.shared.ModuleType&nbsp;moduleType,
+      <a
+ href="http://java.sun.com/j2ee/1.4/docs/api/javax/enterprise/deploy/spi/Target.html"
+ title="interface in javax.enterprise.deploy.spi">Target</a>[]&nbsp;targetList)</code>
+      <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Retrieve
+the list of J2EE application modules distributed to the identified
+targets and that are currently not running on the associated server or
+servers.</td>
+    </tr>
+    <tr class="TableRowColor" bgcolor="white">
+      <td align="right" valign="top" width="1%"><font size="-1"> <code>&nbsp;<a
+ href="http://java.sun.com/j2ee/1.4/docs/api/javax/enterprise/deploy/spi/TargetModuleID.html"
+ title="interface in javax.enterprise.deploy.spi">TargetModuleID</a>[]</code></font></td>
+      <td><code><b><a
+ href="./JSR88_Changelog.html#getRunningModules%28javax.enterprise.deploy.shared.ModuleType,%20javax.enterprise.deploy.spi.Target%5B%5D%29">getRunningModules</a></b>(javax.enterprise.deploy.shared.ModuleType&nbsp;moduleType,
+      <a
+ href="http://java.sun.com/j2ee/1.4/docs/api/javax/enterprise/deploy/spi/Target.html"
+ title="interface in javax.enterprise.deploy.spi">Target</a>[]&nbsp;targetList)</code>
+      <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Retrieve
+the list of J2EE application modules distributed to the identified
+targets and that are currently running on the associated server or
+servers.</td>
+    </tr>
+    <tr class="TableRowColor" bgcolor="white">
+      <td align="right" valign="top" width="1%"><font size="-1"> <code>&nbsp;java.util.Locale[]</code></font></td>
+      <td><code><b><a
+ href="./JSR88_Changelog.html#getSupportedLocales%28%29">getSupportedLocales</a></b>()</code>
+      <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns an
+array of supported locales for this implementation.</td>
+    </tr>
+    <tr class="TableRowColor" bgcolor="white">
+      <td align="right" valign="top" width="1%"><font size="-1"> <code>&nbsp;<a
+ href="http://java.sun.com/j2ee/1.4/docs/api/javax/enterprise/deploy/spi/Target.html"
+ title="interface in javax.enterprise.deploy.spi">Target</a>[]</code></font></td>
+      <td><code><b><a href="./JSR88_Changelog.html#getTargets%28%29">getTargets</a></b>()</code>
+      <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Retrieve
+the list of deployment targets supported by this DeploymentManager.</td>
+    </tr>
+    <tr class="TableRowColor" bgcolor="white">
+      <td align="right" valign="top" width="1%"><font size="-1"> <code>&nbsp;boolean</code></font></td>
+      <td><code><b><a
+ href="./JSR88_Changelog.html#isDConfigBeanVersionSupported%28javax.enterprise.deploy.shared.DConfigBeanVersionType%29">isDConfigBeanVersionSupported</a></b>(javax.enterprise.deploy.shared.DConfigBeanVersionType&nbsp;version)</code>
+      <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns
+'true' if the configuration beans support the J2EE platform version
+specified.</td>
+    </tr>
+    <tr class="TableRowColor" bgcolor="white">
+      <td align="right" valign="top" width="1%"><font size="-1"> <code>&nbsp;boolean</code></font></td>
+      <td><code><b><a
+ href="./JSR88_Changelog.html#isLocaleSupported%28java.util.Locale%29">isLocaleSupported</a></b>(java.util.Locale&nbsp;locale)</code>
+      <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Reports if
+this implementation supports the designated locale.</td>
+    </tr>
+    <tr class="TableRowColor" bgcolor="white">
+      <td align="right" valign="top" width="1%"><font size="-1"> <code>&nbsp;boolean</code></font></td>
+      <td><code><b><a
+ href="./JSR88_Changelog.html#isRedeploySupported%28%29">isRedeploySupported</a></b>()</code>
+      <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;This method
+designates whether this platform vendor provides application
+redeployment functionality.</td>
+    </tr>
+    <tr class="TableRowColor" bgcolor="white">
+      <td align="right" valign="top" width="1%"><font size="-1"> <code>&nbsp;javax.enterprise.deploy.spi.status.ProgressObject</code></font></td>
+      <td><code><b><a
+ href="./JSR88_Changelog.html#redeploy%28javax.enterprise.deploy.spi.TargetModuleID%5B%5D,%20java.io.File,%20java.io.File%29">redeploy</a></b>(<a
+ href="http://java.sun.com/j2ee/1.4/docs/api/javax/enterprise/deploy/spi/TargetModuleID.html"
+ title="interface in javax.enterprise.deploy.spi">TargetModuleID</a>[]&nbsp;moduleIDList,
+java.io.File&nbsp;moduleArchive, java.io.File&nbsp;deploymentPlan)</code>
+      <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(optional)
+The redeploy method provides a means for updating currently deployed
+J2EE applications.</td>
+    </tr>
+    <tr class="TableRowColor" bgcolor="white">
+      <td align="right" valign="top" width="1%"><font size="-1"> <code>&nbsp;javax.enterprise.deploy.spi.status.ProgressObject</code></font></td>
+      <td><code><b><a
+ href="./JSR88_Changelog.html#redeploy%28javax.enterprise.deploy.spi.TargetModuleID%5B%5D,%20java.io.InputStream,%20java.io.InputStream%29">redeploy</a></b>(<a
+ href="http://java.sun.com/j2ee/1.4/docs/api/javax/enterprise/deploy/spi/TargetModuleID.html"
+ title="interface in javax.enterprise.deploy.spi">TargetModuleID</a>[]&nbsp;moduleIDList,
+java.io.InputStream&nbsp;moduleArchive,
+java.io.InputStream&nbsp;deploymentPlan)</code> <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(optional)
+The redeploy method provides a means for updating currently deployed
+J2EE applications.</td>
+    </tr>
+    <tr class="TableRowColor" bgcolor="white">
+      <td align="right" valign="top" width="1%"><font size="-1"> <code>&nbsp;void</code></font></td>
+      <td><code><b><a href="./JSR88_Changelog.html#release%28%29">release</a></b>()</code>
+      <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The release
+method is the mechanism by which the tool signals to the
+DeploymentManager that the tool does not need it to continue running
+connected to the platform.</td>
+    </tr>
+    <tr class="TableRowColor" bgcolor="white">
+      <td align="right" valign="top" width="1%"><font size="-1"> <code>&nbsp;void</code></font></td>
+      <td><code><b><a
+ href="./JSR88_Changelog.html#setDConfigBeanVersion%28javax.enterprise.deploy.shared.DConfigBeanVersionType%29">setDConfigBeanVersion</a></b>(javax.enterprise.deploy.shared.DConfigBeanVersionType&nbsp;version)</code>
+      <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Set the
+configuration beans to be used to the J2EE platform version specificed.</td>
+    </tr>
+    <tr class="TableRowColor" bgcolor="white">
+      <td align="right" valign="top" width="1%"><font size="-1"> <code>&nbsp;void</code></font></td>
+      <td><code><b><a
+ href="./JSR88_Changelog.html#setLocale%28java.util.Locale%29">setLocale</a></b>(java.util.Locale&nbsp;locale)</code>
+      <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Set the
+active locale for this implementation of javax.enterprise.deploy.spi
+subpackages to run.</td>
+    </tr>
+    <tr class="TableRowColor" bgcolor="white">
+      <td align="right" valign="top" width="1%"><font size="-1"> <code>&nbsp;javax.enterprise.deploy.spi.status.ProgressObject</code></font></td>
+      <td><code><b><a
+ href="./JSR88_Changelog.html#start%28javax.enterprise.deploy.spi.TargetModuleID%5B%5D%29">start</a></b>(<a
+ href="http://java.sun.com/j2ee/1.4/docs/api/javax/enterprise/deploy/spi/TargetModuleID.html"
+ title="interface in javax.enterprise.deploy.spi">TargetModuleID</a>[]&nbsp;moduleIDList)</code>
+      <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Start the
+application running.</td>
+    </tr>
+    <tr class="TableRowColor" bgcolor="white">
+      <td align="right" valign="top" width="1%"><font size="-1"> <code>&nbsp;javax.enterprise.deploy.spi.status.ProgressObject</code></font></td>
+      <td><code><b><a
+ href="./JSR88_Changelog.html#stop%28javax.enterprise.deploy.spi.TargetModuleID%5B%5D%29">stop</a></b>(<a
+ href="http://java.sun.com/j2ee/1.4/docs/api/javax/enterprise/deploy/spi/TargetModuleID.html"
+ title="interface in javax.enterprise.deploy.spi">TargetModuleID</a>[]&nbsp;moduleIDList)</code>
+      <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Stop the
+application running.</td>
+    </tr>
+    <tr class="TableRowColor" bgcolor="white">
+      <td align="right" valign="top" width="1%"><font size="-1"> <code>&nbsp;javax.enterprise.deploy.spi.status.ProgressObject</code></font></td>
+      <td><code><b><a
+ href="./JSR88_Changelog.html#undeploy%28javax.enterprise.deploy.spi.TargetModuleID%5B%5D%29">undeploy</a></b>(<a
+ href="http://java.sun.com/j2ee/1.4/docs/api/javax/enterprise/deploy/spi/TargetModuleID.html"
+ title="interface in javax.enterprise.deploy.spi">TargetModuleID</a>[]&nbsp;moduleIDList)</code>
+      <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Remove the
+application from the target server.</td>
+    </tr>
+  </tbody>
+</table>
+&nbsp;
+</p>
+<p><!-- ============ METHOD DETAIL ========== -->
+<a name="method_detail"><!-- --></a>
+<table summary="" border="1" cellpadding="3" cellspacing="0"
+ width="100%">
+  <tbody>
+    <tr class="TableHeadingColor" bgcolor="#ccccff">
+      <th colspan="1" align="left"><font size="+2"> <b>Method Detail</b></font></th>
+    </tr>
+  </tbody>
+</table>
+<a name="getTargets()"><!-- --></a></p>
+<h3>getTargets</h3>
+<pre><a
+ href="http://java.sun.com/j2ee/1.4/docs/api/javax/enterprise/deploy/spi/Target.html"
+ title="interface in javax.enterprise.deploy.spi">Target</a>[] <b>getTargets</b>()<br>                    throws java.lang.IllegalStateException</pre>
+<dl>
+  <dd>Retrieve the list of deployment targets supported by this
+DeploymentManager. </dd>
+  <dd>
+    <dl>
+      <dt><b>Returns:</b></dt>
+      <dd>A list of deployment Target designators the user may select
+for application deployment or 'null' if there are none. </dd>
+      <dt><b>Throws:</b> </dt>
+      <dd><code>java.lang.IllegalStateException</code> - is thrown when
+the method is called when running in disconnected mode.</dd>
+    </dl>
+  </dd>
+</dl>
+<hr>
+<a
+ name="getRunningModules(javax.enterprise.deploy.shared.ModuleType, javax.enterprise.deploy.spi.Target[])"><!-- --></a>
+<h3>getRunningModules</h3>
+<pre><a
+ href="http://java.sun.com/j2ee/1.4/docs/api/javax/enterprise/deploy/spi/TargetModuleID.html"
+ title="interface in javax.enterprise.deploy.spi">TargetModuleID</a>[] <b>getRunningModules</b>(javax.enterprise.deploy.shared.ModuleType&nbsp;moduleType,<br>                                   <a
+ href="http://java.sun.com/j2ee/1.4/docs/api/javax/enterprise/deploy/spi/Target.html"
+ title="interface in javax.enterprise.deploy.spi">Target</a>[]&nbsp;targetList)<br>                                   throws javax.enterprise.deploy.spi.exceptions.TargetException,<br>                                          java.lang.IllegalStateException</pre>
+<dl>
+  <dd>Retrieve the list of J2EE application modules distributed to the
+identified targets and that are currently running on the associated
+server or servers. </dd>
+  <dd>
+    <dl>
+      <dt><b>Parameters:</b></dt>
+      <dd><code>moduleType</code> - A predefined designator for a J2EE
+module type.</dd>
+      <dd><code>targetList</code> - A list of deployment Target
+designators the user wants checked for module run status. </dd>
+      <dt><b>Returns:</b></dt>
+      <dd>An array of TargetModuleID objects representing the running
+modules or 'null' if there are none. </dd>
+      <dt><b>Throws:</b> </dt>
+      <dd><code>java.lang.IllegalStateException</code> - is thrown when
+the method is called when running in disconnected mode. </dd>
+      <dd><code>javax.enterprise.deploy.spi.exceptions.TargetException</code>
+- An invalid Target designator encountered.</dd>
+    </dl>
+  </dd>
+</dl>
+<hr>
+<a
+ name="getNonRunningModules(javax.enterprise.deploy.shared.ModuleType, javax.enterprise.deploy.spi.Target[])"><!-- --></a>
+<h3>getNonRunningModules</h3>
+<pre><a
+ href="http://java.sun.com/j2ee/1.4/docs/api/javax/enterprise/deploy/spi/TargetModuleID.html"
+ title="interface in javax.enterprise.deploy.spi">TargetModuleID</a>[] <b>getNonRunningModules</b>(javax.enterprise.deploy.shared.ModuleType&nbsp;moduleType,<br>                                      <a
+ href="http://java.sun.com/j2ee/1.4/docs/api/javax/enterprise/deploy/spi/Target.html"
+ title="interface in javax.enterprise.deploy.spi">Target</a>[]&nbsp;targetList)<br>                                      throws javax.enterprise.deploy.spi.exceptions.TargetException,<br>                                             java.lang.IllegalStateException</pre>
+<dl>
+  <dd>Retrieve the list of J2EE application modules distributed to the
+identified targets and that are currently not running on the associated
+server or servers. </dd>
+  <dd>
+    <dl>
+      <dt><b>Parameters:</b></dt>
+      <dd><code>moduleType</code> - A predefined designator for a J2EE
+module type.</dd>
+      <dd><code>targetList</code> - A list of deployment Target
+designators the user wants checked for module not running status. </dd>
+      <dt><b>Returns:</b></dt>
+      <dd>An array of TargetModuleID objects representing the
+non-running modules or 'null' if there are none. </dd>
+      <dt><b>Throws:</b> </dt>
+      <dd><code>java.lang.IllegalStateException</code> - is thrown when
+the method is called when running in disconnected mode. </dd>
+      <dd><code>javax.enterprise.deploy.spi.exceptions.TargetException</code>
+- An invalid Target designator encountered.</dd>
+    </dl>
+  </dd>
+</dl>
+<hr>
+<a
+ name="getAvailableModules(javax.enterprise.deploy.shared.ModuleType, javax.enterprise.deploy.spi.Target[])"><!-- --></a>
+<h3>getAvailableModules</h3>
+<pre><a
+ href="http://java.sun.com/j2ee/1.4/docs/api/javax/enterprise/deploy/spi/TargetModuleID.html"
+ title="interface in javax.enterprise.deploy.spi">TargetModuleID</a>[] <b>getAvailableModules</b>(javax.enterprise.deploy.shared.ModuleType&nbsp;moduleType,<br>                                     <a
+ href="http://java.sun.com/j2ee/1.4/docs/api/javax/enterprise/deploy/spi/Target.html"
+ title="interface in javax.enterprise.deploy.spi">Target</a>[]&nbsp;targetList)<br>                                     throws javax.enterprise.deploy.spi.exceptions.TargetException,<br>                                            java.lang.IllegalStateException</pre>
+<dl>
+  <dd>Retrieve the list of all J2EE application modules running or not
+running on the identified targets. </dd>
+  <dd>
+    <dl>
+      <dt><b>Parameters:</b></dt>
+      <dd><code>moduleType</code> - A predefined designator for a J2EE
+module type.</dd>
+      <dd><code>targetList</code> - A list of deployment Target
+designators the user wants checked for module not running status. </dd>
+      <dt><b>Returns:</b></dt>
+      <dd>An array of TargetModuleID objects representing all deployed
+modules running or not or 'null' if there are no deployed modules. </dd>
+      <dt><b>Throws:</b> </dt>
+      <dd><code>java.lang.IllegalStateException</code> - is thrown when
+the method is called when running in disconnected mode. </dd>
+      <dd><code>javax.enterprise.deploy.spi.exceptions.TargetException</code>
+- An invalid Target designator encountered.</dd>
+    </dl>
+  </dd>
+</dl>
+<hr>
+<a
+ name="createConfiguration(javax.enterprise.deploy.model.DeployableObject)"><!-- --></a>
+<h3>createConfiguration</h3>
+<pre><a
+ href="http://java.sun.com/j2ee/1.4/docs/api/javax/enterprise/deploy/spi/DeploymentConfiguration.html"
+ title="interface in javax.enterprise.deploy.spi">DeploymentConfiguration</a> <b>createConfiguration</b>(javax.enterprise.deploy.model.DeployableObject&nbsp;dObj)<br>                                            throws javax.enterprise.deploy.spi.exceptions.InvalidModuleException</pre>
+<dl>
+  <dd>Retrieve the object that provides server-specific deployment
+configuration information for the J2EE deployable component. </dd>
+  <dd>
+    <dl>
+      <dt><b>Parameters:</b></dt>
+      <dd><code>dObj</code> - An object representing a J2EE deployable
+component. </dd>
+      <dt><b>Throws:</b> </dt>
+      <dd><code>javax.enterprise.deploy.spi.exceptions.InvalidModuleException</code>
+- The DeployableObject is an unknown or unsupport component for this
+configuration tool.</dd>
+    </dl>
+  </dd>
+</dl>
+<hr>
+<a
+ name="distribute(javax.enterprise.deploy.spi.Target[], java.io.File, java.io.File)"><!-- --></a>
+<h3>distribute</h3>
+<pre>javax.enterprise.deploy.spi.status.ProgressObject <b>distribute</b>(<a
+ href="http://java.sun.com/j2ee/1.4/docs/api/javax/enterprise/deploy/spi/Target.html"
+ title="interface in javax.enterprise.deploy.spi">Target</a>[]&nbsp;targetList,<br>                                                             java.io.File&nbsp;moduleArchive,<br>                                                             java.io.File&nbsp;deploymentPlan)<br>                                                             throws java.lang.IllegalStateException</pre>
+<dl>
+  <dd>The distribute method performs three tasks; it validates the
+deployment configuration data, generates all container specific classes
+and interfaces, and moves the fully baked archive to the designated
+deployment targets. </dd>
+  <dd>
+    <dl>
+      <dt><b>Parameters:</b></dt>
+      <dd><code>targetList</code> - A list of server targets the user
+is specifying this application be deployed to.</dd>
+      <dd><code>moduleArchive</code> - The file name of the application
+archive to be disrtibuted.</dd>
+      <dd><code>deploymentPlan</code> - The XML file containing the
+runtime configuration information associated with this application
+archive. </dd>
+      <dt><b>Returns:</b></dt>
+      <dd>ProgressObject an object that tracks and reports the status
+of the distribution process. </dd>
+      <dt><b>Throws:</b> </dt>
+      <dd><code>java.lang.IllegalStateException</code> - is thrown when
+the method is called when running in disconnected mode.</dd>
+    </dl>
+  </dd>
+</dl>
+<hr>
+<a
+ name="distribute(javax.enterprise.deploy.spi.Target[], java.io.InputStream, java.io.InputStream)"><!-- --></a>
+<h3>distribute</h3>
+<pre>javax.enterprise.deploy.spi.status.ProgressObject <b>distribute</b>(<a
+ href="http://java.sun.com/j2ee/1.4/docs/api/javax/enterprise/deploy/spi/Target.html"
+ title="interface in javax.enterprise.deploy.spi">Target</a>[]&nbsp;targetList,<br>                                                             java.io.InputStream&nbsp;moduleArchive,<br>                                                             java.io.InputStream&nbsp;deploymentPlan)<br>                                                             throws java.lang.IllegalStateException</pre>
+<dl>
+  <dd><b>Deprecated.</b>&nbsp;<i>as of Java EE 5, replaced with <a
+ href="./JSR88_Changelog.html#distribute%28javax.enterprise.deploy.spi.Target%5B%5D,%20javax.enterprise.deploy.shared.ModuleType,%20java.io.InputStream,%20java.io.InputStream%29"><code>distribute(Target[],
+ModuleType, InputStream, InputStream)</code></a></i> </dd>
+  <dd>The distribute method performs three tasks; it validates the
+deployment configuration data, generates all container specific classes
+and interfaces, and moves the fully baked archive to the designated
+deployment targets. </dd>
+  <dd>
+    <dl>
+      <dt><b>Parameters:</b></dt>
+      <dd><code>targetList</code> - A list of server targets the user
+is specifying this application be deployed to.</dd>
+      <dd><code>moduleArchive</code> - The input stream containing the
+application archive to be disrtibuted.</dd>
+      <dd><code>deploymentPlan</code> - The input stream containing the
+deployment configuration information associated with this application
+archive. </dd>
+      <dt><b>Returns:</b></dt>
+      <dd>ProgressObject an object that tracks and reports the status
+of the distribution process. </dd>
+      <dt><b>Throws:</b> </dt>
+      <dd><code>java.lang.IllegalStateException</code> - is thrown when
+the method is called when running in disconnected mode.</dd>
+    </dl>
+  </dd>
+</dl>
+<hr>
+<a
+ name="distribute(javax.enterprise.deploy.spi.Target[], javax.enterprise.deploy.shared.ModuleType, java.io.InputStream, java.io.InputStream)"><!-- --></a>
+<h3>distribute</h3>
+<pre>javax.enterprise.deploy.spi.status.ProgressObject <b>distribute</b>(<a
+ href="http://java.sun.com/j2ee/1.4/docs/api/javax/enterprise/deploy/spi/Target.html"
+ title="interface in javax.enterprise.deploy.spi">Target</a>[]&nbsp;targetList,<br>                                                             javax.enterprise.deploy.shared.ModuleType&nbsp;type,<br>                                                             java.io.InputStream&nbsp;moduleArchive,<br>                                                             java.io.InputStream&nbsp;deploymentPlan)<br>                                                             throws java.lang.IllegalStateException</pre>
+<dl>
+  <dd>The distribute method performs three tasks; it validates the
+deployment configuration data, generates all container specific classes
+and interfaces, and moves the fully baked archive to the designated
+deployment targets. </dd>
+  <dd>
+    <dl>
+      <dt><b>Parameters:</b></dt>
+      <dd><code>targetList</code> - A list of server targets the user
+is specifying this application be deployed to.</dd>
+      <dd><code>moduleType</code> - The module type of this application
+archive.</dd>
+      <dd><code>moduleArchive</code> - The input stream containing the
+application archive to be disrtibuted.</dd>
+      <dd><code>deploymentPlan</code> - The input stream containing the
+deployment configuration information associated with this application
+archive. </dd>
+      <dt><b>Returns:</b></dt>
+      <dd>ProgressObject an object that tracks and reports the status
+of the distribution process. </dd>
+      <dt><b>Throws:</b> </dt>
+      <dd><code>java.lang.IllegalStateException</code> - is thrown when
+the method is called when running in disconnected mode.</dd>
+    </dl>
+  </dd>
+</dl>
+<hr>
+<a name="start(javax.enterprise.deploy.spi.TargetModuleID[])"><!-- --></a>
+<h3>start</h3>
+<pre>javax.enterprise.deploy.spi.status.ProgressObject <b>start</b>(<a
+ href="http://java.sun.com/j2ee/1.4/docs/api/javax/enterprise/deploy/spi/TargetModuleID.html"
+ title="interface in javax.enterprise.deploy.spi">TargetModuleID</a>[]&nbsp;moduleIDList)<br>                                                        throws java.lang.IllegalStateException</pre>
+<dl>
+  <dd>Start the application running.
+    <p> Only the TargetModuleIDs which represent a root module are
+valid for being started. A root TargetModuleID has no parent. A
+TargetModuleID with a parent can not be individually started. A root
+TargetModuleID module and all its child modules will be started. </p>
+  </dd>
+  <dd>
+    <dl>
+      <dt><b>Parameters:</b></dt>
+      <dd><code>moduleIDList</code> - A array of TargetModuleID objects
+representing the modules to be started. </dd>
+      <dt><b>Returns:</b></dt>
+      <dd>ProgressObject an object that tracks and reports the status
+of the start operation. </dd>
+      <dt><b>Throws:</b> </dt>
+      <dd><code>java.lang.IllegalStateException</code> - is thrown when
+the method is called when running in disconnected mode.</dd>
+    </dl>
+  </dd>
+</dl>
+<hr>
+<a name="stop(javax.enterprise.deploy.spi.TargetModuleID[])"><!-- --></a>
+<h3>stop</h3>
+<pre>javax.enterprise.deploy.spi.status.ProgressObject <b>stop</b>(<a
+ href="http://java.sun.com/j2ee/1.4/docs/api/javax/enterprise/deploy/spi/TargetModuleID.html"
+ title="interface in javax.enterprise.deploy.spi">TargetModuleID</a>[]&nbsp;moduleIDList)<br>                                                       throws java.lang.IllegalStateException</pre>
+<dl>
+  <dd>Stop the application running.
+    <p> Only the TargetModuleIDs which represent a root module are
+valid for being stopped. A root TargetModuleID has no parent. A
+TargetModuleID with a parent can not be individually stopped. A root
+TargetModuleID module and all its child modules will be stopped. </p>
+  </dd>
+  <dd>
+    <dl>
+      <dt><b>Parameters:</b></dt>
+      <dd><code>moduleIDList</code> - A array of TargetModuleID objects
+representing the modules to be stopped. </dd>
+      <dt><b>Returns:</b></dt>
+      <dd>ProgressObject an object that tracks and reports the status
+of the stop operation. </dd>
+      <dt><b>Throws:</b> </dt>
+      <dd><code>java.lang.IllegalStateException</code> - is thrown when
+the method is called when running in disconnected mode.</dd>
+    </dl>
+  </dd>
+</dl>
+<hr>
+<a name="undeploy(javax.enterprise.deploy.spi.TargetModuleID[])"><!-- --></a>
+<h3>undeploy</h3>
+<pre>javax.enterprise.deploy.spi.status.ProgressObject <b>undeploy</b>(<a
+ href="http://java.sun.com/j2ee/1.4/docs/api/javax/enterprise/deploy/spi/TargetModuleID.html"
+ title="interface in javax.enterprise.deploy.spi">TargetModuleID</a>[]&nbsp;moduleIDList)<br>                                                           throws java.lang.IllegalStateException</pre>
+<dl>
+  <dd>Remove the application from the target server.
+    <p> Only the TargetModuleIDs which represent a root module are
+valid for undeployment. A root TargetModuleID has no parent. A
+TargetModuleID with a parent can not be undeployed. A root
+TargetModuleID module and all its child modules will be undeployed. The
+root TargetModuleID module and all its child modules must stopped
+before they can be undeployed. </p>
+  </dd>
+  <dd>
+    <dl>
+      <dt><b>Parameters:</b></dt>
+      <dd><code>moduleIDList</code> - An array of TargetModuleID
+objects representing the root modules to be stopped. </dd>
+      <dt><b>Returns:</b></dt>
+      <dd>ProgressObject an object that tracks and reports the status
+of the stop operation. </dd>
+      <dt><b>Throws:</b> </dt>
+      <dd><code>java.lang.IllegalStateException</code> - is thrown when
+the method is called when running in disconnected mode.</dd>
+    </dl>
+  </dd>
+</dl>
+<hr>
+<a name="isRedeploySupported()"><!-- --></a>
+<h3>isRedeploySupported</h3>
+<pre>boolean <b>isRedeploySupported</b>()</pre>
+<dl>
+  <dd>This method designates whether this platform vendor provides
+application redeployment functionality. A value of true means it is
+supported. False means it is not. </dd>
+  <dd>
+    <dl>
+      <dt><b>Returns:</b></dt>
+      <dd>A value of true means redeployment is supported by this
+vendor's DeploymentManager. False means it is not.</dd>
+    </dl>
+  </dd>
+</dl>
+<hr>
+<a
+ name="redeploy(javax.enterprise.deploy.spi.TargetModuleID[], java.io.File, java.io.File)"><!-- --></a>
+<h3>redeploy</h3>
+<pre>javax.enterprise.deploy.spi.status.ProgressObject <b>redeploy</b>(<a
+ href="http://java.sun.com/j2ee/1.4/docs/api/javax/enterprise/deploy/spi/TargetModuleID.html"
+ title="interface in javax.enterprise.deploy.spi">TargetModuleID</a>[]&nbsp;moduleIDList,<br>                                                           java.io.File&nbsp;moduleArchive,<br>                                                           java.io.File&nbsp;deploymentPlan)<br>                                                           throws java.lang.UnsupportedOperationException,<br>                                                                  java.lang.IllegalStateException</pre>
+<dl>
+  <dd>(optional) The redeploy method provides a means for updating
+currently deployed J2EE applications. This is an optional method for
+vendor implementation. Redeploy replaces a currently deployed
+application with an updated version. The runtime configuration
+information for the updated application must remain identical to the
+application it is updating. When an application update is redeployed,
+all existing client connections to the original running application
+must not be disrupted; new clients will connect to the application
+update. This operation is valid for TargetModuleIDs that represent a
+root module. A root TargetModuleID has no parent. A root TargetModuleID
+module and all its child modules will be redeployed. A child
+TargetModuleID module cannot be individually redeployed. The redeploy
+operation is complete only when this action for all the modules has
+completed. </dd>
+  <dd>
+    <dl>
+      <dt><b>Parameters:</b></dt>
+      <dd><code>moduleIDList</code> - An array of designators of the
+applications to be updated.</dd>
+      <dd><code>moduleArchive</code> - The file name of the application
+archive to be disrtibuted.</dd>
+      <dd><code>deploymentPlan</code> - The deployment configuration
+information associated with this application archive. </dd>
+      <dt><b>Returns:</b></dt>
+      <dd>ProgressObject an object that tracks and reports the status
+of the redeploy operation. </dd>
+      <dt><b>Throws:</b> </dt>
+      <dd><code>java.lang.IllegalStateException</code> - is thrown when
+the method is called when running in disconnected mode. </dd>
+      <dd><code>java.lang.UnsupportedOperationException</code> - this
+optional command is not supported by this implementation.</dd>
+    </dl>
+  </dd>
+</dl>
+<hr>
+<a
+ name="redeploy(javax.enterprise.deploy.spi.TargetModuleID[], java.io.InputStream, java.io.InputStream)"><!-- --></a>
+<h3>redeploy</h3>
+<pre>javax.enterprise.deploy.spi.status.ProgressObject <b>redeploy</b>(<a
+ href="http://java.sun.com/j2ee/1.4/docs/api/javax/enterprise/deploy/spi/TargetModuleID.html"
+ title="interface in javax.enterprise.deploy.spi">TargetModuleID</a>[]&nbsp;moduleIDList,<br>                                                           java.io.InputStream&nbsp;moduleArchive,<br>                                                           java.io.InputStream&nbsp;deploymentPlan)<br>                                                           throws java.lang.UnsupportedOperationException,<br>                                                                  java.lang.IllegalStateException</pre>
+<dl>
+  <dd>(optional) The redeploy method provides a means for updating
+currently deployed J2EE applications. This is an optional method for
+vendor implementation. Redeploy replaces a currently deployed
+application with an updated version. The runtime configuration
+information for the updated application must remain identical to the
+application it is updating. When an application update is redeployed,
+all existing client connections to the original running application
+must not be disrupted; new clients will connect to the application
+update. This operation is valid for TargetModuleIDs that represent a
+root module. A root TargetModuleID has no parent. A root TargetModuleID
+module and all its child modules will be redeployed. A child
+TargetModuleID module cannot be individually redeployed. The redeploy
+operation is complete only when this action for all the modules has
+completed. </dd>
+  <dd>
+    <dl>
+      <dt><b>Parameters:</b></dt>
+      <dd><code>moduleIDList</code> - An array of designators of the
+applications to be updated.</dd>
+      <dd><code>moduleArchive</code> - The input stream containing the
+application archive to be disrtibuted.</dd>
+      <dd><code>deploymentPlan</code> - The input stream containing the
+runtime configuration information associated with this application
+archive. </dd>
+      <dt><b>Returns:</b></dt>
+      <dd>ProgressObject an object that tracks and reports the status
+of the redeploy operation. </dd>
+      <dt><b>Throws:</b> </dt>
+      <dd><code>java.lang.IllegalStateException</code> - is thrown when
+the method is called when running in disconnected mode. </dd>
+      <dd><code>java.lang.UnsupportedOperationException</code> - this
+optional command is not supported by this implementation.</dd>
+    </dl>
+  </dd>
+</dl>
+<hr>
+<a name="release()"><!-- --></a>
+<h3>release</h3>
+<pre>void <b>release</b>()</pre>
+<dl>
+  <dd>The release method is the mechanism by which the tool signals to
+the DeploymentManager that the tool does not need it to continue
+running connected to the platform. The tool may be signaling it wants
+to run in a disconnected mode or it is planning to shutdown. When
+release is called the DeploymentManager may close any J2EE resource
+connections it had for deployment configuration and perform other
+related resource cleanup. It should not accept any new operation
+requests (i.e., distribute, start stop, undeploy, redeploy. It should
+finish any operations that are currently in process. Each
+ProgressObject associated with a running operation should be marked as
+released (see the ProgressObject). </dd>
+  <dd><br>
+  </dd>
+</dl>
+<hr>
+<a name="getDefaultLocale()"><!-- --></a>
+<h3>getDefaultLocale</h3>
+<pre>java.util.Locale <b>getDefaultLocale</b>()</pre>
+<dl>
+  <dd>Returns the default locale supported by this implementation of
+javax.enterprise.deploy.spi subpackages. </dd>
+  <dd>
+    <dl>
+      <dt><b>Returns:</b></dt>
+      <dd>Locale the default locale for this implementation.</dd>
+    </dl>
+  </dd>
+</dl>
+<hr>
+<a name="getCurrentLocale()"><!-- --></a>
+<h3>getCurrentLocale</h3>
+<pre>java.util.Locale <b>getCurrentLocale</b>()</pre>
+<dl>
+  <dd>Returns the active locale this implementation of
+javax.enterprise.deploy.spi subpackages is running. </dd>
+  <dd>
+    <dl>
+      <dt><b>Returns:</b></dt>
+      <dd>Locale the active locale of this implementation.</dd>
+    </dl>
+  </dd>
+</dl>
+<hr>
+<a name="setLocale(java.util.Locale)"><!-- --></a>
+<h3>setLocale</h3>
+<pre>void <b>setLocale</b>(java.util.Locale&nbsp;locale)<br>               throws java.lang.UnsupportedOperationException</pre>
+<dl>
+  <dd>Set the active locale for this implementation of
+javax.enterprise.deploy.spi subpackages to run. </dd>
+  <dd>
+    <dl>
+      <dt><b>Throws:</b> </dt>
+      <dd><code>java.lang.UnsupportedOperationException</code> - the
+provide locale is not supported.</dd>
+    </dl>
+  </dd>
+</dl>
+<hr>
+<a name="getSupportedLocales()"><!-- --></a>
+<h3>getSupportedLocales</h3>
+<pre>java.util.Locale[] <b>getSupportedLocales</b>()</pre>
+<dl>
+  <dd>Returns an array of supported locales for this implementation. </dd>
+  <dd>
+    <dl>
+      <dt><b>Returns:</b></dt>
+      <dd>Locale[] the list of supported locales.</dd>
+    </dl>
+  </dd>
+</dl>
+<hr>
+<a name="isLocaleSupported(java.util.Locale)"><!-- --></a>
+<h3>isLocaleSupported</h3>
+<pre>boolean <b>isLocaleSupported</b>(java.util.Locale&nbsp;locale)</pre>
+<dl>
+  <dd>Reports if this implementation supports the designated locale. </dd>
+  <dd>
+    <dl>
+      <dt><b>Returns:</b></dt>
+      <dd>A value of 'true' means it is support and 'false' it is not.</dd>
+    </dl>
+  </dd>
+</dl>
+<hr>
+<a name="getDConfigBeanVersion()"><!-- --></a>
+<h3>getDConfigBeanVersion</h3>
+<pre>javax.enterprise.deploy.shared.DConfigBeanVersionType <b>getDConfigBeanVersion</b>()</pre>
+<dl>
+  <dd>Returns the J2EE platform version number for which the
+configuration beans are provided. The beans must have been compiled
+with the J2SE version required by the J2EE platform. </dd>
+  <dd>
+    <dl>
+      <dt><b>Returns:</b></dt>
+      <dd>a DConfigBeanVersionType object representing the platform
+version number for which these beans are provided.</dd>
+    </dl>
+  </dd>
+</dl>
+<hr>
+<a
+ name="isDConfigBeanVersionSupported(javax.enterprise.deploy.shared.DConfigBeanVersionType)"><!-- --></a>
+<h3>isDConfigBeanVersionSupported</h3>
+<pre>boolean <b>isDConfigBeanVersionSupported</b>(javax.enterprise.deploy.shared.DConfigBeanVersionType&nbsp;version)</pre>
+<dl>
+  <dd>Returns 'true' if the configuration beans support the J2EE
+platform version specified. It returns 'false' if the version is not
+supported. </dd>
+  <dd>
+    <dl>
+      <dt><b>Parameters:</b></dt>
+      <dd><code>version</code> - a DConfigBeanVersionType object
+representing the J2EE platform version for which support is requested. </dd>
+      <dt><b>Returns:</b></dt>
+      <dd>'true' if the version is supported and 'false if not.</dd>
+    </dl>
+  </dd>
+</dl>
+<hr>
+<a
+ name="setDConfigBeanVersion(javax.enterprise.deploy.shared.DConfigBeanVersionType)"><!-- --></a>
+<h3>setDConfigBeanVersion</h3>
+<pre>void <b>setDConfigBeanVersion</b>(javax.enterprise.deploy.shared.DConfigBeanVersionType&nbsp;version)<br>                           throws javax.enterprise.deploy.spi.exceptions.DConfigBeanVersionUnsupportedException</pre>
+<dl>
+  <dd>Set the configuration beans to be used to the J2EE platform
+version specificed. </dd>
+  <dd>
+    <dl>
+      <dt><b>Parameters:</b></dt>
+      <dd><code>version</code> - a DConfigBeanVersionType object
+representing the J2EE platform version for which support is requested. </dd>
+      <dt><b>Throws:</b> </dt>
+      <dd><code>javax.enterprise.deploy.spi.exceptions.DConfigBeanVersionUnsupportedException</code>
+- when the requested bean version is not supported.</dd>
+    </dl>
+  </dd>
+</dl>
+<!-- ========= END OF CLASS DATA ========= -->
+<hr><br>
+<br>
+</body>
+</html>
+
+
+
+<!-- ** BEGIN: footer.jsp ** //-->
+
+
+
+
+
+
+
+
+</td>
+</tr>
+</table>
+
+<!-- ** END: Content Table ** //-->
+
+<!-- ** BEGIN: Footer Table ** //-->
+
+<div id="footer" style="clear: both;">
+    <div class="footleft">
+        <a href="/en/resources/contacts">Contact Us</a>
+    </div>
+	
+    <div class="botbar"><img src="/images/spacer.gif" alt="" height="23" width="1"></div>
+
+    <div class="footleft2">
+         &copy; 2019, Oracle Corporation and/or its affiliates. 
+        <a href="/en/home/terms">Terms of Use</a>. <a href="http://www.oracle.com/us/legal/privacy/index.html">Privacy Policy</a>. <a href="http://www.oracle.com/us/legal/third-party-trademarks/third-party-trademarks-078568.html">Trademarks</a>
+    </div>
+
+    <div class="footright">
+        <img src="/images/common/logo_oracle_footer.gif" alt="Oracle Corporation" height="22" width="91">
+    </div>
+
+    <div style="clear: both;"><img src="/images/spacer.gif" alt="" height="30" width="1"></div>
+</div>
+
+<!-- ** END: Footer Table ** //-->
+
+
+
+<!-- ** Menu Start ** //-->
+
+
+
+</body>
+</html>
+<!-- ** END: footer.jsp ** //-->
+

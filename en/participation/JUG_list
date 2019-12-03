@@ -1,0 +1,436 @@
+
+
+
+<!-- ** BEGIN: header.jsp ** //-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3c.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+<head>
+    
+
+   
+    <link href="/includes/css/menu.css" rel="stylesheet" type="text/css"></link>
+    <link href="/includes/css/style.css" rel="stylesheet" type="text/css"></link>
+    <!--[if lt IE 6]><link href="/includes/css/style5.css" rel="stylesheet" type="text/css" ></link><![endif]-->
+    <!--[if gte IE 5]><link href="/includes/css/style6.css" rel="stylesheet" type="text/css" ></link><![endif]-->
+    <link href="/includes/css/tabs.css"  rel="stylesheet" type="text/css"></link>
+
+    <script type="text/javascript" src="/includes/scripts/tabs.js"></script>
+    <script type="text/javascript" src="/includes/scripts/menu.js"></script>
+   
+
+    
+
+    
+        <title>The Java Community Process(SM) Program - Participation - JUG_list</title>
+    
+
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+
+
+<body onload="P7_initPM(0,1,0,0,-1)">
+
+    <a name="top"></a>
+
+    <div id="header">
+	<div id="logo">
+		<a href="/en/home/index"><img src="/images/spacer.gif" alt="Java Community Process" height="81" width="151"></a>
+	</div>
+	<div id="tools">
+		<div class="search">
+			<form name="search" action="/en/jsr/summary" method="get" onsubmit="return validate_search()">
+				<input name="id" value="Search JSRs" size="16" class="form" onfocus="nullify_if_equal(this, 'Search JSRs')" type="text">
+				<a href="javascript:document.search.submit()" onclick="return validate_search()"><img src="/images/button_go.gif" width="21" height="16" border="0" alt="Submit this Search" name="sub_search"></a>
+			</form>
+		</div>
+		<div class="tools">
+			<a href="/en/press/pressroom">Press Room</a> &nbsp;|&nbsp;
+			<a href="http://java.com/java/download/index.jsp?cid=jdp78399">Get Java Here</a> &nbsp;|&nbsp;
+			<!-- <a href="javascript:void(0)">Print Format</a> &nbsp;|&nbsp;&nbsp; -->
+		</div>
+
+	</div>
+	<div style="clear: right;"></div>
+
+        
+
+	<div class="topbar"><img src="/images/spacer.gif" alt="" height="3" width="154"></div>
+	<div id="update"> </div>
+    </div>
+
+
+    
+
+        <!-- ** BEGIN: Content Table ** //-->
+
+        <table width="100%" border="0" cellpadding="0" cellspacing="0">
+
+            <tr>
+
+                <!-- ** BEGIN: Navigation Column ** //-->
+                <td width="150" id="leftcontent" valign="top">
+                    <!-- Navigation Placeholder //-->
+
+                    
+
+                    <div class="bar"><img src="/images/hr_dots1.gif" alt="" height="3" width="150"></div>
+
+        <!-- begin find JSRs form -->
+        <!-- IMPORTANT! do not convert this form to Struts < html : form > tag.  javascript change of form.action property fails. -->
+        <img src="/images/hd_find-jsrs.gif" alt="Find JSRs" height="18" width="150">
+        <form name="findjsr" action="/en/jsr/summary" method="get" class="pt5" onsubmit="return validate_findjsr()">
+            <input name="id" size="18" class="form" value="Search JSRs" onfocus="nullify_if_equal(this, 'Search JSRs')" type="text">
+	    <a href="javascript:document.findjsr.submit()" onclick="return validate_findjsr()"><img src="/images/button_go.gif" width="21" height="16" border="0" alt="Submit this Search" name="sub_search"></a>
+        </form><br><br>
+
+        <!-- ** Menu Start ** //-->
+
+        <ul id="p7PMnav">
+            <li><a href="/en/jsr/platform">JSRs by Platform</a></li>
+            <li><a href="/en/jsr/tech">JSRs by Technology</a></li>
+            <li><a href="/en/jsr/stage">JSRs by Stage</a></li>
+            <li><a href="/en/jsr/ec">JSRs by Committee</a></li>
+            <li><a href="/en/jsr/all">List of All JSRs</a></li>
+
+            <!--end find JSRs form -->
+            <div style="clear: both;"><img src="/images/spacer.gif" alt="" height="25" width="1"></div>
+
+            <!--begin my JCP -->
+            <img src="/images/hd_my-jcp.gif" alt="My JCP" height="18" width="150">
+            
+
+          <form name="login" method="get" action="/en/user/login" >
+            <input name="Sign-in" type="submit" title="Sign-in" value="Sign-in" />
+          </form>
+
+            <div style="clear:both"><img src="/images/global/spacer.gif" width="1" height="3" alt=""></div>
+            <div class="noNav">
+                <a href="/en/user/register">Register for Site</a>
+            </div>
+
+             <div class="bar"><img src="/images/hr_dots1.gif" alt="" height="3" width="150"></div>
+           <div class="noNav" style="color: #666666; padding: 0;">
+              Use of JCP site is subject to the
+              <a href="/en/home/terms" style="display:inline;padding: 0">JCP Terms of Use</a> and the
+              <a href="http://www.oracle.com/us/legal/privacy/index.html" style="display:inline;padding: 0" href="">Oracle Privacy Policy</a>
+          </div>
+
+            
+
+            <div style="clear:both"><img src="/images/global/spacer.gif" width="1" height="25" alt=""></div>
+
+            <!--begin JCP info -->
+            <img src="/images/hd_jcp-info.gif" alt="JCP Info" height="18" width="150">
+
+            <li><a href="/en/procedures/overview" class="p7PMtrg">About JCP</a>
+                <ul>
+                    <li><a href="/en/procedures/overview">Program Overview</a></li>
+                    <li><a href="/en/procedures/jcp2">JCP Process Document</a></li>
+                    <li><a href="/en/whatsnew/calendar">Calendar</a></li>
+                    <li><a href="/en/participation/members">JCP Members</a></li>
+                    <li><a href="/en/participation/committee">Executive Committee</a></li>
+                    <li><a href="/en/whatsnew/elections">Elections</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/en/participation/overview" class="p7PMtrg">Get Involved</a>
+		<ul>
+                    <li><a href="/en/participation/overview">Overview</a></li>
+                    <li><a href="/en/participation/membership">Becoming a JCP Member</a></li>
+		</ul>
+            </li>
+
+            <li><a href="/en/resources/contents" class="p7PMtrg">Community Resources</a>
+                <ul>
+                    <li><a href="/en/resources/contents">Overview</a></li>
+                    <li><a href="/en/resources/tutorials">Tutorials</a></li>
+                    <li><a href="/en/resources/multimedia">JCP Podcasts</a></li>
+                    <li><a href="/en/resources/guide">Spec Lead Guide</a></li>
+                    <li><a href="/en/resources/tdk">TCK Tool & Info</a></li>
+                    <li><a href="/en/resources/license_reference">License Reference</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/en/press/pmo" class="p7PMtrg">Community News</a>
+                <ul>
+                    <li><a href="/en/press/pmo">News</a></li>
+                    <li><a href="/en/press/news/awards/awards_main">Programs &amp; Awards</a></li>
+                    <li><a href="/en/press/releases">Press Releases</a></li>
+                    <li><a href="/en/press/success">Success Stories</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/en/introduction/faq">FAQ</a></li>
+
+            <li><a href="/en/resources/contacts">Contact Us</a></li>
+
+            <div style="clear: both;"><img src="/images/spacer.gif" alt="" height="25" width="1"></div>
+
+            <!--[if lte IE 6]><style>#p7PMnav a{height:1em;}#p7PMnav li{height:1em;float:left;clear:both;width:100%}</style><![endif]-->
+            <!--[if IE 6]><style>#p7PMnav li{clear:none;}</style><![endif]-->
+            <!--[if IE 7]><style>#p7PMnav a{zoom:100%;}#p7PMnav li{float:left;clear:both;width:100%;}</style><![endif]-->
+        </ul>
+
+        
+
+        <!--begin ad space -->
+        <div class="ads">
+            <a href="http://java.com/java/download/index.jsp?cid=jdp78399" target="_blank"><img style="display: ;" src="/images/ad_banner2.gif" alt="Ad Banner" border="1" height="70" width="150"></a>
+        </div>
+        <!--end ad space -->
+
+<!-- ** Menu End ** //-->
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;<br>
+
+    
+
+                    &nbsp;<br>
+                    <img src="/images/common/trans.gif" alt="" width="1" height="150"><br>
+
+              
+
+
+
+                </td>
+                <!-- ** END: Navigation Column ** //-->
+
+                <!-- ** BEGIN: Gutter Column ** //-->
+		<td width="10" nowrap><img src="/images/common/trans.gif" alt="" width="10" height="1"></td>
+                <!-- ** END: Gutter Column ** //-->
+
+                <!-- ** BEGIN: Content Column ** //-->
+                <td width="100%" valign="top">
+
+    
+<script type="text/javascript">
+
+String.prototype.trim = function() {
+        return this.replace(/^\s+|\s+$/g,"");
+}
+String.prototype.ltrim = function() {
+        return this.replace(/^\s+/,"");
+}
+String.prototype.rtrim = function() {
+        return this.replace(/\s+$/,"");
+}
+
+function validate_search() {
+	if (document.search.id.value == "Search JSRs" || document.search.id.value.trim().length == 0) {
+		alert("Search terms must be entered first");
+		return false;
+	}
+	return true;
+}
+
+function validate_findjsr() {
+	if (document.findjsr.id.value == "Search JSRs" || document.findjsr.id.value.trim().length == 0) {
+		alert("Search terms must be entered first");
+		return false;
+	}
+	return true;
+}
+
+function nullify_if_equal(field, str) {
+	// alert("val=" + field.value);
+	if (field.value == str) {
+		field.value = "";
+	}
+}
+
+</script>
+<!-- ** END: header.jsp ** //-->
+
+
+
+
+<div class="header1">Java Users Groups</div>
+
+
+Many Java User Groups (JUG) are already members of the Java Community Process (JCP) program.  Below is a list of current JUGs that are members of the JCP program.  To find out how you can join the JCP program see <a href="http://jcp.org/en/participation/jug">http://jcp.org/en/participation/jug</a>. For more information about Java User Groups see <a href=" https://community.oracle.com/community/java/jug">https://community.oracle.com/community/java/jug</a>.
+<br><br>
+
+<table border="0" cellpadding="0" cellspacing="0">
+	<tr>
+		<td valign="top">
+		</td>
+	<tr>
+		<td>
+<table>
+<tr><td>
+
+<ul>
+<li>Abidjan Java User Group (Cote d'Ivoire)</li>
+<li>AcreJUG (Brazil)</li>
+<li><a href="http://www.alpesjug.org">AlpesJUG</a> (France)</li>
+<li>AmsterdamJUG (Netherlands)</li>
+<li><a href="http://ajug.org">Atlanta Java Users Group</a> (USA)</li>
+<li><a href="http://www.austinjug.org/">AustinJUG</a> (USA) </li>
+<li><a href="https://www.meetup.com/Beirut-Java-User-Group/">Beirut Java User Group</a> (Lebanon)</li>
+<li><a href="http://www.bejug.org">BeJUG</a> (Belgium) </li>
+<li><a href="http://bordeauxjug.org/">BordeauxJUG</a> (France)</li>
+<li><a href="http://www.breizhjug.org">BreizhJUG</a> (Brittany) </li>
+<li><a href="http://bjug.ro">Bucharest Java User Group</a> (Romania) </li>
+<li>Bulgarian JUG (Bulgaria) </li>
+<li><a href="http://community.oracle.com/groups/soujava-campinas-jug">Campinas JUG</a> (Brazil) </li>
+<li><a href="http://www.cejug.org/">Cear&#225; Java User Group - CEJUG</a> (Brazil)</li>
+<li><a href="http://www.cojug.org">Central Ohio Java Users Group</a> (USA)</li>
+<li><a href="http://www.cjug.org">Chicago Java Users Group</a> (USA)</li>
+<li><a href="http://q.weibo.com/1696581">ChinaNanjingJUG</a> (China)</li>
+<li><a href="https://www.coffeejug.org/">Coffee JUG</a> (Ukraine)</li>
+<li>Comunidade Java Grude4J (Brazil)</li>
+<li><a href="https://www.meetup.com/Connecticut-Java-Users-Group/">Connecticut JUG</a> (USA)</li>
+<li>Detroit JUG (USA)</li>
+<li><a href="http://www.dfjug.org/">DFJUG</a> (Brazil)</li>
+<li><a href="http://jduchess.org">Duchess</a> (Women) </li>
+<li><a href="http://esprit-jug.blogspot.com">ESPRIT Tunisian JUG</a> (Tunisia)</li>
+<li><a href="https://community.oracle.com/groups/fasojug">FASOJUG</a> (Burkina Faso)</li>
+<li>GlassFish Users Group Japan (Japan)</li>
+<li>GOjava (Brazil)</li>
+<li><a href="http://greenteajug.cn/">Green Tea JUG</a> (China)</li>
+<li><a href="https://www.facebook.com/gdljug/">Guadalajara Java User Group</a> (Mexico)</li>
+<li><a href="http://www.guate-jug.net/">Guatemala Java Users Group</a> (Guatemala)</li>
+<li><a href="https://www.gujavasc.org/">GUJavaSC</a> (Brazil)</li>
+<li><a href="http://www.hjug.org">Houston JUG</a> (USA)</li>
+<li><a href="http://www.ijug.eu">iJUG e.V.</a> (Germany) </li>
+<li><a href="http://indijava.in/community">IndiJava</a> (India) </li>
+<li><a href="https://www.meetup.com/Istanbul-Java-User-Group/">Istanbul JUG</a> (Turkey) </li>
+<li><a href="https://www.meetup.com/Izmirjug/">Izmir JUG</a> (Turkey) </li>
+<li><a href="http://www.java-users.jp">Japan Java User Group</a> (Japan) </li>
+<li>Java Coders (India) </li>
+<li><a href="https://www.meetup.com/Javaforum-Malmo/">Javaforum Malm&#246;</a> (Sweden) </li>
+<li><a href="http://www.javagruppen.dk/">Javagruppen</a> (Denmark) </li>
+<li><a href="http://www.jhug.gr">Java Hellenic User Group</a> (Greece) </li>
+<li><a href="http://www.jsug.at">Java Student User Group</a> (Vienna) </li>
+<li><a href="http://www.javaup.org.mx/">JavaUP</a> (Mexico)</li>
+<li><a href="http://jroller.com/javawug">Java Web User Group (JavaWUG)</a> (London, England) </li>
+<li><a href="http://www.jozijug.co.za">Jozi JUG</a> (South Africa) </li>
+<li><a href="http://www.jugf.de">Java User Group Frankfurt [JUGF]</a> (Germany) </li>
+<li><a href="http://www.jugth.de">Java User Group Th&#252;ringen</a> (Germany) </li>
+<li><a href="http://jug-berlin-brandenburg.de/">JUG Berlin-Brandenburg</a> (Germany) </li>
+<li>JUG Chennai (India) </li>
+<li>JUG Dortmund (Germany) </li>
+<li><a href="http://www.jug.or.id">JUG Indonesia</a> </li>
+<li>JUG JogLoSemar (Indonesia) </li>
+<li>JUG Ukraine (Ukraine) </li>
+<li>JUG-AFRICA </li>
+<li>JUG-Cologne (Germany) </li>
+<li><a href="http://www.egjug.org">JUG-EG</a> (Egypt) </li>
+<li><a href="http://www.jug.mk">JUG-MK</a> (Macedonia) </li>
+<li>JUG-RU (Russia) </li>
+<li>JUG-USA </li>
+<li><a href="https://kanjava.connpass.com/">KanJava - Kansai Java Engineer Group</a> (Japan)</li>
+<li><a href="https://knoxjava.org/">KnoxJava</a> (USA)</li>
+<li>LagosJUG (Nigeria) </li>
+<li><a href="http://www.meetup.com/Londonjavacommunity">London Java Community</a> (England)</li>
+<li><a href="https://www.meetup.com/madrasjug/">Madras JUG</a> (India)</li>
+<li><a href="http://www.customware.net/repository/display/MyJUG/Home">Malaysia-JUG</a> </li>
+<li>Manchester Java Community (United Kingdom)</li>
+<li><a href="https://medellinjug.org/">Medellin Java Users Group</a> (Colombia)</li>
+<li>MelbJVM (Australia) </li>
+<li><a href="http://moroccojug.org">MoroccoJUG</a> </li>
+<li><a href="http://njug.org">Nashville JUG</a> (USA)</li>
+<li><a href="https://nisjug.org/">NisJUG</a> (Serbia)</li>
+<li>NLJUG (Netherlands)</li>
+<li><a href="http://meetup.com/nycjava">NYCJava</a> (USA)</li>
+<li><a href="http://www.javasig.com">NYJavaSIG</a> (USA)</li>
+<li><a href="http://okcjug.org">Oklahoma City JUG</a> (USA)</li>
+<li>Pakistan JUG (Pakistan)</li>
+<li>Peru JUG (Peru)</li>
+<li>Philly JUG (USA)</li>
+<li>Rio JUG (Brazil) </li>
+<li><a href="http://www.rivierajug.org/xwiki/bin/view/Main/WebHome">Riviera JUG</a> (France) </li>
+<li><a href="http://www.ruhrjug.de">ruhrjug</a> (Germany) </li>
+<li>San Diego Java User's Group (USA) </li>
+<li>SeneJUG (Senegal) </li>
+<li>Silicon Valley JavaFX User Group (USA) </li>
+<li><a href="http://soujava.org.br">SouJava</a> (Brazil) </li>
+<li><a href="http://www.ujug.org">Utah JUG</a> (USA)</li>
+<li><a href="https://www.meetup.com/Utrecht-Java-User-Group/">Utrecht Java User Group</a> (Netherlands)</li>
+<li><a href="http://www.meetup.com/taiwanjug/">TWJUG</a> (Taiwan)</li>
+<li>Vancouver Island Java User Group (Canada)</li>
+<li><a href="http://virtualjug.com/">Virtual JUG</a> (United Kingdom)</li>
+</ul>
+		</td>
+	</tr>
+</table>
+
+
+</td>
+
+</table>
+
+<!-- ** BEGIN: footer.jsp ** //-->
+
+
+
+
+
+
+
+
+</td>
+</tr>
+</table>
+
+<!-- ** END: Content Table ** //-->
+
+<!-- ** BEGIN: Footer Table ** //-->
+
+<div id="footer" style="clear: both;">
+    <div class="footleft">
+        <a href="/en/resources/contacts">Contact Us</a>
+    </div>
+	
+    <div class="botbar"><img src="/images/spacer.gif" alt="" height="23" width="1"></div>
+
+    <div class="footleft2">
+         &copy; 2019, Oracle Corporation and/or its affiliates. 
+        <a href="/en/home/terms">Terms of Use</a>. <a href="http://www.oracle.com/us/legal/privacy/index.html">Privacy Policy</a>. <a href="http://www.oracle.com/us/legal/third-party-trademarks/third-party-trademarks-078568.html">Trademarks</a>
+    </div>
+
+    <div class="footright">
+        <img src="/images/common/logo_oracle_footer.gif" alt="Oracle Corporation" height="22" width="91">
+    </div>
+
+    <div style="clear: both;"><img src="/images/spacer.gif" alt="" height="30" width="1"></div>
+</div>
+
+<!-- ** END: Footer Table ** //-->
+
+
+
+<!-- ** Menu Start ** //-->
+
+
+
+</body>
+</html>
+<!-- ** END: footer.jsp ** //-->
+
+

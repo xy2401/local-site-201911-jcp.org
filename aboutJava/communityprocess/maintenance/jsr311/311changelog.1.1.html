@@ -1,0 +1,605 @@
+
+<!-- ** BEGIN: header.jsp ** //-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3c.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+<head>
+    
+
+   
+    <link href="/includes/css/menu.css" rel="stylesheet" type="text/css"></link>
+    <link href="/includes/css/style.css" rel="stylesheet" type="text/css"></link>
+    <!--[if lt IE 6]><link href="/includes/css/style5.css" rel="stylesheet" type="text/css" ></link><![endif]-->
+    <!--[if gte IE 5]><link href="/includes/css/style6.css" rel="stylesheet" type="text/css" ></link><![endif]-->
+    <link href="/includes/css/tabs.css"  rel="stylesheet" type="text/css"></link>
+
+    <script type="text/javascript" src="/includes/scripts/tabs.js"></script>
+    <script type="text/javascript" src="/includes/scripts/menu.js"></script>
+   
+
+    
+
+    
+        <title>The Java Community Process(SM) Program - communityprocess - maintenance</title>
+    
+
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+
+
+<body onload="P7_initPM(0,1,0,0,-1)">
+
+    <a name="top"></a>
+
+    <div id="header">
+	<div id="logo">
+		<a href="/en/home/index"><img src="/images/spacer.gif" alt="Java Community Process" height="81" width="151"></a>
+	</div>
+	<div id="tools">
+		<div class="search">
+			<form name="search" action="/en/jsr/summary" method="get" onsubmit="return validate_search()">
+				<input name="id" value="Search JSRs" size="16" class="form" onfocus="nullify_if_equal(this, 'Search JSRs')" type="text">
+				<a href="javascript:document.search.submit()" onclick="return validate_search()"><img src="/images/button_go.gif" width="21" height="16" border="0" alt="Submit this Search" name="sub_search"></a>
+			</form>
+		</div>
+		<div class="tools">
+			<a href="/en/press/pressroom">Press Room</a> &nbsp;|&nbsp;
+			<a href="http://java.com/java/download/index.jsp?cid=jdp78399">Get Java Here</a> &nbsp;|&nbsp;
+			<!-- <a href="javascript:void(0)">Print Format</a> &nbsp;|&nbsp;&nbsp; -->
+		</div>
+
+	</div>
+	<div style="clear: right;"></div>
+
+        
+
+	<div class="topbar"><img src="/images/spacer.gif" alt="" height="3" width="154"></div>
+	<div id="update"> </div>
+    </div>
+
+
+    
+
+        <!-- ** BEGIN: Content Table ** //-->
+
+        <table width="100%" border="0" cellpadding="0" cellspacing="0">
+
+            <tr>
+
+                <!-- ** BEGIN: Navigation Column ** //-->
+                <td width="150" id="leftcontent" valign="top">
+                    <!-- Navigation Placeholder //-->
+
+                    
+
+                    <div class="bar"><img src="/images/hr_dots1.gif" alt="" height="3" width="150"></div>
+
+        <!-- begin find JSRs form -->
+        <!-- IMPORTANT! do not convert this form to Struts < html : form > tag.  javascript change of form.action property fails. -->
+        <img src="/images/hd_find-jsrs.gif" alt="Find JSRs" height="18" width="150">
+        <form name="findjsr" action="/en/jsr/summary" method="get" class="pt5" onsubmit="return validate_findjsr()">
+            <input name="id" size="18" class="form" value="Search JSRs" onfocus="nullify_if_equal(this, 'Search JSRs')" type="text">
+	    <a href="javascript:document.findjsr.submit()" onclick="return validate_findjsr()"><img src="/images/button_go.gif" width="21" height="16" border="0" alt="Submit this Search" name="sub_search"></a>
+        </form><br><br>
+
+        <!-- ** Menu Start ** //-->
+
+        <ul id="p7PMnav">
+            <li><a href="/en/jsr/platform">JSRs by Platform</a></li>
+            <li><a href="/en/jsr/tech">JSRs by Technology</a></li>
+            <li><a href="/en/jsr/stage">JSRs by Stage</a></li>
+            <li><a href="/en/jsr/ec">JSRs by Committee</a></li>
+            <li><a href="/en/jsr/all">List of All JSRs</a></li>
+
+            <!--end find JSRs form -->
+            <div style="clear: both;"><img src="/images/spacer.gif" alt="" height="25" width="1"></div>
+
+            <!--begin my JCP -->
+            <img src="/images/hd_my-jcp.gif" alt="My JCP" height="18" width="150">
+            
+
+          <form name="login" method="get" action="/en/user/login" >
+            <input name="Sign-in" type="submit" title="Sign-in" value="Sign-in" />
+          </form>
+
+            <div style="clear:both"><img src="/images/global/spacer.gif" width="1" height="3" alt=""></div>
+            <div class="noNav">
+                <a href="/en/user/register">Register for Site</a>
+            </div>
+
+             <div class="bar"><img src="/images/hr_dots1.gif" alt="" height="3" width="150"></div>
+           <div class="noNav" style="color: #666666; padding: 0;">
+              Use of JCP site is subject to the
+              <a href="/en/home/terms" style="display:inline;padding: 0">JCP Terms of Use</a> and the
+              <a href="http://www.oracle.com/us/legal/privacy/index.html" style="display:inline;padding: 0" href="">Oracle Privacy Policy</a>
+          </div>
+
+            
+
+            <div style="clear:both"><img src="/images/global/spacer.gif" width="1" height="25" alt=""></div>
+
+            <!--begin JCP info -->
+            <img src="/images/hd_jcp-info.gif" alt="JCP Info" height="18" width="150">
+
+            <li><a href="/en/procedures/overview" class="p7PMtrg">About JCP</a>
+                <ul>
+                    <li><a href="/en/procedures/overview">Program Overview</a></li>
+                    <li><a href="/en/procedures/jcp2">JCP Process Document</a></li>
+                    <li><a href="/en/whatsnew/calendar">Calendar</a></li>
+                    <li><a href="/en/participation/members">JCP Members</a></li>
+                    <li><a href="/en/participation/committee">Executive Committee</a></li>
+                    <li><a href="/en/whatsnew/elections">Elections</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/en/participation/overview" class="p7PMtrg">Get Involved</a>
+		<ul>
+                    <li><a href="/en/participation/overview">Overview</a></li>
+                    <li><a href="/en/participation/membership">Becoming a JCP Member</a></li>
+		</ul>
+            </li>
+
+            <li><a href="/en/resources/contents" class="p7PMtrg">Community Resources</a>
+                <ul>
+                    <li><a href="/en/resources/contents">Overview</a></li>
+                    <li><a href="/en/resources/tutorials">Tutorials</a></li>
+                    <li><a href="/en/resources/multimedia">JCP Podcasts</a></li>
+                    <li><a href="/en/resources/guide">Spec Lead Guide</a></li>
+                    <li><a href="/en/resources/tdk">TCK Tool & Info</a></li>
+                    <li><a href="/en/resources/license_reference">License Reference</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/en/press/pmo" class="p7PMtrg">Community News</a>
+                <ul>
+                    <li><a href="/en/press/pmo">News</a></li>
+                    <li><a href="/en/press/news/awards/awards_main">Programs &amp; Awards</a></li>
+                    <li><a href="/en/press/releases">Press Releases</a></li>
+                    <li><a href="/en/press/success">Success Stories</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/en/introduction/faq">FAQ</a></li>
+
+            <li><a href="/en/resources/contacts">Contact Us</a></li>
+
+            <div style="clear: both;"><img src="/images/spacer.gif" alt="" height="25" width="1"></div>
+
+            <!--[if lte IE 6]><style>#p7PMnav a{height:1em;}#p7PMnav li{height:1em;float:left;clear:both;width:100%}</style><![endif]-->
+            <!--[if IE 6]><style>#p7PMnav li{clear:none;}</style><![endif]-->
+            <!--[if IE 7]><style>#p7PMnav a{zoom:100%;}#p7PMnav li{float:left;clear:both;width:100%;}</style><![endif]-->
+        </ul>
+
+        
+
+        <!--begin ad space -->
+        <div class="ads">
+            <a href="http://java.com/java/download/index.jsp?cid=jdp78399" target="_blank"><img style="display: ;" src="/images/ad_banner2.gif" alt="Ad Banner" border="1" height="70" width="150"></a>
+        </div>
+        <!--end ad space -->
+
+<!-- ** Menu End ** //-->
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;<br>
+
+    
+
+                    &nbsp;<br>
+                    <img src="/images/common/trans.gif" alt="" width="1" height="150"><br>
+
+              
+
+
+
+                </td>
+                <!-- ** END: Navigation Column ** //-->
+
+                <!-- ** BEGIN: Gutter Column ** //-->
+		<td width="10" nowrap><img src="/images/common/trans.gif" alt="" width="10" height="1"></td>
+                <!-- ** END: Gutter Column ** //-->
+
+                <!-- ** BEGIN: Content Column ** //-->
+                <td width="100%" valign="top">
+
+    
+<script type="text/javascript">
+
+String.prototype.trim = function() {
+        return this.replace(/^\s+|\s+$/g,"");
+}
+String.prototype.ltrim = function() {
+        return this.replace(/^\s+/,"");
+}
+String.prototype.rtrim = function() {
+        return this.replace(/\s+$/,"");
+}
+
+function validate_search() {
+	if (document.search.id.value == "Search JSRs" || document.search.id.value.trim().length == 0) {
+		alert("Search terms must be entered first");
+		return false;
+	}
+	return true;
+}
+
+function validate_findjsr() {
+	if (document.findjsr.id.value == "Search JSRs" || document.findjsr.id.value.trim().length == 0) {
+		alert("Search terms must be entered first");
+		return false;
+	}
+	return true;
+}
+
+function nullify_if_equal(field, str) {
+	// alert("val=" + field.value);
+	if (field.value == str) {
+		field.value = "";
+	}
+}
+
+</script>
+<!-- ** END: header.jsp ** //-->
+
+
+
+
+
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en">
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8">
+	<title>Changelog for JSR 000311 - JAX-RS 1.1</title>
+<style type="text/css" title="text/css">
+.strike
+{
+	text-decoration: line-through;
+	color: red;
+}
+.insert
+{
+	color: green;
+}
+</style></head>
+<body>
+<h1>Changelog for JSR 000311 - JAX-RS 1.1</h1>
+
+<p>This page details the <!--proposed,--> accepted and deferred changes to JSR 311, documenting the changes that will go into the 1.1 revision, per <a href="http://jcp.org/en/procedures/jcp2#4.2">Section 4.2 of the JCP 2.6 document</a>.</p>
+
+<p>This is a respin of the original 1.1 maintenance release, changes from the originally-approved 1.1 maintenance release are highlighted using red strike-through for deleted text and green for new or replacement text.</p>
+
+<h2>Proposed Changes</h2>
+
+<table border="1">
+  <tr>
+    <th>ID</th>
+    <th>Category</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td>C001</td>
+    <td>EE6</td>
+    <td>
+        Rewrite section <a href="https://jsr311.dev.java.net/nonav/releases/1.0/spec/spec3.html#x3-160002.3.2">2.3.2 Servlet</a> as follows: 
+        <blockquote class="strike">
+            <p>
+                A JAX-RS application is packaged as a Web application in a .war ���le. The Application subclass (see section 2.1), resource classes, and providers are packaged in WEB-INF/classes, required libraries are packaged in WEB-INF/lib. Included libraries MAY also contain resource classes and providers as desired. See the Servlet speci���cation for full details on packaging of web applications.
+            </p>
+            <p>
+                When using a Servlet 3 container, the Application subclass is optional. By default, all root resource classes and providers packaged in the web application MUST be included in the published JAX-RS application. An Application subclass MAY be included in a .war file to override the default behavior. If both getClasses and getSingletons return an empty list then the default set of classes MUST be used. It is RECOMMENDED that implementations support the Servlet 3 framework pluggability mechanism to enable portability between containers and to avail themselves of container-supplied class scanning facilities.
+            </p>
+            <p>
+                When using a non-JAX-RS aware servlet container, the servlet-class or filter-class element of the web.xml descriptor SHOULD name the JAX-RS implementation-supplied Servlet or Filter class respectively. The application-supplied subclass of Application is identi���ed using an init-param with a param-name of javax.ws.rs.Application.
+            </p>
+        </blockquote>
+         
+        <blockquote class="insert">
+            <p>
+                A JAX-RS application is packaged as a Web application in a .war file. The application classes are packaged in WEB-INF/classes or WEB-INF/lib and required libraries are packaged in WEB-INF/lib. See the Servlet specification for full details on packaging of web applications.
+            </p>
+            <p>
+                It is RECOMMENDED that implementations support the Servlet 3 framework pluggability mechanism to enable portability between containers and to avail themselves of container-supplied class scanning facilities. When using the pluggability mechanism the following conditions MUST be met:
+            </p>
+            <ul>
+                <li>
+                    If no Application subclass is present the added servlet MUST be named "javax.ws.rs.core.Application" and all root resource classes and providers packaged in the web application MUST be included in the published JAX-RS application. The application MUST be packaged with a web.xml that specifies a servlet mapping for the added servlet.
+                </li>
+                <li>
+                    If an Application subclass is present and there is already a servlet defined that has a servlet initialization parameter named "javax.ws.rs.Application" whose value is the fully qualified name of the Application subclass then no new servlet should be added by the JAX-RS implementation's ContainerInitializer since the application is already being handled by an existing servlet.
+                </li>
+                <li>
+                    If an application subclass is present that is not being handled by an existing servlet then the servlet added by the ContainerInitializer MUST be named with the fully qualified name of the Application subclass. ��If the Application subclass is annotated with @ApplicationPath and no servlet-mapping exists for the added servlet then a new servlet mapping is added with the value of the @ApplicationPath ��annotation with "/*" appended otherwise the existing mapping is used. If the Application subclass is not annotated with @ApplicationPath then the application MUST be packaged with a web.xml that specifies a servlet mapping for the added servlet. It is an error for more than one Application to be deployed at the same effective servlet mapping
+                </li>
+            </ul>
+            <p>
+                In either of the latter two cases, if both Application#getClasses and Application#getSingletons return an empty list then all root resource classes and providers packaged in the web application MUST be included in the published JAX-RS application. If either getClasses or getSingletons return a non-empty list then only those classes or singletons returned MUST be included in the published JAX-RS application.
+            </p>
+            <p>
+                If not using the Servlet 3 framework pluggability mechanism (e.g. in a pre-Servet 3.0 container), the servlet-class or filter-class element of the web.xml descriptor SHOULD name the JAX-RS implementation-supplied Servlet or Filter class respectively. The application-supplied subclass of Application SHOULD be identied using an init-param with a param-name of javax.ws.rs.Application.
+            </p>
+        </blockquote>
+
+    </td>
+  </tr>
+  <tr>
+    <td>C002</td>
+    <td>EE6</td>
+    <td>
+        Make section <a href="https://jsr311.dev.java.net/nonav/releases/1.0/spec/spec3.html#x3-620006.2">6.2 Java EE Container</a> normative and rewrite as follows: 
+        <blockquote class="strike">
+            <p>
+                This section describes the additional features available to an application hosted in a Java EE 6 container that supports JAX-RS.
+            </p>
+            <p>
+                An implementation MUST support applications packaged as described in section <a href="https://jsr311.dev.java.net/nonav/releases/1.0/spec/spec3.html#x3-160002.3.2">2.3.2 Servlet</a>. An implementation MUST support use of session beans as root resource classes and stateless session and singleton beans as providers in a Web application. JAX-RS annotations MAY be applied to a bean's local interface or directly to a no-interface bean.
+            </p>
+            <p>
+                <b>Note: </b><i>The new java:module JNDI context enables easy lookup of a bean instance given a bean local interface or class name.</i>
+            </p>
+            <p>
+                In a container that also includes support for JSR-299, an implementation MUST support use of JSR-299 beans as root resource classes, providers and as an Application subclass in a Web application. Provider and Application classes MUST use application scope. JAX-RS annotations MAY be directly applied to JSR-299 beans and the JAX-RS implementation MUST use JSR-299 APIs to obtain bean instances.
+            </p>
+        </blockquote>
+         
+        <blockquote class="insert">
+            <p>
+                This section describes the additional requirements that apply to a JAX-RS implementation when combined in a product that supports these other Java specifications:
+            </p>
+            <ul>
+                <li>
+                    In a product that also supports the Servlet specification, implementations MUST support JAX-RS applications that are packaged as a web application. Implementations MUST behave as if built using the Servlet 3 pluggability mechanism, see section 2.3.2.
+                </li>
+                <li>
+                    In a product that also supports Managed Beans, implementations MUST support use of Managed Beans as root resource classes, providers and Application subclasses. In a product that also supports JSR 299, implementations MUST similarly support use of JSR299-style managed beans. Providers and Application subclasses MUST be singletons or use application scope.
+                </li>
+                <li>
+                    In a product that also supports EJB, an implementation MUST support use of stateless and singleton session beans as root resource classes, providers and Application subclasses in a Web application. JAX-RS annotations MAY be applied to a bean���s local interface or directly to a no-interface bean. If an ExceptionMapper for a EJBException or subclass is not included with an application then Exceptions thrown by an EJB resource class or provider method MUST be treated as EJB application exceptions: the embedded cause of the EJBException MUST be unwrapped and processed as described in section 3.3.4.
+                </li>
+            </ul>
+            <p>The following additional requirements apply when using Managed Beans, JSR299-style Managed Beans or EJBs as resource classes, providers or Application subclasses:</p>
+            <ul>
+                <li>Field and property injection of JAX-RS resources MUST be performed prior to the container invoking any @PostConstruct annotated method.</li>
+                <li>Support for constructor injection of JAX-RS resources is OPTIONAL. Portable applications MUST instead use fields or bean properties in conjunction with a @PostConstruct annotated method. Implementations SHOULD warn users about use of non-portable constructor injection.</li>
+                <li>Implementations MUST NOT require use of @Inject or @Resource to trigger injection of JAX-RS annotated fields or properties. Implementations MAY support such usage but SHOULD warn users about non-portability.</li>
+            </ul>
+        </blockquote>
+    </td>
+  </tr>
+  <tr>
+    <td>C003</td>
+    <td>Enhancement</td>
+    <td>See <a href="https://jsr311.dev.java.net/issues/show_bug.cgi?id=55">Issue 55</a>. Clarify handling of empty message bodies for <a href="https://jsr311.dev.java.net/nonav/releases/1.0/spec/spec3.html#x3-460004.2.4">standard message body readers</a>. All bar JAXB will result in an empty (not null) object being passed to the resource method. Using the JAXB entity provider will result in a 400 client error. Add description of how to override default behavior using a custom provider.</td>
+  </tr>
+  <tr>
+    <td>C004</td>
+    <td>Enhancement</td>
+    <td>Add a secondary key to the sort order used when <a href="https://jsr311.dev.java.net/nonav/releases/1.0/spec/spec3.html#x3-440004.2.2">looking for compatible MessageBodyWriters</a> such that writers whose declared generic type is closer in terms of inheritance are sorted earlier than those whose declared generic type is further.</td>
+  </tr>
+  <tr>
+    <td>C005</td>
+    <td>Enhancement</td>
+    <td>Specify that implementations should treat request messages without a specified Content-Type as application/octet-stream. The media type passed to a message body reader will never be null.</td>
+  </tr>
+  <tr>
+    <td>C006</td>
+    <td>Enhancement</td>
+    <td>Require support for static fromString method in addition to existing valueOf method for types used as parameters in resource methods. For backwards compatibility, where both methods exist, valueOf will take precedence except for Enums where the precedence is reversed since every enum defines an implicit valueOf method that cannot be overridden.</td>
+  </tr>
+  <tr>
+    <td>C007</td>
+    <td>Enhancement</td>
+    <td>See <a href="https://jsr311.dev.java.net/issues/show_bug.cgi?id=66">Issue 66</a>. The current precondition-related methods of <a href="https://jsr311.dev.java.net/nonav/releases/1.0/javax/ws/rs/core/Request.html">Request</a> cannot support "If-None-Match: *" which is typically used to prevent a request from being acted upon if a resource already exists at the request URI. Add a new method to Request as follows:
+        <blockquote>
+            <pre>    /**
+     * Evaluate request preconditions for a resource that does not currently
+     * exist. The primary use of this method is to support the {@link &lt;a
+     * href="http://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html#sec14.26"&gt;
+     * If-None-Match: *&lt;/a&gt;} precondition.
+     * 
+     * @return null if the preconditions are met or a ResponseBuilder set with
+     * the appropriate status if the preconditions are not met.
+     * @throws java.lang.IllegalStateException if called outside the scope of
+     * a request
+     */
+    ResponseBuilder evaluatePreconditions();</pre>
+        </blockquote>
+    </td>
+  </tr>
+  <tr>
+    <td>C008</td>
+    <td>Enhancement</td>
+    <td>See <a href="https://jsr311.dev.java.net/issues/show_bug.cgi?id=68">Issue 68</a>. As suggested in the issue, add a new base interface to the Response.Status enum and switch methods of Response and ResponseBuilder that accept a Status to take an instance of the new interface instead. This will allow developers to create new status code enums that work with the API without having to resort to int values.
+    </td>
+  </tr>
+  <tr>
+    <td>C009</td>
+    <td>Enhancement</td>
+    <td>Add an @OPTIONS annotation to complete the set of pre-defined method designators.</td>
+  </tr>
+  <tr class="insert">
+    <td>C010</td>
+    <td>Enhancement</td>
+    <td>Add an @ApplicationPath annotation to allow specification of a resource-wide base URI equivalent to that in web.xml servlet-mapping element.</td>
+  </tr>
+  <tr class="insert">
+    <td>C011</td>
+    <td>Enhancement</td>
+    <td>Add a default implementation of Application#getClasses which returns an empty set to make it easier to include an Application subclass just for the purpose of setting the path prefix.</td>
+  </tr>
+  <tr class="insert">
+    <td>C012</td>
+    <td>Enhancement</td>
+    <td>Add the ability to inject an Application subclass instance into resource classes and providers.</td>
+  </tr>
+  <tr class="insert">
+    <td>C013</td>
+    <td>Enhancement</td>
+    <td>Add support for injection into Application subclasses.</td>
+  </tr>
+  <tr>
+    <td>E001</td>
+    <td>Errata</td>
+    <td>See <a href="https://jsr311.dev.java.net/issues/show_bug.cgi?id=51">Issue 51</a>. Clarify that annotation inheritance applies to annotations on method parameters, not just annotations on methods.</td>
+  </tr>
+  <tr>
+    <td>E002</td>
+    <td>Errata</td>
+    <td>See <a href="https://jsr311.dev.java.net/issues/show_bug.cgi?id=52">Issue 52</a>. Fix typo in Javadoc for Response.notAcceptable(): "vaue"->"value".</td>
+  </tr>
+  <tr>
+    <td>E003</td>
+    <td>Errata</td>
+    <td>See <a href="https://jsr311.dev.java.net/issues/show_bug.cgi?id=53">Issue 53</a>. Fix Javadoc in MessageBodyReader and MessageBodyWriter to refer to Method.getGenericParameterTypes and Method.getParameterAnnotations, currently the documentation currently refers to those as being methods of Class.</td>
+  </tr>
+  <tr>
+    <td>E004</td>
+    <td>Errata</td>
+    <td>See <a href="https://jsr311.dev.java.net/issues/show_bug.cgi?id=56">Issue 56</a>. Fix typo in Javadoc for Providers.getMessageBodyReader: "written"->"read".</td>
+  </tr>
+  <tr>
+    <td>E005</td>
+    <td>Errata</td>
+    <td>See <a href="https://jsr311.dev.java.net/issues/show_bug.cgi?id=57">Issue 57</a>. Add example to Javadoc for MessageBodyReader.readFrom to illustrate difference between type and genericType. Be explicit about where null is allowed.</td>
+  </tr>
+  <tr>
+    <td>E006</td>
+    <td>Errata</td>
+    <td>See <a href="https://jsr311.dev.java.net/issues/show_bug.cgi?id=58">Issue 58</a>. Re-order Javadoc for the parameters of Providers.getMessageBodyReader and Providers.getMessageBodyWriter so that it matches parameter order.</td>
+  </tr>
+  <tr>
+    <td>E007</td>
+    <td>Errata</td>
+    <td>See <a href="https://jsr311.dev.java.net/issues/show_bug.cgi?id=59">Issue 59</a>. Fix security context description in specification to refer to principal rather than principle.</td>
+  </tr>
+  <tr>
+    <td>E008</td>
+    <td>Errata</td>
+    <td>Fix type in CacheControl Javadoc: "empty list of cache extensions"->"empty map of cache extensions".</td>
+  </tr>
+  <tr>
+    <td>E009</td>
+    <td>Errata</td>
+    <td>Clarify that a valueOf method in type used as a resource method parameter must return the same type.</td>
+  </tr>
+  <tr>
+    <td>E010</td>
+    <td>Errata</td>
+    <td>Clarify that a 400 status code should be returned if an exception is raised during @FormParam-annotated parameter construction (appropriate status codes already specified for @PathParam, @QueryParam, @MatrixParam, @HeaderParam and @CookieParam).</td>
+  </tr>
+  <tr>
+    <td>E011</td>
+    <td>Errata</td>
+    <td>Servlet filters may trigger consumption of a request body by accessing request parameters. Clarify that in a servlet container the @FormParam annotation and the <a href="https://jsr311.dev.java.net/nonav/releases/1.0/spec/spec3.html#x3-460004.2.4">standard entity provider for application/x-www-form-urlencoded</a> must obtain their values from the servlet request parameters if the request body has already been consumed. Include a note to the effect that because the servlet APIs do not differentiate between parameters in the URI and body of a request that URI-based query parameters may be included in the entity parameter. </td>
+  </tr>
+  <tr>
+    <td>E012</td>
+    <td>Errata</td>
+    <td>See <a href="https://jsr311.dev.java.net/issues/show_bug.cgi?id=64">Issue 64</a>. Unify the javadoc for the value of @Consumes and @Produces as follows:
+        <blockquote><pre>    /**
+     * A list of media types. Each entry may specify a single type or consist
+     * of a comma separated list of types. E.g. {"image/jpeg,image/gif",
+     * "image/png"}. Use of the comma-separated form allows definition of a
+     * common string constant for use on multiple targets.
+     */
+    String[] value() default "*/*";</pre>
+        </blockquote>
+    </td>
+  </tr>
+  <tr>
+    <td>E013</td>
+    <td>Errata</td>
+    <td>Fix typo in MessageBodyReader Javadoc: "Class.getParameterAnnotations"->"Method.getParameterAnnotations".</td>
+  </tr>
+  <tr class="insert">
+    <td>E014</td>
+    <td>Errata</td>
+    <td>See <a href="https://jsr311.dev.java.net/issues/show_bug.cgi?id=71">Issue 71</a>. Fix typo in Response Javadoc: "303 See Other"->"301 Moved Permanently".</td>
+  </tr>
+</table>
+
+<h2>Accepted Changes</h2>
+
+<p>None.</p>
+
+<h2>Deferred Changes</h2>
+
+<p>None.</p>
+
+</body>
+</html>
+
+
+
+<!-- ** BEGIN: footer.jsp ** //-->
+
+
+
+
+
+
+
+
+</td>
+</tr>
+</table>
+
+<!-- ** END: Content Table ** //-->
+
+<!-- ** BEGIN: Footer Table ** //-->
+
+<div id="footer" style="clear: both;">
+    <div class="footleft">
+        <a href="/en/resources/contacts">Contact Us</a>
+    </div>
+	
+    <div class="botbar"><img src="/images/spacer.gif" alt="" height="23" width="1"></div>
+
+    <div class="footleft2">
+         &copy; 2019, Oracle Corporation and/or its affiliates. 
+        <a href="/en/home/terms">Terms of Use</a>. <a href="http://www.oracle.com/us/legal/privacy/index.html">Privacy Policy</a>. <a href="http://www.oracle.com/us/legal/third-party-trademarks/third-party-trademarks-078568.html">Trademarks</a>
+    </div>
+
+    <div class="footright">
+        <img src="/images/common/logo_oracle_footer.gif" alt="Oracle Corporation" height="22" width="91">
+    </div>
+
+    <div style="clear: both;"><img src="/images/spacer.gif" alt="" height="30" width="1"></div>
+</div>
+
+<!-- ** END: Footer Table ** //-->
+
+
+
+<!-- ** Menu Start ** //-->
+
+
+
+</body>
+</html>
+<!-- ** END: footer.jsp ** //-->
+

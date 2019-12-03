@@ -1,0 +1,651 @@
+
+
+<!-- ** BEGIN: header.jsp ** //-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3c.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+<head>
+    
+
+   
+    <link href="/includes/css/menu.css" rel="stylesheet" type="text/css"></link>
+    <link href="/includes/css/style.css" rel="stylesheet" type="text/css"></link>
+    <!--[if lt IE 6]><link href="/includes/css/style5.css" rel="stylesheet" type="text/css" ></link><![endif]-->
+    <!--[if gte IE 5]><link href="/includes/css/style6.css" rel="stylesheet" type="text/css" ></link><![endif]-->
+    <link href="/includes/css/tabs.css"  rel="stylesheet" type="text/css"></link>
+
+    <script type="text/javascript" src="/includes/scripts/tabs.js"></script>
+    <script type="text/javascript" src="/includes/scripts/menu.js"></script>
+   
+
+    
+
+    
+        <title>The Java Community Process(SM) Program - Community Resources - Spec Lead Guide</title>
+    
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head>
+
+
+
+<body onload="P7_initPM(0,1,0,0,-1)">
+
+    <a name="top"></a>
+
+    <div id="header">
+	<div id="logo">
+		<a href="/ja/home/index"><img src="/images/spacer.gif" alt="Java Community Process" height="81" width="151"></a>
+	</div>
+	<div id="tools">
+		<div class="search">
+			<form name="search" action="/ja/jsr/summary" method="get" onsubmit="return validate_search()">
+				<input name="id" value="Search JSRs" size="16" class="form" onfocus="nullify_if_equal(this, 'Search JSRs')" type="text">
+				<a href="javascript:document.search.submit()" onclick="return validate_search()"><img src="/images/button_go.gif" width="21" height="16" border="0" alt="Submit this Search" name="sub_search"></a>
+			</form>
+		</div>
+		<div class="tools">
+			<a href="/ja/press/pressroom">Press Room</a> &nbsp;|&nbsp;
+			<a href="http://java.com/java/download/index.jsp?cid=jdp78399">Get Java Here</a> &nbsp;|&nbsp;
+			<!-- <a href="javascript:void(0)">Print Format</a> &nbsp;|&nbsp;&nbsp; -->
+		</div>
+
+	</div>
+	<div style="clear: right;"></div>
+
+        
+
+	<div class="topbar"><img src="/images/spacer.gif" alt="" height="3" width="154"></div>
+	<div id="update"> </div>
+    </div>
+
+
+    
+
+        <!-- ** BEGIN: Content Table ** //-->
+
+        <table width="100%" border="0" cellpadding="0" cellspacing="0">
+
+            <tr>
+
+                <!-- ** BEGIN: Navigation Column ** //-->
+                <td width="150" id="leftcontent" valign="top">
+                    <!-- Navigation Placeholder //-->
+
+                    
+
+                    <div class="bar"><img src="/images/hr_dots1.gif" alt="" height="3" width="150"></div>
+
+        <!-- begin find JSRs form -->
+        <!-- IMPORTANT! do not convert this form to Struts < html : form > tag.  javascript change of form.action property fails. -->
+        <img src="/images/hd_find-jsrs.gif" alt="Find JSRs" height="18" width="150">
+        <form name="findjsr" action="/ja/jsr/summary" method="get" class="pt5" onsubmit="return validate_findjsr()">
+            <input name="id" size="18" class="form" value="Search JSRs" onfocus="nullify_if_equal(this, 'Search JSRs')" type="text">
+	    <a href="javascript:document.findjsr.submit()" onclick="return validate_findjsr()"><img src="/images/button_go.gif" width="21" height="16" border="0" alt="Submit this Search" name="sub_search"></a>
+        </form><br><br>
+
+        <!-- ** Menu Start ** //-->
+
+        <ul id="p7PMnav">
+            <li><a href="/ja/jsr/platform">JSRs by Platform</a></li>
+            <li><a href="/ja/jsr/tech">JSRs by Technology</a></li>
+            <li><a href="/ja/jsr/stage">JSRs by Stage</a></li>
+            <li><a href="/ja/jsr/ec">JSRs by Committee</a></li>
+            <li><a href="/ja/jsr/all">List of All JSRs</a></li>
+
+            <!--end find JSRs form -->
+            <div style="clear: both;"><img src="/images/spacer.gif" alt="" height="25" width="1"></div>
+
+            <!--begin my JCP -->
+            <img src="/images/hd_my-jcp.gif" alt="My JCP" height="18" width="150">
+            
+
+          <form name="login" method="get" action="/en/user/login" >
+            <input name="Sign-in" type="submit" title="Sign-in" value="Sign-in" />
+          </form>
+
+            <div style="clear:both"><img src="/images/global/spacer.gif" width="1" height="3" alt=""></div>
+            <div class="noNav">
+                <a href="/en/user/register">Register for Site</a>
+            </div>
+
+             <div class="bar"><img src="/images/hr_dots1.gif" alt="" height="3" width="150"></div>
+           <div class="noNav" style="color: #666666; padding: 0;">
+              Use of JCP site is subject to the
+              <a href="/en/home/terms" style="display:inline;padding: 0">JCP Terms of Use</a> and the
+              <a href="http://www.oracle.com/us/legal/privacy/index.html" style="display:inline;padding: 0" href="">Oracle Privacy Policy</a>
+          </div>
+
+            
+
+            <div style="clear:both"><img src="/images/global/spacer.gif" width="1" height="25" alt=""></div>
+
+            <!--begin JCP info -->
+            <img src="/images/hd_jcp-info.gif" alt="JCP Info" height="18" width="150">
+
+            <li><a href="/ja/procedures/overview" class="p7PMtrg">About JCP</a>
+                <ul>
+                    <li><a href="/ja/procedures/overview">Program Overview</a></li>
+                    <li><a href="/ja/procedures/jcp2">JCP Process Document</a></li>
+                    <li><a href="/ja/whatsnew/calendar">Calendar</a></li>
+                    <li><a href="/ja/participation/members">JCP Members</a></li>
+                    <li><a href="/ja/participation/committee">Executive Committee</a></li>
+                    <li><a href="/ja/whatsnew/elections">Elections</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/ja/participation/overview" class="p7PMtrg">Get Involved</a>
+		<ul>
+                    <li><a href="/ja/participation/overview">Overview</a></li>
+                    <li><a href="/ja/participation/membership">Becoming a JCP Member</a></li>
+		</ul>
+            </li>
+
+            <li><a href="/ja/resources/contents" class="p7PMtrg">Community Resources</a>
+                <ul>
+                    <li><a href="/ja/resources/contents">Overview</a></li>
+                    <li><a href="/ja/resources/tutorials">Tutorials</a></li>
+                    <li><a href="/ja/resources/multimedia">JCP Podcasts</a></li>
+                    <li><a href="/ja/resources/guide">Spec Lead Guide</a></li>
+                    <li><a href="/ja/resources/tdk">TCK Tool & Info</a></li>
+                    <li><a href="/ja/resources/license_reference">License Reference</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/ja/press/pmo" class="p7PMtrg">Community News</a>
+                <ul>
+                    <li><a href="/ja/press/pmo">News</a></li>
+                    <li><a href="/ja/press/news/awards/awards_main">Programs &amp; Awards</a></li>
+                    <li><a href="/ja/press/releases">Press Releases</a></li>
+                    <li><a href="/ja/press/success">Success Stories</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/ja/introduction/faq">FAQ</a></li>
+
+            <li><a href="/ja/resources/contacts">Contact Us</a></li>
+
+            <div style="clear: both;"><img src="/images/spacer.gif" alt="" height="25" width="1"></div>
+
+            <!--[if lte IE 6]><style>#p7PMnav a{height:1em;}#p7PMnav li{height:1em;float:left;clear:both;width:100%}</style><![endif]-->
+            <!--[if IE 6]><style>#p7PMnav li{clear:none;}</style><![endif]-->
+            <!--[if IE 7]><style>#p7PMnav a{zoom:100%;}#p7PMnav li{float:left;clear:both;width:100%;}</style><![endif]-->
+        </ul>
+
+        
+
+        <!--begin ad space -->
+        <div class="ads">
+            <a href="http://java.com/java/download/index.jsp?cid=jdp78399" target="_blank"><img style="display: ;" src="/images/ad_banner2.gif" alt="Ad Banner" border="1" height="70" width="150"></a>
+        </div>
+        <!--end ad space -->
+
+<!-- ** Menu End ** //-->
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;<br>
+
+    
+
+                    &nbsp;<br>
+                    <img src="/images/common/trans.gif" alt="" width="1" height="150"><br>
+
+              
+
+
+
+                </td>
+                <!-- ** END: Navigation Column ** //-->
+
+                <!-- ** BEGIN: Gutter Column ** //-->
+		<td width="10" nowrap><img src="/images/common/trans.gif" alt="" width="10" height="1"></td>
+                <!-- ** END: Gutter Column ** //-->
+
+                <!-- ** BEGIN: Content Column ** //-->
+                <td width="100%" valign="top">
+
+    
+<script type="text/javascript">
+
+String.prototype.trim = function() {
+        return this.replace(/^\s+|\s+$/g,"");
+}
+String.prototype.ltrim = function() {
+        return this.replace(/^\s+/,"");
+}
+String.prototype.rtrim = function() {
+        return this.replace(/\s+$/,"");
+}
+
+function validate_search() {
+	if (document.search.id.value == "Search JSRs" || document.search.id.value.trim().length == 0) {
+		alert("Search terms must be entered first");
+		return false;
+	}
+	return true;
+}
+
+function validate_findjsr() {
+	if (document.findjsr.id.value == "Search JSRs" || document.findjsr.id.value.trim().length == 0) {
+		alert("Search terms must be entered first");
+		return false;
+	}
+	return true;
+}
+
+function nullify_if_equal(field, str) {
+	// alert("val=" + field.value);
+	if (field.value == str) {
+		field.value = "";
+	}
+}
+
+</script>
+<!-- ** END: header.jsp ** //-->
+
+
+
+<P CLASS="headlines">
+<FONT FACE="Arial, Helvetica, sans-serif">
+<FONT COLOR="#666666">Spec Lead Guide</FONT><BR>
+<FONT SIZE="+1" COLOR="#660066"><B>Case Studies</B></FONT>
+</FONT></P>
+
+
+            <p><font face="Arial, Helvetica, sans-serif"><font color="#660066" size="+1"><b>Where the Rubber Meets the Road: JSR 53 Case Study<br>
+              </b></font><font color="#660066"><b><i> <a href="../../jsr/detail?id=53">JSR 
+              53</a></i></b></font></font></p>
+
+
+
+              
+            <p><font face="Arial, Helvetica, sans-serif">Eduardo Pelegri-Llopart and Danny Coward divided work on
+  JSR 53 to produce two closely related specifications on JavaServer
+  Pages (JSP) 1.2 and Java Servlet 2.3 technology. To keep their large
+  group of over 30 global corporate and individual participants on
+  track, the spec leads relied on tools and processes that extended
+  beyond the basic infrastructure provided by the Java Community
+Process<sup><font size="-2">SM</font></sup> (JCP) Program.</font></p>
+
+            <p><font face="Arial, Helvetica, sans-serif">No doubt about it: running an expert group in order to produce a
+  useful Java specification according to the rules and expectations set
+  forth by the JCP is a challenging,
+  time-consuming, creative endeavor. Resulting specifications typically
+  must satisfy demanding commercial interests as well as the open
+  source requirements of independent consultants and book authors.
+ <P> 
+  The JCP's helpful infrastructure can carry an expert group quite far
+  down the road to address these needs. But what happens when an expert
+  group inevitably runs beyond well-marked territory? That is precisely
+  where the rubber meets the road.
+ <P> 
+  <B>Two Heads Better Than One</b>
+ <P> 
+  Some expert groups such as those for the Enterprise JavaBeans<sup><font size="-2">TM</font></sup>
+  specification and for the Java<sup><font size="-2">TM</font></sup> 2 Platform, Enterprise Edition
+(J2EE<sup><font size="-2">TM</font></sup>) platform specification have performed
+  more efficiently when two senior people partnered to run them. With
+  such co-ownership, each leader's particular skills, talents, and
+  experiences can be put to good use. Group members may find a dual
+  leadership more responsive and available, as when one is on vacation,
+  for instance.
+ <P> 
+  Eduardo Pelegri-Llopart and Danny Coward, colleagues at Sun
+  Microsystems, have formed such a partnership in working with JSR 53.
+  In an unusual twist -- approved before an Executive Committee existed
+  to question such unique arrangements -- the JSR 53 expert group is
+  supposed to produce two specifications primarily because the two are
+  closely related, with the JavaServer Pages<sup><font size="-2">TM</font></sup> (JSP(TM))1.2
+specification building on the Java Servlet 2.3
+  specification. Believing it is "much healthier" to keep
+  specifications separate and to create them under different spec
+  leads, Pelegri -- the nominal spec lead who also helped design
+  the JavaBeans<sup><font size="-2">TM</font></sup> 1.0 and led JavaHelp<sup><font size="-2">TM</font></sup> 1.0 technology -- took
+on the JSP 1.2
+  specification while Coward addressed the specification on Java
+  Servlet 2.3 technology.
+ <P> 
+  Pelegri's experiences in leading other expert groups made him
+  well-suited to lead this one, and Coward's previous work on version
+  2.2 of Servlet technology gave him the expertise to guide development
+  of the new version and a marked respect toward the Servlet community.
+  "I understood my job was not to decide the technology myself but to
+  listen to the experts, shepherd their best ideas into the next
+  version of the specification, and make sure they ultimately appeared
+  in the technology in a way that was agreeable to the whole expert
+  group," Coward says.
+ <P> 
+  When it comes to running the group, Pelegri realizes two heads are
+  better than one. "In general, I've found it useful to have Danny
+  around to help with everything, from technical feedback to having a
+  second perspective on feedback from the experts. We have been
+  operating as co-leads from the beginning," says Pelegri. At first,
+  Pelegri did administrative JCP work for both specifications, but now
+  they co-operate as two sub-expert groups with overlapping
+  memberships. "One benefit of our close association is that it is
+  easier to catch conflicts across the specifications," Pelegri says.
+ <P> 
+  <B>Thirty Experts are Better Than Two</B>
+ <P> 
+  Both Servlet and JSP specifications were served by previous expert
+  groups. Everyone still available from those expert groups was invited
+  to rejoin the effort. Others were invited who appeared key to
+  influencing community adoption, such as book authors, open source
+  community members, and consultants who promote and implement the
+  technologies that support them. Every container vendor that supports
+  JSP or Servlet technology was represented, and tool vendors also
+  contributed expertise.
+ <P> 
+  The recruiting resulted in a large, knowledgeable expert group of
+  over 30 participants. "Danny and I accept the tradeoff that a large
+  expert group helps with adoption, even though it might be a bit
+  harder to manage," Pelegri notes. The difficulty in managing the
+  group stems from the experts' uneven participation, which varies
+  depending on product cycles, the need for their professional
+  expertise, fluctuations in their personal or corporate interest, and
+  other things. Some stay involved continuously, but others jump in
+  only towards the end.
+ <P> 
+  Nevertheless, handling a large number of members is a small price to
+  pay when the result must be a high quality specification. As Pelegri
+  puts it, "The strength of the specification follows from the
+  diversity of the expert group membership."
+ <P> 
+  <B>Email Essential for Large Group</b>
+ <P> 
+  During each JavaOne, JSR 53 experts are encouraged to mix and mingle
+  over a beer. This yearly informal gathering has been effective in
+  connecting faces with email addresses. A serious face-to-face meeting
+  of everyone would be hard to pull off, and with such a large group,
+  teleconferences are also clearly nonworkable. Instead, the group
+  communicates by email, generating at times of high activity more than
+  100 messages a week.
+ <P> 
+  While many participants are used to extended email conversations,
+  senior employees who rely on conventional meetings typically feel
+  overwhelmed by the prolific email threads, Pelegri observes. In fact,
+  it took a while for the group as a whole to hit their communication
+  stride. To help people with a low tolerance for reading email, the
+  spec leads encouraged experts to communicate directly with the lead
+  rather than the entire group. Coward and Pelegri quickly learned that
+  members in the open source community preferred to air their thoughts
+  openly. Soon, the spec leads began encouraging the group-wide dialog,
+  and they assumed the extra task of shaping discussions by emailing
+  regular summaries to keep every member informed.
+ <P> 
+  The summaries, discretely organized by topic and identified as
+  'Summary of Topic X' in the email header, helped both chatty and
+  reticent participants. Another helpful protocol was to label messages
+  relating only to one spec as 'JSP' or 'Servlet' to aid those
+ restricting their efforts to just one specification. Some experts
+  told Coward how much they appreciated how his summaries kept them
+  informed without having to read everything.
+ <P> 
+  Pelegri was pleased with the group's congenial attitude. "In some
+  cases opinionated, overall they try to do the right thing for the
+  specification and the platform. In most cases they are quite willing
+  to share information with each other," says Pelegri.
+ <P> 
+  Although experts are encouraged to email the group-wide alias for
+  issues relevant to everyone, they are still allowed to send private
+  messages to the spec lead alias. That alias goes to four people, Sun
+ employees all: Pelegri, Coward, and the two leads for the Reference
+  Implementation (RI) development team -- Craig McClanahan for the
+  Servlet container and Pierre Delisle for the JSP component.
+ <P> 
+  Email sent to the private alias is not visible to other experts. To
+  keep participants from assuming that silence on the group alias means
+  there is no feedback on a topic, and to maintain momentum, the
+  leaders send summaries of feedback they receive, regardless of the
+  source. Their summaries may also include decisions and their
+ justification, status reports, and pointers to new specification
+  drafts posted to the group's private web site.
+ <P> 
+  All email is saved to record the history of specification
+  development. Email sent to the -experts groupwide alias is archived
+  on the group's password-protected public web site while messages sent
+  to the -leads alias are auto-archived for the benefit of the four
+ leaders. On their own systems, the leaders each keep track of email
+  sent directly to them by those circumventing the -leads alias.
+ <P>
+  <B>Email Poses Unique Challenges</b>
+ <P> 
+  Email may be an essential venue for communication, but it also poses
+  some unique challenges for a spec lead. The sheer volume of email can
+  be difficult to handle at times. "With a larger group, there is more
+  feedback and more opportunity for people to complain," says Pelegri,
+  but eventually experts come to know each other's personal styles well
+  enough to maintain perspective and focus.
+ <P> 
+  Occasionally an email will trigger a large shower of messages.
+  Pelegri explains, "If you go away for some period like a long
+  weekend, you may come back to a number of mail messages that may have
+  changed the direction of a discussion that you as spec lead had
+ carefully worked on." Often when discussion gets hyper-active, people
+  dive into irrelevant topics in a general free-for-all, Coward says,
+  and that is when he sends out a summary message to refocus discussion
+  into what is important.
+ <P> 
+
+According to Coward, another email challenge stems from the wide
+  range in depth of response. Some experts will spend a week mulling
+  over an idea and discussing it with colleagues before mailing their
+  conclusions in a detailed, thoughtful reply. Other participants may
+simply send a comment of "Yep. It's
+  fine." or "No, I don't like that-could we change it?" The spec lead
+  makes sure ideas of all experts get a fair hearing, whether presented
+  formally or in conversation.
+ <P> 
+  Spec leads of larger groups have greater difficulty tracking people
+  who do not respond to direct questions. "The experts we have are
+  normally very close to the battlefield, so when they get busy because
+ they are close to a deadline, it's hard to get them to respond. What
+  I have to do is ping them," says Pelegri. What's easy for a group of
+  six, is logistically impossible for a large group. If Pelegri feels
+  he must know what members think, he sends a reminder notice. If that
+  doesn't work, he asks specific individuals who have particular
+  expertise relevant to the topic he's pursuing.
+ <P> 
+  Occasionally spec leads ask those outside the expert group who have
+  expertise but who aren't members. "I have to be careful not to expose
+  private information that is happening in the expert group, but in
+ some cases there clearly is no privacy issue," says Pelegri, such as
+  his own ideas that he's already discussed with the group at large. If
+ in doubt, Pelegri consults the expert group about for advice.
+ <P> 
+  <B>Web Site Infrastructure</b>
+ <P> 
+  While email is the avenue for multi-expert conversation, web sites
+  are useful places to sort and catalog various kinds of data. The
+  JCP-supplied page http://jcp.org/jsr/detail/53.jsp allows Pelegri
+  and Coward to post messages to their team, but there's no way to add
+  related pages yet.
+ <P> 
+  More interesting is the group's own homegrown web site. "We started
+  way before there was anything provided by the JCP. Some of the things
+  [such as providing web sites] that the JCP is doing are because we
+  did them, and they thought they were good ideas," says Pelegri. Here,
+  spec leads post new drafts for review, then send go-get-it email.
+  Members can also access status reports, and all drafts and errata, as
+ well as lists of members, features to be included, pieces remaining
+  for each feature area, outstanding issues, and decisions made. On the
+  lighter side, pictures of social interactions at JavaOne and photos
+  of individual experts are also posted there.
+<P>
+
+ <table width="360" border="0" cellspacing="0" cellpadding="8" align="right">
+              <tr> 
+                <td valign="top"> 
+                  <table width="99%" border="1" cellspacing="0" cellpadding="5" bordercolor="#003399">
+                    <tr> 
+                      <td valign="top"> 
+                        <div align="left"> 
+                          <p><font face="Arial, Helvetica, sans-serif"><b>On Pictures</b></p>
+                          <P>Since they don't have formal face to face meetings, Pelegri
+  encourages people to send pictures of themselves. "It's hard to get
+  people to do it, but it's very convenient to be able to put a face
+  and a name and a style together," he says.<P><img src="/images/resources/53experts.jpg"%>" valign=top halign=center alt="JSR 53 Expert Group" vspace="10" hspace="10"></div>
+                        </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            </table>
+
+The web site has turned out to be instrumental in helping orient the
+  expert group. Coward understands that people need a picture of where
+  they are, where they're headed, what open issues remain, and target
+  dates for concluding discussion. "We used this web site
+  infrastructure to provide a compass for the unknown terrain we were
+ navigating," he says. The lists on the web site also serve to assure
+  any expert anxious about resolving a particular feature or issue that
+  it has not been forgotten and will eventually be addressed.
+ <P> 
+ <B> Test Balloons Enable Consensual Decision-Making</b>
+ <P> 
+  Eventually, issues must resolve into decisions, but that doesn't
+  happen automatically. "If summary emails were the only technique a
+  spec lead used in an expert group, nothing would ever get decided,"
+  says Coward. He maintains the answer lies not in adopting formal
+ voting rules, but in floating test balloons to the group. When
+  discussion had churned long enough, Coward would summarize
+  discussions on a topic, identify solutions to a problem, list his own
+  pros and cons for each known option, and indicate the direction he
+  considered most useful.
+ <P> 
+  "I kind of test the expert group and see if anyone likes [the
+  suggested direction] or sees problems with it," Coward explains.
+  Frequently, the test balloon would mobilize the experts into
+  consensus. Such methods worked so well for Coward that only once did
+  the experts' opinions split evenly, requiring him to bang the gavel
+  and make a final decision for the group. "Making people aware of the
+  thought processes behind decisions helps build consensus very
+  effectively," Coward says.
+ <P> 
+ <B> Share Dates to Stay on Schedule</b>
+ <P> 
+  Coward believes the most important tool for meeting deadlines is to
+  keep the entire group informed when drafts are due. If a draft is
+  three weeks away, and many issues remain on the table, Coward
+  suggests sending a message that rallies the troops around the
+  schedule. "If no one knows you're targeting a date, they won't make
+  the concerted effort to address the issues. But if people know the
+ schedule, they'll work together as a community," Coward says.
+ <P> 
+  Experts also need to understand what a draft requires. If a spec lead
+  says, "We're going to release a public draft in two weeks' time"
+  experts might panic, knowing some areas of the spec haven't been
+  completed. Because experts don't know the metric for draft readiness,
+  they might fail to realize that drafts required by the JCP don't
+  necessarily have to be entirely complete. Coward recommends that a
+  spec lead allay fears by adding some perspective, as in, "Don't
+  worry. We don't have to get through all of these issues by then, but
+  I think these pieces are most important. Does everyone agree?"
+ <P> 
+ <B> Looking Ahead</B>
+ <P> 
+  Because JSR 53 is subordinate to the J2EE 1.3 platform "umbrella
+  spec" JSR 58, neither the JSP spec nor the Servlet spec can go final
+  until all other specifications related to J2EE -- including
+  J2EE Connector Architecture 1.0 JSR 16 and Enterprise JavaBeans 2.0
+JSR 19 -- are also
+  ready for release.
+ <P> 
+  When the specifications go final, Pelegri and Coward are confident
+  they will be well-received. "Thirty heads are better than two,"
+  Coward still believes. "We work with very bright, very dedicated
+  people. If we can get this group to agree on the technology, we can
+  be pretty sure that we're doing the right thing." Since these key
+  industry leaders and book authors have been involved from the start,
+  the entire community can grasp and employ the technology more
+  quickly. "They understand the specification, they can evangelize it,
+  they can explain it, and they can quickly incorporate it into their
+  products," Coward says.
+ <P> 
+  Eventually, the specifications will undergo another cycle of
+  revision. Already, the expert group has begun to think ahead to what
+  will be enhanced in the next versions. In terms of process, however,
+  Pelegri and Coward have decided to split up the expert group. "At
+  first, we thought it would be a bit easier on our resources to deal
+  with Servlet and JSP in the same expert group. For next time, though,
+  we've decided to divide into two separate expert groups," says
+  Pelegri, partly to reduce email traffic somewhat as well as to
+  forestall potential difficulties with persuading the Executive
+  Committee to approve such a unique setup.
+
+<P>
+           
+            
+            <font face="Arial, Helvetica, sans-serif"><a href="../../jsr/detail?id=53">JSR 
+            53 Home Page</a> </font>
+
+<!-- ** BEGIN: footer.jsp ** //-->
+
+
+
+
+
+
+
+
+</td>
+</tr>
+</table>
+
+<!-- ** END: Content Table ** //-->
+
+<!-- ** BEGIN: Footer Table ** //-->
+
+<div id="footer" style="clear: both;">
+    <div class="footleft">
+        <a href="/en/resources/contacts">Contact Us</a>
+    </div>
+	
+    <div class="botbar"><img src="/images/spacer.gif" alt="" height="23" width="1"></div>
+
+    <div class="footleft2">
+         &copy; 2019, Oracle Corporation and/or its affiliates. 
+        <a href="/en/home/terms">Terms of Use</a>. <a href="http://www.oracle.com/us/legal/privacy/index.html">Privacy Policy</a>. <a href="http://www.oracle.com/us/legal/third-party-trademarks/third-party-trademarks-078568.html">Trademarks</a>
+    </div>
+
+    <div class="footright">
+        <img src="/images/common/logo_oracle_footer.gif" alt="Oracle Corporation" height="22" width="91">
+    </div>
+
+    <div style="clear: both;"><img src="/images/spacer.gif" alt="" height="30" width="1"></div>
+</div>
+
+<!-- ** END: Footer Table ** //-->
+
+
+
+<!-- ** Menu Start ** //-->
+
+
+
+</body>
+</html>
+<!-- ** END: footer.jsp ** //-->
+

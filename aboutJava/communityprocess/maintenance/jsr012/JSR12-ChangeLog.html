@@ -1,0 +1,643 @@
+
+<!-- ** BEGIN: header.jsp ** //-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3c.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+<head>
+    
+
+   
+    <link href="/includes/css/menu.css" rel="stylesheet" type="text/css"></link>
+    <link href="/includes/css/style.css" rel="stylesheet" type="text/css"></link>
+    <!--[if lt IE 6]><link href="/includes/css/style5.css" rel="stylesheet" type="text/css" ></link><![endif]-->
+    <!--[if gte IE 5]><link href="/includes/css/style6.css" rel="stylesheet" type="text/css" ></link><![endif]-->
+    <link href="/includes/css/tabs.css"  rel="stylesheet" type="text/css"></link>
+
+    <script type="text/javascript" src="/includes/scripts/tabs.js"></script>
+    <script type="text/javascript" src="/includes/scripts/menu.js"></script>
+   
+
+    
+
+    
+        <title>The Java Community Process(SM) Program - communityprocess - maintenance</title>
+    
+
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+
+
+<body onload="P7_initPM(0,1,0,0,-1)">
+
+    <a name="top"></a>
+
+    <div id="header">
+	<div id="logo">
+		<a href="/en/home/index"><img src="/images/spacer.gif" alt="Java Community Process" height="81" width="151"></a>
+	</div>
+	<div id="tools">
+		<div class="search">
+			<form name="search" action="/en/jsr/summary" method="get" onsubmit="return validate_search()">
+				<input name="id" value="Search JSRs" size="16" class="form" onfocus="nullify_if_equal(this, 'Search JSRs')" type="text">
+				<a href="javascript:document.search.submit()" onclick="return validate_search()"><img src="/images/button_go.gif" width="21" height="16" border="0" alt="Submit this Search" name="sub_search"></a>
+			</form>
+		</div>
+		<div class="tools">
+			<a href="/en/press/pressroom">Press Room</a> &nbsp;|&nbsp;
+			<a href="http://java.com/java/download/index.jsp?cid=jdp78399">Get Java Here</a> &nbsp;|&nbsp;
+			<!-- <a href="javascript:void(0)">Print Format</a> &nbsp;|&nbsp;&nbsp; -->
+		</div>
+
+	</div>
+	<div style="clear: right;"></div>
+
+        
+
+	<div class="topbar"><img src="/images/spacer.gif" alt="" height="3" width="154"></div>
+	<div id="update"> </div>
+    </div>
+
+
+    
+
+        <!-- ** BEGIN: Content Table ** //-->
+
+        <table width="100%" border="0" cellpadding="0" cellspacing="0">
+
+            <tr>
+
+                <!-- ** BEGIN: Navigation Column ** //-->
+                <td width="150" id="leftcontent" valign="top">
+                    <!-- Navigation Placeholder //-->
+
+                    
+
+                    <div class="bar"><img src="/images/hr_dots1.gif" alt="" height="3" width="150"></div>
+
+        <!-- begin find JSRs form -->
+        <!-- IMPORTANT! do not convert this form to Struts < html : form > tag.  javascript change of form.action property fails. -->
+        <img src="/images/hd_find-jsrs.gif" alt="Find JSRs" height="18" width="150">
+        <form name="findjsr" action="/en/jsr/summary" method="get" class="pt5" onsubmit="return validate_findjsr()">
+            <input name="id" size="18" class="form" value="Search JSRs" onfocus="nullify_if_equal(this, 'Search JSRs')" type="text">
+	    <a href="javascript:document.findjsr.submit()" onclick="return validate_findjsr()"><img src="/images/button_go.gif" width="21" height="16" border="0" alt="Submit this Search" name="sub_search"></a>
+        </form><br><br>
+
+        <!-- ** Menu Start ** //-->
+
+        <ul id="p7PMnav">
+            <li><a href="/en/jsr/platform">JSRs by Platform</a></li>
+            <li><a href="/en/jsr/tech">JSRs by Technology</a></li>
+            <li><a href="/en/jsr/stage">JSRs by Stage</a></li>
+            <li><a href="/en/jsr/ec">JSRs by Committee</a></li>
+            <li><a href="/en/jsr/all">List of All JSRs</a></li>
+
+            <!--end find JSRs form -->
+            <div style="clear: both;"><img src="/images/spacer.gif" alt="" height="25" width="1"></div>
+
+            <!--begin my JCP -->
+            <img src="/images/hd_my-jcp.gif" alt="My JCP" height="18" width="150">
+            
+
+          <form name="login" method="get" action="/en/user/login" >
+            <input name="Sign-in" type="submit" title="Sign-in" value="Sign-in" />
+          </form>
+
+            <div style="clear:both"><img src="/images/global/spacer.gif" width="1" height="3" alt=""></div>
+            <div class="noNav">
+                <a href="/en/user/register">Register for Site</a>
+            </div>
+
+             <div class="bar"><img src="/images/hr_dots1.gif" alt="" height="3" width="150"></div>
+           <div class="noNav" style="color: #666666; padding: 0;">
+              Use of JCP site is subject to the
+              <a href="/en/home/terms" style="display:inline;padding: 0">JCP Terms of Use</a> and the
+              <a href="http://www.oracle.com/us/legal/privacy/index.html" style="display:inline;padding: 0" href="">Oracle Privacy Policy</a>
+          </div>
+
+            
+
+            <div style="clear:both"><img src="/images/global/spacer.gif" width="1" height="25" alt=""></div>
+
+            <!--begin JCP info -->
+            <img src="/images/hd_jcp-info.gif" alt="JCP Info" height="18" width="150">
+
+            <li><a href="/en/procedures/overview" class="p7PMtrg">About JCP</a>
+                <ul>
+                    <li><a href="/en/procedures/overview">Program Overview</a></li>
+                    <li><a href="/en/procedures/jcp2">JCP Process Document</a></li>
+                    <li><a href="/en/whatsnew/calendar">Calendar</a></li>
+                    <li><a href="/en/participation/members">JCP Members</a></li>
+                    <li><a href="/en/participation/committee">Executive Committee</a></li>
+                    <li><a href="/en/whatsnew/elections">Elections</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/en/participation/overview" class="p7PMtrg">Get Involved</a>
+		<ul>
+                    <li><a href="/en/participation/overview">Overview</a></li>
+                    <li><a href="/en/participation/membership">Becoming a JCP Member</a></li>
+		</ul>
+            </li>
+
+            <li><a href="/en/resources/contents" class="p7PMtrg">Community Resources</a>
+                <ul>
+                    <li><a href="/en/resources/contents">Overview</a></li>
+                    <li><a href="/en/resources/tutorials">Tutorials</a></li>
+                    <li><a href="/en/resources/multimedia">JCP Podcasts</a></li>
+                    <li><a href="/en/resources/guide">Spec Lead Guide</a></li>
+                    <li><a href="/en/resources/tdk">TCK Tool & Info</a></li>
+                    <li><a href="/en/resources/license_reference">License Reference</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/en/press/pmo" class="p7PMtrg">Community News</a>
+                <ul>
+                    <li><a href="/en/press/pmo">News</a></li>
+                    <li><a href="/en/press/news/awards/awards_main">Programs &amp; Awards</a></li>
+                    <li><a href="/en/press/releases">Press Releases</a></li>
+                    <li><a href="/en/press/success">Success Stories</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/en/introduction/faq">FAQ</a></li>
+
+            <li><a href="/en/resources/contacts">Contact Us</a></li>
+
+            <div style="clear: both;"><img src="/images/spacer.gif" alt="" height="25" width="1"></div>
+
+            <!--[if lte IE 6]><style>#p7PMnav a{height:1em;}#p7PMnav li{height:1em;float:left;clear:both;width:100%}</style><![endif]-->
+            <!--[if IE 6]><style>#p7PMnav li{clear:none;}</style><![endif]-->
+            <!--[if IE 7]><style>#p7PMnav a{zoom:100%;}#p7PMnav li{float:left;clear:both;width:100%;}</style><![endif]-->
+        </ul>
+
+        
+
+        <!--begin ad space -->
+        <div class="ads">
+            <a href="http://java.com/java/download/index.jsp?cid=jdp78399" target="_blank"><img style="display: ;" src="/images/ad_banner2.gif" alt="Ad Banner" border="1" height="70" width="150"></a>
+        </div>
+        <!--end ad space -->
+
+<!-- ** Menu End ** //-->
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;<br>
+
+    
+
+                    &nbsp;<br>
+                    <img src="/images/common/trans.gif" alt="" width="1" height="150"><br>
+
+              
+
+
+
+                </td>
+                <!-- ** END: Navigation Column ** //-->
+
+                <!-- ** BEGIN: Gutter Column ** //-->
+		<td width="10" nowrap><img src="/images/common/trans.gif" alt="" width="10" height="1"></td>
+                <!-- ** END: Gutter Column ** //-->
+
+                <!-- ** BEGIN: Content Column ** //-->
+                <td width="100%" valign="top">
+
+    
+<script type="text/javascript">
+
+String.prototype.trim = function() {
+        return this.replace(/^\s+|\s+$/g,"");
+}
+String.prototype.ltrim = function() {
+        return this.replace(/^\s+/,"");
+}
+String.prototype.rtrim = function() {
+        return this.replace(/\s+$/,"");
+}
+
+function validate_search() {
+	if (document.search.id.value == "Search JSRs" || document.search.id.value.trim().length == 0) {
+		alert("Search terms must be entered first");
+		return false;
+	}
+	return true;
+}
+
+function validate_findjsr() {
+	if (document.findjsr.id.value == "Search JSRs" || document.findjsr.id.value.trim().length == 0) {
+		alert("Search terms must be entered first");
+		return false;
+	}
+	return true;
+}
+
+function nullify_if_equal(field, str) {
+	// alert("val=" + field.value);
+	if (field.value == str) {
+		field.value = "";
+	}
+}
+
+</script>
+<!-- ** END: header.jsp ** //-->
+
+
+
+
+
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2//EN">
+<HTML>
+<HEAD>
+	<META HTTP-EQUIV="CONTENT-TYPE" CONTENT="text/html; charset=iso-8859-1">
+	<TITLE>JDO 1.0.1 </TITLE>
+	<META NAME="GENERATOR" CONTENT="StarOffice 6.0  (Solaris Sparc)">
+	<META NAME="CREATED" CONTENT="20020911;8345000">
+	<META NAME="CHANGED" CONTENT="20030123;10574400">
+	<META NAME="KEYWORDS" CONTENT="documentation engineering ">
+</HEAD>
+<BODY LANG="en-US">
+<H1>JDO 1.0.1 Change Log</H1>
+<TABLE WIDTH=100% BORDER=1 CELLPADDING=4 CELLSPACING=3>
+	<COL WIDTH=74*>
+	<COL WIDTH=182*>
+	<THEAD>
+		<TR VALIGN=TOP>
+			<TH WIDTH=29%>
+				<P ALIGN=LEFT STYLE="font-style: normal">Revision</P>
+			</TH>
+			<TD WIDTH=71% SDVAL="1" SDNUM="1033;0;@">
+				<P ALIGN=LEFT>1.0</P>
+			</TD>
+		</TR>
+	</THEAD>
+	<TBODY>
+		<TR VALIGN=TOP>
+			<TH WIDTH=29%>
+				<P ALIGN=LEFT STYLE="font-style: normal">Author</P>
+			</TH>
+			<TD WIDTH=71%>
+				<P>Craig Russell</P>
+			</TD>
+		</TR>
+		<TR VALIGN=TOP>
+			<TH WIDTH=29%>
+				<P ALIGN=LEFT STYLE="font-style: normal">Status</P>
+			</TH>
+			<TD WIDTH=71%>
+				<P>Draft</P>
+			</TD>
+		</TR>
+		<TR>
+			<TH WIDTH=29% VALIGN=TOP>
+				<P ALIGN=LEFT STYLE="font-style: normal">Created</P>
+			</TH>
+			<TD WIDTH=71% VALIGN=BOTTOM SDVAL="37582" SDNUM="1033;0;D-MMM-YYYY">
+				<P ALIGN=LEFT>22-Nov-2002</P>
+			</TD>
+		</TR>
+		<TR>
+			<TH WIDTH=29% VALIGN=TOP>
+				<P ALIGN=LEFT>Revised</P>
+			</TH>
+			<TD WIDTH=71% VALIGN=BOTTOM SDVAL="37644" SDNUM="1033;0;D-MMM-YYYY">
+				<P ALIGN=LEFT>23-Jan-2003</P>
+			</TD>
+		</TR>
+		<TR VALIGN=TOP>
+			<TH WIDTH=29%>
+				<P ALIGN=LEFT>URL</P>
+			</TH>
+			<TD WIDTH=71%>
+				<P>http://access1.sun.com/JDO101.html</P>
+			</TD>
+		</TR>
+		<TR VALIGN=TOP>
+			<TH WIDTH=29%>
+				<P ALIGN=LEFT>File</P>
+			</TH>
+			<TD WIDTH=71%>
+				<P>/home/clr/public_html/JDO/jdo/JDO101.html</P>
+			</TD>
+		</TR>
+	</TBODY>
+</TABLE>
+<P STYLE="margin-top: 0.17in; page-break-after: avoid"><FONT FACE="Albany, sans-serif"><FONT SIZE=4>Executive
+Summary</FONT></FONT></P>
+<P>This document describes the maintenance release of JDO, to be
+called JDO 1.0.1.</P>
+<P STYLE="margin-top: 0.17in; page-break-after: avoid"><FONT FACE="Albany, sans-serif"><FONT SIZE=4>Objectives</FONT></FONT></P>
+<P>Since the release of JDO 1.0, several errata and clarifications
+have been made to the specification, the reference implementation,
+and technology compatibility kit.</P>
+<P>The maintenance release of JDO addresses the updates in all three
+areas.</P>
+<hr><h2>PROPOSED CHANGES</h2>
+<P STYLE="margin-top: 0.17in; page-break-after: avoid"><FONT SIZE=4><FONT FACE="Albany, sans-serif">Specification
+Updates</FONT></FONT></P>
+<P>Fixed typo in 5.5.6. Changed &quot;The instance loses its JDO
+Identity and its association with the PersistenceManager.&quot; to
+&quot;The instance retains its JDO Identity and its association with
+the PersistenceManager.&quot;</P>
+<P>In 5.4.1 changed the wording regarding field types of application
+identity key fields to require portable applications to use only
+primitive, String, Date, and Number types.</P>
+<P>In 5.4.1 added a restriction that application object id instances
+must not have any key fields with a value of null.</P>
+<P>Added to 5.6.1 that the PersistenceManager must not hold a strong
+reference to a persistent-nontransactional instance, so that it may
+be garbage collected.</P>
+<P>In 5.8, clarified that a before image might be created on update
+depending on the implementation of optimistic verification. 
+</P>
+<P>Corrected table 2 for rollback entries; changed the flag that
+affects the operation from retainValues to restoreValues.</P>
+<P>In Figure 13 Note 23, fixed &quot;A persistent-dirty instance
+transitions to persistent-nontransactional... at rollback when
+RestoreValues set to true.&quot;</P>
+<P>Clarified 6.3 to discuss the treatment of Second Class Objects
+embedded in First Class Objects. SCO instances of PersistenceCapable
+types have no standard treatment.</P>
+<P>In 8.5, fixed missing property
+javax.jdo.option.ConnectionDriverName in JDOHelper list of standard
+properties for getPersistenceManagerFactory.</P>
+<P>Added new section 9.5 for new security checking for StateManager.
+The new authorization strategy does not require that the
+persistence-capable classes be authorized for
+JDOPermission(&quot;setStateManager&quot;).</P>
+<P>Fixed 10.3 the description of jdoPreClear does not include deleted
+instances, as these instances do not transition to hollow.</P>
+<P>Fixed typos in 11.2, 12.6.5: changed &quot;JDODatastoreException&quot;
+to &quot;JDODataStoreException&quot; 
+</P>
+<P>Inserted new 11.4 to add PersistenceManagerFactory close method.</P>
+<P>Added to 12.6 &quot;If the current transaction is active, close()
+throws JDOUserException.&quot;</P>
+<P>In 12.6.1, added new methods retrieveAll (Collection, boolean) and
+retrieveAll (Object[], boolean).</P>
+<P>In 12.6.1, clarified the description of retrieve.</P>
+<P>In 12.6.4, clarified the description of getExtent to throw
+JDOUserException if the metadata does not require an extent to be
+maintained.</P>
+<P>In 12.6.5, changed code example from
+aPersistenceManager.getObjectById
+(pc.getPersistenceManager().getObjectId(pc), validate) to
+aPersistenceManager.getObjectById (JDOHelper.getObjectId(pc),
+validate). This avoids using the PersistenceCapable interface from
+user code.</P>
+<P>In 12.6.5, changed the exception thrown by getObjectById to
+JDOObjectNotFoundException.</P>
+<P>In 12.6.6, clarified description of makeTransient to make clear
+that the persistence manager is not responsible for clearing
+references to parameter instances to avoid making them persistent by
+reachability at commit.</P>
+<P>In 12.6.6, clarified description of makeTransactional to include
+throwing JDOUnsupportedOptionException if a parameter is transient
+but TransientTransactional is not supported.</P>
+<P>Fixed typo in 13.4.2. Changed &quot;The retainValues setting
+currently active is returned.&quot; to &quot;The restoreValues
+setting currently active is returned.&quot;</P>
+<P>Fixed typo in 13.4.2. Changed &quot;If this flag is set to true,
+then restoration of persistent instances does not take place after
+transaction rollback.&quot; to &quot;If this flag is set to true,
+then restoration of persistent instances takes place after
+transaction rollback.&quot;</P>
+<P>Corrected 13.4.3 to remove the requirement that Transaction must
+implement javax.transaction.Synchronization.</P>
+<P>In 13.5, changed the behavior of failed optimistic transactions.
+The commit method throws a JDOOptimisticVerificationException and
+automatically rolls back the transaction.</P>
+<P>Clarified 14.3 that variable declarations each require a type and
+a name, and there must be separating semicolons only if more than one
+declaration.</P>
+<P>Clarified 14.3 that &quot;candidate instances&quot; are a subset
+of the candidate collection that are instances of the candidate class
+or a subset of the candidate class.</P>
+<P>Clarified 14.4 that &quot;compile time&quot; refers to
+&quot;JDOQL-compile time&quot;.</P>
+<P>Changed 14.5 to state &quot;If the candidates are not specified,
+then the candidate extent is the extent of instances in the data
+store with subclasses true.&quot;</P>
+<P>Clarified 14.6.2 if a cast operation would throw
+ClassCastException, it is treated the same as a NullPointerException.</P>
+<P>Clarified 14.6.5 the semantics of &quot;contains&quot; is
+&quot;exists&quot;. This clarification is needed to provide a
+rational meaning if the contains clause is negated.</P>
+<P>Clarified in 15 that Extents are not managed for instances of
+embedded fields.</P>
+<P>In 15.3, clarified that the iterator method will throw an
+exception if NontransactionalRead is not supported.</P>
+<P>In 17.1, added getFailedObject() and getNestedExceptions() to the
+description of JDOException.</P>
+<P>In 17.1, fixed description of JDOUnsupportedOptionException: &quot;This
+class is a derived class of JDOUserException. This exception is
+thrown by an implementation to indicate that it does not implement a
+JDO optional feature.&quot;</P>
+<P>In 17.1.9, added new JDOObjectNotFoundException to report
+instances that cannot be found in the data store.</P>
+<P>In 17.1.10, added new JDOOptimisticVerificationException to report
+optimistic verification failures during commit.</P>
+<P>Changed chapter 18 introduction to describe new policy for naming
+and accessing metadata files.</P>
+<P>In 18.3, changed name scoping for persistence-capable-superclass.</P>
+<P>Corrected 18.4 to correct an inconsistency with 20.9.6:
+&quot;null-valued fields throw a JDOUserException when the instance
+is flushed to the data store and the data store does not support null
+values.&quot; 
+</P>
+<P>Clarified in 18.4 that Extents are not managed for instances of
+embedded fields.</P>
+<P>Updated 18.4.1 and 18.4.2 to clarify type name scoping: The type
+names use Java rules for naming: if no package is included in the
+name, the package name is assumed to be the same package as the
+persistence-capable class. Inner classes are identified by the &quot;$&quot;
+marker.</P>
+<P>In 18.6, added DOCTYPE description to describe access to the
+public DTD at java.sun.com/dtd.</P>
+<P>Changed 20.9.6 to correct an inconsistency with 18.4: &quot;null-valued
+fields throw a JDOUserException when the instance is flushed to the
+data store and the data store does not support null values.&quot; 
+</P>
+<P>Changed 20.17 and 20.20.4 to modify security checking for
+JDOPermission(&quot;setStateManager&quot;). 
+</P>
+<P>Added new JDOPermission(&quot;closePersistenceManagerFactory&quot;)
+to check that the caller of PersistenceManagerFactory.close() is
+authorized.</P>
+<P>Corrected Chapter 23 to remove alternative Name (ArgumentListopt)
+from MethodInvocation nonterminal in the BNF.</P>
+<P>Corrected Chapter 23 to remove the exclusive or operator from the
+BNF.</P>
+<P>Removed Appendix B.3 since it no longer reflects reality.</P>
+<P STYLE="margin-top: 0.17in; page-break-after: avoid"><FONT FACE="Albany, sans-serif"><FONT SIZE=4>Reference
+Implementation Updates</FONT></FONT></P>
+<P>Removed methods to access properties MinPool, MaxPool, and MsWait
+from PersistenceManagerFactory.</P>
+<P>Cleaned up application server integration code for transaction
+completion.</P>
+<P>Fixed missing synchronizations in JDOModel class JDOClassImpl.</P>
+<P>Changed Model to support DOCTYPE PUBLIC. The RI recognizes and
+substitutes its own cached copy if the PUBLIC URI specified is the
+official Sun URI from the <A HREF="http://java.sun.com/dtd">java.sun.com/dtd</A>
+web site, or if the SYSTEM URI is &quot;file:/javax/jdo/jdo.dtd&quot;.</P>
+<P>Changed Model to implement the new strategy for finding metadata
+by searching for files in META-INF, WEB-INF, and package directories.</P>
+<P>Fixed FOStorePMF to read and write its own fields upon
+externalization, to support the Create property</P>
+<P>Fixed test cases (in package com.sun.jdori.test) that would fail
+due to the possibility of unordered results.</P>
+<P>Fixed initialization issue in Test_ActivateClass createURL that
+was platform-specific.</P>
+<P>Fixed bug in query compiler that would fail to recompile a changed
+query.</P>
+<P>Fixed bug in query constructor that the ignoreCache flag setting
+is not copied from the PersistenceManager, and in PersistenceManager
+constructor that the flag is not copied from
+PersistenceManagerFactory.</P>
+<P>Fixed enhancer bug to downcast the result of calling
+SM.fetchObjectField(int) if the key field is a subclass of
+<A HREF="http://java.lang.Object/">java.lang.Object</A>.</P>
+<P>Fixed enhancer bug to work correctly with JDK1.4.</P>
+<P>Moved the I18NHelper class from javax.jdo to javax.jdo.spi
+package. Deprecated the former class to avoid backward compatibility
+problems.</P>
+<P>Added public static field JDOPermission
+CLOSE_PERSISTENCE_MANAGER_FACTORY with a value of
+JDOPermission(&quot;closePersistenceManagerFactory&quot;).</P>
+<P>Added methods registerAuthorizedStateManagerClass and
+checkAuthorizedStateManagerClass to JDOImplHelper.</P>
+<P>Removed default constructor for JDOPermission; it is not needed.</P>
+<P>Implemented new PersistenceManager APIs retrieveAll ( ... ,
+boolean defaultOnly) for Collection and Object[].</P>
+<P>Implemented new  PersistenceManagerFactory close method.</P>
+<P>Fixed the bug that getObjectById might throw an exception if it
+cannot find the pc class for an ObjectId class, because the class is
+registered but not activated.</P>
+<P>Fixed the bug that the model should complain about missing XML
+metadata at runtime.</P>
+<P>Fixed handling of ClassCastExceptions in queries to return false
+to the &quot;nearest&quot; boolean expression.</P>
+<P STYLE="margin-top: 0.17in; page-break-after: avoid"><FONT FACE="Albany, sans-serif"><FONT SIZE=4>Technology
+Compatibility Kit Updates</FONT></FONT></P>
+<P>Added signature test.  This test checks the signature of all
+classes in package javax.jdo and javax.jdo.spi to verify that they
+have the correct signature.</P>
+<P>Added tests to cover new API functionality.</P>
+<P>Fixed bug 4711478 to compare BigDecimal values using compareTo
+instead of equals.</P>
+<P>Fixed bug 4711539
+com.sun.jdotck.api.persistencemanager.GetObjectIdClass compares the
+object id class to FOStore.OID. This test was removed.</P>
+<P>Fixed bug 4721611
+com.sun.jdotck.api.persistencemanager.ValuesNotRetainedAfterEvictionAndTransactionCompletion
+is invalid and was removed.</P>
+<P>Fixed bug 4721651
+com.sun.jdotck.models.fieldtypes.TestArrayCollections.java Support
+for persistent fields of array types is optionally in JDO (see JDO
+spec, chapter 6.4.3 Persistent fields). If a  JDO implementation
+supports this feature, the collection returned by
+PMF.supportedOptions() includes the string &quot;javax.jdo.option.Array&quot;.
+The TCK test TestArrayCollections was changed to check this option
+and execute the test only for JDO implementations supporting
+persistent fields of array types. 
+</P>
+<P>Fixed bug 4721919 com.sun.jdotck.query.operators contains tests
+that include Integer.MAX_VALUE and Long.MAX_VALUE as values to store
+in the datastore. These values cannot be precisely stored in Float or
+Double fields. The values were changed to values that can be stored
+exactly.</P>
+<P>Fixed 4721969 com.sun.jdotck.query.QueryTest method
+checkQueryResultWithOrder compares the result of a JDOQL query with
+the expected result by calling result.equals(expected). There is no
+guarantee that equals checks the correct ordering of the result.
+Note, that checkQueryResultWithOrder is called in the case of an
+JDOQL query with ordering. The method was changed to first check the
+size to be equal and then do an iteration to compare the result
+elements.</P>
+<P>Fixed 4711481
+com.sun.jdotck.api.instancecallbacks.InstanceCallbackClass) defines
+the jdo method jdoPreClear. The method body accesses the collection
+relationship field children w/o testing the field being null. So
+jdoPreClear runs into a NPE, if the field children is not yet loaded.
+Please note, the enhancer must not modify the code of jdoPreClear, so
+it is possible that the field is null. This was fixed to avoid
+accessing the collection field.</P>
+<hr><P><h2>ACCEPTED CHANGES</h2>
+<hr><P><h2>DEFERRED CHANGES</h2>
+</P>
+</BODY>
+</HTML>
+
+
+
+<!-- ** BEGIN: footer.jsp ** //-->
+
+
+
+
+
+
+
+
+</td>
+</tr>
+</table>
+
+<!-- ** END: Content Table ** //-->
+
+<!-- ** BEGIN: Footer Table ** //-->
+
+<div id="footer" style="clear: both;">
+    <div class="footleft">
+        <a href="/en/resources/contacts">Contact Us</a>
+    </div>
+	
+    <div class="botbar"><img src="/images/spacer.gif" alt="" height="23" width="1"></div>
+
+    <div class="footleft2">
+         &copy; 2019, Oracle Corporation and/or its affiliates. 
+        <a href="/en/home/terms">Terms of Use</a>. <a href="http://www.oracle.com/us/legal/privacy/index.html">Privacy Policy</a>. <a href="http://www.oracle.com/us/legal/third-party-trademarks/third-party-trademarks-078568.html">Trademarks</a>
+    </div>
+
+    <div class="footright">
+        <img src="/images/common/logo_oracle_footer.gif" alt="Oracle Corporation" height="22" width="91">
+    </div>
+
+    <div style="clear: both;"><img src="/images/spacer.gif" alt="" height="30" width="1"></div>
+</div>
+
+<!-- ** END: Footer Table ** //-->
+
+
+
+<!-- ** Menu Start ** //-->
+
+
+
+</body>
+</html>
+<!-- ** END: footer.jsp ** //-->
+

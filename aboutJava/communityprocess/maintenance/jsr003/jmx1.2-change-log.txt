@@ -1,0 +1,1375 @@
+	 List of changes to JMX specification for version 1.2
+			eamonn.mcmanus@sun.com
+
+This document summarizes the status of the changes to the JMX
+specification that were considered for the 1.2 Maintenance Review.
+There are three lists of changes:
+
+* "accepted" changes are those that were retained as a result of the
+  review.  JMX 1.2 includes all of these changes.
+
+* "rejected" changes are those that were not retained as a result of
+  the review.  JMX 1.2 does not include these changes, and it is not
+  expected that any future JMX 1.x version will.  (Some changes might
+  be considered if ever a major release, JMX 2.x, is undertaken.)
+
+* "deferred" changes are those were not retained as a result of the
+  review, whether for time reasons or because it was considered that
+  the changes were too significant.  JMX 1.2 does not include these
+  changes, but a future JMX 1.x version may.
+
+This document is closely based on the original proposed list of
+changes.  The numbering applied here is based on the numbering of the
+original list.  This explains why the numbers in each section are not
+contiguous.
+
+The detailed description of changes in this document is principally of
+interest to people implementing the JMX specification.  JMX users are
+referred to the "what has changed" section of the JMX Specification.
+
+
+SUMMARY OF ACCEPTED CHANGES
+===========================
+
+A.1. New superinterface of MBeanServer.
+A.2. New four-parameter removeNotificationListener methods.
+A.3. Support for concurrent queries.
+A.4. Changes to ObjectName.
+A.4.1. Quoting mechanism for values associated with keys.
+A.4.2. Newline character forbidden in ObjectName.
+A.4.3. Factory methods for creating ObjectNames.
+A.4.4. Clarify semantics of ObjectName.equals in the presence of patterns.
+A.4.5. Specify a convention for unique ObjectNames.
+A.4.6. ObjectName implements QueryExp.
+A.4.7. New method ObjectName.isDomainPattern().
+A.4.9. Clarify what characters may appear where.
+A.5. Changes and clarifications to class loading and class naming.
+A.5.1. Clarified meaning of MBeanInfo.getClassName().
+A.5.2. Clarified meaning of MBeanServer.isInstanceOf().
+A.5.3. MBean class name in RoleInfo tested using MBeanServer.isInstanceOf.
+A.5.4. Clarify semantics of the Class Loader Repository (CLR).
+A.5.4.1. MLets only delegate to earlier loaders in the CLR.
+A.5.4.2. The MBean server's ClassLoader is in the CLR.
+A.5.4.3. Defined order of ClassLoaders in the CLR.
+A.5.5. One ClassLoaderRepository per MBean server.
+A.5.5.1. DefaultLoaderRepository specified using CLR.
+A.5.6. New MBeanServer method to get the right ClassLoader for parameters.
+A.6. New permissions.
+A.6.1. javax.management.MBeanPermission.
+A.6.2. javax.management.MBeanTrustPermission.
+A.7. User-supplied factory for MBeanServer instances.
+A.8. MBeanInfo and related classes.
+A.8.2. MBean*Info implement equals(Object).
+A.8.3. MBeanConstructorInfo does not have to be exhaustive.
+A.8.4. MBean*Info constructors check for valid Java identifiers.
+A.9. Changes related to javax.management.Notification.
+A.9.1. Clarifications concerning Notification.source.
+A.9.2. Control over notification dispatch in NotificationBroadcasterSupport.
+A.10. Changes to Timer Service.
+A.10.1. Changed behaviour when scheduled time is already past.
+A.10.3. Public constructor for TimerNotification.
+A.10.4. Periodic notification can be fixed-delay or fixed-rate.
+A.11. Changes to Monitor Service.
+A.11.2. Monitoring the same attribute in several MBeans.
+A.12. Changes to Relation Service.
+A.12.1. Changed semantics of RoleInfo class.
+A.12.2. Role.roleValueToString separated by newlines.
+A.13. Changes to Open MBeans.
+A.13.1. Open MBeans become mandatory.
+A.13.2. OpenMBeanInfo will never extend MBeanInfo.
+A.13.3. Constants in SimpleType should be final.
+A.13.4. Add java.util.Date to SimpleType possibilities.
+A.14. Changes to MLets.
+A.14.1. MLet implements Externalizable.
+A.14.2. MLet.check method should be protected rather than private.
+A.15. Serial compatibility with JMX 1.0 is not required.
+A.16. Clarification of ObjectName in MBeanRegister.preRegister.
+A.17. Implementations must forbid calling getters and setters via invoke.
+A.18. Retrieving all domains in the MBean server.
+A.19. Standard MBeans.
+A.19.1. Specify exact rules for deriving NameMBean from Name.
+A.19.2. Hybrid of Standard and Dynamic MBeans.
+A.20. InvocationHandler for MBean proxies.
+A.21. Wrapped exceptions accessible with getCause().
+A.22. Changes to Model MBeans.
+A.22.2. Descriptor extends Cloneable.
+A.22.3. RequiredModelMBean implements MBeanRegistration.
+A.22.4. RequiredModelMBeanInfo.invoke invokes locally or on resource.
+A.22.5. ModelMBeanInfo.getNotifications() includes standard notifications.
+A.22.6. Descriptor's persistPolicy includes "always".
+A.22.7. Remove "iterable" Descriptor field.
+A.22.8. Descriptor field names are case insensitive.
+A.22.9. Descriptor "export" field can contain external name.
+A.22.10. Require XML support in DescriptorSupport.
+A.22.11. Type of Descriptor's "protocolMap" field is Descriptor.
+A.22.12. "class" field of constructor Descriptor removed.
+A.22.14. ModelMBeanOperationInfo Descriptor cannot be "constructor".
+A.22.15. Default value for attribute specified as "default".
+A.22.16. Specification should not refer to missing findPersistent method.
+A.22.17. ModelMBean.load called from preRegister not constructor.
+
+
+ACCEPTED CHANGES
+================
+
+A.1. New superinterface of MBeanServer.
+
+The MBeanServer interface is not suitable for exposure to remote
+clients, first because it contains methods only appropriate for the
+exporter of instrumentation, and second because it does not declare an
+appropriate exception for communication failures.
+
+JMX 1.2 introduces a parent interface
+javax.management.MBeanServerConnection where all methods declare
+IOException in their "throws" clause and where the following methods
+from MBeanServer are not present:
+
+* deserialize (all overloaded forms)
+
+This method returns an ObjectInputStream, which is not a
+serializable class.  It is in any case only of use for the server
+end of a connector, and even then it is superseded by the new
+getClassLoader* methods.
+
+* getClassLoader
+* getClassLoaderFor
+* getClassLoaderRepository
+
+These new methods are useful for the server end of a connector.
+ClassLoaders and ClassLoaderRepository are not serializable and in
+any case it is not appropriate for a remote client to be able to
+access this information.
+
+* instantiate (all overloaded forms)
+
+This method is useful to create instances of parameters to MBean
+methods or constructors.  These parameters are not in general
+serializable, and even if they are they are unlikely to be known to
+a ClassLoader on the client end of a connector.
+
+* registerMBean
+
+This method registers a local object as an MBean within the MBean
+server.  It does not make sense to register a remote object in this
+way.
+
+
+A.2. New four-parameter removeNotificationListener methods.
+
+In JMX 1.1, the two MBeanServer.addNotificationListener methods have four
+parameters: the ObjectName of the MBean, the listener (either an
+Object or an ObjectName), the filter, and the handback.  You can add
+the same listener with more than one filter and/or handback.  However,
+the removeNotificationListener does not have these parameters, so
+there is no way to remove an individual triple
+(listener,filter,handback).  This was apparently an oversight in JMX
+1.0 since the documentation there was inconsistent.
+
+JMX 1.2 adds two new methods to the MBeanServer interface:
+
+void removeNotificationListener(ObjectName name,
+				NotificationListener listener,
+				NotificationFilter filter,
+				Object handback)
+    throws InstanceNotFoundException, ListenerNotFoundException;
+
+void removeNotificationListener(ObjectName name,
+				ObjectName listener,
+				NotificationFilter filter,
+				Object handback)
+    throws InstanceNotFoundException, ListenerNotFoundException;
+
+Adding new methods to an interface breaks existing code that
+implements the interface.  But the MBeanServer interface is only
+implemented by the JMX implementation so user code should not be
+impacted.
+
+The NotificationBroadcaster interface also needed to be augmented with
+the ability to remove a specific (listener,filter,handback) triple.
+Here, adding a new method would potentially have broken user code.  So
+JMX 1.2 adds a new interface javax.management.NotificationEmitter that
+extends NotificationBroadcaster to add a new method:
+
+void removeNotificationListener(NotificationListener listener,
+				NotificationFilter filter,
+				Object handback)
+    throws ListenerNotFoundException;
+
+The NotificationBroadcasterSupport class, which represents most
+NotificationBroadcaster instances in practice, implements the new
+interface, as does MBeanServerDelegate.
+
+The MBean server implements the two new removeNotificationListener
+methods by checking whether the target MBean is instanceof
+NotificationEmitter.  If so, its three-argument
+removeNotificationListener is called.  Otherwise,
+java.lang.UnsupportedOperationException is thrown, wrapped (as for
+existing exceptions) in a javax.management.RuntimeOperationsException.
+
+
+A.3. Support for concurrent queries.
+
+The existing technique for running queries, calling setMBeanServer on
+the query before evaluating it and having a static MBeanServer member
+in the query classes, is not correct when two queries are evaluated at
+the same time on different MBean servers in the same JVM.
+
+It is proposed to document that QueryEval.setMBeanServer sets a
+thread-local variable and to add a corresponding public static
+QueryEval.getMBeanServer method.  Since QueryEval is public, this is
+an interface change, albeit minor.
+
+
+A.4. Changes to ObjectName.
+
+JMX 1.2 makes a number of changes to javax.management.ObjectName are
+proposed.  This class is central to JMX so it was important to clarify
+its semantics and add missing functionality that had been asked for.
+
+
+A.4.1. Quoting mechanism for values associated with keys.
+
+This fixes an important problem where it was not possible to use
+arbitrary strings as values in names.  For example, this made it hard
+to map CIM object names to JMX ObjectNames.
+
+The change is as follows.  As well as the previous key=value syntax,
+where the value must not contain any of the characters in the set
+[,*?=:], a new syntax key="value" is added.  This allows values to be
+arbitrary strings.  The characters in the set [\"?*] must be quoted by
+a preceding backslash (\).  The syntax \n is also allowed to represent
+a newline.  No other characters may be quoted with a backslash.  The
+value seen in the ObjectName (e.g. by the getKeyProperty method)
+includes the quotes and any backslashes.  Two new methods are added:
+
+public static String quote(String s);
+public static String unquote(String s) throws IllegalArgumentException;
+
+The quote method takes an arbitrary string and converts it into a
+quoted form suitable for use in the value of an ObjectName.  The
+unquote method takes a quoted string that would be legal as an
+ObjectName value and converts it into an unquote String.  For any
+String s, unquote(quote(s)).equals(s).
+
+
+A.4.2. Newline character forbidden in ObjectName.
+
+JMX 1.2 forbids the character newline ('\n') anywhere in an
+ObjectName.  The Relation Service uses newline to separate the names
+returned by Role.roleValueToString.  The \n syntax is accepted in
+quoted values (see A.4.1) so it is still possible to represent a
+newline in an ObjectName.
+
+
+A.4.3. Factory methods for creating ObjectNames.
+
+In JMX 1.1 the only way to obtain an ObjectName is by invoking one of
+the constructors.  JMX 1.2 adds factory methods.  Since ObjectNames
+are immutable, this allows an implementation to return the same
+ObjectName instance for the same arguments.  It also allows an
+implementation to return a private optimized subclass of ObjectName.
+The new methods are these:
+
+public static ObjectName getInstance(String name);
+public static ObjectName getInstance(String domain, Hashtable table);
+public static ObjectName getInstance(String domain, String key,
+				     String value);
+public static ObjectName getInstance(ObjectName name);
+
+The first three correspond to the previously existing constructors.
+They have the same parameters, throws clauses, and semantics.
+
+The fourth method produces an object that is guaranteed to implement
+ObjectName semantics correctly, even if its argument is of a subclass
+that does not.  This is used by security checks based on ObjectNames,
+to prevent a malicious user from supplying an instance of an
+ObjectName subclass that returns one value for the security check and
+another value for the checked access.  (This was preferred to making
+ObjectName, or all of its methods, final.)
+
+
+A.4.4. Clarify semantics of ObjectName.equals in the presence of patterns.
+
+In JMX 1.1, the documentation did not specify what
+ObjectName.getCanonicalName and ObjectName.getKeyPropertyListString
+look like in the presence of a property pattern, and it did not say
+whether the equals method required that either both or neither of the
+compared ObjectNames be patterns.
+
+JMX 1.2 clarifies the specification as follows:
+
+* getKeyPropertyListString does not include any indication of whether
+  the ObjectName is a property pattern.
+
+* getCanonicalName includes a trailing ",*" if the ObjectName is a
+  property pattern (just "*" if there are no other properties).
+
+* equals compares the getCanonicalName values (at least conceptually).
+
+
+A.4.5. Specify a convention for unique ObjectNames.
+
+The idea of this change is to avoid collisions between ObjectNames
+from different vendors.  The new convention is the same for Java
+package names, i.e. the domain should begin with the lowercase
+reversed DNS name of the defining organization.
+
+
+A.4.6. ObjectName implements QueryExp.
+
+In JMX 1.1, an ObjectName could be a pattern, and this could be used
+to select a subset of MBeans in an MBean server query.  However, there
+was no method for user code to tell whether a given ObjectName matches
+a given ObjectName pattern.  In JMX 1.2, ObjectName implements the
+QueryExp interface.  Thus, its method:
+
+public boolean apply(ObjectName name);
+
+returns true if "this" is an ObjectName pattern and "name" is an
+ObjectName that matches the pattern, or if this.equals(name) and
+neither "this" nor "name" is a pattern.
+
+The advantage of implementing QueryExp rather than just adding a
+"boolean matches(ObjectName name)" method is that an ObjectName
+pattern can be included in a complex query, e.g. "(domain is
+com.xinc.appx and attribute `owner' is fred) or (domain is
+com.yinc.appy and attribute `user' is fred)".
+
+
+A.4.7. New method ObjectName.isDomainPattern().
+
+In JMX 1.1, you couldn't tell if an ObjectName had a wildcard in its
+domain without searching for wildcard characters explicitly.  Both
+"*:*" and "domain:*" returned true for the existing methods
+isPattern() and isPropertyPattern().  JMX 1.2 adds a new method
+isDomainPattern() that returns true for the first but false for the
+second.
+
+
+A.4.9. Clarify what characters may appear where.
+
+The JMX 1.1 specification was not completely clear on what characters
+could be used in domains, keys, and values.  The following rules are
+specified in JMX 1.2:
+
+* A domain may contain any character except colon.  This is a
+  difference from 1.1, where comma and equals were forbidden.  The
+  query (?) and star (*) characters imply that the ObjectName is a
+  pattern.
+
+* A key may contain any character except colon, star, comma, equals,
+  asterisk, or query.  This rule was implemented by the 1.1 RI
+  but not clearly specified.
+
+* An unquoted value may contain any character except colon, star, comma,
+  equals, quote, or query.  This is the same set as for a key except
+  that the quote is also forbidden.  Forbidding the quote is a change
+  from 1.1.
+
+* A quoted value may contain any character provided the quoting
+  conventions are followed.
+
+In addition to these rules, as mentioned above, the newline character
+('\n') is forbidden everywhere.  This rule is new with 1.2.
+
+
+A.5. Changes and clarifications to class loading and class naming.
+
+A key aim of JMX 1.2 is to clarify the semantics of class loading and
+class naming.  Many important details of these were left unspecified
+in earlier versions of JMX.
+
+The details here are of interest to advanced JMX users.  Most users
+will not need to be familiar with this level of detail.
+
+
+A.5.1. Clarified meaning of MBeanInfo.getClassName().
+
+In JMX 1.1, this was incompletely specified.  As of JMX 1.2, the
+specification is clarified as follows.
+
+For a Standard MBean, MBeanInfo.getClassName() returns the Java class
+(not interface) of the corresponding MBean.  For a Dynamic MBean,
+MBeanInfo.getClassName() returns whatever string the Dynamic MBean
+supplies.  The caller cannot always access a Java class of that name.
+
+For a Dynamic MBean, MBeanInfo.getClassName() may return any string
+that is a syntactically legal Java class name.  As for JMX 1.1, a
+Dynamic MBean may return different MBeanInfos at different times, and
+in particular the class name may vary.
+
+It is not required that the name returned by getClassName() for a
+Dynamic MBean be the name of an existing Java class.  If it is, we
+recommend but do not require that the class's public methods include
+those that a Standard MBean implementing the same interface would
+contain.
+
+In an ObjectInstance returned by one of the methods createMBean,
+registerMBean, or queryMBeans in the MBeanServer interface, the string
+returned by getClassName() is the same as MBeanInfo.getClassName() for
+the named MBean.
+
+RequiredModelMBean returns, by default, its own class name as
+MBeanInfo.getClassName().  If the user supplies a ModelMBeanInfo, the
+getClassName() from that is returned.
+
+
+A.5.2. Clarified meaning of MBeanServer.isInstanceOf().
+
+The semantics of MBeanServer.isInstanceOf(objectName, className)
+are clarified as follows:
+
+    If objectName does not name an MBean, the method throws
+    InstanceNotFoundException.  This behaviour is unchanged.
+
+    Otherwise,
+    let X be the MBean named by objectName,
+	L be the ClassLoader of X,
+	N be the class name in X's MBeanInfo.
+
+    If N equals className, the result is true.
+
+    Otherwise, if L successfully loads both N and className, and the
+    second class is assignable from the first, the result is true.
+
+    Otherwise, the result is false.
+
+
+A.5.3. MBean class name in RoleInfo tested using MBeanServer.isInstanceOf.
+
+The class RoleInfo in the JMX relation service contains an MBean class
+name, representing the type of MBean that can take on the role in
+question.  In JMX 1.1, RoleInfo performs a check on this class name.
+It must be a valid MBean class, and to test this it must be loaded.
+Since the RoleInfo constructor does not reference an MBean server, the
+loading is done using a ClassLoaderRepository shared by all MBean
+servers in a given JVM.
+
+JMX 1.2 makes the following changes:
+
+- The RoleInfo constructor no longer performs any check on the class
+  name it is given.  This makes sense given that a DynamicMBean can
+  return any string as the class name in its MBeanInfo, not
+  necessarily an existent Java class.
+
+- On creation of a relation instance, the relation service will check
+  that each MBean linked is an instance of the class name in the
+  corresponding RoleInfo, as determined by MBeanServer.isInstanceOf.
+
+
+A.5.4. Clarify semantics of the Class Loader Repository (CLR).
+
+JMX 1.1 mentions a Class Loader Repository (also referred to as a
+Default Loader Repository) but does not say explicitly how loaders are
+added to it.  JMX 1.2 clarifies the specification as follows:
+
+When an MBean is registered that is an instance of ClassLoader, it is
+added to the CLR, unless it is also an instance of the marker
+interface javax.management.loading.PrivateClassLoader.  This interface
+is new in JMX 1.2.
+
+MLets are ClassLoaders, so this rule applies to them.  A new class
+PrivateMLet extends MLet to implement PrivateClassLoader.
+
+
+A.5.4.1. MLets only delegate to earlier loaders in the CLR.
+
+In JMX 1.1, if an MLet is used to load a class, and that class is not
+found in the MLet's list of URLs, the MLet delegates to all other
+class loaders in the CLR.
+
+To avoid a deadlock situation, JMX 1.2 changes this behaviour so that
+an MLet will only delegate to class loaders that precede it in the
+CLR.  If the MLet is not in the CLR then all class loaders in the CLR
+are consulted as before.
+
+As a result of this change, a new method is added to the
+ClassLoaderRepository interface:
+    public Class loadClassBefore(ClassLoader loader);
+
+Each constructor for the MLet class acquires an overloaded version
+with a booleanparameter delegateToCLR, which defaults to true.  When
+false, the MLet does not delegate to the CLR when it fails to find
+classes but directly throws ClassNotFoundException.
+
+
+A.5.4.2. The MBean server's ClassLoader is in the CLR.
+
+An undocumented feature of the JMX 1.1 RI is that the MBean server's
+own ClassLoader is always in the CLR.  This behaviour means that the
+simplest createMBean method,
+    createMBean(className, objectName),
+will find classes in the class-path.  Many RI users
+depend on this, so it has been specified explicitly for JMX 1.2.
+
+The MBean server's ClassLoader cannot be removed from the CLR.  There
+is no way to load classes from the other ClassLoaders in the CLR
+without consulting the MBean server's ClassLoader first.
+
+
+A.5.4.3. Defined order of ClassLoaders in the CLR.
+
+To reduce indeterminism between implementations, JMX 1.2 specifies
+exactly the order in which ClassLoaders in the CLR are consulted.
+When a class is loaded through the CLR, each ClassLoader from the
+first to the last is consulted until one of them successfully loads
+the class.  If none of them loads the class, the result is a
+ClassNotFoundException.
+
+The first ClassLoader in the CLR is the MBean server's ClassLoader.
+Any registered MBean that is an instance of ClassLoader but not
+PrivateClassLoader is in the CLR.  If the same object is registered
+under two different names then it appears twice in the CLR.
+(Registering the same object twice is not recommended in general.)
+
+For any two MBeans X and Y, X must appear before Y in the CLR if the
+registration of X was completed before the registration of Y started.
+If X and Y were registered concurrently, their order is
+indeterminate.  The registration of an MBean corresponds to the call
+to MBeanServer.registerMBean or MBeanServer.createMBean.
+
+
+A.5.5. One ClassLoaderRepository per MBean server.
+
+The RI of JMX 1.1 used the same CLR for all MBean servers in a given
+JVM.  As of JMX 1.2, every MBean server must have its own CLR.
+
+
+A.5.5.1. DefaultLoaderRepository specified using CLR.
+
+JMX 1.1 defined two classes called DefaultLoaderRepository, one in
+javax.management and one in javax.management.loading.  These classes
+have only static methods and incorporate the assumption that there is
+a single shared CLR.
+
+JMX 1.2 does not remove these classes.  Instead, the loadClass and
+loadClassWithout methods simulate a shared CLR by attempting to load
+through the CLR of every MBeanServer returned by
+MBeanServerFactory.findMBeanServer(null).
+
+
+A.5.6. New MBeanServer method to get the right ClassLoader for parameters.
+
+To solve certain problems related to class loading, JMX 1.1 defined
+three "deserialize" methods in the MBeanServer interface.  JMX 1.2
+deprecates these methods in favour of three new methods:
+
+* ClassLoader getClassLoaderFor(ObjectName name)
+  Return the ClassLoader to be used for passing parameters to an
+  existing MBean.
+
+* ClassLoader getClassLoader(ObjectName loaderName)
+  Return the ClassLoader named by the given loaderName.
+
+* ClassLoaderRepository getClassLoaderRepository()
+  Return this MBeanServer's ClassLoaderRepository.
+
+
+A.6. New permissions.
+
+JMX 1.2 defines two new permissions for fine-grained access control.
+Like the existing MBeanServerPermission, these permissions are only
+consulted if there is a security manager.
+
+
+A.6.1. javax.management.MBeanPermission.
+
+MBeanPermission is a Permission that controls access to the operations
+in the MBean server.  A typical MBeanPermission looks like this:
+    new MBeanPermission("pack.age.Class#op[d:k=v]", "invoke");
+This permission grants (or controls) access to the the operation "op"
+in the MBean whose ObjectName is "d:k=v" and whose class name (in
+MBeanInfo) is "pack.age.Class".
+
+Chapter 12 of the JMX 1.2 Specification covers this permission in
+detail.
+
+
+A.6.2. javax.management.MBeanTrustPermission.
+
+MBeanTrustPermission is a BasicPermission that defines what code sources
+can be used to register MBeans.  An attempt to register an MBean is
+only accepted if (1) the caller's permissions include an appropriate
+MBeanPermission for the registerMBean or createMBean operation, and
+(2) the protection domain of the MBean class to be registered has
+permissions that imply MBeanTrustPermission("register").
+
+
+A.7. User-supplied factory for MBeanServer instances.
+
+An important change in JMX 1.2 is the ability to specify what class is
+instantiated by the methods MBeanServerFactory.createMBeanServer and
+MBeanServerFactory.newMBeanServer.  The system property
+"javax.management.builder.initial" can be set to the name of a
+subclass of the new class javax.management.MBeanServerBuilder.  This
+class contains two methods:
+
+    public MBeanServerDelegate newMBeanServerDelegate();
+
+    public MBeanServer newMBeanServer(String defaultDomain,
+    	    	    	    	      MBeanServer outer,
+				      MBeanServerDelegate delegate);
+
+A call to MBeanServerFactory.createMBeanServer/newMBeanServer will
+result in a call to newMBeanServerDelegate followed by a call to
+newMBeanServer.  An MBeanServerBuilder subclass can replace the
+delegate and/or the MBeanServer implementation.
+
+
+A.8. MBeanInfo and related classes.
+
+A.8.2. MBean*Info implement equals(Object).
+
+Each of the MBean*Info classes overrides the Object.equals(Object)
+method to compare for equality rather than identity.  This is useful
+because JMX allows an MBean to change its MBeanInfo at any time.  A
+remote client can test whether this has happened by comparing the
+result of MBeanServer.getMBeanInfo against a previous value.
+
+
+A.8.3. MBeanConstructorInfo does not have to be exhaustive.
+
+If you use createMBean to construct an MBean with a given constructor,
+it is not an error for that constructor not to be in the new MBean's
+MBeanConstructorInfo array returned by getMBeanInfo().  The JMX 1.2
+specification codifies this existing behaviour.
+
+
+A.8.4. MBean*Info constructors check for valid Java identifiers.
+
+The JMX 1.1 spec already stated that (e.g.) attribute names must be
+valid Java identifiers.  JMX 1.2 requires that the constructors for the
+MBean*Info classes check that the supplied names do in fact meet this
+constraint.  Specifically:
+
+* In MBeanAttributeInfo, MBeanOperationInfo, and MBeanParameterInfo
+  "name" must be a syntactically valid Java identifier and "type" must
+  be a syntactically valid Java class name.
+
+* In MBeanInfo, "className" must be a syntactically valid Java class
+  name.
+
+* In MBeanConstructorInfo and MBeanNotificationInfo, "name" must be a
+  syntactically valid Java class name.
+
+If these conditions are not met, the constructors throw
+IllegalArgumentException.  The check for syntactically valid Java
+identifiers or class names does not include a test for Java reserved
+words.
+
+
+A.9. Changes related to javax.management.Notification.
+
+A.9.1. Clarifications concerning Notification.source.
+
+JMX 1.2 now documents the way the MBean server replaces a reference to
+an MBean in the source of a Notification with the ObjectName of that
+MBean.  It also discourages users from doing this.
+
+JMX 1.2 explains why there is a "source" field in
+javax.management.Notification when there is already one in the parent
+class java.util.EventObject.  The reason is that Notification.source
+is non-transient and is part of the serialized form.
+
+
+A.9.2. Control over notification dispatch in NotificationBroadcasterSupport.
+
+In JMX 1.2, NotificationBroadcasterSupport acquires a new method:
+
+protected void handleNotification(NotificationListener listener,
+				  Notification notification,
+				  Object handback);
+
+This method is called during sendNotification for each listener
+registered with the NotificationBroadcaster.  By default, it simply
+does listener.handleNotification(notification, handback).  A subclass
+can, for instance, dispatch the notification in a separate thread, or
+catch RuntimeException and remove the listener that generated it.
+
+
+A.10. Changes to Timer Service.
+
+A.10.1. Changed behaviour when scheduled time is already past.
+
+JMX 1.2 changes the behaviour of Timer.addNotification when the
+specified time for the notification is already past.  Instead of
+throwing IllegalArgumentException, it behaves as if the time specified
+were the current time.  For once-off notifications, the notification
+is delivered immediately.  For periodic notifications, the first
+notification is delivered immediately and the subsequent ones are
+spaced as specified by the period parameter.
+
+The reasoning behind this change is that the existing behaviour does
+not allow you to safely schedule a notification for the very near
+future.  Circumstances beyond the program's control, such as heavy
+system load, may cause the schedule time to be already past by the
+time the addNotification method is called.
+
+
+A.10.3. Public constructor for TimerNotification.
+
+JMX 1.2 makes the constructor of the class TimerNotification public:
+
+public TimerNotification(String type, Object source, long sequenceNumber,
+			 long timeStamp, String msg, Integer id);
+
+This allows user code to construct such notifications, e.g. in a
+replacement for the timer service.
+
+
+A.10.4. Periodic notification can be fixed-delay or fixed-rate.
+
+The JMX 1.1 specification is not clear on the exact meaning of
+periodic notification in the timer service.  As of JMX 1.2, the
+default behaviour is "fixed-delay execution", as specified in
+java.util.Timer.  An additional overloaded Timer.addNotification
+method has been added with a boolean parameter that can specify
+"fixed-rate execution".
+
+
+A.11. Changes to Monitor Service.
+
+A.11.2. Monitoring the same attribute in several MBeans.
+
+It is proposed to extend the Monitor class and its subclasses so that
+the same attribute can be monitored in several MBeans.  A notification
+is sent every time any of the MBeans meets the notification criteria.
+
+The Monitor class and MonitorMBean interface acquire these new methods:
+
+public ObjectName[] getObservedObjects();
+public void addObservedObject(ObjectName name);
+public void removeObservedObject(ObjectName name);
+public boolean containsObservedObject(ObjectName name);
+
+The existing setObserverObject method removes all ObjectNames from the
+set and then adds its ObjectName argument.
+
+The CounterMonitor class and CounterMonitorMBean interface acquire, in
+addition, these new methods:
+
+public void setInitThreshold(Number value);
+public Number getInitThreshold();
+public Number getThreshold(ObjectName name);
+public Number getDerivedGauge(ObjectName name);
+public long getDerivedGaugeTimeStamp(ObjectName name);
+
+The get/setInitThreshold methods specify the initial threshold to be
+used for each new observed object.
+
+The remaining methods add an ObjectName parameter to existing methods.
+The existing methods without an ObjectName parameter only work if
+there is exactly one observed MBean.  (This is therefore compatible
+with existing code.)
+
+
+A.12. Changes to Relation Service.
+
+A.12.1. Changed semantics of RoleInfo class.
+
+The clarification of class-loading behaviour implies a change to the
+semantics of the class javax.management.relation.RoleInfo.  See A.5.3.
+
+
+A.12.2. Role.roleValueToString separated by newlines.
+
+In JMX 1.1, the Javadoc for this method said the returned values were
+separated by commas, but the implementation separated them by
+newlines.  Commas make no sense because the values being separated are
+ObjectNames which can contain commas.
+
+If an ObjectName could contain an embedded newline this would still
+lead to problems, so newline has been added to the list of special
+characters in ObjectName (see A.4.1).
+
+
+A.13. Changes to Open MBeans.
+
+A.13.1. Open MBeans become mandatory.
+
+In JMX 1.0, Open MBeans were an optional part of JMX because they were
+incompletely specified.  In JMX 1.1, the specification of Open MBeans
+was completed and an implementation was included in the RI, but they
+remained optional.  Since optional parts of specifications lead to
+portability problems, Open MBeans become mandatory in JMX 1.2.
+
+
+A.13.2. OpenMBeanInfo will never extend MBeanInfo.
+
+In JMX 1.1, the Javadoc suggested that a future version of JMX might
+make MBeanInfo an interface, in which case the OpenMBeanInfo interface
+could inherit from it and OpenMBeanInfoSupport would inherit from a
+hypothetical MBeanInfoSupport.  Such a change would be gratuitously
+incompatible so it is not going to happen.  The Javadoc should be
+revised.
+
+
+A.13.3. Constants in SimpleType should be final.
+
+In JMX 1.1, the constants VOID, BOOLEAN, etc in the class
+javax.management.openmbean.SimpleType were static but not final
+because the expressions to construct their initial values threw
+checked exceptions.  There is a straightforward way to code the
+initialization nevertheless, so these constants become final in JMX
+1.2
+
+This change is not strictly upward compatible but is retained becauses
+it closes a security hole.  Previously, malicious code could replace
+the values of these constants with incorrect values.
+
+
+A.13.4. Add java.util.Date to SimpleType possibilities.
+
+This allows a simple, type-safe way to have timestamp attributes.  It
+does not solve the problem of attributes whose type is an interval,
+since Java doesn't have a class specifically for that.
+
+
+A.14. Changes to MLets.
+
+The proposed clarification to class loading affects the specification
+of MLets.  See the separate document that explains those changes.
+Below are additional proposed changes.
+
+
+A.14.1. MLet implements Externalizable.
+
+In JMX 1.1, the MLet class has methods readExternal and writeExternal
+with the correct signatures to implement the java.io.Externalizable
+interface, but it does not in fact implement that interface.  As of
+JMX 1.2, it does.  Because it is not extremely useful to read or write
+an MLet, and because the implementation in the Reference
+Implementation of JMX 1.0 and 1.1 did not work, JMX 1.2 allows
+implementations not to support these methods, throwing
+UnsupportedOperationException, and in fact the Reference
+Implementation does this.
+
+[A previous version of this document proposed removing the methods
+readExternal and writeExternal instead.  That proposal has been
+withdrawn because it does not respect strict upward compatibility.]
+
+
+A.14.2. MLet.check method should be protected rather than private.
+
+This method was explicitly designed to allow subclasses of MLet to
+implement caching and versioning.  But for some reason it was left
+private.  As of JMX 1.2 it is protected instead.  For this to be
+useful, the MLetContent class, which had package access in the RI of
+JMX 1.1, has been made public.
+
+
+A.15. Serial compatibility with JMX 1.0 is not required.
+
+JMX 1.1 changed the (incompletely specified) serial form of several
+classes in JMX 1.0.  It introduced a property jmx.serial.form to allow
+code to continue to use the old form.  The JMX 1.2 specification says
+explicitly that independent implementations are not required to
+support this feature.
+
+
+A.16. Clarification of ObjectName in MBeanRegister.preRegister.
+
+This method is called when an MBean that implements the
+MBeanRegistration interface is registered in the MBean server.  The
+exact meaning of the ObjectName parameter and the ObjectName return
+value was unclear from the specification of JMX 1.1.  JMX 1.2 adds
+this text to the Javadoc:
+
+ * @param name The object name of the MBean.  This name is null if
+ * the name parameter to one of the <code>createMBean</code> or
+ * <code>registerMBean</code> methods in the {@link MBeanServer}
+ * interface is null.  In that case, this method must return a
+ * non-null ObjectName for the new MBean.
+ *
+ * @return The name under which the MBean is to be registered.
+ * This value must not be null.  If the <code>name</code>
+ * parameter is not null, it will usually but not necessarily be
+ * the returned value.
+
+
+A.17. Implementations must forbid calling getters and setters via invoke.
+
+In JMX 1.1, the specification says that an implementation may or may
+not allow a getX or setX method in a Standard MBean to be accessed as
+an operation via MBeanServer.invoke.  This was left in place for time
+reasons.  Unspecified behaviour like this is not desirable, so as of
+JMX 1.2 implementations must forbid calling getters and setters via
+invoke.
+
+
+A.18. Retrieving all domains in the MBean server.
+
+JMX 1.2 adds the following method to the MBeanServer and
+MBeanServerConnection interfaces:
+
+String[] getDomains();
+
+The returned array contains the domains of all currently-registered
+MBeans.  More exactly, a String s appears in the returned array iff
+there is at least one MBean registered with an ObjectName whose
+getDomain() returns a String equal to s.
+
+
+A.19. Standard MBeans.
+
+A.19.1. Specify exact rules for deriving NameMBean from Name.
+
+The JMX 1.1 specification is unclear exactly what is meant when it
+says that the management interface of a Standard MBean whose
+implementation class is Name must be called NameMBean.  It does not
+say whether package names are taken into consideration.  Different
+implementations of JMX 1.1 have different behaviour so this had to be
+clarified.
+
+JMX 1.2 states explicitly that if the implementation class is
+some.package.Name then the management interface must be
+some.package.NameMBean.
+
+
+A.19.2. Hybrid of Standard and Dynamic MBeans.
+
+This change rectifies an important shortcoming in the use of Standard
+MBeans, namely that there is a fixed relationship between the
+implementation class of the MBean and its management interface (i.e.,
+if the implementation class is Thing, the management interface must be
+ThingMBean).
+
+Additionally, the change helps with another shortcoming of Standard
+MBeans, which is that it is not possible to add to the metadata
+derived from the MBean interface, for instance the string descriptions
+of attributes and operations.
+
+JMX 1.2 adds a new class javax.management.StandardMBean:
+
+public class StandardMBean implements DynamicMBean {
+    public StandardMBean(Object impl, Class intf)
+    	    throws NotCompliantMBeanException {
+	// ...
+    }
+
+    protected StandardMBean(Class intf) throws NotCompliantMBeanException {
+    	this(this, intf);
+	// not actually legal Java but you get the idea
+    }
+
+    // ...methods from DynamicMBean...
+
+    protected String getDescription(MBeanOperationInfo op);
+    protected String getDescription(MBeanOperationInfo op,
+				    MBeanParameterInfo param,
+				    int paramNumber);
+    // ...other getDescription methods...
+    protected int getImpact(MBeanOperationInfo op);
+    protected String getParameterName(MBeanOperationInfo op,
+				      MBeanParameterInfo param,
+				      int paramNumber);
+    // ...likewise for MBeanConstructorInfo...
+
+    public Class getMBeanInterface();
+    public Object getImplementation();
+    public Class getImplementationClass();
+    public void setImplementation(Object implementation);
+
+    protected void cacheMBeanInfo(MBeanInfo);
+    protected MBeanInfo getCachedMBeanInfo();
+}
+
+An MBean can be created with any implementation class name Impl and
+with a management interface defined (as for current Standard MBeans)
+by any interface Intf, in one of two general ways:
+
+MBeanServer mbs;
+
+// EITHER...
+Impl impl = new Impl(...);
+StandardMBean mbean = new StandardMBean(impl, Intf.class);
+mbs.registerMBean(mbean, objectName);
+
+// OR...
+public class Impl extends StandardMBean implements Intf {
+    public Impl() {
+    	super(Intf.class);
+    }
+    // implement methods of Intf
+}
+Impl impl = new Impl();
+mbs.registerMBean(impl, objectName);
+
+In either case, the class Impl must implement the interface Intf.
+
+The existing Standard MBeans, where the management interface is
+discovered based on the name of the implementation class, are retained
+unchanged.
+
+
+A.20. InvocationHandler for MBean proxies.
+
+Since MBeanServer methods such as invoke, getAttribute, and
+setAttribute have no type checking, JMX 1.2 adds an implementation of
+the java.lang.reflect.InvocationHandler interface that can be used to
+construct a proxy for an MBean given its management interface.  In
+addition to type checking, this greatly simplifies client code.
+
+The new class, javax.management.MBeanServerInvocationHandler, looks
+like this:
+
+import java.lang.reflect.*;
+
+public class MBeanServerInvocationHandler implements InvocationHandler {
+    public MBeanServerInvocationHandler(MBeanServerConnection mbsc,
+					ObjectName objectName);
+
+    public static Object newProxyInstance(MBeanServerConnection mbsc,
+					  ObjectName objectName,
+					  Class interfaceClass,
+					  boolean notificationBroadcaster);
+
+    public Object invoke(Object proxy, Method method, Object[] args);
+    // specified by InvocationHandler
+}
+
+To make a proxy for an MBean named objectName in the MBeanServer mbs,
+whose management interface is Intf, do this:
+
+Class intfClass = Intf.class;
+InvocationHandler h = new MBeanServerInvocationHandler(mbs, objectName);
+Intf proxy = (Intf) Proxy.newProxyInstance(intfClass.getClassLoader(),
+	       	       	       	           new Class[] {intfClass},
+				           h);
+
+This is exactly the behaviour of the call:
+
+MBeanServerInvocationHandler.newProxyInstance(mbs,
+					      objectName,
+					      intfClass,
+					      false) 
+
+A call to a getter or setter in Intf will produce a call to
+mbsc.get/setAttribute.  A call to another method in Intf will produce
+a call to mbsc.invoke.
+
+If the proxied MBean is an instance of NotificationBroadcaster or
+NotificationEmitter, the notificationBroadcaster parameter to
+newProxyInstance can be true, in which case the NotificationEmitter
+interface is added to the list of interfaces for the proxy.  A call to
+addNotificationListener or removeNotificationListener on the proxy
+will produce a call to mbsc.add/removeNotificationListener.
+
+The methods toString(), hashCode(), and equals(Object) inherited from
+java.lang.Object are forwarded to the MBean server in the same way as
+other methods.  This will only work if the MBean declares those
+methods in its management interface.  Because of the way proxies work,
+it is not possible for an MBeanServerInvocationHandler constructed in
+the first way illustrated above to know whether or not the management
+interface does or does not contain these methods.
+
+
+A.21. Wrapped exceptions accessible with getCause().
+
+Certain JMX exceptions wrap other exceptions.  In JMX 1.1, they define
+a getTargetException() method to retrieve the wrapped exception.  In
+JMX 1.2, they also override the getCause() method introduced in J2SE
+1.4.
+
+
+A.22. Changes to Model MBeans.
+
+A.22.2. Descriptor extends Cloneable.
+
+The Descriptor interface includes a public clone() method so it makes
+sense for it to extend java.lang.Cloneable.  A consequence is that
+DescriptorSupport is also Cloneable.
+
+
+A.22.3. RequiredModelMBean implements MBeanRegistration.
+
+The documentation says that it is illegal to call setModelMBeanInfo on
+a ModelMBean once it has been registered in the MBean server.  But in
+JMX 1.1, RequiredModelMBean does not implement MBeanRegistration,
+making it difficult to enforce this constraint.  In JMX 1.2,
+RequiredModelMBean does implement MBeanRegistration.
+
+Existing code that subclasses RequiredModelMBeanInfo to implement
+MBeanRegistration will not benefit from the check unless the
+subclass's preRegister method is changed to call super.preRegister.
+Making RequiredModelMBean.preRegister final to ensure that the check
+is made would have risked breaking existing code so it was not
+proposed.
+
+
+A.22.4. RequiredModelMBeanInfo.invoke invokes locally or on resource.
+
+In JMX 1.1, the specification for RequiredModelMBean implies very
+indirectly that the invoke method (from the DynamicMBean interface)
+can invoke both (a) methods from the ModelMBeanInfo and (b) methods
+from the RequiredModelMBean class itself.  Though this is not very
+clean, there is no other way for clients to invoke useful methods such
+as addAttributeChangeNotificationListener and getNotifications.  JMX
+1.2 therefore states more explicitly that the invoke method will
+invoke a method of RequiredModelMBean if one matches the given
+signature, and otherwise a method from the ModelMBeanInfo on the
+Managed Resource.
+
+
+A.22.5. ModelMBeanInfo.getNotifications() includes standard notifications.
+
+A RequiredModelMBean may emit the notification with name "Generic" and
+type "jmx.modelmbean.generic" and it may send an
+AttributeChangeNotification.  In JMX 1.1, these notifications are not
+declared in the value returned by
+RequiredModelMBeanInfo.getMBeanInfo().getNotifications() unless they
+are explicitly added there by the programmer.  In JMX 1.2, these
+notifications are automatically added to the list defined by the user
+if they are not already present.
+
+
+A.22.6. Descriptor's persistPolicy includes "always".
+
+In JMX 1.1, there is an inconsistency between the Javadoc of
+DescriptorSupport, which mentions a possible value "always" for
+persistPolicy, and the PDF specification, which does not.  In JMX 1.2,
+this value appears in the PDF as a synonym for "OnUpdate", with a note
+discouraging its use.
+
+
+A.22.7. Remove "iterable" Descriptor field.
+
+In JMX 1.1, the semantics of this field are not specified so nobody
+can use it.  JMX 1.2 removes any mention of it from the specification.
+
+
+A.22.8. Descriptor field names are case insensitive.
+
+In JMX 1.1, the Javadoc says this but the PDF specification does not.
+JMX 1.2 adds this to the PDF specification.
+
+
+A.22.9. Descriptor "export" field can contain external name.
+
+In JMX 1.1, the Javadoc for DescriptorSupport.isValid (and the RI
+implementation) only allows the values "t", "true", "f", "false".  The
+PDF says the value "should be the external name or object required to
+export the MBean appropriately".  In JMX 1.2, the Javadoc and the
+implementation have been changed to match the PDF.
+
+
+A.22.10. Require XML support in DescriptorSupport.
+
+In JMX 1.1, the RI includes a constructor for DescriptorSupport that
+takes an XML string and describes it as being "part of this
+implementation and not required by the JMX Specification".  This is
+inconsistent, since the constructor is public and therefore appears in
+the Javadoc, which is part of the JMX Specification.  Furthermore,
+there is a public method toXMLString which is not described as being
+"part of this implementation".
+
+In JMX 1.2, implementations must include the constructor and the
+method.  No specification of the syntax of the XML string has yet been
+defined.
+
+
+A.22.11. Type of Descriptor's "protocolMap" field is Descriptor.
+
+In JMX 1.1, the Javadoc for ModelMBeanAttributeInfo says that the
+value of this field must of type ProtocolMap.  No such type is defined
+in JMX, and the PDF specification says that the value must be a
+Descriptor.  In JMX 1.2, the Javadoc has been made consistent with the
+specification.
+
+
+A.22.12. "class" field of constructor Descriptor removed.
+
+In JMX 1.1, this field is mentioned in the Javadoc for
+ModelMBeanConstructorInfo but not described in the PDF specification.
+Since its purpose was not clear, it has been removed from the Javadoc
+in JMX 1.2.
+
+
+A.22.14. ModelMBeanOperationInfo Descriptor cannot be "constructor".
+
+In JMX 1.1, the Javadoc for ModelMBeanOperationInfo says that the
+"role" field of the Descriptor can have the value "constructor".  This
+does not make sense, since a constructor should be specified with
+ModelMBeanConstructorInfo.  So this has been removed from JMX 1.2.
+
+
+A.22.15. Default value for attribute specified as "default".
+
+In JMX 1.1, the PDF specification says in some places that a default
+value for an attribute can be specified using the "defaultValue" field
+in its Descriptor and in others using "default".  The Javadoc and the
+RI use a "default" field.  In JMX 1.2, this has been corrected to say
+"default" everywhere.
+
+
+A.22.16. Specification should not refer to missing findPersistent method.
+
+In JMX 1.1, the PDF specification for persistence in Model MBeans
+says, of ModelMBean.load:
+
+    "This method must determine if this model MBean has a persistent
+    representation by invoking the findPersistent method."
+
+No such method is defined in any JMX interface.  In JMX 1.2, this text
+is removed.
+
+
+A.22.17. ModelMBean.load called from preRegister not constructor.
+
+In JMX 1.1, the PDF specification for persistence in Model MBeans says
+that the load method is called from the ModelMBean constructor.  It
+makes more sense to call it from the preRegister method (now that this
+method is defined, see A.22.3), so this is what JMX 1.2 specifies.
+
+Persistence is not implemented in the JMX 1.1 RI.  Existing code based
+on other implementations is unlikely to be affected by this change.
+
+
+DEFERRED CHANGES
+================
+
+
+D.4.8. Support key=* wildcard in ObjectName.
+
+In JMX 1.1, you can have a pattern "domain:key1=value1,*" to match any
+ObjectName that has exactly that (key,value) pair amongst its keys and
+values, but you cannot have a pattern "domain:key1=*,*" to match any
+ObjectName that has a key called key1.  The proposal was to add this
+syntax and allow it in MBean server queries and in the new apply
+methods (see section 4.6).
+
+DEFERRED: This proposal has been deferred to a future revision.
+
+
+D.14.3. MLet file should have explicit syntax for comments.
+
+Today the RI allows you to include any garbage outside of <...>.
+Should instead support <!-- --> comment syntax.  This will break
+existing code that depended on this undocumented behaviour of the RI.
+
+DEFERRED: This proposal has been deferred to a future revision.
+
+
+REJECTED CHANGES
+================
+
+R.3. Support for concurrent queries via new subinterface of QueryExp.
+
+The existing technique for running queries, calling setMBeanServer on
+the query before evaluating it and having a static MBeanServer member
+in the query classes, is not correct when two queries are evaluated at
+the same time on different MBean servers in the same JVM.  While it is
+possible to work around this problem by using ThreadLocal variables,
+it is cleaner to change the interface as follows:
+
+A new interface QueryExpression extends QueryExp to add a new method
+
+boolean apply(ObjectName name, MBeanServer mbs)
+    throws BadStringOperationException,
+	   BadBinaryOpValueExpException,
+	   BadAttributeValueExpException,
+	   InvalidApplicationException;
+
+This is the same as the apply method in QueryExp except for the
+addition MBeanServer parameter.
+
+All of the existing javax.management classes that implement QueryExp
+are changed to implement QueryExpression instead.  The appropriate
+instanceof logic is added to the MBean server query code so that
+invokes the two-argument apply if possible.  Although the JMX
+specification discourages users from implementing their own QueryExp
+classes, such classes will continue to work, but if they do
+setMBeanServer they are still vulnerable to the problem with
+concurrent queries.
+
+REJECTED: This is a big change to solve a small problem.  The approach
+described in A.3 is sufficient.
+
+
+R.8.1. MBean*Info classes become explicitly immutable.
+
+The proposal is that the description of the following classes will
+specify that they are immutable:
+
+MBeanAttributeInfo
+MBeanConstructorInfo
+MBeanFeatureInfo
+MBeanInfo
+MBeanNotificationInfo
+MBeanOperationInfo
+MBeanParameterInfo
+
+The getters of these classes become final to ensure immutability.
+Subclasses may add additional attributes but the values supplied to
+the constructors of these classes cannot subsequently change.
+Notably, the ModelMBean*Info classes are mutable because they each
+have a setDescriptor method, but the attributes they inherit from
+MBean*Info cannot change.
+
+The protected fields "description" and "name" in MBeanFeatureInfo
+become private to avoid compromising immutability.  They remain in the
+serialized form.
+
+REJECTED: This change would not respect strict upward compatibility.
+
+
+R.10.2. Internal class TimerAlarmClockNotification should not be public.
+
+It is proposed to remove the public class TimerAlarmClockNotification.
+This class has a public constructor that takes a parameter of a type
+(TimerAlarmClock) that is not public.  It is only used internally by
+the timer implementation and cannot be used by user code.
+
+REJECTED: This change would not respect strict upward compatibility.
+
+
+R.11.1. Internal fields in Monitor class should not be protected.
+
+The Monitor class contains a number of fields that are used by the
+Reference Implementation but are not of use to subclasses.
+Independent implementations should not be required to have these.  The
+following fields in the Monitor class are protected in JMX 1.1 and
+should be removed from the public API in JMX 1.2:
+
+    alreadyNotified
+    RESET_FLAGS_ALREADY_NOTIFIED
+    OBSERVER_OBJECT_ERROR_NOTIFIED
+    OBSERVED_ATTRIBUTE_ERROR_NOTIFIED
+    OBSERVED_ATTRIBUTE_TYPE_ERROR_NOTIFIED
+    RUNTIME_ERROR_NOTIFIED
+    dbgTag
+
+The following field remains:
+
+    protected MBeanServer server;
+
+REJECTED: This change would not respect strict upward compatibility.
+
+
+R.22.1. Remove ModelMBeanInfoSupport.getDescriptor(String).
+
+
+In JMX 1.1, the meaning of this method was unclear from the Javadoc.
+It is not clear what the method could reasonably mean.  Furthermore,
+in the JMX 1.1 RI the implementation was broken (always threw an
+exception).  So removing this method should affect nobody.
+
+REJECTED: In fact the meaning of this method is clear from the
+description of getDescriptor(String,String) where the second parameter
+is null.  The RI has been fixed so it does not throw an exception.
+
+
+R.22.13. Remove "getter" and "setter" fields from operation Descriptor.
+
+The Javadoc for ModelMBeanOperationInfo refers to "getter" and
+"setter" fields in the Descriptor for an operation, but the semantics
+of these fields are not defined and nothing is implemented for them.
+Getters and setters are specified using ModelMBeanAttributeInfo so it
+is proposed to remove the references to them from
+ModelMBeanOperationInfo.
+
+REJECTED: This change is not correctly described.  In fact what was
+proposed was that the "role" field for an operation should no longer
+have "getter" or "setter" as possible values.  But in fact these
+values are useful when the operation is specified as the getMethod or
+setMethod for an attribute.

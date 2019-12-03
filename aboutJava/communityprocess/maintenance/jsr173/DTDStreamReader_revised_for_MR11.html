@@ -1,0 +1,1818 @@
+
+<!-- ** BEGIN: header.jsp ** //-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3c.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+<head>
+    
+
+   
+    <link href="/includes/css/menu.css" rel="stylesheet" type="text/css"></link>
+    <link href="/includes/css/style.css" rel="stylesheet" type="text/css"></link>
+    <!--[if lt IE 6]><link href="/includes/css/style5.css" rel="stylesheet" type="text/css" ></link><![endif]-->
+    <!--[if gte IE 5]><link href="/includes/css/style6.css" rel="stylesheet" type="text/css" ></link><![endif]-->
+    <link href="/includes/css/tabs.css"  rel="stylesheet" type="text/css"></link>
+
+    <script type="text/javascript" src="/includes/scripts/tabs.js"></script>
+    <script type="text/javascript" src="/includes/scripts/menu.js"></script>
+   
+
+    
+
+    
+        <title>The Java Community Process(SM) Program - communityprocess - maintenance</title>
+    
+
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+
+
+<body onload="P7_initPM(0,1,0,0,-1)">
+
+    <a name="top"></a>
+
+    <div id="header">
+	<div id="logo">
+		<a href="/en/home/index"><img src="/images/spacer.gif" alt="Java Community Process" height="81" width="151"></a>
+	</div>
+	<div id="tools">
+		<div class="search">
+			<form name="search" action="/en/jsr/summary" method="get" onsubmit="return validate_search()">
+				<input name="id" value="Search JSRs" size="16" class="form" onfocus="nullify_if_equal(this, 'Search JSRs')" type="text">
+				<a href="javascript:document.search.submit()" onclick="return validate_search()"><img src="/images/button_go.gif" width="21" height="16" border="0" alt="Submit this Search" name="sub_search"></a>
+			</form>
+		</div>
+		<div class="tools">
+			<a href="/en/press/pressroom">Press Room</a> &nbsp;|&nbsp;
+			<a href="http://java.com/java/download/index.jsp?cid=jdp78399">Get Java Here</a> &nbsp;|&nbsp;
+			<!-- <a href="javascript:void(0)">Print Format</a> &nbsp;|&nbsp;&nbsp; -->
+		</div>
+
+	</div>
+	<div style="clear: right;"></div>
+
+        
+
+	<div class="topbar"><img src="/images/spacer.gif" alt="" height="3" width="154"></div>
+	<div id="update"> </div>
+    </div>
+
+
+    
+
+        <!-- ** BEGIN: Content Table ** //-->
+
+        <table width="100%" border="0" cellpadding="0" cellspacing="0">
+
+            <tr>
+
+                <!-- ** BEGIN: Navigation Column ** //-->
+                <td width="150" id="leftcontent" valign="top">
+                    <!-- Navigation Placeholder //-->
+
+                    
+
+                    <div class="bar"><img src="/images/hr_dots1.gif" alt="" height="3" width="150"></div>
+
+        <!-- begin find JSRs form -->
+        <!-- IMPORTANT! do not convert this form to Struts < html : form > tag.  javascript change of form.action property fails. -->
+        <img src="/images/hd_find-jsrs.gif" alt="Find JSRs" height="18" width="150">
+        <form name="findjsr" action="/en/jsr/summary" method="get" class="pt5" onsubmit="return validate_findjsr()">
+            <input name="id" size="18" class="form" value="Search JSRs" onfocus="nullify_if_equal(this, 'Search JSRs')" type="text">
+	    <a href="javascript:document.findjsr.submit()" onclick="return validate_findjsr()"><img src="/images/button_go.gif" width="21" height="16" border="0" alt="Submit this Search" name="sub_search"></a>
+        </form><br><br>
+
+        <!-- ** Menu Start ** //-->
+
+        <ul id="p7PMnav">
+            <li><a href="/en/jsr/platform">JSRs by Platform</a></li>
+            <li><a href="/en/jsr/tech">JSRs by Technology</a></li>
+            <li><a href="/en/jsr/stage">JSRs by Stage</a></li>
+            <li><a href="/en/jsr/ec">JSRs by Committee</a></li>
+            <li><a href="/en/jsr/all">List of All JSRs</a></li>
+
+            <!--end find JSRs form -->
+            <div style="clear: both;"><img src="/images/spacer.gif" alt="" height="25" width="1"></div>
+
+            <!--begin my JCP -->
+            <img src="/images/hd_my-jcp.gif" alt="My JCP" height="18" width="150">
+            
+
+          <form name="login" method="get" action="/en/user/login" >
+            <input name="Sign-in" type="submit" title="Sign-in" value="Sign-in" />
+          </form>
+
+            <div style="clear:both"><img src="/images/global/spacer.gif" width="1" height="3" alt=""></div>
+            <div class="noNav">
+                <a href="/en/user/register">Register for Site</a>
+            </div>
+
+             <div class="bar"><img src="/images/hr_dots1.gif" alt="" height="3" width="150"></div>
+           <div class="noNav" style="color: #666666; padding: 0;">
+              Use of JCP site is subject to the
+              <a href="/en/home/terms" style="display:inline;padding: 0">JCP Terms of Use</a> and the
+              <a href="http://www.oracle.com/us/legal/privacy/index.html" style="display:inline;padding: 0" href="">Oracle Privacy Policy</a>
+          </div>
+
+            
+
+            <div style="clear:both"><img src="/images/global/spacer.gif" width="1" height="25" alt=""></div>
+
+            <!--begin JCP info -->
+            <img src="/images/hd_jcp-info.gif" alt="JCP Info" height="18" width="150">
+
+            <li><a href="/en/procedures/overview" class="p7PMtrg">About JCP</a>
+                <ul>
+                    <li><a href="/en/procedures/overview">Program Overview</a></li>
+                    <li><a href="/en/procedures/jcp2">JCP Process Document</a></li>
+                    <li><a href="/en/whatsnew/calendar">Calendar</a></li>
+                    <li><a href="/en/participation/members">JCP Members</a></li>
+                    <li><a href="/en/participation/committee">Executive Committee</a></li>
+                    <li><a href="/en/whatsnew/elections">Elections</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/en/participation/overview" class="p7PMtrg">Get Involved</a>
+		<ul>
+                    <li><a href="/en/participation/overview">Overview</a></li>
+                    <li><a href="/en/participation/membership">Becoming a JCP Member</a></li>
+		</ul>
+            </li>
+
+            <li><a href="/en/resources/contents" class="p7PMtrg">Community Resources</a>
+                <ul>
+                    <li><a href="/en/resources/contents">Overview</a></li>
+                    <li><a href="/en/resources/tutorials">Tutorials</a></li>
+                    <li><a href="/en/resources/multimedia">JCP Podcasts</a></li>
+                    <li><a href="/en/resources/guide">Spec Lead Guide</a></li>
+                    <li><a href="/en/resources/tdk">TCK Tool & Info</a></li>
+                    <li><a href="/en/resources/license_reference">License Reference</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/en/press/pmo" class="p7PMtrg">Community News</a>
+                <ul>
+                    <li><a href="/en/press/pmo">News</a></li>
+                    <li><a href="/en/press/news/awards/awards_main">Programs &amp; Awards</a></li>
+                    <li><a href="/en/press/releases">Press Releases</a></li>
+                    <li><a href="/en/press/success">Success Stories</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/en/introduction/faq">FAQ</a></li>
+
+            <li><a href="/en/resources/contacts">Contact Us</a></li>
+
+            <div style="clear: both;"><img src="/images/spacer.gif" alt="" height="25" width="1"></div>
+
+            <!--[if lte IE 6]><style>#p7PMnav a{height:1em;}#p7PMnav li{height:1em;float:left;clear:both;width:100%}</style><![endif]-->
+            <!--[if IE 6]><style>#p7PMnav li{clear:none;}</style><![endif]-->
+            <!--[if IE 7]><style>#p7PMnav a{zoom:100%;}#p7PMnav li{float:left;clear:both;width:100%;}</style><![endif]-->
+        </ul>
+
+        
+
+        <!--begin ad space -->
+        <div class="ads">
+            <a href="http://java.com/java/download/index.jsp?cid=jdp78399" target="_blank"><img style="display: ;" src="/images/ad_banner2.gif" alt="Ad Banner" border="1" height="70" width="150"></a>
+        </div>
+        <!--end ad space -->
+
+<!-- ** Menu End ** //-->
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;<br>
+
+    
+
+                    &nbsp;<br>
+                    <img src="/images/common/trans.gif" alt="" width="1" height="150"><br>
+
+              
+
+
+
+                </td>
+                <!-- ** END: Navigation Column ** //-->
+
+                <!-- ** BEGIN: Gutter Column ** //-->
+		<td width="10" nowrap><img src="/images/common/trans.gif" alt="" width="10" height="1"></td>
+                <!-- ** END: Gutter Column ** //-->
+
+                <!-- ** BEGIN: Content Column ** //-->
+                <td width="100%" valign="top">
+
+    
+<script type="text/javascript">
+
+String.prototype.trim = function() {
+        return this.replace(/^\s+|\s+$/g,"");
+}
+String.prototype.ltrim = function() {
+        return this.replace(/^\s+/,"");
+}
+String.prototype.rtrim = function() {
+        return this.replace(/\s+$/,"");
+}
+
+function validate_search() {
+	if (document.search.id.value == "Search JSRs" || document.search.id.value.trim().length == 0) {
+		alert("Search terms must be entered first");
+		return false;
+	}
+	return true;
+}
+
+function validate_findjsr() {
+	if (document.findjsr.id.value == "Search JSRs" || document.findjsr.id.value.trim().length == 0) {
+		alert("Search terms must be entered first");
+		return false;
+	}
+	return true;
+}
+
+function nullify_if_equal(field, str) {
+	// alert("val=" + field.value);
+	if (field.value == str) {
+		field.value = "";
+	}
+}
+
+</script>
+<!-- ** END: header.jsp ** //-->
+
+
+
+
+
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+
+<!--NewPage--><!-- Generated by javadoc (build 1.4.2_04) on Fri Feb 23 13:57:12 PST 2007 -->
+  <title>DTDStreamReader</title>
+
+
+  <meta name="keywords" content="javax.xml.stream.DTDStreamReader interface">
+
+  <link rel="stylesheet" type="text/css" href="../../../stylesheet.css" title="Style">
+
+  <script type="text/javascript">
+function windowTitle()
+{
+parent.document.title="DTDStreamReader";
+}
+  </script>
+</head>
+
+
+<body onload="windowTitle();" style="background-color: white;">
+
+<!-- ========= START OF TOP NAVBAR ======= -->
+<a name="navbar_top"><!-- --></a>
+<table summary="" border="0" cellpadding="1" cellspacing="0" width="100%">
+
+  <tbody>
+
+    <tr>
+
+      <td colspan="3" class="NavBarCell1" bgcolor="#eeeeff"> <a name="navbar_top_firstrow"><!-- --></a>
+      <table summary="" border="0" cellpadding="0" cellspacing="3">
+
+        <tbody>
+
+          <tr align="center" valign="top">
+
+            <td class="NavBarCell1" bgcolor="#eeeeff">
+            <a href="../../../overview-summary.html"><font class="NavBarFont1"><b>Overview</b></font></a>&nbsp;</td>
+
+            <td class="NavBarCell1" bgcolor="#eeeeff">
+            <a href="package-summary.html"><font class="NavBarFont1"><b>Package</b></font></a>&nbsp;</td>
+
+            <td class="NavBarCell1Rev" bgcolor="#ffffff">&nbsp;<font class="NavBarFont1Rev"><b>Class</b></font>&nbsp;</td>
+
+            <td class="NavBarCell1" bgcolor="#eeeeff">
+            <a href="class-use/DTDStreamReader.html"><font class="NavBarFont1"><b>Use</b></font></a>&nbsp;</td>
+
+            <td class="NavBarCell1" bgcolor="#eeeeff">
+            <a href="package-tree.html"><font class="NavBarFont1"><b>Tree</b></font></a>&nbsp;</td>
+
+            <td class="NavBarCell1" bgcolor="#eeeeff">
+            <a href="../../../deprecated-list.html"><font class="NavBarFont1"><b>Deprecated</b></font></a>&nbsp;</td>
+
+            <td class="NavBarCell1" bgcolor="#eeeeff">
+            <a href="../../../index-all.html"><font class="NavBarFont1"><b>Index</b></font></a>&nbsp;</td>
+
+            <td class="NavBarCell1" bgcolor="#eeeeff">
+            <a href="../../../help-doc.html"><font class="NavBarFont1"><b>Help</b></font></a>&nbsp;</td>
+
+          </tr>
+
+        </tbody>
+      </table>
+
+      </td>
+
+      <td rowspan="3" align="right" valign="top"><em>
+      </em></td>
+
+    </tr>
+
+    <tr>
+
+      <td class="NavBarCell2" bgcolor="white"><font size="-2">&nbsp;PREV CLASS&nbsp;
+&nbsp;<a href="../../../javax/xml/stream/Location.html" title="interface in javax.xml.stream"><b>NEXT CLASS</b></a></font></td>
+
+      <td class="NavBarCell2" bgcolor="white"><font size="-2"> <a href="../../../index.html" target="_top"><b>FRAMES</b></a> &nbsp;
+&nbsp;<a href="DTDStreamReader.html" target="_top"><b>NO
+FRAMES</b></a> &nbsp;
+&nbsp;
+      <script type="text/javascript">
+<!--
+if(window==top) {
+document.writeln('<A HREF="../../../allclasses-noframe.html"><B>All Classes</B></A>');
+}
+//-->
+      </script>
+      <noscript> <A
+HREF="../../../allclasses-noframe.html"><B>All
+Classes</B></A> </noscript>
+
+      </font></td>
+
+    </tr>
+
+    <tr>
+
+      <td class="NavBarCell3" valign="top"><font size="-2"> SUMMARY:&nbsp;NESTED&nbsp;|&nbsp;<a href="#field_summary">FIELD</a>&nbsp;|&nbsp;CONSTR&nbsp;|&nbsp;<a href="#method_summary">METHOD</a></font></td>
+
+      <td class="NavBarCell3" valign="top"><font size="-2">DETAIL:&nbsp;<a href="#field_detail">FIELD</a>&nbsp;|&nbsp;CONSTR&nbsp;|&nbsp;<a href="#method_detail">METHOD</a></font></td>
+
+    </tr>
+
+  </tbody>
+</table>
+
+<a name="skip-navbar_top"></a>
+<!-- ========= END OF TOP NAVBAR ========= -->
+<hr><!-- ======== START OF CLASS DATA ======== -->
+<h2><font size="-1">javax.xml.stream</font>
+<br>
+
+Interface DTDStreamReader</h2>
+
+<hr>
+<dl>
+
+  <dt>public interface <b>DTDStreamReader</b></dt>
+
+</dl>
+
+<p>
+This interface extends the Streaming API for XML (StAX) Cursor API. It
+enables forward, read-only access to general internal and external
+parsed and unparsed entity declarations, notation declarations,
+processing instructions and comments contained in a DTD. </p>
+
+<p> The DTDStreamReader instance has very specific lifecycle
+constraints. An application can only obtain an implementation of
+DTDStreamReader from <a href="../../../javax/xml/stream/XMLStreamReader.html" title="interface in javax.xml.stream"><code>XMLStreamReader</code></a>
+immediately after the method <a href="../../../javax/xml/stream/XMLStreamReader.html#next%28%29"><code>next()</code></a>
+returns a <a href="../../../javax/xml/stream/XMLStreamConstants.html#DTD"><code>DTD</code></a>
+event, and prior to invoking any other methods on <a href="../../../javax/xml/stream/XMLStreamReader.html" title="interface in javax.xml.stream"><code>XMLStreamReader</code></a>.
+The DTDStreamReader instance is obtained by calling method <a href="../../../javax/xml/stream/XMLStreamReader.html#getProperty%28java.lang.String%29"><code>getProperty</code></a>
+with <code>"javax.xml.stream.DTDStreamReader"</code> as
+the property name parameter. Multiple calls to <a href="../../../javax/xml/stream/XMLStreamReader.html#getProperty%28java.lang.String%29"><code>getProperty</code></a>
+with a <code>"javax.xml.stream.DTDStreamReader"</code>
+argument will return the same instance of DTDStreamReader. Once the
+DTDStreamReader object is instantiated by the application, its various
+methods can be used to access the DTD data. Its processing capability
+extends only until the <a href="DTDStreamReader.html#END_DTD"><code>END_DTD</code></a>
+event is reached; at this point, any further document processing must
+be performed via the <a href="../../../javax/xml/stream/XMLStreamReader.html" title="interface in javax.xml.stream"><code>XMLStreamReader</code></a>
+instance. </p>
+
+<p> If an application chooses to instantiate a DTDStreamReader,
+the <a href="../../../javax/xml/stream/XMLStreamReader.html#getText%28%29"><code>getText()</code></a>
+method on <a href="../../../javax/xml/stream/XMLStreamReader.html" title="interface in javax.xml.stream"><code>XMLStreamReader</code></a>
+is invalidated for the <a href="../../../javax/xml/stream/XMLStreamConstants.html#DTD"><code>DTD</code></a>
+event: any attempt to invoke it will generate a <code>java.lang.IllegalStateException</code>.
+In this case, the data for the DTD event must be obtained via the
+DTDStreamReader instance. </p>
+
+<p> After DTDStreamReader is instantiated, invocation of any of
+the following <a href="../../../javax/xml/stream/XMLStreamReader.html" title="interface in javax.xml.stream"><code>XMLStreamReader</code></a>
+methods will change the state of DTDStreamReader implementation to <a href="DTDStreamReader.html#END_DTD"><code>END_DTD</code></a>:
+</p>
+
+<ul>
+
+  <li><a href="../../../javax/xml/stream/XMLStreamReader.html#next%28%29"><code>next()</code></a>,</li>
+
+  <li><a href="../../../javax/xml/stream/XMLStreamReader.html#hasNext%28%29"><code>hasNext()</code></a>,</li>
+
+  <li><a href="../../../javax/xml/stream/XMLStreamReader.html#nextTag%28%29"><code>nextTag()</code></a>
+and</li>
+
+  <li><a href="../../../javax/xml/stream/XMLStreamReader.html#close%28%29"><code>close()</code></a>.</li>
+
+</ul>
+
+Once in the <a href="DTDStreamReader.html#END_DTD"><code>END_DTD</code></a>
+state, no further processing of the DTD data is possible.
+<p> If no instance of DTDStreamReader is created (either the <a href="../../../javax/xml/stream/XMLStreamReader.html#getProperty%28java.lang.String%29"><code>getProperty</code></a>
+method with parameter <code>"javax.xml.stream.DTDStreamReader"</code>
+is never invoked, or it returns <code>null</code> because
+it is not invoked immediately after a <a href="../../../javax/xml/stream/XMLStreamConstants.html#DTD"><code>DTD</code></a>
+event is received), the behavior of <a href="../../../javax/xml/stream/XMLStreamReader.html" title="interface in javax.xml.stream"><code>XMLStreamReader</code></a>
+is unchanged and follows the specification in <a href="http://www.jcp.org/en/jsr/detail?id=173&amp;showPrint">JSR173</a>
+for the standard API or if XMLStreamReader is being used in the context
+of JSR280 it follows the JSR173 specification&nbsp;of the JSR280
+subset
+of the API. </p>
+
+<p> DTDStreamReader intentionally mimics <a href="../../../javax/xml/stream/XMLStreamReader.html" title="interface in javax.xml.stream"><code>XMLStreamReader</code></a>
+in order to provide developers with a familiar programming model.
+DTDStreamReader includes several methods identical in signature and
+semantics to methods defined on <a href="../../../javax/xml/stream/XMLStreamReader.html" title="interface in javax.xml.stream"><code>XMLStreamReader</code></a>.
+</p>
+
+<p> An object which implements DTDStreamReader uses methods <a href="DTDStreamReader.html#next%28%29"><code>next</code></a>
+and <a href="DTDStreamReader.html#getEventType%28%29"><code>getEventType</code></a>
+to provide the current event type. The first event is always <a href="DTDStreamReader.html#START_DTD"><code>START_DTD</code></a>.
+Once an <a href="DTDStreamReader.html#END_DTD"><code>END_DTD</code></a>
+event is returned by methods <a href="DTDStreamReader.html#next%28%29"><code>next</code></a>
+or <a href="DTDStreamReader.html#getEventType%28%29"><code>getEventType</code></a>,
+the application must continue further document processing using the <a href="../../../javax/xml/stream/XMLStreamReader.html" title="interface in javax.xml.stream"><code>XMLStreamReader</code></a>
+interface. The application can use the <a href="DTDStreamReader.html#close%28%29"><code>close</code></a>
+method at any time to terminate processing of any remaining DTD content
+and skip to the <a href="DTDStreamReader.html#END_DTD"><code>END_DTD</code></a>
+event. </p>
+
+<p> The following table describes which methods are valid in what
+state. If a method is called in an invalid state the method will throw
+a java.lang.IllegalStateException. Method <a href="DTDStreamReader.html#next%28%29"><code>next()</code></a>
+is an exception from this rule: it is defined to throw
+NoSuchElementException if it is called when <a href="DTDStreamReader.html#hasNext%28%29"><code>hasNext()</code></a>
+returns <code>false</code>, so in the case where <a href="DTDStreamReader.html#next%28%29"><code>next()</code></a>
+is called in the END_DTD state it will return NoSuchElementException
+rather than java.lang.IllegalStateException. </p>
+
+<table border="2" cellpadding="4" rules="all" width="100%">
+
+  <tbody>
+
+    <tr>
+
+      <th colspan="2" align="center"> Valid methods
+for each state </th>
+
+    </tr>
+
+    <tr>
+
+      <th width="13%">Event Type</th>
+
+      <th width="28%">Valid Methods</th>
+
+    </tr>
+
+    <tr>
+
+      <td> All States </td>
+
+      <td> <a href="DTDStreamReader.html#hasNext%28%29"><code>hasNext</code></a>,
+      <a href="DTDStreamReader.html#getEventType%28%29"><code>getEventType</code></a>,
+      <a href="DTDStreamReader.html#getLocation%28%29"><code>getLocation</code></a>,
+      <a href="DTDStreamReader.html#close%28%29"><code>close</code></a>
+      </td>
+
+    </tr>
+
+    <tr>
+
+      <td> <a href="DTDStreamReader.html#START_DTD"><code>START_DTD</code></a>
+      </td>
+
+      <td> <a href="DTDStreamReader.html#next%28%29"><code>next</code></a>,
+      <a href="DTDStreamReader.html#getName%28%29"><code>getName</code></a>,
+      <a href="DTDStreamReader.html#getPublicIdentifier%28%29"><code>getPublicIdentifier</code></a>,
+      <a href="DTDStreamReader.html#getSystemIdentifier%28%29"><code>getSystemIdentifier</code></a>
+      </td>
+
+    </tr>
+
+    <tr>
+
+      <td> <a href="DTDStreamReader.html#END_DTD"><code>END_DTD</code></a>
+      </td>
+
+      <td></td>
+
+    </tr>
+
+    <tr>
+
+      <td> <a href="DTDStreamReader.html#ENTITY_DECLARATION"><code>ENTITY_DECLARATION</code></a>
+      </td>
+
+      <td> <a href="DTDStreamReader.html#next%28%29"><code>next</code></a>,
+      <a href="DTDStreamReader.html#getName%28%29"><code>getName</code></a>,
+      <a href="DTDStreamReader.html#getPublicIdentifier%28%29"><code>getPublicIdentifier</code></a>,
+      <a href="DTDStreamReader.html#getSystemIdentifier%28%29"><code>getSystemIdentifier</code></a>
+      <a href="DTDStreamReader.html#getText%28%29"><code>getText</code></a>,
+      <a href="DTDStreamReader.html#getTextCharacters%28%29"><code>getTextCharacters</code></a>,
+      <a href="DTDStreamReader.html#getTextStart%28%29"><code>getTextStart</code></a>,
+      <a href="DTDStreamReader.html#getTextLength%28%29"><code>getTextLength</code></a>
+      </td>
+
+    </tr>
+
+    <tr>
+
+      <td> <a href="DTDStreamReader.html#UNPARSED_ENTITY_DECLARATION"><code>UNPARSED_ENTITY_DECLARATION</code></a>
+      </td>
+
+      <td> <a href="DTDStreamReader.html#next%28%29"><code>next</code></a>,
+      <a href="DTDStreamReader.html#getName%28%29"><code>getName</code></a>,
+      <a href="DTDStreamReader.html#getPublicIdentifier%28%29"><code>getPublicIdentifier</code></a>,
+      <a href="DTDStreamReader.html#getSystemIdentifier%28%29"><code>getSystemIdentifier</code></a>,
+      <a href="DTDStreamReader.html#getNotationName%28%29"><code>getNotationName</code></a>
+      </td>
+
+    </tr>
+
+    <tr>
+
+      <td> <a href="DTDStreamReader.html#NOTATION_DECLARATION"><code>NOTATION_DECLARATION</code></a>
+      </td>
+
+      <td> <a href="DTDStreamReader.html#next%28%29"><code>next</code></a>,
+      <a href="DTDStreamReader.html#getName%28%29"><code>getName</code></a>,
+      <a href="DTDStreamReader.html#getPublicIdentifier%28%29"><code>getPublicIdentifier</code></a>,
+      <a href="DTDStreamReader.html#getSystemIdentifier%28%29"><code>getSystemIdentifier</code></a>
+      </td>
+
+    </tr>
+
+    <tr>
+
+      <td> <a href="DTDStreamReader.html#COMMENT"><code>COMMENT</code></a>
+      </td>
+
+      <td> <a href="DTDStreamReader.html#next%28%29"><code>next</code></a>,
+      <a href="DTDStreamReader.html#getText%28%29"><code>getText</code></a>,
+      <a href="DTDStreamReader.html#getTextCharacters%28%29"><code>getTextCharacters</code></a>,
+      <a href="DTDStreamReader.html#getTextStart%28%29"><code>getTextStart</code></a>,
+      <a href="DTDStreamReader.html#getTextLength%28%29"><code>getTextLength</code></a>
+      </td>
+
+    </tr>
+
+    <tr>
+
+      <td> <a href="DTDStreamReader.html#PROCESSING_INSTRUCTION"><code>PROCESSING_INSTRUCTION</code></a>
+      </td>
+
+      <td> <a href="DTDStreamReader.html#next%28%29"><code>next</code></a>,
+      <a href="DTDStreamReader.html#getPITarget%28%29"><code>getPITarget</code></a>,
+      <a href="DTDStreamReader.html#getPIData%28%29"><code>getPIData</code></a>
+      </td>
+
+    </tr>
+
+  </tbody>
+</table>
+
+<p>
+</p>
+
+<p></p>
+
+<dl>
+
+  <dt><b>Version:</b></dt>
+
+  <dd>1.1</dd>
+
+  <dt><b>Author:</b></dt>
+
+  <dd>Copyright (C) 2007 BEA Systems, Inc. All rights reserved.</dd>
+
+  <dt><b>See Also:</b></dt>
+
+  <dd><a href="../../../javax/xml/stream/XMLStreamConstants.html" title="interface in javax.xml.stream"><code>XMLStreamConstants</code></a>,
+    <a href="../../../javax/xml/stream/XMLStreamReader.html" title="interface in javax.xml.stream"><code>XMLStreamReader</code></a></dd>
+
+</dl>
+
+<hr>
+<p><!-- ======== NESTED CLASS SUMMARY ======== --><!-- =========== FIELD SUMMARY =========== --><a name="field_summary"><!-- --></a></p>
+
+<table summary="" border="1" cellpadding="3" cellspacing="0" width="100%">
+
+  <tbody>
+
+    <tr class="TableHeadingColor" bgcolor="#ccccff">
+
+      <td colspan="2"><font size="+2"> <b>Field
+Summary</b></font></td>
+
+    </tr>
+
+    <tr class="TableRowColor" bgcolor="white">
+
+      <td align="right" valign="top" width="1%"><font size="-1"> <code>static&nbsp;int</code></font></td>
+
+      <td><code><b><a href="DTDStreamReader.html#COMMENT">COMMENT</a></b></code>
+      <br>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Indicates
+an event is a comment.</td>
+
+    </tr>
+
+    <tr class="TableRowColor" bgcolor="white">
+
+      <td align="right" valign="top" width="1%"><font size="-1"> <code>static&nbsp;int</code></font></td>
+
+      <td><code><b><a href="DTDStreamReader.html#END_DTD">END_DTD</a></b></code>
+      <br>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Indicates
+an event is the end of a DTD.</td>
+
+    </tr>
+
+    <tr class="TableRowColor" bgcolor="white">
+
+      <td align="right" valign="top" width="1%"><font size="-1"> <code>static&nbsp;int</code></font></td>
+
+      <td><code><b><a href="DTDStreamReader.html#ENTITY_DECLARATION">ENTITY_DECLARATION</a></b></code>
+      <br>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Indicates
+an event is a parsed entity declaration.</td>
+
+    </tr>
+
+    <tr class="TableRowColor" bgcolor="white">
+
+      <td align="right" valign="top" width="1%"><font size="-1"> <code>static&nbsp;int</code></font></td>
+
+      <td><code><b><a href="DTDStreamReader.html#NOTATION_DECLARATION">NOTATION_DECLARATION</a></b></code>
+      <br>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Indicates
+an event is a notation declaration.</td>
+
+    </tr>
+
+    <tr class="TableRowColor" bgcolor="white">
+
+      <td align="right" valign="top" width="1%"><font size="-1"> <code>static&nbsp;int</code></font></td>
+
+      <td><code><b><a href="DTDStreamReader.html#PROCESSING_INSTRUCTION">PROCESSING_INSTRUCTION</a></b></code>
+      <br>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Indicates
+an event is a processing instruction.</td>
+
+    </tr>
+
+    <tr class="TableRowColor" bgcolor="white">
+
+      <td align="right" valign="top" width="1%"><font size="-1"> <code>static&nbsp;int</code></font></td>
+
+      <td><code><b><a href="DTDStreamReader.html#START_DTD">START_DTD</a></b></code>
+      <br>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Indicates
+an event is the start of a DTD.</td>
+
+    </tr>
+
+    <tr class="TableRowColor" bgcolor="white">
+
+      <td align="right" valign="top" width="1%"><font size="-1"> <code>static&nbsp;int</code></font></td>
+
+      <td><code><b><a href="DTDStreamReader.html#UNPARSED_ENTITY_DECLARATION">UNPARSED_ENTITY_DECLARATION</a></b></code>
+      <br>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Indicates
+an event is an unparsed entity declaration.</td>
+
+    </tr>
+
+  </tbody>
+</table>
+
+<!-- ======== CONSTRUCTOR SUMMARY ======== --><!-- ========== METHOD SUMMARY =========== -->&nbsp;
+<a name="method_summary"><!-- --></a>
+<table summary="" border="1" cellpadding="3" cellspacing="0" width="100%">
+
+  <tbody>
+
+    <tr class="TableHeadingColor" bgcolor="#ccccff">
+
+      <td colspan="2"><font size="+2"> <b>Method
+Summary</b></font></td>
+
+    </tr>
+
+    <tr class="TableRowColor" bgcolor="white">
+
+      <td align="right" valign="top" width="1%"><font size="-1"> <code>&nbsp;void</code></font></td>
+
+      <td><code><b><a href="DTDStreamReader.html#close%28%29">close</a></b>()</code>
+      <br>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Terminates
+DTD processing, skipping all DTD related events up to <a href="DTDStreamReader.html#END_DTD"><code>END_DTD</code></a>.</td>
+
+    </tr>
+
+    <tr class="TableRowColor" bgcolor="white">
+
+      <td align="right" valign="top" width="1%"><font size="-1"> <code>&nbsp;int</code></font></td>
+
+      <td><code><b><a href="DTDStreamReader.html#getEventType%28%29">getEventType</a></b>()</code>
+      <br>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns
+an integer code that indicates the type of the event at the current
+cursor location.</td>
+
+    </tr>
+
+    <tr class="TableRowColor" bgcolor="white">
+
+      <td align="right" valign="top" width="1%"><font size="-1"> <code>&nbsp;<a href="../../../javax/xml/stream/Location.html" title="interface in javax.xml.stream">Location</a></code></font></td>
+
+      <td><code><b><a href="DTDStreamReader.html#getLocation%28%29">getLocation</a></b>()</code>
+      <br>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns
+the current location of the processor.</td>
+
+    </tr>
+
+    <tr class="TableRowColor" bgcolor="white">
+
+      <td align="right" valign="top" width="1%"><font size="-1"> <code>&nbsp;<a href="http://java.sun.com/javame/reference/apis/jsr139/java/lang/String.html" title="class or interface in java.lang">String</a></code></font></td>
+
+      <td><code><b><a href="DTDStreamReader.html#getNotationName%28%29">getNotationName</a></b>()</code>
+      <br>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns
+the notation name.</td>
+
+    </tr>
+
+    <tr class="TableRowColor" bgcolor="white">
+
+      <td align="right" valign="top" width="1%"><font size="-1"> <code>&nbsp;<a href="http://java.sun.com/javame/reference/apis/jsr139/java/lang/String.html" title="class or interface in java.lang">String</a></code></font></td>
+
+      <td><code><b><a href="DTDStreamReader.html#getPIData%28%29">getPIData</a></b>()</code>
+      <br>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns
+the data section of a processing instruction.</td>
+
+    </tr>
+
+    <tr class="TableRowColor" bgcolor="white">
+
+      <td align="right" valign="top" width="1%"><font size="-1"> <code>&nbsp;<a href="http://java.sun.com/javame/reference/apis/jsr139/java/lang/String.html" title="class or interface in java.lang">String</a></code></font></td>
+
+      <td><code><b><a href="DTDStreamReader.html#getPITarget%28%29">getPITarget</a></b>()</code>
+      <br>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns
+the target of a processing instruction.</td>
+
+    </tr>
+
+    <tr class="TableRowColor" bgcolor="white">
+
+      <td align="right" valign="top" width="1%"><font size="-1"> <code>&nbsp;<a href="http://java.sun.com/javame/reference/apis/jsr139/java/lang/String.html" title="class or interface in java.lang">String</a></code></font></td>
+
+      <td><code><b><a href="DTDStreamReader.html#getPublicIdentifier%28%29">getPublicIdentifier</a></b>()</code>
+      <br>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns
+the public identifier.</td>
+
+    </tr>
+
+    <tr class="TableRowColor" bgcolor="white">
+
+      <td align="right" valign="top" width="1%"><font size="-1"> <code>&nbsp;<a href="http://java.sun.com/javame/reference/apis/jsr139/java/lang/String.html" title="class or interface in java.lang">String</a></code></font></td>
+
+      <td><code><b><a href="DTDStreamReader.html#getName%28%29">getName</a></b>()</code>
+      <br>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns
+the&nbsp;name as a String.</td>
+
+    </tr>
+
+    <tr class="TableRowColor" bgcolor="white">
+
+      <td align="right" valign="top" width="1%"><font size="-1"> <code>&nbsp;<a href="http://java.sun.com/javame/reference/apis/jsr139/java/lang/String.html" title="class or interface in java.lang">String</a></code></font></td>
+
+      <td><code><b><a href="DTDStreamReader.html#getSystemIdentifier%28%29">getSystemIdentifier</a></b>()</code>
+      <br>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns
+the system identifier.</td>
+
+    </tr>
+
+    <tr class="TableRowColor" bgcolor="white">
+
+      <td align="right" valign="top" width="1%"><font size="-1"> <code>&nbsp;<a href="http://java.sun.com/javame/reference/apis/jsr139/java/lang/String.html" title="class or interface in java.lang">String</a></code></font></td>
+
+      <td><code><b><a href="DTDStreamReader.html#getText%28%29">getText</a></b>()</code>
+      <br>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns
+the current value of the parse event as a string.</td>
+
+    </tr>
+
+    <tr class="TableRowColor" bgcolor="white">
+
+      <td align="right" valign="top" width="1%"><font size="-1"> <code>&nbsp;char[]</code></font></td>
+
+      <td><code><b><a href="DTDStreamReader.html#getTextCharacters%28%29">getTextCharacters</a></b>()</code>
+      <br>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns
+an array which contains the characters from this event.</td>
+
+    </tr>
+
+    <tr class="TableRowColor" bgcolor="white">
+
+      <td align="right" valign="top" width="1%"><font size="-1"> <code>&nbsp;int</code></font></td>
+
+      <td><code><b><a href="DTDStreamReader.html#getTextLength%28%29">getTextLength</a></b>()</code>
+      <br>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns
+the length of the sequence of characters for the current event within
+the text character array.</td>
+
+    </tr>
+
+    <tr class="TableRowColor" bgcolor="white">
+
+      <td align="right" valign="top" width="1%"><font size="-1"> <code>&nbsp;int</code></font></td>
+
+      <td><code><b><a href="DTDStreamReader.html#getTextStart%28%29">getTextStart</a></b>()</code>
+      <br>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns
+the offset into the text character array at which the first character
+of the data for the current event is located.</td>
+
+    </tr>
+
+    <tr class="TableRowColor" bgcolor="white">
+
+      <td align="right" valign="top" width="1%"><font size="-1"> <code>&nbsp;boolean</code></font></td>
+
+      <td><code><b><a href="DTDStreamReader.html#hasNext%28%29">hasNext</a></b>()</code>
+      <br>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns
+      <code>true</code> if there are more parsing events
+and <code>false</code> if there are no more events.</td>
+
+    </tr>
+
+    <tr class="TableRowColor" bgcolor="white">
+
+      <td align="right" valign="top" width="1%"><font size="-1"> <code>&nbsp;int</code></font></td>
+
+      <td><code><b><a href="DTDStreamReader.html#next%28%29">next</a></b>()</code>
+      <br>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns
+next DTD parsing event.</td>
+
+    </tr>
+
+  </tbody>
+</table>
+
+&nbsp;
+<p><!-- ============ FIELD DETAIL =========== --><a name="field_detail"><!-- --></a></p>
+
+<table summary="" border="1" cellpadding="3" cellspacing="0" width="100%">
+
+  <tbody>
+
+    <tr class="TableHeadingColor" bgcolor="#ccccff">
+
+      <td colspan="1"><font size="+2"> <b>Field
+Detail</b></font></td>
+
+    </tr>
+
+  </tbody>
+</table>
+
+<a name="START_DTD"><!-- --></a>
+<h3>START_DTD</h3>
+
+<pre>public static final int <b>START_DTD</b></pre>
+
+<dl>
+
+  <dd>Indicates an event is the start of a DTD. On this event,
+method <a href="DTDStreamReader.html#getName%28%29"><code>getName</code></a>
+returns the root element's qualified name, and methods <a href="DTDStreamReader.html#getPublicIdentifier%28%29"><code>getPublicIdentifier</code></a>
+and <a href="DTDStreamReader.html#getSystemIdentifier%28%29"><code>getSystemIdentifier</code></a>
+return the document's public and system identifiers.
+    <p></p>
+
+    <dl>
+
+      <dt><b>See Also:</b></dt>
+
+      <dd><a href="../../../constant-values.html#javax.xml.stream.DTDStreamReader.START_DTD">Constant
+Field Values</a></dd>
+
+    </dl>
+
+  </dd>
+
+</dl>
+
+<hr>
+<a name="END_DTD"><!-- --></a>
+<h3>END_DTD</h3>
+
+<pre>public static final int <b>END_DTD</b></pre>
+
+<dl>
+
+  <dd>Indicates an event is the end of a DTD. On this event,
+method <a href="DTDStreamReader.html#hasNext%28%29"><code>hasNext</code></a>
+returns <code>false</code>, and method <a href="DTDStreamReader.html#getEventType%28%29"><code>getEventType</code></a>
+returns <a href="DTDStreamReader.html#END_DTD"><code>END_DTD</code></a>.
+This event marks the end of the valid lifecycle of the DTDStreamReader
+instance, so any method call other than <a href="DTDStreamReader.html#next%28%29"><code>next</code></a>,
+    <a href="DTDStreamReader.html#hasNext%28%29"><code>hasNext</code></a>,
+    <a href="DTDStreamReader.html#getEventType%28%29"><code>getEventType</code></a>,
+    <a href="DTDStreamReader.html#close%28%29"><code>close</code></a>,
+or <a href="DTDStreamReader.html#getLocation%28%29"><code>getLocation</code></a>
+on this interface will throw java.lang.IllegalStateException.
+    <p></p>
+
+    <dl>
+
+      <dt><b>See Also:</b></dt>
+
+      <dd><a href="../../../constant-values.html#javax.xml.stream.DTDStreamReader.END_DTD">Constant
+Field Values</a></dd>
+
+    </dl>
+
+  </dd>
+
+</dl>
+
+<hr>
+<a name="ENTITY_DECLARATION"><!-- --></a>
+<h3>ENTITY_DECLARATION</h3>
+
+<pre>public static final int <b>ENTITY_DECLARATION</b></pre>
+
+<dl>
+
+  <dd>Indicates an event is a parsed entity declaration.
+    <p> If the <a href="DTDStreamReader.html#getTextLength%28%29"><code>getTextLength</code></a>
+method returns a negative value, the event represents an external
+parsed entity: method <a href="DTDStreamReader.html#getName%28%29"><code>getName</code></a>
+returns the unparsed entity name, methods <a href="DTDStreamReader.html#getPublicIdentifier%28%29"><code>getPublicIdentifier</code></a>
+and <a href="DTDStreamReader.html#getSystemIdentifier%28%29"><code>getSystemIdentifier</code></a>
+return the entity's public and system identifiers, and methods <a href="DTDStreamReader.html#getText%28%29"><code>getText</code></a>
+and <a href="DTDStreamReader.html#getTextCharacters%28%29"><code>getTextCharacters</code></a>
+return null and empty array, respectively. </p>
+
+    <p> If the <a href="DTDStreamReader.html#getTextLength%28%29"><code>getTextLength</code></a>
+method returns a positive value, then the event represents an internal
+parsed entity: method <a href="DTDStreamReader.html#getName%28%29"><code>getName</code></a>
+returns the unparsed entity name, methods <a href="DTDStreamReader.html#getText%28%29"><code>getText</code></a>
+or <a href="DTDStreamReader.html#getTextCharacters%28%29"><code>getTextCharacters</code></a>
+return the replacement text of an internal parsed entity, and methods <a href="DTDStreamReader.html#getPublicIdentifier%28%29"><code>getPublicIdentifier</code></a>
+and <a href="DTDStreamReader.html#getSystemIdentifier%28%29"><code>getSystemIdentifier</code></a>
+return null. </p>
+
+    <p></p>
+
+    <dl>
+
+      <dt><b>See Also:</b></dt>
+
+      <dd><a href="../../../constant-values.html#javax.xml.stream.DTDStreamReader.ENTITY_DECLARATION">Constant
+Field Values</a></dd>
+
+    </dl>
+
+  </dd>
+
+</dl>
+
+<hr>
+<a name="UNPARSED_ENTITY_DECLARATION"><!-- --></a>
+<h3>UNPARSED_ENTITY_DECLARATION</h3>
+
+<pre>public static final int <b>UNPARSED_ENTITY_DECLARATION</b></pre>
+
+<dl>
+
+  <dd>Indicates an event is an unparsed entity declaration. On
+this event, method <a href="DTDStreamReader.html#getName%28%29"><code>getName</code></a>
+returns the unparsed entity name, methods <a href="DTDStreamReader.html#getPublicIdentifier%28%29"><code>getPublicIdentifier</code></a>
+and <a href="DTDStreamReader.html#getSystemIdentifier%28%29"><code>getSystemIdentifier</code></a>
+return the public identifier and the system identifier of an unparsed
+entity, and the method <a href="DTDStreamReader.html#getNotationName%28%29"><code>getNotationName</code></a>
+returns the name of the notation which identifies the format of the
+unparsed entity.
+    <p></p>
+
+    <dl>
+
+      <dt><b>See Also:</b></dt>
+
+      <dd><a href="../../../constant-values.html#javax.xml.stream.DTDStreamReader.UNPARSED_ENTITY_DECLARATION">Constant
+Field Values</a></dd>
+
+    </dl>
+
+  </dd>
+
+</dl>
+
+<hr>
+<a name="NOTATION_DECLARATION"><!-- --></a>
+<h3>NOTATION_DECLARATION</h3>
+
+<pre>public static final int <b>NOTATION_DECLARATION</b></pre>
+
+<dl>
+
+  <dd>Indicates an event is a notation declaration. On this event
+the method <a href="DTDStreamReader.html#getName%28%29"><code>getName</code></a>
+returns the notation name, the methods <a href="DTDStreamReader.html#getPublicIdentifier%28%29"><code>getPublicIdentifier</code></a>
+and <a href="DTDStreamReader.html#getSystemIdentifier%28%29"><code>getSystemIdentifier</code></a>
+return the public identifier and the system identifier of the notation.
+    <p></p>
+
+    <dl>
+
+      <dt><b>See Also:</b></dt>
+
+      <dd><a href="../../../constant-values.html#javax.xml.stream.DTDStreamReader.NOTATION_DECLARATION">Constant
+Field Values</a></dd>
+
+    </dl>
+
+  </dd>
+
+</dl>
+
+<hr>
+<a name="PROCESSING_INSTRUCTION"><!-- --></a>
+<h3>PROCESSING_INSTRUCTION</h3>
+
+<pre>public static final int <b>PROCESSING_INSTRUCTION</b></pre>
+
+<dl>
+
+  <dd>Indicates an event is a processing instruction. On this
+event, the method <a href="DTDStreamReader.html#getPITarget%28%29"><code>getPITarget</code></a>
+returns the processing instruction target and the method <a href="DTDStreamReader.html#getPIData%28%29"><code>getPIData</code></a>
+returns the processing instruction data section.
+    <p></p>
+
+    <dl>
+
+      <dt><b>See Also:</b></dt>
+
+      <dd><a href="../../../constant-values.html#javax.xml.stream.DTDStreamReader.PROCESSING_INSTRUCTION">Constant
+Field Values</a></dd>
+
+    </dl>
+
+  </dd>
+
+</dl>
+
+<hr>
+<a name="COMMENT"><!-- --></a>
+<h3>COMMENT</h3>
+
+<pre>public static final int <b>COMMENT</b></pre>
+
+<dl>
+
+  <dd>Indicates an event is a comment. On this event, the methods
+    <a href="DTDStreamReader.html#getText%28%29"><code>getText</code></a>
+or <a href="DTDStreamReader.html#getTextCharacters%28%29"><code>getTextCharacters</code></a>
+return the character data of the comment, and the methods <a href="DTDStreamReader.html#getTextStart%28%29"><code>getTextStart</code></a>
+and <a href="DTDStreamReader.html#getTextLength%28%29"><code>getTextLength</code></a>
+return the index of the first character and the number of characters in
+the character array returned by the <a href="DTDStreamReader.html#getTextCharacters%28%29"><code>getTextCharacters</code></a>
+method.
+    <p></p>
+
+    <dl>
+
+      <dt><b>See Also:</b></dt>
+
+      <dd><a href="../../../constant-values.html#javax.xml.stream.DTDStreamReader.COMMENT">Constant
+Field Values</a></dd>
+
+    </dl>
+
+  </dd>
+
+</dl>
+
+<!-- ========= CONSTRUCTOR DETAIL ======== -->
+<!-- ============ METHOD DETAIL ========== --><a name="method_detail"><!-- --></a>
+<table summary="" border="1" cellpadding="3" cellspacing="0" width="100%">
+
+  <tbody>
+
+    <tr class="TableHeadingColor" bgcolor="#ccccff">
+
+      <td colspan="1"><font size="+2"> <b>Method
+Detail</b></font></td>
+
+    </tr>
+
+  </tbody>
+</table>
+
+<a name="next()"><!-- --></a>
+<h3>next</h3>
+
+<pre>public int <b>next</b>()<br> throws <a href="../../../javax/xml/stream/XMLStreamException.html" title="class in javax.xml.stream">XMLStreamException</a></pre>
+
+<dl>
+
+  <dd>Returns next DTD parsing event.
+    <p></p>
+
+  </dd>
+
+  <dd>
+    <dl>
+
+      <dt><b>Returns:</b></dt>
+
+      <dd>the integer code corresponding to the current parse
+event </dd>
+
+      <dt><b>Throws:</b> </dt>
+
+      <dd><code><a href="http://java.sun.com/javame/reference/apis/jsr139/java/util/NoSuchElementException.html" title="class or interface in java.util">NoSuchElementException</a></code>
+- if this is called when <a href="DTDStreamReader.html#hasNext%28%29"><code>hasNext()</code></a>
+returns <code>false</code> </dd>
+
+      <dd><code><a href="../../../javax/xml/stream/XMLStreamException.html" title="class in javax.xml.stream">XMLStreamException</a></code>
+- if there is an error processing the underlying DTD source</dd>
+
+    </dl>
+
+  </dd>
+
+</dl>
+
+<hr>
+<a name="hasNext()"><!-- --></a>
+<h3>hasNext</h3>
+
+<pre>public boolean <b>hasNext</b>()<br> throws <a href="../../../javax/xml/stream/XMLStreamException.html" title="class in javax.xml.stream">XMLStreamException</a></pre>
+
+<dl>
+
+  <dd>Returns <code>true</code> if there are more
+parsing events and <code>false</code> if there are no more
+events. This method will return <code>false</code> if the
+current state of the DTDStreamReader is <a href="DTDStreamReader.html#END_DTD"><code>END_DTD</code></a>
+    <p></p>
+
+  </dd>
+
+  <dd>
+    <dl>
+
+      <dt><b>Returns:</b></dt>
+
+      <dd><code>true</code> if there are more events,
+        <code>false</code> otherwise </dd>
+
+      <dt><b>Throws:</b> </dt>
+
+      <dd><code><a href="../../../javax/xml/stream/XMLStreamException.html" title="class in javax.xml.stream">XMLStreamException</a></code>
+- if there is a fatal error detecting the next state</dd>
+
+    </dl>
+
+  </dd>
+
+</dl>
+
+<hr>
+<a name="getEventType()"><!-- --></a>
+<h3>getEventType</h3>
+
+<pre>public int <b>getEventType</b>()</pre>
+
+<dl>
+
+  <dd>Returns an integer code that indicates the type of the
+event at the current cursor location.
+    <p></p>
+
+  </dd>
+
+  <dd>
+    <dl>
+
+      <dt><b>Returns:</b></dt>
+
+      <dd>the integer code corresponding to the current parse
+event</dd>
+
+    </dl>
+
+  </dd>
+
+</dl>
+
+<hr>
+<a name="getText()"><!-- --></a>
+<h3>getText</h3>
+
+<pre>public <a href="http://java.sun.com/javame/reference/apis/jsr139/java/lang/String.html" title="class or interface in java.lang">String</a> <b>getText</b>()</pre>
+
+<dl>
+
+  <dd>Returns the current value of the parse event as a string.
+This returns the value of a <a href="DTDStreamReader.html#COMMENT"><code>COMMENT</code></a>
+or the replacement value for an <a href="DTDStreamReader.html#ENTITY_DECLARATION"><code>ENTITY_DECLARATION</code></a>.
+This method returns <code>null</code> if there is no text
+available.
+    <p></p>
+
+  </dd>
+
+  <dd>
+    <dl>
+
+      <dt><b>Returns:</b></dt>
+
+      <dd>the current text or <code>null</code> if
+there is no text available </dd>
+
+      <dt><b>Throws:</b> </dt>
+
+      <dd><code><a href="http://java.sun.com/javame/reference/apis/jsr139/java/lang/IllegalStateException.html" title="class or interface in java.lang">IllegalStateException</a></code>
+- if this state is not a valid text state.</dd>
+
+    </dl>
+
+  </dd>
+
+</dl>
+
+<hr>
+<a name="getTextCharacters()"><!-- --></a>
+<h3>getTextCharacters</h3>
+
+<pre>public char[] <b>getTextCharacters</b>()</pre>
+
+<dl>
+
+  <dd>Returns an array which contains the characters from this
+event. This array should be treated as read-only and transient: the
+array will contain the text characters only until the DTDStreamReader
+moves on to the next event. Attempts to hold onto the character array
+beyond that time or modify the contents of the array are breaches of
+the contract for this interface.
+    <p></p>
+
+  </dd>
+
+  <dd>
+    <dl>
+
+      <dt><b>Returns:</b></dt>
+
+      <dd>the current text or an empty array </dd>
+
+      <dt><b>Throws:</b> </dt>
+
+      <dd><code><a href="http://java.sun.com/javame/reference/apis/jsr139/java/lang/IllegalStateException.html" title="class or interface in java.lang">IllegalStateException</a></code>
+- if this state is not a valid text state.</dd>
+
+    </dl>
+
+  </dd>
+
+</dl>
+
+<hr>
+<a name="getTextStart()"><!-- --></a>
+<h3>getTextStart</h3>
+
+<pre>public int <b>getTextStart</b>()</pre>
+
+<dl>
+
+  <dd>Returns the offset into the text character array at which
+the first character of the data for the current event is located.
+    <p></p>
+
+  </dd>
+
+  <dd>
+    <dl>
+
+      <dt><b>Returns:</b></dt>
+
+      <dd>the offset of the first character </dd>
+
+      <dt><b>Throws:</b> </dt>
+
+      <dd><code><a href="http://java.sun.com/javame/reference/apis/jsr139/java/lang/IllegalStateException.html" title="class or interface in java.lang">IllegalStateException</a></code>
+- if this state is not a valid text state.</dd>
+
+    </dl>
+
+  </dd>
+
+</dl>
+
+<hr>
+<a name="getTextLength()"><!-- --></a>
+<h3>getTextLength</h3>
+
+<pre>public int <b>getTextLength</b>()</pre>
+
+<dl>
+
+  <dd>Returns the length of the sequence of characters for the
+current event within the text character array. This method returns <code>-1</code>
+if there is no text available.
+    <p></p>
+
+  </dd>
+
+  <dd>
+    <dl>
+
+      <dt><b>Returns:</b></dt>
+
+      <dd>the length of the character sequence for current event
+or <code>-1</code> </dd>
+
+      <dt><b>Throws:</b> </dt>
+
+      <dd><code><a href="http://java.sun.com/javame/reference/apis/jsr139/java/lang/IllegalStateException.html" title="class or interface in java.lang">IllegalStateException</a></code>
+- if this state is not a valid text state.</dd>
+
+    </dl>
+
+  </dd>
+
+</dl>
+
+<hr>
+<a name="getLocation()"><!-- --></a>
+<h3>getLocation</h3>
+
+<pre>public <a href="../../../javax/xml/stream/Location.html" title="interface in javax.xml.stream">Location</a> <b>getLocation</b>()</pre>
+
+<dl>
+
+  <dd>Returns the current location of the processor. If the
+location is unknown the processor should return an implementation of <a href="../../../javax/xml/stream/Location.html" title="interface in javax.xml.stream"><code>Location</code></a>
+that returns <code>-1</code> for each of the lineNumber,
+columnNumber, and characterOffset, and <code>null</code>
+for each of the publicId and systemId. The location information is only
+valid until <a href="DTDStreamReader.html#next%28%29"><code>next()</code></a>
+is called.
+    <p></p>
+
+  </dd>
+
+  <dd>
+    <dl>
+
+      <dt><b>Returns:</b></dt>
+
+      <dd>the <a href="../../../javax/xml/stream/Location.html" title="interface in javax.xml.stream"><code>Location</code></a>
+object</dd>
+
+    </dl>
+
+  </dd>
+
+</dl>
+
+<hr>
+<a name="getPITarget()"><!-- --></a>
+<h3>getPITarget</h3>
+
+<pre>public <a href="http://java.sun.com/javame/reference/apis/jsr139/java/lang/String.html" title="class or interface in java.lang">String</a> <b>getPITarget</b>()</pre>
+
+<dl>
+
+  <dd>Returns the target of a processing instruction.
+    <p></p>
+
+  </dd>
+
+  <dd>
+    <dl>
+
+      <dt><b>Returns:</b></dt>
+
+      <dd>the target or <code>null</code> </dd>
+
+      <dt><b>Throws:</b> </dt>
+
+      <dd><code><a href="http://java.sun.com/javame/reference/apis/jsr139/java/lang/IllegalStateException.html" title="class or interface in java.lang">IllegalStateException</a></code>
+- if this method is not valid in the current state.</dd>
+
+    </dl>
+
+  </dd>
+
+</dl>
+
+<hr>
+<a name="getPIData()"><!-- --></a>
+<h3>getPIData</h3>
+
+<pre>public <a href="http://java.sun.com/javame/reference/apis/jsr139/java/lang/String.html" title="class or interface in java.lang">String</a> <b>getPIData</b>()</pre>
+
+<dl>
+
+  <dd>Returns the data section of a processing instruction.
+    <p></p>
+
+  </dd>
+
+  <dd>
+    <dl>
+
+      <dt><b>Returns:</b></dt>
+
+      <dd>the data or <code>null</code> </dd>
+
+      <dt><b>Throws:</b> </dt>
+
+      <dd><code><a href="http://java.sun.com/javame/reference/apis/jsr139/java/lang/IllegalStateException.html" title="class or interface in java.lang">IllegalStateException</a></code>
+- if this method is not valid in the current state.</dd>
+
+    </dl>
+
+  </dd>
+
+</dl>
+
+<hr>
+<a name="getName()"><!-- --></a>
+<h3>getName</h3>
+
+<pre>public <a href="http://java.sun.com/javame/reference/apis/jsr139/java/lang/String.html" title="class or interface in java.lang">String</a> <b>getName</b>()</pre>
+
+<dl>
+
+  <dd>Returns the name as a String
+    <p></p>
+
+  </dd>
+
+  <dd>
+    <dl>
+
+      <dt><b>Returns:</b></dt>
+
+      <dd>the&nbsp;name </dd>
+
+      <dt><b>Throws:</b> </dt>
+
+      <dd><code><a href="http://java.sun.com/javame/reference/apis/jsr139/java/lang/IllegalStateException.html" title="class or interface in java.lang">IllegalStateException</a></code>
+- if this state is not a valid text state.</dd>
+
+    </dl>
+
+  </dd>
+
+</dl>
+
+<hr>
+<a name="getPublicIdentifier()"><!-- --></a>
+<h3>getPublicIdentifier</h3>
+
+<pre>public <a href="http://java.sun.com/javame/reference/apis/jsr139/java/lang/String.html" title="class or interface in java.lang">String</a> <b>getPublicIdentifier</b>()</pre>
+
+<dl>
+
+  <dd>Returns the public identifier.
+    <p></p>
+
+  </dd>
+
+  <dd>
+    <dl>
+
+      <dt><b>Returns:</b></dt>
+
+      <dd>the public identifier, or null if not available </dd>
+
+      <dt><b>Throws:</b> </dt>
+
+      <dd><code><a href="http://java.sun.com/javame/reference/apis/jsr139/java/lang/IllegalStateException.html" title="class or interface in java.lang">IllegalStateException</a></code>
+- if this method is not valid in the current state.</dd>
+
+    </dl>
+
+  </dd>
+
+</dl>
+
+<hr>
+<a name="getSystemIdentifier()"><!-- --></a>
+<h3>getSystemIdentifier</h3>
+
+<pre>public <a href="http://java.sun.com/javame/reference/apis/jsr139/java/lang/String.html" title="class or interface in java.lang">String</a> <b>getSystemIdentifier</b>()</pre>
+
+<dl>
+
+  <dd>Returns the system identifier.
+    <p></p>
+
+  </dd>
+
+  <dd>
+    <dl>
+
+      <dt><b>Returns:</b></dt>
+
+      <dd>the system identifier, or null if not available </dd>
+
+      <dt><b>Throws:</b> </dt>
+
+      <dd><code><a href="http://java.sun.com/javame/reference/apis/jsr139/java/lang/IllegalStateException.html" title="class or interface in java.lang">IllegalStateException</a></code>
+- if this method is not valid in the current state.</dd>
+
+    </dl>
+
+  </dd>
+
+</dl>
+
+<hr>
+<a name="getNotationName()"><!-- --></a>
+<h3>getNotationName</h3>
+
+<pre>public <a href="http://java.sun.com/javame/reference/apis/jsr139/java/lang/String.html" title="class or interface in java.lang">String</a> <b>getNotationName</b>()</pre>
+
+<dl>
+
+  <dd>Returns the notation name.
+    <p></p>
+
+  </dd>
+
+  <dd>
+    <dl>
+
+      <dt><b>Returns:</b></dt>
+
+      <dd>the notation name </dd>
+
+      <dt><b>Throws:</b> </dt>
+
+      <dd><code><a href="http://java.sun.com/javame/reference/apis/jsr139/java/lang/IllegalStateException.html" title="class or interface in java.lang">IllegalStateException</a></code>
+- if this method is not valid in the current state.</dd>
+
+    </dl>
+
+  </dd>
+
+</dl>
+
+<hr>
+<a name="close()"><!-- --></a>
+<h3>close</h3>
+
+<pre>public void <b>close</b>()<br> throws <a href="../../../javax/xml/stream/XMLStreamException.html" title="class in javax.xml.stream">XMLStreamException</a></pre>
+
+<dl>
+
+  <dd>Terminates DTD processing, skipping all DTD related events
+up to <a href="DTDStreamReader.html#END_DTD"><code>END_DTD</code></a>.
+This method does not close the underlying input source. If this method
+is called when current state is already <a href="DTDStreamReader.html#END_DTD"><code>END_DTD</code></a>,
+this method does nothing. Once this method has been invoked, method <a href="DTDStreamReader.html#hasNext%28%29"><code>hasNext()</code></a>
+returns <code>false</code>, method <a href="DTDStreamReader.html#getEventType%28%29"><code>getEventType()</code></a>
+returns <a href="DTDStreamReader.html#END_DTD"><code>END_DTD</code></a>
+and any other method call except <a href="DTDStreamReader.html#next%28%29"><code>next()</code></a>
+or <a href="DTDStreamReader.html#getLocation%28%29"><code>getLocation()</code></a>
+on this interface generates an <code>java.lang.IllegalStateException</code>.
+    <p> </p>
+
+  </dd>
+
+  <dd>
+    <dl>
+
+      <dt><b>Throws:</b> </dt>
+
+      <dd><code><a href="../../../javax/xml/stream/XMLStreamException.html" title="class in javax.xml.stream">XMLStreamException</a></code>
+- if there is an error processing the underlying DTD source</dd>
+
+    </dl>
+
+  </dd>
+
+</dl>
+
+<!-- ========= END OF CLASS DATA ========= -->
+<hr><!-- ======= START OF BOTTOM NAVBAR ====== --><a name="navbar_bottom"><!-- --></a>
+<table summary="" border="0" cellpadding="1" cellspacing="0" width="100%">
+
+  <tbody>
+
+    <tr>
+
+      <td colspan="3" class="NavBarCell1" bgcolor="#eeeeff"> <a name="navbar_bottom_firstrow"><!-- --></a>
+      <table summary="" border="0" cellpadding="0" cellspacing="3">
+
+        <tbody>
+
+          <tr align="center" valign="top">
+
+            <td class="NavBarCell1" bgcolor="#eeeeff">
+            <a href="../../../overview-summary.html"><font class="NavBarFont1"><b>Overview</b></font></a>&nbsp;</td>
+
+            <td class="NavBarCell1" bgcolor="#eeeeff">
+            <a href="package-summary.html"><font class="NavBarFont1"><b>Package</b></font></a>&nbsp;</td>
+
+            <td class="NavBarCell1Rev" bgcolor="#ffffff">&nbsp;<font class="NavBarFont1Rev"><b>Class</b></font>&nbsp;</td>
+
+            <td class="NavBarCell1" bgcolor="#eeeeff">
+            <a href="class-use/DTDStreamReader.html"><font class="NavBarFont1"><b>Use</b></font></a>&nbsp;</td>
+
+            <td class="NavBarCell1" bgcolor="#eeeeff">
+            <a href="package-tree.html"><font class="NavBarFont1"><b>Tree</b></font></a>&nbsp;</td>
+
+            <td class="NavBarCell1" bgcolor="#eeeeff">
+            <a href="../../../deprecated-list.html"><font class="NavBarFont1"><b>Deprecated</b></font></a>&nbsp;</td>
+
+            <td class="NavBarCell1" bgcolor="#eeeeff">
+            <a href="../../../index-all.html"><font class="NavBarFont1"><b>Index</b></font></a>&nbsp;</td>
+
+            <td class="NavBarCell1" bgcolor="#eeeeff">
+            <a href="../../../help-doc.html"><font class="NavBarFont1"><b>Help</b></font></a>&nbsp;</td>
+
+          </tr>
+
+        </tbody>
+      </table>
+
+      </td>
+
+      <td rowspan="3" align="right" valign="top"><em>
+      </em></td>
+
+    </tr>
+
+    <tr>
+
+      <td class="NavBarCell2" bgcolor="white"><font size="-2">&nbsp;PREV CLASS&nbsp;
+&nbsp;<a href="../../../javax/xml/stream/Location.html" title="interface in javax.xml.stream"><b>NEXT CLASS</b></a></font></td>
+
+      <td class="NavBarCell2" bgcolor="white"><font size="-2"> <a href="../../../index.html" target="_top"><b>FRAMES</b></a> &nbsp;
+&nbsp;<a href="DTDStreamReader.html" target="_top"><b>NO
+FRAMES</b></a> &nbsp;
+&nbsp;
+      <script type="text/javascript">
+<!--
+if(window==top) {
+document.writeln('<A HREF="../../../allclasses-noframe.html"><B>All Classes</B></A>');
+}
+//-->
+      </script>
+      <noscript> <A
+HREF="../../../allclasses-noframe.html"><B>All
+Classes</B></A> </noscript>
+
+      </font></td>
+
+    </tr>
+
+    <tr>
+
+      <td class="NavBarCell3" valign="top"><font size="-2"> SUMMARY:&nbsp;NESTED&nbsp;|&nbsp;<a href="#field_summary">FIELD</a>&nbsp;|&nbsp;CONSTR&nbsp;|&nbsp;<a href="#method_summary">METHOD</a></font></td>
+
+      <td class="NavBarCell3" valign="top"><font size="-2">DETAIL:&nbsp;<a href="#field_detail">FIELD</a>&nbsp;|&nbsp;CONSTR&nbsp;|&nbsp;<a href="#method_detail">METHOD</a></font></td>
+
+    </tr>
+
+  </tbody>
+</table>
+
+<a name="skip-navbar_bottom"></a>
+<!-- ======== END OF BOTTOM NAVBAR ======= -->
+<hr>
+</body>
+</html>
+
+
+
+<!-- ** BEGIN: footer.jsp ** //-->
+
+
+
+
+
+
+
+
+</td>
+</tr>
+</table>
+
+<!-- ** END: Content Table ** //-->
+
+<!-- ** BEGIN: Footer Table ** //-->
+
+<div id="footer" style="clear: both;">
+    <div class="footleft">
+        <a href="/en/resources/contacts">Contact Us</a>
+    </div>
+	
+    <div class="botbar"><img src="/images/spacer.gif" alt="" height="23" width="1"></div>
+
+    <div class="footleft2">
+         &copy; 2019, Oracle Corporation and/or its affiliates. 
+        <a href="/en/home/terms">Terms of Use</a>. <a href="http://www.oracle.com/us/legal/privacy/index.html">Privacy Policy</a>. <a href="http://www.oracle.com/us/legal/third-party-trademarks/third-party-trademarks-078568.html">Trademarks</a>
+    </div>
+
+    <div class="footright">
+        <img src="/images/common/logo_oracle_footer.gif" alt="Oracle Corporation" height="22" width="91">
+    </div>
+
+    <div style="clear: both;"><img src="/images/spacer.gif" alt="" height="30" width="1"></div>
+</div>
+
+<!-- ** END: Footer Table ** //-->
+
+
+
+<!-- ** Menu Start ** //-->
+
+
+
+</body>
+</html>
+<!-- ** END: footer.jsp ** //-->
+

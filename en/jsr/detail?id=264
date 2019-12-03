@@ -1,0 +1,965 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- ** BEGIN: header.jsp ** //-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3c.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+<head>
+    
+
+   
+    <link href="/includes/css/menu.css" rel="stylesheet" type="text/css"></link>
+    <link href="/includes/css/style.css" rel="stylesheet" type="text/css"></link>
+    <!--[if lt IE 6]><link href="/includes/css/style5.css" rel="stylesheet" type="text/css" ></link><![endif]-->
+    <!--[if gte IE 5]><link href="/includes/css/style6.css" rel="stylesheet" type="text/css" ></link><![endif]-->
+    <link href="/includes/css/tabs.css"  rel="stylesheet" type="text/css"></link>
+
+    <script type="text/javascript" src="/includes/scripts/tabs.js"></script>
+    <script type="text/javascript" src="/includes/scripts/menu.js"></script>
+   
+
+    
+
+    
+        <title>The Java Community Process(SM) Program - JSRs: Java Specification Requests - detail JSR# 264</title>
+    
+
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+
+
+<body onload="P7_initPM(0,1,0,0,-1)">
+
+    <a name="top"></a>
+
+    <div id="header">
+	<div id="logo">
+		<a href="/en/home/index"><img src="/images/spacer.gif" alt="Java Community Process" height="81" width="151"></a>
+	</div>
+	<div id="tools">
+		<div class="search">
+			<form name="search" action="/en/jsr/summary" method="get" onsubmit="return validate_search()">
+				<input name="id" value="Search JSRs" size="16" class="form" onfocus="nullify_if_equal(this, 'Search JSRs')" type="text">
+				<a href="javascript:document.search.submit()" onclick="return validate_search()"><img src="/images/button_go.gif" width="21" height="16" border="0" alt="Submit this Search" name="sub_search"></a>
+			</form>
+		</div>
+		<div class="tools">
+			<a href="/en/press/pressroom">Press Room</a> &nbsp;|&nbsp;
+			<a href="http://java.com/java/download/index.jsp?cid=jdp78399">Get Java Here</a> &nbsp;|&nbsp;
+			<!-- <a href="javascript:void(0)">Print Format</a> &nbsp;|&nbsp;&nbsp; -->
+		</div>
+
+	</div>
+	<div style="clear: right;"></div>
+
+        
+
+	<div class="topbar"><img src="/images/spacer.gif" alt="" height="3" width="154"></div>
+	<div id="update"> </div>
+    </div>
+
+
+    
+
+        <!-- ** BEGIN: Content Table ** //-->
+
+        <table width="100%" border="0" cellpadding="0" cellspacing="0">
+
+            <tr>
+
+                <!-- ** BEGIN: Navigation Column ** //-->
+                <td width="150" id="leftcontent" valign="top">
+                    <!-- Navigation Placeholder //-->
+
+                    
+
+                    <div class="bar"><img src="/images/hr_dots1.gif" alt="" height="3" width="150"></div>
+
+        <!-- begin find JSRs form -->
+        <!-- IMPORTANT! do not convert this form to Struts < html : form > tag.  javascript change of form.action property fails. -->
+        <img src="/images/hd_find-jsrs.gif" alt="Find JSRs" height="18" width="150">
+        <form name="findjsr" action="/en/jsr/summary" method="get" class="pt5" onsubmit="return validate_findjsr()">
+            <input name="id" size="18" class="form" value="Search JSRs" onfocus="nullify_if_equal(this, 'Search JSRs')" type="text">
+	    <a href="javascript:document.findjsr.submit()" onclick="return validate_findjsr()"><img src="/images/button_go.gif" width="21" height="16" border="0" alt="Submit this Search" name="sub_search"></a>
+        </form><br><br>
+
+        <!-- ** Menu Start ** //-->
+
+        <ul id="p7PMnav">
+            <li><a href="/en/jsr/platform">JSRs by Platform</a></li>
+            <li><a href="/en/jsr/tech">JSRs by Technology</a></li>
+            <li><a href="/en/jsr/stage">JSRs by Stage</a></li>
+            <li><a href="/en/jsr/ec">JSRs by Committee</a></li>
+            <li><a href="/en/jsr/all">List of All JSRs</a></li>
+
+            <!--end find JSRs form -->
+            <div style="clear: both;"><img src="/images/spacer.gif" alt="" height="25" width="1"></div>
+
+            <!--begin my JCP -->
+            <img src="/images/hd_my-jcp.gif" alt="My JCP" height="18" width="150">
+            
+
+          <form name="login" method="get" action="/en/user/login" >
+            <input name="Sign-in" type="submit" title="Sign-in" value="Sign-in" />
+          </form>
+
+            <div style="clear:both"><img src="/images/global/spacer.gif" width="1" height="3" alt=""></div>
+            <div class="noNav">
+                <a href="/en/user/register">Register for Site</a>
+            </div>
+
+             <div class="bar"><img src="/images/hr_dots1.gif" alt="" height="3" width="150"></div>
+           <div class="noNav" style="color: #666666; padding: 0;">
+              Use of JCP site is subject to the
+              <a href="/en/home/terms" style="display:inline;padding: 0">JCP Terms of Use</a> and the
+              <a href="http://www.oracle.com/us/legal/privacy/index.html" style="display:inline;padding: 0" href="">Oracle Privacy Policy</a>
+          </div>
+
+            
+
+            <div style="clear:both"><img src="/images/global/spacer.gif" width="1" height="25" alt=""></div>
+
+            <!--begin JCP info -->
+            <img src="/images/hd_jcp-info.gif" alt="JCP Info" height="18" width="150">
+
+            <li><a href="/en/procedures/overview" class="p7PMtrg">About JCP</a>
+                <ul>
+                    <li><a href="/en/procedures/overview">Program Overview</a></li>
+                    <li><a href="/en/procedures/jcp2">JCP Process Document</a></li>
+                    <li><a href="/en/whatsnew/calendar">Calendar</a></li>
+                    <li><a href="/en/participation/members">JCP Members</a></li>
+                    <li><a href="/en/participation/committee">Executive Committee</a></li>
+                    <li><a href="/en/whatsnew/elections">Elections</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/en/participation/overview" class="p7PMtrg">Get Involved</a>
+		<ul>
+                    <li><a href="/en/participation/overview">Overview</a></li>
+                    <li><a href="/en/participation/membership">Becoming a JCP Member</a></li>
+		</ul>
+            </li>
+
+            <li><a href="/en/resources/contents" class="p7PMtrg">Community Resources</a>
+                <ul>
+                    <li><a href="/en/resources/contents">Overview</a></li>
+                    <li><a href="/en/resources/tutorials">Tutorials</a></li>
+                    <li><a href="/en/resources/multimedia">JCP Podcasts</a></li>
+                    <li><a href="/en/resources/guide">Spec Lead Guide</a></li>
+                    <li><a href="/en/resources/tdk">TCK Tool & Info</a></li>
+                    <li><a href="/en/resources/license_reference">License Reference</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/en/press/pmo" class="p7PMtrg">Community News</a>
+                <ul>
+                    <li><a href="/en/press/pmo">News</a></li>
+                    <li><a href="/en/press/news/awards/awards_main">Programs &amp; Awards</a></li>
+                    <li><a href="/en/press/releases">Press Releases</a></li>
+                    <li><a href="/en/press/success">Success Stories</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/en/introduction/faq">FAQ</a></li>
+
+            <li><a href="/en/resources/contacts">Contact Us</a></li>
+
+            <div style="clear: both;"><img src="/images/spacer.gif" alt="" height="25" width="1"></div>
+
+            <!--[if lte IE 6]><style>#p7PMnav a{height:1em;}#p7PMnav li{height:1em;float:left;clear:both;width:100%}</style><![endif]-->
+            <!--[if IE 6]><style>#p7PMnav li{clear:none;}</style><![endif]-->
+            <!--[if IE 7]><style>#p7PMnav a{zoom:100%;}#p7PMnav li{float:left;clear:both;width:100%;}</style><![endif]-->
+        </ul>
+
+        
+
+        <!--begin ad space -->
+        <div class="ads">
+            <a href="http://java.com/java/download/index.jsp?cid=jdp78399" target="_blank"><img style="display: ;" src="/images/ad_banner2.gif" alt="Ad Banner" border="1" height="70" width="150"></a>
+        </div>
+        <!--end ad space -->
+
+<!-- ** Menu End ** //-->
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;<br>
+
+    
+
+                    &nbsp;<br>
+                    <img src="/images/common/trans.gif" alt="" width="1" height="150"><br>
+
+              
+
+
+
+                </td>
+                <!-- ** END: Navigation Column ** //-->
+
+                <!-- ** BEGIN: Gutter Column ** //-->
+		<td width="10" nowrap><img src="/images/common/trans.gif" alt="" width="10" height="1"></td>
+                <!-- ** END: Gutter Column ** //-->
+
+                <!-- ** BEGIN: Content Column ** //-->
+                <td width="100%" valign="top">
+
+    
+<script type="text/javascript">
+
+String.prototype.trim = function() {
+        return this.replace(/^\s+|\s+$/g,"");
+}
+String.prototype.ltrim = function() {
+        return this.replace(/^\s+/,"");
+}
+String.prototype.rtrim = function() {
+        return this.replace(/\s+$/,"");
+}
+
+function validate_search() {
+	if (document.search.id.value == "Search JSRs" || document.search.id.value.trim().length == 0) {
+		alert("Search terms must be entered first");
+		return false;
+	}
+	return true;
+}
+
+function validate_findjsr() {
+	if (document.findjsr.id.value == "Search JSRs" || document.findjsr.id.value.trim().length == 0) {
+		alert("Search terms must be entered first");
+		return false;
+	}
+	return true;
+}
+
+function nullify_if_equal(field, str) {
+	// alert("val=" + field.value);
+	if (field.value == str) {
+		field.value = "";
+	}
+}
+
+</script>
+<!-- ** END: header.jsp ** //-->
+
+
+
+
+
+        <!--  BEGIN NAVIGATION TABS -->
+        <div id="p7TP1">
+                <div class="p7TP_tabs">
+                        <div id="p7tpb1_1" class="down"><a class="down">JSR</a></div>
+                        <div><a href="/en/egc/view?id=264">Community</a></div>
+                        <div><a href="/en/eg/eghome?id=264">Expert Group</a></div>
+			
+
+                <br class="p7TPclear" />
+                </div>
+
+                <div class="p7TPcontent">
+                        <div id="p7tpc1_1">
+
+			
+                                <a href="summary?id=264">Summary</a>
+			
+			
+                                &nbsp;|&nbsp;
+				<a href="proposalDetails?id=264">Proposal</a>
+			
+			
+                                &nbsp;|&nbsp;
+                                <span>Detail (Summary &amp; Proposal)</span>
+			
+		
+                        </div>
+
+                </div>
+                <!--[if lte IE 6]><style type="text/css">.p7TPpanel div,.p7TPpanel a{height:1%;}.p7TP_tabs a{white-space:nowrap;}</style><![endif]-->
+        </div>
+        <script type="text/javascript">
+                P7_initTP(1,0);
+        </script>
+        <!--  END NAVIGATION TABS -->
+
+
+<div class="anybar"><img src="/images/global/bar_green.gif" alt="" width="12" height="4"></div>
+
+<div class="header2">JSRs: Java Specification Requests</div>
+<div class="header1">JSR 264: Order Management API</div>
+<div class="anybar"><img src="/images/global/bar_green.gif" alt="" width="12" height="4"></div>
+<br>
+
+
+
+<!-- ********************************************** -->
+<!--  JSR Status information                        -->
+<!-- ********************************************** -->
+
+
+                <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                    <tr>
+                        <td id="centercontent" valign="top">
+			<tr>
+			<td>
+                            <table class="tbl" cellpadding="4" cellspacing="1" width="100%">
+                                <tr valign="top">
+                                    <td class="bdtl">Stage</td>
+                                    <td class="bdtl">Access</td>
+                                    <td class="bdtl">Start</td>
+                                    <td class="bdtl">Finish</td>
+                                </tr>
+
+				<tr class="bgw" valign="top">
+                                        <td>Final Release </td>
+                                        
+                                            <td><a href="http://jcp.org/aboutJava/communityprocess/final/jsr264/index.html">Download page</a></td>
+                                        
+                                        <td>24 Sep, 2007</td>
+                                        <td>&nbsp;</td>
+				</tr>
+
+				<tr class="bgw" valign="top">
+                                        <td>Final Approval Ballot </td>
+                                        
+                                            <td><a href="results?id=4343">View results</a></td>
+                                        
+                                        <td>14 Aug, 2007</td>
+                                        <td>27 Aug, 2007</td>
+				</tr>
+
+				<tr class="bgw" valign="top">
+                                        <td>Proposed Final Draft  2</td>
+                                        
+                                            <td><a href="http://jcp.org/aboutJava/communityprocess/pfd/jsr264/index2.html">Download page</a></td>
+                                        
+                                        <td>22 Jun, 2007</td>
+                                        <td>&nbsp;</td>
+				</tr>
+
+				<tr class="bgw" valign="top">
+                                        <td>Proposed Final Draft </td>
+                                        
+                                            <td><a href="http://jcp.org/aboutJava/communityprocess/pfd/jsr264/index2.html">Download page</a></td>
+                                        
+                                        <td>29 Nov, 2006</td>
+                                        <td>&nbsp;</td>
+				</tr>
+
+				<tr class="bgw" valign="top">
+                                        <td>Public Review Ballot </td>
+                                        
+                                            <td><a href="results?id=3872">View results</a></td>
+                                        
+                                        <td>06 Jun, 2006</td>
+                                        <td>12 Jun, 2006</td>
+				</tr>
+
+				<tr class="bgw" valign="top">
+                                        <td>Public Review </td>
+                                        
+                                            <td><a href="http://jcp.org/aboutJava/communityprocess/pr/jsr264/index.html">Download page</a></td>
+                                        
+                                        <td>11 May, 2006</td>
+                                        <td>12 Jun, 2006</td>
+				</tr>
+
+				<tr class="bgw" valign="top">
+                                        <td>Early Draft Review </td>
+                                        
+                                            <td><a href="http://jcp.org/aboutJava/communityprocess/edr/jsr264/index.html">Download page</a></td>
+                                        
+                                        <td>27 Jul, 2005</td>
+                                        <td>26 Aug, 2005</td>
+				</tr>
+
+				<tr class="bgw" valign="top">
+                                        <td>Expert Group Formation </td>
+                                        
+                                            <td>&nbsp;</td>
+                                        
+                                        <td>28 Dec, 2004</td>
+                                        <td>&nbsp;</td>
+				</tr>
+
+				<tr class="bgw" valign="top">
+                                        <td>JSR Review Ballot </td>
+                                        
+                                            <td><a href="results?id=2986">View results</a></td>
+                                        
+                                        <td>14 Dec, 2004</td>
+                                        <td>27 Dec, 2004</td>
+				</tr>
+
+			</table>
+			</td>
+			</tr>
+                        </td>
+</tr>
+</table>
+
+<!-- ********************************************** -->
+<!--  JCP Version                                   -->
+<!-- ********************************************** -->
+
+<span style="padding: 10px; display: block;">
+
+    <b> Status: </b><a href="/en/introduction/glossary#status"><font color=black><span title="A JSR that has produced a Final Release milestone more than a year ago.">Final</span></font></a><br>
+
+
+
+    
+	<b>JCP version in use:</b> <a href="/procedures/jcp2_6"> 2.6</a><br>
+    
+
+    
+	<b>Java Specification Participation Agreement version in use:</b> 2.0<br>
+    
+
+    <br><br>
+        <b>Description</b>:<br>
+        This JSR defines an interface to an Order Management component, with specific extensions for activation and work order management use-cases.
+    <br><br>
+
+    <!-- ********************************************** -->
+    <!--  JSR Comments Email excluding JSR 900 and up   -->
+    <!-- ********************************************** -->
+
+	    
+            <b> Please direct comments on this JSR to the Spec Lead(s) </b> <br>
+	    
+
+            </span>
+
+   <!-- ****************************************** -->
+
+                <div id="p7TP52">
+                        <div class="p7TP_tabs2">
+                            <div><span>Team</span></div>
+                            <br class="p7TPclear" />
+                        </div>
+                </div>
+
+                <table bgcolor="#f2f2f2" border="0" cellpadding="5" cellspacing="1" width="100%">
+	
+                    <tr valign="top">
+                            <td colspan="3"><span class="header4">Specification Leads</span></td>
+                    </tr>
+
+
+		
+        
+			<tr valign="top">
+                            
+                            <td width="20" nowrap>&nbsp;</td>
+                            
+                            <td>Andreas&nbsp;Ebbert-Karroum</td>
+                            <td>codecentric AG</td>
+			</tr>
+        
+
+                <tr valign="top">
+                        <td colspan="4" class="spacerw"><img src="/images/global/spacer.gif" alt="" height="1" width="1"></td>
+                </tr>
+                <tr valign="top">
+                        <td colspan="3"><span class="header4">Expert Group</span></td>
+                </tr>
+
+
+			<tr valign="top">
+                            <td width="20" nowrap>&nbsp;</td> <!-- Gutter //-->
+                            <td>Amdocs Management Ltd.</td>
+     
+
+                            <td>Ceon Corporation</td>
+    
+
+                            <td>codecentric AG</td>
+			</tr>
+
+
+			<tr valign="top">
+                            <td width="20" nowrap>&nbsp;</td> <!-- Gutter //-->
+                            <td>Dillon, Eric</td>
+     
+
+                            <td>Jacobs Rimell LTD</td>
+    
+
+                            <td>Nokia Corporation</td>
+			</tr>
+
+
+			<tr valign="top">
+                            <td width="20" nowrap>&nbsp;</td> <!-- Gutter //-->
+                            <td>Oracle</td>
+     
+
+                            <td>SAP SE</td>
+    
+
+                            <td>Sigma Systems Canada Inc.</td>
+			</tr>
+
+
+			<tr valign="top">
+                            <td width="20" nowrap>&nbsp;</td> <!-- Gutter //-->
+                            <td>Sun Microsystems, Inc.</td>
+     
+
+                            <td>Telcordia Technologies, Inc.</td>
+    
+
+                            <td>TeleManagement Forum</td>
+			</tr>
+
+
+			<tr valign="top">
+                            <td width="20" nowrap>&nbsp;</td> <!-- Gutter //-->
+                            <td>Uzieblo, Artur</td>
+     
+
+                            <td>Vallent Corporation</td>
+    
+
+                            <td>Vermaas, Gero</td>
+			</tr>
+
+
+			<tr valign="top">
+                            <td width="20" nowrap>&nbsp;</td> <!-- Gutter //-->
+                            <td>Wipro Technologies</td>
+     
+
+
+
+
+
+
+
+
+
+			</tr>
+
+
+
+
+
+
+
+
+
+
+			</tr>
+
+		</table>
+                    <!-- ********************************************** -->
+                    <!--  Expert Group Status                           -->
+                    <!-- ********************************************** -->
+
+                    <table cellpadding="0" cellspacing="0" border="0">
+                        
+                    </table>
+
+   <!-- ****************************************** -->
+
+
+
+
+<!-- ********************************************** -->
+<!--  JSRProposal Info                              -->
+<!-- ********************************************** -->
+<p>
+
+
+<a name="updates"><font size="+2">Updates to the Original JSR</font></a><p>
+
+Note that this information has been updated since <a href="#orig">the original proposal</a>.
+
+<P>
+<B><U>2008.10.09</U></b><BR>
+The Maintenance Lead has changed from Nokia Siemens Networks to Codecentric.
+
+<P><HR><P>
+
+<a name="orig"><font size="+2">Original Java Specification Request (JSR)</font></a><p>
+<FONT SIZE="-1">
+
+<!-- BEGIN-SUB TOPICS -->
+
+          <A HREF="#1"> Identification</A>  |
+          <A HREF="#2"> Request</A>  |
+          <A HREF="#3"> Contributions</A>  |
+          <A HREF="#4"> Additional Information</A>
+<BR>
+
+<!-- END-SUB TOPICS -->
+
+</FONT>
+<P>
+
+<!-- BEGIN TEMPLATE -->
+
+<!-- SECTION 1 -->
+
+<A NAME="1"></A>
+
+<P><FONT size=+2>Section 1. Identification</FONT>
+
+<P><b>Submitting Member:</b> Nokia Corporation </P>
+
+<P><b>Name of Contact Person:</b> Andreas Ebbert-Karroum</P>
+
+<P><b>E-Mail Address:</b> andreas.ebbert-karroum<faketag><faketag>&#64;nokia.com</P>
+
+<P><b>Telephone Number:</b> +49 211 9412 3928</P>
+
+<P><b>Fax Number:</b> +49 211 9412 3838</P>
+
+<BR>
+<P><b>Specification Lead:</b> Andreas Ebbert-Karroum</P>
+
+<P><b>E-Mail Address:</b> andreas.ebbert-karroum<faketag><faketag>&#64;nokia.com</P>
+
+<P><b>Telephone Number:</b> +49 211 9412 3928</P>
+
+<P><b>Fax Number:</b> +49 211 9412 3838 </P>
+
+<BR>
+
+<P><B>Initial Expert Group Membership:</B>
+</P>
+
+<P>Covad<BR>
+IP Value<BR>
+Metasolv<BR>
+Motorola<BR>
+Nokia<BR>
+Nortel Networks<BR>
+Sun Microsystems</P>
+
+<P><B>Supporting this JSR:</B>
+
+</P>
+
+<P>This JSR is supported by all the member companies of the OSS through Java Initiative. Please see http://www.ossj.org/aboutus/members.shtml for the current list of <A HREF="http://www.ossj.org/aboutus/members.shtml">OSS/J member companies</A>.</p>
+
+<BR><BR>
+
+<!-- SECTION 2 -->
+
+<A NAME="2"></A>
+
+<P>
+<FONT SIZE="+2">Section 2: Request</FONT><P>
+</P>
+
+<H4>2.1 Please describe the proposed Specification:</H4>
+
+<P>This specification continues the work that has been started with the OSS Service Activation API (<A HREF="http://jcp.org/en/jsr/detail?id=89">JSR 89</A>). The goal of JSR 89 was to specify an API, which standardizes an interface to service provisioning products in an Operation Support Systems environment. 
+<P>
+While that target has been reached and the JSR is well adopted, it has now become necessary to include features that have been intentionally left out in <A HREF="http://jcp.org/en/jsr/detail?id=89">JSR 89</A>, and to extend the scope to cover other related use-cases, which have not been in the original scope of <A HREF="http://jcp.org/en/jsr/detail?id=89">JSR 89</A>.
+<P>
+The two main abstractions of <A HREF="http://jcp.org/en/jsr/detail?id=89">JSR 89</A> were services and orders. While the order model was specified in detail, the service model had to be kept simple to allow implementations of all kinds of services. In fact <A HREF="http://jcp.org/en/jsr/detail?id=89">JSR 89</A> is an Order Management API, which constraints order items to services only, and leaves the concrete service definition up to the implementation.
+<P>
+This limitation will be overcome in this JSR, as a more generic Order Management API will be defined. Starting from <A HREF="http://jcp.org/en/jsr/detail?id=89">JSR 89</A> the existing order management model will be used and extended in scope and functionality. 
+<P>
+The concept of an order will be generalized from only dealing with services to dealing with an abstraction that represents anything orderable or that is needed to be fulfilled by an order. This includes but is not limited to products, services, resources and work order items, since concrete instances of the generic order item abstraction will be defined in this API to cover the full eTom provisioning stack on one hand (product, service and resource activation) and on the other hand the ability to process work orders (as order items).
+<P>
+Products wrap services as a bundle that can be presented and marketed to customers. Resources are the realization of services in the network. This layered approach enables the separation of the provisioning process for products, services and resources: The input to the product activation component comes from CMR or self service products, and then decomposes in two steps to separated (in implementation and deployment) but integrated (in concept and process) service and resource provisioning, with the latter then handling the necessary network element configuration internally.
+<P>
+Work orders are used in workforce management systems that allow network and service managers to assign work orders to the best skilled persons, plan staff size and skill mix (avoiding costly overstaffing or poor service due to understaffing). Work orders take the form of repair tickets and installation orders that are similar to trouble tickets, but with additional information such as location, required skill and requested repair time.
+<P>
+The functionality will be extended to cover left-overs from JSR 89 as well as new requirements: Those include bulk orders, atomic order handling, capability for extended order state model discovery and mapping of order types to distinct order item types.
+<P>
+Special attention during the definition of the specification and implementation of the RI and TCK will be paid to the alignment with the latest version of the OSS Common API (JSR still to be submitted), which will include the OSS Core Business Entities (CBE). These Core Business Entities enable component-spanning processes with independent standardized interfaces for those components. For example the CBE defines the root service abstraction, which is used in the OSS Inventory API as well as it will be used in this JSR and thus enables use-cases that span OSS Inventory API implementations and Order Management API implementations.
+
+
+
+</P>
+
+<H4>2.2 What is the target Java platform? (i.e., desktop, server, personal, embedded, card, etc.)</H4>
+
+<P>Server</P>
+
+<H4>2.3 The Executive Committees would like to ensure JSR submitters think about how their proposed technology relates to all of the Java platform editions. Please provide details here for which platform editions are being targeted by this JSR, and how this JSR has considered the relationship with the other platform editions.</H4>
+
+<P>The Order Management API is developed consistently with <A HREF="http://jcp.org/en/jsr/detail?id=144">JSR 144</A> and <A HREF="http://www.jcp.org/en/jsr/tech?listBy=3&listByType=tech">the other APIs developed by the OSS through Java Initiative</A> (OSS/J) (JSR 89, 90, 91, 130, 142, 210, 251, 254 and 263) and interoperates smoothly with them.
+<P>
+There is no apparent overlap or impact on other platform editions.
+
+
+</P>
+
+<H4>2.4 Should this JSR be voted on by both Executive Committees?</H4>
+
+<P>The initiating companies do not believe that voting by both Executive Committees is required.  A vote by the J2SE/J2EE EC is appropriate.
+
+
+</P>
+
+
+<H4>2.5 What need of the Java community will be addressed by the proposed specification?</H4>
+
+<P>The <A HREF="http://jcp.org/en/jsr/detail?id=89">JSR 89</A> has been well received by the Java community and there are several adoptions for it. This new JSR will address further requirements to and intentional omissions from the old JSR. The JSR will be aligned with the latest OSS Common API (JSR still to be submitted) and latest Design Guidelines, which will include the Webservices integration profile, further design pattern implementations and also the so called Core Business Entities (CBE). In short the CBEs allow business processes to span multiple OSS/J certified components more easily. 
+<P>
+That means, that in addition to the JVT and XML/JMS integration profile, this JSR will also define a Webservices integration profile by following the OSS Design Guidelines.
+<P>
+Current users/implementers of the existing <A HREF="http://jcp.org/en/jsr/detail?id=89">JSR 89</A> OSS Service Activation API will be able to continue using the OSS Service Activation API for as long as they wish. Once this JSR is completed, those individuals or organizations will have a straightforward migration path to implement the newer Order Management API, using their existing code bases.  A complete rewrite will not be needed.</P>
+
+<H4>2.6 Why isn't this need met by existing specifications?</H4>
+
+<P>At the time of the specification of JSR 89, either not all requirements have been clear or advanced specification items have been postponed to later JSR, to keep JSR 89 simple and still useful. </P>
+
+<H4>2.7 Please give a short description of the underlying technology or technologies:</H4>
+
+<P>The Order Management API will be defined as a J2EE API that is compliant with the OSS through Java Design Guidelines and implemented as an extension of the latest OSS Common API (JSR still to be submitted).  The Key J2SE/J2EE platform APIs for the Order Management API will be the following:
+<UL>
+<LI>CBE (Core Business Entities)
+Value object representing business interactions, business interaction items, products, services, resources and other related objects like party and location will be modelled according to the CBE.
+<LI>EJB (Enterprise JavaBeans):
+To facilitate the integration of OSS components, the expert group will define standard EJB interfaces.
+<LI>JMS (Java Message Service):
+Besides the ability to execute synchronous (EJB) methods calls, there is also a need to send asynchronous messages. For this, JMS will be used.
+<LI>JNDI (Java Naming and Directory Interface):
+The specification will include standards for JNDI names based on the CBE definitions
+<LI>XML: 
+There will be an XML over JMS integration profile for the API that enables clients to interact with an API implementation via the Java Message Service
+<LI>Web Services:
+There will be a Web Services integration profile for the API that enables web-based applications to interact with an API implementation via Web Services.
+</UL></P>
+
+<H4>2.8 Is there a proposed package name for the API Specification? (i.e., <TT>javapi.something</TT>, <TT>org.something</TT>, etc.)</H4>
+
+<P>The base package will be javax.oss.om.
+<p>
+The API will have one or several packages and the prefix for all packages will be "javax.oss". The remaining part of the package name will be defined according to a logical name for different parts of the API. Package names of all OSS JSRs will be coordinated to avoid ambiguous use.
+
+
+</P>
+
+<H4>2.9 Does the proposed specification have any dependencies on specific operating systems, CPUs, or I/O devices that you know of?</H4>
+
+<P>There are no known dependencies on specific devices, operating systems, etc within the specification.
+
+
+</P>
+
+<H4>2.10 Are there any security issues that cannot be addressed by the current security model?</H4>
+
+<P>The existing J2EE platform security model is sufficient for the proposed API and implementations of that API.</P>
+
+<H4>2.11 Are there any internationalization or localization issues?</H4>
+
+<P>There are no known internationalisation or localization issues within the API.  The RI and the TCK will be delivered in English language only.</P>
+
+<H4>2.12 Are there any existing specifications that might be rendered obsolete, deprecated, or in need of revision as a result of this work?</H4>
+
+<P><A HREF="http://jcp.org/en/jsr/detail?id=89">JSR 89</A> (OSS Service Activation API 1.0) will be deprecated once this JSR is completed. </P>
+
+<H4>2.13 Please describe the anticipated schedule for the development of this
+specification.</H4>
+
+<P>2004-01-14 Expert Group Formation and Expansion  <BR>
+2005-04-30 Early Draft Review<BR>
+2005-09-30 Public Review<BR>
+2005-12-31 Proposed Final Draft <BR>
+2006-03-31 Final Release </P>
+
+<H4>2.14 Please describe the anticipated working model for the Expert Group working on developing this
+specification.</H4>
+
+<P>In the past, OSS through Java Expert Groups have had membership from a geographically diverse set community members.  In order to facilitate communications and minimize travel expenses for participants, the expert group will accomplish the vast majority of its work via conference calls and a dedicated mailing list.
+<P>
+The Expert Group will start work from the existing OSS Service Activation API specification, the latest version of the OSS Common API, OSS through Java Design Guidelines, and the OSS Core Business Entities.
+<P>
+The Expert Group will work via consensus, and where consensus cannot be reached a formal vote via email will be taken with a simple majority needed to carry the vote.  
+<P>
+The Order Management project plan is accountable to OSS/J project plan, which is currently maintained by the OSS/J Product Team.
+
+
+
+</P>
+
+<H4>2.15 It is important to the success of the community and each JSR that the work of the Expert Group be handled in a manner which provides the community and the public with insight into the work the Expert Group is doing, and the decisions that the Expert Group has made. The Executive Committees would like to ensure Spec Leads understand the value of this transparency and ask that each JSR have an operating plan in place for how their JSR will address the involvement of the community and the public. Please provide your plan here, and refer to the Spec Lead Guide for a more detailed description and a set of example questions you may wish to answer in your plan.</H4>
+
+<P>Progress updates will be provided on the <A HREF="http://www.ossj.org/">OSS/J main web site</A>. The OSS/J leads have initiated efforts to provide more information to the public through projects on java.net.
+<P>
+The EG for this JSR will follow the policies and practices of the OSS/J Initiative. The progress of the API will be kept current on the JSR specific web page(s) provided by and hosted on the Java Community Process Website.</P>
+
+<H4>2.16 Please describe how the RI and TCK will de delivered, i.e. as part of a profile or platform edition, or stand-alone, or both. Include version information for the profile or platform in your answer.
+</H4>
+
+<P>The Order Management RI and TCK will be delivered as stand alone packages, under the same licensing model and certification model as all other OSS/J APIs. If, by the time of release, a decision is made to include OSS APIs as part of the J2SE/J2EE platform, the RI and TCK may be delivered as part of the J2SE/J2EE platform edition, with the agreement of the OSS through Java membership and the expert group membership.
+
+
+</P>
+
+<H4>2.17 Please state the rationale if previous versions are available stand-alone and you are now proposing in 2.13 to only deliver RI and TCK as part of a profile or platform edition (See sections 1.1.5 and 1.1.6 of the JCP 2 document).
+</H4>
+
+<P>Not applicable.</P>
+
+<H4>2.18 Please provide a description of the business terms for the Specification, RI and TCK that will apply when this JSR is final.</H4>
+
+<P>The Order Management API will be made available to the public under the same terms and conditions as all other OSS/J APIs, which is called the OSS/J Harmonized Licensing and Certification Model. The agreements for the Specifications, the Reference Implementations and the TCKs can be <A HREF="http://java.sun.com/products/oss/start_download.html">
+viewed by downloading any OSS/J API</A>.</P>
+
+<BR><BR>
+<BR><BR>
+
+<!-- SECTION 3 -->
+
+<A NAME="3"></A>
+
+<P>
+<FONT SIZE="+2">Section 3: Contributions</FONT><P>
+</P>
+
+<H4>3.1 Please list any existing documents, specifications, or implementations that describe the technology. Please include links to the documents if they are publicly available.</H4>
+
+<P><UL>
+<LI><A HREF="http://ossj.org/downloads/roadmap.shtml">OSS/J API Roadmap</A>
+<LI><A HREF="http://ossj.org/downloads/cbe.shtml">OSS/J Core Business Entities (CBE)</A>
+<LI><A HREF="http://jcp.org/en/jsr/detail?id=144">OSS Common API, JSR 144</A>
+<LI><A HREF="http://jcp.org/en/jsr/detail?id=89">OSS Service Activation API, JSR 89</A>
+<LI><A HREF="http://jcp.org/en/jsr/detail?id=91">OSS Trouble Ticket API, JSR 91</A>
+<LI><A HREF="http://www.tmforum.org">TMF NGOSS eTOM and SID</A>
+<LI>OMG ?<A HREF="http://cgi.omg.org/cgi-bin/doc?formal/00-05-02.pdf">
+Workflow Management Facility Specification, V1.2</A>?
+<LI>
+WfMC?s ?<A HREF="http://www.wfmc.org/standards/docs/Wf-XML-11.pdf">
+Workflow Management Coalition Workflow Standard - Interoperability Wf-XML Binding</A>? 
+</UL>
+
+
+</P>
+
+<H4>3.2 Explanation of how these items might be used as a starting point for the work.</H4>
+
+<P>The work by OMG and WfMC was leveraged for the state model of the OSS Service Activation API. Documents provided by the OSS through Java Initiative will be followed to achieve smooth integration and consistency with other OSS specifications.
+
+
+</P>
+
+<BR><BR>
+
+<!-- SECTION 4 -->
+
+<A NAME="4"></A>
+
+<P>
+<FONT SIZE="+2">Section 4: Additional Information (Optional)</FONT><P>
+</P>
+
+<H4>4.1 This section contains any additional information that the submitting Member wishes to include in the JSR.</H4>
+
+<P>At this time there is no additional information for this JSR proposal.</P>
+
+<BR><BR>
+
+
+
+
+
+
+</p>
+
+
+
+
+
+
+
+
+<!-- ** BEGIN: footer.jsp ** //-->
+
+
+
+
+
+
+
+
+</td>
+</tr>
+</table>
+
+<!-- ** END: Content Table ** //-->
+
+<!-- ** BEGIN: Footer Table ** //-->
+
+<div id="footer" style="clear: both;">
+    <div class="footleft">
+        <a href="/en/resources/contacts">Contact Us</a>
+    </div>
+	
+    <div class="botbar"><img src="/images/spacer.gif" alt="" height="23" width="1"></div>
+
+    <div class="footleft2">
+         &copy; 2019, Oracle Corporation and/or its affiliates. 
+        <a href="/en/home/terms">Terms of Use</a>. <a href="http://www.oracle.com/us/legal/privacy/index.html">Privacy Policy</a>. <a href="http://www.oracle.com/us/legal/third-party-trademarks/third-party-trademarks-078568.html">Trademarks</a>
+    </div>
+
+    <div class="footright">
+        <img src="/images/common/logo_oracle_footer.gif" alt="Oracle Corporation" height="22" width="91">
+    </div>
+
+    <div style="clear: both;"><img src="/images/spacer.gif" alt="" height="30" width="1"></div>
+</div>
+
+<!-- ** END: Footer Table ** //-->
+
+
+
+<!-- ** Menu Start ** //-->
+
+
+
+</body>
+</html>
+<!-- ** END: footer.jsp ** //-->
+

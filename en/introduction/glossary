@@ -1,0 +1,686 @@
+
+
+<!-- ** BEGIN: header.jsp ** //-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3c.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+<head>
+    
+
+   
+    <link href="/includes/css/menu.css" rel="stylesheet" type="text/css"></link>
+    <link href="/includes/css/style.css" rel="stylesheet" type="text/css"></link>
+    <!--[if lt IE 6]><link href="/includes/css/style5.css" rel="stylesheet" type="text/css" ></link><![endif]-->
+    <!--[if gte IE 5]><link href="/includes/css/style6.css" rel="stylesheet" type="text/css" ></link><![endif]-->
+    <link href="/includes/css/tabs.css"  rel="stylesheet" type="text/css"></link>
+
+    <script type="text/javascript" src="/includes/scripts/tabs.js"></script>
+    <script type="text/javascript" src="/includes/scripts/menu.js"></script>
+   
+
+    
+
+    
+        <title>The Java Community Process(SM) Program - Introduction - Glossary</title>
+    
+
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+
+
+<body onload="P7_initPM(0,1,0,0,-1)">
+
+    <a name="top"></a>
+
+    <div id="header">
+	<div id="logo">
+		<a href="/en/home/index"><img src="/images/spacer.gif" alt="Java Community Process" height="81" width="151"></a>
+	</div>
+	<div id="tools">
+		<div class="search">
+			<form name="search" action="/en/jsr/summary" method="get" onsubmit="return validate_search()">
+				<input name="id" value="Search JSRs" size="16" class="form" onfocus="nullify_if_equal(this, 'Search JSRs')" type="text">
+				<a href="javascript:document.search.submit()" onclick="return validate_search()"><img src="/images/button_go.gif" width="21" height="16" border="0" alt="Submit this Search" name="sub_search"></a>
+			</form>
+		</div>
+		<div class="tools">
+			<a href="/en/press/pressroom">Press Room</a> &nbsp;|&nbsp;
+			<a href="http://java.com/java/download/index.jsp?cid=jdp78399">Get Java Here</a> &nbsp;|&nbsp;
+			<!-- <a href="javascript:void(0)">Print Format</a> &nbsp;|&nbsp;&nbsp; -->
+		</div>
+
+	</div>
+	<div style="clear: right;"></div>
+
+        
+
+	<div class="topbar"><img src="/images/spacer.gif" alt="" height="3" width="154"></div>
+	<div id="update"> </div>
+    </div>
+
+
+    
+
+        <!-- ** BEGIN: Content Table ** //-->
+
+        <table width="100%" border="0" cellpadding="0" cellspacing="0">
+
+            <tr>
+
+                <!-- ** BEGIN: Navigation Column ** //-->
+                <td width="150" id="leftcontent" valign="top">
+                    <!-- Navigation Placeholder //-->
+
+                    
+
+                    <div class="bar"><img src="/images/hr_dots1.gif" alt="" height="3" width="150"></div>
+
+        <!-- begin find JSRs form -->
+        <!-- IMPORTANT! do not convert this form to Struts < html : form > tag.  javascript change of form.action property fails. -->
+        <img src="/images/hd_find-jsrs.gif" alt="Find JSRs" height="18" width="150">
+        <form name="findjsr" action="/en/jsr/summary" method="get" class="pt5" onsubmit="return validate_findjsr()">
+            <input name="id" size="18" class="form" value="Search JSRs" onfocus="nullify_if_equal(this, 'Search JSRs')" type="text">
+	    <a href="javascript:document.findjsr.submit()" onclick="return validate_findjsr()"><img src="/images/button_go.gif" width="21" height="16" border="0" alt="Submit this Search" name="sub_search"></a>
+        </form><br><br>
+
+        <!-- ** Menu Start ** //-->
+
+        <ul id="p7PMnav">
+            <li><a href="/en/jsr/platform">JSRs by Platform</a></li>
+            <li><a href="/en/jsr/tech">JSRs by Technology</a></li>
+            <li><a href="/en/jsr/stage">JSRs by Stage</a></li>
+            <li><a href="/en/jsr/ec">JSRs by Committee</a></li>
+            <li><a href="/en/jsr/all">List of All JSRs</a></li>
+
+            <!--end find JSRs form -->
+            <div style="clear: both;"><img src="/images/spacer.gif" alt="" height="25" width="1"></div>
+
+            <!--begin my JCP -->
+            <img src="/images/hd_my-jcp.gif" alt="My JCP" height="18" width="150">
+            
+
+          <form name="login" method="get" action="/en/user/login" >
+            <input name="Sign-in" type="submit" title="Sign-in" value="Sign-in" />
+          </form>
+
+            <div style="clear:both"><img src="/images/global/spacer.gif" width="1" height="3" alt=""></div>
+            <div class="noNav">
+                <a href="/en/user/register">Register for Site</a>
+            </div>
+
+             <div class="bar"><img src="/images/hr_dots1.gif" alt="" height="3" width="150"></div>
+           <div class="noNav" style="color: #666666; padding: 0;">
+              Use of JCP site is subject to the
+              <a href="/en/home/terms" style="display:inline;padding: 0">JCP Terms of Use</a> and the
+              <a href="http://www.oracle.com/us/legal/privacy/index.html" style="display:inline;padding: 0" href="">Oracle Privacy Policy</a>
+          </div>
+
+            
+
+            <div style="clear:both"><img src="/images/global/spacer.gif" width="1" height="25" alt=""></div>
+
+            <!--begin JCP info -->
+            <img src="/images/hd_jcp-info.gif" alt="JCP Info" height="18" width="150">
+
+            <li><a href="/en/procedures/overview" class="p7PMtrg">About JCP</a>
+                <ul>
+                    <li><a href="/en/procedures/overview">Program Overview</a></li>
+                    <li><a href="/en/procedures/jcp2">JCP Process Document</a></li>
+                    <li><a href="/en/whatsnew/calendar">Calendar</a></li>
+                    <li><a href="/en/participation/members">JCP Members</a></li>
+                    <li><a href="/en/participation/committee">Executive Committee</a></li>
+                    <li><a href="/en/whatsnew/elections">Elections</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/en/participation/overview" class="p7PMtrg">Get Involved</a>
+		<ul>
+                    <li><a href="/en/participation/overview">Overview</a></li>
+                    <li><a href="/en/participation/membership">Becoming a JCP Member</a></li>
+		</ul>
+            </li>
+
+            <li><a href="/en/resources/contents" class="p7PMtrg">Community Resources</a>
+                <ul>
+                    <li><a href="/en/resources/contents">Overview</a></li>
+                    <li><a href="/en/resources/tutorials">Tutorials</a></li>
+                    <li><a href="/en/resources/multimedia">JCP Podcasts</a></li>
+                    <li><a href="/en/resources/guide">Spec Lead Guide</a></li>
+                    <li><a href="/en/resources/tdk">TCK Tool & Info</a></li>
+                    <li><a href="/en/resources/license_reference">License Reference</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/en/press/pmo" class="p7PMtrg">Community News</a>
+                <ul>
+                    <li><a href="/en/press/pmo">News</a></li>
+                    <li><a href="/en/press/news/awards/awards_main">Programs &amp; Awards</a></li>
+                    <li><a href="/en/press/releases">Press Releases</a></li>
+                    <li><a href="/en/press/success">Success Stories</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/en/introduction/faq">FAQ</a></li>
+
+            <li><a href="/en/resources/contacts">Contact Us</a></li>
+
+            <div style="clear: both;"><img src="/images/spacer.gif" alt="" height="25" width="1"></div>
+
+            <!--[if lte IE 6]><style>#p7PMnav a{height:1em;}#p7PMnav li{height:1em;float:left;clear:both;width:100%}</style><![endif]-->
+            <!--[if IE 6]><style>#p7PMnav li{clear:none;}</style><![endif]-->
+            <!--[if IE 7]><style>#p7PMnav a{zoom:100%;}#p7PMnav li{float:left;clear:both;width:100%;}</style><![endif]-->
+        </ul>
+
+        
+
+        <!--begin ad space -->
+        <div class="ads">
+            <a href="http://java.com/java/download/index.jsp?cid=jdp78399" target="_blank"><img style="display: ;" src="/images/ad_banner2.gif" alt="Ad Banner" border="1" height="70" width="150"></a>
+        </div>
+        <!--end ad space -->
+
+<!-- ** Menu End ** //-->
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;<br>
+
+    
+
+                    &nbsp;<br>
+                    <img src="/images/common/trans.gif" alt="" width="1" height="150"><br>
+
+              
+
+
+
+                </td>
+                <!-- ** END: Navigation Column ** //-->
+
+                <!-- ** BEGIN: Gutter Column ** //-->
+		<td width="10" nowrap><img src="/images/common/trans.gif" alt="" width="10" height="1"></td>
+                <!-- ** END: Gutter Column ** //-->
+
+                <!-- ** BEGIN: Content Column ** //-->
+                <td width="100%" valign="top">
+
+    
+<script type="text/javascript">
+
+String.prototype.trim = function() {
+        return this.replace(/^\s+|\s+$/g,"");
+}
+String.prototype.ltrim = function() {
+        return this.replace(/^\s+/,"");
+}
+String.prototype.rtrim = function() {
+        return this.replace(/\s+$/,"");
+}
+
+function validate_search() {
+	if (document.search.id.value == "Search JSRs" || document.search.id.value.trim().length == 0) {
+		alert("Search terms must be entered first");
+		return false;
+	}
+	return true;
+}
+
+function validate_findjsr() {
+	if (document.findjsr.id.value == "Search JSRs" || document.findjsr.id.value.trim().length == 0) {
+		alert("Search terms must be entered first");
+		return false;
+	}
+	return true;
+}
+
+function nullify_if_equal(field, str) {
+	// alert("val=" + field.value);
+	if (field.value == str) {
+		field.value = "";
+	}
+}
+
+</script>
+<!-- ** END: header.jsp ** //-->
+
+
+
+
+
+
+
+
+
+
+
+		<div class="header2">Introduction</div>
+		<div class="header1">Glossary</div>	
+&nbsp;<BR>
+	
+<div class="anybar"><img src="/images/global/bar_green.gif" alt="" width="12" height="4"></div>
+<p>
+
+
+
+
+
+<span class="headLinks"><font size="-1">
+<a href="faq">General&nbsp;questions</a>&nbsp;| &nbsp;<a href="faq-membership">Membership&nbsp;questions</a>&nbsp;| &nbsp;<a href="faq-jsr">JSR&nbsp;and&nbsp;Expert&nbsp;Group&nbsp;questions</a>&nbsp;| &nbsp;<a href="faq-speclead">Spec&nbsp;Lead&nbsp;process&nbsp;questions</a>&nbsp;| &nbsp;<a href="faq-sso">Login&nbsp;questions</a>&nbsp;| &nbsp;<a href="faq-site">Web&nbsp;Site&nbsp;questions</a>&nbsp;| &nbsp;Glossary
+
+</font></span>
+&nbsp;<br>
+
+		<p>
+		The <a href="../procedures/jcp2">JCP 2 Process Document</a> defines many terms and acronyms that are used throughout the JCP website. This page collects all the definitions in one place for easy reference. The definitions are arranged alphabetically.
+		</p>
+		
+		<hr width="75%" align="center">
+		
+		<p align="center">
+		
+		<a href="#A">A</a> | <a href="#B">B</a> | <a href="#C">C</a> | <a href="#D">D</a> | <a href="#E">E</a> | <a href="#F">F</a> | <a href="#I">I</a> | <a href="#J">J</a> | <a href="#M">M</a> | <a href="#O">O</a> | <a href="#P">P</a> | <a href="#Q">Q</a> | <a href="#R">R</a> | <a href="#S">S</a> | <a href="#T">T</a> | <a href="#U">U</a> | <a href="#W">W</a>
+		
+		</p>
+		
+		<hr width="75%" align="center">
+		
+		<p><a name="A"></a>
+                <P>
+                <a name="active"></a><B>Active</b>: a JSR Status label indicating a specification development project which is moving quickly through the stages of the JCP but has not yet produced a Final Release.
+                <P>
+                <b>Appeal Ballot</b>: The EC ballot to override a first-level decision on a TCK test challenge.
+<P>
+                <B>Associate Member</b>: An individual who wishes to participate independently in the activities of the JCP without requiring an employer's permission.
+<P>
+                <B>Associate Membership Agreement</b>: The membership agreement signed by Associate Members.
+<P>
+<B>Associate Seat</B>: An Executive Committee seat filled by the election process described in <a href="/en/procedures/jcp2_10">section 3.7.6 of the JCP 2.10 document</a>. 
+<P>
+                  
+                  <a name="B"></a>
+		  <P>
+
+		  <B>Ballot</B>: See Appeal Ballot, Final Approval Ballot, Final Approval Reconsideration Ballot, JSR Ap-proval Ballot, JSR Reconsideration Ballot, JSR Renewal Ballot, JSR Renewal Reconsideration Ballot, JSR Withdrawal Ballot, Maintenance Review Ballot, Maintenance Renewal Ballot, Maintenance Release Withdrawal Ballot, Public Review Ballot, Public Draft Specification Recon-sideration Ballot, Transfer Ballot. Unless otherwise noted in this document all Ballots last for 14 days.
+		  <P>
+
+		  <a name="C"></a>
+		  </p>
+		<p>
+		<b>Change Log</b>: An area accessible from the Spec Page that lists all changes made to the Specification after Final Release. There are three sections: PROPOSED (changes not yet made to the Specification), ACCEPTED (changes made), and DEFERRED (change items to be considered in a new JSR).
+		<p>
+		<b>Community Review</b>: A 30 to 90 day period when Members review and comment on the draft Specification. Used in JCP 2.5 and earlier versions.
+		
+		<p>
+		<b>Continued Availability</b>: Describes a set of rules for standalone JSRs (Java APIs not part of a Java platform) that become part of a Java platform (such as J2EE platform or the J2SE platform) later on as the result of a future JSR for that API.
+		<P>
+		<B>Contributor Agreement</b>: A legal agreement defining the terms, particularly those concerning the grant of intellectual property rights, under which contributions are made to a project. 
+		<P>
+		<B>Contributor</b>: A JCP Member who is not a member of an Expert Group but who at the Spec Lead's discretion is formally recognized as having contributed to the JSR. 
+		<P>
+
+
+		<a name="D"></a>
+		<p>
+                <a name="dormant"></a><B>Dormant</b>: A JSR Status label indicating that no work is underway on the specification development project, either because there is no Lead or because the Executive Committee voted to remove it from the list of active JSRs after a long period of inactivity.
+                <P>
+		<b>Dormant Specification (Dormant)</b>: A Specification that does not have an identified Maintenance or Specification Lead, or which has been Inactive for a very extended period. All Specifications become Dormant at the end of their life cycle, but a JSR may become Dormant sooner through long inactivity and a ballot from the Executive Committee.
+		
+		<p>
+		<b>Draft Specification Approval Ballot</b>: The EC ballot to determine if a Community Review draft should proceed to Public Review. Used in JCP 2.5 and earlier versions.
+		
+		<p>
+		<b>Draft Specification Reconsideration Ballot</b>: The EC ballot that followed Community Review in JCP 2.5 and earlier versions, held to determine if a revised draft should proceed to Public Review.
+		
+		<a name="E"></a>
+		<p>
+		<b>Early Draft Review</b>: A 30 to 90 day review period when a draft of the Specification is made available to the public for review and comment.
+		
+		<p>
+		<b>Elected Seat</b>: An EC seat filled by the election process described in section 3.7.6.
+		
+		<p>
+		<B>Employer Contribution Agreement</b>: An agreement that must be signed by the employer of an individual Full Member in which the employer makes certain IP commitments with respect to the employee's participation in the JCP. 
+                <P>
+                <B>Errata Maintenance Release</b>: An update to a Final Release specification consisting only of corrections and clarifications. Introduced in JCP 2.11, an Errata Maintenance Release is published as soon as the corrections are ready; it does not require a Maintenance Review.
+ 
+		<P>
+
+		<b>Executive Committee (EC)</b>: The Members who guide the evolution of the Java technologies. The EC represents a cross-section of both major stakeholders and other Members of the Java Community. EC Members must be elected or ratified by votes of the JCP Members in order to serve on the EC. The EC Policies and Procedures are in <a href="/en/procedures/ec_standing_rules">the EC Standing Rules</a>. Note that, before JCP 2.9, "Executive Committee" could refer to either or both of two separate Committees which guided the evolution of the Java platforms: the SE/EE Executive Committee (for JSRs relating to Standard Edition or Enterprise Edition) and the ME Executive Committee (for JSRs relating to Micro Edition). To read more, visit the <a href="/en/participation/committee">Executive Committee page</a>.
+	        <p>
+                <B><a name="me"></a>Executive Committee for ME</b>: The 16-seat committee of ratified and elected Members which reviewed Java ME-related JSRs from May 2000 - November 2012. With JCP 2.9, the ME EC merged with the SE/EE EC to form a single Executive Committee which reviews all JSRs operating under JCP 2.5 and above.
+                <P>
+                <B><a name="seee"></a>Executive Committee for SE/EE</b>: The 16-seat committee of ratified and elected Members which reviewed Java SE and Java EE-related JSRs from May 2000 - November 2012. With JCP 2.9, the SE/EE EC merged with the ME EC to form a single Executive Committee which reviews all JSRs operating under JCP 2.5 and above.
+	
+		<p>
+		<b>Expert</b>: A term from JCP 2.9 and earlier that referred to a Member representative who had expert knowledge and was an active practitioner in the technology covered by the JSR. 
+		
+		<p>
+		<b>Expert Group</b>: The group of JCP Members who develop or make significant revisions to a Specification.
+		
+		<a name="F"></a>
+		<p>
+                <B>Final</b>: A JSR Status label indicating that a specification development project has produced its Final Release, the Specification can be implemented, the Reference Implementation and Technology Compatibility Kit are available, and the Expert Group has disbanded.
+                <P>
+		<b>Final Approval Ballot</b>: The EC ballot to approve the Final Draft along with its associated RI and TCK.
+		
+		<p>
+		<b>Final Approval Reconsideration Ballot</b>: The EC ballot to reconsider an initial rejection of a Final Draft, RI, and TCK.
+		
+		<p>
+		<b>Final Draft</b>: The final draft of the Specification that will be put forward for EC approval.
+		
+		<p>
+		<B>Final Release</b>: The final stage in the JSR development process when the Specification, RI, and TCK have been completed and can be licensed by implementers. 
+		<P>
+
+		<b>First-Level TCK Appeals Process</b>: The process defined by the Spec Lead that allows implementors of the Specification to appeal one or more tests defined by the Specification's TCK.
+	        <P>
+		<B>Full Member</b>: A corporation, organization, or individual who has signed the JSPA in order to obtain full membership rights within the JCP. 
+		<P>
+
+		<a name="I"></a>
+		<p>
+		<b>IEPA1</b>: The IEPA that covered an individual's participation on the Expert Group of a JSR started before October 29, 2002. IEPAs are no longer used, having been replaced by Individual Memberships.
+		
+		<p>
+		<b>IEPA2</b>: The revised IEPA that covered an individual's participation on the Expert Group of a JSR started between October 29, 2002 and March 9, 2004. IEPAs are no longer used, having been replaced by Individual Memberships.
+		<p>
+                <a name="inactive"></a><B>Inactive</b>: a JSR status label applied to a JSR which has not reached Final Release nor has posted a milestone for 12 months or more.
+                <P>
+			<b>Individual Expert Participation Agreement (IEPA)</b>: An agreement between Sun Microsystems and an individual that allowed that individual to serve on an Expert Group at the invitation of the Specification Lead. There was no fee associated with the IEPA and it was valid until the Expert Group disbanded. The IEPA allowed individual technical experts who did not represent companies or organizations to participate on an Expert Group without becoming a JCP Member. IEPAs are no longer used; the IEPA has since been replaced with the Individual Membership.
+                <P>
+		<B>Individual Member</b>: a person who has signed the Java Specification Participation Agreement and become a JCP Member as an individual, rather than as a representative of any organization.
+		<P>
+		<B>Issue</b>: an explicit reference to an item defined in an Issue Tracker.
+		<P>
+
+		<B>Issue List</B>: A list of Issues generated from an Issue Tracker, identifying the disposition of each.
+		<P>
+
+		<B>Issue Tracker</B>: A mechanism to allow issues (problems, tasks, comments, or requests for change) to be recorded and tracked by priority, status, owner, or other criteria. The Issue Tracker should permit issues to be identified by states such as open, resolved, and closed and should support the assignment of resolution types such as deferred (postponed to a follow-on release,) fixed (implemented,) challenged (no satisfactory resolution,) and rejected (deemed inappropriate or out of scope.) 
+
+		<p>
+		<b>Item Exception Ballot</b>: The EC ballot to determine whether or not to include specific change items in a Minor Revision. Used in JCP 2.7 and earlier versions.
+	        <P>
+
+                <B>Iterative JSR</b>: A JSR that intends to deliver multiple releases with multiple JSRs of a technology on a time-based cadence.
+                <P>
+	
+		<a name="J"></a>
+		<p>
+		<b>J2ME Building Block (Building Block)</b>: A subset of one or more APIs defined in the J2SE or J2EE Platform Edition Specifications. The J2ME Platform Edition Specification is a collection of Building Blocks. J2ME Profile Specifications can build up desired functionality by combining new API sets with existing Building Blocks.
+		<P>
+
+		<B>Java Community Process (JCP)</B>: The formal process described in this document for developing or revising Java technology Specifications.
+		<P>
+
+		<B>Java Community Process Member (Member)</B>: A company, organization, or individual that has signed a Membership Agreement and is abiding by its terms.
+		<P>
+
+		<B>Java Specification (Specification)</B>: A written specification for some aspect of the Java technology. This includes the language, virtual machine, Platform Editions, Profiles, and application programming interfaces.
+		<P>
+
+		<B>Java Specification Request (JSR)</B>: The document submitted to the PMO by one or more Members to propose the development of a new Specification or a significant revision to an existing Specification.
+		<P>
+
+
+		<B>Java Specification Participation Agreement (JSPA)</B>: A one-year renewable agreement between Oracle America and a company, organization or individual that allows the latter entities to participate in the Java Community Process as a Full Member. 
+		<p>
+		<b>JCP Specification Page (Spec Page)</b>: Each Specification approved for development or revision will have a dedicated public web page established on the JCP Web Site to contain a history of the passage of the Specification through the JCP, including a record of the decisions, actions, and votes taken by the EC with respect to the draft Specification.
+	
+      	
+		<p>
+		<b>JCP Web Site</b>: The web site where the public can stay informed about JCP activities, download draft and final Specifications, and follow the progress of Specifications through the JCP.
+		<P>
+		
+		<b>JSPA 1</b>: A Java Specification Participation Agreement covering Membership in the JCP and participation in JSRs started before October 29, 2002.
+		
+		<p>
+		<b>JSPA 2</b>: the output of JSR 99: the revised version of the Java Specification Participation Agreement that covers Full Membership in the JCP and participation in JSRs started after October 29, 2002.
+		
+		<p>
+		<b>JSR Approval Ballot</b>: A two-week EC ballot to determine if the initial JSR submission should be approved.  
+		
+		<p>
+		<b>JSR Page</b>: The web page on the JCP Web site where the JSR's history is recorded and where other relevant information about the JSR is published. 
+		<P>
+		
+		<b>JSR Reconsideration Ballot</b>: The EC ballot to determine if a revision of an initial JSR submission should be approved.
+		
+		<p>
+
+		<B>JSR Renewal Ballot</B>: An EC ballot to confirm that a JSR should continue in its work.
+		<P>
+	
+		<B>JSR Renewal Reconsideration Ballot</b>: An EC ballot to determine if a revised JSR should continue its work. 
+		<P>
+
+		<b>JSR Review</b>: A two- to four-week period (the length to be set at the discretion of the submitter) during which the public can review and comment on a proposed new JSR before the JSR Approval Ballot.  
+		<P>
+
+                <a name="status"></a><B>JSR Status</b>: a label applied to a JSR to indicate the status of a given specification development project. JSR Status labels include: Active, Final, Maintenance, Inactive, Withdrawn, Rejected, and Dormant. They are explained in the table below:
+
+<table style="margin-left:50px;" border>
+<tr>
+<th>Status</th> <th>What it means</th>
+</tr>
+<tr>
+<td>Active</td><td>A JSR that has posted a milestone within the last twelve months.</td>
+</tr>
+<tr>
+<td>Final</td><td>A JSR that has produced a Final Release milestone more than a year ago.</td>
+</tr>
+<tr>
+<td>Maintenance</td><td>A JSR that last produced a Maintenance Review or Maintenance Release milestone more than a year ago.</td>
+</tr>
+<tr>
+<td>Inactive</td><td>A JSR that has not produced a Final Release or Maintenance Release, and which hasn't posted a milestone in the last year.</td>
+</tr>
+<tr>
+<td>Withdrawn</td><td>A JSR that was withdrawn from the JCP by the Specification Lead before Final Release.</td>
+</tr>
+<tr>
+<td>Rejected</td><td>A JSR that was not approved by the Executive Committee in one of the ballot stages for that JSR.</td>
+</tr>
+<tr>
+<td>Dormant</td><td>A JSR that was voted as "dormant" by the Executive Committee, or one that has reached the end of its natural lifespan.</td>
+</tr>
+
+</table>	
+<p>
+
+                <B>JSR Withdrawal Ballot</B>: An EC ballot to confirm that a completed JSR that appears to have been abandoned should be withdrawn. 
+                <P>
+
+	        <a name="L"></a>
+	        <P>
+		<B>Licensor Name Space</b>: The public class or interface declarations whose names begin with "java", "javax", "com.sun" (or "com.Your name" if You are the Specification Lead) or their equivalents in any subsequent naming convention adopted by Oracle. 
+		<P>
+
+		<a name="M"></a>
+		<p>
+		<b>Maintenance Lead (ML)</b>: The Member Representative or individual JCP Member responsible for maintaining the Specification.
+	        <P>
+		<B>Maintenance Release (MREL)</b>: The final stage in the JSR maintenance process when the Specification, RI, and TCK have been updated and can be licensed by implementers. 
+		<P>
+
+		<B>Maintenance Review</B>: A period 14 or 30 days prior to finalization of a Maintenance Release when Members and the public consider and comment on the change the Maintenance Lead proposes to include in the release, as identified in the associated Issue List.
+		<P>
+
+		<B>Maintenance Review Ballot</B>: An EC ballot to determine whether the changes and time line proposed by a Maintenance Lead are appropriate for a Maintenance Release.
+		<P>
+		
+		<B>Maintenance Renewal Ballot</B>: a ballot during which EC members vote on whether to permit a Maintenance Lead to extend the deadline for delivery of materials for Maintenance Release, or whether the previous Maintenance Review should be rescinded and the ML be required to start the process again.
+		<P>
+
+		<B>Maintenance Release Withdrawal Ballot</B>: An EC ballot to confirm that a completed Maintenance Release that appears to have been abandoned should be withdrawn.
+		<P>
+
+		<B>Member</B>: See Associate Member, Full Member, Java Community Process Member, Member Representative, Partner Member.
+		<P>
+
+		<B>Member Representative</B>: An individual who is an employee of or who has a contractual relationship with a Full Member and who is authorized by that Member to represent its interests within the JCP.
+		<P>
+
+		<B>Membership Agreement</B>: See Associate Membership Agreement, JSPA, Partner Membership Agreement. 
+		<P>
+
+                <b>Milestone</b>: Any posting of a JSR that corresponds to one of the milestones detailed in the Java Community Process document. For example, "Community Review," "Early Draft Review," "Proposed Final Draft," "Final Release" and "Public Review" are all milestones.
+                <P>
+
+		<b>Minor Revision</b>: Minor changes made to a final Specification by the Maintenance Lead as part of the Maintenance process.
+		<p>
+
+		<a name="O"></a>
+		<B>Observer</B>: An individual who is not a member of the JCP but who takes advantage of the JCP's transparency mechanisms to observe and/or comment on Expert Group activities. 
+		<P>
+
+		<a name="P"></a>
+		<B>Partner Member</B>: A non-profit organization that is unwilling or unable (since it is not a legal entity) to sign the JSPA but which nevertheless wishes to promote and to participate in the activities of the JCP.
+		<P>
+
+		<B>Partner Membership Agreement</B>: The membership agreement signed by non-profit organizations that are not legal entities, and therefore ineligible to sign the JSPA. 
+		<P>
+
+		<b>Platform Edition Specification (Platform Edition)</b>: A Specification that defines a baseline API set that provides a foundation upon which applications, other APIs, and Profiles can be built. There are currently three Platform Edition Specifications: Java SE, Java EE, and Java ME.
+		
+		<p>
+		<b>Profile Specification (Profile)</b>: A Specification that references one of the Platform Edition Specifications and zero or more other JCP Specifications (that are not already a part of a Platform Edition Specification). APIs from the referenced Platform Edition must be included according to the referencing rules set out in that Platform Edition Specification. Other referenced specifications must be referenced in their entirety.
+		
+		<p>
+		<b>Program Management Office (PMO)</b>: The group within Oracle that is responsible for administering the JCP and chairing the EC.
+		
+		<p>
+		<b>Proposed Final Draft</b>: The version of the draft Specification that will be used as the basis for the RI and TCK.
+		
+		<p>
+		<B>Public Draft Specification Reconsideration Ballot</b>: The EC ballot to determine if a revised draft should proceed after Public Review. 
+		<P>
+
+		<b>Public Review</b>: A 30 to 90 day period when the public can review and comment on the draft Specification.
+		<P>
+
+		<B>Public Review Ballot</b>: The EC ballot to determine if a draft should proceed after Public Review. Used in JCP versions 2.0 through 2.10.
+		<P>
+
+                <B>Public Review Final Approval Ballot</B>: The EC ballot to determine if a draft should proceed to Final Release after Public Review. Introduced in JCP 2.11.
+                <P>
+
+		
+		<a name="Q"></a>
+		<p>
+		<b>Qualified Individual</b>: An individual not acting for or on behalf of a legally organized entity that uses the TCK for the purpose of developing and distributing a compatible implementations of a Spec, and that has established to the satisfaction of the Spec Lead, in its reasonable discretion, that such individual is ready to begin testing its credible implementation of the Spec in question.
+		
+		<p>
+		<b>Qualified Not-for-Profit</b>: A legally organized not-for-profit entity (such as, but not limited to, a "501[c][3]" corporation) that is not effectively controlled by a commercial interest and that uses the TCK for the purpose of developing and distributing a compatible implementation of a Spec.
+		
+		<a name="R"></a>
+		<p>
+		<b>Ratified Seat</b>: An EC seat filled by the ratification process described in section 3.7.5 of the JCP 2.10 document.
+		
+		<p>
+		<b>Reference Implementation (RI)</b>: The prototype or "proof of concept" implementation of a Specification.
+	        <P>
+                <a href="rejected"></a><B>Rejected</b>: a JSR Status label indicating that the specification development project or proposal was not approved by Executive Committee ballot.
+		<P> 	
+		<B>Release</B>: A Final Release or a Maintenance Release.
+		<P>
+
+		<a name="S"></a>
+		<p>
+
+		<B>Specification</B>: See Java Specification.
+		<P>
+
+		<b>Specification Lead (Spec Lead)</b>: The Member Representative or individual JCP Member who leads an Expert Group and who is responsible for its deliverables as defined in this Process Document.
+		<P>
+		
+		<a name="T"></a>
+		<p>
+		<b>Technology Compatibility Kit (TCK)</b>: The suite of tests, tools, and documentation that is used to determine if an implementation of a JSR complies with that Specification.
+		
+		<p>
+		<b>Transfer Ballot</b>: The EC ballot to approve transfer of ownership of a Specification, RI, and TCK from one JCP Member to another. (Transfer of ownership does not mean transfer of IP rights, only the right to start again. The new Spec Lead can, however, negotiate a transfer of IP with the old Spec Lead.) 
+		<P>
+		
+		<a name="U"></a>
+		<p>
+		<b>Umbrella Java Specification Request (UJSR)</b>: A JSR that defines or revises a Platform Edition or Profile Specification. A UJSR proceeds through the JCP like any other JSR.
+		<p>
+                <a name="W"></a>
+                <P>
+                <a name="withdrawn"></a><B>Withdrawn</b>: A JSR Status label applied to a specification development project that started in the JCP and was later removed from the list of active projects because no JCP Member was willing to continue in the leadership role.
+                <P>
+		
+
+<!-- ** BEGIN: footer.jsp ** //-->
+
+
+
+
+
+
+
+
+</td>
+</tr>
+</table>
+
+<!-- ** END: Content Table ** //-->
+
+<!-- ** BEGIN: Footer Table ** //-->
+
+<div id="footer" style="clear: both;">
+    <div class="footleft">
+        <a href="/en/resources/contacts">Contact Us</a>
+    </div>
+	
+    <div class="botbar"><img src="/images/spacer.gif" alt="" height="23" width="1"></div>
+
+    <div class="footleft2">
+         &copy; 2019, Oracle Corporation and/or its affiliates. 
+        <a href="/en/home/terms">Terms of Use</a>. <a href="http://www.oracle.com/us/legal/privacy/index.html">Privacy Policy</a>. <a href="http://www.oracle.com/us/legal/third-party-trademarks/third-party-trademarks-078568.html">Trademarks</a>
+    </div>
+
+    <div class="footright">
+        <img src="/images/common/logo_oracle_footer.gif" alt="Oracle Corporation" height="22" width="91">
+    </div>
+
+    <div style="clear: both;"><img src="/images/spacer.gif" alt="" height="30" width="1"></div>
+</div>
+
+<!-- ** END: Footer Table ** //-->
+
+
+
+<!-- ** Menu Start ** //-->
+
+
+
+</body>
+</html>
+<!-- ** END: footer.jsp ** //-->
+
+

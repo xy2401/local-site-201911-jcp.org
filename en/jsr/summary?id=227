@@ -1,0 +1,844 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- ** BEGIN: header.jsp ** //-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3c.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+<head>
+    
+
+   
+    <link href="/includes/css/menu.css" rel="stylesheet" type="text/css"></link>
+    <link href="/includes/css/style.css" rel="stylesheet" type="text/css"></link>
+    <!--[if lt IE 6]><link href="/includes/css/style5.css" rel="stylesheet" type="text/css" ></link><![endif]-->
+    <!--[if gte IE 5]><link href="/includes/css/style6.css" rel="stylesheet" type="text/css" ></link><![endif]-->
+    <link href="/includes/css/tabs.css"  rel="stylesheet" type="text/css"></link>
+
+    <script type="text/javascript" src="/includes/scripts/tabs.js"></script>
+    <script type="text/javascript" src="/includes/scripts/menu.js"></script>
+   
+
+    
+
+    
+        <title>The Java Community Process(SM) Program - JSRs: Java Specification Requests - detail JSR# 227</title>
+    
+
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+
+
+<body onload="P7_initPM(0,1,0,0,-1)">
+
+    <a name="top"></a>
+
+    <div id="header">
+	<div id="logo">
+		<a href="/en/home/index"><img src="/images/spacer.gif" alt="Java Community Process" height="81" width="151"></a>
+	</div>
+	<div id="tools">
+		<div class="search">
+			<form name="search" action="/en/jsr/summary" method="get" onsubmit="return validate_search()">
+				<input name="id" value="Search JSRs" size="16" class="form" onfocus="nullify_if_equal(this, 'Search JSRs')" type="text">
+				<a href="javascript:document.search.submit()" onclick="return validate_search()"><img src="/images/button_go.gif" width="21" height="16" border="0" alt="Submit this Search" name="sub_search"></a>
+			</form>
+		</div>
+		<div class="tools">
+			<a href="/en/press/pressroom">Press Room</a> &nbsp;|&nbsp;
+			<a href="http://java.com/java/download/index.jsp?cid=jdp78399">Get Java Here</a> &nbsp;|&nbsp;
+			<!-- <a href="javascript:void(0)">Print Format</a> &nbsp;|&nbsp;&nbsp; -->
+		</div>
+
+	</div>
+	<div style="clear: right;"></div>
+
+        
+
+	<div class="topbar"><img src="/images/spacer.gif" alt="" height="3" width="154"></div>
+	<div id="update"> </div>
+    </div>
+
+
+    
+
+        <!-- ** BEGIN: Content Table ** //-->
+
+        <table width="100%" border="0" cellpadding="0" cellspacing="0">
+
+            <tr>
+
+                <!-- ** BEGIN: Navigation Column ** //-->
+                <td width="150" id="leftcontent" valign="top">
+                    <!-- Navigation Placeholder //-->
+
+                    
+
+                    <div class="bar"><img src="/images/hr_dots1.gif" alt="" height="3" width="150"></div>
+
+        <!-- begin find JSRs form -->
+        <!-- IMPORTANT! do not convert this form to Struts < html : form > tag.  javascript change of form.action property fails. -->
+        <img src="/images/hd_find-jsrs.gif" alt="Find JSRs" height="18" width="150">
+        <form name="findjsr" action="/en/jsr/summary" method="get" class="pt5" onsubmit="return validate_findjsr()">
+            <input name="id" size="18" class="form" value="Search JSRs" onfocus="nullify_if_equal(this, 'Search JSRs')" type="text">
+	    <a href="javascript:document.findjsr.submit()" onclick="return validate_findjsr()"><img src="/images/button_go.gif" width="21" height="16" border="0" alt="Submit this Search" name="sub_search"></a>
+        </form><br><br>
+
+        <!-- ** Menu Start ** //-->
+
+        <ul id="p7PMnav">
+            <li><a href="/en/jsr/platform">JSRs by Platform</a></li>
+            <li><a href="/en/jsr/tech">JSRs by Technology</a></li>
+            <li><a href="/en/jsr/stage">JSRs by Stage</a></li>
+            <li><a href="/en/jsr/ec">JSRs by Committee</a></li>
+            <li><a href="/en/jsr/all">List of All JSRs</a></li>
+
+            <!--end find JSRs form -->
+            <div style="clear: both;"><img src="/images/spacer.gif" alt="" height="25" width="1"></div>
+
+            <!--begin my JCP -->
+            <img src="/images/hd_my-jcp.gif" alt="My JCP" height="18" width="150">
+            
+
+          <form name="login" method="get" action="/en/user/login" >
+            <input name="Sign-in" type="submit" title="Sign-in" value="Sign-in" />
+          </form>
+
+            <div style="clear:both"><img src="/images/global/spacer.gif" width="1" height="3" alt=""></div>
+            <div class="noNav">
+                <a href="/en/user/register">Register for Site</a>
+            </div>
+
+             <div class="bar"><img src="/images/hr_dots1.gif" alt="" height="3" width="150"></div>
+           <div class="noNav" style="color: #666666; padding: 0;">
+              Use of JCP site is subject to the
+              <a href="/en/home/terms" style="display:inline;padding: 0">JCP Terms of Use</a> and the
+              <a href="http://www.oracle.com/us/legal/privacy/index.html" style="display:inline;padding: 0" href="">Oracle Privacy Policy</a>
+          </div>
+
+            
+
+            <div style="clear:both"><img src="/images/global/spacer.gif" width="1" height="25" alt=""></div>
+
+            <!--begin JCP info -->
+            <img src="/images/hd_jcp-info.gif" alt="JCP Info" height="18" width="150">
+
+            <li><a href="/en/procedures/overview" class="p7PMtrg">About JCP</a>
+                <ul>
+                    <li><a href="/en/procedures/overview">Program Overview</a></li>
+                    <li><a href="/en/procedures/jcp2">JCP Process Document</a></li>
+                    <li><a href="/en/whatsnew/calendar">Calendar</a></li>
+                    <li><a href="/en/participation/members">JCP Members</a></li>
+                    <li><a href="/en/participation/committee">Executive Committee</a></li>
+                    <li><a href="/en/whatsnew/elections">Elections</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/en/participation/overview" class="p7PMtrg">Get Involved</a>
+		<ul>
+                    <li><a href="/en/participation/overview">Overview</a></li>
+                    <li><a href="/en/participation/membership">Becoming a JCP Member</a></li>
+		</ul>
+            </li>
+
+            <li><a href="/en/resources/contents" class="p7PMtrg">Community Resources</a>
+                <ul>
+                    <li><a href="/en/resources/contents">Overview</a></li>
+                    <li><a href="/en/resources/tutorials">Tutorials</a></li>
+                    <li><a href="/en/resources/multimedia">JCP Podcasts</a></li>
+                    <li><a href="/en/resources/guide">Spec Lead Guide</a></li>
+                    <li><a href="/en/resources/tdk">TCK Tool & Info</a></li>
+                    <li><a href="/en/resources/license_reference">License Reference</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/en/press/pmo" class="p7PMtrg">Community News</a>
+                <ul>
+                    <li><a href="/en/press/pmo">News</a></li>
+                    <li><a href="/en/press/news/awards/awards_main">Programs &amp; Awards</a></li>
+                    <li><a href="/en/press/releases">Press Releases</a></li>
+                    <li><a href="/en/press/success">Success Stories</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/en/introduction/faq">FAQ</a></li>
+
+            <li><a href="/en/resources/contacts">Contact Us</a></li>
+
+            <div style="clear: both;"><img src="/images/spacer.gif" alt="" height="25" width="1"></div>
+
+            <!--[if lte IE 6]><style>#p7PMnav a{height:1em;}#p7PMnav li{height:1em;float:left;clear:both;width:100%}</style><![endif]-->
+            <!--[if IE 6]><style>#p7PMnav li{clear:none;}</style><![endif]-->
+            <!--[if IE 7]><style>#p7PMnav a{zoom:100%;}#p7PMnav li{float:left;clear:both;width:100%;}</style><![endif]-->
+        </ul>
+
+        
+
+        <!--begin ad space -->
+        <div class="ads">
+            <a href="http://java.com/java/download/index.jsp?cid=jdp78399" target="_blank"><img style="display: ;" src="/images/ad_banner2.gif" alt="Ad Banner" border="1" height="70" width="150"></a>
+        </div>
+        <!--end ad space -->
+
+<!-- ** Menu End ** //-->
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;<br>
+
+    
+
+                    &nbsp;<br>
+                    <img src="/images/common/trans.gif" alt="" width="1" height="150"><br>
+
+              
+
+
+
+                </td>
+                <!-- ** END: Navigation Column ** //-->
+
+                <!-- ** BEGIN: Gutter Column ** //-->
+		<td width="10" nowrap><img src="/images/common/trans.gif" alt="" width="10" height="1"></td>
+                <!-- ** END: Gutter Column ** //-->
+
+                <!-- ** BEGIN: Content Column ** //-->
+                <td width="100%" valign="top">
+
+    
+<script type="text/javascript">
+
+String.prototype.trim = function() {
+        return this.replace(/^\s+|\s+$/g,"");
+}
+String.prototype.ltrim = function() {
+        return this.replace(/^\s+/,"");
+}
+String.prototype.rtrim = function() {
+        return this.replace(/\s+$/,"");
+}
+
+function validate_search() {
+	if (document.search.id.value == "Search JSRs" || document.search.id.value.trim().length == 0) {
+		alert("Search terms must be entered first");
+		return false;
+	}
+	return true;
+}
+
+function validate_findjsr() {
+	if (document.findjsr.id.value == "Search JSRs" || document.findjsr.id.value.trim().length == 0) {
+		alert("Search terms must be entered first");
+		return false;
+	}
+	return true;
+}
+
+function nullify_if_equal(field, str) {
+	// alert("val=" + field.value);
+	if (field.value == str) {
+		field.value = "";
+	}
+}
+
+</script>
+<!-- ** END: header.jsp ** //-->
+
+
+
+
+
+        <!--  BEGIN NAVIGATION TABS -->
+        <div id="p7TP1">
+                <div class="p7TP_tabs">
+                        <div id="p7tpb1_1" class="down"><a class="down">JSR</a></div>
+                        <div><a href="/en/egc/view?id=227">Community</a></div>
+                        <div><a href="/en/eg/eghome?id=227">Expert Group</a></div>
+			
+
+                <br class="p7TPclear" />
+                </div>
+
+                <div class="p7TPcontent">
+                        <div id="p7tpc1_1">
+
+			
+                                <a href="summary?id=227">Summary</a>
+			
+			
+                                &nbsp;|&nbsp;
+				<a href="proposalDetails?id=227">Proposal</a>
+			
+			
+                                &nbsp;|&nbsp;
+                                <span>Detail (Summary &amp; Proposal)</span>
+			
+		
+                        </div>
+
+                </div>
+                <!--[if lte IE 6]><style type="text/css">.p7TPpanel div,.p7TPpanel a{height:1%;}.p7TP_tabs a{white-space:nowrap;}</style><![endif]-->
+        </div>
+        <script type="text/javascript">
+                P7_initTP(1,0);
+        </script>
+        <!--  END NAVIGATION TABS -->
+
+
+<div class="anybar"><img src="/images/global/bar_green.gif" alt="" width="12" height="4"></div>
+
+<div class="header2">JSRs: Java Specification Requests</div>
+<div class="header1">JSR 227: A Standard Data Binding & Data Access Facility for J2EE<sup><font size="-2">TM</font></sup></div>
+<div class="anybar"><img src="/images/global/bar_green.gif" alt="" width="12" height="4"></div>
+<br>
+
+
+
+<!-- ********************************************** -->
+<!--  JSR Status information                        -->
+<!-- ********************************************** -->
+
+
+                <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                    <tr>
+                        <td id="centercontent" valign="top">
+			<tr>
+			<td>
+                            <table class="tbl" cellpadding="4" cellspacing="1" width="100%">
+                                <tr valign="top">
+                                    <td class="bdtl">Stage</td>
+                                    <td class="bdtl">Access</td>
+                                    <td class="bdtl">Start</td>
+                                    <td class="bdtl">Finish</td>
+                                </tr>
+
+				<tr class="bgw" valign="top">
+                                        <td>Withdrawn </td>
+                                        
+                                            <td>&nbsp;</td>
+                                        
+                                        <td>02 May, 2011</td>
+                                        <td>&nbsp;</td>
+				</tr>
+
+				<tr class="bgw" valign="top">
+                                        <td>Early Draft Review </td>
+                                        
+                                            <td><a href="http://jcp.org/aboutJava/communityprocess/edr/jsr227/index.html">Download page</a></td>
+                                        
+                                        <td>11 Nov, 2008</td>
+                                        <td>11 Dec, 2008</td>
+				</tr>
+
+				<tr class="bgw" valign="top">
+                                        <td>Expert Group Formation </td>
+                                        
+                                            <td>&nbsp;</td>
+                                        
+                                        <td>08 Jul, 2003</td>
+                                        <td>08 Jul, 2008</td>
+				</tr>
+
+				<tr class="bgw" valign="top">
+                                        <td>JSR Review Ballot </td>
+                                        
+                                            <td><a href="results?id=2045">View results</a></td>
+                                        
+                                        <td>24 Jun, 2003</td>
+                                        <td>07 Jul, 2003</td>
+				</tr>
+
+			</table>
+			</td>
+			</tr>
+                        </td>
+</tr>
+</table>
+
+<!-- ********************************************** -->
+<!--  JCP Version                                   -->
+<!-- ********************************************** -->
+
+<span style="padding: 10px; display: block;">
+
+    <b> Status: </b><a href="/en/introduction/glossary#status"><font color=red><span title="A JSR that was withdrawn from the JCP by the Specification Lead before Final Release.">Withdrawn</span></font></a><br>
+
+
+    <b> Reason:</b> Withdrawn at the request of the Specification Lead.<br>
+
+
+    
+	<b>JCP version in use:</b> <a href="/procedures/jcp2_7"> 2.7</a><br>
+    
+
+    
+	<b>Java Specification Participation Agreement version in use:</b> 2.0<br>
+    
+
+    <br><br>
+        <b>Description</b>:<br>
+        An API and associated metadata format for declaratively binding and accessing data in J2EE<sup><font size="-2">TM</font></sup> applications.
+    <br><br>
+
+    <!-- ********************************************** -->
+    <!--  JSR Comments Email excluding JSR 900 and up   -->
+    <!-- ********************************************** -->
+
+	    
+            <b> Please direct comments on this JSR to the Spec Lead(s) </b> <br>
+	    
+
+            </span>
+
+   <!-- ****************************************** -->
+
+                <div id="p7TP52">
+                        <div class="p7TP_tabs2">
+                            <div><span>Team</span></div>
+                            <br class="p7TPclear" />
+                        </div>
+                </div>
+
+                <table bgcolor="#f2f2f2" border="0" cellpadding="5" cellspacing="1" width="100%">
+	
+                    <tr valign="top">
+                            <td colspan="3"><span class="header4">Specification Leads</span></td>
+                    </tr>
+
+
+		
+        
+			<tr valign="top">
+                            
+                            <td width="20" nowrap>&nbsp;</td>
+                            
+                            <td>John&nbsp;Smiljanic</td>
+                            <td>Oracle</td>
+			</tr>
+        
+
+                <tr valign="top">
+                        <td colspan="4" class="spacerw"><img src="/images/global/spacer.gif" alt="" height="1" width="1"></td>
+                </tr>
+                <tr valign="top">
+                        <td colspan="3"><span class="header4">Expert Group</span></td>
+                </tr>
+
+
+			<tr valign="top">
+                            <td width="20" nowrap>&nbsp;</td> <!-- Gutter //-->
+                            <td>BEA Systems</td>
+     
+
+                            <td>Dorsey, Paul</td>
+    
+
+                            <td>IOPSIS Software Inc.</td>
+			</tr>
+
+
+			<tr valign="top">
+                            <td width="20" nowrap>&nbsp;</td> <!-- Gutter //-->
+                            <td>Londono, Luis</td>
+     
+
+                            <td>O'Carroll, Luan</td>
+    
+
+                            <td>Oracle</td>
+			</tr>
+
+
+			<tr valign="top">
+                            <td width="20" nowrap>&nbsp;</td> <!-- Gutter //-->
+                            <td>Raining Data Corporation</td>
+     
+
+                            <td>Roy-Faderman, Avrom</td>
+    
+
+                            <td>SAP SE</td>
+			</tr>
+
+
+			<tr valign="top">
+                            <td width="20" nowrap>&nbsp;</td> <!-- Gutter //-->
+                            <td>Sun Microsystems, Inc.</td>
+     
+
+
+
+
+
+
+
+
+
+			</tr>
+
+
+
+
+
+
+
+
+
+
+			</tr>
+
+		</table>
+                    <!-- ********************************************** -->
+                    <!--  Expert Group Status                           -->
+                    <!-- ********************************************** -->
+
+                    <table cellpadding="0" cellspacing="0" border="0">
+                        
+                        <tr><td><ul><li>I would like to <a href="egnom?id=227">join this JSR</a></li></ul></td></tr>
+                        
+                    </table>
+
+   <!-- ****************************************** -->
+
+
+
+
+<!-- ********************************************** -->
+<!--  JSRProposal Info                              -->
+<!-- ********************************************** -->
+<p>
+
+		This JSR has been <a href="/en/introduction/glossary#status"><font color=red><span title="A JSR that was withdrawn from the JCP by the Specification Lead before Final Release.">Withdrawn</span></font></a><br>
+		<b> Reason:</b> Withdrawn at the request of the Specification Lead.<br> <br>
+
+
+</center><P>
+
+
+<a name="updates"><font size="+2">Updates to the Original JSR</font></a><p>
+
+The following changes have been made to the <a href="#orig">original proposal</a>:<P>
+
+<B>2006.08.23</b>:<P>
+
+<P><b>Specification Lead:</b> John Smiljanic</P>
+
+<P><b>E-Mail Address:</b> john.smiljanic<faketag></faketag>&#64;oracle.com</P>
+
+<P><b>Telephone Number:</b> +1 512 703 4711</P>
+
+<P><b>Fax Number:</b> -</P>
+
+<P><HR><P>
+
+<a name="orig"><font size="+2">Original Java Specification Request (JSR)</font></a><p>
+<FONT SIZE="-1">
+
+<!-- BEGIN-SUB TOPICS -->
+
+          <A HREF="#1"> Identification</A>  |
+          <A HREF="#2"> Request</A>  |
+          <A HREF="#3"> Contributions</A> 
+<BR>
+
+<!-- END-SUB TOPICS -->
+
+</FONT>
+<P>
+
+<!-- BEGIN TEMPLATE -->
+
+<!-- SECTION 1 -->
+
+<A NAME="1"></A>
+
+<P><FONT size=+2>Section 1. Identification</FONT>
+
+<P><b>Submitting Member:</b> Oracle</P>
+
+<P><b>Name of Contact Person:</b> Ted Farrell</P>
+
+<P><b>E-Mail Address:</b> ted.farrell&#64;oracle.com</P>
+
+<P><b>Telephone Number:</b> +1 650 506 9812</P>
+
+<P><b>Fax Number:</b> +1 801 365 5378</P>
+
+<BR>
+<P><b>Specification Lead:</b> Mike DeGroot</P>
+
+<P><b>E-Mail Address:</b> mike.de.groot&#64;oracle.com</P>
+
+<P><b>Telephone Number:</b> +1 650 506 2862</P>
+
+<P><b>Fax Number:</b> +1 801 365 5378</P>
+
+<BR>
+
+<P><B>Initial Expert Group Membership:</B>
+</P>
+
+<P>Oracle Corporation<BR>
+Sun Microsystems, Inc</P>
+
+<P><B>Supporting this JSR:</B>
+
+</P>
+
+<P>Oracle Corporation<BR>
+Sun Microsystems, Inc</p>
+
+<BR><BR>
+
+<!-- SECTION 2 -->
+
+<A NAME="2"></A>
+
+<P>
+<FONT SIZE="+2">Section 2: Request</FONT><P>
+</P>
+
+<H4>2.1 Please describe the proposed Specification:</H4>
+
+<P>Increasingly, enterprise applications model persistent datasources as Java classes and develop Business Services<a href="#_ftn1">[1]</a> that query, manipulate, and persist these objects. However, developing interactive user interfaces that use Business Services to correctly manipulate the data objects requires understanding and coding against complex sets of design patterns and standards that underly the various  Service technologies. This proposed specification will define a framework of classes, called Declarative Bindings, that formalize the characteristic interactions between typical UI components and values and methods available on Business Services. By using the Declarative Bindings set forth in this specificiation, any Java UI rendering technology can declaratively bind to any Business Service.  Example UI components and controller technologies include: JSP JSTL tags, JSF, Struts, and Swing. Example business services include SOAP Web Services, EJB Session Beans or any Java class being used as an interface to some functionality. 
+            <p>When accessed by the UI components and UI controller, the metadata-driven Declarative Bindings interact with the classes that they are bound to, providing J2EE standards-compliant support for things like: 
+            <ol>
+              <li>Binding (locating and accessing) 
+                <ol>
+                  <li>single attribute (appropriate for input fields and other single value UI components)</li>
+                  <li>objects with related collection attributes (appropriate for tree controls)</li>
+                  <li>collections of objects (appropriate for displaying in tables)</li>
+                </ol>
+              </li>
+              <li>Navigating 
+                <ol>
+                  <li>current row tracking (first, next, prev, last)</li>
+                  <li> current range (appropriate for scrollbar pagination)</li>
+                  <li>coordinating related collections (appropriate for master/detail display)</li>
+                  <li>multiple iterators sharing same collection (appropriate for split pane)</li>
+                </ol>
+              </li>
+              <li>Performing actions 
+                <ol>
+                  <li>normalizing the interaction of generic insert, update and delete operations on transactional objects and collections  of objects</li>
+                  <li>surfacing status of bound objects (to know whether the UI component needs to be re-rendered)</li>
+                  <li>dispatching to methods to perform custom services.</li>
+                  <li>validating and reporting validation exceptions. </li>
+                </ol>
+              </li>
+            </ol>
+            Declarative Bindings completely decouple the user interface from the data portions of the application. In the nomenclature of MVC application architectures, this specification standardizes metadata and behavior for binding to elements of the Model from both the View and the Controller. 
+            <p>The Declarative Binding classes provide attributes that are easily accessible to all user interface technologies that support EL or Java. Declarative Bindings manage the interaction with Business Services. They drive their behavior off metadata, which is convenient for tools vendors. One of the goals of this proposal is allow interoperability between tools products that interactively bind sophisticated interfaces to the services that provide the data. 
+            <p>To facilitate a common mechanism for accessing diverse Business Service technologies this specification proposes that the Declarative Bindings access the Business Services via a lightweight abstraction layer called Data Controls. 
+            <p>Data Controls provide supplemental metadata about the Business Service's capabilities and constraints as well as support a simple interface for normalizing typical interactions with the Service.  Data Controls comprehensively describe the attributes and methods so that UI components can make intelligent assumptions about how to render the data. In addtion, the Data Control standardizes access to functionality that is typically required by data-intensive, interactive user interfaces. Examples of functionality could include how the  Business Service is instantiated, navigated, invoked, sychronized, transacted or released. This JSR will not impose any requirements for the types of attributes or methods on the Data Control or any implementation requirements. Those decisions will be left to the implementor of the Data Control and revealed to the Declarative Bindings and UI via the Data Control interface.<p>
+<a name="_ftn1">[1]</a> By Business Service we mean any class that publishes objects and provides methods that manipulate the objects. I.e. The actual term may vary according to the Business Service technology, SessionFacade, WebService, ApplicationModule, etc. 
+
+
+</P>
+
+<H4>2.2 What is the target Java platform? (i.e., desktop, server, personal, embedded, card, etc.)</H4>
+
+<P>Java<sup><font size="-2">TM</font></sup> 2 Platform, Enterprise Edition</P>
+
+<H4>2.3 What need of the Java community will be addressed by the proposed specification?</H4>
+
+<P>This specification provides one standard way for user interfaces to access the data of the application, regardless of the implementation or specific technology used for O/R mapping or distributed object communication.</P>
+
+<H4>2.4 Why isn't this need met by existing specifications?</H4>
+
+<P>This area of technology is not covered by existing standards.</P>
+
+<H4>2.5 Please give a short description of the underlying technology or technologies:</H4>
+
+<P>There are two parts to this technology: <u>Declarative Bindings</u> and <u>Data Controls</u>.  
+
+<p><u>Declarative Bindings</u> describe and manage the characteristic interactions between specific kinds of UI components (View and Controller layers) and the methods provided by a Business Service (Model layer). 
+            
+<p><u>Data Controls</u> provide supplimental metadata about the Business Service's capabilities and constraints.as well as a simple interface for normalizing typical transactional interactions with the Service. </P>
+
+<H4>2.6 Is there a proposed package name for the API Specification? (i.e., <TT>javapi.something</TT>, <TT>org.something</TT>, etc.)</H4>
+
+<P>javax.datacontrol<BR>
+javax.binding
+
+
+</P>
+
+<H4>2.7 Does the proposed specification have any dependencies on specific operating systems, CPUs, or I/O devices that you know of?</H4>
+
+<P>No</P>
+
+<H4>2.8 Are there any security issues that cannot be addressed by the current security model?</H4>
+
+<P>No</P>
+
+<H4>2.9 Are there any internationalization or localization issues?</H4>
+
+<P>These will be explicitly addressed by the specification.</P>
+
+<H4>2.10 Are there any existing specifications that might be rendered obsolete, deprecated, or in need of revision as a result of this work?</H4>
+
+<P><ul><li>JSR 114, and JSR 127 are complementary and may require revision though, at the moment, we are not aware of any issues. 
+</li>
+<li>This JSR will keep in compliment with JSR 221 (which covers JDBC 4.0).</li>
+</ul></P>
+
+<H4>2.11 Please describe the anticipated schedule for the development of this
+specification.</H4>
+
+<P>We hope to have the specification completed in time to be included in the next major revision of the Java<sup><font size="-2">TM</font></sup> 2 Enterprise Edition platform (post 1.4). </P>
+
+<H4>2.12 Please describe the anticipated working model for the Expert Group working on developing this
+specification.</H4>
+
+<P>Oracle will lead the specification and implementation work, with experts contributing to the API specification.
+<p>
+This will include email discussions, monthly phone calls and possibly a F2F meeting.</P>
+
+<H4>2.13 Please describe how the RI and TCK will de delivered, i.e. as part of a profile or platform edition, or stand-alone, or both. Include version information for the profile or platform in your answer.
+</H4>
+
+<P>The RI and TCK will be made available in stand-alone form at the time of the final release. There will most likely be earlier versions of the RI and TCK that are developed as this JSR progresses. </P>
+
+<H4>2.14 Please state the rationale if previous versions are available stand-alone and you are now proposing in 2.13 to only deliver RI and TCK as part of a profile or platform edition (See sections 1.1.5 and 1.1.6 of the JCP 2 document).
+</H4>
+
+<P>Not applicable.</P>
+
+<H4>2.15 Please provide a description of the business terms for the Specification, RI and TCK that will apply when this JSR is final.</H4>
+
+<P>It is Oracle's intention to create open source licenses that are as similar as possible to an "Apache"-style license. Additions or changes to this basic open source format will be limited to those terms required to comply with the JSPA, or which explain terms or limitations of the licenses granted under the JSPA. Currently intended terms are as follows:
+<ol><li>
+Oracle will grant a royalty-free source code license to use, modify and distribute the Reference Implementation.
+</li><li>Oracle will grant a royalty-free license to use the Specification to create a compliant implementation of the Specification, which may be distributed to third parties.
+</li><li>Because of requirements in the JSPA, the Specification license will require that implementations of the Specification must (a) fully implement the specification including all of its required interfaces and functionality; (b) not modify, subset, superset or otherwise extend the Licensor Name Space (defined as the public class or interface declarations whose names begin with "java", "javax", "com.sun", or "com." or their equivalents in any subsequent naming convention adopted by Sun through the JCP), or include any public or protected packages, classes, Java interfaces, fields or methods within the Licensor Name Space other than those required by the spec; and (c) pass the TCK.
+</li><li>As part of the licenses, Oracle will grant an associated patent license under Oracle patent rights, but solely to the extent that such patent rights are essential to implement the Specification. As appropriate, Oracle may indicate in the licenses that under the JSP contributors other than Oracle may be allowed to require an additional patent license for implementations on "fair and reasonable terms" (which may include royalties).
+</li><li>Oracle may condition the license grants on the licensee's commitment to offer a license to those of the licensee's patent rights that are essential to implementing the Specification to other licensees on reasonable and non-discriminatory terms.
+</li><li>Although Oracle will place no restrictions on modifications that may be made by or license terms given to "downstream" licensees, it is Oracle's intention to clarify in the licenses, that under the JSPA, no copyright or patent licenses are granted for any non-compliant implementation made by downstream licensees, whether independent or based on the reference implementation.
+</li><li>Oracle will grant a royalty-free license to use the TCK to determine if an implementation is compliant.
+</li><li>Oracle makes no warranties with respect to the Specification, Reference Implementation, Test Suites or other distributed materials, and all liability is excluded.
+</li><li>A licensee's rights and licenses terminate in the event the licensee brings or threatens suit against Oracle or any other licensee based on a claim of infringement of intellectual property rights as a result of use of the Specification, Reference Implementation, or Test Suites. 
+</li></ol>
+
+
+
+</P>
+
+<BR><BR>
+<BR><BR>
+
+<!-- SECTION 3 -->
+
+<A NAME="3"></A>
+
+<P>
+<FONT SIZE="+2">Section 3: Contributions</FONT><P>
+</P>
+
+<H4>3.1 Please list any existing documents, specifications, or implementations that describe the technology. Please include links to the documents if they are publicly available.</H4>
+
+<P>The "Data Control" and "Data Binding" technologies are used in Oracle 9i JDeveloper version 9.0.5. This will be shipping in preview mode in July of 2003.</P>
+
+<H4>3.2 Explanation of how these items might be used as a starting point for the work.</H4>
+
+<P>The expert group will consider them as a starting point for ideas on defining the specification.</P>
+
+<BR><BR>
+</p>
+
+
+
+
+
+
+
+
+<!-- ** BEGIN: footer.jsp ** //-->
+
+
+
+
+
+
+
+
+</td>
+</tr>
+</table>
+
+<!-- ** END: Content Table ** //-->
+
+<!-- ** BEGIN: Footer Table ** //-->
+
+<div id="footer" style="clear: both;">
+    <div class="footleft">
+        <a href="/en/resources/contacts">Contact Us</a>
+    </div>
+	
+    <div class="botbar"><img src="/images/spacer.gif" alt="" height="23" width="1"></div>
+
+    <div class="footleft2">
+         &copy; 2019, Oracle Corporation and/or its affiliates. 
+        <a href="/en/home/terms">Terms of Use</a>. <a href="http://www.oracle.com/us/legal/privacy/index.html">Privacy Policy</a>. <a href="http://www.oracle.com/us/legal/third-party-trademarks/third-party-trademarks-078568.html">Trademarks</a>
+    </div>
+
+    <div class="footright">
+        <img src="/images/common/logo_oracle_footer.gif" alt="Oracle Corporation" height="22" width="91">
+    </div>
+
+    <div style="clear: both;"><img src="/images/spacer.gif" alt="" height="30" width="1"></div>
+</div>
+
+<!-- ** END: Footer Table ** //-->
+
+
+
+<!-- ** Menu Start ** //-->
+
+
+
+</body>
+</html>
+<!-- ** END: footer.jsp ** //-->
+

@@ -1,0 +1,16 @@
+ChangeLog:
+1.  Changed the "Client GET Operation Flow" section of the Operation call Javadoc to correctly reflect operation flow.
+2.  Added statement to Operation.getResponseCode() to throw an IOException if the Operation object has been closed.
+3.  Changed address of Motorola location on cover page.
+4.  In section 10.5.1, the last sentence of third paragraph was changed to say that acceptAndOpen() returns a BluetoothConnectionException (and not a BluetoothStateException).  A similar change was made to section 11.3.1.
+5.  Clarified section A.6.4 to specify that the service bits must be deactivated, unless other services cocrresponding to those same bits remain active.
+6.  Clarified Operation.getResponseCode() to state that it must never return the OBEX CONTINUE response code (0x10 or 0x90).
+7.  Updated section 12.7.1 to remove assumption of when the NAME header is sent.
+8.  Updated ClientSession put(), get(), setPath(), delete() method descriptions to clarify that null is a valid argument to these methods.
+9.  Fixed the default OBEX hint bit in section 12.4.3.2 to 02000 to correctly reflect the default value defined in the OBEX specification.
+10. Updated section 11.2.1 and 11.2.1.1 to state that if no receiveMTU is specified, the smaller of the DEFAULT_MTU and the Bluetooth stack max MTU will be used in the MTU negotiation with the remote device.
+11. Section A.6.2 made reference to the LocalDevice.getServiceRecord() method.  This is not the correct method name.  Changed it to LocalDevice.getRecord().
+12. Changed all references to Appendix C to reference the JSR-82 Javadocs.
+
+Additional Notes:
+1.  Kept the bluetooth.api.version and obex.api.version device properties as "1.1" since this release of the specification only clarifies specification issues and does not add or remove features.

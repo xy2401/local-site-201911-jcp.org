@@ -1,0 +1,633 @@
+
+<!-- ** BEGIN: header.jsp ** //-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3c.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+<head>
+    
+
+   
+    <link href="/includes/css/menu.css" rel="stylesheet" type="text/css"></link>
+    <link href="/includes/css/style.css" rel="stylesheet" type="text/css"></link>
+    <!--[if lt IE 6]><link href="/includes/css/style5.css" rel="stylesheet" type="text/css" ></link><![endif]-->
+    <!--[if gte IE 5]><link href="/includes/css/style6.css" rel="stylesheet" type="text/css" ></link><![endif]-->
+    <link href="/includes/css/tabs.css"  rel="stylesheet" type="text/css"></link>
+
+    <script type="text/javascript" src="/includes/scripts/tabs.js"></script>
+    <script type="text/javascript" src="/includes/scripts/menu.js"></script>
+   
+
+    
+
+    
+        <title>The Java Community Process(SM) Program - communityprocess - maintenance</title>
+    
+
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+
+
+<body onload="P7_initPM(0,1,0,0,-1)">
+
+    <a name="top"></a>
+
+    <div id="header">
+	<div id="logo">
+		<a href="/en/home/index"><img src="/images/spacer.gif" alt="Java Community Process" height="81" width="151"></a>
+	</div>
+	<div id="tools">
+		<div class="search">
+			<form name="search" action="/en/jsr/summary" method="get" onsubmit="return validate_search()">
+				<input name="id" value="Search JSRs" size="16" class="form" onfocus="nullify_if_equal(this, 'Search JSRs')" type="text">
+				<a href="javascript:document.search.submit()" onclick="return validate_search()"><img src="/images/button_go.gif" width="21" height="16" border="0" alt="Submit this Search" name="sub_search"></a>
+			</form>
+		</div>
+		<div class="tools">
+			<a href="/en/press/pressroom">Press Room</a> &nbsp;|&nbsp;
+			<a href="http://java.com/java/download/index.jsp?cid=jdp78399">Get Java Here</a> &nbsp;|&nbsp;
+			<!-- <a href="javascript:void(0)">Print Format</a> &nbsp;|&nbsp;&nbsp; -->
+		</div>
+
+	</div>
+	<div style="clear: right;"></div>
+
+        
+
+	<div class="topbar"><img src="/images/spacer.gif" alt="" height="3" width="154"></div>
+	<div id="update"> </div>
+    </div>
+
+
+    
+
+        <!-- ** BEGIN: Content Table ** //-->
+
+        <table width="100%" border="0" cellpadding="0" cellspacing="0">
+
+            <tr>
+
+                <!-- ** BEGIN: Navigation Column ** //-->
+                <td width="150" id="leftcontent" valign="top">
+                    <!-- Navigation Placeholder //-->
+
+                    
+
+                    <div class="bar"><img src="/images/hr_dots1.gif" alt="" height="3" width="150"></div>
+
+        <!-- begin find JSRs form -->
+        <!-- IMPORTANT! do not convert this form to Struts < html : form > tag.  javascript change of form.action property fails. -->
+        <img src="/images/hd_find-jsrs.gif" alt="Find JSRs" height="18" width="150">
+        <form name="findjsr" action="/en/jsr/summary" method="get" class="pt5" onsubmit="return validate_findjsr()">
+            <input name="id" size="18" class="form" value="Search JSRs" onfocus="nullify_if_equal(this, 'Search JSRs')" type="text">
+	    <a href="javascript:document.findjsr.submit()" onclick="return validate_findjsr()"><img src="/images/button_go.gif" width="21" height="16" border="0" alt="Submit this Search" name="sub_search"></a>
+        </form><br><br>
+
+        <!-- ** Menu Start ** //-->
+
+        <ul id="p7PMnav">
+            <li><a href="/en/jsr/platform">JSRs by Platform</a></li>
+            <li><a href="/en/jsr/tech">JSRs by Technology</a></li>
+            <li><a href="/en/jsr/stage">JSRs by Stage</a></li>
+            <li><a href="/en/jsr/ec">JSRs by Committee</a></li>
+            <li><a href="/en/jsr/all">List of All JSRs</a></li>
+
+            <!--end find JSRs form -->
+            <div style="clear: both;"><img src="/images/spacer.gif" alt="" height="25" width="1"></div>
+
+            <!--begin my JCP -->
+            <img src="/images/hd_my-jcp.gif" alt="My JCP" height="18" width="150">
+            
+
+          <form name="login" method="get" action="/en/user/login" >
+            <input name="Sign-in" type="submit" title="Sign-in" value="Sign-in" />
+          </form>
+
+            <div style="clear:both"><img src="/images/global/spacer.gif" width="1" height="3" alt=""></div>
+            <div class="noNav">
+                <a href="/en/user/register">Register for Site</a>
+            </div>
+
+             <div class="bar"><img src="/images/hr_dots1.gif" alt="" height="3" width="150"></div>
+           <div class="noNav" style="color: #666666; padding: 0;">
+              Use of JCP site is subject to the
+              <a href="/en/home/terms" style="display:inline;padding: 0">JCP Terms of Use</a> and the
+              <a href="http://www.oracle.com/us/legal/privacy/index.html" style="display:inline;padding: 0" href="">Oracle Privacy Policy</a>
+          </div>
+
+            
+
+            <div style="clear:both"><img src="/images/global/spacer.gif" width="1" height="25" alt=""></div>
+
+            <!--begin JCP info -->
+            <img src="/images/hd_jcp-info.gif" alt="JCP Info" height="18" width="150">
+
+            <li><a href="/en/procedures/overview" class="p7PMtrg">About JCP</a>
+                <ul>
+                    <li><a href="/en/procedures/overview">Program Overview</a></li>
+                    <li><a href="/en/procedures/jcp2">JCP Process Document</a></li>
+                    <li><a href="/en/whatsnew/calendar">Calendar</a></li>
+                    <li><a href="/en/participation/members">JCP Members</a></li>
+                    <li><a href="/en/participation/committee">Executive Committee</a></li>
+                    <li><a href="/en/whatsnew/elections">Elections</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/en/participation/overview" class="p7PMtrg">Get Involved</a>
+		<ul>
+                    <li><a href="/en/participation/overview">Overview</a></li>
+                    <li><a href="/en/participation/membership">Becoming a JCP Member</a></li>
+		</ul>
+            </li>
+
+            <li><a href="/en/resources/contents" class="p7PMtrg">Community Resources</a>
+                <ul>
+                    <li><a href="/en/resources/contents">Overview</a></li>
+                    <li><a href="/en/resources/tutorials">Tutorials</a></li>
+                    <li><a href="/en/resources/multimedia">JCP Podcasts</a></li>
+                    <li><a href="/en/resources/guide">Spec Lead Guide</a></li>
+                    <li><a href="/en/resources/tdk">TCK Tool & Info</a></li>
+                    <li><a href="/en/resources/license_reference">License Reference</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/en/press/pmo" class="p7PMtrg">Community News</a>
+                <ul>
+                    <li><a href="/en/press/pmo">News</a></li>
+                    <li><a href="/en/press/news/awards/awards_main">Programs &amp; Awards</a></li>
+                    <li><a href="/en/press/releases">Press Releases</a></li>
+                    <li><a href="/en/press/success">Success Stories</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/en/introduction/faq">FAQ</a></li>
+
+            <li><a href="/en/resources/contacts">Contact Us</a></li>
+
+            <div style="clear: both;"><img src="/images/spacer.gif" alt="" height="25" width="1"></div>
+
+            <!--[if lte IE 6]><style>#p7PMnav a{height:1em;}#p7PMnav li{height:1em;float:left;clear:both;width:100%}</style><![endif]-->
+            <!--[if IE 6]><style>#p7PMnav li{clear:none;}</style><![endif]-->
+            <!--[if IE 7]><style>#p7PMnav a{zoom:100%;}#p7PMnav li{float:left;clear:both;width:100%;}</style><![endif]-->
+        </ul>
+
+        
+
+        <!--begin ad space -->
+        <div class="ads">
+            <a href="http://java.com/java/download/index.jsp?cid=jdp78399" target="_blank"><img style="display: ;" src="/images/ad_banner2.gif" alt="Ad Banner" border="1" height="70" width="150"></a>
+        </div>
+        <!--end ad space -->
+
+<!-- ** Menu End ** //-->
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;<br>
+
+    
+
+                    &nbsp;<br>
+                    <img src="/images/common/trans.gif" alt="" width="1" height="150"><br>
+
+              
+
+
+
+                </td>
+                <!-- ** END: Navigation Column ** //-->
+
+                <!-- ** BEGIN: Gutter Column ** //-->
+		<td width="10" nowrap><img src="/images/common/trans.gif" alt="" width="10" height="1"></td>
+                <!-- ** END: Gutter Column ** //-->
+
+                <!-- ** BEGIN: Content Column ** //-->
+                <td width="100%" valign="top">
+
+    
+<script type="text/javascript">
+
+String.prototype.trim = function() {
+        return this.replace(/^\s+|\s+$/g,"");
+}
+String.prototype.ltrim = function() {
+        return this.replace(/^\s+/,"");
+}
+String.prototype.rtrim = function() {
+        return this.replace(/\s+$/,"");
+}
+
+function validate_search() {
+	if (document.search.id.value == "Search JSRs" || document.search.id.value.trim().length == 0) {
+		alert("Search terms must be entered first");
+		return false;
+	}
+	return true;
+}
+
+function validate_findjsr() {
+	if (document.findjsr.id.value == "Search JSRs" || document.findjsr.id.value.trim().length == 0) {
+		alert("Search terms must be entered first");
+		return false;
+	}
+	return true;
+}
+
+function nullify_if_equal(field, str) {
+	// alert("val=" + field.value);
+	if (field.value == str) {
+		field.value = "";
+	}
+}
+
+</script>
+<!-- ** END: header.jsp ** //-->
+
+
+
+
+
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<HEAD>
+	<META HTTP-EQUIV="CONTENT-TYPE" CONTENT="text/html; charset=iso-8859-1">
+	<TITLE></TITLE>
+	<META NAME="GENERATOR" CONTENT="StarOffice 8  (Solaris Sparc)">
+	<META NAME="CREATED" CONTENT="20090914;10360200">
+	<META NAME="CHANGEDBY" CONTENT="Andy Herrick">
+	<META NAME="CHANGED" CONTENT="20090922;15105700">
+</HEAD>
+<BODY LANG="en-US" DIR="LTR">
+<H1><A NAME="This_is_the_proposed_change_log"></A><A NAME="This_is_the_proposed_change_log_"></A>
+This is the proposed change log for a Maintenance Review of JSR-056
+version 6.0.18</H1>
+<H2><A NAME="The_proposed_new_version_number"></A><A NAME="The_proposed_new_version_number_"></A>
+The proposed new version number will be 6.0.18 
+</H2>
+<H3><A NAME="Change_1_bump_the_specification"></A><A NAME="Change_1_bump_the_specification_"></A>
+Change 1 - bump the specification version number to 6.0.18</H3>
+<P>In The title page (index.html) replace (in 2 places): 
+</P>
+<UL>
+	<LI><P>Version 6.0.10</P>
+</UL>
+<P>with: 
+</P>
+<UL>
+	<LI><P>Version 6.0.18</P>
+</UL>
+<H3><A NAME="Change_2_add_this_revision_histo"></A>Change 2 - add
+this revision history to section 0.7: 
+</H3>
+<P>Add section 0.7.5 as follows: 
+</P>
+<P>0.7.5 Changes since release 6.0.10 
+</P>
+<P>This is a minor update of the version 6.0.10 specification. The
+change are described below: 
+</P>
+<UL>
+	<LI><P STYLE="margin-bottom: 0in">Modify section 3.7.1, 3.7.2, and
+	3.8.1 to add the &ldquo;progress-class&rdquo; attribute to the
+	&ldquo;application-desc&rdquo;, &ldquo;applet-desc&rdquo;, and
+	&ldquo;component-desc&rdquo; elements.</P>
+	<LI><P STYLE="margin-bottom: 0in">Modify section 4.4 to describe the
+	&ldquo;progress&rdquo; value to the &ldquo;download&rdquo; attribute
+	for jar resources.</P>
+	<LI><P STYLE="margin-bottom: 0in">Modify section 7 to include the
+	new DownloadService2, and IntegrationService APIs.</P>
+	<LI><P STYLE="margin-bottom: 0in">Modify Appendix C, the DTD, to
+	include the new &ldquo;progress-class&rdquo; attribute and
+	&ldquo;progress&rdquo; attribute value above.</P>
+	<LI><P>Modify Appendix D, the JNLP API, to include the new
+	DownloadService2, and IntegrationService APIs.</P>
+</UL>
+<P>This revision introduces the version number (6.0.18) for the JNLP
+file and the JNLP API. Version 6.0.18 is a proper superset of 1.0,
+and of version 6.0.10. A JNLP Client implementing this specification
+must be able to run a JNLP file which requires 1.0, 1.5, 6.0, 6.0.10,
+or 6.0.18; i.e., the spec attribute in the jnlp element is set to any
+of 1.0, 1.5, 6.0, 6.0.10, or 6.0.18. 
+</P>
+<P>A complete list of changes for v6.0.18 can be found at: 
+</P>
+<UL>
+	<LI><P>{include URL to where this change log is posted on jcp.org} 
+	</P>
+</UL>
+<H3><A NAME="Change_3_Allowing_untrusted_cont"></A>Change 3 &ndash;
+Adding &ldquo;progress-class&rdquo; attribute to each of the
+descriptor elements.</H3>
+<P>Add to the end of sections 3.7.1:</P>
+<P><STRONG><CODE>progress-class</CODE> attribute:</STRONG> The name
+of a class containing an implementation of the
+javax.jnlp.DownloadServiceListener interface.</P>
+<P>The optional progress-class attribute can be used by an
+application to indicate to the JNLP client it's preference that the
+specified class be used as a replacement for the client's default
+method of displaying download progress to the user. If the JNLP
+client can find and load this class, and it implements the 
+DownloadServiceListener interface, it is free to call it during the
+downloading of other resources, instead of displaying progress in
+it's default way. (see section 4.4).</P>
+<P>also, add to the bottom of sections 3.7.2, 3.8.1, and 3.8.2:</P>
+<P><STRONG><CODE>progress-class</CODE> attribute:</STRONG> The name
+of a class containing an implementation of the
+javax.jnlp.DownloadServiceListener interface. (see section 3.7.1)</P>
+<H3><A NAME="Change_4_Allowing_implementation"></A>Change 4 &ndash;
+Adding the &ldquo;progress&rdquo; attribute to the &ldquo;download&rdquo;
+attribute of jar resources.</H3>
+<P>Add to the first example in section 4.4:</P>
+<P><CODE>&lt;jar href=&quot;progress.jar&quot; download=&quot;progress&quot;/&gt;</CODE></P>
+<P><CODE><FONT FACE="Thorndale, serif">Then add after 3 paragraphs
+later (before discussion of parts):</FONT></CODE></P>
+<P><CODE><FONT FACE="Thorndale, serif">The value &ldquo;progress&rdquo;
+for the download attribute is a hint to the jnlp client that this jar
+may contain the class defined by the progress-class attribute (see
+section 3.7.1). This jar may be considered eager, and may be loaded
+first by the jnlp client so that the &ldquo;progress-class&rdquo;
+found in it may be used to display the progress of the downloading of
+all other eager resources.</FONT></CODE></P>
+<H3><A NAME="Change_5_Allowing_implementation"></A>Change 5 &ndash;
+Modifying the DTD in appendix C for Change 4 and 5 above.</H3>
+<H3 STYLE="font-weight: medium"><FONT SIZE=3>Change:</FONT></H3>
+<P><CODE>&lt;!--<BR>The download attribute of a jar element indicates
+if this element must be downloaded before an application is launched
+(eager), or not (lazy).<BR>--&gt;</CODE></P>
+<P><CODE><STRONG>&lt;!ATTLIST jar download (eager | lazy) &quot;eager&quot;&gt;</STRONG></CODE></P>
+<P STYLE="font-weight: medium"><FONT SIZE=3>To:</FONT></P>
+<P><CODE>&lt;!--<BR>The download attribute of a jar element indicates
+if this element must be downloaded before an application is launched
+(eager), or not (lazy), a value of progress implies eager, and is a
+hint that this jar may want to be downloaded first.<BR>--&gt;</CODE></P>
+<P><STRONG><CODE>&lt;!ATTLIST jar download (eager | lazy | progress)
+&quot;eager&quot;&gt;</CODE></STRONG></P>
+<P>Add after:</P>
+<P><CODE><STRONG>&lt;!ATTLIST application-desc main-class CDATA
+#IMPLIED&gt;</STRONG></CODE></P>
+<P>The following:</P>
+<P><CODE>&lt;!--<BR>The progress-class attribute of the
+application-desc element describes the progress class that implements
+javax.jnlp.DownloadServiceListener.<BR>--&gt;</CODE></P>
+<P><CODE><B><FONT FACE="Cumberland, monospace">&lt;!ATTLIST
+application-desc progress-class CDATA #IMPLIED&gt;</FONT></B></CODE></P>
+<P><CODE><FONT FACE="Thorndale, serif">Add After:</FONT></CODE></P>
+<P><CODE><STRONG><CODE><FONT FACE="Thorndale, serif">&lt;!</FONT><B><FONT FACE="Cumberland, monospace">ATTLIST
+applet-desc main-class CDATA #REQUIRED&gt;</FONT></B></CODE></STRONG></CODE></P>
+<P>The following:</P>
+<P><CODE>&lt;!--<BR>The progress-class attribute of the applet-desc
+element describes the progress class that implements
+javax.jnlp.DownloadServiceListener.<BR>--&gt;</CODE></P>
+<P><CODE><B><FONT FACE="Cumberland, monospace">&lt;!ATTLIST
+applet-desc progress-class CDATA #IMPLIED&gt;</FONT></B></CODE></P>
+<P><CODE><FONT FACE="Thorndale, serif">Add After:</FONT></CODE></P>
+<P><CODE><STRONG><CODE><FONT FACE="Thorndale, serif">&lt;!</FONT><B><FONT FACE="Cumberland, monospace">ELEMENT
+component-desc EMPTY&gt;</FONT></B></CODE></STRONG></CODE></P>
+<P>The following:</P>
+<P><CODE>&lt;!--<BR>The progress-class attribute of the
+component-desc element describes the progress class that implements
+javax.jnlp.DownloadServiceListener.<BR>--&gt;</CODE></P>
+<P><CODE><B><FONT FACE="Cumberland, monospace">&lt;!ATTLIST
+component-desc progress-class CDATA #IMPLIED&gt;</FONT></B></CODE></P>
+<P><CODE><FONT FACE="Thorndale, serif">Add After:</FONT></CODE></P>
+<P><CODE><CODE><STRONG><B><FONT FACE="Thorndale, serif">&lt;!ELEMENT
+installer-desc EMPTY&gt;</FONT></B></STRONG></CODE></CODE></P>
+<P>The following:</P>
+<P><CODE>&lt;!--<BR>The progress-class attribute of the
+installer-desc element describes the progress class that implements
+javax.jnlp.DownloadServiceListener.<BR>--&gt;</CODE></P>
+<P><CODE><B><FONT FACE="Cumberland, monospace">&lt;!ATTLIST
+installer-desc progress-class CDATA #IMPLIED&gt;</FONT></B></CODE></P>
+<H3>Change 6 &ndash; Modifying the JNLP API to add DownloadService2
+and IntegrationService interfaces</H3>
+<P><STRONG>Before 7.1, add to the list of services:</STRONG> 
+</P>
+<UL>
+	<LI><P STYLE="margin-bottom: 0in"><CODE>IntegrationService</CODE>,
+	which provides programmatic shortcut and mime-type association
+	support. This service is optional. 
+	</P>
+	<LI><P><CODE>DownloadService2</CODE>, which provides support for
+	programmatic cache queries and uninstall notification. This service
+	is optional. 
+	</P>
+</UL>
+<P><STRONG>After 7.10, append the following two sections:</STRONG> 
+</P>
+<H2><A NAME="IntegrationService"></A>7.11 The <CODE>IntegrationService</CODE>
+Service</H2>
+<P>The <CODE>javax.jnlp.IntegrationService</CODE> provides API for
+programmatic desktop integration, namely shortcut management and
+mimetype association.</P>
+<P>The application can request creation of desktop and menu
+shortcuts, query the existence of shortcuts and request removal of
+shortcuts using the following methods: 
+</P>
+<UL>
+	<LI><P STYLE="margin-bottom: 0in"><CODE>boolean
+	requestShortcut(boolean desktop, boolean menu, String submenu)</CODE>
+		</P>
+	<LI><P STYLE="margin-bottom: 0in"><CODE>boolean hasDesktopShortcut()</CODE>
+		</P>
+	<LI><P STYLE="margin-bottom: 0in"><CODE>boolean hasMenuShortcut()</CODE>
+		</P>
+	<LI><P><CODE>boolean removeShortcuts()</CODE> 
+	</P>
+</UL>
+<P>The method <CODE>requestShortcut()</CODE> will attempt to install
+shortcuts for the application. It will install desktop or menu
+shortcuts or both, according to the <CODE>desktop</CODE> and <CODE>menu</CODE>
+arguments. For menu shortcuts, the <CODE>submenu</CODE> argument
+specifies the name of the submenu where to place the shortcut.
+Depending on the configuration of the JNLP client and the operating
+system, this method might ask permission from the user to install
+shortcuts, or even deny shortcuts altogether. The return value
+indicates if the shortcuts have been installed successfully or not.
+The methods <CODE>hasDesktopShortcut()</CODE> and <CODE>hasMenuShortcut()</CODE>
+can be used to query the existence of shortcuts. The method
+<CODE>removeShortcuts()</CODE> will attempt to remove shortcuts for
+the application and return <CODE>true</CODE> if it was successful or
+there have been no shortcuts to begin with, and <CODE>false</CODE> if
+they have not been successfully removed (e.g. when operating system
+denied it for some reason). 
+</P>
+<P>Applications can request a mime-type association, query the
+existence of a mime-type association and request removal of a
+mime-type association using the following methods: 
+</P>
+<UL>
+	<LI><P STYLE="margin-bottom: 0in"><CODE>boolean
+	requestAssociation(String mimetype, String [] extensions)</CODE> 
+	</P>
+	<LI><P STYLE="margin-bottom: 0in"><CODE>boolean
+	hasAssociation(String mimetype, String [] extensions)</CODE> 
+	</P>
+	<LI><P><CODE>boolean removeAssociation(String mimetype, String []
+	extensions)</CODE> 
+	</P>
+</UL>
+<P>The method <CODE>requestAssociation()</CODE> requests that the
+application is associated with the specified mime-type and filename
+extensions. It returns <CODE>true</CODE> on success, and <CODE>false</CODE>
+otherwise. An application can use <CODE>hasAssociation()</CODE> to
+query if it is associated with a specified mime-type. The method
+<CODE>removeAssociation()</CODE> requests to remove the mime-type
+association and returns <CODE>true</CODE> on success and <CODE>false</CODE>
+otherwise. 
+</P>
+<H2><A NAME="DownloadService2"></A>7.12 The <CODE>DownloadService2</CODE>
+Service</H2>
+<P>The <CODE>DownloadService2</CODE> API provides API for
+programmatic cache management/queries as well as a notification
+system for uninstallation of resources.</P>
+<P>Applications can query cached resources and find out if there is
+an update available by using the following methods: 
+</P>
+<UL>
+	<LI><P STYLE="margin-bottom: 0in"><CODE>ResourceSpec[]
+	getCachedResources(ResourceSpec spec)</CODE> 
+	</P>
+	<LI><P><CODE>ResourceSpec[] getUpdateAvailableResources(ResourceSpec
+	spec) throws IOException</CODE> 
+	</P>
+</UL>
+<P>An application can use <CODE>getCachedResources()</CODE> to query
+all resources in the local cache that match the specified URL and
+version patterns as well as a resource type. The <CODE>url</CODE>
+pattern is mandatory. If the <CODE>version</CODE> pattern is <CODE>null</CODE>,
+then all versions are returned. The <CODE>type</CODE> property
+narrows the query to specific resource types. If it has an unknown
+value (i.e. none of the constants defined in <CODE>DownloadService2</CODE>),
+it will be treated equivalent to <CODE>ALL</CODE>, i.e. it returns
+all resource types. The method <CODE>getUpdateAvailableResources()</CODE>
+returns all resources in the cache that match the spec (equivalent to
+<CODE>getCachedResources()</CODE>) AND have a newer version available
+online. This method will try to establish a network connection to
+determine if newer versions are available for cached resources and
+throw an <CODE>IOException</CODE> if this fails for some reason. 
+</P>
+<H3>Change 7 &ndash; Modifying Appendix D to add DownloadService2 and
+IntegrationService interfaces</H3>
+<P><STRONG>At the end, append the following 3 sections:</STRONG> 
+</P>
+<H2>D.19 IntegrationService</H2>
+<BLOCKQUOTE><CODE>public interface IntegrationService <BR>public
+boolean requestShortcut(boolean desktop, boolean menu, String
+submenu); <BR>public boolean hasDesktopShortcut(); <BR>public boolean
+hasMenuShortcut(); <BR>public boolean removeShortcuts(); <BR>public
+boolean requestAssociation(String mimetype, String [] extensions);
+<BR>public boolean hasAssociation(String mimetype, String []
+extensions); <BR>public boolean removeAssociation(String mimetype,
+String [] extensions); </CODE>
+</BLOCKQUOTE>
+<H2>D.20 DownloadService2</H2>
+<BLOCKQUOTE><CODE>
+public interface DownloadService2 <BR>
+public final static int ALL = 0; <BR>
+public final static int APPLICATION = 1; <BR>
+public final static int APPLET = 2; <BR>
+public final static int EXTENSION = 3; <BR>
+public final static int JAR = 4; <BR>
+public final static int IMAGE = 5; <BR>
+public final static int CLASS = 6; <BR>
+public ResourceSpec[] getCachedResources(ResourceSpec spec); <BR>
+public ResourceSpec[] getUpdateAvailableResources(ResourceSpec spec) throws IOException; <BR>
+</CODE>
+</BLOCKQUOTE>
+<H2>D.21 DownloadService2.ResourceSpec</H2>
+<BLOCKQUOTE><CODE>public class ResourceSpec <BR>
+public ResourceSpec(String url, String version, int type); <BR>
+public String getUrl(); <BR>
+public String getVersion(); <BR>
+public int getType();  <BR>
+public long getSize();  <BR>
+public long getLastModified(); <BR>
+public long getExpirationDate(); <BR>
+</CODE>
+</BLOCKQUOTE>
+<H3>Change 8 &ndash; Modifying TOC to add DownloadService2 and
+IntegrationService interfaces</H3>
+<P STYLE="margin-bottom: 0in"><STRONG>Added the following two entries
+to the TOC for <EM>7 JNLP API</EM>:</STRONG> 
+</P>
+<P STYLE="margin-bottom: 0in"><A HREF="jnlp-api.html#IntegrationService">The
+IntegrationService Service</A></P>
+<P><A HREF="jnlp-api.html#DownloadService2">The DownloadService2
+Service</A></P>
+<P><BR><BR>
+</P>
+</BODY>
+</HTML>
+
+
+
+<!-- ** BEGIN: footer.jsp ** //-->
+
+
+
+
+
+
+
+
+</td>
+</tr>
+</table>
+
+<!-- ** END: Content Table ** //-->
+
+<!-- ** BEGIN: Footer Table ** //-->
+
+<div id="footer" style="clear: both;">
+    <div class="footleft">
+        <a href="/en/resources/contacts">Contact Us</a>
+    </div>
+	
+    <div class="botbar"><img src="/images/spacer.gif" alt="" height="23" width="1"></div>
+
+    <div class="footleft2">
+         &copy; 2019, Oracle Corporation and/or its affiliates. 
+        <a href="/en/home/terms">Terms of Use</a>. <a href="http://www.oracle.com/us/legal/privacy/index.html">Privacy Policy</a>. <a href="http://www.oracle.com/us/legal/third-party-trademarks/third-party-trademarks-078568.html">Trademarks</a>
+    </div>
+
+    <div class="footright">
+        <img src="/images/common/logo_oracle_footer.gif" alt="Oracle Corporation" height="22" width="91">
+    </div>
+
+    <div style="clear: both;"><img src="/images/spacer.gif" alt="" height="30" width="1"></div>
+</div>
+
+<!-- ** END: Footer Table ** //-->
+
+
+
+<!-- ** Menu Start ** //-->
+
+
+
+</body>
+</html>
+<!-- ** END: footer.jsp ** //-->
+

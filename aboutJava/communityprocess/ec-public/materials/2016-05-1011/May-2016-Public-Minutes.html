@@ -1,0 +1,575 @@
+
+<!-- ** BEGIN: header.jsp ** //-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3c.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+<head>
+    
+
+   
+    <link href="/includes/css/menu.css" rel="stylesheet" type="text/css"></link>
+    <link href="/includes/css/style.css" rel="stylesheet" type="text/css"></link>
+    <!--[if lt IE 6]><link href="/includes/css/style5.css" rel="stylesheet" type="text/css" ></link><![endif]-->
+    <!--[if gte IE 5]><link href="/includes/css/style6.css" rel="stylesheet" type="text/css" ></link><![endif]-->
+    <link href="/includes/css/tabs.css"  rel="stylesheet" type="text/css"></link>
+
+    <script type="text/javascript" src="/includes/scripts/tabs.js"></script>
+    <script type="text/javascript" src="/includes/scripts/menu.js"></script>
+   
+
+    
+
+    
+        <title>The Java Community Process(SM) Program - communityprocess - ec-public</title>
+    
+
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+
+
+<body onload="P7_initPM(0,1,0,0,-1)">
+
+    <a name="top"></a>
+
+    <div id="header">
+	<div id="logo">
+		<a href="/en/home/index"><img src="/images/spacer.gif" alt="Java Community Process" height="81" width="151"></a>
+	</div>
+	<div id="tools">
+		<div class="search">
+			<form name="search" action="/en/jsr/summary" method="get" onsubmit="return validate_search()">
+				<input name="id" value="Search JSRs" size="16" class="form" onfocus="nullify_if_equal(this, 'Search JSRs')" type="text">
+				<a href="javascript:document.search.submit()" onclick="return validate_search()"><img src="/images/button_go.gif" width="21" height="16" border="0" alt="Submit this Search" name="sub_search"></a>
+			</form>
+		</div>
+		<div class="tools">
+			<a href="/en/press/pressroom">Press Room</a> &nbsp;|&nbsp;
+			<a href="http://java.com/java/download/index.jsp?cid=jdp78399">Get Java Here</a> &nbsp;|&nbsp;
+			<!-- <a href="javascript:void(0)">Print Format</a> &nbsp;|&nbsp;&nbsp; -->
+		</div>
+
+	</div>
+	<div style="clear: right;"></div>
+
+        
+
+	<div class="topbar"><img src="/images/spacer.gif" alt="" height="3" width="154"></div>
+	<div id="update"> </div>
+    </div>
+
+
+    
+
+        <!-- ** BEGIN: Content Table ** //-->
+
+        <table width="100%" border="0" cellpadding="0" cellspacing="0">
+
+            <tr>
+
+                <!-- ** BEGIN: Navigation Column ** //-->
+                <td width="150" id="leftcontent" valign="top">
+                    <!-- Navigation Placeholder //-->
+
+                    
+
+                    <div class="bar"><img src="/images/hr_dots1.gif" alt="" height="3" width="150"></div>
+
+        <!-- begin find JSRs form -->
+        <!-- IMPORTANT! do not convert this form to Struts < html : form > tag.  javascript change of form.action property fails. -->
+        <img src="/images/hd_find-jsrs.gif" alt="Find JSRs" height="18" width="150">
+        <form name="findjsr" action="/en/jsr/summary" method="get" class="pt5" onsubmit="return validate_findjsr()">
+            <input name="id" size="18" class="form" value="Search JSRs" onfocus="nullify_if_equal(this, 'Search JSRs')" type="text">
+	    <a href="javascript:document.findjsr.submit()" onclick="return validate_findjsr()"><img src="/images/button_go.gif" width="21" height="16" border="0" alt="Submit this Search" name="sub_search"></a>
+        </form><br><br>
+
+        <!-- ** Menu Start ** //-->
+
+        <ul id="p7PMnav">
+            <li><a href="/en/jsr/platform">JSRs by Platform</a></li>
+            <li><a href="/en/jsr/tech">JSRs by Technology</a></li>
+            <li><a href="/en/jsr/stage">JSRs by Stage</a></li>
+            <li><a href="/en/jsr/ec">JSRs by Committee</a></li>
+            <li><a href="/en/jsr/all">List of All JSRs</a></li>
+
+            <!--end find JSRs form -->
+            <div style="clear: both;"><img src="/images/spacer.gif" alt="" height="25" width="1"></div>
+
+            <!--begin my JCP -->
+            <img src="/images/hd_my-jcp.gif" alt="My JCP" height="18" width="150">
+            
+
+          <form name="login" method="get" action="/en/user/login" >
+            <input name="Sign-in" type="submit" title="Sign-in" value="Sign-in" />
+          </form>
+
+            <div style="clear:both"><img src="/images/global/spacer.gif" width="1" height="3" alt=""></div>
+            <div class="noNav">
+                <a href="/en/user/register">Register for Site</a>
+            </div>
+
+             <div class="bar"><img src="/images/hr_dots1.gif" alt="" height="3" width="150"></div>
+           <div class="noNav" style="color: #666666; padding: 0;">
+              Use of JCP site is subject to the
+              <a href="/en/home/terms" style="display:inline;padding: 0">JCP Terms of Use</a> and the
+              <a href="http://www.oracle.com/us/legal/privacy/index.html" style="display:inline;padding: 0" href="">Oracle Privacy Policy</a>
+          </div>
+
+            
+
+            <div style="clear:both"><img src="/images/global/spacer.gif" width="1" height="25" alt=""></div>
+
+            <!--begin JCP info -->
+            <img src="/images/hd_jcp-info.gif" alt="JCP Info" height="18" width="150">
+
+            <li><a href="/en/procedures/overview" class="p7PMtrg">About JCP</a>
+                <ul>
+                    <li><a href="/en/procedures/overview">Program Overview</a></li>
+                    <li><a href="/en/procedures/jcp2">JCP Process Document</a></li>
+                    <li><a href="/en/whatsnew/calendar">Calendar</a></li>
+                    <li><a href="/en/participation/members">JCP Members</a></li>
+                    <li><a href="/en/participation/committee">Executive Committee</a></li>
+                    <li><a href="/en/whatsnew/elections">Elections</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/en/participation/overview" class="p7PMtrg">Get Involved</a>
+		<ul>
+                    <li><a href="/en/participation/overview">Overview</a></li>
+                    <li><a href="/en/participation/membership">Becoming a JCP Member</a></li>
+		</ul>
+            </li>
+
+            <li><a href="/en/resources/contents" class="p7PMtrg">Community Resources</a>
+                <ul>
+                    <li><a href="/en/resources/contents">Overview</a></li>
+                    <li><a href="/en/resources/tutorials">Tutorials</a></li>
+                    <li><a href="/en/resources/multimedia">JCP Podcasts</a></li>
+                    <li><a href="/en/resources/guide">Spec Lead Guide</a></li>
+                    <li><a href="/en/resources/tdk">TCK Tool & Info</a></li>
+                    <li><a href="/en/resources/license_reference">License Reference</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/en/press/pmo" class="p7PMtrg">Community News</a>
+                <ul>
+                    <li><a href="/en/press/pmo">News</a></li>
+                    <li><a href="/en/press/news/awards/awards_main">Programs &amp; Awards</a></li>
+                    <li><a href="/en/press/releases">Press Releases</a></li>
+                    <li><a href="/en/press/success">Success Stories</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/en/introduction/faq">FAQ</a></li>
+
+            <li><a href="/en/resources/contacts">Contact Us</a></li>
+
+            <div style="clear: both;"><img src="/images/spacer.gif" alt="" height="25" width="1"></div>
+
+            <!--[if lte IE 6]><style>#p7PMnav a{height:1em;}#p7PMnav li{height:1em;float:left;clear:both;width:100%}</style><![endif]-->
+            <!--[if IE 6]><style>#p7PMnav li{clear:none;}</style><![endif]-->
+            <!--[if IE 7]><style>#p7PMnav a{zoom:100%;}#p7PMnav li{float:left;clear:both;width:100%;}</style><![endif]-->
+        </ul>
+
+        
+
+        <!--begin ad space -->
+        <div class="ads">
+            <a href="http://java.com/java/download/index.jsp?cid=jdp78399" target="_blank"><img style="display: ;" src="/images/ad_banner2.gif" alt="Ad Banner" border="1" height="70" width="150"></a>
+        </div>
+        <!--end ad space -->
+
+<!-- ** Menu End ** //-->
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;<br>
+
+    
+
+                    &nbsp;<br>
+                    <img src="/images/common/trans.gif" alt="" width="1" height="150"><br>
+
+              
+
+
+
+                </td>
+                <!-- ** END: Navigation Column ** //-->
+
+                <!-- ** BEGIN: Gutter Column ** //-->
+		<td width="10" nowrap><img src="/images/common/trans.gif" alt="" width="10" height="1"></td>
+                <!-- ** END: Gutter Column ** //-->
+
+                <!-- ** BEGIN: Content Column ** //-->
+                <td width="100%" valign="top">
+
+    
+<script type="text/javascript">
+
+String.prototype.trim = function() {
+        return this.replace(/^\s+|\s+$/g,"");
+}
+String.prototype.ltrim = function() {
+        return this.replace(/^\s+/,"");
+}
+String.prototype.rtrim = function() {
+        return this.replace(/\s+$/,"");
+}
+
+function validate_search() {
+	if (document.search.id.value == "Search JSRs" || document.search.id.value.trim().length == 0) {
+		alert("Search terms must be entered first");
+		return false;
+	}
+	return true;
+}
+
+function validate_findjsr() {
+	if (document.findjsr.id.value == "Search JSRs" || document.findjsr.id.value.trim().length == 0) {
+		alert("Search terms must be entered first");
+		return false;
+	}
+	return true;
+}
+
+function nullify_if_equal(field, str) {
+	// alert("val=" + field.value);
+	if (field.value == str) {
+		field.value = "";
+	}
+}
+
+</script>
+<!-- ** END: header.jsp ** //-->
+
+
+
+
+
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>JCP EC minutes: May 10-11 2016</title>
+
+<!--
+
+My personal stylesheet: <link href="../../../docs/PCurranStyles.css" rel="stylesheet" type="text/css" />
+And the jcp.org version: <link href="http://jcp.org/files/PCurranStyles.css" rel="stylesheet" type="text/css" />
+
+-->
+
+<link href="../../../docs/PCurranStyles.css" rel="stylesheet" type="text/css" />
+<link href="https://jcp.org/files/PCurranStyles.css" rel="stylesheet" type="text/css" />
+<style type="text/css">
+.large {
+	font-size: large;
+}
+</style>
+</head>
+<body>
+<h1 align="center">Executive Committee Meeting Minutes<br />
+  for May 10-11 2016</h1>
+<p align="center"><em>version 0.2: June 1 2016</em></p>
+<h2><strong>Date </strong></h2>
+<p>May 10-11   2016</p>
+<h2>Location</h2>
+<ul>
+  <li>Face-to-face meeting in Berlin, Germany</li>
+  <li>Hosted by Gemalto M2M <br />
+</li>
+</ul>
+<h2><strong>Agenda</strong></h2>
+<ul>
+  <li>[<a href="PMO-topics-May-2016.pdf">PMO Presentation</a>]</li>
+  <li>Tuesday May 10</li>
+  <ul>
+    <li>Personnel changes </li>
+    <li><a href="https://java.net/jira/issues/?filter=12413">Action Item review</a></li>
+    <li><a href="EC_Stats_May2016.pdf">EC Stats</a></li>
+    <li>JSR 364 implementation/roll-out status </li>
+    <li><a href="2016_05_10__EC_Meeting_Berlin__Gemalto_Java_for_IoT.pdf">Java and IoT at Gemalto</a></li>
+    <li><a href="JavaAuto-EC-F2F_May-2016.pdf">Java in the automotive industry</a></li>
+    <li>The future of Java EE</li>
+  </ul>
+  <li>Wednesday May 11</li>
+  <ul>
+    <li>Berlin JUG meeting report
+    </li>
+    <li><a href="SouJava-JCP-JUG-Tour.pdf">JCP JUG tour</a></li>
+    <li>Guest speaker: Java and Cloud (Ruslan Synytskiy &ndash; Jelastic CEO)</li>
+    <li>The Maintenance Release process</li>
+    <li>OpenJDK and the JCP </li>
+    <li><a href="20160509-telematics-jsr-xxx.pdf">Proposed automotive/telematics JSR</a></li>
+    <li>Opportunities for new JSRs</li>
+    <li>2017 meeting calendar</li>
+  </ul>
+</ul>
+<h2>Attendance</h2>
+<table border="1" width="50%">
+  <tbody>
+    <tr>
+      <td align="center"><h3><strong>Tuesday May 10</strong></h3></td>
+    </tr>
+    <tr>
+      <td><div align="center"><strong>PMO</strong></div></td>
+    </tr>
+  <tr>
+    <td><ul>
+      <li>Patrick Curran</li>
+    </ul>
+    </td>
+  </tr>
+  <tr>
+    <td><div align="center"><strong>Executive Committee </strong></div></td>
+  </tr>
+  <tr>
+    <td><ul>
+          <li>ARM &#8211; Philippe Robin<em> &#8211;<em> present</em></em></li>
+          <li>Azul Systems &#8211; Gil Tene, Simon Ritter &#8211;<em> present</em></li>
+          <li>Credit Suisse &#8211; Alex Blewitt<em> &#8211; present</em></li>
+          <li>Eclipse &#8211; Mike Milinkovich<em> &#8211; present</em></li>
+          <li>Ericsson &#8211; Johan M&aring;rtensson<em> &#8211; present</em></li>
+          <li>Fujitsu &#8211; Mike DeNicola &#8211; <em>present</em></li>
+          <li>Gemalto M2M<em> &#8211; </em>Thomas Lampart<em>, </em>Florian Denzin<em>&#8211; present</em></li>
+          <li>Goldman Sachs &#8211; Tim Dinsdale &#8211; <em>present</em></li>
+          <li> Hazelcast &#8211; Christoph Engelbert<em><em> &#8211; present</em></em></li>
+          <li>HPE &#8211;<em> Naresh Shah</em> &#8211;<em><em>present</em></em></li>
+          <li>IBM &#8211; Steve Wallin, (plus Steve Wolfe by phone) &#8211; <em>present</em></li>
+          <li>Intel &#8211; Mihai Costache &#8211; present</li>
+          <li>Werner Keil &#8211; <em>presen</em>t</li>
+          <li>London Java Community &#8211; Martijn Verburg &#8211; <em><em>present</em></em></li>
+          <li>Geir Magnusson  &#8211; <em>excused</em></li>
+          <li>MicroDoc &#8211; Hendrik Hoefer &#8211; <em>present</em></li>
+          <li>NXP &#8211; Maulin Patel <em> &#8211; present</em></li>
+          <li>Oracle &#8211; Don Deutsch &#8211;<em> present</em></li>
+          <li>RedHat &#8211;  Romain Pelisse&#8211; <em>present</em></li>
+          <li>SAP &#8211; Volker Simonis &#8211; <em>present</em></li>
+          <li>Software AG &#8211; <em></em>Stoil Valchkov&#8211; <em></em><em>present</em></li>
+          <li>SouJava &#8211; Bruno Souza, Otavio Santana<em> &#8211; present</em></li>
+          <li>TOTVS &#8211; David Britto&#8211; <em>present</em></li>
+          <li>Twitter &#8211;  John Coomes &#8211; <em>present</em></li>
+          <li class="red">V2COM &#8211; <em>not present (Leonardo Lima  attended by phone)</em></li>
+        </ul>
+      <p>Total attendance: 24 of 25 voting members</p></td>
+  </tr>
+  <tr>
+    <td nowrap="nowrap">Since 75% of the EC's voting members were  present,
+      the EC was <strong class="style2">quorate</strong> for this session</td>
+  </tr>
+  <tr>
+    <td align="center"><h3><strong>Wednesday May 11</strong></h3></td>
+  </tr>
+  <tr>
+    <td><div align="center"><strong>PMO</strong></div></td>
+  </tr>
+  <tr>
+    <td><ul>
+      <li>Patrick Curran</li>
+    </ul></td>
+  </tr>
+  <tr>
+    <td><div align="center"><strong>Executive Committee </strong></div></td>
+  </tr>
+  <tr>
+    <td><ul>
+      <li>ARM &#8211; Philippe Robin<em> &#8211;<em> present</em></em></li>
+      <li>Azul Systems &#8211; Gil Tene, Simon Ritter &#8211;<em> present</em></li>
+      <li>Credit Suisse &#8211; Alex Blewitt<em> &#8211; present</em></li>
+      <li>Eclipse &#8211; Mike Milinkovich<em> &#8211; present</em></li>
+      <li>Ericsson &#8211; Johan M&aring;rtensson<em> &#8211; present</em></li>
+      <li>Fujitsu &#8211; Mike DeNicola &#8211; <em>present</em></li>
+      <li>Gemalto M2M<em> &#8211; </em>Thomas Lampart<em>, </em>Florian Denzin<em>&#8211; present</em></li>
+      <li>Goldman Sachs &#8211; Tim Dinsdale &#8211; <em>present</em></li>
+      <li> Hazelcast &#8211; Christoph Engelbert<em><em> &#8211; present</em></em></li>
+      <li>HPE &#8211;<em> Naresh Shah</em> &#8211;<em><em>present</em></em></li>
+      <li>IBM &#8211; Steve Wallin (plus Steve Wolfe by phone) &#8211; <em>present</em></li>
+      <li>Intel &#8211; Mihai Costache &#8211; present</li>
+      <li>Werner Keil &#8211; <em>presen</em>t</li>
+      <li>London Java Community &#8211; Martijn Verburg &#8211; <em><em>present</em></em></li>
+      <li>Geir Magnusson  &#8211; <em>excused</em></li>
+      <li>MicroDoc &#8211; Hendrik Hoefer &#8211; <em>present</em></li>
+      <li>NXP &#8211; Maulin Patel <em> &#8211; present</em></li>
+      <li>Oracle &#8211; Don Deutsch &#8211;<em> present</em></li>
+      <li>RedHat &#8211;  Romain Pelisse&#8211; <em>present</em></li>
+      <li>SAP &#8211; Volker Simonis &#8211; <em>present</em></li>
+      <li>Software AG &#8211; <em></em>Stoil Valchkov&#8211; <em></em><em>present</em></li>
+      <li>SouJava &#8211; Bruno Souza, Otavio Santana<em> &#8211; present</em></li>
+      <li>TOTVS &#8211; David Britto&#8211; <em>present</em></li>
+      <li>Twitter &#8211;  John Coomes &#8211; <em>present</em></li>
+      <li class="red">V2COM &#8211; <em>not present</em></li>
+    </ul>
+      <p>Total attendance: 24 of 25 voting members</p></td>
+  </tr>
+  <tr>
+    <td nowrap="nowrap">Since 75% of the EC's voting members were  present,
+      the EC was <strong class="style2">quorate</strong> for this session</td>
+  </tr>
+  </tbody>
+</table>
+<h2>Minutes</h2>
+<h3>Changes in status as a result of attendance at this meeting</h3>
+<p>The&nbsp;<a href="http://jcp.org/en/procedures/ec_standing_rules">EC Standing Rules</a>&nbsp;state the following penalties for non-attendance at EC meetings (note that those who participate in face-to-face meetings by phone are officially counted as absent):</p>
+<ul>
+  <li>Missing two meetings in a row results in a loss of voting privileges until two consecutive meetings have been attended.</li>
+  <li>Missing five meetings in a row, or missing two-thirds of the meetings in any consecutive 12-month period results in loss of the EC seat.</li>
+</ul>
+<p>There was no change in  voting privilege as a result of this meeting.</p>
+<h3>Action Item review</h3>
+<p>See the <a href="https://java.net/jira/issues/?filter=12413">JIRA</a>. </p>
+<p>While reviewing Action Items Bruno Souza noted that the decommissioning of java.net will be a big problem for SouJava. (The new Java Community Portal is not a complete replacement, since provides no mailing-list capabilities.) They have thousands of email messages on java.net and are not sure how to export them or where they can export them to. (They do believe they will be able to export Issues from the java.net JIRA into GitHub.)</p>
+<p>Patrick responded that we are still holding internal discussions about alternatives to java.net, and that as the AI states we will address this issue in a future meeting.</p>
+<h3>EC stats</h3>
+<p>Patrick presented the usual EC stats (see the <a href="EC_Stats_May2016.pdf">presentation</a> for details).</p>
+<h3>JSR 364 implementation</h3>
+<p>Patrick introduced what was expected to be a brief discussion about the implementation of JSR 364 (see the <a href="PMO-topics-May-2016.pdf">PMO Presentation</a><a href="PMO-topics-April-2016.pdf"></a> for details). He reported that after some initial glitches the PMO expects that the new features on jcp.org (including electronic signing of membership agreements) will go live next week. [This has since happened.] He expressed some concern about the delay in going live, noting that there will only be a few months before this year's elections, and suggested that we will need to monitor the number of Associate members in the hope that we will have a critical mass for the elections. (We don't want a small number of Associate members to have the power to vote for two Associate seats.)</p>
+<p>The question was raised as to whether we should continue with the plan of record (to hold the 2016 elections under the new process) or whether we should wait until the 2017 elections before we do so. Either way we will need an energetic drive to recruit new Associate members and to convert existing individual members into Associate members where necessary.</p>
+<p>Bruno Souza argued strongly for holding the 2016 election under the new rules, saying that that we will simply have to work harder to recruit new members. He suggested that if all EC members joined in the recruitment effort then we ought to be able to achieve our goals. Mike DeNicola responded that we ought not to rush, but should proceed in an orderly fashion.</p>
+<p>We had a lengthy discussion about how to handle individual members whose membership agreements come up for renewal between now and the election. Several EC members argued that we should not &quot;force&quot; these members to convert to the new Associate membership class, since to do so would discriminate against them in comparison to those members whose agreements would not come up for renewal until after the election. We agreed with this proposal.</p>
+<p>We discussed the different options open to us. We discussed whether we should unconditionally wait until 2017 to implement the new election process,  hold the 2016 elections under the new rules if we reach a certain number (150?) of Associate members before then andotherwise wait until 2017, or unconditionally  implement the 2016 election under the new rules no matter how many Associate members we have.</p>
+<p>After a lengthy discussion, during which we realized that any option other than unconditionally holding the 2016 elections under the new process (which is what we wrote into the Process Document) would require a Maintenance Release of JSR 364, we held a straw-poll. A substantial majority voted to unconditionally hold the 2016 elections under the new process.</p>
+<h3>Java and IoT at Gemalto</h3>
+<p>Florian Denzin presented an interesting overview of Gemalto's use of Java in the IoT space (see the <a href="2016_05_10__EC_Meeting_Berlin__Gemalto_Java_for_IoT.pdf">presentation</a> for details).</p>
+<h3>Java in the automotive industry</h3>
+<p>Werner Keil presented an overview of the use of Java in the automotive industry (see the <a href="JavaAuto-EC-F2F_May-2016.pdf">presentation</a> for details). During the discussion that followed members with direct experience in the automotive industry explained why due to safety and liability concerns Java has not been used to actually control critical functions in cars (the engine or brakes for example), typically being restricted to infotainment, communications, and similar non-critical functions.</p>
+<h3>The future of Java EE</h3>
+<p>Martijn Verburg led a discussion on the future of Java EE. [This agenda item was originally intended to result in a formal motion from the EC requesting a public response from Oracle on its commitment and plans for Java EE.]</p>
+<p>Martijn expressed concern that Oracle, despite its role as steward of Java, has not made any public statements or explanations for the apparent lack of activity on Java EE. He said that the London Java Community represents a large number of developers, many of whom are employed at large financial institutions that rely significantly on Java EE. Otavio Santana agreed with Martijn, saying that there seem to be &quot;no signs of life&quot; in Java EE. Martijn responded that they do recognize that over the years Oracle has made a very significant investment in Java EE.</p>
+<p>Mike DeNicola pointed out that the EC has a responsibility to raise issues and concerns. Steve Wallin said that IBM was also concerned. Simon Ritter pointed out that the impact is broader than Java EE itself, asking what the purpose of the JCP itself would be in the absence of Java EE JSRs. Christoph Engelbert noted the almost complete lack of any JSR activity.</p>
+<p>Don Deutsch responded that he understood EC members' concerns. He suggested that some new JSRs might be filed later, but said he couldn't be sure. Business strategies are subject to change. He noted that a formal motion might not be the most constructive approach, and wondered whether EC members would consider an alternative. He asked whether EC members would be willing to contribute to Java EE.</p>
+<p>Romain Pelisse pointed out that it would be difficult for others to take over, since most of the Java EE JSRs are owned by Oracle. SImon Ritter noted that the issue of IP ownership is key and asked whether Oracle would be willing to contribute its IP so others could take over. Mike Milinkovich agreed, arguing for an orderly transition of Spec Lead responsibilities. Steve Wallin suggested that either a new ecosystem will emerge or there will be a fork. Gil Tene pointed out that Oracle could keep the Spec Lead role if it simply permitted others to participate.</p>
+<p>Mike Milinkovich pointed out that Oracle's Spec Leads seem to be 100% devoted to the &quot;Cloud pivot&quot; rather than to their Java EE roles. Mike DeNicola said that Fujitsu has many customers that rely on Java EE and that they they will lose face and lose customers if platform development is discontinued. Steve Wallin said that Java EE is critical for IBM.</p>
+<p>Gil Tene asked whether there is an alternative to a formal motion. Mike DeNicola said that we do seem to have a consensus. He asked Don Deutsch whether Oracle would vote for such a motion. Don responded that he would probably abstain. He asked what direction EC members wanted the platform to take. Mike responded that any direction is better than none. Martijn Verburg responded that the first job ought to be to complete Java EE 8.</p>
+<p>Patrick pointed out that all EC meeting minutes are public, so that even in the absence of a formal motion EC members' views would be heard. He and Don then suggested that instead of a formal motion we should summarize EC members' concerns in the meeting minutes, and that they would then bring this to the attention of Oracle's management. Patrick agreed to summarize the concerns, and pointed out that members would have a chance to review the statement and to make corrections before the minutes are made public. [Statement follows:]</p>
+<p>&quot;EC members expressed their serious concerns about the lack of progress on Java EE. They believe that Java EE is critical to the Java ecosystem and to their organizations and customers. They fully accept Oracle's right to direct its investment where it wishes, but expressed the hope that they and other members of the Java community be permitted to step in and help with the ongoing development of the platform, particularly in areas where Oracle wishes to reduce its investment. They therefore requested a dialog with Oracle about how to  make such a transition.&quot;</p>
+<h3>Adjourn</h3>
+<p>We adjourned early on the first day in order to spend some time socializing as a group before either going on to a group dinner or to a meeting with the Berlin Java User Group.</p>
+<h3>Berlin JUG meeting report and  JCP JUG tour</h3>
+<p>Bruno Souza and Otavio Santana discussed the previous evening's JUG meeting and their plans to meet with several other European JUGs. They reported that the Berlin JUG meeting had been very successful, with approximately ten EC members attending. The JUG members were pleased to meet EC members in person, and had many questions for us. They then explained their plans to meet with other JUGs in Germany, Switzerland, and Spain, and to record interviews and discussions with various Java luminaries along the way (see their <a href="SouJava-JCP-JUG-Tour.pdf">presentation</a> for details). </p>
+<h3>Java and the Cloud </h3>
+<p>Bruno Souza introduced a guest speaker - Ruslan Synytskiy, CEO of Jelastic, who spoke briefly to the EC about his experiences in trying to run Java in a shared hosting (&quot;Cloud&quot;) environment. Ruslan explained that Java SE seems not to be designed for such an environment, where ideally it would grow and shrink its memory footprint elastically as demand changes. The JVM, on the other hand, tends to grab all available resources and not to release them. </p>
+<p>An interesting discussion followed, during which Gil Tene, Steve Wallin and others discussed the difficulty of doing what Jelastic wanted. They argued that while this is not impossible it is extremely difficult since it is often not possible to tell &quot;from the outside&quot; whether memory held by the JVM is actually in use by live objects or could potentially be freed. They suggested that additional APIs would be needed so that an external &quot;supervisor&quot; could communicate with the JVM to request that it release memory. </p>
+<p>We concluded that the best approach to take would be through OpenJDK, where a working group of interested and technically qualified people could investigate further.</p>
+<h3>The Maintenance Release process</h3>
+<p>Patrick led a brief discussion of the Maintenance Release process (see the <a href="PMO-topics-May-2016.pdf">PMO Presentation</a> for details). As we have during previous discussions, we agreed that the current language in the Process Document on what is appropriate for inclusion in a Maintenance Release is satisfactory:</p>
+<blockquote> 
+  <p>&quot;Changes appropriate for a Maintenance Release include bug-fixes, clarifications of the Specification, changes to the implementation of existing APIs, and implementation-specific enhancements. Changes introduced in Maintenance Re-leases &ndash; for example, modifications to existing APIs or the addition of new APIs - must not break binary compatibility as defined by the Java Language Specification. Changes that would break binary compatibility should therefore be deferred to a new JSR.&quot;</p>
+</blockquote>
+<p>We did agree that additional minor changes to the Maintenance Release process should be considered in JCP.next.5.</p>
+<h3>OpenJDK and the JCP</h3>
+<p>We then returned to the topic (discussed in previous meetings) of OpenJDK and the JCP. Gil Tene argued for a &quot;binding commitment&quot; to existing OpenJDK practices (collaborative development and the Community TCK License) along the lines discussed in &quot;Oracle Commitments&quot; made early in the JSR 358 process. Patrick argued that the relevant items had already been incorporated into the list of changes for inclusion in JCP.next.5. Gil agreed to review the early presentations again and to come back to this topic in the future.</p>
+<p>In a more wide-ranging discussion members again expressed their concerns that JSRs coming out of the OpenJDK process come so late that the JCP can do little but rubber-stamp them.</p>
+<p>Mike Milinkovich suggested that we go back to first principles and discuss the value that the JCP brings to the process: enabling multiple implementations and the enforcement of compatibility through TCK licensing. He suggested that we need a more collaborate relationship with the Java SE Expert Group. </p>
+<p>We agreed that it would be helpful if the OpenJDK leaders came to talk directly to the EC. Patrick explained that he expected an approach from Georges Saab relatively soon.</p>
+<h3>Proposed automotive/telematics JSR</h3>
+<p>Hendrik Hoefer presented an overview of a potential new JSR in the automotive/telematics area (see his <a href="20160509-telematics-jsr-xxx.pdf">presentation</a> for details). Members expressed great interest in the possibility of a new JSR in this area and wished Hendrik success in initiating it.</p>
+<h3>Opportunities for new JSRs</h3>
+<p>Due to a lack of time we postponed this topic to a future meeting.</p>
+<h3>2017 meeting calendar</h3>
+<p>After a brief discussion about meeting in Bangalore in January and in Sweden in May 2017, we agreed - again in the interests of time - to continue this discussion by email. [Twitter later confirmed by email that they will host our September f2f meeting in San Francisco.]</p>
+<h3>Adjourn</h3>
+<p>Patrick thanked Gemalto for hosting the meeting and we then adjourned.</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp; </p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<h3>&nbsp;</h3>
+<p>&nbsp;</p>
+<p><br />
+</p>
+<p>&nbsp;</p>
+</body></html>
+
+
+<!-- ** BEGIN: footer.jsp ** //-->
+
+
+
+
+
+
+
+
+</td>
+</tr>
+</table>
+
+<!-- ** END: Content Table ** //-->
+
+<!-- ** BEGIN: Footer Table ** //-->
+
+<div id="footer" style="clear: both;">
+    <div class="footleft">
+        <a href="/en/resources/contacts">Contact Us</a>
+    </div>
+	
+    <div class="botbar"><img src="/images/spacer.gif" alt="" height="23" width="1"></div>
+
+    <div class="footleft2">
+         &copy; 2019, Oracle Corporation and/or its affiliates. 
+        <a href="/en/home/terms">Terms of Use</a>. <a href="http://www.oracle.com/us/legal/privacy/index.html">Privacy Policy</a>. <a href="http://www.oracle.com/us/legal/third-party-trademarks/third-party-trademarks-078568.html">Trademarks</a>
+    </div>
+
+    <div class="footright">
+        <img src="/images/common/logo_oracle_footer.gif" alt="Oracle Corporation" height="22" width="91">
+    </div>
+
+    <div style="clear: both;"><img src="/images/spacer.gif" alt="" height="30" width="1"></div>
+</div>
+
+<!-- ** END: Footer Table ** //-->
+
+
+
+<!-- ** Menu Start ** //-->
+
+
+
+</body>
+</html>
+<!-- ** END: footer.jsp ** //-->
+

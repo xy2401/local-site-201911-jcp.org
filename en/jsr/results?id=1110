@@ -1,0 +1,612 @@
+
+
+
+
+<!-- ** BEGIN: header.jsp ** //-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3c.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+<head>
+    
+
+   
+    <link href="/includes/css/menu.css" rel="stylesheet" type="text/css"></link>
+    <link href="/includes/css/style.css" rel="stylesheet" type="text/css"></link>
+    <!--[if lt IE 6]><link href="/includes/css/style5.css" rel="stylesheet" type="text/css" ></link><![endif]-->
+    <!--[if gte IE 5]><link href="/includes/css/style6.css" rel="stylesheet" type="text/css" ></link><![endif]-->
+    <link href="/includes/css/tabs.css"  rel="stylesheet" type="text/css"></link>
+
+    <script type="text/javascript" src="/includes/scripts/tabs.js"></script>
+    <script type="text/javascript" src="/includes/scripts/menu.js"></script>
+   
+
+    
+
+    
+        <title>The Java Community Process(SM) Program - JSRs: Java Specification Requests - results</title>
+    
+
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+
+
+<body onload="P7_initPM(0,1,0,0,-1)">
+
+    <a name="top"></a>
+
+    <div id="header">
+	<div id="logo">
+		<a href="/en/home/index"><img src="/images/spacer.gif" alt="Java Community Process" height="81" width="151"></a>
+	</div>
+	<div id="tools">
+		<div class="search">
+			<form name="search" action="/en/jsr/summary" method="get" onsubmit="return validate_search()">
+				<input name="id" value="Search JSRs" size="16" class="form" onfocus="nullify_if_equal(this, 'Search JSRs')" type="text">
+				<a href="javascript:document.search.submit()" onclick="return validate_search()"><img src="/images/button_go.gif" width="21" height="16" border="0" alt="Submit this Search" name="sub_search"></a>
+			</form>
+		</div>
+		<div class="tools">
+			<a href="/en/press/pressroom">Press Room</a> &nbsp;|&nbsp;
+			<a href="http://java.com/java/download/index.jsp?cid=jdp78399">Get Java Here</a> &nbsp;|&nbsp;
+			<!-- <a href="javascript:void(0)">Print Format</a> &nbsp;|&nbsp;&nbsp; -->
+		</div>
+
+	</div>
+	<div style="clear: right;"></div>
+
+        
+
+	<div class="topbar"><img src="/images/spacer.gif" alt="" height="3" width="154"></div>
+	<div id="update"> </div>
+    </div>
+
+
+    
+
+        <!-- ** BEGIN: Content Table ** //-->
+
+        <table width="100%" border="0" cellpadding="0" cellspacing="0">
+
+            <tr>
+
+                <!-- ** BEGIN: Navigation Column ** //-->
+                <td width="150" id="leftcontent" valign="top">
+                    <!-- Navigation Placeholder //-->
+
+                    
+
+                    <div class="bar"><img src="/images/hr_dots1.gif" alt="" height="3" width="150"></div>
+
+        <!-- begin find JSRs form -->
+        <!-- IMPORTANT! do not convert this form to Struts < html : form > tag.  javascript change of form.action property fails. -->
+        <img src="/images/hd_find-jsrs.gif" alt="Find JSRs" height="18" width="150">
+        <form name="findjsr" action="/en/jsr/summary" method="get" class="pt5" onsubmit="return validate_findjsr()">
+            <input name="id" size="18" class="form" value="Search JSRs" onfocus="nullify_if_equal(this, 'Search JSRs')" type="text">
+	    <a href="javascript:document.findjsr.submit()" onclick="return validate_findjsr()"><img src="/images/button_go.gif" width="21" height="16" border="0" alt="Submit this Search" name="sub_search"></a>
+        </form><br><br>
+
+        <!-- ** Menu Start ** //-->
+
+        <ul id="p7PMnav">
+            <li><a href="/en/jsr/platform">JSRs by Platform</a></li>
+            <li><a href="/en/jsr/tech">JSRs by Technology</a></li>
+            <li><a href="/en/jsr/stage">JSRs by Stage</a></li>
+            <li><a href="/en/jsr/ec">JSRs by Committee</a></li>
+            <li><a href="/en/jsr/all">List of All JSRs</a></li>
+
+            <!--end find JSRs form -->
+            <div style="clear: both;"><img src="/images/spacer.gif" alt="" height="25" width="1"></div>
+
+            <!--begin my JCP -->
+            <img src="/images/hd_my-jcp.gif" alt="My JCP" height="18" width="150">
+            
+
+          <form name="login" method="get" action="/en/user/login" >
+            <input name="Sign-in" type="submit" title="Sign-in" value="Sign-in" />
+          </form>
+
+            <div style="clear:both"><img src="/images/global/spacer.gif" width="1" height="3" alt=""></div>
+            <div class="noNav">
+                <a href="/en/user/register">Register for Site</a>
+            </div>
+
+             <div class="bar"><img src="/images/hr_dots1.gif" alt="" height="3" width="150"></div>
+           <div class="noNav" style="color: #666666; padding: 0;">
+              Use of JCP site is subject to the
+              <a href="/en/home/terms" style="display:inline;padding: 0">JCP Terms of Use</a> and the
+              <a href="http://www.oracle.com/us/legal/privacy/index.html" style="display:inline;padding: 0" href="">Oracle Privacy Policy</a>
+          </div>
+
+            
+
+            <div style="clear:both"><img src="/images/global/spacer.gif" width="1" height="25" alt=""></div>
+
+            <!--begin JCP info -->
+            <img src="/images/hd_jcp-info.gif" alt="JCP Info" height="18" width="150">
+
+            <li><a href="/en/procedures/overview" class="p7PMtrg">About JCP</a>
+                <ul>
+                    <li><a href="/en/procedures/overview">Program Overview</a></li>
+                    <li><a href="/en/procedures/jcp2">JCP Process Document</a></li>
+                    <li><a href="/en/whatsnew/calendar">Calendar</a></li>
+                    <li><a href="/en/participation/members">JCP Members</a></li>
+                    <li><a href="/en/participation/committee">Executive Committee</a></li>
+                    <li><a href="/en/whatsnew/elections">Elections</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/en/participation/overview" class="p7PMtrg">Get Involved</a>
+		<ul>
+                    <li><a href="/en/participation/overview">Overview</a></li>
+                    <li><a href="/en/participation/membership">Becoming a JCP Member</a></li>
+		</ul>
+            </li>
+
+            <li><a href="/en/resources/contents" class="p7PMtrg">Community Resources</a>
+                <ul>
+                    <li><a href="/en/resources/contents">Overview</a></li>
+                    <li><a href="/en/resources/tutorials">Tutorials</a></li>
+                    <li><a href="/en/resources/multimedia">JCP Podcasts</a></li>
+                    <li><a href="/en/resources/guide">Spec Lead Guide</a></li>
+                    <li><a href="/en/resources/tdk">TCK Tool & Info</a></li>
+                    <li><a href="/en/resources/license_reference">License Reference</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/en/press/pmo" class="p7PMtrg">Community News</a>
+                <ul>
+                    <li><a href="/en/press/pmo">News</a></li>
+                    <li><a href="/en/press/news/awards/awards_main">Programs &amp; Awards</a></li>
+                    <li><a href="/en/press/releases">Press Releases</a></li>
+                    <li><a href="/en/press/success">Success Stories</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/en/introduction/faq">FAQ</a></li>
+
+            <li><a href="/en/resources/contacts">Contact Us</a></li>
+
+            <div style="clear: both;"><img src="/images/spacer.gif" alt="" height="25" width="1"></div>
+
+            <!--[if lte IE 6]><style>#p7PMnav a{height:1em;}#p7PMnav li{height:1em;float:left;clear:both;width:100%}</style><![endif]-->
+            <!--[if IE 6]><style>#p7PMnav li{clear:none;}</style><![endif]-->
+            <!--[if IE 7]><style>#p7PMnav a{zoom:100%;}#p7PMnav li{float:left;clear:both;width:100%;}</style><![endif]-->
+        </ul>
+
+        
+
+        <!--begin ad space -->
+        <div class="ads">
+            <a href="http://java.com/java/download/index.jsp?cid=jdp78399" target="_blank"><img style="display: ;" src="/images/ad_banner2.gif" alt="Ad Banner" border="1" height="70" width="150"></a>
+        </div>
+        <!--end ad space -->
+
+<!-- ** Menu End ** //-->
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;<br>
+
+    
+
+                    &nbsp;<br>
+                    <img src="/images/common/trans.gif" alt="" width="1" height="150"><br>
+
+              
+
+
+
+                </td>
+                <!-- ** END: Navigation Column ** //-->
+
+                <!-- ** BEGIN: Gutter Column ** //-->
+		<td width="10" nowrap><img src="/images/common/trans.gif" alt="" width="10" height="1"></td>
+                <!-- ** END: Gutter Column ** //-->
+
+                <!-- ** BEGIN: Content Column ** //-->
+                <td width="100%" valign="top">
+
+    
+<script type="text/javascript">
+
+String.prototype.trim = function() {
+        return this.replace(/^\s+|\s+$/g,"");
+}
+String.prototype.ltrim = function() {
+        return this.replace(/^\s+/,"");
+}
+String.prototype.rtrim = function() {
+        return this.replace(/\s+$/,"");
+}
+
+function validate_search() {
+	if (document.search.id.value == "Search JSRs" || document.search.id.value.trim().length == 0) {
+		alert("Search terms must be entered first");
+		return false;
+	}
+	return true;
+}
+
+function validate_findjsr() {
+	if (document.findjsr.id.value == "Search JSRs" || document.findjsr.id.value.trim().length == 0) {
+		alert("Search terms must be entered first");
+		return false;
+	}
+	return true;
+}
+
+function nullify_if_equal(field, str) {
+	// alert("val=" + field.value);
+	if (field.value == str) {
+		field.value = "";
+	}
+}
+
+</script>
+<!-- ** END: header.jsp ** //-->
+
+
+
+
+<b>
+  <font color="#663399" size="+1">
+    JSR #178<br>
+    Mobile Game API<br>
+    JSR Review Ballot<br>
+  </font>
+  Ballot duration: 2002-03-26&nbsp;&nbsp; to: 2002-04-08<br>
+</b>
+
+<P>
+
+
+
+
+
+
+
+These are the final results of the JSR Review Ballot for JSR #178.
+
+	
+
+The <a href="/en/participation/committee#ME">Executive Committee for ME</a> has not approved this ballot.
+
+	
+
+
+</P>
+
+<h3>Votes</h3><BR>
+<table width="600" border="0" cellspacing="0" cellpadding="3">
+  <tr>
+    <td>
+
+<B>ME</B>
+
+<table width="600" border="1" cellspacing="0" cellpadding="5">
+  <tr>
+
+  <td>
+    <table width="100%">
+      <tr>
+        <td align="left"><font size="2">BEA Systems</font></td>
+        <td align="right"><img src="/images/common/no.gif" width="23" height="23" alt="No"></td>
+      </tr>
+    </table>
+  </td>
+
+  <td>
+    <table width="100%">
+      <tr>
+        <td align="left"><font size="2">Cisco Systems</font></td>
+        <td align="right"><img src="/images/common/yes.gif" width="23" height="23" alt="Yes"></td>
+      </tr>
+    </table>
+  </td>
+
+  <td>
+    <table width="100%">
+      <tr>
+        <td align="left"><font size="2">Ericsson Inc.</font></td>
+        <td align="right"><img src="/images/common/abstain.gif" width="23" height="23" alt="Abstain"></td>
+      </tr>
+    </table>
+  </td>
+
+  <td>
+    <table width="100%">
+      <tr>
+        <td align="left"><font size="2">IBM</font></td>
+        <td align="right"><img src="/images/common/no.gif" width="23" height="23" alt="No"></td>
+      </tr>
+    </table>
+  </td>
+  </tr>
+  <tr>
+
+  <td>
+    <table width="100%">
+      <tr>
+        <td align="left"><font size="2">Insignia Solutions</font></td>
+        <td align="right"><img src="/images/common/yes.gif" width="23" height="23" alt="Yes"></td>
+      </tr>
+    </table>
+  </td>
+
+  <td>
+    <table width="100%">
+      <tr>
+        <td align="left"><font size="2">Matsushita Electric Industrial Co., Ltd.</font></td>
+        <td align="right"><img src="/images/common/yes.gif" width="23" height="23" alt="Yes"></td>
+      </tr>
+    </table>
+  </td>
+
+  <td>
+    <table width="100%">
+      <tr>
+        <td align="left"><font size="2">Motorola</font></td>
+        <td align="right"><img src="/images/common/no.gif" width="23" height="23" alt="No"></td>
+      </tr>
+    </table>
+  </td>
+
+  <td>
+    <table width="100%">
+      <tr>
+        <td align="left"><font size="2">Nokia Corporation</font></td>
+        <td align="right"><img src="/images/common/no.gif" width="23" height="23" alt="No"></td>
+      </tr>
+    </table>
+  </td>
+  </tr>
+  <tr>
+
+  <td>
+    <table width="100%">
+      <tr>
+        <td align="left"><font size="2">PalmSource, Inc.</font></td>
+        <td align="right"><img src="/images/common/no.gif" width="23" height="23" alt="No"></td>
+      </tr>
+    </table>
+  </td>
+
+  <td>
+    <table width="100%">
+      <tr>
+        <td align="left"><font size="2">Philips Electronics UK Ltd</font></td>
+        <td align="right"><img src="/images/common/no.gif" width="23" height="23" alt="No"></td>
+      </tr>
+    </table>
+  </td>
+
+  <td>
+    <table width="100%">
+      <tr>
+        <td align="left"><font size="2">Research In Motion, LTD (RIM)</font></td>
+        <td align="right"><img src="/images/common/yes.gif" width="23" height="23" alt="Yes"></td>
+      </tr>
+    </table>
+  </td>
+
+  <td>
+    <table width="100%">
+      <tr>
+        <td align="left"><font size="2">Siemens AG</font></td>
+        <td align="right"><img src="/images/common/no.gif" width="23" height="23" alt="No"></td>
+      </tr>
+    </table>
+  </td>
+  </tr>
+  <tr>
+
+  <td>
+    <table width="100%">
+      <tr>
+        <td align="left"><font size="2">Sony International (Europe) GmbH</font></td>
+        <td align="right"><img src="/images/common/yes.gif" width="23" height="23" alt="Yes"></td>
+      </tr>
+    </table>
+  </td>
+
+  <td>
+    <table width="100%">
+      <tr>
+        <td align="left"><font size="2">Sun Microsystems, Inc.</font></td>
+        <td align="right"><img src="/images/common/no.gif" width="23" height="23" alt="No"></td>
+      </tr>
+    </table>
+  </td>
+
+  <td>
+    <table width="100%">
+      <tr>
+        <td align="left"><font size="2">Texas Instruments Inc.</font></td>
+        <td align="right"><img src="/images/common/yes.gif" width="23" height="23" alt="Yes"></td>
+      </tr>
+    </table>
+  </td>
+
+  <td>
+    <table width="100%">
+      <tr>
+        <td align="left"><font size="2">Zucotto Wireless</font></td>
+        <td align="right"><img src="/images/common/no.gif" width="23" height="23" alt="No"></td>
+      </tr>
+    </table>
+  </td>
+  </tr>
+
+</table>
+<br>
+
+
+
+</td>
+<td width="20"><img src="/images/common/pixel.gif" width="20" height="1" alt=""></td>
+<td valign="top">
+  <table border="0" cellspacing="0" cellpadding="5" height="100%">
+    <tr align="left">
+      <td colspan="2">
+        <b>Icon Legend</b>
+      </td>
+    </tr>
+    <tr valign="top">
+      <td alt="left">Yes</td>
+      <td align="right"><img src="/images/common/yes.gif" width="23" height="23" alt="Yes"></td>
+    </tr>
+    <tr valign="top">
+      <td align="left">No</td>
+      <td align="right"><img src="/images/common/no.gif" width="23" height="23" alt="No"></td>
+    </tr>
+    <tr valign="top">
+      <td>Abstain</td>
+      <td align="right"><img src="/images/common/abstain.gif" width="23" height="23" alt="Abstain"></td>
+    </tr>
+    <tr valign="top">
+      <td>Not voted</td>
+      <td align="right"><img src="/images/common/none21.gif" width="23" height="23" alt="Not voted"></td>
+   </tr>
+ </table>
+</td>
+</tr>
+</table>
+<br>
+
+
+<HR NOSHADE ALIGN="left" WIDTH="70%">
+<h3>View Vote Log</h3>
+<BR>
+
+<FORM>
+
+
+
+
+<br><br>
+
+
+<strong>ME</strong><br>
+<TEXTAREA ROWS="10" COLS="80" WRAP="soft" READONLY>On 2002-04-08 IBM voted No with the following comment:
+There are too many questions left open on the this JSR proposal relative to MIDP-NG, JSR 134 and the option of a smaller_than_MIDP profile that supports games. We would like to see progress in this area and the JSR resubmiited.
+------------------------------------------------------------------------------
+On 2002-04-08 Zucotto Wireless voted No with the following comment:
+Zucotto agrees that there currently exists a &#8220;hole&#8221; in the Java Gaming API capabilities as defined in MIDP 1.0 and MIDP 2.0 and promotes the idea of a Java Gaming API targeted at the new CLDC/MIDP-based devices coming to market in the very near (in standards time anyway) future. We are very concerned that without a JSR to extend those capabilities defined in MIDP 2.0, device OEMs, game/graphics engine companies, game developers and wireless operators will be forced to create proprietary interfaces and erase some of  the de-fragmentation gained with MIDP 2.0.  We&#8217;re at a critical juncture in the wireless Java device industry and we must ensure the application developers and end users are well served.  However there are a number of issues with the current submission that have been discussed during this voting session.  We have also discussed these and other issues directly with the specification lead and along with his public responses it appears that he is aligned with the cautions expressed  by Zucotto and others. Unfortunately the provisions attached to a &#8220;yes&#8221; vote are not easily enforced until the next EC vote on the JSR at Community Review -- too far into the JSR process. Zucotto has decided to vote No on the current proposal, but we strongly encourage the submitter to modify and resubmit the JSR, taking into account the EC recommendations and with the specific changes noted in a separate email to the ME EC and spec lead.
+------------------------------------------------------------------------------
+On 2002-04-08 BEA Systems voted No with the following comment:
+Based on ongoing discussion, and potential fragementation (and relationship with MIDP), we believe the JSR should be revised from its current form.
+------------------------------------------------------------------------------
+On 2002-04-08 Philips Electronics UK Ltd voted No with the following comment:
+I think the JSR needs to be revised based on the constructive discussion we've had since it was proposed. Approving the current text without taking into account this discussion seems wrong to me. The issues which need addressing include;- is it a J2ME profile or not- what's the relationship with MIDP- is it constrained to be a superset of the games features in MIDP-NG- a strong commitment for active technical co-ordination with JSR-134.
+------------------------------------------------------------------------------
+On 2002-04-08 Insignia Solutions voted Yes with no comment.
+------------------------------------------------------------------------------
+On 2002-04-08 Sun Microsystems, Inc. voted No with the following comment:
+The Java community has made a substantial investment in MIDP 2.0,standardizing APIs there or in associated optional packages(e.g. JSR-135) for popular extensions to MIDP 1.0.  The resultshould be reduced fragmentation while retaining an appropriatefootprint.  Sun is committed to the success of MIDP in the wireless space.  Wedon't want to see new profiles or optional packages for wirelessdevices that are not aligned with MIDP 2.0 or (theoretically) thatmake a clear case for non-alignment.  On the face of it, JSR-178appears likely to divide the momentum of MIDP and to increasefragmentation and confusion in a deeper way than a vendor-specific API.We also share concerns that the proposed functionality doesn't matchthe footprint budget, and would like to see more evidence of alignmentwith JSR-134.Since its submission there has been productive discussion around howJSR-178 might be modified to align better with MIDP, but we don't havea concrete proposal for today's voting.  Sun would be more inclinedto vote for a proposal that cleanly builds on top of MIDP 2.0.
+------------------------------------------------------------------------------
+On 2002-04-08 PalmSource, Inc. voted No with the following comment:
+As the JSR is written, PalmSource votes "no" for JSR 178 because of concerns over ambiguity and fragmentation implied in the JSR's current text.  PalmSource is not against the concept or need for specific game APIs, but we feel that the target of these APIs is not defined very well in the current text of the JSR.For example:- The "Profile" word: we believe your intent of profile is a "minimum set of APIs", but it's still too confusing in the J2ME world in which profiles mean and imply more than that.- Target of CLDC devices?  That gives the impression that the API set only requires CLDC and is a complete "Profile", therefore in competition with PDAP and MIDP.  However, the target packag of javax.microedition.lcdui.game implies a required dependency on MIDP.- The statement is confusing: "the target group of MIDP (mid-end/high-end phones) and the Game user target group (Low end phones).  In the future, MIDP will be available on the complete range of mobile phone ...".   MIDP is intended for all phones and introducing another profile (as implied by this statement) in the same space produces fragmentation.There is a need for game APIs and PalmSource would support one, but the charter for those APIs needs to be well defined before proceeding.  We also suggest the following options for the API:TARGET:- If the target is dedicated handheld games devices (e.g. GameBoy type devices), then the API can exist on its own on top of CLDC and be a "Game Device Profile".- If the target is mobile phones of any kind, the API should be a package capable of running on MIDP x.x.- If the target is PDAs, the API should be a package capable of running on PDAP x.x.- If the target is all of the above, then the API can be its own profile on game devices (CLDC only), and an optional package on MIDP and PDAP.
+------------------------------------------------------------------------------
+On 2002-04-08 Ericsson Inc. voted Abstain with the following comment:
+Ericsson would prefer to see separation of the graphical and gaming components of any Gaming Profile/API.
+------------------------------------------------------------------------------
+On 2002-04-08 Motorola voted No with the following comment:
+Thomas, Thank you for continued amplifications concerning the content of JSR-178.We feel that the proposed content of this JSR significantly overlaps not only the content of JSR-118, but also the intended devices and usage. This is creating two different gaming APIs for MID profile compliant devices. The resultant confusion and fracture of the market place is the main concern. We believe that it will cause more fragmentation in the market space, when we are just getting a handle on reducing that fragmentation. We must maintain a consistent message on features and API sets to the development community. JSR-118 already serves the gaming areas and any changes to the API set should be worked through JSR-118.  We are also concerned that the features identified for the JSR will significantly exceed the target size for MIDP devices. We most vote no on this JSR to prevent competing APIs that would run on the same devices.
+------------------------------------------------------------------------------
+On 2002-04-08 Nokia Corporation voted No with the following comment:
+Most of the reasons why we are not able to support this JSR has been in the e-mails exchanged during the last few days.As a summary:A large number of companies (around 60) in MIDP 2.0 expert group, discussed this issue and agreed to a plan to use the game functionality which is part of MIDP 2.0 to satisfy game development need. MIDP 2.0 will allow game development, but it will also be good for more general purpose. On top of this suitable optional APIs can be used to complement MIDP.  We see that this API will increase the fragmentation of the APIs in the wireless terminals. Adding WGP would mean that some devices run games on top of it and some on MIDP 2.0 based configurations. This will increase fragmentation, not decrease. The functionality proposed  is extensive and creates a danger of being larger than MIDP. Therefore some of the functionality in this large API that you target would in our mind be better to be implemented in a more general way so that it could be utilized in combination with MIDP.Unlike stated in the JSR - MIDP is for low end cell phones too, not only mid/high. It is in this current early state of the Java enabled wireless services/applications market very important to keep the number of APIs as low as possible and therefore overlapping APIs for the same configuration (CLDC) should not be created MIDP 2.0 on its part will help in defragmenting the market and manufacturers have the possibility to gradually decrease the number of proprietary APIs in the devices.
+------------------------------------------------------------------------------
+On 2002-04-08 Siemens AG voted No with the following comment:
+Siemens shares the discussed concerns about the overlapping functionality between MIDP 2.0 and the WGP. These issues have to be resolved before a resubmission.
+------------------------------------------------------------------------------
+On 2002-04-08 Sony International (Europe) GmbH voted Yes with no comment.
+------------------------------------------------------------------------------
+On 2002-04-05 Texas Instruments Inc. voted Yes with the following comment:
+This vote is based on the assumption and condition that the JSR submitter MUST: 1) change the name and description from Profile to API and include the game API from JSR-118 (MIDP 2.0) as a building block per JSR-68 (J2ME Platform Specification); and 2) NOT duplicate any current or planned time-based media functionality covered by JSR-135 (Mobile Media API).
+------------------------------------------------------------------------------
+On 2002-04-04 Matsushita Electric Industrial Co., Ltd. voted Yes with no comment.
+------------------------------------------------------------------------------
+On 2002-04-03 Research In Motion, LTD (RIM) voted Yes with the following comment:
+A focused game API building block designed for and by game industry players is a useful JSR.  It allows vendors to decide on their market and support targeted JSRs for their customers on their own schedule.In retrospect, incorporating game support into MIDP NG may have been an architectural misstep but time-to-market constraints needed to be addressed.  In lieu of this, JSR 178 will need to be strictly compatible with MIDP NG and JSR 135 in order to promote J2ME source/binary compatibility.  Our YES vote should not be viewed as a vote for fragmentation rather it should be viewed as consolidating present and future Java gaming APIs into one JSR.
+------------------------------------------------------------------------------
+On 2002-03-30 Cisco Systems voted Yes with no comment.
+------------------------------------------------------------------------------
+</TEXTAREA>
+
+
+</FORM>
+
+
+
+
+
+<!-- ** BEGIN: footer.jsp ** //-->
+
+
+
+
+
+
+
+
+</td>
+</tr>
+</table>
+
+<!-- ** END: Content Table ** //-->
+
+<!-- ** BEGIN: Footer Table ** //-->
+
+<div id="footer" style="clear: both;">
+    <div class="footleft">
+        <a href="/en/resources/contacts">Contact Us</a>
+    </div>
+	
+    <div class="botbar"><img src="/images/spacer.gif" alt="" height="23" width="1"></div>
+
+    <div class="footleft2">
+         &copy; 2019, Oracle Corporation and/or its affiliates. 
+        <a href="/en/home/terms">Terms of Use</a>. <a href="http://www.oracle.com/us/legal/privacy/index.html">Privacy Policy</a>. <a href="http://www.oracle.com/us/legal/third-party-trademarks/third-party-trademarks-078568.html">Trademarks</a>
+    </div>
+
+    <div class="footright">
+        <img src="/images/common/logo_oracle_footer.gif" alt="Oracle Corporation" height="22" width="91">
+    </div>
+
+    <div style="clear: both;"><img src="/images/spacer.gif" alt="" height="30" width="1"></div>
+</div>
+
+<!-- ** END: Footer Table ** //-->
+
+
+
+<!-- ** Menu Start ** //-->
+
+
+
+</body>
+</html>
+<!-- ** END: footer.jsp ** //-->
+

@@ -1,0 +1,907 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- ** BEGIN: header.jsp ** //-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3c.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+<head>
+    
+
+   
+    <link href="/includes/css/menu.css" rel="stylesheet" type="text/css"></link>
+    <link href="/includes/css/style.css" rel="stylesheet" type="text/css"></link>
+    <!--[if lt IE 6]><link href="/includes/css/style5.css" rel="stylesheet" type="text/css" ></link><![endif]-->
+    <!--[if gte IE 5]><link href="/includes/css/style6.css" rel="stylesheet" type="text/css" ></link><![endif]-->
+    <link href="/includes/css/tabs.css"  rel="stylesheet" type="text/css"></link>
+
+    <script type="text/javascript" src="/includes/scripts/tabs.js"></script>
+    <script type="text/javascript" src="/includes/scripts/menu.js"></script>
+   
+
+    
+
+    
+        <title>The Java Community Process(SM) Program - JSRs: Java Specification Requests - detail JSR# 237</title>
+    
+
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+
+
+<body onload="P7_initPM(0,1,0,0,-1)">
+
+    <a name="top"></a>
+
+    <div id="header">
+	<div id="logo">
+		<a href="/en/home/index"><img src="/images/spacer.gif" alt="Java Community Process" height="81" width="151"></a>
+	</div>
+	<div id="tools">
+		<div class="search">
+			<form name="search" action="/en/jsr/summary" method="get" onsubmit="return validate_search()">
+				<input name="id" value="Search JSRs" size="16" class="form" onfocus="nullify_if_equal(this, 'Search JSRs')" type="text">
+				<a href="javascript:document.search.submit()" onclick="return validate_search()"><img src="/images/button_go.gif" width="21" height="16" border="0" alt="Submit this Search" name="sub_search"></a>
+			</form>
+		</div>
+		<div class="tools">
+			<a href="/en/press/pressroom">Press Room</a> &nbsp;|&nbsp;
+			<a href="http://java.com/java/download/index.jsp?cid=jdp78399">Get Java Here</a> &nbsp;|&nbsp;
+			<!-- <a href="javascript:void(0)">Print Format</a> &nbsp;|&nbsp;&nbsp; -->
+		</div>
+
+	</div>
+	<div style="clear: right;"></div>
+
+        
+
+	<div class="topbar"><img src="/images/spacer.gif" alt="" height="3" width="154"></div>
+	<div id="update"> </div>
+    </div>
+
+
+    
+
+        <!-- ** BEGIN: Content Table ** //-->
+
+        <table width="100%" border="0" cellpadding="0" cellspacing="0">
+
+            <tr>
+
+                <!-- ** BEGIN: Navigation Column ** //-->
+                <td width="150" id="leftcontent" valign="top">
+                    <!-- Navigation Placeholder //-->
+
+                    
+
+                    <div class="bar"><img src="/images/hr_dots1.gif" alt="" height="3" width="150"></div>
+
+        <!-- begin find JSRs form -->
+        <!-- IMPORTANT! do not convert this form to Struts < html : form > tag.  javascript change of form.action property fails. -->
+        <img src="/images/hd_find-jsrs.gif" alt="Find JSRs" height="18" width="150">
+        <form name="findjsr" action="/en/jsr/summary" method="get" class="pt5" onsubmit="return validate_findjsr()">
+            <input name="id" size="18" class="form" value="Search JSRs" onfocus="nullify_if_equal(this, 'Search JSRs')" type="text">
+	    <a href="javascript:document.findjsr.submit()" onclick="return validate_findjsr()"><img src="/images/button_go.gif" width="21" height="16" border="0" alt="Submit this Search" name="sub_search"></a>
+        </form><br><br>
+
+        <!-- ** Menu Start ** //-->
+
+        <ul id="p7PMnav">
+            <li><a href="/en/jsr/platform">JSRs by Platform</a></li>
+            <li><a href="/en/jsr/tech">JSRs by Technology</a></li>
+            <li><a href="/en/jsr/stage">JSRs by Stage</a></li>
+            <li><a href="/en/jsr/ec">JSRs by Committee</a></li>
+            <li><a href="/en/jsr/all">List of All JSRs</a></li>
+
+            <!--end find JSRs form -->
+            <div style="clear: both;"><img src="/images/spacer.gif" alt="" height="25" width="1"></div>
+
+            <!--begin my JCP -->
+            <img src="/images/hd_my-jcp.gif" alt="My JCP" height="18" width="150">
+            
+
+          <form name="login" method="get" action="/en/user/login" >
+            <input name="Sign-in" type="submit" title="Sign-in" value="Sign-in" />
+          </form>
+
+            <div style="clear:both"><img src="/images/global/spacer.gif" width="1" height="3" alt=""></div>
+            <div class="noNav">
+                <a href="/en/user/register">Register for Site</a>
+            </div>
+
+             <div class="bar"><img src="/images/hr_dots1.gif" alt="" height="3" width="150"></div>
+           <div class="noNav" style="color: #666666; padding: 0;">
+              Use of JCP site is subject to the
+              <a href="/en/home/terms" style="display:inline;padding: 0">JCP Terms of Use</a> and the
+              <a href="http://www.oracle.com/us/legal/privacy/index.html" style="display:inline;padding: 0" href="">Oracle Privacy Policy</a>
+          </div>
+
+            
+
+            <div style="clear:both"><img src="/images/global/spacer.gif" width="1" height="25" alt=""></div>
+
+            <!--begin JCP info -->
+            <img src="/images/hd_jcp-info.gif" alt="JCP Info" height="18" width="150">
+
+            <li><a href="/en/procedures/overview" class="p7PMtrg">About JCP</a>
+                <ul>
+                    <li><a href="/en/procedures/overview">Program Overview</a></li>
+                    <li><a href="/en/procedures/jcp2">JCP Process Document</a></li>
+                    <li><a href="/en/whatsnew/calendar">Calendar</a></li>
+                    <li><a href="/en/participation/members">JCP Members</a></li>
+                    <li><a href="/en/participation/committee">Executive Committee</a></li>
+                    <li><a href="/en/whatsnew/elections">Elections</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/en/participation/overview" class="p7PMtrg">Get Involved</a>
+		<ul>
+                    <li><a href="/en/participation/overview">Overview</a></li>
+                    <li><a href="/en/participation/membership">Becoming a JCP Member</a></li>
+		</ul>
+            </li>
+
+            <li><a href="/en/resources/contents" class="p7PMtrg">Community Resources</a>
+                <ul>
+                    <li><a href="/en/resources/contents">Overview</a></li>
+                    <li><a href="/en/resources/tutorials">Tutorials</a></li>
+                    <li><a href="/en/resources/multimedia">JCP Podcasts</a></li>
+                    <li><a href="/en/resources/guide">Spec Lead Guide</a></li>
+                    <li><a href="/en/resources/tdk">TCK Tool & Info</a></li>
+                    <li><a href="/en/resources/license_reference">License Reference</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/en/press/pmo" class="p7PMtrg">Community News</a>
+                <ul>
+                    <li><a href="/en/press/pmo">News</a></li>
+                    <li><a href="/en/press/news/awards/awards_main">Programs &amp; Awards</a></li>
+                    <li><a href="/en/press/releases">Press Releases</a></li>
+                    <li><a href="/en/press/success">Success Stories</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/en/introduction/faq">FAQ</a></li>
+
+            <li><a href="/en/resources/contacts">Contact Us</a></li>
+
+            <div style="clear: both;"><img src="/images/spacer.gif" alt="" height="25" width="1"></div>
+
+            <!--[if lte IE 6]><style>#p7PMnav a{height:1em;}#p7PMnav li{height:1em;float:left;clear:both;width:100%}</style><![endif]-->
+            <!--[if IE 6]><style>#p7PMnav li{clear:none;}</style><![endif]-->
+            <!--[if IE 7]><style>#p7PMnav a{zoom:100%;}#p7PMnav li{float:left;clear:both;width:100%;}</style><![endif]-->
+        </ul>
+
+        
+
+        <!--begin ad space -->
+        <div class="ads">
+            <a href="http://java.com/java/download/index.jsp?cid=jdp78399" target="_blank"><img style="display: ;" src="/images/ad_banner2.gif" alt="Ad Banner" border="1" height="70" width="150"></a>
+        </div>
+        <!--end ad space -->
+
+<!-- ** Menu End ** //-->
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;<br>
+
+    
+
+                    &nbsp;<br>
+                    <img src="/images/common/trans.gif" alt="" width="1" height="150"><br>
+
+              
+
+
+
+                </td>
+                <!-- ** END: Navigation Column ** //-->
+
+                <!-- ** BEGIN: Gutter Column ** //-->
+		<td width="10" nowrap><img src="/images/common/trans.gif" alt="" width="10" height="1"></td>
+                <!-- ** END: Gutter Column ** //-->
+
+                <!-- ** BEGIN: Content Column ** //-->
+                <td width="100%" valign="top">
+
+    
+<script type="text/javascript">
+
+String.prototype.trim = function() {
+        return this.replace(/^\s+|\s+$/g,"");
+}
+String.prototype.ltrim = function() {
+        return this.replace(/^\s+/,"");
+}
+String.prototype.rtrim = function() {
+        return this.replace(/\s+$/,"");
+}
+
+function validate_search() {
+	if (document.search.id.value == "Search JSRs" || document.search.id.value.trim().length == 0) {
+		alert("Search terms must be entered first");
+		return false;
+	}
+	return true;
+}
+
+function validate_findjsr() {
+	if (document.findjsr.id.value == "Search JSRs" || document.findjsr.id.value.trim().length == 0) {
+		alert("Search terms must be entered first");
+		return false;
+	}
+	return true;
+}
+
+function nullify_if_equal(field, str) {
+	// alert("val=" + field.value);
+	if (field.value == str) {
+		field.value = "";
+	}
+}
+
+</script>
+<!-- ** END: header.jsp ** //-->
+
+
+
+
+
+        <!--  BEGIN NAVIGATION TABS -->
+        <div id="p7TP1">
+                <div class="p7TP_tabs">
+                        <div id="p7tpb1_1" class="down"><a class="down">JSR</a></div>
+                        <div><a href="/en/egc/view?id=237">Community</a></div>
+                        <div><a href="/en/eg/eghome?id=237">Expert Group</a></div>
+			
+
+                <br class="p7TPclear" />
+                </div>
+
+                <div class="p7TPcontent">
+                        <div id="p7tpc1_1">
+
+			
+                                <a href="summary?id=237">Summary</a>
+			
+			
+                                &nbsp;|&nbsp;
+				<a href="proposalDetails?id=237">Proposal</a>
+			
+			
+                                &nbsp;|&nbsp;
+                                <span>Detail (Summary &amp; Proposal)</span>
+			
+		
+                        </div>
+
+                </div>
+                <!--[if lte IE 6]><style type="text/css">.p7TPpanel div,.p7TPpanel a{height:1%;}.p7TP_tabs a{white-space:nowrap;}</style><![endif]-->
+        </div>
+        <script type="text/javascript">
+                P7_initTP(1,0);
+        </script>
+        <!--  END NAVIGATION TABS -->
+
+
+<div class="anybar"><img src="/images/global/bar_green.gif" alt="" width="12" height="4"></div>
+
+<div class="header2">JSRs: Java Specification Requests</div>
+<div class="header1">JSR 237: Work Manager for Application Servers</div>
+<div class="anybar"><img src="/images/global/bar_green.gif" alt="" width="12" height="4"></div>
+<br>
+
+
+
+<!-- ********************************************** -->
+<!--  JSR Status information                        -->
+<!-- ********************************************** -->
+
+
+                <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                    <tr>
+                        <td id="centercontent" valign="top">
+			<tr>
+			<td>
+                            <table class="tbl" cellpadding="4" cellspacing="1" width="100%">
+                                <tr valign="top">
+                                    <td class="bdtl">Stage</td>
+                                    <td class="bdtl">Access</td>
+                                    <td class="bdtl">Start</td>
+                                    <td class="bdtl">Finish</td>
+                                </tr>
+
+				<tr class="bgw" valign="top">
+                                        <td>Withdrawn </td>
+                                        
+                                            <td>&nbsp;</td>
+                                        
+                                        <td>18 Jun, 2008</td>
+                                        <td>&nbsp;</td>
+				</tr>
+
+				<tr class="bgw" valign="top">
+                                        <td>Expert Group Formation </td>
+                                        
+                                            <td>&nbsp;</td>
+                                        
+                                        <td>16 Dec, 2003</td>
+                                        <td>&nbsp;</td>
+				</tr>
+
+				<tr class="bgw" valign="top">
+                                        <td>JSR Review Ballot </td>
+                                        
+                                            <td><a href="results?id=2350">View results</a></td>
+                                        
+                                        <td>02 Dec, 2003</td>
+                                        <td>15 Dec, 2003</td>
+				</tr>
+
+			</table>
+			</td>
+			</tr>
+                        </td>
+</tr>
+</table>
+
+<!-- ********************************************** -->
+<!--  JCP Version                                   -->
+<!-- ********************************************** -->
+
+<span style="padding: 10px; display: block;">
+
+    <b> Status: </b><a href="/en/introduction/glossary#status"><font color=red><span title="A JSR that was withdrawn from the JCP by the Specification Lead before Final Release.">Withdrawn</span></font></a><br>
+
+
+    <b> Reason:</b> JSR 237 has been merged with JSR 236, providing a single, consistent specification for Java EE concurrency.<br>
+
+
+    
+	<b>JCP version in use:</b> <a href="/procedures/jcp2_6"> 2.6</a><br>
+    
+
+    
+	<b>Java Specification Participation Agreement version in use:</b> 2.0<br>
+    
+
+    <br><br>
+        <b>Description</b>:<br>
+        A work manager API providing for execution of concurrent work items within managed environments.
+    <br><br>
+
+    <!-- ********************************************** -->
+    <!--  JSR Comments Email excluding JSR 900 and up   -->
+    <!-- ********************************************** -->
+
+	    
+            <b> Please direct comments on this JSR to the Spec Lead(s) </b> <br>
+	    
+
+            </span>
+
+   <!-- ****************************************** -->
+
+                <div id="p7TP52">
+                        <div class="p7TP_tabs2">
+                            <div><span>Team</span></div>
+                            <br class="p7TPclear" />
+                        </div>
+                </div>
+
+                <table bgcolor="#f2f2f2" border="0" cellpadding="5" cellspacing="1" width="100%">
+	
+                    <tr valign="top">
+                            <td colspan="3"><span class="header4">Specification Leads</span></td>
+                    </tr>
+
+
+		
+        
+			<tr valign="top">
+                            
+                            <td width="20" nowrap>&nbsp;</td>
+                            
+                            <td>Chris D&nbsp;Johnson</td>
+                            <td>IBM</td>
+			</tr>
+        
+			<tr valign="top">
+                            
+                            <td width="20" nowrap>&nbsp;</td>
+                            
+                            <td>Naresh&nbsp;Revanuru</td>
+                            <td>BEA Systems</td>
+			</tr>
+        
+
+                <tr valign="top">
+                        <td colspan="4" class="spacerw"><img src="/images/global/spacer.gif" alt="" height="1" width="1"></td>
+                </tr>
+                <tr valign="top">
+                        <td colspan="3"><span class="header4">Expert Group</span></td>
+                </tr>
+
+
+			<tr valign="top">
+                            <td width="20" nowrap>&nbsp;</td> <!-- Gutter //-->
+                            <td>BEA Systems</td>
+     
+
+                            <td>Bouteille, Cyril</td>
+    
+
+                            <td>IBM</td>
+			</tr>
+
+
+			<tr valign="top">
+                            <td width="20" nowrap>&nbsp;</td> <!-- Gutter //-->
+                            <td>Lea, Doug</td>
+     
+
+                            <td>Redwood Software Nederland B.V.</td>
+    
+
+
+
+
+
+
+
+
+
+			</tr>
+
+
+
+
+
+
+
+
+
+
+			</tr>
+
+		</table>
+                    <!-- ********************************************** -->
+                    <!--  Expert Group Status                           -->
+                    <!-- ********************************************** -->
+
+                    <table cellpadding="0" cellspacing="0" border="0">
+                        
+                    </table>
+
+   <!-- ****************************************** -->
+
+
+
+
+<!-- ********************************************** -->
+<!--  JSRProposal Info                              -->
+<!-- ********************************************** -->
+<p>
+
+		This JSR has been <a href="/en/introduction/glossary#status"><font color=red><span title="A JSR that was withdrawn from the JCP by the Specification Lead before Final Release.">Withdrawn</span></font></a><br>
+		<b> Reason:</b> JSR 237 has been merged with JSR 236, providing a single, consistent specification for Java EE concurrency.<br> <br>
+
+
+The contents of this JSR are now found in <a href="http://jcp.org/en/jsr/detail?id=236">JSR 236</a>.
+<P>
+<a name="orig"><font size="+2">Original Java Specification Request (JSR)</font></a><p>
+<FONT SIZE="-1">
+
+<!-- BEGIN-SUB TOPICS -->
+
+          <A HREF="#1"> Identification</A>  |
+          <A HREF="#2"> Request</A>  |
+          <A HREF="#3"> Contributions</A>  |
+          <A HREF="#4"> Additional Information</A>
+<BR>
+
+<!-- END-SUB TOPICS -->
+
+</FONT>
+<P>
+
+<!-- BEGIN TEMPLATE -->
+
+<!-- SECTION 1 -->
+
+<A NAME="1"></A>
+
+<P><FONT size=+2>Section 1. Identification</FONT>
+
+<P><b>Submitting Member:</b> BEA Systems, Inc. and IBM Corporation</P>
+
+<P><b>Name of Contact Person:</b> Revanuru Naresh & Mike Edwards 
+
+
+</P>
+
+<P><b>E-Mail Address:</b> naresh&#64;bea.com & mike_edwards&#64;uk.ibm.com </P>
+
+<P><b>Telephone Number:</b> +1 415 402 7466 & +44 1962 818014</P>
+
+<P><b>Fax Number:</b> +1 415 402 7213 & +44 1962 818999</P>
+
+<BR>
+<P><b>Specification Lead:</b> Revanuru Naresh & Billy Newport
+
+
+</P>
+
+<P><b>E-Mail Address:</b> naresh&#64;bea.com & bnewport&#64;us.ibm.com
+
+
+</P>
+
+<P><b>Telephone Number:</b> +1 415 402 7466 & +1 507 253 0063</P>
+
+<P><b>Fax Number:</b> +1 415 402 7213 & +1 507 253 4456
+
+
+</P>
+
+<BR>
+
+<P><B>Initial Expert Group Membership:</B>
+</P>
+
+<P>BEA Systems, Inc. <BR>
+IBM Corp.</P>
+
+<P><B>Supporting this JSR:</B>
+
+</P>
+
+<P>BEA Systems, Inc. <BR>
+IBM Corp.</p>
+
+<BR><BR>
+
+<!-- SECTION 2 -->
+
+<A NAME="2"></A>
+
+<P>
+<FONT SIZE="+2">Section 2: Request</FONT><P>
+</P>
+
+<H4>2.1 Please describe the proposed Specification:</H4>
+
+<P>The Work Manager for Application Servers specification will contain an API that provides a simple, container-manageable programming model for concurrent execution of work. These work items execute out of a thread pool managed by a container. The Work Manager API provides a higher level of abstraction for concurrent programming than java.lang.Thread, which is inappropriate for use by applications hosted in managed environments such as EJB containers and Servlet containers.<P>
+
+This API can be used within any environment, but is specifically designed for the requirements of managed environments.<P>
+
+This specification does not require any changes to existing JavaTM 2 Enterprise Edition (J2EE) APIs or deployment descriptor formats. Components can access the work service through a lookup in the local Java environment in JNDI, provided the container supports this API and the application has been properly configured.
+
+
+
+</P>
+
+<H4>2.2 What is the target Java platform? (i.e., desktop, server, personal, embedded, card, etc.)</H4>
+
+<P>Java<sup><font size="-2">TM</font></sup> 2 Platform, Enterprise Edition 1.4
+
+
+</P>
+
+<H4>2.3 What need of the Java community will be addressed by the proposed specification?</H4>
+
+<P>There is commonly a need to perform application-level work concurrently. For example, a Servlet or JSP may need to pull data form several backend data sources or services before rendering HTML. This API will provide a means by which an application can specify the work that can be executed concurrently. It provides concurrency operations, including joining on two common conditions: all work items completing, and any of the work items completing.<P>
+
+J2EE implementations commonly implement this functionality in vendor-specific ways, hindering application portability.
+
+
+
+</P>
+
+<H4>2.4 Why isn't this need met by existing specifications?</H4>
+
+<P>There is presently no standard API for application-level concurrent programming within managed environments such as Servlets and EJBs. java.lang.Thread should not be used within these environments, and the JCA Work API is only appropriate for use within Resource Adapters.<P>
+
+JSR-166 is targeted specifically at J2SE, and does not provide the proper interfaces for used within managed environments. However, alignment with base interfaces defined by JSR-166 may be possible. Also, JSR 166 is targeted at J2SE 1.5, this JSR targets a solution for J2EE 1.4.
+
+
+
+
+
+
+</P>
+
+<H4>2.5 Please give a short description of the underlying technology or technologies:</H4>
+
+<P>This API can be implemented with existing Java APIs for concurrent programming, including java.lang.Thread or JSR-166.
+
+
+
+
+</P>
+
+<H4>2.6 Is there a proposed package name for the API Specification? (i.e., <TT>javapi.something</TT>, <TT>org.something</TT>, etc.)</H4>
+
+<P>javax.work, javax.util, or javax.util.work
+
+</P>
+
+<H4>2.7 Does the proposed specification have any dependencies on specific operating systems, CPUs, or I/O devices that you know of?</H4>
+
+<P>No</P>
+
+<H4>2.8 Are there any security issues that cannot be addressed by the current security model?</H4>
+
+<P>No</P>
+
+<H4>2.9 Are there any internationalization or localization issues?</H4>
+
+<P>No</P>
+
+<H4>2.10 Are there any existing specifications that might be rendered obsolete, deprecated, or in need of revision as a result of this work?</H4>
+
+<P>The J2EE Connector Architecture specification may consider using this specification as a base in the future, as it currently defines a work manager API specific to JCA.<P>
+
+This API is meant to be complementary to JSR 166 (Concurrency Utilities for Java), as JSR 166 is primarily targeted at J2SE. It is possible that a follow-on to this JSR, or a follow-on to JSR-166, could rationalize these specifications.
+
+
+</P>
+
+<H4>2.11 Please describe the anticipated schedule for the development of this
+specification.</H4>
+
+<P>Winter 2003: Expert Group Formed<BR>
+Spring 2004: Release Community Draft<BR>
+Spring 2004: Release Public Review Draft<BR>
+Summer 2004: Final Release
+
+
+</P>
+
+<H4>2.12 Please describe the anticipated working model for the Expert Group working on developing this
+specification.</H4>
+
+<P>E-mail, teleconferences, and infrequent face-to-face meetings. The environment of the expert group will be totally non-confidential. We will also use or create an open mailing list for discussions by other interested people outside the expert group. As the outbound licenses will be Royalty Free, expert group members  will need to ensure that their contributions are similarly made on that basis. Non-EG contributors to the mailing list will also be requested to provide that assurance. Precise details of the leadership processes of the expert group (for example: running calls, decision making, issue resolution) will be discussed by the leaders once the group?s size and dynamics are known.
+
+
+</P>
+
+<H4>2.13 Please describe how the RI and TCK will de delivered, i.e. as part of a profile or platform edition, or stand-alone, or both. Include version information for the profile or platform in your answer.
+</H4>
+
+<P>The RI and TCK will be made available in stand-alone form at the time of the final release. There will most likely be earlier versions of the RI and TCK that are developed as this JSR progresses.<P>
+
+The RI will be generic to any particular container and not use any proprietary interfaces, and therefore should work with existing container implementations. <P>
+
+IBM will be responsible for developing the TCK, although contributions from any Expert Group member would be welcome.<BR>
+BEA will be responsible for developing the RI, although assistance from any Expert Group member would be welcome.
+
+
+
+
+
+</P>
+
+<H4>2.14 Please state the rationale if previous versions are available stand-alone and you are now proposing in 2.13 to only deliver RI and TCK as part of a profile or platform edition (See sections 1.1.5 and 1.1.6 of the JCP 2 document).
+</H4>
+
+<P>N/A</P>
+
+<H4>2.15 Please provide a description of the business terms for the Specification, RI and TCK that will apply when this JSR is final.</H4>
+
+<P>The Specification will be offered under royalty-free terms and thus be freely implementable. This license will comply with the terms defined by the JSPA. For an approximation of the Specification license, please see the license statements included in the specifications listed in section 3.1.<P>
+
+The intention is to release the RI and TCK under licenses of a form of the draft licenses included as Exhibit A and Exhibit B in section 4.1, respectively. At this stage it is expected that IBM and BEA will strive to use a common license for the RI and similarly for the TCK.
+
+
+</P>
+
+<BR><BR>
+<BR><BR>
+
+<!-- SECTION 3 -->
+
+<A NAME="3"></A>
+
+<P>
+<FONT SIZE="+2">Section 3: Contributions</FONT><P>
+</P>
+
+<H4>3.1 Please list any existing documents, specifications, or implementations that describe the technology. Please include links to the documents if they are publicly available.</H4>
+
+<P>The following specification will serve as input into the expert group:<BR>
+<a href="http://dev2dev.beasys.com/technologies/commonj/wm/index.jsp"> http://dev2dev.beasys.com/technologies/commonj/wm/index.jsp</a><BR>
+<a href="http://www.ibm.com/developerworks/library/j-commonj-sdowmt/"> http://www.ibm.com/developerworks/library/j-commonj-sdowmt/</a>
+
+
+
+
+
+
+
+
+
+</P>
+
+<H4>3.2 Explanation of how these items might be used as a starting point for the work.</H4>
+
+<P>This specification will serve as a starting point for expert group discussion.
+
+
+</P>
+
+<BR><BR>
+
+<!-- SECTION 4 -->
+
+<A NAME="4"></A>
+
+<P>
+<FONT SIZE="+2">Section 4: Additional Information (Optional)</FONT><P>
+</P>
+
+<H4>4.1 This section contains any additional information that the submitting Member wishes to include in the JSR.</H4>
+
+<P>Exhibit A<BR>
+Reference Implementation License <P>
+
+BY DOWNLOADING OR USING THE SOFTWARE AND/OR DOCUMENTATION DESCRIBED IN EXHIBIT A HERETO (COLLECTIVELY THE "SOFTWARE"), YOU AGREE TO THE FOLLOWING TERMS AND CONDITIONS ("AGREEMENT"). IF YOU DO NOT AGREE TO THE TERMS AND CONDITIONS OF THIS AGREEMENT, YOU MAY NOT DOWNLOAD OR USE THE SOFTWARE.<P>
+
+License Grant.  International Business Machines Corporation or one of its subsidiaries collectively ("IBM") hereby grants you (an individual or an entity) a non-exclusive, non-transferable, worldwide, royalty free license to modify and prepare derivative works of the Software and to use, reproduce, distribute object code versions of, display, and perform the Software and such derivative works. The above license includes the right to sublicense the above rights to third parties acting on your behalf. 
+To the extent IBM provides you with error corrections, upgrades, enhancements, additions, improvements, extension or other modifications to the Software such error corrections, upgrades, enhancements, additions, improvements, extension or other modifications shall be considered Software and shall be subject to the terms and conditions of this Agreement.  <BR>
+You agree not to remove any of the copyright statements or disclaimers contained in the Software.
+You agree to defend, indemnify, hold harmless IBM and its suppliers from and against any claims, lawsuits, demands, liabilities, damages, costs and expenses including, without limitation, attorney fees, in any way related to, connected with, or arising out of, your use, modification, reproduction, distribution and/or sublicensing of the Software. <P>
+
+Compatibility Claims.  You agree that you will distribute, or sublicense others to distribute, the Software and derivative works thereof only if you or such third party have tested the Software and derivative works thereof with the applicable JSR __ TCK and such Software and derivative work have complied with the relevant portions of such TCK. You may not claim that the Software or derivative works thereof pass the applicable TCK, and therefore is compatible with the applicable JSR __ specification, unless it is capable of passing the most current version of the TCK available 120 days prior to the date of shipment.  You will make available information regarding the version of the TCK passed, upon request.  Additional rules, if any, regarding your ability to make claims regarding your use of the TCK or any result there from can be found at __________________.  As a condition to your license, you agree to abide by all such rules.<P>
+
+Support.   Although IBM may try to answer technical support questions you may have regarding your use of the Software, IBM has no obligation to provide error corrections, upgrades, enhancements, additions, improvements, extension or other modifications to the Software or to provide any end user or technical support for the Software.  You shall be responsible for any and all maintenance, end-user support and technical support with respect to the Software. <P>
+
+No Warranties.  THE SOFTWARE AND ANY SUPPORT ARE PROVIDED ?AS IS? WITHOUT WARRANTY OR CONDITION OF ANY KIND EITHER EXPRESS, IMPLIED, OR STATUTORY, INCLUDING, BUT NOT LIMITED TO, ANY IMPLIED WARRANTIES OR CONDITIONS OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT.  ALL WARRANTIES AND CONDITIONS, EXPRESS, IMPLIED, AND STATUTORY ARE HEREBY DISLCAIMED. THE ENTIRE RISK ARISING OUT OF THE USE OR PERFORMANCE OF THE SOFTWARE AND SUPPORT REMAINS WITH YOU.  <BR>
+No Liability.   IN NO EVENT WILL IBM OR ITS SUPPLIERS BE LIABLE FOR ANY LOST PROFITS, LOST SAVINGS, LOST REVENUE, LOST DATA, PROCUREMENT OF SUBSTITUE GOODS, OR FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, PUNITIVE, OR CONSEQUENTIAL DAMAGES, EVEN IF IBM OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE POSSIBILITY OF SUCH LOSSES OR DAMAGES.  IN ADDITION IBM AND ITS SUPPLIERS WILL NOT BE LIABLE FOR ANY DAMAGES CLAIMED BY YOU BASED ON ANY THIRD PARTY CLAIM. <P>
+
+Some jurisdictions do not allow the exclusion of implied warranties, or the limitation for consequential damages, so the above may not apply to you.<BR>
+Note to U.S. Government Users - Documentation related to Restricted Rights - Use, duplication, or disclosure is subject to restrictions set forth in GSA ADP Schedule Contract with IBM Corporation. <P>
+
+Covenant Not to Assert.  To the extent that you have any patents which cover the use of the Software in any manner permitted under this Agreement, you hereby agree not to assert any such patents against the developers or distributors of the Software or any other parties who have entered into a license substantially similar to this Agreement for the licensed use of the Software. <BR>
+Reciprocity.  You may have, or may have in the future, the ability to reference implementations developed or distributed pursuant to the Java Community Process ("Java Materials").  You acknowledge that under this license you are receiving the Software under reasonable royalty-free terms.  While you are not obligated to make Java materials available, if you do so and do not license them under reasonable royalty-free terms, the licensor reserves the right to revoke this license upon reasonable notice.  In the event this occurs, the licensor will make available to you a substitute license under commercial terms, including possibly royalties and other restrictions.  For the purpose of this paragraph, terms are not reasonable terms if they are more restrictive than this license or if they discriminate against any individual or group of JCP members or against implementers of independent implementations or open source implementations.<P>
+
+General.<P>
+
+You agree to comply with applicable export laws and regulations.<P>
+
+No other rights or licenses are granted by implication, estoppel or otherwise. <P>
+
+If any provision of this Agreement is invalid or unenforceable under applicable law, it shall not affect the validity or enforceability of the remainder of the terms of this Agreement, and without further action by the parties hereto, such provision shall be reformed to the minimum extent necessary to make such provision valid and enforceable.<P>
+
+Your rights under this Agreement shall terminate if you fail to comply with any of the material terms or conditions of this Agreement and do not cure such failure in a reasonable period of time after becoming aware of such noncompliance.  If all your rights under this Agreement terminate, you agree to cease use of the Software immediately. <P>
+
+This Agreement is governed by the laws of the State of New York and the intellectual property laws of the United States of America.  No party to this Agreement will bring a legal action under this Agreement more than one year after the cause of action arose.  Each party waives its rights to a jury trial in any resulting litigation.<P>
+
+This Agreement is the only understanding and agreement we have with respect to the Software. It supersedes all other communications, understandings or agreements (oral or written) that we may have had with respect to the Software prior to this Agreement.  Only a written agreement signed by both of us can modify this Agreement.<P>
+
+
+
+Exhibit  B<P>
+Technology Compatibility Kit License Agreement<P>
+
+BY DOWNLOADING OR USING THE SOFTWARE AND/OR DOCUMENTATION DESCRIBED IN EXHIBIT A HERETO (COLLECTIVELY THE ?SOFTWARE?), YOU AGREE TO THE FOLLOWING TERMS AND CONDITIONS (?AGREEMENT?). IF YOU DO NOT AGREE TO THE TERMS AND CONDITIONS OF THIS AGREEMENT, YOU MAY NOT DOWNLOAD OR USE THE SOFTWARE.<P>
+
+License Grant.  You are hereby granted a personal, non-transferable and non-sublicenseable, nonexclusive, world-wide, royalty free license to use the JSR __ Technology Compatibility Kit (including software and documentation) (the ?TCK?) solely for the purpose of testing compliance with the relevant portions of specifications or standards to which it applies (the ?Specification?).  You may not modify or create derivative works of any of the TCK except as is necessary to fulfill the purpose described above.  You may not distribute copies of the TCK to other parties for any purpose, including for the purpose of allowing such other party to use the TCK.  Nor may you modify or incorporate the TCK into any other software.<BR>
+No Warranties.  The TCK contained herein is provided on an "AS IS" basis and to the maximum extent permitted by applicable law, this material is provided AS IS AND WITH ALL FAULTS, and the developers of this material hereby disclaim all other warranties and conditions, either express, implied or statutory, including, but not limited to, any (if any) implied warranties, duties or conditions of merchantability, of fitness for a particular purpose, of accuracy or completeness of responses, of results, of workmanlike effort, of lack of viruses, and of lack of negligence. ALSO, THERE IS NO WARRANTY OR CONDITION OF TITLE, QUIET ENJOYMENT, QUIET POSSESSION, CORRESPONDENCE TO DESCRIPTION OR NON-INFRINGEMENT WITH REGARD TO THIS MATERIAL.<P>
+
+Limitation of Liability.  IN NO EVENT WILL ANY AUTHOR, DEVELOPER, LICENSOR, OR DISTRIBUTOR OF THIS MATERIAL BE LIABLE TO ANY OTHER PARTY FOR THE COST OF PROCURING SUBSTITUTE GOODS OR SERVICES, LOST PROFITS, LOSS OF USE, LOSS OF DATA, OR ANY INCIDENTAL, CONSEQUENTIAL, DIRECT, INDIRECT, PUNITIVE, OR SPECIAL DAMAGES WHETHER UNDER CONTRACT, TORT, WARRANTY, OR OTHERWISE, ARISING IN ANY WAY OUT OF THIS OR ANY OTHER AGREEMENT RELATING TO THIS MATERIAL, WHETHER OR NOT SUCH PARTY HAD ADVANCE NOTICE OF THE POSSIBILITY OF SUCH DAMAGES.<P>
+
+Covenant Not to Assert.  As a material condition to this license you hereby agree, to the extent that you have any patents which cover the use of the TCK in any manner permitted under this License, not to assert any such patents against the developers or distributors of the TCK or any other parties who have entered into a license substantially similar to this License for the licensed use of the TCK.<BR>
+Reciprocity.  You may have, or may have in the future, the ability to license specifications and/or test suites developed or distributed pursuant to the Java Community Process ("Java Materials").  You acknowledge that under this license you are receiving the TCK under reasonable royalty-free terms.  While you are not obligated to make Java Materials available, if you do so and do not license them under reasonable royalty-free terms, the licensor reserves the right to revoke this license upon reasonable notice.  In the event this occurs, the licensor will make available to you a substitute license under commercial terms, including possibly royalties and other restrictions.  For the purpose of this paragraph, terms are not reasonable terms if they are more restrictive than this license or if they discriminate against any individual or group of JCP members or against implementers of independent implementations or open source implementations.<BR>
+Compatibility Claims.  You may not claim that any version or release of software passes the TCK, and therefore is compatible with the Specification, unless it is capable of passing the most current version of the TCK available 120 days prior to the date of its first shipment to customers.  You will make available information regarding the version of the TCK passed, upon request.  You agree that any claims regarding compliance with the Specification will be factually accurate and will not be misleading.  <P>
+
+General.<BR>
+No other rights are granted by implication, estoppel or otherwise.<P>
+
+If any provision of this Agreement is invalid or unenforceable under applicable law, it shall not affect the validity or enforceability of the remainder of the terms of this Agreement, and without further action by the parties hereto, such provision shall be reformed to the minimum extent necessary to make such provision valid and enforceable.<P>
+
+Your rights under this Agreement shall terminate if you fail to comply with any of the material terms or conditions of this Agreement and do not cure such failure in a reasonable period of time after becoming aware of such noncompliance.  If your rights under this Agreement terminate, you agree to cease use of the TCK immediately and cease making any claims of compatibility regarding the Specification based on the use of the TCK. <P>
+
+This Agreement is governed by the laws of the State of New York and the intellectual property laws of the United States of America.  No party to this Agreement will bring a legal action under this Agreement more than one year after the cause of action arose.  Each party waives its rights to a jury trial in any resulting 
+</P>
+
+<BR><BR>
+</p>
+
+
+
+
+
+
+
+
+<!-- ** BEGIN: footer.jsp ** //-->
+
+
+
+
+
+
+
+
+</td>
+</tr>
+</table>
+
+<!-- ** END: Content Table ** //-->
+
+<!-- ** BEGIN: Footer Table ** //-->
+
+<div id="footer" style="clear: both;">
+    <div class="footleft">
+        <a href="/en/resources/contacts">Contact Us</a>
+    </div>
+	
+    <div class="botbar"><img src="/images/spacer.gif" alt="" height="23" width="1"></div>
+
+    <div class="footleft2">
+         &copy; 2019, Oracle Corporation and/or its affiliates. 
+        <a href="/en/home/terms">Terms of Use</a>. <a href="http://www.oracle.com/us/legal/privacy/index.html">Privacy Policy</a>. <a href="http://www.oracle.com/us/legal/third-party-trademarks/third-party-trademarks-078568.html">Trademarks</a>
+    </div>
+
+    <div class="footright">
+        <img src="/images/common/logo_oracle_footer.gif" alt="Oracle Corporation" height="22" width="91">
+    </div>
+
+    <div style="clear: both;"><img src="/images/spacer.gif" alt="" height="30" width="1"></div>
+</div>
+
+<!-- ** END: Footer Table ** //-->
+
+
+
+<!-- ** Menu Start ** //-->
+
+
+
+</body>
+</html>
+<!-- ** END: footer.jsp ** //-->
+

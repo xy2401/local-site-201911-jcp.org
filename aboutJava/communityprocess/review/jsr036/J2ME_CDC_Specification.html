@@ -1,0 +1,755 @@
+
+<!-- ** BEGIN: header.jsp ** //-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3c.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+<head>
+    
+
+   
+    <link href="/includes/css/menu.css" rel="stylesheet" type="text/css"></link>
+    <link href="/includes/css/style.css" rel="stylesheet" type="text/css"></link>
+    <!--[if lt IE 6]><link href="/includes/css/style5.css" rel="stylesheet" type="text/css" ></link><![endif]-->
+    <!--[if gte IE 5]><link href="/includes/css/style6.css" rel="stylesheet" type="text/css" ></link><![endif]-->
+    <link href="/includes/css/tabs.css"  rel="stylesheet" type="text/css"></link>
+
+    <script type="text/javascript" src="/includes/scripts/tabs.js"></script>
+    <script type="text/javascript" src="/includes/scripts/menu.js"></script>
+   
+
+    
+
+    
+        <title>The Java Community Process(SM) Program - communityprocess - review</title>
+    
+
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+
+
+<body onload="P7_initPM(0,1,0,0,-1)">
+
+    <a name="top"></a>
+
+    <div id="header">
+	<div id="logo">
+		<a href="/en/home/index"><img src="/images/spacer.gif" alt="Java Community Process" height="81" width="151"></a>
+	</div>
+	<div id="tools">
+		<div class="search">
+			<form name="search" action="/en/jsr/summary" method="get" onsubmit="return validate_search()">
+				<input name="id" value="Search JSRs" size="16" class="form" onfocus="nullify_if_equal(this, 'Search JSRs')" type="text">
+				<a href="javascript:document.search.submit()" onclick="return validate_search()"><img src="/images/button_go.gif" width="21" height="16" border="0" alt="Submit this Search" name="sub_search"></a>
+			</form>
+		</div>
+		<div class="tools">
+			<a href="/en/press/pressroom">Press Room</a> &nbsp;|&nbsp;
+			<a href="http://java.com/java/download/index.jsp?cid=jdp78399">Get Java Here</a> &nbsp;|&nbsp;
+			<!-- <a href="javascript:void(0)">Print Format</a> &nbsp;|&nbsp;&nbsp; -->
+		</div>
+
+	</div>
+	<div style="clear: right;"></div>
+
+        
+
+	<div class="topbar"><img src="/images/spacer.gif" alt="" height="3" width="154"></div>
+	<div id="update"> </div>
+    </div>
+
+
+    
+
+        <!-- ** BEGIN: Content Table ** //-->
+
+        <table width="100%" border="0" cellpadding="0" cellspacing="0">
+
+            <tr>
+
+                <!-- ** BEGIN: Navigation Column ** //-->
+                <td width="150" id="leftcontent" valign="top">
+                    <!-- Navigation Placeholder //-->
+
+                    
+
+                    <div class="bar"><img src="/images/hr_dots1.gif" alt="" height="3" width="150"></div>
+
+        <!-- begin find JSRs form -->
+        <!-- IMPORTANT! do not convert this form to Struts < html : form > tag.  javascript change of form.action property fails. -->
+        <img src="/images/hd_find-jsrs.gif" alt="Find JSRs" height="18" width="150">
+        <form name="findjsr" action="/en/jsr/summary" method="get" class="pt5" onsubmit="return validate_findjsr()">
+            <input name="id" size="18" class="form" value="Search JSRs" onfocus="nullify_if_equal(this, 'Search JSRs')" type="text">
+	    <a href="javascript:document.findjsr.submit()" onclick="return validate_findjsr()"><img src="/images/button_go.gif" width="21" height="16" border="0" alt="Submit this Search" name="sub_search"></a>
+        </form><br><br>
+
+        <!-- ** Menu Start ** //-->
+
+        <ul id="p7PMnav">
+            <li><a href="/en/jsr/platform">JSRs by Platform</a></li>
+            <li><a href="/en/jsr/tech">JSRs by Technology</a></li>
+            <li><a href="/en/jsr/stage">JSRs by Stage</a></li>
+            <li><a href="/en/jsr/ec">JSRs by Committee</a></li>
+            <li><a href="/en/jsr/all">List of All JSRs</a></li>
+
+            <!--end find JSRs form -->
+            <div style="clear: both;"><img src="/images/spacer.gif" alt="" height="25" width="1"></div>
+
+            <!--begin my JCP -->
+            <img src="/images/hd_my-jcp.gif" alt="My JCP" height="18" width="150">
+            
+
+          <form name="login" method="get" action="/en/user/login" >
+            <input name="Sign-in" type="submit" title="Sign-in" value="Sign-in" />
+          </form>
+
+            <div style="clear:both"><img src="/images/global/spacer.gif" width="1" height="3" alt=""></div>
+            <div class="noNav">
+                <a href="/en/user/register">Register for Site</a>
+            </div>
+
+             <div class="bar"><img src="/images/hr_dots1.gif" alt="" height="3" width="150"></div>
+           <div class="noNav" style="color: #666666; padding: 0;">
+              Use of JCP site is subject to the
+              <a href="/en/home/terms" style="display:inline;padding: 0">JCP Terms of Use</a> and the
+              <a href="http://www.oracle.com/us/legal/privacy/index.html" style="display:inline;padding: 0" href="">Oracle Privacy Policy</a>
+          </div>
+
+            
+
+            <div style="clear:both"><img src="/images/global/spacer.gif" width="1" height="25" alt=""></div>
+
+            <!--begin JCP info -->
+            <img src="/images/hd_jcp-info.gif" alt="JCP Info" height="18" width="150">
+
+            <li><a href="/en/procedures/overview" class="p7PMtrg">About JCP</a>
+                <ul>
+                    <li><a href="/en/procedures/overview">Program Overview</a></li>
+                    <li><a href="/en/procedures/jcp2">JCP Process Document</a></li>
+                    <li><a href="/en/whatsnew/calendar">Calendar</a></li>
+                    <li><a href="/en/participation/members">JCP Members</a></li>
+                    <li><a href="/en/participation/committee">Executive Committee</a></li>
+                    <li><a href="/en/whatsnew/elections">Elections</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/en/participation/overview" class="p7PMtrg">Get Involved</a>
+		<ul>
+                    <li><a href="/en/participation/overview">Overview</a></li>
+                    <li><a href="/en/participation/membership">Becoming a JCP Member</a></li>
+		</ul>
+            </li>
+
+            <li><a href="/en/resources/contents" class="p7PMtrg">Community Resources</a>
+                <ul>
+                    <li><a href="/en/resources/contents">Overview</a></li>
+                    <li><a href="/en/resources/tutorials">Tutorials</a></li>
+                    <li><a href="/en/resources/multimedia">JCP Podcasts</a></li>
+                    <li><a href="/en/resources/guide">Spec Lead Guide</a></li>
+                    <li><a href="/en/resources/tdk">TCK Tool & Info</a></li>
+                    <li><a href="/en/resources/license_reference">License Reference</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/en/press/pmo" class="p7PMtrg">Community News</a>
+                <ul>
+                    <li><a href="/en/press/pmo">News</a></li>
+                    <li><a href="/en/press/news/awards/awards_main">Programs &amp; Awards</a></li>
+                    <li><a href="/en/press/releases">Press Releases</a></li>
+                    <li><a href="/en/press/success">Success Stories</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/en/introduction/faq">FAQ</a></li>
+
+            <li><a href="/en/resources/contacts">Contact Us</a></li>
+
+            <div style="clear: both;"><img src="/images/spacer.gif" alt="" height="25" width="1"></div>
+
+            <!--[if lte IE 6]><style>#p7PMnav a{height:1em;}#p7PMnav li{height:1em;float:left;clear:both;width:100%}</style><![endif]-->
+            <!--[if IE 6]><style>#p7PMnav li{clear:none;}</style><![endif]-->
+            <!--[if IE 7]><style>#p7PMnav a{zoom:100%;}#p7PMnav li{float:left;clear:both;width:100%;}</style><![endif]-->
+        </ul>
+
+        
+
+        <!--begin ad space -->
+        <div class="ads">
+            <a href="http://java.com/java/download/index.jsp?cid=jdp78399" target="_blank"><img style="display: ;" src="/images/ad_banner2.gif" alt="Ad Banner" border="1" height="70" width="150"></a>
+        </div>
+        <!--end ad space -->
+
+<!-- ** Menu End ** //-->
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;<br>
+
+    
+
+                    &nbsp;<br>
+                    <img src="/images/common/trans.gif" alt="" width="1" height="150"><br>
+
+              
+
+
+
+                </td>
+                <!-- ** END: Navigation Column ** //-->
+
+                <!-- ** BEGIN: Gutter Column ** //-->
+		<td width="10" nowrap><img src="/images/common/trans.gif" alt="" width="10" height="1"></td>
+                <!-- ** END: Gutter Column ** //-->
+
+                <!-- ** BEGIN: Content Column ** //-->
+                <td width="100%" valign="top">
+
+    
+<script type="text/javascript">
+
+String.prototype.trim = function() {
+        return this.replace(/^\s+|\s+$/g,"");
+}
+String.prototype.ltrim = function() {
+        return this.replace(/^\s+/,"");
+}
+String.prototype.rtrim = function() {
+        return this.replace(/\s+$/,"");
+}
+
+function validate_search() {
+	if (document.search.id.value == "Search JSRs" || document.search.id.value.trim().length == 0) {
+		alert("Search terms must be entered first");
+		return false;
+	}
+	return true;
+}
+
+function validate_findjsr() {
+	if (document.findjsr.id.value == "Search JSRs" || document.findjsr.id.value.trim().length == 0) {
+		alert("Search terms must be entered first");
+		return false;
+	}
+	return true;
+}
+
+function nullify_if_equal(field, str) {
+	// alert("val=" + field.value);
+	if (field.value == str) {
+		field.value = "";
+	}
+}
+
+</script>
+<!-- ** END: header.jsp ** //-->
+
+
+
+
+
+
+<HTML>
+<HEAD>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=windows-1252">
+<META NAME="Generator" CONTENT="Microsoft Word 97">
+<TITLE>Java 2 Platform, Micro Edition, Connected Device Configuration Specification v0</TITLE>
+</HEAD>
+<BODY LINK="#0000ff" VLINK="#800080">
+
+<H3>Java 2 Platform, Micro Edition, Connected Device Configuration Specification v0.2</H3>
+<I><FONT FACE="Georgia, Times New Roman"><P>Last updated 05/31/2000</P>
+</I></FONT><P>&nbsp;</P>
+<H3>Introduction </H3>
+<P>The Java 2 Platform, Micro Edition, Connected Device Configuration is a J2ME configuration. This configuration is intended to be used by devices requiring a complete implementation of the Java virtual machine, and an API set that may, via the addition of profiles, include the entire Java 2 Platform, Standard Edition API. Typical implementations will use some subset of that API set depending on the profiles supported. This document describes the facilities that the J2ME CDC provides to the J2ME profiles that use it. This specification was developed under the Java Community Process. More information on the Java Community Process is available at <A HREF="http://java.sun.com/jcp">http://java.sun.com/jcp</A>. </P>
+<P>&nbsp;</P>
+<H3>Adherence to the Java Language Specification </H3>
+<P>An implementation of the J2ME-CDC requires full support for the Java programming language as defined in the Java Language Specification which can be found at <A HREF="http://java.sun.com/docs/books/jls/index.html">http://java.sun.com/docs/books/jls/index.html</A>. The specification is also published in book form by Addison-Wesley, ISBN 0-201-63451-1. </P>
+<H3>&nbsp;</H3>
+<H3>Adherence to the Java Virtual Machine Specification </H3>
+<P>An implementation of the J2ME-CDC requires full support for the Java virtual machine as defined in The Java Virtual Machine Specification which can be found at <A HREF="http://java.sun.com/docs/books/vmspec/index.htm">http://java.sun.com/docs/books/vmspec/index.htm</A>l. The specification is also published in book form by Addison-Wesley, ISBN 0-201-43294-3. </P>
+<H3>&nbsp;</H3>
+<H3>Additional Virtual Machine Requirements </H3>
+<P>If an interface for invoking native methods is included in the J2ME-CDC implementation, that interface must be the Java Native Interface version 1.1, as well as the JNI enhancements included in Java 2. The Java Native Interface 1.1 specification and the Java 2 enhancements can be found at <A HREF="http://java.sun.com/products/jdk/1.3/docs/guide/jni/index.html">http://java.sun.com/products/jdk/1.3/docs/guide/jni/index.html. </A></P>
+<P>If a debugging interface is included in the J2ME-CDC implementation, that interface must be the Java Virtual Machine Debugging Interface. The JVMDI specification can be found at <A HREF="http://java.sun.com/products/jdk/1.3/docs/guide/jpda/jvmdi-spec.html">http://java.sun.com/products/jdk/1.3/docs/guide/jpda/jvmdi-spec.html</A>. </P>
+<P>If a profiling interface is included in the J2ME-CDC implementation, that interface must be the Java Virtual Machine Profiling Interface. The JVMPI specification can be found at <A HREF="http://java.sun.com/products/jdk/1.3/docs/guide/jvmpi/index.html">http://java.sun.com/products/jdk/1.3/docs/guide/jvmpi/index.html</A>.</P>
+<H3>&nbsp;</H3>
+<H3>Relationship to the J2SE 1.3 API Specification </H3>
+<P>The J2ME-CDC API is based primarily on the J2SE 1.3 API. Only the APIs described in this specification can exist in an implementation of the CDC. </P>
+<H3>&nbsp;</H3>
+<H3>Relationship to the CLDC Specification</H3>
+<P>The J2ME-CDC API includes all Java language APIs defined in the J2ME-CLDC specification. This includes both java.* packages defined by the CLDC, as well as the javax.microedition package defined in the CLDC. In many instances, APIs that were removed from the J2SE API by the CLDC specification are included in the CDC specification. The complete J2ME-CLDC specification can be found at <A HREF="http://java.sun.com/aboutJava/communityprocess/review/jsr030/index.html">http://java.sun.com/aboutJava/communityprocess/review/jsr030/index.html</A>.</P>
+<FONT FACE="Courier New" SIZE=2>
+<P>&nbsp;</P>
+</FONT><H3>Class Hierarchy</H3>
+<P>The following is a list of classes used in J2ME-CDC.  The details can be seen in the javadoc generated section of this specification.</P>
+
+<FONT FACE="Courier New" SIZE=2><P>  class java.lang.Object</P>
+<P>    class java.util.AbstractCollection (implements java.util.Collection) </P>
+<P>      class java.util.AbstractList (implements java.util.List) </P>
+<P>        class java.util.AbstractSequentialList</P>
+<P>          class java.util.LinkedList (implements java.lang.Cloneable, </P>
+<P>          java.util.List, java.io.Serializable) </P>
+<P>        class java.util.ArrayList (implements java.lang.Cloneable, </P>
+<P>        java.util.List, java.io.Serializable) </P>
+<P>        class java.util.Vector (implements java.lang.Cloneable, java.util.List, </P>
+<P>        java.io.Serializable) </P>
+<P>          class java.util.Stack</P>
+<P>      class java.util.AbstractSet (implements java.util.Set) </P>
+<P>        class java.util.HashSet (implements java.lang.Cloneable, </P>
+<P>        java.io.Serializable, java.util.Set) </P>
+<P>    class java.util.AbstractMap (implements java.util.Map) </P>
+<P>      class java.util.HashMap (implements java.lang.Cloneable, java.util.Map, </P>
+<P>      java.io.Serializable) </P>
+<P>      class java.util.WeakHashMap (implements java.util.Map) </P>
+<P>    class java.security.AccessControlContext</P>
+<P>    class java.security.AccessController</P>
+<P>    class java.lang.reflect.AccessibleObject</P>
+<P>      class java.lang.reflect.Constructor (implements java.lang.reflect.Member) </P>
+<P>      class java.lang.reflect.Field (implements java.lang.reflect.Member) </P>
+<P>      class java.lang.reflect.Method (implements java.lang.reflect.Member) </P>
+<P>    class java.security.AlgorithmParameters</P>
+<P>    class java.security.AlgorithmParametersSpi</P>
+<P>    class java.lang.reflect.Array</P>
+<P>    class java.util.Arrays</P>
+<P>    class java.util.jar.Attributes (implements java.lang.Cloneable, </P>
+<P>    java.util.Map) </P>
+<P>    class java.util.jar.Attributes.Name</P>
+<P>    class java.lang.Boolean (implements java.io.Serializable) </P>
+<P>    class java.util.Calendar (implements java.lang.Cloneable, </P>
+<P>    java.io.Serializable) </P>
+<P>      class java.util.GregorianCalendar</P>
+<P>    class java.security.cert.Certificate (implements java.io.Serializable) </P>
+<P>      class java.security.cert.X509Certificate (implements </P>
+<P>      java.security.cert.X509Extension) </P>
+<P>    class java.security.cert.Certificate.CertificateRep (implements </P>
+<P>    java.io.Serializable) </P>
+<P>    class java.security.cert.CertificateFactory</P>
+<P>    class java.security.cert.CertificateFactorySpi</P>
+<P>    class java.lang.Character (implements java.lang.Comparable, </P>
+<P>    java.io.Serializable) </P>
+<P>    class java.lang.Character.Subset</P>
+<P>      class java.lang.Character.UnicodeBlock</P>
+<P>    class java.lang.Class (implements java.io.Serializable) </P>
+<P>    class java.lang.ClassLoader</P>
+<P>      class java.security.SecureClassLoader</P>
+<P>        class java.net.URLClassLoader</P>
+<P>    class java.security.CodeSource (implements java.io.Serializable) </P>
+<P>    class java.util.Collections</P>
+<P>    class javax.microedition.io.Connector</P>
+<P>    class java.net.ContentHandler</P>
+<P>    class java.util.zip.CRC32 (implements java.util.zip.Checksum) </P>
+<P>    class java.security.cert.CRL</P>
+<P>      class java.security.cert.X509CRL (implements </P>
+<P>    class java.net.DatagramPacket</P>
+<P>    class java.net.DatagramSocket</P>
+<P>    class java.net.DatagramSocketImpl (implements java.net.SocketOptions)</P>
+<P>      java.security.cert.X509Extension) </P>
+<P>    class java.util.Date (implements java.lang.Cloneable, java.lang.Comparable, </P>
+<P>    java.io.Serializable) </P>
+<P>    class java.text.DateFormatSymbols (implements java.lang.Cloneable, </P>
+<P>    java.io.Serializable) </P>
+<P>    class java.text.DecimalFormatSymbols (implements java.lang.Cloneable, </P>
+<P>    java.io.Serializable) </P>
+<P>    class java.util.Dictionary</P>
+<P>      class java.util.Hashtable (implements java.lang.Cloneable, java.util.Map, </P>
+<P>      java.io.Serializable) </P>
+<P>        class java.util.Properties</P>
+<P>          class java.security.Provider</P>
+<P>    class java.security.spec.EncodedKeySpec (implements </P>
+<P>    java.security.spec.KeySpec) </P>
+<P>      class java.security.spec.X509EncodedKeySpec</P>
+<P>    class java.text.FieldPosition</P>
+<P>    class java.io.File (implements java.lang.Comparable, java.io.Serializable) </P>
+<P>    class java.io.FileDescriptor</P>
+<P>    class java.text.Format (implements java.lang.Cloneable, </P>
+<P>    java.io.Serializable) </P>
+<P>      class java.text.DateFormat</P>
+<P>        class java.text.SimpleDateFormat</P>
+<P>      class java.text.MessageFormat</P>
+<P>      class java.text.NumberFormat</P>
+<P>        class java.text.ChoiceFormat</P>
+<P>        class java.text.DecimalFormat</P>
+<P>    class java.security.Identity (implements java.security.Principal, </P>
+<P>    java.io.Serializable) </P>
+<P>      class java.security.IdentityScope</P>
+<P>      class java.security.Signer</P>
+<P>    class java.net.InetAddress (implements java.io.Serializable) </P>
+<P>    class java.util.zip.Inflater</P>
+<P>    class java.io.InputStream</P>
+<P>      class java.io.ByteArrayInputStream</P>
+<P>      class java.io.FileInputStream</P>
+<P>      class java.io.FilterInputStream</P>
+<P>        class java.io.BufferedInputStream</P>
+<P>        class java.io.DataInputStream (implements java.io.DataInput) </P>
+<P>        class java.util.zip.InflaterInputStream</P>
+<P>          class java.util.zip.ZipInputStream (implements </P>
+<P>          java.util.zip.ZipConstants) </P>
+<P>            class java.util.jar.JarInputStream</P>
+<P>        class java.io.PushbackInputStream</P>
+<P>      class java.io.ObjectInputStream (implements java.io.ObjectInput, </P>
+<P>      java.io.ObjectStreamConstants) </P>
+<P>    class java.security.KeyFactory</P>
+<P>    class java.security.KeyFactorySpi</P>
+<P>    class java.security.KeyPair (implements java.io.Serializable) </P>
+<P>    class java.security.KeyStore</P>
+<P>    class java.security.KeyStoreSpi</P>
+<P>    class java.util.Locale (implements java.lang.Cloneable, </P>
+<P>    java.io.Serializable) </P>
+<P>    class java.text.resources.LocaleData</P>
+<P>    class java.util.jar.Manifest (implements java.lang.Cloneable) </P>
+<P>    class java.lang.Math</P>
+<P>    class java.security.MessageDigestSpi</P>
+<P>      class java.security.MessageDigest</P>
+<P>    class java.lang.reflect.Modifier</P>
+<P>    class java.lang.Number (implements java.io.Serializable) </P>
+<P>      class java.math.BigInteger (implements java.lang.Comparable) </P>
+<P>      class java.lang.Byte (implements java.lang.Comparable) </P>
+<P>      class java.lang.Double (implements java.lang.Comparable) </P>
+<P>      class java.lang.Float (implements java.lang.Comparable) </P>
+<P>      class java.lang.Integer (implements java.lang.Comparable) </P>
+<P>      class java.lang.Long (implements java.lang.Comparable) </P>
+<P>      class java.lang.Short (implements java.lang.Comparable) </P>
+<P>    class java.io.ObjectInputStream.GetField</P>
+<P>    class java.io.ObjectOutputStream.PutField</P>
+<P>    class java.io.ObjectStreamClass (implements java.io.Serializable) </P>
+<P>    class java.io.ObjectStreamField (implements java.lang.Comparable) </P>
+<P>    class java.io.OutputStream</P>
+<P>      class java.io.ByteArrayOutputStream</P>
+<P>      class java.io.FileOutputStream</P>
+<P>      class java.io.FilterOutputStream</P>
+<P>        class java.io.BufferedOutputStream</P>
+<P>        class java.io.DataOutputStream (implements java.io.DataOutput) </P>
+<P>        class java.security.DigestOutputStream</P>
+<P>        class java.io.PrintStream</P>
+<P>      class java.io.ObjectOutputStream (implements java.io.ObjectOutput, </P>
+<P>      java.io.ObjectStreamConstants) </P>
+<P>    class java.lang.Package</P>
+<P>    class java.text.ParsePosition</P>
+<P>    class java.security.Permission (implements java.security.Guard, </P>
+<P>    java.io.Serializable) </P>
+<P>      class java.security.AllPermission</P>
+<P>      class java.security.BasicPermission (implements java.io.Serializable) </P>
+<P>        class java.net.NetPermission</P>
+<P>        class java.util.PropertyPermission</P>
+<P>        class java.lang.reflect.ReflectPermission</P>
+<P>        class java.lang.RuntimePermission</P>
+<P>        class java.security.SecurityPermission</P>
+<P>        class java.io.SerializablePermission</P>
+<P>      class java.io.FilePermission (implements java.io.Serializable) </P>
+<P>      class java.net.SocketPermission (implements java.io.Serializable) </P>
+<P>      class java.security.UnresolvedPermission (implements java.io.Serializable) </P>
+
+<P>    class java.security.PermissionCollection (implements java.io.Serializable) </P>
+<P>      class java.security.Permissions (implements java.io.Serializable) </P>
+<P>    class java.security.Policy</P>
+<P>    class java.lang.Process</P>
+<P>    class java.security.ProtectionDomain</P>
+<P>    class java.lang.reflect.Proxy (implements java.io.Serializable) </P>
+<P>    class java.util.Random (implements java.io.Serializable) </P>
+<P>      class java.security.SecureRandom</P>
+<P>    class java.io.Reader</P>
+<P>      class java.io.BufferedReader</P>
+<P>      class java.io.InputStreamReader</P>
+<P>        class java.io.FileReader</P>
+<P>      class java.io.StringReader</P>
+<P>    class java.lang.ref.Reference</P>
+<P>      class java.lang.ref.PhantomReference</P>
+<P>      class java.lang.ref.SoftReference</P>
+<P>      class java.lang.ref.WeakReference</P>
+<P>    class java.lang.ref.ReferenceQueue</P>
+<P>    class java.util.ResourceBundle</P>
+<P>      class java.util.PropertyResourceBundle</P>
+<P>    class java.lang.Runtime</P>
+<P>    class java.security.SecureRandomSpi (implements java.io.Serializable) </P>
+<P>    class java.security.Security</P>
+<P>    class java.lang.SecurityManager</P>
+<P>    class java.net.ServerSocket</P>
+<P>    class java.security.SignatureSpi</P>
+<P>      class java.security.Signature</P>
+<P>    class java.net.Socket</P>
+<P>    class java.net.SocketImpl (implements java.net.SocketOptions) </P>
+<P>    class java.io.StreamTokenizer</P>
+<P>    class java.lang.StrictMath</P>
+<P>    class java.lang.String (implements java.lang.Comparable, </P>
+<P>    java.io.Serializable) </P>
+<P>    class java.lang.StringBuffer (implements java.io.Serializable) </P>
+<P>    class java.util.StringTokenizer (implements java.util.Enumeration) </P>
+<P>    class java.lang.System</P>
+<P>    class java.lang.Thread (implements java.lang.Runnable) </P>
+<P>    class java.lang.ThreadGroup</P>
+<P>    class java.lang.ThreadLocal</P>
+<P>      class java.lang.InheritableThreadLocal</P>
+<P>    class java.lang.Throwable (implements java.io.Serializable) </P>
+<P>      class java.lang.Error</P>
+<P>        class java.lang.LinkageError</P>
+<P>          class java.lang.ClassCircularityError</P>
+<P>          class java.lang.ClassFormatError</P>
+<P>            class java.lang.UnsupportedClassVersionError</P>
+<P>          class java.lang.ExceptionInInitializerError</P>
+<P>          class java.lang.IncompatibleClassChangeError</P>
+<P>            class java.lang.AbstractMethodError</P>
+<P>            class java.lang.IllegalAccessError</P>
+<P>            class java.lang.InstantiationError</P>
+<P>            class java.lang.NoSuchFieldError</P>
+<P>            class java.lang.NoSuchMethodError</P>
+<P>          class java.lang.NoClassDefFoundError</P>
+<P>          class java.lang.UnsatisfiedLinkError</P>
+<P>          class java.lang.VerifyError</P>
+<P>        class java.lang.ThreadDeath</P>
+<P>        class java.lang.VirtualMachineError</P>
+<P>          class java.lang.InternalError</P>
+<P>          class java.lang.OutOfMemoryError</P>
+<P>          class java.lang.StackOverflowError</P>
+<P>      class java.lang.Exception</P>
+<P>        class java.lang.ClassNotFoundException</P>
+<P>        class java.lang.CloneNotSupportedException</P>
+<P>        class java.util.zip.DataFormatException</P>
+<P>        class java.security.GeneralSecurityException</P>
+<P>          class java.security.cert.CertificateException</P>
+<P>            class java.security.cert.CertificateEncodingException</P>
+<P>            class java.security.cert.CertificateExpiredException</P>
+<P>            class java.security.cert.CertificateNotYetValidException</P>
+<P>            class java.security.cert.CertificateParsingException</P>
+<P>          class java.security.cert.CRLException</P>
+<P>          class java.security.DigestException</P>
+<P>          class java.security.InvalidAlgorithmParameterException</P>
+<P>          class java.security.spec.InvalidKeySpecException</P>
+<P>          class java.security.spec.InvalidParameterSpecException</P>
+<P>          class java.security.KeyException</P>
+<P>            class java.security.InvalidKeyException</P>
+<P>            class java.security.KeyManagementException</P>
+<P>          class java.security.KeyStoreException</P>
+<P>          class java.security.NoSuchAlgorithmException</P>
+<P>          class java.security.NoSuchProviderException</P>
+<P>          class java.security.SignatureException</P>
+<P>          class java.security.UnrecoverableKeyException</P>
+<P>        class java.lang.IllegalAccessException</P>
+<P>        class java.lang.InstantiationException</P>
+<P>        class java.lang.InterruptedException</P>
+<P>        class java.lang.reflect.InvocationTargetException</P>
+<P>        class java.io.IOException</P>
+<P>          class java.io.CharConversionException</P>
+<P>          class javax.microedition.io.ConnectionNotFoundException</P>
+<P>          class java.io.EOFException</P>
+<P>          class java.io.FileNotFoundException</P>
+<P>          class java.io.InterruptedIOException</P>
+<P>          class java.net.MalformedURLException</P>
+<P>          class java.io.ObjectStreamException</P>
+<P>            class java.io.InvalidClassException</P>
+<P>            class java.io.InvalidObjectException</P>
+<P>            class java.io.NotActiveException</P>
+<P>            class java.io.NotSerializableException</P>
+<P>            class java.io.OptionalDataException</P>
+<P>            class java.io.StreamCorruptedException</P>
+<P>            class java.io.WriteAbortedException</P>
+<P>          class java.net.ProtocolException</P>
+<P>          class java.net.SocketException</P>
+<P>            class java.net.ConnectException</P>
+<P>          class java.io.SyncFailedException</P>
+<P>          class java.net.UnknownHostException</P>
+<P>          class java.net.UnknownServiceException</P>
+<P>          class java.io.UnsupportedEncodingException</P>
+<P>          class java.io.UTFDataFormatException</P>
+<P>          class java.util.zip.ZipException</P>
+<P>            class java.util.jar.JarException</P>
+<P>        class java.lang.NoSuchFieldException</P>
+<P>        class java.lang.NoSuchMethodException</P>
+<P>        class java.text.ParseException</P>
+<P>        class java.security.PrivilegedActionException</P>
+<P>        class java.lang.RuntimeException</P>
+<P>          class java.lang.ArithmeticException</P>
+<P>          class java.lang.ArrayStoreException</P>
+<P>          class java.lang.ClassCastException</P>
+<P>          class java.util.ConcurrentModificationException</P>
+<P>          class java.util.EmptyStackException</P>
+<P>          class java.lang.IllegalArgumentException</P>
+<P>            class java.lang.IllegalThreadStateException</P>
+<P>            class java.security.InvalidParameterException</P>
+<P>            class java.lang.NumberFormatException</P>
+<P>          class java.lang.IllegalMonitorStateException</P>
+<P>          class java.lang.IllegalStateException</P>
+<P>          class java.lang.IndexOutOfBoundsException</P>
+<P>            class java.lang.ArrayIndexOutOfBoundsException</P>
+<P>            class java.lang.StringIndexOutOfBoundsException</P>
+<P>          class java.util.MissingResourceException</P>
+<P>          class java.lang.NegativeArraySizeException</P>
+<P>          class java.util.NoSuchElementException</P>
+<P>          class java.lang.NullPointerException</P>
+<P>          class java.lang.SecurityException</P>
+<P>            class java.security.AccessControlException</P>
+<P>          class java.lang.UnsupportedOperationException</P>
+<P>    class java.util.TimeZone (implements java.lang.Cloneable, </P>
+<P>    java.io.Serializable) </P>
+<P>      class java.util.SimpleTimeZone</P>
+<P>    class java.net.URL (implements java.io.Serializable) </P>
+<P>    class java.net.URLConnection</P>
+<P>      class java.net.HttpURLConnection</P>
+<P>      class java.net.JarURLConnection</P>
+<P>    class java.net.URLStreamHandler</P>
+<P>    class java.lang.Void</P>
+<P>    class java.io.Writer</P>
+<P>      class java.io.BufferedWriter</P>
+<P>      class java.io.OutputStreamWriter</P>
+<P>        class java.io.FileWriter</P>
+<P>      class java.io.PrintWriter</P>
+<P>    class java.security.cert.X509CRLEntry (implements </P>
+<P>    java.security.cert.X509Extension) </P>
+<P>    class java.util.zip.ZipEntry (implements java.lang.Cloneable, </P>
+<P>    java.util.zip.ZipConstants) </P>
+<P>      class java.util.jar.JarEntry</P>
+<P>    class java.util.zip.ZipFile (implements java.util.zip.ZipConstants) </P>
+<P>      class java.util.jar.JarFile</P>
+<P>Interface Hierarchy </P>
+<P>  interface java.security.spec.AlgorithmParameterSpec</P>
+<P>  interface java.security.Certificate</P>
+<P>  interface java.util.zip.Checksum</P>
+<P>  interface java.lang.Cloneable</P>
+<P>  interface java.util.Collection</P>
+<P>    interface java.util.List</P>
+<P>    interface java.util.Set</P>
+<P>      interface java.util.SortedSet</P>
+<P>  interface java.lang.Comparable</P>
+<P>  interface java.util.Comparator</P>
+<P>  interface javax.microedition.io.Connection</P>
+<P>    interface javax.microedition.io.DatagramConnection</P>
+<P>    interface javax.microedition.io.InputConnection</P>
+<P>      interface javax.microedition.io.RandomAccessConnection(also extends </P>
+<P>      java.io.DataInput, java.io.DataOutput, </P>
+<P>      javax.microedition.io.OutputConnection) </P>
+<P>        interface javax.microedition.io.DirectoryConnection</P>
+<P>      interface javax.microedition.io.StreamConnection(also extends </P>
+<P>      javax.microedition.io.OutputConnection) </P>
+<P>        interface javax.microedition.io.ContentConnection</P>
+<P>    interface javax.microedition.io.OutputConnection</P>
+<P>      interface javax.microedition.io.RandomAccessConnection(also extends </P>
+<P>      java.io.DataInput, java.io.DataOutput, </P>
+<P>      javax.microedition.io.InputConnection) </P>
+<P>        interface javax.microedition.io.DirectoryConnection</P>
+<P>      interface javax.microedition.io.StreamConnection(also extends </P>
+<P>      javax.microedition.io.InputConnection) </P>
+<P>        interface javax.microedition.io.ContentConnection</P>
+<P>    interface javax.microedition.io.StreamConnectionNotifier</P>
+<P>  interface javax.microedition.io.ConnectionBaseInterface</P>
+<P>  interface java.net.ContentHandlerFactory</P>
+<P>  interface java.net.DatagramSocketImplFactory</P>
+<P>  interface java.io.DataInput</P>
+<P>    interface javax.microedition.io.Datagram(also extends java.io.DataOutput) </P>
+<P>    interface java.io.ObjectInput</P>
+<P>    interface javax.microedition.io.RandomAccessConnection(also extends </P>
+<P>    java.io.DataOutput, javax.microedition.io.InputConnection, </P>
+<P>    javax.microedition.io.OutputConnection) </P>
+<P>      interface javax.microedition.io.DirectoryConnection</P>
+<P>  interface java.io.DataOutput</P>
+<P>    interface javax.microedition.io.Datagram(also extends java.io.DataInput) </P>
+<P>    interface java.io.ObjectOutput</P>
+<P>    interface javax.microedition.io.RandomAccessConnection(also extends </P>
+<P>    java.io.DataInput, javax.microedition.io.InputConnection, </P>
+<P>    javax.microedition.io.OutputConnection) </P>
+<P>      interface javax.microedition.io.DirectoryConnection</P>
+<P>  interface java.security.DomainCombiner</P>
+<P>  interface java.util.Enumeration</P>
+<P>  interface java.io.FileFilter</P>
+<P>  interface java.io.FilenameFilter</P>
+<P>  interface java.net.FileNameMap</P>
+<P>  interface java.security.Guard</P>
+<P>  interface java.lang.reflect.InvocationHandler</P>
+<P>  interface java.util.Iterator</P>
+<P>    interface java.util.ListIterator</P>
+<P>  interface java.security.spec.KeySpec</P>
+<P>  interface java.util.Map</P>
+<P>    interface java.util.SortedMap</P>
+<P>  interface java.util.Map.Entry</P>
+<P>  interface java.lang.reflect.Member</P>
+<P>  interface java.io.ObjectInputValidation</P>
+<P>  interface java.io.ObjectStreamConstants</P>
+<P>  interface java.security.Principal</P>
+<P>  interface java.security.PrivilegedAction</P>
+<P>  interface java.security.PrivilegedExceptionAction</P>
+<P>  interface java.lang.Runnable</P>
+<P>  interface java.io.Serializable</P>
+<P>    interface java.io.Externalizable</P>
+<P>    interface java.security.Key</P>
+<P>      interface java.security.PrivateKey</P>
+<P>      interface java.security.PublicKey</P>
+<P>  interface java.net.SocketImplFactory</P>
+<P>  interface java.net.SocketOptions</P>
+<P>  interface java.net.URLStreamHandlerFactory</P>
+<P>  interface java.security.cert.X509Extension</P>
+
+<P>&nbsp;</P>
+</FONT><P>Java is a trademark or registered trademark of Sun Microsystems, Inc. in the US and other countries.</P>
+
+<P>Copyright 1993-2000 Sun Microsystemms, Inc. 901 San Antonio Road Palo, Alto, California, 94303, U.S.A All Rights Reserved. </P></BODY>
+</HTML>
+
+
+
+<!-- ** BEGIN: footer.jsp ** //-->
+
+
+
+
+
+
+
+
+</td>
+</tr>
+</table>
+
+<!-- ** END: Content Table ** //-->
+
+<!-- ** BEGIN: Footer Table ** //-->
+
+<div id="footer" style="clear: both;">
+    <div class="footleft">
+        <a href="/en/resources/contacts">Contact Us</a>
+    </div>
+	
+    <div class="botbar"><img src="/images/spacer.gif" alt="" height="23" width="1"></div>
+
+    <div class="footleft2">
+         &copy; 2019, Oracle Corporation and/or its affiliates. 
+        <a href="/en/home/terms">Terms of Use</a>. <a href="http://www.oracle.com/us/legal/privacy/index.html">Privacy Policy</a>. <a href="http://www.oracle.com/us/legal/third-party-trademarks/third-party-trademarks-078568.html">Trademarks</a>
+    </div>
+
+    <div class="footright">
+        <img src="/images/common/logo_oracle_footer.gif" alt="Oracle Corporation" height="22" width="91">
+    </div>
+
+    <div style="clear: both;"><img src="/images/spacer.gif" alt="" height="30" width="1"></div>
+</div>
+
+<!-- ** END: Footer Table ** //-->
+
+
+
+<!-- ** Menu Start ** //-->
+
+
+
+</body>
+</html>
+<!-- ** END: footer.jsp ** //-->
+

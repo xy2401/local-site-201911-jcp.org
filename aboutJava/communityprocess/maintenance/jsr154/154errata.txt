@@ -1,0 +1,242 @@
+----------------------------------------------------------------------
+This errata is to be applied to Java Servlet Specification
+version 2.4.
+
+CHANGES IN THE PROPOSED ERRATA
+
+  Based on the comment we received, we changed the following proposed
+  pattern facet in mime-typeType
+
+    "[^\p{Cc}^\s^\(^\)<>@;:^\[^\]?=]+/[^\p{Cc}^\s^\(^\)<>@;:^\[^\]?=]+"
+
+  to
+
+    "[^\p{Cc}^\s]+/[^\p{Cc}^\s]+"
+
+  REASON: Character specified explicitly(>,<,@,;,:,[,],?,=) are not
+          applied to type/subtype components. Also, specifying "<"
+          or ">" in the xml instance is invalid.
+
+
+1. Bug fix in the XML Schema for Deployment Descriptor
+
+   SRV.13.3, Page 124
+
+   The current restriction pattern in complexType definition of
+   "mime-typeType" is not compliant to RFC2045 and some mime types
+   in web.xml will cause a validation error and we'd like to change
+   it to:
+
+   Replace:
+     <xsd:complexType name="mime-typeType">
+     <xsd:annotation>
+       <xsd:documentation>
+
+         The mime-typeType is used to indicate a defined mime type.
+
+         Example:
+         "text/plain"
+
+         Used in: mime-mapping
+
+       </xsd:documentation>
+     </xsd:annotation>
+
+     <xsd:simpleContent>
+       <xsd:restriction base="j2ee:string">
+         <xsd:pattern value="[\p{L}\-\p{Nd}]+/[\p{L}\-\p{Nd}\.]+"/>
+       </xsd:restriction>
+     </xsd:simpleContent>
+   </xsd:complexType>
+
+   with:
+   <xsd:complexType name="mime-typeType">
+     <xsd:annotation>
+       <xsd:documentation>
+
+         The mime-typeType is used to indicate a defined mime type.
+
+         Example:
+         "text/plain"
+
+         Used in: mime-mapping
+
+       </xsd:documentation>
+     </xsd:annotation>
+
+     <xsd:simpleContent>
+       <xsd:restriction base="j2ee:string">
+         <xsd:pattern value="[^\p{Cc}^\s]+/[^\p{Cc}^\s]+"/>
+       </xsd:restriction>
+     </xsd:simpleContent>
+   </xsd:complexType>
+
+2. Fix typos in HttpSession.java
+
+   Replace:
+
+     * @exeption IllegalStateException if this method is called on an
+     *                                 invalidated session
+
+   in javadoc of getId() and getLastAccessedTime()
+   With:
+
+     * @exception IllegalStateException if this method is called on an
+     *                                  invalidated session
+
+   This fix causes the following addition to HttpSession.getId() and
+   HttpSession.getLastAccessedTime() methods. Since these two methods are
+   already implemented in all containers to throw this exception and the
+   spec clearly intends to do so, this is not changing the spec.
+
+   SRV.15.1.7.1 Page 267, 268
+
+     Throws:
+     IllegalStateException - if this method is called on an invalidated
+                             session
+
+3. Fix other typos
+
+   SRV.1.6.2, page 7 and SRV.1.6.2, page 22
+
+     Replace:
+       "getLocaPort"
+     With:
+       "getLocalPort"
+
+   SRV.4.8, page 41 1st paragraph
+
+     Replace:
+       "... header must interpreted..."
+     With:
+       "... header must be interpreted..."
+
+   SRV.5.1, page 44 last paragraph
+     Replace:
+       "If this is the first data is sent to..."
+     With:
+       "If this is the first data that is sent to..."
+
+   SRV.9.5, page 69 1st paragraph
+     Replace:
+       "... defining a context path could cause..."
+     With:
+       "... defining a context path that could cause..."
+
+   SRV.9.9.1, page 73 1st paragraph
+     Replace:
+       "...when errors occur. other resources..."
+     With:
+       "...when errors occur, other resources..."
+
+   SRV.9.9.2, page 74 4th paragraph
+     Replace:
+       "The closest match in this class heirarchy wins."
+     With:
+       "The closest match in this class hierarchy wins."
+
+   SRV.9.9.2, page 74 5th paragraph
+     Replace:
+       "class-heirarchy"
+     With:
+       "class-hierarchy"
+
+   SRV.10.2.1 page 80 Table SRV.10-1
+
+     Replace:
+       javax.servlet.HttpSessionAttributeListener
+       javax.servlet.HttpSessionActivationListener
+       javax.servlet.HttpSessionBindingListener
+
+     With:
+       javax.servlet.http.HttpSessionAttributeListener
+       javax.servlet.http.HttpSessionActivationListener
+       javax.servlet.http.HttpSessionBindingListener
+
+   SRV.10.3.1, page 81
+
+     Replace:
+
+       "The Developer of the Web application provides listener classes
+       implementing one or more of the listener classes in the
+       javax.servlet API."
+
+     With:
+
+       "The Developer of the Web application provides listener classes
+       implementing one or more of the listener interfaces in the
+       javax.servlet API."
+
+   SRV.12.3, page 91 third paragraph
+
+     Replace:
+
+       A security-role element should contain a role-link sub-element
+       whose value is the name of the security role that the user may be
+mapped
+       into.
+
+     With:
+
+       A security-role-ref element should contain a role-link sub-element
+       whose value is the name of the security role that the user may be
+mapped
+       into.
+
+   SRV.10.4, page 82 second paragraph
+
+     Replace:
+       javax.servlet.HttpSessionListener
+
+     With:
+       javax.servlet.http.HttpSessionListener
+
+   SRV.12.7, page 96
+
+     Replace:
+
+       The security role name must one of the
+       security role names defined for the web application.
+
+     With:
+
+       The security role name must be one of the
+       security role names defined for the web application.
+
+   SRV.12.8.1, page 98 last paragraph
+     Replace:
+       "...combine with other user-data-constraints"
+     With:
+       "...combine with other user-data-constraint"
+
+   SRV.13.1.1, page105 3rd paragraph
+     Replace:
+       "...for the endpont implementation component..."
+     With:
+       "...for the endpoint implementation component..."
+
+   SRV.13.3, page 109 first documentation element on the page
+     Replace:
+       "... must concatinate..."
+     With:
+       "... must concatenate..."
+
+   SRV.13.3, page 109 first documentation element on the page
+     Replace:
+       "The multiple occurance..."
+     With:
+       "The multiple occurence..."
+
+   SRV.13.4, page 135 1st paragraph
+     Replace:
+       "See Deployment Descroptor Schema..."
+     With:
+       "See Deployment Descriptor Schema..."
+
+   SRV.13.4, page 143 17. security-constraint Element, line 3
+     Replace:
+       "... indetifies a subset..."
+     With:
+       "... identifies a subset..."
+-------------------------------------------------------
+

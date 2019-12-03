@@ -1,0 +1,501 @@
+
+<!-- ** BEGIN: header.jsp ** //-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3c.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+<head>
+    
+
+   
+    <link href="/includes/css/menu.css" rel="stylesheet" type="text/css"></link>
+    <link href="/includes/css/style.css" rel="stylesheet" type="text/css"></link>
+    <!--[if lt IE 6]><link href="/includes/css/style5.css" rel="stylesheet" type="text/css" ></link><![endif]-->
+    <!--[if gte IE 5]><link href="/includes/css/style6.css" rel="stylesheet" type="text/css" ></link><![endif]-->
+    <link href="/includes/css/tabs.css"  rel="stylesheet" type="text/css"></link>
+
+    <script type="text/javascript" src="/includes/scripts/tabs.js"></script>
+    <script type="text/javascript" src="/includes/scripts/menu.js"></script>
+   
+
+    
+
+    
+        <title>The Java Community Process(SM) Program - communityprocess - maintenance</title>
+    
+
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+
+
+<body onload="P7_initPM(0,1,0,0,-1)">
+
+    <a name="top"></a>
+
+    <div id="header">
+	<div id="logo">
+		<a href="/en/home/index"><img src="/images/spacer.gif" alt="Java Community Process" height="81" width="151"></a>
+	</div>
+	<div id="tools">
+		<div class="search">
+			<form name="search" action="/en/jsr/summary" method="get" onsubmit="return validate_search()">
+				<input name="id" value="Search JSRs" size="16" class="form" onfocus="nullify_if_equal(this, 'Search JSRs')" type="text">
+				<a href="javascript:document.search.submit()" onclick="return validate_search()"><img src="/images/button_go.gif" width="21" height="16" border="0" alt="Submit this Search" name="sub_search"></a>
+			</form>
+		</div>
+		<div class="tools">
+			<a href="/en/press/pressroom">Press Room</a> &nbsp;|&nbsp;
+			<a href="http://java.com/java/download/index.jsp?cid=jdp78399">Get Java Here</a> &nbsp;|&nbsp;
+			<!-- <a href="javascript:void(0)">Print Format</a> &nbsp;|&nbsp;&nbsp; -->
+		</div>
+
+	</div>
+	<div style="clear: right;"></div>
+
+        
+
+	<div class="topbar"><img src="/images/spacer.gif" alt="" height="3" width="154"></div>
+	<div id="update"> </div>
+    </div>
+
+
+    
+
+        <!-- ** BEGIN: Content Table ** //-->
+
+        <table width="100%" border="0" cellpadding="0" cellspacing="0">
+
+            <tr>
+
+                <!-- ** BEGIN: Navigation Column ** //-->
+                <td width="150" id="leftcontent" valign="top">
+                    <!-- Navigation Placeholder //-->
+
+                    
+
+                    <div class="bar"><img src="/images/hr_dots1.gif" alt="" height="3" width="150"></div>
+
+        <!-- begin find JSRs form -->
+        <!-- IMPORTANT! do not convert this form to Struts < html : form > tag.  javascript change of form.action property fails. -->
+        <img src="/images/hd_find-jsrs.gif" alt="Find JSRs" height="18" width="150">
+        <form name="findjsr" action="/en/jsr/summary" method="get" class="pt5" onsubmit="return validate_findjsr()">
+            <input name="id" size="18" class="form" value="Search JSRs" onfocus="nullify_if_equal(this, 'Search JSRs')" type="text">
+	    <a href="javascript:document.findjsr.submit()" onclick="return validate_findjsr()"><img src="/images/button_go.gif" width="21" height="16" border="0" alt="Submit this Search" name="sub_search"></a>
+        </form><br><br>
+
+        <!-- ** Menu Start ** //-->
+
+        <ul id="p7PMnav">
+            <li><a href="/en/jsr/platform">JSRs by Platform</a></li>
+            <li><a href="/en/jsr/tech">JSRs by Technology</a></li>
+            <li><a href="/en/jsr/stage">JSRs by Stage</a></li>
+            <li><a href="/en/jsr/ec">JSRs by Committee</a></li>
+            <li><a href="/en/jsr/all">List of All JSRs</a></li>
+
+            <!--end find JSRs form -->
+            <div style="clear: both;"><img src="/images/spacer.gif" alt="" height="25" width="1"></div>
+
+            <!--begin my JCP -->
+            <img src="/images/hd_my-jcp.gif" alt="My JCP" height="18" width="150">
+            
+
+          <form name="login" method="get" action="/en/user/login" >
+            <input name="Sign-in" type="submit" title="Sign-in" value="Sign-in" />
+          </form>
+
+            <div style="clear:both"><img src="/images/global/spacer.gif" width="1" height="3" alt=""></div>
+            <div class="noNav">
+                <a href="/en/user/register">Register for Site</a>
+            </div>
+
+             <div class="bar"><img src="/images/hr_dots1.gif" alt="" height="3" width="150"></div>
+           <div class="noNav" style="color: #666666; padding: 0;">
+              Use of JCP site is subject to the
+              <a href="/en/home/terms" style="display:inline;padding: 0">JCP Terms of Use</a> and the
+              <a href="http://www.oracle.com/us/legal/privacy/index.html" style="display:inline;padding: 0" href="">Oracle Privacy Policy</a>
+          </div>
+
+            
+
+            <div style="clear:both"><img src="/images/global/spacer.gif" width="1" height="25" alt=""></div>
+
+            <!--begin JCP info -->
+            <img src="/images/hd_jcp-info.gif" alt="JCP Info" height="18" width="150">
+
+            <li><a href="/en/procedures/overview" class="p7PMtrg">About JCP</a>
+                <ul>
+                    <li><a href="/en/procedures/overview">Program Overview</a></li>
+                    <li><a href="/en/procedures/jcp2">JCP Process Document</a></li>
+                    <li><a href="/en/whatsnew/calendar">Calendar</a></li>
+                    <li><a href="/en/participation/members">JCP Members</a></li>
+                    <li><a href="/en/participation/committee">Executive Committee</a></li>
+                    <li><a href="/en/whatsnew/elections">Elections</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/en/participation/overview" class="p7PMtrg">Get Involved</a>
+		<ul>
+                    <li><a href="/en/participation/overview">Overview</a></li>
+                    <li><a href="/en/participation/membership">Becoming a JCP Member</a></li>
+		</ul>
+            </li>
+
+            <li><a href="/en/resources/contents" class="p7PMtrg">Community Resources</a>
+                <ul>
+                    <li><a href="/en/resources/contents">Overview</a></li>
+                    <li><a href="/en/resources/tutorials">Tutorials</a></li>
+                    <li><a href="/en/resources/multimedia">JCP Podcasts</a></li>
+                    <li><a href="/en/resources/guide">Spec Lead Guide</a></li>
+                    <li><a href="/en/resources/tdk">TCK Tool & Info</a></li>
+                    <li><a href="/en/resources/license_reference">License Reference</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/en/press/pmo" class="p7PMtrg">Community News</a>
+                <ul>
+                    <li><a href="/en/press/pmo">News</a></li>
+                    <li><a href="/en/press/news/awards/awards_main">Programs &amp; Awards</a></li>
+                    <li><a href="/en/press/releases">Press Releases</a></li>
+                    <li><a href="/en/press/success">Success Stories</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/en/introduction/faq">FAQ</a></li>
+
+            <li><a href="/en/resources/contacts">Contact Us</a></li>
+
+            <div style="clear: both;"><img src="/images/spacer.gif" alt="" height="25" width="1"></div>
+
+            <!--[if lte IE 6]><style>#p7PMnav a{height:1em;}#p7PMnav li{height:1em;float:left;clear:both;width:100%}</style><![endif]-->
+            <!--[if IE 6]><style>#p7PMnav li{clear:none;}</style><![endif]-->
+            <!--[if IE 7]><style>#p7PMnav a{zoom:100%;}#p7PMnav li{float:left;clear:both;width:100%;}</style><![endif]-->
+        </ul>
+
+        
+
+        <!--begin ad space -->
+        <div class="ads">
+            <a href="http://java.com/java/download/index.jsp?cid=jdp78399" target="_blank"><img style="display: ;" src="/images/ad_banner2.gif" alt="Ad Banner" border="1" height="70" width="150"></a>
+        </div>
+        <!--end ad space -->
+
+<!-- ** Menu End ** //-->
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;<br>
+
+    
+
+                    &nbsp;<br>
+                    <img src="/images/common/trans.gif" alt="" width="1" height="150"><br>
+
+              
+
+
+
+                </td>
+                <!-- ** END: Navigation Column ** //-->
+
+                <!-- ** BEGIN: Gutter Column ** //-->
+		<td width="10" nowrap><img src="/images/common/trans.gif" alt="" width="10" height="1"></td>
+                <!-- ** END: Gutter Column ** //-->
+
+                <!-- ** BEGIN: Content Column ** //-->
+                <td width="100%" valign="top">
+
+    
+<script type="text/javascript">
+
+String.prototype.trim = function() {
+        return this.replace(/^\s+|\s+$/g,"");
+}
+String.prototype.ltrim = function() {
+        return this.replace(/^\s+/,"");
+}
+String.prototype.rtrim = function() {
+        return this.replace(/\s+$/,"");
+}
+
+function validate_search() {
+	if (document.search.id.value == "Search JSRs" || document.search.id.value.trim().length == 0) {
+		alert("Search terms must be entered first");
+		return false;
+	}
+	return true;
+}
+
+function validate_findjsr() {
+	if (document.findjsr.id.value == "Search JSRs" || document.findjsr.id.value.trim().length == 0) {
+		alert("Search terms must be entered first");
+		return false;
+	}
+	return true;
+}
+
+function nullify_if_equal(field, str) {
+	// alert("val=" + field.value);
+	if (field.value == str) {
+		field.value = "";
+	}
+}
+
+</script>
+<!-- ** END: header.jsp ** //-->
+
+
+
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html><head>
+<meta content="text/html; charset=ISO-8859-1" http-equiv="content-type"><title>Change_log</title>
+
+</head><body>The following changes,&nbsp;previously described in MUG document #204, are proposed for the Java TV API 1.1.1 specification. <br><br>
+<br>
+<span style="font-weight: bold;">javax.media.Manager</span>
+:
+<dl>
+<dd>In section &#8220;Creating Players and DataSources,&#8221; following
+the bullet &#8220;Attach the DataSource&#8230;&#8221;, add the following text:<br>
+<span style="font-style: italic;">It is possible to
+create multiple Players for the same scarce resource (such as a
+hardware video decoder).&nbsp; However, doing so may affect the
+state of other Players which depend on that resource.<br><br>
+</span></dd>
+</dl>
+<dl>
+<dt><span style="font-weight: bold;">javax.tv.service.navigation.LocatorFilter.accept(Service)</span>
+:</dt>
+</dl>
+<ol>
+<li>Add the following text to the method specification:<br>
+<span style="font-style: italic;">The service passes
+the filter if, for one or more Locators specified in the filter
+constructor, locator.equals(Service.getLocator()) returns true.<br>
+<br>
+</span></li>
+<li>Replace the @return specification with the following:<span style="font-style: italic;"><br>
+Returns: true if service passes the filter; false otherwise.<br>
+<br>
+</span></li>
+<li>Add <span style="font-style: italic;">@see
+javax.tv.locator.Locator#toExternalForm()<br><br>
+</span></li>
+</ol>
+<dl>
+<dt><span style="font-weight: bold;">javax.tv.service.SIChangeEvent</span>
+:</dt>
+</dl>
+<ol>
+<li>Replace the list that begins with the bullet &#8220;An
+SIChangeType of ADD&#8221; and ends with the bullet &#8220;An SIChangeType of
+MODIFY&#8221; with the following list:<br>
+<ul style="font-style: italic;">
+<li>SIChangeType.ADD indicates that the reported SI element
+is new in the database.</li>
+<li>SIChangeType.REMOVE indicates that the reported SI
+element is defunct and no longer cached by the database. The results of
+subsequent method invocations on the removed SIElement are undefined.</li>
+<li>SIChangeType.MODIFY indicates that the data
+encapsulated by the reported SI element has changed.</li>
+</ul>
+<br>
+</li>
+<li>Replace the sentence beginning &#8220;In the event that the
+SIElement reported by this event&#8230;&#8221; with the following:<br>
+<span style="font-style: italic;">In the event that
+the SIElement reported by this event is not the actual element that
+changed in </span><span style="font-style: italic;">the
+broadcast (i.e. it is instead a containing element or null), the value
+returned by getChange</span><span style="font-style: italic;">Type()
+will be SIChangeType.MODIFY.</span></li>
+</ol>
+<br>
+<span style="font-weight: bold;">javax.media.protocol.DataSource.initCheck()</span>
+:<br>
+<ol>
+<li>Replace the sentence beginning with &#8220;If the connection
+hasn't been initialized&#8230;&#8221; with the following:<br>
+<span style="font-style: italic;">If the connection
+hasn't been initialized, initCheck throws an Error.</span><br>
+<br>
+</li>
+<li>Add the following @throws statement:<span style="font-style: italic;"><br>
+Throws: java.lang.Error if the connection has not been initialized.<br>
+</span></li>
+</ol>
+<span style="font-style: italic;"><br>
+</span><span style="font-weight: bold;">javax.media.Player.addController()</span>
+:<span style="font-style: italic;"><br>
+</span>
+<dl>
+<dd>Add the following text:<br>
+<span style="font-style: italic;">Note that in some
+implementations of Java TV, there may be no two instances of Controller
+with compatible timebases.&nbsp; In&nbsp;</span></dd><dd><span style="font-style: italic;">such cases,
+IncompatibleTimeBaseException will always be thrown. </span></dd>
+</dl>
+<br>
+<span style="font-style: italic;"><span style="font-style: italic;"></span></span><span style="font-weight: bold;">overview.html</span>
+:<br><dl><dd>
+Add the following text:</dd><dd><span style="font-style: italic;">
+Java TV defines the following enumerated types:
+<ul>
+<li>javax.tv.service.navigation.DeliverySystemType
+</li>
+<li>javax.tv.service.guide.ProgramScheduleChangeType
+</li>
+<li>javax.tv.service.ServiceInformationType
+</li>
+<li>javax.tv.service.ServiceType
+</li>
+<li>javax.tv.service.SIChangeType
+</li>
+<li>javax.tv.service.SIRequestFailureType
+</li>
+<li>javax.tv.service.navigation.StreamType
+</li>
+</ul>
+Platforms including Java TV may define additional values for the above
+types through subclassing. Applications should not assume that methods
+using these types are constrained to the set of values defined
+as constants in Java TV; values unknown to the application author may
+be returned. Specification authors are advised not to define new
+values that semantically overlap with the values defined by Java TV or
+elsewhere.
+</span></dd></dl>
+
+
+<br><span style="font-weight: bold;">javax.tv.service.selection.ServiceContext.select(Locator[])</span> :<br><dl><dd>In
+place of the language concerning ServiceContext.select(Locator[])
+described in JSR 927 "maintenance draft review 3," add the following
+text to describe special rules for service-bound xlets:</dd><dd><span style="text-decoration: underline; font-style: italic; font-weight: bold;">Use of select(Locator[]) with Service-Bound Xlets</span><br style="font-style: italic;"><span style="font-style: italic;">In
+some specifications incorporating Java TV, there is no mechanism to
+obtain the ServiceComponent that refers to xlets associated with the
+current service. Similarly, there may be no mechanism for obtaining a
+locator to a service component that represents a set of xlets that are
+part of a service. For this reason, the handling of service-bound xlets
+with this method is subject to some rather special rules.</span><br style="font-style: italic;"><br style="font-style: italic;"><span style="font-style: italic;">If
+locators to xlets are listed then the specified xlets will be started
+or will continue running, according to the normal rules of starting and
+stopping xlets. Other running xlets in the service context will be
+stopped, as is consistent with the normal rules of running xlets. If no
+locators to xlets are passed in this method, then the results depend on
+whether the instance of ServiceContext is the xlet&#8217;s &#8220;primary&#8221; service
+context or not.</span><br style="font-style: italic;"><br style="font-style: italic;"><span style="font-style: italic;">If
+the instance of ServiceContext represents the service context in which
+the calling xlet is running, then it is called the &#8220;primary</span><span style="font-style: italic;">
+service context.&#8221; An xlet may obtain its primary service context by
+passing its XletContext to
+ServiceContextFactory.getServiceContext(XletContext). The primary
+service context also appears in the list of service contexts returned
+by ServiceContextFactory.getServiceContexts().</span><br style="font-style: italic;"><br style="font-style: italic;">For the primary service context only<span style="font-style: italic;">,
+when selection succeeds in a call where no locators to xlets passed as
+arguments, the terminal will select the same xlets as would be selected
+by calling select(Service) on the service of which the specified
+service components are members.&nbsp; For example,&nbsp; the components
+belong to the same service as is currently being presented, then there
+will be no change to the running xlets.</span><br style="font-style: italic;"><br style="font-style: italic;"><span style="font-style: italic;">In
+some specifications incorporating Java TV, an xlet may obtain instances
+of ServiceContext that are not the xlet&#8217;s primary service</span><span style="font-style: italic;">
+context. For such ServiceContext instances, there is no special
+handling of the xlet service components. Thus, if no locators to xlets
+are passed in as argument, xlets running in that service context are
+stopped, and no new xlets are launched.</span> </dd></dl>
+
+<br style="font-weight: bold;"><span style="font-weight: bold;">javax.tv.service.selection.</span><span style="font-weight: bold;">ServiceContextFactory.getServiceContext(XletContext)</span> :<br><dl><dd>Replace the sentence:<br><span style="font-style: italic;">The returned ServiceContext is the one from which the Service carrying the Xlet was selected.<br><br></span>With the sentence:<span style="font-style: italic;"><span style="font-style: italic;"><br>The
+returned ServiceContext is the one from which the Service carrying the
+Xlet was selected, and is the Xlet's "primary" ServiceContext.</span></span></dd></dl>
+<br><span style="font-weight: bold;">javax.tv.service.selection.</span><span style="font-weight: bold;">ServiceContext.select(Service)</span> :<br><dl><dd>Add as the second-to-last paragraph:</dd><dd style="font-style: italic;">If
+the Service that is currently selected in this ServiceContext is
+re-selected, its auto-start components are ignored and no change is
+made to the content being presented. A NormalContentEvent is generated
+immediately.</dd></dl>
+<br><span style="font-weight: bold;">javax.tv.media.MediaSelectControl.select(Locator[]) </span>:<br><dl><dd>Add the following:<br><span style="font-style: italic;">If
+some of the specified components are already being presented, these
+components continue to be presented and will not be restarted.&nbsp;
+Their selection is considered successful and is
+immediately reported by a MediaSelectSucceededEvent.</span></dd></dl>
+<br><span style="font-weight: bold;">javax.tv.media.MediaSelectControl.select(Locator) </span>:<br><dl><dd>Add the following:</dd><dd style="font-style: italic;">If
+the specified component is already being presented, it will continue to
+be presented and will not be restarted.&nbsp; A
+MediaSelectSucceededEvent is generated immediately.</dd></dl>
+<br><span style="font-weight: bold;">javax.tv.media.MediaSelectControl</span> :<br><dl><dd>In the class description, replace the sentence:<br><span style="font-style: italic;">Applications should note that the set of selected service components can be changed by entities other than themselves.</span><br><br>With the sentence:<br><span style="font-style: italic;">Applications
+should note that the set of selected service components can be changed
+by entities other than themselves,&nbsp; or as a side-effect of calls
+to ServiceContext.select(Locator[]).</span></dd><dt></dt></dl>
+</body></html>
+
+
+
+<!-- ** BEGIN: footer.jsp ** //-->
+
+
+
+
+
+
+
+
+</td>
+</tr>
+</table>
+
+<!-- ** END: Content Table ** //-->
+
+<!-- ** BEGIN: Footer Table ** //-->
+
+<div id="footer" style="clear: both;">
+    <div class="footleft">
+        <a href="/en/resources/contacts">Contact Us</a>
+    </div>
+	
+    <div class="botbar"><img src="/images/spacer.gif" alt="" height="23" width="1"></div>
+
+    <div class="footleft2">
+         &copy; 2019, Oracle Corporation and/or its affiliates. 
+        <a href="/en/home/terms">Terms of Use</a>. <a href="http://www.oracle.com/us/legal/privacy/index.html">Privacy Policy</a>. <a href="http://www.oracle.com/us/legal/third-party-trademarks/third-party-trademarks-078568.html">Trademarks</a>
+    </div>
+
+    <div class="footright">
+        <img src="/images/common/logo_oracle_footer.gif" alt="Oracle Corporation" height="22" width="91">
+    </div>
+
+    <div style="clear: both;"><img src="/images/spacer.gif" alt="" height="30" width="1"></div>
+</div>
+
+<!-- ** END: Footer Table ** //-->
+
+
+
+<!-- ** Menu Start ** //-->
+
+
+
+</body>
+</html>
+<!-- ** END: footer.jsp ** //-->
+

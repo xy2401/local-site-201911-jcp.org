@@ -1,0 +1,543 @@
+
+
+<!-- ** BEGIN: header.jsp ** //-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3c.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+<head>
+    
+
+   
+    <link href="/includes/css/menu.css" rel="stylesheet" type="text/css"></link>
+    <link href="/includes/css/style.css" rel="stylesheet" type="text/css"></link>
+    <!--[if lt IE 6]><link href="/includes/css/style5.css" rel="stylesheet" type="text/css" ></link><![endif]-->
+    <!--[if gte IE 5]><link href="/includes/css/style6.css" rel="stylesheet" type="text/css" ></link><![endif]-->
+    <link href="/includes/css/tabs.css"  rel="stylesheet" type="text/css"></link>
+
+    <script type="text/javascript" src="/includes/scripts/tabs.js"></script>
+    <script type="text/javascript" src="/includes/scripts/menu.js"></script>
+   
+
+    
+
+    
+        <title>The Java Community Process(SM) Program - Community Resources - Spec Lead Guide</title>
+    
+
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+
+
+<body onload="P7_initPM(0,1,0,0,-1)">
+
+    <a name="top"></a>
+
+    <div id="header">
+	<div id="logo">
+		<a href="/en/home/index"><img src="/images/spacer.gif" alt="Java Community Process" height="81" width="151"></a>
+	</div>
+	<div id="tools">
+		<div class="search">
+			<form name="search" action="/en/jsr/summary" method="get" onsubmit="return validate_search()">
+				<input name="id" value="Search JSRs" size="16" class="form" onfocus="nullify_if_equal(this, 'Search JSRs')" type="text">
+				<a href="javascript:document.search.submit()" onclick="return validate_search()"><img src="/images/button_go.gif" width="21" height="16" border="0" alt="Submit this Search" name="sub_search"></a>
+			</form>
+		</div>
+		<div class="tools">
+			<a href="/en/press/pressroom">Press Room</a> &nbsp;|&nbsp;
+			<a href="http://java.com/java/download/index.jsp?cid=jdp78399">Get Java Here</a> &nbsp;|&nbsp;
+			<!-- <a href="javascript:void(0)">Print Format</a> &nbsp;|&nbsp;&nbsp; -->
+		</div>
+
+	</div>
+	<div style="clear: right;"></div>
+
+        
+
+	<div class="topbar"><img src="/images/spacer.gif" alt="" height="3" width="154"></div>
+	<div id="update"> </div>
+    </div>
+
+
+    
+
+        <!-- ** BEGIN: Content Table ** //-->
+
+        <table width="100%" border="0" cellpadding="0" cellspacing="0">
+
+            <tr>
+
+                <!-- ** BEGIN: Navigation Column ** //-->
+                <td width="150" id="leftcontent" valign="top">
+                    <!-- Navigation Placeholder //-->
+
+                    
+
+                    <div class="bar"><img src="/images/hr_dots1.gif" alt="" height="3" width="150"></div>
+
+        <!-- begin find JSRs form -->
+        <!-- IMPORTANT! do not convert this form to Struts < html : form > tag.  javascript change of form.action property fails. -->
+        <img src="/images/hd_find-jsrs.gif" alt="Find JSRs" height="18" width="150">
+        <form name="findjsr" action="/en/jsr/summary" method="get" class="pt5" onsubmit="return validate_findjsr()">
+            <input name="id" size="18" class="form" value="Search JSRs" onfocus="nullify_if_equal(this, 'Search JSRs')" type="text">
+	    <a href="javascript:document.findjsr.submit()" onclick="return validate_findjsr()"><img src="/images/button_go.gif" width="21" height="16" border="0" alt="Submit this Search" name="sub_search"></a>
+        </form><br><br>
+
+        <!-- ** Menu Start ** //-->
+
+        <ul id="p7PMnav">
+            <li><a href="/en/jsr/platform">JSRs by Platform</a></li>
+            <li><a href="/en/jsr/tech">JSRs by Technology</a></li>
+            <li><a href="/en/jsr/stage">JSRs by Stage</a></li>
+            <li><a href="/en/jsr/ec">JSRs by Committee</a></li>
+            <li><a href="/en/jsr/all">List of All JSRs</a></li>
+
+            <!--end find JSRs form -->
+            <div style="clear: both;"><img src="/images/spacer.gif" alt="" height="25" width="1"></div>
+
+            <!--begin my JCP -->
+            <img src="/images/hd_my-jcp.gif" alt="My JCP" height="18" width="150">
+            
+
+          <form name="login" method="get" action="/en/user/login" >
+            <input name="Sign-in" type="submit" title="Sign-in" value="Sign-in" />
+          </form>
+
+            <div style="clear:both"><img src="/images/global/spacer.gif" width="1" height="3" alt=""></div>
+            <div class="noNav">
+                <a href="/en/user/register">Register for Site</a>
+            </div>
+
+             <div class="bar"><img src="/images/hr_dots1.gif" alt="" height="3" width="150"></div>
+           <div class="noNav" style="color: #666666; padding: 0;">
+              Use of JCP site is subject to the
+              <a href="/en/home/terms" style="display:inline;padding: 0">JCP Terms of Use</a> and the
+              <a href="http://www.oracle.com/us/legal/privacy/index.html" style="display:inline;padding: 0" href="">Oracle Privacy Policy</a>
+          </div>
+
+            
+
+            <div style="clear:both"><img src="/images/global/spacer.gif" width="1" height="25" alt=""></div>
+
+            <!--begin JCP info -->
+            <img src="/images/hd_jcp-info.gif" alt="JCP Info" height="18" width="150">
+
+            <li><a href="/en/procedures/overview" class="p7PMtrg">About JCP</a>
+                <ul>
+                    <li><a href="/en/procedures/overview">Program Overview</a></li>
+                    <li><a href="/en/procedures/jcp2">JCP Process Document</a></li>
+                    <li><a href="/en/whatsnew/calendar">Calendar</a></li>
+                    <li><a href="/en/participation/members">JCP Members</a></li>
+                    <li><a href="/en/participation/committee">Executive Committee</a></li>
+                    <li><a href="/en/whatsnew/elections">Elections</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/en/participation/overview" class="p7PMtrg">Get Involved</a>
+		<ul>
+                    <li><a href="/en/participation/overview">Overview</a></li>
+                    <li><a href="/en/participation/membership">Becoming a JCP Member</a></li>
+		</ul>
+            </li>
+
+            <li><a href="/en/resources/contents" class="p7PMtrg">Community Resources</a>
+                <ul>
+                    <li><a href="/en/resources/contents">Overview</a></li>
+                    <li><a href="/en/resources/tutorials">Tutorials</a></li>
+                    <li><a href="/en/resources/multimedia">JCP Podcasts</a></li>
+                    <li><a href="/en/resources/guide">Spec Lead Guide</a></li>
+                    <li><a href="/en/resources/tdk">TCK Tool & Info</a></li>
+                    <li><a href="/en/resources/license_reference">License Reference</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/en/press/pmo" class="p7PMtrg">Community News</a>
+                <ul>
+                    <li><a href="/en/press/pmo">News</a></li>
+                    <li><a href="/en/press/news/awards/awards_main">Programs &amp; Awards</a></li>
+                    <li><a href="/en/press/releases">Press Releases</a></li>
+                    <li><a href="/en/press/success">Success Stories</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/en/introduction/faq">FAQ</a></li>
+
+            <li><a href="/en/resources/contacts">Contact Us</a></li>
+
+            <div style="clear: both;"><img src="/images/spacer.gif" alt="" height="25" width="1"></div>
+
+            <!--[if lte IE 6]><style>#p7PMnav a{height:1em;}#p7PMnav li{height:1em;float:left;clear:both;width:100%}</style><![endif]-->
+            <!--[if IE 6]><style>#p7PMnav li{clear:none;}</style><![endif]-->
+            <!--[if IE 7]><style>#p7PMnav a{zoom:100%;}#p7PMnav li{float:left;clear:both;width:100%;}</style><![endif]-->
+        </ul>
+
+        
+
+        <!--begin ad space -->
+        <div class="ads">
+            <a href="http://java.com/java/download/index.jsp?cid=jdp78399" target="_blank"><img style="display: ;" src="/images/ad_banner2.gif" alt="Ad Banner" border="1" height="70" width="150"></a>
+        </div>
+        <!--end ad space -->
+
+<!-- ** Menu End ** //-->
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;<br>
+
+    
+
+                    &nbsp;<br>
+                    <img src="/images/common/trans.gif" alt="" width="1" height="150"><br>
+
+              
+
+
+
+                </td>
+                <!-- ** END: Navigation Column ** //-->
+
+                <!-- ** BEGIN: Gutter Column ** //-->
+		<td width="10" nowrap><img src="/images/common/trans.gif" alt="" width="10" height="1"></td>
+                <!-- ** END: Gutter Column ** //-->
+
+                <!-- ** BEGIN: Content Column ** //-->
+                <td width="100%" valign="top">
+
+    
+<script type="text/javascript">
+
+String.prototype.trim = function() {
+        return this.replace(/^\s+|\s+$/g,"");
+}
+String.prototype.ltrim = function() {
+        return this.replace(/^\s+/,"");
+}
+String.prototype.rtrim = function() {
+        return this.replace(/\s+$/,"");
+}
+
+function validate_search() {
+	if (document.search.id.value == "Search JSRs" || document.search.id.value.trim().length == 0) {
+		alert("Search terms must be entered first");
+		return false;
+	}
+	return true;
+}
+
+function validate_findjsr() {
+	if (document.findjsr.id.value == "Search JSRs" || document.findjsr.id.value.trim().length == 0) {
+		alert("Search terms must be entered first");
+		return false;
+	}
+	return true;
+}
+
+function nullify_if_equal(field, str) {
+	// alert("val=" + field.value);
+	if (field.value == str) {
+		field.value = "";
+	}
+}
+
+</script>
+<!-- ** END: header.jsp ** //-->
+
+
+		<div class="header2">Press &amp; Success</div>
+		<div class="header1">Case Studies</div>
+		
+		&nbsp;<br>
+		<div class="header3">JSR 166 Case Study: A Transparent Expert Group</div>
+		
+		&nbsp;<br>			
+		While the Java Community Process (JCP) program has done well to keep its rules open for public scrutiny, the same cannot be said about the workings of individual expert groups. Until recently, expert groups were discouraged from openly airing their strategies, motivations, specifications, Reference Implementations (RIs), and Technology Compatibility Kits (TCKs) until the official schedule permitted the gathering of community and public feedback on the specification only. Never mind that such late and limited feedback was no longer useful for the current revision. By then, expert groups were running full 
+throttle to attain final approval from the group that seemed to matter most -- the Executive Committee.<br>
+
+		&nbsp;<br>
+		That's not to say that no attention was paid to those who took the time to comment. It's just that any significant changes were typically rolled into a subsequent revision of the spec. According to Onno Kluyt, director of the JCP Program Management Office (PMO), this disturbing trend was noticed, and rules were recently changed to mandate transparency in expert group activity. (<a href="/en/jsr/detail?id=215">See JSR 215</a>.)<br>
+		
+		&nbsp;<br>
+		<table width="88" align="left" cellpadding="0" cellspacing="0">
+			<tr>
+			<td></td>
+			<td><img src="/images/common/trans.gif" alt="" width="8" height="1" border="0"></td>
+			</tr>
+			<tr>
+			<td><img src="/images/press/doug_lea.jpg" width="80" height="80" border="0" alt="Doug Lea"></td>
+			<td><img src="/images/common/trans.gif" alt="" width="19" height="15" border="0"></td>
+			</tr>
+			<tr>
+			<td align="center">Doug Lea</td>
+			<td></td>
+			</tr>
+			<tr>
+			<td colspan="2"><img src="/images/common/trans.gif" alt="" width="19" height="6" border="0"></td>
+			</tr>
+		</table>
+		
+		<div> <!-- NS4 Font Fix //-->
+		Having worked on open source projects for years, Doug Lea is convinced transparency is a far superior approach for the JCP. An active professor in the Computer Science Department, State University of New York at Oswego, Lea serves on the Executive Committee and leads JSR 166. When he submitted the Java Specification Request for 166, he was eager to use his expert group to illustrate precisely how much better the process could be. The result is that the JSR 166 Concurrency Utilities expert group worked in open view of the public 
+and those who truly matter: future users and implementors of the spec.<br>
+
+		&nbsp;<br>
+		After JCP 2.6 goes final early in 2004, the transparency showcased by JSR 166 will reflect the new order of the day. It won't be just a good idea; it'll be the new rule for all JSRs that are new or currently operating under JCP 2.5. But the reason it will be the rule is because specs created under it will be so much better.<br>
+
+		&nbsp;<br>
+		A case in point, Lea's open source Application Programming Interface (API), dl.util.concurrent, had been in use for a few years by many systems and middleware developers, and he wanted to improve and standardize it. So he submitted the package as a JSR, gathered a team of experts and used the JCP program to improve it. Lea says, "The java.util.concurrent package is better than the package it evolved from by virtue of thousands of e-mail comments/discussions, design and code reviews, systematic tests, and so on. What we have are saner APIs, better specs, better tests, more user experience, more 
+discussion, more code reviews, more design reviews than what we started with."<br>
+
+		&nbsp;<br>
+		<div class="header4">A Few Very Active Experts</div>
+		
+		&nbsp;<br>
+		In selecting a team of experts, Lea made several deliberate choices. Because he wanted the expert group to have a role more substantial than merely advisory in producing the spec, RI, and TCK, Lea knew he must limit group size -- ten maximum -- to keep it manageable. Therefore, he made it a priority to invite only those who were committed to spending the time and effort. But Lea says his attempt didn't completely pan out, since one immediately dropped out and two others "have been lurkers who we forget even exist."<br>
+
+		&nbsp;<br>
+		Networking is an essential tool for recruitment, and the best networking extends backwards over the years. Lea and Sun engineer Joshua Bloch have almost identical backgrounds and interests, but they didn't know each other well until they worked together on Java technology projects, which led to their involvement in the JCP. "Josh Bloch and I are among the principal co-conspirators for JDK 1.5 (JSR 176), and between us we're on almost all the components of the next 
+platform release. And we're great friends, too. One of the nice things about being on these groups is you get to work with so many great people."<br>
+
+
+		&nbsp;<br>
+		<table cellpadding="0" cellspacing="0" align="left" width="88">
+			<tr>
+			<td></td>
+			<td><img src="/images/common/trans.gif" alt="" width="8" height="1" border="0"></td>
+			</tr>
+			<tr>
+			<td><img src="/images/press/tim_peierls.jpg" width="80" height="80" border="0" alt="Tim Peierls"></td>
+			<td><img src="/images/common/trans.gif" alt="" width="19" height="15" border="0"></td>
+			</tr>
+			<tr>
+			<td align="center">Tim Peierls</td>
+			<td></td>
+			</tr>
+			<tr>
+			<td colspan="2"><img src="/images/common/trans.gif" alt="" width="19" height="6" border="0"></td>
+			</tr>
+		</table>
+
+		</div><div> <!-- NS4 Font Fix //-->
+
+		Tim Peierls, president of the three-person company Prior Artisans, LLC, was recruited on the recommendation of Bloch, his long-time professional acquaintance and a member of the JSR 166 expert group. In fact, Peierls had already been questioning Lea about his util.concurrent library. Almost all the other members were selected and tentatively agreed to serve before the JSR was officially proposed. David Holmes and Joe Bowbeer had made notable contributions 
+in Java concurrency, and so were obvious choices. Brian Goetz had experience writing about and consulting on concurrent Java systems. A few other members were also selected from responses to the JCP invitation to participate.<br>
+
+		&nbsp;<br>
+		When everything settled down, the expert group comprised six "very active smart people who have the ability and interest to work on specifications, who reflect a good range of interests and competence, and who all know each other at least a little bit. It's been absolutely great," says Lea. In terms of expertise, his goal was to strike "a balance between people expert in implementing the spec versus those expert in creating the kinds of software that would use the implementation once it existed." He made sure everyone agreed 
+with the open-source development model and was experienced in small-group remote collaboration.<br>
+
+		&nbsp;<br>
+		Besides corporate members Sun Microsystems and SAP AP, the remaining members were all individual members, further proof of the validity of JCP 2.5 changes. The company Bowbeer works for isn't a JCP member, but he personally joined anyway and has been a valued participant in multiple expert groups. Lea himself is one of the individual members hailing from the academic world for whom the JCP offers an opportunity to put theory into practice. He notes that some individuals and academics have vast expertise in particular niche 
+areas and "are usually very happy to share it."<br>
+
+		&nbsp;<br>
+		Peierls adds, "Individual members are more likely to act in the best interests of the language and the community of its users than are members beholden to an employer with product to move. For instance, if my company were a JCP member instead of just me, I would have felt a strong obligation to push for compatibility of JSR 166 with J2SDK 1.4, even though it wouldn't be in the best interest of most users."<br>
+
+		&nbsp;<br>
+		<div class="header4">Internal and External Communication</div>
+		
+		&nbsp;<br>
+		Lea expected the experts to step in to do important parts of the work. Although he ended up creating practically all of the RI, and he coordinates, by default, nearly everything else, there has been quite a bit of informal role-taking, where people take charge of an API or issue for a while. He says, "We're small enough that we don't need to plan this out too much, and we're all experienced enough with small-group collaboration that we don't encounter logistics problems or personality clashes."<br>
+
+		&nbsp;<br>
+		The expert group has never met altogether in the same place, but communicates through emails and phone calls, and uses a fairly standard infrastructure:
+
+		<ul>
+		<li>An internal expert group-only mailing list is the main place where the team discusses issues, proposes solutions, deals with logistics, and so forth. The expert group found it helpful to include some guests on the list, such as Bill Pugh, spec lead for JSR133, who watches for issues relevant to his group. Message frequency ranges from zero in a slow month to thirty on a hectic day.</li>
+		<li>An external interest list permits anyone to post questions, comments, and suggestions.</li>
+		<li>The Concurrent Versions System (CVS) is a standard revision control system used to coordinate changes to the specs, RI, and TCK. Any expert group member can check in changes, although nontrivial changes are usually discussed before committing (<a href="http://www.cvshome.org/">http://www.cvshome.org/</a>). Committed versions of source and test files can be made viewable from the web using viewcvs (<a href="http://viewcvs.sourceforge.net">http://viewcvs.sourceforge.net</a>). Snapshots of entire builds can be replicated using rsync (<a href="http://samba.anu.edu.au/rsync">http://samba.anu.edu.au/rsync</a>).</li>
+		<li>Mailman, the GNU mailing list manager, keeps good archives and is easy to maintain. (<a hrf="http://sourceforge.net/projects/mailman">http://sourceforge.net/projects/mailman</a>)</li>
+		<li>JUnit is a popular framework that the group used to conduct TCK 
+tests. (<a href="http://junit.org">http://junit.org</a>)</li>
+		<li>Ant, a Java technology-based build tool, compiles code and generates proper javadocs. (<a href="http://ant.apache.org/">http://ant.apache.org/</a>)</li>
+		<li>Anthill OS, a tool that makes use of both Ant and CVS to perform automated builds with email notification. (<a href="http://www.urbancode.com/projects/anthill/default.jsp">http://www.urbancode.com/projects/anthill/default.jsp</a>).</li>
+		</ul>
+		
+		The expert group appreciates the 300 subscribers of its external interest list. Lea says, "They have contributed a lot to JSR166 by asking questions that didn't have answers until we clarified or changed specs, complaints that showed that we missed important concerns, bug reports on prereleases that we could fix before J2SE release, and suggestions that showed that users sometimes wanted things different than we thought they would. Even when we can't directly address concerns, we've profited by finding out those places where we needed to be clearer about rationale."<br>
+
+		&nbsp;<br>
+		The expert group keeps the two lists separate because it is "impossible" to make decisions among 300 list members, the experts need the freedom to think out loud about ideas and make mistakes in a protected environment, and it's nicer to shield non-experts from the tedium of mundane internal details such as deadlines. Lea, a consensus-driven spec lead, can't recall any instances where he made a decision over the serious reservations of any expert, although a 
+few decisions ran against reservations of interest-list participants.<br>
+
+		&nbsp;<br>
+		The CVS sources and spec are on the Internet, made transparent so people can see changes as the expert group commits to them. "Sometimes we 'uncommit' too, changing our minds. We were at first afraid that people might be confused about this, and think that the available javadocs, etcetera, were more final than they were, but we've never had anyone complain about this," says Lea. In another move toward transparency, the group also put out a preliminary RI release of main functionality, to let people test and react to it.<br>
+
+		&nbsp;<br>
+		<table width="88" align="left" cellpadding="0" cellspacing="0">
+			<tr>
+			<td></td>
+			<td><img src="/images/common/trans.gif" alt="" width="8" height="1" border="0"></td>
+			</tr>
+			<tr>
+			<td><img src="/images/press/david_walend.jpg" width="80" height="80" border="0" alt="David Walend"></td>
+			<td><img src="/images/common/trans.gif" alt="" width="19" height="15" border="0"></td>
+			</tr>
+			<tr>
+			<td align="center">David Walend</td>
+			<td></td>
+			</tr>
+			<tr>
+			<td colspan="2"><img src="/images/common/trans.gif" alt="" width="19" height="6" border="0"></td>
+			</tr>
+		</table>
+
+		</div><div> <!-- NS4 Font Fix //-->
+
+		David Walend is a software engineering leader at Alphatech and a graduate student at Tufts; he reads the interest list for work and to support his open source project SomnifugiJMS. After Lea introduced the list to him at JavaOne2002, Walend hoped to be a "kibitzer, but really I'm more of a pectator." He feels Concurrency Utilities is "one of the hardest topics to cover, and one of the best specifications. The problem attracts sharp people, and encourages 
+them to park their egos at the door." Transparency helps illuminate the topic, and people on the list contribute by finding bugs and asking "tough questions about real-world problems." When Walend commented on JSRs of more traditional expert groups, he "never heard anything back. It was like shouting down a well," but his comments on JSR166 always elicited a "serious reply," Everyone's input counts, he says, and feedback is transparent to all, even when it is, "Good 
+idea, but we're not doing that."<br>
+
+		&nbsp;<br>
+		<table width="88" align="left" cellpadding="0" cellspacing="0">
+			<tr>
+			<td></td>
+			<td><img src="/images/common/trans.gif" alt="" width="8" height="1" border="0"></td>
+			</tr>
+			<tr>
+			<td><img src="/images/press/david_biesack.jpg" width="80" height="80" border="0" alt="David Biesack"></td>
+			<td><img src="/images/common/trans.gif" alt="" width="19" height="15" border="0"></td>
+			</tr>
+			<tr>
+			<td align="center">David Biesack</td>
+			<td></td>
+			</tr>
+			<tr>
+			<td colspan="2"><img src="/images/common/trans.gif" alt="" width="19" height="6" border="0"></td>
+			</tr>
+		</table>
+
+		</div><div> <!-- NS4 Font Fix //-->
+
+		David Biesack's interest in continued improvement of the Java platform to increase "developer expressiveness, productivity, and program correctness" prompted him to join the external list. Biesack, R&amp;D Java strategist of SAS Institute, Inc., is pleased that by monitoring the list, he mined nuggets to apply "right now" before the specs are even final. Since he wasn't a member of the expert group, he hesitated to comment much at first, but after having one of his method-naming suggestions incorporated, he feels more confident the 
+expert group is "open to all ideas." He believes that because experts often lack the time to thoroughly review an RI, it's "critical that the RI be made available and as many as possible work with it in diverse domains and scenarios to validate it." Biesack appreciates that JSR 166 puts out a preliminary RI to encourage such validation.<br>
+
+		&nbsp;<br>
+		A self-described external list "gadfly," John Mitchell laments he lacks time for deeper involvement, what with running his consulting company Non.net and writing books and articles (Java.net) on Java technology. Mitchell has been "pestering" Lea, Sun, and the rest of the Java industry on various fronts "forever," has employed Java technology since it was first released, and has also used Lea's original util.concurrent library. Mitchell can't say enough about how happy he is with the JSR 166 expert group's commitment to "as much 
+transparency as they have been able to provide," and he's pleased that the JCP supported the group's openness. "We all benefit from the ideas of wider development community early in the process. The more open process has made this a much better result than any of the other JSRs that I know anything about, which is a fair number. It's clear from the relatively quick updates of various facets of the spec in response to both private and public comments that Doug and the rest of the expert group have taken community feedback to heart," 
+responding with "real reasons backed up with code instead of big corporate BS."<br>
+
+		<!-- ** BEGIN: Sidebar //-->		
+		<table cellpadding="5" cellspacing="0" border="0" align="right" width="230">
+			<tr>
+			<td valign="top" width="100%">
+			<table cellpadding="1" cellspacing="0" border="0" bgcolor="#4a4a73" class="box_outline" width="100%">
+				<tr>
+				<td valign="top" width="100%">
+				<table cellpadding="9" cellspacing="0" border="0" width="100%" bgcolor="#f1f1f6" class="box_fill">
+					<tr>
+					<td>
+					<div class="header4">Integrating Platform Specifications</div>
+	
+					&nbsp;<br>
+					Doug Lea reports that finding and working with Sun engineers is an important ingredient in the successful integration of platform specifications such as JSR 166 into Java 2 Standard Edition (J2SE). Because JSR 166 was part of the J2SE 1.5 platform release, the specifications, RI, and TCK had to be integrated into Sun's HotSpot release (which also serves as the J2SE 1.5 RI). This entailed interactions with Sun engineers throughout the process.<br>
+		
+					&nbsp;<br>			
+					For example, Cliff Click (originally Sun server VM lead, now at Azul systems) and Dave Dice (Sun HotSpot runtime engineer) were guests on the internal mailing list and contributed advice and assistance integrating native support features. Sun J2SE engineer Martin Buchholz helped set up helpful mechanisms to coordinate commits from JSR 166 CVS into the full J2SE sources. Sun test engineer Andrey Chernyshev similarly coordinated integrating TCK tests as part of the Java Compatibility Kit (JCK). And expert member Josh Bloch helped represent JSR 166 interests in other release planning and delivery processes.<br>		
+					</td>
+					</tr>
+				</table>
+				</td>
+				</tr>
+			</table>
+	
+			</td>
+			</tr>
+		</table>
+		<!-- ** END: Sidebar //-->		
+
+		</div><div> <!-- NS4 Font Fix //-->
+
+		&nbsp;<br>		
+		<div class="header4">On Spec Leadership</div>
+		
+		&nbsp;<br>
+		Lea believes the best way to learn more about spec leadership is to network, "to find a handful of other spec leads and call them up, talk to them. You find out a lot about whether you want to do something similar, all sorts of minor things that never get written about." That's practically an open invitation, and spec leads could learn a lot from this "acknowledged expert among experts in the field," says Peierls.<br>
+
+		&nbsp;<br>
+		It doesn't hurt that Lea is perceived to have clout gained from his continuing service on the Executive Committee, but Mitchell feels Lea's practical understanding of the political situation within the JCP is even more valuable. In addition, Lea commands a certain respect just by virtue of his independence, free to follow his own professional instincts, with no corporate pressure. Biesack believes having a spec lead "who is committed to serving the wider Java community, not a personal or corporate agenda" is a substantial 
+factor in the success of the expert group.<br>
+
+		&nbsp;<br>
+		This factor, however, may have more to do with a spec lead's perceived attitude than with his or her actual chain of command. Walend appreciates Lea for "running the group because he thinks it's the coolest problem on the coolest platform."<br>
+
+		&nbsp;<br>
+		Spec leads have another source of help in the JCP Program Management Office. In reflecting on his own interactions, Lea says, "The PMO folks truly are nice and helpful about logistics matters. The sooner the spec leads find that out, the better off they are." For example, Lea felt grateful that Kluyt spent some time wording the JSR 166 open source licensing terms and dealing with other people to help Lea succeed in pioneering the new practice.<br>
+
+		&nbsp;<br>
+		That an "extremely" transparent process works very well in practice is clear from the outcome of JSR 166, and Lea looks forward to seeing current and future spec leads take similar approaches.<br>
+
+		&nbsp;<br>
+		<a href="/en/jsr/detail?id=166">JSR 166 Home Page</a>
+		</td>
+		</tr>
+	</table>
+<!-- ** BEGIN: footer.jsp ** //-->
+
+
+
+
+
+
+
+
+</td>
+</tr>
+</table>
+
+<!-- ** END: Content Table ** //-->
+
+<!-- ** BEGIN: Footer Table ** //-->
+
+<div id="footer" style="clear: both;">
+    <div class="footleft">
+        <a href="/en/resources/contacts">Contact Us</a>
+    </div>
+	
+    <div class="botbar"><img src="/images/spacer.gif" alt="" height="23" width="1"></div>
+
+    <div class="footleft2">
+         &copy; 2019, Oracle Corporation and/or its affiliates. 
+        <a href="/en/home/terms">Terms of Use</a>. <a href="http://www.oracle.com/us/legal/privacy/index.html">Privacy Policy</a>. <a href="http://www.oracle.com/us/legal/third-party-trademarks/third-party-trademarks-078568.html">Trademarks</a>
+    </div>
+
+    <div class="footright">
+        <img src="/images/common/logo_oracle_footer.gif" alt="Oracle Corporation" height="22" width="91">
+    </div>
+
+    <div style="clear: both;"><img src="/images/spacer.gif" alt="" height="30" width="1"></div>
+</div>
+
+<!-- ** END: Footer Table ** //-->
+
+
+
+<!-- ** Menu Start ** //-->
+
+
+
+</body>
+</html>
+<!-- ** END: footer.jsp ** //-->
+

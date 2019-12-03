@@ -1,0 +1,808 @@
+
+<!-- ** BEGIN: header.jsp ** //-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3c.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+<head>
+    
+
+   
+    <link href="/includes/css/menu.css" rel="stylesheet" type="text/css"></link>
+    <link href="/includes/css/style.css" rel="stylesheet" type="text/css"></link>
+    <!--[if lt IE 6]><link href="/includes/css/style5.css" rel="stylesheet" type="text/css" ></link><![endif]-->
+    <!--[if gte IE 5]><link href="/includes/css/style6.css" rel="stylesheet" type="text/css" ></link><![endif]-->
+    <link href="/includes/css/tabs.css"  rel="stylesheet" type="text/css"></link>
+
+    <script type="text/javascript" src="/includes/scripts/tabs.js"></script>
+    <script type="text/javascript" src="/includes/scripts/menu.js"></script>
+   
+
+    
+
+    
+        <title>The Java Community Process(SM) Program - communityprocess - review</title>
+    
+
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+
+
+<body onload="P7_initPM(0,1,0,0,-1)">
+
+    <a name="top"></a>
+
+    <div id="header">
+	<div id="logo">
+		<a href="/en/home/index"><img src="/images/spacer.gif" alt="Java Community Process" height="81" width="151"></a>
+	</div>
+	<div id="tools">
+		<div class="search">
+			<form name="search" action="/en/jsr/summary" method="get" onsubmit="return validate_search()">
+				<input name="id" value="Search JSRs" size="16" class="form" onfocus="nullify_if_equal(this, 'Search JSRs')" type="text">
+				<a href="javascript:document.search.submit()" onclick="return validate_search()"><img src="/images/button_go.gif" width="21" height="16" border="0" alt="Submit this Search" name="sub_search"></a>
+			</form>
+		</div>
+		<div class="tools">
+			<a href="/en/press/pressroom">Press Room</a> &nbsp;|&nbsp;
+			<a href="http://java.com/java/download/index.jsp?cid=jdp78399">Get Java Here</a> &nbsp;|&nbsp;
+			<!-- <a href="javascript:void(0)">Print Format</a> &nbsp;|&nbsp;&nbsp; -->
+		</div>
+
+	</div>
+	<div style="clear: right;"></div>
+
+        
+
+	<div class="topbar"><img src="/images/spacer.gif" alt="" height="3" width="154"></div>
+	<div id="update"> </div>
+    </div>
+
+
+    
+
+        <!-- ** BEGIN: Content Table ** //-->
+
+        <table width="100%" border="0" cellpadding="0" cellspacing="0">
+
+            <tr>
+
+                <!-- ** BEGIN: Navigation Column ** //-->
+                <td width="150" id="leftcontent" valign="top">
+                    <!-- Navigation Placeholder //-->
+
+                    
+
+                    <div class="bar"><img src="/images/hr_dots1.gif" alt="" height="3" width="150"></div>
+
+        <!-- begin find JSRs form -->
+        <!-- IMPORTANT! do not convert this form to Struts < html : form > tag.  javascript change of form.action property fails. -->
+        <img src="/images/hd_find-jsrs.gif" alt="Find JSRs" height="18" width="150">
+        <form name="findjsr" action="/en/jsr/summary" method="get" class="pt5" onsubmit="return validate_findjsr()">
+            <input name="id" size="18" class="form" value="Search JSRs" onfocus="nullify_if_equal(this, 'Search JSRs')" type="text">
+	    <a href="javascript:document.findjsr.submit()" onclick="return validate_findjsr()"><img src="/images/button_go.gif" width="21" height="16" border="0" alt="Submit this Search" name="sub_search"></a>
+        </form><br><br>
+
+        <!-- ** Menu Start ** //-->
+
+        <ul id="p7PMnav">
+            <li><a href="/en/jsr/platform">JSRs by Platform</a></li>
+            <li><a href="/en/jsr/tech">JSRs by Technology</a></li>
+            <li><a href="/en/jsr/stage">JSRs by Stage</a></li>
+            <li><a href="/en/jsr/ec">JSRs by Committee</a></li>
+            <li><a href="/en/jsr/all">List of All JSRs</a></li>
+
+            <!--end find JSRs form -->
+            <div style="clear: both;"><img src="/images/spacer.gif" alt="" height="25" width="1"></div>
+
+            <!--begin my JCP -->
+            <img src="/images/hd_my-jcp.gif" alt="My JCP" height="18" width="150">
+            
+
+          <form name="login" method="get" action="/en/user/login" >
+            <input name="Sign-in" type="submit" title="Sign-in" value="Sign-in" />
+          </form>
+
+            <div style="clear:both"><img src="/images/global/spacer.gif" width="1" height="3" alt=""></div>
+            <div class="noNav">
+                <a href="/en/user/register">Register for Site</a>
+            </div>
+
+             <div class="bar"><img src="/images/hr_dots1.gif" alt="" height="3" width="150"></div>
+           <div class="noNav" style="color: #666666; padding: 0;">
+              Use of JCP site is subject to the
+              <a href="/en/home/terms" style="display:inline;padding: 0">JCP Terms of Use</a> and the
+              <a href="http://www.oracle.com/us/legal/privacy/index.html" style="display:inline;padding: 0" href="">Oracle Privacy Policy</a>
+          </div>
+
+            
+
+            <div style="clear:both"><img src="/images/global/spacer.gif" width="1" height="25" alt=""></div>
+
+            <!--begin JCP info -->
+            <img src="/images/hd_jcp-info.gif" alt="JCP Info" height="18" width="150">
+
+            <li><a href="/en/procedures/overview" class="p7PMtrg">About JCP</a>
+                <ul>
+                    <li><a href="/en/procedures/overview">Program Overview</a></li>
+                    <li><a href="/en/procedures/jcp2">JCP Process Document</a></li>
+                    <li><a href="/en/whatsnew/calendar">Calendar</a></li>
+                    <li><a href="/en/participation/members">JCP Members</a></li>
+                    <li><a href="/en/participation/committee">Executive Committee</a></li>
+                    <li><a href="/en/whatsnew/elections">Elections</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/en/participation/overview" class="p7PMtrg">Get Involved</a>
+		<ul>
+                    <li><a href="/en/participation/overview">Overview</a></li>
+                    <li><a href="/en/participation/membership">Becoming a JCP Member</a></li>
+		</ul>
+            </li>
+
+            <li><a href="/en/resources/contents" class="p7PMtrg">Community Resources</a>
+                <ul>
+                    <li><a href="/en/resources/contents">Overview</a></li>
+                    <li><a href="/en/resources/tutorials">Tutorials</a></li>
+                    <li><a href="/en/resources/multimedia">JCP Podcasts</a></li>
+                    <li><a href="/en/resources/guide">Spec Lead Guide</a></li>
+                    <li><a href="/en/resources/tdk">TCK Tool & Info</a></li>
+                    <li><a href="/en/resources/license_reference">License Reference</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/en/press/pmo" class="p7PMtrg">Community News</a>
+                <ul>
+                    <li><a href="/en/press/pmo">News</a></li>
+                    <li><a href="/en/press/news/awards/awards_main">Programs &amp; Awards</a></li>
+                    <li><a href="/en/press/releases">Press Releases</a></li>
+                    <li><a href="/en/press/success">Success Stories</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/en/introduction/faq">FAQ</a></li>
+
+            <li><a href="/en/resources/contacts">Contact Us</a></li>
+
+            <div style="clear: both;"><img src="/images/spacer.gif" alt="" height="25" width="1"></div>
+
+            <!--[if lte IE 6]><style>#p7PMnav a{height:1em;}#p7PMnav li{height:1em;float:left;clear:both;width:100%}</style><![endif]-->
+            <!--[if IE 6]><style>#p7PMnav li{clear:none;}</style><![endif]-->
+            <!--[if IE 7]><style>#p7PMnav a{zoom:100%;}#p7PMnav li{float:left;clear:both;width:100%;}</style><![endif]-->
+        </ul>
+
+        
+
+        <!--begin ad space -->
+        <div class="ads">
+            <a href="http://java.com/java/download/index.jsp?cid=jdp78399" target="_blank"><img style="display: ;" src="/images/ad_banner2.gif" alt="Ad Banner" border="1" height="70" width="150"></a>
+        </div>
+        <!--end ad space -->
+
+<!-- ** Menu End ** //-->
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;<br>
+
+    
+
+                    &nbsp;<br>
+                    <img src="/images/common/trans.gif" alt="" width="1" height="150"><br>
+
+              
+
+
+
+                </td>
+                <!-- ** END: Navigation Column ** //-->
+
+                <!-- ** BEGIN: Gutter Column ** //-->
+		<td width="10" nowrap><img src="/images/common/trans.gif" alt="" width="10" height="1"></td>
+                <!-- ** END: Gutter Column ** //-->
+
+                <!-- ** BEGIN: Content Column ** //-->
+                <td width="100%" valign="top">
+
+    
+<script type="text/javascript">
+
+String.prototype.trim = function() {
+        return this.replace(/^\s+|\s+$/g,"");
+}
+String.prototype.ltrim = function() {
+        return this.replace(/^\s+/,"");
+}
+String.prototype.rtrim = function() {
+        return this.replace(/\s+$/,"");
+}
+
+function validate_search() {
+	if (document.search.id.value == "Search JSRs" || document.search.id.value.trim().length == 0) {
+		alert("Search terms must be entered first");
+		return false;
+	}
+	return true;
+}
+
+function validate_findjsr() {
+	if (document.findjsr.id.value == "Search JSRs" || document.findjsr.id.value.trim().length == 0) {
+		alert("Search terms must be entered first");
+		return false;
+	}
+	return true;
+}
+
+function nullify_if_equal(field, str) {
+	// alert("val=" + field.value);
+	if (field.value == str) {
+		field.value = "";
+	}
+}
+
+</script>
+<!-- ** END: header.jsp ** //-->
+
+
+
+
+
+
+<html>
+<head>
+<title>Java2 Platform, Micro Edition, Remote Method Invocation</title>
+</head>
+<body>
+<h3>Java 2 Platform, Micro Edition, Remote Method Invocation
+Specification v0.1
+</h3>
+
+<p>
+<i>Last updated 08/18/2000</i>
+
+<br>
+<h3>Introduction</h3>
+
+<p>
+The Java 2 Platform, Micro Edition, Remote Method Invocation (RMI)
+Profile is a J2ME Connected Device Configuration (CDC) Profile.  The
+J2ME CDC requires a complete implementation of the Java Virtual
+Machine, including the core Java APIs, <code>java.lang</code>,
+<code>java.net</code>, and <code>java.io</code>.  Implementations of
+the RMI Profile can only function on devices which include support for
+the J2ME CDC and the Foundation Profile.
+
+<p>
+This document assumes that the reader is familiar with the Connected
+Limited Device Configuration (CLDC) specification available at
+
+<p>
+<a href="http://java.sun.com/aboutJava/communityprocess/review/jsr030/index.html">
+http://java.sun.com/aboutJava/communityprocess/review/jsr030/index.html</a>,
+
+<p>
+the CDC specification available at
+
+<p>
+<a href="http://java.sun.com/aboutJava/communityprocess/review/jsr036/index.html">
+http://java.sun.com/aboutJava/communityprocess/review/jsr036/index.html</a>,
+
+<p>
+the Foundation Profile specification available at
+
+<p>
+<a href="http://java.sun.com/aboutJava/communityprocess/review/jsr046/index.html">
+http://java.sun.com/aboutJava/communityprocess/review/jsr046/index.html</a>,
+
+<p>
+and the J2SE 1.3 RMI specification at
+<p> <a href="http://java.sun.com/j2se/1.3/docs/guide/rmi/spec/rmiTOC.html">
+http://java.sun.com/j2se/1.3/docs/guide/rmi/spec/rmiTOC.html</a>.
+
+<p>
+Note that J2ME Configurations and Profiles are defined in the
+Connected Limited Device Configuration Specification, Appendix 1.
+
+<p>
+This document specifies the subset of the J2SE 1.3 RMI API that is
+included in the RMI Profile. Information on the J2SE 1.3 RMI API is
+available at
+<a href="http://java.sun.com/j2se/1.3/docs/api/java/rmi/package-summary.html">
+http://java.sun.com/j2se/1.3/docs/api/java/rmi/package-summary.html</a>
+
+<p><p>
+This specification was developed under the Java Community Process.
+More information on the Java Community Process is available at
+<a href="http://java.sun.com/jcp">http://java.sun.com/jcp</a>.
+
+<br>
+<h3>Relationship to the J2SE 1.3 API Specification</h3>
+
+<p>
+The API for the RMI Profile for J2ME is the minimal subset of the J2SE
+1.3 RMI API that may be used with J2ME. Where not explicitly stated,
+the RMI Profile conforms to the J2SE 1.3 RMI specification. Classes
+from the J2SE 1.3 RMI API can either be completely supported, or
+modified in ways allowed by the Configurations and Profiles
+Architecture Specification.  Implementations of the RMI profile must
+support the following &quot;client-oriented&quot; interfaces and
+functionality specified by the RMI J2SE 1.3 API :
+
+<ul>
+    <li>
+    <p>
+    Full RMI call semantics
+    
+    <p>
+    The RMI infrastructure supports passing serializable objects as
+    the parameters and return values of remote method calls. When the
+    code for the objects in a remote call is not available in a JVM
+    which is receiving a given serialized or &quot;marshalled&quot;
+    object, RMI will utilize dynamic class loading to make the class
+    bytes for that object available to that JVM. Implementations of
+    the RMI profile must implement full RMI call semantics including
+    dynamic class loading.
+    
+    <p><li>
+    Marshalled object support
+    
+    <p>This specification requires support of marshalled object
+    manipulation and persistence through the
+    <a href="http://java.sun.com/j2se/1.3/docs/api/java/rmi/MarshalledObject.html">
+    <code>java.rmi.MarshalledObject</code></a> API.
+</ul>
+
+<ul>
+    <p><li>
+    RMI wire protocol
+    
+    <p>
+    The J2SE 1.3 RMI specification describes a wire protocol which
+    enables remote method invocations to be carried out over a
+    network.  Except where noted below, implementations of this
+    profile must support this wire protocol (known as JRMP or Java
+    Remote Method Protocol).
+    
+</ul>
+
+<ul>
+    <p><li>
+    Export of remote objects through the
+    <code>UnicastRemoteObject</code> API
+    
+    <p>
+    This specification requires implementations of the RMI profile to
+    support the &quot;export&quot; of unicast remote implementation
+    objects.  When a remote object implementation is exported to the RMI
+    runtime, remote method invocations from clients of that object will
+    be dispatched to and executed by the implementation object.
+    
+    <p><li>
+    Client and server side distributed garbage collection and
+    garbage collector interfaces
+    
+    <p>
+    An implementation of the RMI profile must include these interfaces
+    and support the RMI distributed garbage collection mechanism that
+    allows remote implementation objects to be garbage collected when
+    all remote and local references to that object have been
+    discarded.
+    
+    <p><li>
+    The activator interface and the client side activation protocol 
+    
+    <p>
+    As of J2SE v1.2, RMI remote object stubs can contain a remote
+    reference to an &quot;Activatable&quot; object. Activatable
+    objects can be active or inactive. Remote references to
+    activatable objects engage in an activation protocol that causes
+    an inactive remote object to become active when a remote method is
+    invoked on the object. The remote reference contained in a client
+    stub object is responsible for engaging in the activation
+    protocol.  An implementation of the RMI profile must support a
+    remote object reference type which will engage in the activation
+    protocol.
+    
+    <p><li>
+    Registry interfaces and export of a Registry remote object
+    
+    <p>
+    An implementation of the RMI profile must support lookup of
+    remote objects through the use of the standard location interfaces
+    
+    <a href="http://java.sun.com/j2se/1.3/docs/api/java/rmi/registry/Registry.html">
+    <code>java.rmi.registry.Registry</code></a>,
+    
+    <a href="http://java.sun.com/j2se/1.3/docs/api/java/rmi/registry/LocateRegistry.html">
+    <code>java.rmi.registry.LocateRegistry</code></a>
+    
+    and the class <a href="http://java.sun.com/j2se/1.3/docs/api/java/rmi/Naming.html">
+    <code>java.rmi.Naming</code></a>.
+    
+    <p><li>
+    All J2SE 1.3 RMI properties except those noted in the section
+    below are part of the RMI Profile API.
+
+    <p><li> The complete J2SE 1.3 RMI Profile API is also part of this
+    specification
+
+</ul>
+<p>
+The following interfaces and functionality defined by the J2SE 1.3
+RMI specification and public API are <b><i>not</i></b> part of this
+specification for the RMI profile:
+<ul>
+    <p><li>
+    RMI Through Firewalls Via Proxies
+    
+    <p>The RMI protocol for remote call tunneling over HTTP. This
+    protocol enables clients which are separated from remote objects by
+    a firewall to &quot;tunnel&quot; remote method calls through the
+    firewall to the object implementation.
+    
+    <p><li>
+    RMI's Multiplexing Protocol
+    
+    <p>The J2SE 1.3 RMI protocol for enabling multiple logical data
+    streams to be multiplexed onto a single physical data stream. This
+    protocol can enable two JVMs to invoke symmetric remote methods on
+    each other even when only a single communication stream exists
+    between the two JVMs.
+    
+    <p><li>
+    Implementation Model for an &quot;Activatable&quot; Remote Object 
+    
+    <p>
+    The RMI mechanism for supporting activatable remote object
+    implementations enables a remote object to become inactive when it
+    is not in use and to become active when a client invokes a method
+    on that implementation. Server side support for Activatable
+    objects and the Remote Method Invocation Daemon (rmid) are not
+    part of this specification.
+
+    <p>
+    The following J2SE 1.3 RMI APIs related to the implementation
+    model for an "Activatable" object are not part of the RMI Profile
+    API:
+    
+    <ul>
+    <p>
+    <i>Interfaces:</i>
+    <p>
+    <code>
+    java.rmi.activation.ActivationInstantiator<br>
+    java.rmi.activation.ActivationMonitor<br>
+    java.rmi.activation.ActivationSystem<br>
+    </code>
+        
+    <p>
+    <i>Classes:</i>
+    <p>
+    <code>
+    java.rmi.activation.Activatable<br>
+    java.rmi.activation.ActivationDesc<br>
+    java.rmi.activation.ActivationGroup<br>
+    java.rmi.activation.ActivationGroupDesc<br>
+    java.rmi.activation.ActivationGroupID<br>
+    java.rmi.activation.UnknownGroupException<br>
+    </code>
+    </ul>
+
+    <p>
+    See the properties section below for the missing RMI activation
+    property.
+    
+    <p><li>
+    Deprecated methods, classes and interfaces
+    
+    <p>The following RMI J2SE 1.3 APIs that were deprecated as of
+    J2SE 1.3 are not part of this specification:
+
+    <ul>
+    <p>
+    <i>Interfaces:</i>
+    <p>
+    <code>
+    java.rmi.server.ServerRef
+    </code>
+    
+    <p>
+    <i>Classes:</i>
+    <p>
+    <code>
+    java.rmi.registry.RegistryHandler<br>
+    java.rmi.RMISecurityException<br>
+    java.rmi.server.LoaderHandler<br>
+    java.rmi.server.LogStream<br>
+    java.rmi.server.Skeleton<br>
+    java.rmi.server.SkeletonMismatchException<br>
+    java.rmi.server.SkeletonNotFoundException<br>
+    java.rmi.ServerRuntimeException<br>
+    </code>
+        
+    <p>
+    <i>Methods:</i>
+    <p>
+    <code>
+    java.rmi.dgc.VMID.isUnique()<br>    
+    java.rmi.server.Operation.getOperation()<br>
+    java.rmi.server.RemoteCall.getInputStream()<br>
+    java.rmi.server.RemoteCall.getOuputStream<br>
+    java.rmi.server.RemoteCall.releaseOuputStream()<br>
+    java.rmi.server.RemoteCall.releaseInputStream()<br>
+    java.rmi.server.RemoteCall.getResultStream(boolean)<br>
+    java.rmi.server.RemoteCall.executeCall()<br>
+    java.rmi.server.RemoteCall.done()<br>
+    java.rmi.server.RemoteRef.done(RemoteCall)<br>
+    java.rmi.server.RemoteRef.invoke(RemoteCall)<br>
+    java.rmi.server.RemoteRef.newCall(RemoteObject, Operation[], int, long)<br>
+    java.rmi.server.RemoteStub.setRef(RemoteStub, RemoteRef)<br>
+    java.rmi.server.RMIClassLoader.getSecurityContext(ClassLoader)<br>
+    java.rmi.server.RMIClassLoader.loadClass(String)<br>
+    </code>
+    </ul>
+    
+    <p><li>
+    Support for the 1.1 stub/skeleton protocol:
+    
+    <p>As of JDK1.1, RMI supported a single protocol for communication
+    between RMI stubs and the RMI runtime which was used to carry out
+    remote method invocations. In J2SE 1.2, an improved version of
+    this protocol, was introduced into RMI. The older, JDK 1.1 stub
+    protocol is not part of this specification.  The RMI profile will
+    only support stubs that use the new 1.2 stub protocol.  Stubs
+    which are compatible with both the 1.1 and 1.2 stub protocols may
+    be used with the RMI profile, but all RMI profile communication
+    must be carried out over the 1.2 stub protocol.
+    
+    <p><li>
+    Stub and Skeleton Compiler
+    
+    <p>
+    The J2SE 1.3 specification describes a tool that generates and
+    compiles for RMI stubs and skeletons (known as &quot;rmic&quot;).
+    This RMI profile specification does not require such a stub and
+    skeleton compiler utility. Applications which need to generate RMI
+    stub classes to be used with an implementation of the RMI profile,
+    should use the stub compiler which is part of the J2SE 1.3 RMI
+    distribution.
+    
+    <p>
+    Please see the following URLs for further information on rmic:
+    
+    <p>
+    For the Solaris<font SIZE=1><sup>TM</sup></font> operating environment: 
+    
+    <p>http://java.sun.com/products/jdk/1.3/docs/tooldocs/solaris/rmic.html
+    
+    <p>For the Microsoft Windows platform: 
+    
+    <p>http://java.sun.com/products/jdk/1.3/docs/tooldocs/win32/rmic.html
+</ul>
+<ul>
+    <p><li>
+    The following RMI J2SE 1.3 properties are not part of the RMI
+    profile specification:
+
+    <p>
+    java.rmi.server.disableHttp<br>
+    java.rmi.activation.port<br>
+    java.rmi.loader.packagePrefix<br>
+    java.rmi.registry.packagePrefix<br>
+    java.rmi.server.packagePrefix<br>
+
+</ul>
+<br>
+<h3>Relationship to the CLDC Specification</h3>
+
+<p>
+The RMI Profile requires implementations of the Foundation Profile
+and the J2ME CDC. The RMI Profile is not supported by the J2ME
+Connected Limited Device Configuration (CLDC). 
+
+<br>
+<h3>Class Hierarchy</h3>
+
+<p>
+The following is a list of classes used in J2ME-CDC. The details can be seen
+in the javadoc generated section of this specification.
+
+<p>
+<pre>
+class java.lang.Object
+
+class java.rmi.activation.ActivationID (implements java.io.Serializable) 
+
+class java.rmi.dgc.Lease (implements java.io.Serializable) 
+
+class java.rmi.registry.LocateRegistry
+
+class java.rmi.MarshalledObject (implements java.io.Serializable) 
+
+class java.rmi.Naming
+
+class java.rmi.server.ObjID (implements java.io.Serializable) 
+
+class java.rmi.server.Operation
+
+class java.rmi.server.RemoteObject (implements java.rmi.Remote,
+java.io.Serializable) 
+
+class java.rmi.server.RemoteServer
+
+class java.rmi.server.UnicastRemoteObject
+
+class java.rmi.server.RemoteStub
+
+class java.rmi.server.RMIClassLoader
+
+class java.rmi.server.RMISocketFactory (implements java.rmi.server.RMIClientSocketFactory,
+java.rmi.server.RMIServerSocketFactory) 
+
+class java.lang.SecurityManager
+
+class java.rmi.RMISecurityManager
+
+class java.lang.Throwable (implements java.io.Serializable) 
+
+class java.lang.Exception
+
+class java.rmi.activation.ActivationException
+
+class java.rmi.activation.UnknownObjectException
+
+class java.rmi.AlreadyBoundException
+
+class java.lang.CloneNotSupportedException
+
+class java.rmi.server.ServerCloneException
+
+class java.io.IOException
+
+class java.rmi.RemoteException
+
+class java.rmi.AccessException
+
+class java.rmi.activation.ActivateFailedException
+
+class java.rmi.ConnectException
+
+class java.rmi.ConnectIOException
+
+class java.rmi.server.ExportException
+
+class java.rmi.server.SocketSecurityException
+
+class java.rmi.MarshalException
+
+class java.rmi.NoSuchObjectException
+
+class java.rmi.ServerError
+
+class java.rmi.ServerException
+
+class java.rmi.StubNotFoundException
+
+class java.rmi.UnexpectedException
+
+class java.rmi.UnknownHostException
+
+class java.rmi.UnmarshalException
+
+class java.rmi.NotBoundException
+
+class java.rmi.server.ServerNotActiveException
+
+class java.rmi.server.UID (implements java.io.Serializable) 
+
+class java.rmi.dgc.VMID (implements java.io.Serializable) 
+
+interface java.rmi.Remote
+
+interface java.rmi.activation.Activator
+
+interface java.rmi.dgc.DGC
+
+interface java.rmi.registry.Registry
+
+interface java.rmi.server.RemoteCall
+
+interface java.rmi.server.RMIClientSocketFactory
+
+interface java.rmi.server.RMIFailureHandler
+
+interface java.rmi.server.RMIServerSocketFactory
+
+interface java.io.Serializable
+
+interface java.io.Externalizable
+
+interface java.rmi.server.RemoteRef
+
+interface java.rmi.server.Unreferenced
+
+</pre>
+
+<hr>
+
+<p>
+Java is a trademark or registered trademark of Sun Microsystems, Inc. in the US and other countries.
+
+<p>
+Copyright 1993-2000 Sun Microsystemms, Inc. 901 San Antonio Road Palo, Alto, California, 94303, U.S.A All Rights Reserved. 
+
+</body>
+</html>
+
+
+
+
+<!-- ** BEGIN: footer.jsp ** //-->
+
+
+
+
+
+
+
+
+</td>
+</tr>
+</table>
+
+<!-- ** END: Content Table ** //-->
+
+<!-- ** BEGIN: Footer Table ** //-->
+
+<div id="footer" style="clear: both;">
+    <div class="footleft">
+        <a href="/en/resources/contacts">Contact Us</a>
+    </div>
+	
+    <div class="botbar"><img src="/images/spacer.gif" alt="" height="23" width="1"></div>
+
+    <div class="footleft2">
+         &copy; 2019, Oracle Corporation and/or its affiliates. 
+        <a href="/en/home/terms">Terms of Use</a>. <a href="http://www.oracle.com/us/legal/privacy/index.html">Privacy Policy</a>. <a href="http://www.oracle.com/us/legal/third-party-trademarks/third-party-trademarks-078568.html">Trademarks</a>
+    </div>
+
+    <div class="footright">
+        <img src="/images/common/logo_oracle_footer.gif" alt="Oracle Corporation" height="22" width="91">
+    </div>
+
+    <div style="clear: both;"><img src="/images/spacer.gif" alt="" height="30" width="1"></div>
+</div>
+
+<!-- ** END: Footer Table ** //-->
+
+
+
+<!-- ** Menu Start ** //-->
+
+
+
+</body>
+</html>
+<!-- ** END: footer.jsp ** //-->
+

@@ -1,0 +1,20 @@
+Proposed Changes for Java TV 1.1 Maintenance Release
+----------------------------------------------------
+Declare Java TV 1.1 an Java ME optional package, compatible with Personal Basis Profile 1.0 and later.
+
+Remove the unused packages javax.tv.carousel and javax.tv.media.protocol.
+
+Incorporate APIs from Java Media Framework 1.0, previously required by Java TV 1.0.
+
+Apply MHP errata against Java TV 1.0 and JMF 1.0, as listed in MHP 1.0.3 Section A.
+
+Apply agreed solutions to MHP corrigenda against Java TV 1.0.
+
+Make the JMF event/listener model follow the JDK 1.1 model, per the directives of the JMF 1.0 spec.  Thus:
+
+  - ControllerListener, GainChangeListener: Change to extend java.util.EventListener.
+
+  - ControllerEvent, GainChangeEvent : Change to extend java.util.EventObject.
+
+  - MediaEvent : Remove reference to sunw.util.EventObject.
+

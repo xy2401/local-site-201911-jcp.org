@@ -1,0 +1,624 @@
+
+<!-- ** BEGIN: header.jsp ** //-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3c.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+<head>
+    
+
+   
+    <link href="/includes/css/menu.css" rel="stylesheet" type="text/css"></link>
+    <link href="/includes/css/style.css" rel="stylesheet" type="text/css"></link>
+    <!--[if lt IE 6]><link href="/includes/css/style5.css" rel="stylesheet" type="text/css" ></link><![endif]-->
+    <!--[if gte IE 5]><link href="/includes/css/style6.css" rel="stylesheet" type="text/css" ></link><![endif]-->
+    <link href="/includes/css/tabs.css"  rel="stylesheet" type="text/css"></link>
+
+    <script type="text/javascript" src="/includes/scripts/tabs.js"></script>
+    <script type="text/javascript" src="/includes/scripts/menu.js"></script>
+   
+
+    
+
+    
+        <title>The Java Community Process(SM) Program - Press & Success - News from the JCP PMO</title>
+    
+
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+
+
+<body onload="P7_initPM(0,1,0,0,-1)">
+
+    <a name="top"></a>
+
+    <div id="header">
+	<div id="logo">
+		<a href="/en/home/index"><img src="/images/spacer.gif" alt="Java Community Process" height="81" width="151"></a>
+	</div>
+	<div id="tools">
+		<div class="search">
+			<form name="search" action="/en/jsr/summary" method="get" onsubmit="return validate_search()">
+				<input name="id" value="Search JSRs" size="16" class="form" onfocus="nullify_if_equal(this, 'Search JSRs')" type="text">
+				<a href="javascript:document.search.submit()" onclick="return validate_search()"><img src="/images/button_go.gif" width="21" height="16" border="0" alt="Submit this Search" name="sub_search"></a>
+			</form>
+		</div>
+		<div class="tools">
+			<a href="/en/press/pressroom">Press Room</a> &nbsp;|&nbsp;
+			<a href="http://java.com/java/download/index.jsp?cid=jdp78399">Get Java Here</a> &nbsp;|&nbsp;
+			<!-- <a href="javascript:void(0)">Print Format</a> &nbsp;|&nbsp;&nbsp; -->
+		</div>
+
+	</div>
+	<div style="clear: right;"></div>
+
+        
+
+	<div class="topbar"><img src="/images/spacer.gif" alt="" height="3" width="154"></div>
+	<div id="update"> </div>
+    </div>
+
+
+    
+
+        <!-- ** BEGIN: Content Table ** //-->
+
+        <table width="100%" border="0" cellpadding="0" cellspacing="0">
+
+            <tr>
+
+                <!-- ** BEGIN: Navigation Column ** //-->
+                <td width="150" id="leftcontent" valign="top">
+                    <!-- Navigation Placeholder //-->
+
+                    
+
+                    <div class="bar"><img src="/images/hr_dots1.gif" alt="" height="3" width="150"></div>
+
+        <!-- begin find JSRs form -->
+        <!-- IMPORTANT! do not convert this form to Struts < html : form > tag.  javascript change of form.action property fails. -->
+        <img src="/images/hd_find-jsrs.gif" alt="Find JSRs" height="18" width="150">
+        <form name="findjsr" action="/en/jsr/summary" method="get" class="pt5" onsubmit="return validate_findjsr()">
+            <input name="id" size="18" class="form" value="Search JSRs" onfocus="nullify_if_equal(this, 'Search JSRs')" type="text">
+	    <a href="javascript:document.findjsr.submit()" onclick="return validate_findjsr()"><img src="/images/button_go.gif" width="21" height="16" border="0" alt="Submit this Search" name="sub_search"></a>
+        </form><br><br>
+
+        <!-- ** Menu Start ** //-->
+
+        <ul id="p7PMnav">
+            <li><a href="/en/jsr/platform">JSRs by Platform</a></li>
+            <li><a href="/en/jsr/tech">JSRs by Technology</a></li>
+            <li><a href="/en/jsr/stage">JSRs by Stage</a></li>
+            <li><a href="/en/jsr/ec">JSRs by Committee</a></li>
+            <li><a href="/en/jsr/all">List of All JSRs</a></li>
+
+            <!--end find JSRs form -->
+            <div style="clear: both;"><img src="/images/spacer.gif" alt="" height="25" width="1"></div>
+
+            <!--begin my JCP -->
+            <img src="/images/hd_my-jcp.gif" alt="My JCP" height="18" width="150">
+            
+
+          <form name="login" method="get" action="/en/user/login" >
+            <input name="Sign-in" type="submit" title="Sign-in" value="Sign-in" />
+          </form>
+
+            <div style="clear:both"><img src="/images/global/spacer.gif" width="1" height="3" alt=""></div>
+            <div class="noNav">
+                <a href="/en/user/register">Register for Site</a>
+            </div>
+
+             <div class="bar"><img src="/images/hr_dots1.gif" alt="" height="3" width="150"></div>
+           <div class="noNav" style="color: #666666; padding: 0;">
+              Use of JCP site is subject to the
+              <a href="/en/home/terms" style="display:inline;padding: 0">JCP Terms of Use</a> and the
+              <a href="http://www.oracle.com/us/legal/privacy/index.html" style="display:inline;padding: 0" href="">Oracle Privacy Policy</a>
+          </div>
+
+            
+
+            <div style="clear:both"><img src="/images/global/spacer.gif" width="1" height="25" alt=""></div>
+
+            <!--begin JCP info -->
+            <img src="/images/hd_jcp-info.gif" alt="JCP Info" height="18" width="150">
+
+            <li><a href="/en/procedures/overview" class="p7PMtrg">About JCP</a>
+                <ul>
+                    <li><a href="/en/procedures/overview">Program Overview</a></li>
+                    <li><a href="/en/procedures/jcp2">JCP Process Document</a></li>
+                    <li><a href="/en/whatsnew/calendar">Calendar</a></li>
+                    <li><a href="/en/participation/members">JCP Members</a></li>
+                    <li><a href="/en/participation/committee">Executive Committee</a></li>
+                    <li><a href="/en/whatsnew/elections">Elections</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/en/participation/overview" class="p7PMtrg">Get Involved</a>
+		<ul>
+                    <li><a href="/en/participation/overview">Overview</a></li>
+                    <li><a href="/en/participation/membership">Becoming a JCP Member</a></li>
+		</ul>
+            </li>
+
+            <li><a href="/en/resources/contents" class="p7PMtrg">Community Resources</a>
+                <ul>
+                    <li><a href="/en/resources/contents">Overview</a></li>
+                    <li><a href="/en/resources/tutorials">Tutorials</a></li>
+                    <li><a href="/en/resources/multimedia">JCP Podcasts</a></li>
+                    <li><a href="/en/resources/guide">Spec Lead Guide</a></li>
+                    <li><a href="/en/resources/tdk">TCK Tool & Info</a></li>
+                    <li><a href="/en/resources/license_reference">License Reference</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/en/press/pmo" class="p7PMtrg">Community News</a>
+                <ul>
+                    <li><a href="/en/press/pmo">News</a></li>
+                    <li><a href="/en/press/news/awards/awards_main">Programs &amp; Awards</a></li>
+                    <li><a href="/en/press/releases">Press Releases</a></li>
+                    <li><a href="/en/press/success">Success Stories</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/en/introduction/faq">FAQ</a></li>
+
+            <li><a href="/en/resources/contacts">Contact Us</a></li>
+
+            <div style="clear: both;"><img src="/images/spacer.gif" alt="" height="25" width="1"></div>
+
+            <!--[if lte IE 6]><style>#p7PMnav a{height:1em;}#p7PMnav li{height:1em;float:left;clear:both;width:100%}</style><![endif]-->
+            <!--[if IE 6]><style>#p7PMnav li{clear:none;}</style><![endif]-->
+            <!--[if IE 7]><style>#p7PMnav a{zoom:100%;}#p7PMnav li{float:left;clear:both;width:100%;}</style><![endif]-->
+        </ul>
+
+        
+
+        <!--begin ad space -->
+        <div class="ads">
+            <a href="http://java.com/java/download/index.jsp?cid=jdp78399" target="_blank"><img style="display: ;" src="/images/ad_banner2.gif" alt="Ad Banner" border="1" height="70" width="150"></a>
+        </div>
+        <!--end ad space -->
+
+<!-- ** Menu End ** //-->
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;<br>
+
+    
+
+                    &nbsp;<br>
+                    <img src="/images/common/trans.gif" alt="" width="1" height="150"><br>
+
+              
+
+
+
+                </td>
+                <!-- ** END: Navigation Column ** //-->
+
+                <!-- ** BEGIN: Gutter Column ** //-->
+		<td width="10" nowrap><img src="/images/common/trans.gif" alt="" width="10" height="1"></td>
+                <!-- ** END: Gutter Column ** //-->
+
+                <!-- ** BEGIN: Content Column ** //-->
+                <td width="100%" valign="top">
+
+    
+<script type="text/javascript">
+
+String.prototype.trim = function() {
+        return this.replace(/^\s+|\s+$/g,"");
+}
+String.prototype.ltrim = function() {
+        return this.replace(/^\s+/,"");
+}
+String.prototype.rtrim = function() {
+        return this.replace(/\s+$/,"");
+}
+
+function validate_search() {
+	if (document.search.id.value == "Search JSRs" || document.search.id.value.trim().length == 0) {
+		alert("Search terms must be entered first");
+		return false;
+	}
+	return true;
+}
+
+function validate_findjsr() {
+	if (document.findjsr.id.value == "Search JSRs" || document.findjsr.id.value.trim().length == 0) {
+		alert("Search terms must be entered first");
+		return false;
+	}
+	return true;
+}
+
+function nullify_if_equal(field, str) {
+	// alert("val=" + field.value);
+	if (field.value == str) {
+		field.value = "";
+	}
+}
+
+</script>
+<!-- ** END: header.jsp ** //-->
+
+
+<!-- ** BEGIN: jsp conversion section ** //-->
+
+	    <table width="575" border="0" cellpadding="0" cellspacing="0">
+		<tr> 
+        <td width="95%" valign="top"> <table width="563" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+              <td align="left" valign="top"><img src="../../../../images/press/newsletter/jcp-newsletter-ban-prt1.gif" width="414" height="45" /></td>
+              <td style = "font-family:Arial, Helvetica, sans-serif; font-weight:bold; color:#FFFFFF; font-size:16px" align="center" valign="middle" 
+			  background="../../../../images/press/newsletter/jcp-newsletter-ban-prt2.gif">Summer</td>
+              <td style = "font-family:Arial, Helvetica, sans-serif; font-weight:bold; color:#FFFFFF; font-size:16px"  align="center" valign="middle" 
+			  background="../../../../images/press/newsletter/jcp-newsletter-ban-prt3.gif">2009</td>
+            </tr>
+            <tr>
+              <td align="left" valign="top"><img src="../../../../images/press/newsletter/jcp-newsletter-ban-prt1bot.gif" width="414" height="28" /></td>
+              <td align="left" valign="top"><img src="../../../../images/press/newsletter/jcp-newsletter-ban-prt2bot.gif" width="82" height="28" /></td>
+              <td align="left" valign="top"><img src="../../../../images/press/newsletter/jcp-newsletter-ban-prt3bot.gif" width="67" height="28" /></td>
+            </tr>
+        </table>            
+        
+        <a name="top" id="top"></a>
+        <br />
+        <table width="66%"  border="0" cellspacing="0" cellpadding="0">
+            <tr align="left" valign="top"> 
+              <td><img src="../../../../images/common/trans.gif" width="575" height="9" /></td>
+            </tr>
+            <tr align="left" valign="top"> 
+              <td class="header1">Contents </td>
+            </tr>
+            <tr align="left" valign="top"> 
+              <td id="quicklink"><a href="#pmo">From the PMO</a> </td>
+            </tr>
+            <tr align="left" valign="top"> 
+              <td id="quicklink"><a href="#recent">Recent News</a> </td>
+            </tr>
+            <tr align="left" valign="top">
+              <td id="quicklink"><a href="#events">Upcoming Events</a></td>
+            </tr>
+            <tr align="left" valign="top">
+              <td id="quicklink"><a href="#election">EC Elections</a></td>
+            </tr>
+            <tr align="left" valign="top">
+              <td id="quicklink"><a href="#site">New Site</a></td>
+            </tr>
+            <tr align="left" valign="top">
+              <td id="quicklink"><a href="#jcp2_7">JCP version 2.7</a></td>
+            </tr>
+            <tr align="left" valign="top">
+              <td id="quicklink"><a href="#leadnews">News for Spec Leads</a></td>
+            </tr>
+            <tr align="left" valign="top">
+              <td id="quicklink"><a href="#jsrs">JSRs In The Spotlight</a></td>
+            </tr>
+            <tr align="left" valign="top">
+              <td id="quicklink"><a href="#members">Membership Update</a></td>
+            </tr>
+            <tr align="left" valign="top">
+              <td id="quicklink"><a href="#contact">PMO Contact Information</a></td>
+            </tr>
+        </table>
+
+<br /><br /><br />
+
+<div class="header1"><a name="pmo">From the PMO</a></div>
+<br />
+Dear JCP Members, 
+
+Here is your Summer 2009 edition of the Java Community Process (sm) (JCP sm) Program Management Office (PMO) Newsletter. It has been a busy summer--this Newsletter is sent to JCP Members, Executive Committee (EC) Members, Spec Leads. This edition covers recent news/events, EC Elections, the new web site, JCP program version 2.7, Java Specification Requests (JSR) updates and a membership update. 
+
+<br /><br />
+
+	<a href="#top"><img src="../../../../images/common/up_arrow.gif" width="54" height="13" vspace="6" border="0" /></a> 
+	  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+	  <br />&nbsp;<br />
+	  <br />&nbsp;<br />
+	  
+<div class="header1"><a name="recent">Recent News</a></div>
+
+     <table  border="0" cellspacing="0" cellpadding="2">
+         <tr align="left" valign="top">
+            <td><img src="../../../../images/home/thumb_news.gif" width="95" height="75" align="left" /></td>
+            <td valign="top"><BR />Find out more about the latest happenings and announcements in the 
+		    JCP program, by visiting the front page of <a href="http://jcp.org">jcp.org</a>. 
+		    Some recent JCP-related news items are listed below.<br /></td>
+         </tr>
+     </table>
+ 
+<ul>
+    <li>The minutes and materials of the April, May and July JCP EC meetings are now available here: <a href="http://jcp.org/en/resources/EC_summaries">http://jcp.org/en/resources/EC_summaries</a>.</li>
+
+    <li>Transparency Case Study: Development. You can read the latest JSR case study series on developing a JSR transparently here: <a href="http://jcp.org/en/press/news/transparency4">http://jcp.org/en/press/news/transparency4</a> </li>
+
+    <li>The JCP program office presented the 2009 JCP Program Annual Awards at the JCP program community party. The award winners can be found here, along with a link to the full list of nominees: <a href="http://jcp.org/en/press/news/2009JCPawardwinnersPR">http://jcp.org/en/press/news/2009JCPawardwinnersPR</a> </li>
+
+    <li>Congratulations to the 2009 Star Spec Leads, recognizing top Spec Lead performance and rewarding exceptional service to the community. This year's Star Spec Leads are Ed Burns (Sun Microsystems), Mike Milikich (former Motorola) and David Nuescheler (Day Software). Read more about the newest Stars here: <a href="http://jcp.org/en/press/news/star2">http://jcp.org/en/press/news/star2</a> </li>
+
+    <li>The JCP program also particiapted at the 2009 JavaOne Conference in June. You can read a summary and view pictures of JCP program related activities here: <a href="http://jcp.org/en/press/news/JavaOne_wrapup_2009">http://jcp.org/en/press/news/JavaOne_wrapup_2009</a> </li>
+
+    <li>There are several Java and JSR related technical sessions being presented next week at Oracle Open World; for more information see: <a href="http://java.sun.com/developer/technicalArticles/sun_oow.html">http://java.sun.com/developer/technicalArticles/sun_oow.html</a> </li>
+</ul>
+
+<br />
+
+	<a href="#top"><img src="../../../../images/common/up_arrow.gif" width="54" height="13" vspace="6" border="0" /></a> 
+	  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+	  <br />&nbsp;<br />
+	  <br />&nbsp;<br />
+	  
+<div class="header1"><a name="events">Upcoming Events</a></div>
+
+     <table  border="0" cellspacing="0" cellpadding="2">
+         <tr align="left" valign="top">
+            <td><img src="../../../../images/home/thumb_events1.gif" width="95" height="75" align="left" /></td>
+            <td valign="top"><BR /><STRONG>**Upcoming Events**</strong><br /><br /><br /><br /></td>
+         </tr>
+     </table>
+     <br />
+<ul>
+    <li><a href="http://javasymposium.techtarget.com">The ServerSide Symposium Prague 27-28 October</a>
+    <li><a href="http://us.apachecon.com/c/acus2009">ApacheCon Oakland, 2-6 November</a>
+    <li><a href="http://qconsf.com/sf2009/conference">QCon San Francisco, 18-20 November</a>
+    <li><a href="http://www.devoxx.com/display/DV09/Home">Devoxx Antwerp, 16-20 November</a>
+    <li><a href="http://www.nljug.org/pages/events/content/jfall_2009">J-Fall Netherlands, 11 November</a>
+    <li><a href="http://it-republik.de/konferenzen/wjax09/micro">W-JAX 09 Munich, 9-13 November</a>
+    <li><a href="http://www.jsfsummit.com">JSF Summit Conference Orlando, 1-4 December</a>
+</ul>
+
+<br />
+
+	<a href="#top"><img src="../../../../images/common/up_arrow.gif" width="54" height="13" vspace="6" border="0" /></a> 
+	  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+	  <br />&nbsp;<br />
+	  <br />&nbsp;<br />
+	  
+<div class="header1"><a name="election">EC Elections</a></div>
+
+     <table  border="0" cellspacing="0" cellpadding="2">
+         <tr align="left" valign="top">
+            <td><img src="../../../../images/home/thumb_ec2.gif" width="95" height="75" align="left" /></td>
+            <td valign="top"><BR /><STRONG></strong><br /><br /><br /><br /></td>
+         </tr>
+     </table>
+
+<p>October marks the official start of the 2009 EC elections. The nomination phase is open now. Every JCP member can nominate themselves during this phase of the election, which lasts two weeks, closing in less than 7 days, on next Thursday, 14 October. To nominate go to: <a href="https://eballot.votenet.com/jcp">https://eballot.votenet.com/jcp</a>
+
+<p>Due to changes introduced by JCP version 2.7 (see above), this year there will be only one voting period for both the ratified and elected seats. There are 12 seats open (out of 32). The ballot will run 20 October ? 2 November. Primary contacts will receive voting instructions via email. More information about the EC elections is here: <a href="http://jcp.org/en/whatsnew/elections">http://jcp.org/en/whatsnew/elections</a>. 
+
+<br /><br />
+
+	<a href="#top"><img src="../../../../images/common/up_arrow.gif" width="54" height="13" vspace="6" border="0" /></a> 
+	  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+	  <br />&nbsp;<br />
+	  <br />&nbsp;<br />
+	  
+<div class="header1"><a name="site">New Site</a></div>
+
+
+<p>As you may have noticed, the JCP program office recently completed a major revision to the jcp.org web site. One of the changes was to introduce public discussion boards open to any registered user of jcp.org for each JSR. The forums are tied to mail aliases in the format of jsr-x-public@jcp.org; note that this board/alias replaces the jcp-comments aliases. You can find links to the discussion boards on each JSR page in the format of http://jcp.org/en/jsr/detail?id=x (x is the JSR number). There are also a variety of discussion boards for general topics here: <a href="http://wiki.jcp.org/boards/index.php">http://wiki.jcp.org/boards/index.php</a> 
+
+<p>For subscribers of the jcp-interest mailing list, please note that announcements about the progress of JSRs and general JCP announcements will now be posted to the jcp-announcements board. The jcp-interest alias will no longer be used for such announcements. If you have not viewed the jcp-announcements board yet, please do so. It is located here: <a href="http://wiki.jcp.org/boards/index.php?b=1">http://wiki.jcp.org/boards/index.php?b=1</a>
+
+<p>All JCP program members should be registered users of jcp.org; for more detailed information and an introduction on using the features of the new jcp.org site see: <a href="http://jcp.org/en/introduction/intro">http://jcp.org/en/introduction/intro</a>
+
+<br /><br />
+
+	<a href="#top"><img src="../../../../images/common/up_arrow.gif" width="54" height="13" vspace="6" border="0" /></a> 
+	  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+	  <br />&nbsp;<br />
+	  <br />&nbsp;<br />
+	  
+<div class="header1"><a name="jcp2_7">JCP version 2.7</a></div>
+
+The program office and the EC announced the maintenance release of JSR 215, JCP program version 2.7, in June. Read about the updates here: <a href="http://jcp.org/en/press/news/JCP2_7_transparent">http://jcp.org/en/press/news/JCP2_7_transparent</a>
+For an overview of how JCP 2.7 changes will effect Spec Leads see: <a href="http://jcp.org/en/resources/2.7">http://jcp.org/en/resources/2.7</a>
+
+<br /><br />
+
+	<a href="#top"><img src="../../../../images/common/up_arrow.gif" width="54" height="13" vspace="6" border="0" /></a> 
+	  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+	  <br />&nbsp;<br />
+	  <br />&nbsp;<br />
+	  
+<div class="header1"><a name="leadnews">News for Spec Leads</a></div>
+
+<p>There will be a WebEx meeting for Spec Leads on Wednesday 21 October at 8 am pacific time. We will discuss some of the changes and requirements introduced with JCP version 2.7, as well as any other topics of interest to Spec Leads at this meeting. Details for the meeting will be sent via email, but if you would like to attend, send email to the PMO. 
+
+<p>We have an opportunity to promote your JSR via the European Editor-in-Chief for the journal Software Practice and Experience. Please contact the PMO for details. 
+
+<br /><br />
+
+	<a href="#top"><img src="../../../../images/common/up_arrow.gif" width="54" height="13" vspace="6" border="0" /></a> 
+	  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+	  <br />&nbsp;<br />
+	  <br />&nbsp;<br />
+	  
+<div class="header1"><a name="jsrs">JSRs In The Spotlight</a></div>
+
+     <table  border="0" cellspacing="0" cellpadding="2">
+         <tr align="left" valign="top">
+            <td><img src="../../../../images/home/thumb_spotlight1.gif" width="95" height="75" align="left" /></td>
+            <td valign="top">If you want to know more about a JSR of your interest, please take a look at the Community Update Pages accessible from all JSR detail pages. Your comments are much appreciated by Spec Leads and can influence the work of the Expert Groups.<br /><br /></td>
+         </tr>
+     </table>
+
+<br /><br />
+<div class="header3">Submitted and approved by the SE/EE EC:</div>
+<ul>
+    <li>JSR 331, Constraint Programming API</li>
+</ul>
+
+<div class="header3">Completed Early Draft Review:</div>
+<ul>
+    <li>JSR 327, Dynamic Contents Delivery Service API for Java ME</li>
+    <li>JSR 329, Portlet 2.0 Bridge for JavaServer Faces 1.2 Specification </li>
+</ul>
+
+<div class="header3">Proposed Final Drafts submitted and available for review:</div>
+<ul>
+    <li>JSR 299, Web Beans </li>
+    <li>JSR 301, Portlet Bridge Specification for JavaServer Faces </li>
+    <li>JSR 325, IMS Communication Enablers (ICE) </li>
+    <li>JSR 330, Dependency Injection for Java </li>
+    <li>JSR 317, JavaTM Persistence 2.0 </li>
+    <li>JSR 316, Java EE 6</li>
+</ul>
+
+<div class="header3">Final Releases:</div>
+<ul>
+    <li>JSR 314, JavaServer Faces 2.0</li>
+    <li>JSR 283, Content Repository for Java Technology API Version 2.0 </li>
+</ul>
+
+<div class="header3">Maintenance activity:</div>
+<ul>
+    <li>JSR 109, Implementing Enterprise Web Services</li>
+    <li>JSR 224, Java API for XML-Based Web Services (JAX-WS) 2.0</li>
+    <li>JSR 211, Content Handler API</li>
+    <li>JSR 257, Contactless Communication API</li>
+</ul>
+
+<br />
+
+	<a href="#top"><img src="../../../../images/common/up_arrow.gif" width="54" height="13" vspace="6" border="0" /></a> 
+	  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+	  <br />&nbsp;<br />
+	  <br />&nbsp;<br />
+	  
+<div class="header1"><a name="members">Membership Update</a></div>
+
+     <table  border="0" cellspacing="0" cellpadding="2">
+         <tr align="left" valign="top">
+            <td><img src="../../../../images/home/thumb_members1.gif" width="95" height="75" align="left" /></td>
+            <td valign="top"><BR /><strong></strong><br /><br /><br /><br /></td>
+         </tr>
+     </table>
+
+<p>Membership in the JCP program is renewed annually by the JCP program office. It is important that the JCP program have your current contact information in order to process your renewal (whether a corporate, individual, academic, government or non-profit membership). If we are not able to contact you, your membership may be suspended and canceled after a period of 6 months. Please update and/or verify your contact information here:  <a href="http://jcp.org/en/user/my">http://jcp.org/en/user/my</a>. 
+
+
+<br /><br />
+
+	<a href="#top"><img src="../../../../images/common/up_arrow.gif" width="54" height="13" vspace="6" border="0" /></a> 
+	  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+	  <br />&nbsp;<br />
+	  <br />&nbsp;<br />
+	  
+<div class="header1"><a name="contact">PMO Contact Information</a></div>
+
+  <table width="100%"  border="1" cellpadding="10" cellspacing="0" bordercolor="#CCCCCC">
+             <tr> 
+                <td>
+                <p><strong>Here is how to contact the Program Office:</strong></p>
+                <p><strong><a href="http://jcp.org/en/jsr/proposal">http://jcp.org/en/jsr/proposal</a></strong>: to submit proposals for new JSRs.</p>
+                <p><a href=mailto:spec-submit@jcp.org><strong>spec-submit@jcp.org</strong></a>: to send in your draft and/or final specification 
+                  documents and related materials (as .pdf or Zip archive, please. Other 
+                  formats will not be posted).</p>
+                <p><a href=mailto:admin@jcp.org><strong>admin@jcp.org</strong></a>: to submit Expert Group questions, in case you misplaced 
+                  your password, requests for your Member access information, updates to 
+                  your contact information (note that most of these items can now be updated on the ?My Profile? page: http://jcp.org/en/user/my).</p>
+                <p><a href=mailto:pmo@jcp.org><strong>pmo@jcp.org</strong></a>: to reach the PMO for other inquiries.</p>
+                <p><a href="http://blogs.sun.com/jcp"><strong>http://blogs.sun.com/jcp</strong></a>: to follow latest announcements on the JCP program.</p>
+                <p><a href="http://wiki.jcp.org/boards/index.php?b=1"><strong>JCP Announcement Forum</strong></a></p>
+                </td>
+			</tr>
+   </table>
+
+<br /><br />
+
+	<a href="#top"><img src="../../../../images/common/up_arrow.gif" width="54" height="13" vspace="6" border="0" /></a> 
+	  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+	  <br />&nbsp;<br />
+	  <br />&nbsp;<br />
+
+<p>Best Regards, Heather VanCura on behalf of the JCP PMO</p>
+<a href="http://jcp.org">http://jcp.org</a><br />
+<a href="http://blogs.sun.com/jcp">blogs.sun.com/jcp</a>
+<br /><br /><br /><br />
+<p>PRIVACY STATEMENT: Sun Microsystems values your online time and privacy. If you'd prefer to stop receiving e-mail messages in the future, please send a message to <a href=mailto:pmo@jcp.org>pmo@jcp.org</a> with the following message body: signoff JCP-participant. Your address will then be removed from our mailing list. If you have any questions regarding our privacy policy, please visit <a href="http://www.sun.com/privacy">http://www.sun.com/privacy</a>. If you have any questions regarding this e-mail, please send an email to: Java Community Process Program Management Office at <a href=mailto:pmo@jcp.org>pmo@jcp.org</a>.
+<br /><br /><br /><br />
+JCP Program Newsletter Summer 2009 
+
+	      </td>
+		</tr>
+		
+	</table>
+	
+<!-- ** END: jsp conversion section ** //-->
+		
+<!-- ** BEGIN: footer.jsp ** //-->
+
+
+
+
+
+
+
+
+</td>
+</tr>
+</table>
+
+<!-- ** END: Content Table ** //-->
+
+<!-- ** BEGIN: Footer Table ** //-->
+
+<div id="footer" style="clear: both;">
+    <div class="footleft">
+        <a href="/en/resources/contacts">Contact Us</a>
+    </div>
+	
+    <div class="botbar"><img src="/images/spacer.gif" alt="" height="23" width="1"></div>
+
+    <div class="footleft2">
+         &copy; 2019, Oracle Corporation and/or its affiliates. 
+        <a href="/en/home/terms">Terms of Use</a>. <a href="http://www.oracle.com/us/legal/privacy/index.html">Privacy Policy</a>. <a href="http://www.oracle.com/us/legal/third-party-trademarks/third-party-trademarks-078568.html">Trademarks</a>
+    </div>
+
+    <div class="footright">
+        <img src="/images/common/logo_oracle_footer.gif" alt="Oracle Corporation" height="22" width="91">
+    </div>
+
+    <div style="clear: both;"><img src="/images/spacer.gif" alt="" height="30" width="1"></div>
+</div>
+
+<!-- ** END: Footer Table ** //-->
+
+
+
+<!-- ** Menu Start ** //-->
+
+
+
+</body>
+</html>
+<!-- ** END: footer.jsp ** //-->
+
+
+

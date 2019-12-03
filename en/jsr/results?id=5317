@@ -1,0 +1,620 @@
+
+
+
+
+<!-- ** BEGIN: header.jsp ** //-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3c.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+<head>
+    
+
+   
+    <link href="/includes/css/menu.css" rel="stylesheet" type="text/css"></link>
+    <link href="/includes/css/style.css" rel="stylesheet" type="text/css"></link>
+    <!--[if lt IE 6]><link href="/includes/css/style5.css" rel="stylesheet" type="text/css" ></link><![endif]-->
+    <!--[if gte IE 5]><link href="/includes/css/style6.css" rel="stylesheet" type="text/css" ></link><![endif]-->
+    <link href="/includes/css/tabs.css"  rel="stylesheet" type="text/css"></link>
+
+    <script type="text/javascript" src="/includes/scripts/tabs.js"></script>
+    <script type="text/javascript" src="/includes/scripts/menu.js"></script>
+   
+
+    
+
+    
+        <title>The Java Community Process(SM) Program - JSRs: Java Specification Requests - results</title>
+    
+
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+
+
+<body onload="P7_initPM(0,1,0,0,-1)">
+
+    <a name="top"></a>
+
+    <div id="header">
+	<div id="logo">
+		<a href="/en/home/index"><img src="/images/spacer.gif" alt="Java Community Process" height="81" width="151"></a>
+	</div>
+	<div id="tools">
+		<div class="search">
+			<form name="search" action="/en/jsr/summary" method="get" onsubmit="return validate_search()">
+				<input name="id" value="Search JSRs" size="16" class="form" onfocus="nullify_if_equal(this, 'Search JSRs')" type="text">
+				<a href="javascript:document.search.submit()" onclick="return validate_search()"><img src="/images/button_go.gif" width="21" height="16" border="0" alt="Submit this Search" name="sub_search"></a>
+			</form>
+		</div>
+		<div class="tools">
+			<a href="/en/press/pressroom">Press Room</a> &nbsp;|&nbsp;
+			<a href="http://java.com/java/download/index.jsp?cid=jdp78399">Get Java Here</a> &nbsp;|&nbsp;
+			<!-- <a href="javascript:void(0)">Print Format</a> &nbsp;|&nbsp;&nbsp; -->
+		</div>
+
+	</div>
+	<div style="clear: right;"></div>
+
+        
+
+	<div class="topbar"><img src="/images/spacer.gif" alt="" height="3" width="154"></div>
+	<div id="update"> </div>
+    </div>
+
+
+    
+
+        <!-- ** BEGIN: Content Table ** //-->
+
+        <table width="100%" border="0" cellpadding="0" cellspacing="0">
+
+            <tr>
+
+                <!-- ** BEGIN: Navigation Column ** //-->
+                <td width="150" id="leftcontent" valign="top">
+                    <!-- Navigation Placeholder //-->
+
+                    
+
+                    <div class="bar"><img src="/images/hr_dots1.gif" alt="" height="3" width="150"></div>
+
+        <!-- begin find JSRs form -->
+        <!-- IMPORTANT! do not convert this form to Struts < html : form > tag.  javascript change of form.action property fails. -->
+        <img src="/images/hd_find-jsrs.gif" alt="Find JSRs" height="18" width="150">
+        <form name="findjsr" action="/en/jsr/summary" method="get" class="pt5" onsubmit="return validate_findjsr()">
+            <input name="id" size="18" class="form" value="Search JSRs" onfocus="nullify_if_equal(this, 'Search JSRs')" type="text">
+	    <a href="javascript:document.findjsr.submit()" onclick="return validate_findjsr()"><img src="/images/button_go.gif" width="21" height="16" border="0" alt="Submit this Search" name="sub_search"></a>
+        </form><br><br>
+
+        <!-- ** Menu Start ** //-->
+
+        <ul id="p7PMnav">
+            <li><a href="/en/jsr/platform">JSRs by Platform</a></li>
+            <li><a href="/en/jsr/tech">JSRs by Technology</a></li>
+            <li><a href="/en/jsr/stage">JSRs by Stage</a></li>
+            <li><a href="/en/jsr/ec">JSRs by Committee</a></li>
+            <li><a href="/en/jsr/all">List of All JSRs</a></li>
+
+            <!--end find JSRs form -->
+            <div style="clear: both;"><img src="/images/spacer.gif" alt="" height="25" width="1"></div>
+
+            <!--begin my JCP -->
+            <img src="/images/hd_my-jcp.gif" alt="My JCP" height="18" width="150">
+            
+
+          <form name="login" method="get" action="/en/user/login" >
+            <input name="Sign-in" type="submit" title="Sign-in" value="Sign-in" />
+          </form>
+
+            <div style="clear:both"><img src="/images/global/spacer.gif" width="1" height="3" alt=""></div>
+            <div class="noNav">
+                <a href="/en/user/register">Register for Site</a>
+            </div>
+
+             <div class="bar"><img src="/images/hr_dots1.gif" alt="" height="3" width="150"></div>
+           <div class="noNav" style="color: #666666; padding: 0;">
+              Use of JCP site is subject to the
+              <a href="/en/home/terms" style="display:inline;padding: 0">JCP Terms of Use</a> and the
+              <a href="http://www.oracle.com/us/legal/privacy/index.html" style="display:inline;padding: 0" href="">Oracle Privacy Policy</a>
+          </div>
+
+            
+
+            <div style="clear:both"><img src="/images/global/spacer.gif" width="1" height="25" alt=""></div>
+
+            <!--begin JCP info -->
+            <img src="/images/hd_jcp-info.gif" alt="JCP Info" height="18" width="150">
+
+            <li><a href="/en/procedures/overview" class="p7PMtrg">About JCP</a>
+                <ul>
+                    <li><a href="/en/procedures/overview">Program Overview</a></li>
+                    <li><a href="/en/procedures/jcp2">JCP Process Document</a></li>
+                    <li><a href="/en/whatsnew/calendar">Calendar</a></li>
+                    <li><a href="/en/participation/members">JCP Members</a></li>
+                    <li><a href="/en/participation/committee">Executive Committee</a></li>
+                    <li><a href="/en/whatsnew/elections">Elections</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/en/participation/overview" class="p7PMtrg">Get Involved</a>
+		<ul>
+                    <li><a href="/en/participation/overview">Overview</a></li>
+                    <li><a href="/en/participation/membership">Becoming a JCP Member</a></li>
+		</ul>
+            </li>
+
+            <li><a href="/en/resources/contents" class="p7PMtrg">Community Resources</a>
+                <ul>
+                    <li><a href="/en/resources/contents">Overview</a></li>
+                    <li><a href="/en/resources/tutorials">Tutorials</a></li>
+                    <li><a href="/en/resources/multimedia">JCP Podcasts</a></li>
+                    <li><a href="/en/resources/guide">Spec Lead Guide</a></li>
+                    <li><a href="/en/resources/tdk">TCK Tool & Info</a></li>
+                    <li><a href="/en/resources/license_reference">License Reference</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/en/press/pmo" class="p7PMtrg">Community News</a>
+                <ul>
+                    <li><a href="/en/press/pmo">News</a></li>
+                    <li><a href="/en/press/news/awards/awards_main">Programs &amp; Awards</a></li>
+                    <li><a href="/en/press/releases">Press Releases</a></li>
+                    <li><a href="/en/press/success">Success Stories</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/en/introduction/faq">FAQ</a></li>
+
+            <li><a href="/en/resources/contacts">Contact Us</a></li>
+
+            <div style="clear: both;"><img src="/images/spacer.gif" alt="" height="25" width="1"></div>
+
+            <!--[if lte IE 6]><style>#p7PMnav a{height:1em;}#p7PMnav li{height:1em;float:left;clear:both;width:100%}</style><![endif]-->
+            <!--[if IE 6]><style>#p7PMnav li{clear:none;}</style><![endif]-->
+            <!--[if IE 7]><style>#p7PMnav a{zoom:100%;}#p7PMnav li{float:left;clear:both;width:100%;}</style><![endif]-->
+        </ul>
+
+        
+
+        <!--begin ad space -->
+        <div class="ads">
+            <a href="http://java.com/java/download/index.jsp?cid=jdp78399" target="_blank"><img style="display: ;" src="/images/ad_banner2.gif" alt="Ad Banner" border="1" height="70" width="150"></a>
+        </div>
+        <!--end ad space -->
+
+<!-- ** Menu End ** //-->
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;<br>
+
+    
+
+                    &nbsp;<br>
+                    <img src="/images/common/trans.gif" alt="" width="1" height="150"><br>
+
+              
+
+
+
+                </td>
+                <!-- ** END: Navigation Column ** //-->
+
+                <!-- ** BEGIN: Gutter Column ** //-->
+		<td width="10" nowrap><img src="/images/common/trans.gif" alt="" width="10" height="1"></td>
+                <!-- ** END: Gutter Column ** //-->
+
+                <!-- ** BEGIN: Content Column ** //-->
+                <td width="100%" valign="top">
+
+    
+<script type="text/javascript">
+
+String.prototype.trim = function() {
+        return this.replace(/^\s+|\s+$/g,"");
+}
+String.prototype.ltrim = function() {
+        return this.replace(/^\s+/,"");
+}
+String.prototype.rtrim = function() {
+        return this.replace(/\s+$/,"");
+}
+
+function validate_search() {
+	if (document.search.id.value == "Search JSRs" || document.search.id.value.trim().length == 0) {
+		alert("Search terms must be entered first");
+		return false;
+	}
+	return true;
+}
+
+function validate_findjsr() {
+	if (document.findjsr.id.value == "Search JSRs" || document.findjsr.id.value.trim().length == 0) {
+		alert("Search terms must be entered first");
+		return false;
+	}
+	return true;
+}
+
+function nullify_if_equal(field, str) {
+	// alert("val=" + field.value);
+	if (field.value == str) {
+		field.value = "";
+	}
+}
+
+</script>
+<!-- ** END: header.jsp ** //-->
+
+
+
+
+<b>
+  <font color="#663399" size="+1">
+    JSR #357<br>
+    Social Media API<br>
+    JSR Review Ballot<br>
+  </font>
+  Ballot duration: 2012-03-06&nbsp;&nbsp; to: 2012-03-19<br>
+</b>
+
+<P>
+
+
+
+
+
+
+
+These are the final results of the JSR Review Ballot for JSR #357.
+
+	
+
+The <a href="/en/participation/committee#SEEE">Executive Committee for SE/EE</a> has not approved this ballot.
+	
+
+
+</P>
+
+<h3>Votes</h3><BR>
+<table width="600" border="0" cellspacing="0" cellpadding="3">
+  <tr>
+    <td>
+
+<B>SE/EE</B>
+
+<table width="600" border="1" cellspacing="0" cellpadding="5">
+  <tr>
+
+  <td>
+    <table width="100%">
+      <tr>
+        <td align="left"><font size="2">Azul Systems, Inc.</font></td>
+        <td align="right"><img src="/images/common/no.gif" width="23" height="23" alt="No"></td>
+      </tr>
+    </table>
+  </td>
+
+  <td>
+    <table width="100%">
+      <tr>
+        <td align="left"><font size="2">Credit Suisse</font></td>
+        <td align="right"><img src="/images/common/yes.gif" width="23" height="23" alt="Yes"></td>
+      </tr>
+    </table>
+  </td>
+
+  <td>
+    <table width="100%">
+      <tr>
+        <td align="left"><font size="2">Eclipse Foundation, Inc</font></td>
+        <td align="right"><img src="/images/common/no.gif" width="23" height="23" alt="No"></td>
+      </tr>
+    </table>
+  </td>
+
+  <td>
+    <table width="100%">
+      <tr>
+        <td align="left"><font size="2">Ericsson AB</font></td>
+        <td align="right"><img src="/images/common/no.gif" width="23" height="23" alt="No"></td>
+      </tr>
+    </table>
+  </td>
+  </tr>
+  <tr>
+
+  <td>
+    <table width="100%">
+      <tr>
+        <td align="left"><font size="2">Fujitsu Limited</font></td>
+        <td align="right"><img src="/images/common/abstain.gif" width="23" height="23" alt="Abstain"></td>
+      </tr>
+    </table>
+  </td>
+
+  <td>
+    <table width="100%">
+      <tr>
+        <td align="left"><font size="2">Goldman Sachs & Co.</font></td>
+        <td align="right"><img src="/images/common/yes.gif" width="23" height="23" alt="Yes"></td>
+      </tr>
+    </table>
+  </td>
+
+  <td>
+    <table width="100%">
+      <tr>
+        <td align="left"><font size="2">Google Inc.</font></td>
+        <td align="right"><img src="/images/common/no.gif" width="23" height="23" alt="No"></td>
+      </tr>
+    </table>
+  </td>
+
+  <td>
+    <table width="100%">
+      <tr>
+        <td align="left"><font size="2">Hewlett-Packard</font></td>
+        <td align="right"><img src="/images/common/no.gif" width="23" height="23" alt="No"></td>
+      </tr>
+    </table>
+  </td>
+  </tr>
+  <tr>
+
+  <td>
+    <table width="100%">
+      <tr>
+        <td align="left"><font size="2">IBM</font></td>
+        <td align="right"><img src="/images/common/no.gif" width="23" height="23" alt="No"></td>
+      </tr>
+    </table>
+  </td>
+
+  <td>
+    <table width="100%">
+      <tr>
+        <td align="left"><font size="2">Intel Corp.</font></td>
+        <td align="right"><img src="/images/common/none21.gif" width="23" height="23" alt="No Vote"></td>
+      </tr>
+    </table>
+  </td>
+
+  <td>
+    <table width="100%">
+      <tr>
+        <td align="left"><font size="2">London Java Community</font></td>
+        <td align="right"><img src="/images/common/no.gif" width="23" height="23" alt="No"></td>
+      </tr>
+    </table>
+  </td>
+
+  <td>
+    <table width="100%">
+      <tr>
+        <td align="left"><font size="2">Oracle</font></td>
+        <td align="right"><img src="/images/common/yes.gif" width="23" height="23" alt="Yes"></td>
+      </tr>
+    </table>
+  </td>
+  </tr>
+  <tr>
+
+  <td>
+    <table width="100%">
+      <tr>
+        <td align="left"><font size="2">Red Hat</font></td>
+        <td align="right"><img src="/images/common/yes.gif" width="23" height="23" alt="Yes"></td>
+      </tr>
+    </table>
+  </td>
+
+  <td>
+    <table width="100%">
+      <tr>
+        <td align="left"><font size="2">SAP SE</font></td>
+        <td align="right"><img src="/images/common/no.gif" width="23" height="23" alt="No"></td>
+      </tr>
+    </table>
+  </td>
+
+  <td>
+    <table width="100%">
+      <tr>
+        <td align="left"><font size="2">SouJava</font></td>
+        <td align="right"><img src="/images/common/yes.gif" width="23" height="23" alt="Yes"></td>
+      </tr>
+    </table>
+  </td>
+
+  <td>
+    <table width="100%">
+      <tr>
+        <td align="left"><font size="2">Twitter, Inc.</font></td>
+        <td align="right"><img src="/images/common/abstain.gif" width="23" height="23" alt="Abstain"></td>
+      </tr>
+    </table>
+  </td>
+  </tr>
+
+</table>
+<br>
+
+
+
+</td>
+<td width="20"><img src="/images/common/pixel.gif" width="20" height="1" alt=""></td>
+<td valign="top">
+  <table border="0" cellspacing="0" cellpadding="5" height="100%">
+    <tr align="left">
+      <td colspan="2">
+        <b>Icon Legend</b>
+      </td>
+    </tr>
+    <tr valign="top">
+      <td alt="left">Yes</td>
+      <td align="right"><img src="/images/common/yes.gif" width="23" height="23" alt="Yes"></td>
+    </tr>
+    <tr valign="top">
+      <td align="left">No</td>
+      <td align="right"><img src="/images/common/no.gif" width="23" height="23" alt="No"></td>
+    </tr>
+    <tr valign="top">
+      <td>Abstain</td>
+      <td align="right"><img src="/images/common/abstain.gif" width="23" height="23" alt="Abstain"></td>
+    </tr>
+    <tr valign="top">
+      <td>Not voted</td>
+      <td align="right"><img src="/images/common/none21.gif" width="23" height="23" alt="Not voted"></td>
+   </tr>
+ </table>
+</td>
+</tr>
+</table>
+<br>
+
+
+<HR NOSHADE ALIGN="left" WIDTH="70%">
+<h3>View Vote Log</h3>
+<BR>
+
+<FORM>
+
+
+
+<strong>SE/EE</strong><br>
+<TEXTAREA ROWS="10" COLS="80" WRAP="soft" READONLY>On 2012-03-16 SAP SE voted No with the following comment:
+After careful consideration, SAP has come to the conclusion that JSR 357, in its current form, should not proceed.  Our rationale is that the scope, as stated, is too broad and imprecise to establish an Expert Group that could efficiently produce a specification which would be generally useful to the Java Community.  
+------------------------------------------------------------------------------
+On 2012-03-19 Credit Suisse voted Yes with the following comment:
+As Credit Suisse represents the customers point of view in the Executive Committee, we are interested in converging the various industry standards (Open Social and others) and pushing the standardization for Social Network Technologies also from the JCP. We are concerned about two points: the broad scope mentioned in the request and security. Consequently, we suggest that security implications of the features of the API have to be clearly investigated and appropriate guidelines to securely use and implement the API have to be given.
+------------------------------------------------------------------------------
+On 2012-03-19 Hewlett-Packard voted No with the following comment:
+HP agrees with the comments from other EC members regarding the overly broad scope of this JSR.  We also believe this JSR should be voted on by both ECs, if it is to begin work at this time.  We understand the ECs will merge later this year, but that will be around the time of public review based on the schedule in the JSR.
+------------------------------------------------------------------------------
+On 2012-03-19 Twitter, Inc. voted Abstain with the following comment:
+While we were initially excited about this proposal, we think it's a bit too early to start standardizing on social and encourage folks to look at third party libraries for support to connect to the myriad of social networks available.
+------------------------------------------------------------------------------
+On 2012-03-19 Goldman Sachs & Co. voted Yes with the following comment:
+We believe that Social Network technology space will benefit from standardization of API's as it will provide greater opportunity for competition,   especially in the client space. That said, we agree with many members that the scope of the initial JSR is very broad and a more narrow scoping is likely to lead to success.
+
+The Spec leads did address this in a communication to the EC with a comment below.  
+
+'... the scope of the JSR primarily is Connecting to Social Media Services and Providers, so similar to the first JSON JSR one could see it as "Java Social Media Client API"' 
+
+With that restriction, we are inclined to support this JSR at this stage and will revise our opinion as the JSR progresses. We urge the JSR WG and Spec Leads to consider Security and Identity related JSR's within the context of this work.
+------------------------------------------------------------------------------
+On 2012-03-19 Eclipse Foundation, Inc voted No with the following comment:
+The Eclipse Foundation is a firm believer that technology should be standardized only after sufficient experimentation and implementation has happened in the industry. Social media is still quite new, and we tend to agree with those others who have stated that it is too early to begin a standardization process for it.
+------------------------------------------------------------------------------
+On 2012-03-19 Fujitsu Limited voted Abstain with the following comment:
+Fujitsu agrees with comments from other EC members.
+
+------------------------------------------------------------------------------
+On 2012-03-19 Oracle voted Yes with the following comment:
+Like others, we also have concerns regarding the rapidly changing social media environment, but have decided to withhold judgement for now and reexamine this issue at the next state of the JSR
+------------------------------------------------------------------------------
+On 2012-03-19 Azul Systems, Inc. voted No with the following comment:
+Azul agrees with comments by other EC members concerning the broad scope of the JSR proposal. We think that much of what the JSR is trying to model should be solidified outside of the JCP and JSR process, and in wider-reaching bodies that would also be concerned with non-Java-platform aspects. We agree with IBM's note about the space having many still-moving parts, and support LJC's suggestion that a smaller scope JSR would be more appropriate, assuming that such a JSR would focus on specific, semi-stable, and well understood aspects of the Social Media space. 
+------------------------------------------------------------------------------
+On 2012-03-19 Google Inc. voted No with the following comment:
+Google has little to add to what has already been said by the others who are concerned about the scope and direction of this JSR.
+------------------------------------------------------------------------------
+On 2012-03-06 IBM voted No with the following comment:
+IBM has looked carefully at the JSR 357 proposal, and believes the scope of the proposed JSR is far too wide to result in a workable specification that could be broadly adopted by the Java community.  At present, the environment around social media programming models is characterized by very rapid evolution in open standards communities like the OpenSocial Foundation, and open source communities such as Apache Shindig, Abdera2 and Rave. JSR 357 would attempt to place an overarching API structure onto a set of those moving parts.  IBM believes it is too early in the life cycle of the social media environment to put a JSR 357 Java API into the marketplace which would - at best - cause confusion and potentially impede the development of the current broad based work being done.  IBM believes the correct approach is to allow the marketplace to coalesce around the evolving social media models, and as they mature, provide robust Java APIs bindings to provide the Java community with useful "on-ramps" to social applications that provide value to our customers.  When the time is right, and the Java community's understanding of Social Media APIs for our customers is more mature, a set of more specific JSR proposals, each addressing a specific area of customer need in Social Media APIs, is the approach IBM would like to see develop.
+
+IBM's vote is based on the technical merits of this JSR and is not a vote on the licensing terms.  IBM supports licensing models that create an open and level playing field by allowing third parties to create independent implementations of Java Specifications and that do not allow individuals or companies to exercise unnecessary control for proprietary advantage.  We support open source as a licensing model for contributions in the JCP, and would hope others will support this direction. This comment is not necessarily directed at the current business or license terms for this JSR, however, it is a statement of IBM's preferred licensing model.
+------------------------------------------------------------------------------
+On 2012-03-19 SouJava voted Yes with the following comment:
+SouJava understands the concerns raised by other EC members. We also understand that the spec lead is sensible to those issues, and has offered more detailed information during the past few days. We urge the spec lead to take actions to address the issues raised, so this JSR can succeed. That said, we also believe that there is enough experimentation in the market in the projects presented in the JSR, and that it is possible to create a specification that is specific enough to deal with the issues raised, and broad enough to be valuable for the Java community. We also note that engagement from developers of existing projects is fundamental to bring the current knowledge in social-media-integration APIs to this JSR, and we would like to see strong efforts done by the spec lead in this regard. With these comments, we vote to move forward with this JSR.
+------------------------------------------------------------------------------
+On 2012-03-09 Red Hat voted Yes with no comment.
+------------------------------------------------------------------------------
+On 2012-03-16 London Java Community voted No with the following comment:
+Whilst the LJC applauds the efforts to build a consensus around the social media space, we feel that this proposal has significant shortcomings and as such, we are unable to support it at this time. The key problem that we see is that the API contains a high degree of domain modelling which is too inflexible to easily accommodate the evolving space. The lack of focus on mobile is also a significant drawback - in 2012, social media is increasingly being driven by mobile applications - it makes no sense to have a social JSR which is not co-ordinated with the ME standards process. The LJC would welcome the withdrawal of this proposal, and its replacement with smaller JSRs which target specific parts of this space instead. 
+------------------------------------------------------------------------------
+On 2012-03-19 Ericsson AB voted No with the following comment:
+We agree with the concerns raised by other EC members.
+------------------------------------------------------------------------------
+</TEXTAREA>
+
+
+<br><br>
+
+
+
+</FORM>
+
+
+
+
+
+<!-- ** BEGIN: footer.jsp ** //-->
+
+
+
+
+
+
+
+
+</td>
+</tr>
+</table>
+
+<!-- ** END: Content Table ** //-->
+
+<!-- ** BEGIN: Footer Table ** //-->
+
+<div id="footer" style="clear: both;">
+    <div class="footleft">
+        <a href="/en/resources/contacts">Contact Us</a>
+    </div>
+	
+    <div class="botbar"><img src="/images/spacer.gif" alt="" height="23" width="1"></div>
+
+    <div class="footleft2">
+         &copy; 2019, Oracle Corporation and/or its affiliates. 
+        <a href="/en/home/terms">Terms of Use</a>. <a href="http://www.oracle.com/us/legal/privacy/index.html">Privacy Policy</a>. <a href="http://www.oracle.com/us/legal/third-party-trademarks/third-party-trademarks-078568.html">Trademarks</a>
+    </div>
+
+    <div class="footright">
+        <img src="/images/common/logo_oracle_footer.gif" alt="Oracle Corporation" height="22" width="91">
+    </div>
+
+    <div style="clear: both;"><img src="/images/spacer.gif" alt="" height="30" width="1"></div>
+</div>
+
+<!-- ** END: Footer Table ** //-->
+
+
+
+<!-- ** Menu Start ** //-->
+
+
+
+</body>
+</html>
+<!-- ** END: footer.jsp ** //-->
+

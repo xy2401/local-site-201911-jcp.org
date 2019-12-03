@@ -1,0 +1,878 @@
+
+<!-- ** BEGIN: header.jsp ** //-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3c.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+<head>
+    
+
+   
+    <link href="/includes/css/menu.css" rel="stylesheet" type="text/css"></link>
+    <link href="/includes/css/style.css" rel="stylesheet" type="text/css"></link>
+    <!--[if lt IE 6]><link href="/includes/css/style5.css" rel="stylesheet" type="text/css" ></link><![endif]-->
+    <!--[if gte IE 5]><link href="/includes/css/style6.css" rel="stylesheet" type="text/css" ></link><![endif]-->
+    <link href="/includes/css/tabs.css"  rel="stylesheet" type="text/css"></link>
+
+    <script type="text/javascript" src="/includes/scripts/tabs.js"></script>
+    <script type="text/javascript" src="/includes/scripts/menu.js"></script>
+   
+
+    
+
+    
+        <title>The Java Community Process(SM) Program - communityprocess - maintenance</title>
+    
+
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+
+
+<body onload="P7_initPM(0,1,0,0,-1)">
+
+    <a name="top"></a>
+
+    <div id="header">
+	<div id="logo">
+		<a href="/en/home/index"><img src="/images/spacer.gif" alt="Java Community Process" height="81" width="151"></a>
+	</div>
+	<div id="tools">
+		<div class="search">
+			<form name="search" action="/en/jsr/summary" method="get" onsubmit="return validate_search()">
+				<input name="id" value="Search JSRs" size="16" class="form" onfocus="nullify_if_equal(this, 'Search JSRs')" type="text">
+				<a href="javascript:document.search.submit()" onclick="return validate_search()"><img src="/images/button_go.gif" width="21" height="16" border="0" alt="Submit this Search" name="sub_search"></a>
+			</form>
+		</div>
+		<div class="tools">
+			<a href="/en/press/pressroom">Press Room</a> &nbsp;|&nbsp;
+			<a href="http://java.com/java/download/index.jsp?cid=jdp78399">Get Java Here</a> &nbsp;|&nbsp;
+			<!-- <a href="javascript:void(0)">Print Format</a> &nbsp;|&nbsp;&nbsp; -->
+		</div>
+
+	</div>
+	<div style="clear: right;"></div>
+
+        
+
+	<div class="topbar"><img src="/images/spacer.gif" alt="" height="3" width="154"></div>
+	<div id="update"> </div>
+    </div>
+
+
+    
+
+        <!-- ** BEGIN: Content Table ** //-->
+
+        <table width="100%" border="0" cellpadding="0" cellspacing="0">
+
+            <tr>
+
+                <!-- ** BEGIN: Navigation Column ** //-->
+                <td width="150" id="leftcontent" valign="top">
+                    <!-- Navigation Placeholder //-->
+
+                    
+
+                    <div class="bar"><img src="/images/hr_dots1.gif" alt="" height="3" width="150"></div>
+
+        <!-- begin find JSRs form -->
+        <!-- IMPORTANT! do not convert this form to Struts < html : form > tag.  javascript change of form.action property fails. -->
+        <img src="/images/hd_find-jsrs.gif" alt="Find JSRs" height="18" width="150">
+        <form name="findjsr" action="/en/jsr/summary" method="get" class="pt5" onsubmit="return validate_findjsr()">
+            <input name="id" size="18" class="form" value="Search JSRs" onfocus="nullify_if_equal(this, 'Search JSRs')" type="text">
+	    <a href="javascript:document.findjsr.submit()" onclick="return validate_findjsr()"><img src="/images/button_go.gif" width="21" height="16" border="0" alt="Submit this Search" name="sub_search"></a>
+        </form><br><br>
+
+        <!-- ** Menu Start ** //-->
+
+        <ul id="p7PMnav">
+            <li><a href="/en/jsr/platform">JSRs by Platform</a></li>
+            <li><a href="/en/jsr/tech">JSRs by Technology</a></li>
+            <li><a href="/en/jsr/stage">JSRs by Stage</a></li>
+            <li><a href="/en/jsr/ec">JSRs by Committee</a></li>
+            <li><a href="/en/jsr/all">List of All JSRs</a></li>
+
+            <!--end find JSRs form -->
+            <div style="clear: both;"><img src="/images/spacer.gif" alt="" height="25" width="1"></div>
+
+            <!--begin my JCP -->
+            <img src="/images/hd_my-jcp.gif" alt="My JCP" height="18" width="150">
+            
+
+          <form name="login" method="get" action="/en/user/login" >
+            <input name="Sign-in" type="submit" title="Sign-in" value="Sign-in" />
+          </form>
+
+            <div style="clear:both"><img src="/images/global/spacer.gif" width="1" height="3" alt=""></div>
+            <div class="noNav">
+                <a href="/en/user/register">Register for Site</a>
+            </div>
+
+             <div class="bar"><img src="/images/hr_dots1.gif" alt="" height="3" width="150"></div>
+           <div class="noNav" style="color: #666666; padding: 0;">
+              Use of JCP site is subject to the
+              <a href="/en/home/terms" style="display:inline;padding: 0">JCP Terms of Use</a> and the
+              <a href="http://www.oracle.com/us/legal/privacy/index.html" style="display:inline;padding: 0" href="">Oracle Privacy Policy</a>
+          </div>
+
+            
+
+            <div style="clear:both"><img src="/images/global/spacer.gif" width="1" height="25" alt=""></div>
+
+            <!--begin JCP info -->
+            <img src="/images/hd_jcp-info.gif" alt="JCP Info" height="18" width="150">
+
+            <li><a href="/en/procedures/overview" class="p7PMtrg">About JCP</a>
+                <ul>
+                    <li><a href="/en/procedures/overview">Program Overview</a></li>
+                    <li><a href="/en/procedures/jcp2">JCP Process Document</a></li>
+                    <li><a href="/en/whatsnew/calendar">Calendar</a></li>
+                    <li><a href="/en/participation/members">JCP Members</a></li>
+                    <li><a href="/en/participation/committee">Executive Committee</a></li>
+                    <li><a href="/en/whatsnew/elections">Elections</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/en/participation/overview" class="p7PMtrg">Get Involved</a>
+		<ul>
+                    <li><a href="/en/participation/overview">Overview</a></li>
+                    <li><a href="/en/participation/membership">Becoming a JCP Member</a></li>
+		</ul>
+            </li>
+
+            <li><a href="/en/resources/contents" class="p7PMtrg">Community Resources</a>
+                <ul>
+                    <li><a href="/en/resources/contents">Overview</a></li>
+                    <li><a href="/en/resources/tutorials">Tutorials</a></li>
+                    <li><a href="/en/resources/multimedia">JCP Podcasts</a></li>
+                    <li><a href="/en/resources/guide">Spec Lead Guide</a></li>
+                    <li><a href="/en/resources/tdk">TCK Tool & Info</a></li>
+                    <li><a href="/en/resources/license_reference">License Reference</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/en/press/pmo" class="p7PMtrg">Community News</a>
+                <ul>
+                    <li><a href="/en/press/pmo">News</a></li>
+                    <li><a href="/en/press/news/awards/awards_main">Programs &amp; Awards</a></li>
+                    <li><a href="/en/press/releases">Press Releases</a></li>
+                    <li><a href="/en/press/success">Success Stories</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/en/introduction/faq">FAQ</a></li>
+
+            <li><a href="/en/resources/contacts">Contact Us</a></li>
+
+            <div style="clear: both;"><img src="/images/spacer.gif" alt="" height="25" width="1"></div>
+
+            <!--[if lte IE 6]><style>#p7PMnav a{height:1em;}#p7PMnav li{height:1em;float:left;clear:both;width:100%}</style><![endif]-->
+            <!--[if IE 6]><style>#p7PMnav li{clear:none;}</style><![endif]-->
+            <!--[if IE 7]><style>#p7PMnav a{zoom:100%;}#p7PMnav li{float:left;clear:both;width:100%;}</style><![endif]-->
+        </ul>
+
+        
+
+        <!--begin ad space -->
+        <div class="ads">
+            <a href="http://java.com/java/download/index.jsp?cid=jdp78399" target="_blank"><img style="display: ;" src="/images/ad_banner2.gif" alt="Ad Banner" border="1" height="70" width="150"></a>
+        </div>
+        <!--end ad space -->
+
+<!-- ** Menu End ** //-->
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;<br>
+
+    
+
+                    &nbsp;<br>
+                    <img src="/images/common/trans.gif" alt="" width="1" height="150"><br>
+
+              
+
+
+
+                </td>
+                <!-- ** END: Navigation Column ** //-->
+
+                <!-- ** BEGIN: Gutter Column ** //-->
+		<td width="10" nowrap><img src="/images/common/trans.gif" alt="" width="10" height="1"></td>
+                <!-- ** END: Gutter Column ** //-->
+
+                <!-- ** BEGIN: Content Column ** //-->
+                <td width="100%" valign="top">
+
+    
+<script type="text/javascript">
+
+String.prototype.trim = function() {
+        return this.replace(/^\s+|\s+$/g,"");
+}
+String.prototype.ltrim = function() {
+        return this.replace(/^\s+/,"");
+}
+String.prototype.rtrim = function() {
+        return this.replace(/\s+$/,"");
+}
+
+function validate_search() {
+	if (document.search.id.value == "Search JSRs" || document.search.id.value.trim().length == 0) {
+		alert("Search terms must be entered first");
+		return false;
+	}
+	return true;
+}
+
+function validate_findjsr() {
+	if (document.findjsr.id.value == "Search JSRs" || document.findjsr.id.value.trim().length == 0) {
+		alert("Search terms must be entered first");
+		return false;
+	}
+	return true;
+}
+
+function nullify_if_equal(field, str) {
+	// alert("val=" + field.value);
+	if (field.value == str) {
+		field.value = "";
+	}
+}
+
+</script>
+<!-- ** END: header.jsp ** //-->
+
+
+
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+  <meta content="text/html; charset=ISO-8859-1"
+ http-equiv="content-type">
+  <title>Java 3D 1.4 Change Log</title>
+</head>
+<body>
+<h1>Java&nbsp;3D API version 1.4 Change Log</h1>
+<p>Here are the proposed changes for Java&nbsp;3D version 1.4. These
+proposed changes are a results of discussion and collaboration with the
+Java&nbsp;3D community on java.net (see
+<a href="https://java3d.dev.java.net">https://java3d.dev.java.net</a>).
+They are already part of daily and periodic stable builds available on
+java.net.</p>
+<h2>I. Proposed Changes<br>
+</h2>
+<p>Here is the list of proposed changes for the Java&nbsp;3D 1.4 API:<br>
+</p>
+<ol>
+  <li><a href="#Programmable_shader_support">Programmable shader support</a></li>
+  <li><a href="#Default_values">Default values for read capability bits</a></li>
+  <li><a href="#Picking">Picking</a></li>
+  <li><a href="#Stencil">Stencil</a></li>
+  <li><a href="#Rendering_attributes">Rendering attributes</a></li>
+  <li><a href="#Other_minor_features">Other minor features</a></li>
+  <li><a href="#Deprecated_API">Deprecated API</a><br>
+  </li>
+</ol>
+<p>For a complete description of these changes, please see the
+proposed API specification (javadoc) for the 1.4 version of the
+Java&nbsp;3D API.
+</p>
+<h3><a name="Programmable_shader_support"></a>1. Programmable shader
+support<br>
+</h3>
+<p>We propose to add programmable shader support to Java&nbsp;3D 1.4
+This is
+the primary new feature of this release.<br>
+</p>
+<p>The following new classes and interfaces are added in
+the <code>javax.media.j3d</code> package:<br>
+</p>
+<ul>
+  <code>public class <span style="font-weight: bold;">ShaderAppearance</span>
+extends Appearance<br>
+public class <span style="font-weight: bold;">ShaderAttributeSet</span>
+extends
+NodeComponent<br>
+public abstract class <span style="font-weight: bold;">ShaderAttribute</span>
+extends
+NodeComponent<br>
+public class <span style="font-weight: bold;">ShaderAttributeBinding</span>
+extends
+ShaderAttribute<br>
+public abstract class <span style="font-weight: bold;">ShaderAttributeObject</span>
+extends ShaderAttribute<br>
+public class <span style="font-weight: bold;">ShaderAttributeValue</span>
+extends
+ShaderAttributeObject<br>
+public class <span style="font-weight: bold;">ShaderAttributeArray</span>
+extends
+ShaderAttributeObject<br>
+public abstract class <span style="font-weight: bold;">Shader</span>
+extends
+NodeComponent<br>
+public class <span style="font-weight: bold;">SourceCodeShader</span>
+extends Shader<br>
+public abstract class <span style="font-weight: bold;">ShaderProgram</span>
+extends
+NodeComponent<br>
+public class <span style="font-weight: bold;">CgShaderProgram</span>
+extends
+ShaderProgram<br>
+public class <span style="font-weight: bold;">GLSLShaderProgram</span>
+extends
+ShaderProgram<br>
+public class <span style="font-weight: bold;">ShaderError</span>
+extends Object<br>
+public interface <span style="font-weight: bold;">ShaderErrorListener</span><br>
+  <br>
+  </code>
+</ul>
+<p>The following new classes are added in the
+<code>javax.vecmath</code> package:<br>
+</p>
+<ul>
+  <code>public abstract class <span style="font-weight: bold;">Tuple2i</span>
+implements Serializable, Cloneable<br>
+public class <span style="font-weight: bold;">Point2i</span> extends
+Tuple2i<br>
+  </code>
+</ul>
+<p>The following new fields, constructors, and methods are added to
+existing classes:<br>
+</p>
+<ul>
+  <code><span style="font-weight: bold; text-decoration: underline;">Canvas3D</span><br>
+New method:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;public boolean isShadingLanguageSupported(int
+shadingLanguage)<br>
+  <br>
+  </code><code><span
+ style="font-weight: bold; text-decoration: underline;">VirtualUniverse</span><br>
+New methods:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;public void
+addShaderErrorListener(ShaderErrorListener listener)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;public void
+removeShaderErrorListener(ShaderErrorListener listener)<br>
+  <br>
+  </code><code></code><code><span
+ style="font-weight: bold; text-decoration: underline;">GeometryArray</span><br>
+New fields:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;public static final int ALLOW_VERTEX_ATTR_READ<br>
+&nbsp;&nbsp;&nbsp;&nbsp;public static final int ALLOW_VERTEX_ATTR_WRITE<br>
+&nbsp;&nbsp;&nbsp;&nbsp;public static final int VERTEX_ATTRIBUTES<br>
+  <br>
+New constructor:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;public GeometryArray(... int
+vertexAttrCount, int[]
+vertexAttrSizes)<br>
+  <br>
+New methods:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;public int getVertexAttrCount()<br>
+&nbsp;&nbsp;&nbsp;&nbsp;public void getVertexAttrSizes(int[]
+vertexAttrSizes)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;public void setVertexAttr(int vertexAttrNum,
+int index, float[]
+vertexAttr)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;public void setVertexAttr(int vertexAttrNum,
+int index, Point2f
+vertexAttr)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;public void setVertexAttr(int vertexAttrNum,
+int index, Point3f
+vertexAttr)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;public void setVertexAttr(int vertexAttrNum,
+int index, Point4f
+vertexAttr)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;public void setVertexAttrs(int vertexAttrNum,
+int index, float[]
+vertexAttrs)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;public void setVertexAttrs(int vertexAttrNum,
+int index, Point2f[]
+vertexAttrs)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;public void setVertexAttrs(int vertexAttrNum,
+int index, Point3f[]
+vertexAttrs)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;public void setVertexAttrs(int vertexAttrNum,
+int index, Point4f[]
+vertexAttrs)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;public void setVertexAttrs(int vertexAttrNum,
+int index,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;float[]
+vertexAttrs, int
+start, int length)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;public void setVertexAttrs(int vertexAttrNum,
+int index,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Point2f[]
+vertexAttrs, int
+start, int length)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;public void setVertexAttrs(int vertexAttrNum,
+int index,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Point3f[]
+vertexAttrs, int
+start, int length)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;public void setVertexAttrs(int vertexAttrNum,
+int index,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Point4f[]
+vertexAttrs, int
+start, int length)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;public void getVertexAttr(int vertexAttrNum,
+int index, float[]
+vertexAttr)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;public void getVertexAttr(int vertexAttrNum,
+int index, Point2f
+vertexAttr)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;public void getVertexAttr(int vertexAttrNum,
+int index, Point3f
+vertexAttr)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;public void getVertexAttr(int vertexAttrNum,
+int index, Point4f
+vertexAttr)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;public void getVertexAttrs(int vertexAttrNum,
+int index, float[]
+vertexAttrs)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;public void getVertexAttrs(int vertexAttrNum,
+int index, Point2f[]
+vertexAttrs)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;public void getVertexAttrs(int vertexAttrNum,
+int index, Point3f[]
+vertexAttrs)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;public void getVertexAttrs(int vertexAttrNum,
+int index, Point4f[]
+vertexAttrs)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;public void setInitialVertexAttrIndex(int
+vertexAttrNum, int
+initialVertexAttrIndex)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;public int getInitialVertexAttrIndex(int
+vertexAttrNum)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;public void setVertexAttrRefBuffer(int
+vertexAttrNum, J3DBuffer vertexAttrs)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;public J3DBuffer getVertexAttrRefBuffer(int
+vertexAttrNum)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;public void setVertexAttrRefFloat(int
+vertexAttrNum, float[] vertexAttrs)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;public float[] getVertexAttrRefFloat(int
+vertexAttrNum)<br>
+  <br>
+  <span style="font-weight: bold; text-decoration: underline;">IndexedGeometryArray</span><br>
+New fields:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;public static final int
+ALLOW_VERTEX_ATTR_INDEX_READ<br>
+&nbsp;&nbsp;&nbsp;&nbsp;public static final int
+ALLOW_VERTEX_ATTR_INDEX_WRITE<br>
+  <br>
+New constructor:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;public IndexedGeometryArray(... int
+vertexAttrCount, int[] vertexAttrSizes ...)<br>
+  <br>
+New methods:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;public void setInitialVertexAttrIndex(int
+vertexAttrNum, int
+initialVertexAttrIndex)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;public void setVertexAttrIndex(int
+vertexAttrNum, int
+index, int
+vertexAttrIndex)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;public void setVertexAttrIndices(int
+vertexAttrNum, int
+index, int[]
+vertexAttrIndices)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;public int getVertexAttrIndex(int
+vertexAttrNum, int index)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;public void getVertexAttrIndices(int
+vertexAttrNum, int
+index, int[]
+vertexAttrIndices)<br>
+  <br>
+  </code>
+</ul>
+<p>The following new constructors are added to
+existing GeometryArray subclasses:</p>
+<ul>
+  <code> <span style="font-weight: bold; text-decoration: underline;">PointArray</span><br>
+public PointArray(... int vertexAttrCount,
+int[] vertexAttrSizes)<br>
+  <br>
+  <span style="font-weight: bold; text-decoration: underline;">LineArray</span><br>
+public LineArray(... int vertexAttrCount, int[]
+vertexAttrSizes)<br>
+  <br>
+  <br>
+  <span style="font-weight: bold; text-decoration: underline;">TriangleArray</span><br>
+public TriangleArray(... int vertexAttrCount,
+int[] vertexAttrSizes)<br>
+  <br>
+  <br>
+  <span style="font-weight: bold; text-decoration: underline;">QuadArray</span><br>
+public QuadArray(... int vertexAttrCount, int[]
+vertexAttrSizes)<br>
+  <br>
+  <br>
+  <span style="font-weight: bold; text-decoration: underline;">GeometryStripArray</span><br>
+public GeometryStripArray(... int
+vertexAttrCount, int[] vertexAttrSizes ...)<br>
+  <br>
+  <br>
+  <span style="font-weight: bold; text-decoration: underline;">LineStripArray</span><br>
+public LineStripArray(... int vertexAttrCount,
+int[] vertexAttrSizes ...)<br>
+  <br>
+  <br>
+  <span style="font-weight: bold; text-decoration: underline;">TriangleStripArray</span><br>
+public TriangleStripArray(... int
+vertexAttrCount, int[] vertexAttrSizes ...)<br>
+  <br>
+  <br>
+  <span style="text-decoration: underline; font-weight: bold;">TriangleFanArray</span><br>
+public TriangleFanArray(... int
+vertexAttrCount, int[] vertexAttrSizes ...)<br>
+  <br>
+  <br>
+  <span style="font-weight: bold; text-decoration: underline;">IndexedPointArray</span><br>
+public IndexedPointArray(... int
+vertexAttrCount, int[] vertexAttrSizes ...)<br>
+  <br>
+  <br>
+  <span style="font-weight: bold; text-decoration: underline;">IndexedLineArray</span><br>
+public IndexedLineArray(... int
+vertexAttrCount, int[] vertexAttrSizes ...)<br>
+  <br>
+  <br>
+  <span style="font-weight: bold; text-decoration: underline;">IndexedTriangleArray</span><br>
+public IndexedTriangleArray(... int
+vertexAttrCount, int[] vertexAttrSizes ...)<br>
+  <br>
+  <br>
+  <span style="font-weight: bold; text-decoration: underline;">IndexedQuadArray</span><br>
+public IndexedQuadArray(... int
+vertexAttrCount, int[] vertexAttrSizes ...)<br>
+  <br>
+  <br>
+  <span style="font-weight: bold; text-decoration: underline;">IndexedGeometryStripArray</span><br>
+public IndexedGeometryStripArray(... int
+vertexAttrCount, int[] vertexAttrSizes ...)<br>
+  <br>
+  <br>
+  <span style="font-weight: bold; text-decoration: underline;">IndexedLineStripArray</span><br>
+public IndexedLineStripArray(... int
+vertexAttrCount, int[] vertexAttrSizes ...)<br>
+  <br>
+  <br>
+  <span style="font-weight: bold; text-decoration: underline;">IndexedTriangleStripArray</span><br>
+public IndexedTriangleStripArray(... int
+vertexAttrCount, int[] vertexAttrSizes ...)<br>
+  <br>
+  <br>
+  <span style="text-decoration: underline; font-weight: bold;">IndexedTriangleFanArray</span><br>
+public IndexedTriangleFanArray(... int
+vertexAttrCount, int[] vertexAttrSizes ...)<br>
+  </code>
+</ul>
+<p><br>
+</p>
+<h3><a name="Default_values"></a>2. Default values for read capability
+bits<br>
+</h3>
+<p>Capability bits control whether data in a Java&nbsp;3D scene graph
+object
+may be read or written when it is part of a live or compiled subgraph.
+We propose to change the default value for all read capability bits to
+true, meaning that all attributes may be read by default (the default
+value for all write capability bits will remain false, meaning that no
+attributes may be written by default). Note that read capability bits
+are defined as those capability bits of the form <code>ALLOW_*_READ</code>,
+plus the <code>ALLOW_INTERSECT</code> capability bit.<br>
+</p>
+<code></code>
+<p><br>
+</p>
+<h3><a name="Picking"></a>3. Picking<br>
+</h3>
+<p>We propose to add a new PickInfo class (with an inner class to hold
+intersection information), and new core picking methods that return
+objects of this new class type.<br>
+</p>
+<p>New Classes:<br>
+</p>
+<ul>
+  <code><span style="font-weight: bold; text-decoration: underline;"></span>public
+class <span style="font-weight: bold;">PickInfo</span> extends Object<br>
+public class <span style="font-weight: bold;">PickInfo.IntersectionInfo</span>
+extends
+Object<br>
+  </code>
+</ul>
+<p>New methods:<br>
+</p>
+<ul>
+  <code><span style="font-weight: bold; text-decoration: underline;">Locale</span><br>
+public PickInfo[] pickAll( int mode, int flags,
+PickShape pickShape )<br>
+public PickInfo[] pickAllSorted( int mode, int
+flags, PickShape pickShape )<br>
+public PickInfo pickClosest( int mode, int
+flags, PickShape pickShape )<br>
+public PickInfo pickAny( int mode, int flags,
+PickShape pickShape )<br>
+  <br>
+  <br>
+  <span style="font-weight: bold; text-decoration: underline;">BranchGroup</span><br>
+public PickInfo[] pickAll( int mode, int flags,
+PickShape pickShape )<br>
+public PickInfo[] pickAllSorted( int mode, int
+flags, PickShape pickShape )<br>
+public PickInfo pickClosest( int mode, int
+flags, PickShape pickShape )<br>
+public PickInfo pickAny( int mode, int flags,
+PickShape pickShape )</code>
+</ul>
+<p><br>
+</p>
+<h3><a name="Stencil"></a>4. Stencil<br>
+</h3>
+<p>We propose new stencil functionality. Here are the proposed new
+fields and methods:<br>
+</p>
+<ul>
+  <code> </code><code><span
+ style="font-weight: bold; text-decoration: underline;">RenderingAttributes</span><br>
+New fields:<br>
+  </code><code>&nbsp;&nbsp;&nbsp;&nbsp;public static final int
+ALLOW_STENCIL_ATTRIBUTES_READ<br>
+&nbsp;&nbsp;&nbsp;&nbsp;public static final int
+ALLOW_STENCIL_ATTRIBUTES_WRITE<br>
+  </code><code>&nbsp;&nbsp;&nbsp; public static final int STENCIL_KEEP<br>
+&nbsp;&nbsp;&nbsp;&nbsp;public static final int STENCIL_ZERO<br>
+&nbsp;&nbsp;&nbsp;&nbsp;public static final int STENCIL_REPLACE<br>
+&nbsp;&nbsp;&nbsp;&nbsp;public static final int STENCIL_INCR<br>
+&nbsp;&nbsp;&nbsp;&nbsp;public static final int STENCIL_DECR<br>
+&nbsp;&nbsp;&nbsp;&nbsp;public static final int STENCIL_INVERT<br>
+  <br>
+New methods:<br>
+&nbsp;&nbsp;&nbsp; public void setStencilEnable(boolean enable)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;public boolean getStencilEnable()<br>
+&nbsp;&nbsp;&nbsp;&nbsp;public void setStencilOp(int failOp, int
+zFailOp, int zPassOp)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;public void setStencilOp(int[] stencilOps)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;public void getStencilOp(int[] stencilOps)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;public void setStencilFunction(int function,
+int refValue, int compareMask)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;public void setStencilFunction(int[] params)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;public void getStencilFunction(int[] params)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;public void setStencilWriteMask(int mask)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;public int getStencilWriteMask()<br>
+  <br>
+  <span style="font-weight: bold; text-decoration: underline;">GraphicsConfigTemplate3D</span><br>
+New methods:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;public void setStencilSize(int value)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;public int getStencilSize()<br>
+  </code>
+</ul>
+<p><br>
+</p>
+<h3><a name="Rendering_attributes"></a>5. Rendering attributes<br>
+</h3>
+<p>We propose to add new rendering attributes/modes to enable
+applications to specify the depth test function, additional raster
+operations, and additional blending modes. The new fields and methods
+are as follows:<br>
+</p>
+<ul>
+  <code> <span style="text-decoration: underline; font-weight: bold;">RenderingAttributes</span><br>
+New fields:<br>
+&nbsp;&nbsp;&nbsp; public static final int
+ALLOW_DEPTH_TEST_FUNCTION_READ<br>
+&nbsp;&nbsp;&nbsp;&nbsp;public static final int
+ALLOW_DEPTH_TEST_FUNCTION_WRITE<br>
+&nbsp;&nbsp;&nbsp; public static final int ROP_CLEAR<br>
+&nbsp;&nbsp;&nbsp;&nbsp;public static final int ROP_AND<br>
+&nbsp;&nbsp;&nbsp;&nbsp;public static final int ROP_AND_REVERSE<br>
+&nbsp;&nbsp;&nbsp;&nbsp;public static final int ROP_AND_INVERTED<br>
+&nbsp;&nbsp;&nbsp;&nbsp;public static final int ROP_NOOP<br>
+&nbsp;&nbsp;&nbsp;&nbsp;public static final int ROP_OR<br>
+&nbsp;&nbsp;&nbsp;&nbsp;public static final int ROP_NOR<br>
+&nbsp;&nbsp;&nbsp;&nbsp;public static final int ROP_EQUIV<br>
+&nbsp;&nbsp;&nbsp;&nbsp;public static final int ROP_INVERT<br>
+&nbsp;&nbsp;&nbsp;&nbsp;public static final int ROP_OR_REVERSE<br>
+&nbsp;&nbsp;&nbsp;&nbsp;public static final int ROP_COPY_INVERTED<br>
+&nbsp;&nbsp;&nbsp;&nbsp;public static final int ROP_OR_INVERTED<br>
+&nbsp;&nbsp;&nbsp;&nbsp;public static final int ROP_NAND<br>
+&nbsp;&nbsp;&nbsp;&nbsp;public static final int ROP_SET<br>
+  <br>
+New methods:<br>
+  </code><code>&nbsp;&nbsp;&nbsp; public void setDepthTestFunction(int
+function)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;public int getDepthTestFunction()<br>
+  </code><br>
+  <code></code><code><span
+ style="font-weight: bold; text-decoration: underline;">TransparencyAttributes</span><br>
+New fields:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;public static final int BLEND_DST_COLOR<br>
+&nbsp;&nbsp;&nbsp;&nbsp;public static final int
+BLEND_ONE_MINUS_DST_COLOR<br>
+&nbsp;&nbsp;&nbsp;&nbsp;public static final int BLEND_SRC_COLOR<br>
+&nbsp;&nbsp;&nbsp;&nbsp;public static final int
+BLEND_ONE_MINUS_SRC_COLOR<br>
+  </code>
+</ul>
+<p><br>
+</p>
+<h3><a name="Other_minor_features"></a>6. Other minor features<br>
+</h3>
+<p>We propose to add the following new features: a name for all scene
+graph objects; the ability to get the Locale or parent from a live or
+compiled scene graph, a scene graph structure change listener, and a
+method to get the tessellated glyph geometry for a character in a 3D
+font.
+</p>
+<p>The following new class has been added:</p>
+<ul>
+  <code>public interface <span style="font-weight: bold;">GraphStructureChangeListener</span><br>
+  </code>
+</ul>
+<p>The new fields and methods are as follows:</p>
+<ul>
+  <code> <span style="font-weight: bold; text-decoration: underline;">VirtualUniverse</span><br>
+New methods:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;public void
+addGraphStructureChangeListener(GraphStructureChangeListener listener)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;public void
+removeGraphStructureChangeListener(GraphStructureChangeListener
+listener)<br>
+  <br>
+  <br>
+  <span style="font-weight: bold; text-decoration: underline;">SceneGraphObject</span><br>
+New methods:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;public void setName(String name)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;public String getName()<br>
+  <br>
+  <br>
+  <span style="font-weight: bold; text-decoration: underline;">Node</span><br>
+New fields:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;public static final int ALLOW_PARENT_READ<br>
+&nbsp;&nbsp;&nbsp;&nbsp;public static final int ALLOW_LOCALE_READ<br>
+  <br>
+New methods:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;public Locale getLocale()<br>
+  <br>
+  <br>
+  <span style="font-weight: bold; text-decoration: underline;">Font3D</span><br>
+New methods:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;public GeometryArray getGlyphGeometry(char c)<br>
+  </code>
+</ul>
+<p><br>
+</p>
+<h3><a name="Deprecated_API"></a>7. Deprecated API<br>
+</h3>
+<p>We propose to deprecate the following classes:</p>
+<ul>
+  <code> <span style="font-weight: bold;">CompressedGeometry</span><br>
+  <span style="font-weight: bold;">CompressedGeometryHeader</span><br>
+  <span style="font-weight: bold;">PickPoint</span><br>
+  <span style="font-weight: bold;">Morph</span><br>
+  </code>
+</ul>
+<p>We propose to deprecate the following fields and methods:</p>
+<ul>
+  <code> <span style="font-weight: bold; text-decoration: underline;">Sensor</span><br>
+Deprecated fields:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;public static final int PREDICT_NONE<br>
+&nbsp;&nbsp;&nbsp;&nbsp;public static final int PREDICT_NEXT_FRAME_TIME<br>
+&nbsp;&nbsp;&nbsp;&nbsp;public static final int NO_PREDICTOR<br>
+&nbsp;&nbsp;&nbsp;&nbsp;public static final int HEAD_PREDICTOR<br>
+&nbsp;&nbsp;&nbsp;&nbsp;public static final int HAND_PREDICTOR<br>
+  <br>
+Deprecated methods:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;public void setPredictor(int predictor)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;public int getPredictor()<br>
+&nbsp;&nbsp;&nbsp;&nbsp;public void setPredictionPolicy(int policy)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;public int getPredictionPolicy()<br>
+&nbsp;&nbsp;&nbsp;&nbsp;public void getRead(Transform3D read, long
+deltaT)<br>
+  </code>
+</ul>
+<p><br>
+</p>
+<h3>II. Accepted Changes</h3>
+<p><br>
+</p>
+<h3>III. Deferred Changes</h3>
+<p><br>
+</p>
+</body>
+</html>
+
+
+
+<!-- ** BEGIN: footer.jsp ** //-->
+
+
+
+
+
+
+
+
+</td>
+</tr>
+</table>
+
+<!-- ** END: Content Table ** //-->
+
+<!-- ** BEGIN: Footer Table ** //-->
+
+<div id="footer" style="clear: both;">
+    <div class="footleft">
+        <a href="/en/resources/contacts">Contact Us</a>
+    </div>
+	
+    <div class="botbar"><img src="/images/spacer.gif" alt="" height="23" width="1"></div>
+
+    <div class="footleft2">
+         &copy; 2019, Oracle Corporation and/or its affiliates. 
+        <a href="/en/home/terms">Terms of Use</a>. <a href="http://www.oracle.com/us/legal/privacy/index.html">Privacy Policy</a>. <a href="http://www.oracle.com/us/legal/third-party-trademarks/third-party-trademarks-078568.html">Trademarks</a>
+    </div>
+
+    <div class="footright">
+        <img src="/images/common/logo_oracle_footer.gif" alt="Oracle Corporation" height="22" width="91">
+    </div>
+
+    <div style="clear: both;"><img src="/images/spacer.gif" alt="" height="30" width="1"></div>
+</div>
+
+<!-- ** END: Footer Table ** //-->
+
+
+
+<!-- ** Menu Start ** //-->
+
+
+
+</body>
+</html>
+<!-- ** END: footer.jsp ** //-->
+

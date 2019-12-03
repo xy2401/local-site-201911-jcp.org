@@ -1,0 +1,714 @@
+
+<!-- ** BEGIN: header.jsp ** //-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3c.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+<head>
+    
+
+   
+    <link href="/includes/css/menu.css" rel="stylesheet" type="text/css"></link>
+    <link href="/includes/css/style.css" rel="stylesheet" type="text/css"></link>
+    <!--[if lt IE 6]><link href="/includes/css/style5.css" rel="stylesheet" type="text/css" ></link><![endif]-->
+    <!--[if gte IE 5]><link href="/includes/css/style6.css" rel="stylesheet" type="text/css" ></link><![endif]-->
+    <link href="/includes/css/tabs.css"  rel="stylesheet" type="text/css"></link>
+
+    <script type="text/javascript" src="/includes/scripts/tabs.js"></script>
+    <script type="text/javascript" src="/includes/scripts/menu.js"></script>
+   
+
+    
+
+    
+        <title>The Java Community Process(SM) Program - communityprocess - maintenance</title>
+    
+
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+
+
+<body onload="P7_initPM(0,1,0,0,-1)">
+
+    <a name="top"></a>
+
+    <div id="header">
+	<div id="logo">
+		<a href="/en/home/index"><img src="/images/spacer.gif" alt="Java Community Process" height="81" width="151"></a>
+	</div>
+	<div id="tools">
+		<div class="search">
+			<form name="search" action="/en/jsr/summary" method="get" onsubmit="return validate_search()">
+				<input name="id" value="Search JSRs" size="16" class="form" onfocus="nullify_if_equal(this, 'Search JSRs')" type="text">
+				<a href="javascript:document.search.submit()" onclick="return validate_search()"><img src="/images/button_go.gif" width="21" height="16" border="0" alt="Submit this Search" name="sub_search"></a>
+			</form>
+		</div>
+		<div class="tools">
+			<a href="/en/press/pressroom">Press Room</a> &nbsp;|&nbsp;
+			<a href="http://java.com/java/download/index.jsp?cid=jdp78399">Get Java Here</a> &nbsp;|&nbsp;
+			<!-- <a href="javascript:void(0)">Print Format</a> &nbsp;|&nbsp;&nbsp; -->
+		</div>
+
+	</div>
+	<div style="clear: right;"></div>
+
+        
+
+	<div class="topbar"><img src="/images/spacer.gif" alt="" height="3" width="154"></div>
+	<div id="update"> </div>
+    </div>
+
+
+    
+
+        <!-- ** BEGIN: Content Table ** //-->
+
+        <table width="100%" border="0" cellpadding="0" cellspacing="0">
+
+            <tr>
+
+                <!-- ** BEGIN: Navigation Column ** //-->
+                <td width="150" id="leftcontent" valign="top">
+                    <!-- Navigation Placeholder //-->
+
+                    
+
+                    <div class="bar"><img src="/images/hr_dots1.gif" alt="" height="3" width="150"></div>
+
+        <!-- begin find JSRs form -->
+        <!-- IMPORTANT! do not convert this form to Struts < html : form > tag.  javascript change of form.action property fails. -->
+        <img src="/images/hd_find-jsrs.gif" alt="Find JSRs" height="18" width="150">
+        <form name="findjsr" action="/en/jsr/summary" method="get" class="pt5" onsubmit="return validate_findjsr()">
+            <input name="id" size="18" class="form" value="Search JSRs" onfocus="nullify_if_equal(this, 'Search JSRs')" type="text">
+	    <a href="javascript:document.findjsr.submit()" onclick="return validate_findjsr()"><img src="/images/button_go.gif" width="21" height="16" border="0" alt="Submit this Search" name="sub_search"></a>
+        </form><br><br>
+
+        <!-- ** Menu Start ** //-->
+
+        <ul id="p7PMnav">
+            <li><a href="/en/jsr/platform">JSRs by Platform</a></li>
+            <li><a href="/en/jsr/tech">JSRs by Technology</a></li>
+            <li><a href="/en/jsr/stage">JSRs by Stage</a></li>
+            <li><a href="/en/jsr/ec">JSRs by Committee</a></li>
+            <li><a href="/en/jsr/all">List of All JSRs</a></li>
+
+            <!--end find JSRs form -->
+            <div style="clear: both;"><img src="/images/spacer.gif" alt="" height="25" width="1"></div>
+
+            <!--begin my JCP -->
+            <img src="/images/hd_my-jcp.gif" alt="My JCP" height="18" width="150">
+            
+
+          <form name="login" method="get" action="/en/user/login" >
+            <input name="Sign-in" type="submit" title="Sign-in" value="Sign-in" />
+          </form>
+
+            <div style="clear:both"><img src="/images/global/spacer.gif" width="1" height="3" alt=""></div>
+            <div class="noNav">
+                <a href="/en/user/register">Register for Site</a>
+            </div>
+
+             <div class="bar"><img src="/images/hr_dots1.gif" alt="" height="3" width="150"></div>
+           <div class="noNav" style="color: #666666; padding: 0;">
+              Use of JCP site is subject to the
+              <a href="/en/home/terms" style="display:inline;padding: 0">JCP Terms of Use</a> and the
+              <a href="http://www.oracle.com/us/legal/privacy/index.html" style="display:inline;padding: 0" href="">Oracle Privacy Policy</a>
+          </div>
+
+            
+
+            <div style="clear:both"><img src="/images/global/spacer.gif" width="1" height="25" alt=""></div>
+
+            <!--begin JCP info -->
+            <img src="/images/hd_jcp-info.gif" alt="JCP Info" height="18" width="150">
+
+            <li><a href="/en/procedures/overview" class="p7PMtrg">About JCP</a>
+                <ul>
+                    <li><a href="/en/procedures/overview">Program Overview</a></li>
+                    <li><a href="/en/procedures/jcp2">JCP Process Document</a></li>
+                    <li><a href="/en/whatsnew/calendar">Calendar</a></li>
+                    <li><a href="/en/participation/members">JCP Members</a></li>
+                    <li><a href="/en/participation/committee">Executive Committee</a></li>
+                    <li><a href="/en/whatsnew/elections">Elections</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/en/participation/overview" class="p7PMtrg">Get Involved</a>
+		<ul>
+                    <li><a href="/en/participation/overview">Overview</a></li>
+                    <li><a href="/en/participation/membership">Becoming a JCP Member</a></li>
+		</ul>
+            </li>
+
+            <li><a href="/en/resources/contents" class="p7PMtrg">Community Resources</a>
+                <ul>
+                    <li><a href="/en/resources/contents">Overview</a></li>
+                    <li><a href="/en/resources/tutorials">Tutorials</a></li>
+                    <li><a href="/en/resources/multimedia">JCP Podcasts</a></li>
+                    <li><a href="/en/resources/guide">Spec Lead Guide</a></li>
+                    <li><a href="/en/resources/tdk">TCK Tool & Info</a></li>
+                    <li><a href="/en/resources/license_reference">License Reference</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/en/press/pmo" class="p7PMtrg">Community News</a>
+                <ul>
+                    <li><a href="/en/press/pmo">News</a></li>
+                    <li><a href="/en/press/news/awards/awards_main">Programs &amp; Awards</a></li>
+                    <li><a href="/en/press/releases">Press Releases</a></li>
+                    <li><a href="/en/press/success">Success Stories</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/en/introduction/faq">FAQ</a></li>
+
+            <li><a href="/en/resources/contacts">Contact Us</a></li>
+
+            <div style="clear: both;"><img src="/images/spacer.gif" alt="" height="25" width="1"></div>
+
+            <!--[if lte IE 6]><style>#p7PMnav a{height:1em;}#p7PMnav li{height:1em;float:left;clear:both;width:100%}</style><![endif]-->
+            <!--[if IE 6]><style>#p7PMnav li{clear:none;}</style><![endif]-->
+            <!--[if IE 7]><style>#p7PMnav a{zoom:100%;}#p7PMnav li{float:left;clear:both;width:100%;}</style><![endif]-->
+        </ul>
+
+        
+
+        <!--begin ad space -->
+        <div class="ads">
+            <a href="http://java.com/java/download/index.jsp?cid=jdp78399" target="_blank"><img style="display: ;" src="/images/ad_banner2.gif" alt="Ad Banner" border="1" height="70" width="150"></a>
+        </div>
+        <!--end ad space -->
+
+<!-- ** Menu End ** //-->
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;<br>
+
+    
+
+                    &nbsp;<br>
+                    <img src="/images/common/trans.gif" alt="" width="1" height="150"><br>
+
+              
+
+
+
+                </td>
+                <!-- ** END: Navigation Column ** //-->
+
+                <!-- ** BEGIN: Gutter Column ** //-->
+		<td width="10" nowrap><img src="/images/common/trans.gif" alt="" width="10" height="1"></td>
+                <!-- ** END: Gutter Column ** //-->
+
+                <!-- ** BEGIN: Content Column ** //-->
+                <td width="100%" valign="top">
+
+    
+<script type="text/javascript">
+
+String.prototype.trim = function() {
+        return this.replace(/^\s+|\s+$/g,"");
+}
+String.prototype.ltrim = function() {
+        return this.replace(/^\s+/,"");
+}
+String.prototype.rtrim = function() {
+        return this.replace(/\s+$/,"");
+}
+
+function validate_search() {
+	if (document.search.id.value == "Search JSRs" || document.search.id.value.trim().length == 0) {
+		alert("Search terms must be entered first");
+		return false;
+	}
+	return true;
+}
+
+function validate_findjsr() {
+	if (document.findjsr.id.value == "Search JSRs" || document.findjsr.id.value.trim().length == 0) {
+		alert("Search terms must be entered first");
+		return false;
+	}
+	return true;
+}
+
+function nullify_if_equal(field, str) {
+	// alert("val=" + field.value);
+	if (field.value == str) {
+		field.value = "";
+	}
+}
+
+</script>
+<!-- ** END: header.jsp ** //-->
+
+
+
+
+
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<HEAD>
+	<META HTTP-EQUIV="CONTENT-TYPE" CONTENT="text/html; charset=utf-8">
+	<TITLE>JSR-109 Web Services for Java EE, Version 1.2 Maintainance Review</TITLE>
+	<META NAME="GENERATOR" CONTENT="StarOffice 7  (Linux)">
+	<META NAME="AUTHOR" CONTENT="Dhiru Pandey">
+	<META NAME="CREATED" CONTENT="20050927;10082000">
+	<META NAME="CHANGEDBY" CONTENT="Dhiru Pandey">
+	<META NAME="CHANGED" CONTENT="20060428;10502300">
+	<STYLE>
+	<!--
+		@page { size: 8.5in 11in }
+	-->
+	</STYLE>
+</HEAD>
+<BODY LANG="en-US" DIR="LTR">
+<H1>Change Log: JSR-109 : Web Services for Java EE, Version 1.2</H1>
+<H3>Description</H3>
+<P>Maintenance Review for JSR-109 Web Services for Java EE, Version
+1.2</P>
+<H3>Maintenance Lead</H3>
+<P>Dhiru Pandey, Sun Microsystems, Inc.</P>
+<H3>Feedback</H3>
+<P>Comments should be sent to <A HREF="jsr109-spec-comments@sun.com">jsr109-spec-comments@sun.com</A></P>
+<H3>Rationale for proposed changes</H3>
+<P>The main goal of this maintenance release is to align JSR-109 to
+the latest Web Services specification i.e. JAX-WS 2.0
+(<A HREF="http://jcp.org/en/jsr/detail?id=224">http://jcp.org/en/jsr/detail?id=224</A>)
+and to fix bugs/inconsistencies in the previous version of the
+specification. From the specification perspective, these changes are
+minimal and targeted solely to fulfill the above stated goals.</P>
+<P><BR><BR>
+</P>
+<HR SIZE=3 NOSHADE>
+<H1>Accepted Changes for Maintenance Review</H1>
+<P>The changes to the specification are listed below. Each change is
+numbered for ease of reference.</P>
+<H2>1.0 Java EE name change</H2>
+<P>Relevant occurrences of J2EE in the entire 109 specification were
+changed to Java EE</P>
+<H2>2.0 JAX-WS changes</H2>
+<P>Relevant occurrences of JAX-RPC in the entire specification were
+changed to add JAX-WS to it. This was done to reflect that the 109
+specification now also supports JAX-WS which is a follow-on
+specification to JAX-RPC</P>
+<H2>3.0 SOAP 1.2 changes</H2>
+<P>Relevant occurrences of SOAP 1.1 in the entire specification were
+changed to add SOAP 1.2 to it. This was done to reflect that this
+specification now also supports SOAP 1.2 via JAX-WS specification</P>
+<H2>4.0 Client side changes</H2>
+<H3>4.1 Added support for client side annotation to access Web
+Service (Section 4.2.2)</H3>
+<P>JSR-109 will require the use of @WebServiceRef annotation with
+JAX-WS runtime to access a Web Service from the client.</P>
+<H3>4.2 Changes to support javax.xml.ws.Service Class in JAX-WS
+(Section 4.2.3)</H3>
+<P>Service Interface in JAX-RPC was changed to Service Class in
+JAX-WS. The resulting API changes are documented in this section.</P>
+<H3>4.3 Changes for JAX-WS properties (Section 4.2.5)</H3>
+<P>Some security and endpoint address related properties were renamed
+in JAX-WS. They are documented here.</P>
+<H3>4.4 Use of javax.xml.ws.Dispatch APIs (Section 4.2.6)</H3>
+<P>JAX-WS introduces new client side javax.xml.ws.Dispatch APIs. This
+is a low level API that requires clients to construct messages or
+message payloads as XML and requires an intimate knowledge of the
+desired message or payload structure. This is useful in those
+situations where the client wants to operate at the XML message
+level. Added section 4.2.6 to allow the use of Dispatch APIs on the
+client side</P>
+<H3>4.5 Support for JAX-WS Asynchronous operations (Section 4.2.7)</H3>
+<P>JAX-WS supports two forms of asynchronous invocations ��� Polling
+and Callback. This section was added in the specification to allow
+usage of both Polling and Callback mechanisms of JAX-WS. Polling
+invocations are allowed from both within EJBs and Servlets, but
+Callback invocations are only allowed from Servlets.</P>
+<H3>4.6 Support for OASIS XML Catalogs specification (Section 4.2.9)</H3>
+<P>This section on packaging was changed to allow support for OASIS
+XML Catalogs 1.1 specification</P>
+<H2>5.0 Server side changes</H2>
+<H3>5.1 Clarification on use of Service Endpoint Interface with
+JAX-WS (Section 5.3.1)</H3>
+<P>This section was changed to document that the Service Endpoint
+Interface (SEI) is no longer required to be provided by the port
+component developer when JAX-WS is being used.</P>
+<H3>5.2 Added support for @WebService annotation on Service
+Implementation Bean (Section 5.3.2.1)</H3>
+<P>This section was added to detail support for @WebService
+annotation on Service Implementation Bean. It also provides
+information on the relationship of the member attributes of this
+annotation and the deployment descriptor elements.</P>
+<H3>5.3 Added support for @WebServiceProvider annotation on Service
+Implementation Bean (Section 5.3.2.2)</H3>
+<P>This section was added to detail support for javax.xml.ws.Provider
+interface and @WebServiceProvider annotation on Service
+Implementation Bean. It also provides information on the relationship
+of the member attributes of this annotation and the deployment
+descriptor elements.</P>
+<H3>5.4 Changes in EJB container programming model (Section 5.2.3.3)</H3>
+<P>This section was changed to add requirements for creating a
+Service Implementation Bean as a Stateless EJB when using a JAX-WS
+based container. It also documents the use of @Stateless annotation
+from EJB 3.0 specification and lifecycle callback annotations
+(@PostConstruct and @PreDestroy) from JSR-250 (Common Annotation for
+Java Platform)</P>
+<H3>5.5 Web container programming model for JAX-WS (Section
+5.3.2.4.2)</H3>
+<P>This section was added to provide details on Web container
+programming model for JAX-WS based containers. The programming model
+is similar to JAX-RPC. It also documents the use of lifecycle
+callback annotations (@PostConstruct and @PreDestroy) from JSR-250
+(Common Annotation for Java Platform) used in JAX-WS.</P>
+<H3>5.6 Added support for specifying protocol binding (Section 5.3.5)</H3>
+<P>A JAX-WS implementation must provide support for SOAP1.2/HTTP,
+SOAP1.1/HTTP and XML/HTTP protocol bindings. It also requires that a
+JAX-WS implementation provide a facility for the developer to specify
+the binding. This section was added to support this requirement from
+JAX-WS.</P>
+<H3>5.7 Added support for enabling/disabling MTOM/XOP (Section 5.3.6)</H3>
+<P>JAX-WS compliant implementations are required to support MTOM/XOP
+specification from W3C. This section was added to provide support for
+this requirement from JAX-WS.</P>
+<H3>5.8 Added support for Catalog packaging (Section 5.4.4)</H3>
+<P>This section on packaging was added to allow support for OASIS XML
+Catalogs 1.1 specification required by JAX-WS</P>
+<H2>6.0 Handler related changes</H2>
+<H3>6.1 Changes in Concepts (Section 6.1)</H3>
+<P>Added some explanation for Logical and Protocol Handlers in JAX-WS</P>
+<H3>6.2 Changes in Programming Model (Section 6.2.2)</H3>
+<P>Added a paragraph on HandlerResolver interface of JAX-WS</P>
+<H3>6.3 Added new section on Handler Lifecycle with JAX-WS (Section
+6.2.2.2)</H3>
+<P>This section was added to show the differences in the lifecycle of
+Handlers in JAX-WS. Detailed the usage of lifecycle callback
+annotations @PostConstruct and @PreDestroy.</P>
+<H3>6.4 Added new section on @HandlerChain annotation (Section
+6.2.2.3)</H3>
+<P>This section details the use of this annotation and also talks
+about the HandlerResolver interface of JAX-WS</P>
+<H3>6.5 Clarification in section on Security (Section 6.2.2.4)</H3>
+<P>Changed the following paragraph here:</P>
+<P STYLE="margin-left: 0.79in">���A Handler must not change the
+message in any way that would cause the previously executed
+authorization check to execute differently. A Handler.handleRequest()
+method must not change the operation name, number of parts in the
+message, or types of the message parts. A container must throw a SOAP
+fault with a faultcode of soap-env:Server (the namespace identifier
+for the namespace prefix, soap-env:, is
+http://schemas.xmlsoap.org/soap/envelope/) back to the client if the
+Handler does this. Although, not strictly required for security
+reasons, a Handler.handleResponse() method should not change the
+number of parts in the message, or types of the message parts. A
+container should log occurrences of these errors since the client may
+not be expecting a response (i.e. it may be a one-way invocation).���</P>
+<P STYLE="margin-left: 0.79in">TO</P>
+<P STYLE="margin-left: 0.79in">���A Handler must not change the
+message in any way that would cause the previously executed
+authorization check to execute differently. ���</P>
+<P>The deleted part of this paragraph is very hard to test and also
+enforcing this would have significant performance implications.
+Essentially, what is really required here are the constraints on a
+handler so that the security checks are executed correctly. The same
+deletion was also made to the Response part of this section where the
+language is used is similar and again very hard to test and also
+enforcing this would have significant performance implications.</P>
+<H3>6.6 Changes in section on Developer Responsibilities (Section
+6.2.3)</H3>
+<P>This section was changed to update it for JAX-WS Handler specific
+details</P>
+<H3>6.7 Changes in section on Container Provider Responsibilities
+(Section 6.2.4)</H3>
+<P>This section was changed to update it for JAX-WS Handler specific
+details</P>
+<H3>6.8 Changes in section on Packaging (Section 6.3)</H3>
+<P>Added packaging requirements for handler chain file used in
+@HandlerChain annotation.</P>
+<H2>7.0 Deployment Descriptor changes</H2>
+<H3>7.1 Changes in section on server side Developer Responsibilities
+(Section 7.1.2)</H3>
+<P>Added description of new deployment descriptor elements like
+&lt;wsdl-service&gt;, &lt;enable-mtom&gt;, &lt;protocol-binding&gt;,
+&lt;handler-chains&gt;. Also clarified that JAX-RPC mapping file is
+no longer required when JAX-WS runtime is being used.</P>
+<H3>7.2 Changes in section on Web Services Deployment Descriptor XML
+Schema (Section 7.1.5)</H3>
+<P>Removed the old schema and added new updated server side schema.</P>
+<H3>7.3 Changes in section on client side Developer Responsibilities
+(Section 7.2.2)</H3>
+<P>Clarified that JAX-RPC mapping file is no longer required when
+JAX-WS runtime is being used.</P>
+<H3>7.4 Changes in section on Web Services Client Service Reference
+XML Schema (Section 7.2.5)</H3>
+<P>Removed the old schema and added new updated client side schema.</P>
+<H3>7.5 Changes in section on JAX-RPC Mapping Deployment Descriptor
+(Section 7.3)</H3>
+<P>Clarified that the JAX-RPC mapping file is not required in JAX-WS
+since it uses JAXB specification for all its data binding needs.</P>
+<H3>7.6 Changes in section on Overview of JAX-RPC Mapping Deployment
+Descriptor (Section 7.3.1)</H3>
+<P>The language in this paragraph was changed for improving clarity
+in the specification</P>
+<P STYLE="margin-left: 0.79in">If the conditions are not met, a full
+mapping must be specified. There must be a java-xml-type-mapping for
+every root WSDL type. An exception-mapping must be created for each
+WSDL fault. There must be a service-interface-mapping for every
+service element in the WSDL file that has a Generated Service
+Interface used by the developer. There must be a
+service-endpoint-interface-mapping for every combination of portType
+and binding in the WSDL file. There must be a package-mapping for
+every namespace defined in the WSDL file. 
+</P>
+<P STYLE="margin-left: 0.79in">TO:</P>
+<P STYLE="margin-left: 0.79in">If the conditions are not met, a full
+mapping must be specified. There must be a java-xml-type-mapping for
+every global type definition that is reachable from the port types
+(and its attributes like operations, faults, messages etc.) in the
+WSDL file. An exception-mapping must be created for each WSDL fault.
+There must be a service-interface-mapping for every service element
+in the WSDL file that has a Generated Service Interface used by the
+developer. There must be a service-endpoint-interface-mapping for
+every combination of portType and binding in the WSDL file. There
+must be a package-mapping for every namespace defined in the WSDL
+file.</P>
+<P>The language in this paragraph was changed for improving clarity
+in the specification</P>
+<P STYLE="margin-left: 0.79in">Web Services for J2EE providers may
+support partial mapping specifications (e.g. not providing a
+method-param-parts-mapping for every method) regardless of the WSDL
+content by using standard JAX-RPC WSDL to Java mapping rules to
+resolve the mappings. If mappings are specified, they take precedence
+over the mapping rules. Such partial mappings are vendor specific and
+therefore are non-portable.</P>
+<P STYLE="margin-left: 0.79in">TO:</P>
+<P STYLE="margin-left: 0.79in">Web Services for Java EE providers may
+support partial mapping specifications (e.g. not providing a
+method-param-parts-mapping for every method) regardless of the WSDL
+content by using standard JAX-RPC WSDL to Java mapping rules to
+resolve the mappings. If mappings are specified, they take precedence
+over the mapping rules. Applications that use partial mappings are
+therefore non-portable.</P>
+<H1><BR><BR>
+</H1>
+<P><BR><BR>
+</P>
+<HR SIZE=3 NOSHADE>
+<H1>Accepted Changes for Maintenance Review 2</H1>
+<P>The major changes to the specification are listed below. Each
+change is numbered for ease of reference.</P>
+<P></P>
+<H2>1.0 Overview changes</H2>
+<H3>1.1 Clarified transaction propagation in section 3.10</H3>
+<P><BR><BR>
+</P>
+<H2>2.0 Client side changes</H2>
+<H3>2.1 Clarified that the use of @WebServiceRef not required with
+JAX-WS (Section 4.2.2)</H3>
+<P>JSR-109 will not require the use of @WebServiceRef annotation with
+JAX-WS runtime to access a Web Service from the client. The developer
+is free to use the standard JNDI lookup mechanism for the same.</P>
+<H3>2.2 Mapping for &lt;service-ref-type&gt; client descriptor
+specified (Section 4.2.2)</H3>
+<P>Mapping between a new client side deployment descriptor
+&lt;service-ref-type&gt; and @WebServiceRef annotation attribute type
+was added</P>
+<H3>2.3 Clarification on usage of @WebServiceRefs was added (Section
+4.2.2)</H3>
+<H3>2.4 Added section on JNDI lookups for Ports (Section 4.2.3)</H3>
+<P>This is similar to using @WebServiceRef for Service endpoints.</P>
+<H3>2.5 Clarification on JAX-RPC mapping file (Section 4.2.4.5)</H3>
+<P>Clarified that under JAX-WS runtime, JAX-RPC mapping file if
+specified is ignored</P>
+<H3>2.6 Added support for JAX-WS Asynchronous callback operations
+from EJBs (Section 4.2.8.2)</H3>
+<P>Asynchronous callback invocations are now allowed from EJBs as
+well.</P>
+<H3>2.7 Added a section clarifying interoperability between JAX-RPC
+and JAX-WS clients (Section 4.2.9)</H3>
+<H3>2.8 Added support for enabling/disabling MTOM/XOP mechanism
+(Section 4.2.10)</H3>
+<P>JAX-WS compliant implementations are required to support MTOM/XOP
+specification from W3C. This section was added to provide support for
+this requirement from JAX-WS on the client side.</P>
+<H3>2.9 Added clarification in Packaging section (4.2.12)</H3>
+<P>Clarified that Web services client deployment descriptor are not
+required when JAX-WS annotations are used.</P>
+<P><BR><BR>
+</P>
+<H2>3.0 Server side changes</H2>
+<H3>3.1 Clarified uniqueness requirement for @WebService.name in Java
+EE module (Section 5.3.2.1)</H3>
+<P>Uniqueness requirement for @WebService.name was removed, but the
+mapping between &lt;port-component-name&gt; and @WebService.name
+specifies the uniqueness criterion.</P>
+<H3>3.2 Clarified mapping for &lt;ejb-link&gt; and
+&lt;servlet-link&gt;(Section 5.3.2.1, Section 5.3.2.2)</H3>
+<H3>3.3 Clarified mapping rules for Servlet endpoints with no web.xml
+(Section 5.3.2.1, Section 5.3.2.2)</H3>
+<H3>3.4 Clarified mapping between &lt;service-endpoint-interface&gt;
+and @WebService.endpointInterface (Section 5.3.2.1)</H3>
+<H3>3.5 Clarified that a WSDL file must be packaged with a Provider
+implementation (Section 5.3.2.2)</H3>
+<H3>3.6 Clarified the usage of WebServiceContext with Stateless
+Session bean (Section 5.3.2.3.2)</H3>
+<H3>3.7 Clarified the usage of WebServiceContext with Servlets
+(Section 5.3.2.4.2.2)</H3>
+<H3>3.8 Disallowed the publishing of Endpoints (Section 5.3.3)</H3>
+<P>Disallowed both EJB and Servlet containers to publish Endpoints
+dynamically using javax.xml.ws.Endpoint API</P>
+<H3>3.9 Added support for new BindingTypes from JAX-WS (Section
+5.3.6)</H3>
+<P>Added support for new BindingTypes (SOAP1.1 over HTTP with MTOM
+enabled and SOAP1.2 over HTTP with MTOM enabled) from JAX-WS. Also
+clarified relationship between &lt;protocol-binding&gt; descriptor
+and javax.xml.ws.BindingType annotation</P>
+<H3>3.10 Corrected the MTOM deployment descriptor element name and
+clarified its usage (Section 5.3.7)</H3>
+<H3>3.11 Clarifications in Packaging (Section 5.4)</H3>
+<P>Added clarifications like - Service Endpoint Interface class is
+optional with JAX-WS, a Web services deployment descriptor is not
+required with JAX-WS when annotations are used etc.</P>
+<H3>3.12 Added clarification on use of TransactionAttribute
+annotation (Section 5.5)</H3>
+<H3>3.13 Clarifications in packaging regarding mixing of JAX-RPC and
+JAX-WS components in a module (Section 5.4)</H3>
+<H3>3.14 Clarified mapping relationship between &lt;port-component&gt;
+and @WebService (Section 5.3.2.1)</H3>
+<H3>3.15 Clarified mapping relationship between &lt;port-component&gt;
+and @WebServiceProvider (Section 5.3.2.2)</H3>
+<P><BR><BR>
+</P>
+<H2>4.0 Handler related changes</H2>
+<H3>4.1 Clarified order of invocation for Handlers and EJB
+interceptors (Section 6.2.4)</H3>
+<H3>4.2 Clarification for alignment between Handlers and EJB
+interceptors for EJB endpoints (Section 6.2.4)</H3>
+<P>This is inline with the alignment between message handlers and
+interceptors, for EJB based endpoints <FONT FACE="Times New Roman">with
+both Handlers and EJB Interceptors present, the <FONT FACE="Courier New">Map
+</FONT><FONT FACE="Times New Roman">instance</FONT> returned by
+invoking <FONT FACE="Courier New">WebServiceContext.getMessageContext()</FONT>
+method in the JAX-WS Handler, is the same <FONT FACE="Courier New">Map</FONT>
+instance that is obtained by invoking
+<FONT FACE="Courier New">InvocationContext.getContextData()</FONT> in
+the EJB Interceptor.</FONT></P>
+<P><BR><BR>
+</P>
+<H2>5.0 Web Services Deployment Descriptor changes</H2>
+<H3>5.1 Clarified that deployment descriptors were optional (Section
+7.1.1 and 7.1.2)</H3>
+<H3>5.2 Added new protocol binding tokens (Section 7.1.2)</H3>
+<P>Added new protocol binding token ##SOAP11_HTTP_MTOM for new
+binding id introduced in JAX-WS for SOAP1.1 over HTTP with MTOM
+enabled and ##SOAP12_HTTP_MTOM for SOAP1.2 over HTTP with MTOM
+enabled.</P>
+<H3>5.3 Changes in section on Web Services Deployment Descriptor XML
+Schema (Section 7.1.5)</H3>
+<P>Changed minOccurs to 1 from 0 for element handlers in
+handler-chainType</P>
+<H3>5.4 Clarified that deployment descriptors were optional (Section
+7.2.1)</H3>
+<H3>5.5 Added &lt;service-ref-type&gt; deployment descriptor element
+(Section 7.2.2)</H3>
+<P>With JAX-WS the &lt;service-ref-type&gt; element declares the type
+of the service-ref element that is injected or returned when a JNDI
+lookup is done.</P>
+<H3>5.6 Added &lt;enable-mtom&gt; deployment descriptor element
+(Section 7.2.2)</H3>
+<P>The developer may specify if MTOM/XOP support for the
+port-component-ref is enabled or disabled 
+</P>
+<H3>5.7 Changes in section on Web Services Client Service Reference
+XML Schema (Section 7.2.5)</H3>
+<P>Changed minOccurs to 1 from 0 for element handlers in
+handler-chainType, and added &lt;service-ref-type&gt; and
+&lt;enable-mtom&gt; deployment descriptor elements.</P>
+<H3>5.8 Fixed comments in both client and server deployment
+descriptor schema files</H3>
+<P><BR><BR>
+</P>
+<H2>6.0 Deployment changes</H2>
+<H3>6.1 Clarified that JAX-WS specification makes no distinction
+between stubs and proxies (Section 8.2.7)</H3>
+<H3>6.2 Relevant references to deployment descriptor elements or file
+webservices.xml were fixed to include Web services metadata
+annotations allowed by JAX-WS</H3>
+<H3>6.3 Removed the restriction on use of Mandatory transaction
+attribute (Section 8.1 and 8.2.10)</H3>
+<P><BR><BR>
+</P>
+</BODY>
+</HTML>
+
+
+
+
+<!-- ** BEGIN: footer.jsp ** //-->
+
+
+
+
+
+
+
+
+</td>
+</tr>
+</table>
+
+<!-- ** END: Content Table ** //-->
+
+<!-- ** BEGIN: Footer Table ** //-->
+
+<div id="footer" style="clear: both;">
+    <div class="footleft">
+        <a href="/en/resources/contacts">Contact Us</a>
+    </div>
+	
+    <div class="botbar"><img src="/images/spacer.gif" alt="" height="23" width="1"></div>
+
+    <div class="footleft2">
+         &copy; 2019, Oracle Corporation and/or its affiliates. 
+        <a href="/en/home/terms">Terms of Use</a>. <a href="http://www.oracle.com/us/legal/privacy/index.html">Privacy Policy</a>. <a href="http://www.oracle.com/us/legal/third-party-trademarks/third-party-trademarks-078568.html">Trademarks</a>
+    </div>
+
+    <div class="footright">
+        <img src="/images/common/logo_oracle_footer.gif" alt="Oracle Corporation" height="22" width="91">
+    </div>
+
+    <div style="clear: both;"><img src="/images/spacer.gif" alt="" height="30" width="1"></div>
+</div>
+
+<!-- ** END: Footer Table ** //-->
+
+
+
+<!-- ** Menu Start ** //-->
+
+
+
+</body>
+</html>
+<!-- ** END: footer.jsp ** //-->
+

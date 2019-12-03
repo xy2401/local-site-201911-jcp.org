@@ -1,0 +1,16 @@
+   1. Allow multiple fields (properties) to be used for ordering persistent Lists or Maps.
+
+   2. Specify the behavior at flush time if the user has inserted elements or entries out of order in ordered fields (properties).
+
+   3. Allow the user to create fetch groups dynamically.
+
+   4. Require SingleFieldIdentity classes to implement Comparable so they can be used in non-persistent ordered Set or Map instances.
+
+   5. Add ReadOnly to PersistenceManagerFactory to allow fail-fast on applications that use a read-only data store.
+
+   6. Provide a way to specify the isolation level of connections used for a PersistenceManagerFactory.
+
+   7. Add an invocation API for a run-time enhancer. This allows for a standard command-line tool and standard IDE plugins for enhancement.
+
+   8. Require a no-args constructor for implementations of PersistenceManagerFactory and add the getPersistenceManagerFactory... methods to the PersistenceManagerFactory interface. This change allows JDOHelper to use Java 6 ServiceLoader in future.
+

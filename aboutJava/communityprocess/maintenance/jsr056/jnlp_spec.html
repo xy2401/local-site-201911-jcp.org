@@ -1,0 +1,1264 @@
+
+<!-- ** BEGIN: header.jsp ** //-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3c.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+<head>
+    
+
+   
+    <link href="/includes/css/menu.css" rel="stylesheet" type="text/css"></link>
+    <link href="/includes/css/style.css" rel="stylesheet" type="text/css"></link>
+    <!--[if lt IE 6]><link href="/includes/css/style5.css" rel="stylesheet" type="text/css" ></link><![endif]-->
+    <!--[if gte IE 5]><link href="/includes/css/style6.css" rel="stylesheet" type="text/css" ></link><![endif]-->
+    <link href="/includes/css/tabs.css"  rel="stylesheet" type="text/css"></link>
+
+    <script type="text/javascript" src="/includes/scripts/tabs.js"></script>
+    <script type="text/javascript" src="/includes/scripts/menu.js"></script>
+   
+
+    
+
+    
+        <title>The Java Community Process(SM) Program - communityprocess - maintenance</title>
+    
+
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+
+
+<body onload="P7_initPM(0,1,0,0,-1)">
+
+    <a name="top"></a>
+
+    <div id="header">
+	<div id="logo">
+		<a href="/en/home/index"><img src="/images/spacer.gif" alt="Java Community Process" height="81" width="151"></a>
+	</div>
+	<div id="tools">
+		<div class="search">
+			<form name="search" action="/en/jsr/summary" method="get" onsubmit="return validate_search()">
+				<input name="id" value="Search JSRs" size="16" class="form" onfocus="nullify_if_equal(this, 'Search JSRs')" type="text">
+				<a href="javascript:document.search.submit()" onclick="return validate_search()"><img src="/images/button_go.gif" width="21" height="16" border="0" alt="Submit this Search" name="sub_search"></a>
+			</form>
+		</div>
+		<div class="tools">
+			<a href="/en/press/pressroom">Press Room</a> &nbsp;|&nbsp;
+			<a href="http://java.com/java/download/index.jsp?cid=jdp78399">Get Java Here</a> &nbsp;|&nbsp;
+			<!-- <a href="javascript:void(0)">Print Format</a> &nbsp;|&nbsp;&nbsp; -->
+		</div>
+
+	</div>
+	<div style="clear: right;"></div>
+
+        
+
+	<div class="topbar"><img src="/images/spacer.gif" alt="" height="3" width="154"></div>
+	<div id="update"> </div>
+    </div>
+
+
+    
+
+        <!-- ** BEGIN: Content Table ** //-->
+
+        <table width="100%" border="0" cellpadding="0" cellspacing="0">
+
+            <tr>
+
+                <!-- ** BEGIN: Navigation Column ** //-->
+                <td width="150" id="leftcontent" valign="top">
+                    <!-- Navigation Placeholder //-->
+
+                    
+
+                    <div class="bar"><img src="/images/hr_dots1.gif" alt="" height="3" width="150"></div>
+
+        <!-- begin find JSRs form -->
+        <!-- IMPORTANT! do not convert this form to Struts < html : form > tag.  javascript change of form.action property fails. -->
+        <img src="/images/hd_find-jsrs.gif" alt="Find JSRs" height="18" width="150">
+        <form name="findjsr" action="/en/jsr/summary" method="get" class="pt5" onsubmit="return validate_findjsr()">
+            <input name="id" size="18" class="form" value="Search JSRs" onfocus="nullify_if_equal(this, 'Search JSRs')" type="text">
+	    <a href="javascript:document.findjsr.submit()" onclick="return validate_findjsr()"><img src="/images/button_go.gif" width="21" height="16" border="0" alt="Submit this Search" name="sub_search"></a>
+        </form><br><br>
+
+        <!-- ** Menu Start ** //-->
+
+        <ul id="p7PMnav">
+            <li><a href="/en/jsr/platform">JSRs by Platform</a></li>
+            <li><a href="/en/jsr/tech">JSRs by Technology</a></li>
+            <li><a href="/en/jsr/stage">JSRs by Stage</a></li>
+            <li><a href="/en/jsr/ec">JSRs by Committee</a></li>
+            <li><a href="/en/jsr/all">List of All JSRs</a></li>
+
+            <!--end find JSRs form -->
+            <div style="clear: both;"><img src="/images/spacer.gif" alt="" height="25" width="1"></div>
+
+            <!--begin my JCP -->
+            <img src="/images/hd_my-jcp.gif" alt="My JCP" height="18" width="150">
+            
+
+          <form name="login" method="get" action="/en/user/login" >
+            <input name="Sign-in" type="submit" title="Sign-in" value="Sign-in" />
+          </form>
+
+            <div style="clear:both"><img src="/images/global/spacer.gif" width="1" height="3" alt=""></div>
+            <div class="noNav">
+                <a href="/en/user/register">Register for Site</a>
+            </div>
+
+             <div class="bar"><img src="/images/hr_dots1.gif" alt="" height="3" width="150"></div>
+           <div class="noNav" style="color: #666666; padding: 0;">
+              Use of JCP site is subject to the
+              <a href="/en/home/terms" style="display:inline;padding: 0">JCP Terms of Use</a> and the
+              <a href="http://www.oracle.com/us/legal/privacy/index.html" style="display:inline;padding: 0" href="">Oracle Privacy Policy</a>
+          </div>
+
+            
+
+            <div style="clear:both"><img src="/images/global/spacer.gif" width="1" height="25" alt=""></div>
+
+            <!--begin JCP info -->
+            <img src="/images/hd_jcp-info.gif" alt="JCP Info" height="18" width="150">
+
+            <li><a href="/en/procedures/overview" class="p7PMtrg">About JCP</a>
+                <ul>
+                    <li><a href="/en/procedures/overview">Program Overview</a></li>
+                    <li><a href="/en/procedures/jcp2">JCP Process Document</a></li>
+                    <li><a href="/en/whatsnew/calendar">Calendar</a></li>
+                    <li><a href="/en/participation/members">JCP Members</a></li>
+                    <li><a href="/en/participation/committee">Executive Committee</a></li>
+                    <li><a href="/en/whatsnew/elections">Elections</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/en/participation/overview" class="p7PMtrg">Get Involved</a>
+		<ul>
+                    <li><a href="/en/participation/overview">Overview</a></li>
+                    <li><a href="/en/participation/membership">Becoming a JCP Member</a></li>
+		</ul>
+            </li>
+
+            <li><a href="/en/resources/contents" class="p7PMtrg">Community Resources</a>
+                <ul>
+                    <li><a href="/en/resources/contents">Overview</a></li>
+                    <li><a href="/en/resources/tutorials">Tutorials</a></li>
+                    <li><a href="/en/resources/multimedia">JCP Podcasts</a></li>
+                    <li><a href="/en/resources/guide">Spec Lead Guide</a></li>
+                    <li><a href="/en/resources/tdk">TCK Tool & Info</a></li>
+                    <li><a href="/en/resources/license_reference">License Reference</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/en/press/pmo" class="p7PMtrg">Community News</a>
+                <ul>
+                    <li><a href="/en/press/pmo">News</a></li>
+                    <li><a href="/en/press/news/awards/awards_main">Programs &amp; Awards</a></li>
+                    <li><a href="/en/press/releases">Press Releases</a></li>
+                    <li><a href="/en/press/success">Success Stories</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/en/introduction/faq">FAQ</a></li>
+
+            <li><a href="/en/resources/contacts">Contact Us</a></li>
+
+            <div style="clear: both;"><img src="/images/spacer.gif" alt="" height="25" width="1"></div>
+
+            <!--[if lte IE 6]><style>#p7PMnav a{height:1em;}#p7PMnav li{height:1em;float:left;clear:both;width:100%}</style><![endif]-->
+            <!--[if IE 6]><style>#p7PMnav li{clear:none;}</style><![endif]-->
+            <!--[if IE 7]><style>#p7PMnav a{zoom:100%;}#p7PMnav li{float:left;clear:both;width:100%;}</style><![endif]-->
+        </ul>
+
+        
+
+        <!--begin ad space -->
+        <div class="ads">
+            <a href="http://java.com/java/download/index.jsp?cid=jdp78399" target="_blank"><img style="display: ;" src="/images/ad_banner2.gif" alt="Ad Banner" border="1" height="70" width="150"></a>
+        </div>
+        <!--end ad space -->
+
+<!-- ** Menu End ** //-->
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;<br>
+
+    
+
+                    &nbsp;<br>
+                    <img src="/images/common/trans.gif" alt="" width="1" height="150"><br>
+
+              
+
+
+
+                </td>
+                <!-- ** END: Navigation Column ** //-->
+
+                <!-- ** BEGIN: Gutter Column ** //-->
+		<td width="10" nowrap><img src="/images/common/trans.gif" alt="" width="10" height="1"></td>
+                <!-- ** END: Gutter Column ** //-->
+
+                <!-- ** BEGIN: Content Column ** //-->
+                <td width="100%" valign="top">
+
+    
+<script type="text/javascript">
+
+String.prototype.trim = function() {
+        return this.replace(/^\s+|\s+$/g,"");
+}
+String.prototype.ltrim = function() {
+        return this.replace(/^\s+/,"");
+}
+String.prototype.rtrim = function() {
+        return this.replace(/\s+$/,"");
+}
+
+function validate_search() {
+	if (document.search.id.value == "Search JSRs" || document.search.id.value.trim().length == 0) {
+		alert("Search terms must be entered first");
+		return false;
+	}
+	return true;
+}
+
+function validate_findjsr() {
+	if (document.findjsr.id.value == "Search JSRs" || document.findjsr.id.value.trim().length == 0) {
+		alert("Search terms must be entered first");
+		return false;
+	}
+	return true;
+}
+
+function nullify_if_equal(field, str) {
+	// alert("val=" + field.value);
+	if (field.value == str) {
+		field.value = "";
+	}
+}
+
+</script>
+<!-- ** END: header.jsp ** //-->
+
+
+
+
+
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2//EN">
+<HTML>
+<HEAD>
+	<META HTTP-EQUIV="CONTENT-TYPE" CONTENT="text/html; charset=iso-8859-1">
+	<TITLE></TITLE>
+	<META NAME="GENERATOR" CONTENT="StarOffice 6.0  (Solaris Sparc)">
+	<META NAME="CREATED" CONTENT="20021216;12234800">
+	<META NAME="CHANGED" CONTENT="20031014;11065000">
+</HEAD>
+<BODY LANG="en-US">
+<H1 STYLE="margin-left: 1cm; margin-right: 1cm; margin-top: 0cm">Proposed
+Specification changes for JSR-056</H1>
+<H1>Java Network Launching Protocol and API Specification</H1>
+<P>Andrew Herrick <BR>Sun Microsystems <BR>09/15/2003<BR>&nbsp; 
+</P>
+<H4><A NAME="section1"></A>Section 1&nbsp;&nbsp;&nbsp; Specification
+bug fixes and clarifications</H4>
+<BLOCKQUOTE>1.1)&nbsp;&nbsp;&nbsp; <A HREF="#4494529">4494529</A>&nbsp;
+Fix typos in specification <BR>1.2)&nbsp;&nbsp;&nbsp; <A HREF="#4404764">4404764</A>&nbsp;
+DTD is not available on java.sun.com <BR>1.3)&nbsp;&nbsp;&nbsp;
+<A HREF="#4391197">4391197</A>&nbsp; Clarify applet windows size
+specification <BR>1.4)&nbsp;&nbsp;&nbsp; <A HREF="#4430266">4430266</A>&nbsp;
+Clarify signing requirements on intranet <BR>1.5)&nbsp;&nbsp;&nbsp;
+<A HREF="#4648783">4648783</A>&nbsp; TCK-JNLP1.0.1:
+jnlp_file/resources/property/index.html <BR>1.6)&nbsp;&nbsp;&nbsp;
+<A HREF="#4651285">4651285</A>&nbsp; TCK-JNLP1.0.1:
+jnlp_file/security/index.html <BR>1.7)&nbsp;&nbsp;&nbsp; <A HREF="#4734863">4734863&nbsp;</A>
+Clarify scope of properties set in extensions <BR>1.8)&nbsp;&nbsp;&nbsp;
+<A HREF="#4730088">4730088</A>&nbsp; Clarify range of kind attribute
+for icon element <BR>1.9)&nbsp;&nbsp;&nbsp; <A HREF="../../../../../net/gdisun/z1/tiger/specs/deploy/1.5/jnlp_spec.html#4928787">4928787</A>&nbsp;
+Clarify allowing multiple jar signatures</BLOCKQUOTE>
+<H4><A NAME="section2"></A>Section 2&nbsp;&nbsp;&nbsp; Specification
+changes for new features</H4>
+<BLOCKQUOTE>2.1)&nbsp;&nbsp;&nbsp; <A HREF="#4681907">4681907</A>
+Allow applications to hint shortcut preferences. <BR>2.2)&nbsp;&nbsp;&nbsp;
+<A HREF="#4790673">4790673</A> Allow applications to hint desired vm
+args. <BR>2.3)&nbsp;&nbsp;&nbsp; <A HREF="#4756982">4756982</A> Allow
+applications to associate with a file ext / mime-type <BR>2.4)&nbsp;&nbsp;&nbsp;
+<A HREF="#4812563">4812563</A> Allow applications to describe a
+related-content hint <BR>2.5)&nbsp;&nbsp;&nbsp; <A HREF="#4828991">4828991</A>
+Allow os, arch, and platform attributes on information element.
+<BR>2.6)&nbsp;&nbsp;&nbsp; <A HREF="#4928956">4928956</A> Implement
+the &quot;&amp;&quot; operator in version-ids.</BLOCKQUOTE>
+<H4><A NAME="section3"></A>Section 3&nbsp;&nbsp;&nbsp; Specification
+changes for JNLP API extensions</H4>
+<BLOCKQUOTE>3.1)&nbsp;&nbsp;&nbsp; <A HREF="#4390904">4390904</A>&nbsp;
+SingleInstanceService <BR>3.2)&nbsp;&nbsp;&nbsp; <A HREF="#4467214">4467214</A>&nbsp;
+ExtendedService</BLOCKQUOTE>
+<H3><A NAME="4494529"></A>1.1)&nbsp;&nbsp;&nbsp; Proposed JNLP
+Specification change for bug 4494529.</H3>
+<P><BR>Overview: 
+</P>
+<P>&nbsp;&nbsp;&nbsp; The JNLP specification version 1.0.1 contains
+several typo's. 
+</P>
+<P>Justification: 
+</P>
+<P>&nbsp;&nbsp;&nbsp; Typographical errors should be addressed. 
+</P>
+<P>Proposed change to the specification: <BR>&nbsp; 
+</P>
+<BLOCKQUOTE>1.) Section 3.4 change:</BLOCKQUOTE>
+<BLOCKQUOTE STYLE="margin-left: 3cm; margin-right: 3cm">From: A JNLP
+Client must used the URL ...</BLOCKQUOTE>
+<BLOCKQUOTE STYLE="margin-left: 3cm; margin-right: 3cm">To: A JNLP
+Client must use the URL ...</BLOCKQUOTE>
+<BLOCKQUOTE>2.) Section 3.5 change:</BLOCKQUOTE>
+<BLOCKQUOTE STYLE="margin-left: 3cm; margin-right: 3cm">From: Each
+locale is specified by a language identifier, a possibly country
+identifier, and ...</BLOCKQUOTE>
+<BLOCKQUOTE STYLE="margin-left: 3cm; margin-right: 3cm">To: Each
+locale is specified by a language identifier, possibly a country
+identifier, and ...</BLOCKQUOTE>
+<BLOCKQUOTE>3.) Section 4.2 change:</BLOCKQUOTE>
+<BLOCKQUOTE STYLE="margin-left: 3cm; margin-right: 3cm">From: For
+example, given the following declarations, n the given order:</BLOCKQUOTE>
+<BLOCKQUOTE STYLE="margin-left: 3cm; margin-right: 3cm">To: For
+example, given the following declarations, in the given order:</BLOCKQUOTE>
+<BLOCKQUOTE>4.) Section 4.3 change:</BLOCKQUOTE>
+<BLOCKQUOTE STYLE="margin-left: 3cm; margin-right: 3cm">From:
+resource element that is guarded against a particular operating ...</BLOCKQUOTE>
+<BLOCKQUOTE STYLE="margin-left: 3cm; margin-right: 3cm">To: resource
+element that is intended for a particular operating ...</BLOCKQUOTE>
+<BLOCKQUOTE>5.) Section 5.6 change:</BLOCKQUOTE>
+<BLOCKQUOTE STYLE="margin-left: 3cm; margin-right: 3cm">From: An
+application must only be launched if it is trusted.</BLOCKQUOTE>
+<BLOCKQUOTE STYLE="margin-left: 3cm; margin-right: 3cm">To: An
+application with unrestricted access may only be launched if it is
+trusted.</BLOCKQUOTE>
+<BLOCKQUOTE>6.) Section 6. change:</BLOCKQUOTE>
+<BLOCKQUOTE STYLE="margin-left: 3cm; margin-right: 3cm">From: The
+following table summarize the ...</BLOCKQUOTE>
+<BLOCKQUOTE STYLE="margin-left: 3cm; margin-right: 3cm">To: The
+following table summarizes the ...</BLOCKQUOTE>
+<BLOCKQUOTE>7.) Remove section 8, Future Directions, entirely</BLOCKQUOTE>
+<BLOCKQUOTE STYLE="margin-left: 3cm; margin-right: 3cm">&nbsp;</BLOCKQUOTE>
+<H3><A NAME="4404764"></A>1.2) Proposed JNLP Specification change for
+bug 4404764.</H3>
+<P><BR>Overview: 
+</P>
+<BLOCKQUOTE>The JNLP specification version 1.0.1 in Appendix C,
+section C.1 says that this dtd is available at
+<BR>&quot;http://java.sun.com/products/j2se/dtds/jnlp_1_0.dtd&quot;.
+Since it's not there we should remove this line.</BLOCKQUOTE>
+<P><BR>Justification: 
+</P>
+<BLOCKQUOTE>The JNLP specification should make no claims about what
+is hosted on java.sun.com.</BLOCKQUOTE>
+<P><BR>Proposed change to the specification: 
+</P>
+<BLOCKQUOTE>1.) Change comment in section C.1</BLOCKQUOTE>
+<BLOCKQUOTE>From:</BLOCKQUOTE>
+<BLOCKQUOTE>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;!DOCTYPE
+jnlp-discriptor PUBLIC &quot;-//Sun Microsystems, Inc//DTD JNLP
+Discriptor 1.0//EN&quot; <BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&quot;http://java.sun.com/products/j2se/dtds/jnlp_1_0.dtd&quot;&gt;</BLOCKQUOTE>
+<BLOCKQUOTE>To:</BLOCKQUOTE>
+<BLOCKQUOTE>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;!DOCTYPE
+jnlp-discriptor PUBLIC &quot;-//Sun Microsystems, Inc//DTD JNLP
+Discriptor 1.1//EN&quot;&gt;</BLOCKQUOTE>
+<H3><A NAME="4391197"></A>1.3)&nbsp;&nbsp;&nbsp; Proposed JNLP
+Specification change for bug 4391197.</H3>
+<P><BR>Overview: 
+</P>
+<BLOCKQUOTE>The JNLP specification version 1.0.1 Section 3.6.2
+defines the width and height attributes of the applet-descriptor
+element. It should be noted here that the actual width and height of
+the applet may differ from the values supplied in as much as the JNLP
+Client may implement the applet container using a java Frame or other
+object with system dependent limits on it's size.</BLOCKQUOTE>
+<P><BR>Justification: 
+</P>
+<BLOCKQUOTE>TCK test writers, reading the spec as it is, assumed they
+could set the width and height of an applet to 100. When reading it
+back with Applet.getSize() they found a width of 106 on some windows
+platforms. This was because 106 was the minimum size for a resizable
+Frame on WinNT.</BLOCKQUOTE>
+<P><BR>Proposed change to the specification: 
+</P>
+<BLOCKQUOTE>1.) Add line to Section 3.6.2 (after width and height
+attributes):</BLOCKQUOTE>
+<BLOCKQUOTE STYLE="margin-left: 3cm; margin-right: 3cm">The JNLP
+Client may set the actual size to be more or less than the specified
+size, to fit within the minimum and maximum dimensions for a Java
+Frame on each platform.</BLOCKQUOTE>
+<H3><A NAME="4430266"></A><B>1.4)&nbsp;&nbsp;&nbsp; Proposed JNLP
+Specification change for bug 4430266.</B></H3>
+<P><BR><BR>
+</P>
+<P STYLE="margin-top: 0.42cm"><FONT FACE="Albany, sans-serif">Overview:</FONT>
+</P>
+<UL>
+	<P STYLE="margin-right: 1.93cm">The JNLP specification version 1.0.1
+	defines (in section 5.5) the exact set of permissions that a JNLP
+	Client must grant to an &amp;ldquo;untrusted&amp;rdquo; application
+	or applet. It also defines (in section 5.6) the set of permissions
+	that must be granted to a &amp;ldquo;trusted&amp;rdquo; application
+	or applet that specifies &lt;j2ee-application-client-permissions&gt;
+	or &lt;all-permissions&gt;. We wish to allow the client to grant
+	more or less permissions than this specified default set, in
+	accordance with the configured policys on the client system.</P>
+</UL>
+<P STYLE="margin-right: 1.93cm; margin-top: 0.42cm"><FONT FACE="Albany, sans-serif">Justification:</FONT></P>
+<UL>
+	<P STYLE="margin-right: 1.93cm; margin-bottom: 0cm">Customers have
+	requested the ability to restrict clients within their enterprise to
+	running specific applications, running only applications from a
+	particular codebase, or running only applications signed with a
+	particular certificate. There have also been customers such as
+	Goldman Sax requesting the ability to limit the permissions granted
+	to trusted applications and applets. Features have been designed to
+	address these requests, requiring these changes in the
+	specification.</P>
+	<P STYLE="margin-right: 1.93cm">The current reference implementation
+	conflicts with the specification in that an untrusted app is granted
+	additional permissions as specified in the .java.policy file in his
+	home directory.</P>
+</UL>
+<P STYLE="margin-right: 1.93cm; margin-top: 0.42cm"><FONT FACE="Albany, sans-serif">Proposed
+change to the specification:</FONT></P>
+<UL>
+	<P STYLE="margin-right: 1.93cm; margin-bottom: 0cm">1.) Add line to
+	end of Section 5.5:</P>
+	<UL>
+		<P STYLE="margin-right: 1.93cm; margin-bottom: 0cm">The sandbox
+		environment described above is the default set of permissions
+		granted to an untrusted application or applet. The JNLP Client may
+		allow the user or system administrator to configure alternative
+		permission sets for untrusted applications and applets.</P>
+	</UL>
+	<P STYLE="margin-right: 1.93cm; margin-bottom: 0cm">2.) Add line to
+	end of Section 5.6:</P>
+	<UL>
+		<P STYLE="margin-right: 1.93cm">The two permission sets described
+		above are the default set of permissions granted to a trusted
+		application or applet requesting all-permissions or
+		j2ee-application-client-permissions. The JNLP Client may allow the
+		user or system administrator to configure alternative permission
+		sets for trusted applications and applets.</P>
+	</UL>
+</UL>
+<H3 STYLE="margin-right: 1.93cm"><A NAME="4648783"></A>1.5)&nbsp;&nbsp;&nbsp;
+Proposed JNLP Specification change for bug 4648783.</H3>
+<P><BR>Overview: 
+</P>
+<BLOCKQUOTE STYLE="margin-right: 3.93cm; margin-bottom: 0cm">The JNLP
+specification version 1.0.1 section 4.2 describes how the application
+can set system properties by using the property element in the JNLP
+file. Also section 5.5 says: &quot;A application has read and write
+access to all the properties in the JNLP file.&quot;</BLOCKQUOTE>
+<BLOCKQUOTE STYLE="margin-right: 3.93cm">The security team determined
+that setting arbitrary system properties was a security risk, and
+that the client implementation should only allow the JNLP file to set
+system properties that it knows to be safe, when running an untrusted
+application.</BLOCKQUOTE>
+<P STYLE="margin-right: 1.93cm">Justification:</P>
+<BLOCKQUOTE STYLE="margin-right: 3.93cm">The security team required
+this change in version 1.0.1_02 of the reference implementation.
+Since then the RI has been in conflict with the specification.</BLOCKQUOTE>
+<P STYLE="margin-right: 1.93cm; margin-bottom: 0cm">Proposed change
+to the specification:</P>
+<P><BR>&nbsp; 
+</P>
+<BLOCKQUOTE STYLE="margin-right: 3.93cm">1.) Add paragraph to end of
+section 4.2:</BLOCKQUOTE>
+<BLOCKQUOTE STYLE="margin-left: 3cm; margin-right: 4.93cm">For an
+untrusted application (see section 5.5) system properties set in the
+JNLP file may only be set by the JNLP Client if they are considered
+secure. At a minimum a JNLP Client will allow setting system
+properties whose name starts with &quot;jnlp.&quot; .</BLOCKQUOTE>
+<BLOCKQUOTE STYLE="margin-right: 3.93cm">2.) Change section 5.5:</BLOCKQUOTE>
+<BLOCKQUOTE STYLE="margin-right: 5.86cm">From:</BLOCKQUOTE>
+<BLOCKQUOTE STYLE="margin-left: 3cm; margin-right: 6.86cm">Properties:
+A application has read and write access to all the properties in the
+JNLP file. Properties specified in the JNLP file must overwrite the
+default value of the above properties.</BLOCKQUOTE>
+<BLOCKQUOTE STYLE="margin-right: 5.86cm">To:</BLOCKQUOTE>
+<BLOCKQUOTE STYLE="margin-left: 3cm; margin-right: 6.86cm">Properties:
+An untrusted application has read and write access only to those
+properties considered secure by the JNLP Client.&nbsp; At a minimum
+the JNLP Client will allow read and write access to properties
+beginning with &quot;jnlp.&quot; .</BLOCKQUOTE>
+<H3 STYLE="margin-right: 3.86cm"><A NAME="4651285"></A>1.6)&nbsp;&nbsp;&nbsp;
+Proposed JNLP Specification change for bug 4651285.</H3>
+<P><BR>Overview: 
+</P>
+<BLOCKQUOTE STYLE="margin-right: 3.93cm">The specification version
+1.0.1 in section 5.5 lists permissions that must be granted to to an
+untrusted application's resources.&nbsp; Included in this list is:
+java.awt.AWTPermission showWindowWithoutWarningBanner. The security
+team determined that this was a security risk, and the permission was
+removed from the reference implementation.</BLOCKQUOTE>
+<P><BR>Justification: 
+</P>
+<BLOCKQUOTE STYLE="margin-right: 3.93cm">The security team required
+this permission be removed from the reference implementation, and the
+RI and the specification have been in conflict since Java Web Start
+1.0.1_02.</BLOCKQUOTE>
+<P><BR>Proposed change to the specification: <BR>&nbsp; 
+</P>
+<BLOCKQUOTE STYLE="margin-right: 3.93cm">1.) In Section 5.5: Remove
+the line:</BLOCKQUOTE>
+<BLOCKQUOTE STYLE="margin-left: 3cm; margin-right: 4.93cm">&quot;java.awt.AWTPermission
+showWindowWithoutWarningBanner&quot;</BLOCKQUOTE>
+<BLOCKQUOTE STYLE="margin-right: 3.93cm">from the table of granted
+permissions.</BLOCKQUOTE>
+<H3 STYLE="margin-right: 1.93cm"><A NAME="4734863"></A>1.7)&nbsp;&nbsp;&nbsp;
+Proposed JNLP Specification change for bug 4734863.</H3>
+<P><BR>Overview: 
+</P>
+<BLOCKQUOTE STYLE="margin-right: 3.93cm">The JNLP specification
+version 1.0.1 in section 4.2 defines how to set properties in a JNLP
+file, without clearly stating the <BR>expected effect. There is no
+distinction made between extension JNLP files and main JNLP files.</BLOCKQUOTE>
+<BLOCKQUOTE STYLE="margin-right: 3.93cm">The specification in section
+4.6 also describes the j2se element without noting that it only has
+effect in a main JNLP file.</BLOCKQUOTE>
+<P STYLE="margin-right: 1.93cm">Justification:</P>
+<BLOCKQUOTE STYLE="margin-right: 3.93cm">This is only a clarification
+of the behavior expected by the original drafters of the spec.</BLOCKQUOTE>
+<P><BR>Proposed change to the specification: <BR>&nbsp; 
+</P>
+<BLOCKQUOTE STYLE="margin-right: 3.93cm">1.) Add to section 4.2:</BLOCKQUOTE>
+<BLOCKQUOTE STYLE="margin-left: 3cm; margin-right: 4.93cm">Properties
+set in the JNLP file may be set by the JNLP Client at any time before
+the application's code is executed, so it cannot be assumed that they
+will be set during the initialization of the virtual machine.</BLOCKQUOTE>
+<BLOCKQUOTE STYLE="margin-left: 3cm; margin-right: 4.93cm">Properties
+set in an extension JNLP file may be set any time before code from
+that extension is executed.</BLOCKQUOTE>
+<BLOCKQUOTE STYLE="margin-right: 3.93cm">2.) Add to section 4.6:</BLOCKQUOTE>
+<BLOCKQUOTE STYLE="margin-left: 3cm; margin-right: 4.93cm">The j2se
+element in the application descriptor defines the version of java
+used to run the application (or applet).&nbsp; Any j2se element in an
+extension descriptor is ignored.</BLOCKQUOTE>
+<P><BR>&nbsp; 
+</P>
+<H3 STYLE="margin-right: 1.93cm"><A NAME="4730088"></A>1.8)&nbsp;&nbsp;&nbsp;&nbsp;
+Proposed JNLP Specification change for bug 4730088.</H3>
+<P>&nbsp; 
+</P>
+<P STYLE="margin-right: 1.93cm">Overview: 
+</P>
+<BLOCKQUOTE STYLE="margin-right: 3.93cm">The specification version
+1.0.1 in section 3.5 describes the kind attribute of the icon element
+by saying: &quot;The optional kind attribute can be used to indicate
+the use of the icon, such as default, selected, disabled, and
+rollover&quot;. However the DTD in appendix C is more stringent:</BLOCKQUOTE>
+<BLOCKQUOTE STYLE="margin-right: 3.93cm">&lt;!ATTLIST icon kind
+(default | selected | disabled | rollover) &quot;default&quot; &gt;</BLOCKQUOTE>
+<BLOCKQUOTE STYLE="margin-right: 3.93cm">We would like to allow JNLP
+Client to implement arbitrary values for kind, as section 3.5
+implies, as well as suggesting other examples.</BLOCKQUOTE>
+<P><BR>Justification: 
+</P>
+<BLOCKQUOTE STYLE="margin-right: 3.93cm">The dtd in appendix C is
+more restrictive than the text of the specification. Customer demand
+for customizable splash screens caused us to implement kind=&quot;splash&quot;
+in the RI. We are also looking at demand to implement kind=&quot;shortcut&quot;
+for future releases.</BLOCKQUOTE>
+<P><BR>Proposed change to the specification: <BR>&nbsp; 
+</P>
+<BLOCKQUOTE STYLE="margin-right: 3.93cm">1.) In section 3.5, change
+the line defining kind attribute to:</BLOCKQUOTE>
+<P STYLE="margin-left: 2.12cm">The optional kind attribute can be
+used to indicate the use of the icon, such as default, selected,
+disabled, rollover, splash, and shortcut.</P>
+<BLOCKQUOTE STYLE="margin-right: 3.93cm">2.) Change line in appendix
+C:</BLOCKQUOTE>
+<P STYLE="margin-left: 2.12cm; margin-bottom: 0cm">From: &lt;!ATTLIST
+icon kind (default | selected | disabled | rollover)&quot;default&quot;
+&gt;</P>
+<P STYLE="margin-left: 2.12cm; margin-bottom: 0cm">To: &lt;!ATTLIST
+icon kind CDATA #IMPLIED&gt;</P>
+<P><BR>&nbsp; 
+</P>
+<BLOCKQUOTE STYLE="margin-left: 3cm; margin-right: 4.93cm">&nbsp;</BLOCKQUOTE>
+<H3 STYLE="margin-right: 1.93cm"><A NAME="4928787"></A>1.9)&nbsp;&nbsp;&nbsp;&nbsp;
+Proposed JNLP Specification change for bug 4928787.</H3>
+<P>&nbsp; 
+</P>
+<P STYLE="margin-right: 1.93cm; margin-bottom: 0cm">Overview: 
+</P>
+<P ALIGN=JUSTIFY STYLE="margin-left: 1.06cm">The specification
+version 1.0.1 in section 5.4 defines a signed application saying: &quot;A
+single certificate must be used to sign each jar file.&quot;.&nbsp;
+This has been misinterpreted to mean a jar file cannot have more than
+one signature.&nbsp; We wish to clarify this.</P>
+<P STYLE="margin-bottom: 0cm"><BR>Justification: 
+</P>
+<P ALIGN=JUSTIFY STYLE="margin-left: 1.06cm">Previous versions of
+Java Web Start implemented the restriction that no jar can be signed
+twice.&nbsp; The security team has indicated that allowing multiple
+signatures is preferred, and Java Plugin implements it this way.</P>
+<P STYLE="margin-bottom: 0cm"><BR>Proposed change to the
+specification: <BR>&nbsp; 
+</P>
+<P ALIGN=JUSTIFY STYLE="margin-left: 1.06cm; margin-bottom: 0cm">In
+section 5.4 change:</P>
+<P ALIGN=JUSTIFY STYLE="margin-left: 2.12cm; margin-bottom: 0cm">All
+the JAR files are signed (both for jar elements and nativelib
+elements) and can be verified.&nbsp; A JAR file is signed if the
+signature covers the entire JAR file. A single certificate must be
+used to sign each JAR file.</P>
+<P ALIGN=JUSTIFY STYLE="margin-bottom: 0cm">&nbsp; <BR>To:</P>
+<P ALIGN=JUSTIFY STYLE="margin-left: 2.12cm">All the JAR files are
+signed (both for jar elements and nativelib elements) and can be
+verified.&nbsp; A JAR file is signed if all the entries (excluding
+manifest entries, the signature itself, and empty directories) are
+signed.</P>
+<BLOCKQUOTE STYLE="margin-left: 6cm; margin-right: 9.86cm">&nbsp;</BLOCKQUOTE>
+<H3 STYLE="margin-right: 1.93cm"><A NAME="4681907"></A>2.1)&nbsp;&nbsp;&nbsp;
+Proposed JNLP Specification change for bug 4681907.</H3>
+<P><BR>Overview: 
+</P>
+<BLOCKQUOTE STYLE="margin-right: 3.93cm">The JNLP Specification
+version 1.0.1 does not allow the application deployer any control
+over the desktop integration of the application. This change is to
+give applications the ability to hint to the JNLP Client if and where
+they prefer to be integrated into the desktop. To implement this we
+propose adding a &quot;shortcut&quot; element as a sub-element of the
+&quot;information&quot; element. The element would have the possible
+sub-elements &quot;desktop&quot; and &quot;menu&quot;, and the
+optional attribute &quot;online&quot;.&nbsp; The &quot;menu&quot;
+element could have an optional&nbsp; &quot;submenu&quot; attribute.&nbsp;&nbsp;
+The &quot;online&quot; attribute would have the possible values
+&quot;true&quot; and &quot;false&quot;.&nbsp; The &quot;submenu&quot;
+attribute would have a string value denoting the sub-menu name.</BLOCKQUOTE>
+<P STYLE="margin-right: 1.93cm">Justification:</P>
+<BLOCKQUOTE STYLE="margin-right: 3.93cm">Customers have requested a
+richer desktop integration experience and the ability to hint
+shortcut preferences.</BLOCKQUOTE>
+<P STYLE="margin-right: 1.93cm">Proposed change to the specification:</P>
+<BLOCKQUOTE STYLE="margin-right: 3.93cm">1.) Add to the bottom of the
+&lt;information&gt; section of the example at the start of section
+3.5:</BLOCKQUOTE>
+<BLOCKQUOTE STYLE="margin-left: 3cm; margin-right: 4.93cm">&lt;shortcut
+online=&quot;false&quot;&gt; <BR>&nbsp;&nbsp;&nbsp; &lt;desktop/&gt;
+<BR>&nbsp;&nbsp;&nbsp; &lt;menu submenu=&quot;My Corporation Apps&quot;/&gt;
+<BR>&lt;/shortcut&gt;</BLOCKQUOTE>
+<BLOCKQUOTE STYLE="margin-right: 3.93cm">2.) Add to the end of
+section 3.5:</BLOCKQUOTE>
+<BLOCKQUOTE STYLE="margin-left: 3cm; margin-right: 4.93cm">shortcut
+element: The optional shortcut element can be used to indicate an
+application's preferences for desktop integration. The shortcut
+element and it's sub-elements provide hints that the JNLP Client may
+or may not use.&nbsp; The shortcut element can contain the optional
+online attribute, and the two optional sub-elements desktop and menu.</BLOCKQUOTE>
+<BLOCKQUOTE STYLE="margin-left: 3cm; margin-right: 4.93cm">online
+attribute: The optional online attribute can be used in a shortcut
+element to describe the applications preference for creating a
+shortcut to run the application online or offline.&nbsp; If the value
+is &quot;true&quot; the application prefers to create a shortcut that
+will launch the application online.&nbsp; If the value is &quot;false&quot;
+the application prefers to create a shortcut that will launch the
+application offline.</BLOCKQUOTE>
+<BLOCKQUOTE STYLE="margin-left: 3cm; margin-right: 4.93cm">desktop
+element: The optional desktop element can be used to indicate an
+application's preference for putting a shortcut on the users desktop.</BLOCKQUOTE>
+<BLOCKQUOTE STYLE="margin-left: 3cm; margin-right: 4.93cm">menu
+element: The optional menu element can be used to indicate an
+application's preference for putting a menu item in the users start
+menus.&nbsp; The menu element can have a sub-menu attribute.</BLOCKQUOTE>
+<BLOCKQUOTE STYLE="margin-left: 3cm; margin-right: 4.93cm">submenu
+attribute: The optional submenu attribute can be used to indicate an
+application's preference for where to place the menu item, and can
+contain any string value.</BLOCKQUOTE>
+<BLOCKQUOTE STYLE="margin-left: 3cm; margin-right: 4.93cm">The
+shortcut element provides hints to the JNLP Client which may or may
+not be used.</BLOCKQUOTE>
+<BLOCKQUOTE STYLE="margin-right: 3.93cm">3.) Change the information
+element in Appendix C to:</BLOCKQUOTE>
+<BLOCKQUOTE STYLE="margin-left: 3cm; margin-right: 4.93cm">&lt;!ELEMENT
+information (title?, vendor?, homepage?, description*,
+icon*,offline-allowed?, shortcut?)&gt;</BLOCKQUOTE>
+<BLOCKQUOTE STYLE="margin-right: 3.93cm">4.) Add the shortcut element
+to the dtd in Appendix C:</BLOCKQUOTE>
+<BLOCKQUOTE STYLE="margin-left: 3cm; margin-right: 4.93cm">&lt;!--
+<BR>The shortcut element describes an application's preferences for
+desktop integration. <BR>--&gt; <BR>&lt;!ELEMENT shortcut (desktop?
+menu?)&gt;</BLOCKQUOTE>
+<BLOCKQUOTE STYLE="margin-left: 3cm; margin-right: 4.93cm">&lt;!--
+<BR>The online attribute of the shortcut element describes an
+application's preferences launching shortcuts online or offline <BR>--&gt;
+<BR>&lt;!ATTLIST shortcut online (true | false) &quot;true&quot;&gt;</BLOCKQUOTE>
+<BLOCKQUOTE STYLE="margin-left: 3cm; margin-right: 4.93cm">&lt;!--
+<BR>The desktop element indicates that a shortcut on the desktop is
+desired. <BR>--&gt; <BR>&lt;!ELEMENT desktop EMPTY&gt;</BLOCKQUOTE>
+<BLOCKQUOTE STYLE="margin-left: 3cm; margin-right: 4.93cm">&lt;!--
+<BR>The menu element indicates that a shortcut in a menu is desired.
+<BR>--&gt; <BR>&lt;!ELEMENT menu EMPTY&gt;</BLOCKQUOTE>
+<BLOCKQUOTE STYLE="margin-left: 3cm; margin-right: 4.93cm">&lt;!--
+<BR>The submenu attribute of the menu element indicates where in the
+menu a shortcut is desired. <BR>--&gt; <BR>&lt;!ATTLIST menu submenu
+CDATA #IMPLIED&gt;</BLOCKQUOTE>
+<H3 STYLE="margin-right: 1.93cm"><A NAME="4790673"></A>2.2)&nbsp;&nbsp;&nbsp;
+Proposed JNLP Specification change for bug 4790673.</H3>
+<BLOCKQUOTE STYLE="margin-left: 3cm; margin-right: 4.93cm">(also
+covers 4625809, 4670925, and 4491200)</BLOCKQUOTE>
+<P><BR>Overview: 
+</P>
+<BLOCKQUOTE STYLE="margin-right: 3.93cm">The JNLP specification
+version 1.0.1 section 4.6 describes the j2se element with the two
+possible attributes &quot;initial-heap-size&quot; and
+&quot;max-heap-size&quot;. We would like to add the attribute
+&quot;java-vm-args&quot; to allow arbitrary vm args that the JNLP
+Client considers secure.</BLOCKQUOTE>
+<P STYLE="margin-right: 1.93cm">Justification:</P>
+<BLOCKQUOTE STYLE="margin-right: 3.93cm">Customers have requested we
+add specific new attributes to the j2se element in the JNLP
+Specification to allow them to run: &quot;-server&quot;, &quot;-client&quot;,
+&quot;-Xint&quot;, &quot;-verbose&quot;, &quot;-Xincgc&quot;,
+&quot;-Xnoclassgc&quot;, and &quot;-Xssn&quot;.&nbsp; This proposal
+covers all of these as well as any additional arguments requested in
+the future, without a specific specification change for each one.</BLOCKQUOTE>
+<P STYLE="margin-right: 1.93cm">Proposed change to the specification:</P>
+<BLOCKQUOTE STYLE="margin-right: 3.93cm">1.) Section 4.6, add:</BLOCKQUOTE>
+<BLOCKQUOTE STYLE="margin-left: 3cm; margin-right: 4.93cm">java-vm-args:
+Indicates an additional set of standard and non-standard virtual
+machine arguments that the application would prefer the JNLP Client
+to use when launching Java, such as:&nbsp;&nbsp; -server, -client,
+-Xint, -Xincgc, -Xnoclassgc, and -Xssn.&nbsp; The JNLP Client may
+honor this preference only if it considers each argument to be
+secure. <BR>when invoking java if the JNLP Client determines them to
+be secure, such as: -server, -client, -verbose, -Xint, -Xincgc,
+-Xnoclassgc, and -Xssn.</BLOCKQUOTE>
+<BLOCKQUOTE STYLE="margin-right: 3.93cm">2.) Appendix C add:</BLOCKQUOTE>
+<P>&lt;!--</P>
+<P><BR>The java-vm-args attribute of the j2se element specifies a
+preferred set of virtual machine arguments to use when launching
+java. <BR>--&gt; <BR>&lt;!ATTLIST j2se java-vm-args CDATA #IMPLIED&gt;
+</P>
+<BLOCKQUOTE STYLE="margin-left: 3cm; margin-right: 4.93cm">&nbsp;</BLOCKQUOTE>
+<H3 STYLE="margin-right: 1.93cm"><A NAME="4756982"></A>2.3)&nbsp;&nbsp;&nbsp;
+Proposed JNLP Specification change for bug 4756982.</H3>
+<P><BR>Overview: 
+</P>
+<BLOCKQUOTE STYLE="margin-right: 3.93cm">The JNLP Specification does
+not allow an application any method of hinting to the JNLP Client
+that it wishes to be invoked as the primary handler of a specific
+file extensions and a mime-type. Installed applications can commonly
+register themselves with the operating system as the handler of
+specific extensions and mime-types, and we wish to provide the same
+capability to jnlp applications.&nbsp; We propose adding the element
+association, as a sub-element of the information element, with
+attributes extension and mime-type.</BLOCKQUOTE>
+<P STYLE="margin-right: 1.93cm">Justification:</P>
+<BLOCKQUOTE STYLE="margin-right: 3.93cm">We have received several
+internal and external requests for this feature.</BLOCKQUOTE>
+<P><BR>Proposed change to the specification: <BR>&nbsp; 
+</P>
+<BLOCKQUOTE STYLE="margin-right: 3.93cm">1.) Add to the end of
+section 3.5:</BLOCKQUOTE>
+<BLOCKQUOTE STYLE="margin-left: 3cm; margin-right: 4.93cm">association
+element:&nbsp; The optional association element is a hint to the JNLP
+client that it wishes to be registered with the operating system as
+the primary handler of certain extensions and a certain mime-type.&nbsp;
+The association element must have the extensions and mime-type
+attributes.</BLOCKQUOTE>
+<BLOCKQUOTE STYLE="margin-left: 3cm; margin-right: 4.93cm">extensions
+attribute: The&nbsp; extensions attribute contains a list of file
+extensions (separated by spaces) that the application requests it be
+registered to handle.</BLOCKQUOTE>
+<BLOCKQUOTE STYLE="margin-left: 3cm; margin-right: 4.93cm">mime-type
+attribute: The mime-type attribute contains a mime-type that the
+application requests it be registered to handle.</BLOCKQUOTE>
+<BLOCKQUOTE STYLE="margin-left: 3cm; margin-right: 4.93cm">An
+application making such a request should be prepared to have its main
+method invoked with the arguments &quot;-open filename&quot; and
+&quot;-print filename&quot; instead of any arguments listed in the
+argument attribute of the application-desc element.</BLOCKQUOTE>
+<BLOCKQUOTE STYLE="margin-right: 3.93cm">2.) Change the information
+element in Appendix C to:</BLOCKQUOTE>
+<BLOCKQUOTE STYLE="margin-left: 3cm; margin-right: 4.93cm">&lt;!ELEMENT
+information (title?, vendor?, homepage?, description*,
+icon*,offline-allowed?, association?)&gt;</BLOCKQUOTE>
+<BLOCKQUOTE STYLE="margin-right: 3.93cm">4.) Add the association
+element to the dtd in Appendix C:</BLOCKQUOTE>
+<BLOCKQUOTE STYLE="margin-left: 3cm; margin-right: 4.93cm">&lt;!--
+<BR>The association element describes an application's preferences
+for desktop associations. <BR>--&gt; <BR>&lt;!ELEMENT association
+EMPTY&gt;</BLOCKQUOTE>
+<BLOCKQUOTE STYLE="margin-left: 3cm; margin-right: 4.93cm">&lt;!--
+<BR>The extensions attribute of the association element indicates a
+list of extensions to associate. <BR>--&gt; <BR>&lt;!ATTLIST
+association extensions CDATA #REQUIRED&gt;</BLOCKQUOTE>
+<BLOCKQUOTE STYLE="margin-left: 3cm; margin-right: 4.93cm">&lt;!--
+<BR>The mime-type attribute of the association element indicates a
+mime-type to associate. <BR>--&gt; <BR>&lt;!ATTLIST association
+mime-type CDATA #REQUIRED&gt;</BLOCKQUOTE>
+<H3 STYLE="margin-right: 1.93cm"><A NAME="4812563"></A>2.4)&nbsp;&nbsp;&nbsp;
+Proposed JNLP Specification change for bug 4812563.</H3>
+<P><BR>Overview: 
+</P>
+<BLOCKQUOTE STYLE="margin-right: 3.93cm">The JNLP Specification does
+not allow an application any method of hinting to the JNLP Client
+that it wishes to include content related to the application in any
+desktop integration of the application.&nbsp; This proposal adds the
+related-content element to the information element.&nbsp; The
+related-content element has an href attribute to specify the content,
+along with sub-elements title, description, and icon, to aid in
+desktop integration.</BLOCKQUOTE>
+<BLOCKQUOTE STYLE="margin-right: 3.93cm">The related-content element
+is a hint that may be ignored by the JNLP Client.</BLOCKQUOTE>
+<P STYLE="margin-right: 1.93cm">Justification:</P>
+<BLOCKQUOTE STYLE="margin-right: 3.93cm">We have received internal
+requests that jnlp be sufficient to fully describe an application and
+it's related materials.</BLOCKQUOTE>
+<P><BR>Proposed change to the specification: <BR>&nbsp; 
+</P>
+<BLOCKQUOTE STYLE="margin-right: 3.93cm">1.) Add to the end of
+section 3.5:</BLOCKQUOTE>
+<BLOCKQUOTE STYLE="margin-left: 3cm; margin-right: 4.93cm">related-content
+element:&nbsp; The optional related-content element describes an
+additional piece of related content, such as a readme file, help
+pages, or links to registration pages, as a hint to the JNLP Client.&nbsp;
+The application is asking that this content be included in its
+desktop integration .&nbsp; The related-content element has a
+mandatory href attribute.&nbsp; It can contain any of the following
+three sub-elements:</BLOCKQUOTE>
+<BLOCKQUOTE STYLE="margin-left: 3cm; margin-right: 4.93cm">title
+element:&nbsp; The name of the related content.</BLOCKQUOTE>
+<BLOCKQUOTE STYLE="margin-left: 3cm; margin-right: 4.93cm">description
+element: A short description of the related content.</BLOCKQUOTE>
+<BLOCKQUOTE STYLE="margin-left: 3cm; margin-right: 4.93cm">icon
+element: The icon can be used by the JNLP Client to identify the
+related content to the user.</BLOCKQUOTE>
+<BLOCKQUOTE STYLE="margin-left: 3cm; margin-right: 4.93cm">example of
+related-content elements:</BLOCKQUOTE>
+<BLOCKQUOTE STYLE="margin-left: 3cm; margin-right: 4.93cm">&lt;information&gt;
+<BR>&nbsp;&nbsp;&nbsp; ... <BR>&nbsp;&nbsp;&nbsp; &lt;related-content
+href=&quot;readme.html&quot;&gt; <BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&lt;title&gt;README&lt;/title&gt; <BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&lt;description&gt;The README file contains additional information
+about the product &lt;/description&gt; <BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&lt;icon href=&quot;readme.jpg&quot;/&gt; <BR>&nbsp;&nbsp;&nbsp;
+&lt;/related-content&gt; <BR>&nbsp;&nbsp;&nbsp; &lt;related-content
+href=&quot;register.html&quot;&gt; <BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&lt;title&gt;Program Registration&lt;/title&gt; <BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&lt;description&gt;Register this product to receive support and
+valuable discounts of other <BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+products&lt;/description&gt; <BR>&nbsp;&nbsp;&nbsp;
+&lt;/related-content&gt; <BR>&lt;/information&gt;</BLOCKQUOTE>
+<BLOCKQUOTE STYLE="margin-right: 3.93cm">2.) Change the information
+element in Appendix C to:</BLOCKQUOTE>
+<BLOCKQUOTE STYLE="margin-left: 3cm; margin-right: 4.93cm">&lt;!ELEMENT
+information (title?, vendor?, homepage?, description*,
+icon*,offline-allowed?, shortcut?, association?, related-content*)&gt;</BLOCKQUOTE>
+<BLOCKQUOTE STYLE="margin-right: 3.93cm">3.) Add the related-content
+element to the dtd in Appendix C:</BLOCKQUOTE>
+<BLOCKQUOTE STYLE="margin-left: 3cm; margin-right: 4.93cm">&lt;!--
+<BR>The related-content element described additional content that may
+be integrated with the application. <BR>--&gt; <BR>&lt;!ELEMENT
+related-content (title?, description*, icon*)&gt;</BLOCKQUOTE>
+<BLOCKQUOTE STYLE="margin-left: 3cm; margin-right: 4.93cm">&lt;!--
+<BR>The href attribute of the related-content element contains a URL
+to a location on the web containing additional related content for
+the application. <BR>--&gt; <BR>&lt;ATTLIST related-content href
+CDATA #REQUIRED&gt;</BLOCKQUOTE>
+<BLOCKQUOTE STYLE="margin-left: 3cm; margin-right: 4.93cm">&nbsp;</BLOCKQUOTE>
+<H3 STYLE="margin-right: 1.93cm"><A NAME="4828991"></A>2.5)&nbsp;&nbsp;&nbsp;
+Proposed JNLP Specification change for bug 4828991.</H3>
+<P><BR>Overview: 
+</P>
+<BLOCKQUOTE STYLE="margin-right: 3.93cm">The JNLP Specification
+allows an application to specify platform and os specific resources,
+but not platform and os specific information elements.&nbsp; This
+prevents supplying icons in platform specific formats. <BR>We propose
+adding os, arch, and platform arguments to the information element,
+and softening the wording defining icons to allow platform specific
+formats.</BLOCKQUOTE>
+<P STYLE="margin-right: 1.93cm">Justification:</P>
+<BLOCKQUOTE STYLE="margin-right: 3.93cm">This is a requirement for
+madhatter.</BLOCKQUOTE>
+<P><BR>Proposed change to the specification: <BR>&nbsp; 
+</P>
+<BLOCKQUOTE STYLE="margin-right: 3.93cm">1.) Insert to section 3.5,
+before locale attribute:</BLOCKQUOTE>
+<BLOCKQUOTE STYLE="margin-left: 3cm; margin-right: 4.93cm">os
+attribute:&nbsp; Specifys the operating system for which the
+information element should be considered.&nbsp; If the value is a
+prefix of the os.name system property, then the information element
+can be used.&nbsp; If the attribute is not specified it matches all
+operating systems.</BLOCKQUOTE>
+<BLOCKQUOTE STYLE="margin-left: 3cm; margin-right: 4.93cm">arch
+attribute:&nbsp; Specifys the architecture for which the information
+element should be considered.&nbsp; If the value is a prefix of the
+os.arch system property, then the information element can be used.&nbsp;
+If the attribute is not specified it matches all architectures.</BLOCKQUOTE>
+<BLOCKQUOTE STYLE="margin-left: 3cm; margin-right: 4.93cm">platform
+attribute:&nbsp; Specifys the platform for which the information
+element should be considered.&nbsp; If the value is a prefix of the
+os.platform system property, then the information element can be
+used.&nbsp; If the attribute is not specified it matches all
+platforms.</BLOCKQUOTE>
+<BLOCKQUOTE STYLE="margin-right: 3.93cm">2.) change section 3.5</BLOCKQUOTE>
+<BLOCKQUOTE STYLE="margin-left: 3cm; margin-right: 4.93cm">from:</BLOCKQUOTE>
+<BLOCKQUOTE STYLE="margin-left: 3cm; margin-right: 4.93cm">The JNLP
+Client may assume that a typical JNLP file will have at least an icon
+of 32x32 pixels in 256 colors of the default kind.&nbsp; The image
+file can be either GIF or JPEG format.</BLOCKQUOTE>
+<BLOCKQUOTE STYLE="margin-left: 3cm; margin-right: 4.93cm">to:</BLOCKQUOTE>
+<BLOCKQUOTE STYLE="margin-left: 3cm; margin-right: 4.93cm">The image
+file can be either GIF or JPEG format, or other (possibly platform
+dependent) formats.&nbsp; The JNLP Client may assume that a typical
+JNLP file will have at least an icon in GIF or JPEG format of 32x32
+pixels in 256 colors of the default kind</BLOCKQUOTE>
+<BLOCKQUOTE STYLE="margin-right: 3.93cm">3.)&nbsp; add after&nbsp;
+the information element in Appendix C :</BLOCKQUOTE>
+<BLOCKQUOTE STYLE="margin-left: 3cm; margin-right: 4.93cm">&lt;!--
+<BR>The os attribute of the information element specifies for which
+operating system this element should be considered. <BR>--&gt;</BLOCKQUOTE>
+<BLOCKQUOTE STYLE="margin-left: 3cm; margin-right: 4.93cm">&lt;!ATTLIST
+information os CDATA #IMPLIED&gt;</BLOCKQUOTE>
+<BLOCKQUOTE STYLE="margin-left: 3cm; margin-right: 4.93cm">&lt;!--
+<BR>The arch attribute of the information element specifies for what
+architecture this element should be considered. <BR>--&gt;</BLOCKQUOTE>
+<BLOCKQUOTE STYLE="margin-left: 3cm; margin-right: 4.93cm">&lt;!ATTLIST
+information arch CDATA #IMPLIED&gt;</BLOCKQUOTE>
+<BLOCKQUOTE STYLE="margin-left: 3cm; margin-right: 4.93cm">&lt;!--
+<BR>The platform attribute of the information element specifies for
+what platform this element should be considered. <BR>--&gt;</BLOCKQUOTE>
+<BLOCKQUOTE STYLE="margin-left: 3cm; margin-right: 4.93cm">&lt;!ATTLIST
+information platform CDATA #IMPLIED&gt;</BLOCKQUOTE>
+<BLOCKQUOTE STYLE="margin-right: 3.93cm">4.) in Appendix C, in the
+comment for the href attribute of the icon element:</BLOCKQUOTE>
+<BLOCKQUOTE STYLE="margin-left: 3cm; margin-right: 4.93cm">Remove the
+sentence&quot;The file must be in either JPEG or GIF format.&quot; <BR>&nbsp;
+<BR>&nbsp;</BLOCKQUOTE>
+<H3><A NAME="4928956"></A>2.6)&nbsp;&nbsp;&nbsp; Proposed JNLP
+Specification change for bug 4928956.</H3>
+<P><BR>Overview: 
+</P>
+<BLOCKQUOTE STYLE="margin-right: 3.93cm">The JNLP Specification<SPAN LANG="en-US">
+doesn't </SPAN>allow a version-id specification to contain an &quot;and&quot;
+operator.&nbsp; An &quot;and&quot; operator is necessary to specify a
+range of versions expected to be common (specifically, &quot;any
+member of a Minor release family that is not less than a lower bound
+within that Minor release family&quot;).&nbsp; We propose adding the
+binary &quot;&amp;&quot; operator to provide this functionality.</BLOCKQUOTE>
+<P STYLE="margin-right: 1.93cm">Justification:</P>
+<BLOCKQUOTE STYLE="margin-right: 3.93cm">This is a<SPAN LANG="en-US">
+requirement of </SPAN>the &quot;Multiple JRE Delivery Model&quot;
+project, and adds functionality not previously available in JNLP.</BLOCKQUOTE>
+<P><BR>Proposed change to the specification: <BR>&nbsp; 
+</P>
+<BLOCKQUOTE STYLE="margin-right: 3.93cm">1.)&nbsp; Change the&nbsp;
+last two paragraphs in section 3.4 to: 
+</BLOCKQUOTE>
+<BLOCKQUOTE STYLE="margin-left: 2cm; margin-right: 3.93cm">The
+version attribute can not only specify an exact version, as shown
+above, but can also specify a list of versions, called a version
+string.&nbsp; A version string is an ordered list of version-ranges<SPAN LANG="en-US">
+separated </SPAN>by spaces.&nbsp; A version range is either a
+version-id, a <BR>version-id followed by a star (*), a version-id
+followed by a plus sign (+) , or&nbsp; two version-ranges combined
+using an<SPAN LANG="en-US"> ampersand </SPAN>(&amp;).&nbsp; The star
+means prefix match, the plus sign means this version or greater, and
+the ampersand means the logical anding of the two version-ranges.&nbsp;
+For example: 
+</BLOCKQUOTE>
+<BLOCKQUOTE STYLE="margin-left: 2cm; margin-right: 3.93cm">&lt;jar
+href=&quot;classes/MyApp.jar&quot; version = &quot;1.4.0_04
+1.4*&amp;1.4.1_02+&quot; /&gt; 
+</BLOCKQUOTE>
+<BLOCKQUOTE STYLE="margin-left: 2cm; margin-right: 3.93cm">The
+meaning of the above is: the JAR file at the given URL that either
+has the version-id 1.4.0_04, or has a version-id with 1.4 as a
+prefix, and not less than 1.4.1_02.&nbsp; The exact syntax and
+definition of version-ids and version strings is given in<SPAN LANG="en-US">
+appendix </SPAN>A. <BR>&nbsp; 
+</BLOCKQUOTE>
+<BLOCKQUOTE STYLE="margin-right: 3.93cm">2.) Change Appendix A from: 
+</BLOCKQUOTE>
+<BLOCKQUOTE STYLE="margin-left: 2cm; margin-right: 3.93cm">char ::=
+any ASCII character except a space, a <SPAN LANG="en-US">separator</SPAN>,
+or a modifier. 
+</BLOCKQUOTE>
+<BLOCKQUOTE STYLE="margin-left: 2cm; margin-right: 3.93cm">to: 
+</BLOCKQUOTE>
+<BLOCKQUOTE STYLE="margin-left: 2cm; margin-right: 3.93cm">char ::=
+any ASCII character except a space, an ampersand, a <SPAN LANG="en-US">separator</SPAN>,
+or a modifier. 
+</BLOCKQUOTE>
+<BLOCKQUOTE STYLE="margin-right: 3.93cm">3.) Change Appendix A from: 
+</BLOCKQUOTE>
+<BLOCKQUOTE STYLE="margin-left: 2cm; margin-right: 3.93cm">version-string&nbsp;&nbsp;&nbsp;&nbsp;
+  ::= element&nbsp; ( &quot; &quot; element) *
+<BR>element&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+::=&nbsp; version-id | version-id modifier <BR>modifier&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+::=&nbsp; `+` | '*' 
+</BLOCKQUOTE>
+<BLOCKQUOTE STYLE="margin-left: 2cm; margin-right: 3.93cm">to : 
+</BLOCKQUOTE>
+<BLOCKQUOTE STYLE="margin-left: 2cm; margin-right: 3.93cm">version-string&nbsp;&nbsp;&nbsp;&nbsp;
+::=&nbsp; version-range ( &quot; &quot; element) * <BR>version-range&nbsp;&nbsp;&nbsp;&nbsp;
+::=&nbsp; simple-range ( &quot;&amp;&quot; simple-element) *
+<BR>simple-range&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ::=&nbsp; version-id |
+version-id modifier <BR>modifier&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+::=&nbsp; `+` | '*' 
+</BLOCKQUOTE>
+<BLOCKQUOTE STYLE="margin-right: 3.93cm">4.)&nbsp; Add to end of
+Appendix A: 
+</BLOCKQUOTE>
+<BLOCKQUOTE STYLE="margin-right: 3.93cm">A.4 Version Selection 
+</BLOCKQUOTE>
+<BLOCKQUOTE STYLE="margin-left: 2cm; margin-right: 3.93cm">If two or
+more available resources match the given version-string, the JNLP
+Client should use the one matching the earlier version-range in the
+version-string. <BR>If two or more available resources match a given
+version-range, the JNLP Client should use the one with the<SPAN LANG="en-US">
+highest </SPAN>version-id. <BR>&nbsp; <BR>&nbsp;</BLOCKQUOTE>
+<H3 STYLE="margin-right: 1.93cm"><A NAME="4390904"></A>3.1)&nbsp;&nbsp;&nbsp;
+Proposed JNLP Specification change for bug 4390904</H3>
+<H4 STYLE="margin-left: 6cm; margin-right: 7.93cm; margin-top: 0cm">Single
+InstanceService</H4>
+<P><BR>Overview: 
+</P>
+<BLOCKQUOTE STYLE="margin-right: 3.93cm">The object of the
+SingleInstance Service is to Allow applications launched under Java
+Web Start to register themselves as singletons, and to be passed in
+new parameter sets when user attempts to launch new instances of
+them.</BLOCKQUOTE>
+<P STYLE="margin-right: 1.93cm">Justification:</P>
+<BLOCKQUOTE STYLE="margin-right: 3.93cm">We have had several requests
+for this service, including from Solomon Smith Barney.</BLOCKQUOTE>
+<P><BR>Proposed change to the specification: <BR>&nbsp; 
+</P>
+<BLOCKQUOTE STYLE="margin-right: 3.93cm">1.) Add section 7 as
+follows:</BLOCKQUOTE>
+<UL>
+	<BLOCKQUOTE STYLE="margin-right: 3.93cm">SingleInstanceService,
+	which provides a set of methods for applications to register
+	themselves as singletons, and to register listener(s) for handling
+	arguments passed in from different instances of the application.
+	This service is optional.</BLOCKQUOTE>
+</UL>
+<BLOCKQUOTE STYLE="margin-right: 3.93cm">2.) Add section 7.9 as
+follows:</BLOCKQUOTE>
+<BLOCKQUOTE STYLE="margin-right: 3.93cm">7.9 The
+SingleInstanceService</BLOCKQUOTE>
+<BLOCKQUOTE STYLE="margin-left: 3cm; margin-right: 4.93cm">The
+javax.jnlp.SingleInstanceService provides a set of methods for
+applications to register themselves as singletons, and to register
+listener(s) for handling arguments passed in from different instances
+of the application.&nbsp; The application can register and unregister
+itself with the following two methods:</BLOCKQUOTE>
+<UL>
+	<BLOCKQUOTE STYLE="margin-right: 4.93cm; margin-bottom: 0cm">addSingleInstanceListener(javax.jnlp.SingleInstanceListener
+	listener)</BLOCKQUOTE>
+	<BLOCKQUOTE STYLE="margin-right: 4.93cm">removeSingleInstanceListener(javax.jnlp.SingleInstanceListener
+	listener)</BLOCKQUOTE>
+</UL>
+<BLOCKQUOTE STYLE="margin-left: 3cm; margin-right: 4.93cm">The
+addSingleInstanceListener method adds the specified
+SingleInstanceListener to handle how the application should behave
+when another instance of the same application is invoked. If the
+SingleInstanceListener is null, no exception is thrown and no action
+is performed. Multiple listeners can be added for the application. If
+the same listener is added twice, no action is performed.</BLOCKQUOTE>
+<BLOCKQUOTE STYLE="margin-left: 3cm; margin-right: 4.93cm">The
+removeSingleInstanceListener method removes the specified
+SingleInstanceListener. This method performs no function, nor does it
+throw an exception, if the listener specified by the argument was not
+previously added to the application. If listener is null, no
+exception is thrown and no action is performed. It is recommended
+that if an application registered any SingleInstanceListener(s), it
+should call this method to remove all listeners upon exit .</BLOCKQUOTE>
+<BLOCKQUOTE STYLE="margin-left: 3cm; margin-right: 4.93cm">The
+javax.jnlp.SingleInstanceListener is the interface for the
+SingleInstanceListener. The application requesting
+SingleInstanceService should implement this interface, providing an
+implementation of the following method:</BLOCKQUOTE>
+<UL>
+	<BLOCKQUOTE STYLE="margin-right: 4.93cm">newActivation(String[]
+	params)</BLOCKQUOTE>
+</UL>
+<BLOCKQUOTE STYLE="margin-left: 3cm; margin-right: 4.93cm">Arguments
+from the instances of the application will be passed in to the
+newActivation method, and application developer can decide on how to
+handle the arguments passed in by implementating this method.</BLOCKQUOTE>
+<BLOCKQUOTE STYLE="margin-right: 3.93cm">3.) Add to the table in
+section D.1:</BLOCKQUOTE>
+<BLOCKQUOTE STYLE="margin-left: 3cm; margin-right: 4.93cm">SingleInstanceService&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+javax.jnlp.SingleInstanceService&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+no <BR>SingleInstanceListener&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&lt;not a service&gt;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+n/a</BLOCKQUOTE>
+<BLOCKQUOTE STYLE="margin-right: 3.93cm">4.) Add section D.16 as
+follows:</BLOCKQUOTE>
+<BLOCKQUOTE STYLE="margin-left: 3cm; margin-right: 4.93cm">D.16
+SingleInstanceService</BLOCKQUOTE>
+<BLOCKQUOTE STYLE="margin-left: 3cm; margin-right: 4.93cm">public
+interface SingleInstanceService <BR>public void
+addSingleInstanceListener(javax.jnlp.SingleInstanceListener
+listener); <BR>public void
+removeSingleInstanceListener(javax.jnlp.SingleInstanceListener
+listener);</BLOCKQUOTE>
+<BLOCKQUOTE STYLE="margin-right: 3.93cm">4.) Add section D.17 as
+follows:</BLOCKQUOTE>
+<BLOCKQUOTE STYLE="margin-left: 3cm; margin-right: 4.93cm">D.17
+SingleInstanceListener</BLOCKQUOTE>
+<BLOCKQUOTE STYLE="margin-left: 3cm; margin-right: 4.93cm">interface
+javax.jnlp.SingleInstanceListener <BR>public void
+newActivation(String[] params);</BLOCKQUOTE>
+<P><BR>&nbsp; 
+</P>
+<H3 STYLE="margin-right: 1.93cm"><A NAME="4467214"></A>3.2)&nbsp;&nbsp;&nbsp;
+Proposed JNLP Specification change for bug 4467214</H3>
+<BLOCKQUOTE STYLE="margin-left: 3cm; margin-right: 4.93cm"> (also
+including RFE 4436034)</BLOCKQUOTE>
+<H4 STYLE="margin-left: 7cm; margin-right: 8.93cm; margin-top: 0cm">Extended
+Service</H4>
+<P><BR>Overview: 
+</P>
+<BLOCKQUOTE STYLE="margin-right: 3.93cm">Because several of the
+existing JNLP Services are missing needed API's, we propose to add a
+new Service, ExtendedService, containing the new api's which
+logically belong to the existing services.&nbsp; We propose the
+following two methods: openFile(File file), and openFiles(File[]
+files).</BLOCKQUOTE>
+<P STYLE="margin-right: 1.93cm">Justification:</P>
+<BLOCKQUOTE STYLE="margin-right: 3.93cm">These methods are being
+requested by many customers, and address problems overlooked in the
+original specification.</BLOCKQUOTE>
+<P STYLE="margin-right: 1.93cm">Proposed change to the specification:</P>
+<BLOCKQUOTE STYLE="margin-right: 3.93cm">1.) Add to section 7 as
+follows:</BLOCKQUOTE>
+<UL>
+	<BLOCKQUOTE STYLE="margin-right: 3.93cm">ExtendedService, which
+	provide additional support to the existing APIs. This service is
+	optional.</BLOCKQUOTE>
+</UL>
+<BLOCKQUOTE STYLE="margin-right: 3.93cm">&nbsp; <BR>2.) Add section
+7.10 as follows:</BLOCKQUOTE>
+<BLOCKQUOTE STYLE="margin-left: 3cm; margin-right: 4.93cm">7.10 The
+ExtendedService Service</BLOCKQUOTE>
+<BLOCKQUOTE STYLE="margin-left: 3cm; margin-right: 4.93cm">The
+javax.jnlp.ExtendedService provides additional support to the current
+JNLP API. It allows applications to open specific file(s) in the
+client's file system.</BLOCKQUOTE>
+<BLOCKQUOTE STYLE="margin-left: 3cm; margin-right: 4.93cm">The
+application can request access to specific file(s) using the
+following two methods:</BLOCKQUOTE>
+<UL>
+	<BLOCKQUOTE STYLE="margin-right: 5.93cm; margin-bottom: 0cm">openFile(File
+	file)</BLOCKQUOTE>
+</UL>
+<UL>
+	<BLOCKQUOTE STYLE="margin-right: 5.93cm">openFiles(File[] files)</BLOCKQUOTE>
+</UL>
+<BLOCKQUOTE STYLE="margin-left: 3cm; margin-right: 4.93cm">A dialog
+should be presented to the user asking for permissions to access the
+specific file(s). The JNLP client can render the dialog in any way it
+sees fit.</BLOCKQUOTE>
+<BLOCKQUOTE STYLE="margin-left: 3cm; margin-right: 4.93cm">The
+contents of the file(s) are returned in a FileContents object. A
+FileContents encapsulates the name of the selected file and provides
+metered access to the contents. The contents can be accessed using
+input streams, output streams or random access. The JNLP client might
+enforce size limits on the amount of data that can be written.</BLOCKQUOTE>
+<BLOCKQUOTE STYLE="margin-left: 3cm; margin-right: 4.93cm">The
+methods will return null if the user choose to cancel the operation
+or user pass in null as argument. An IOException will be thrown if
+the operation failed.</BLOCKQUOTE>
+<BLOCKQUOTE STYLE="margin-right: 3.93cm">3.)&nbsp; Add line to table
+in section D.1:</BLOCKQUOTE>
+<BLOCKQUOTE STYLE="margin-left: 3cm; margin-right: 4.93cm">ExtendedService&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+javax.jnlp.ExtendedService&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+no</BLOCKQUOTE>
+<BLOCKQUOTE STYLE="margin-right: 3.93cm">4.) Add section D.18 as
+follows:</BLOCKQUOTE>
+<BLOCKQUOTE STYLE="margin-left: 3cm; margin-right: 4.93cm">D.18
+ExtendedService</BLOCKQUOTE>
+<BLOCKQUOTE STYLE="margin-left: 3cm; margin-right: 4.93cm">public
+interface ExtendedService <BR>public FileContents
+openFile(java.io.File file) throws IOException; <BR>public
+FileContents[] openFiles(java.io.File[] files) throws IOException;</BLOCKQUOTE>
+<BLOCKQUOTE STYLE="margin-left: 5cm; margin-right: 6.93cm">&nbsp;</BLOCKQUOTE>
+<BLOCKQUOTE STYLE="margin-left: 5cm; margin-right: 6.93cm">&nbsp;</BLOCKQUOTE>
+</BODY>
+</HTML>
+
+
+
+<!-- ** BEGIN: footer.jsp ** //-->
+
+
+
+
+
+
+
+
+</td>
+</tr>
+</table>
+
+<!-- ** END: Content Table ** //-->
+
+<!-- ** BEGIN: Footer Table ** //-->
+
+<div id="footer" style="clear: both;">
+    <div class="footleft">
+        <a href="/en/resources/contacts">Contact Us</a>
+    </div>
+	
+    <div class="botbar"><img src="/images/spacer.gif" alt="" height="23" width="1"></div>
+
+    <div class="footleft2">
+         &copy; 2019, Oracle Corporation and/or its affiliates. 
+        <a href="/en/home/terms">Terms of Use</a>. <a href="http://www.oracle.com/us/legal/privacy/index.html">Privacy Policy</a>. <a href="http://www.oracle.com/us/legal/third-party-trademarks/third-party-trademarks-078568.html">Trademarks</a>
+    </div>
+
+    <div class="footright">
+        <img src="/images/common/logo_oracle_footer.gif" alt="Oracle Corporation" height="22" width="91">
+    </div>
+
+    <div style="clear: both;"><img src="/images/spacer.gif" alt="" height="30" width="1"></div>
+</div>
+
+<!-- ** END: Footer Table ** //-->
+
+
+
+<!-- ** Menu Start ** //-->
+
+
+
+</body>
+</html>
+<!-- ** END: footer.jsp ** //-->
+

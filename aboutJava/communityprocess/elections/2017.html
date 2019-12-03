@@ -1,0 +1,643 @@
+
+<!-- ** BEGIN: header.jsp ** //-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3c.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+<head>
+    
+
+   
+    <link href="/includes/css/menu.css" rel="stylesheet" type="text/css"></link>
+    <link href="/includes/css/style.css" rel="stylesheet" type="text/css"></link>
+    <!--[if lt IE 6]><link href="/includes/css/style5.css" rel="stylesheet" type="text/css" ></link><![endif]-->
+    <!--[if gte IE 5]><link href="/includes/css/style6.css" rel="stylesheet" type="text/css" ></link><![endif]-->
+    <link href="/includes/css/tabs.css"  rel="stylesheet" type="text/css"></link>
+
+    <script type="text/javascript" src="/includes/scripts/tabs.js"></script>
+    <script type="text/javascript" src="/includes/scripts/menu.js"></script>
+   
+
+    
+
+    
+        <title>The Java Community Process(SM) Program - communityprocess - elections</title>
+    
+
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+
+
+<body onload="P7_initPM(0,1,0,0,-1)">
+
+    <a name="top"></a>
+
+    <div id="header">
+	<div id="logo">
+		<a href="/en/home/index"><img src="/images/spacer.gif" alt="Java Community Process" height="81" width="151"></a>
+	</div>
+	<div id="tools">
+		<div class="search">
+			<form name="search" action="/en/jsr/summary" method="get" onsubmit="return validate_search()">
+				<input name="id" value="Search JSRs" size="16" class="form" onfocus="nullify_if_equal(this, 'Search JSRs')" type="text">
+				<a href="javascript:document.search.submit()" onclick="return validate_search()"><img src="/images/button_go.gif" width="21" height="16" border="0" alt="Submit this Search" name="sub_search"></a>
+			</form>
+		</div>
+		<div class="tools">
+			<a href="/en/press/pressroom">Press Room</a> &nbsp;|&nbsp;
+			<a href="http://java.com/java/download/index.jsp?cid=jdp78399">Get Java Here</a> &nbsp;|&nbsp;
+			<!-- <a href="javascript:void(0)">Print Format</a> &nbsp;|&nbsp;&nbsp; -->
+		</div>
+
+	</div>
+	<div style="clear: right;"></div>
+
+        
+
+	<div class="topbar"><img src="/images/spacer.gif" alt="" height="3" width="154"></div>
+	<div id="update"> </div>
+    </div>
+
+
+    
+
+        <!-- ** BEGIN: Content Table ** //-->
+
+        <table width="100%" border="0" cellpadding="0" cellspacing="0">
+
+            <tr>
+
+                <!-- ** BEGIN: Navigation Column ** //-->
+                <td width="150" id="leftcontent" valign="top">
+                    <!-- Navigation Placeholder //-->
+
+                    
+
+                    <div class="bar"><img src="/images/hr_dots1.gif" alt="" height="3" width="150"></div>
+
+        <!-- begin find JSRs form -->
+        <!-- IMPORTANT! do not convert this form to Struts < html : form > tag.  javascript change of form.action property fails. -->
+        <img src="/images/hd_find-jsrs.gif" alt="Find JSRs" height="18" width="150">
+        <form name="findjsr" action="/en/jsr/summary" method="get" class="pt5" onsubmit="return validate_findjsr()">
+            <input name="id" size="18" class="form" value="Search JSRs" onfocus="nullify_if_equal(this, 'Search JSRs')" type="text">
+	    <a href="javascript:document.findjsr.submit()" onclick="return validate_findjsr()"><img src="/images/button_go.gif" width="21" height="16" border="0" alt="Submit this Search" name="sub_search"></a>
+        </form><br><br>
+
+        <!-- ** Menu Start ** //-->
+
+        <ul id="p7PMnav">
+            <li><a href="/en/jsr/platform">JSRs by Platform</a></li>
+            <li><a href="/en/jsr/tech">JSRs by Technology</a></li>
+            <li><a href="/en/jsr/stage">JSRs by Stage</a></li>
+            <li><a href="/en/jsr/ec">JSRs by Committee</a></li>
+            <li><a href="/en/jsr/all">List of All JSRs</a></li>
+
+            <!--end find JSRs form -->
+            <div style="clear: both;"><img src="/images/spacer.gif" alt="" height="25" width="1"></div>
+
+            <!--begin my JCP -->
+            <img src="/images/hd_my-jcp.gif" alt="My JCP" height="18" width="150">
+            
+
+          <form name="login" method="get" action="/en/user/login" >
+            <input name="Sign-in" type="submit" title="Sign-in" value="Sign-in" />
+          </form>
+
+            <div style="clear:both"><img src="/images/global/spacer.gif" width="1" height="3" alt=""></div>
+            <div class="noNav">
+                <a href="/en/user/register">Register for Site</a>
+            </div>
+
+             <div class="bar"><img src="/images/hr_dots1.gif" alt="" height="3" width="150"></div>
+           <div class="noNav" style="color: #666666; padding: 0;">
+              Use of JCP site is subject to the
+              <a href="/en/home/terms" style="display:inline;padding: 0">JCP Terms of Use</a> and the
+              <a href="http://www.oracle.com/us/legal/privacy/index.html" style="display:inline;padding: 0" href="">Oracle Privacy Policy</a>
+          </div>
+
+            
+
+            <div style="clear:both"><img src="/images/global/spacer.gif" width="1" height="25" alt=""></div>
+
+            <!--begin JCP info -->
+            <img src="/images/hd_jcp-info.gif" alt="JCP Info" height="18" width="150">
+
+            <li><a href="/en/procedures/overview" class="p7PMtrg">About JCP</a>
+                <ul>
+                    <li><a href="/en/procedures/overview">Program Overview</a></li>
+                    <li><a href="/en/procedures/jcp2">JCP Process Document</a></li>
+                    <li><a href="/en/whatsnew/calendar">Calendar</a></li>
+                    <li><a href="/en/participation/members">JCP Members</a></li>
+                    <li><a href="/en/participation/committee">Executive Committee</a></li>
+                    <li><a href="/en/whatsnew/elections">Elections</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/en/participation/overview" class="p7PMtrg">Get Involved</a>
+		<ul>
+                    <li><a href="/en/participation/overview">Overview</a></li>
+                    <li><a href="/en/participation/membership">Becoming a JCP Member</a></li>
+		</ul>
+            </li>
+
+            <li><a href="/en/resources/contents" class="p7PMtrg">Community Resources</a>
+                <ul>
+                    <li><a href="/en/resources/contents">Overview</a></li>
+                    <li><a href="/en/resources/tutorials">Tutorials</a></li>
+                    <li><a href="/en/resources/multimedia">JCP Podcasts</a></li>
+                    <li><a href="/en/resources/guide">Spec Lead Guide</a></li>
+                    <li><a href="/en/resources/tdk">TCK Tool & Info</a></li>
+                    <li><a href="/en/resources/license_reference">License Reference</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/en/press/pmo" class="p7PMtrg">Community News</a>
+                <ul>
+                    <li><a href="/en/press/pmo">News</a></li>
+                    <li><a href="/en/press/news/awards/awards_main">Programs &amp; Awards</a></li>
+                    <li><a href="/en/press/releases">Press Releases</a></li>
+                    <li><a href="/en/press/success">Success Stories</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/en/introduction/faq">FAQ</a></li>
+
+            <li><a href="/en/resources/contacts">Contact Us</a></li>
+
+            <div style="clear: both;"><img src="/images/spacer.gif" alt="" height="25" width="1"></div>
+
+            <!--[if lte IE 6]><style>#p7PMnav a{height:1em;}#p7PMnav li{height:1em;float:left;clear:both;width:100%}</style><![endif]-->
+            <!--[if IE 6]><style>#p7PMnav li{clear:none;}</style><![endif]-->
+            <!--[if IE 7]><style>#p7PMnav a{zoom:100%;}#p7PMnav li{float:left;clear:both;width:100%;}</style><![endif]-->
+        </ul>
+
+        
+
+        <!--begin ad space -->
+        <div class="ads">
+            <a href="http://java.com/java/download/index.jsp?cid=jdp78399" target="_blank"><img style="display: ;" src="/images/ad_banner2.gif" alt="Ad Banner" border="1" height="70" width="150"></a>
+        </div>
+        <!--end ad space -->
+
+<!-- ** Menu End ** //-->
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;<br>
+
+    
+
+                    &nbsp;<br>
+                    <img src="/images/common/trans.gif" alt="" width="1" height="150"><br>
+
+              
+
+
+
+                </td>
+                <!-- ** END: Navigation Column ** //-->
+
+                <!-- ** BEGIN: Gutter Column ** //-->
+		<td width="10" nowrap><img src="/images/common/trans.gif" alt="" width="10" height="1"></td>
+                <!-- ** END: Gutter Column ** //-->
+
+                <!-- ** BEGIN: Content Column ** //-->
+                <td width="100%" valign="top">
+
+    
+<script type="text/javascript">
+
+String.prototype.trim = function() {
+        return this.replace(/^\s+|\s+$/g,"");
+}
+String.prototype.ltrim = function() {
+        return this.replace(/^\s+/,"");
+}
+String.prototype.rtrim = function() {
+        return this.replace(/\s+$/,"");
+}
+
+function validate_search() {
+	if (document.search.id.value == "Search JSRs" || document.search.id.value.trim().length == 0) {
+		alert("Search terms must be entered first");
+		return false;
+	}
+	return true;
+}
+
+function validate_findjsr() {
+	if (document.findjsr.id.value == "Search JSRs" || document.findjsr.id.value.trim().length == 0) {
+		alert("Search terms must be entered first");
+		return false;
+	}
+	return true;
+}
+
+function nullify_if_equal(field, str) {
+	// alert("val=" + field.value);
+	if (field.value == str) {
+		field.value = "";
+	}
+}
+
+</script>
+<!-- ** END: header.jsp ** //-->
+
+
+
+
+
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2//EN">
+<html>
+<head>
+<!--#config timefmt="%d-%b-%y" -->
+  <title>Java Community Process: EC Elections 2017</title>
+</head>
+<body alink="#ff0000" bgcolor="#ffffff" link="#0000ff" text="#000000"
+ vlink="#660066">
+<!-- server side include for top part of page -->
+<!--#include virtual="/share/include/normal.header.v4.0.html"--><!-- end server side include for top of page --><!-- begin table for main body navigation and content -->
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+  <tbody>
+    <tr align="left" valign="top">
+      <td> <img src="/images/pixel.gif" alt="" height="20" width="1"><br
+ clear="all">
+<!-- server side include for main java.sun.com navigation -->
+<!--#include virtual="/share/include/navigate.v4.0.html"--><!-- end server side include for main java.sun.com navigation -->
+      </td>
+      <td valign="top" width="100%"><!-- page headline --><font
+ size="+3">
+2017 Executive Committee (EC) Elections</font><br>
+<!-- end page headline -->
+<!-- optional subnav links -->
+      <p><font size="-1"> </font></p>
+<!-- end optional subnav links -->
+<!-- main page content -->
+     
+<p>
+The 2017 Fall Executive Committee (EC) Elections process is now complete. The EC Elections process was
+launched in June 2000. This election was hosted by Votenet and closed on 13 November 2017 at 11:59 PM
+Pacific Standard Time.
+<P>
+This year, there were 8 Ratified, 3 Elected and 1 Associate Seats open for election.
+
+<BR><BR><BR>
+Congratulations to the following JCP Members as the elected EC Members.
+<BR><BR>
+
+<B>Ratified Seats</B> (all serving a two-year term): ARM, Credit Suisse, Fujitsu, Hewlett Packard Enterprise, IBM, Intel, 
+Red Hat and Sociedade de Us&#225;rios da Tecnologia Java - SouJava
+<P>
+
+<B>Elected Seats</B> (all serving a two-year term): Twitter,  Hazelcast and Tomitribe
+<P>
+
+<B>Associate Seat</B> (serving a two-year term): Andres Almiray (it was a tie; see 
+the <a href="#tiebreaker">EC Election Tiebreaker Process</a> section for more details)
+<P>
+
+<BR><BR>
+Newly elected EC Members take their seats on Tuesday, 28 November 2017.
+<BR><BR>
+
+<div class="header1">Detailed Election Results</div><P>
+
+Voting Period: 31 October - 13 November 2017
+<P>
+Number of Eligible Voters: 1177<BR>
+Percent of Eligible Voters Casting Votes: 32.97%
+<P>
+Number of Full and Partner Members Eligible to Vote: 768<BR>
+Percent of Full and Partner Members Casting Votes: 23.70% 
+<P>
+Number of Associate Members Eligible to Vote: 409<BR>
+Percent of Associate Members Casting Votes: 50.37% 
+<BR><BR><BR>
+
+<i><b>Ratified Seats:</b></i><P>
+
+<table cellspacing="8">
+<tr><th>Candidate</th><th>Yes votes (%)</th><th>No votes (%)</th><th>Abstentions</th></tr>
+<tr><td>ARM</td><td>132 (91)</td><TD>13 (9)</td><td>37</td></tr>
+<tr><td>Credit Suisse</td><td>123 (84)</td><TD>24 (16)</td><td>35</td></tr>
+<tr><td>Fujitsu</td><td>135 (90)</td><TD>15 (10)</td><td>32</td></tr>
+<tr><td>Hewlett Packard Enterprise</td><td>118 (82)</td><TD>26 (18)</td><td>38</td></tr>
+<tr><td>IBM</td><td>154 (93)</td><TD>11 (7)</td><td>17</td></tr>
+<tr><td>Intel</td><td>145 (93)</td><TD>11 (7)</td><td>26</td></tr>
+<tr><td>Red Hat</td><td>163 (96)</td><TD>7 (4)</td><td>12</td></tr>
+<tr><td> Sociedade de Us&#225;rios da Tecnologia Java - SouJava</td><td>144 (92)</td><TD>12 (8)</td><td>26</td></tr>
+</table>
+
+<P>
+<i><b>Elected Seats:</b></i><P>
+
+The top three (3) candidates have been elected. 
+<P>
+
+<table cellspacing="8">
+<tr><th>Candidate</th><th>Votes (%)</th></tr>
+<tr><td>Twitter</b></td><td>126 (27)</td></tr>
+<tr><td>Hazelcast</b></td><td>120 (26)</td></tr>
+<tr><td>Tomitribe</b></td><td>114 (25)</td></tr>
+<tr><td>Alibaba</b></td><td>93 (20)</td></tr>
+<tr><td>UEDB Limited</b></td><td>8 (2)</td></tr>
+<tr><td>Abstain</td><td>8</td></tr>
+</table>
+
+<P>
+<i><b>Associate Seat:</b></i><P>
+
+The top one (1) candidate has been elected using the defined Tiebreaker Process - see the 
+<a href="#tiebreaker">EC Election Tiebreaker Process</a> section for more details.
+<P>
+
+<table cellspacing="8">
+<tr><th>Candidate</th><th>Votes (%)</th></tr>
+<tr><td>Andres Almiray</b></td><td>58 (29)</td></tr>
+<tr><td>Werner Keil</b></td><td>58 (29)</td></tr>
+<tr><td>Andrew Gumbrecht</b></td><td>44 (22)</td></tr>
+<tr><td>Geir Magnusson Jr</b></td><td>19 (9)</td></tr>
+<tr><td>Andres Cespedes Morales</b></td><td>17 (8)</td></tr>
+<tr><td>Magesh Kasthuri</b></td><td>7 (3)</td></tr>
+<tr><td>Abstain</td><td>3</td></tr>
+</table>
+
+<P>
+For more information about the candidates who ran for the 2017 Executive Committee Election, please visit the <a href="/aboutJava/communityprocess/elections/2017-nominees.html">2017 Executive Committee Elections Nominees</a> page.
+
+<BR><BR>
+<a name="tiebreaker"></a>
+<div class="header1">EC Election Tiebreaker Process</div><P>
+
+All votes for the 2017 JCP Executive Committee Elections were tallied by Votenet, and the results of the Associate Seat 
+voting were a tie. Determining the winner required using the tiebreaker procedure originally defined on October 18, 2011.
+
+<P>
+Per <a href="/en/procedures/jcp2_10#3.7.6">section 3.7.6 of the JCP document version 2.10</a>, we used the RFC2777 Gateway Form 
+at <a href="https://www.w3.org/2001/05/rfc2777">https://www.w3.org/2001/05/rfc2777</a> to determine the winner. In order for the 
+numbers to be random, we took the following steps:
+<P>
+
+1) On Thursday, 16 November 2017, at 10 AM PST, the PMO would assign a number (1 or 2) to each of the two candidates based on the 
+closing value of the NASDAQ Composite Index as shown on 
+<a href="http://quotes.wsj.com/index/NASDAQ/historical-prices">http://quotes.wsj.com/index/NASDAQ/historical-prices</a> 
+for Wednesday 15 November 2017. If the closing value's whole number (ignoring any fractional part of the number) were even, 
+the PMO would assign the 1 and 2 to the candidates alphabetically by last name. If the closing value's whole number were odd, the PMO 
+would assign the 1 and 2 to the candidates in reverse alphabetical order by last name.
+<P>
+
+2) On Friday, 17 November 2017, at 10 AM PST, the PMO would use the RFC 2777 form. First, the PMO would enter "2" into 
+the "Size of pool" field. Then the PMO would enter whole number values into the three "Random Number" fields in the RFC2777 form, 
+noted at the same time and as described below:<BR>
+<P>
+a) For "Random Number #1": the closing value of the S&P 500 Index (ignoring any fractional part of the number) as shown 
+on <a href="http://quotes.wsj.com/index/SPX/historical-prices">http://quotes.wsj.com/index/SPX/historical-prices</a> for 16 November 2017<BR>
+b) For "Random Number #2": the closing value of Dow Jones Industrial Average (ignoring any fractional part of the number) as shown 
+on <a href="http://quotes.wsj.com/index/DJIA/historical-prices">http://quotes/wsj.com/index/DJIA/historical-prices</a> for 16 November 2017 (*)
+<BR>
+c) For "Random Number #3": the final, winning score of the Golden State Warriors-Boston Celtics basketball game played on 16 
+November 2017 as shown on <a href="http://www.nba.com/scores#/">http://www.nba.com/scores#/</a>
+<P>
+* - The PMO decided on Wednesday 15 November 2017 to use the Dow Jones Industrial Average as a different number of greater 
+variance than what was originally described. The PMO had intended to use the peak temperature in San Jose, California but made 
+the change after realizing that San Jose's predicted vs reported peak temperature for Thursday didn't have sufficient variance.
+<P>
+
+<HR>
+Updated on 16 November 2017, as noted at 10:00 AM PST:<P>
+
+The closing value whole number of the NASDAQ Composite Index for 15 November 2017 was 6706, an even number. The PMO assigned 
+1 and 2 to the candidates alphabetically by last name, per step one of the predefined JCP EC Election Tiebreaker Process 
+described on Tuesday 14 November 2017. Thus, candidate Andres Almiray had been assigned number 1, and candidate Werner Keil 
+had been assigned number 2. On Friday 17 November 2017, these assigned numbers would be used to determine who would be elected to 
+the Associate Seat, as described in step two of the JCP EC Election Tiebreaker Process.
+
+<HR>
+Updated on 17 November 2017, as noted at 10:00 AM PST:<P>
+
+The result of the 2017 EC Elections tiebreaker for the Associate Seat is:<BR>
+Andres Almiray has been elected to the Associate Seat.<P>
+
+The result was determined as per the procedure specified in <a href="/en/procedures/jcp2_10#3.7.6">section 3.7.6 of the JCP 2.10 document</a>, 
+using the two-step Tiebreaker Process described on 14 November 2017.<BR>
+<P>
+The step one results were determined Thursday 16 November 2017, with Andres Almiray assigned number 1 and Werner Keil assigned number 2.<BR>
+<P>
+The step two results were determined Friday 17 November 2017, with the PMO entering the numbers taken from 16 November 2017 into 
+the form at <a href="https://www.w3.org/2001/05/rfc2777">https://www.w3.org/2001/05/rfc2777</a>, as follows:<P>
+
+Size of pool: 2<BR>
+Random number #1: 2585 (closing value of the S&P 500 Index, ignoring any fractional part of the number)<BR>
+Random number #2: 23458 (closing value of Dow Jones Industrial Average, ignoring any fractional part of the number)<BR>
+Random number #3: 92 (final, winning score of the Golden State Warriors-Boston Celtics basketball game)<P>
+Using those numbers, the form returned the number 1 which corresponded to the number assigned to Andres Almiray.<BR>
+Therefore Andres Almiray has been elected to the Associate Seat.<P>
+<HR>
+
+Each of these events was in the future at the time the process was defined, so the outcomes were unknown and could not be 
+influenced by either candidate.
+<P>
+
+The 2017 Fall Executive Committee Election final results have been announced on Friday, 17 November 2017.
+<P>
+
+<HR>
+
+<BR><BR>
+<table border=1 cellpadding=5>
+<tr><TD colspan=2><CENTER><B>
+TIMELINE FOR 2017 EC ELECTION</b></CENTER></td>
+</tr>
+<TR>
+<TD>
+26 September -  9 October 2017</td>
+<TD>
+Nominations open for Elected and Associate Seats</td>
+</TR>
+<TR>
+<TD>
+1 October 2017</td>
+<TD>
+Public EC meeting at JavaOne (EC nominees should attend)</td>
+</TR>
+</TR>
+<TR>
+<TD>
+26 October 2017</td>
+<TD>
+Meet the JCP Executive Committee Candidates Teleconference @ 10 AM PDT</td>
+<TR>
+<TD>
+26 October 2017</td>
+<TD>
+Voter eligibility deadline</td>
+</TR>
+<TR>
+<TR>
+<TD>
+31 October - 13 November 2017</td>
+<TD>
+Ballot open for voting</td>
+</TR>
+<TR>
+<TD>
+14 November 2017</td>
+<TD>
+Elections results available</td>
+</TR>
+<TR>
+<TD>
+28 November 2017</td>
+<TD>
+New EC Members take office</td>
+</TR>
+</tr>
+</table>
+
+
+
+<br><br>
+
+<p><B>ABOUT THE JAVA COMMUNITY PROCESS (JCP) EXECUTIVE COMMITTEES</B></p>
+
+<p>Under the JCP 2.10 rules, there are 16 Ratified Seats, 6 Elected Seats, 2 Associate Seats 
+and the permanent seat held by Oracle America. Members serve 2-year terms that are staggered so 
+that 12 of the 24 seats are normally up for ratification/election each year. 
+
+<p>The EC members guide the evolution of the Java technologies. The EC represents a cross-section 
+of both major stakeholders and other members of the Java Community. Duties are: select JSRs for 
+development, approve draft Specifications for Public Review, approve Final Specifications, review 
+TCK appeals, approve Maintenance revisions and possibly defer some features to a new JSR, 
+approve transfer of maintenance duties between members and provide guidance to the Program 
+Management Office (PMO). For more information on the EC, see the 
+<a href="/en/participation/committee">Executive Committee Info</a> page.
+
+<p>
+<P>
+<a href="/aboutJava/communityprocess/elections/2017-special.html">2017 Special EC Elections Results</a>
+<P>
+<a href="/aboutJava/communityprocess/elections/2016.html">2016 EC Elections Results</a>
+<P>
+<a href="/aboutJava/communityprocess/elections/2015.html">2015 EC Elections Results</a>
+<P>
+<a href="/aboutJava/communityprocess/elections/2014.html">2014 EC Elections Results</a>
+<P>
+<a href="/aboutJava/communityprocess/elections/2013.html">2013 EC Elections Results</a>
+<P>
+<a href="/aboutJava/communityprocess/elections/2012.html">2012 EC Elections Results</a>
+<P>
+<a href="/aboutJava/communityprocess/elections/2011.html">2011 EC Elections Results</a>
+<P>
+<a href="/aboutJava/communityprocess/elections/2010.html">2010 EC Elections Results</a>
+<P>
+<a href="/aboutJava/communityprocess/elections/2009.html">2009 EC Elections Results</a>
+<P>
+<a href="/aboutJava/communityprocess/elections/2008.html">2008 EC Elections Results</a>
+<P>
+<a href="/aboutJava/communityprocess/elections/2007.html">2007 EC Elections Results</a>
+<P>
+<a href="/aboutJava/communityprocess/elections/2006.html">2006 EC Elections Results</a>
+<P>
+<a href="/aboutJava/communityprocess/elections/2005.html">2005 EC Elections Results</a>
+<P>
+<a href="/aboutJava/communityprocess/elections/2004.html">2004 EC Elections Results</a>
+<P>
+<a href="/aboutJava/communityprocess/elections/2003.html">2003 EC Elections Results</a>
+<P>
+<a href="/aboutJava/communityprocess/elections/2002.html">2002 EC Elections Results</a>
+<P>
+<a href="/aboutJava/communityprocess/elections/2001.html">2001 EC Elections Results</a>
+<P>
+<a href="/aboutJava/communityprocess/jcpec-elections.html">2000 EC Elections Results</a>
+<BR><BR><BR>
+For more information on the JCP, see the 
+<a href="/en/introduction/overview">JCP Overview</a> page.
+<P>
+Contact the PMO for election questions at pmo<fake_tag>&#064;</fake_tag>jcp.org.
+
+</P>
+
+<!-----------------------DIVIDER--------------------------->
+<!-- end main page content --></td>
+<!-- gutter spacing for right side of the page --> <td width="30"><img
+ src="/images/pixel.gif" alt="" height="1" width="30"> </td>
+    </tr>
+  </tbody>
+</table>
+<!-- server side include for page footer -->
+<!--#include virtual="/share/include/normal.footer.v4.0.html"--><!-- end server side include for footer -->
+</body>
+</html>
+
+
+
+<!-- ** BEGIN: footer.jsp ** //-->
+
+
+
+
+
+
+
+
+</td>
+</tr>
+</table>
+
+<!-- ** END: Content Table ** //-->
+
+<!-- ** BEGIN: Footer Table ** //-->
+
+<div id="footer" style="clear: both;">
+    <div class="footleft">
+        <a href="/en/resources/contacts">Contact Us</a>
+    </div>
+	
+    <div class="botbar"><img src="/images/spacer.gif" alt="" height="23" width="1"></div>
+
+    <div class="footleft2">
+         &copy; 2019, Oracle Corporation and/or its affiliates. 
+        <a href="/en/home/terms">Terms of Use</a>. <a href="http://www.oracle.com/us/legal/privacy/index.html">Privacy Policy</a>. <a href="http://www.oracle.com/us/legal/third-party-trademarks/third-party-trademarks-078568.html">Trademarks</a>
+    </div>
+
+    <div class="footright">
+        <img src="/images/common/logo_oracle_footer.gif" alt="Oracle Corporation" height="22" width="91">
+    </div>
+
+    <div style="clear: both;"><img src="/images/spacer.gif" alt="" height="30" width="1"></div>
+</div>
+
+<!-- ** END: Footer Table ** //-->
+
+
+
+<!-- ** Menu Start ** //-->
+
+
+
+</body>
+</html>
+<!-- ** END: footer.jsp ** //-->
+

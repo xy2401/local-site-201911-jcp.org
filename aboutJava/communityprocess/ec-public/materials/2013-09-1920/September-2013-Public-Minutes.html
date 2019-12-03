@@ -1,0 +1,545 @@
+
+<!-- ** BEGIN: header.jsp ** //-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3c.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+<head>
+    
+
+   
+    <link href="/includes/css/menu.css" rel="stylesheet" type="text/css"></link>
+    <link href="/includes/css/style.css" rel="stylesheet" type="text/css"></link>
+    <!--[if lt IE 6]><link href="/includes/css/style5.css" rel="stylesheet" type="text/css" ></link><![endif]-->
+    <!--[if gte IE 5]><link href="/includes/css/style6.css" rel="stylesheet" type="text/css" ></link><![endif]-->
+    <link href="/includes/css/tabs.css"  rel="stylesheet" type="text/css"></link>
+
+    <script type="text/javascript" src="/includes/scripts/tabs.js"></script>
+    <script type="text/javascript" src="/includes/scripts/menu.js"></script>
+   
+
+    
+
+    
+        <title>The Java Community Process(SM) Program - communityprocess - ec-public</title>
+    
+
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+
+
+<body onload="P7_initPM(0,1,0,0,-1)">
+
+    <a name="top"></a>
+
+    <div id="header">
+	<div id="logo">
+		<a href="/en/home/index"><img src="/images/spacer.gif" alt="Java Community Process" height="81" width="151"></a>
+	</div>
+	<div id="tools">
+		<div class="search">
+			<form name="search" action="/en/jsr/summary" method="get" onsubmit="return validate_search()">
+				<input name="id" value="Search JSRs" size="16" class="form" onfocus="nullify_if_equal(this, 'Search JSRs')" type="text">
+				<a href="javascript:document.search.submit()" onclick="return validate_search()"><img src="/images/button_go.gif" width="21" height="16" border="0" alt="Submit this Search" name="sub_search"></a>
+			</form>
+		</div>
+		<div class="tools">
+			<a href="/en/press/pressroom">Press Room</a> &nbsp;|&nbsp;
+			<a href="http://java.com/java/download/index.jsp?cid=jdp78399">Get Java Here</a> &nbsp;|&nbsp;
+			<!-- <a href="javascript:void(0)">Print Format</a> &nbsp;|&nbsp;&nbsp; -->
+		</div>
+
+	</div>
+	<div style="clear: right;"></div>
+
+        
+
+	<div class="topbar"><img src="/images/spacer.gif" alt="" height="3" width="154"></div>
+	<div id="update"> </div>
+    </div>
+
+
+    
+
+        <!-- ** BEGIN: Content Table ** //-->
+
+        <table width="100%" border="0" cellpadding="0" cellspacing="0">
+
+            <tr>
+
+                <!-- ** BEGIN: Navigation Column ** //-->
+                <td width="150" id="leftcontent" valign="top">
+                    <!-- Navigation Placeholder //-->
+
+                    
+
+                    <div class="bar"><img src="/images/hr_dots1.gif" alt="" height="3" width="150"></div>
+
+        <!-- begin find JSRs form -->
+        <!-- IMPORTANT! do not convert this form to Struts < html : form > tag.  javascript change of form.action property fails. -->
+        <img src="/images/hd_find-jsrs.gif" alt="Find JSRs" height="18" width="150">
+        <form name="findjsr" action="/en/jsr/summary" method="get" class="pt5" onsubmit="return validate_findjsr()">
+            <input name="id" size="18" class="form" value="Search JSRs" onfocus="nullify_if_equal(this, 'Search JSRs')" type="text">
+	    <a href="javascript:document.findjsr.submit()" onclick="return validate_findjsr()"><img src="/images/button_go.gif" width="21" height="16" border="0" alt="Submit this Search" name="sub_search"></a>
+        </form><br><br>
+
+        <!-- ** Menu Start ** //-->
+
+        <ul id="p7PMnav">
+            <li><a href="/en/jsr/platform">JSRs by Platform</a></li>
+            <li><a href="/en/jsr/tech">JSRs by Technology</a></li>
+            <li><a href="/en/jsr/stage">JSRs by Stage</a></li>
+            <li><a href="/en/jsr/ec">JSRs by Committee</a></li>
+            <li><a href="/en/jsr/all">List of All JSRs</a></li>
+
+            <!--end find JSRs form -->
+            <div style="clear: both;"><img src="/images/spacer.gif" alt="" height="25" width="1"></div>
+
+            <!--begin my JCP -->
+            <img src="/images/hd_my-jcp.gif" alt="My JCP" height="18" width="150">
+            
+
+          <form name="login" method="get" action="/en/user/login" >
+            <input name="Sign-in" type="submit" title="Sign-in" value="Sign-in" />
+          </form>
+
+            <div style="clear:both"><img src="/images/global/spacer.gif" width="1" height="3" alt=""></div>
+            <div class="noNav">
+                <a href="/en/user/register">Register for Site</a>
+            </div>
+
+             <div class="bar"><img src="/images/hr_dots1.gif" alt="" height="3" width="150"></div>
+           <div class="noNav" style="color: #666666; padding: 0;">
+              Use of JCP site is subject to the
+              <a href="/en/home/terms" style="display:inline;padding: 0">JCP Terms of Use</a> and the
+              <a href="http://www.oracle.com/us/legal/privacy/index.html" style="display:inline;padding: 0" href="">Oracle Privacy Policy</a>
+          </div>
+
+            
+
+            <div style="clear:both"><img src="/images/global/spacer.gif" width="1" height="25" alt=""></div>
+
+            <!--begin JCP info -->
+            <img src="/images/hd_jcp-info.gif" alt="JCP Info" height="18" width="150">
+
+            <li><a href="/en/procedures/overview" class="p7PMtrg">About JCP</a>
+                <ul>
+                    <li><a href="/en/procedures/overview">Program Overview</a></li>
+                    <li><a href="/en/procedures/jcp2">JCP Process Document</a></li>
+                    <li><a href="/en/whatsnew/calendar">Calendar</a></li>
+                    <li><a href="/en/participation/members">JCP Members</a></li>
+                    <li><a href="/en/participation/committee">Executive Committee</a></li>
+                    <li><a href="/en/whatsnew/elections">Elections</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/en/participation/overview" class="p7PMtrg">Get Involved</a>
+		<ul>
+                    <li><a href="/en/participation/overview">Overview</a></li>
+                    <li><a href="/en/participation/membership">Becoming a JCP Member</a></li>
+		</ul>
+            </li>
+
+            <li><a href="/en/resources/contents" class="p7PMtrg">Community Resources</a>
+                <ul>
+                    <li><a href="/en/resources/contents">Overview</a></li>
+                    <li><a href="/en/resources/tutorials">Tutorials</a></li>
+                    <li><a href="/en/resources/multimedia">JCP Podcasts</a></li>
+                    <li><a href="/en/resources/guide">Spec Lead Guide</a></li>
+                    <li><a href="/en/resources/tdk">TCK Tool & Info</a></li>
+                    <li><a href="/en/resources/license_reference">License Reference</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/en/press/pmo" class="p7PMtrg">Community News</a>
+                <ul>
+                    <li><a href="/en/press/pmo">News</a></li>
+                    <li><a href="/en/press/news/awards/awards_main">Programs &amp; Awards</a></li>
+                    <li><a href="/en/press/releases">Press Releases</a></li>
+                    <li><a href="/en/press/success">Success Stories</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/en/introduction/faq">FAQ</a></li>
+
+            <li><a href="/en/resources/contacts">Contact Us</a></li>
+
+            <div style="clear: both;"><img src="/images/spacer.gif" alt="" height="25" width="1"></div>
+
+            <!--[if lte IE 6]><style>#p7PMnav a{height:1em;}#p7PMnav li{height:1em;float:left;clear:both;width:100%}</style><![endif]-->
+            <!--[if IE 6]><style>#p7PMnav li{clear:none;}</style><![endif]-->
+            <!--[if IE 7]><style>#p7PMnav a{zoom:100%;}#p7PMnav li{float:left;clear:both;width:100%;}</style><![endif]-->
+        </ul>
+
+        
+
+        <!--begin ad space -->
+        <div class="ads">
+            <a href="http://java.com/java/download/index.jsp?cid=jdp78399" target="_blank"><img style="display: ;" src="/images/ad_banner2.gif" alt="Ad Banner" border="1" height="70" width="150"></a>
+        </div>
+        <!--end ad space -->
+
+<!-- ** Menu End ** //-->
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;<br>
+
+    
+
+                    &nbsp;<br>
+                    <img src="/images/common/trans.gif" alt="" width="1" height="150"><br>
+
+              
+
+
+
+                </td>
+                <!-- ** END: Navigation Column ** //-->
+
+                <!-- ** BEGIN: Gutter Column ** //-->
+		<td width="10" nowrap><img src="/images/common/trans.gif" alt="" width="10" height="1"></td>
+                <!-- ** END: Gutter Column ** //-->
+
+                <!-- ** BEGIN: Content Column ** //-->
+                <td width="100%" valign="top">
+
+    
+<script type="text/javascript">
+
+String.prototype.trim = function() {
+        return this.replace(/^\s+|\s+$/g,"");
+}
+String.prototype.ltrim = function() {
+        return this.replace(/^\s+/,"");
+}
+String.prototype.rtrim = function() {
+        return this.replace(/\s+$/,"");
+}
+
+function validate_search() {
+	if (document.search.id.value == "Search JSRs" || document.search.id.value.trim().length == 0) {
+		alert("Search terms must be entered first");
+		return false;
+	}
+	return true;
+}
+
+function validate_findjsr() {
+	if (document.findjsr.id.value == "Search JSRs" || document.findjsr.id.value.trim().length == 0) {
+		alert("Search terms must be entered first");
+		return false;
+	}
+	return true;
+}
+
+function nullify_if_equal(field, str) {
+	// alert("val=" + field.value);
+	if (field.value == str) {
+		field.value = "";
+	}
+}
+
+</script>
+<!-- ** END: header.jsp ** //-->
+
+
+
+
+
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>JCP EC minutes (public): September 19-20 2013</title>
+
+<!--
+
+My personal stylesheet: <link href="../../../docs/PCurranStyles.css" rel="stylesheet" type="text/css" />
+And the jcp.org version: <link href="http://jcp.org/files/PCurranStyles.css" rel="stylesheet" type="text/css" />
+
+-->
+
+<link href="../../../docs/PCurranStyles.css" rel="stylesheet" type="text/css" />
+<link href="http://jcp.org/files/PCurranStyles.css" rel="stylesheet" type="text/css" />
+
+
+</head>
+<body>
+<h1 align="center">Executive Committee Meeting Minutes<br />
+  for September 19-20 2013</h1>
+<p align="center"><em>version 0.4: October 16 2013</em></p>
+<h2><strong>Date</strong></h2>
+<p>September 19-20, 2013</p>
+<h2>Location</h2>
+<p>Face-to-face, San Jose CA,  hosted by ARM</p>
+<h2><strong>Agenda</strong></h2>
+<ul>
+  <li>[<a href="PMO-topics-September-2013.pdf">PMO Presentation</a>] </li>
+  <li>Roll call </li>
+  <li>Agenda review</li>
+  <li>Personnel changes</li>
+  <li><a href="September-2013-ActionItems.html">Action Item review</a></li>
+  <li><a href="EC_Stats_Sept2013.pdf">EC stats</a></li>
+  <li><a href="ProgramOfficeReport_Sept2013.pdf">PMO report</a></li>
+  <li>1:30 pm on Thursday
+    <ul>
+      <li>Spec Lead presentation - <a href="2013-09-JSR107-JCP-Review-Process-v1-2.pdf">JSR 107: JCACHE - Java Temporary Caching API</a> (Greg Luck) </li>
+    </ul>
+  </li>
+  <li><a href="AdoptResultsUpdate.pdf">Adopt-a-JSR update</a></li>
+  <li><a href="http://londonjavacommunity.wordpress.com/2013/09/16/the-java-community-process-survey/">London Java Community JCP survey</a></li>
+  <li>Times and locations for 2014 f2f meetings</li>
+  <li><a href="ARM_open-standards-for-IoT_shelby_final.pdf">Java at ARM</a> (Zach Shelby)</li>
+  <li><a href="http://www.dfjug.com.br/users-groups-the-brazilian-java-community/">Java User Groups in Brazil</a></li>
+  <li>JSR 358 Expert Group session</li>
+  <ul>
+    <li><a href="IndividualsWGUpdateSeptember2013.pdf">Individuals Working Group report </a></li>
+    <li><a href="IP-WG-Report-September-2013.pdf">IP Working Group report</a></li>
+    <li><a href="IP-flow-v6.pdf">IP Flow v6</a></li>
+  </ul>
+  <ul>
+  </ul>
+</ul>
+<h2>Attendance</h2>
+<table border="1" width="50%">
+  <tbody>
+    <tr>
+      <td align="center"><strong>Thursday September 19</strong></td>
+    </tr>
+    <tr>
+    <td><div align="center"><strong>PMO</strong></div></td>
+  </tr>
+  <tr>
+    <td><ul>
+      <li>Patrick Curran, Heather Vancura</li>
+    </ul>
+    </td>
+  </tr>
+  <tr>
+    <td><div align="center"><strong>Executive Committee </strong></div></td>
+  </tr>
+  <tr>
+    <td><ul>
+          <li class="red">Stefano Andreani &#8211; <em class="red">not present</em></li>
+          <li>Aplix &#8211; Jack Chung &#8211; present</li>
+          <li>ARM &#8211; Zach Shelby &#8211; present</li>
+          <li>Azul Systems <em>&#8211; </em>Gil Tene &#8211;<em> present</em></li>
+          <li>CloudBees <em>&#8211; </em>Steve Harris &#8211;<em> present</em></li>
+          <li class="style2">Credit Suisse &#8211; Susanne Cech &#8211;<em> 
+            present</em></li>
+          <li>Eclipse &#8211; Mike Milinkovich <em>&#8211; present</span></em></li>
+          <li>Ericsson &#8211; Johan M&aring;rtensson<em> <em>&#8211; present</em></em></li>
+          <li>Fujitsu &#8211; Mike DeNicola &#8211; <em>present</em></li>
+          <li>Gemalto M2M <em>&#8211; </em>Thomas Lampart &#8211;<em> present</em></li>
+          <li>Goldman Sachs &#8211; Mike Marzo &#8211; <em>present</em> 
+          </li>
+          <li>Google <em>&#8211; </em>Van Riper &#8211; <em>present</em> </li>
+          <li>HP &#8211; Scott Jameson &#8211; <em> present </em> </li>
+          <li class="red">IBM &#8211; <em class="red">not present</em></li>
+          <li>Intel &#8211; Anil Kumar &#8211; <em> present</em></li>
+          <li>Werner Keil &#8211; <em>presen</em>t</li>
+          <li>London Java Community &#8211; Ben Evans &#8211; <em>present</em> 
+          </li>
+          <li class="red">Nokia &#8211; <em class="red">not present</em></li>
+          <li>Oracle &#8211; Don Deutsch, Anish Karmarkar, Calinel Pasteanu &#8211;<em> present</em></li>
+          <li>RedHat &#8211; Mark Little &#8211; <em>present</em></li>
+          <li>SAP <em>&#8211; </em>Steve Winkler &#8211; <em>present</em></li>
+          <li>SouJava &#8211; Bruno Souza <em>&#8211; <em>present</em></em></li>
+          <li>TOTVS &#8211; David Britto <em>&#8211; <em>present</em></em></li>
+          <li class="red">Twitter &#8211; <em class="red">not present</em></li>
+        </ul>
+      <p>Total attendance: 20 of 24 voting members</p></td>
+  </tr>
+  <tr>
+      <td nowrap="nowrap">Since 75% of the EC's 24 voting members were present,
+        the EC was <strong class="style2">quorate</strong> on this day</td>
+  </tr>
+</tbody></table>
+
+<p>&nbsp;</p>
+<table width="50%" border="1">
+  <tbody>
+    <tr>
+      <td align="center"><strong>Friday September 20</strong></td>
+    </tr>
+    <tr>
+      <td><div align="center"><strong>PMO</strong></div></td>
+    </tr>
+    <tr>
+      <td><ul>
+        <li>Patrick Curran, Heather Vancura</li>
+      </ul></td>
+    </tr>
+    <tr>
+      <td><div align="center"><strong>Executive Committee </strong></div></td>
+    </tr>
+    <tr>
+      <td><ul>
+        <li class="red">Stefano Andreani &#8211; <em class="red">not present</em></li>
+        <li>Aplix &#8211; Jack Chung &#8211; present</li>
+        <li>ARM &#8211; Zach Shelby &#8211; present</li>
+        <li>Azul Systems <em>&#8211; </em>Gil Tene &#8211;<em> present</em></li>
+        <li>CloudBees <em>&#8211; </em>Steve Harris &#8211;<em> present</em></li>
+        <li class="style2">Credit Suisse &#8211; Susanne Cech &#8211;<em> present</em></li>
+        <li>Eclipse &#8211; Mike Milinkovich <em>&#8211; present</span></em></li>
+        <li>Ericsson &#8211; Johan M&aring;rtensson<em> <em>&#8211; present</em></em></li>
+        <li>Fujitsu &#8211; Mike DeNicola &#8211; <em>present</em></li>
+        <li>Gemalto M2M <em>&#8211; </em>Thomas Lampart &#8211;<em> present</em></li>
+        <li>Goldman Sachs &#8211; Mike Marzo &#8211; <em>present</em> </li>
+        <li>Google <em>&#8211; </em>Van Riper &#8211; <em>present</em></li>
+        <li>HP &#8211; Scott Jameson &#8211; <em> present </em></li>
+        <li class="red">IBM &#8211; <em class="red">not present</em></li>
+        <li>Intel &#8211; Anil Kumar &#8211; <em> present</em></li>
+        <li>Werner Keil &#8211; <em>presen</em>t</li>
+        <li>London Java Community &#8211; Ben Evans &#8211; <em>present</em> </li>
+        <li class="red">Nokia &#8211; <em class="red">not present</em></li>
+        <li>Oracle &#8211; Don Deutsch, Anish Karmarkar, Calinel Pasteanu &#8211;<em> present</em></li>
+        <li>RedHat &#8211; Mark Little &#8211; <em>present</em></li>
+        <li class="red">SAP <em>&#8211; </em>Steve Winkler &#8211; <em>by phone</em></li>
+        <li>SouJava &#8211; Bruno Souza <em>&#8211; <em>present</em></em></li>
+        <li>TOTVS &#8211; David Britto <em>&#8211; <em>present</em></em></li>
+        <li class="red">Twitter &#8211; <em class="red">not present</em></li>
+      </ul>
+      <p>Total attendance: 19 of 24 voting members</p></td>
+    </tr>
+    <tr>
+      <td nowrap="nowrap">Since 75% of the EC's 24 voting members were present,
+        the EC was <strong class="style2">quorate</strong> on this day</td>
+    </tr>
+  </tbody>
+</table>
+<h3>Action Item review</h3>
+<p>See the <a href="September-2013-ActionItems.html">Action Item tracking file</a>.</p>
+<h3>EC Stats</h3>
+<p>Heather presented the usual <a href="EC_Stats_Sept2013.pdf">EC stats</a>.</p>
+<h3>PMO Report</h3>
+<p>Heather presented a <a href="ProgramOfficeReport_Sept2013.pdf">report from the PMO</a> covering the following topics:</p>
+<h4>Membership</h4>
+<p>Heather reported on PMO efforts to clean up the membership database. Due to a variety of factors (acquisitions, mergers, resignations, unwillingness to pay the membership fees) the number of corporate members (both paying and licensee) has been reduced to less than 100. We discussed strategies for recruiting new corporate members. Steve Harris suggested that joint marketing/PR with corporate members might be an incentive. Patrick responded that the PMO used to do marketing activities in the past but was no longer staffed to do so. He promised to investigate whether we might be able to work jointly with Oracle's PR team. Mike DeNicola suggested that we offer free membership to those who recruit others. Don Deutsch pointed out that each corporate member represents many developers, so the raw numbers are somewhat misleading. Bruno Souza suggested that we need more corporate &quot;Java User&quot; companies such as Goldman Sachs and Credit Suisse. Zach Shelby noted that ARM should now be classified as a Java user as well as a platform vendor. Ben Evans suggested that a program like Adopt-a-JSR but targeted at corporations might be helpful. Heather reiterated that the membership fee is a barrier for many potential corporate members. Werner Keil noted that proposed lower fees for smaller companies might alleviate this problem.</p>
+<h4>PMO plans for JavaOne</h4>
+<p>Heather outlined the PMO's plans for JavaOne. See the <a href="ProgramOfficeReport_Sept2013.pdf">presentation</a> for details.</p>
+<h4>JCP 2.8/2.9 Scorecard</h4>
+<p>Heather explained that all but two of the currently-Active JSRs (excluding those that have already one final) are operating under JCP 2.8 or JCP 2.9. The two that have not migrated are <a href="http://jcp.org/en/jsr/detail?id=302">JSR 302: Safety Critical Java Technology</a> and <a href="http://jcp.org/en/jsr/detail?id=333">JSR 333: Content Repository API for Java Technology 2.1</a>. We agreed that since JSR 333 is almost finished it does not matter much whether or not they adopt the new transparency requirements, but we encouraged the PMO to try again to persuade the JSR 302 Spec Lead to migrate.</p>
+<h4>EC Elections</h4>
+<p>Heather provided a status update on the EC elections. See <a href="http://jcp.org">jcp.org</a> for the latest status.</p>
+<h3>Adopt-a-JSR update</h3>
+<p>Heather, Bruno Souza, and Ben Evans provided an update on the Adopt-a-JSR program, partly in response to <a href="September-2013-ActionItems.html">Action Item <em>April 2013-04</em></a>. Bruno Souza emphasized the importance of reaching out to those for whom English is not their native language - the program can be very helpful here. It was noted that interest in Java ME is significantly less than in Java SE and Java EE, and that interest is greatest between Public Review and Final Release. Bruno pointed out that when the Spec Lead draws up a list of &quot;things to do&quot; this significantly increases participation.</p>
+<p>We once again noted how difficult it is to get hard data about peoples' participation. (Many people think that what they do &quot;doesn't count&quot;.) We agreed that we need to give more public recognition to those who do participate.</p>
+<h3>Spec Lead presentation</h3>
+<p>Greg Luck gave a presentation on  <a href="2013-09-JSR107-JCP-Review-Process-v1-2.pdf">JSR 107: JCACHE - Java Temporary Caching API</a>, initiating a lively discussion among members, primarily about the technical content of the JSR. In summarizing the &quot;social&quot; information from the presentation Greg concluded that the JSR is alive and well, and that there is good participation from the community.</p>
+<h3>LJC Survey</h3>
+<p>Ben Evans briefly reported on the results of a <a href="http://londonjavacommunity.wordpress.com/2013/09/16/the-java-community-process-survey/">survey</a> conducted by the London Java Community. We noted with concern the fact that of the 257 people who responded to the question <em>If you&rsquo;ve not participated in the JCP what is the reason?</em> 85% said that they did not know how. Despite discussion we did not come to any conclusions about how to resolve this problem though we did agree that a future survey should probe more deeply into this issue, and we suggested that the EC as a whole should be involved in drawing up questions for a follow-on survey.</p>
+<h3>Times and locations for 2014 f2f meetings</h3>
+<p>Members agreed that the experiment of meeting in the Bay Area just before JavaOne had worked well, and proposed to do the same in 2014. (The meeting would therefore be held on Thursday and Friday September 25-26.)</p>
+<p>Although we had  tentatively agreed to meet in London in January 2014, members instead suggested that we also schedule the January meeting in the Bay Area, adjacent to Oracle's User Group Summit meeting, at which many Java User Group leaders  will be present. Patrick reported that the User Group Summit will be held on Wednesday and Thursday January 22-23. Since Monday of that week is Martin Luther King Day this would make it very difficult to schedule a two-day meeting adjacent to that one. Patrick agreed to talk to the organizers of the Summit to see if there is any flexibility in their schedule. In the meantime, assuming that something could be worked out, we agreed that we would meet in London on May 13-14.</p>
+<h3>Java at ARM</h3>
+<p>Zach Shelby, who will be replacing Paul Manfrini as ARM's primary EC rep, gave a <a href="ARM_open-standards-for-IoT_shelby_final.pdf">presentation</a> on ARM's plans for open standards for the Internet of Things. He explained that ARM expects in the future to become more involved in the JCP, and to promote and participate in new JSRs to support this emerging market.</p>
+<h3>Java User Groups in Brazil</h3>
+<p>Bruno Souza informed EC members of a report on <a href="http://www.dfjug.com.br/users-groups-the-brazilian-java-community/">Java User Groups in Brazil</a> which contains some interesting information about the history of JUGs in Brazil, and about the life-cycle that JUGs go through.</p>
+<h3><a name="JSR358" id="JSR358"></a>JSR 358 Expert Group Session: IP Working Group report</h3>
+<p>Patrick led a discussion on IP-related matters, building on the work done by the IP Working Group. We focused on Essential Patents, and after much discussion concluded that our previous proposal - to replace the current wording in Section 6 with a looser obligation requiring only that  members disclose Essential Patents of which they have personal knowledge - would be unworkable in practice. Instead, Mike Milinkovich proposed to replace the current Section 6 language with a defensive license termination clause. Members were generally sympathetic to this proposal, but recognized that further discussion within the EC and with their own lawyers would be necessary.</p>
+<p>Details of the discussion and the proposal have been incorporated into <a href="IP-flow-v7.pdf">version 7 of the IP Flow document</a>. (See the sections labeled <em>Discussion at the September f2f meeting</em> and <em>Proposal from Mike Milinkovich.)</em></p>
+<h3>JSR 358 Expert Group Session: Individuals Working Group report</h3>
+<p>Heather Vancura and Bruno Souza presented a <a href="IndividualsWGUpdateSeptember2013.pdf">summary of the IP Working Group's activities</a>, and led a lively discussion on the following topics:</p>
+<h4>The Contributor         Agreement and the JSPA</h4>
+How to ensure that people       don't make &quot;major contributions&quot;? When does a contribution become       &quot;significant&quot; enough to require that it be covered by the JSPA       rather than by the Contribution Agreement?<br />
+<br />
+Someone suggested that since the Contribution Agreement will make       no reference to the significance of the contribution the       distinction between &quot;casual&quot; and &quot;major&quot; contributions is       irrelevant. Under these circumstances, what's the incentive for an       individual to sign the JSPA? <br />
+<br />
+We agreed that the Spec Lead must         ultimately make the decision about what to accept without a         JSPA. We may want to incorporate some guidelines into the Spec         Lead Guide but cannot/should not make a definitive statement         in the Process Document (to avoid legal liability).<br />
+<br />
+Reminder: we have a proposal for standard Terms of Use that we       expect Spec Leads to apply to whatever collaboration tools they       use. This means that there will in fact be three levels of       agreement:<br />
+<br />
+1. Standard Terms of Use that apply to casual contributions made       through collaboration tools by people who have signed no other       agreement<br />
+2. The Contributor Agreement (aka the Affiliate Membership       Agreement) that covers contributions made by Affiliate members.<br />
+3. The JSPA for full members.<br />
+<h4>Java User Groups</h4>
+<p>We asked whether Java       User Groups that are not legal entities should be permitted to       join as Full members. Gil Tene argued that they should not even be       permitted to join as Affiliate members since they cannot legally       sign a contract. After discussion we decided that it makes no       sense for even legal-entity JUGs to sign the JSPA (or any other       legal agreement) since they are unable to make the kind of IP       commitments that corporations or individuals do. We should       recognize that the relationship between a JUG and the JCP is more       like a <a href="http://en.wikipedia.org/wiki/Memorandum_of_understanding">Memorandum         of Understanding</a>. We agreed to create yet another &quot;membership       agreement&quot; for JUGs. This would not include language relating to       IP commitments, but instead would focus on the agreement to jointly promote the interests       of Java, the JCP, and the JUG through programs like Adopt-a-JSR.<br />
+</p>
+<h4>Voting</h4>
+<p>Gil Tene once again         argued that the proposal for &quot;weighted voting&quot; is unfair to         individual Java developers who are consumers rather than         producers of or contributors to Java technologies. Our proposed         new membership structure will prohibit almost all individuals (including         many current signatories) from signing the JSPA. They will         therefore be effectively disenfranchised. <br />
+</p>
+<p>It was pointed out         that the current proposal is not a true &quot;weighted vote&quot; since         it&nbsp; would give 20% of the           total voting weight to Affiliate members no matter how many of           them vote - and correspondingly, 80% of the voting weight to           Full members no matter how few of them vote. True         weighted voting would give votes to Affiliate and Full members         in proportion to the number of people actually voting (that is,         each Affiliate vote would be worth a specific fraction - 20% for         example - of a Full vote). <br />
+</p>
+<p>We agreed to take up         this topic again in the Working Group, and to reconsider some of         the other voting proposals that had been previously discussed. <br />
+</p>
+<h4>Who can sign the Contributor         Agreement?</h4>
+<p>Scott Jameson pointed         out that HP employees would be prohibited from signing <strong>any</strong> kind of contributor agreement because of the IP commitments made in HP's         employment contracts. If the same applied to the majority of         American employees then the new Affiliate membership class might         not solve our problems.&nbsp;</p>
+<h3>Adjourn</h3>
+<p>Patrick thanked ARM for hosting the meeting. We then adjourned.</p>
+<p><br />
+</p>
+</body></html>
+
+
+<!-- ** BEGIN: footer.jsp ** //-->
+
+
+
+
+
+
+
+
+</td>
+</tr>
+</table>
+
+<!-- ** END: Content Table ** //-->
+
+<!-- ** BEGIN: Footer Table ** //-->
+
+<div id="footer" style="clear: both;">
+    <div class="footleft">
+        <a href="/en/resources/contacts">Contact Us</a>
+    </div>
+	
+    <div class="botbar"><img src="/images/spacer.gif" alt="" height="23" width="1"></div>
+
+    <div class="footleft2">
+         &copy; 2019, Oracle Corporation and/or its affiliates. 
+        <a href="/en/home/terms">Terms of Use</a>. <a href="http://www.oracle.com/us/legal/privacy/index.html">Privacy Policy</a>. <a href="http://www.oracle.com/us/legal/third-party-trademarks/third-party-trademarks-078568.html">Trademarks</a>
+    </div>
+
+    <div class="footright">
+        <img src="/images/common/logo_oracle_footer.gif" alt="Oracle Corporation" height="22" width="91">
+    </div>
+
+    <div style="clear: both;"><img src="/images/spacer.gif" alt="" height="30" width="1"></div>
+</div>
+
+<!-- ** END: Footer Table ** //-->
+
+
+
+<!-- ** Menu Start ** //-->
+
+
+
+</body>
+</html>
+<!-- ** END: footer.jsp ** //-->
+

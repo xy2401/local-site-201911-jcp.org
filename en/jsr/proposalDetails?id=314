@@ -1,0 +1,882 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- ** BEGIN: header.jsp ** //-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3c.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+<head>
+    
+
+   
+    <link href="/includes/css/menu.css" rel="stylesheet" type="text/css"></link>
+    <link href="/includes/css/style.css" rel="stylesheet" type="text/css"></link>
+    <!--[if lt IE 6]><link href="/includes/css/style5.css" rel="stylesheet" type="text/css" ></link><![endif]-->
+    <!--[if gte IE 5]><link href="/includes/css/style6.css" rel="stylesheet" type="text/css" ></link><![endif]-->
+    <link href="/includes/css/tabs.css"  rel="stylesheet" type="text/css"></link>
+
+    <script type="text/javascript" src="/includes/scripts/tabs.js"></script>
+    <script type="text/javascript" src="/includes/scripts/menu.js"></script>
+   
+
+    
+
+    
+        <title>The Java Community Process(SM) Program - JSRs: Java Specification Requests - proposalDetails JSR# 314</title>
+    
+
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+
+
+<body onload="P7_initPM(0,1,0,0,-1)">
+
+    <a name="top"></a>
+
+    <div id="header">
+	<div id="logo">
+		<a href="/en/home/index"><img src="/images/spacer.gif" alt="Java Community Process" height="81" width="151"></a>
+	</div>
+	<div id="tools">
+		<div class="search">
+			<form name="search" action="/en/jsr/summary" method="get" onsubmit="return validate_search()">
+				<input name="id" value="Search JSRs" size="16" class="form" onfocus="nullify_if_equal(this, 'Search JSRs')" type="text">
+				<a href="javascript:document.search.submit()" onclick="return validate_search()"><img src="/images/button_go.gif" width="21" height="16" border="0" alt="Submit this Search" name="sub_search"></a>
+			</form>
+		</div>
+		<div class="tools">
+			<a href="/en/press/pressroom">Press Room</a> &nbsp;|&nbsp;
+			<a href="http://java.com/java/download/index.jsp?cid=jdp78399">Get Java Here</a> &nbsp;|&nbsp;
+			<!-- <a href="javascript:void(0)">Print Format</a> &nbsp;|&nbsp;&nbsp; -->
+		</div>
+
+	</div>
+	<div style="clear: right;"></div>
+
+        
+
+	<div class="topbar"><img src="/images/spacer.gif" alt="" height="3" width="154"></div>
+	<div id="update"> </div>
+    </div>
+
+
+    
+
+        <!-- ** BEGIN: Content Table ** //-->
+
+        <table width="100%" border="0" cellpadding="0" cellspacing="0">
+
+            <tr>
+
+                <!-- ** BEGIN: Navigation Column ** //-->
+                <td width="150" id="leftcontent" valign="top">
+                    <!-- Navigation Placeholder //-->
+
+                    
+
+                    <div class="bar"><img src="/images/hr_dots1.gif" alt="" height="3" width="150"></div>
+
+        <!-- begin find JSRs form -->
+        <!-- IMPORTANT! do not convert this form to Struts < html : form > tag.  javascript change of form.action property fails. -->
+        <img src="/images/hd_find-jsrs.gif" alt="Find JSRs" height="18" width="150">
+        <form name="findjsr" action="/en/jsr/summary" method="get" class="pt5" onsubmit="return validate_findjsr()">
+            <input name="id" size="18" class="form" value="Search JSRs" onfocus="nullify_if_equal(this, 'Search JSRs')" type="text">
+	    <a href="javascript:document.findjsr.submit()" onclick="return validate_findjsr()"><img src="/images/button_go.gif" width="21" height="16" border="0" alt="Submit this Search" name="sub_search"></a>
+        </form><br><br>
+
+        <!-- ** Menu Start ** //-->
+
+        <ul id="p7PMnav">
+            <li><a href="/en/jsr/platform">JSRs by Platform</a></li>
+            <li><a href="/en/jsr/tech">JSRs by Technology</a></li>
+            <li><a href="/en/jsr/stage">JSRs by Stage</a></li>
+            <li><a href="/en/jsr/ec">JSRs by Committee</a></li>
+            <li><a href="/en/jsr/all">List of All JSRs</a></li>
+
+            <!--end find JSRs form -->
+            <div style="clear: both;"><img src="/images/spacer.gif" alt="" height="25" width="1"></div>
+
+            <!--begin my JCP -->
+            <img src="/images/hd_my-jcp.gif" alt="My JCP" height="18" width="150">
+            
+
+          <form name="login" method="get" action="/en/user/login" >
+            <input name="Sign-in" type="submit" title="Sign-in" value="Sign-in" />
+          </form>
+
+            <div style="clear:both"><img src="/images/global/spacer.gif" width="1" height="3" alt=""></div>
+            <div class="noNav">
+                <a href="/en/user/register">Register for Site</a>
+            </div>
+
+             <div class="bar"><img src="/images/hr_dots1.gif" alt="" height="3" width="150"></div>
+           <div class="noNav" style="color: #666666; padding: 0;">
+              Use of JCP site is subject to the
+              <a href="/en/home/terms" style="display:inline;padding: 0">JCP Terms of Use</a> and the
+              <a href="http://www.oracle.com/us/legal/privacy/index.html" style="display:inline;padding: 0" href="">Oracle Privacy Policy</a>
+          </div>
+
+            
+
+            <div style="clear:both"><img src="/images/global/spacer.gif" width="1" height="25" alt=""></div>
+
+            <!--begin JCP info -->
+            <img src="/images/hd_jcp-info.gif" alt="JCP Info" height="18" width="150">
+
+            <li><a href="/en/procedures/overview" class="p7PMtrg">About JCP</a>
+                <ul>
+                    <li><a href="/en/procedures/overview">Program Overview</a></li>
+                    <li><a href="/en/procedures/jcp2">JCP Process Document</a></li>
+                    <li><a href="/en/whatsnew/calendar">Calendar</a></li>
+                    <li><a href="/en/participation/members">JCP Members</a></li>
+                    <li><a href="/en/participation/committee">Executive Committee</a></li>
+                    <li><a href="/en/whatsnew/elections">Elections</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/en/participation/overview" class="p7PMtrg">Get Involved</a>
+		<ul>
+                    <li><a href="/en/participation/overview">Overview</a></li>
+                    <li><a href="/en/participation/membership">Becoming a JCP Member</a></li>
+		</ul>
+            </li>
+
+            <li><a href="/en/resources/contents" class="p7PMtrg">Community Resources</a>
+                <ul>
+                    <li><a href="/en/resources/contents">Overview</a></li>
+                    <li><a href="/en/resources/tutorials">Tutorials</a></li>
+                    <li><a href="/en/resources/multimedia">JCP Podcasts</a></li>
+                    <li><a href="/en/resources/guide">Spec Lead Guide</a></li>
+                    <li><a href="/en/resources/tdk">TCK Tool & Info</a></li>
+                    <li><a href="/en/resources/license_reference">License Reference</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/en/press/pmo" class="p7PMtrg">Community News</a>
+                <ul>
+                    <li><a href="/en/press/pmo">News</a></li>
+                    <li><a href="/en/press/news/awards/awards_main">Programs &amp; Awards</a></li>
+                    <li><a href="/en/press/releases">Press Releases</a></li>
+                    <li><a href="/en/press/success">Success Stories</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/en/introduction/faq">FAQ</a></li>
+
+            <li><a href="/en/resources/contacts">Contact Us</a></li>
+
+            <div style="clear: both;"><img src="/images/spacer.gif" alt="" height="25" width="1"></div>
+
+            <!--[if lte IE 6]><style>#p7PMnav a{height:1em;}#p7PMnav li{height:1em;float:left;clear:both;width:100%}</style><![endif]-->
+            <!--[if IE 6]><style>#p7PMnav li{clear:none;}</style><![endif]-->
+            <!--[if IE 7]><style>#p7PMnav a{zoom:100%;}#p7PMnav li{float:left;clear:both;width:100%;}</style><![endif]-->
+        </ul>
+
+        
+
+        <!--begin ad space -->
+        <div class="ads">
+            <a href="http://java.com/java/download/index.jsp?cid=jdp78399" target="_blank"><img style="display: ;" src="/images/ad_banner2.gif" alt="Ad Banner" border="1" height="70" width="150"></a>
+        </div>
+        <!--end ad space -->
+
+<!-- ** Menu End ** //-->
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;<br>
+
+    
+
+                    &nbsp;<br>
+                    <img src="/images/common/trans.gif" alt="" width="1" height="150"><br>
+
+              
+
+
+
+                </td>
+                <!-- ** END: Navigation Column ** //-->
+
+                <!-- ** BEGIN: Gutter Column ** //-->
+		<td width="10" nowrap><img src="/images/common/trans.gif" alt="" width="10" height="1"></td>
+                <!-- ** END: Gutter Column ** //-->
+
+                <!-- ** BEGIN: Content Column ** //-->
+                <td width="100%" valign="top">
+
+    
+<script type="text/javascript">
+
+String.prototype.trim = function() {
+        return this.replace(/^\s+|\s+$/g,"");
+}
+String.prototype.ltrim = function() {
+        return this.replace(/^\s+/,"");
+}
+String.prototype.rtrim = function() {
+        return this.replace(/\s+$/,"");
+}
+
+function validate_search() {
+	if (document.search.id.value == "Search JSRs" || document.search.id.value.trim().length == 0) {
+		alert("Search terms must be entered first");
+		return false;
+	}
+	return true;
+}
+
+function validate_findjsr() {
+	if (document.findjsr.id.value == "Search JSRs" || document.findjsr.id.value.trim().length == 0) {
+		alert("Search terms must be entered first");
+		return false;
+	}
+	return true;
+}
+
+function nullify_if_equal(field, str) {
+	// alert("val=" + field.value);
+	if (field.value == str) {
+		field.value = "";
+	}
+}
+
+</script>
+<!-- ** END: header.jsp ** //-->
+
+
+
+
+
+        <!--  BEGIN NAVIGATION TABS -->
+        <div id="p7TP1">
+                <div class="p7TP_tabs">
+                        <div id="p7tpb1_1" class="down"><a class="down">JSR</a></div>
+                        <div><a href="/en/egc/view?id=314">Community</a></div>
+                        <div><a href="/en/eg/eghome?id=314">Expert Group</a></div>
+			
+
+                <br class="p7TPclear" />
+                </div>
+
+                <div class="p7TPcontent">
+                        <div id="p7tpc1_1">
+
+			
+                                <a href="summary?id=314">Summary</a>
+			
+			
+                                &nbsp;|&nbsp;
+				<span>Proposal</span>
+			
+			
+                                &nbsp;|&nbsp;
+                                <a href="detail?id=314">Detail (Summary &amp; Proposal)</a>
+			
+		
+                        </div>
+
+                </div>
+                <!--[if lte IE 6]><style type="text/css">.p7TPpanel div,.p7TPpanel a{height:1%;}.p7TP_tabs a{white-space:nowrap;}</style><![endif]-->
+        </div>
+        <script type="text/javascript">
+                P7_initTP(1,0);
+        </script>
+        <!--  END NAVIGATION TABS -->
+
+
+<div class="anybar"><img src="/images/global/bar_green.gif" alt="" width="12" height="4"></div>
+
+<div class="header2">JSRs: Java Specification Requests</div>
+<div class="header1">JSR 314: JavaServer Faces 2.0</div>
+<div class="anybar"><img src="/images/global/bar_green.gif" alt="" width="12" height="4"></div>
+<br>
+
+
+
+
+<!-- ********************************************** -->
+<!--  JSRProposal Info                              -->
+<!-- ********************************************** -->
+<p>
+
+
+If you would like to be added to the observer alias for this JSR and receive e-mail updates on the progress of the JSR, please send e-mail to the Spec Lead with "Add to observer alias" in the subject line.
+<P>
+
+<a name="orig"><font size="+2">Original Java Specification Request (JSR)</font></a><p>
+<FONT SIZE="-1">
+
+<!-- BEGIN-SUB TOPICS -->
+
+          <A HREF="#1"> Identification</A>  |
+          <A HREF="#2"> Request</A>  |
+          <A HREF="#3"> Contributions</A>  
+<BR>
+
+<!-- END-SUB TOPICS -->
+
+</FONT>
+<P>
+
+<!-- BEGIN TEMPLATE -->
+
+<!-- SECTION 1 -->
+
+<A NAME="1"></A>
+
+<P><FONT size=+2>Section 1. Identification</FONT>
+
+<P><b>Submitting Member:</b> Sun Microsystems, Inc.
+
+
+ </P>
+
+<P><b>Name of Contact Person:</b> Ed Burns </P>
+
+<P><b>E-Mail Address:</b> ed.burns<faketag>&#64;</faketag>sun.com</P>
+
+<P><b>Telephone Number:</b> +1 408 884 9519</P>
+
+<P><b>Fax Number:</b> +1 407 294 2468</P>
+
+<BR>
+<P><b>Specification Lead:</b> Ed Burns & Roger Kitain
+ </P>
+
+<P><b>E-Mail Address:</b> ed.burns<faketag>&#64;</faketag>sun.com & roger.kitain<faketag>&#64;</faketag>sun.com</P>
+
+<P><b>Telephone Number:</b> +1 408 884 9519  & +1 781 442 6237</P>
+
+<P><b>Fax Number:</b> + 1 407 294 2468</P>
+
+<BR>
+
+<P><B>Initial Expert Group Membership:</B>
+</P>
+
+<P>BEA Systems<BR>
+Ericsson<BR>
+Exadel<BR>
+Howard Lewis Ship<BR>
+IBM<BR>
+ICEsoft<BR>
+JBoss<BR>
+Oracle<BR>
+Sun Microsystems, Inc.
+
+
+</P>
+
+<P><B>Supporting this JSR:</B>
+
+</P>
+
+<P>BEA Systems<BR>
+Ericsson<BR>
+Exadel<BR>
+Howard Lewis Ship<BR>
+IBM<BR>
+ICEsoft<BR>
+JBoss<BR>
+Oracle<BR>
+Sun Microsystems, Inc.</p>
+
+<BR><BR>
+
+<!-- SECTION 2 -->
+
+<A NAME="2"></A>
+
+<P>
+<FONT SIZE="+2">Section 2: Request</FONT><P>
+</P>
+
+<H4>2.1 Please describe the proposed Specification:</H4>
+
+<P>This JSR will bring the best ideas in web application development (circa early 2007) to the Java EE platform. The Expert Group will be harvesting existing ideas that:<P>
+<ul>
+<li> Maximize the productivity of the web application development experience, for graphical IDE and command-line developers.<P>
+
+<li>Minimize the complexity of maintenance of the web application during its production lifetime.<P>
+
+<li>Make it easy to create responsive user interfaces through effective use of Ajax techniques. This includes enabling applications that have nearly all of the MVC controller UI logic and intra-page component interaction into the client, while keeping a sensible level of application logic on the server. Ideas that allow for graceful degredation when JavaScript is diabled or unavailable are also important.<P>
+
+<li>Make it possible to expand the reach of your web application by continuing to support fully functional server based web applications that do not use JavaScript in the client.<P>
+
+<li>Leverage modularity to expand integration opportunities between the JSF framework and other client and server side web application technologies. This would make it easier for a developer to use individual parts of JSF without being forced to use all of it. For example, the request processing lifecycle is useful even without the JSF View being present. As another example, JSF has a robust I18N and L10N capability. It should be possible to use this capability without using JSF components for your UI. A short way to characterize this is, "be mashup friendly".<P>
+
+<li>Make it easy to expose your data by leveraging the Java Persistence API<P>
+</ul>
+Requirements are grouped into four major categories: Ease of Development, New Features and Fixes, Performance, Technology Adoption. Following are some initial requirements that will be prioritized and considered when the Expert Group convenes. Not all of these ideas will be in the final specification. Some of these requirements may be met in the Servlet specification (or other Java EE specification) but they are stated here because they are critical to the success of JavaServer Faces.<P>
+
+Ease of Development<P>
+
+While this was the major theme for Java EE 5, it was not the major theme for the version of the JavaServer Faces specification included therein. The act of writing JSF applications and components "by hand" will be made much easier by this JSR. Example requirements in this category include:<P>
+<ul>
+<li>Component aggregation. Allow development of custom component with little or no Java coding. [A] Perhaps consider a standard set of aggregations. <P>
+
+<li>Allow for "zero configuration" web applications. No faces-config.xml, no web.xml. If necessary, annotations will be used to supplement the configuration data.<P>
+
+<li>Vastly improve the developer experience with regard to error messages that happen during iterative development, and even during deployment of the application. For example the EG will consider options including, allowing the developer to tell the runtime what stage of development the web application is in, and take action accordingly: Development, Test, Deployment. Line precise error reporting. Pluggable Exception Handling.<P>
+
+<li>Provide default exception handling mechanisms. For example, all runtime errors get forwarded to an error page.<P>
+
+<li>Eliminate the need to author a JSP tag handler when writing JSF components. <P>
+
+<li>Leverage annotations to declare JSF artifacts (components, managed beans, navigation rules, etc) to the runtime.<P>
+
+<li>Declarative Renderers, otherwise known as Renderers without resorting to out.println().<P>
+
+<li>Real world, production view description technology, including templating: include something influenced by Facelets, JSFTemplating or Tiles in the specification.<P>
+
+<li>Make it very easy to create CRUD based applications.<P>
+</ul>
+There are also a number of container improvements that should be considered to improve developing web applications in general:<P>
+<ul>
+<li>Eliminate the "deployment step". All the artifacts that comprise a JSF application can be modified while the application is running. This will bring the responsiveness people have been used to with iterative JSP development to the JSF developer. One design idea for this is to allow JSF artifacts to be authored in Script.<P>
+
+<li>Expand the contract of the exploded WAR (and non-exploded WAR) to have knowledge of JSF artifacts. For example, define a place within the WAR structure for such artifacts as components, renderers, converters, etc. Having a concrete correspondence between the constituent parts of a JSF application and actual directories within a WAR will make it easier to understand an application and also map help with the elimination of the deployment step.<P>
+</ul>
+New Features<P>
+
+Requirements in this category stem from feedback from real world JSF users and are incremental improvements on the existing specification. This category includes fixes and updates to existing APIs. Example requirements in this category include:<P>
+<ul>
+<li>Expand the request processing lifecycle to be aware of Ajax. This may include describing a small developer-contract footprint JavaScript library as part of the JavaServer Faces specification. <P>
+
+<li>Separate the "build the tree" and "render the tree" processes into two separate lifecycle phases.<P>
+
+<li>Allow for partial tree traversel during lifecycle execution via Ajax.<P>
+
+<li>Allow for bookmarkable JSF pages. More broadly, if HTTP GET can be used, it should be used.<P>
+
+<li>Decent client side, inter-component and form-level validation (leveraging JSR-303 validation if possible). <P>
+
+<li>First class support for bundling and delivering static resources associated with a component: images, stylesheets, scripts, etc. Should be able to specify default locations for resources.<P>
+
+<li>Strategic additions to the Standard HTML RenderKit: Date Picker, Tree, Tab View, File Upload components. <P>
+
+<li>Provide a mechanism to minimize the "Lost Update" and "Duplicate Button Press" problems. These mechanisms must be pluggable or customizable from the user. <P>
+
+<li>Page actions: The ability to say, "when this page loads, invoke this action (via Ajax if necessary)."<P>
+
+<li>Provide a mechanism to easily access persistent store.<P>
+</ul>
+
+Runtime Performance and Scalability <P>
+
+The flexibility of the JavaServer framework can lead to performance concerns. Requirements in this category make modifications and restrictions to the specification to increase performance across the board for all implementations of the specification. Example requirements in this category include:<P>
+<ul>
+<li>Saving and restoring page deltas rather than saving and restoring the full view state each time. <P>
+
+<li>Re-do UIComponent state saving with a view towards making stateless components the default.<P>
+
+<li>Allow for moving as much of the event processing and inter-page component interaction into the client as possible. This may imply specifying client side controller framework.<P>
+
+<li>Streamline the rendering process via caching if possible.<P>
+
+<li>Improve the interceptor mechanism delivered via the PhaseListener feature so that the developer can control exactly what kinds of requests are allowed to be processed by each PhaseListener instance.<P>
+</ul>
+
+Adoption<P>
+
+Increasing the capability of the JavaServer Faces standard will continue to attract more people to write applications targeting the standard, thereby raising the bar for Java web applications. Features in this category aim to attract new developers to use products that implement the JavaServer Faces specification. Example requirements in this category include:<P>
+<ul>
+<li>Enable components to have a client based lifecycle in addition to, or instead of the server based request/response lifecycle. Such a client based lifecycle would enable use-cases such as drag-and-drop, master-detail and sub-dialogs on a single page interface web application.<P>
+
+<li>Improve the UIComponent specification to allow an increase in the interoperability of UIComponent libraries from arbitrary vendors. <P>
+
+<li>Enable applications to use features that are defined in the JavaServer Faces specification but are intended for use in the Java EE platform as a whole. For example, the managed bean facility is useful even in an application that only uses Servlets from Java EE but provides the rest of the web application features from software outside of the platform.<P>
+
+<li>Allow JSF application resources to be accessed via REST.<P>
+
+<li>Enable components that publish events via RSS/Atom.<P>
+
+<li>Add support for REST (JSR 311)<P>
+
+<li>Broad and pervasive support for scripting at all levels of the specification. It will be possible to use a scripting language to write all executable artifacts in a JSF application.<P>
+
+<li>Specify command line interface for authoring JSF applications.<P>
+
+<li>Support for passing values from page to page. This will be a standardization of the many different Dialog/Conversation/Scope/Flash ideas currently in use.<P>
+
+<li>"Skinning", or "Themeing" of components. <P>
+
+<li>An important target user for JavaServer Faces technology is the developer who relies on an Internet Service Provider (ISPv) to host their application, as well as hosting their development environment. It must be easy to iteratively develop a JavaServer Faces application that is hosted entirely on an ISP.
+</ul>
+
+ </P>
+
+<H4>2.2 What is the target Java platform? (i.e., desktop, server, personal, embedded, card, etc.)</H4>
+
+<P>#
+
+Make it easy to create responsive user interfaces through effective use of Ajax techniques. This includes enabling applications that have nearly all of the MVC controller UI logic and intra-page component interaction into the client, while keeping a sensible level of application logic on the server. Ideas that allow for graceful degredation when JavaScript is diabled or unavailable are also important.<P>
+
+Make it possible to expand the reach of your web application by continuing to support fully functional server based web applications that do not use JavaScript in the client.
+</P>
+
+<H4>2.3 The Executive Committees would like to ensure JSR submitters think about how their proposed technology relates to all of the Java platform editions. Please provide details here for which platform editions are being targeted by this JSR, and how this JSR has considered the relationship with the other platform editions.</H4>
+
+<P>This specification targets the Java EE 6 Platform. It will be based on the corresponding release of the Java SE platform.</P>
+
+<H4>2.4 Should this JSR be voted on by both Executive Committees?</H4>
+
+<P>No. Just the SE/EE Executive Committee.
+
+</P>
+
+
+<H4>2.5 What need of the Java community will be addressed by the proposed specification?</H4>
+
+<P>While JavaServer Faces has succeeded in becoming the standard way to build web application user interfaces while ensuring maximum container portability and minimizing vendor lock-in, the state of the art of web application user interface development has advanced significantly since the first major draft of the specification. The Java community finds itself in a similar situation to that in which the first version of the JavaServer Faces specification was initiated: Many great ideas but no standard specification that delivers them to developers and the marketplace. In fact, many of these great ideas are built on top of the JavaServer Faces Specification but, are not, themselves, standards. It is time to harvest these ideas and bring them to a wider audience in manner consistent with the rest of the Java Platform.
+
+
+</P>
+
+<H4>2.6 Why isn't this need met by existing specifications?</H4>
+
+<P>The problem domain of web application user interface and lifecycle development is not covered by any other JSR. This problem domain is squarely the purview of JavaServer Faces.
+
+
+ </P>
+
+<H4>2.7 Please give a short description of the underlying technology or technologies:</H4>
+
+<P>See 2.1 above.</P>
+
+<H4>2.8 Is there a proposed package name for the API Specification? (i.e., <TT>javapi.something</TT>, <TT>org.something</TT>, etc.)</H4>
+
+<P>javax.faces
+
+
+</P>
+
+<H4>2.9 Does the proposed specification have any dependencies on specific operating systems, CPUs, or I/O devices that you know of?</H4>
+
+<P>No</P>
+
+<H4>2.10 Are there any security issues that cannot be addressed by the current security model?</H4>
+
+<P>The Java SE security model is perfectly sufficient for the needs of this specifiation. There will be security related features in the specification, but these will build on top of the current security model.</P>
+
+<H4>2.11 Are there any internationalization or localization issues?</H4>
+
+<P>Faces technology deals with internationalization and localization. This version of the specification will expand this support to the realm of Ajax based applications.</P>
+
+<H4>2.12 Are there any existing specifications that might be rendered obsolete, deprecated, or in need of revision as a result of this work?</H4>
+
+<P>Yes. The specifications for the following technologies will certainly be impacted by this specification:<P>
+<ul>
+<li>Servlets<P>
+
+<li>JSP
+</ul>
+</P>
+
+<H4>2.13 Please describe the anticipated schedule for the development of this
+specification.</H4>
+
+<P> <table cellpadding=5 cellspacing=5>
+<tr><th>Stage</th><th>Start</th><th>Finish</th></tr>
+<tr>
+<td>Author 1st Draft</td><td>7 Feb 07</td><td>9 Feb 07</td>
+</tr>
+<tr>
+<td>Author 2nd Draft</td><td>12 Feb 07</td><td>14 Feb 07</td>
+</tr>
+<tr>
+<td>2nd Draft Reviewed<br>By Sun Internal</td><td>15 Feb 07</td><td>9 Mar 07</td>
+</tr>
+<tr>
+<td>Author 1st EG<BR>
+Public Draft</td><td>7 Mar 07</td><td>9 Mar 07</td>
+</tr>
+<tr>
+<td>1st EG Public Draft<BR>
+Review By JSR-252EG</td><td>9 Mar 07</td><td>16 Mar 07</td>
+</tr>
+<tr>
+<td>File JSR with JCP</td><td>Apr 07</td><td>Apr 07</td>
+</tr>
+<tr>
+<td>JSR Review Ballot</td><td>Apr 07</td><td>May 07</td>
+</tr>
+<tr>
+<td>EG Formation</td><td>May 07</td><td>Aug 07</td>
+</tr>
+<tr>
+<td>Early Draft Review</td><td>Oct 07</td><td>Oct 07</td>
+</tr>
+<tr>
+<td>Public Review</td><td>Feb 08</td><td>Mar 08</td>
+</tr>
+<tr>
+<td>Public Review Ballot</td><td>Mar 08</td><td>Apr 08</td>
+</tr>
+<tr>
+<td>Proposed Final Draft</td><td>Timed With JavaEE6</td><td>&nbsp;</td>
+</tr>
+</table>
+
+
+</P>
+
+<H4>2.14 Please describe the anticipated working model for the Expert Group working on developing this
+specification.</H4>
+
+<P>We will use the same working model as in JSR-252: primarily email discussion with occasional conference calls and other distributed team technology uses. See section 2.15 for the transparency measures we will use.<P>
+
+The reference implementation will be developed using an Open Source development model.
+
+
+</P>
+
+<H4>2.15 It is important to the success of the community and each JSR that the work of the Expert Group be handled in a manner which provides the community and the public with insight into the work the Expert Group is doing, and the decisions that the Expert Group has made. The Executive Committees would like to ensure Spec Leads understand the value of this transparency and ask that each JSR have an operating plan in place for how their JSR will address the involvement of the community and the public. Please provide your plan here, and refer to the Spec Lead Guide for a more detailed description and a set of example questions you may wish to answer in your plan.</H4>
+
+<P>We will leverage the collaborative tools provided by the java.net infrastructure. We have established the "javaserverfaces-spec-public" project on java.net. Therein, we will have a public issue tracker for tracking most issues. Any issues that absolutely must be EG private will be handled with a separate EG-private issue tracker. We will have an EG-private mailing list, and we will have a monitored public discussion forum as well. The reference implementation will be developed entirely in the public javaserverfaces project on java.net. The TCK will be developed privately by Sun. We will leverage the Early Draft feature of JCP 2.6 to allow the public to see the spec in progress.
+
+
+ </P>
+
+<H4>2.16 Please describe how the RI and TCK will de delivered, i.e. as part of a profile or platform edition, or stand-alone, or both. Include version information for the profile or platform in your answer.
+</H4>
+
+<P>Sun will deliver a Reference Implementation (RI) and Technology Compatibility Kit (TCK). The RI will be made available standalone and as part of the Java EE 6 platform. The TCK will be made available standalone and as part of the Java EE 6 CTS.</P>
+
+<H4>2.17 Please state the rationale if previous versions are available stand-alone and you are now proposing in 2.13 to only deliver RI and TCK as part of a profile or platform edition (See sections 1.1.5 and 1.1.6 of the JCP 2 document).
+</H4>
+
+<P>N/A</P>
+
+<H4>2.18 Please provide a description of the business terms for the Specification, RI and TCK that will apply when this JSR is final.</H4>
+
+<P>Pursuant to Section 2.2.1 of the Java Community Process version 2.6, the
+following is a summary of Sun's anticipated principal license terms and
+conditions for the JSR, JavaServer Faces (JSF) 2.0. The business terms
+for JSF 2.0 have not changed from those for JSF 1.2 and they impose no
+new restrictions.<P>
+
+The JSF 2.0 Technology Compatibility Kit (TCK) will be available both as
+a standalone TCK and included as part of the Java EE 6 Compatibility
+Test Suite (CTS).  The JSF 2.0 Reference Implementation (RI) will be
+available both separately and as part of the Java EE 6 RI.<P>
+
+Non-Commercial Use<P>
+
+As required by the Java Specification Participation Agreement (JSPA),
+the JSF 2.0 TCK will be licensed at no charge without support to
+qualified not-for-profit entities.  Such qualification will be verified
+by the Compatibility Testing Scholarship Program.  Support may also be
+provided at no charge with approval of the scholarship board. For more
+information, please refer to: <a href="http://java.sun.com/scholarship/"> http://java.sun.com/scholarship/</a>.<P>
+
+The RI will be available at no cost under an open source license.<P>
+
+Commercial Use<P>
+
+Covers all use that doesn't fall under "Non-Commercial Use" above.<P>
+
+JSF 2.0 TCK Java Licensee Engineering (JLE) support, available for a
+fee not to exceed $50k, is required for commercial use for each 
+Marketed Product which implements the JSF 2.0 specification. TCK JLE 
+support includes access, updates and upgrades to the TCK at no 
+additional charge.<P>
+
+JSF 2.0 RI and TCK JLE and marketing support will be made available at
+no extra charge to Java EE licensees under their existing terms.<P>
+
+The RI will also be made available at no cost under an open source
+license for commercial use.<P>
+
+For purposes of these terms:<P>
+
+Marketed Product is intended to describe a licensee's product that has
+its own differentiation and marketing collateral. It may comprise one
+price list entry, or in some cases multiple entries (for example, to
+account for different localizations or delivery packaging). By way of
+example, in terms of Sun's product line we wouldn't consider Sun's Java
+Application Server to be a Marketed Product, but Sun's Java Application
+Server Platform Edition, Standard Edition, and Enterprise Edition are 3
+Marketed Products. Sun's Java Studio Enterprise is a fourth Marketed
+Product.
+</P>
+
+<BR><BR>
+<BR><BR>
+
+<!-- SECTION 3 -->
+
+<A NAME="3"></A>
+
+<P>
+<FONT SIZE="+2">Section 3: Contributions</FONT><P>
+</P>
+
+<H4>3.1 Please list any existing documents, specifications, or implementations that describe the technology. Please include links to the documents if they are publicly available.</H4>
+
+<P>Some of the ideas to be harvested in this release of the specification are described in the links in the following list:<P>
+<ul>
+<li>The Open Ajax Alliance<P>
+
+<li>Apache Shale <a href="http://shale.apache.org/"> http://shale.apache.org/</a><P>
+
+<li>Project Dynamic Faces <a href="https://jsf-extensions.dev.java.net/"> https://jsf-extensions.dev.java.net/</a><P>
+
+<li>Ajax4JSF <a href="https://ajax4jsf.dev.java.net/"> https://ajax4jsf.dev.java.net/</a><P>
+
+<li>IceFaces <a href="http://www.icefaces.org/"> http://www.icefaces.org/</a><P>
+
+<li>Tapestry 5 <a href="http://tapestry.apache.org/tapestry5"> http://tapestry.apache.org/tapestry5</a><P>
+
+<li>MyFaces Trinidad <a href="http://incubator.apache.org/projects/adffaces.html "> http://incubator.apache.org/projects/adffaces.html</a>  and parts of MyFaces Tomahawk and MyFaces Tobago.<P>
+
+<li>Facelets <a href="https://facelets.dev.java.net/"> https://facelets.dev.java.net/</a><P>
+
+<li>Project jMaki <a href="https://ajax.dev.java.net/"> https://ajax.dev.java.net/<a><P>
+
+<li>Project Phobos <a href="https://phobos.dev.java.net/"> https://phobos.dev.java.net/</a><P>
+
+<li>Spring Web Flow <a href="http://opensource.atlassian.com/confluence/spring/display/WEBFLOW/Home"> http://opensource.atlassian.com/confluence/spring/display/WEBFLOW/Home</a> and the Spring Framework (for dependency injection)
+</ul>
+
+</P>
+
+<H4>3.2 Explanation of how these items might be used as a starting point for the work.</H4>
+
+<P>Apache Shale<P>
+
+Shale Remoting provides a basis for deliving static content from the CLASSPATH of the application. This is a starting point for the "bundling associated resources" feature. Shale Dialog Manager, along with Spring Web Flow, Seam, and the JSF-Extensions flash, may serve as the starting point for the "passing values from page to page" feature. Shale View Controller will inform the features relating to the request processing lifecycle. Shale Tiger Extensions will inform the discussions related to features that use Java Language annotations to increase ease of development.<P>
+
+Project Dynamic Faces<P>
+
+Along with Ajax4JSF, Project Dynamic Faces will serve as a starting point for features relating to extending the JSF lifecycle to leverage Ajax. Dynamic Faces also has some ideas relating to elimination of the deplopment step.<P>
+
+Ajax4JSF<P>
+
+Along with Project Dynamic Faces, Ajax4JSF will inform the Ajax related discussions. Ajax4JSF also has a declarative rendering feature that will serve as a starting point for that feature in the JavaServer Faces specification.<P>
+
+Tapestry 5<P>
+
+Tapestry 5 leverages annotations and contains ideas about eliminating the deployment step. It also addresses performance.<P>
+
+ADF Faces<P>
+
+ADF Faces has a partial page refresh feature that will inform the request processing lifecycle features. It also has robust and mature skinning support for changing the style and appearance of user interface components.<P>
+
+Facelets<P>
+
+Facelets has quickly become an enormously popular view description language for Java Server Faces. This JSR aims to standardize most of what is in Facelets, including its page templating feature.<P>
+
+Project jMaki<P>
+
+Project jMaki will serve as a starting point for how to allow the developer to move as much of their UI logic into the client as desired.<P>
+
+Project Phobos<P>
+
+Project Phobos will serve as a starting point for how to support scripting on the server side.<P>
+
+Spring Web Flow<P>
+
+Spring Web Flow, will inform discussions relating to the request processing lifecycle, and the "passing values between pages" features.</P>
+
+<BR><BR>
+</p>
+
+
+
+
+
+
+
+
+<!-- ** BEGIN: footer.jsp ** //-->
+
+
+
+
+
+
+
+
+</td>
+</tr>
+</table>
+
+<!-- ** END: Content Table ** //-->
+
+<!-- ** BEGIN: Footer Table ** //-->
+
+<div id="footer" style="clear: both;">
+    <div class="footleft">
+        <a href="/en/resources/contacts">Contact Us</a>
+    </div>
+	
+    <div class="botbar"><img src="/images/spacer.gif" alt="" height="23" width="1"></div>
+
+    <div class="footleft2">
+         &copy; 2019, Oracle Corporation and/or its affiliates. 
+        <a href="/en/home/terms">Terms of Use</a>. <a href="http://www.oracle.com/us/legal/privacy/index.html">Privacy Policy</a>. <a href="http://www.oracle.com/us/legal/third-party-trademarks/third-party-trademarks-078568.html">Trademarks</a>
+    </div>
+
+    <div class="footright">
+        <img src="/images/common/logo_oracle_footer.gif" alt="Oracle Corporation" height="22" width="91">
+    </div>
+
+    <div style="clear: both;"><img src="/images/spacer.gif" alt="" height="30" width="1"></div>
+</div>
+
+<!-- ** END: Footer Table ** //-->
+
+
+
+<!-- ** Menu Start ** //-->
+
+
+
+</body>
+</html>
+<!-- ** END: footer.jsp ** //-->
+
+

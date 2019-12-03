@@ -1,0 +1,1088 @@
+
+<!-- ** BEGIN: header.jsp ** //-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3c.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+<head>
+    
+
+   
+    <link href="/includes/css/menu.css" rel="stylesheet" type="text/css"></link>
+    <link href="/includes/css/style.css" rel="stylesheet" type="text/css"></link>
+    <!--[if lt IE 6]><link href="/includes/css/style5.css" rel="stylesheet" type="text/css" ></link><![endif]-->
+    <!--[if gte IE 5]><link href="/includes/css/style6.css" rel="stylesheet" type="text/css" ></link><![endif]-->
+    <link href="/includes/css/tabs.css"  rel="stylesheet" type="text/css"></link>
+
+    <script type="text/javascript" src="/includes/scripts/tabs.js"></script>
+    <script type="text/javascript" src="/includes/scripts/menu.js"></script>
+   
+
+    
+
+    
+        <title>The Java Community Process(SM) Program - communityprocess - maintenance</title>
+    
+
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+
+
+<body onload="P7_initPM(0,1,0,0,-1)">
+
+    <a name="top"></a>
+
+    <div id="header">
+	<div id="logo">
+		<a href="/en/home/index"><img src="/images/spacer.gif" alt="Java Community Process" height="81" width="151"></a>
+	</div>
+	<div id="tools">
+		<div class="search">
+			<form name="search" action="/en/jsr/summary" method="get" onsubmit="return validate_search()">
+				<input name="id" value="Search JSRs" size="16" class="form" onfocus="nullify_if_equal(this, 'Search JSRs')" type="text">
+				<a href="javascript:document.search.submit()" onclick="return validate_search()"><img src="/images/button_go.gif" width="21" height="16" border="0" alt="Submit this Search" name="sub_search"></a>
+			</form>
+		</div>
+		<div class="tools">
+			<a href="/en/press/pressroom">Press Room</a> &nbsp;|&nbsp;
+			<a href="http://java.com/java/download/index.jsp?cid=jdp78399">Get Java Here</a> &nbsp;|&nbsp;
+			<!-- <a href="javascript:void(0)">Print Format</a> &nbsp;|&nbsp;&nbsp; -->
+		</div>
+
+	</div>
+	<div style="clear: right;"></div>
+
+        
+
+	<div class="topbar"><img src="/images/spacer.gif" alt="" height="3" width="154"></div>
+	<div id="update"> </div>
+    </div>
+
+
+    
+
+        <!-- ** BEGIN: Content Table ** //-->
+
+        <table width="100%" border="0" cellpadding="0" cellspacing="0">
+
+            <tr>
+
+                <!-- ** BEGIN: Navigation Column ** //-->
+                <td width="150" id="leftcontent" valign="top">
+                    <!-- Navigation Placeholder //-->
+
+                    
+
+                    <div class="bar"><img src="/images/hr_dots1.gif" alt="" height="3" width="150"></div>
+
+        <!-- begin find JSRs form -->
+        <!-- IMPORTANT! do not convert this form to Struts < html : form > tag.  javascript change of form.action property fails. -->
+        <img src="/images/hd_find-jsrs.gif" alt="Find JSRs" height="18" width="150">
+        <form name="findjsr" action="/en/jsr/summary" method="get" class="pt5" onsubmit="return validate_findjsr()">
+            <input name="id" size="18" class="form" value="Search JSRs" onfocus="nullify_if_equal(this, 'Search JSRs')" type="text">
+	    <a href="javascript:document.findjsr.submit()" onclick="return validate_findjsr()"><img src="/images/button_go.gif" width="21" height="16" border="0" alt="Submit this Search" name="sub_search"></a>
+        </form><br><br>
+
+        <!-- ** Menu Start ** //-->
+
+        <ul id="p7PMnav">
+            <li><a href="/en/jsr/platform">JSRs by Platform</a></li>
+            <li><a href="/en/jsr/tech">JSRs by Technology</a></li>
+            <li><a href="/en/jsr/stage">JSRs by Stage</a></li>
+            <li><a href="/en/jsr/ec">JSRs by Committee</a></li>
+            <li><a href="/en/jsr/all">List of All JSRs</a></li>
+
+            <!--end find JSRs form -->
+            <div style="clear: both;"><img src="/images/spacer.gif" alt="" height="25" width="1"></div>
+
+            <!--begin my JCP -->
+            <img src="/images/hd_my-jcp.gif" alt="My JCP" height="18" width="150">
+            
+
+          <form name="login" method="get" action="/en/user/login" >
+            <input name="Sign-in" type="submit" title="Sign-in" value="Sign-in" />
+          </form>
+
+            <div style="clear:both"><img src="/images/global/spacer.gif" width="1" height="3" alt=""></div>
+            <div class="noNav">
+                <a href="/en/user/register">Register for Site</a>
+            </div>
+
+             <div class="bar"><img src="/images/hr_dots1.gif" alt="" height="3" width="150"></div>
+           <div class="noNav" style="color: #666666; padding: 0;">
+              Use of JCP site is subject to the
+              <a href="/en/home/terms" style="display:inline;padding: 0">JCP Terms of Use</a> and the
+              <a href="http://www.oracle.com/us/legal/privacy/index.html" style="display:inline;padding: 0" href="">Oracle Privacy Policy</a>
+          </div>
+
+            
+
+            <div style="clear:both"><img src="/images/global/spacer.gif" width="1" height="25" alt=""></div>
+
+            <!--begin JCP info -->
+            <img src="/images/hd_jcp-info.gif" alt="JCP Info" height="18" width="150">
+
+            <li><a href="/en/procedures/overview" class="p7PMtrg">About JCP</a>
+                <ul>
+                    <li><a href="/en/procedures/overview">Program Overview</a></li>
+                    <li><a href="/en/procedures/jcp2">JCP Process Document</a></li>
+                    <li><a href="/en/whatsnew/calendar">Calendar</a></li>
+                    <li><a href="/en/participation/members">JCP Members</a></li>
+                    <li><a href="/en/participation/committee">Executive Committee</a></li>
+                    <li><a href="/en/whatsnew/elections">Elections</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/en/participation/overview" class="p7PMtrg">Get Involved</a>
+		<ul>
+                    <li><a href="/en/participation/overview">Overview</a></li>
+                    <li><a href="/en/participation/membership">Becoming a JCP Member</a></li>
+		</ul>
+            </li>
+
+            <li><a href="/en/resources/contents" class="p7PMtrg">Community Resources</a>
+                <ul>
+                    <li><a href="/en/resources/contents">Overview</a></li>
+                    <li><a href="/en/resources/tutorials">Tutorials</a></li>
+                    <li><a href="/en/resources/multimedia">JCP Podcasts</a></li>
+                    <li><a href="/en/resources/guide">Spec Lead Guide</a></li>
+                    <li><a href="/en/resources/tdk">TCK Tool & Info</a></li>
+                    <li><a href="/en/resources/license_reference">License Reference</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/en/press/pmo" class="p7PMtrg">Community News</a>
+                <ul>
+                    <li><a href="/en/press/pmo">News</a></li>
+                    <li><a href="/en/press/news/awards/awards_main">Programs &amp; Awards</a></li>
+                    <li><a href="/en/press/releases">Press Releases</a></li>
+                    <li><a href="/en/press/success">Success Stories</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/en/introduction/faq">FAQ</a></li>
+
+            <li><a href="/en/resources/contacts">Contact Us</a></li>
+
+            <div style="clear: both;"><img src="/images/spacer.gif" alt="" height="25" width="1"></div>
+
+            <!--[if lte IE 6]><style>#p7PMnav a{height:1em;}#p7PMnav li{height:1em;float:left;clear:both;width:100%}</style><![endif]-->
+            <!--[if IE 6]><style>#p7PMnav li{clear:none;}</style><![endif]-->
+            <!--[if IE 7]><style>#p7PMnav a{zoom:100%;}#p7PMnav li{float:left;clear:both;width:100%;}</style><![endif]-->
+        </ul>
+
+        
+
+        <!--begin ad space -->
+        <div class="ads">
+            <a href="http://java.com/java/download/index.jsp?cid=jdp78399" target="_blank"><img style="display: ;" src="/images/ad_banner2.gif" alt="Ad Banner" border="1" height="70" width="150"></a>
+        </div>
+        <!--end ad space -->
+
+<!-- ** Menu End ** //-->
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;<br>
+
+    
+
+                    &nbsp;<br>
+                    <img src="/images/common/trans.gif" alt="" width="1" height="150"><br>
+
+              
+
+
+
+                </td>
+                <!-- ** END: Navigation Column ** //-->
+
+                <!-- ** BEGIN: Gutter Column ** //-->
+		<td width="10" nowrap><img src="/images/common/trans.gif" alt="" width="10" height="1"></td>
+                <!-- ** END: Gutter Column ** //-->
+
+                <!-- ** BEGIN: Content Column ** //-->
+                <td width="100%" valign="top">
+
+    
+<script type="text/javascript">
+
+String.prototype.trim = function() {
+        return this.replace(/^\s+|\s+$/g,"");
+}
+String.prototype.ltrim = function() {
+        return this.replace(/^\s+/,"");
+}
+String.prototype.rtrim = function() {
+        return this.replace(/\s+$/,"");
+}
+
+function validate_search() {
+	if (document.search.id.value == "Search JSRs" || document.search.id.value.trim().length == 0) {
+		alert("Search terms must be entered first");
+		return false;
+	}
+	return true;
+}
+
+function validate_findjsr() {
+	if (document.findjsr.id.value == "Search JSRs" || document.findjsr.id.value.trim().length == 0) {
+		alert("Search terms must be entered first");
+		return false;
+	}
+	return true;
+}
+
+function nullify_if_equal(field, str) {
+	// alert("val=" + field.value);
+	if (field.value == str) {
+		field.value = "";
+	}
+}
+
+</script>
+<!-- ** END: header.jsp ** //-->
+
+
+
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+  <meta content="text/html; charset=ISO-8859-1"
+ http-equiv="content-type">
+  <title>change_log</title>
+</head>
+<body>
+<big><big><big><span style="font-weight: bold;">JSR
+135&nbsp;Maintenance release change log<br>
+<small><small><small><small><br>
+<span style="font-weight: bold;"></span><br>
+</small></small></small></small></span><small><small><small><small><big>Maintenance</big></small></small></small></small><small><small><small><small><big>
+</big></small></small></small><small><small><small><big>lead : Lakshmi
+Dontamsetti, Aplix Corportion. <br>
+Email id : lakshmi@aplixcorp.com<br>
+<br>
+Maintenance release version : From 1.2 to 1.3<br>
+<br>
+</big></small></small></small></small></big></big></big>
+<table style="text-align: left; width: 1304px; height: 2030px;"
+ border="1" cellpadding="2" cellspacing="2">
+  <tbody>
+    <tr>
+      <td style="width: 226px; font-weight: bold;">Number</td>
+      <td style="width: 433px; font-weight: bold;">Changes</td>
+      <td style="width: 501px; font-weight: bold;">Reason</td>
+      <td style="font-weight: bold;">Status</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td><span class="Apple-style-span"
+ style="border-collapse: separate; color: rgb(0, 0, 0); font-family: 'Times New Roman'; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: 2; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; font-size: medium;"><span
+ class="Apple-style-span" style=""><br>
+Add<span class="Apple-converted-space">&nbsp;</span><code>quality</code>,<span
+ class="Apple-converted-space">&nbsp;</span><code>colors</code>,<span
+ class="Apple-converted-space">&nbsp;</span><code>progressive</code>,<span
+ class="Apple-converted-space">&nbsp;</span><code>interlace</code><span
+ class="Apple-converted-space">&nbsp;</span>and<span
+ class="Apple-converted-space">&nbsp;</span><code>type</code><span
+ class="Apple-converted-space">&nbsp;</span>as new keys for encoding
+format string.
+      <p><code>quality</code><span class="Apple-converted-space">&nbsp;</span>is
+the quality parameter related to the format. E.g. in jpeg it would be
+the number 0 - 100 to specify the quality of the image.</p>
+      <p><code>colors</code><span class="Apple-converted-space">&nbsp;</span>tells
+the number of colors in the image,<span class="Apple-converted-space">&nbsp;</span><code>progressive</code><span
+ class="Apple-converted-space">&nbsp;</span>tells if the image is
+progressive and<span class="Apple-converted-space">&nbsp;</span><code>interlace</code><span
+ class="Apple-converted-space">&nbsp;</span>tells if the image is
+interlaced</p>
+      <p><code>type</code><span class="Apple-converted-space">&nbsp;</span>tells
+the type of the image. E.g. jpeg images can be encoded either as JFIF
+or EXIF so type can be used to specify which encoding is used.</p>
+      <p></p>
+      </span></span></td>
+      <td><span class="Apple-style-span"
+ style="border-collapse: separate; color: rgb(0, 0, 0); font-family: 'Times New Roman'; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: 2; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; font-size: medium;"><span
+ class="Apple-style-span" style="">Encoding parameters for the images
+in VideoControl.getSnapshot are not sufficient. It allows you only to
+specify the image as a png or jpeg image.
+      <p>E.g. in case of PNG i'ts not possible to specify whether the
+image is wanted in grayscale, 256 colour indexed image or in full
+colour.</p>
+      </span></span></td>
+      <td><span class="Apple-style-span"
+ style="border-collapse: separate; color: rgb(0, 0, 0); font-family: 'Times New Roman'; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: 2; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; font-size: medium;"><span
+ class="Apple-style-span" style="">ACCEPTED
+      <p>for 1.1</p>
+      </span></span></td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td><span class="Apple-style-span"
+ style="border-collapse: separate; color: rgb(0, 0, 0); font-family: 'Times New Roman'; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: 2; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; font-size: medium;"><span
+ class="Apple-style-span" style="">Specify explicitly in the
+documentation that unrecognized parameters in encoding strings will
+throw Exception.</span></span></td>
+      <td><span class="Apple-style-span"
+ style="border-collapse: separate; color: rgb(0, 0, 0); font-family: 'Times New Roman'; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: 2; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; font-size: medium;"><span
+ class="Apple-style-span" style=""><br>
+Current specification is not clear what is the expected outcome if
+unrecognized parameters are used. Customized parameters are allowed but
+it's unspecified how they are treated in an implementation that doesn't
+recognize them.<br>
+      </span></span></td>
+      <td><span class="Apple-style-span"
+ style="border-collapse: separate; color: rgb(0, 0, 0); font-family: 'Times New Roman'; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: 2; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; font-size: medium;"><span
+ class="Apple-style-span" style="">ACCEPTED
+      <p>for 1.1</p>
+      </span></span></td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td><span class="Apple-style-span"
+ style="border-collapse: separate; color: rgb(0, 0, 0); font-family: 'Times New Roman'; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: 2; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; font-size: medium;"><span
+ class="Apple-style-span" style="">Specify explicitly in the
+documentation that parameters in encoding strings that are recognized
+but contain a false value will throw Exception.</span></span></td>
+      <td><span class="Apple-style-span"
+ style="border-collapse: separate; color: rgb(0, 0, 0); font-family: 'Times New Roman'; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: 2; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; font-size: medium;"><span
+ class="Apple-style-span" style=""><br>
+If additional parameters are taken in use with image encoding formats
+it is possible to require picture in formats that are not supported. In
+those cases Exception should be thrown. Otherwise the application
+doesn't have any way to tell if it got the image in the exactly
+required format.
+      <p>E.g. if image is required with width and heigth that are not
+supported then MediaException should be thrown.</p>
+      </span></span></td>
+      <td><span class="Apple-style-span"
+ style="border-collapse: separate; color: rgb(0, 0, 0); font-family: 'Times New Roman'; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: 2; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; font-size: medium;"><span
+ class="Apple-style-span" style="">ACCEPTED
+      <p>for 1.1</p>
+      </span></span></td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td><span class="Apple-style-span"
+ style="border-collapse: separate; color: rgb(0, 0, 0); font-family: 'Times New Roman'; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: 2; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; font-size: medium;"><span
+ class="Apple-style-span" style="">Specify tone sequence format as a
+file format. Suffix of a tone sequence file shall be<span
+ class="Apple-converted-space">&nbsp;</span><code>.jts</code>.</span></span></td>
+      <td><span class="Apple-style-span"
+ style="border-collapse: separate; color: rgb(0, 0, 0); font-family: 'Times New Roman'; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: 2; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; font-size: medium;"><span
+ class="Apple-style-span" style=""><br>
+Tone sequence format is not fully specified as a file format. The
+structure and MIME type are specified but it's lacking the suffix of a
+file. If the format is going to be more widely used then the file
+suffix is needed in order to make the www servers to recognize the file
+and give it the correct MIME type for the transportation.
+      <p>Since the format already has a MIME type, a Player can be
+created for tone sequence content by using InputStream and MIME type.
+In order to create a Player from locator, tone sequence must have a
+recognizable file suffix.</p>
+      <p>MIME type specification for tone sequence in Manager
+documentation doesn't clearly point to the tone sequence format
+specified in ToneControl.</p>
+      </span></span></td>
+      <td><span class="Apple-style-span"
+ style="border-collapse: separate; color: rgb(0, 0, 0); font-family: 'Times New Roman'; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: 2; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; font-size: medium;"><span
+ class="Apple-style-span" style="">ACCEPTED
+      <p>for 1.1</p>
+      </span></span></td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td><span class="Apple-style-span"
+ style="border-collapse: separate; color: rgb(0, 0, 0); font-family: 'Times New Roman'; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: 2; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; font-size: medium;"><span
+ class="Apple-style-span" style="">Accept MIME types as formats in
+encoding strings.</span></span></td>
+      <td><span class="Apple-style-span"
+ style="border-collapse: separate; color: rgb(0, 0, 0); font-family: 'Times New Roman'; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: 2; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; font-size: medium;"><span
+ class="Apple-style-span" style=""><br>
+Current specification has a limited set of formats that can be used for
+encoding. The specification is written in a way that prevents one from
+adding own formats. Making MIME types as acceptable encoding formats
+would let the implementations support any formats they like.<br>
+      </span></span></td>
+      <td><span class="Apple-style-span"
+ style="border-collapse: separate; color: rgb(0, 0, 0); font-family: 'Times New Roman'; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: 2; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; font-size: medium;"><span
+ class="Apple-style-span" style="">ACCEPTED
+      <p>for 1.1</p>
+      </span></span></td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td><span class="Apple-style-span"
+ style="border-collapse: separate; color: rgb(0, 0, 0); font-family: 'Times New Roman'; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: 2; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; font-size: medium;"><span
+ class="Apple-style-span" style="">Document jpeg as the recommended
+format to be used in image capturing.</span></span></td>
+      <td><span class="Apple-style-span"
+ style="border-collapse: separate; color: rgb(0, 0, 0); font-family: 'Times New Roman'; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: 2; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; font-size: medium;"><span
+ class="Apple-style-span" style=""><br>
+png is the default format for capture images. That's fine but the
+documentation should be rewritten to say that if the platform supports
+jpeg then application should use that instead because jpeg images
+require a lot less space than png images.<br>
+      </span></span></td>
+      <td><span class="Apple-style-span"
+ style="border-collapse: separate; color: rgb(0, 0, 0); font-family: 'Times New Roman'; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: 2; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; font-size: medium;"><span
+ class="Apple-style-span" style="">ACCEPTED
+      <p>for 1.1</p>
+      </span></span></td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td><span class="Apple-style-span"
+ style="border-collapse: separate; color: rgb(0, 0, 0); font-family: 'Times New Roman'; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: 2; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; font-size: medium;"><span
+ class="Apple-style-span" style="">Add recommended security practices
+as part of the specification.</span></span></td>
+      <td><span class="Apple-style-span"
+ style="border-collapse: separate; color: rgb(0, 0, 0); font-family: 'Times New Roman'; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: 2; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; font-size: medium;"><span
+ class="Apple-style-span" style=""><br>
+Implementors of MMAPI on top of MIDP 2.0 require recommended practices
+for security. Since MMAPI is an optional package the correct place for
+the practices is in the MMAPI documentation. It can be put right into
+documentation or delivered as a separate addendum together with the
+rest of the MMAPI documents.
+      <p>The security practices also serves implementations on top of
+other profiles than MIDP 2.0.</p>
+      </span></span></td>
+      <td><span class="Apple-style-span"
+ style="border-collapse: separate; color: rgb(0, 0, 0); font-family: 'Times New Roman'; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: 2; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; font-size: medium;"><span
+ class="Apple-style-span" style="">ACCEPTED
+      <p>for 1.1</p>
+      </span></span></td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td><span class="Apple-style-span"
+ style="border-collapse: separate; color: rgb(0, 0, 0); font-family: 'Times New Roman'; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: 2; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; font-size: medium;"><span
+ class="Apple-style-span" style="">Revise the GUIControl and
+VideoControl examples.</span></span></td>
+      <td><span class="Apple-style-span"
+ style="border-collapse: separate; color: rgb(0, 0, 0); font-family: 'Times New Roman'; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: 2; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; font-size: medium;"><span
+ class="Apple-style-span" style="">
+      <ol>
+        <li>USE_GUI_PRIMITIVE/ LCDUI + AWT example makes a double
+string in "new String("java.awt.Component")"</li>
+        <li>In USE_DIRECT_VIDEO example some people read that canvas is
+passed as a null. It should be made clear that the Canvas is get
+somewhere before its used.</li>
+        <li>Again in USE_DIRECT_VIDEO example the braces are missing.
+Even if vc is null it's still used a few lines later.</li>
+      </ol>
+      </span></span></td>
+      <td><span class="Apple-style-span"
+ style="border-collapse: separate; color: rgb(0, 0, 0); font-family: 'Times New Roman'; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: 2; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; font-size: medium;"><span
+ class="Apple-style-span" style="">ACCEPTED
+      <p>for 1.1</p>
+      </span></span></td>
+    </tr>
+    <tr>
+      <td>9</td>
+      <td><span class="Apple-style-span"
+ style="border-collapse: separate; color: rgb(0, 0, 0); font-family: 'Times New Roman'; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: 2; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; font-size: medium;"><span
+ class="Apple-style-span" style=""><br>
+Documentation for GUIControl.initDisplayMode() method should clearly
+say that for different modes the arg contains objects of totally
+different type.<br>
+      <br>
+      </span></span></td>
+      <td><span class="Apple-style-span"
+ style="border-collapse: separate; color: rgb(0, 0, 0); font-family: 'Times New Roman'; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: 2; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; font-size: medium;"><span
+ class="Apple-style-span" style="">It's already said in the
+documentation that the semantics are different but it could still be
+said more clearly.</span></span></td>
+      <td><span class="Apple-style-span"
+ style="border-collapse: separate; color: rgb(0, 0, 0); font-family: 'Times New Roman'; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: 2; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; font-size: medium;"><span
+ class="Apple-style-span" style="">ACCEPTED
+      <p>for 1.1</p>
+      </span></span></td>
+    </tr>
+    <tr>
+      <td>10</td>
+      <td><span class="Apple-style-span"
+ style="border-collapse: separate; color: rgb(0, 0, 0); font-family: 'Times New Roman'; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: 2; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; font-size: medium;"><span
+ class="Apple-style-span" style=""><br>
+Document that System.getProperty() method to query encodings returns
+strings that contain the "encoding=", or otherwise make it clear that
+the pieces of the string can be used as they are without the need to
+add anything to them.<br>
+      <br>
+      </span></span></td>
+      <td><span class="Apple-style-span"
+ style="border-collapse: separate; color: rgb(0, 0, 0); font-family: 'Times New Roman'; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: 2; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; font-size: medium;"><span
+ class="Apple-style-span" style="">RI already works like this but from
+reading the documentation it isn't obvious.</span></span></td>
+      <td><span class="Apple-style-span"
+ style="border-collapse: separate; color: rgb(0, 0, 0); font-family: 'Times New Roman'; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: 2; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; font-size: medium;"><span
+ class="Apple-style-span" style="">ACCEPTED
+      <p>for 1.1</p>
+      </span></span></td>
+    </tr>
+    <tr>
+      <td>11</td>
+      <td><span class="Apple-style-span"
+ style="border-collapse: separate; color: rgb(0, 0, 0); font-family: 'Times New Roman'; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: 2; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; font-size: medium;"><span
+ class="Apple-style-span" style="">Specify that
+VideoControl.getSnapshot is optional.</span></span></td>
+      <td><span class="Apple-style-span"
+ style="border-collapse: separate; color: rgb(0, 0, 0); font-family: 'Times New Roman'; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: 2; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; font-size: medium;"><span
+ class="Apple-style-span" style=""><br>
+Even at the moment the implementation doesn't necessarily need to
+return an image from this method but the documentation should clearly
+say that it may not work with all formats. The primary need for the
+method was to support camera but for other visual content it's possible
+that snapshots are not supported.<br>
+      </span></span></td>
+      <td><span class="Apple-style-span"
+ style="border-collapse: separate; color: rgb(0, 0, 0); font-family: 'Times New Roman'; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: 2; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; font-size: medium;"><span
+ class="Apple-style-span" style="">ACCEPTED
+      <p>for 1.1</p>
+      </span></span></td>
+    </tr>
+    <tr>
+      <td>12</td>
+      <td><span class="Apple-style-span"
+ style="border-collapse: separate; color: rgb(0, 0, 0); font-family: 'Times New Roman'; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: 2; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; font-size: medium;"><span
+ class="Apple-style-span" style="">Specify how the recording format is
+set when OutputStream is used.</span></span></td>
+      <td><span class="Apple-style-span"
+ style="border-collapse: separate; color: rgb(0, 0, 0); font-family: 'Times New Roman'; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: 2; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; font-size: medium;"><span
+ class="Apple-style-span" style=""><br>
+If the recording is done by using a locator the format can be easily
+specified but the specification doesn't exactly tell how to do it when
+OutputStream is used. In that case the format is set when the Player
+that is recorded is created by locator where the format can be
+specified. Otherwise the recording format is the same as the input
+format.<br>
+      </span></span></td>
+      <td><span class="Apple-style-span"
+ style="border-collapse: separate; color: rgb(0, 0, 0); font-family: 'Times New Roman'; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: 2; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; font-size: medium;"><span
+ class="Apple-style-span" style="">ACCEPTED
+      <p>for 1.1</p>
+      </span></span></td>
+    </tr>
+    <tr>
+      <td>13</td>
+      <td><span class="Apple-style-span"
+ style="border-collapse: separate; color: rgb(0, 0, 0); font-family: 'Times New Roman'; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: 2; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; font-size: medium;"><span
+ class="Apple-style-span" style="">Make RecordControl.setRecordStream
+to throw SecurityException.</span></span></td>
+      <td><span class="Apple-style-span"
+ style="border-collapse: separate; color: rgb(0, 0, 0); font-family: 'Times New Roman'; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: 2; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; font-size: medium;"><span
+ class="Apple-style-span" style="">MMAPI security recommended practices
+require RecordControl.setRecordStream to throw an Exception.</span></span></td>
+      <td><span class="Apple-style-span"
+ style="border-collapse: separate; color: rgb(0, 0, 0); font-family: 'Times New Roman'; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: 2; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; font-size: medium;"><span
+ class="Apple-style-span" style="">ACCEPTED
+      <p>for 1.1</p>
+      </span></span></td>
+    </tr>
+    <tr>
+      <td>14</td>
+      <td><span class="Apple-style-span"
+ style="border-collapse: separate; color: rgb(0, 0, 0); font-family: 'Times New Roman'; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: 2; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; font-size: medium;"><span
+ class="Apple-style-span" style="">Specify a locator for radio.</span></span></td>
+      <td><span class="Apple-style-span"
+ style="border-collapse: separate; color: rgb(0, 0, 0); font-family: 'Times New Roman'; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: 2; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; font-size: medium;"><span
+ class="Apple-style-span" style="">Specify a locator to create a Player
+for radio in given frequency.</span></span></td>
+      <td><span class="Apple-style-span"
+ style="border-collapse: separate; color: rgb(0, 0, 0); font-family: 'Times New Roman'; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: 2; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; font-size: medium;"><span
+ class="Apple-style-span" style="">ACCEPTED
+      <p>for 1.1</p>
+      </span></span></td>
+    </tr>
+    <tr>
+      <td>15</td>
+      <td><span class="Apple-style-span"
+ style="border-collapse: separate; color: rgb(0, 0, 0); font-family: 'Times New Roman'; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: 2; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; font-size: medium;"><span
+ class="Apple-style-span" style="">Clarify the low level audio streaming</span></span></td>
+      <td><span class="Apple-style-span"
+ style="border-collapse: separate; color: rgb(0, 0, 0); font-family: 'Times New Roman'; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: 2; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; font-size: medium;"><span
+ class="Apple-style-span" style=""><br>
+Include a discussion on how MMAPI can be used as an interface for
+sending raw data to the audio device. Specifically, it relates to
+specifying a low level audio encoding for sending ("streaming")
+unbounded data to the audio device.<br>
+      </span></span></td>
+      <td><span class="Apple-style-span"
+ style="border-collapse: separate; color: rgb(0, 0, 0); font-family: 'Times New Roman'; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: 2; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; font-size: medium;"><span
+ class="Apple-style-span" style="">ACCEPTED
+      <p>for 1.1</p>
+      </span></span></td>
+    </tr>
+    <tr>
+      <td>16</td>
+      <td><span class="Apple-style-span"
+ style="border-collapse: separate; color: rgb(0, 0, 0); font-family: 'Times New Roman'; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: 2; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; font-size: medium;"><span
+ class="Apple-style-span" style="">Clarify the behaviour during
+recording when the memory runs out</span></span></td>
+      <td><span class="Apple-style-span"
+ style="border-collapse: separate; color: rgb(0, 0, 0); font-family: 'Times New Roman'; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: 2; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; font-size: medium;"><span
+ class="Apple-style-span" style="">During a recording session, if
+recording space ran out, implementation should auto commit the recorded
+data and send RECORD_STOPPED event</span></span></td>
+      <td><span class="Apple-style-span"
+ style="border-collapse: separate; color: rgb(0, 0, 0); font-family: 'Times New Roman'; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: 2; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; font-size: medium;"><span
+ class="Apple-style-span" style="">ACCEPTED
+      <p>for 1.1</p>
+      </span></span></td>
+    </tr>
+    <tr>
+      <td>17</td>
+      <td><span class="Apple-style-span"
+ style="border-collapse: separate; color: rgb(0, 0, 0); font-family: 'Times New Roman'; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: 2; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; font-size: medium;"><span
+ class="Apple-style-span" style="">Add query of the version of the
+MMAPI version implemented.</span></span></td>
+      <td><span class="Apple-style-span"
+ style="border-collapse: separate; color: rgb(0, 0, 0); font-family: 'Times New Roman'; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: 2; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; font-size: medium;"><span
+ class="Apple-style-span" style="">The functionality of the maintenance
+release is slightly different from the MMAPI 1.0 so the application
+should be able to query the version of the MMAPI.</span></span></td>
+      <td><span class="Apple-style-span"
+ style="border-collapse: separate; color: rgb(0, 0, 0); font-family: 'Times New Roman'; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: 2; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; font-size: medium;"><span
+ class="Apple-style-span" style="">ACCEPTED
+      <p>for 1.1</p>
+      </span></span></td>
+    </tr>
+    <tr>
+      <td>18</td>
+      <td><span class="Apple-style-span"
+ style="border-collapse: separate; color: rgb(0, 0, 0); font-family: 'Times New Roman'; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: 2; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; font-size: medium;"><span
+ class="Apple-style-span" style="">Remove the requirement that
+VideoControl.getSnapshot supports at least PNG.</span></span></td>
+      <td><span class="Apple-style-span"
+ style="border-collapse: separate; color: rgb(0, 0, 0); font-family: 'Times New Roman'; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: 2; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; font-size: medium;"><span
+ class="Apple-style-span" style=""><br>
+Originally PNG was required to guarantee that images are returned in
+some known format. PNG isn't really suitable to store photographs and
+otherwise there is no need for PNG decoder in implementations so
+keeping PNG as mandotory format would just be a burden for implementors.<br>
+      </span></span></td>
+      <td><span class="Apple-style-span"
+ style="border-collapse: separate; color: rgb(0, 0, 0); font-family: 'Times New Roman'; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: 2; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; font-size: medium;"><span
+ class="Apple-style-span" style="">ACCEPTED
+      <p>for 1.1</p>
+      </span></span></td>
+    </tr>
+    <tr>
+      <td>19</td>
+      <td><span class="Apple-style-span"
+ style="border-collapse: separate; color: rgb(0, 0, 0); font-family: 'Times New Roman'; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: 2; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; font-size: medium;"><span
+ class="Apple-style-span" style="">Fix the ABNF presentation of the
+locator strings</span></span></td>
+      <td><span class="Apple-style-span"
+ style="border-collapse: separate; color: rgb(0, 0, 0); font-family: 'Times New Roman'; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: 2; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; font-size: medium;"><span
+ class="Apple-style-span" style="">
+      <p>video_params say that video_param parameters are separated by
+"&amp;". But in the video_param definition it's said that video_param
+consists of 1* ( equals to 1..N) of the following parameters. Instead
+of 1..N parameters exactly one is needed.</p>
+      <p>Same error occurs also elsewhere in the locator documentation
+and must be corrected.</p>
+      </span></span></td>
+      <td><span class="Apple-style-span"
+ style="border-collapse: separate; color: rgb(0, 0, 0); font-family: 'Times New Roman'; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: 2; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; font-size: medium;"><span
+ class="Apple-style-span" style="">ACCEPTED
+      <p>for 1.1</p>
+      </span></span></td>
+    </tr>
+    <tr>
+      <td>20</td>
+      <td><span class="Apple-style-span"
+ style="border-collapse: separate; color: rgb(0, 0, 0); font-family: 'Times New Roman'; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: 2; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; font-size: medium;"><span
+ class="Apple-style-span" style="">Address the CDC security in the
+specification</span></span></td>
+      <td><span class="Apple-style-span"
+ style="border-collapse: separate; color: rgb(0, 0, 0); font-family: 'Times New Roman'; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: 2; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; font-size: medium;"><span
+ class="Apple-style-span" style="">
+      <p>MMAPI 1.1 contains a security addendum to specify security
+permissions for implementations on top of MIDP. However, MMAPI is meant
+for all J2ME profiles not only for MIDP. Therefore, security
+considerations of MMAPI must be specified for CDC/CDC-based profiles as
+well.</p>
+      <p>Security addendum should speficically address CDC by
+specifying the java.lang.Permission based security permissions for
+MMAPI.</p>
+      </span></span></td>
+      <td><span class="Apple-style-span"
+ style="border-collapse: separate; color: rgb(0, 0, 0); font-family: 'Times New Roman'; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: 2; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; font-size: medium;"><span
+ class="Apple-style-span" style="">PROPOSED
+      <p>for 1.2</p>
+      </span></span></td>
+    </tr>
+    <tr>
+      <td>21</td>
+      <td>Explicitly address MIDP 3.0 class-based permission model
+usage in MMAPI .</td>
+      <td>The MMAPI 1.2 specification currently defines the expected
+handling of permissions for MMAPI on MIDP 2.0 and CDC implementations
+but does not allow or specify behavior for the new MIDP 3.0 class-based
+permission model. The specification should be updated to include
+behavior for MIDP 3.0 implementations.<br>
+      </td>
+      <td>PROPOSED<br>
+      <br>
+for 1.3</td>
+    </tr>
+    <tr>
+      <td>22</td>
+      <td>Place PlayerPermission class in the javax.microedition.media
+package.</td>
+      <td><br>
+The PlayerPermission class is placed in the top directory of the
+specification. It has to be placed in the right package
+javax.microedition.media. <br>
+      </td>
+      <td>PROPOSED<br>
+      <br>
+for 1.3</td>
+    </tr>
+    <tr>
+      <td>23</td>
+      <td>Include MIDP 3.0 in "Related Literature" section of&nbsp; the
+Overview page.</td>
+      <td><br>
+MIDP 3.0 mandates JSR 135. Therefore, MIDP 3.0 should also be included
+in the "Related Literature" section. <br>
+      </td>
+      <td>PROPOSED<br>
+      <br>
+for 1.3</td>
+    </tr>
+    <tr>
+      <td>24</td>
+      <td>Remove the inaccurate status of JSR 118 in "Introduction"
+section of the Overview page.</td>
+      <td><br>
+The JSR 118 specification is completed. Hence, the MMAPI 1.2 version
+should remove "ongoing" in the phrase "<span class="Apple-style-span"
+ style="border-collapse: separate; color: rgb(0, 0, 0); font-family: 'Times New Roman'; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: 2; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; font-size: medium;"><span
+ style="font-style: italic;">The MMAPI Expert Group has also
+contributed to the <span style="color: rgb(0, 0, 0);">ongoing</span>
+JSR-118 (Mobile Information Device Profile 2.0) JCP specification, and
+the target is to make MMAPI a direct superset of the JSR-118 MIDP 2.0
+Media API.</span>"<br>
+      </span></td>
+      <td>PROPOSED <br>
+      <br>
+for 1.3</td>
+    </tr>
+    <tr>
+      <td>25</td>
+      <td>Change the specification lead&nbsp;to "Aplix Corporation".</td>
+      <td><br>
+The specification lead of JSR 135 has changed from Nokia to Aplix
+Corporation.<br>
+      </td>
+      <td>PROPOSED <br>
+      <br>
+for 1.3</td>
+    </tr>
+    <tr>
+      <td>26</td>
+      <td><br>
+Place the description of &nbsp;"<span class="Apple-style-span"
+ style="border-collapse: separate; color: rgb(0, 0, 0); font-family: 'Times New Roman'; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: 2; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; font-size: medium;"><span
+ class="Apple-style-span" style="">Protocol and Content Agnostic" in
+the right column in </span></span>"Feature" section of the Overview
+page.<br>
+      <span class="Apple-style-span"
+ style="border-collapse: separate; color: rgb(0, 0, 0); font-family: 'Times New Roman'; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: 2; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; font-size: medium;"><span
+ class="Apple-style-span" style=""></span></span></td>
+      <td>The description of the "<span class="Apple-style-span"
+ style="border-collapse: separate; color: rgb(0, 0, 0); font-family: 'Times New Roman'; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: 2; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; font-size: medium;"><span
+ class="Apple-style-span" style="">Protocol and Content Agnostic"
+feature has been placed in the wrong "Feature" column.</span></span></td>
+      <td>PROPOSED <br>
+      <br>
+for 1.3</td>
+    </tr>
+    <tr>
+      <td>27</td>
+      <td>Remove the extra line in the description of "Extensible"
+entry in the "Feature" section of the Overview page. </td>
+      <td><br>
+The extra line is unnecessary &nbsp;in the description of "Extensible"
+entry in the "Feature" section of the Overview page. <br>
+      </td>
+      <td>PROPOSED <br>
+      <br>
+for 1.3</td>
+    </tr>
+    <tr>
+      <td>28</td>
+      <td>Fix the typos for "audio.encodings" in the "System
+Properties" section of the&nbsp;Overview page.</td>
+      <td><br>
+The "System Properties" section has references to "audio.encoding", but
+it should refer to "audio.encodings".<br>
+      </td>
+      <td>PROPOSED <br>
+      <br>
+for 1.3</td>
+    </tr>
+    <tr>
+      <td>29</td>
+      <td>Fix the typos for "video.encodings" in the "System
+Properties" section of the&nbsp;Overview page.</td>
+      <td><br>
+The "System Properties" section has references to "video.encoding", but
+it should refer to "video.encodings".<br>
+      </td>
+      <td>PROPOSED <br>
+      <br>
+for 1.3</td>
+    </tr>
+    <tr>
+      <td>30</td>
+      <td>Fix the typos for "video.snapshot.encodings" in the "System
+Properties" section of the&nbsp;Overview page.</td>
+      <td><br>
+The "System Properties" section has references to
+"video.snapshot.encoding", but it should refer to
+"video.snapshot.encodings".<br>
+      </td>
+      <td>PROPOSED <br>
+      <br>
+for 1.3</td>
+    </tr>
+    <tr>
+      <td>31</td>
+      <td>Correct the mis-formatted html in "Tone Generation" section
+of the&nbsp;Overview page.</td>
+      <td><br>
+The "Tone Generation" section in Overview page has misplaced "nbsp". It
+should be removed. <br>
+      </td>
+      <td>PROPOSED <br>
+      <br>
+for 1.3</td>
+    </tr>
+    <tr>
+      <td>32</td>
+      <td>Correct the "should" and "must" reference in "Feature Sets"
+section in the Overview page with respect to the "Definitions" in the
+previous section. </td>
+      <td><br>
+The "Definitions" section in the Overview page has described the "term"
+and its "definition". Hence, all the "<span style="font-style: italic;">Must</span>"
+and "<span style="font-style: italic;">Should</span>" should be change
+to "MUST" and "SHOULD" in "Feature Sets" section according to the
+"Definition" section described above. <br>
+      </td>
+      <td>PROPOSED <br>
+      <br>
+for 1.3</td>
+    </tr>
+    <tr>
+      <td>33</td>
+      <td>Explicitly address that MIDP 3.0 mandates JSR 135.</td>
+      <td><br>
+MIDP 3.0 specification mandates JSR 135. Therefore, it should be
+explicitly specified in the specification. <br>
+      </td>
+      <td>PROPOSED <br>
+      <br>
+for 1.3</td>
+    </tr>
+    <tr>
+      <td>34</td>
+      <td>Remove the unnecessary code in "Scenario 10: Capture and
+Recording" in Overview page. </td>
+      <td><big><big><big><big><font size="2"><big><big><big><big><span
+ style="font-size: 10pt;"></span></big></big></big></big></font><font
+ size="2"><big><big><big><big><span style="font-size: 10pt;"></span></big></big></big></big></font></big></big></big></big><font
+ face="Arial" size="2"><span
+ style="font-family: Arial; font-size: 10pt;"><o:p></o:p></span></font><br>
+&ldquo;<span style="font-style: italic;">Thread.currentThread().sleep(5000)&rdquo;
+should be &ldquo;Thread.sleep(5000)</span>&rdquo;. Thread.sleep is a
+static method and should not be called on the object; anyway, sleep
+method already acts on the current thread so the call to currentThread
+is not necessary.<br>
+      </td>
+      <td>PROPOSED <br>
+      <br>
+for 1.3</td>
+    </tr>
+    <tr>
+      <td>35</td>
+      <td>Remove the unnecessary "extends java.lang.Object" in the
+DataSource class definition.</td>
+      <td><br>
+Since all classes in Java extends java.lang.Object, it is unnecessary
+to explicitly specify "extends java.lang.Object" in the DataSource
+class definition.<br>
+      </td>
+      <td>PROPOSED <br>
+      <br>
+for 1.3</td>
+    </tr>
+    <tr>
+      <td>36</td>
+      <td>Correct the term "<span style="font-style: italic;">overload</span>"
+in the DataSource constructor.&nbsp; </td>
+      <td><br>
+The constructor of the DataSource should be overridden by the
+subclasses instead of overloaded. <br>
+      </td>
+      <td>PROPOSED <br>
+      <br>
+for 1.3</td>
+    </tr>
+    <tr>
+      <td>37</td>
+      <td>Fix the typo in MediaException class.</td>
+      <td><br>
+Spec says &ldquo;<span style="font-style: italic;">The error message
+string s can later be retrieved by the Throwable.getMessage() method of
+class java.lang.Throwable.</span>&rdquo; It should be &ldquo;<span
+ style="font-style: italic;">The error message string<span
+ style="text-decoration: line-through; color: rgb(0, 0, 0);"> </span><span
+ style="font-weight: bold; text-decoration: line-through; color: rgb(0, 0, 0);">s</span>
+can later be retrieved by the Throwable.getMessage() method of class
+java.lang.Throwable</span>.&rdquo;<br>
+      </td>
+      <td>PROPOSED <br>
+      <br>
+for 1.3</td>
+    </tr>
+    <tr>
+      <td>38</td>
+      <td>Fix the reference of getKeyValue in the MetaDataControl
+class. </td>
+      <td><br>
+In MetaDataControl.getKeyValue, the spec incorrectly refers to
+getKeyValues. It should refer to getKeyValue. <br>
+      </td>
+      <td>PROPOSED <br>
+      <br>
+for 1.3</td>
+    </tr>
+    <tr>
+      <td>39</td>
+      <td>Fix typo in Control class. </td>
+      <td><br>
+The phrase "<span style="font-style: italic;">The set of operations </span><s
+ style="font-style: italic;">are</s><span style="font-style: italic;"> </span><b
+ style="font-style: italic;"><span style="font-weight: bold;">is</span></b><span
+ style="font-style: italic;"> usually functionally related</span>" is
+corrected as specified. <br>
+      </td>
+      <td>PROPOSED <br>
+      <br>
+for 1.3</td>
+    </tr>
+    <tr>
+      <td>40</td>
+      <td>Simplify playback example in the Player class.</td>
+      <td><br>
+The "Simple playback" example refers to methods that have not yet been
+discussed. <br>
+      </td>
+      <td>PROPOSED <br>
+      <br>
+for 1.3</td>
+    </tr>
+    <tr>
+      <td>41</td>
+      <td><br>
+As discussed in MSA 2, throw IllegalArgumentException in
+Player.setLoopCount() method, if media cannot be looped by the
+implementation.<br>
+      </td>
+      <td style="color: rgb(0, 0, 0);"><span style="font-family: Arial;"></span><span
+ class="Apple-style-span"
+ style="border-collapse: separate; font-family: 'Times New Roman'; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: 2; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; font-size: medium;"><span
+ class="Apple-style-span" style="text-align: left;"><font face="Arial"
+ size="2"><span style="font-family: Arial; font-size: 10pt;"></span></font></span></span>Adopting
+the clarification from MSA 2. </td>
+      <td>PROPOSED <br>
+      <br>
+for 1.3</td>
+    </tr>
+  </tbody>
+</table>
+<big><big><big><small><small><small><small><big><br>
+<br>
+<br>
+</big></small></small></small></small><span style="font-weight: bold;"><small><small><small><small></small></small></small></small></span></big></big></big>
+</body>
+</html>
+
+
+
+<!-- ** BEGIN: footer.jsp ** //-->
+
+
+
+
+
+
+
+
+</td>
+</tr>
+</table>
+
+<!-- ** END: Content Table ** //-->
+
+<!-- ** BEGIN: Footer Table ** //-->
+
+<div id="footer" style="clear: both;">
+    <div class="footleft">
+        <a href="/en/resources/contacts">Contact Us</a>
+    </div>
+	
+    <div class="botbar"><img src="/images/spacer.gif" alt="" height="23" width="1"></div>
+
+    <div class="footleft2">
+         &copy; 2019, Oracle Corporation and/or its affiliates. 
+        <a href="/en/home/terms">Terms of Use</a>. <a href="http://www.oracle.com/us/legal/privacy/index.html">Privacy Policy</a>. <a href="http://www.oracle.com/us/legal/third-party-trademarks/third-party-trademarks-078568.html">Trademarks</a>
+    </div>
+
+    <div class="footright">
+        <img src="/images/common/logo_oracle_footer.gif" alt="Oracle Corporation" height="22" width="91">
+    </div>
+
+    <div style="clear: both;"><img src="/images/spacer.gif" alt="" height="30" width="1"></div>
+</div>
+
+<!-- ** END: Footer Table ** //-->
+
+
+
+<!-- ** Menu Start ** //-->
+
+
+
+</body>
+</html>
+<!-- ** END: footer.jsp ** //-->
+

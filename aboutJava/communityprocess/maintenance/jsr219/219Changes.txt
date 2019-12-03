@@ -1,0 +1,12 @@
+Proposed Changes for Security (JSSE) Optional Package 1.0a maintenance release
+----------------------------------------------------------------
+
+overview.html: Add
+"SSLServerSocket functionality is optional in the Security (JSSE) Optional Package. If SSLServerSocket functionality not implemented, then SSLServerSocketFactory instances can not be instantiated and SSLServerSocketFactory.getDefault() and SSLContext.getServerSocketFactory() throw java.lang.UnsupportedOperationException."
+
+overview.html: Add
+"Server mode handshake is optional for SSLSocket. If server mode handshake is not implemented, SSLSocket.setUseClientMode(false) throws java.lang.UnsupportedOperationException."
+
+SSLServerSocketFactory.getDefault(), SSLContext.getServerSocketFactory() : Replace current @throws UnsupportedOperationException clause with "'@throws java.lang.UnsupportedOperationException - if the underlying implementation does not support SSLServerSocket functionality." 
+
+In SSLSocket.setUseClientMode(boolean) : Add "@throws java.lang.UnsupportedOperationException - if the mode is false and    underlying implementation does not support server mode handshake." 

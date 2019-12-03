@@ -1,0 +1,690 @@
+
+<!-- ** BEGIN: header.jsp ** //-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3c.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+<head>
+    
+
+   
+    <link href="/includes/css/menu.css" rel="stylesheet" type="text/css"></link>
+    <link href="/includes/css/style.css" rel="stylesheet" type="text/css"></link>
+    <!--[if lt IE 6]><link href="/includes/css/style5.css" rel="stylesheet" type="text/css" ></link><![endif]-->
+    <!--[if gte IE 5]><link href="/includes/css/style6.css" rel="stylesheet" type="text/css" ></link><![endif]-->
+    <link href="/includes/css/tabs.css"  rel="stylesheet" type="text/css"></link>
+
+    <script type="text/javascript" src="/includes/scripts/tabs.js"></script>
+    <script type="text/javascript" src="/includes/scripts/menu.js"></script>
+   
+
+    
+
+    
+        <title>The Java Community Process(SM) Program - communityprocess - maintenance</title>
+    
+
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+
+
+<body onload="P7_initPM(0,1,0,0,-1)">
+
+    <a name="top"></a>
+
+    <div id="header">
+	<div id="logo">
+		<a href="/en/home/index"><img src="/images/spacer.gif" alt="Java Community Process" height="81" width="151"></a>
+	</div>
+	<div id="tools">
+		<div class="search">
+			<form name="search" action="/en/jsr/summary" method="get" onsubmit="return validate_search()">
+				<input name="id" value="Search JSRs" size="16" class="form" onfocus="nullify_if_equal(this, 'Search JSRs')" type="text">
+				<a href="javascript:document.search.submit()" onclick="return validate_search()"><img src="/images/button_go.gif" width="21" height="16" border="0" alt="Submit this Search" name="sub_search"></a>
+			</form>
+		</div>
+		<div class="tools">
+			<a href="/en/press/pressroom">Press Room</a> &nbsp;|&nbsp;
+			<a href="http://java.com/java/download/index.jsp?cid=jdp78399">Get Java Here</a> &nbsp;|&nbsp;
+			<!-- <a href="javascript:void(0)">Print Format</a> &nbsp;|&nbsp;&nbsp; -->
+		</div>
+
+	</div>
+	<div style="clear: right;"></div>
+
+        
+
+	<div class="topbar"><img src="/images/spacer.gif" alt="" height="3" width="154"></div>
+	<div id="update"> </div>
+    </div>
+
+
+    
+
+        <!-- ** BEGIN: Content Table ** //-->
+
+        <table width="100%" border="0" cellpadding="0" cellspacing="0">
+
+            <tr>
+
+                <!-- ** BEGIN: Navigation Column ** //-->
+                <td width="150" id="leftcontent" valign="top">
+                    <!-- Navigation Placeholder //-->
+
+                    
+
+                    <div class="bar"><img src="/images/hr_dots1.gif" alt="" height="3" width="150"></div>
+
+        <!-- begin find JSRs form -->
+        <!-- IMPORTANT! do not convert this form to Struts < html : form > tag.  javascript change of form.action property fails. -->
+        <img src="/images/hd_find-jsrs.gif" alt="Find JSRs" height="18" width="150">
+        <form name="findjsr" action="/en/jsr/summary" method="get" class="pt5" onsubmit="return validate_findjsr()">
+            <input name="id" size="18" class="form" value="Search JSRs" onfocus="nullify_if_equal(this, 'Search JSRs')" type="text">
+	    <a href="javascript:document.findjsr.submit()" onclick="return validate_findjsr()"><img src="/images/button_go.gif" width="21" height="16" border="0" alt="Submit this Search" name="sub_search"></a>
+        </form><br><br>
+
+        <!-- ** Menu Start ** //-->
+
+        <ul id="p7PMnav">
+            <li><a href="/en/jsr/platform">JSRs by Platform</a></li>
+            <li><a href="/en/jsr/tech">JSRs by Technology</a></li>
+            <li><a href="/en/jsr/stage">JSRs by Stage</a></li>
+            <li><a href="/en/jsr/ec">JSRs by Committee</a></li>
+            <li><a href="/en/jsr/all">List of All JSRs</a></li>
+
+            <!--end find JSRs form -->
+            <div style="clear: both;"><img src="/images/spacer.gif" alt="" height="25" width="1"></div>
+
+            <!--begin my JCP -->
+            <img src="/images/hd_my-jcp.gif" alt="My JCP" height="18" width="150">
+            
+
+          <form name="login" method="get" action="/en/user/login" >
+            <input name="Sign-in" type="submit" title="Sign-in" value="Sign-in" />
+          </form>
+
+            <div style="clear:both"><img src="/images/global/spacer.gif" width="1" height="3" alt=""></div>
+            <div class="noNav">
+                <a href="/en/user/register">Register for Site</a>
+            </div>
+
+             <div class="bar"><img src="/images/hr_dots1.gif" alt="" height="3" width="150"></div>
+           <div class="noNav" style="color: #666666; padding: 0;">
+              Use of JCP site is subject to the
+              <a href="/en/home/terms" style="display:inline;padding: 0">JCP Terms of Use</a> and the
+              <a href="http://www.oracle.com/us/legal/privacy/index.html" style="display:inline;padding: 0" href="">Oracle Privacy Policy</a>
+          </div>
+
+            
+
+            <div style="clear:both"><img src="/images/global/spacer.gif" width="1" height="25" alt=""></div>
+
+            <!--begin JCP info -->
+            <img src="/images/hd_jcp-info.gif" alt="JCP Info" height="18" width="150">
+
+            <li><a href="/en/procedures/overview" class="p7PMtrg">About JCP</a>
+                <ul>
+                    <li><a href="/en/procedures/overview">Program Overview</a></li>
+                    <li><a href="/en/procedures/jcp2">JCP Process Document</a></li>
+                    <li><a href="/en/whatsnew/calendar">Calendar</a></li>
+                    <li><a href="/en/participation/members">JCP Members</a></li>
+                    <li><a href="/en/participation/committee">Executive Committee</a></li>
+                    <li><a href="/en/whatsnew/elections">Elections</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/en/participation/overview" class="p7PMtrg">Get Involved</a>
+		<ul>
+                    <li><a href="/en/participation/overview">Overview</a></li>
+                    <li><a href="/en/participation/membership">Becoming a JCP Member</a></li>
+		</ul>
+            </li>
+
+            <li><a href="/en/resources/contents" class="p7PMtrg">Community Resources</a>
+                <ul>
+                    <li><a href="/en/resources/contents">Overview</a></li>
+                    <li><a href="/en/resources/tutorials">Tutorials</a></li>
+                    <li><a href="/en/resources/multimedia">JCP Podcasts</a></li>
+                    <li><a href="/en/resources/guide">Spec Lead Guide</a></li>
+                    <li><a href="/en/resources/tdk">TCK Tool & Info</a></li>
+                    <li><a href="/en/resources/license_reference">License Reference</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/en/press/pmo" class="p7PMtrg">Community News</a>
+                <ul>
+                    <li><a href="/en/press/pmo">News</a></li>
+                    <li><a href="/en/press/news/awards/awards_main">Programs &amp; Awards</a></li>
+                    <li><a href="/en/press/releases">Press Releases</a></li>
+                    <li><a href="/en/press/success">Success Stories</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/en/introduction/faq">FAQ</a></li>
+
+            <li><a href="/en/resources/contacts">Contact Us</a></li>
+
+            <div style="clear: both;"><img src="/images/spacer.gif" alt="" height="25" width="1"></div>
+
+            <!--[if lte IE 6]><style>#p7PMnav a{height:1em;}#p7PMnav li{height:1em;float:left;clear:both;width:100%}</style><![endif]-->
+            <!--[if IE 6]><style>#p7PMnav li{clear:none;}</style><![endif]-->
+            <!--[if IE 7]><style>#p7PMnav a{zoom:100%;}#p7PMnav li{float:left;clear:both;width:100%;}</style><![endif]-->
+        </ul>
+
+        
+
+        <!--begin ad space -->
+        <div class="ads">
+            <a href="http://java.com/java/download/index.jsp?cid=jdp78399" target="_blank"><img style="display: ;" src="/images/ad_banner2.gif" alt="Ad Banner" border="1" height="70" width="150"></a>
+        </div>
+        <!--end ad space -->
+
+<!-- ** Menu End ** //-->
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;<br>
+
+    
+
+                    &nbsp;<br>
+                    <img src="/images/common/trans.gif" alt="" width="1" height="150"><br>
+
+              
+
+
+
+                </td>
+                <!-- ** END: Navigation Column ** //-->
+
+                <!-- ** BEGIN: Gutter Column ** //-->
+		<td width="10" nowrap><img src="/images/common/trans.gif" alt="" width="10" height="1"></td>
+                <!-- ** END: Gutter Column ** //-->
+
+                <!-- ** BEGIN: Content Column ** //-->
+                <td width="100%" valign="top">
+
+    
+<script type="text/javascript">
+
+String.prototype.trim = function() {
+        return this.replace(/^\s+|\s+$/g,"");
+}
+String.prototype.ltrim = function() {
+        return this.replace(/^\s+/,"");
+}
+String.prototype.rtrim = function() {
+        return this.replace(/\s+$/,"");
+}
+
+function validate_search() {
+	if (document.search.id.value == "Search JSRs" || document.search.id.value.trim().length == 0) {
+		alert("Search terms must be entered first");
+		return false;
+	}
+	return true;
+}
+
+function validate_findjsr() {
+	if (document.findjsr.id.value == "Search JSRs" || document.findjsr.id.value.trim().length == 0) {
+		alert("Search terms must be entered first");
+		return false;
+	}
+	return true;
+}
+
+function nullify_if_equal(field, str) {
+	// alert("val=" + field.value);
+	if (field.value == str) {
+		field.value = "";
+	}
+}
+
+</script>
+<!-- ** END: header.jsp ** //-->
+
+
+
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+
+  
+  <meta content="text/html; charset=ISO-8859-1" http-equiv="content-type">
+
+  
+  <title>change_log</title>
+</head>
+
+
+<body>
+
+<big><big><big><span style="font-weight: bold;">JSR
+118&nbsp;Maintenance release change log<br>
+
+<small><small><small><small><br>
+
+<span style="font-weight: bold;"></span><br>
+
+</small></small></small></small></span><small><small><small><small><big>Maintenance</big></small></small></small></small><small><small><small><small><big>
+</big></small></small></small><small><small><small><big>lead : Paul
+Su, Aplix Corportion. <br>
+
+Email id : paulsu@aplixcorp.com<br>
+
+<br>
+
+Maintenance release version : From 2.1 to 2.2<br>
+
+<br>
+
+</big></small></small></small></small></big></big></big>
+<table style="text-align: left; width: 1304px; height: 2030px;" border="1" cellpadding="2" cellspacing="2">
+
+  <tbody>
+
+    <tr>
+
+      <td style="width: 226px; font-weight: bold;">Number</td>
+
+      <td style="width: 433px; font-weight: bold;">Changes</td>
+
+      <td style="width: 501px; font-weight: bold;">Reason</td>
+
+      <td style="font-weight: bold;">Status</td>
+
+    </tr>
+
+    <tr>
+
+      <td>1</td>
+
+      <td><span class="Apple-style-span" style="border-collapse: separate; color: rgb(0, 0, 0); font-family: 'Times New Roman'; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: ; text-indent: 0px; text-transform: none; white-space: normal; widows: ; word-spacing: 0px; font-size: medium;"><span class="Apple-style-span" style=""><br>
+Include support for parsing and handling IPv6 addresses
+      <p></p>
+
+      </span></span></td>
+
+      <td><span class="Apple-style-span" style="border-collapse: separate; color: rgb(0, 0, 0); font-family: 'Times New Roman'; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: ; text-indent: 0px; text-transform: none; white-space: normal; widows: ; word-spacing: 0px; font-size: medium;"><span class="Apple-style-span" style="">With
+MIDP 2.x being increasingly targeted toward feature phones in emerging
+markets and the number of those devices increasing, the range of IP
+addresses available from IPv4 will be too limited to support expected
+future shipments. Support for parsing of IPv6 addresses will address
+this concern.</span></span></td>
+
+      <td><span class="Apple-style-span" style="border-collapse: separate; color: rgb(0, 0, 0); font-family: 'Times New Roman'; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: ; text-indent: 0px; text-transform: none; white-space: normal; widows: ; word-spacing: 0px; font-size: medium;"><span class="Apple-style-span" style="">
+      
+      </span></span></td>
+
+    </tr>
+
+    <tr>
+
+      <td>2</td>
+
+      <td><span class="Apple-style-span" style="border-collapse: separate; color: rgb(0, 0, 0); font-family: 'Times New Roman'; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: ; text-indent: 0px; text-transform: none; white-space: normal; widows: ; word-spacing: 0px; font-size: medium;"><span class="Apple-style-span" style="">Remove
+section on Blanket settings for Auto Invocation and Net
+Access.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+The JSR 118 MIDP 2.1 Specification states :<br>
+the Blanket setting for Application Auto Invocation and the Blanket setting for Net Access are mutually exclusive.<br>
+      <br>
+However, the JSR 248 MSA Specification states:<br>
+the Blanket setting for Application Auto Invocation and the Blanket setting for any of:<br>
+&nbsp;- Net Access<br>
+&nbsp;- Low Level Net Access<br>
+are mutually exclusive</span></span></td>
+
+      <td><span class="Apple-style-span" style="border-collapse: separate; color: rgb(0, 0, 0); font-family: 'Times New Roman'; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: ; text-indent: 0px; text-transform: none; white-space: normal; widows: ; word-spacing: 0px; font-size: medium;"><span class="Apple-style-span" style=""><br>
+This requirement was removed in the changes between the MSA and MSA 2
+specifications. It should be removed from the MIDP 2 specification to
+maintain consistency.<br>
+
+      </span></span></td>
+
+      <td><span class="Apple-style-span" style="border-collapse: separate; color: rgb(0, 0, 0); font-family: 'Times New Roman'; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: ; text-indent: 0px; text-transform: none; white-space: normal; widows: ; word-spacing: 0px; font-size: medium;"><span class="Apple-style-span" style=""><br>
+      <p></p>
+
+      </span></span></td>
+
+    </tr>
+
+    <tr>
+
+      <td>3</td>
+
+      <td><span class="Apple-style-span" style="border-collapse: separate; color: rgb(0, 0, 0); font-family: 'Times New Roman'; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: ; text-indent: 0px; text-transform: none; white-space: normal; widows: ; word-spacing: 0px; font-size: medium;"><span class="Apple-style-span" style="">Update references to MIDP 2.0</span></span></td>
+
+      <td><span class="Apple-style-span" style="border-collapse: separate; color: rgb(0, 0, 0); font-family: 'Times New Roman'; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: ; text-indent: 0px; text-transform: none; white-space: normal; widows: ; word-spacing: 0px; font-size: medium;"><span class="Apple-style-span" style=""><br>
+Update specification version number from 2.0 to 2.2 as necessary.</span></span></td>
+
+      <td><span class="Apple-style-span" style="border-collapse: separate; color: rgb(0, 0, 0); font-family: 'Times New Roman'; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: ; text-indent: 0px; text-transform: none; white-space: normal; widows: ; word-spacing: 0px; font-size: medium;"><span class="Apple-style-span" style=""><br>
+      </span></span></td>
+
+    </tr>
+
+    <tr>
+
+      <td>4</td>
+
+      <td><span class="Apple-style-span" style="border-collapse: separate; color: rgb(0, 0, 0); font-family: 'Times New Roman'; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: ; text-indent: 0px; text-transform: none; white-space: normal; widows: ; word-spacing: 0px; font-size: medium;"><span class="Apple-style-span" style="">Update references to J2ME</span></span></td>
+
+      <td><span class="Apple-style-span" style="border-collapse: separate; color: rgb(0, 0, 0); font-family: 'Times New Roman'; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: ; text-indent: 0px; text-transform: none; white-space: normal; widows: ; word-spacing: 0px; font-size: medium;"><span class="Apple-style-span" style=""><br>
+Update J2ME references to Java ME as necessary.</span></span></td>
+
+      <td><span class="Apple-style-span" style="border-collapse: separate; color: rgb(0, 0, 0); font-family: 'Times New Roman'; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: ; text-indent: 0px; text-transform: none; white-space: normal; widows: ; word-spacing: 0px; font-size: medium;"><span class="Apple-style-span" style="">
+      
+      </span></span></td>
+
+    </tr>
+
+    <tr>
+
+      <td>5</td>
+
+      <td><span class="Apple-style-span" style="border-collapse: separate; color: rgb(0, 0, 0); font-family: 'Times New Roman'; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: ; text-indent: 0px; text-transform: none; white-space: normal; widows: ; word-spacing: 0px; font-size: medium;"><span class="Apple-style-span" style="">Add missing acronym definitions in the Definitions section</span></span></td>
+
+      <td><span class="Apple-style-span" style="border-collapse: separate; color: rgb(0, 0, 0); font-family: 'Times New Roman'; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: ; text-indent: 0px; text-transform: none; white-space: normal; widows: ; word-spacing: 0px; font-size: medium;"><span class="Apple-style-span" style=""><br>
+From Chapter 2<br>
+"The terminology used herein is defined in the Definitions section of the MIDP 2.0 specification except where noted."<br>
+      <br>
+Acronyms and terms used throughout the MIDP 2 specification are not covered in the Definitions table as stated.<br>
+
+      </span></span></td>
+
+      <td><span class="Apple-style-span" style="border-collapse: separate; color: rgb(0, 0, 0); font-family: 'Times New Roman'; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: ; text-indent: 0px; text-transform: none; white-space: normal; widows: ; word-spacing: 0px; font-size: medium;"><span class="Apple-style-span" style="">
+      
+      </span></span></td>
+
+    </tr>
+
+    <tr>
+
+      <td>6</td>
+
+      <td><span class="Apple-style-span" style="border-collapse: separate; color: rgb(0, 0, 0); font-family: 'Times New Roman'; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: ; text-indent: 0px; text-transform: none; white-space: normal; widows: ; word-spacing: 0px; font-size: medium;"><span class="Apple-style-span" style="">Remove statement "Untrusted MIDlet suites do not request permissions explicitly in the JAR manifest or application descriptor."</span></span></td>
+
+      <td><span class="Apple-style-span" style="border-collapse: separate; color: rgb(0, 0, 0); font-family: 'Times New Roman'; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: ; text-indent: 0px; text-transform: none; white-space: normal; widows: ; word-spacing: 0px; font-size: medium;"><span class="Apple-style-span" style="">This
+statement conflicts with the MIDP 3.0 requirement that all MIDlets
+explicitly define the permissions they require. Removing the statement
+introduces some ambiguity but resolves the direct conflict allowing for
+easier migration to MIDP 3.0.<br>
+
+      </span></span></td>
+
+      <td><span class="Apple-style-span" style="border-collapse: separate; color: rgb(0, 0, 0); font-family: 'Times New Roman'; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: ; text-indent: 0px; text-transform: none; white-space: normal; widows: ; word-spacing: 0px; font-size: medium;"><span class="Apple-style-span" style="">
+      
+      </span></span></td>
+
+    </tr>
+
+    <tr>
+
+      <td>7</td>
+
+      <td><span class="Apple-style-span" style="border-collapse: separate; color: rgb(0, 0, 0); font-family: 'Times New Roman'; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px; font-size: medium;"><span class="Apple-style-span" style="">Fix font formatting in Section 15.3</span></span></td>
+
+      <td><span class="Apple-style-span" style="border-collapse: separate; color: rgb(0, 0, 0); font-family: 'Times New Roman'; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: ; text-indent: 0px; text-transform: none; white-space: normal; widows: ; word-spacing: 0px; font-size: medium;"><span class="Apple-style-span" style=""><br>
+The 3rd paragraph in Section 15.3 has larger-than-normal text.</span></span></td>
+
+      <td><span class="Apple-style-span" style="border-collapse: separate; color: rgb(0, 0, 0); font-family: 'Times New Roman'; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: ; text-indent: 0px; text-transform: none; white-space: normal; widows: ; word-spacing: 0px; font-size: medium;"><span class="Apple-style-span" style="">
+      
+      </span></span></td>
+
+    </tr>
+
+    <tr>
+
+      <td>8</td>
+
+      <td><span class="Apple-style-span" style="border-collapse: separate; color: rgb(0, 0, 0); font-family: 'Times New Roman'; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: ; text-indent: 0px; text-transform: none; white-space: normal; widows: ; word-spacing: 0px; font-size: medium;"><span class="Apple-style-span" style="">Fix punctuation in section 15.3</span></span></td>
+
+      <td><span class="Apple-style-span" style="border-collapse: separate; color: rgb(0, 0, 0); font-family: 'Times New Roman'; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: ; text-indent: 0px; text-transform: none; white-space: normal; widows: ; word-spacing: 0px; font-size: medium;"><span class="Apple-style-span" style="">
+      &rdquo;another Certificate&rdquo; should have a period after it.<br>
+      <br>
+&ldquo;Applications signed with a certificate not bound to any protection domains, MUST NOT be installed on the device.&rdquo;</span></span></td>
+
+      <td><span class="Apple-style-span" style="border-collapse: separate; color: rgb(0, 0, 0); font-family: 'Times New Roman'; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: ; text-indent: 0px; text-transform: none; white-space: normal; widows: ; word-spacing: 0px; font-size: medium;"><span class="Apple-style-span" style="">
+      
+      </span></span></td>
+
+    </tr>
+
+    <tr>
+
+      <td>9</td>
+
+      <td><span class="Apple-style-span" style="border-collapse: separate; color: rgb(0, 0, 0); font-family: 'Times New Roman'; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: ; text-indent: 0px; text-transform: none; white-space: normal; widows: ; word-spacing: 0px; font-size: medium;"><span class="Apple-style-span" style="">Fix typo in section 15.4.1<br>
+
+      <br>
+
+      </span></span></td>
+
+      <td><span class="Apple-style-span" style="border-collapse: separate; color: rgb(0, 0, 0); font-family: 'Times New Roman'; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: ; text-indent: 0px; text-transform: none; white-space: normal; widows: ; word-spacing: 0px; font-size: medium;"><span class="Apple-style-span" style="">&ldquo;pplication&rdquo; is misspelled.</span></span></td>
+
+      <td><span class="Apple-style-span" style="border-collapse: separate; color: rgb(0, 0, 0); font-family: 'Times New Roman'; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: ; text-indent: 0px; text-transform: none; white-space: normal; widows: ; word-spacing: 0px; font-size: medium;"><span class="Apple-style-span" style="">
+      
+      </span></span></td>
+
+    </tr>
+
+    <tr>
+
+      <td>10</td>
+
+      <td><span class="Apple-style-span" style="border-collapse: separate; color: rgb(0, 0, 0); font-family: 'Times New Roman'; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: ; text-indent: 0px; text-transform: none; white-space: normal; widows: ; word-spacing: 0px; font-size: medium;"><span class="Apple-style-span" style=""><br>
+Fix formatting in section 15.6<br>
+
+      <br>
+
+      </span></span></td>
+
+      <td><span class="Apple-style-span" style="border-collapse: separate; color: rgb(0, 0, 0); font-family: 'Times New Roman'; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: ; text-indent: 0px; text-transform: none; white-space: normal; widows: ; word-spacing: 0px; font-size: medium;"><span class="Apple-style-span" style="">The first 3 sentences in Section 15.6 need to be combined into one paragraph.<br>
+      <br>
+Section 15.6, &ldquo;Presenting Function Group Information&rdquo; should be formatted as a heading.</span></span></td>
+
+      <td><span class="Apple-style-span" style="border-collapse: separate; color: rgb(0, 0, 0); font-family: 'Times New Roman'; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: ; text-indent: 0px; text-transform: none; white-space: normal; widows: ; word-spacing: 0px; font-size: medium;"><span class="Apple-style-span" style="">
+      
+      </span></span></td>
+
+    </tr>
+
+    <tr>
+
+      <td>11</td>
+
+      <td><span class="Apple-style-span" style="border-collapse: separate; color: rgb(0, 0, 0); font-family: 'Times New Roman'; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: ; text-indent: 0px; text-transform: none; white-space: normal; widows: ; word-spacing: 0px; font-size: medium;"><span class="Apple-style-span" style="">Apply MSA 2 clarification:<br>
+      <br>
+For a MIDlet in the foreground, calling any of the Display.setCurrent()
+methods SHOULD reset any current timers for power saving measures to
+keep the visibility from immediately disappearing. This has the same
+effect as user input like a key or touch screen press with the keylock
+off. Where applicable this includes system operations such as
+turning/keeping backlight on, as well as resetting the timeouts for
+home screen, screen saver, etc.</span></span></td>
+
+      <td><span class="Apple-style-span" style="border-collapse: separate; color: rgb(0, 0, 0); font-family: 'Times New Roman'; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: ; text-indent: 0px; text-transform: none; white-space: normal; widows: ; word-spacing: 0px; font-size: medium;"><span class="Apple-style-span" style=""><br>
+MSA 2 FD v0.54 Section 6.16.3.16<br>
+
+      </span></span></td>
+
+      <td><span class="Apple-style-span" style="border-collapse: separate; color: rgb(0, 0, 0); font-family: 'Times New Roman'; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: ; text-indent: 0px; text-transform: none; white-space: normal; widows: ; word-spacing: 0px; font-size: medium;"><span class="Apple-style-span" style="">
+      
+      </span></span></td>
+
+    </tr>
+
+    <tr>
+
+      <td>12</td>
+
+      <td><span class="Apple-style-span" style="border-collapse: separate; color: rgb(0, 0, 0); font-family: 'Times New Roman'; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: ; text-indent: 0px; text-transform: none; white-space: normal; widows: ; word-spacing: 0px; font-size: medium;"><span class="Apple-style-span" style="">Apply MSA 2 clarification:<br>
+      <br>
+Certificates available in public certificate stores of the default
+preinstalled browser for use with HTTPS connections MUST also be
+available for HTTPS connections from MIDlets. Certificates in
+non-public certificate stores MAY not be available for MIDlets. Note
+that this requirement only applies if the related application (web
+browser) is present on the device. The requirement MAY also have
+limited support on emulators in development environments.</span></span></td>
+
+      <td><span class="Apple-style-span" style="border-collapse: separate; color: rgb(0, 0, 0); font-family: 'Times New Roman'; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: ; text-indent: 0px; text-transform: none; white-space: normal; widows: ; word-spacing: 0px; font-size: medium;"><span class="Apple-style-span" style=""><br>
+MSA 2 FD v0.54 Section 6.16.3.17<br>
+
+      </span></span></td>
+
+      <td><span class="Apple-style-span" style="border-collapse: separate; color: rgb(0, 0, 0); font-family: 'Times New Roman'; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: ; text-indent: 0px; text-transform: none; white-space: normal; widows: ; word-spacing: 0px; font-size: medium;"><span class="Apple-style-span" style="">
+      
+      </span></span></td>
+
+    </tr>
+
+    <tr>
+
+      <td>13</td>
+
+      <td><span class="Apple-style-span" style="border-collapse: separate; color: rgb(0, 0, 0); font-family: 'Times New Roman'; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: ; text-indent: 0px; text-transform: none; white-space: normal; widows: ; word-spacing: 0px; font-size: medium;"><span class="Apple-style-span" style="">Apply MSA 2 clarification:<br>
+      <br>
+Implementations MUST ensure that the Discovery Agent(s) prebuilt into
+the device include the product tokens for device manufacturer, device
+model identifier and device software version in the HTTP User-Agent
+request header.</span></span></td>
+
+      <td><span class="Apple-style-span" style="border-collapse: separate; color: rgb(0, 0, 0); font-family: 'Times New Roman'; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: ; text-indent: 0px; text-transform: none; white-space: normal; widows: ; word-spacing: 0px; font-size: medium;"><span class="Apple-style-span" style="">MSA 2 FD v0.54 Section 6.16.3.18</span></span></td>
+
+      <td><span class="Apple-style-span" style="border-collapse: separate; color: rgb(0, 0, 0); font-family: 'Times New Roman'; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: ; text-indent: 0px; text-transform: none; white-space: normal; widows: ; word-spacing: 0px; font-size: medium;"><span class="Apple-style-span" style="">
+      
+      </span></span></td>
+
+    </tr>
+
+    <tr>
+
+      <td>14</td>
+
+      <td><span class="Apple-style-span" style="border-collapse: separate; color: rgb(0, 0, 0); font-family: 'Times New Roman'; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: ; text-indent: 0px; text-transform: none; white-space: normal; widows: ; word-spacing: 0px; font-size: medium;"><span class="Apple-style-span" style="">Remove requirement for mandatory support of Canvas repeat events</span></span></td>
+
+      <td><span class="Apple-style-span" style="border-collapse: separate; color: rgb(0, 0, 0); font-family: 'Times New Roman'; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: ; text-indent: 0px; text-transform: none; white-space: normal; widows: ; word-spacing: 0px; font-size: medium;"><span class="Apple-style-span" style="">The
+repeat event requirement was introduced without consideration for
+keyless, touch screen-only devices which are unable to generate repeat
+events</span></span></td>
+
+      <td><span class="Apple-style-span" style="border-collapse: separate; color: rgb(0, 0, 0); font-family: 'Times New Roman'; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: ; text-indent: 0px; text-transform: none; white-space: normal; widows: ; word-spacing: 0px; font-size: medium;"><span class="Apple-style-span" style=""><br>
+      </span></span></td>
+
+    </tr>
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+  
+  </tbody>
+</table>
+
+<big><big><big><small><small><small><small><big><br>
+
+<br>
+
+<br>
+
+</big></small></small></small></small><span style="font-weight: bold;"><small><small><small><small></small></small></small></small></span></big></big></big>
+</body>
+</html>
+
+
+
+<!-- ** BEGIN: footer.jsp ** //-->
+
+
+
+
+
+
+
+
+</td>
+</tr>
+</table>
+
+<!-- ** END: Content Table ** //-->
+
+<!-- ** BEGIN: Footer Table ** //-->
+
+<div id="footer" style="clear: both;">
+    <div class="footleft">
+        <a href="/en/resources/contacts">Contact Us</a>
+    </div>
+	
+    <div class="botbar"><img src="/images/spacer.gif" alt="" height="23" width="1"></div>
+
+    <div class="footleft2">
+         &copy; 2019, Oracle Corporation and/or its affiliates. 
+        <a href="/en/home/terms">Terms of Use</a>. <a href="http://www.oracle.com/us/legal/privacy/index.html">Privacy Policy</a>. <a href="http://www.oracle.com/us/legal/third-party-trademarks/third-party-trademarks-078568.html">Trademarks</a>
+    </div>
+
+    <div class="footright">
+        <img src="/images/common/logo_oracle_footer.gif" alt="Oracle Corporation" height="22" width="91">
+    </div>
+
+    <div style="clear: both;"><img src="/images/spacer.gif" alt="" height="30" width="1"></div>
+</div>
+
+<!-- ** END: Footer Table ** //-->
+
+
+
+<!-- ** Menu Start ** //-->
+
+
+
+</body>
+</html>
+<!-- ** END: footer.jsp ** //-->
+

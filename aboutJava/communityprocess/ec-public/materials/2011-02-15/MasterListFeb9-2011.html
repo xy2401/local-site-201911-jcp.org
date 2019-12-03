@@ -1,0 +1,670 @@
+
+<!-- ** BEGIN: header.jsp ** //-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3c.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+<head>
+    
+
+   
+    <link href="/includes/css/menu.css" rel="stylesheet" type="text/css"></link>
+    <link href="/includes/css/style.css" rel="stylesheet" type="text/css"></link>
+    <!--[if lt IE 6]><link href="/includes/css/style5.css" rel="stylesheet" type="text/css" ></link><![endif]-->
+    <!--[if gte IE 5]><link href="/includes/css/style6.css" rel="stylesheet" type="text/css" ></link><![endif]-->
+    <link href="/includes/css/tabs.css"  rel="stylesheet" type="text/css"></link>
+
+    <script type="text/javascript" src="/includes/scripts/tabs.js"></script>
+    <script type="text/javascript" src="/includes/scripts/menu.js"></script>
+   
+
+    
+
+    
+        <title>The Java Community Process(SM) Program - communityprocess - ec-public</title>
+    
+
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+
+
+<body onload="P7_initPM(0,1,0,0,-1)">
+
+    <a name="top"></a>
+
+    <div id="header">
+	<div id="logo">
+		<a href="/en/home/index"><img src="/images/spacer.gif" alt="Java Community Process" height="81" width="151"></a>
+	</div>
+	<div id="tools">
+		<div class="search">
+			<form name="search" action="/en/jsr/summary" method="get" onsubmit="return validate_search()">
+				<input name="id" value="Search JSRs" size="16" class="form" onfocus="nullify_if_equal(this, 'Search JSRs')" type="text">
+				<a href="javascript:document.search.submit()" onclick="return validate_search()"><img src="/images/button_go.gif" width="21" height="16" border="0" alt="Submit this Search" name="sub_search"></a>
+			</form>
+		</div>
+		<div class="tools">
+			<a href="/en/press/pressroom">Press Room</a> &nbsp;|&nbsp;
+			<a href="http://java.com/java/download/index.jsp?cid=jdp78399">Get Java Here</a> &nbsp;|&nbsp;
+			<!-- <a href="javascript:void(0)">Print Format</a> &nbsp;|&nbsp;&nbsp; -->
+		</div>
+
+	</div>
+	<div style="clear: right;"></div>
+
+        
+
+	<div class="topbar"><img src="/images/spacer.gif" alt="" height="3" width="154"></div>
+	<div id="update"> </div>
+    </div>
+
+
+    
+
+        <!-- ** BEGIN: Content Table ** //-->
+
+        <table width="100%" border="0" cellpadding="0" cellspacing="0">
+
+            <tr>
+
+                <!-- ** BEGIN: Navigation Column ** //-->
+                <td width="150" id="leftcontent" valign="top">
+                    <!-- Navigation Placeholder //-->
+
+                    
+
+                    <div class="bar"><img src="/images/hr_dots1.gif" alt="" height="3" width="150"></div>
+
+        <!-- begin find JSRs form -->
+        <!-- IMPORTANT! do not convert this form to Struts < html : form > tag.  javascript change of form.action property fails. -->
+        <img src="/images/hd_find-jsrs.gif" alt="Find JSRs" height="18" width="150">
+        <form name="findjsr" action="/en/jsr/summary" method="get" class="pt5" onsubmit="return validate_findjsr()">
+            <input name="id" size="18" class="form" value="Search JSRs" onfocus="nullify_if_equal(this, 'Search JSRs')" type="text">
+	    <a href="javascript:document.findjsr.submit()" onclick="return validate_findjsr()"><img src="/images/button_go.gif" width="21" height="16" border="0" alt="Submit this Search" name="sub_search"></a>
+        </form><br><br>
+
+        <!-- ** Menu Start ** //-->
+
+        <ul id="p7PMnav">
+            <li><a href="/en/jsr/platform">JSRs by Platform</a></li>
+            <li><a href="/en/jsr/tech">JSRs by Technology</a></li>
+            <li><a href="/en/jsr/stage">JSRs by Stage</a></li>
+            <li><a href="/en/jsr/ec">JSRs by Committee</a></li>
+            <li><a href="/en/jsr/all">List of All JSRs</a></li>
+
+            <!--end find JSRs form -->
+            <div style="clear: both;"><img src="/images/spacer.gif" alt="" height="25" width="1"></div>
+
+            <!--begin my JCP -->
+            <img src="/images/hd_my-jcp.gif" alt="My JCP" height="18" width="150">
+            
+
+          <form name="login" method="get" action="/en/user/login" >
+            <input name="Sign-in" type="submit" title="Sign-in" value="Sign-in" />
+          </form>
+
+            <div style="clear:both"><img src="/images/global/spacer.gif" width="1" height="3" alt=""></div>
+            <div class="noNav">
+                <a href="/en/user/register">Register for Site</a>
+            </div>
+
+             <div class="bar"><img src="/images/hr_dots1.gif" alt="" height="3" width="150"></div>
+           <div class="noNav" style="color: #666666; padding: 0;">
+              Use of JCP site is subject to the
+              <a href="/en/home/terms" style="display:inline;padding: 0">JCP Terms of Use</a> and the
+              <a href="http://www.oracle.com/us/legal/privacy/index.html" style="display:inline;padding: 0" href="">Oracle Privacy Policy</a>
+          </div>
+
+            
+
+            <div style="clear:both"><img src="/images/global/spacer.gif" width="1" height="25" alt=""></div>
+
+            <!--begin JCP info -->
+            <img src="/images/hd_jcp-info.gif" alt="JCP Info" height="18" width="150">
+
+            <li><a href="/en/procedures/overview" class="p7PMtrg">About JCP</a>
+                <ul>
+                    <li><a href="/en/procedures/overview">Program Overview</a></li>
+                    <li><a href="/en/procedures/jcp2">JCP Process Document</a></li>
+                    <li><a href="/en/whatsnew/calendar">Calendar</a></li>
+                    <li><a href="/en/participation/members">JCP Members</a></li>
+                    <li><a href="/en/participation/committee">Executive Committee</a></li>
+                    <li><a href="/en/whatsnew/elections">Elections</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/en/participation/overview" class="p7PMtrg">Get Involved</a>
+		<ul>
+                    <li><a href="/en/participation/overview">Overview</a></li>
+                    <li><a href="/en/participation/membership">Becoming a JCP Member</a></li>
+		</ul>
+            </li>
+
+            <li><a href="/en/resources/contents" class="p7PMtrg">Community Resources</a>
+                <ul>
+                    <li><a href="/en/resources/contents">Overview</a></li>
+                    <li><a href="/en/resources/tutorials">Tutorials</a></li>
+                    <li><a href="/en/resources/multimedia">JCP Podcasts</a></li>
+                    <li><a href="/en/resources/guide">Spec Lead Guide</a></li>
+                    <li><a href="/en/resources/tdk">TCK Tool & Info</a></li>
+                    <li><a href="/en/resources/license_reference">License Reference</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/en/press/pmo" class="p7PMtrg">Community News</a>
+                <ul>
+                    <li><a href="/en/press/pmo">News</a></li>
+                    <li><a href="/en/press/news/awards/awards_main">Programs &amp; Awards</a></li>
+                    <li><a href="/en/press/releases">Press Releases</a></li>
+                    <li><a href="/en/press/success">Success Stories</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/en/introduction/faq">FAQ</a></li>
+
+            <li><a href="/en/resources/contacts">Contact Us</a></li>
+
+            <div style="clear: both;"><img src="/images/spacer.gif" alt="" height="25" width="1"></div>
+
+            <!--[if lte IE 6]><style>#p7PMnav a{height:1em;}#p7PMnav li{height:1em;float:left;clear:both;width:100%}</style><![endif]-->
+            <!--[if IE 6]><style>#p7PMnav li{clear:none;}</style><![endif]-->
+            <!--[if IE 7]><style>#p7PMnav a{zoom:100%;}#p7PMnav li{float:left;clear:both;width:100%;}</style><![endif]-->
+        </ul>
+
+        
+
+        <!--begin ad space -->
+        <div class="ads">
+            <a href="http://java.com/java/download/index.jsp?cid=jdp78399" target="_blank"><img style="display: ;" src="/images/ad_banner2.gif" alt="Ad Banner" border="1" height="70" width="150"></a>
+        </div>
+        <!--end ad space -->
+
+<!-- ** Menu End ** //-->
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;<br>
+
+    
+
+                    &nbsp;<br>
+                    <img src="/images/common/trans.gif" alt="" width="1" height="150"><br>
+
+              
+
+
+
+                </td>
+                <!-- ** END: Navigation Column ** //-->
+
+                <!-- ** BEGIN: Gutter Column ** //-->
+		<td width="10" nowrap><img src="/images/common/trans.gif" alt="" width="10" height="1"></td>
+                <!-- ** END: Gutter Column ** //-->
+
+                <!-- ** BEGIN: Content Column ** //-->
+                <td width="100%" valign="top">
+
+    
+<script type="text/javascript">
+
+String.prototype.trim = function() {
+        return this.replace(/^\s+|\s+$/g,"");
+}
+String.prototype.ltrim = function() {
+        return this.replace(/^\s+/,"");
+}
+String.prototype.rtrim = function() {
+        return this.replace(/\s+$/,"");
+}
+
+function validate_search() {
+	if (document.search.id.value == "Search JSRs" || document.search.id.value.trim().length == 0) {
+		alert("Search terms must be entered first");
+		return false;
+	}
+	return true;
+}
+
+function validate_findjsr() {
+	if (document.findjsr.id.value == "Search JSRs" || document.findjsr.id.value.trim().length == 0) {
+		alert("Search terms must be entered first");
+		return false;
+	}
+	return true;
+}
+
+function nullify_if_equal(field, str) {
+	// alert("val=" + field.value);
+	if (field.value == str) {
+		field.value = "";
+	}
+}
+
+</script>
+<!-- ** END: header.jsp ** //-->
+
+
+
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>JCP.next master list</title>
+</head>
+
+<body>
+<h1>JCP.next Master List of proposed changes </h1>
+<em>Updated Feb 9 2011</em>
+<h3><strong>TODO for each item </strong></h3>
+<ul>
+  <li>Prioritize.</li>
+  <li>Process Doc or JSPA change. </li>
+  <li>Decide whether in JSR1 or JSR2.</li>
+  <li>Do we have consensus or need more discussion? </li>
+  <li>Do we already have draft text? </li>
+  <li>Find volunteer to flesh out the idea</li>
+</ul>
+<h2>Procedural issues</h2>
+<ul>
+  <li>Decide whether the changes introduced in JCP.next should be applied to
+    other JSRs that are &quot;in flight.&quot; <br />
+        <ul>
+          <li>We probably can't require that an existing JSR be ruled by new
+            version of the JSPA.</li>
+          <li>We should require that the new version of the Process Document
+            applies to all existing JSRs when they have a &quot;state change&quot; (including
+            a Maintenance Review.) </li>
+        </ul>
+  </li>
+</ul>
+<p>We decided to wait and see how radical the changes are before we decide whether
+  or not to require that in-process JSRs adopt them. </p>
+<h2>Transparency</h2>
+<h3>Expert Groups</h3>
+<ul>
+  <li>Eliminate confidentiality requirements from the JSPA.
+  - we need more discussion
+    <ul>
+    <li>We have language (from the JSR 306 JSPA draft) </li>
+    <li>We said we'd target this for  JSR1, but as a JSPA change it should wait
+      for JSR2.</li>
+    <li>We didn't reach consensus on this. John Rizzo argued that confidentiality
+      should still be an option, but that we should do a better job of explaining
+      that it should be
+      used only in exceptional circumstances. (This may not be easy to do in
+      a legal document.) </li>
+    <li>Don noted that whatever decision we make Expert Groups should not 
+      discuss product features, pricing, etc. </li>
+    <li>Needs more discussion. </li>
+    </ul>
+</li>
+  <li>All business must be carried out on public mailing lists.</li>
+  <li>Issues must be tracked through a publicly viewable issue tracking mechanism.
+    <ul>
+      <li>These two are non-controversiol. We don't have draft language. Should
+        target for JSR1.</li>
+    </ul>
+  </li>
+  <li>Expert Groups must respond publicly to all comments before JSRs can
+    move to the next stage.
+    <ul>
+      <li>We have language requiring comments to be published, but not requiring
+        response - this should be tightened up. </li>
+      <li>Non-controversial - target for JSR1. </li>
+    </ul>
+  </li>
+  <li>Clarify Terms of Use for collaboration software used by Expert Groups
+    <ul>
+        <li>Should ensure sufficient IP grants, but not impose requirements more
+          strict than the JSPA </li>
+    </ul>
+  </li>
+  <ul>
+    <ul>
+      <li>See Wayne Carr document for explanation. </li>
+    </ul>
+    <li>JSR2? (more effort - legal work required)
+      <ul>
+        <li>Is this a Process Doc or a JSPA change? </li>
+        <li>Do in two stages? </li>
+      </ul>
+    </li>
+    <li>Non-controversial, but we have no draft language yet.</li>
+  </ul>
+</ul>
+<h3>Executive Committees </h3>
+<ul>
+  <li>Add semi-annual EC meetings that all JCP members are free to attend and
+  where the agenda chosen from topics suggested by the membership.</li>
+  <li>Create public alias (with archive) for members to provide feedback to the
+    ECs.
+    <ul>
+      <li>Non-controversial, JSR1, Process Doc change. </li>
+      <li>Need draft text. </li>
+    </ul>
+  </li>
+  <li>Need some language to address <em>Undocumented Practices. </em></li>
+</ul>
+<h3>TCKs</h3>
+<ul>
+  <li>Permit and encourage publication of TCK test results so users can see who's
+    compatible and who's not.
+    <ul>
+        <li>Secrecy rules may be specific to Oracle licenses; JSPA change could
+          explicitly mandate openness.
+          <ul>
+            <li>TODO: Oracle should own this - draft some language </li>
+          </ul>
+        </li>
+    </ul>
+  </li>
+  <li>TCK documentation (including Compatibility Requirements) must be publicly
+    available. </li>
+  <li>Can we/should we publish the tests too?
+    <ul>
+      <li>TODO: Oracle to review this  </li>
+    </ul>
+  </li>
+</ul>
+<h2>Individual membership </h2>
+<ul>
+  <li>Fix potential issues with JSPA Exhibit B.
+    <ul>
+      <li>Needs legal review</li>
+      <li>TODO: Oracle to start this  </li>
+      <li>Others should feel free to offer suggestions. </li>
+    </ul>
+  </li>
+  <li>Individual members' votes - how to avoid ballot-stuffing? 
+    <ul>
+      <li>Need creative legal suggestions
+        <ul>
+          <li>Self-employed individuals should be treated differently? </li>
+          <li>We need suggestions. Brainstorm this. </li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>Modify cost section of JSPA to permit PMO to charge a nominal fee for individuals
+    (if this should prove necessary)
+    <ul>
+      <li>See Wayne Carr document for justification.</li>
+      <li>Simple change. Since JSPA, target for JSR2. </li>
+    </ul>
+  </li>
+</ul>
+<h2>IP</h2>
+<ul>
+  <li>Non-assertion patent covenant.
+    <ul>
+      <li>We have draft language. Patrick to circulate this and ask people
+        to get their lawyers to comment </li>
+    </ul>
+  </li>
+  <li>IP grants flow directly to implementers, not via Spec Lead
+    <ul>
+      <li>Justification? TODO: Patrick to circulate this.</li>
+    </ul>
+  </li>
+  <li> Clarify what we mean by <em>FRAN</em><em>D</em>.
+    <ul>
+      <li>We agreed we should probably strike this since we're unlikely to reach
+      consensus. </li>
+      <li>Does other EC members agree? </li>
+    </ul>
+  </li>
+</ul>
+<h2>Licensing </h2>
+<ul>
+  <li>Require that when the license terms associated with a JSR are significantly
+    changed from the previous release, this is explicitly called out.
+    <ul>
+      <li>Require change log for licensing changes.</li>
+      <li>Process doc change, JSR1, non-controversial.</li>
+      <li>TODO: John Rizzo to draft language.  </li>
+    </ul>
+  </li>
+  <li>Clarify the requirement to disclose licenses, particularly if different
+    licenses are available for various types of implementation or different fields
+    of use.
+    <ul>
+      <li>Can we require every variant to be disclosed? No. </li>
+      <li>Require that offered licenses must be available to anyone who is willing
+        to sign.</li>
+      <li>TODO: John Rizzo to check whether existing language guarantees this,
+        and to suggest Process Doc changes if not. </li>
+      <li>JSR1</li>
+    </ul>
+  </li>
+  <li>Define a mandatory standard Spec License.
+    <ul>
+      <li>TODO: Patrick to circulate the &quot;recommended&quot; Spec License
+        for comments. </li>
+    </ul>
+  </li>
+  <li>Recommend (but do not require) standard RI and TCK licenses.
+    <ul>
+        <li>Provide separate templates for Independent (open source) and commercial
+        implementors.</li>
+        <li>TODO: Patrick: circulate examples for discussion </li>
+    </ul>
+  </li>
+</ul>
+<h2>Agility</h2>
+<ul>
+  <li>&nbsp;Enable implementations before specs are finalized,
+    to gain real-world experience.
+    <ul>
+      <li>Must maintain compatibility.<br />
+      </li>
+    </ul>
+  </li>
+  
+  <ul>
+    <li>See Transplant JSR proposals from JSR 306</li>
+    <li>Look for feedback from WG members.
+      <ul>
+        <li>What mechanism to use to gather feedback?  </li>
+        <li>If something is critical for one or two companies but not high priority
+          for others - may not be &quot;on the list&quot; </li>
+      </ul>
+    </li>
+  </ul>
+  <li>Time-outs for inactive JSRs.</li>
+  <ul>
+    <li>See <em>JSR Renewal Ballot</em> suggestion from JSR 306</li>
+    <li>We have language</li>
+    <li>JSR1 </li>
+  </ul>
+  <li>Better procedures to remove
+      or replace non-responsive spec leads and to deal with bankrupt or defunct
+      spec-lead organizations.
+    <ul>
+      <li>Have no language.</li>
+      <li>Process doc only, or should we modify JSPA to permit withdrawal of
+        contributions. </li>
+      <li>TODO: Michael to review and suggest changes. </li>
+    </ul>
+  </li>
+</ul>
+<h2>Participation</h2>
+<ul>
+  <li>Make the JSPA less intimidating by refactoring into three layers
+    <ul>
+        <li>Simple Terms Of Use for non-members who wish to comment on specs
+          in public forums.</li>
+      <li>A simple membership agreement for those who want voting privileges
+        and the right to serve on Expert Groups.</li>
+      <li>The complexities of IP and compatibility obligations are required only
+        for Spec Leads &ndash; factor these out into a separate agreement.</li>
+    </ul>
+  </li>
+  <li>No barriers to participation in Expert Groups.
+    <ul>
+        <li>Requests to join EGs and the Spec Lead's responses must be made in
+          public</li>
+    </ul>
+  </li>
+  <li>Define a process for removing EG members who do not participate. </li>
+  <li>Clarify requirements for RI and TCK to be posted within x weeks of Final
+    Release
+    <ul>
+      <li>How to &quot;undo&quot; Final Release if materials not posted? 
+        <ul>
+          <li>PMO draft </li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>Penalties for EC members who do not attend meetings or do not vote</li>
+</ul>
+<h2>Cleanup</h2>
+<ul>
+  <li>Begin phase-out of IEPA
+    <ul>
+      <li>See Wayne Carr document for suggestions. </li>
+    </ul>
+  </li>
+  <li>Remove Process Doc section 1.1.4 J2ME building blocks</li>
+  <li>Correct typos and errors in JSPA</li>
+  <li>Correct typos and errors in Process Document</li>
+  <li>Remove the ambiguity of the term <em>Spec Lead</em> in the Process Document
+    (sometimes it refers to the Member and sometimes to the person representing
+    the Member and leading the EG.)
+    <ul>
+      <li>See Wayne Carr document for explanation </li>
+    </ul>
+  </li>
+  <li>Prohibit major Patform changes in Maintenance releases (see MR2 of JSR
+  176) </li>
+  <li>Review Appendix A of Process Document (Eduardo has some concerns?) </li>
+</ul>
+<h2>Branding and compatibility</h2>
+<ul>
+  <li>Emphasize the value of compatibility &amp; the brand and the risks of using
+    incompatible implementations.</li>
+  <li>Relax all-or-nothing compatibility reqiurements?
+    <ul>
+      <li>TODO: Patrick to give the the compatibility presentation to EC...  </li>
+    </ul>
+  </li>
+  <li>Publish lists of compatible implementations and report what optional features
+    are implemented.</li>
+  <li>Publish lists of incompatible implementations.</li>
+  <ul>
+    <li>No JSPA or Process Doc changes required for these proposals &ndash; Oracle/PMO
+      commitment is sufficient?</li>
+  </ul>
+</ul>
+<h2>Miscellaneous</h2>
+<ul>
+  <li>Clarification of the JSPA as discussed within the EC.</li>
+  <li>Enable and encourage the establishment of more formal relationships with
+    other standards bodies.
+    <ul>
+      <li>Some disagreement as to whether <em>Confidentiality</em> is an
+        obstacle to liaison with other organizations. Need more discussion. </li>
+    </ul>
+  </li>
+  <li><em>Transplant JSRs</em> (enable incorporation and standardization of work
+    developed outside the JCP.</li>
+  <li><em>Hybrid JSRs</em> (allowing non-Java implementations of a JSR's specification)</li>
+</ul>
+<h2>Additional suggestions</h2>
+<p>Address the issue of where litigation should be located. California, or elsewhere?
+  California is an obstacle to Brazilian state involvement. According to Java
+  Champion Douglas Jenssen this is also an issue within the US. He has said on
+  the Java Champions alias: </p>
+<blockquote>
+  <p wrap="">The issue is a legal one, where do legal disputes between Sun/Oracle and a member -- whether individual, sponsored by his employer, or corporation -- get litigated. When I last met with the JCP, the answer was it has to be in California. No public institution such as a state university is going to agree to that, and many corporations will not agree either. Hence I was told there are no members from public universities, only from private ones that choose to agree.</p>
+</blockquote>
+<p>The JSPA says: </p>
+<blockquote>
+  <p>Any action related to this Agreement will be governed by California law,
+    excluding <a href="http://en.wikipedia.org/wiki/Choice_of_law">choice of
+     law rules</a>, provided, however that neither party has consented to the jurisdiction
+    of any court located in the 
+    other party&acute;s country of incorporation.</p>
+  <p>&nbsp;</p>
+</blockquote>
+<blockquote>
+  <p><br />
+  </p>
+</blockquote>
+</body>
+</html>
+
+
+
+<!-- ** BEGIN: footer.jsp ** //-->
+
+
+
+
+
+
+
+
+</td>
+</tr>
+</table>
+
+<!-- ** END: Content Table ** //-->
+
+<!-- ** BEGIN: Footer Table ** //-->
+
+<div id="footer" style="clear: both;">
+    <div class="footleft">
+        <a href="/en/resources/contacts">Contact Us</a>
+    </div>
+	
+    <div class="botbar"><img src="/images/spacer.gif" alt="" height="23" width="1"></div>
+
+    <div class="footleft2">
+         &copy; 2019, Oracle Corporation and/or its affiliates. 
+        <a href="/en/home/terms">Terms of Use</a>. <a href="http://www.oracle.com/us/legal/privacy/index.html">Privacy Policy</a>. <a href="http://www.oracle.com/us/legal/third-party-trademarks/third-party-trademarks-078568.html">Trademarks</a>
+    </div>
+
+    <div class="footright">
+        <img src="/images/common/logo_oracle_footer.gif" alt="Oracle Corporation" height="22" width="91">
+    </div>
+
+    <div style="clear: both;"><img src="/images/spacer.gif" alt="" height="30" width="1"></div>
+</div>
+
+<!-- ** END: Footer Table ** //-->
+
+
+
+<!-- ** Menu Start ** //-->
+
+
+
+</body>
+</html>
+<!-- ** END: footer.jsp ** //-->
+

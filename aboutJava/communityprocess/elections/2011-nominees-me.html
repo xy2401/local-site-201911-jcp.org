@@ -1,0 +1,712 @@
+
+<!-- ** BEGIN: header.jsp ** //-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3c.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+<head>
+    
+
+   
+    <link href="/includes/css/menu.css" rel="stylesheet" type="text/css"></link>
+    <link href="/includes/css/style.css" rel="stylesheet" type="text/css"></link>
+    <!--[if lt IE 6]><link href="/includes/css/style5.css" rel="stylesheet" type="text/css" ></link><![endif]-->
+    <!--[if gte IE 5]><link href="/includes/css/style6.css" rel="stylesheet" type="text/css" ></link><![endif]-->
+    <link href="/includes/css/tabs.css"  rel="stylesheet" type="text/css"></link>
+
+    <script type="text/javascript" src="/includes/scripts/tabs.js"></script>
+    <script type="text/javascript" src="/includes/scripts/menu.js"></script>
+   
+
+    
+
+    
+        <title>The Java Community Process(SM) Program - communityprocess - elections</title>
+    
+
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+
+
+<body onload="P7_initPM(0,1,0,0,-1)">
+
+    <a name="top"></a>
+
+    <div id="header">
+	<div id="logo">
+		<a href="/en/home/index"><img src="/images/spacer.gif" alt="Java Community Process" height="81" width="151"></a>
+	</div>
+	<div id="tools">
+		<div class="search">
+			<form name="search" action="/en/jsr/summary" method="get" onsubmit="return validate_search()">
+				<input name="id" value="Search JSRs" size="16" class="form" onfocus="nullify_if_equal(this, 'Search JSRs')" type="text">
+				<a href="javascript:document.search.submit()" onclick="return validate_search()"><img src="/images/button_go.gif" width="21" height="16" border="0" alt="Submit this Search" name="sub_search"></a>
+			</form>
+		</div>
+		<div class="tools">
+			<a href="/en/press/pressroom">Press Room</a> &nbsp;|&nbsp;
+			<a href="http://java.com/java/download/index.jsp?cid=jdp78399">Get Java Here</a> &nbsp;|&nbsp;
+			<!-- <a href="javascript:void(0)">Print Format</a> &nbsp;|&nbsp;&nbsp; -->
+		</div>
+
+	</div>
+	<div style="clear: right;"></div>
+
+        
+
+	<div class="topbar"><img src="/images/spacer.gif" alt="" height="3" width="154"></div>
+	<div id="update"> </div>
+    </div>
+
+
+    
+
+        <!-- ** BEGIN: Content Table ** //-->
+
+        <table width="100%" border="0" cellpadding="0" cellspacing="0">
+
+            <tr>
+
+                <!-- ** BEGIN: Navigation Column ** //-->
+                <td width="150" id="leftcontent" valign="top">
+                    <!-- Navigation Placeholder //-->
+
+                    
+
+                    <div class="bar"><img src="/images/hr_dots1.gif" alt="" height="3" width="150"></div>
+
+        <!-- begin find JSRs form -->
+        <!-- IMPORTANT! do not convert this form to Struts < html : form > tag.  javascript change of form.action property fails. -->
+        <img src="/images/hd_find-jsrs.gif" alt="Find JSRs" height="18" width="150">
+        <form name="findjsr" action="/en/jsr/summary" method="get" class="pt5" onsubmit="return validate_findjsr()">
+            <input name="id" size="18" class="form" value="Search JSRs" onfocus="nullify_if_equal(this, 'Search JSRs')" type="text">
+	    <a href="javascript:document.findjsr.submit()" onclick="return validate_findjsr()"><img src="/images/button_go.gif" width="21" height="16" border="0" alt="Submit this Search" name="sub_search"></a>
+        </form><br><br>
+
+        <!-- ** Menu Start ** //-->
+
+        <ul id="p7PMnav">
+            <li><a href="/en/jsr/platform">JSRs by Platform</a></li>
+            <li><a href="/en/jsr/tech">JSRs by Technology</a></li>
+            <li><a href="/en/jsr/stage">JSRs by Stage</a></li>
+            <li><a href="/en/jsr/ec">JSRs by Committee</a></li>
+            <li><a href="/en/jsr/all">List of All JSRs</a></li>
+
+            <!--end find JSRs form -->
+            <div style="clear: both;"><img src="/images/spacer.gif" alt="" height="25" width="1"></div>
+
+            <!--begin my JCP -->
+            <img src="/images/hd_my-jcp.gif" alt="My JCP" height="18" width="150">
+            
+
+          <form name="login" method="get" action="/en/user/login" >
+            <input name="Sign-in" type="submit" title="Sign-in" value="Sign-in" />
+          </form>
+
+            <div style="clear:both"><img src="/images/global/spacer.gif" width="1" height="3" alt=""></div>
+            <div class="noNav">
+                <a href="/en/user/register">Register for Site</a>
+            </div>
+
+             <div class="bar"><img src="/images/hr_dots1.gif" alt="" height="3" width="150"></div>
+           <div class="noNav" style="color: #666666; padding: 0;">
+              Use of JCP site is subject to the
+              <a href="/en/home/terms" style="display:inline;padding: 0">JCP Terms of Use</a> and the
+              <a href="http://www.oracle.com/us/legal/privacy/index.html" style="display:inline;padding: 0" href="">Oracle Privacy Policy</a>
+          </div>
+
+            
+
+            <div style="clear:both"><img src="/images/global/spacer.gif" width="1" height="25" alt=""></div>
+
+            <!--begin JCP info -->
+            <img src="/images/hd_jcp-info.gif" alt="JCP Info" height="18" width="150">
+
+            <li><a href="/en/procedures/overview" class="p7PMtrg">About JCP</a>
+                <ul>
+                    <li><a href="/en/procedures/overview">Program Overview</a></li>
+                    <li><a href="/en/procedures/jcp2">JCP Process Document</a></li>
+                    <li><a href="/en/whatsnew/calendar">Calendar</a></li>
+                    <li><a href="/en/participation/members">JCP Members</a></li>
+                    <li><a href="/en/participation/committee">Executive Committee</a></li>
+                    <li><a href="/en/whatsnew/elections">Elections</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/en/participation/overview" class="p7PMtrg">Get Involved</a>
+		<ul>
+                    <li><a href="/en/participation/overview">Overview</a></li>
+                    <li><a href="/en/participation/membership">Becoming a JCP Member</a></li>
+		</ul>
+            </li>
+
+            <li><a href="/en/resources/contents" class="p7PMtrg">Community Resources</a>
+                <ul>
+                    <li><a href="/en/resources/contents">Overview</a></li>
+                    <li><a href="/en/resources/tutorials">Tutorials</a></li>
+                    <li><a href="/en/resources/multimedia">JCP Podcasts</a></li>
+                    <li><a href="/en/resources/guide">Spec Lead Guide</a></li>
+                    <li><a href="/en/resources/tdk">TCK Tool & Info</a></li>
+                    <li><a href="/en/resources/license_reference">License Reference</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/en/press/pmo" class="p7PMtrg">Community News</a>
+                <ul>
+                    <li><a href="/en/press/pmo">News</a></li>
+                    <li><a href="/en/press/news/awards/awards_main">Programs &amp; Awards</a></li>
+                    <li><a href="/en/press/releases">Press Releases</a></li>
+                    <li><a href="/en/press/success">Success Stories</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/en/introduction/faq">FAQ</a></li>
+
+            <li><a href="/en/resources/contacts">Contact Us</a></li>
+
+            <div style="clear: both;"><img src="/images/spacer.gif" alt="" height="25" width="1"></div>
+
+            <!--[if lte IE 6]><style>#p7PMnav a{height:1em;}#p7PMnav li{height:1em;float:left;clear:both;width:100%}</style><![endif]-->
+            <!--[if IE 6]><style>#p7PMnav li{clear:none;}</style><![endif]-->
+            <!--[if IE 7]><style>#p7PMnav a{zoom:100%;}#p7PMnav li{float:left;clear:both;width:100%;}</style><![endif]-->
+        </ul>
+
+        
+
+        <!--begin ad space -->
+        <div class="ads">
+            <a href="http://java.com/java/download/index.jsp?cid=jdp78399" target="_blank"><img style="display: ;" src="/images/ad_banner2.gif" alt="Ad Banner" border="1" height="70" width="150"></a>
+        </div>
+        <!--end ad space -->
+
+<!-- ** Menu End ** //-->
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;<br>
+
+    
+
+                    &nbsp;<br>
+                    <img src="/images/common/trans.gif" alt="" width="1" height="150"><br>
+
+              
+
+
+
+                </td>
+                <!-- ** END: Navigation Column ** //-->
+
+                <!-- ** BEGIN: Gutter Column ** //-->
+		<td width="10" nowrap><img src="/images/common/trans.gif" alt="" width="10" height="1"></td>
+                <!-- ** END: Gutter Column ** //-->
+
+                <!-- ** BEGIN: Content Column ** //-->
+                <td width="100%" valign="top">
+
+    
+<script type="text/javascript">
+
+String.prototype.trim = function() {
+        return this.replace(/^\s+|\s+$/g,"");
+}
+String.prototype.ltrim = function() {
+        return this.replace(/^\s+/,"");
+}
+String.prototype.rtrim = function() {
+        return this.replace(/\s+$/,"");
+}
+
+function validate_search() {
+	if (document.search.id.value == "Search JSRs" || document.search.id.value.trim().length == 0) {
+		alert("Search terms must be entered first");
+		return false;
+	}
+	return true;
+}
+
+function validate_findjsr() {
+	if (document.findjsr.id.value == "Search JSRs" || document.findjsr.id.value.trim().length == 0) {
+		alert("Search terms must be entered first");
+		return false;
+	}
+	return true;
+}
+
+function nullify_if_equal(field, str) {
+	// alert("val=" + field.value);
+	if (field.value == str) {
+		field.value = "";
+	}
+}
+
+</script>
+<!-- ** END: header.jsp ** //-->
+
+
+
+
+
+
+<!-- saved from url=(0022)http://internet.e-mail -->
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2//EN">
+<html>
+<head>
+<!--#config timefmt="%d-%b-%y" -->
+  <title>Java Community Process: ME EC Elections nominees for 2011</title>
+</head>
+<body alink="#ff0000" bgcolor="#ffffff" link="#0000ff" text="#000000"
+ vlink="#660066">
+<!-- server side include for top part of page -->
+<!--#include virtual="/share/include/normal.header.v4.0.html"--><!-- end server side include for top of page --><!-- begin table for main body navigation and content -->
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+  <tbody>
+    <tr align="left" valign="top">
+      <td> <img src="/images/pixel.gif" alt="" height="20" width="1"><br
+ clear="all">
+<!-- server side include for main java.sun.com navigation -->
+<!--#include virtual="/share/include/navigate.v4.0.html"--><!-- end server side include for main java.sun.com navigation -->
+      </td>
+      <td valign="top" width="100%"><!-- page headline --><div class="header2">
+EC Elections<BR>
+<font size="+1">2011 ME Executive Committee Elections Nominees</font></div><br>
+<!-- end page headline -->
+<!-- optional subnav links -->
+      <p></font></p>
+<!-- end optional subnav links -->
+<!-- main page content --><font size="-1">
+      <p>The open nomination period for the 2011 Java Community Process (JCP) Program Executive
+Committee (EC) 
+elections runs from 30 September 2011 through 13 October 2011. This page is being updated with information about the candidates for the ME EC as they are nominated. Once the nomination period has closed, the elections will commence on 18 October 2011 and run through 31 October 2011. The EC Elections process was launched in
+June 2000. 
+      </p>
+<P>The following seats are up for the 2011 JCP EC Elections:<BR>
+Intel and Werner Keil on the SE/EE EC, and Sean Sheedy and Alex Terrazas on the ME EC. <P>
+
+For more information about the current Executive Committee, please refer to <a href="/en/participation/committee">the Executive Committee Information page</a>. <BR><BR>
+
+<div class="header2">Candidates for the 2011 ME EC Elections</div>
+<P>
+What follows are the qualification statements of the candidates for the seats on the ME Executive Committee, along with a brief biography of the person who would serve as the Member's representative on the Executive Committee if elected, and a position paper when one was provided. 
+<P>
+To see information about the candidates for the SE/EE EC, visit <a href="./2011-nominees-seee.html">the SE/EE nominees page</a>.<P>
+
+
+<table border=1 cellpadding=5>
+<tr>
+<td colspan=2>
+<center>
+<B>2011 ME EXECUTIVE COMMITTEE RATIFIED ELECTION SEAT CANDIDATES</b>
+</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top">
+<B><a name="ibm"></a>IBM</b><BR>
+</td>
+<td>
+<! -- Qualifications -->
+<p>IBM has been a contributor to the Java Community since 1996, bringing its breadth of resources and deep understanding of Java technologies to bear on almost every aspect of the platform's evolution. Since 1998, IBM has been a key participant and leader on numerous JSRs and has been a contributing member on both Executive Committees since their inception in 2000. IBM is heavily investing in the success of Java technology - providing Java SE ports for more than a dozen environments, delivering over 300 Java-compatible products to market, and creating the Java EE implementation in the form of WebSphere Application Server. In the Java ME space, IBM provides VM ports to more than 20 environments together with support for a broad range of configurations, profiles, and JSRs. IBM's representatives, whether leading or participating in Expert Groups and Executive Committees, will continue to use their expertise and technical resources to make contributions for the betterment of the Java Community and to help guide the Java platform's evolution and development. IBM is Spec Lead on three J2ME JSRs, and participates in 17 J2ME JSR Expert Groups.
+
+</td>
+</tr>
+<tr>
+<td>
+<! -- EC contact photo and name -->
+<img src="./2011/Mark_Rogalski_nom.jpg" width="150px"><BR>Mark Rogalski
+</td>
+<td>
+<! -- EC contact bio-->
+<p>Mark Rogalski is an IBM Software Architect for mobile collaboration applications. Based in Austin, Texas, Mark has been with IBM for over 20 years, spending the last 15 years working on Java based software for various types of devices including set-top boxes, bar code scanners, smart phones, and tablets. 
+</td>
+</tr>
+
+<tr><td>&nbsp;</td><td>&nbsp;</td></tr>
+
+<tr>
+<td valign="top">
+<B><a name="nokia"></a>Nokia</b><BR>
+</td>
+<td>
+<! -- Qualifications -->
+<p>Nokia is committed to connecting people to what matters to them by combining advanced mobile technology with personalized services. More than 1.3 billion people connect to one another with a Nokia, from our most affordable voice-optimized mobile phones to advanced Internet-connected smartphones sold in virtually every market in the world. Nokia is the world's largest manufacturer of mobile phones and most of the phone models sold provide a Java ME platform for 3rd party developers.
+
+</td>
+</tr>
+<tr>
+<td>
+<! -- EC contact photo and name -->
+<img src="./2011/Erkki_Rysa_nom.jpg" width="150px"><BR>Erkki Rysa
+</td>
+<td>
+<! -- EC contact bio-->
+<p>Erkki Rysa is a Senior Technology Manager in the CTO unit of Nokia Corporation in Finland. He has worked for Nokia for the last 17 years in various software development, technology management and standardization roles. He is the specification/maintenance lead for JSRs 180, 232, 234, 248 and 249 and has been involved in many other JSRs led by Nokia and other JCP members.
+
+</td>
+</tr>
+
+<tr><td>&nbsp;</td><td>&nbsp;</td></tr>
+
+<tr>
+<td valign="top">
+<B><a name="sktelecom"></a>SK Telecom</b><BR>
+</td>
+<td>
+<! -- Qualifications -->
+<p>SK Telecom has launched the SKVM that is runtime Java environment for embedded systems for mobile devices. In the market we released more than 5000 handsets since first commercialization in 2001. The SKVM Java platform makes various kinds of applications and contents run on mobile handsets. Under its environment, services and applications such as Games, Instant Messenger, Real time car navigation, Data streaming, Real-time graphic based commerce, Entertainment, Information can run on mobile handsets, which makes mobile life more fun and richer. 
+<p>As part of the JCP, SK Telecom has actively participated and  been a Spec lead of JSRs. The JSR-298, Telematics API for Java ME, is the first attempt in standardizing JSR specifically designed to provide Telematics services and is based on widely used Java ME platform technology.  Telematics services can be provided through implementing JSR298 on many common portable devices such as mobile handsets and PDAs. This will result in increasing the presence of various Java technologies and broadening their impact in the market through JSR298 and development of Telematics services. The JSR-327 Dynamic Contents Delivery Service API is to use the push mechanism to send all the required data content of the applications or services that have been subscribed by the users. It also provide standard way for application to interact with content delivery mechanism�OMA DCD based or proprietary DCD mechanisms. 
+
+<p>With the experience in JSR development as well as our service platform commercialization, SK Telecom will provide opportunities for various existing Java technologies to naturally expand to new fields such as automotive industry and other organizations. 
+
+</td>
+</tr>
+<tr>
+<td>
+<! -- EC contact photo and name -->
+<img src="./2011/Hoojong_Kim_nom.jpg" width="150px"><BR>Hoojong Kim
+
+</td>
+<td>
+<! -- EC contact bio-->
+<p>Dr. Hoojong Kim is Senior Vice President and Head of Global Technology R&D Center where he is responsible for technology and solution development of terminals and platforms. 
+
+<p>He has over 20 years of experience in mobile industry and his efforts are being made to develop and secure key technologies for 3G terminals, and strengthen the competitiveness of mobile network operator businesses both in domestic and global markets. In the past 10 years, he has been in a charge of mobile device and platform technology development which enhances mobile multimedia services and offers the consistently personalized service through any device. His current research interests are developing a business model for the future mobile services, principally on the convergence of telecommunication. 
+
+<p>Globally, Dr. Kim has represented SKT in IMT-2000 and evolution researches. He has actively served as a Board member of LiMo, WAC and Mobile Platform Standardization Forum.
+</td>
+</tr>
+
+
+</table>
+
+<table border=1 cellpadding=5>
+
+<tr><TD colspan=2><CENTER><B>
+2011 ME EXECUTIVE COMMITTEE OPEN ELECTION SEAT CANDIDATES</b></CENTER></td></tr>
+
+<tr>
+<td valign="top">
+<B><a name="aicas"></a>Aicas GmbH</b><BR>
+</td>
+<td>
+<! -- Qualifications -->
+<p>aicas produces Java analysis and development tools for realtime and embedded systems. Headquartered in Karlsruhe, Germany, the firm has been serving the marketplace since 2001. The company provides products and services for the military/aerospace, industrial automation, and automotive markets, as well as companies in the medical device sectors. JamaicaVM, its flagship product, is a hard realtime Virtual Machine incorporating deterministic garbage collection for running realtime Java programs.
+
+<p><a href="./2011/JCP_EC_Nomination_aicas.pdf">aicas position statement</a> (.pdf file)
+</td>
+</tr>
+<tr>
+<td>
+<! -- EC contact photo and name -->
+<img src="./2011/James_Hunt_nom.jpg" width="150px"><BR>James Hunt
+</td>
+<td>
+<! -- EC contact bio-->
+<p>Dr. James J. Hunt is cofounder and CEO of aicas. He has a BS in Computer Science (CS) and Physics from Yale, an MA CS from BU, and a Doctorate in CS from Karlsruhe. At MIT Lincoln Laboratory, he developed CAD software for wafer-scale integrated circuits (RVLSI) and a parallel Lisp system for signal processing. He is the technical lead for the CHARTER project researching Java-based safety-critical systems. He is an active member of the SC-205 Plenary for avionics software safety standard.
+
+</TD>
+</tr>
+
+<tr><td>&nbsp;</td><td>&nbsp;</td></tr>
+
+<tr>
+<td valign="top">
+<B><a name="arm"></a>ARM Limited</b><BR>
+</td>
+<td>
+<! -- Qualifications -->
+<p>ME EC is an exciting opportunity for ARM. ARM views Java playing a critical role in the software eco-system. ARMs motivation is to make sure our 250 semiconductor partners (collectively shipping >6B units in 2010) have the most highly supported Java solution available, help drive Java in to new and exciting embedded markets, and by ARM moving to micro-servers help the convergence of ME & SE. We have been collaborating on Java technology since 1996 by supporting JSR 163, 184, 271, and 297.
+</td>
+</tr>
+<tr>
+<td>
+<! -- EC contact photo and name -->
+<img src="./2011/Andrew_Sloss_nom.jpg" width="150px"><BR>Andrew Sloss
+</td>
+<td>
+<! -- EC contact bio-->
+<p>Andrew Sloss is a Consultant Engineer at ARM Inc, where he has worked for over fifteen years supporting and developing ARM processor based embedded products. Andrew co-authored the book ARM System Developer's Guide: Designing and Optimizing System Software. He graduated from the University of Hertfordshire in Computer Science and has spent 20 years in the Computer/Embedded field working for a mixture of startups and larger companies?namely Acorn Computers, EO Inc (an AT&T startup), Firepower Systems (a Canon startup) and Motorola. Andrew is also the ARM Binding�s Chairperson for UEFI. He is a Fellow of the British Computer Society and a part-time Lecturer in Embedded Systems at the University of Washington Extension.
+
+</td>
+</tr>
+
+<tr><td>&nbsp;</td><td>&nbsp;</td></tr>
+
+<tr>
+<td valign="top">
+<B><a name="cox"></a>Cox Communications</b><BR>
+</td>
+<td>
+<! -- Qualifications -->
+<p>Cox is leading the charge to leverage Java as the central core of next generation products for our customers. We have extensive experience with products built on both J2EE and J2ME. We have demonstrated technology thought leadership in many industry and standards organizations over the years, including the JCP. <a href="http://ww2.cox.com/aboutus/sandiego/our-story.cox">http://ww2.cox.com/aboutus/sandiego/our-story.cox</a>
+</td>
+</tr>
+<tr>
+<td>
+<! -- EC contact photo and name -->
+<img src="./2011/Craig_Smithpeters_nom.jpg" width="150px"><BR>Craig Smithpeters
+
+</td>
+<td>
+<! -- EC contact bio-->
+<p>Chair, Java Community Process JSR 242 Experts Group (OnRamp), 2004-2009
+<p><a href="http://www.linkedin.com/pub/craig-smithpeters/0/271/236">Linked In</a>
+</td>
+</tr>
+
+<tr><td>&nbsp;</td><td>&nbsp;</td></tr>
+
+<tr>
+<td valign="top">
+<B><a name="keil"></a>Werner Keil</b><BR><BR>
+<img src="./2011/Werner_Keil_nom.jpg" width="150px">
+</td>
+<td>
+<! -- Qualifications -->
+<p>I worked with Java since the first JDK. Having created solutions in paradigms of what we know as Portals, Social Networks,... today. I joined the JCP EC 3 years ago at a critical and difficult phase and helped many JSRs including EE6 or the first part of JCP.next. Having worked in Mobile/Teleco for most of those 3 years as well to support merging the ECs via the upcoming JCP.next steps, I decided to run for what is still ME EC until that work is done and the JCP as well as Java itself unified.
+
+<p><a href="./2011/JCP_EC_Nomination_Werner_Keil.pdf">Werner Keil position statement</a> (.pdf file)
+</td>
+</tr>
+<tr>
+<td>
+<! -- EC contact photo and name -->
+</td>
+<td>
+<! -- EC contact bio-->
+<p>Werner Keil is Distinct Architect for a Financial Services company. Helping Global 500 Enterprises across industries, as well as leading IT vendors. He has worked for more than 20 years as Program Manager, Coach, SW architect, and consultant for Finance, Telco/Mobile, Media and Public sector. Werner is Eclipse Committer, UOMo Project Lead and member of the JCP, e.g. in JSRs like 321 (Trusted Java), 331, 333, 342 (Java EE 7), 344, 346 (CDI 1.1) or 348 (JCP.next) and the Executive Committee.
+
+</td>
+</tr>
+
+<tr><td>&nbsp;</td><td>&nbsp;</td></tr>
+
+<tr>
+<td valign="top">
+<B><a name="terrazas"></a>Alex Terrazas</b><BR><BR>
+<img src="./2011/Alex_Terrazas_nom.jpg" width="150px">
+</td>
+<td>
+<! -- Qualifications -->
+<p>As noted in my biography, I have had broad exposure in the academic, 
+entrepreneurial and �big company� executive sandboxes. I will briefly 
+describe my qualifications for the Java ME EC.
+
+<p>First, I have been a member of the ME EC for the past 6 months, filling 
+in for a seat that was vacated. During that 6 months, I have had the 
+opportunity to get my hands dirty and dive into some of the issues that 
+we face going forward. I took part in the JSR 348, Java.next process.
+
+<p>Before joining the EC, I was a developer of several projects that use 
+Java. As I mentioned in my biography, I used Java ME on feature phones 
+to deliver behavior modification programs. This work was funded by the 
+National Institutes of Health. The Java ME phones would communicate for 
+Java EE software as well as C programs running on embedded devices. At 
+the time I was unaware that Java could run on such small devices. Had I 
+known, I would have saved myself several hundreds of hours. I have spent 
+the last six months investigating Java on embedded devices. The 
+community at large is not aware of this fact. Indeed, Java ME is very 
+powerful but that is not widely known. Regardless, I have a deep 
+understanding of embedded devices and applications. I believe I can help 
+evangelize Java on embedded.
+
+<p>I have also worked extensively with the Java Media APIs and, with 
+co�authors, wrote a book about Java 3D, Java Advanced Imaging and the 
+Java Media Framework. A lot of the VR research I conducted at the NIH 
+used Java3D to control the presentation of 3D and VR stimuli. I used 
+Java3D environments in a functional MRI scanner. I also used all of the 
+really cool head tracking and stereoscopic presentation capabilities 
+that Java3D had.
+
+<p>Overall, I have a lot of interest in Kinect, JavaFX, Java TV, Java ME on 
+mobile phones and embedded systems. I believe I can make a strong 
+contribution to �Moving Java Forward�.
+</p>
+<p>
+<a href="./2011/JCP_EC_Nomination_Alex_Terrazas.pdf">Alex Terrazas position statement</a> (.pdf file)
+</p>
+</td>
+</tr>
+<tr>
+<td>
+<! -- EC contact photo and name -->
+</td>
+<td>
+<! -- EC contact bio-->
+<p>My career has been focused on technology development based on brain 
+science (e.g., computer vision, neural networks, and information 
+theory). Although, I am running for an individual seat on the Java ME 
+EC, my current title is Vice President of Innovation at the Nielsen 
+Company. I have had this new position for less than one month. I am 
+charged with bringing additional entrepreneurial vigor to the research 
+and development efforts at Nielsen.
+
+<p>From 2003� - 2011 I was President and Chief Scientist of MediaBalance, 
+Inc., a company I began in my garage. During that time, I won $1.5 
+million in federal funding from the Small Business Innovation Research 
+(SBIR) programs of the National Institutes of Health, National Science 
+Foundation, and Defense Advanced Research Projects Agency. Those 
+projects were focused on mobile and embedded platforms for modifying 
+behavior. My interest in JavaME stems from that work.
+
+<p>Prior to starting my own company, I had an academic career as a PhD 
+student in Cognition and Neural Systems and, later, as a Professor. 
+Because I have been an executive, entrepreneur, and academic, I believe 
+I can bring a broad perspective to the Java ME EC because I understand 
+the needs at multiple levels. I believe I can provide a unique 
+perspective to the Java community.
+
+</td>
+</tr>
+
+
+</table>
+
+
+      <br>
+      <p>ABOUT THE JAVA COMMUNITY PROCESS (JCP) EXECUTIVE COMMITTEES </p>
+      <p>The JCP has two Executive Committees (EC) -
+Standard/Enterprise &amp; Micro
+Edition, each targets different markets for the Java Platform. Voting
+Members on each EC serve 3-year terms; there are 10 Ratified Seats, 5
+Elected Seats, and the permanent seat held by Sun Microsystems, Inc.
+The
+3-year terms are staggered so that 5 of the 15 seats are normally up
+for
+ratification/election each year. </p>
+      <p>The EC members guide the evolution of the Java technologies.
+The EC
+represents a cross-section of both major stakeholders and other members
+of the Java Community. Duties are: select JSRs for development, approve
+draft Specifications for Public Review, approve Final Specifications,
+review TCK appeals, approve Maintenance revisions and possibly defer
+some features to a new JSR, approve transfer of maintenance duties
+between members and provide guidance to the Program Management Office
+(PMO). For more information on the EC, see the Executive Committee Info
+page <a href="http://jcp.org/en/participation/committee">http://jcp.org/en/participation/committee</a>.
+      </p>
+     <p>
+<P>
+For 2000 EC Elections results, please look <a href="/aboutJava/communityprocess/jcpec-elections.html">here</a>.
+<P>
+For 2001 EC Elections results, please look <a href="/aboutJava/communityprocess/elections/2001.html">here</a>.
+<P>
+
+For 2002 EC Elections results, please look <a href="/aboutJava/communityprocess/elections/2002.html">here</a>.
+<P>
+For 2003 EC Elections results, please look <a href="/aboutJava/communityprocess/elections/2003.html">here</a>.
+<P>
+For 2004 EC Elections results, please look <a href="/aboutJava/communityprocess/elections/2004.html">here</a>.
+<P>
+For 2005 EC Elections results, please look <a href="/aboutJava/communityprocess/elections/2005.html">here</a>.
+<P>
+For 2006 EC Elections results, please look <a href="/aboutJava/communityprocess/elections/2006.html">here</a>.
+
+<P>
+For 2007 EC Elections results, please look <a href="/aboutJava/communityprocess/elections/2007.html">here</a>.
+<P>
+For 2008 EC Elections results, please look <a href="/aboutJava/communityprocess/elections/2008.html">here</a>.
+<P>
+For 2009 EC Elections results, please look <a href="/aboutJava/communityprocess/elections/2009.html">here</a>.
+<P>
+For 2010 EC Elections results, please look <a href="/aboutJava/communityprocess/elections/2010.html">here</a>.
+<P>
+For more information on the JCP, see the JCP Overview page
+<a href="../introduction/overview">http://jcp.org/introduction/overview</a>.<BR>
+Contact the PMO for election questions at pmo<fake_tag>&#064;</fake_tag>jcp.org
+</font>
+</P>
+
+<!-----------------------DIVIDER--------------------------->
+<!-- end main page content --></td>
+<!-- gutter spacing for right side of the page --> <td width="30"><img
+ src="/images/pixel.gif" alt="" height="1" width="30"> </td>
+    </tr>
+  </tbody>
+</table>
+<!-- server side include for page footer -->
+<!--#include virtual="/share/include/normal.footer.v4.0.html"--><!-- end server side include for footer -->
+<BR>
+<BR>
+__________ Information from ESET NOD32 Antivirus, version of virus signature database 6541 (20111013) __________<BR>
+<BR>
+The message was checked by ESET NOD32 Antivirus.<BR>
+<BR>
+<A HREF="http://www.eset.com">http://www.eset.com</A><BR>
+
+
+</body>
+</html>
+
+
+
+<!-- ** BEGIN: footer.jsp ** //-->
+
+
+
+
+
+
+
+
+</td>
+</tr>
+</table>
+
+<!-- ** END: Content Table ** //-->
+
+<!-- ** BEGIN: Footer Table ** //-->
+
+<div id="footer" style="clear: both;">
+    <div class="footleft">
+        <a href="/en/resources/contacts">Contact Us</a>
+    </div>
+	
+    <div class="botbar"><img src="/images/spacer.gif" alt="" height="23" width="1"></div>
+
+    <div class="footleft2">
+         &copy; 2019, Oracle Corporation and/or its affiliates. 
+        <a href="/en/home/terms">Terms of Use</a>. <a href="http://www.oracle.com/us/legal/privacy/index.html">Privacy Policy</a>. <a href="http://www.oracle.com/us/legal/third-party-trademarks/third-party-trademarks-078568.html">Trademarks</a>
+    </div>
+
+    <div class="footright">
+        <img src="/images/common/logo_oracle_footer.gif" alt="Oracle Corporation" height="22" width="91">
+    </div>
+
+    <div style="clear: both;"><img src="/images/spacer.gif" alt="" height="30" width="1"></div>
+</div>
+
+<!-- ** END: Footer Table ** //-->
+
+
+
+<!-- ** Menu Start ** //-->
+
+
+
+</body>
+</html>
+<!-- ** END: footer.jsp ** //-->
+

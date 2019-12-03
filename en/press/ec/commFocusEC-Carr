@@ -1,0 +1,576 @@
+
+
+<!-- ** BEGIN: header.jsp ** //-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3c.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+<head>
+    
+
+   
+    <link href="/includes/css/menu.css" rel="stylesheet" type="text/css"></link>
+    <link href="/includes/css/style.css" rel="stylesheet" type="text/css"></link>
+    <!--[if lt IE 6]><link href="/includes/css/style5.css" rel="stylesheet" type="text/css" ></link><![endif]-->
+    <!--[if gte IE 5]><link href="/includes/css/style6.css" rel="stylesheet" type="text/css" ></link><![endif]-->
+    <link href="/includes/css/tabs.css"  rel="stylesheet" type="text/css"></link>
+
+    <script type="text/javascript" src="/includes/scripts/tabs.js"></script>
+    <script type="text/javascript" src="/includes/scripts/menu.js"></script>
+   
+
+    
+
+    
+        <title>The Java Community Process(SM) Program - Press & Success - ec</title>
+    
+
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+
+
+<body onload="P7_initPM(0,1,0,0,-1)">
+
+    <a name="top"></a>
+
+    <div id="header">
+	<div id="logo">
+		<a href="/en/home/index"><img src="/images/spacer.gif" alt="Java Community Process" height="81" width="151"></a>
+	</div>
+	<div id="tools">
+		<div class="search">
+			<form name="search" action="/en/jsr/summary" method="get" onsubmit="return validate_search()">
+				<input name="id" value="Search JSRs" size="16" class="form" onfocus="nullify_if_equal(this, 'Search JSRs')" type="text">
+				<a href="javascript:document.search.submit()" onclick="return validate_search()"><img src="/images/button_go.gif" width="21" height="16" border="0" alt="Submit this Search" name="sub_search"></a>
+			</form>
+		</div>
+		<div class="tools">
+			<a href="/en/press/pressroom">Press Room</a> &nbsp;|&nbsp;
+			<a href="http://java.com/java/download/index.jsp?cid=jdp78399">Get Java Here</a> &nbsp;|&nbsp;
+			<!-- <a href="javascript:void(0)">Print Format</a> &nbsp;|&nbsp;&nbsp; -->
+		</div>
+
+	</div>
+	<div style="clear: right;"></div>
+
+        
+
+	<div class="topbar"><img src="/images/spacer.gif" alt="" height="3" width="154"></div>
+	<div id="update"> </div>
+    </div>
+
+
+    
+
+        <!-- ** BEGIN: Content Table ** //-->
+
+        <table width="100%" border="0" cellpadding="0" cellspacing="0">
+
+            <tr>
+
+                <!-- ** BEGIN: Navigation Column ** //-->
+                <td width="150" id="leftcontent" valign="top">
+                    <!-- Navigation Placeholder //-->
+
+                    
+
+                    <div class="bar"><img src="/images/hr_dots1.gif" alt="" height="3" width="150"></div>
+
+        <!-- begin find JSRs form -->
+        <!-- IMPORTANT! do not convert this form to Struts < html : form > tag.  javascript change of form.action property fails. -->
+        <img src="/images/hd_find-jsrs.gif" alt="Find JSRs" height="18" width="150">
+        <form name="findjsr" action="/en/jsr/summary" method="get" class="pt5" onsubmit="return validate_findjsr()">
+            <input name="id" size="18" class="form" value="Search JSRs" onfocus="nullify_if_equal(this, 'Search JSRs')" type="text">
+	    <a href="javascript:document.findjsr.submit()" onclick="return validate_findjsr()"><img src="/images/button_go.gif" width="21" height="16" border="0" alt="Submit this Search" name="sub_search"></a>
+        </form><br><br>
+
+        <!-- ** Menu Start ** //-->
+
+        <ul id="p7PMnav">
+            <li><a href="/en/jsr/platform">JSRs by Platform</a></li>
+            <li><a href="/en/jsr/tech">JSRs by Technology</a></li>
+            <li><a href="/en/jsr/stage">JSRs by Stage</a></li>
+            <li><a href="/en/jsr/ec">JSRs by Committee</a></li>
+            <li><a href="/en/jsr/all">List of All JSRs</a></li>
+
+            <!--end find JSRs form -->
+            <div style="clear: both;"><img src="/images/spacer.gif" alt="" height="25" width="1"></div>
+
+            <!--begin my JCP -->
+            <img src="/images/hd_my-jcp.gif" alt="My JCP" height="18" width="150">
+            
+
+          <form name="login" method="get" action="/en/user/login" >
+            <input name="Sign-in" type="submit" title="Sign-in" value="Sign-in" />
+          </form>
+
+            <div style="clear:both"><img src="/images/global/spacer.gif" width="1" height="3" alt=""></div>
+            <div class="noNav">
+                <a href="/en/user/register">Register for Site</a>
+            </div>
+
+             <div class="bar"><img src="/images/hr_dots1.gif" alt="" height="3" width="150"></div>
+           <div class="noNav" style="color: #666666; padding: 0;">
+              Use of JCP site is subject to the
+              <a href="/en/home/terms" style="display:inline;padding: 0">JCP Terms of Use</a> and the
+              <a href="http://www.oracle.com/us/legal/privacy/index.html" style="display:inline;padding: 0" href="">Oracle Privacy Policy</a>
+          </div>
+
+            
+
+            <div style="clear:both"><img src="/images/global/spacer.gif" width="1" height="25" alt=""></div>
+
+            <!--begin JCP info -->
+            <img src="/images/hd_jcp-info.gif" alt="JCP Info" height="18" width="150">
+
+            <li><a href="/en/procedures/overview" class="p7PMtrg">About JCP</a>
+                <ul>
+                    <li><a href="/en/procedures/overview">Program Overview</a></li>
+                    <li><a href="/en/procedures/jcp2">JCP Process Document</a></li>
+                    <li><a href="/en/whatsnew/calendar">Calendar</a></li>
+                    <li><a href="/en/participation/members">JCP Members</a></li>
+                    <li><a href="/en/participation/committee">Executive Committee</a></li>
+                    <li><a href="/en/whatsnew/elections">Elections</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/en/participation/overview" class="p7PMtrg">Get Involved</a>
+		<ul>
+                    <li><a href="/en/participation/overview">Overview</a></li>
+                    <li><a href="/en/participation/membership">Becoming a JCP Member</a></li>
+		</ul>
+            </li>
+
+            <li><a href="/en/resources/contents" class="p7PMtrg">Community Resources</a>
+                <ul>
+                    <li><a href="/en/resources/contents">Overview</a></li>
+                    <li><a href="/en/resources/tutorials">Tutorials</a></li>
+                    <li><a href="/en/resources/multimedia">JCP Podcasts</a></li>
+                    <li><a href="/en/resources/guide">Spec Lead Guide</a></li>
+                    <li><a href="/en/resources/tdk">TCK Tool & Info</a></li>
+                    <li><a href="/en/resources/license_reference">License Reference</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/en/press/pmo" class="p7PMtrg">Community News</a>
+                <ul>
+                    <li><a href="/en/press/pmo">News</a></li>
+                    <li><a href="/en/press/news/awards/awards_main">Programs &amp; Awards</a></li>
+                    <li><a href="/en/press/releases">Press Releases</a></li>
+                    <li><a href="/en/press/success">Success Stories</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/en/introduction/faq">FAQ</a></li>
+
+            <li><a href="/en/resources/contacts">Contact Us</a></li>
+
+            <div style="clear: both;"><img src="/images/spacer.gif" alt="" height="25" width="1"></div>
+
+            <!--[if lte IE 6]><style>#p7PMnav a{height:1em;}#p7PMnav li{height:1em;float:left;clear:both;width:100%}</style><![endif]-->
+            <!--[if IE 6]><style>#p7PMnav li{clear:none;}</style><![endif]-->
+            <!--[if IE 7]><style>#p7PMnav a{zoom:100%;}#p7PMnav li{float:left;clear:both;width:100%;}</style><![endif]-->
+        </ul>
+
+        
+
+        <!--begin ad space -->
+        <div class="ads">
+            <a href="http://java.com/java/download/index.jsp?cid=jdp78399" target="_blank"><img style="display: ;" src="/images/ad_banner2.gif" alt="Ad Banner" border="1" height="70" width="150"></a>
+        </div>
+        <!--end ad space -->
+
+<!-- ** Menu End ** //-->
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;<br>
+
+    
+
+                    &nbsp;<br>
+                    <img src="/images/common/trans.gif" alt="" width="1" height="150"><br>
+
+              
+
+
+
+                </td>
+                <!-- ** END: Navigation Column ** //-->
+
+                <!-- ** BEGIN: Gutter Column ** //-->
+		<td width="10" nowrap><img src="/images/common/trans.gif" alt="" width="10" height="1"></td>
+                <!-- ** END: Gutter Column ** //-->
+
+                <!-- ** BEGIN: Content Column ** //-->
+                <td width="100%" valign="top">
+
+    
+<script type="text/javascript">
+
+String.prototype.trim = function() {
+        return this.replace(/^\s+|\s+$/g,"");
+}
+String.prototype.ltrim = function() {
+        return this.replace(/^\s+/,"");
+}
+String.prototype.rtrim = function() {
+        return this.replace(/\s+$/,"");
+}
+
+function validate_search() {
+	if (document.search.id.value == "Search JSRs" || document.search.id.value.trim().length == 0) {
+		alert("Search terms must be entered first");
+		return false;
+	}
+	return true;
+}
+
+function validate_findjsr() {
+	if (document.findjsr.id.value == "Search JSRs" || document.findjsr.id.value.trim().length == 0) {
+		alert("Search terms must be entered first");
+		return false;
+	}
+	return true;
+}
+
+function nullify_if_equal(field, str) {
+	// alert("val=" + field.value);
+	if (field.value == str) {
+		field.value = "";
+	}
+}
+
+</script>
+<!-- ** END: header.jsp ** //-->
+
+
+
+		<!-- ** JSP ** //-->
+	<table width="599" border="0" cellpadding="0" cellspacing="0">
+      <tr>
+        <td width="95%" valign="top">
+		<table width="100%"  border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td align="left" valign="top"><img src="/images/press/memberFocus/communityFocusBan.gif" width="563" height="47" vspace="4"></td>
+          </tr>
+          <tr>
+            <td id="quicklink" nowrap align="left" valign="top"><a href="../news/commFocus_main">Back to Community Focus Main Page </a></td>
+          </tr>
+        </table>
+		<br>
+		 <div class="header1">Profiles of JCP EC Representatives</div>
+		 <br>
+
+		
+   <!-- **  Begin Mini TOC and description table ** //-->
+           <table width="100%"  border="0" cellspacing="0" cellpadding="0">
+             <tr align="left" valign="top">
+               <td width="33%"><img src="/images/common/trans.gif" width="190" height="4"></td>
+               <td width="2%"><img src="/images/common/trans.gif" width="20" height="4"></td>
+               <td width="65%"><img src="/images/common/trans.gif" width="370" height="4"></td>
+             </tr>
+             <tr align="left" valign="top">
+               <td valign="top"><table width="100%"  border="0" cellspacing="0" cellpadding="0">
+                 <tr align="left" valign="top">
+                   <td><img src="/images/common/bullet.gif" width="14" height="11" hspace="4" vspace="2" border="0"></td>
+                   <td nowrap id="quicklink"><a href="/en/press/ec/commFocusEC-Bechauf">Michael Bechauf</a></td>
+                 </tr>
+                 <tr align="left" valign="top">
+                   <td><img src="/images/common/bullet.gif" width="14" height="11" hspace="4" vspace="2" border="0"></td>
+                   <td nowrap id="quicklink"><a href="/en/press/ec/commFocusEC-Bloch">Josh Bloch</a></td>
+                 </tr>
+                 <tr align="left" valign="top">
+                   <td><img src="/images/common/bullet.gif" width="14" height="11" hspace="4" vspace="2" border="0"></td>
+                   <td nowrap id="quicklink"><a href="/en/press/ec/commFocusEC-Carr">Wayne Carr</a></td>
+                 </tr>
+                  <tr align="left" valign="top">
+                   <td><img src="/images/common/bullet.gif" width="14" height="11" hspace="4" vspace="2" border="0"></td>
+                   <td nowrap id="quicklink"><a href="/en/press/ec/commFocusEC-Coward">Danny Coward</a></td>
+                 </tr>
+                <tr align="left" valign="top">
+                   <td><img src="/images/common/bullet.gif" width="14" height="11" hspace="4" vspace="2" border="0"></td>
+                   <td nowrap id="quicklink"><a href="/en/press/ec/commFocusEC-Deutsch">Don Deutsch</a></td>
+                 </tr>
+                 <tr align="left" valign="top">
+                   <td><img src="/images/common/bullet.gif" width="14" height="11" hspace="4" vspace="2" border="0"></td>
+                   <td nowrap id="quicklink"><a href="/en/press/ec/commFocusEC-Jameson">Scott Jameson</a></td>
+                 </tr>
+                 <tr align="left" valign="top">
+                   <td><img src="/images/common/bullet.gif" width="14" height="11" hspace="4" vspace="2" border="0"></td>
+                   <td nowrap id="quicklink"><a href="/en/press/ec/commFocusEC-Jensen">Jens Jensen</a></td>
+                 </tr>
+                 <tr align="left" valign="top">
+                   <td><img src="/images/common/bullet.gif" width="14" height="11" hspace="4" vspace="2" border="0"></td>
+                   <td nowrap id="quicklink"><a href="/en/press/ec/commFocusEC-Johnson">Rod Johnson</a></td>
+                 </tr>
+                 <tr align="left" valign="top">
+                   <td><img src="/images/common/bullet.gif" width="14" height="11" hspace="4" vspace="2" border="0"></td>
+                   <td nowrap id="quicklink"><a href="/en/press/ec/commFocusEC-Keil">Werner Keil</a></td>
+                 </tr>
+                 <tr align="left" valign="top">
+                   <td><img src="/images/common/bullet.gif" width="14" height="11" hspace="4" vspace="2" border="0"></td>
+                   <td nowrap id="quicklink"><a href="/en/press/ec/commFocusEC-Labourey">Sacha Labourey</a></td>
+                 </tr>
+                 <tr align="left" valign="top">
+                   <td><img src="/images/common/bullet.gif" width="14" height="11" hspace="4" vspace="2" border="0"></td>
+                   <td nowrap id="quicklink"><a href="/en/press/ec/commFocusEC-Lea">Doug Lea</a></td>
+                 </tr>
+                 <tr align="left" valign="top">
+                   <td><img src="/images/common/bullet.gif" width="14" height="11" hspace="4" vspace="2" border="0"></td>
+                   <td nowrap id="quicklink"><a href="/en/press/ec/commFocusEC-Magnusson">Geir Magnusson</a></td>
+                 </tr>
+                 <tr align="left" valign="top">
+                   <td><img src="/images/common/bullet.gif" width="14" height="11" hspace="4" vspace="2" border="0"></td>
+                   <td nowrap id="quicklink"><a href="/en/press/ec/commFocusEC-Milinkovich">Mike Milinkovich</a></td>
+                 </tr>
+                 <tr align="left" valign="top">
+                   <td><img src="/images/common/bullet.gif" width="14" height="11" hspace="4" vspace="2" border="0"></td>
+                   <td nowrap id="quicklink"><a href="/en/press/ec/commFocusEC-Rahm">Bryn Rahm</a></td>
+                 </tr>
+                 <tr align="left" valign="top">
+                   <td><img src="/images/common/bullet.gif" width="14" height="11" hspace="4" vspace="2" border="0"></td>
+                   <td nowrap id="quicklink"><a href="/en/press/ec/commFocusEC-Shimamura">Makiko Shimamura</a></td>
+                 </tr>
+                 <tr align="left" valign="top">
+                   <td><img src="/images/common/bullet.gif" width="14" height="11" hspace="4" vspace="2" border="0"></td>
+                   <td nowrap id="quicklink"><a href="/en/press/ec/commFocusEC-Thomas">Mark Thomas</a></td>
+                 </tr>
+                 <tr align="left" valign="top">
+                   <td>&nbsp;</td>
+                   <td nowrap id="quicklink">&nbsp;</td>
+                 </tr>
+               </table></td>
+               <td valign="top">&nbsp;</td>
+               <td>
+                 <table width="100%" border="0" align="right" cellpadding="9" cellspacing="0" bgcolor="#f1f1f6" class="box_fill">
+                   <tr>
+                     <td valign="top">
+<em> <img src="/images/home/thumb_vote.gif" width="95" height="75" align="left">The job of an Executive Committee (EC) representative
+ is a serious commitment. The time required is extensive, and includes reading of specifications, Reference Implementations (RIs), 
+ and Technology Compatibility Kits (TCKs), as well as regular attendance at EC meetings and teleconferences to discuss and vote on 
+ various technical and process topics. Besides voting on Java Specification Requests (JSRs) at various stages, the EC guides the 
+ Program Management Office (PMO) in the evolution of the Java Community Process (JCP) program. EC decisions can have significant, 
+ long-term consequences to not only the community, but also in the industry and the market. Still, plenty of JCP participants relish 
+ the task of representing a corporation, non-profit, open source group, or themselves. </em>
+					   
+</td>
+</tr>
+</table></td>
+</tr>
+</table>
+
+<!-- **  End Mini TOC and description table ** //-->
+
+
+            <br>
+            <div class="header1">Wayne Carr</div>
+            Wayne Carr brings a wealth of technical experience to the JCP EC. In 20 years
+			of software engineering, he has worked on TV set-tops, video conferencing,
+			operating systems, networking, multimedia and on advanced research in robotics,
+			working for Martin Marietta, Microsoft, and Intel. He has been coding in Java
+			technology since the language was introduced.
+<br>&nbsp;<br>
+<table width="56" height="44" border="0" align="left" cellpadding="2" cellspacing="0">
+  <tr align="left" valign="top">
+    <td><img src="/images/press/memberFocus/ec/wayne_carr.jpg" width="100" height="100"></td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr align="left" valign="top">
+    <td align="center"><img src="/images/common/trans.gif" width="16" height="17"></td>
+    <td><img src="/images/common/trans.gif" width="16" height="17"></td>
+  </tr>
+</table>
+Wayne also has considerable previous experience in standards bodies, having managed a group
+dedicated to standards work in the World Wide Web Consortium (W3C), where he personally
+worked in the W3C HTML Working Group (WG), XML Schema WG, and W3C Advisory Committee as Intel's
+lead corporate representative to W3C. Wayne has also worked with the Open Mobile
+Architecture (OMA) initiative on OMA Architecture Principles and Execution Environment
+policy, as well as The Internet Engineering Task Force (IETF), the Advanced Television
+Enhancement Forum (ATVEF, for HTML over TV), and in other standards organizations.
+<br>
+&nbsp;<br>
+<div class="header3">Grasping the Big Picture</div>
+Since June 2002, when Intel joined the JCP program, Wayne rapidly became
+highly involved in the EC and various JSRs. He closely
+followed <a href="/en/jsr/detail?id=185">JSR 185</a>, Java Technology
+for the Wireless Industry as an observer, and he participates as an
+active member of the Expert Groups for <a href="/en/jsr/detail?id=250">JSR 250</a>,
+Common Annotations for the Java Platform, <a href="/en/jsr/detail?id=270">JSR 270</a>, Java SE 6
+("Mustang") Release Contents, and <a href="/en/jsr/detail?id=277">JSR 277</a>, Java Module
+System. Wayne also coordinates cross-company Intel participation in the JCP program.
+<br>
+&nbsp;<br>
+Currently, Wayne is an architect in Intel's Software and Solutions
+Group Managed Runtime Division. He serves as Intel's representative
+on the Java SE/EE Executive Committee and previously represented Intel
+on the Java ME Executive Committee. "We see our elected position in the
+Executive Committee as representing the JCP program Membership, and we
+take that very seriously," says Wayne. From within the ECs, he has
+championed Intel's interest in improving the rules to ensure that the
+JCP program is favorable for Independent Implementations, especially open
+source implementations.
+<br>&nbsp;<br>
+For instance, Intel worked with the JCP Program Management Office (PMO) to
+craft rules for Specification Leads that guard against accidentally exposing
+Expert Group members to the Reference Implementation. That helps ensure Expert
+Group members can create Independent Implementations uncontaminated by anyone
+else's code. Wayne says, "We also think it is crucial for Spec Leads to provide
+licensing information for the required TCK test suite when the JSR is proposed.
+Currently, Implementers may not know the conditions of that required license until
+after the spec is completed, and waiting that long to implement could get to market late."
+<br>&nbsp;<br>
+<div class="header3">Representing Intel Corporation</div>
+Intel is a leading supplier and innovator of microprocessors and other
+silicon building blocks being used in the vast array of devices and
+computing platforms where Java technology is being deployed. Intel is
+innovating in areas like multi-core and threading, wireless and wired
+networking, and semiconductor devices for embedded controllers, mobile
+phones, PDAs, set-top boxes, laptops, PCs, servers and supercomputers.
+"Java technology is an important part of our future, and Intel is
+committed to ensuring that Java technology can take advantage of
+cutting edge advances in hardware in the years to come, like the
+rise of multi-core processors that support far larger numbers of
+threads than in the past," says Wayne.
+<br>&nbsp;<br>
+Intel has participated in 14 JSRs, including the three Wayne worked on:
+<br>&nbsp;<br>
+<a href="/en/jsr/detail?id=277"><strong>JSR 277</strong></a> Java Module System
+<br>
+<a href="/en/jsr/detail?id=271"><strong>JSR 271</strong></a> Mobile Information Device Profile 3
+<br>
+<a href="/en/jsr/detail?id=270"><strong>JSR 270</strong></a> Java SE 6("Mustang") Release Contents
+<br>
+<a href="/en/jsr/detail?id=253"><strong>JSR 253</strong></a> Mobile Telephony API (MTA)
+<br>
+<a href="/en/jsr/detail?id=250"><strong>JSR 250</strong></a> Common Annotations for the Java Platform
+<br>
+<a href="/en/jsr/detail?id=218"><strong>JSR 218</strong></a> Connected Device Configuration 1.1
+<br>
+<a href="/en/jsr/detail?id=217"><strong>JSR 217</strong></a> Personal Basis Profile 1.1
+<br>
+<a href="/en/jsr/detail?id=209"><strong>JSR 209</strong></a> Advanced Graphics and User Interface Optional Package for the J2ME Platform
+<br>
+<a href="/en/jsr/detail?id=205"><strong>JSR 205</strong></a> Wireless Messaging API 2.0
+<br>
+<a href="/en/jsr/detail?id=184"><strong>JSR 184</strong></a> Mobile 3D Graphics API for J2ME
+<br>
+<a href="/en/jsr/detail?id=179"><strong>JSR 179</strong></a> Location API for J2ME
+<br>
+<a href="/en/jsr/detail?id=174"><strong>JSR 174</strong></a> Monitoring and Management Specification for the Java Virtual Machine
+<br>
+<a href="/en/jsr/detail?id=163"><strong>JSR 163</strong></a> Java Platform Profiling Architecture <br>
+<a href="/en/jsr/detail?id=113"><strong>JSR 113</strong></a> Java Speech API 2.0
+<br>
+&nbsp;<br>
+Intel is enthusiastic about continuing to serve on the Java SE/EE EC in coming years,
+wanting to use the company's expertise and capabilities to assist in the growth and
+direction of Java technology. "On the process side, we would like to see the JCP
+program continue to evolve towards being a more open and more democratic standards
+organization," Wayne says.
+<br>&nbsp;<br>
+<div class="header3">Working As a Team</div>
+Although Wayne serves as Intel's Java SE/EE EC representative,
+that job is really a joint effort. He says an EC representative's
+biggest task is the review of drafts and final specs. "The review
+and guidance obligations of an EC member can be daunting -- the JCP
+program is successfully creating a lot of specs! Intel has a very
+large team of individuals across the company who review and comment
+on drafts and final specs to aid in developing our EC voting positions.
+Each of Intel's votes is reviewed by a cross-company review committee.
+Our primary mission on the EC is to help ensure timely and high quality Java
+technology specifications."
+<br>&nbsp;<br>
+Wayne has found his interaction with the Java community on
+EC votes and other issues to be one of the highlights of being
+an EC representative. While his BA in Mathematics from the University of
+Denver and MS in Computer Science from the University of Colorado have
+proven useful, his BA and MA in Psychology from the University of California,
+Santa Barbara, and University of Denver, respectively, "don't help a bit! I do
+know a bit about infant visual perception, but that hasn't come up in the EC," he says.
+<br>&nbsp;<br>
+Now living in Portland, Oregon, USA, Wayne's leisure pursuits
+involve spending time with his wife, reading, watching obscure
+movies, hiking, and swimming. If you're ever in Portland, Wayne
+recommends a visit to Portland's Saturday Market, an open air arts
+and crafts market just a block from the Portland's waterfront.
+<br>&nbsp;<br>
+<a href="#top"><img src="/images/common/up_arrow.gif" width="54" height="13" vspace="6" border="0"></a> . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . <br>
+        </td>
+      </tr>
+      <tr>
+        <td valign="top"><img src="/images/common/trans.gif" width="563" height="8"></td>
+      </tr>
+    </table>
+
+<!-- ** JSP ** //-->
+
+		<!-- ** BEGIN: footer.jsp ** //-->
+
+
+
+
+
+
+
+
+</td>
+</tr>
+</table>
+
+<!-- ** END: Content Table ** //-->
+
+<!-- ** BEGIN: Footer Table ** //-->
+
+<div id="footer" style="clear: both;">
+    <div class="footleft">
+        <a href="/en/resources/contacts">Contact Us</a>
+    </div>
+	
+    <div class="botbar"><img src="/images/spacer.gif" alt="" height="23" width="1"></div>
+
+    <div class="footleft2">
+         &copy; 2019, Oracle Corporation and/or its affiliates. 
+        <a href="/en/home/terms">Terms of Use</a>. <a href="http://www.oracle.com/us/legal/privacy/index.html">Privacy Policy</a>. <a href="http://www.oracle.com/us/legal/third-party-trademarks/third-party-trademarks-078568.html">Trademarks</a>
+    </div>
+
+    <div class="footright">
+        <img src="/images/common/logo_oracle_footer.gif" alt="Oracle Corporation" height="22" width="91">
+    </div>
+
+    <div style="clear: both;"><img src="/images/spacer.gif" alt="" height="30" width="1"></div>
+</div>
+
+<!-- ** END: Footer Table ** //-->
+
+
+
+<!-- ** Menu Start ** //-->
+
+
+
+</body>
+</html>
+<!-- ** END: footer.jsp ** //-->
+

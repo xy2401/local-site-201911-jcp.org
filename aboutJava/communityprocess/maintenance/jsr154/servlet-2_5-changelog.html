@@ -1,0 +1,655 @@
+
+<!-- ** BEGIN: header.jsp ** //-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3c.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+<head>
+    
+
+   
+    <link href="/includes/css/menu.css" rel="stylesheet" type="text/css"></link>
+    <link href="/includes/css/style.css" rel="stylesheet" type="text/css"></link>
+    <!--[if lt IE 6]><link href="/includes/css/style5.css" rel="stylesheet" type="text/css" ></link><![endif]-->
+    <!--[if gte IE 5]><link href="/includes/css/style6.css" rel="stylesheet" type="text/css" ></link><![endif]-->
+    <link href="/includes/css/tabs.css"  rel="stylesheet" type="text/css"></link>
+
+    <script type="text/javascript" src="/includes/scripts/tabs.js"></script>
+    <script type="text/javascript" src="/includes/scripts/menu.js"></script>
+   
+
+    
+
+    
+        <title>The Java Community Process(SM) Program - communityprocess - maintenance</title>
+    
+
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+
+
+<body onload="P7_initPM(0,1,0,0,-1)">
+
+    <a name="top"></a>
+
+    <div id="header">
+	<div id="logo">
+		<a href="/en/home/index"><img src="/images/spacer.gif" alt="Java Community Process" height="81" width="151"></a>
+	</div>
+	<div id="tools">
+		<div class="search">
+			<form name="search" action="/en/jsr/summary" method="get" onsubmit="return validate_search()">
+				<input name="id" value="Search JSRs" size="16" class="form" onfocus="nullify_if_equal(this, 'Search JSRs')" type="text">
+				<a href="javascript:document.search.submit()" onclick="return validate_search()"><img src="/images/button_go.gif" width="21" height="16" border="0" alt="Submit this Search" name="sub_search"></a>
+			</form>
+		</div>
+		<div class="tools">
+			<a href="/en/press/pressroom">Press Room</a> &nbsp;|&nbsp;
+			<a href="http://java.com/java/download/index.jsp?cid=jdp78399">Get Java Here</a> &nbsp;|&nbsp;
+			<!-- <a href="javascript:void(0)">Print Format</a> &nbsp;|&nbsp;&nbsp; -->
+		</div>
+
+	</div>
+	<div style="clear: right;"></div>
+
+        
+
+	<div class="topbar"><img src="/images/spacer.gif" alt="" height="3" width="154"></div>
+	<div id="update"> </div>
+    </div>
+
+
+    
+
+        <!-- ** BEGIN: Content Table ** //-->
+
+        <table width="100%" border="0" cellpadding="0" cellspacing="0">
+
+            <tr>
+
+                <!-- ** BEGIN: Navigation Column ** //-->
+                <td width="150" id="leftcontent" valign="top">
+                    <!-- Navigation Placeholder //-->
+
+                    
+
+                    <div class="bar"><img src="/images/hr_dots1.gif" alt="" height="3" width="150"></div>
+
+        <!-- begin find JSRs form -->
+        <!-- IMPORTANT! do not convert this form to Struts < html : form > tag.  javascript change of form.action property fails. -->
+        <img src="/images/hd_find-jsrs.gif" alt="Find JSRs" height="18" width="150">
+        <form name="findjsr" action="/en/jsr/summary" method="get" class="pt5" onsubmit="return validate_findjsr()">
+            <input name="id" size="18" class="form" value="Search JSRs" onfocus="nullify_if_equal(this, 'Search JSRs')" type="text">
+	    <a href="javascript:document.findjsr.submit()" onclick="return validate_findjsr()"><img src="/images/button_go.gif" width="21" height="16" border="0" alt="Submit this Search" name="sub_search"></a>
+        </form><br><br>
+
+        <!-- ** Menu Start ** //-->
+
+        <ul id="p7PMnav">
+            <li><a href="/en/jsr/platform">JSRs by Platform</a></li>
+            <li><a href="/en/jsr/tech">JSRs by Technology</a></li>
+            <li><a href="/en/jsr/stage">JSRs by Stage</a></li>
+            <li><a href="/en/jsr/ec">JSRs by Committee</a></li>
+            <li><a href="/en/jsr/all">List of All JSRs</a></li>
+
+            <!--end find JSRs form -->
+            <div style="clear: both;"><img src="/images/spacer.gif" alt="" height="25" width="1"></div>
+
+            <!--begin my JCP -->
+            <img src="/images/hd_my-jcp.gif" alt="My JCP" height="18" width="150">
+            
+
+          <form name="login" method="get" action="/en/user/login" >
+            <input name="Sign-in" type="submit" title="Sign-in" value="Sign-in" />
+          </form>
+
+            <div style="clear:both"><img src="/images/global/spacer.gif" width="1" height="3" alt=""></div>
+            <div class="noNav">
+                <a href="/en/user/register">Register for Site</a>
+            </div>
+
+             <div class="bar"><img src="/images/hr_dots1.gif" alt="" height="3" width="150"></div>
+           <div class="noNav" style="color: #666666; padding: 0;">
+              Use of JCP site is subject to the
+              <a href="/en/home/terms" style="display:inline;padding: 0">JCP Terms of Use</a> and the
+              <a href="http://www.oracle.com/us/legal/privacy/index.html" style="display:inline;padding: 0" href="">Oracle Privacy Policy</a>
+          </div>
+
+            
+
+            <div style="clear:both"><img src="/images/global/spacer.gif" width="1" height="25" alt=""></div>
+
+            <!--begin JCP info -->
+            <img src="/images/hd_jcp-info.gif" alt="JCP Info" height="18" width="150">
+
+            <li><a href="/en/procedures/overview" class="p7PMtrg">About JCP</a>
+                <ul>
+                    <li><a href="/en/procedures/overview">Program Overview</a></li>
+                    <li><a href="/en/procedures/jcp2">JCP Process Document</a></li>
+                    <li><a href="/en/whatsnew/calendar">Calendar</a></li>
+                    <li><a href="/en/participation/members">JCP Members</a></li>
+                    <li><a href="/en/participation/committee">Executive Committee</a></li>
+                    <li><a href="/en/whatsnew/elections">Elections</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/en/participation/overview" class="p7PMtrg">Get Involved</a>
+		<ul>
+                    <li><a href="/en/participation/overview">Overview</a></li>
+                    <li><a href="/en/participation/membership">Becoming a JCP Member</a></li>
+		</ul>
+            </li>
+
+            <li><a href="/en/resources/contents" class="p7PMtrg">Community Resources</a>
+                <ul>
+                    <li><a href="/en/resources/contents">Overview</a></li>
+                    <li><a href="/en/resources/tutorials">Tutorials</a></li>
+                    <li><a href="/en/resources/multimedia">JCP Podcasts</a></li>
+                    <li><a href="/en/resources/guide">Spec Lead Guide</a></li>
+                    <li><a href="/en/resources/tdk">TCK Tool & Info</a></li>
+                    <li><a href="/en/resources/license_reference">License Reference</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/en/press/pmo" class="p7PMtrg">Community News</a>
+                <ul>
+                    <li><a href="/en/press/pmo">News</a></li>
+                    <li><a href="/en/press/news/awards/awards_main">Programs &amp; Awards</a></li>
+                    <li><a href="/en/press/releases">Press Releases</a></li>
+                    <li><a href="/en/press/success">Success Stories</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/en/introduction/faq">FAQ</a></li>
+
+            <li><a href="/en/resources/contacts">Contact Us</a></li>
+
+            <div style="clear: both;"><img src="/images/spacer.gif" alt="" height="25" width="1"></div>
+
+            <!--[if lte IE 6]><style>#p7PMnav a{height:1em;}#p7PMnav li{height:1em;float:left;clear:both;width:100%}</style><![endif]-->
+            <!--[if IE 6]><style>#p7PMnav li{clear:none;}</style><![endif]-->
+            <!--[if IE 7]><style>#p7PMnav a{zoom:100%;}#p7PMnav li{float:left;clear:both;width:100%;}</style><![endif]-->
+        </ul>
+
+        
+
+        <!--begin ad space -->
+        <div class="ads">
+            <a href="http://java.com/java/download/index.jsp?cid=jdp78399" target="_blank"><img style="display: ;" src="/images/ad_banner2.gif" alt="Ad Banner" border="1" height="70" width="150"></a>
+        </div>
+        <!--end ad space -->
+
+<!-- ** Menu End ** //-->
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;<br>
+
+    
+
+                    &nbsp;<br>
+                    <img src="/images/common/trans.gif" alt="" width="1" height="150"><br>
+
+              
+
+
+
+                </td>
+                <!-- ** END: Navigation Column ** //-->
+
+                <!-- ** BEGIN: Gutter Column ** //-->
+		<td width="10" nowrap><img src="/images/common/trans.gif" alt="" width="10" height="1"></td>
+                <!-- ** END: Gutter Column ** //-->
+
+                <!-- ** BEGIN: Content Column ** //-->
+                <td width="100%" valign="top">
+
+    
+<script type="text/javascript">
+
+String.prototype.trim = function() {
+        return this.replace(/^\s+|\s+$/g,"");
+}
+String.prototype.ltrim = function() {
+        return this.replace(/^\s+/,"");
+}
+String.prototype.rtrim = function() {
+        return this.replace(/\s+$/,"");
+}
+
+function validate_search() {
+	if (document.search.id.value == "Search JSRs" || document.search.id.value.trim().length == 0) {
+		alert("Search terms must be entered first");
+		return false;
+	}
+	return true;
+}
+
+function validate_findjsr() {
+	if (document.findjsr.id.value == "Search JSRs" || document.findjsr.id.value.trim().length == 0) {
+		alert("Search terms must be entered first");
+		return false;
+	}
+	return true;
+}
+
+function nullify_if_equal(field, str) {
+	// alert("val=" + field.value);
+	if (field.value == str) {
+		field.value = "";
+	}
+}
+
+</script>
+<!-- ** END: header.jsp ** //-->
+
+
+
+
+
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN"><HTML>
+<HEAD>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=ISO-8859-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+<META NAME="GENERATOR" CONTENT="Adobe FrameMaker 7.0/HTML Export Filter">
+<LINK REL="STYLESHEET" HREF="servlet-2_5-changelog.css" CHARSET="ISO-8859-1" TYPE="text/css">
+<TITLE> 	Change Log</TITLE>
+</HEAD>
+<BODY BGCOLOR="#ffffff">
+<P CLASS="First">
+<A NAME="pgfId-1040926"></A>&nbsp;</P>
+<DIV>
+<H1 CLASS="PrefaceTitle">
+<A NAME="pgfId-1040936"></A>Change Log</H1>
+<P CLASS="First">
+<A NAME="pgfId-1040843"></A>This document is the maintenance review of the Java Servlet 2.5 Servlet specification developed under the Java Community ProcessSM (JCP).</P>
+<DIV>
+<H4 CLASS="A-Head-preface">
+<A NAME="pgfId-1042233"></A>Changes Since Servlet 2.4</H4>
+<DIV>
+<H6 CLASS="B-Head">
+<A NAME="pgfId-1042234"></A>1. Session Clarification</H6>
+<P CLASS="First">
+<A NAME="pgfId-1042238"></A>Clarified SRV.7.3 &quot;Session Scope&quot; to allow for better support of session ids being used in more than one context. This was done to support the Portlet specification (JSR 168). Added the following paragraph at the end of SRV.7.3 &quot;Session Scope&quot;:</P>
+<P CLASS="Body">
+<A NAME="pgfId-1042229"></A>&nbsp;</P>
+<P CLASS="Body">
+<A NAME="pgfId-1042226"></A>&quot;Additionally, sessions of a context must be resumable by requests into that context regardless of whether their associated context was being accessed directly or as the target of a request dispatch at the time the sessions were created.&quot;</P>
+<P CLASS="Body">
+<A NAME="pgfId-1042223"></A>&nbsp;</P>
+<P CLASS="Body">
+<A NAME="pgfId-1041957"></A>Made the changes in SRV.8.3 &quot;The Include Method&quot; by replacing the following text:</P>
+<P CLASS="Body">
+<A NAME="pgfId-1042220"></A>&nbsp;</P>
+<P CLASS="Body">
+<A NAME="pgfId-1041855"></A>   &quot;It cannot set headers or call any method that affects the headers of the response. Any attempt to do so must be ignored.&quot;</P>
+<P CLASS="Body">
+<A NAME="pgfId-1041899"></A>&nbsp;</P>
+<P CLASS="Body">
+<A NAME="pgfId-1042217"></A>with the following:</P>
+<P CLASS="Body">
+<A NAME="pgfId-1042214"></A>&nbsp;</P>
+<P CLASS="Body">
+<A NAME="pgfId-1041859"></A>   &quot;It cannot set headers or call any method that affects the headers of the response, with the exception of the HttpServletRequest.getSession() and HttpServletRequest.getSession(boolean) methods. Any attempt to set the headers must be ignored, and any call to HttpServletRequest.getSession() or HttpServletRequest.getSession(boolean) that would require adding a Cookie response header must throw an IllegalStateException if the response has been committed.&quot;</P>
+</DIV>
+<DIV>
+<H6 CLASS="B-Head">
+<A NAME="pgfId-1041958"></A>2. Filter All Dispatches</H6>
+<P CLASS="First">
+<A NAME="pgfId-1041964"></A>Modified SRV.6.2.5 &quot;Filters and the RequestDispatcher&quot; to clarify a way to map a filter to all servlet dispatches by appending the following text to the end of the section:</P>
+<P CLASS="Body">
+<A NAME="pgfId-1042211"></A>&nbsp;</P>
+<P CLASS="First">
+<A NAME="pgfId-1041966"></A>Finally, the following code uses the special servlet name '*':</P>
+<P CLASS="Body">
+<A NAME="pgfId-1042208"></A>&nbsp;</P>
+<P CLASS="Code">
+<A NAME="pgfId-1041968"></A>&lt;filter-mapping&gt;</P>
+<P CLASS="Code">
+<A NAME="pgfId-1042202"></A>	&lt;filter-name&gt;All Dispatch Filter&lt;/filter-name&gt;</P>
+<P CLASS="Code">
+<A NAME="pgfId-1042192"></A>	&lt;servlet-name&gt;*&lt;/servlet-name&gt;</P>
+<P CLASS="Code">
+<A NAME="pgfId-1042181"></A>	&lt;dispatcher&gt;FORWARD&lt;/dispatcher&gt;</P>
+<P CLASS="Code">
+<A NAME="pgfId-1041972"></A>&lt;/filter-mapping&gt;</P>
+<P CLASS="First">
+<A NAME="pgfId-1041975"></A>&nbsp;</P>
+<P CLASS="First">
+<A NAME="pgfId-1042168"></A>This code would result in the All Dispatch Filter being invoked on request dispatcher forward() calls for all request dispatchers obtained by name or by path.</P>
+</DIV>
+<DIV>
+<H6 CLASS="B-Head">
+<A NAME="pgfId-1042938"></A>3. Multiple Occurrences of Servlet Mappings</H6>
+<P CLASS="First">
+<A NAME="pgfId-1042939"></A>Previous versions of the servlet schema allows only a single url-pattern or servlet name per servlet mapping. For servlets mapped to multiple URLs this results in needless repetition of whole mapping clauses. </P>
+<P CLASS="Body">
+<A NAME="pgfId-1042982"></A>The deployment descriptor <EM CLASS="code">
+servlet-mappingType</EM>
+ was updated to: </P>
+<P CLASS="Body">
+<A NAME="pgfId-1042983"></A>&nbsp;</P>
+<P CLASS="Code">
+<A NAME="pgfId-1042984"></A>&lt;xsd:complexType name=&quot;servlet-mappingType&quot;&gt;</P>
+<P CLASS="Code">
+<A NAME="pgfId-1042985"></A>	&lt;xsd:sequence&gt;</P>
+<P CLASS="Code">
+<A NAME="pgfId-1042986"></A>		&lt;xsd:element name=&quot;servlet-name&quot; type=&quot;j2ee:servlet-nameType&quot;/&gt;</P>
+<P CLASS="Code">
+<A NAME="pgfId-1042987"></A>		&lt;xsd:element name=&quot;url-pattern&quot; type=&quot;j2ee:url-patternType&quot; minOccurs=&quot;1&quot;</P>
+<P CLASS="Code">
+<A NAME="pgfId-1042988"></A>maxOccurs=&quot;unbounded&quot;/&gt;</P>
+<P CLASS="Code">
+<A NAME="pgfId-1042989"></A>	&lt;/xsd:sequence&gt;</P>
+<P CLASS="Code">
+<A NAME="pgfId-1042990"></A>	&lt;xsd:attribute name=&quot;id&quot; type=&quot;xsd:ID&quot;/&gt;</P>
+<P CLASS="Body">
+<A NAME="pgfId-1042980"></A>&lt;/xsd:complexType&gt;</P>
+</DIV>
+<DIV>
+<H6 CLASS="B-Head">
+<A NAME="pgfId-1042940"></A>4. Multiple Occurrences Filter Mappings</H6>
+<P CLASS="First">
+<A NAME="pgfId-1042941"></A>Previous versions of the servlet schema allows only a single url-pattern in a filter mapping. For filters mapped to multiple URLs this results in needless repetition of whole mapping clauses. </P>
+<P CLASS="Body">
+<A NAME="pgfId-1042157"></A>&nbsp;</P>
+<P CLASS="Body">
+<A NAME="pgfId-1042082"></A>The deployment descriptor schema the <EM CLASS="code">
+filter-mappingType</EM>
+ was updated to: </P>
+<P CLASS="Code">
+<A NAME="pgfId-1042018"></A>&nbsp;</P>
+<P CLASS="Code">
+<A NAME="pgfId-1042154"></A>&lt;xsd:complexType name=&quot;filter-mappingType&quot;&gt;</P>
+<P CLASS="Code">
+<A NAME="pgfId-1042151"></A>	&lt;xsd:sequence&gt;</P>
+<P CLASS="Code">
+<A NAME="pgfId-1042020"></A>		&lt;xsd:element name=&quot;filter-name&quot; type=&quot;j2ee:filter-nameType&quot;/&gt;</P>
+<P CLASS="Code">
+<A NAME="pgfId-1042021"></A>		&lt;xsd:choice minOccurs=&quot;1&quot; maxOccurs=&quot;unbounded&quot;&gt;</P>
+<P CLASS="Code">
+<A NAME="pgfId-1042022"></A>			&lt;xsd:element name=&quot;url-pattern&quot; type=&quot;j2ee:url-patternType&quot;/&gt;</P>
+<P CLASS="Code">
+<A NAME="pgfId-1042023"></A>			&lt;xsd:element name=&quot;servlet-name&quot; type=&quot;j2ee:servlet-nameType&quot;/&gt;</P>
+<P CLASS="Code">
+<A NAME="pgfId-1042024"></A>		&lt;/xsd:choice&gt;</P>
+<P CLASS="Code">
+<A NAME="pgfId-1042025"></A>		&lt;xsd:element name=&quot;dispatcher&quot; type=&quot;j2ee:dispatcherType&quot; minOccurs=&quot;0&quot;</P>
+<P CLASS="Code">
+<A NAME="pgfId-1043007"></A>maxOccurs=&quot;4&quot;/&gt;</P>
+<P CLASS="Code">
+<A NAME="pgfId-1043008"></A>	&lt;/xsd:sequence&gt;</P>
+<P CLASS="Code">
+<A NAME="pgfId-1043009"></A>	&lt;xsd:attribute name=&quot;id&quot; type=&quot;xsd:ID&quot;/&gt;</P>
+<P CLASS="Code">
+<A NAME="pgfId-1042029"></A>&lt;/xsd:complexType&gt;</P>
+<P CLASS="Code">
+<A NAME="pgfId-1043002"></A>&nbsp;</P>
+<P CLASS="Body">
+<A NAME="pgfId-1042041"></A>This change allows multiple patterns and servlet names to be defined in a single mapping as can be seen in the following example:</P>
+<P CLASS="Body">
+<A NAME="pgfId-1042131"></A>&nbsp;</P>
+<P CLASS="Code">
+<A NAME="pgfId-1042044"></A>&lt;filter-mapping&gt;	</P>
+<P CLASS="Code">
+<A NAME="pgfId-1042110"></A>	&lt;filter-name&gt;Demo Filter&lt;/filter-name&gt;</P>
+<P CLASS="Code">
+<A NAME="pgfId-1042111"></A>	&lt;url-pattern&gt;/foo/*&lt;/url-pattern&gt;</P>
+<P CLASS="Code">
+<A NAME="pgfId-1042116"></A>	&lt;url-pattern&gt;/bar/*&lt;/url-pattern&gt;</P>
+<P CLASS="Code">
+<A NAME="pgfId-1042119"></A>	&lt;servlet-name&gt;Logger&lt;/servlet-name&gt;</P>
+<P CLASS="Code">
+<A NAME="pgfId-1042122"></A>	&lt;dispatcher&gt;REQUEST&lt;/dispatcher&gt;</P>
+<P CLASS="Code">
+<A NAME="pgfId-1042125"></A>	&lt;dispatcher&gt;ERROR&lt;/dispatcher&gt;</P>
+<P CLASS="Code">
+<A NAME="pgfId-1043209"></A>&lt;/filter-mapping&gt;</P>
+<P CLASS="Body">
+<A NAME="pgfId-1043210"></A>&nbsp;</P>
+<P CLASS="Body">
+<A NAME="pgfId-1043213"></A>SRV.6.2.4 &quot;Configuration of Filters in a Web Application&quot; was updated to clarify the cases where there are multiple mappings with the following text:</P>
+<P CLASS="Body">
+<A NAME="pgfId-1043005"></A>&nbsp;</P>
+<P CLASS="Body">
+<A NAME="pgfId-1042843"></A>&quot;If a filter mapping contains both &lt;servlet-name&gt; and &lt;url-pattern&gt;, the container must expand the filter mapping into multiple filter mappings (one for each &lt;servlet-name&gt; and &lt;url-pattern&gt;), preserving the order of the &lt;servlet-name&gt; and &lt;url-pattern&gt; elements.&quot;</P>
+<P CLASS="Body">
+<A NAME="pgfId-1042852"></A>&nbsp;</P>
+<P CLASS="Body">
+<A NAME="pgfId-1042860"></A>An examples was also provided to clarify cases when there are multiple mappings.</P>
+</DIV>
+<DIV>
+<H6 CLASS="B-Head">
+<A NAME="pgfId-1042250"></A>5. Support Alternative HTTP Methods with Authorization Constraints</H6>
+<P CLASS="First">
+<A NAME="pgfId-1042257"></A>The previous Servlet 2.4 schema restricted HTTP methods to GET, POST, PUT, DELETE, HEAD, OPTIONS, and TRACE. The schema http-methodType was changed from:</P>
+<P CLASS="Code">
+<A NAME="pgfId-1042269"></A>&nbsp;</P>
+<P CLASS="Code">
+<A NAME="pgfId-1042315"></A>&lt;xsd:complexType name=&quot;http-methodType&quot;&gt;</P>
+<P CLASS="Code">
+<A NAME="pgfId-1042278"></A>...</P>
+<P CLASS="Code">
+<A NAME="pgfId-1042312"></A>	&lt;xsd:simpleContent&gt;</P>
+<P CLASS="Code">
+<A NAME="pgfId-1042281"></A>		&lt;xsd:restriction base=&quot;j2ee:string&quot;&gt;</P>
+<P CLASS="Code">
+<A NAME="pgfId-1042282"></A>			&lt;xsd:enumeration value=&quot;GET&quot;/&gt;</P>
+<P CLASS="Code">
+<A NAME="pgfId-1042305"></A>			&lt;xsd:enumeration value=&quot;POST&quot;/&gt;</P>
+<P CLASS="Code">
+<A NAME="pgfId-1042284"></A>			&lt;xsd:enumeration value=&quot;PUT&quot;/&gt;</P>
+<P CLASS="Code">
+<A NAME="pgfId-1042285"></A>			&lt;xsd:enumeration value=&quot;DELETE&quot;/&gt;</P>
+<P CLASS="Code">
+<A NAME="pgfId-1042286"></A>			&lt;xsd:enumeration value=&quot;HEAD&quot;/&gt;</P>
+<P CLASS="Code">
+<A NAME="pgfId-1043156"></A>			&lt;xsd:enumeration value=&quot;OPTIONS&quot;/&gt;</P>
+<P CLASS="Code">
+<A NAME="pgfId-1042288"></A>			&lt;xsd:enumeration value=&quot;TRACE&quot;/&gt;</P>
+<P CLASS="Code">
+<A NAME="pgfId-1042289"></A>		&lt;/xsd:restriction&gt;</P>
+<P CLASS="Code">
+<A NAME="pgfId-1042290"></A>	&lt;/xsd:simpleContent&gt;</P>
+<P CLASS="Code">
+<A NAME="pgfId-1042291"></A>&lt;/xsd:complexType&gt;</P>
+<P CLASS="Body">
+<A NAME="pgfId-1042299"></A>&nbsp;</P>
+<P CLASS="Body">
+<A NAME="pgfId-1042266"></A>To the following:</P>
+<P CLASS="Body">
+<A NAME="pgfId-1042267"></A>&nbsp;</P>
+<P CLASS="Code">
+<A NAME="pgfId-1042329"></A>&lt;xsd:simpleType name=&quot;http-methodType&quot;&gt;</P>
+<P CLASS="Code">
+<A NAME="pgfId-1042876"></A>	&lt;xsd:annotation&gt;</P>
+<P CLASS="Code">
+<A NAME="pgfId-1042878"></A>		&lt;xsd:documentation&gt;</P>
+<P CLASS="Code">
+<A NAME="pgfId-1042880"></A>			A HTTP method type as defined in HTTP 1.1 section 2.2.</P>
+<P CLASS="Code">
+<A NAME="pgfId-1042882"></A>		&lt;/xsd:documentation&gt;</P>
+<P CLASS="Code">
+<A NAME="pgfId-1042883"></A>	&lt;/xsd:annotation&gt;</P>
+<P CLASS="Code">
+<A NAME="pgfId-1042884"></A>&nbsp;</P>
+<P CLASS="Code">
+<A NAME="pgfId-1042885"></A>	&lt;xsd:restriction base=&quot;xsd:token&quot;&gt;</P>
+<P CLASS="Code">
+<A NAME="pgfId-1042886"></A>		&lt;xsd:pattern value=&quot;[&#92;p{L}-[&#92;p{Cc}&#92;p{Z}]]+&quot;/&gt; </P>
+<P CLASS="Code">
+<A NAME="pgfId-1042887"></A>	&lt;/xsd:restriction&gt;</P>
+<P CLASS="Code">
+<A NAME="pgfId-1042889"></A>&lt;/xsd:simpleType&gt;</P>
+<P CLASS="Code">
+<A NAME="pgfId-1042337"></A>&nbsp;</P>
+<P CLASS="Body">
+<A NAME="pgfId-1042898"></A>The http-method elements now need to be a token as described in HTTP 1.1 specification section 2.2.</P>
+</DIV>
+<DIV>
+<H6 CLASS="B-Head">
+<A NAME="pgfId-1042338"></A>6. Minimum J2SE Requirement</H6>
+<P CLASS="First">
+<A NAME="pgfId-1042342"></A>Servlet 2.5 Containers now require J2SE 5.0 as the minimum Java version. SRV.1.2 &quot;What is a Servlet Container?&quot; was updated to reflect this requirement.</P>
+</DIV>
+<DIV>
+<H6 CLASS="B-Head">
+<A NAME="pgfId-1042347"></A>7. annotations and Resource Injection</H6>
+<P CLASS="First">
+<A NAME="pgfId-1042353"></A>Java EE technology compliant containers require annotations and resource injection on servlets, filters, and listeners. SRV.14.5 &quot;Annotations and Resource Injection&quot; describes the annotations and resource injection in further detail.</P>
+<P CLASS="Body">
+<A NAME="pgfId-1042443"></A>&nbsp;</P>
+</DIV>
+<DIV>
+<H6 CLASS="B-Head">
+<A NAME="pgfId-1042444"></A>8. SRV.9.9 (&quot;Error Handling&quot;) Requirement Removed</H6>
+<P CLASS="Body">
+<A NAME="pgfId-1042449"></A>&nbsp;</P>
+<P CLASS="Body">
+<A NAME="pgfId-1042359"></A>SRV.9.9.1 &quot;Request Attributes&quot; defines the following requirement:</P>
+<P CLASS="Body">
+<A NAME="pgfId-1042373"></A>&nbsp;</P>
+<P CLASS="Body">
+<A NAME="pgfId-1042374"></A>If the location of the error handler is a servlet or a JSP page:</P>
+<P CLASS="Body">
+<A NAME="pgfId-1042375"></A>[...]</P>
+<P CLASS="Body">
+<A NAME="pgfId-1042376"></A>The response setStatus method is disabled and ignored if called.</P>
+<P CLASS="Body">
+<A NAME="pgfId-1042377"></A>[...]</P>
+<P CLASS="Body">
+<A NAME="pgfId-1042387"></A>&nbsp;</P>
+<P CLASS="Body">
+<A NAME="pgfId-1042388"></A>The JSP 2.1 EG has asked that this requirement above be removed to allow JSP error pages to update the response status.</P>
+</DIV>
+<DIV>
+<H6 CLASS="B-Head">
+<A NAME="pgfId-1042392"></A>9. HttpServletRequest.isRequestedSessionIdValid() Clarification</H6>
+<P CLASS="First">
+<A NAME="pgfId-1042396"></A>The API clarification better describes what happens when a client did not specify a session id. The API documentation in SRV.16.1.3 &quot;HttpServletRequest&quot; was updated to specify when false is returned. The API documentation now states:</P>
+<P CLASS="Body">
+<A NAME="pgfId-1042405"></A>&nbsp;</P>
+<P CLASS="Body">
+<A NAME="pgfId-1042406"></A>Returns false if the client did not specify any session ID.</P>
+<P CLASS="Body">
+<A NAME="pgfId-1042409"></A>.</P>
+</DIV>
+<DIV>
+<H6 CLASS="B-Head">
+<A NAME="pgfId-1042455"></A>10. SRV.5.5 (&quot;Closure of Response Object&quot;) Clarification</H6>
+<P CLASS="First">
+<A NAME="pgfId-1042465"></A>The behavior in SRV.5.5 &quot;Closure of Response Object&quot; the response's content length is set to 0 via response.setHeader(&quot;Content-Length&quot;, &quot;0&quot;) and any subsequently setHeader() calls are ignored.</P>
+<P CLASS="Body">
+<A NAME="pgfId-1042500"></A>&nbsp;</P>
+<P CLASS="Body">
+<A NAME="pgfId-1042503"></A>SRV.5.5 &quot;Closure of Response Object&quot; was updated to allow all headers to be set by changing:</P>
+<P CLASS="Body">
+<A NAME="pgfId-1042592"></A>&nbsp;</P>
+<P CLASS="Body">
+<A NAME="pgfId-1042506"></A>   &quot;The amount of content specified in the setContentLength method of the response and has been written to the response&quot;</P>
+<P CLASS="Body">
+<A NAME="pgfId-1042516"></A>&nbsp;</P>
+<P CLASS="Body">
+<A NAME="pgfId-1042518"></A>To the following:</P>
+<P CLASS="Body">
+<A NAME="pgfId-1042520"></A>&nbsp;</P>
+<P CLASS="Body">
+<A NAME="pgfId-1042540"></A>&quot;The amount of content specified in the setContentLength method of the response has been greater than zero and has been written to the response&quot;</P>
+<P CLASS="Body">
+<A NAME="pgfId-1042598"></A>&nbsp;</P>
+</DIV>
+<DIV>
+<H6 CLASS="B-Head">
+<A NAME="pgfId-1042599"></A>11. ServletRequest.setCharacterEncoding() Clarified</H6>
+<P CLASS="First">
+<A NAME="pgfId-1042629"></A>The API in SRV.15.2.16 &quot;ServletRequest&quot; was updated to described the behavior if the method is called after the getReader() was called. If the getReader() is called there will be no effect.</P>
+</DIV>
+<DIV>
+<H6 CLASS="B-Head">
+<A NAME="pgfId-1042636"></A>12. Java Enterprise Edition Requirements</H6>
+<P CLASS="First">
+<A NAME="pgfId-1042659"></A>SRV.14 &quot;Java Enterprise Edition 5 Containers&quot; details all requirements of a Java EE container. Previously the requirements were mixed into each chapter.</P>
+</DIV>
+<DIV>
+<H6 CLASS="B-Head">
+<A NAME="pgfId-1043027"></A>13. Servlet 2.4 MR Change Log Updates Added</H6>
+<P CLASS="First">
+<A NAME="pgfId-1043031"></A>Added the changes from the Servlet 2.4 Maintenance Review. These changes include grammar and typographical fixes.</P>
+</DIV>
+</DIV>
+</DIV>
+</BODY>
+</HTML>
+
+
+
+<!-- ** BEGIN: footer.jsp ** //-->
+
+
+
+
+
+
+
+
+</td>
+</tr>
+</table>
+
+<!-- ** END: Content Table ** //-->
+
+<!-- ** BEGIN: Footer Table ** //-->
+
+<div id="footer" style="clear: both;">
+    <div class="footleft">
+        <a href="/en/resources/contacts">Contact Us</a>
+    </div>
+	
+    <div class="botbar"><img src="/images/spacer.gif" alt="" height="23" width="1"></div>
+
+    <div class="footleft2">
+         &copy; 2019, Oracle Corporation and/or its affiliates. 
+        <a href="/en/home/terms">Terms of Use</a>. <a href="http://www.oracle.com/us/legal/privacy/index.html">Privacy Policy</a>. <a href="http://www.oracle.com/us/legal/third-party-trademarks/third-party-trademarks-078568.html">Trademarks</a>
+    </div>
+
+    <div class="footright">
+        <img src="/images/common/logo_oracle_footer.gif" alt="Oracle Corporation" height="22" width="91">
+    </div>
+
+    <div style="clear: both;"><img src="/images/spacer.gif" alt="" height="30" width="1"></div>
+</div>
+
+<!-- ** END: Footer Table ** //-->
+
+
+
+<!-- ** Menu Start ** //-->
+
+
+
+</body>
+</html>
+<!-- ** END: footer.jsp ** //-->
+

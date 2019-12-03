@@ -1,0 +1,603 @@
+
+
+
+
+<!-- ** BEGIN: header.jsp ** //-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3c.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+<head>
+    
+
+   
+    <link href="/includes/css/menu.css" rel="stylesheet" type="text/css"></link>
+    <link href="/includes/css/style.css" rel="stylesheet" type="text/css"></link>
+    <!--[if lt IE 6]><link href="/includes/css/style5.css" rel="stylesheet" type="text/css" ></link><![endif]-->
+    <!--[if gte IE 5]><link href="/includes/css/style6.css" rel="stylesheet" type="text/css" ></link><![endif]-->
+    <link href="/includes/css/tabs.css"  rel="stylesheet" type="text/css"></link>
+
+    <script type="text/javascript" src="/includes/scripts/tabs.js"></script>
+    <script type="text/javascript" src="/includes/scripts/menu.js"></script>
+   
+
+    
+
+    
+        <title>The Java Community Process(SM) Program - JSRs: Java Specification Requests - results</title>
+    
+
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+
+
+<body onload="P7_initPM(0,1,0,0,-1)">
+
+    <a name="top"></a>
+
+    <div id="header">
+	<div id="logo">
+		<a href="/en/home/index"><img src="/images/spacer.gif" alt="Java Community Process" height="81" width="151"></a>
+	</div>
+	<div id="tools">
+		<div class="search">
+			<form name="search" action="/en/jsr/summary" method="get" onsubmit="return validate_search()">
+				<input name="id" value="Search JSRs" size="16" class="form" onfocus="nullify_if_equal(this, 'Search JSRs')" type="text">
+				<a href="javascript:document.search.submit()" onclick="return validate_search()"><img src="/images/button_go.gif" width="21" height="16" border="0" alt="Submit this Search" name="sub_search"></a>
+			</form>
+		</div>
+		<div class="tools">
+			<a href="/en/press/pressroom">Press Room</a> &nbsp;|&nbsp;
+			<a href="http://java.com/java/download/index.jsp?cid=jdp78399">Get Java Here</a> &nbsp;|&nbsp;
+			<!-- <a href="javascript:void(0)">Print Format</a> &nbsp;|&nbsp;&nbsp; -->
+		</div>
+
+	</div>
+	<div style="clear: right;"></div>
+
+        
+
+	<div class="topbar"><img src="/images/spacer.gif" alt="" height="3" width="154"></div>
+	<div id="update"> </div>
+    </div>
+
+
+    
+
+        <!-- ** BEGIN: Content Table ** //-->
+
+        <table width="100%" border="0" cellpadding="0" cellspacing="0">
+
+            <tr>
+
+                <!-- ** BEGIN: Navigation Column ** //-->
+                <td width="150" id="leftcontent" valign="top">
+                    <!-- Navigation Placeholder //-->
+
+                    
+
+                    <div class="bar"><img src="/images/hr_dots1.gif" alt="" height="3" width="150"></div>
+
+        <!-- begin find JSRs form -->
+        <!-- IMPORTANT! do not convert this form to Struts < html : form > tag.  javascript change of form.action property fails. -->
+        <img src="/images/hd_find-jsrs.gif" alt="Find JSRs" height="18" width="150">
+        <form name="findjsr" action="/en/jsr/summary" method="get" class="pt5" onsubmit="return validate_findjsr()">
+            <input name="id" size="18" class="form" value="Search JSRs" onfocus="nullify_if_equal(this, 'Search JSRs')" type="text">
+	    <a href="javascript:document.findjsr.submit()" onclick="return validate_findjsr()"><img src="/images/button_go.gif" width="21" height="16" border="0" alt="Submit this Search" name="sub_search"></a>
+        </form><br><br>
+
+        <!-- ** Menu Start ** //-->
+
+        <ul id="p7PMnav">
+            <li><a href="/en/jsr/platform">JSRs by Platform</a></li>
+            <li><a href="/en/jsr/tech">JSRs by Technology</a></li>
+            <li><a href="/en/jsr/stage">JSRs by Stage</a></li>
+            <li><a href="/en/jsr/ec">JSRs by Committee</a></li>
+            <li><a href="/en/jsr/all">List of All JSRs</a></li>
+
+            <!--end find JSRs form -->
+            <div style="clear: both;"><img src="/images/spacer.gif" alt="" height="25" width="1"></div>
+
+            <!--begin my JCP -->
+            <img src="/images/hd_my-jcp.gif" alt="My JCP" height="18" width="150">
+            
+
+          <form name="login" method="get" action="/en/user/login" >
+            <input name="Sign-in" type="submit" title="Sign-in" value="Sign-in" />
+          </form>
+
+            <div style="clear:both"><img src="/images/global/spacer.gif" width="1" height="3" alt=""></div>
+            <div class="noNav">
+                <a href="/en/user/register">Register for Site</a>
+            </div>
+
+             <div class="bar"><img src="/images/hr_dots1.gif" alt="" height="3" width="150"></div>
+           <div class="noNav" style="color: #666666; padding: 0;">
+              Use of JCP site is subject to the
+              <a href="/en/home/terms" style="display:inline;padding: 0">JCP Terms of Use</a> and the
+              <a href="http://www.oracle.com/us/legal/privacy/index.html" style="display:inline;padding: 0" href="">Oracle Privacy Policy</a>
+          </div>
+
+            
+
+            <div style="clear:both"><img src="/images/global/spacer.gif" width="1" height="25" alt=""></div>
+
+            <!--begin JCP info -->
+            <img src="/images/hd_jcp-info.gif" alt="JCP Info" height="18" width="150">
+
+            <li><a href="/en/procedures/overview" class="p7PMtrg">About JCP</a>
+                <ul>
+                    <li><a href="/en/procedures/overview">Program Overview</a></li>
+                    <li><a href="/en/procedures/jcp2">JCP Process Document</a></li>
+                    <li><a href="/en/whatsnew/calendar">Calendar</a></li>
+                    <li><a href="/en/participation/members">JCP Members</a></li>
+                    <li><a href="/en/participation/committee">Executive Committee</a></li>
+                    <li><a href="/en/whatsnew/elections">Elections</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/en/participation/overview" class="p7PMtrg">Get Involved</a>
+		<ul>
+                    <li><a href="/en/participation/overview">Overview</a></li>
+                    <li><a href="/en/participation/membership">Becoming a JCP Member</a></li>
+		</ul>
+            </li>
+
+            <li><a href="/en/resources/contents" class="p7PMtrg">Community Resources</a>
+                <ul>
+                    <li><a href="/en/resources/contents">Overview</a></li>
+                    <li><a href="/en/resources/tutorials">Tutorials</a></li>
+                    <li><a href="/en/resources/multimedia">JCP Podcasts</a></li>
+                    <li><a href="/en/resources/guide">Spec Lead Guide</a></li>
+                    <li><a href="/en/resources/tdk">TCK Tool & Info</a></li>
+                    <li><a href="/en/resources/license_reference">License Reference</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/en/press/pmo" class="p7PMtrg">Community News</a>
+                <ul>
+                    <li><a href="/en/press/pmo">News</a></li>
+                    <li><a href="/en/press/news/awards/awards_main">Programs &amp; Awards</a></li>
+                    <li><a href="/en/press/releases">Press Releases</a></li>
+                    <li><a href="/en/press/success">Success Stories</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/en/introduction/faq">FAQ</a></li>
+
+            <li><a href="/en/resources/contacts">Contact Us</a></li>
+
+            <div style="clear: both;"><img src="/images/spacer.gif" alt="" height="25" width="1"></div>
+
+            <!--[if lte IE 6]><style>#p7PMnav a{height:1em;}#p7PMnav li{height:1em;float:left;clear:both;width:100%}</style><![endif]-->
+            <!--[if IE 6]><style>#p7PMnav li{clear:none;}</style><![endif]-->
+            <!--[if IE 7]><style>#p7PMnav a{zoom:100%;}#p7PMnav li{float:left;clear:both;width:100%;}</style><![endif]-->
+        </ul>
+
+        
+
+        <!--begin ad space -->
+        <div class="ads">
+            <a href="http://java.com/java/download/index.jsp?cid=jdp78399" target="_blank"><img style="display: ;" src="/images/ad_banner2.gif" alt="Ad Banner" border="1" height="70" width="150"></a>
+        </div>
+        <!--end ad space -->
+
+<!-- ** Menu End ** //-->
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;<br>
+
+    
+
+                    &nbsp;<br>
+                    <img src="/images/common/trans.gif" alt="" width="1" height="150"><br>
+
+              
+
+
+
+                </td>
+                <!-- ** END: Navigation Column ** //-->
+
+                <!-- ** BEGIN: Gutter Column ** //-->
+		<td width="10" nowrap><img src="/images/common/trans.gif" alt="" width="10" height="1"></td>
+                <!-- ** END: Gutter Column ** //-->
+
+                <!-- ** BEGIN: Content Column ** //-->
+                <td width="100%" valign="top">
+
+    
+<script type="text/javascript">
+
+String.prototype.trim = function() {
+        return this.replace(/^\s+|\s+$/g,"");
+}
+String.prototype.ltrim = function() {
+        return this.replace(/^\s+/,"");
+}
+String.prototype.rtrim = function() {
+        return this.replace(/\s+$/,"");
+}
+
+function validate_search() {
+	if (document.search.id.value == "Search JSRs" || document.search.id.value.trim().length == 0) {
+		alert("Search terms must be entered first");
+		return false;
+	}
+	return true;
+}
+
+function validate_findjsr() {
+	if (document.findjsr.id.value == "Search JSRs" || document.findjsr.id.value.trim().length == 0) {
+		alert("Search terms must be entered first");
+		return false;
+	}
+	return true;
+}
+
+function nullify_if_equal(field, str) {
+	// alert("val=" + field.value);
+	if (field.value == str) {
+		field.value = "";
+	}
+}
+
+</script>
+<!-- ** END: header.jsp ** //-->
+
+
+
+
+<b>
+  <font color="#663399" size="+1">
+    JSR #180<br>
+    SIP API for J2ME<sup><font size="-2">TM</font></sup><br>
+    JSR Review Ballot<br>
+  </font>
+  Ballot duration: 2002-03-26&nbsp;&nbsp; to: 2002-04-08<br>
+</b>
+
+<P>
+
+
+
+
+
+
+
+These are the final results of the JSR Review Ballot for JSR #180.
+
+	
+
+The <a href="/en/participation/committee#ME">Executive Committee for ME</a> has  approved this ballot.
+
+	
+
+
+</P>
+
+<h3>Votes</h3><BR>
+<table width="600" border="0" cellspacing="0" cellpadding="3">
+  <tr>
+    <td>
+
+<B>ME</B>
+
+<table width="600" border="1" cellspacing="0" cellpadding="5">
+  <tr>
+
+  <td>
+    <table width="100%">
+      <tr>
+        <td align="left"><font size="2">BEA Systems</font></td>
+        <td align="right"><img src="/images/common/yes.gif" width="23" height="23" alt="Yes"></td>
+      </tr>
+    </table>
+  </td>
+
+  <td>
+    <table width="100%">
+      <tr>
+        <td align="left"><font size="2">Cisco Systems</font></td>
+        <td align="right"><img src="/images/common/none21.gif" width="23" height="23" alt="No Vote"></td>
+      </tr>
+    </table>
+  </td>
+
+  <td>
+    <table width="100%">
+      <tr>
+        <td align="left"><font size="2">Ericsson Inc.</font></td>
+        <td align="right"><img src="/images/common/yes.gif" width="23" height="23" alt="Yes"></td>
+      </tr>
+    </table>
+  </td>
+
+  <td>
+    <table width="100%">
+      <tr>
+        <td align="left"><font size="2">IBM</font></td>
+        <td align="right"><img src="/images/common/abstain.gif" width="23" height="23" alt="Abstain"></td>
+      </tr>
+    </table>
+  </td>
+  </tr>
+  <tr>
+
+  <td>
+    <table width="100%">
+      <tr>
+        <td align="left"><font size="2">Insignia Solutions</font></td>
+        <td align="right"><img src="/images/common/no.gif" width="23" height="23" alt="No"></td>
+      </tr>
+    </table>
+  </td>
+
+  <td>
+    <table width="100%">
+      <tr>
+        <td align="left"><font size="2">Matsushita Electric Industrial Co., Ltd.</font></td>
+        <td align="right"><img src="/images/common/no.gif" width="23" height="23" alt="No"></td>
+      </tr>
+    </table>
+  </td>
+
+  <td>
+    <table width="100%">
+      <tr>
+        <td align="left"><font size="2">Motorola</font></td>
+        <td align="right"><img src="/images/common/yes.gif" width="23" height="23" alt="Yes"></td>
+      </tr>
+    </table>
+  </td>
+
+  <td>
+    <table width="100%">
+      <tr>
+        <td align="left"><font size="2">Nokia Corporation</font></td>
+        <td align="right"><img src="/images/common/yes.gif" width="23" height="23" alt="Yes"></td>
+      </tr>
+    </table>
+  </td>
+  </tr>
+  <tr>
+
+  <td>
+    <table width="100%">
+      <tr>
+        <td align="left"><font size="2">PalmSource, Inc.</font></td>
+        <td align="right"><img src="/images/common/yes.gif" width="23" height="23" alt="Yes"></td>
+      </tr>
+    </table>
+  </td>
+
+  <td>
+    <table width="100%">
+      <tr>
+        <td align="left"><font size="2">Philips Electronics UK Ltd</font></td>
+        <td align="right"><img src="/images/common/no.gif" width="23" height="23" alt="No"></td>
+      </tr>
+    </table>
+  </td>
+
+  <td>
+    <table width="100%">
+      <tr>
+        <td align="left"><font size="2">Research In Motion, LTD (RIM)</font></td>
+        <td align="right"><img src="/images/common/yes.gif" width="23" height="23" alt="Yes"></td>
+      </tr>
+    </table>
+  </td>
+
+  <td>
+    <table width="100%">
+      <tr>
+        <td align="left"><font size="2">Siemens AG</font></td>
+        <td align="right"><img src="/images/common/yes.gif" width="23" height="23" alt="Yes"></td>
+      </tr>
+    </table>
+  </td>
+  </tr>
+  <tr>
+
+  <td>
+    <table width="100%">
+      <tr>
+        <td align="left"><font size="2">Sony International (Europe) GmbH</font></td>
+        <td align="right"><img src="/images/common/none21.gif" width="23" height="23" alt="No Vote"></td>
+      </tr>
+    </table>
+  </td>
+
+  <td>
+    <table width="100%">
+      <tr>
+        <td align="left"><font size="2">Sun Microsystems, Inc.</font></td>
+        <td align="right"><img src="/images/common/yes.gif" width="23" height="23" alt="Yes"></td>
+      </tr>
+    </table>
+  </td>
+
+  <td>
+    <table width="100%">
+      <tr>
+        <td align="left"><font size="2">Texas Instruments Inc.</font></td>
+        <td align="right"><img src="/images/common/yes.gif" width="23" height="23" alt="Yes"></td>
+      </tr>
+    </table>
+  </td>
+
+  <td>
+    <table width="100%">
+      <tr>
+        <td align="left"><font size="2">Zucotto Wireless</font></td>
+        <td align="right"><img src="/images/common/abstain.gif" width="23" height="23" alt="Abstain"></td>
+      </tr>
+    </table>
+  </td>
+  </tr>
+
+</table>
+<br>
+
+
+
+</td>
+<td width="20"><img src="/images/common/pixel.gif" width="20" height="1" alt=""></td>
+<td valign="top">
+  <table border="0" cellspacing="0" cellpadding="5" height="100%">
+    <tr align="left">
+      <td colspan="2">
+        <b>Icon Legend</b>
+      </td>
+    </tr>
+    <tr valign="top">
+      <td alt="left">Yes</td>
+      <td align="right"><img src="/images/common/yes.gif" width="23" height="23" alt="Yes"></td>
+    </tr>
+    <tr valign="top">
+      <td align="left">No</td>
+      <td align="right"><img src="/images/common/no.gif" width="23" height="23" alt="No"></td>
+    </tr>
+    <tr valign="top">
+      <td>Abstain</td>
+      <td align="right"><img src="/images/common/abstain.gif" width="23" height="23" alt="Abstain"></td>
+    </tr>
+    <tr valign="top">
+      <td>Not voted</td>
+      <td align="right"><img src="/images/common/none21.gif" width="23" height="23" alt="Not voted"></td>
+   </tr>
+ </table>
+</td>
+</tr>
+</table>
+<br>
+
+
+<HR NOSHADE ALIGN="left" WIDTH="70%">
+<h3>View Vote Log</h3>
+<BR>
+
+<FORM>
+
+
+
+
+<br><br>
+
+
+<strong>ME</strong><br>
+<TEXTAREA ROWS="10" COLS="80" WRAP="soft" READONLY>On 2002-04-08 Zucotto Wireless voted Abstain with the following comment:
+Zucotto abstains from voting on JSR 180 and echos the comments of other EC members that the work on SIP related activities must be well co-ordinated to ensure compatibility. It does seem that there are issues surrounding existing SIP JSRs and incompatible approaches between big and little Java editions (SE / ME). While expert groups are the right place to resolve these, there are a plethora of JAIN expert groups in place now and we hope JSR-180 will work with these groups to not only ensure compatibility, but to educate them to the unique requirements of resource constrained wireless devices if required.This JSR also highlights two aspects of process the we believe the EC must address:* JSRs that span big and little Java must be voted on and guided by both ECs and should have equal representation from each Java edition in the expert group- it may be decided by the Expert group to split into separate sub-working groups due to very different target platforms, but interop and compatibility must be strived for* EC members should have visibility into the JSR expert groups to monitor JSR progress to ensure deliverables are on track with respect to the original JSR goals and proposals voted on by the EC at the outset
+------------------------------------------------------------------------------
+On 2002-04-08 Motorola voted Yes with the following comment:
+Motorola votes yes for this JSR, but shares many of the concerns others have raised. JSR-180 should be coordinated with the remaining JAIN technology community JSRs. This is a very active community with 26 JAIN related JSRs, so it's crucial that everything interfaces well. Nokia has indicated their commitment to work with other spec leads to resolve the issues. I hope we can all work together in the EC to develop a plan to better address technologies that overlap multiple Java editions.
+------------------------------------------------------------------------------
+On 2002-04-08 Sun Microsystems, Inc. voted Yes with the following comment:
+It appears to Sun that the submitters of JSR-180 might have identifiedgaps in the ability of existing SIP-related JSRs to meet the needs ofresource-constrained wireless devices (for example, using footprint-intensive design concepts such as interfaces and factories).  Questionshave also been raised such as whether JAIN Lite is properly aligned withCLDC/MIDP.  On some of these issues there appears to be true disagreementbetween experts.  We think that questions like these are best resolved byan expert group.As we approve of JSR-180 to fill gaps in the existing portfolio of SIPsupport, and not as a clean slate, we are very concerned at the lack of clarity about the positioning of JSR-180 vis a vis other SIP APIs.  Wethink it is critical and necessary for the success of JSR-180 that firstpriority be given toward effective communication between the JSR-180proponents and the JAIN and J2ME communities.  Those parties should helpthe JSR-180 expert group to clarify and communicate the relationshipbetween its work and that of JSRs 125, 164, and 165.  Certain technicalissues need to be resolved as well, for instance whether the APIsuggested by JSR-180 is at an appropriate level for maximum flexibilityof implementation.
+------------------------------------------------------------------------------
+On 2002-04-08 IBM voted Abstain with the following comment:
+We see SIP as important to J2ME. We would like to see progress made on resolving/converging the different Java/JCP activities around SIP.
+------------------------------------------------------------------------------
+On 2002-04-08 BEA Systems voted Yes with no comment.
+------------------------------------------------------------------------------
+On 2002-04-08 Texas Instruments Inc. voted Yes with no comment.
+------------------------------------------------------------------------------
+On 2002-04-08 PalmSource, Inc. voted Yes with no comment.
+------------------------------------------------------------------------------
+On 2002-04-08 Ericsson Inc. voted Yes with no comment.
+------------------------------------------------------------------------------
+On 2002-04-08 Siemens AG voted Yes with no comment.
+------------------------------------------------------------------------------
+On 2002-04-05 Insignia Solutions voted No with the following comment:
+Matsushita & Philips raise significant concerns over the relationship to a number of other JSRsand these should be considered in more detailand the JSR proposal amended and re-submitted.
+------------------------------------------------------------------------------
+On 2002-04-05 Philips Electronics UK Ltd voted No with the following comment:
+The core of the argument in the JSR proposal form for JSR-180 is that all the existing JSR's for SIP (125, 164 and 165) are wrong for CLDC or don't have quite the right features. This may or may not be true - I'm not sufficiently familiar with the domain to have a really solid opinion on several of these arguments. What is however apparent from the Matsushita comments when voting against JSR-180 (and from private discussions with several parties) is that the arguments in the JSR proposal do not seem to have been really discussed with the people working on these existing JSRs.If JSR-125 is believed to be too big for CLDC then perhaps this should be raised there before designing a whole new API from the ground up. JSR 125 has just had it's community draft ballot and in the comment log, the Nokia comment makes this observation but then goes on to say that "this is fine" because the main target of 125 is J2SE/EE. Personally I would have found a comment along these lines rather more constructive - "please either address this or indicate that it will not be addressed so that a JSR for a SIP API for CLDC can be submitted".If JSR's 164/165 are too protocol specific then IMHO structuring those as a protocol independent part and a protocol dependent part should be discussed there before designing a whole new API from the ground up.This does not mean that I agree with all Matsushita's points and reject all of Nokia's. The community draft version of JSR-125 does feel a little large to me for CLDC. It's quite possible that it requires a more fully featured SIP protocol stack than is reasonable for CLDC. I certainly agree with the Nokia concern about 164/165 being overly protocol specific given that there are a variety of protocols used for IM.
+------------------------------------------------------------------------------
+On 2002-04-04 Matsushita Electric Industrial Co., Ltd. voted No with the following comment:
+1)  JSR 180 is a SIP API for J2ME. Therefore it overlaps with the charter of  JSR 125 (JAIN SIP Lite). The latter targets also a Java SIP API for J2ME as well.2) Such an overlapping could have been handled via a fruitful discussion with the Spec Lead and the Expert Group of JSR125. 3) JCP is a community process. So far, all the SIP APIs are within the JAIN community. From a community perspective, this should have been socialized and positioned in collaboration with the JAIN Team and the JAIN Community to have a consistent picture and perspective of all the JAIN SIP APIs.4) From a technical standpoint  JSR 180 has the same  aim as JSRs 125 and 32. They all aim to provide an API for a SIP protocol stack. The technical problem with the proposal of JSR 180 is that the proposed API is very low level (at the transaction level). The proposal aims to mimic the HTTP connector model of J2ME. However, SIP stacks generally come with high level APIs. Therefore, there is a problem with the abstraction level of the proposed API. Hence, its  usefulness and applicability are questionable.5)  JSRs 164 and 165 are also strongly related to SIP. The proposal does not take into account the requirements of these 2 JSRs in terms of  SIP for J2ME. The proposal could have benefited by talking to the  expert groups of JSRs 164 and 165 before advancing such a proposal.
+------------------------------------------------------------------------------
+On 2002-04-02 Research In Motion, LTD (RIM) voted Yes with no comment.
+------------------------------------------------------------------------------
+On 2002-03-29 Nokia Corporation voted Yes with no comment.
+------------------------------------------------------------------------------
+</TEXTAREA>
+
+
+</FORM>
+
+
+
+
+
+<!-- ** BEGIN: footer.jsp ** //-->
+
+
+
+
+
+
+
+
+</td>
+</tr>
+</table>
+
+<!-- ** END: Content Table ** //-->
+
+<!-- ** BEGIN: Footer Table ** //-->
+
+<div id="footer" style="clear: both;">
+    <div class="footleft">
+        <a href="/en/resources/contacts">Contact Us</a>
+    </div>
+	
+    <div class="botbar"><img src="/images/spacer.gif" alt="" height="23" width="1"></div>
+
+    <div class="footleft2">
+         &copy; 2019, Oracle Corporation and/or its affiliates. 
+        <a href="/en/home/terms">Terms of Use</a>. <a href="http://www.oracle.com/us/legal/privacy/index.html">Privacy Policy</a>. <a href="http://www.oracle.com/us/legal/third-party-trademarks/third-party-trademarks-078568.html">Trademarks</a>
+    </div>
+
+    <div class="footright">
+        <img src="/images/common/logo_oracle_footer.gif" alt="Oracle Corporation" height="22" width="91">
+    </div>
+
+    <div style="clear: both;"><img src="/images/spacer.gif" alt="" height="30" width="1"></div>
+</div>
+
+<!-- ** END: Footer Table ** //-->
+
+
+
+<!-- ** Menu Start ** //-->
+
+
+
+</body>
+</html>
+<!-- ** END: footer.jsp ** //-->
+

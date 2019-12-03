@@ -1,0 +1,982 @@
+
+<!-- ** BEGIN: header.jsp ** //-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3c.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+<head>
+    
+
+   
+    <link href="/includes/css/menu.css" rel="stylesheet" type="text/css"></link>
+    <link href="/includes/css/style.css" rel="stylesheet" type="text/css"></link>
+    <!--[if lt IE 6]><link href="/includes/css/style5.css" rel="stylesheet" type="text/css" ></link><![endif]-->
+    <!--[if gte IE 5]><link href="/includes/css/style6.css" rel="stylesheet" type="text/css" ></link><![endif]-->
+    <link href="/includes/css/tabs.css"  rel="stylesheet" type="text/css"></link>
+
+    <script type="text/javascript" src="/includes/scripts/tabs.js"></script>
+    <script type="text/javascript" src="/includes/scripts/menu.js"></script>
+   
+
+    
+
+    
+        <title>The Java Community Process(SM) Program - communityprocess - elections</title>
+    
+
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+
+
+<body onload="P7_initPM(0,1,0,0,-1)">
+
+    <a name="top"></a>
+
+    <div id="header">
+	<div id="logo">
+		<a href="/en/home/index"><img src="/images/spacer.gif" alt="Java Community Process" height="81" width="151"></a>
+	</div>
+	<div id="tools">
+		<div class="search">
+			<form name="search" action="/en/jsr/summary" method="get" onsubmit="return validate_search()">
+				<input name="id" value="Search JSRs" size="16" class="form" onfocus="nullify_if_equal(this, 'Search JSRs')" type="text">
+				<a href="javascript:document.search.submit()" onclick="return validate_search()"><img src="/images/button_go.gif" width="21" height="16" border="0" alt="Submit this Search" name="sub_search"></a>
+			</form>
+		</div>
+		<div class="tools">
+			<a href="/en/press/pressroom">Press Room</a> &nbsp;|&nbsp;
+			<a href="http://java.com/java/download/index.jsp?cid=jdp78399">Get Java Here</a> &nbsp;|&nbsp;
+			<!-- <a href="javascript:void(0)">Print Format</a> &nbsp;|&nbsp;&nbsp; -->
+		</div>
+
+	</div>
+	<div style="clear: right;"></div>
+
+        
+
+	<div class="topbar"><img src="/images/spacer.gif" alt="" height="3" width="154"></div>
+	<div id="update"> </div>
+    </div>
+
+
+    
+
+        <!-- ** BEGIN: Content Table ** //-->
+
+        <table width="100%" border="0" cellpadding="0" cellspacing="0">
+
+            <tr>
+
+                <!-- ** BEGIN: Navigation Column ** //-->
+                <td width="150" id="leftcontent" valign="top">
+                    <!-- Navigation Placeholder //-->
+
+                    
+
+                    <div class="bar"><img src="/images/hr_dots1.gif" alt="" height="3" width="150"></div>
+
+        <!-- begin find JSRs form -->
+        <!-- IMPORTANT! do not convert this form to Struts < html : form > tag.  javascript change of form.action property fails. -->
+        <img src="/images/hd_find-jsrs.gif" alt="Find JSRs" height="18" width="150">
+        <form name="findjsr" action="/en/jsr/summary" method="get" class="pt5" onsubmit="return validate_findjsr()">
+            <input name="id" size="18" class="form" value="Search JSRs" onfocus="nullify_if_equal(this, 'Search JSRs')" type="text">
+	    <a href="javascript:document.findjsr.submit()" onclick="return validate_findjsr()"><img src="/images/button_go.gif" width="21" height="16" border="0" alt="Submit this Search" name="sub_search"></a>
+        </form><br><br>
+
+        <!-- ** Menu Start ** //-->
+
+        <ul id="p7PMnav">
+            <li><a href="/en/jsr/platform">JSRs by Platform</a></li>
+            <li><a href="/en/jsr/tech">JSRs by Technology</a></li>
+            <li><a href="/en/jsr/stage">JSRs by Stage</a></li>
+            <li><a href="/en/jsr/ec">JSRs by Committee</a></li>
+            <li><a href="/en/jsr/all">List of All JSRs</a></li>
+
+            <!--end find JSRs form -->
+            <div style="clear: both;"><img src="/images/spacer.gif" alt="" height="25" width="1"></div>
+
+            <!--begin my JCP -->
+            <img src="/images/hd_my-jcp.gif" alt="My JCP" height="18" width="150">
+            
+
+          <form name="login" method="get" action="/en/user/login" >
+            <input name="Sign-in" type="submit" title="Sign-in" value="Sign-in" />
+          </form>
+
+            <div style="clear:both"><img src="/images/global/spacer.gif" width="1" height="3" alt=""></div>
+            <div class="noNav">
+                <a href="/en/user/register">Register for Site</a>
+            </div>
+
+             <div class="bar"><img src="/images/hr_dots1.gif" alt="" height="3" width="150"></div>
+           <div class="noNav" style="color: #666666; padding: 0;">
+              Use of JCP site is subject to the
+              <a href="/en/home/terms" style="display:inline;padding: 0">JCP Terms of Use</a> and the
+              <a href="http://www.oracle.com/us/legal/privacy/index.html" style="display:inline;padding: 0" href="">Oracle Privacy Policy</a>
+          </div>
+
+            
+
+            <div style="clear:both"><img src="/images/global/spacer.gif" width="1" height="25" alt=""></div>
+
+            <!--begin JCP info -->
+            <img src="/images/hd_jcp-info.gif" alt="JCP Info" height="18" width="150">
+
+            <li><a href="/en/procedures/overview" class="p7PMtrg">About JCP</a>
+                <ul>
+                    <li><a href="/en/procedures/overview">Program Overview</a></li>
+                    <li><a href="/en/procedures/jcp2">JCP Process Document</a></li>
+                    <li><a href="/en/whatsnew/calendar">Calendar</a></li>
+                    <li><a href="/en/participation/members">JCP Members</a></li>
+                    <li><a href="/en/participation/committee">Executive Committee</a></li>
+                    <li><a href="/en/whatsnew/elections">Elections</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/en/participation/overview" class="p7PMtrg">Get Involved</a>
+		<ul>
+                    <li><a href="/en/participation/overview">Overview</a></li>
+                    <li><a href="/en/participation/membership">Becoming a JCP Member</a></li>
+		</ul>
+            </li>
+
+            <li><a href="/en/resources/contents" class="p7PMtrg">Community Resources</a>
+                <ul>
+                    <li><a href="/en/resources/contents">Overview</a></li>
+                    <li><a href="/en/resources/tutorials">Tutorials</a></li>
+                    <li><a href="/en/resources/multimedia">JCP Podcasts</a></li>
+                    <li><a href="/en/resources/guide">Spec Lead Guide</a></li>
+                    <li><a href="/en/resources/tdk">TCK Tool & Info</a></li>
+                    <li><a href="/en/resources/license_reference">License Reference</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/en/press/pmo" class="p7PMtrg">Community News</a>
+                <ul>
+                    <li><a href="/en/press/pmo">News</a></li>
+                    <li><a href="/en/press/news/awards/awards_main">Programs &amp; Awards</a></li>
+                    <li><a href="/en/press/releases">Press Releases</a></li>
+                    <li><a href="/en/press/success">Success Stories</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/en/introduction/faq">FAQ</a></li>
+
+            <li><a href="/en/resources/contacts">Contact Us</a></li>
+
+            <div style="clear: both;"><img src="/images/spacer.gif" alt="" height="25" width="1"></div>
+
+            <!--[if lte IE 6]><style>#p7PMnav a{height:1em;}#p7PMnav li{height:1em;float:left;clear:both;width:100%}</style><![endif]-->
+            <!--[if IE 6]><style>#p7PMnav li{clear:none;}</style><![endif]-->
+            <!--[if IE 7]><style>#p7PMnav a{zoom:100%;}#p7PMnav li{float:left;clear:both;width:100%;}</style><![endif]-->
+        </ul>
+
+        
+
+        <!--begin ad space -->
+        <div class="ads">
+            <a href="http://java.com/java/download/index.jsp?cid=jdp78399" target="_blank"><img style="display: ;" src="/images/ad_banner2.gif" alt="Ad Banner" border="1" height="70" width="150"></a>
+        </div>
+        <!--end ad space -->
+
+<!-- ** Menu End ** //-->
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;<br>
+
+    
+
+                    &nbsp;<br>
+                    <img src="/images/common/trans.gif" alt="" width="1" height="150"><br>
+
+              
+
+
+
+                </td>
+                <!-- ** END: Navigation Column ** //-->
+
+                <!-- ** BEGIN: Gutter Column ** //-->
+		<td width="10" nowrap><img src="/images/common/trans.gif" alt="" width="10" height="1"></td>
+                <!-- ** END: Gutter Column ** //-->
+
+                <!-- ** BEGIN: Content Column ** //-->
+                <td width="100%" valign="top">
+
+    
+<script type="text/javascript">
+
+String.prototype.trim = function() {
+        return this.replace(/^\s+|\s+$/g,"");
+}
+String.prototype.ltrim = function() {
+        return this.replace(/^\s+/,"");
+}
+String.prototype.rtrim = function() {
+        return this.replace(/\s+$/,"");
+}
+
+function validate_search() {
+	if (document.search.id.value == "Search JSRs" || document.search.id.value.trim().length == 0) {
+		alert("Search terms must be entered first");
+		return false;
+	}
+	return true;
+}
+
+function validate_findjsr() {
+	if (document.findjsr.id.value == "Search JSRs" || document.findjsr.id.value.trim().length == 0) {
+		alert("Search terms must be entered first");
+		return false;
+	}
+	return true;
+}
+
+function nullify_if_equal(field, str) {
+	// alert("val=" + field.value);
+	if (field.value == str) {
+		field.value = "";
+	}
+}
+
+</script>
+<!-- ** END: header.jsp ** //-->
+
+
+
+
+
+
+<!-- saved from url=(0022)http://internet.e-mail -->
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2//EN">
+<html>
+<head>
+<!--#config timefmt="%d-%b-%y" -->
+  <title>Java Community Process: Executive Committee Elections Nominees for 2015</title>
+</head>
+<body alink="#ff0000" bgcolor="#ffffff" link="#0000ff" text="#000000"
+ vlink="#660066">
+<!-- server side include for top part of page -->
+<!--#include virtual="/share/include/normal.header.v4.0.html"--><!-- end server side include for top of page --><!-- begin table for main body navigation and content -->
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+  <tbody>
+    <tr align="left" valign="top">
+      <td> <img src="/images/pixel.gif" alt="" height="20" width="1"><br
+ clear="all">
+<!-- server side include for main java.sun.com navigation -->
+<!--#include virtual="/share/include/navigate.v4.0.html"--><!-- end server side include for main java.sun.com navigation -->
+      </td>
+      <td valign="top" width="100%"><!-- page headline --><div class="header2">
+EC Elections<BR>
+<font size="+1">2015 Executive Committee Elections Nominees</font></div><br>
+<!-- end page headline -->
+<!-- optional subnav links -->
+      <p></font></p>
+<!-- end optional subnav links -->
+<!-- main page content --><font size="-1">
+
+The 2015 Fall Executive Committee Elections have started. This year, as defined in the <a href="/en/procedures/jcp2_9">JCP 2.9 Process Document</a>, 8 Ratified and 3 Elected seats are open for re-election. Since we are moving to JCP 2.10, all those who win Elected seats will serve a one-year term.
+<P>
+
+We hosted a Public EC meeting and Meet the JCP EC Candidates meeting at JavaOne San Francisco as part of Java User 
+Group Sunday on 25 October.
+<P>
+We also hosted a <a href="/en/resources/multimedia">Meet the JCP Executive Committee Candidates conference call</a> on Friday, 6 November at 10 AM PST.
+
+<P>
+
+<!-- Please view the <a href="/files/2014JCPECParticipationStats.pdf">2014 Executive Committee Voting and Participation record</a> for reference. -->
+<P>
+
+Please view the <a href="/files/2015JCPECParticipationStats.pdf">2015 Executive Committee Voting and Participation record</a> for reference.
+<p>
+
+Please refer to the <a href="/en/whatsnew/elections">Java Community Process EC Elections page</a> for more information on the Executive Committee Elections.
+<P>
+
+Please refer to the <a href="/en/participation/committee">Executive Committee Information page</a> for more information on the current Executive Committee.<BR><BR>
+
+
+<div class="header2">Candidates for the 2015 Executive Committee (EC) Elections</div>
+<P>
+What follows are the qualification statements provided by the candidates for the Executive Committee, along with a brief biography of the person who would serve as the Member's representative on the Executive Committee if elected, and a position statement when one was provided. 
+<P><P>
+
+<table border=1 cellpadding=5>
+<tr>
+   <td colspan=2 bgcolor=#D3D3D3><center><B>2015 EXECUTIVE COMMITTEE RATIFIED ELECTION SEAT CANDIDATES</B></center></td>
+</tr>
+
+<tr>
+<td valign="top">
+<B><a name="credit_suisse"></a>Credit Suisse</b><BR>
+</td>
+<td>
+<! -- Qualifications -->
+<p>
+Credit Suisse is a global bank headquartered in Zurich, serving clients in private banking, wealth management, 
+and investment banking. The bank has 530 offices and 22 booking centers located in over 50 countries. From the 
+46000 employees, around 10000 IT specialists work in application and infrastructure IT departments, in roles 
+ranging from architecture, development, and operations.
+<p>
+In 2010, Credit Suisse was elected in the JCP Executive Committee to be the first member to represent the 
+customers of Java technology. Customers want strong and open standards to secure their investments and to choose 
+among a variety of different products.
+<p>
+During out three terms in the JCP Executive Committee, we showed a good record of participation in the EC Meetings 
+and reviewed the JSRs as part of the technology government service. Having a long tradition in the development of 
+Java EE specifications, we managed to increase our participation in both Java SE and EE Expert Groups as well as 
+Specification Leads.
+<p>
+We would like to continue our work on the following topics.<br>
+Bring in our customer view and argue for strong, open and stable standards that can be implemented by any vendor 
+or Open Source community for a competitive market, transparent license models, and easy JCP participation.<br>
+Focus on technology governance and bring in our expertise in standardization and architecture governance. We 
+complement this "process-oriented view" with our customer view and rather technical background and thus will 
+continue to argue for a technical focus in the JCP EC.<br>
+Continue our strong and active participation in Expert Groups and as Spec Leads, e.g., for the development, 
+management, and operations of enterprise-scale applications in the cloud.
+<p>
+<a href="./2015/Credit_Suisse_JCP_Position_Statement_2015.pdf">Credit Suisse Position Statement</a> (.pdf file)<br>
+</td>
+</tr>
+
+<tr>
+<td>
+<! -- EC contact photo and name -->
+<img src="./2015/Susanne_Cech.jpg"><BR>Susanne Cech
+</td>
+<td>
+<! -- EC contact bio-->
+<p>
+Susanne Cech is member of Technology Services Architecture & Strategy of Credit Suisse and is the lead architect 
+for all Application Platforms, including the Java Application Platform (JAP) and Java related technologies. 
+Her main focus is the identification and standardization of new technologies that aid the development and operations 
+of large-scale applications. Susanne was the alternate in 2010 and has been the primary representative for the 
+last 4.5 years. Prior to joining Credit Suisse, Susanne obtained a PhD in Computer Science from ETH Zurich where 
+she implemented a dynamic updating system for Java programs.
+</td>
+</tr>
+
+<tr><td bgcolor=#D3D3D3>&nbsp;</td><td bgcolor=#D3D3D3>&nbsp;</td></tr>
+
+<tr>
+<td valign="top">
+<B><a name="ericsson"></a>Ericsson</b><BR>
+</td>
+<td>
+<! -- Qualifications -->
+<p>
+Java is a mature technology with high importance for Ericsson. To stay relevant, Java must continue to evolve based on a 
+broad developer community and a large base of different Java technology manufacturers.
+<p>
+Ericsson has participated in over 40 JSRs, and has been the spec lead for several (e.g. JSR-281, JSR-319) and uses 
+Java in many areas such as embedded Java ME, embedded Java SE, web profile Java EE + SIP for telecom nodes and full 
+Java EE for management systems (BSS) and IPTV. Ericsson has participated in over 40 JSRs, and has been the spec lead 
+for several (e.g. JSR-281, JSR-319). Ericsson uses Java in many areas such as embedded Java ME, embedded Java SE, web 
+profile Java EE + SIP for telecom nodes and full Java EE for management systems (BSS) and IPTV. Ericsson is a Swedish 
+technology company and is the world's largest provider of wireless network solutions for telecommunication and IP networking 
+with an extensive services operation. Ericsson puts heavy focus on innovation with over 20000 employees in the 
+R&D organizations.
+</td>
+</tr>
+
+<tr>
+<td>
+<! -- EC contact photo and name -->
+<img src="./2015/Christer_Boberg.jpg"><BR>Christer Boberg
+</td>
+<td>
+<! -- EC contact bio-->
+<p>
+Christer Boberg lives in Stockholm, Sweden and works as a Director at the central CTO office where he drive technology 
+strategies related to industry areas such as communication services and IOT. 
+<p>
+After a decade of programming C++/OO, he switched to Java in the mid-90s and has continued promoting Java as a technology 
+base since then. Christer also started the Ericsson Java Application Server work that later spun-off into the Sailfin 
+cooperation with Sun. Since then, he has been working actively to promote and build Java solutions for Ericsson that 
+meet the requirements of a carrier grade telecom solution.
+<p>
+Somehow, Christer finds time to play in his rock band named Soulpatrol.
+</td>
+</tr>
+
+<tr><td bgcolor=#D3D3D3>&nbsp;</td><td bgcolor=#D3D3D3>&nbsp;</td></tr>
+
+<tr>
+<td valign="top">
+<B><a name="fujitsu"></a>Fujitsu</b><BR>
+</td>
+<td>
+<! -- Qualifications -->
+<p>
+Fujitsu has a long history of implementing Java technologies, going back to 1996. Fujitsu has implemented Java 
+across what is probably the broadest range of platforms in the industry --- from Main Frames Java to Java-Enabled 
+Telephones. In Japan and around the world, Fujitsu is marketing its Java EE certified Interstage Application Server.
+<p>
+
+Fujitsu is a very active player in the Java community. Fujitsu has been a member of the JCP/Executive Committee since 
+its inception. Throughout the years, Fujitsu has an outstanding record of JCP/EC meeting attendance and JSR balloting. 
+At JavaOne in 2011, Mike DeNicola from Fujitsu was recognized as the "JCP Member of the Year".  Fujitsu has participated 
+in most of the JCP/EC Press Events and JCP/EC Panels discussing the JCP and the role of the Executive Committee that have 
+been held at JavaOne and in the US and Europe over the past several years.
+<p>
+Fujitsu has participated in and/or supported over fifty JSRs, including being Spec Lead and members of Expert Groups. 
+Among these are revisions to the JCP Process (JCP 2.9, JCP 2.8, JCP 2.7, JCP 2.6, and JCP 2.5) and merger of the JCP Executive 
+Committees (JSR355). Fujitsu was active in the Expert Groups creating and now updating JSPA 2, creating Java EE 7 and other key 
+SE and EE umbrella JSRs. It has also participated in updating SIP Servlet Versions 1.1 and 2.0, plus various XML, Web Services, 
+EJB, and JAIN JSRs.
+<p>
+Additionally, Fujitsu has strongly supported EJB application development and testing. It was a key member of DOPG 
+(Distributed Object Promotion Group) in Japan which closed in 2011. Among other things, the group verified interoperability 
+among member companies ORB products. It was the first group in the world to conduct EJB Interoperability Tests. Fujitsu is also 
+a founding member of the Component Consortium for EJB and Fujitsu created a membership-based Component Center. Using the 
+Fujitsu Interstage Application Server as the component runtime infrastructure, Fujitsu facilitates efficient application 
+development by providing support services and assembling the newest set of EJB business components and standard EJB patterns. 
+An application developer then adds Domain-specific and User-specific components.
+<p>
+<a href="./2015/Fujitsu_JCP_Position_Statement_2015.pdf">Fujitsu Position Statement</a> (.pdf file)<br>
+</td>
+</tr>
+
+<tr>
+<td>
+<! -- EC contact photo and name -->
+<img src="./2015/Kenji_Kazumura.jpg"><BR>Kenji Kazumura
+</td>
+<td>
+<! -- EC contact bio-->
+<p>
+Kenji Kazumura has been working with Java for about 20 years since Java was born, and now he is Senior Professional 
+Engineer of Java Technology at Fujitsu Limited in Japan. He is in charge of developing Java Virtual Machine for 
+Interstage Application Server and various Fujitsu middleware products.
+<p>
+He has participated in the Expert Group of JSR 204 (Unicode Supplementary Character Support). He has optimized
+several huge enterprise Java applications, specifically in the field of mobile communication and financial service, 
+in order to run with high performance and reliability. These systems contribute a great deal to the social 
+infrastructures in Japan.
+<p>
+He is now working to make the cloud environment be more useful by accelerating Java technology into this area.
+</td>
+</tr>
+
+<tr><td bgcolor=#D3D3D3>&nbsp;</td><td bgcolor=#D3D3D3>&nbsp;</td></tr>
+
+<tr>
+<td valign="top">
+<B><a name="hp"></a>Hewlett-Packard</b><BR>
+</td>
+<td>
+<! -- Qualifications -->
+<p>
+HP supplies Java technology across virtually all of our computing product lines, ranging from our high-end Integrity 
+servers to our blade product families. We have been active on the EC since its inception in 2000. HP looks forward to 
+working with the Java community as an EC member and we appreciate your support in this election.
+</td>
+</tr>
+
+<tr>
+<td>
+<! -- EC contact photo and name -->
+<img src="./2015/Naresh_Shah.jpg"><BR>Naresh Shah
+</td>
+<td>
+<! -- EC contact bio-->
+<p>
+Naresh Shah joined Hewlett Packard in 2011 as Vice President & Site Leader for the Enterprise Group R&D organization 
+in India. Before HP, Naresh worked for 4 years at Novell and 20 years at AT&T and its spin-off Lucent Technologies 
+in the US. Naresh holds a B.Tech. in Computer Science and Engineering from IIT, Kharagpur and M.S. in Computer and 
+Information Science from the Ohio State University, Columbus.
+</td>
+</tr>
+
+<tr><td bgcolor=#D3D3D3>&nbsp;</td><td bgcolor=#D3D3D3>&nbsp;</td></tr>
+
+<tr>
+<td valign="top">
+<B><a name="ibm"></a>IBM</b><BR>
+</td>
+<td>
+<! -- Qualifications -->
+<p>
+&nbsp;</td>
+</tr>
+
+<tr>
+<td>
+<! -- EC contact photo and name -->
+<BR>Steve Wallin 
+</td>
+<td>
+<! -- EC contact bio-->
+<p>
+&nbsp;
+</td>
+</tr>
+
+<tr><td bgcolor=#D3D3D3>&nbsp;</td><td bgcolor=#D3D3D3>&nbsp;</td></tr>
+
+<tr>
+<td valign="top">
+<B><a name="intel"></a>Intel</b><BR>
+</td>
+<td>
+<! -- Qualifications -->
+<p>
+I represent Intel via the openjdk as a source development contributor. I am a member of an Intel team developers 
+who produce optimizations and features to enable java performance on Intel architectures. I work within DCST/SSG 
+for Intel representing my group via voting on JSR issues as they arise and attending working groups and various 
+conferences such as JavaOne and the JVMLS.
+<p>
+<a href="./2015/Intel_JCP_Position_Statement_2015.pdf">Intel Position Statement</a> (.pdf file)<br>
+</td>
+</tr>
+
+<tr>
+<td>
+<! -- EC contact photo and name -->
+<img src="./2015/Michael_Berg.jpg"><BR>Michael Berg 
+</td>
+<td>
+<! -- EC contact bio-->
+<p>
+Michael Berg has worked at Intel Corp. for more than 8 years in the SSG. He is currently Sr. Staff S/W compiler 
+developer and is active in the Java eco-system by contributing JIT compiler development focused on benchmarks 
+performance as well as customer applications by enabling/designing optimizations. His past experience is in various 
+compiler development roles on many microarchitectures and operating systems over 25 years for languages like C, C++, 
+Fortran, Java, OpenCL, DirectX and others.
+</td>
+</tr>
+
+<tr><td bgcolor=#D3D3D3>&nbsp;</td><td bgcolor=#D3D3D3>&nbsp;</td></tr>
+
+<tr>
+<td valign="top">
+<B><a name="redhat"></a>Red Hat</b><BR>
+</td>
+<td>
+<! -- Qualifications -->
+<p>
+Red Hat/JBoss have been involved with Java standardisation for a decade, trying to represent the best values of open 
+source development, communities and innovation. We bring a wealth of experience with growing vibrant open source communities 
+and feeding that into other standards efforts, such as OASIS and W3C and vice versa. In recent years Red Hat has worked 
+actively on JSR 348, 355, 358 and 364 to improve and streamline the JCP processes, executive committees and approach to 
+openness.
+<p>
+<a href="./2015/Red_Hat_JCP_Position_Statement_2015.pdf">Red Hat Position Statement</a> (.pdf file)<br>
+</td>
+</tr>
+
+<tr>
+<td>
+<! -- EC contact photo and name -->
+<img src="./2015/Mark_Little.jpg"><BR>Mark Little 
+</td>
+<td>
+<! -- EC contact bio-->
+<p>
+Mark Little leads jboss technical direction and research/development. Prior to this he was SOA Technical Development Manager 
+and Director of Standards. Mark has worked on a number of standards for Web Services, JCP, Cloud and others, as well as 
+representing Red Hat in bodies such as W3C, OASIS and OMG. He has worked in the area of reliable distributed systems since 
+the mid-80's and has a PhD on Fault Tolerance, Transactions and Replication. He is also a professor at Newcastle University.
+</td>
+</tr>
+
+<tr><td bgcolor=#D3D3D3>&nbsp;</td><td bgcolor=#D3D3D3>&nbsp;</td></tr>
+
+<tr>
+<td valign="top">
+<B><a name="soujava"></a>Sociedade de Usu&#225;rios da Tecnologia Java - SouJava</b><BR>
+</td>
+<td>
+<! -- Qualifications -->
+<p>
+SouJava (the "Java Users Society") is an established non-profit organization and Java User Group focused on strengthening 
+the Brazilian Java developer community. Founded in 1998 and based in S&#227;o Paulo, SouJava congregates over 40 thousand 
+members throughout the country. SouJava was the first JUG to join the JCP and has been active in the Process for 
+almost a decade. During this time, the group had an important role on the open source of Java, to the point that 
+Dr. Dobbs Magazine considered at the time Brazil as the reason for the release of OpenJDK. For the last two years, 
+SouJava has used its role in the JCP EC to improve the participation of JUGs, individuals and small companies into 
+shaping the future of Java by participating strongly on the Adopt-a-JSR program, with 80+ of the groups members involved 
+in promoting and adopting JSRs and also leading the discussions that propose to increase membership and participation 
+from individuals and non-profits into the JCP. 
+<p>
+SouJava considers the JCP a fundamental part of the Java ecosystem. The long-term success of Java depends on a process 
+that encourages vendors, developers and users to contribute and innovate, and that gives everyone the necessary rights 
+to implement the results. SouJava is committed to ensuring that the JCP is balanced and transparent, and that there 
+is an equal standing among JCP members. As an active participant in open-source efforts, the group intends to help 
+ensure that FOSS projects and implementations of Java standards are able to both bring contributions, and also to 
+share process results. As a leading member of the worldwide Java Users Group Community, SouJava is committed to defend 
+and promote JUG participation at the JCP.
+<p>
+For the last two years, as member of the JCP EC, SouJava has strived to bring its passion for community, JUGs, open source, standards, and Java to the JCP, and thus foster transparency and participation. After two years of strong involvement, we look forward to increase even more our relationship with the Java community, and we appreciate your support so we can continue to work towards a better JCP.
+<p>
+<a href="./2015/SouJava_JCP_Position_Statement_2015.pdf">SouJava Position Statement</a> (.pdf file)<br>
+</td>
+</tr>
+
+<tr>
+<td>
+<! -- EC contact photo and name -->
+<img src="./2015/Bruno_Souza.png"><BR>Bruno Souza 
+</td>
+<td>
+<! -- EC contact bio-->
+<p>
+Bruno Souza is a Java Developer and Open Source Evangelist. As founder and coordinator of SouJava (Sociedade de Usu&#225;rios 
+da Tecnologia Java; Java Technology Users Society) and leader of the Worldwide Java User Groups Community at Java.net, 
+Bruno helped in the creation and organization of hundreds of JUGs worldwide. For the past 2 years, Bruno has represented 
+SouJava on the JCP EC, where he has defended transparency and participation as means to improve the process.
+<p>
+A Java Developer since the earliest days of the technology, Bruno took part in some of the largest Java projects in 
+Brazil. Bruno is a Principal Consultant at Summa Technologies, and has extensive experience in large projects in the 
+Government, finance and service industries. A Cloud Expert at ToolsCloud, he promotes and develops cloud-based systems 
+using Java. Nurturing developer communities is a personal passion, and Bruno works actively with Java open source 
+communities and projects. 
+<p>
+Bruno Souza is a Director of the Open Source Initiative (OSI), President of the innovation-focused Campus Party 
+Institute, and Coordinator of Nuvem, the Cloud Computing Lab of LSI/USP. When not in a computer, Bruno enjoys time 
+with his family in a little hideout near S&#227;o Paulo, where he tends to his other passions of being an amateur 
+father and puppeteer.
+</td>
+</tr>
+
+<tr><td bgcolor=#D3D3D3>&nbsp;</td><td bgcolor=#D3D3D3>&nbsp;</td></tr>
+
+</table>
+
+<BR>
+<BR>
+
+<table border=1 cellpadding=5>
+<tr>
+   <td colspan=2 bgcolor=#D3D3D3><center><B>2015 EXECUTIVE COMMITTEE OPEN ELECTION SEAT CANDIDATES</B></center></td>
+</tr>
+
+<tr>
+<td valign="top">
+<B><a name="eclipse"></a>Eclipse Foundation</b><BR>
+</td>
+<td>
+<! -- Qualifications -->
+<p>
+Eclipse is an open source community with a wide range of projects. Current focus areas include 
+Java development, web development, systems engineering, and IoT. The Eclipse Foundation is a 
+not-for-profit, member supported corporation that hosts the Eclipse projects.
+</td>
+</tr>
+
+<tr>
+<td>
+<! -- EC contact photo and name -->
+<img src="./2015/Mike_Milinkovich.jpg"><BR>Mike Milinkovich 
+</td>
+<td>
+<! -- EC contact bio-->
+<p>
+Mike has been on the JCP EC for the past 8 years. He has been contributing to the technology industry for over 
+thirty. Mike also sits on the Board of the Open Source Initiative, and is an observer and past member of the 
+Board of the OpenJDK community.
+</td>
+</tr>
+
+<tr><td bgcolor=#D3D3D3>&nbsp;</td><td bgcolor=#D3D3D3>&nbsp;</td></tr>
+
+<tr>
+<td valign="top">
+<B><a name="jelastic"></a>Jelastic, Inc.</b><BR>
+</td>
+<td>
+<! -- Qualifications -->
+<p>
+Jelastic PaaS provides the maximum Java application density, disaster recovery, automatic scaling of 
+resources and the easiest management for private, public and hybrid clouds. With James Gosling on board, 
+Jelastic is gaining even more coverage and analysis of Java features. As a member of JCP, Ruslan Synytsky 
+(CEO of Jelastic) would work on Java usage in cloud computing: innovations, automation of DevOps processes, 
+containerization, flexibility of development and application management.
+<p>
+<a href="./2015/Jelastic_JCP_Position_Statement_2015.pdf">Jelastic Position Statement</a> (.pdf file)<br>
+</td>
+</tr>
+
+<tr>
+<td>
+<! -- EC contact photo and name -->
+<img src="./2015/Ruslan_Synytsky.gif"><BR>Ruslan Synytsky 
+</td>
+<td>
+<! -- EC contact bio-->
+<p>
+Ruslan Synytsky is Jelastic CEO and co-founder. Jelastic introduced a new degree of freedom in the cloud 
+with containerization for DevOps and provides a turnkey Hybrid, Public and Private cloud platform, combining 
+enterprise PaaS and container-based IaaS. With over 15 years in the IT industry, Ruslan is an expert in 
+large-scale distributed Java applications and enterprise platforms. Before starting Jelastic in 2011, he 
+was an engineer of Science Department at National Space Agency of Ukraine.
+</td>
+</tr>
+
+<tr><td bgcolor=#D3D3D3>&nbsp;</td><td bgcolor=#D3D3D3>&nbsp;</td></tr>
+
+<tr>
+<td valign="top">
+<B><a name="ljc"></a>London Java Community</b><BR>
+</td>
+<td>
+<! -- Qualifications -->
+<p>
+For the past several years we've run "Adopt a JSR" and other advocacy initiatives. These have massively 
+increased day-to-day developer participation in Java standards. Java is moving to infrastructure, cloud 
+and the IoT space. Both Java 9 and Java EE 8 will both strong input from developers to ensure that Java 
+remains the #1 developer platform of choice. If re-elected, in addition to being involved in formal JSR 
+processes we will continue to evangelise Java and run practical hack days.
+<p>
+<a href="./2015/London_Java_Community_JCP_Position_Statement_2015.pdf">London Java Community Position Statement</a> (.pdf file)<BR>
+</td>
+</tr>
+
+<tr>
+<td>
+<! -- EC contact photo and name -->
+<img src="./2015/Martijn_Verburg.jpg"><BR>Martijn Verburg
+</td>
+<td>
+<! -- EC contact bio-->
+<p>
+Martijn Verburg is the co-leader of the London Java User Group (LJC), and leads the global effort of Java 
+User Group members who contribute to stds (Adopt a JSR and Adopt OpenJDK. Martijn's talks and 
+presentations are in high demand by major conferences where he is known for challenging the industry status 
+quo as the Diabolical Developer. Martijn co-authored "The Well-Grounded Java Developer" with Ben Evans and 
+was added as a Java Champion in 2012 for services to the ecosystem.
+</td>
+</tr>
+
+<tr><td bgcolor=#D3D3D3>&nbsp;</td><td bgcolor=#D3D3D3>&nbsp;</td></tr>
+
+<tr>
+<td valign="top">
+<B><a name="tomitribe"></a>Tomitribe</b><BR>
+</td>
+<td>
+<! -- Qualifications -->
+<p>
+Tomitribe is a proud supporter of Java EE and Open Source and built on the belief that everyone has a role with 
+open source and open standards. Tomitribe is dedicated to supporting both Apache TomEE, the greater Java EE 
+ecosystem and participates on a variety of JCP specifications. We are deeply passionate about the JCP, know it is 
+critical to our industry and believe we share great responsibility as participants, users and implementors to actively 
+participate in its continued success.
+<p>
+<a href="./2015/Tomitribe_JCP_Position_Statement_2015.pdf">Tomitribe Position Statement</a> (.pdf file)<BR>
+</td>
+</tr>
+
+<tr>
+<td>
+<! -- EC contact photo and name -->
+<img src="./2015/David_Blevins.jpg"><BR>David Blevins
+</td>
+<td>
+<! -- EC contact bio-->
+<p>
+Founder and CEO of Tomitribe. Veteran of Open Source Java EE in both implementing and defining JavaEE specifications for 
+over 10 years with a strong drive to see JavaEE simple, testable and as light as Java SE. Co-Founder of OpenEJB (1999), 
+Geronimo (2003), TomEE (2011). Member of the Java EE 7 and EJB 3.2 Expert Groups, past member of the Java EE 6, EJB 3.1, 
+and EJB 3.0 Expert Groups. Contributing author to Component-Based Software Engineering: Putting the Pieces Together from 
+Addison Wesley.
+</td>
+</tr>
+
+<tr><td bgcolor=#D3D3D3>&nbsp;</td><td bgcolor=#D3D3D3>&nbsp;</td></tr>
+
+<tr>
+<td valign="top">
+<B><a name="twitter"></a>Twitter</b><BR>
+</td>
+<td>
+<! -- Qualifications -->
+<p>
+Twitter is relies on the JVM as the base runtime for its service, with almost all of our new software 
+being written in Java or Scala. We are solving some uniquely challenging problems when it comes to designing 
+software at our scale and are developing libraries for scalable IO, distributed scattergather, and 
+system monitoring and management.
+<p>
+<a href="./2015/Twitter_JCP_Position_Statement_2015.pdf">Twitter Position Statement</a> (.pdf file)<BR>
+</td>
+</tr>
+
+<tr>
+<td>
+<! -- EC contact photo and name -->
+<img src="./2015/Tony_Printezis.jpg"><BR>Tony Printezis
+</td>
+
+<td>
+<! -- EC contact bio-->
+<p>
+Tony Printezis is a Staff Software Engineer at Twitter and a member of
+the VM Team in the Infrastructure Organization.
+<p>
+He has over 15 years of (mainly Java) virtual machine implementation
+experience with special focus on memory management. Most of his
+projects have involved improving the performance, scalability,
+responsiveness, parallelism, concurrency, monitoring, and
+visualization of garbage collectors. He was one of the designers of
+(and tech lead of) the Garbage-First GC and the original implementer
+of the widely-used CMS GC.
+<p>
+Before Twitter Tony worked at Adobe (on the eventually canceled
+next-generation Flash effort), the Java organization at Oracle and Sun
+Microsystems (where he contributed to the gabrage collectors of the
+Java HotSpot virtual machine), and Sun Microsystems Laboratories
+(where he did garbage collection-related research).
+<p>
+He holds a PhD and a BSc(Hons) in Computing Science, both from the
+University of Glasgow in Scotland.
+<p>
+On his spare time he's been known to carry unreasonably heavy camera
+equipment to take pictures of big, aluminum birds... and he also cooks.
+</td>
+</tr>
+
+<tr><td bgcolor=#D3D3D3>&nbsp;</td><td bgcolor=#D3D3D3>&nbsp;</td></tr>
+
+</table>
+
+
+      <br>
+      <p>ABOUT THE JAVA COMMUNITY PROCESS (JCP) EXECUTIVE COMMITTEE</p>
+      <p>After the Executive Committee (EC) Elections in 2012, the SE/EE and ME Executive Committees were merged into a single Executive Committee as defined by <a href="/en/jsr/detail?id=355">JSR 355</a> and the <a href="/en/procedures/jcp2_9">JCP 2.9 Process Document</a>.  In the merged Executive Committee, there are 16 Ratified Seats, 8 Elected Seats and the permanent seat held by Oracle America. Members serve 2-year terms that are staggered so that 12 of the 24 seats are normally up for ratification/election each year.</p>
+      <p>The EC members guide the evolution of the Java technologies.
+The EC
+represents a cross-section of both major stakeholders and other members
+of the Java Community. Duties are: select JSRs for development, approve
+draft Specifications for Public Review, approve Final Specifications,
+review TCK appeals, approve Maintenance revisions and possibly defer
+some features to a new JSR, approve transfer of maintenance duties
+between members and provide guidance to the Program Management Office
+(PMO). For more information on the EC, see the Executive Committee Info
+page <a href="http://jcp.org/en/participation/committee">http://jcp.org/en/participation/committee</a>.
+      </p>
+     <p>
+<P>
+<a href="/aboutJava/communityprocess/elections/2014.html">2014 EC Elections Results </a>
+<P>
+<a href="/aboutJava/communityprocess/elections/2013.html">2013 EC Elections Results </a>
+<P>
+<a href="/aboutJava/communityprocess/elections/2012.html">2012 EC Elections Results </a>
+<P>
+<a href="/aboutJava/communityprocess/elections/2011.html">2011 EC Elections Results </a>
+<P>
+<a href="/aboutJava/communityprocess/elections/2010.html">2010 EC Elections Results </a>
+<P>
+<a href="/aboutJava/communityprocess/elections/2009.html">2009 EC Elections Results </a>
+<P>
+<a href="/aboutJava/communityprocess/elections/2008.html">2008 EC Elections Results </a>
+<P>
+<a href="/aboutJava/communityprocess/elections/2007.html">2007 EC Elections Results </a>
+<P>
+<a href="/aboutJava/communityprocess/elections/2006.html">2006 EC Elections Results </a>
+<P>
+<a href="/aboutJava/communityprocess/elections/2005.html">2005 EC Elections Results </a>
+<P>
+<a href="/aboutJava/communityprocess/elections/2004.html">2004 EC Elections Results </a>
+<P>
+<a href="/aboutJava/communityprocess/elections/2003.html">2003 EC Elections Results </a>
+<P>
+<a href="/aboutJava/communityprocess/elections/2002.html">2002 EC Elections Results </a>
+<P>
+<a href="/aboutJava/communityprocess/elections/2001.html">2001 EC Elections Results </a>
+<P>
+<a href="/aboutJava/communityprocess/jcpec-elections.html">2000 EC Elections Results </a>
+<P>
+For more information on the JCP, see the <a href="/en/introduction/overview">JCP Overview page</a>.
+<P>
+Contact the PMO for election questions at pmo<fake_tag>&#064;</fake_tag>jcp.org
+</font>
+</P>
+
+<!-----------------------DIVIDER--------------------------->
+<!-- end main page content --></td>
+<!-- gutter spacing for right side of the page --> <td width="30"><img
+ src="/images/pixel.gif" alt="" height="1" width="30"> </td>
+    </tr>
+  </tbody>
+</table>
+<!-- server side include for page footer -->
+<!--#include virtual="/share/include/normal.footer.v4.0.html"--><!-- end server side include for footer -->
+<BR>
+<BR>
+</body>
+</html>
+
+
+
+<!-- ** BEGIN: footer.jsp ** //-->
+
+
+
+
+
+
+
+
+</td>
+</tr>
+</table>
+
+<!-- ** END: Content Table ** //-->
+
+<!-- ** BEGIN: Footer Table ** //-->
+
+<div id="footer" style="clear: both;">
+    <div class="footleft">
+        <a href="/en/resources/contacts">Contact Us</a>
+    </div>
+	
+    <div class="botbar"><img src="/images/spacer.gif" alt="" height="23" width="1"></div>
+
+    <div class="footleft2">
+         &copy; 2019, Oracle Corporation and/or its affiliates. 
+        <a href="/en/home/terms">Terms of Use</a>. <a href="http://www.oracle.com/us/legal/privacy/index.html">Privacy Policy</a>. <a href="http://www.oracle.com/us/legal/third-party-trademarks/third-party-trademarks-078568.html">Trademarks</a>
+    </div>
+
+    <div class="footright">
+        <img src="/images/common/logo_oracle_footer.gif" alt="Oracle Corporation" height="22" width="91">
+    </div>
+
+    <div style="clear: both;"><img src="/images/spacer.gif" alt="" height="30" width="1"></div>
+</div>
+
+<!-- ** END: Footer Table ** //-->
+
+
+
+<!-- ** Menu Start ** //-->
+
+
+
+</body>
+</html>
+<!-- ** END: footer.jsp ** //-->
+

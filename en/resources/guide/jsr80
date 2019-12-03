@@ -1,0 +1,648 @@
+
+
+<!-- ** BEGIN: header.jsp ** //-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3c.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+<head>
+    
+
+   
+    <link href="/includes/css/menu.css" rel="stylesheet" type="text/css"></link>
+    <link href="/includes/css/style.css" rel="stylesheet" type="text/css"></link>
+    <!--[if lt IE 6]><link href="/includes/css/style5.css" rel="stylesheet" type="text/css" ></link><![endif]-->
+    <!--[if gte IE 5]><link href="/includes/css/style6.css" rel="stylesheet" type="text/css" ></link><![endif]-->
+    <link href="/includes/css/tabs.css"  rel="stylesheet" type="text/css"></link>
+
+    <script type="text/javascript" src="/includes/scripts/tabs.js"></script>
+    <script type="text/javascript" src="/includes/scripts/menu.js"></script>
+   
+
+    
+
+    
+        <title>The Java Community Process(SM) Program - Community Resources - Spec Lead Guide</title>
+    
+
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+
+
+<body onload="P7_initPM(0,1,0,0,-1)">
+
+    <a name="top"></a>
+
+    <div id="header">
+	<div id="logo">
+		<a href="/en/home/index"><img src="/images/spacer.gif" alt="Java Community Process" height="81" width="151"></a>
+	</div>
+	<div id="tools">
+		<div class="search">
+			<form name="search" action="/en/jsr/summary" method="get" onsubmit="return validate_search()">
+				<input name="id" value="Search JSRs" size="16" class="form" onfocus="nullify_if_equal(this, 'Search JSRs')" type="text">
+				<a href="javascript:document.search.submit()" onclick="return validate_search()"><img src="/images/button_go.gif" width="21" height="16" border="0" alt="Submit this Search" name="sub_search"></a>
+			</form>
+		</div>
+		<div class="tools">
+			<a href="/en/press/pressroom">Press Room</a> &nbsp;|&nbsp;
+			<a href="http://java.com/java/download/index.jsp?cid=jdp78399">Get Java Here</a> &nbsp;|&nbsp;
+			<!-- <a href="javascript:void(0)">Print Format</a> &nbsp;|&nbsp;&nbsp; -->
+		</div>
+
+	</div>
+	<div style="clear: right;"></div>
+
+        
+
+	<div class="topbar"><img src="/images/spacer.gif" alt="" height="3" width="154"></div>
+	<div id="update"> </div>
+    </div>
+
+
+    
+
+        <!-- ** BEGIN: Content Table ** //-->
+
+        <table width="100%" border="0" cellpadding="0" cellspacing="0">
+
+            <tr>
+
+                <!-- ** BEGIN: Navigation Column ** //-->
+                <td width="150" id="leftcontent" valign="top">
+                    <!-- Navigation Placeholder //-->
+
+                    
+
+                    <div class="bar"><img src="/images/hr_dots1.gif" alt="" height="3" width="150"></div>
+
+        <!-- begin find JSRs form -->
+        <!-- IMPORTANT! do not convert this form to Struts < html : form > tag.  javascript change of form.action property fails. -->
+        <img src="/images/hd_find-jsrs.gif" alt="Find JSRs" height="18" width="150">
+        <form name="findjsr" action="/en/jsr/summary" method="get" class="pt5" onsubmit="return validate_findjsr()">
+            <input name="id" size="18" class="form" value="Search JSRs" onfocus="nullify_if_equal(this, 'Search JSRs')" type="text">
+	    <a href="javascript:document.findjsr.submit()" onclick="return validate_findjsr()"><img src="/images/button_go.gif" width="21" height="16" border="0" alt="Submit this Search" name="sub_search"></a>
+        </form><br><br>
+
+        <!-- ** Menu Start ** //-->
+
+        <ul id="p7PMnav">
+            <li><a href="/en/jsr/platform">JSRs by Platform</a></li>
+            <li><a href="/en/jsr/tech">JSRs by Technology</a></li>
+            <li><a href="/en/jsr/stage">JSRs by Stage</a></li>
+            <li><a href="/en/jsr/ec">JSRs by Committee</a></li>
+            <li><a href="/en/jsr/all">List of All JSRs</a></li>
+
+            <!--end find JSRs form -->
+            <div style="clear: both;"><img src="/images/spacer.gif" alt="" height="25" width="1"></div>
+
+            <!--begin my JCP -->
+            <img src="/images/hd_my-jcp.gif" alt="My JCP" height="18" width="150">
+            
+
+          <form name="login" method="get" action="/en/user/login" >
+            <input name="Sign-in" type="submit" title="Sign-in" value="Sign-in" />
+          </form>
+
+            <div style="clear:both"><img src="/images/global/spacer.gif" width="1" height="3" alt=""></div>
+            <div class="noNav">
+                <a href="/en/user/register">Register for Site</a>
+            </div>
+
+             <div class="bar"><img src="/images/hr_dots1.gif" alt="" height="3" width="150"></div>
+           <div class="noNav" style="color: #666666; padding: 0;">
+              Use of JCP site is subject to the
+              <a href="/en/home/terms" style="display:inline;padding: 0">JCP Terms of Use</a> and the
+              <a href="http://www.oracle.com/us/legal/privacy/index.html" style="display:inline;padding: 0" href="">Oracle Privacy Policy</a>
+          </div>
+
+            
+
+            <div style="clear:both"><img src="/images/global/spacer.gif" width="1" height="25" alt=""></div>
+
+            <!--begin JCP info -->
+            <img src="/images/hd_jcp-info.gif" alt="JCP Info" height="18" width="150">
+
+            <li><a href="/en/procedures/overview" class="p7PMtrg">About JCP</a>
+                <ul>
+                    <li><a href="/en/procedures/overview">Program Overview</a></li>
+                    <li><a href="/en/procedures/jcp2">JCP Process Document</a></li>
+                    <li><a href="/en/whatsnew/calendar">Calendar</a></li>
+                    <li><a href="/en/participation/members">JCP Members</a></li>
+                    <li><a href="/en/participation/committee">Executive Committee</a></li>
+                    <li><a href="/en/whatsnew/elections">Elections</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/en/participation/overview" class="p7PMtrg">Get Involved</a>
+		<ul>
+                    <li><a href="/en/participation/overview">Overview</a></li>
+                    <li><a href="/en/participation/membership">Becoming a JCP Member</a></li>
+		</ul>
+            </li>
+
+            <li><a href="/en/resources/contents" class="p7PMtrg">Community Resources</a>
+                <ul>
+                    <li><a href="/en/resources/contents">Overview</a></li>
+                    <li><a href="/en/resources/tutorials">Tutorials</a></li>
+                    <li><a href="/en/resources/multimedia">JCP Podcasts</a></li>
+                    <li><a href="/en/resources/guide">Spec Lead Guide</a></li>
+                    <li><a href="/en/resources/tdk">TCK Tool & Info</a></li>
+                    <li><a href="/en/resources/license_reference">License Reference</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/en/press/pmo" class="p7PMtrg">Community News</a>
+                <ul>
+                    <li><a href="/en/press/pmo">News</a></li>
+                    <li><a href="/en/press/news/awards/awards_main">Programs &amp; Awards</a></li>
+                    <li><a href="/en/press/releases">Press Releases</a></li>
+                    <li><a href="/en/press/success">Success Stories</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/en/introduction/faq">FAQ</a></li>
+
+            <li><a href="/en/resources/contacts">Contact Us</a></li>
+
+            <div style="clear: both;"><img src="/images/spacer.gif" alt="" height="25" width="1"></div>
+
+            <!--[if lte IE 6]><style>#p7PMnav a{height:1em;}#p7PMnav li{height:1em;float:left;clear:both;width:100%}</style><![endif]-->
+            <!--[if IE 6]><style>#p7PMnav li{clear:none;}</style><![endif]-->
+            <!--[if IE 7]><style>#p7PMnav a{zoom:100%;}#p7PMnav li{float:left;clear:both;width:100%;}</style><![endif]-->
+        </ul>
+
+        
+
+        <!--begin ad space -->
+        <div class="ads">
+            <a href="http://java.com/java/download/index.jsp?cid=jdp78399" target="_blank"><img style="display: ;" src="/images/ad_banner2.gif" alt="Ad Banner" border="1" height="70" width="150"></a>
+        </div>
+        <!--end ad space -->
+
+<!-- ** Menu End ** //-->
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;<br>
+
+    
+
+                    &nbsp;<br>
+                    <img src="/images/common/trans.gif" alt="" width="1" height="150"><br>
+
+              
+
+
+
+                </td>
+                <!-- ** END: Navigation Column ** //-->
+
+                <!-- ** BEGIN: Gutter Column ** //-->
+		<td width="10" nowrap><img src="/images/common/trans.gif" alt="" width="10" height="1"></td>
+                <!-- ** END: Gutter Column ** //-->
+
+                <!-- ** BEGIN: Content Column ** //-->
+                <td width="100%" valign="top">
+
+    
+<script type="text/javascript">
+
+String.prototype.trim = function() {
+        return this.replace(/^\s+|\s+$/g,"");
+}
+String.prototype.ltrim = function() {
+        return this.replace(/^\s+/,"");
+}
+String.prototype.rtrim = function() {
+        return this.replace(/\s+$/,"");
+}
+
+function validate_search() {
+	if (document.search.id.value == "Search JSRs" || document.search.id.value.trim().length == 0) {
+		alert("Search terms must be entered first");
+		return false;
+	}
+	return true;
+}
+
+function validate_findjsr() {
+	if (document.findjsr.id.value == "Search JSRs" || document.findjsr.id.value.trim().length == 0) {
+		alert("Search terms must be entered first");
+		return false;
+	}
+	return true;
+}
+
+function nullify_if_equal(field, str) {
+	// alert("val=" + field.value);
+	if (field.value == str) {
+		field.value = "";
+	}
+}
+
+</script>
+<!-- ** END: header.jsp ** //-->
+
+
+
+<P CLASS="headlines">
+<FONT FACE="Arial, Helvetica, sans-serif">
+<FONT COLOR="#666666">Spec Lead Guide</FONT><BR>
+<FONT SIZE="+1" COLOR="#660066"><B>Case Studies</B></FONT>
+</FONT></P>
+
+
+            <p><font face="Arial, Helvetica, sans-serif"><font color="#660066" size="+1"><b>Operating a Consensus-Driven Small Expert Group: JSR 80 Case Study<br>
+              </b></font><font color="#660066"><b><i> <a href="../../jsr/detail?id=80">JSR 
+              80</a></i></b></font></font></p>
+
+<table width="200" border="0" cellspacing="0" cellpadding="10" align="left">
+              <tr> 
+                <td valign="top"><!-- height="505" --> 
+                  <table width="100%" border="1" cellspacing="0" cellpadding="3"  bordercolor="#003399">
+                    <tr> 
+                      <td valign="top"><!-- height="456" --> 
+
+<img src="/images/resources/dimmock.jpg" valign=top halign=center alt="" vspace="10" hspace="10"><BR>
+<center><font size="-1"><I>Boyd Dimmock</i></font></center>
+</td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            </table>
+
+
+              
+            <p><font face="Arial, Helvetica, sans-serif">Specification lead Boyd Dimmock guided the development of
+JSR 80 with an expert group of ten corporate and individual
+members from around the world. With a simple email, web site,
+and telephone infrastructure, she led by consensus, employing polling
+techniques, a professional tone, and an even-handed manner to see her
+team through the challenges inherent to the task.</font></p>
+
+            <p><font face="Arial, Helvetica, sans-serif">At IBM in Raleigh, NC, senior technical staff member, Boyd Dimmock,
+saw the handwriting on the wall: Universal
+Serial Bus (USB) rules. Or it will pretty soon. Already every laptop
+now shipping includes a USB port to enable hot plug-ins of external
+disk drives, speakers, joysticks, entertainment systems, security
+cameras, and so forth. While the serial port has a Java extension,
+there was none for the up-and-coming USB until Dimmock got the ball
+rolling as JSR 80 specification lead.<P>
+
+"We thought that going into the future there would be great business
+need for at least having the level of functionality for USB port that
+already exists for serial," says Dimmock. "There are a variety of real
+needs in the industry to use USB, but the Java (TM) programming language
+currently can't get you there." IBM, for example, has a point-of-sale
+(POS) cash register with USB ports, so the company's business
+motivation was strong to enable business partners to develop applications
+that could use USB-connected peripherals to enhance their solutions.<P>
+
+About a year ago, Dimmock proposed JSR 80. Its goal was to create a
+Java interface to USB devices. The interface would allow programmers
+to write a device service in the Java language and make it portable
+across platforms. With such a service, USB device attachments could
+be integrated into the business logic of the solution.<P>
+
+<B>Recruiting Experts</b><P>
+
+Dimmock recruited participants for the JSR 80 expert group from a
+variety of sources. In addition to posting the JSR on the Java Community 
+Processs (SM) Program (JCP) web
+site (jcp.org), she had a notice sent of the proposed work to a USB users 
+group
+(www.usb.org) and to some of the retail industry standards groups
+who had significant interest in USB. The expert group
+remained open for an extended period of several months, during which
+people applied to join by submitting their credentials.<P>
+
+Dimmock knew what kind of expertise was required for the team to
+succeed. She explains, "We were looking for people who were already
+designing for the Universal Serial Bus. We thought that between Sun and
+IBM,
+we would bring enough knowledge of Java technology to the table. So
+we were looking for people who understood the technology that we were
+interested in, and typically these were people who were doing USB
+work in some other language."<P>
+
+Dimmock acknowledged everyone who applied, and she accepted nearly anyone
+who professed some knowledge of USB. After
+being accepted, however, some were never heard from again; after
+several months, Dimmock removed their names from the roster.
+Ultimately, the JSR 80 expert group included four participants from
+Sun Microsystems, three from IBM, and one each from Fujitsu Limited,
+Wincor-Nixdorf, and Apple Computer. In addition, five individuals
+served on the expert group.<P>
+
+ <table width="360" border="0" cellspacing="0" cellpadding="8" align="right">
+              <tr> 
+                <td valign="top"> 
+                  <table width="99%" border="1" cellspacing="0" cellpadding="5" bordercolor="#003399">
+                    <tr> 
+                      <td valign="top"> 
+                        <div align="left"> 
+                          <p><font face="Arial, Helvetica, sans-serif"><b>Timeline</b></p>
+                          <P>The original JSR 80 schedule called for release of the community 
+draft in November, 2000, but the expert group missed that date by six 
+months. Why? "Well, we had several unexpected technical issues to 
+arise, and I think we took the high road in working to pursue an 
+excellent design to resolve them," Dimmock explains. "It was also 
+true that none of the expert group members were truly full-time on 
+this effort, and they were managing other commitments concurrent with 
+the JSR 80 work. The USB architecture is complex, and the API is 
+certainly nontrivial."
+<P>
+In addition, the original dates were put in place without a great 
+deal of project management rigor. "We were optimistic, and I guess I 
+felt that missing an aggressive target was as good as making a padded 
+conservative date.  We had a conference call on March 22 that was 
+pivotal in our agreement that the version of the spec that we had was 
+adequate for an initial release of the API," says Dimmock. She adds, 
+"Of course, some compromises had to be made, since we are still 
+thinking of ways to make the API better.  Some things will need to 
+wait for a second release. I would also say that the quality of the 
+community draft, which we heavily invested in, brought the public 
+specification out sooner."<P>
+
+Overall, the timeline for Dimmock's group was actually:<BR>
+<table width="103%" border="0" cellspacing="1" cellpadding="1">
+                            <tr> 
+                              <td><img src="/images/resources/bul-smcir-jcp.gif" width="17" height="10"></td>
+                              <td><font face="Arial, Helvetica, sans-serif">Executive Committee approved JSR 80 September 2000</font></td>
+                              </tr>
+                              
+<tr> 
+                              <td><img src="/images/resources/bul-smcir-jcp.gif" width="17" height="10"></td>
+                              <td><font face="Arial, Helvetica, sans-serif">Group membership remained open from September to December 2000</font></td>
+                              </tr>
+
+<tr> 
+                              <td><img src="/images/resources/bul-smcir-jcp.gif" width="17" height="10"></td>
+                              <td><font face="Arial, Helvetica, sans-serif">Developed community draft from September 2000 to April 2001</font></td>
+                              </tr>
+
+<tr> 
+                              <td><img src="/images/resources/bul-smcir-jcp.gif" width="17" height="10"></td>
+                              <td><font face="Arial, Helvetica, sans-serif">Community reviewed the spec April through May 2001</font></td>
+                              </tr>
+<tr> 
+                              <td><img src="/images/resources/bul-smcir-jcp.gif" width="17" height="10"></td>
+                              <td><font face="Arial, Helvetica, sans-serif">Developed public draft May through July 2001</font></td>
+                              </tr>
+
+<tr> 
+                              <td><img src="/images/resources/bul-smcir-jcp.gif" width="17" height="10"></td>
+                              <td><font face="Arial, Helvetica, sans-serif">Public reviewed the spec July through September 2001</font></td>
+                              </tr>
+
+<tr> 
+                              <td><img src="/images/resources/bul-smcir-jcp.gif" width="17" height="10"></td>
+                              <td><font face="Arial, Helvetica, sans-serif">Developed final draft of the spec by September 2001</font></td>
+                              </tr>
+
+<tr> 
+                              <td><img src="/images/resources/bul-smcir-jcp.gif" width="17" height="10"></td>
+                              <td><font face="Arial, Helvetica, sans-serif">Final specification release is expected September 2001</font></td>
+                              </tr>
+                              
+<tr> 
+                              <td><img src="/images/resources/bul-smcir-jcp.gif" width="17" height="10"></td>
+                              <td><font face="Arial, Helvetica, sans-serif">TCK/RI release is targeted for October 2001</font></td>
+                              </tr>
+</table>
+
+                          
+                          
+                        </div>
+                        </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            </table>
+
+<b>Professional Communication</b><p>
+
+Dimmock launched the expert group with a face-to-face meeting held at
+her home location, but she was disappointed in the low turnout. "Other
+than the IBMers who already worked in Raleigh, we just had two
+other participants. We realized that people did not have
+the travel funds and travel time to invest," says Dimmock. From
+then on, the group relied on email and conference calls as their
+primary means of communication.<P>
+
+Conference call meetings were more successful in terms of turnout. A
+week in advance, all the experts were invited to participate by
+dialing in at a specific time. Calls were typically held when Dimmock
+felt there were key decisions to make, and she wanted to give
+participants an opportunity for voice debate in order to build
+consensus.<P>
+
+Email was an essential forum for communication. The alias mailing
+list that the JCP set up enabled group-wide conversation about
+specific technical issues. "A lot of mornings I would come in, and
+there would be ten notes in the reader," Dimmock recalls. One topic,
+for example, was the great debate about how to make the Java API
+generic enough to communicate with anyone's external hardware. That
+discussion lead to the next thread on how to test successful
+communication with anyone's hardware. Through the email discussions,
+group members identified some appropriate boards to use for testing.<P>
+
+Email is not necessarily the best means of communication, however.
+When people feel strongly about a topic, emotions can heat up their
+messages. In addition, frustration levels may rise when a person
+deals with someone who is not known personally, who is time zones
+away, and who represents another culture. To counteract these
+tendencies, Dimmock modeled a professional tone in her own
+communication and expected the same of her colleagues. "We worked
+very hard at keeping the communications professional on the alias. In
+fact, we had some discussions along the way," Dimmock understates.
+She adds that it's just not helpful to technical discussion to imply
+'I'm smarter than you are' with ego-centric remarks.<P>
+
+Dimmock's professional ethic also requires that she treat group
+members even-handedly and openly. Especially in an inter-industry
+work team, Dimmock believes that "you have to acknowledge the other
+party's right to speak and demand that everyone listens." It's easy
+to pick favorites, she says, but that's a recipe for disaster as it
+breeds hostility among members. Dimmock deliberately avoided the
+hub-and-spokes method of communication, where individuals talk only
+to the leader. "I try to direct my communications to the alias more
+so than to individuals, so that everyone at least sees what the
+discussions are and has an opportunity to influence what's going on,"
+she says.<P>
+
+For the benefit of those lurking without comment in the group,
+Dimmock would occasionally poll the experts, usually during a
+conference call. If it had been a while since a given company
+had spoken up, Dimmock might ask, "Are you still interested in this
+JSR? What position would you take on [a particular point]?" It's to
+be expected that a few experts participated consistently, with the
+majority contributing more sporadically. When lurkers would join a
+conference call and respond to a direct question, Dimmock took it as
+an encouraging sign that they'd been more or less monitoring group
+discussions and hadn't commented because they were content with the
+decisions being made.<P>
+
+Occasionally communications would grind to a heated deadlock. To get
+things moving again, Dimmock would warn, "We are never going to get
+done if you guys can't come to some agreement on this point." Then
+she would pick a side, not necessarily reflecting her own technical
+preference. Ultimately, the group always reached consensus, even when
+it meant someone had to give in. The closest Dimmock ever came to
+declaring, "I'm the spec lead and this is how it's going to be!" was
+with her own IBM guys when they were reluctant to follow the group's
+decision.<P>
+
+
+<B>Historical Perspective</b><P>
+
+As a project winds through its various debates, decisions, and
+deadlines, it becomes increasingly useful to refer back to a formal
+history. Dimmock sighs, "We didn't set up -- and I somewhat regret
+this -- a mechanism where all emails were traced, some forum where
+we kept a historical perspective." She assumes most participants
+created their own records, but there is no formal repository of
+threaded email discussions or of the conference call minutes that
+were emailed to the alias from the early discussions.<P>
+
+The need for a complete history became more apparent to Dimmock when,
+very late in the process, one corporation withdrew an employee from
+the expert group and inserted a new person in his stead. The new
+member will read the spec, of course, but there's no formal history
+of the project for him to research why decisions were made and who
+participated in them. In such a situation, it will be hard for the
+newcomer to catch up with the team.<P>
+
+<table width="247" border="0" cellspacing="0" cellpadding="10" align="left">
+              <tr> 
+                <td valign="top"><!-- height="505" --> 
+                  <table width="100%" border="1" cellspacing="0" cellpadding="5" bordercolor="#003399">
+                    <tr> 
+                      <td valign="top"><!-- height="456" --> 
+                          <p><font face="Arial, Helvetica, sans-serif"><b>Dimmock Dispenses Advice</b></font></p>
+                          
+                          <P>
+Spec leads, keep the communication channels wide open and avoid
+picking favorites.<br>
+Experts, be professional with your comments and resist implying "I'm
+smarter than you are"; be willing to listen to others' suggestions.<BR>
+Potential JCP members, the JCP process is an excellent opportunity to
+influence the standard to be used by millions of programmers.<BR>
+JCP administration, licensing issues sometimes prevent participation
+by those who have excellent technical abilities.
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            </table>
+
+<B>Team Accomplishments</b><P>
+
+Dimmock is no lone ranger. As spec lead, she wrote not one line of
+code. "My participation has been at a higher,
+what-are-we-trying-to-do-here level," she says. Strong technical
+participants at IBM and Sun provided the deep, multiple skills needed
+to hammer out the API. Much of the test board work was done by a
+knowledgeable Swede who could explain to his colleagues how testing
+was done. "The primary author of the API is Michael
+Maximilien of IBM, and he deserves a lot of credit for our progress."<P>
+
+The JCP PMO helped out, too, by working through the expert group's
+need for dual web sites. "We have set up a web site where we are
+going to release the Java code under an open source license," says
+Dimmock. Several URLs link the standard JSR 80 web site
+<a href="../../jsr/detail?id=80">http://jcp.org/en/jsr/detail?id=80</a> with the open source web site
+<a href="http://oss.software.ibm.com/developerworks/projects/javaxusb">http://oss.software.ibm.com/developerworks/projects/javaxusb</a>.
+While the standard web site is fairly static (primarily tracking
+the status of the JCP process), the technical news, information,
+architectural documents, specifications, and such will flow from
+the latter web site.<P>
+
+Dimmock admits that the JCP's well-defined timeline has been "a
+driving force" to get the JSR out. "Certainly I think the spec is
+better for having had multiple companies participate in it than it
+would have generated by only one. Questions are asked early in the
+development that maybe we might have missed with just a single
+implementation group. The inter-company open participation in the
+design makes for a better spec," she says.</font></p>
+
+
+           
+            
+            <font face="Arial, Helvetica, sans-serif"><a href="../../jsr/detail?id=80">JSR 
+            80 Home Page</a> </font>
+
+
+<!-- ** BEGIN: footer.jsp ** //-->
+
+
+
+
+
+
+
+
+</td>
+</tr>
+</table>
+
+<!-- ** END: Content Table ** //-->
+
+<!-- ** BEGIN: Footer Table ** //-->
+
+<div id="footer" style="clear: both;">
+    <div class="footleft">
+        <a href="/en/resources/contacts">Contact Us</a>
+    </div>
+	
+    <div class="botbar"><img src="/images/spacer.gif" alt="" height="23" width="1"></div>
+
+    <div class="footleft2">
+         &copy; 2019, Oracle Corporation and/or its affiliates. 
+        <a href="/en/home/terms">Terms of Use</a>. <a href="http://www.oracle.com/us/legal/privacy/index.html">Privacy Policy</a>. <a href="http://www.oracle.com/us/legal/third-party-trademarks/third-party-trademarks-078568.html">Trademarks</a>
+    </div>
+
+    <div class="footright">
+        <img src="/images/common/logo_oracle_footer.gif" alt="Oracle Corporation" height="22" width="91">
+    </div>
+
+    <div style="clear: both;"><img src="/images/spacer.gif" alt="" height="30" width="1"></div>
+</div>
+
+<!-- ** END: Footer Table ** //-->
+
+
+
+<!-- ** Menu Start ** //-->
+
+
+
+</body>
+</html>
+<!-- ** END: footer.jsp ** //-->
+

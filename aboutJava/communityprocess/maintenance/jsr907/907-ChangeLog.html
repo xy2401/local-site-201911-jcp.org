@@ -1,0 +1,667 @@
+
+<!-- ** BEGIN: header.jsp ** //-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3c.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+<head>
+    
+
+   
+    <link href="/includes/css/menu.css" rel="stylesheet" type="text/css"></link>
+    <link href="/includes/css/style.css" rel="stylesheet" type="text/css"></link>
+    <!--[if lt IE 6]><link href="/includes/css/style5.css" rel="stylesheet" type="text/css" ></link><![endif]-->
+    <!--[if gte IE 5]><link href="/includes/css/style6.css" rel="stylesheet" type="text/css" ></link><![endif]-->
+    <link href="/includes/css/tabs.css"  rel="stylesheet" type="text/css"></link>
+
+    <script type="text/javascript" src="/includes/scripts/tabs.js"></script>
+    <script type="text/javascript" src="/includes/scripts/menu.js"></script>
+   
+
+    
+
+    
+        <title>The Java Community Process(SM) Program - communityprocess - maintenance</title>
+    
+
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+
+
+<body onload="P7_initPM(0,1,0,0,-1)">
+
+    <a name="top"></a>
+
+    <div id="header">
+	<div id="logo">
+		<a href="/en/home/index"><img src="/images/spacer.gif" alt="Java Community Process" height="81" width="151"></a>
+	</div>
+	<div id="tools">
+		<div class="search">
+			<form name="search" action="/en/jsr/summary" method="get" onsubmit="return validate_search()">
+				<input name="id" value="Search JSRs" size="16" class="form" onfocus="nullify_if_equal(this, 'Search JSRs')" type="text">
+				<a href="javascript:document.search.submit()" onclick="return validate_search()"><img src="/images/button_go.gif" width="21" height="16" border="0" alt="Submit this Search" name="sub_search"></a>
+			</form>
+		</div>
+		<div class="tools">
+			<a href="/en/press/pressroom">Press Room</a> &nbsp;|&nbsp;
+			<a href="http://java.com/java/download/index.jsp?cid=jdp78399">Get Java Here</a> &nbsp;|&nbsp;
+			<!-- <a href="javascript:void(0)">Print Format</a> &nbsp;|&nbsp;&nbsp; -->
+		</div>
+
+	</div>
+	<div style="clear: right;"></div>
+
+        
+
+	<div class="topbar"><img src="/images/spacer.gif" alt="" height="3" width="154"></div>
+	<div id="update"> </div>
+    </div>
+
+
+    
+
+        <!-- ** BEGIN: Content Table ** //-->
+
+        <table width="100%" border="0" cellpadding="0" cellspacing="0">
+
+            <tr>
+
+                <!-- ** BEGIN: Navigation Column ** //-->
+                <td width="150" id="leftcontent" valign="top">
+                    <!-- Navigation Placeholder //-->
+
+                    
+
+                    <div class="bar"><img src="/images/hr_dots1.gif" alt="" height="3" width="150"></div>
+
+        <!-- begin find JSRs form -->
+        <!-- IMPORTANT! do not convert this form to Struts < html : form > tag.  javascript change of form.action property fails. -->
+        <img src="/images/hd_find-jsrs.gif" alt="Find JSRs" height="18" width="150">
+        <form name="findjsr" action="/en/jsr/summary" method="get" class="pt5" onsubmit="return validate_findjsr()">
+            <input name="id" size="18" class="form" value="Search JSRs" onfocus="nullify_if_equal(this, 'Search JSRs')" type="text">
+	    <a href="javascript:document.findjsr.submit()" onclick="return validate_findjsr()"><img src="/images/button_go.gif" width="21" height="16" border="0" alt="Submit this Search" name="sub_search"></a>
+        </form><br><br>
+
+        <!-- ** Menu Start ** //-->
+
+        <ul id="p7PMnav">
+            <li><a href="/en/jsr/platform">JSRs by Platform</a></li>
+            <li><a href="/en/jsr/tech">JSRs by Technology</a></li>
+            <li><a href="/en/jsr/stage">JSRs by Stage</a></li>
+            <li><a href="/en/jsr/ec">JSRs by Committee</a></li>
+            <li><a href="/en/jsr/all">List of All JSRs</a></li>
+
+            <!--end find JSRs form -->
+            <div style="clear: both;"><img src="/images/spacer.gif" alt="" height="25" width="1"></div>
+
+            <!--begin my JCP -->
+            <img src="/images/hd_my-jcp.gif" alt="My JCP" height="18" width="150">
+            
+
+          <form name="login" method="get" action="/en/user/login" >
+            <input name="Sign-in" type="submit" title="Sign-in" value="Sign-in" />
+          </form>
+
+            <div style="clear:both"><img src="/images/global/spacer.gif" width="1" height="3" alt=""></div>
+            <div class="noNav">
+                <a href="/en/user/register">Register for Site</a>
+            </div>
+
+             <div class="bar"><img src="/images/hr_dots1.gif" alt="" height="3" width="150"></div>
+           <div class="noNav" style="color: #666666; padding: 0;">
+              Use of JCP site is subject to the
+              <a href="/en/home/terms" style="display:inline;padding: 0">JCP Terms of Use</a> and the
+              <a href="http://www.oracle.com/us/legal/privacy/index.html" style="display:inline;padding: 0" href="">Oracle Privacy Policy</a>
+          </div>
+
+            
+
+            <div style="clear:both"><img src="/images/global/spacer.gif" width="1" height="25" alt=""></div>
+
+            <!--begin JCP info -->
+            <img src="/images/hd_jcp-info.gif" alt="JCP Info" height="18" width="150">
+
+            <li><a href="/en/procedures/overview" class="p7PMtrg">About JCP</a>
+                <ul>
+                    <li><a href="/en/procedures/overview">Program Overview</a></li>
+                    <li><a href="/en/procedures/jcp2">JCP Process Document</a></li>
+                    <li><a href="/en/whatsnew/calendar">Calendar</a></li>
+                    <li><a href="/en/participation/members">JCP Members</a></li>
+                    <li><a href="/en/participation/committee">Executive Committee</a></li>
+                    <li><a href="/en/whatsnew/elections">Elections</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/en/participation/overview" class="p7PMtrg">Get Involved</a>
+		<ul>
+                    <li><a href="/en/participation/overview">Overview</a></li>
+                    <li><a href="/en/participation/membership">Becoming a JCP Member</a></li>
+		</ul>
+            </li>
+
+            <li><a href="/en/resources/contents" class="p7PMtrg">Community Resources</a>
+                <ul>
+                    <li><a href="/en/resources/contents">Overview</a></li>
+                    <li><a href="/en/resources/tutorials">Tutorials</a></li>
+                    <li><a href="/en/resources/multimedia">JCP Podcasts</a></li>
+                    <li><a href="/en/resources/guide">Spec Lead Guide</a></li>
+                    <li><a href="/en/resources/tdk">TCK Tool & Info</a></li>
+                    <li><a href="/en/resources/license_reference">License Reference</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/en/press/pmo" class="p7PMtrg">Community News</a>
+                <ul>
+                    <li><a href="/en/press/pmo">News</a></li>
+                    <li><a href="/en/press/news/awards/awards_main">Programs &amp; Awards</a></li>
+                    <li><a href="/en/press/releases">Press Releases</a></li>
+                    <li><a href="/en/press/success">Success Stories</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/en/introduction/faq">FAQ</a></li>
+
+            <li><a href="/en/resources/contacts">Contact Us</a></li>
+
+            <div style="clear: both;"><img src="/images/spacer.gif" alt="" height="25" width="1"></div>
+
+            <!--[if lte IE 6]><style>#p7PMnav a{height:1em;}#p7PMnav li{height:1em;float:left;clear:both;width:100%}</style><![endif]-->
+            <!--[if IE 6]><style>#p7PMnav li{clear:none;}</style><![endif]-->
+            <!--[if IE 7]><style>#p7PMnav a{zoom:100%;}#p7PMnav li{float:left;clear:both;width:100%;}</style><![endif]-->
+        </ul>
+
+        
+
+        <!--begin ad space -->
+        <div class="ads">
+            <a href="http://java.com/java/download/index.jsp?cid=jdp78399" target="_blank"><img style="display: ;" src="/images/ad_banner2.gif" alt="Ad Banner" border="1" height="70" width="150"></a>
+        </div>
+        <!--end ad space -->
+
+<!-- ** Menu End ** //-->
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;<br>
+
+    
+
+                    &nbsp;<br>
+                    <img src="/images/common/trans.gif" alt="" width="1" height="150"><br>
+
+              
+
+
+
+                </td>
+                <!-- ** END: Navigation Column ** //-->
+
+                <!-- ** BEGIN: Gutter Column ** //-->
+		<td width="10" nowrap><img src="/images/common/trans.gif" alt="" width="10" height="1"></td>
+                <!-- ** END: Gutter Column ** //-->
+
+                <!-- ** BEGIN: Content Column ** //-->
+                <td width="100%" valign="top">
+
+    
+<script type="text/javascript">
+
+String.prototype.trim = function() {
+        return this.replace(/^\s+|\s+$/g,"");
+}
+String.prototype.ltrim = function() {
+        return this.replace(/^\s+/,"");
+}
+String.prototype.rtrim = function() {
+        return this.replace(/\s+$/,"");
+}
+
+function validate_search() {
+	if (document.search.id.value == "Search JSRs" || document.search.id.value.trim().length == 0) {
+		alert("Search terms must be entered first");
+		return false;
+	}
+	return true;
+}
+
+function validate_findjsr() {
+	if (document.findjsr.id.value == "Search JSRs" || document.findjsr.id.value.trim().length == 0) {
+		alert("Search terms must be entered first");
+		return false;
+	}
+	return true;
+}
+
+function nullify_if_equal(field, str) {
+	// alert("val=" + field.value);
+	if (field.value == str) {
+		field.value = "";
+	}
+}
+
+</script>
+<!-- ** END: header.jsp ** //-->
+
+
+
+
+
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<!--NewPage--><!-- Generated by javadoc (build 1.5.0_02) on Wed Aug 03 13:42:09 PDT 2005 -->
+  <title>TransactionSynchronizationRegistry</title>
+  <meta name="keywords"
+ content="javax.transaction.TransactionSynchronizationRegistry interface">
+  <link rel="stylesheet" type="text/css" href="../../stylesheet.css"
+ title="Style">
+  <script type="text/javascript">
+function windowTitle()
+{
+    parent.document.title="TransactionSynchronizationRegistry";
+}
+  </script>
+</head>
+<noscript>
+</noscript>
+<body bgcolor="white" onload="windowTitle();">
+<!-- ========= START OF TOP NAVBAR ======= -->
+<h1>Java Transaction API 1.0.1B Change Log (Proposal for JTA 1.1)<br>
+</h1>
+<ol>
+  <li> Section 3.4 XAResource Interface: The line "The transaction
+manager
+obtains an XAResource for each resource manager participating in a
+global transaction." has been changed to "The transaction manager
+obtains an XAResource for each transaction resource participating in a
+global transaction.".<br>
+    <br>
+  </li>
+  <li>Interface javax.transaction.UserTransaction, method
+setTransactionTimeout, replace the first paragraph of the description
+with "Modify the timeout value that is associated with transactions
+started by the current thread with the begin method.".<br>
+    <br>
+  </li>
+  <li>Interface javax.transaction.TransactionManager, method
+setTransactionTimeout, replace the first paragraph of the description
+with "Modify the timeout value that is associated with transactions
+started by the current thread with the begin method.".<br>
+    <br>
+  </li>
+  <li>New interface
+javax.transaction.TransactionSynchronizationRegistry. Please see below
+for details.<br>
+  </li>
+</ol>
+<h2><font size="-1">javax.transaction</font>
+<br>
+Interface TransactionSynchronizationRegistry</h2>
+<hr>
+<dl>
+  <dt>
+    <pre>public interface <b>TransactionSynchronizationRegistry</b></pre>
+  </dt>
+</dl>
+<p>
+This interface is intended for use by system level application server
+components such as persistence managers. This provides the ability to
+register synchronization objects with special ordering semantics,
+associate resource objects with the current transaction, get the
+transaction context of the current transaction, get current transaction
+status, and mark the current transaction for rollback. This interface
+is implemented by the application server as a stateless service object.
+The same object can be used by any number of components with complete
+thread safety. In standard application server environments, an instance
+implementing this interface can be looked up via JNDI using a standard
+name.
+</p>
+<p></p>
+<p></p>
+<hr>
+<p><!-- ========== METHOD SUMMARY =========== --><a
+ name="method_summary"><!-- --></a>
+<table border="1" width="100%" cellpadding="3" cellspacing="0"
+ summary="">
+  <tbody>
+    <tr bgcolor="#ccccff" class="TableHeadingColor">
+      <th align="left" colspan="2"><font size="+2"> <b>Method Summary</b></font></th>
+    </tr>
+    <tr bgcolor="white" class="TableRowColor">
+      <td align="right" valign="top" width="1%"><font size="-1"> <code>&nbsp;java.lang.Object</code></font></td>
+      <td><code><b><a href="#getResource%28java.lang.Object%29">getResource</a></b>(java.lang.Object&nbsp;key)</code>
+      <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Get an
+object from the map of resources being managed for the current
+transaction.</td>
+    </tr>
+    <tr bgcolor="white" class="TableRowColor">
+      <td align="right" valign="top" width="1%"><font size="-1"> <code>&nbsp;boolean</code></font></td>
+      <td><code><b><a href="#getRollbackOnly%28%29">getRollbackOnly</a></b>()</code>
+      <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Get the <code>rollbackOnly</code>
+status of the transaction bound to the current thread.</td>
+    </tr>
+    <tr bgcolor="white" class="TableRowColor">
+      <td align="right" valign="top" width="1%"><font size="-1"> <code>&nbsp;int</code></font></td>
+      <td><code><b><a href="#getStatus%28%29">getTransactionStatus</a></b>()</code>
+      <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the
+status of the transaction bound to the current thread.</td>
+    </tr>
+    <tr bgcolor="white" class="TableRowColor">
+      <td align="right" valign="top" width="1%"><font size="-1"> <code>&nbsp;java.lang.Object</code></font></td>
+      <td><code><b><a href="#getTransactionKey">getTransactionKey</a></b>()</code>
+      <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Return an
+opaque object to represent the transaction bound to the current thread
+at the time this method is called.</td>
+    </tr>
+    <tr bgcolor="white" class="TableRowColor">
+      <td align="right" valign="top" width="1%"><font size="-1"> <code>&nbsp;void</code></font></td>
+      <td><code><b><a
+ href="#putResource%28java.lang.Object,%20java.lang.Object%29">putResource</a></b>(java.lang.Object&nbsp;key,
+java.lang.Object&nbsp;value)</code> <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Add an
+object to the map of resources being managed for the current
+transaction.</td>
+    </tr>
+    <tr bgcolor="white" class="TableRowColor">
+      <td align="right" valign="top" width="1%"><font size="-1"> <code>&nbsp;void</code></font></td>
+      <td><code><b><a
+ href="#registerInterposedSynchronization%28javax.transaction.Synchronization%29">registerInterposedSynchronization</a></b>(<a
+ href="../../javax/transaction/Synchronization.html"
+ title="interface in javax.transaction">Synchronization</a>&nbsp;sync)</code>
+      <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Register a <code>Synchronization</code>
+instance with special ordering semantics.</td>
+    </tr>
+    <tr bgcolor="white" class="TableRowColor">
+      <td align="right" valign="top" width="1%"><font size="-1"> <code>&nbsp;void</code></font></td>
+      <td><code><b><a href="#setRollbackOnly%28%29">setRollbackOnly</a></b>()</code>
+      <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Set the <code>rollbackOnly</code>
+status of the transaction bound to the current thread.</td>
+    </tr>
+  </tbody>
+</table>
+&nbsp;
+</p>
+<p><!-- ============ METHOD DETAIL ========== -->
+<a name="method_detail"><!-- --></a>
+<table border="1" width="100%" cellpadding="3" cellspacing="0"
+ summary="">
+  <tbody>
+    <tr bgcolor="#ccccff" class="TableHeadingColor">
+      <th align="left" colspan="1"><font size="+2"> <b>Method Detail</b></font></th>
+    </tr>
+  </tbody>
+</table>
+<a name="getTransactionKey()"><!-- --></a></p>
+<h3><a name="getTransactionKey"></a>getTransactionKey</h3>
+<pre>java.lang.Object <b>getTransactionKey</b>()</pre>
+<dl>
+  <dd>Return an opaque object to represent the transaction bound to the
+current thread at the time this method is called. The returned object
+overrides <code>hashCode</code> and <code>equals</code> methods to
+allow its use as the key in a <code>java.util.HashMap</code> for use
+by the caller. If there is no transaction currently active, null is
+returned.
+    <p>The returned object will return the same <code>hashCode</code>
+and compare equal to all other objects returned by calling this method
+from any component executing in the same transaction context in the
+same application server. </p>
+    <p>The <code>toString</code> method returns a <code>String</code>
+that might be usable by a human reader to usefully understand the
+transaction context. The result of the <code>toString</code> method is
+otherwise not defined. Specifically, there is no forward or backward
+compatibility guarantee for the result returned by the <code>toString</code>
+method. </p>
+    <p>The object is not necessarily serializable, and is not useful
+outside the virtual machine from which it was obtained. </p>
+    <p></p>
+  </dd>
+  <dd>
+    <dl>
+      <dt><b>Returns:</b></dt>
+      <dd>An object representing the current transaction, or null if no
+transaction is active.</dd>
+    </dl>
+  </dd>
+</dl>
+<hr>
+<a name="putResource(java.lang.Object, java.lang.Object)"><!-- --></a>
+<h3>putResource</h3>
+<pre>void <b>putResource</b>(java.lang.Object&nbsp;key,<br>                 java.lang.Object&nbsp;value)</pre>
+<dl>
+  <dd>Add an object to the map of resources being managed for the
+current transaction. The supplied key must be of a caller- defined
+class so as not to conflict with other users. The class of the key must
+guarantee that the <code>hashCode</code> and <code>equals</code>
+methods are suitable for keys in a map. The key and value are not
+examined or used by the implementation.
+    <p></p>
+  </dd>
+  <dd>
+    <dl>
+      <dt><b>Parameters:</b></dt>
+      <dd><code>key</code> - The key for looking up the associated
+value object.</dd>
+      <dd><code>value</code> - The value object to keep track of. </dd>
+      <dt><b>Throws:</b> </dt>
+      <dd><code>java.lang.IllegalStateException</code> - Thrown if the
+current thread is not associated with a transaction.</dd>
+    </dl>
+  </dd>
+</dl>
+<hr>
+<a name="getResource(java.lang.Object)"><!-- --></a>
+<h3>getResource</h3>
+<pre>java.lang.Object <b>getResource</b>(java.lang.Object&nbsp;key)</pre>
+<dl>
+  <dd>Get an object from the map of resources being managed for the
+current transaction. The key must have been supplied earlier by a call
+to <code>putResource</code> in the same transaction. If the key cannot
+be found in the current resource map, null is returned.
+    <p></p>
+  </dd>
+  <dd>
+    <dl>
+      <dt><b>Parameters:</b></dt>
+      <dd><code>key</code> - The key for looking up the associated
+value object. </dd>
+      <dt><b>Returns:</b></dt>
+      <dd>The value object, or null if not found. </dd>
+      <dt><b>Throws:</b> </dt>
+      <dd><code>java.lang.IllegalStateException</code> - Thrown if the
+current thread is not associated with a transaction.</dd>
+    </dl>
+  </dd>
+</dl>
+<hr>
+<a
+ name="registerInterposedSynchronization(javax.transaction.Synchronization)"><!-- --></a>
+<h3>registerInterposedSynchronization</h3>
+<pre>void <b>registerInterposedSynchronization</b>(<a
+ href="../../javax/transaction/Synchronization.html"
+ title="interface in javax.transaction">Synchronization</a>&nbsp;sync)</pre>
+<p style="margin-left: 40px;">Register a <code>Synchronization</code> instance with
+special
+ordering semantics. The <code>beforeCompletion</code> method on the
+registered <code>Synchronization</code> will be called after all
+<code>SessionSynchronization</code> <code>beforeCompletion</code> callbacks and callbacks on
+<code>Synchronization</code> objects registered directly with the transaction, but
+before the 2-phase commit process starts. This allows user and system
+components to flush state changes to the caching manager, during their
+<code>SessionSynchronization</code>
+callbacks, and allows managers to flush state changes to Connectors,
+during the callbacks registered with this method. Similarly, the
+<code>afterCompletion</code>
+callback will be called after 2-phase commit completes but before any
+<code>SessionSynchronization</code> and transaction <code>afterCompletion</code> callbacks. </p>
+<dl>
+  <li>
+    <p style="margin-left: 40px;">The <code>beforeCompletion</code>
+callback will be invoked in
+the transaction context of the current transaction bound to the thread
+of the caller of this method, which is the same transaction context
+active at the time this method is called. Allowable methods include
+access to resources, for example, Connectors. No access is allowed to
+user components, for example, timer services or bean methods, as these
+might change the state of POJOs, or plain old Java objects, being
+managed by the caching manager. </p>
+    <p style="margin-left: 40px;">The <code>afterCompletion</code>
+callback will be invoked in an
+undefined transaction context. No access is permitted to resources or
+user components as defined above. Resources can be closed, but no
+transactional work can be performed with them. </p>
+    <p style="margin-left: 40px;">Other than the transaction context,
+no component J2EE context is
+active during either of the callbacks. </p>
+  </li>
+</dl>
+<dl>
+  <li>
+    <dl>
+      <dt><b>Parameters:</b></dt>
+      <dd><code>sync</code> - The synchronization callback object. </dd>
+      <dt><b>Throws:</b> </dt>
+      <dd><code>java.lang.IllegalStateException</code> - Thrown if the
+current thread is not associated with a transaction.</dd>
+    </dl>
+  </li>
+</dl>
+<hr>
+<a name="getStatus()"><!-- --></a>
+<h3>getTransactionStatus</h3>
+<pre>int <b>getTransactionStatus</b>()</pre>
+<dl>
+  <dd>Returns the status of the transaction bound to the current
+thread. This is the result of executing <code>getTransactionStatus</code>
+method
+on the <code>TransactionManager</code>, in the current transaction
+context.
+    <p></p>
+  </dd>
+  <dd>
+    <dl>
+      <dt><b>Returns:</b></dt>
+      <dd>The status of the current transaction.</dd>
+    </dl>
+  </dd>
+</dl>
+<hr>
+<a name="setRollbackOnly()"><!-- --></a>
+<h3>setRollbackOnly</h3>
+<pre>void <b>setRollbackOnly</b>()</pre>
+<dl>
+  <dd>Set the <code>rollbackOnly</code> status of the transaction
+bound to the current thread.
+    <p></p>
+  </dd>
+  <dd>
+    <dl>
+      <dt><b>Throws:</b> </dt>
+      <dd><code>java.lang.IllegalStateException</code> - Thrown if the
+current thread is not associated with a transaction.</dd>
+    </dl>
+  </dd>
+</dl>
+<hr>
+<a name="getRollbackOnly()"><!-- --></a>
+<h3>getRollbackOnly</h3>
+<pre>boolean <b>getRollbackOnly</b>()</pre>
+<dl>
+  <dd>Get the <code>rollbackOnly</code> status of the transaction
+bound to the current thread.
+    <p></p>
+  </dd>
+  <dd>
+    <dl>
+      <dt><b>Returns:</b></dt>
+      <dd>true, if the current transaction is marked for rollback only.
+      </dd>
+      <dt><b>Throws:</b> </dt>
+      <dd><code>java.lang.IllegalStateException</code> - Thrown if the
+current thread is not associated with a transaction.</dd>
+    </dl>
+  </dd>
+</dl>
+<!-- ========= END OF CLASS DATA ========= --><!-- ======== END OF BOTTOM NAVBAR ======= -->
+<hr>
+</body>
+</html>
+
+
+
+<!-- ** BEGIN: footer.jsp ** //-->
+
+
+
+
+
+
+
+
+</td>
+</tr>
+</table>
+
+<!-- ** END: Content Table ** //-->
+
+<!-- ** BEGIN: Footer Table ** //-->
+
+<div id="footer" style="clear: both;">
+    <div class="footleft">
+        <a href="/en/resources/contacts">Contact Us</a>
+    </div>
+	
+    <div class="botbar"><img src="/images/spacer.gif" alt="" height="23" width="1"></div>
+
+    <div class="footleft2">
+         &copy; 2019, Oracle Corporation and/or its affiliates. 
+        <a href="/en/home/terms">Terms of Use</a>. <a href="http://www.oracle.com/us/legal/privacy/index.html">Privacy Policy</a>. <a href="http://www.oracle.com/us/legal/third-party-trademarks/third-party-trademarks-078568.html">Trademarks</a>
+    </div>
+
+    <div class="footright">
+        <img src="/images/common/logo_oracle_footer.gif" alt="Oracle Corporation" height="22" width="91">
+    </div>
+
+    <div style="clear: both;"><img src="/images/spacer.gif" alt="" height="30" width="1"></div>
+</div>
+
+<!-- ** END: Footer Table ** //-->
+
+
+
+<!-- ** Menu Start ** //-->
+
+
+
+</body>
+</html>
+<!-- ** END: footer.jsp ** //-->
+

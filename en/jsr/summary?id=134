@@ -1,0 +1,874 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- ** BEGIN: header.jsp ** //-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3c.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+<head>
+    
+
+   
+    <link href="/includes/css/menu.css" rel="stylesheet" type="text/css"></link>
+    <link href="/includes/css/style.css" rel="stylesheet" type="text/css"></link>
+    <!--[if lt IE 6]><link href="/includes/css/style5.css" rel="stylesheet" type="text/css" ></link><![endif]-->
+    <!--[if gte IE 5]><link href="/includes/css/style6.css" rel="stylesheet" type="text/css" ></link><![endif]-->
+    <link href="/includes/css/tabs.css"  rel="stylesheet" type="text/css"></link>
+
+    <script type="text/javascript" src="/includes/scripts/tabs.js"></script>
+    <script type="text/javascript" src="/includes/scripts/menu.js"></script>
+   
+
+    
+
+    
+        <title>The Java Community Process(SM) Program - JSRs: Java Specification Requests - detail JSR# 134</title>
+    
+
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+
+
+<body onload="P7_initPM(0,1,0,0,-1)">
+
+    <a name="top"></a>
+
+    <div id="header">
+	<div id="logo">
+		<a href="/en/home/index"><img src="/images/spacer.gif" alt="Java Community Process" height="81" width="151"></a>
+	</div>
+	<div id="tools">
+		<div class="search">
+			<form name="search" action="/en/jsr/summary" method="get" onsubmit="return validate_search()">
+				<input name="id" value="Search JSRs" size="16" class="form" onfocus="nullify_if_equal(this, 'Search JSRs')" type="text">
+				<a href="javascript:document.search.submit()" onclick="return validate_search()"><img src="/images/button_go.gif" width="21" height="16" border="0" alt="Submit this Search" name="sub_search"></a>
+			</form>
+		</div>
+		<div class="tools">
+			<a href="/en/press/pressroom">Press Room</a> &nbsp;|&nbsp;
+			<a href="http://java.com/java/download/index.jsp?cid=jdp78399">Get Java Here</a> &nbsp;|&nbsp;
+			<!-- <a href="javascript:void(0)">Print Format</a> &nbsp;|&nbsp;&nbsp; -->
+		</div>
+
+	</div>
+	<div style="clear: right;"></div>
+
+        
+
+	<div class="topbar"><img src="/images/spacer.gif" alt="" height="3" width="154"></div>
+	<div id="update"> </div>
+    </div>
+
+
+    
+
+        <!-- ** BEGIN: Content Table ** //-->
+
+        <table width="100%" border="0" cellpadding="0" cellspacing="0">
+
+            <tr>
+
+                <!-- ** BEGIN: Navigation Column ** //-->
+                <td width="150" id="leftcontent" valign="top">
+                    <!-- Navigation Placeholder //-->
+
+                    
+
+                    <div class="bar"><img src="/images/hr_dots1.gif" alt="" height="3" width="150"></div>
+
+        <!-- begin find JSRs form -->
+        <!-- IMPORTANT! do not convert this form to Struts < html : form > tag.  javascript change of form.action property fails. -->
+        <img src="/images/hd_find-jsrs.gif" alt="Find JSRs" height="18" width="150">
+        <form name="findjsr" action="/en/jsr/summary" method="get" class="pt5" onsubmit="return validate_findjsr()">
+            <input name="id" size="18" class="form" value="Search JSRs" onfocus="nullify_if_equal(this, 'Search JSRs')" type="text">
+	    <a href="javascript:document.findjsr.submit()" onclick="return validate_findjsr()"><img src="/images/button_go.gif" width="21" height="16" border="0" alt="Submit this Search" name="sub_search"></a>
+        </form><br><br>
+
+        <!-- ** Menu Start ** //-->
+
+        <ul id="p7PMnav">
+            <li><a href="/en/jsr/platform">JSRs by Platform</a></li>
+            <li><a href="/en/jsr/tech">JSRs by Technology</a></li>
+            <li><a href="/en/jsr/stage">JSRs by Stage</a></li>
+            <li><a href="/en/jsr/ec">JSRs by Committee</a></li>
+            <li><a href="/en/jsr/all">List of All JSRs</a></li>
+
+            <!--end find JSRs form -->
+            <div style="clear: both;"><img src="/images/spacer.gif" alt="" height="25" width="1"></div>
+
+            <!--begin my JCP -->
+            <img src="/images/hd_my-jcp.gif" alt="My JCP" height="18" width="150">
+            
+
+          <form name="login" method="get" action="/en/user/login" >
+            <input name="Sign-in" type="submit" title="Sign-in" value="Sign-in" />
+          </form>
+
+            <div style="clear:both"><img src="/images/global/spacer.gif" width="1" height="3" alt=""></div>
+            <div class="noNav">
+                <a href="/en/user/register">Register for Site</a>
+            </div>
+
+             <div class="bar"><img src="/images/hr_dots1.gif" alt="" height="3" width="150"></div>
+           <div class="noNav" style="color: #666666; padding: 0;">
+              Use of JCP site is subject to the
+              <a href="/en/home/terms" style="display:inline;padding: 0">JCP Terms of Use</a> and the
+              <a href="http://www.oracle.com/us/legal/privacy/index.html" style="display:inline;padding: 0" href="">Oracle Privacy Policy</a>
+          </div>
+
+            
+
+            <div style="clear:both"><img src="/images/global/spacer.gif" width="1" height="25" alt=""></div>
+
+            <!--begin JCP info -->
+            <img src="/images/hd_jcp-info.gif" alt="JCP Info" height="18" width="150">
+
+            <li><a href="/en/procedures/overview" class="p7PMtrg">About JCP</a>
+                <ul>
+                    <li><a href="/en/procedures/overview">Program Overview</a></li>
+                    <li><a href="/en/procedures/jcp2">JCP Process Document</a></li>
+                    <li><a href="/en/whatsnew/calendar">Calendar</a></li>
+                    <li><a href="/en/participation/members">JCP Members</a></li>
+                    <li><a href="/en/participation/committee">Executive Committee</a></li>
+                    <li><a href="/en/whatsnew/elections">Elections</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/en/participation/overview" class="p7PMtrg">Get Involved</a>
+		<ul>
+                    <li><a href="/en/participation/overview">Overview</a></li>
+                    <li><a href="/en/participation/membership">Becoming a JCP Member</a></li>
+		</ul>
+            </li>
+
+            <li><a href="/en/resources/contents" class="p7PMtrg">Community Resources</a>
+                <ul>
+                    <li><a href="/en/resources/contents">Overview</a></li>
+                    <li><a href="/en/resources/tutorials">Tutorials</a></li>
+                    <li><a href="/en/resources/multimedia">JCP Podcasts</a></li>
+                    <li><a href="/en/resources/guide">Spec Lead Guide</a></li>
+                    <li><a href="/en/resources/tdk">TCK Tool & Info</a></li>
+                    <li><a href="/en/resources/license_reference">License Reference</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/en/press/pmo" class="p7PMtrg">Community News</a>
+                <ul>
+                    <li><a href="/en/press/pmo">News</a></li>
+                    <li><a href="/en/press/news/awards/awards_main">Programs &amp; Awards</a></li>
+                    <li><a href="/en/press/releases">Press Releases</a></li>
+                    <li><a href="/en/press/success">Success Stories</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/en/introduction/faq">FAQ</a></li>
+
+            <li><a href="/en/resources/contacts">Contact Us</a></li>
+
+            <div style="clear: both;"><img src="/images/spacer.gif" alt="" height="25" width="1"></div>
+
+            <!--[if lte IE 6]><style>#p7PMnav a{height:1em;}#p7PMnav li{height:1em;float:left;clear:both;width:100%}</style><![endif]-->
+            <!--[if IE 6]><style>#p7PMnav li{clear:none;}</style><![endif]-->
+            <!--[if IE 7]><style>#p7PMnav a{zoom:100%;}#p7PMnav li{float:left;clear:both;width:100%;}</style><![endif]-->
+        </ul>
+
+        
+
+        <!--begin ad space -->
+        <div class="ads">
+            <a href="http://java.com/java/download/index.jsp?cid=jdp78399" target="_blank"><img style="display: ;" src="/images/ad_banner2.gif" alt="Ad Banner" border="1" height="70" width="150"></a>
+        </div>
+        <!--end ad space -->
+
+<!-- ** Menu End ** //-->
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;<br>
+
+    
+
+                    &nbsp;<br>
+                    <img src="/images/common/trans.gif" alt="" width="1" height="150"><br>
+
+              
+
+
+
+                </td>
+                <!-- ** END: Navigation Column ** //-->
+
+                <!-- ** BEGIN: Gutter Column ** //-->
+		<td width="10" nowrap><img src="/images/common/trans.gif" alt="" width="10" height="1"></td>
+                <!-- ** END: Gutter Column ** //-->
+
+                <!-- ** BEGIN: Content Column ** //-->
+                <td width="100%" valign="top">
+
+    
+<script type="text/javascript">
+
+String.prototype.trim = function() {
+        return this.replace(/^\s+|\s+$/g,"");
+}
+String.prototype.ltrim = function() {
+        return this.replace(/^\s+/,"");
+}
+String.prototype.rtrim = function() {
+        return this.replace(/\s+$/,"");
+}
+
+function validate_search() {
+	if (document.search.id.value == "Search JSRs" || document.search.id.value.trim().length == 0) {
+		alert("Search terms must be entered first");
+		return false;
+	}
+	return true;
+}
+
+function validate_findjsr() {
+	if (document.findjsr.id.value == "Search JSRs" || document.findjsr.id.value.trim().length == 0) {
+		alert("Search terms must be entered first");
+		return false;
+	}
+	return true;
+}
+
+function nullify_if_equal(field, str) {
+	// alert("val=" + field.value);
+	if (field.value == str) {
+		field.value = "";
+	}
+}
+
+</script>
+<!-- ** END: header.jsp ** //-->
+
+
+
+
+
+        <!--  BEGIN NAVIGATION TABS -->
+        <div id="p7TP1">
+                <div class="p7TP_tabs">
+                        <div id="p7tpb1_1" class="down"><a class="down">JSR</a></div>
+                        <div><a href="/en/egc/view?id=134">Community</a></div>
+                        <div><a href="/en/eg/eghome?id=134">Expert Group</a></div>
+			
+
+                <br class="p7TPclear" />
+                </div>
+
+                <div class="p7TPcontent">
+                        <div id="p7tpc1_1">
+
+			
+                                <a href="summary?id=134">Summary</a>
+			
+			
+                                &nbsp;|&nbsp;
+				<a href="proposalDetails?id=134">Proposal</a>
+			
+			
+                                &nbsp;|&nbsp;
+                                <span>Detail (Summary &amp; Proposal)</span>
+			
+		
+                        </div>
+
+                </div>
+                <!--[if lte IE 6]><style type="text/css">.p7TPpanel div,.p7TPpanel a{height:1%;}.p7TP_tabs a{white-space:nowrap;}</style><![endif]-->
+        </div>
+        <script type="text/javascript">
+                P7_initTP(1,0);
+        </script>
+        <!--  END NAVIGATION TABS -->
+
+
+<div class="anybar"><img src="/images/global/bar_green.gif" alt="" width="12" height="4"></div>
+
+<div class="header2">JSRs: Java Specification Requests</div>
+<div class="header1">JSR 134: Java<sup><font size="-2">TM</font></sup> Game Profile</div>
+<div class="anybar"><img src="/images/global/bar_green.gif" alt="" width="12" height="4"></div>
+<br>
+
+
+
+<!-- ********************************************** -->
+<!--  JSR Status information                        -->
+<!-- ********************************************** -->
+
+
+                <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                    <tr>
+                        <td id="centercontent" valign="top">
+			<tr>
+			<td>
+                            <table class="tbl" cellpadding="4" cellspacing="1" width="100%">
+                                <tr valign="top">
+                                    <td class="bdtl">Stage</td>
+                                    <td class="bdtl">Access</td>
+                                    <td class="bdtl">Start</td>
+                                    <td class="bdtl">Finish</td>
+                                </tr>
+
+				<tr class="bgw" valign="top">
+                                        <td>Withdrawn </td>
+                                        
+                                            <td>&nbsp;</td>
+                                        
+                                        <td>09 Jul, 2003</td>
+                                        <td>&nbsp;</td>
+				</tr>
+
+				<tr class="bgw" valign="top">
+                                        <td>Expert Group Formation </td>
+                                        
+                                            <td>&nbsp;</td>
+                                        
+                                        <td>12 Jun, 2001</td>
+                                        <td>&nbsp;</td>
+				</tr>
+
+				<tr class="bgw" valign="top">
+                                        <td>JSR Review Ballot </td>
+                                        
+                                            <td><a href="results?id=635">View results</a></td>
+                                        
+                                        <td>29 May, 2001</td>
+                                        <td>11 Jun, 2001</td>
+				</tr>
+
+			</table>
+			</td>
+			</tr>
+                        </td>
+</tr>
+</table>
+
+<!-- ********************************************** -->
+<!--  JCP Version                                   -->
+<!-- ********************************************** -->
+
+<span style="padding: 10px; display: block;">
+
+    <b> Status: </b><a href="/en/introduction/glossary#status"><font color=red><span title="A JSR that was withdrawn from the JCP by the Specification Lead before Final Release.">Withdrawn</span></font></a><br>
+
+
+    <b> Reason:</b> The Spec Lead has chosen to withdraw this JSR. It was determined that the needs of games developers were best served by moving to a pure open source model for game client technologies. This changes in strategy will allow the broadest participation by the game development community, and will focus the energies of the community on timely solutions that address a rapidly changing technology landscape. The Spec Lead wishes to thank the Java Community and the Game Developers who supported and showed interest in this effort.<br>
+
+
+    
+	<b>JCP version in use:</b> <a href="/procedures/jcp2_1"> 2.1</a><br>
+    
+
+    
+	<b>Java Specification Participation Agreement version in use:</b> 1.0<br>
+    
+
+    <br><br>
+        <b>Description</b>:<br>
+        Defines a Java 2 Micro Edition Profile for the purposes of game development targeting high-end consumer game devices and desktops.
+    <br><br>
+
+    <!-- ********************************************** -->
+    <!--  JSR Comments Email excluding JSR 900 and up   -->
+    <!-- ********************************************** -->
+
+	    
+            <b> Please direct comments on this JSR to the Spec Lead(s) </b> <br>
+	    
+
+            </span>
+
+   <!-- ****************************************** -->
+
+                <div id="p7TP52">
+                        <div class="p7TP_tabs2">
+                            <div><span>Team</span></div>
+                            <br class="p7TPclear" />
+                        </div>
+                </div>
+
+                <table bgcolor="#f2f2f2" border="0" cellpadding="5" cellspacing="1" width="100%">
+	
+                    <tr valign="top">
+                            <td colspan="3"><span class="header4">Specification Leads</span></td>
+                    </tr>
+
+
+		
+        
+			<tr valign="top">
+                            
+                            <td width="20" nowrap>&nbsp;</td>
+                            
+                            <td>Bartley&nbsp;Calder</td>
+                            <td>Sun Microsystems, Inc.</td>
+			</tr>
+        
+
+                <tr valign="top">
+                        <td colspan="4" class="spacerw"><img src="/images/global/spacer.gif" alt="" height="1" width="1"></td>
+                </tr>
+                <tr valign="top">
+                        <td colspan="3"><span class="header4">Expert Group</span></td>
+                </tr>
+
+
+			<tr valign="top">
+                            <td width="20" nowrap>&nbsp;</td> <!-- Gutter //-->
+                            <td>Baca, Kevin</td>
+     
+
+                            <td>Blam!</td>
+    
+
+                            <td>Full Sail Inc.</td>
+			</tr>
+
+
+			<tr valign="top">
+                            <td width="20" nowrap>&nbsp;</td> <!-- Gutter //-->
+                            <td>GameSpy Industries</td>
+     
+
+                            <td>Harris, Rob</td>
+    
+
+                            <td>Liberate Technologies</td>
+			</tr>
+
+
+			<tr valign="top">
+                            <td width="20" nowrap>&nbsp;</td> <!-- Gutter //-->
+                            <td>MathEngine PLC</td>
+     
+
+                            <td>Potosky, David</td>
+    
+
+                            <td>Rudolph, David J.</td>
+			</tr>
+
+
+			<tr valign="top">
+                            <td width="20" nowrap>&nbsp;</td> <!-- Gutter //-->
+                            <td>Sony Online</td>
+     
+
+                            <td>Sun Microsystems, Inc.</td>
+    
+
+
+
+
+
+
+
+
+
+			</tr>
+
+
+
+
+
+
+
+
+
+
+			</tr>
+
+		</table>
+                    <!-- ********************************************** -->
+                    <!--  Expert Group Status                           -->
+                    <!-- ********************************************** -->
+
+                    <table cellpadding="0" cellspacing="0" border="0">
+                        
+                    </table>
+
+   <!-- ****************************************** -->
+
+
+
+
+<!-- ********************************************** -->
+<!--  JSRProposal Info                              -->
+<!-- ********************************************** -->
+<p>
+
+		This JSR has been <a href="/en/introduction/glossary#status"><font color=red><span title="A JSR that was withdrawn from the JCP by the Specification Lead before Final Release.">Withdrawn</span></font></a><br>
+		<b> Reason:</b> The Spec Lead has chosen to withdraw this JSR. It was determined that the needs of games developers were best served by moving to a pure open source model for game client technologies. This changes in strategy will allow the broadest participation by the game development community, and will focus the energies of the community on timely solutions that address a rapidly changing technology landscape. The Spec Lead wishes to thank the Java Community and the Game Developers who supported and showed interest in this effort.<br> <br>
+
+
+<a name="orig"><font size="+2">Original Java Specification Request (JSR)</font></a><p>
+<FONT SIZE="-1">
+
+<!-- BEGIN-SUB TOPICS -->
+
+          <A HREF="#1"> Identification</A>  | 
+          <A HREF="#2"> Request</A>  | 
+          <A HREF="#3"> Contributions</A>
+<BR>
+
+<!-- END-SUB TOPICS -->
+
+</FONT>
+
+<!-- SECTION 1 -->
+
+<A NAME="1"></A>
+
+<P><FONT size=+2>Section 1. Identification</FONT>
+
+<p><b>Submitting Member:</b> Sun Microsystems, Inc.
+<p><b>Name of Contact Person:</b> Bartley Calder
+<p><b>E-Mail Address:</b> bartley.calder&#64;sun.com
+<p><b>Telephone Number:</b> 408 276 6733
+<p><b>Fax Number:</b> 408 276 3243
+<p><b>Specification Lead:</b> Bartley Calder
+<p><b>E-Mail Address: </b>bartley.calder&#64;sun.com
+<p><b>Telephone Number:</b> 408 276 6733
+<p><b>Fax Number:</b> 408 276 3243
+<p><b>Initial Expert Group Membership:</b>
+<br>(Please provide company or organization names. Note that expert group
+members must have <a href="file:////Fricka/jdrs laptop/My Documents/jdr/J2ME/Games/getstarted.html">signed
+the JSPA</a>.)
+<br>Sony Online
+<br>Math Engine Plc.
+<br>Plazmic Inc.
+<br>GameSpy Inc.
+
+<BR><BR>
+
+<!-- SECTION 2 -->
+
+<A NAME="2"></A>
+
+<P>
+<FONT SIZE="+2">Section 2: Request</FONT><P>
+</P>
+
+<H4>2.1 Please describe the proposed Specification:</H4>
+
+<P><br>The proposed specification is of a J2ME Profile that covers nine
+areas of game development:
+<p>     1. 3D Modeling and Rendering for Games
+<br>     2. 3D Physics Modeling for Games
+<br>     3. 3D Character Animation for Games
+<br>     4. 2D Rendering and Video Buffer Flipping
+for Games
+<br>     5. Game Marshalling and Networked Communication
+<br>     6. Streaming Media for Games
+<br>     7. Sound for Games
+<br>     8. Game Controllers
+<br>     9. Hardware Access for Games
+<p>These nine areas above provide the core facilities of a game platform. 
+To build that platform, the expert group intends to leverage existing APIs
+whenever possible. In the event that no existing APIs cover the required
+functionality (e.g. Physics Modeling for Games), the expert group will
+define new APIs or spin off new JSRs to define new APIs that the Games
+Profile will include by reference. In some cases modifications to existing
+APIs might be desirable to meet the unique requirements of a game platform.
+In this case one of two approaches will be taken:
+<p>1.    A proposal describing requirements and suggested
+changes to an API will be made to the expert group responsible for the
+pertinent API. If the changes can be agreed to and can be adopted in a
+maintenance release in a timely fashion, the Games Profile expert group
+will work closely with the other expert group to produce the change. The
+Games Profile would then incorporate the maintenance revision of the existing
+API by reference.
+<p> 2.   If suitable modification to the existing API isn't
+feasible then the Game Profile expert group will create suitable new APIs
+within its own name space.
+<p>Game developers are extremely concerned about performance and as such
+look for ways to determine the capabilities of a particular platform 
+This expert group will also investigate metrics that are relevant to games
+and look for ways to use those metrics in characterizing implementations.</P>
+
+<H4>2.2 What is the target Java platform? (i.e., desktop, server, personal, embedded, card, etc.)</H4>
+
+<P>A goal of the Games Profile is scalability across a range of devices. This
+profile is targeted at high-end consumer game devices (based on the CDC
+and Foundation Profile) and desktops (J2SE). However the expert group intends
+to focus on J2ME platforms with a likely reference implementation on the
+CDC.</P>
+
+<H4>2.3 What need of the Java community will be addressed by the proposed specification?</H4>
+
+<P>There is growing interest in targeting the Java platform for game development. 
+Java technology has much to offer game developers, from improvements in
+reliability and time-to-market of game development efforts, to device independence
+and platform scalability.  To date, however, there has not been a
+focus on optimizing Java technology for development and play of sophisticated
+games.
+<p>Most game development shops are small companies that cannot afford to
+focus efforts on more than one or two of today's proprietary platforms. 
+The resulting games are tied to specific devices, and are relatively fragile. 
+Overall, game development and maintenance costs are skyrocketing. By defining
+a Java Games Profile we will create a standard through which game developers
+can better leverage their development investment, prevent lock-in, and
+broaden their target market.</P>
+
+<H4>2.4 Why isn't this need met by existing specifications?</H4>
+
+<P>In order to program cutting-edge games for the Java platform the developer
+needs access to APIs representing functionality that is not supported by
+existing profiles and editions.  The needs of game developers are
+radically different from those of the markets Java technologies have addressed
+to date.  The Java 2 Platform, Standard Edition, defines API and functionality
+that are not necessary in a game programming environment (e.g. CORBA support,
+etc.). Conversely, many functions that are considered ancillary extensions
+to a desktop use are required for game development (i.e. audio codecs,
+streaming video, hardware assisted 3D graphics, etc.). Existing J2ME profiles
+forgo many unnecessary APIs, but further reduce functionality (e.g. 2D
+support) to reduce footprint.</P>
+
+<H4>2.5 Please give a short description of the underlying technology or technologies:</H4>
+
+<P>This Profile will be based on the Connected Device Configuration (CDC)
+and probably the  Foundation Profile. In addition it will likely reference
+Java 3D and Java Media Framework APIs.
+<p>Additional APIs will probably be added  to provide missing functionality
+such as physics modeling, animation , and game marshalling.</P>
+
+<H4>2.6 Is there a proposed package name for the API Specification? (i.e., <TT>javapi.something</TT>, <TT>org.something</TT>, etc.)</H4>
+
+<P>Where new game-specific APIs must be defined, the proposed package name
+is javax.games.*. Should additional APIs be required that are anticipated
+to be reusable in other contexts (other profiles) they will be defined
+in non-game-specific packages in javax.*.</P>
+
+<H4>2.7 Does the proposed specification have any dependencies on specific operating systems, CPUs, or I/O devices that you know of?</H4>
+
+<P>None.</P>
+
+<H4>2.8 Are there any security issues that cannot be addressed by the current security model?</H4>
+
+<P>None.</P>
+
+<H4>2.9 Are there any internationalization or localization issues?</H4>
+
+<P>None.</P>
+
+<H4>2.10 Are there any existing specifications that might be rendered obsolete, deprecated, or in need of revision as a result of this work?</H4>
+
+<P>None.  As stated above, if minor extensions to an existing specification
+would permit the games profile to use the existing specification in its
+entirety, the games profile expert group will explore the possibility of
+extending the existing specification with the expert group of that specification.</P>
+
+<H4>2.11 Please describe the anticipated schedule for the development of this 
+specification.</H4>
+
+<P>We intend to have a publicly reviewable draft in Summer 2001. Within a
+year of that a reference implementation and TCK should be available with
+a final specification.</P>
+
+<H4>2.12 Please describe the anticipated working model for the Expert Group working on developing this 
+specification.</H4>
+
+<P>Details of the functionality identified for this JSR have purposefully
+been left indistinct to allow the expert group to design the best solutions
+for the needs of their industry.  That work has already begun with
+the discussions held at the first Java Gaming Platform summit meeting,
+on Dec 6 & 7, 2000 at the Sun Santa Clara campus and will continue
+by means of a closed email list and further virtual or face to face meetings
+as required. 
+<p>It is anticipated that portions of the APIs might be identified as useful
+more generally than in the context of the Games Profile. We anticipate
+that such APIs could be spun off into independent JSRs, with their own
+expert groups potentially drawing members from outside the community of
+game developers.  Such JSRs would then be incorporated into the Games
+Profile by reference.</P>
+
+<BR><BR>
+<BR><BR>
+
+<!-- SECTION 3 -->
+
+<A NAME="3"></A>
+
+<P>
+<FONT SIZE="+2">Section 3: Contributions</FONT><P>
+</P>
+
+<H4>3.1 Please list any existing documents, specifications, or implementations that describe the technology. Please include links to the documents if they are publicly available.</H4>
+
+<P>The Java Media Framework 2.1 API Docs (<a href="http://java.sun.com/products/java-media/jmf/2.1/specdownload.html">http://java.sun.com/products/java-media/jmf/2.1/specdownload.html</a>)
+<p>The Java 3D 1.2 API (<a href="http://java.sun.com/products/java-media/3D/index.html">http://java.sun.com/products/java-media/3D/index.html</a>)
+<p>The Java New IO API (<a href="http://java.sun.com/aboutJava/communityprocess/jsr/jsr_051_ioapis.html">http://java.sun.com/aboutJava/communityprocess/jsr/jsr_051_ioapis.html</a>)
+<p>The Karma Simulation Toolkit from MathEngine (<a href="http://www.mathengine.com/_mathengine_corp/_products/overview.html">http://www.mathengine.com/_mathengine_corp/_products/overview.html</a>)
+<p>The GameSpy APIs for Java (<a href="http://www.gamespy.com/software">http://www.gamespy.com/software</a>; this is
+a general discussion of GameSpy's offerings. Their APIs require registration
+to view.)</P>
+
+<H4>3.2 Explanation of how these items might be used as a starting point for the work.</H4>
+
+<P>We see the Java Games Profile as potentially using existing technologies
+in the following areas:
+<p>         1.     
+General Programming Functionality
+<blockquote>We see the general programming environment as a JVM with support
+for access to memory outside of the Java heap. The new IO package addresses
+two key areas: efficient I/O for loading game data into memory quickly
+and access to the memory space outside the Java heap from within Java. 
+This is a critical facility for some kinds of game coding. </blockquote>
+         2.     
+2D Graphics
+<blockquote>Support is desirable for video buffer management and page flipping,
+hardware accelerated BLT, line draw, and rectangular fill where provided
+by host hardware.  Java2D's new VolatileImage and updated Graphics2D
+classes, combined with AWT's new fullscreen mode and BufferStrategy classes
+already provide a well-defined interface to such functionality.</blockquote>
+         3.     
+3D Graphics
+<blockquote>Full support for advanced hardware-assisted 3D rendering with
+a high degree of flexibility and control over the render process is desirable,
+as is access to render primitives to build fancy effects (i.e. reflection
+mapping, stencil buffer based shadow volumes). Java3D has much of this
+already.</blockquote>
+         4.     
+Controller Input
+<blockquote>Discovery of and access to game controllers such as joysticks
+and steering wheels is necessary.  Java3D provides basic controller
+access.  While it may be desirable to put a simpler, non-3D oriented
+interface on game controllers, we suspect that this can be done through
+a  small amount of glue- ode that wraps the existing Java3D input
+functionality.</blockquote>
+         5.     
+Advanced Audio
+<blockquote>MP3 and Midi playback, streaming audio, and voice codec for
+low-bandwidth transmission across the net are required.  Much of this
+is provided by JMF2.0. Java3D supports 3D spatial sound positioning. 
+There are still some open questions about how this interfaces to JMF 2.0
+but we expect to work those issues, if any, out in the expert group.</blockquote>
+         6.     
+Streaming Video
+<blockquote>High quality video playback is required for 'cut scenes'. 
+This is provided in JMF 2.0.</blockquote>
+         7.     
+Game Marshalling
+<blockquote>We expect to be able to use components of the GameSpy Java
+APIs as the core functionality of a reference implementation of a general
+game marshalling API.  All that would need writing is the glue code
+to convert the visible proprietary GameSpy API to the agreed-upon standard
+API.</blockquote>
+         8.     
+Physics Engine
+<blockquote>Math Engine already has a highly respected physics modeler
+in C/C++ and has expressed interest in working on the reference implementation
+of a Java physics modeling API.</blockquote>
+     Other possible contributions include resources
+from the following companies:
+<blockquote>*Plazmic has developed a media engine for the DoCoMo iMODE
+phones and are experts in writing Java code for resource-constrained clients. 
+<p>*ShinyThing is a game ASP with roots in traditional service provisioning
+to the financial and corporate communitites.    We will
+work with them to identify server side components that connect to all devices
+utilizing a game profile.</blockquote>
+In all of the above preexisting APIs it is possible there may be considerable
+additional functionality not needed for the Games Profile.  In order
+to handle the memory constraints of consumer devices, some of these features
+may be excluded from the Games Profile APIs.</P>
+</p>
+
+
+
+
+
+
+
+
+<!-- ** BEGIN: footer.jsp ** //-->
+
+
+
+
+
+
+
+
+</td>
+</tr>
+</table>
+
+<!-- ** END: Content Table ** //-->
+
+<!-- ** BEGIN: Footer Table ** //-->
+
+<div id="footer" style="clear: both;">
+    <div class="footleft">
+        <a href="/en/resources/contacts">Contact Us</a>
+    </div>
+	
+    <div class="botbar"><img src="/images/spacer.gif" alt="" height="23" width="1"></div>
+
+    <div class="footleft2">
+         &copy; 2019, Oracle Corporation and/or its affiliates. 
+        <a href="/en/home/terms">Terms of Use</a>. <a href="http://www.oracle.com/us/legal/privacy/index.html">Privacy Policy</a>. <a href="http://www.oracle.com/us/legal/third-party-trademarks/third-party-trademarks-078568.html">Trademarks</a>
+    </div>
+
+    <div class="footright">
+        <img src="/images/common/logo_oracle_footer.gif" alt="Oracle Corporation" height="22" width="91">
+    </div>
+
+    <div style="clear: both;"><img src="/images/spacer.gif" alt="" height="30" width="1"></div>
+</div>
+
+<!-- ** END: Footer Table ** //-->
+
+
+
+<!-- ** Menu Start ** //-->
+
+
+
+</body>
+</html>
+<!-- ** END: footer.jsp ** //-->
+

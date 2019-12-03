@@ -1,0 +1,51 @@
+
+Clarified Section 1.2 to be consistent with the Java EE Platform
+specification with regard to when interceptors defined by means of the
+Interceptors annotation and interceptors defined by means of
+interceptor bindings are required to be supported.
+
+Clarified terminology in sections 2.1 and 2.2.
+
+Noted that around-construct interceptors run in the same thread as the
+target constructor in section 2.3.1.
+
+Clarified that around-construct interceptor methods may throw checked exceptions.
+
+Clarified distinction between core requirements and the latitude
+available to extension specifications.
+
+Reworded to indicate that deployment descriptors are specific to
+extension specifications.
+
+Clarified that interceptor binding may not be used to associate
+interceptors with decorators.
+
+Corrected bug in section 3.1.1: An interceptor binding type can only
+be applied to an interceptor binding type defining a subset of its
+target types.
+
+Removed inconsistency whereby only around-construct lifecycle callback
+interceptors could declare interceptor binding types defined other
+than as Target(TYPE).
+
+Clarified when Priority annotation is ignored.
+
+Added section 5.1, "Enabling Interceptors" to Chapter 5, "Interceptor
+Ordering" to centralize existing requirements on enabling interceptors
+and separate concept of the enabling of interceptors from the ordering
+of interceptors.
+
+Combined interceptor ordering rules into a single algorithm in section 5.2.
+
+Factored out section 5.3 on excluding interceptors.
+
+Clarified that ExcludeClassInterceptors applies only to interceptors
+defined by means of the Interceptors annotation.
+
+Made numerous editorial cleanup changes, and reorganized document for clarity.
+
+Made minor updates to the javadoc files to more completely reflect the
+contents of spec.
+
+
+	

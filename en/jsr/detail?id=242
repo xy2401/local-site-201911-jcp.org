@@ -1,0 +1,939 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- ** BEGIN: header.jsp ** //-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3c.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+<head>
+    
+
+   
+    <link href="/includes/css/menu.css" rel="stylesheet" type="text/css"></link>
+    <link href="/includes/css/style.css" rel="stylesheet" type="text/css"></link>
+    <!--[if lt IE 6]><link href="/includes/css/style5.css" rel="stylesheet" type="text/css" ></link><![endif]-->
+    <!--[if gte IE 5]><link href="/includes/css/style6.css" rel="stylesheet" type="text/css" ></link><![endif]-->
+    <link href="/includes/css/tabs.css"  rel="stylesheet" type="text/css"></link>
+
+    <script type="text/javascript" src="/includes/scripts/tabs.js"></script>
+    <script type="text/javascript" src="/includes/scripts/menu.js"></script>
+   
+
+    
+
+    
+        <title>The Java Community Process(SM) Program - JSRs: Java Specification Requests - detail JSR# 242</title>
+    
+
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+
+
+<body onload="P7_initPM(0,1,0,0,-1)">
+
+    <a name="top"></a>
+
+    <div id="header">
+	<div id="logo">
+		<a href="/en/home/index"><img src="/images/spacer.gif" alt="Java Community Process" height="81" width="151"></a>
+	</div>
+	<div id="tools">
+		<div class="search">
+			<form name="search" action="/en/jsr/summary" method="get" onsubmit="return validate_search()">
+				<input name="id" value="Search JSRs" size="16" class="form" onfocus="nullify_if_equal(this, 'Search JSRs')" type="text">
+				<a href="javascript:document.search.submit()" onclick="return validate_search()"><img src="/images/button_go.gif" width="21" height="16" border="0" alt="Submit this Search" name="sub_search"></a>
+			</form>
+		</div>
+		<div class="tools">
+			<a href="/en/press/pressroom">Press Room</a> &nbsp;|&nbsp;
+			<a href="http://java.com/java/download/index.jsp?cid=jdp78399">Get Java Here</a> &nbsp;|&nbsp;
+			<!-- <a href="javascript:void(0)">Print Format</a> &nbsp;|&nbsp;&nbsp; -->
+		</div>
+
+	</div>
+	<div style="clear: right;"></div>
+
+        
+
+	<div class="topbar"><img src="/images/spacer.gif" alt="" height="3" width="154"></div>
+	<div id="update"> </div>
+    </div>
+
+
+    
+
+        <!-- ** BEGIN: Content Table ** //-->
+
+        <table width="100%" border="0" cellpadding="0" cellspacing="0">
+
+            <tr>
+
+                <!-- ** BEGIN: Navigation Column ** //-->
+                <td width="150" id="leftcontent" valign="top">
+                    <!-- Navigation Placeholder //-->
+
+                    
+
+                    <div class="bar"><img src="/images/hr_dots1.gif" alt="" height="3" width="150"></div>
+
+        <!-- begin find JSRs form -->
+        <!-- IMPORTANT! do not convert this form to Struts < html : form > tag.  javascript change of form.action property fails. -->
+        <img src="/images/hd_find-jsrs.gif" alt="Find JSRs" height="18" width="150">
+        <form name="findjsr" action="/en/jsr/summary" method="get" class="pt5" onsubmit="return validate_findjsr()">
+            <input name="id" size="18" class="form" value="Search JSRs" onfocus="nullify_if_equal(this, 'Search JSRs')" type="text">
+	    <a href="javascript:document.findjsr.submit()" onclick="return validate_findjsr()"><img src="/images/button_go.gif" width="21" height="16" border="0" alt="Submit this Search" name="sub_search"></a>
+        </form><br><br>
+
+        <!-- ** Menu Start ** //-->
+
+        <ul id="p7PMnav">
+            <li><a href="/en/jsr/platform">JSRs by Platform</a></li>
+            <li><a href="/en/jsr/tech">JSRs by Technology</a></li>
+            <li><a href="/en/jsr/stage">JSRs by Stage</a></li>
+            <li><a href="/en/jsr/ec">JSRs by Committee</a></li>
+            <li><a href="/en/jsr/all">List of All JSRs</a></li>
+
+            <!--end find JSRs form -->
+            <div style="clear: both;"><img src="/images/spacer.gif" alt="" height="25" width="1"></div>
+
+            <!--begin my JCP -->
+            <img src="/images/hd_my-jcp.gif" alt="My JCP" height="18" width="150">
+            
+
+          <form name="login" method="get" action="/en/user/login" >
+            <input name="Sign-in" type="submit" title="Sign-in" value="Sign-in" />
+          </form>
+
+            <div style="clear:both"><img src="/images/global/spacer.gif" width="1" height="3" alt=""></div>
+            <div class="noNav">
+                <a href="/en/user/register">Register for Site</a>
+            </div>
+
+             <div class="bar"><img src="/images/hr_dots1.gif" alt="" height="3" width="150"></div>
+           <div class="noNav" style="color: #666666; padding: 0;">
+              Use of JCP site is subject to the
+              <a href="/en/home/terms" style="display:inline;padding: 0">JCP Terms of Use</a> and the
+              <a href="http://www.oracle.com/us/legal/privacy/index.html" style="display:inline;padding: 0" href="">Oracle Privacy Policy</a>
+          </div>
+
+            
+
+            <div style="clear:both"><img src="/images/global/spacer.gif" width="1" height="25" alt=""></div>
+
+            <!--begin JCP info -->
+            <img src="/images/hd_jcp-info.gif" alt="JCP Info" height="18" width="150">
+
+            <li><a href="/en/procedures/overview" class="p7PMtrg">About JCP</a>
+                <ul>
+                    <li><a href="/en/procedures/overview">Program Overview</a></li>
+                    <li><a href="/en/procedures/jcp2">JCP Process Document</a></li>
+                    <li><a href="/en/whatsnew/calendar">Calendar</a></li>
+                    <li><a href="/en/participation/members">JCP Members</a></li>
+                    <li><a href="/en/participation/committee">Executive Committee</a></li>
+                    <li><a href="/en/whatsnew/elections">Elections</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/en/participation/overview" class="p7PMtrg">Get Involved</a>
+		<ul>
+                    <li><a href="/en/participation/overview">Overview</a></li>
+                    <li><a href="/en/participation/membership">Becoming a JCP Member</a></li>
+		</ul>
+            </li>
+
+            <li><a href="/en/resources/contents" class="p7PMtrg">Community Resources</a>
+                <ul>
+                    <li><a href="/en/resources/contents">Overview</a></li>
+                    <li><a href="/en/resources/tutorials">Tutorials</a></li>
+                    <li><a href="/en/resources/multimedia">JCP Podcasts</a></li>
+                    <li><a href="/en/resources/guide">Spec Lead Guide</a></li>
+                    <li><a href="/en/resources/tdk">TCK Tool & Info</a></li>
+                    <li><a href="/en/resources/license_reference">License Reference</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/en/press/pmo" class="p7PMtrg">Community News</a>
+                <ul>
+                    <li><a href="/en/press/pmo">News</a></li>
+                    <li><a href="/en/press/news/awards/awards_main">Programs &amp; Awards</a></li>
+                    <li><a href="/en/press/releases">Press Releases</a></li>
+                    <li><a href="/en/press/success">Success Stories</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/en/introduction/faq">FAQ</a></li>
+
+            <li><a href="/en/resources/contacts">Contact Us</a></li>
+
+            <div style="clear: both;"><img src="/images/spacer.gif" alt="" height="25" width="1"></div>
+
+            <!--[if lte IE 6]><style>#p7PMnav a{height:1em;}#p7PMnav li{height:1em;float:left;clear:both;width:100%}</style><![endif]-->
+            <!--[if IE 6]><style>#p7PMnav li{clear:none;}</style><![endif]-->
+            <!--[if IE 7]><style>#p7PMnav a{zoom:100%;}#p7PMnav li{float:left;clear:both;width:100%;}</style><![endif]-->
+        </ul>
+
+        
+
+        <!--begin ad space -->
+        <div class="ads">
+            <a href="http://java.com/java/download/index.jsp?cid=jdp78399" target="_blank"><img style="display: ;" src="/images/ad_banner2.gif" alt="Ad Banner" border="1" height="70" width="150"></a>
+        </div>
+        <!--end ad space -->
+
+<!-- ** Menu End ** //-->
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;<br>
+
+    
+
+                    &nbsp;<br>
+                    <img src="/images/common/trans.gif" alt="" width="1" height="150"><br>
+
+              
+
+
+
+                </td>
+                <!-- ** END: Navigation Column ** //-->
+
+                <!-- ** BEGIN: Gutter Column ** //-->
+		<td width="10" nowrap><img src="/images/common/trans.gif" alt="" width="10" height="1"></td>
+                <!-- ** END: Gutter Column ** //-->
+
+                <!-- ** BEGIN: Content Column ** //-->
+                <td width="100%" valign="top">
+
+    
+<script type="text/javascript">
+
+String.prototype.trim = function() {
+        return this.replace(/^\s+|\s+$/g,"");
+}
+String.prototype.ltrim = function() {
+        return this.replace(/^\s+/,"");
+}
+String.prototype.rtrim = function() {
+        return this.replace(/\s+$/,"");
+}
+
+function validate_search() {
+	if (document.search.id.value == "Search JSRs" || document.search.id.value.trim().length == 0) {
+		alert("Search terms must be entered first");
+		return false;
+	}
+	return true;
+}
+
+function validate_findjsr() {
+	if (document.findjsr.id.value == "Search JSRs" || document.findjsr.id.value.trim().length == 0) {
+		alert("Search terms must be entered first");
+		return false;
+	}
+	return true;
+}
+
+function nullify_if_equal(field, str) {
+	// alert("val=" + field.value);
+	if (field.value == str) {
+		field.value = "";
+	}
+}
+
+</script>
+<!-- ** END: header.jsp ** //-->
+
+
+
+
+
+        <!--  BEGIN NAVIGATION TABS -->
+        <div id="p7TP1">
+                <div class="p7TP_tabs">
+                        <div id="p7tpb1_1" class="down"><a class="down">JSR</a></div>
+                        <div><a href="/en/egc/view?id=242">Community</a></div>
+                        <div><a href="/en/eg/eghome?id=242">Expert Group</a></div>
+			
+
+                <br class="p7TPclear" />
+                </div>
+
+                <div class="p7TPcontent">
+                        <div id="p7tpc1_1">
+
+			
+                                <a href="summary?id=242">Summary</a>
+			
+			
+                                &nbsp;|&nbsp;
+				<a href="proposalDetails?id=242">Proposal</a>
+			
+			
+                                &nbsp;|&nbsp;
+                                <span>Detail (Summary &amp; Proposal)</span>
+			
+		
+                        </div>
+
+                </div>
+                <!--[if lte IE 6]><style type="text/css">.p7TPpanel div,.p7TPpanel a{height:1%;}.p7TP_tabs a{white-space:nowrap;}</style><![endif]-->
+        </div>
+        <script type="text/javascript">
+                P7_initTP(1,0);
+        </script>
+        <!--  END NAVIGATION TABS -->
+
+
+<div class="anybar"><img src="/images/global/bar_green.gif" alt="" width="12" height="4"></div>
+
+<div class="header2">JSRs: Java Specification Requests</div>
+<div class="header1">JSR 242: Digital Set Top Box Profile - "On Ramp to OCAP"</div>
+<div class="anybar"><img src="/images/global/bar_green.gif" alt="" width="12" height="4"></div>
+<br>
+
+
+
+<!-- ********************************************** -->
+<!--  JSR Status information                        -->
+<!-- ********************************************** -->
+
+
+                <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                    <tr>
+                        <td id="centercontent" valign="top">
+			<tr>
+			<td>
+                            <table class="tbl" cellpadding="4" cellspacing="1" width="100%">
+                                <tr valign="top">
+                                    <td class="bdtl">Stage</td>
+                                    <td class="bdtl">Access</td>
+                                    <td class="bdtl">Start</td>
+                                    <td class="bdtl">Finish</td>
+                                </tr>
+
+				<tr class="bgw" valign="top">
+                                        <td>Final Release </td>
+                                        
+                                            <td><a href="http://jcp.org/aboutJava/communityprocess/final/jsr242/index.html">Download page</a></td>
+                                        
+                                        <td>26 Sep, 2007</td>
+                                        <td>&nbsp;</td>
+				</tr>
+
+				<tr class="bgw" valign="top">
+                                        <td>Final Approval Ballot </td>
+                                        
+                                            <td><a href="results?id=3380">View results</a></td>
+                                        
+                                        <td>30 Aug, 2005</td>
+                                        <td>12 Sep, 2005</td>
+				</tr>
+
+				<tr class="bgw" valign="top">
+                                        <td>Proposed Final Draft </td>
+                                        
+                                            <td><a href="http://jcp.org/aboutJava/communityprocess/pfd/jsr242/index2.html">Download page</a></td>
+                                        
+                                        <td>22 Aug, 2005</td>
+                                        <td>&nbsp;</td>
+				</tr>
+
+				<tr class="bgw" valign="top">
+                                        <td>Public Review Ballot </td>
+                                        
+                                            <td><a href="results?id=3172">View results</a></td>
+                                        
+                                        <td>17 May, 2005</td>
+                                        <td>23 May, 2005</td>
+				</tr>
+
+				<tr class="bgw" valign="top">
+                                        <td>Public Review </td>
+                                        
+                                            <td><a href="http://jcp.org/aboutJava/communityprocess/pr/jsr242/index.html">Download page</a></td>
+                                        
+                                        <td>22 Apr, 2005</td>
+                                        <td>23 May, 2005</td>
+				</tr>
+
+				<tr class="bgw" valign="top">
+                                        <td>Early Draft Review </td>
+                                        
+                                            <td><a href="http://jcp.org/aboutJava/communityprocess/edr/jsr242/index.html">Download page</a></td>
+                                        
+                                        <td>01 Oct, 2004</td>
+                                        <td>15 Nov, 2004</td>
+				</tr>
+
+				<tr class="bgw" valign="top">
+                                        <td>Expert Group Formation </td>
+                                        
+                                            <td>&nbsp;</td>
+                                        
+                                        <td>04 May, 2004</td>
+                                        <td>19 Aug, 2004</td>
+				</tr>
+
+				<tr class="bgw" valign="top">
+                                        <td>JSR Review Ballot </td>
+                                        
+                                            <td><a href="results?id=2546">View results</a></td>
+                                        
+                                        <td>20 Apr, 2004</td>
+                                        <td>03 May, 2004</td>
+				</tr>
+
+			</table>
+			</td>
+			</tr>
+                        </td>
+</tr>
+</table>
+
+<!-- ********************************************** -->
+<!--  JCP Version                                   -->
+<!-- ********************************************** -->
+
+<span style="padding: 10px; display: block;">
+
+    <b> Status: </b><a href="/en/introduction/glossary#status"><font color=black><span title="A JSR that has produced a Final Release milestone more than a year ago.">Final</span></font></a><br>
+
+
+
+    
+	<b>JCP version in use:</b> <a href="/procedures/jcp2_6"> 2.6</a><br>
+    
+
+    
+	<b>Java Specification Participation Agreement version in use:</b> 2.0<br>
+    
+
+    <br><br>
+        <b>Description</b>:<br>
+        The requested specification will define a J2ME profile based on the Connected Limited Device Configuration (CLDC) that is appropriate for use by small-footprint cable television set top boxes.
+    <br><br>
+
+    <!-- ********************************************** -->
+    <!--  JSR Comments Email excluding JSR 900 and up   -->
+    <!-- ********************************************** -->
+
+	    
+            <b> Please direct comments on this JSR to the Spec Lead(s) </b> <br>
+	    
+
+            </span>
+
+   <!-- ****************************************** -->
+
+                <div id="p7TP52">
+                        <div class="p7TP_tabs2">
+                            <div><span>Team</span></div>
+                            <br class="p7TPclear" />
+                        </div>
+                </div>
+
+                <table bgcolor="#f2f2f2" border="0" cellpadding="5" cellspacing="1" width="100%">
+	
+                    <tr valign="top">
+                            <td colspan="3"><span class="header4">Specification Leads</span></td>
+                    </tr>
+
+
+		
+        
+			<tr valign="top">
+                            
+                            <td width="20" nowrap>&nbsp;</td>
+                            
+                            <td>Donald&nbsp;Bleyl</td>
+                            <td>Cox Communications, Inc.</td>
+			</tr>
+        
+			<tr valign="top">
+                            
+                            <td width="20" nowrap>&nbsp;</td>
+                            
+                            <td>Jens&nbsp;Paetzold</td>
+                            <td>Oracle</td>
+			</tr>
+        
+
+                <tr valign="top">
+                        <td colspan="4" class="spacerw"><img src="/images/global/spacer.gif" alt="" height="1" width="1"></td>
+                </tr>
+                <tr valign="top">
+                        <td colspan="3"><span class="header4">Expert Group</span></td>
+                </tr>
+
+
+			<tr valign="top">
+                            <td width="20" nowrap>&nbsp;</td> <!-- Gutter //-->
+                            <td>Alticast Corp.</td>
+     
+
+                            <td>Cable Television Laboratories, Inc.</td>
+    
+
+                            <td>Charter Communications Holding, LLC</td>
+			</tr>
+
+
+			<tr valign="top">
+                            <td width="20" nowrap>&nbsp;</td> <!-- Gutter //-->
+                            <td>Comcast Cable Communications Management, LLC</td>
+     
+
+                            <td>Cox Communications, Inc.</td>
+    
+
+                            <td>CSC Holding, Inc.</td>
+			</tr>
+
+
+			<tr valign="top">
+                            <td width="20" nowrap>&nbsp;</td> <!-- Gutter //-->
+                            <td>Esmertec AG</td>
+     
+
+                            <td>Espial Group, Inc.</td>
+    
+
+                            <td>GoldPocket Interactive</td>
+			</tr>
+
+
+			<tr valign="top">
+                            <td width="20" nowrap>&nbsp;</td> <!-- Gutter //-->
+                            <td>Liberate Technologies</td>
+     
+
+                            <td>MetaTV, Inc.</td>
+    
+
+                            <td>Oracle</td>
+			</tr>
+
+
+			<tr valign="top">
+                            <td width="20" nowrap>&nbsp;</td> <!-- Gutter //-->
+                            <td>Philips Electronics UK Ltd</td>
+     
+
+                            <td>RCN Corporation</td>
+    
+
+                            <td>Samsung Electronics Corporation</td>
+			</tr>
+
+
+			<tr valign="top">
+                            <td width="20" nowrap>&nbsp;</td> <!-- Gutter //-->
+                            <td>Sun Microsystems, Inc.</td>
+     
+
+                            <td>Time Warner Cable Inc.</td>
+    
+
+                            <td>Vidiom Systems Corp.</td>
+			</tr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		</table>
+                    <!-- ********************************************** -->
+                    <!--  Expert Group Status                           -->
+                    <!-- ********************************************** -->
+
+                    <table cellpadding="0" cellspacing="0" border="0">
+                        
+                    </table>
+
+   <!-- ****************************************** -->
+
+
+
+
+<!-- ********************************************** -->
+<!--  JSRProposal Info                              -->
+<!-- ********************************************** -->
+<p>
+
+
+<B><font color="red">NOTE:</font> due to changing market circumstances the Spec Lead does not recommend implementing this JSR in its current form. It is expected that an updated JSR will be developed in the future. </b>
+<P><HR><P>
+
+<a name="updates"><font size="+2">Updates to the Original JSR</font></a>
+
+The following changes have been made to the JSR proposal since <a href="#orig">the original submission</a>:<P>
+
+<B><U>2009.04.02</U></b>:<BR>
+Sun Microsystems became co-Maintenance Lead. The Maintenance Leads are now:
+
+<P><b>Maintenance Lead:</b> Donald Bleyl, Cox Communications<BR>
+Jens Paetzold, Sun Microsystems</P>
+
+<P><b>E-Mail Address:</b> donald.bleyl<faketag></faketag>&#64;cox.com<BR>
+jens.paetzold<faketag></faketag>&#64;sun.com</P>
+
+<P><b>Telephone Number:</b> -, +49 89 46008 1248</P>
+
+<P><b>Fax Number:</b> -</P>
+
+<P><HR><P>
+
+<a name="orig"><font size="+2">Original Java Specification Request (JSR)</font></a><p>
+<FONT SIZE="-1">
+
+<!-- BEGIN-SUB TOPICS -->
+
+          <A HREF="#1"> Identification</A>  |
+          <A HREF="#2"> Request</A>  |
+          <A HREF="#3"> Contributions</A>  
+<BR>
+
+<!-- END-SUB TOPICS -->
+
+</FONT>
+<P>
+
+<!-- BEGIN TEMPLATE -->
+
+<!-- SECTION 1 -->
+<B>Original Summary</b>:
+The requested specification will define a Java 2 Micro Edition (J2ME) profile based on the Connected Limited Device Configuration (CLDC) that is appropriate for use by small-footprint cable television set top boxes. 
+
+<A NAME="1"></A>
+
+<P><FONT size=+2>Section 1. Identification</FONT>
+
+<P><b>Submitting Member:</b> Cox Communications </P>
+
+<P><b>Name of Contact Person:</b> Craig Smithpeters</P>
+
+<P><b>E-Mail Address:</b> craig.smithpeters&#64;cox.com</P>
+
+<P><b>Telephone Number:</b> +1 404 269 8263</P>
+
+<P><b>Fax Number:</b> +1 404 269 8432</P>
+
+<BR>
+<P><b>Specification Lead:</b> Craig Smithpeters</P>
+
+<P><b>E-Mail Address:</b> craig.smithpeters&#64;cox.com</P>
+
+<P><b>Telephone Number:</b> +1 404 269 8263</P>
+
+<P><b>Fax Number:</b> +1 404 269 8432</P>
+
+<BR>
+
+<P><B>Initial Expert Group Membership:</B>
+</P>
+
+<P>
+Cox Communications<BR>
+Liberate Technologies<BR>
+Motorola<BR>
+Philips<BR>
+Sun Microsystems </P>
+
+<P><B>Supporting this JSR:</B>
+
+</P>
+
+<P>CableLabs<BR>
+Charter Communications<BR>
+Comcast Cable<BR>
+GoldPocket<BR>
+Time Warner Cable </p>
+
+<BR><BR>
+
+<!-- SECTION 2 -->
+
+<A NAME="2"></A>
+
+<P>
+<FONT SIZE="+2">Section 2: Request</FONT><P>
+</P>
+
+<H4>2.1 Please describe the proposed Specification:</H4>
+
+<P>The requested specification will define a Java 2 Platform, Micro Edition (J2ME) profile based on the Connected Limited Device Configuration (CLDC) appropriate for use by small-footprint, cable television set top boxes.  The profile will consist of Java 2 APIs for I/O, networking, graphics, etc. appropriate for small-footprint cable television set top boxes and a subset of the Java TV API appropriate for such devices.  </P>
+
+<H4>2.2 What is the target Java platform? (i.e., desktop, server, personal, embedded, card, etc.)</H4>
+
+<P>The target Java platform is J2ME CLDC. <P>
+
+Implementations of this specification are intended to be downloaded to existing deployed cable set-top boxes. They are not intended to be used in new OCAP-capable boxes, which are expected to support the full OCAP specification (<a href="http://www.opencable.com/specifications"> http://www.opencable.com/specifications</a>).  Please see below for an explanation of OCAP.
+
+
+
+
+</P>
+
+<H4>2.3 The Executive Committees would like to ensure JSR submitters think about how their proposed technology relates to all of the Java platform editions. Please provide details here for which platform editions are being targeted by this JSR, and how this JSR has considered the relationship with the other platform editions.</H4>
+
+<P>This JSR is targeted soley at the Java 2 Micro Edition platform.  The only relationship to J2SE and J2EE are the core Java langauge constructs and API's.</P>
+
+<H4>2.4 Should this JSR be voted on by both Executive Committees?</H4>
+
+<P>No</P>
+
+
+<H4>2.5 What need of the Java community will be addressed by the proposed specification?</H4>
+
+<P>The existing Java platforms are generally too large in implementation size and too demanding in functionality to be used with the majority of already-deployed cable television set top boxes in the United States and elsewhere.  Java has been growing in acceptance as a programming language for next-generation platforms and interactive television applications. However, there is a pressing market need to identify a Java platform that can be used with less-capable digital cable set top boxes that are currently deployed and will remain in the field for some time.  For example, the Motorola DCT 2000 has a very large installed base in the U.S. cable market, but has relatively limited graphics, processing, and memory capacity.  Such devices require a more scaled-down Java platform than what has presently been defined. 
+Multiple vendors have explored development of small-footprint Java platforms for use in cable set top boxes; each of these includes a somewhat different Java platform subset and functionality.  The proposed specification will define a common API for applications that can be used by all vendors targeting the already-deployed digital cable set top box market.  It will also provide a clear path of upward compatibility for content to migrate from the target low-end platform to OCAP (OpenCable Applications Platform, <a href="http://www.opencable.com"> http://www.opencable.com</a>), the Java middleware platform of next-generation North American cable set top boxes.  OCAP is related to DVB-MHP (Multimedia Home Platform, <a href="http://www.mhp.org"> http://www.mhp.org</a>), the Java middleware of choice for next generation interactive television (iTV) devices in Europe and elsewhere, by the fact that OCAP and DVB-MHP are both DVB-GEM terminal specifications.  DVB-GEM (Globally Executable MHP, <a href="http://www.mhp.org/index.php?id=215"> http://www.mhp.org/index.php?id=215</a>) is a transport neutral profile of DVB-MHP that can be extended for use by other iTV middleware specifications. <P>
+
+The goal of this specification is to create a platform that is as forward compatible as possible with OCAP while still fitting on the most resource constrained of the currently deployed cable television set top boxes that are capable of running J2ME CLDC.
+
+
+
+</P>
+
+<H4>2.6 Why isn't this need met by existing specifications?</H4>
+
+<P>Existing specifications generally require more implementation size and functionality than is available on the target platforms.  The Personal Basis Profile of the Connected Device Configuration plus the Java TV API version 1.0 comes closest to addressing the constraints of such platforms.  However, the CDC PBP specification requires more in networking and UI capabilities than is supportable on the currently deployed low-end set top boxes.  Likewise, the Java TV API was largely designed to be implemented in the context of emerging digital television broadcast infrastructures, rather than those that are in place today. <BR>
+Existing CLDC based profiles such as MIDP (Mobile Information Device Profile) address the requirements of a specific vertical market - wireless - and do not provide a suitable set of APIs and abstractions necessary for digital cable set-top devices.<BR>
+Deployed digital cable set top devices require Java APIs and packages that provide functionality such as tuning, service information, MPEG private data access, and graphics suitable for television usage.  Where possible, APIs will be leveraged from existing specifications and profiles such as the JavaTV API.  For example, the application lifecycle model for this profile is the Xlet model from JavaTV.
+
+
+
+</P>
+
+<H4>2.7 Please give a short description of the underlying technology or technologies:</H4>
+
+<P>Interactive television allows TV content developers to create procedural content which augments traditional television broadcasts. Potential applications include enhanced television programming, games, electronic commerce, targeted marketing, internet-like connectivity, and improved user control over the display of content.   
+
+
+</P>
+
+<H4>2.8 Is there a proposed package name for the API Specification? (i.e., <TT>javapi.something</TT>, <TT>org.something</TT>, etc.)</H4>
+
+<P>TBD.  javax.onramp.* has been suggested for the very small number of newly defined APIs.</P>
+
+<H4>2.9 Does the proposed specification have any dependencies on specific operating systems, CPUs, or I/O devices that you know of?</H4>
+
+<P>No dependencies exist for specific operating systems, CPUs, or I/O devices.  However, the profile must be implementable on a very resource constrained set top box such as the DCT-2000 and still have space available for some number of applications.  The resource constraints of the DCT-2000 are very limiting.  For example, only about 700K of ROM will be available for the profile implementation.  This would include 250K for CLDC and 450K for the java.awt and java.net subset, JavaTV subset, OnRamp-specific APIs, and driver support layer.
+
+
+</P>
+
+<H4>2.10 Are there any security issues that cannot be addressed by the current security model?</H4>
+
+<P>The CLDC provided sandbox model is believed to be sufficient.</P>
+
+<H4>2.11 Are there any internationalization or localization issues?</H4>
+
+<P>Subject to the resource constraints of the target hardware, consideration will be given to internationalization and localization since the target platform will likely be deployed in multiple localities.  </P>
+
+<H4>2.12 Are there any existing specifications that might be rendered obsolete, deprecated, or in need of revision as a result of this work?</H4>
+
+<P>No.  The proposed specification is intended to meet the requirements of a different target device than what is addressed by existing specifications.   </P>
+
+<H4>2.13 Please describe the anticipated schedule for the development of this
+specification.</H4>
+
+<P>Immediate commencement, completion within 12 months. <P>
+
+The following schedule is preliminary:<BR>
+Experts Group Formation and Initial Meeting: May 2004<BR>
+Early Draft Review: July 2004<BR>
+Public Review: October 2004<BR>
+Proposed Final Draft: December 2004<BR>
+Final Release: February 2005</P>
+
+<H4>2.14 Please describe the anticipated working model for the Expert Group working on developing this
+specification.</H4>
+
+<P>Periodic face-to-face meetings and teleconferences in addition to regular email exchange. 
+
+
+</P>
+
+<H4>2.15 It is important to the success of the community and each JSR that the work of the Expert Group be handled in a manner which provides the community and the public with insight into the work the Expert Group is doing, and the decisions that the Expert Group has made. The Executive Committees would like to ensure Spec Leads understand the value of this transparency and ask that each JSR have an operating plan in place for how their JSR will address the involvement of the community and the public. Please provide your plan here, and refer to the Spec Lead Guide for a more detailed description and a set of example questions you may wish to answer in your plan.</H4>
+
+<P>a) The specification lead will on a quarterly basis provide a brief JSR status to the JCP PMO, for publication to the Java community and public. This will include the current schedule for the JSR and notes on any major events that have occurred in the previous quarter. <P>
+
+b) The specification lead will maintain an observer alias for JCP members that are outside of the Expert Group. The specification lead will publish periodic milestone drafts and status reports to the observer list. The Expert Group may also use the list to request feedback on key issues.
+
+
+
+ </P>
+
+<H4>2.16 Please describe how the RI and TCK will de delivered, i.e. as part of a profile or platform edition, or stand-alone, or both. Include version information for the profile or platform in your answer.
+
+</H4>
+
+<P>The RI and TCK will be delivered as part of this profile work.</P>
+
+<H4>2.17 Please state the rationale if previous versions are available stand-alone and you are now proposing in 2.13 to only deliver RI and TCK as part of a profile or platform edition (See sections 1.1.5 and 1.1.6 of the JCP 2 document).
+</H4>
+
+<P>N/A
+</P>
+
+<H4>2.18 Please provide a description of the business terms for the Specification, RI and TCK that will apply when this JSR is final.</H4>
+
+<P>As the specification lead, Cox will produce the TCK and RI.  Cox will make the TCK and RI available for license separately: <P>
+
+TCK: <BR>
+-  Annual license access fee providing access to the TCK code, updates and upgrades, and basic support. <BR>
+-  Per unit royalty fee which will be dependent on volume. <P>
+
+RI: <P>
+-  Annual license access fee allowing commercial use of the RI code, as well as providing access to updates and upgrades. <BR>
+-  Per unit royalty fee which will be dependent on volume.
+
+
+
+</P>
+
+<BR><BR>
+<BR><BR>
+
+<!-- SECTION 3 -->
+
+<A NAME="3"></A>
+
+<P>
+<FONT SIZE="+2">Section 3: Contributions</FONT><P>
+</P>
+
+<H4>3.1 Please list any existing documents, specifications, or implementations that describe the technology. Please include links to the documents if they are publicly available.</H4>
+
+<P>Java 2 Platform, Micro Edition (<a href="http://java.sun.com/j2me/index.html"> http://java.sun.com/j2me/index.html</a>)<BR>
+Connected Limited Device Configuration (<a href="http://java.sun.com/products/cldc/"> http://java.sun.com/products/cldc/</a>)<BR>
+Personal Basis Profile Specification (JSR 129, <a href="http://www.jcp.org/en/jsr/detail?id=129"> http://www.jcp.org/en/jsr/detail?id=129</a>)<BR> 
+Java TV API (<a href="http://java.sun.com/products/javatv"> http://java.sun.com/products/javatv<a>)<BR>
+OpenCable Application Platform 1.0 (<a href="http://www.opencable.com/specifications"> http://www.opencable.com/specifications</a>)<BR>
+OnRamp to OCAP 0.7.2 <a href="http://64.91.227.98/~onrampto/OnRampJavadoc040406.zip"> http://64.91.227.98/~onrampto/OnRampJavadoc040406.zip</a>.  This url will soon be replaced with:  <a href="http://www.onramptoocap.com/OnRampJavadoc040406.zip"> http://www.onramptoocap.com/OnRampJavadoc040406.zip</a> (<a href="http://www.onramptoocap.com"> http://www.onramptoocap.com</a>)
+
+
+
+</P>
+
+<H4>3.2 Explanation of how these items might be used as a starting point for the work.</H4>
+
+<P>The resulting profile will be based on J2ME/CLDC and be a subset of the PersonalJava and Java TV APIs present in OCAP.  A clear path of upward compatibility from the proposed profile to Personal Basis Profile + Java TV and OCAP/MHP/GEM is a strong requirement.  Additional APIs that would hamper such upward compatibility are to be avoided unless suitable alternatives cannot be found.  
+
+
+</P>
+
+<BR><BR>
+</p>
+
+
+
+
+
+
+
+
+<!-- ** BEGIN: footer.jsp ** //-->
+
+
+
+
+
+
+
+
+</td>
+</tr>
+</table>
+
+<!-- ** END: Content Table ** //-->
+
+<!-- ** BEGIN: Footer Table ** //-->
+
+<div id="footer" style="clear: both;">
+    <div class="footleft">
+        <a href="/en/resources/contacts">Contact Us</a>
+    </div>
+	
+    <div class="botbar"><img src="/images/spacer.gif" alt="" height="23" width="1"></div>
+
+    <div class="footleft2">
+         &copy; 2019, Oracle Corporation and/or its affiliates. 
+        <a href="/en/home/terms">Terms of Use</a>. <a href="http://www.oracle.com/us/legal/privacy/index.html">Privacy Policy</a>. <a href="http://www.oracle.com/us/legal/third-party-trademarks/third-party-trademarks-078568.html">Trademarks</a>
+    </div>
+
+    <div class="footright">
+        <img src="/images/common/logo_oracle_footer.gif" alt="Oracle Corporation" height="22" width="91">
+    </div>
+
+    <div style="clear: both;"><img src="/images/spacer.gif" alt="" height="30" width="1"></div>
+</div>
+
+<!-- ** END: Footer Table ** //-->
+
+
+
+<!-- ** Menu Start ** //-->
+
+
+
+</body>
+</html>
+<!-- ** END: footer.jsp ** //-->
+

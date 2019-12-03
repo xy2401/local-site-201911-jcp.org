@@ -1,0 +1,553 @@
+
+
+<!-- ** BEGIN: header.jsp ** //-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3c.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+<head>
+    
+
+   
+    <link href="/includes/css/menu.css" rel="stylesheet" type="text/css"></link>
+    <link href="/includes/css/style.css" rel="stylesheet" type="text/css"></link>
+    <!--[if lt IE 6]><link href="/includes/css/style5.css" rel="stylesheet" type="text/css" ></link><![endif]-->
+    <!--[if gte IE 5]><link href="/includes/css/style6.css" rel="stylesheet" type="text/css" ></link><![endif]-->
+    <link href="/includes/css/tabs.css"  rel="stylesheet" type="text/css"></link>
+
+    <script type="text/javascript" src="/includes/scripts/tabs.js"></script>
+    <script type="text/javascript" src="/includes/scripts/menu.js"></script>
+   
+
+    
+
+    
+        <title>The Java Community Process(SM) Program - Introduction - faq-jsr</title>
+    
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head>
+
+
+
+<body onload="P7_initPM(0,1,0,0,-1)">
+
+    <a name="top"></a>
+
+    <div id="header">
+	<div id="logo">
+		<a href="/ja/home/index"><img src="/images/spacer.gif" alt="Java Community Process" height="81" width="151"></a>
+	</div>
+	<div id="tools">
+		<div class="search">
+			<form name="search" action="/ja/jsr/summary" method="get" onsubmit="return validate_search()">
+				<input name="id" value="Search JSRs" size="16" class="form" onfocus="nullify_if_equal(this, 'Search JSRs')" type="text">
+				<a href="javascript:document.search.submit()" onclick="return validate_search()"><img src="/images/button_go.gif" width="21" height="16" border="0" alt="Submit this Search" name="sub_search"></a>
+			</form>
+		</div>
+		<div class="tools">
+			<a href="/ja/press/pressroom">Press Room</a> &nbsp;|&nbsp;
+			<a href="http://java.com/java/download/index.jsp?cid=jdp78399">Get Java Here</a> &nbsp;|&nbsp;
+			<!-- <a href="javascript:void(0)">Print Format</a> &nbsp;|&nbsp;&nbsp; -->
+		</div>
+
+	</div>
+	<div style="clear: right;"></div>
+
+        
+
+	<div class="topbar"><img src="/images/spacer.gif" alt="" height="3" width="154"></div>
+	<div id="update"> </div>
+    </div>
+
+
+    
+
+        <!-- ** BEGIN: Content Table ** //-->
+
+        <table width="100%" border="0" cellpadding="0" cellspacing="0">
+
+            <tr>
+
+                <!-- ** BEGIN: Navigation Column ** //-->
+                <td width="150" id="leftcontent" valign="top">
+                    <!-- Navigation Placeholder //-->
+
+                    
+
+                    <div class="bar"><img src="/images/hr_dots1.gif" alt="" height="3" width="150"></div>
+
+        <!-- begin find JSRs form -->
+        <!-- IMPORTANT! do not convert this form to Struts < html : form > tag.  javascript change of form.action property fails. -->
+        <img src="/images/hd_find-jsrs.gif" alt="Find JSRs" height="18" width="150">
+        <form name="findjsr" action="/ja/jsr/summary" method="get" class="pt5" onsubmit="return validate_findjsr()">
+            <input name="id" size="18" class="form" value="Search JSRs" onfocus="nullify_if_equal(this, 'Search JSRs')" type="text">
+	    <a href="javascript:document.findjsr.submit()" onclick="return validate_findjsr()"><img src="/images/button_go.gif" width="21" height="16" border="0" alt="Submit this Search" name="sub_search"></a>
+        </form><br><br>
+
+        <!-- ** Menu Start ** //-->
+
+        <ul id="p7PMnav">
+            <li><a href="/ja/jsr/platform">JSRs by Platform</a></li>
+            <li><a href="/ja/jsr/tech">JSRs by Technology</a></li>
+            <li><a href="/ja/jsr/stage">JSRs by Stage</a></li>
+            <li><a href="/ja/jsr/ec">JSRs by Committee</a></li>
+            <li><a href="/ja/jsr/all">List of All JSRs</a></li>
+
+            <!--end find JSRs form -->
+            <div style="clear: both;"><img src="/images/spacer.gif" alt="" height="25" width="1"></div>
+
+            <!--begin my JCP -->
+            <img src="/images/hd_my-jcp.gif" alt="My JCP" height="18" width="150">
+            
+
+          <form name="login" method="get" action="/en/user/login" >
+            <input name="Sign-in" type="submit" title="Sign-in" value="Sign-in" />
+          </form>
+
+            <div style="clear:both"><img src="/images/global/spacer.gif" width="1" height="3" alt=""></div>
+            <div class="noNav">
+                <a href="/en/user/register">Register for Site</a>
+            </div>
+
+             <div class="bar"><img src="/images/hr_dots1.gif" alt="" height="3" width="150"></div>
+           <div class="noNav" style="color: #666666; padding: 0;">
+              Use of JCP site is subject to the
+              <a href="/en/home/terms" style="display:inline;padding: 0">JCP Terms of Use</a> and the
+              <a href="http://www.oracle.com/us/legal/privacy/index.html" style="display:inline;padding: 0" href="">Oracle Privacy Policy</a>
+          </div>
+
+            
+
+            <div style="clear:both"><img src="/images/global/spacer.gif" width="1" height="25" alt=""></div>
+
+            <!--begin JCP info -->
+            <img src="/images/hd_jcp-info.gif" alt="JCP Info" height="18" width="150">
+
+            <li><a href="/ja/procedures/overview" class="p7PMtrg">About JCP</a>
+                <ul>
+                    <li><a href="/ja/procedures/overview">Program Overview</a></li>
+                    <li><a href="/ja/procedures/jcp2">JCP Process Document</a></li>
+                    <li><a href="/ja/whatsnew/calendar">Calendar</a></li>
+                    <li><a href="/ja/participation/members">JCP Members</a></li>
+                    <li><a href="/ja/participation/committee">Executive Committee</a></li>
+                    <li><a href="/ja/whatsnew/elections">Elections</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/ja/participation/overview" class="p7PMtrg">Get Involved</a>
+		<ul>
+                    <li><a href="/ja/participation/overview">Overview</a></li>
+                    <li><a href="/ja/participation/membership">Becoming a JCP Member</a></li>
+		</ul>
+            </li>
+
+            <li><a href="/ja/resources/contents" class="p7PMtrg">Community Resources</a>
+                <ul>
+                    <li><a href="/ja/resources/contents">Overview</a></li>
+                    <li><a href="/ja/resources/tutorials">Tutorials</a></li>
+                    <li><a href="/ja/resources/multimedia">JCP Podcasts</a></li>
+                    <li><a href="/ja/resources/guide">Spec Lead Guide</a></li>
+                    <li><a href="/ja/resources/tdk">TCK Tool & Info</a></li>
+                    <li><a href="/ja/resources/license_reference">License Reference</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/ja/press/pmo" class="p7PMtrg">Community News</a>
+                <ul>
+                    <li><a href="/ja/press/pmo">News</a></li>
+                    <li><a href="/ja/press/news/awards/awards_main">Programs &amp; Awards</a></li>
+                    <li><a href="/ja/press/releases">Press Releases</a></li>
+                    <li><a href="/ja/press/success">Success Stories</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/ja/introduction/faq">FAQ</a></li>
+
+            <li><a href="/ja/resources/contacts">Contact Us</a></li>
+
+            <div style="clear: both;"><img src="/images/spacer.gif" alt="" height="25" width="1"></div>
+
+            <!--[if lte IE 6]><style>#p7PMnav a{height:1em;}#p7PMnav li{height:1em;float:left;clear:both;width:100%}</style><![endif]-->
+            <!--[if IE 6]><style>#p7PMnav li{clear:none;}</style><![endif]-->
+            <!--[if IE 7]><style>#p7PMnav a{zoom:100%;}#p7PMnav li{float:left;clear:both;width:100%;}</style><![endif]-->
+        </ul>
+
+        
+
+        <!--begin ad space -->
+        <div class="ads">
+            <a href="http://java.com/java/download/index.jsp?cid=jdp78399" target="_blank"><img style="display: ;" src="/images/ad_banner2.gif" alt="Ad Banner" border="1" height="70" width="150"></a>
+        </div>
+        <!--end ad space -->
+
+<!-- ** Menu End ** //-->
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;<br>
+
+    
+
+                    &nbsp;<br>
+                    <img src="/images/common/trans.gif" alt="" width="1" height="150"><br>
+
+              
+
+
+
+                </td>
+                <!-- ** END: Navigation Column ** //-->
+
+                <!-- ** BEGIN: Gutter Column ** //-->
+		<td width="10" nowrap><img src="/images/common/trans.gif" alt="" width="10" height="1"></td>
+                <!-- ** END: Gutter Column ** //-->
+
+                <!-- ** BEGIN: Content Column ** //-->
+                <td width="100%" valign="top">
+
+    
+<script type="text/javascript">
+
+String.prototype.trim = function() {
+        return this.replace(/^\s+|\s+$/g,"");
+}
+String.prototype.ltrim = function() {
+        return this.replace(/^\s+/,"");
+}
+String.prototype.rtrim = function() {
+        return this.replace(/\s+$/,"");
+}
+
+function validate_search() {
+	if (document.search.id.value == "Search JSRs" || document.search.id.value.trim().length == 0) {
+		alert("Search terms must be entered first");
+		return false;
+	}
+	return true;
+}
+
+function validate_findjsr() {
+	if (document.findjsr.id.value == "Search JSRs" || document.findjsr.id.value.trim().length == 0) {
+		alert("Search terms must be entered first");
+		return false;
+	}
+	return true;
+}
+
+function nullify_if_equal(field, str) {
+	// alert("val=" + field.value);
+	if (field.value == str) {
+		field.value = "";
+	}
+}
+
+</script>
+<!-- ** END: header.jsp ** //-->
+
+
+
+
+
+
+
+
+
+		<div class="header2">Introduction</div>
+		<div class="header1">FAQ: JSR and Expert Group Questions</div>		
+
+		&nbsp;<br>
+<div class="anybar"><img src="/images/global/bar_green.gif" alt="" width="12" height="4"></div>
+<p>
+
+
+
+
+
+<span class="headLinks"><font size="-1">
+<a href="faq">General&nbsp;questions</a>&nbsp;| &nbsp;<a href="faq-membership">Membership&nbsp;questions</a>&nbsp;| &nbsp;JSR&nbsp;and&nbsp;Expert&nbsp;Group&nbsp;questions&nbsp;| &nbsp;<a href="faq-speclead">Spec&nbsp;Lead&nbsp;process&nbsp;questions</a>&nbsp;| &nbsp;<a href="faq-sso">Login&nbsp;questions</a>&nbsp;| &nbsp;<a href="faq-site">Web&nbsp;Site&nbsp;questions</a>&nbsp;| &nbsp;<a href="glossary">Glossary</a>
+
+</font></span>
+&nbsp;<br>
+
+		
+		&nbsp;<br>
+		<div class="header3">JSR Questions</div>
+	<ul>
+<li><a href="#newjsr">I want to submit a new Java Specification Request (JSR). What do I do?</a>
+         <li><a href="#recentstage">The most recent stage in the status table of JSR XXX is a long time ago. How do I know what is happening now?</a>
+         <li><a href="#slnames">I share the Spec Lead role with X other people. How can I
+change the order of the Spec Lead names listed on the JSR XXX detail page?</a>
+         <li><a href="#inactive">I've noticed that JSR XXX is labeled "Inactive". What does "Inactive" mean?</a>
+         <li><a href="#milestone">What is a JSR milestone?</a>
+         <li><a href="#startdate">I'm looking for the Final Release/Proposed Final Draft/Maintenance Release of a particular JSR, and the JSR page shows a start date but no end date. When will the milestone be available?</a>
+         <li><a href="#commentsalias">I've been sending mail to jsr-xyz-comments@jcp.org,
+but no one is responding. Is the Spec Lead ignoring me, or is the site broken?</a>
+
+        </ul>
+&nbsp;<br>
+
+                <div class="header3">Contributor and Expert Group Questions</div>
+        <ul>
+<LI><a href="#publicnominations">Is there a way to know who has nominated to serve as a Contributor or Expert Group member on a given JSR? </a>
+<li><a href="#memberaccess">I'm a JCP Member, but I can't login to the Expert Group tab for JSR XXX. Is the site broken?</a>
+<li><a href="#egemail">I've been added to the Expert Group for JSR XXX; my name has just appeared in the Expert Group private page. I'm not receiving e-mail from the EG alias. What's wrong?</a>
+<li><a href="#jspaeg">I submitted my membership agreement a week ago. When will I get on the Expert Group/be listed as a Contributor for JSR XXX?</a>
+<li><a href="#egclosed">I want to be listed as a Contributor or join an Expert Group, but there is no link "I would like to join this Expert Group" on the JSR page. What do I do?</a>
+<li><a href="#egnom">I submitted my nomination for JSR XXX some time ago. When will I be listed as a Contributor or Expert Group member?</a>
+<li><a href="#replaceeg">   	
+I'm on an Expert Group as a representative of a Full Member organization. My job responsibilities have changed and I need to specify my replacement on the Expert Group. How do I do this?</a>
+<li><a href="#indegnomtocorp">As an individual Member, I have nominated myself to a JSR as a Contributor or an Expert Group member. Now my employer is becoming a Full Member and I wish to change my nomination to represent my employer. How do I do that? </a>
+<li><a href="#indegtocorp">As an individual Member, I'm already on a JSR as a Contibutor or Expert Group member. Now my employer is joining the JCP. How do I transfer my JSR participation from my individual Membership to my role as representing my employer on the JSR?</a>
+<li><a href="#jcpchanges">I've heard a lot about the changes that have come with a recent JCP revision, and I wonder: do these changes affect me as an Expert Group member?</a>
+<li><a href="#postfinaleg">I'm working with the Maintenance Lead of a JSR that has already gone Final, and wish to be added to the Expert Group. How do I do this?</a>
+<li><a href="#jugeg">I am a member of a JUG (Java User Group), which is already a Partner Member. What do I need to do in order to join an Expert Group?</a>
+</ul>	
+		&nbsp;<br>
+
+                <div class="header3">JSR Questions</div>
+<P>
+
+                <a name="newjsr"></a><B>Q: I want to submit a new Java Specification Request (JSR). What do I do?</b><BR>
+                <B>A:</b> First, you must be a representative of a Full Member. If you are not sure if you are listed as a representative of a Full Member, log in to jcp.org using the login prompt in the navigation bar on the left (under "My JCP"). Then click "My Profile" to see if you are listed as representing a particular Member. If you do not have a login, please <a href="/en/user/add">register for the site</a>. If you are an employee of an existing Full Member, you can then request to be associated to that Member as its representative. To look up the list of JCP Members, <a href="/en/participation/members">view the list of JCP Members here</a>. For instructions on becoming a Full Member, refer to <a href="/en/participation/membership">the Becoming a Member page</a>. Once you are a representative of a Full Member, you should gather some support for your upcoming proposal. You can contact the Specification Leads of other <a href="/en/jsr/all">JSRs</a> and run it by the <a href="/en/participation/committee">Executive Committee</a> which will vote on your proposal. Once you feel that you have enough industry support, <a href="/en/jsr/proposal">fill out the JSR proposal form</a>.<BR>
+
+                &nbsp;<BR>
+
+                <a name="recentstage"></a><b>Q: The most recent stage in the status table of JSR XXX is a long time ago. How do I know what is happening now?</b><br>
+                <b>A:</b> First, look at <a href="/en/procedures/jcp2">the JCP document</a>. Chances are the Spec Lead and/or Expert Group is working on developing the specification for the stage following the last one listed. For instance, if "Expert Group formation" is the last stage listed, it can be assumed that the Expert Group is hard at work coming up with the Early Draft Review draft.<br>
+                &nbsp;<BR>
+                Second, take a look at the Community tab for that JSR (log in to
+jcp.org first). The Spec Lead should keep this page up to date with information about the progress of the specification's development.<BR>
+                &nbsp;<br>
+                Third, contact the Spec Lead directly with an e-mail inquiry about the status of the JSR.<BR>
+                &nbsp;<br>
+                Finally, if this doesn't receive a response within a reasonable amount of time, write an e-mail message to pmo<fake_tag>&#064;</fake_tag>jcp.org explaining your concerns/questions. The PMO will follow up with the Spec Lead and
+Expert Group.<br>
+        &nbsp;<BR>
+
+                <a name="slnames"></a><B>Q: I share the Spec Lead role with X other people. How can I change the order of the Spec Lead names listed on the JSR XXX detail page?</b><BR>
+                <B>A:</b> Multiple Spec Leads are listed alphabetically by last name/surname. This order is built into the site and cannot be changed.<BR>
+&nbsp;<BR>
+               &nbsp;
+<BR>
+
+                                <a name="inactive"></a><B>Q: I've noticed that JSR XXX is labeled "Inactive". What does "Inactive" mean?</b><BR>
+
+<B>A:</b> This means that the JSR has not gone final and that its Spec Lead and Expert Group have not published a milestone draft for their JSR in more than 12 months. This may mean that the specification has reached a particularly difficult stage in its development, or that the community interest in the JSR has waned. Once the "Inactive" label is applied, the PMO works closely with the Spec Leads of any "Inactive" JSRs to get them to produce the next milestone draft/release so as
+to remove the "Inactive" label. If the Spec Lead and Expert Group are unable to produce a draft after a further six months from the application of the "Inactive"
+label - that is to say, a JSR goes at least a year and a half without posting a draft or
+release - the PMO may withdraw the JSR in question from the process.<BR>&nbsp;<BR>
+
+                 <a name="milestone"></a><B>Q: What is a JSR milestone?</b><BR>
+
+<B>A:</b> Any stage delineated in the JCP document which results in an update to
+a JSR's status table. In JCP 2.6, this includes: JSR Approval Ballot, JSR Reconsideration Ballot, EG formation, Early Draft Review, Public Review, Public Draft Approval Ballot, Public Draft Reconsideration Ballot, Proposed Final Draft, Final Approval Ballot, Final Release, Maintenance Review, Item Exception Ballot and Maintenance Release. Note that when a JSR is rejected in a ballot or withdrawn by the Spec Lead, these also are shown in the JSR's status table, but as they result in the end of a JSR, they are not considered milestones in the same way as the other stages. Note, too, that a Spec Lead may provide detailed information
+on the progress of a JSR or the Expert Group may post drafts of the specification in a publicly accessible forum (such as a java.net project), but that neither of
+these constitute a milestone in the JCP process.<BR>&nbsp;<BR>
+
+                  <a name="startdate"></a><B>Q: I'm looking for the Final Release/Proposed Final Draft/Maintenance Release of a particular JSR, and the JSR page shows a start date but no end date. When will the milestone be available?</b><BR>
+
+<B>A:</b> It already is available. An end date is only shown for review periods in the process. For a Proposed Final Draft, Final Release, or Maintenance Release, the files are posted and the date they are posted is listed as the start date. To get at the download, simply click the "Download page" link to the left of the start date.<BR>&nbsp;<BR>
+
+<a name="commentsalias"></a><B>Q: I've been sending mail to jsr-xyz-comments@jcp.org, but no one is responding. Is the Spec Lead ignoring me, or is the site broken?</b><BR>
+
+<B>A:</b> Neither. jsr-xyz-comments aliases no longer exist; they were phased out in June 2009. Since then, Expert Groups have been directed to use public feedback mechanisms. To find the feedback mechanism of a particular JSR, visit that JSR's page (http://jcp.org/en/jsr/detail?id=XYZ , where "XYZ" is the JSR number) and click the link "Public Communications."
+<P>
+
+
+
+                <div class="header3">Contributor and Expert Group Questions</div>
+<P>
+
+<a name="publicnominations"></a><B>Q: Is there a way to know who has nominated to serve as a Contributor or Expert Group member on a given JSR? </b><BR>
+<B>A:</b> Yes, for JSRs operating under JCP 2.8 and later. Each such JSR has a section 2.19 that describes the public communications channel for that JSR, and JCP 2.8 Spec Leads are required to provide all deliberations on all nominations for the Expert Group of their JSRs on the public communications channel, so if the JSR is operating under JCP 2.8 or later, the information about all the nominees should be there.
+<BR>&nbsp;<BR>
+ 
+		<a name="memberaccess"></a><b>Q: I'm a JCP Member, but I can't login to the Expert Group tab for JSR XXX. Is the site broken?</b><br>
+		<b>A:</b> No. Membership does not grant access to the Expert Group private areas. Each Expert Group private tab can only be accessed by those specific Expert Group members of that particular JSR. Each Expert Group member is able to access the Expert Group tab using his/her login. If you believe that you are an Expert Group member of a particular JSR but are not listed as part of the Expert Group, please fill out the <a href="/en/jsr/egnom">Expert Group nomination form</a> and have the Spec Lead of that JSR contact the PMO to confirm. If you are listed as part of the Expert Group but your login is not working for the Expert Group tab of that JSR, write to admin<faketag>&#64;</faketag>jcp.org to report the issue.<br>
+		
+		&nbsp;<br>
+		<a name="egemail"></a><b>Q: I've been added to the Expert Group for JSR XXX; my name has just appeared in the Expert Group private page. I'm not receiving e-mail from the EG alias. What's wrong?</b><br>
+		<b>A:</b> You will need to follow up with the Specification Lead of the JSR; Expert Group communications vary from JSR to JSR.
+	<BR>	
+		&nbsp;<br>
+		<a name="jspaeg"></a><b>Q: I submitted my membership agreement a week ago. When will I get on the Expert Group/be listed as a Contributor for JSR XXX?</b><br>
+		<b>A:</b> Submitting a JSPA is not a guarantee that you will be accepted as a Contributor or Expert Group member. If you have not already done so, you need to nominate yourself to serve as a Contributor or Expert Group member, by filling out <a href="/en/jsr/egnom">the JSR nomination form</a>. The Spec Lead, in conjunction with his Expert Group (if there is one already) then decides whether or not to admit you as a Contributor or Expert Group member. Only when the Spec Lead confirms your addition to the JSR will you be added.<br>
+		
+		&nbsp;<br>
+                <a name="egclosed"></a><b>Q: I want to be listed as a Contributor or join an Expert Group, but there is no link "I would like to join this Expert Group" on the JSR page. What do I do?</b><BR>
+                <b>A:</b>At some point in every JSR's development, the Spec Lead and Expert Group decide to stop actively seeking new experts, and the link to join the EG is removed. Then, at Final Release, Expert Groups are officially disbanded, so if the JSR in question has reached Final Release, there is no EG to join! But if the JSR has not reached Final Release, you may contact the Spec Lead directly to see if your contributions or addition to the group would be welcome.
+<BR>
+&nbsp;<BR>
+
+		<a name="egnom"></a><b>Q: I submitted my nomination for JSR XXX some time ago. When will I be listed as a Contributor or Expert Group member?</b><br>
+		<b>A:</b> Submitting a self-nomination is not a guarantee that you will be accepted onto a JSR. The Spec Lead (and Expert Group, if there is one already) must confirm your addition as a Contributor or Expert Group member before you are added. To view the status of an open nomination: log in to jcp.org, then click "My JSRs" in the left nav. The resulting page shows all of the JSRs you lead, all the JSRs for which you are an Expert Group member, and all of your pending nominations. Each pending nomination will show how the Spec Lead and the PMO has voted, and a legend on that page shows what each vote means. If you have any questions about a vote, contact the Spec Lead or the PMO directly.<br>
+		
+		&nbsp;<br>
+
+                <a name="replaceeg"></a><B>Q: I'm on an Expert Group as a representative of a Full Member organization. My job responsibilities have changed and I need to specify my replacement on the Expert Group. How do I do this?</b><BR>
+                 
+                <B>A:</b> First, notify the Spec Lead(s) of the affected JSR and the PMO via e-mail. Second, have your replacement fill out the <a href="/en/jsr/egnom">Expert Group nomination form</a>. The PMO will remove you and the Spec Lead should approve your replacement.<BR>
+&nbsp;
+<BR>
+
+&nbsp;<BR>
+
+<a name="indegnomtocorp"></a><B>Q: As an individual Full Member, I have nominated myself for a JSR as a Contributor or Expert Group member. Now my employer is becoming a Full Member and I wish to change my nomination to represent my employer. How do I do that? </b><BR>
+<B>A:</b> 1. Have your employer finish <a href="/en/participation/membership2">becoming a Full Member</a>. 
+<BR>
+2. Once your employer is a Full Member, <a href="/en/user/add">register for a new JCP account</a> using your e-mail address provided by your employer. <BR>
+3. Request member association with your employer: login, go to <a href="/en/user/my">"My Profile,"</a> then click "Request Member association," then select your employer from the list and submit the form. <BR>
+4. Write a message to admin@jcp.org requesting the cancellation of your individual membership in favor of your employer's membership, with the subject line "replace individual membership with [name of employer]'s membership." <BR>
+5. Resubmit any pending <a href="/en/jsr/egnom">Expert Group nominations</a> using your new account, making sure to describe the expertise of your organization. 
+<BR>
+&nbsp;
+<BR>
+
+<a name="indegtocorp"></a><B>Q: As an individual Full Member, I'm already on a JSR as a Contributor or Expert Group member. Now my employer is joining the JCP. How do I transfer my JSR participation from my individual Membership to my role as representing my employer on the JSR? </B><BR>
+<B>A:</b> 1. Have your employer finish <a href="?en/participation/membership2">becoming a Full Member</a>. <BR>
+2. Once your employer is a Full Member, <a href="/en/user/add">register for a new JCP account</a> using your e-mail address provided by your employer. <BR>
+3. Request member association with your employer: login, go to <a href="/en/user/my">"My Profile,"</a> then click "Request Member association," then select your employer from the list and submit the form. <BR>
+4. Write a message to admin<faketag>&#64;</faketag>jcp.org requesting the cancellation of your individual membership in favor of your employer's membership, with the subject line "replace individual membership with [name of employer's membership." Make sure to mention any JSRs on which you are an Expert and for which you wish to continue in your new role as representing your employer. The PMO will contact the Specification Lead(s) of the JSRs to let him/them know what you are doing. <BR>
+5. <a href="/en/jsr/egnom">Submit a nomination</a> for the Expert Group on which you wish to continue, making sure to describe that you are simply trying to move from representing only yourself to representing your entire organization. 
+<BR>
+&nbsp;
+<BR>
+
+<a name="jcpchanges"></a><B>Q: I've heard a lot about the changes that have come with a recent JCP revision, and I wonder: do these changes affect me as an Expert Group member?</b><BR>
+<B>A:</b> Possibly. An overview of the changes are found on the following pages: <a href="/en/resources/2.7">summary of JCP 2.7 changes</a>, the <a href="/en/resources/2.8">summary of JCP 2.8/2.9 changes</a>, and the <a href="/en/resources/2.10">summary of JCP 2.10 changes</a>.<BR>&nbsp;<BR>
+
+
+<a name="postfinaleg"></a><B>Q: I'm working with the Maintenance Lead of a JSR that has already gone Final, and wish to be added to the Expert Group. How do I do this?</B><BR>
+
+<B>A:</b> Work with the Maintenance Lead until such time as a new JSR is filed. The Expert Group listed on jcp.org is a record of all the JCP Members who worked on the original Specification; it officially disbanded at the Final Release. The Maintenance Lead may choose to ask for your input during the Maintenance phase of the JSR, but such work is not as part of the Expert Group, which "went Final" when the JSR did. Note, however, that it is possible to be added as a Contributor to a JSR in the Maintenance process.
+<P>
+
+<a name="jugeg"></a><B>Q: I am a member of a JUG (Java User Group), which is already a Partner Member. What do I need to do in order to join an Expert Group?</B><BR>
+
+<B>A:</b> Partner Members cannot participate on JSR Expert Groups (except for the case where the Partner Member is on the Executive Committee and the JSR has the Executive Committee as its Expert Group).
+<BR>&nbsp;<BR>
+
+<P>
+
+
+
+
+<BR>&nbsp;<BR>
+<BR>&nbsp;<BR>
+<BR>&nbsp;<BR>
+<BR>&nbsp;<BR>
+<BR>&nbsp;<BR>
+<BR>&nbsp;<BR>
+<BR>&nbsp;<BR>
+<BR>&nbsp;<BR>
+<BR>&nbsp;<BR>
+<BR>&nbsp;<BR>
+<BR>&nbsp;<BR>
+
+<BR>&nbsp;<BR>
+&nbsp;<BR>
+&nbsp;<BR>
+&nbsp;<BR>
+&nbsp;<BR>
+&nbsp;<BR>
+&nbsp;<BR>
+&nbsp;<BR>
+&nbsp;<BR>
+&nbsp;<BR>
+&nbsp;<BR>
+&nbsp;<BR>
+&nbsp;<BR>
+&nbsp;<BR>
+&nbsp;<BR>
+&nbsp;<BR>
+&nbsp;<BR>
+&nbsp;<BR>
+&nbsp;<BR>
+&nbsp;<BR>
+&nbsp;<BR>
+&nbsp;<BR>
+&nbsp;<BR>
+&nbsp;<BR>&nbsp;<BR>
+&nbsp;<BR>
+&nbsp;<BR>
+&nbsp;<BR>
+&nbsp;<BR>
+&nbsp;<BR>
+&nbsp;<BR>
+&nbsp;<BR>&nbsp;<BR>
+&nbsp;<BR>
+&nbsp;<BR>
+&nbsp;<BR>
+&nbsp;<BR>
+&nbsp;<BR>
+<P>	
+<!-- ** BEGIN: footer.jsp ** //-->
+
+
+
+
+
+
+
+
+</td>
+</tr>
+</table>
+
+<!-- ** END: Content Table ** //-->
+
+<!-- ** BEGIN: Footer Table ** //-->
+
+<div id="footer" style="clear: both;">
+    <div class="footleft">
+        <a href="/en/resources/contacts">Contact Us</a>
+    </div>
+	
+    <div class="botbar"><img src="/images/spacer.gif" alt="" height="23" width="1"></div>
+
+    <div class="footleft2">
+         &copy; 2019, Oracle Corporation and/or its affiliates. 
+        <a href="/en/home/terms">Terms of Use</a>. <a href="http://www.oracle.com/us/legal/privacy/index.html">Privacy Policy</a>. <a href="http://www.oracle.com/us/legal/third-party-trademarks/third-party-trademarks-078568.html">Trademarks</a>
+    </div>
+
+    <div class="footright">
+        <img src="/images/common/logo_oracle_footer.gif" alt="Oracle Corporation" height="22" width="91">
+    </div>
+
+    <div style="clear: both;"><img src="/images/spacer.gif" alt="" height="30" width="1"></div>
+</div>
+
+<!-- ** END: Footer Table ** //-->
+
+
+
+<!-- ** Menu Start ** //-->
+
+
+
+</body>
+</html>
+<!-- ** END: footer.jsp ** //-->
+
+

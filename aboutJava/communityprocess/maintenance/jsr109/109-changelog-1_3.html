@@ -1,0 +1,1135 @@
+
+<!-- ** BEGIN: header.jsp ** //-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3c.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+<head>
+    
+
+   
+    <link href="/includes/css/menu.css" rel="stylesheet" type="text/css"></link>
+    <link href="/includes/css/style.css" rel="stylesheet" type="text/css"></link>
+    <!--[if lt IE 6]><link href="/includes/css/style5.css" rel="stylesheet" type="text/css" ></link><![endif]-->
+    <!--[if gte IE 5]><link href="/includes/css/style6.css" rel="stylesheet" type="text/css" ></link><![endif]-->
+    <link href="/includes/css/tabs.css"  rel="stylesheet" type="text/css"></link>
+
+    <script type="text/javascript" src="/includes/scripts/tabs.js"></script>
+    <script type="text/javascript" src="/includes/scripts/menu.js"></script>
+   
+
+    
+
+    
+        <title>The Java Community Process(SM) Program - communityprocess - maintenance</title>
+    
+
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+
+
+<body onload="P7_initPM(0,1,0,0,-1)">
+
+    <a name="top"></a>
+
+    <div id="header">
+	<div id="logo">
+		<a href="/en/home/index"><img src="/images/spacer.gif" alt="Java Community Process" height="81" width="151"></a>
+	</div>
+	<div id="tools">
+		<div class="search">
+			<form name="search" action="/en/jsr/summary" method="get" onsubmit="return validate_search()">
+				<input name="id" value="Search JSRs" size="16" class="form" onfocus="nullify_if_equal(this, 'Search JSRs')" type="text">
+				<a href="javascript:document.search.submit()" onclick="return validate_search()"><img src="/images/button_go.gif" width="21" height="16" border="0" alt="Submit this Search" name="sub_search"></a>
+			</form>
+		</div>
+		<div class="tools">
+			<a href="/en/press/pressroom">Press Room</a> &nbsp;|&nbsp;
+			<a href="http://java.com/java/download/index.jsp?cid=jdp78399">Get Java Here</a> &nbsp;|&nbsp;
+			<!-- <a href="javascript:void(0)">Print Format</a> &nbsp;|&nbsp;&nbsp; -->
+		</div>
+
+	</div>
+	<div style="clear: right;"></div>
+
+        
+
+	<div class="topbar"><img src="/images/spacer.gif" alt="" height="3" width="154"></div>
+	<div id="update"> </div>
+    </div>
+
+
+    
+
+        <!-- ** BEGIN: Content Table ** //-->
+
+        <table width="100%" border="0" cellpadding="0" cellspacing="0">
+
+            <tr>
+
+                <!-- ** BEGIN: Navigation Column ** //-->
+                <td width="150" id="leftcontent" valign="top">
+                    <!-- Navigation Placeholder //-->
+
+                    
+
+                    <div class="bar"><img src="/images/hr_dots1.gif" alt="" height="3" width="150"></div>
+
+        <!-- begin find JSRs form -->
+        <!-- IMPORTANT! do not convert this form to Struts < html : form > tag.  javascript change of form.action property fails. -->
+        <img src="/images/hd_find-jsrs.gif" alt="Find JSRs" height="18" width="150">
+        <form name="findjsr" action="/en/jsr/summary" method="get" class="pt5" onsubmit="return validate_findjsr()">
+            <input name="id" size="18" class="form" value="Search JSRs" onfocus="nullify_if_equal(this, 'Search JSRs')" type="text">
+	    <a href="javascript:document.findjsr.submit()" onclick="return validate_findjsr()"><img src="/images/button_go.gif" width="21" height="16" border="0" alt="Submit this Search" name="sub_search"></a>
+        </form><br><br>
+
+        <!-- ** Menu Start ** //-->
+
+        <ul id="p7PMnav">
+            <li><a href="/en/jsr/platform">JSRs by Platform</a></li>
+            <li><a href="/en/jsr/tech">JSRs by Technology</a></li>
+            <li><a href="/en/jsr/stage">JSRs by Stage</a></li>
+            <li><a href="/en/jsr/ec">JSRs by Committee</a></li>
+            <li><a href="/en/jsr/all">List of All JSRs</a></li>
+
+            <!--end find JSRs form -->
+            <div style="clear: both;"><img src="/images/spacer.gif" alt="" height="25" width="1"></div>
+
+            <!--begin my JCP -->
+            <img src="/images/hd_my-jcp.gif" alt="My JCP" height="18" width="150">
+            
+
+          <form name="login" method="get" action="/en/user/login" >
+            <input name="Sign-in" type="submit" title="Sign-in" value="Sign-in" />
+          </form>
+
+            <div style="clear:both"><img src="/images/global/spacer.gif" width="1" height="3" alt=""></div>
+            <div class="noNav">
+                <a href="/en/user/register">Register for Site</a>
+            </div>
+
+             <div class="bar"><img src="/images/hr_dots1.gif" alt="" height="3" width="150"></div>
+           <div class="noNav" style="color: #666666; padding: 0;">
+              Use of JCP site is subject to the
+              <a href="/en/home/terms" style="display:inline;padding: 0">JCP Terms of Use</a> and the
+              <a href="http://www.oracle.com/us/legal/privacy/index.html" style="display:inline;padding: 0" href="">Oracle Privacy Policy</a>
+          </div>
+
+            
+
+            <div style="clear:both"><img src="/images/global/spacer.gif" width="1" height="25" alt=""></div>
+
+            <!--begin JCP info -->
+            <img src="/images/hd_jcp-info.gif" alt="JCP Info" height="18" width="150">
+
+            <li><a href="/en/procedures/overview" class="p7PMtrg">About JCP</a>
+                <ul>
+                    <li><a href="/en/procedures/overview">Program Overview</a></li>
+                    <li><a href="/en/procedures/jcp2">JCP Process Document</a></li>
+                    <li><a href="/en/whatsnew/calendar">Calendar</a></li>
+                    <li><a href="/en/participation/members">JCP Members</a></li>
+                    <li><a href="/en/participation/committee">Executive Committee</a></li>
+                    <li><a href="/en/whatsnew/elections">Elections</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/en/participation/overview" class="p7PMtrg">Get Involved</a>
+		<ul>
+                    <li><a href="/en/participation/overview">Overview</a></li>
+                    <li><a href="/en/participation/membership">Becoming a JCP Member</a></li>
+		</ul>
+            </li>
+
+            <li><a href="/en/resources/contents" class="p7PMtrg">Community Resources</a>
+                <ul>
+                    <li><a href="/en/resources/contents">Overview</a></li>
+                    <li><a href="/en/resources/tutorials">Tutorials</a></li>
+                    <li><a href="/en/resources/multimedia">JCP Podcasts</a></li>
+                    <li><a href="/en/resources/guide">Spec Lead Guide</a></li>
+                    <li><a href="/en/resources/tdk">TCK Tool & Info</a></li>
+                    <li><a href="/en/resources/license_reference">License Reference</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/en/press/pmo" class="p7PMtrg">Community News</a>
+                <ul>
+                    <li><a href="/en/press/pmo">News</a></li>
+                    <li><a href="/en/press/news/awards/awards_main">Programs &amp; Awards</a></li>
+                    <li><a href="/en/press/releases">Press Releases</a></li>
+                    <li><a href="/en/press/success">Success Stories</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/en/introduction/faq">FAQ</a></li>
+
+            <li><a href="/en/resources/contacts">Contact Us</a></li>
+
+            <div style="clear: both;"><img src="/images/spacer.gif" alt="" height="25" width="1"></div>
+
+            <!--[if lte IE 6]><style>#p7PMnav a{height:1em;}#p7PMnav li{height:1em;float:left;clear:both;width:100%}</style><![endif]-->
+            <!--[if IE 6]><style>#p7PMnav li{clear:none;}</style><![endif]-->
+            <!--[if IE 7]><style>#p7PMnav a{zoom:100%;}#p7PMnav li{float:left;clear:both;width:100%;}</style><![endif]-->
+        </ul>
+
+        
+
+        <!--begin ad space -->
+        <div class="ads">
+            <a href="http://java.com/java/download/index.jsp?cid=jdp78399" target="_blank"><img style="display: ;" src="/images/ad_banner2.gif" alt="Ad Banner" border="1" height="70" width="150"></a>
+        </div>
+        <!--end ad space -->
+
+<!-- ** Menu End ** //-->
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;<br>
+
+    
+
+                    &nbsp;<br>
+                    <img src="/images/common/trans.gif" alt="" width="1" height="150"><br>
+
+              
+
+
+
+                </td>
+                <!-- ** END: Navigation Column ** //-->
+
+                <!-- ** BEGIN: Gutter Column ** //-->
+		<td width="10" nowrap><img src="/images/common/trans.gif" alt="" width="10" height="1"></td>
+                <!-- ** END: Gutter Column ** //-->
+
+                <!-- ** BEGIN: Content Column ** //-->
+                <td width="100%" valign="top">
+
+    
+<script type="text/javascript">
+
+String.prototype.trim = function() {
+        return this.replace(/^\s+|\s+$/g,"");
+}
+String.prototype.ltrim = function() {
+        return this.replace(/^\s+/,"");
+}
+String.prototype.rtrim = function() {
+        return this.replace(/\s+$/,"");
+}
+
+function validate_search() {
+	if (document.search.id.value == "Search JSRs" || document.search.id.value.trim().length == 0) {
+		alert("Search terms must be entered first");
+		return false;
+	}
+	return true;
+}
+
+function validate_findjsr() {
+	if (document.findjsr.id.value == "Search JSRs" || document.findjsr.id.value.trim().length == 0) {
+		alert("Search terms must be entered first");
+		return false;
+	}
+	return true;
+}
+
+function nullify_if_equal(field, str) {
+	// alert("val=" + field.value);
+	if (field.value == str) {
+		field.value = "";
+	}
+}
+
+</script>
+<!-- ** END: header.jsp ** //-->
+
+
+
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html><head>
+<meta content="text/html; charset=ISO-8859-1" http-equiv="content-type"><title>changelog-1_3</title>
+
+</head>
+<body>
+
+<h3>Change Log: JSR-109 : Web Services for Java EE, Version 1.3</h3>
+
+<h4>Description</h4>
+Maintenance Review for JSR-109 Web Services for Java EE, Version 1.3
+
+<h4>Maintenance Lead</h4>
+Jitendra Kotamraju, Sun Microsystems, Inc.
+
+<h4>Feedback</h4>
+Comments should be sent to jsr109-spec-comments@sun.com
+
+<h4>Rationale for proposed changes</h4>
+The main goals of this maintenance release:
+<ul>
+<li> Align with the latest JAX-WS 2.2 specification. JAX-WS 2.2
+provides a complete web services addressing support.</li>
+<li> Exposing Singleton bean component(specified in EJB 3.1) as JAX-WS
+Web Service. Also support EJB packaging in WAR files</li>
+<li> Align with the Java EE 6 and its profiles. Java EE 6 makes
+JAX-RPC as Proposed Optional</li>
+<li> Address bugs/inconsistencies in the previous version of
+the specification.</li>
+</ul>
+From the specification perspective, these changes are minimal and
+targeted solely to fulfill the above stated goals.
+
+<h4>Changes</h4>
+The changes to the specification are listed below. Changes are listed
+in the order of the sections in the specification.
+
+
+<h4>2.1.2 Service Development Goals</h4>
+<h5>Modified as follows to reflect Singleton EJB requirements:</h5>
+Support mapping and dispatching SOAP 1.1 or 1.2 requests to methods on
+Java EE Stateless or Singleton Session Beans.
+
+<h4>2.1.3 Service Deployment Goals</h4>
+<h5>Modified as follows for Java EE version:</h5>
+<ul>
+<li>Web service deployment is supported on Java EE environments.</li>
+</ul>
+
+Support mapping and dispatching SOAP 1.1 or 1.2 requests to methods on
+Java EE Stateless or Singleton Session Beans.
+
+
+<h4>3.2 Web Service</h4>
+<h5>Modified as follows to reflect Singleton EJB requirements:</h5>
+A service implementation implements the methods of an interface that is
+describable by WSDL. The methods are implemented using a
+Stateless/Singleton Session EJB or JAX-RPC/JAX-WS web component.
+
+
+<h4>3.3.1 Web Service Components</h4>
+<h5>Modified as follows to reflect Singleton EJB requirements:</h5>
+The second uses a constrained implementation of a stateless session EJB or
+Singleton(only for JAX-WS services) in the EJB container.
+
+
+<h4>3.6.2 JAX-WS 2.2</h4>
+<h5>Add the following:</h5>
+JAX-WS 2.2 adds a complete Web Services addressing support as specified in Web
+Services Addressing 1.0 - Core, Web Services Addressing 1.0 - Soap
+Binding, and Web Services Addressing 1.0 - Metadata.
+
+
+<h4>3.7 Interoperability</h4>
+<h5>Update the JAX-WS version:</h5>
+<ul>
+<li>Java API for XML-based Web Services (JAX-WS) 2.2</li>
+</ul>
+
+
+
+<h4>3.10 Web Service Server View</h4>
+<h5>Modified as follows to reflect Singleton EJB requirements:</h5>
+The business logic of a Web service is implemented by a service
+provider in the following ways:
+<h5>Add the following:</h5>
+3. A Singleton EJB:The service provider implements the JAX-WS Web
+service business logic by creating a singleton Bean that implements the
+methods of the Service Endpoint Interface as described in the EJB 3.1
+specification.
+
+
+
+<h4>3.11 Java EE profiles</h4>
+The Java EE 6 platform specification introduces "profiles" to target specific
+class of applications. See chapter 9 of Java EE 6 specification for more
+details.
+<p>
+The Java EE 6 platform marks JAX-RPC as a proposed optional technology that
+may be pruned in a future release.  Therefore, requirements in this
+specification related to JAX-RPC should also be considered proposed optional.
+Such requirements may be made optional in a future release of this
+specification. 
+<p>
+This specification gives choices for the vendors that want to support
+only certain containers for JAX-WS web services. A JSR-109 implementation
+must support at least one of the following configurations for JAX-WS web
+services:
+<ol>
+<li>JAX-WS web component in a Servlet container</li>
+<li>Stateless or Singleton Session EJB as JAX-WS web service</li>
+</ol>
+
+<h4>4.2.2 javax.xml.ws.WebServiceRef annotation</h4>
+
+<h5>Add the following:</h5>
+The annotations (for example, @javax.xml.ws.soap.Addressing) annotated
+with meta-annotation javax.xml.ws.spi.WebServiceFeatureAnnotation can be
+used in conjunction with @WebServiceRef. The created reference MUST be
+configured with annotation's web service feature. If a JAX-WS
+implementation encounters an unsupported or unrecognized feature
+annotation, an error must be given. JAX-WS doesn't define any
+standard portable web service feature for Service references. But it
+defines @javax.xml.ws.soap.Addressing, @javax.xml.ws.soap.MTOM,
+@javax.xml.ws.RespectBinding annotations for SEI proxy references.
+
+<h5>Modify the example with the following:</h5>
+The same annotation can also be used to declare a SEI proxy reference, the
+injected SEI proxy reference is configured with MTOM feature:
+<p>
+<pre>
+   @MTOM
+   @WebServiceRef(name="java:comp/env/service/AddressBookService", AddressBookService.class)
+   AddressBookPort port;
+   Address address = port.getAddress("John Doe");
+</pre>
+
+<h5>Modify the the following for Java EE version:</h5>
+If the name attribute is not specified in this annotation then default
+naming rules apply as specified in the Java EE specification.
+
+<h5>Add the following:</h5>
+By using a web service feature annotation explicitly along with a
+@WebServiceRef, an application overrides WSDL's indication of that
+feature for the reference. Also, &lt;enable-mtom&gt;,
+&lt;addressing&gt;, and &lt;respect-binding&gt;
+deployment descriptor
+elements can be used to override the @MTOM, @Addressing, and
+@RespectBinding features respectively for a reference.
+
+<h5>Add the following:</h5>
+@WebServiceRef instances are not guaranteed to be thread safe. If the
+instances are accessed by multiple threads, usual synchronization techniques
+can be used to support multiple threads.
+
+
+
+<h4>4.2.4.1 Stub/proxy access</h4>
+<h5>Add the following JAX-WS methods:</h5>
+public &lt;T&gt; T getPort(Class&lt;T&gt; serviceEndpointInterface, WebServiceFeature... features);
+<p>public &lt;T&gt; T getPort(EndpointReference endpointReference, Class&lt;T&gt; serviceEndpointInterface, WebServiceFeature... features);
+<p>public &lt;T&gt; T getPort(QName portName, Class&lt;T&gt; serviceEndpointInterface, WebServiceFeature... features);
+
+
+<h4>4.2.4.5 Service method use with partial WSDL</h4>
+<h5>Add the following to JAX-WS methods:</h5>
+&lt;T&gt; Dispatch&lt;T&gt; createDispatch(QName portName, Class&lt;T&gt; type, Service.Mode mode, WebServiceFeature... features);
+<p>Dispatch&lt;Object&gt; createDispatch(QName portName, JAXBContext context, Service.Mode mode, WebServiceFeature... features);
+<p> &lt;T&gt; Dispatch&lt;T&gt; createDispatch(EndpointReference endpointReference, Class&lt;T&gt; type, Service.Mode mode, WebServiceFeature... features);
+<p> Dispatch&lt;Object&gt; createDispatch(EndpointReference endpointReference, JAXBContext context, Service.Mode mode, WebServiceFeature... features);
+
+
+<h4>4.2.4.6 Service method use with no WSDL</h4>
+<h5>Add the following JAX-WS methods:</h5>
+&lt;T&gt; Dispatch&lt;T&gt; createDispatch(QName portName, Class&lt;T&gt; type, Service.Mode mode, WebServiceFeature... features)
+<p>Dispatch&lt;Object&gt; createDispatch(QName portName, JAXBContext context, Service.Mode mode, WebServiceFeature... features)
+<p>&lt;T&gt; Dispatch&lt;T&gt; createDispatch(EndpointReference endpointReference, Class&lt;T&gt; type, Service.Mode mode, WebServiceFeature... features)
+<p>Dispatch&lt;Object&gt; createDispatch(EndpointReference endpointReference, JAXBContext context, Service.Mode mode, WebServiceFeature... features)
+
+
+<h4>4.2.4.7 Service Interface method behavior</h4>
+
+<h5>Add the following to Table 3:</h5>
+<table border="true">
+    <tr>
+        <td>Method</td>
+        <td>Full WSDL</td>
+        <td>Partial WSDL</td>
+        <td>No WSDL</td>
+    </tr>
+    <tr>
+        <td>Dispatch&lt;java.lang.Object&gt; createDispatch(EndpointReference endpointReference,<br> java.lang.Class&lt;T&gt; type, Service.Mode mode, WebServiceFeature... features)</td>
+        <td>Normal</td><td>Normal</td><td>Normal</td>
+    </tr>
+    <tr>
+        <td>&lt;T&gt; Dispatch&lt;T&gt; createDispatch(EndpointReference endpointReference,<br> javax.xml.bind.JAXBContext context, Service.Mode mode, <br>WebServiceFeature... features)</td>
+        <td>Normal</td><td>Normal</td><td>Normal</td>
+    </tr>
+    <tr>
+        <td>&lt;T&gt; Dispatch&lt;T&gt;createDispatch(javax.xml.namespace.QName portName,<br> java.lang.Class&lt;T&gt; type, Service.Mode mode)</td>
+        <td>Normal</td><td>Normal</td><td>Normal</td>
+    </tr>
+    <tr>
+        <td>&lt;T&gt; Dispatch&lt;T&gt;createDispatch(javax.xml.namespace.QName portName,<br> javax.xml.bind.JAXBContext context, Service.Mode mode,<br> WebServiceFeature... features)</td>
+        <td>Normal</td><td>Normal</td><td>Normal</td>
+    </tr>
+    <tr>
+        <td>&lt;T&gt;T getPort(java.lang.Class&lt;T&gt; serviceEndpointInterface,<br> WebServiceFeature... features)</td>
+        <td>Normal</td><td>Normal</td><td>Unspecified</td>
+    </tr>
+    <tr>
+        <td>&lt;T&gt;T getPort(EndpointReference endpointReference,<br> java.lang.Class&lt;T&gt; serviceEndpointInterface, WebServiceFeature... features)</td>
+        <td>Normal</td><td>Unspecified</td><td>Unspecified</td>
+    </tr>
+    <tr>
+        <td>&lt;T&gt; T getPort(javax.xml.namespace.QName portName,<br> java.lang.Class&lt;T&gt; serviceEndpointInterface, WebServiceFeature... features)</td>
+        <td>Normal</td><td>Unspecified</td><td>Unspecified</td>
+    </tr>
+</table>
+
+
+<h4>4.2.10 MTOM/XOP Support</h4>
+<h5>Add references to new JAX-WS sections that talk about @MTOM, MTOMFeature:</h5>
+Refer to 6.5.2, 7.14.2, and 10.4.1.1 sections of JAX-WS 2.2 specification.<br>
+<h5>Rewrite the last paragraph as follows:</h5>
+SOAP MTOM/XOP mechanism on the client can be enabled or disabled by any
+one of the following ways:
+<ul>
+    <li>Programmatically passing MTOMFeature for a Service method that
+creates a SEI proxy or a Dispatch instance.</li>
+    <li>Using &lt;port-component-ref&gt;/&lt;enable-mtom&gt;
+deployment descriptor element for a corresponding SEI proxy instance</li>
+    <li>Using @MTOM with a @WebServiceRef that creates a SEI proxy instance</li>
+</ul>
+
+<h5>Add the following:</h5>
+Deployment descriptor mtom elements override the @MTOM annotation for a
+corresponding SEI instance.
+<p>
+Table : Relationship between deployment descriptor elements and @MTOM
+<table border="true">
+    <tr>
+        <td>Deployment Descriptor elements</td>
+        <td>@MTOM</td>
+    </tr>
+    <tr>
+        <td>&lt;service-ref&gt;/&lt;port-component-ref&gt;/&lt;enable-mtom&gt;</td>
+        <td>@MTOM.enabled</td>
+    </tr>
+    <tr>
+        <td>&lt;service-ref&gt;/&lt;port-component-ref&gt;/&lt;mtom-threshold&gt;</td>
+        <td>@MTOM.threshold</td>
+    </tr>
+</table>
+
+
+
+
+<h4>4.2.13 Web Services Addressing support</h4>
+
+JAX-WS clients are required to support Web Services Addressing 1.0 - Core, Web
+Services Addressing 1.0 - Soap Binding, and Web Services Addressing 1.0
+- Metadata.
+<p>
+Web Service Addressing requirements for a client can be specified by
+any one of the following ways:
+<ul>
+    <li>Using &lt;port-component-ref&gt;/&lt;addresing&gt;
+deployment descriptor element for the corresponding client</li>
+    <li>Using @Addressing annotation with the @WebServiceRef of the client</li>
+    <li>If the service uses WSDL description, the addressing requirements can
+be got from the WSDL as per the WS-Addressing 1.0 - Metadata
+specification.</li>
+</ul>
+
+The above order also defines a precedence order for the addressing requirements.
+For example, the addressing requirements specified by the @Addressing are
+overridden by the same from a corresponding
+&lt;port-component-ref&gt;/&lt;addressing&gt;
+deployment descriptor element.
+<p>
+Table : Relationship between deployment descriptor elements and @Addressing
+<table border="true">
+    <tr>
+        <td>Deployment Descriptor elements</td>
+        <td>@Addressing</td>
+    </tr>
+    <tr>
+        <td>&lt;service-ref&gt;/&lt;port-component-ref&gt;/&lt;addressing&gt;/&lt;enabled></td>
+        <td>@Addressing.enabled</td>
+    </tr>
+    <tr>
+        <td>&lt;service-ref&gt;/&lt;port-component-ref&gt;/&lt;addressing&gt;/&lt;required></td>
+        <td>@Addressing.required</td>
+    </tr>
+    <tr>
+        <td>&lt;service-ref&gt;/&lt;port-component-ref&gt;/&lt;addressing&gt;/&lt;responses&gt;</td>
+        <td>@Addressing.responses</td>
+    </tr>
+</table>
+
+<p>
+JAX-WS specifies an abstract javax.xml.ws.EndpointReference that
+represents a remote reference to a web service endpoint.
+javax.xml.ws.addressing.W3CEndpointReference class is a concrete
+EndpointReference implementation for WS-Addressing 1.0 - Core
+addressing version. Client applications can use an EndpointReference
+to get a port for an SEI using the getPort methods on
+javax.xml.ws.Service class. Also these EndpointReference objects can
+appear as SEI method parameters or return type and can be passed across
+the applications. 
+
+<p>
+A port's EndpointReference can be got using its
+javax.xml.ws.BindingProvider's getEndpointReference method.
+Occasionally, it is necessary for one application component to create
+an EndpointReference for another web service endpoint. The
+W3CEndpointReferenceBuilder class provides a standard API for creating
+W3CEndpointReference instances for web service endpoints. When creating
+a W3CEndpointReference for an endpoint published by the same Java EE
+application, a JAX-WS runtime must fill the address(if not set by
+the application) of the endpoint using its service and port names.
+
+
+
+<h4>4.2.14 RespectBinding Support</h4>
+
+The javax.xml.ws.RespectBinding annotation or its corresponding
+javax.xml.ws.RespectBindingFeature web service feature is used to
+control whether a JAX-WS implementation must respect/honor the contents
+of the wsdl:binding in the WSDL that is associated with the service.
+See 6.5.3 and 7.14.3 sections in JAX-WS 2.2 specification.
+<p>
+RespectBinding web service feature on the client can be enabled or
+disabled by any one of the following ways:
+<ul>
+    <li>Programmatically passing RespectBindingFeature for a Service method
+that creates a SEI proxy or a Dispatch instance.</li>
+    <li>Using &lt;port-component-ref&gt;/&lt;respect-binding&gt;
+deployment descriptor element for a corresponding SEI proxy instance.</li>
+    <li>Using @RespectBinding with a @WebServiceRef that creates a SEI proxy
+instance.</li>
+</ul>
+
+Deployment descriptor &lt;respect-binding&gt; element overrides
+the @RespectBinding annotation for a corresponding SEI instance.
+<p>
+Table : Relationship between deployment descriptor elements and @RespectBinding
+<table border="true">
+    <tr>
+        <td>Deployment Descriptor elements</td>
+        <td>@RespectBinding</td>        
+    </tr>
+    <tr>
+        <td>&lt;service-ref&gt;/&lt;port-component-ref&gt;/&lt;respect-binding&gt;/&lt;enabled></td>
+        <td>@RespectBinding.enabled</td>
+    </tr>
+</table>
+
+
+
+<h4>5.3.2 Service Implementation Bean</h4>
+
+<h5>Rewrite the first paragraph as follows:</h5>
+A service implementation bean for a web service can be implemented as
+follows:
+<ul>
+    <li>A JAX-RPC or JAX-WS service endpoint running in a web container</li>
+    <li>Stateless Session EJB as a JAX-RPC or JAX-WS web service </li>
+    <li>Singleton Session EJB as a JAX-WS web service</li>
+</ul>
+
+The programming models are fully defined in sections 5.3.2.3 and
+5.3.2.4.
+
+<h5>Rewrite the second paragraph as follows:</h5>
+A container may use any bean instance to service a request. In a container
+that also includes support for JSR-299, an implementation must support use of
+JSR-299 beans as JAX-WS web service classes in an application. JAX-WS
+annotations may be directly applied to JSR-299 beans and the JAX-WS
+implementation must use JSR-299 APIs to obtain bean instances.
+
+
+
+<h4>5.3.2.1 javax.jws.WebService annotation</h4>
+
+<h5>Modified as follows to reflect Singleton EJB requirements:</h5>
+For Stateless or Singleton Session EJBs using this annotation, the name
+attribute of the javax.ejb.Stateless or javax.ejb.Singleton annotation
+on the Service Implementation Bean class must be used as the
+&lt;ejb-link&gt; element in the deployment descriptor to map
+the Port
+component to the actual EJB. If name attribute in javax.ejb.Stateless
+or javax.ejb.Singleton annotation is not specified, then the default
+value is used as defined in the section 4.4.1 of EJB 3.1.
+
+<h5>Modified text:</h5>
+javax.jws.WebService
+annotated Service Implementation Beans can be run either as a Stateless
+or Singleton Session EJB in an EJB container or as a JAX-WS service
+endpoint in a web container. The two programming models are fully
+defined in sections 5.3.2.3 and 5.3.2.4.
+
+
+
+
+<h4>5.3.2.2 javax.xml.ws.Provider interface and javax.xml.ws.WebServiceProvider
+annotation</h4>
+
+<h5>Modified as follows to reflect Singleton EJB requirements:</h5>
+For Stateless or Singleton Session EJBs using this annotation, the name
+attribute of the javax.ejb.Stateless or javax.ejb.Singleton annotation
+on the Service Implementation Bean class must be used as the
+&lt;ejb-link&gt; element in the deployment descriptor to map
+the Port
+component to the actual EJB. If name attribute in javax.ejb.Stateless
+or javax.ejb.Singleton annotation is not specified, then the default
+value is used as defined in the section 4.4.1 of EJB 3.1.
+
+<h5>Modified as follows to reflect Singleton EJB requirements:</h5>
+javax.xml.ws.WebServiceProvider
+annotated Service Implementation Beans can be run either as a Stateless
+or Singleton Session EJB in an EJB container or as a JAX-WS service
+endpoint in a web container. The two programming models are fully
+defined in sections 5.3.2.3 and 5.3.2.4.
+
+
+
+<h4>5.3.2.3 EJB container programming model</h4>
+
+<h5>Add the following:</h5>
+A Singleton Session Bean, as defined by the EJB 3.1 specification, can be
+used to implement a JAX-WS Web service to be deployed in the EJB
+container.
+
+<h5>Add the following:</h5>
+A Singleton Session Bean is intended to be shared and supports concurrent
+access. The access rules are specified in the 4.8.5 section of EJB 3.1.
+
+<h5>Modified as follows to reflect Singleton EJB requirements:</h5>
+The requirements for creating a Service Implementation Bean as a
+Stateless or Singleton Session EJB are repeated in part here.
+
+<h5>Modified as follows to reflect Singleton EJB requirements:</h5>
+* A Service Implementation Bean of a Stateless EJB must be a stateless
+object. The Service Implementation Bean must not save client specific
+state across method calls either within the bean instance's data
+members or external to the instance.
+
+<h5>Add the following:</h5>
+* A Service Implementation Bean of Singleton EJB can have a shared state.
+The singleton session bean instance lives for the duration of the
+application in which it is created. It maintains its state between
+client invocations.
+
+
+
+<h4>5.3.2.3.2 Allowed access to container services</h4>
+<h5>Modified as follows to reflect Singleton EJB requirements:</h5>
+A stateless or singleton session bean that implements a web service
+endpoint using the JAX-WS APIs should use the
+javax.xml.ws.WebServiceContext,
+
+<h5>Modified as follows to reflect Singleton EJB requirements:</h5>
+The WebServiceContext interface allows the stateless or singleton session
+bean instance to get access to the javax.xml.ws.handler.MessageContext.
+Usage of a WebServiceContext must meet the requirements defined by the
+JAX-WS specification section 5.3.
+
+
+
+<h4>5.3.2.3.3 javax.ejb.Singleton annotation</h4>
+EJB 3.1 introduces Singleton session bean component that provides an easy
+access to shared state. A Singleton session bean is instantiated once
+per application. A Singleton session bean must be annotated with the
+javax.ejb.Singleton annotation or denoted in the deployment descriptor
+as a singleton session bean.
+
+<p>
+The full requirements for Singleton Session Bean are defined in the
+section 4.8 of EJB 3.1 specification.
+
+
+<h4>5.3.7 MTOM/XOP support</h4>
+<h5>Add references to new JAX-WS sections that talk about @MTOM,
+MTOMFeature:</h5>
+Refer to 6.5.2, 7.14.2, and 10.4.1.1 sections of JAX-WS specification.
+
+<h5>Rewrite the last two paragraphs as follows:</h5>
+SOAP MTOM/XOP mechanism on the service can be enabled or disabled by
+any one of the following ways:
+<ul>
+    <li>Using &lt;port-component&gt;/&lt;enable-mtom&gt;
+deployment descriptor element for a corresponding service</li>
+    <li>Using @MTOM with a @WebService that creates a service</li>
+</ul>
+
+Deployment
+descriptor mtom elements override the @MTOM annotation for a
+corresponding service. These elements also override if MTOM enabled
+protocol binding is used. In other words, if MTOM enabled protocol
+binding is used along with &lt;enable-mtom&gt; set to false,
+then this
+feature is disabled. This deployment descriptor must be specified in
+order to be applied to the protocol binding to enable or disable MTOM.
+Note that JAX-WS recommends the use of MTOM feature instead of mtom
+enabled bindings:SOAPBinding.SOAP11HTTP_MTOM_BINDING,
+SOAPBinding.SOAP12HTTP_MTOM_BINDING.
+<p>
+Table : Relationship between deployment descriptor elements and @MTOM
+<table border="true">
+    <tr>
+        <td>Deployment Descriptor elements</td>
+        <td>@MTOM</td>
+    </tr>
+    <tr>
+        <td>&lt;service&gt;/&lt;port-component&gt;/&lt;enable-mtom&gt;</td>
+        <td>@MTOM.enabled</td>
+    </tr>
+    <tr>
+        <td>&lt;service&gt;/&lt;port-component&gt;/&lt;mtom-threshold&gt;</td>
+        <td>@MTOM.threshold</td>
+    </tr>
+</table>
+
+
+
+<h4>5.3.8 Web Services Addressing support</h4>
+JAX-WS services are required to support Web Services Addressing 1.0 - Core,
+Web Services Addressing 1.0 - Soap Binding, and Web Services Addressing
+1.0 - Metadata.
+<p>
+Web Service Addressing requirements for a service can be specified by
+any one of the following ways:
+<ul>
+    <li>Using &lt;port-component&gt;/&lt;addressing&gt;
+deployment descriptor element for the corresponding service</li>
+    <li>Using @Addressing annotation with the service implementation class</li>
+    <li>If the service uses WSDL description, the addressing requirements can
+be specified in the WSDL as per the WS-Addressing 1.0 - Metadata
+specification.</li>
+</ul>
+
+<p>
+The above order also defines a precedence order
+for the addressing requirements. For example, the addressing
+requirements specified by the @Addressing are overridden by the same
+from a corresponding
+&lt;port-component&gt;/&lt;addressing&gt;
+deployment descriptor element.
+
+<p>
+Table : Relationship between deployment descriptor elements and@Addressing
+<table border="true">
+    <tr>
+        <td>Deployment Descriptor elements</td>
+        <td>@Addressing</td>
+    </tr>
+    <tr>
+        <td>&lt;service&gt;/&lt;port-component&gt;/&lt;addressing&gt;/&lt;enabled></td>
+        <td>@Addressing.enabled</td>
+    </tr>
+    <tr>
+        <td>&lt;service&gt;/&lt;port-component&gt;/&lt;addressing&gt;/&lt;required></td>
+        <td>@Addressing.required</td>
+    </tr>
+    <tr>
+        <td>&lt;service&gt;/&lt;port-component&gt;/&lt;addressing&gt;/&lt;responses&gt;</td>
+        <td>@Addressing.responses</td>
+    </tr>
+</table>
+
+<p>
+JAX-WS specifies an abstract javax.xml.ws.EndpointReference that
+represents a remote reference to a web service endpoint.
+javax.xml.ws.addressing.W3CEndpointReference class is a concrete
+EndpointReference implementation for WS-Addressing 1.0 - Core
+addressing version. Also these EndpointReference objects can
+appear as SEI method parameters or return type and can be passed across
+the applications. 
+
+<p>
+A service's EndpointReference can be got using WebServiceContext's
+getEndpointReference method during service invocation.
+Occasionally, it is necessary for one application component to create
+an EndpointReference for another web service endpoint. The
+W3CEndpointReferenceBuilder class provides a standard API for creating
+W3CEndpointReference instances for web service endpoints. When creating
+a W3CEndpointReference for an endpoint published by the same Java EE
+application, a JAX-WS runtime must fill the address(if not set by
+the application) of the endpoint using its service and port names.
+
+
+
+<h4>5.3.9 RespectBinding support</h4>
+
+The javax.xml.ws.RespectBinding annotation or its corresponding
+javax.xml.ws.RespectBindingFeature web service feature is used to
+control whether a JAX-WS implementation must respect/honor the contents
+of the wsdl:binding in the WSDL that is associated with the service.
+See 6.5.3 and 7.14.3 sections in JAX-WS 2.2 specification.
+<p>
+RespectBinding web service feature on a service can be enabled or
+disabled by any one of the following ways:
+<ul>
+    <li>Using &lt;port-component&gt;/&lt;respect-binding&gt;
+deployment descriptor element for the corresponding service.</li>
+    <li>Using @RespectBinding annotation with the service implementation
+class.</li>
+</ul>
+
+Deployment descriptor &lt;respect-binding&gt; element overrides
+the @RespectBinding annotation for the corresponding service.
+<p>
+Table : Relationship between deployment descriptor elements and @RespectBinding
+<table border="true">
+    <tr>
+        <td>Deployment Descriptor elements</td>
+        <td>@RespectBinding</td>
+    </tr>
+    <tr>
+        <td>&lt;service&gt;/&lt;port-component&gt;/&lt;respect-binding&gt;/&lt;enabled></td>
+        <td>@RespectBinding.enabled</td>
+    </tr>
+</table>
+<br>
+
+
+
+<h4>5.4 Packaging</h4>
+<h5>Modified as follows to reflect Singleton EJB requirements:</h5>
+Port components may be packaged in a WAR file, or in a EJB-JAR file. Port
+components packaged in a WAR file must use a JAX-RPC/JAX-WS Service
+Endpoint or a Stateless/Singleton session bean for the Service
+Implementation Bean. Port components packaged in a EJB-JAR file must
+use a Stateless or Singleton Session Bean for the Service Implementation Bean.
+
+
+
+<h4>5.4.2 EJB Module Packaging</h4>
+<h5>Modified as follows to reflect EJB packaging requirements:</h5>
+Stateless or Singleton Session EJB Service Implementation Beans can be
+packaged in an EJB-JAR or in a WAR that contains the class files and WSDL
+files. The packaging rules follow those defined by the EJB
+specification. In addition, the Web services deployment
+descriptor location within the EJB-JAR file is META-INF/webservices.xml and
+the wsdl directory is located at META-INF/wsdl.
+See 5.4.3 section for packaging Stateless or Singleton session beans
+in a WAR file.
+
+
+
+<h4>5.4.3 Web App Module Packaging</h4>
+<h5>Modified as follows to reflect EJB packaging requirements:</h5>
+JAX-RPC/JAX-WS Service Endpoints or Statesless/Singleton EJB service
+implementation beans can be packaged in a WAR file that contains
+the class files and WSDL files. The packaging rules for the WAR file are
+those defined by the Servlet specification. The packaging rules for Statless
+or Singleton EJB within a WAR are defined by the EJB specification.
+In addition, a Web services deployment descriptor is located in a WAR at
+WEB-INF/webservices.xml and the wsdl directory is located at WEB-INF/wsdl.
+
+
+
+<h4>6.2.2 Programming Model</h4>
+<h5>Add the following:</h5>
+In a container that also includes support for JSR-299, an implementation
+must support use of JSR-299 beans as JAX-WS handler classes in an application.
+The JAX-WS implementation must use JSR-299 APIs to obtain handler instances.
+
+
+
+<h4>7.1.2 Developer responsibilities</h4>
+<h5>Modified as follows to reflect Singleton EJB requirements:</h5>
+Service
+Implementations using a stateless or singleton session bean may use EJB
+annotations with no deployment descriptor file. If the EJB annotations
+are not specified then the stateless or singleton session bean must be
+defined in the ejb-jar.xml deployment descriptor file using the session
+element.
+
+<h5>Modified as follows to reflect Singleton EJB requirements:</h5>
+For
+a stateless or singleton session bean implementation, the ejb-link
+element associates the port-component with a session element in the
+ejb-jar.xml.
+
+<h5>Add the following:</h5>
+* Addressing support. The developer may specify an addressing support for
+the port-component by using addressing element when JAX-WS based
+runtime is used.
+
+<h5>Add the following:</h5>
+* RespectBinding support. The developer may specify a respect binding
+support for the port-component by using respect-binding element when
+JAX-WS based runtime is used.
+
+
+
+<h4>7.1.5 Web Services Deployment Descriptor XML Schema</h4>
+
+<h5>Rewrite as follows:</h5>
+The XML Schema for the Web service deployment descriptor is available at
+http://java.sun.com/xml/ns/javaee/javaee_web_services_1_3.xsd
+
+<h5>Remove the inline schema as it is replaced by a link:</h5>
+
+
+
+<h4>7.2.2 Developer responsibilities</h4>
+<h5>Add the following:</h5>
+* Addressing support. The developer may specify an addressing support for
+the port-component-ref by using addressing element when JAX-WS based
+runtime is used.
+
+<h5>Add the following:</h5>
+* RespectBinding support. The developer may specify a respect binding
+support for the port-component-ref by using respect-binding element when
+JAX-WS based runtime is used.
+
+
+
+<h4>7.2.5 Web Services Client Service Reference XML Schema</h4>
+<h5>Rewrite as follows:</h5>
+This section defines the XML Schema for the service-ref at
+http://java.sun.com/xml/ns/javaee/javaee_web_services_client_1_3.xsd.
+This schema is imported into the common Java EE 6 schema and is used by
+the application client, web, and EJB module deployment descriptor
+schemas to declare service-refs. See the Java EE 6, Servlet 3.0,
+and EJB 3.1 specifications for more details on specifying a service-ref
+in the deployment descriptors.
+<h5>Remove the inline schema as it is replaced by a link:</h5>
+
+
+
+
+<h4>8.1 Overview</h4>
+<h5>Modified as follows to reflect Singleton EJB requirements:</h5>
+* Stateless or Singleton session bean Web services are packaged
+within an EJB-JAR or WAR file.
+
+<h5>Modified as follows to reflect Singleton EJB requirements:</h5>
+If the implementation is a stateless or singleton session bean, the
+deployment tool has a variety of options available to it. In general,
+the deployment tool generates a servlet to handle parsing the incoming
+SOAP request, the servlet obtains a reference to an instance of an
+appropriate EJBObject and dispatches the request to the stateless or
+singleton session EJB.
+
+
+
+<h4>8.1.1 JAX-WS HTTP SPI for deployment</h4>
+JAX-WS 2.2 introduces HTTP SPI that allows a deployment to use any
+available JAX-WS web services runtime for HTTP transport. This allows
+109 implementations to use the JAX-WS 2.2 runtime in a Java SE platform
+when it is available. For more details on the HTTP SPI, see the section 6.6 of
+JAX-WS specification.
+
+
+
+<h4>8.2.2 Generate Web Service Implementation classes</h4>
+
+<h5>Modified as follows to reflect Singleton EJB requirements:</h5>
+Generation
+of any run-time classes the container requires to support a JAX-RPC or
+JAX-WS Service Endpoint or Stateless Session Bean or Singleton Bean
+Service Implementation is provider specific.
+
+<h5>Add the following:</h5>
+A Singleton Bean Service Implementation must match the behavior defined
+by the javax.ejb.Singleton annotation or &lt;session&gt;
+element and the &lt;assembly-descriptor&gt; in the ejb-jar.xml deployment
+descriptor.
+
+
+<h4>8.2.10 Deployment failure conditions</h4>
+<h5>Modified as follows to reflect Singleton EJB requirements:</h5>
+* Stateless or Singleton session bean Web services are not packaged
+within an EJB-JAR or WAR file.
+
+<h4>9.3.1 Authentication</h4>
+<h5>Add the following clarification to BASIC-AUTH :</h5>
+Also, these containers must provide a way to configure each instance of the generated static stub or dynamic proxy implementation with credential information.
+
+
+<h4>Appendix C. References</h4>
+
+<h5>Add the following:</h5>
+<ul>
+<li>Java EE 6 Specification. 2009. http://java.sun.com/javaee</li>
+<li>EJB 3.1 Specification. 2009. http://java.sun.com/javaee</li>
+<li>JAX-WS 2.2 Specification. 2009. http://jcp.org/en/jsr/detail?id=224</li>
+<li>JAXB 2.2 Specification. 2009. http://jcp.org/en/jsr/detail?id=222</li>
+<li>JSR 299. http://jcp.org/en/jsr/detail?id=299</li>
+<li>Web Services Addressing 1.0 - Core. W3C Recommendation. 2006.
+http://www.w3.org/TR/2006/REC-ws-addr-core-20060509/</li>
+<li>Web Services Addressing 1.0 - Soap Binding. W3C Recommendation. 2006.
+http://www.w3.org/TR/2006/REC-ws-addr-soap-20060509/</li>
+<li>Web Services Addressing 1.0 - Metadata. W3C Recommendation. 2007.
+http://www.w3.org/TR/2007/REC-ws-addr-metadata-20070904</li>
+</ul>
+
+
+
+<h4>Accepted Changes</h4>
+None
+
+
+<h4>Deferred Changes</h4>
+None
+
+
+</body></html>
+
+
+
+<!-- ** BEGIN: footer.jsp ** //-->
+
+
+
+
+
+
+
+
+</td>
+</tr>
+</table>
+
+<!-- ** END: Content Table ** //-->
+
+<!-- ** BEGIN: Footer Table ** //-->
+
+<div id="footer" style="clear: both;">
+    <div class="footleft">
+        <a href="/en/resources/contacts">Contact Us</a>
+    </div>
+	
+    <div class="botbar"><img src="/images/spacer.gif" alt="" height="23" width="1"></div>
+
+    <div class="footleft2">
+         &copy; 2019, Oracle Corporation and/or its affiliates. 
+        <a href="/en/home/terms">Terms of Use</a>. <a href="http://www.oracle.com/us/legal/privacy/index.html">Privacy Policy</a>. <a href="http://www.oracle.com/us/legal/third-party-trademarks/third-party-trademarks-078568.html">Trademarks</a>
+    </div>
+
+    <div class="footright">
+        <img src="/images/common/logo_oracle_footer.gif" alt="Oracle Corporation" height="22" width="91">
+    </div>
+
+    <div style="clear: both;"><img src="/images/spacer.gif" alt="" height="30" width="1"></div>
+</div>
+
+<!-- ** END: Footer Table ** //-->
+
+
+
+<!-- ** Menu Start ** //-->
+
+
+
+</body>
+</html>
+<!-- ** END: footer.jsp ** //-->
+

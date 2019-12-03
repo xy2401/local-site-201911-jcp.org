@@ -1,0 +1,717 @@
+
+<!-- ** BEGIN: header.jsp ** //-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3c.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+<head>
+    
+
+   
+    <link href="/includes/css/menu.css" rel="stylesheet" type="text/css"></link>
+    <link href="/includes/css/style.css" rel="stylesheet" type="text/css"></link>
+    <!--[if lt IE 6]><link href="/includes/css/style5.css" rel="stylesheet" type="text/css" ></link><![endif]-->
+    <!--[if gte IE 5]><link href="/includes/css/style6.css" rel="stylesheet" type="text/css" ></link><![endif]-->
+    <link href="/includes/css/tabs.css"  rel="stylesheet" type="text/css"></link>
+
+    <script type="text/javascript" src="/includes/scripts/tabs.js"></script>
+    <script type="text/javascript" src="/includes/scripts/menu.js"></script>
+   
+
+    
+
+    
+        <title>The Java Community Process(SM) Program - communityprocess - newsletter</title>
+    
+
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+
+
+<body onload="P7_initPM(0,1,0,0,-1)">
+
+    <a name="top"></a>
+
+    <div id="header">
+	<div id="logo">
+		<a href="/en/home/index"><img src="/images/spacer.gif" alt="Java Community Process" height="81" width="151"></a>
+	</div>
+	<div id="tools">
+		<div class="search">
+			<form name="search" action="/en/jsr/summary" method="get" onsubmit="return validate_search()">
+				<input name="id" value="Search JSRs" size="16" class="form" onfocus="nullify_if_equal(this, 'Search JSRs')" type="text">
+				<a href="javascript:document.search.submit()" onclick="return validate_search()"><img src="/images/button_go.gif" width="21" height="16" border="0" alt="Submit this Search" name="sub_search"></a>
+			</form>
+		</div>
+		<div class="tools">
+			<a href="/en/press/pressroom">Press Room</a> &nbsp;|&nbsp;
+			<a href="http://java.com/java/download/index.jsp?cid=jdp78399">Get Java Here</a> &nbsp;|&nbsp;
+			<!-- <a href="javascript:void(0)">Print Format</a> &nbsp;|&nbsp;&nbsp; -->
+		</div>
+
+	</div>
+	<div style="clear: right;"></div>
+
+        
+
+	<div class="topbar"><img src="/images/spacer.gif" alt="" height="3" width="154"></div>
+	<div id="update"> </div>
+    </div>
+
+
+    
+
+        <!-- ** BEGIN: Content Table ** //-->
+
+        <table width="100%" border="0" cellpadding="0" cellspacing="0">
+
+            <tr>
+
+                <!-- ** BEGIN: Navigation Column ** //-->
+                <td width="150" id="leftcontent" valign="top">
+                    <!-- Navigation Placeholder //-->
+
+                    
+
+                    <div class="bar"><img src="/images/hr_dots1.gif" alt="" height="3" width="150"></div>
+
+        <!-- begin find JSRs form -->
+        <!-- IMPORTANT! do not convert this form to Struts < html : form > tag.  javascript change of form.action property fails. -->
+        <img src="/images/hd_find-jsrs.gif" alt="Find JSRs" height="18" width="150">
+        <form name="findjsr" action="/en/jsr/summary" method="get" class="pt5" onsubmit="return validate_findjsr()">
+            <input name="id" size="18" class="form" value="Search JSRs" onfocus="nullify_if_equal(this, 'Search JSRs')" type="text">
+	    <a href="javascript:document.findjsr.submit()" onclick="return validate_findjsr()"><img src="/images/button_go.gif" width="21" height="16" border="0" alt="Submit this Search" name="sub_search"></a>
+        </form><br><br>
+
+        <!-- ** Menu Start ** //-->
+
+        <ul id="p7PMnav">
+            <li><a href="/en/jsr/platform">JSRs by Platform</a></li>
+            <li><a href="/en/jsr/tech">JSRs by Technology</a></li>
+            <li><a href="/en/jsr/stage">JSRs by Stage</a></li>
+            <li><a href="/en/jsr/ec">JSRs by Committee</a></li>
+            <li><a href="/en/jsr/all">List of All JSRs</a></li>
+
+            <!--end find JSRs form -->
+            <div style="clear: both;"><img src="/images/spacer.gif" alt="" height="25" width="1"></div>
+
+            <!--begin my JCP -->
+            <img src="/images/hd_my-jcp.gif" alt="My JCP" height="18" width="150">
+            
+
+          <form name="login" method="get" action="/en/user/login" >
+            <input name="Sign-in" type="submit" title="Sign-in" value="Sign-in" />
+          </form>
+
+            <div style="clear:both"><img src="/images/global/spacer.gif" width="1" height="3" alt=""></div>
+            <div class="noNav">
+                <a href="/en/user/register">Register for Site</a>
+            </div>
+
+             <div class="bar"><img src="/images/hr_dots1.gif" alt="" height="3" width="150"></div>
+           <div class="noNav" style="color: #666666; padding: 0;">
+              Use of JCP site is subject to the
+              <a href="/en/home/terms" style="display:inline;padding: 0">JCP Terms of Use</a> and the
+              <a href="http://www.oracle.com/us/legal/privacy/index.html" style="display:inline;padding: 0" href="">Oracle Privacy Policy</a>
+          </div>
+
+            
+
+            <div style="clear:both"><img src="/images/global/spacer.gif" width="1" height="25" alt=""></div>
+
+            <!--begin JCP info -->
+            <img src="/images/hd_jcp-info.gif" alt="JCP Info" height="18" width="150">
+
+            <li><a href="/en/procedures/overview" class="p7PMtrg">About JCP</a>
+                <ul>
+                    <li><a href="/en/procedures/overview">Program Overview</a></li>
+                    <li><a href="/en/procedures/jcp2">JCP Process Document</a></li>
+                    <li><a href="/en/whatsnew/calendar">Calendar</a></li>
+                    <li><a href="/en/participation/members">JCP Members</a></li>
+                    <li><a href="/en/participation/committee">Executive Committee</a></li>
+                    <li><a href="/en/whatsnew/elections">Elections</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/en/participation/overview" class="p7PMtrg">Get Involved</a>
+		<ul>
+                    <li><a href="/en/participation/overview">Overview</a></li>
+                    <li><a href="/en/participation/membership">Becoming a JCP Member</a></li>
+		</ul>
+            </li>
+
+            <li><a href="/en/resources/contents" class="p7PMtrg">Community Resources</a>
+                <ul>
+                    <li><a href="/en/resources/contents">Overview</a></li>
+                    <li><a href="/en/resources/tutorials">Tutorials</a></li>
+                    <li><a href="/en/resources/multimedia">JCP Podcasts</a></li>
+                    <li><a href="/en/resources/guide">Spec Lead Guide</a></li>
+                    <li><a href="/en/resources/tdk">TCK Tool & Info</a></li>
+                    <li><a href="/en/resources/license_reference">License Reference</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/en/press/pmo" class="p7PMtrg">Community News</a>
+                <ul>
+                    <li><a href="/en/press/pmo">News</a></li>
+                    <li><a href="/en/press/news/awards/awards_main">Programs &amp; Awards</a></li>
+                    <li><a href="/en/press/releases">Press Releases</a></li>
+                    <li><a href="/en/press/success">Success Stories</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/en/introduction/faq">FAQ</a></li>
+
+            <li><a href="/en/resources/contacts">Contact Us</a></li>
+
+            <div style="clear: both;"><img src="/images/spacer.gif" alt="" height="25" width="1"></div>
+
+            <!--[if lte IE 6]><style>#p7PMnav a{height:1em;}#p7PMnav li{height:1em;float:left;clear:both;width:100%}</style><![endif]-->
+            <!--[if IE 6]><style>#p7PMnav li{clear:none;}</style><![endif]-->
+            <!--[if IE 7]><style>#p7PMnav a{zoom:100%;}#p7PMnav li{float:left;clear:both;width:100%;}</style><![endif]-->
+        </ul>
+
+        
+
+        <!--begin ad space -->
+        <div class="ads">
+            <a href="http://java.com/java/download/index.jsp?cid=jdp78399" target="_blank"><img style="display: ;" src="/images/ad_banner2.gif" alt="Ad Banner" border="1" height="70" width="150"></a>
+        </div>
+        <!--end ad space -->
+
+<!-- ** Menu End ** //-->
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;<br>
+
+    
+
+                    &nbsp;<br>
+                    <img src="/images/common/trans.gif" alt="" width="1" height="150"><br>
+
+              
+
+
+
+                </td>
+                <!-- ** END: Navigation Column ** //-->
+
+                <!-- ** BEGIN: Gutter Column ** //-->
+		<td width="10" nowrap><img src="/images/common/trans.gif" alt="" width="10" height="1"></td>
+                <!-- ** END: Gutter Column ** //-->
+
+                <!-- ** BEGIN: Content Column ** //-->
+                <td width="100%" valign="top">
+
+    
+<script type="text/javascript">
+
+String.prototype.trim = function() {
+        return this.replace(/^\s+|\s+$/g,"");
+}
+String.prototype.ltrim = function() {
+        return this.replace(/^\s+/,"");
+}
+String.prototype.rtrim = function() {
+        return this.replace(/\s+$/,"");
+}
+
+function validate_search() {
+	if (document.search.id.value == "Search JSRs" || document.search.id.value.trim().length == 0) {
+		alert("Search terms must be entered first");
+		return false;
+	}
+	return true;
+}
+
+function validate_findjsr() {
+	if (document.findjsr.id.value == "Search JSRs" || document.findjsr.id.value.trim().length == 0) {
+		alert("Search terms must be entered first");
+		return false;
+	}
+	return true;
+}
+
+function nullify_if_equal(field, str) {
+	// alert("val=" + field.value);
+	if (field.value == str) {
+		field.value = "";
+	}
+}
+
+</script>
+<!-- ** END: header.jsp ** //-->
+
+
+
+
+
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN">
+<HTML>
+<HEAD>
+<!--#config timefmt="%d-%b-%y" -->
+
+<TITLE>The Java Community Process Program -- March 2004 Newsletter</TITLE>
+
+</HEAD>
+
+<BODY BGCOLOR="#FFFFFF" TEXT="#000000" LINK="#0000FF" ALINK="#FF0000" VLINK="#660066">
+
+<!-- server side include for top part of page -->
+
+<!--#include virtual="/share/include/normal.header.v4.0.html"-->
+
+<!-- end server side include for top of page -->
+
+<!-- begin table for main body navigation and content -->
+
+<TABLE BORDER="0" CELLSPACING="0" CELLPADDING="0" WIDTH="100%">
+<TR ALIGN="left" VALIGN="top">
+<TD>
+<IMG SRC="/images/pixel.gif" WIDTH="1" HEIGHT="20" ALT="">
+<BR CLEAR="all">
+
+<!-- server side include for main java.sun.com navigation -->
+
+<!--#include virtual="/share/include/navigate.v4.0.html"-->
+<BR>
+
+<!-- end server side include for main java.sun.com navigation -->
+
+
+</TD>
+<TD WIDTH="100%" VALIGN="top">
+
+<FONT SIZE="+2">Java Community Process<SUP><FONT SIZE="-2">SM</FONT></SUP> &#151; March 2004 Newsletter</FONT>
+<BR>
+
+<!-  begin content here -->
+<P>
+<PRE>
+
+JCP News Bulletin
+March 2004
+
+Please find included below the March 2004 edition of the PMO News
+Bulletin. This Bulletin is sent to JCP Members, Spec Leads and Experts
+and is scheduled to be a monthly insert in your email inbox.
+
+Let us know if you have any questions or comments, we always appreciate
+your feedback.
+
+Regards,
+
+Corina Ulescu
+on behalf of the JCP PMO
+
+
+
+
+****************************************************************************************
+** MARCH 2004 JCP NEWS BULLETIN**MARCH 2004 JCP NEWS BULLETIN**MARCH
+2004 JCP NEWS BULLETIN **
+
+****************************************************************************************
+
+<TOP SPOT>
+==========
+
+JCP 2.6
+
+Starting this month the Java Community Process (JCP) is operating under
+a new set of rules designed to encourage more participation by a broader
+range of developers and simplify the process of creating compatible Java
+technology APIs.
+
+The JCP PMO and Executive Committees announced on March 9 the official
+roll out of JCP 2.6, the most transparent and accessible iteration in
+the program's evolution to date. The process enhancements give earlier
+access to draft specifications to a broader group of developers and add
+more value at each level of participation in an effort to make it easier
+and more rewarding for developers to get involved in the Java technology
+standards definition process. The Spec Lead of JSR 215, Aaron Williams,
+briefed trade and developer publications. More than 40 news stories and
+articles covered the JCP 2.6 launch.
+
+For media coverage on this topic check out the following urls:
+
+*Java Community Process To Tweak Charter
+Goal is to make creation of Java standards, quicker and more public
+http://www.crn.com/sections/BreakingNews/dailyarchives.asp?ArticleID=48502
+By Elizabeth Montalbano, CRN
+
+*Java amendment process is revised
+Earlier participation is enabled
+http://www.infoworld.com/article/04/03/09/HNjcp_1.html
+By  Paul Krill, InfoWorld
+
+*JCP 2.6 Looking for More Input
+http://www.internetnews.com/dev-news/article.php/3323291
+By Jim Wagner, Internetnews.com
+
+*Java Stewards Announce New Version of Java Community Process
+http://www.eweek.com/article2/0,1759,1545692,00.asp
+By Darryl K. Taft, eWeek
+
+*JCP 2.6 opens Sun's Java process
+http://www.adtmag.com/article.asp?id=9093
+By John K. Waters, ADTmag.com
+
+*Java Community Process 2.6: The JCP Evolves Again
+http://www.sys-con.com/story/?storyid=44002&DE=1
+By JDJ News Desk
+
+*JCP 2.6 Evolution: New Process Released
+http://www.theserverside.com/news/thread.tss?thread_id=24389
+By Dion Almaer, TheServerSide.com
+
+*Java standards group refreshes its procedures
+The Java Community Process (JCP) announced the latest iteration of
+the process and a refresh on the procedures it has followed when
+adopting new specifications.
+http://www.computerweekly.co.uk/articles/article.asp?liArticleID=129056&liArticleTypeID=1&liCategoryID=1&liChannelID=171&liFlavourID=1&sSearch=&nPage=1
+By Computerweekly, Technology: EAI Tools
+
+#####
+
+JCP 2.6. Press Roundtable
+
+On March 31, at Vodafone's headquarters in Duesseldorf, Germany, the JCP
+PMO organized a press roundtable, "JCP Evolves Again", that launched JCP
+2.6 in Europe and updated the media on the latest developments under the
+JCP program. Participants included Rob Gingell, Vice President and
+Fellow, Chief Engineer, Sun Microsystems, Inc., Chair of the JCP
+Program; representatives of  the two JCP Executive Committees - Ed Cobb,
+Vice President, Architecture & Standards, BEA Systems; Michael DeNicola,
+Fujitsu; Marquart Franz, Senior Principal Engineer, Siemens Corporate
+Technology; Jonathan Allin, Symbian, Product Manager, Java Technology,
+Symbian; Onno Kluyt, Director, JCP PMO and Aaron Williams, Executive
+Relations Manager, JCP PMO. The following reporters joined the
+discussions: David Norfolk, co-executive editor, Application
+Developement Advisor (UK), Lofi Dewanto, free lance reporter,
+Javamagazin, PHP International (G), Kay Peter Glahn, free lance
+reporter, German trade and developer publications(G). The media had the
+opportunity to learn about the enhancements brought by JCP 2.6 directly
+from the experts who were involved in developing the new version of the
+program.
+
+===============================================================================================
+To keep updated on news about the Java Community Process (sm)(JCP sm)
+program, please also visit the "News from The JCP" section of the JCP
+web site - JCP.org.
+===============================================================================================
+
+<SPOTLIGHT ON JSRs>
+===================
+
+New JSRs
+---------
+**JSR 240: JAIN SLEE (JSLEE) v 1.1 - recently submitted by Open Cloud
+and Sun Microsystems, Inc. - was approved by the JCP EC to continue its
+development as a JCP JSR. JAIN SLEE responds to the developers' need to
+work with a standard that makes JSLEE based communications applications
+easier to integrate into Network Operators networks.
+
+**A group of individual developers submitted JSR 241 - The Groovy
+Programming Language, JSR 241, was approved by the JCP EC as a project
+through the community. Proposed and driven by a group of individual
+developers, Groovy is a complement of the Java programming language and
+addresses the need for a standard programming language for writing
+scripts and applications that interoperate with the entire J2SE
+platform.
+
+Community Review
+----------------
+**JSR 211: Content Handler API moved into Community Review and submitted
+its Community Draft for approval to the JCP EC for ME. This standard
+will enable J2ME applications to handle multi-media and web content and
+thereby will give developers and users a seamless and integrated user
+environment on mobile phones and wireless devices. The specification is
+led by Sun and its Community Draft Ballot is expected to finalize on
+April 12.
+
+Public Review
+-------------
+**Led by Nokia Corporation, JSR 226 - Scalable 2D Vector Graphics API
+for J2ME - entered Public Review this week. This API is proposed as an
+optional package to be used together with several J2ME profiles. Once
+finalized, the standard will bring the following capabilities to the
+mobile terminals with J2ME/CLDC 1.1 support:
+  - Ability to load and render external 2D vector images, stored in the
+W3C SVG Tiny format. The API may be extendable to support other formats.
+  - Low-level rendering API for 2D images that are scalable to different
+display resolutions and aspect ratios.
+Final draft is expected around mid to end of April.
+
+**Version 3.1 of JSR 204, Unicode Supplementary Character Support, is
+the first one to define characters that cannot be described by single
+16-bit code points. Led by Sun, this standard defines the necessary
+adjustments to the Java APIs to enable support for such characters and
+enables the Java platform to continue to track the Unicode standard. Its
+Public Review just closed on March 27.
+
+**Spearheaded by Oracle, JSR 128, JESI - JSP Tag Library for Edge Side
+Includes (ESI),
+entered Public Review. This standard will facilitate the use of Edge
+Side Include (ESI) in-markup language within a JSP application. JESI
+tags simplify the declaration of cacheable dynamic fragments, content
+invalidation and personalization.
+
+
+Proposed Final Drafts
+---------------------
+**JSR 166, Concurrency Utilities, dubbed "the benchmark for JCP 2.6"
+because it has tested many of the program enhancements brought by JCP
+2.6, recently moved into Proposed Final Draft. Until now programmers
+have been forced to implement their own higher level concurrency
+facilities, often incorrect or inefficient. JSR 166 offers a standard
+set of concurrency utilities which will ease the task of writing a wide
+variety of multi threaded applications and generally improve the quality
+of the applications that use them. The JSR Expert Group is led by Doug
+Lea, professor at State University of New York Oswego.
+
+**IBM leads JSR 95, J2EE Activity Service for Extended Transactions, now
+in Proposed Final Draft. This standard will provide a low-level
+architecture for Workflow Engines, Component Management Middleware, an
+EJB Container and other systems to use to create advanced transaction
+implementations. The J2EE Activity Service for Extended Transactions is
+based upon the technologies that are defined and standardized as part of
+the Java 2 platform, Enterprise Edition. Specifically, the Activity
+Service leverages concepts and mechanisms defined by Java Transaction
+API (JTA), Enterprise JavaBeansTM (EJB) and JDBC specifications.
+
+Final Release
+-------------
+**After a vote of approval from the JCP EC on March 1, JSR 127
+JavaServer Faces posted its final release now available for download
+here. Led by Sun, this standard defines an architecture and APIs which
+simplify the creation and maintenance of Java Server application GUIs.
+To find out more details about the benefits brought by JSR 127 to
+developers make sure you check out the Open Letter addressed by the
+co-spec leads Ed Burns and Craig McClanahan to the community. It's an
+invitation to the entire Java technology community to contribute to the
+future direction of JavaServer Faces, download the Reference
+Implementation and begin working with it to build your next application.
+Send comments to jsfaces-feedback@sun.com
+
+**JSR 22, JAIN SLEE, driven by Open Cloud and Sun Microsystems posted
+its final release this month. This project developed the JAIN Service
+Creation Environment (SCE) and the Service Logic Execution Environment
+(SLEE) API Specification. These APIs will provide service developers,
+whether independent software vendors, service providers or network
+equipment providers, with a common model and a consistent run-time
+environment for developing and deploying network services in Java. To
+find out more and access the download, go to the JCP.org JSR page.
+
+**JSR 79, JAIN APIs for the MEGACO protocol, led by Hughes Software
+Systems delivered its final release early this month after a Final
+Approval Ballot from the JCP EC. This standard describes  the Java API
+for call control in the Telecommunications and Internet industry. It
+allows for the rapid creation and deployment of dynamic telephony
+services into a Java telephony platform.
+
+**JSR 172 J2ME Web Services Specification, spearheaded by Sun, moved
+into final this month and made its final release available for download
+from the JSR web page. This specification defines an optional package
+that provides standard access from J2ME to web services. Make sure you
+check it out and learn how it can help you with your development needs.
+
+Maintenance Review
+-------------------
+**Developed by Sun, JSR 115, Java Authorization Contract for Containers,
+is currently in Maintenance Review. This JSR defines new
+java.security.Permission classes to satisfy the J2EE role-based,
+authorization model. It fills in the need for a standard specification
+for the mapping of container access decisions to operations on J2SE
+permission objects obtained from J2SE policy providers.
+
+**JSR 151, Java 2 Platform, Enterprise Edition 1.4 (J2EE 1.4)
+Specification, led by Sun, introduces a change to the final draft of
+this specification to allow customers to choose the security policy they
+think it's appropriate for their needs. This change will also allow
+customers to decide whether to run with or without a security manager
+since in some environments the protections provided by a security
+manager are less important than the performance cost of using a security
+manager. With these changes customers are given the freedom to decide
+priorities for themselves in terms of choosing protection over
+performance.
+
+**The Sun-led JSR 59 published the J2SE 1.5 ("Tiger") Beta 1 Change Log
+for Maintenance Review. The Maintenance Review is scheduled to close on
+April 12.
+
+===============================================================================================
+If you propose a new JSR or an important event happens in the life of
+the JSR you are currently leading such as advancement to an important
+stage in the JCP review process or moving into Final Release and you
+would like it to be spotlighted in the next issue of <The JCP News
+Bulletin> or included in FOCUS ON JSRs - front page section of JCP.org -
+please make sure you send us a write up briefly indicating your JSR's
+benefits to developers, its uniqueness and innovative nature, or other
+reasons why it should be a candidate for SPOTLIGHT ON JSRs or for the
+JCP.org web site section FOCUS ON JSRS. You can email your proposals to
+Liz Cadd at liz.cadd@sun.com no later than the 15 of each month.
+===============================================================================================
+
+<ON THE JCP EVENTS CALENDAR>
+============================
+- LogOn Web Days - OMG Conference, 04/01/04 - 05/05/04 - JCP is
+sponsoring this event
+- TheServerSide Symposium, 05/06/04 - 05/08/04, Las Vegas (JCP is
+sponsor)
+- 10 - 11 May 2004 JCP Training Europe in Grenoble, France - Sun Campus;
+the session presentations will be made available to participants on site
+and via email for those on the phone
+- SunNetwork Shanghai, 05/25-26, 2004, Shanghai, PRC (JCP participation
+TBD)
+- JavaOne SF,06/28-07/01, 2004 (JCP participates)
+- SunNetwork SF, 09/16-18, 2004, San Francisco, CA  (JCP participation
+TBD)
+
+#####
+
+<Attention Spec Leads!>
+========================
+<Dates and Services from the JCP PMO you don't want to miss on>
+
+- 28 Jun - 1 Jul 2004 JavaOne at Moscone in San Francisco - Please be
+advised the PMO will be at the conference and available only on a very
+limited basis.
+- 5 Jul - 9 Jul 2004 PMO Summer vacation - No CR/(PR ballot under JCP
+2.6) can start 7 Jul 04 -  No 2-week ballot can start on 7 Jul 04.
+- 7 - 8 Sep 2004 JCP Training East Coast in Burlington MA - Sun Campus.
+- 5 Oct - 15 Nov 2004 EC Elections.
+- 16 - 23 Nov 2004 EC Change over - No 1-week ballot can start on 16 Nov
+2004. No 2-week ballot can start on 9/16 or 23 Nov 04.
+- 30 Nov 2004 newly elected EC is taking office.
+- 27 Dec - 31 Dec PMO Winter vacation - No 1-week ballot can start on 28
+Dec 04 - No 2-week ballot can start on either 21 or 28 Dec 04 - No
+2-week ballot can start on 14 Dec 04.
+
+<Now Available from The JCP PMO>
+--------------------------------
+Are you planning a press release announcing a new JSR submission or a
+milestone in the life of your JSR? Or maybe you would like to highlight
+to the media the final release of your JSR? Would you like to inform the
+press about the innovative character of your JSR, its impact on
+developers' work, the numerous opportunities it is creating for vendors
+and their customers or other outstanding contributions of your JSR to
+the definition and development of Java binary standards? Or would you
+like a refresher on the "JCP Communications Guidelines" or perhaps hook
+up your PR representative with a PR practitioner familiar with the
+workings of the program? For this and similar type of activities there's
+help and advice available now directly from the JCP Program Management
+Office. Email your questions to the JCP PR manager, Corina Ulescu, at
+corina.ulescu@sun.com, or call at 408-276-6159.
+
+#####
+
+
+** CONTACT INFORMATION **
+--------------------------
+Here is how to contact the Program Office:
+- http://jcp.org/en/jsr/proposal: to submit proposals for new JSRs.
+- spec-submit@jcp.org: to send in your draft and/or final specification
+documents and related materials (as .pdf or Zip archive, please. Other
+formats will not be posted).
+- participant-access@jcp.org: in case you misplaced your Member
+password....
+- pmo@jcp.org: to reach the PMO.
+
+
+</pre>
+
+See Also<BR>
+<FONT SIZE="-1"><A HREF="http://jcp.org/">Community Process Main Page</A><BR>
+
+</FONT>
+
+
+
+</TD>
+</TR>
+</TABLE>
+
+
+<!-- begin server side include for footer -->
+
+<!--#include virtual="/share/include/normal.footer.v4.0.html"-->
+
+<!-- end server side include for footer -->
+
+</BODY>
+</HTML>
+
+
+
+<!-- ** BEGIN: footer.jsp ** //-->
+
+
+
+
+
+
+
+
+</td>
+</tr>
+</table>
+
+<!-- ** END: Content Table ** //-->
+
+<!-- ** BEGIN: Footer Table ** //-->
+
+<div id="footer" style="clear: both;">
+    <div class="footleft">
+        <a href="/en/resources/contacts">Contact Us</a>
+    </div>
+	
+    <div class="botbar"><img src="/images/spacer.gif" alt="" height="23" width="1"></div>
+
+    <div class="footleft2">
+         &copy; 2019, Oracle Corporation and/or its affiliates. 
+        <a href="/en/home/terms">Terms of Use</a>. <a href="http://www.oracle.com/us/legal/privacy/index.html">Privacy Policy</a>. <a href="http://www.oracle.com/us/legal/third-party-trademarks/third-party-trademarks-078568.html">Trademarks</a>
+    </div>
+
+    <div class="footright">
+        <img src="/images/common/logo_oracle_footer.gif" alt="Oracle Corporation" height="22" width="91">
+    </div>
+
+    <div style="clear: both;"><img src="/images/spacer.gif" alt="" height="30" width="1"></div>
+</div>
+
+<!-- ** END: Footer Table ** //-->
+
+
+
+<!-- ** Menu Start ** //-->
+
+
+
+</body>
+</html>
+<!-- ** END: footer.jsp ** //-->
+

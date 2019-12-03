@@ -1,0 +1,15 @@
+JDBC Technology - 2.1 Specification Errata
+
+2.1 Errata
+
+The following errata apply to the JavaDoc for JDBC 2.1:
+
+1. javadoc: Statement.setMaxFieldSize(int size) replace throws clause with :-
+
+    SQLException - if a database exception occurs, or the condition size >= 0 not satisfied.
+
+    2. javadoc: Statement.setMaxRows(int rows) replace throws clause with :-
+    SQLException - if a database exception occurs, or the condition rows >= 0 is not satisfied.
+
+    3. javadoc: Statement.setQueryTimeout(int seconds) replace throws clause with :-
+    SQLException - if a database exception occurs, or the condition seconds >= 0 is not satisfied. 

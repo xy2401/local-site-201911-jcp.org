@@ -1,0 +1,613 @@
+
+
+
+
+<!-- ** BEGIN: header.jsp ** //-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3c.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+<head>
+    
+
+   
+    <link href="/includes/css/menu.css" rel="stylesheet" type="text/css"></link>
+    <link href="/includes/css/style.css" rel="stylesheet" type="text/css"></link>
+    <!--[if lt IE 6]><link href="/includes/css/style5.css" rel="stylesheet" type="text/css" ></link><![endif]-->
+    <!--[if gte IE 5]><link href="/includes/css/style6.css" rel="stylesheet" type="text/css" ></link><![endif]-->
+    <link href="/includes/css/tabs.css"  rel="stylesheet" type="text/css"></link>
+
+    <script type="text/javascript" src="/includes/scripts/tabs.js"></script>
+    <script type="text/javascript" src="/includes/scripts/menu.js"></script>
+   
+
+    
+
+    
+        <title>The Java Community Process(SM) Program - JSRs: Java Specification Requests - results</title>
+    
+
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+
+
+<body onload="P7_initPM(0,1,0,0,-1)">
+
+    <a name="top"></a>
+
+    <div id="header">
+	<div id="logo">
+		<a href="/en/home/index"><img src="/images/spacer.gif" alt="Java Community Process" height="81" width="151"></a>
+	</div>
+	<div id="tools">
+		<div class="search">
+			<form name="search" action="/en/jsr/summary" method="get" onsubmit="return validate_search()">
+				<input name="id" value="Search JSRs" size="16" class="form" onfocus="nullify_if_equal(this, 'Search JSRs')" type="text">
+				<a href="javascript:document.search.submit()" onclick="return validate_search()"><img src="/images/button_go.gif" width="21" height="16" border="0" alt="Submit this Search" name="sub_search"></a>
+			</form>
+		</div>
+		<div class="tools">
+			<a href="/en/press/pressroom">Press Room</a> &nbsp;|&nbsp;
+			<a href="http://java.com/java/download/index.jsp?cid=jdp78399">Get Java Here</a> &nbsp;|&nbsp;
+			<!-- <a href="javascript:void(0)">Print Format</a> &nbsp;|&nbsp;&nbsp; -->
+		</div>
+
+	</div>
+	<div style="clear: right;"></div>
+
+        
+
+	<div class="topbar"><img src="/images/spacer.gif" alt="" height="3" width="154"></div>
+	<div id="update"> </div>
+    </div>
+
+
+    
+
+        <!-- ** BEGIN: Content Table ** //-->
+
+        <table width="100%" border="0" cellpadding="0" cellspacing="0">
+
+            <tr>
+
+                <!-- ** BEGIN: Navigation Column ** //-->
+                <td width="150" id="leftcontent" valign="top">
+                    <!-- Navigation Placeholder //-->
+
+                    
+
+                    <div class="bar"><img src="/images/hr_dots1.gif" alt="" height="3" width="150"></div>
+
+        <!-- begin find JSRs form -->
+        <!-- IMPORTANT! do not convert this form to Struts < html : form > tag.  javascript change of form.action property fails. -->
+        <img src="/images/hd_find-jsrs.gif" alt="Find JSRs" height="18" width="150">
+        <form name="findjsr" action="/en/jsr/summary" method="get" class="pt5" onsubmit="return validate_findjsr()">
+            <input name="id" size="18" class="form" value="Search JSRs" onfocus="nullify_if_equal(this, 'Search JSRs')" type="text">
+	    <a href="javascript:document.findjsr.submit()" onclick="return validate_findjsr()"><img src="/images/button_go.gif" width="21" height="16" border="0" alt="Submit this Search" name="sub_search"></a>
+        </form><br><br>
+
+        <!-- ** Menu Start ** //-->
+
+        <ul id="p7PMnav">
+            <li><a href="/en/jsr/platform">JSRs by Platform</a></li>
+            <li><a href="/en/jsr/tech">JSRs by Technology</a></li>
+            <li><a href="/en/jsr/stage">JSRs by Stage</a></li>
+            <li><a href="/en/jsr/ec">JSRs by Committee</a></li>
+            <li><a href="/en/jsr/all">List of All JSRs</a></li>
+
+            <!--end find JSRs form -->
+            <div style="clear: both;"><img src="/images/spacer.gif" alt="" height="25" width="1"></div>
+
+            <!--begin my JCP -->
+            <img src="/images/hd_my-jcp.gif" alt="My JCP" height="18" width="150">
+            
+
+          <form name="login" method="get" action="/en/user/login" >
+            <input name="Sign-in" type="submit" title="Sign-in" value="Sign-in" />
+          </form>
+
+            <div style="clear:both"><img src="/images/global/spacer.gif" width="1" height="3" alt=""></div>
+            <div class="noNav">
+                <a href="/en/user/register">Register for Site</a>
+            </div>
+
+             <div class="bar"><img src="/images/hr_dots1.gif" alt="" height="3" width="150"></div>
+           <div class="noNav" style="color: #666666; padding: 0;">
+              Use of JCP site is subject to the
+              <a href="/en/home/terms" style="display:inline;padding: 0">JCP Terms of Use</a> and the
+              <a href="http://www.oracle.com/us/legal/privacy/index.html" style="display:inline;padding: 0" href="">Oracle Privacy Policy</a>
+          </div>
+
+            
+
+            <div style="clear:both"><img src="/images/global/spacer.gif" width="1" height="25" alt=""></div>
+
+            <!--begin JCP info -->
+            <img src="/images/hd_jcp-info.gif" alt="JCP Info" height="18" width="150">
+
+            <li><a href="/en/procedures/overview" class="p7PMtrg">About JCP</a>
+                <ul>
+                    <li><a href="/en/procedures/overview">Program Overview</a></li>
+                    <li><a href="/en/procedures/jcp2">JCP Process Document</a></li>
+                    <li><a href="/en/whatsnew/calendar">Calendar</a></li>
+                    <li><a href="/en/participation/members">JCP Members</a></li>
+                    <li><a href="/en/participation/committee">Executive Committee</a></li>
+                    <li><a href="/en/whatsnew/elections">Elections</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/en/participation/overview" class="p7PMtrg">Get Involved</a>
+		<ul>
+                    <li><a href="/en/participation/overview">Overview</a></li>
+                    <li><a href="/en/participation/membership">Becoming a JCP Member</a></li>
+		</ul>
+            </li>
+
+            <li><a href="/en/resources/contents" class="p7PMtrg">Community Resources</a>
+                <ul>
+                    <li><a href="/en/resources/contents">Overview</a></li>
+                    <li><a href="/en/resources/tutorials">Tutorials</a></li>
+                    <li><a href="/en/resources/multimedia">JCP Podcasts</a></li>
+                    <li><a href="/en/resources/guide">Spec Lead Guide</a></li>
+                    <li><a href="/en/resources/tdk">TCK Tool & Info</a></li>
+                    <li><a href="/en/resources/license_reference">License Reference</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/en/press/pmo" class="p7PMtrg">Community News</a>
+                <ul>
+                    <li><a href="/en/press/pmo">News</a></li>
+                    <li><a href="/en/press/news/awards/awards_main">Programs &amp; Awards</a></li>
+                    <li><a href="/en/press/releases">Press Releases</a></li>
+                    <li><a href="/en/press/success">Success Stories</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/en/introduction/faq">FAQ</a></li>
+
+            <li><a href="/en/resources/contacts">Contact Us</a></li>
+
+            <div style="clear: both;"><img src="/images/spacer.gif" alt="" height="25" width="1"></div>
+
+            <!--[if lte IE 6]><style>#p7PMnav a{height:1em;}#p7PMnav li{height:1em;float:left;clear:both;width:100%}</style><![endif]-->
+            <!--[if IE 6]><style>#p7PMnav li{clear:none;}</style><![endif]-->
+            <!--[if IE 7]><style>#p7PMnav a{zoom:100%;}#p7PMnav li{float:left;clear:both;width:100%;}</style><![endif]-->
+        </ul>
+
+        
+
+        <!--begin ad space -->
+        <div class="ads">
+            <a href="http://java.com/java/download/index.jsp?cid=jdp78399" target="_blank"><img style="display: ;" src="/images/ad_banner2.gif" alt="Ad Banner" border="1" height="70" width="150"></a>
+        </div>
+        <!--end ad space -->
+
+<!-- ** Menu End ** //-->
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;<br>
+
+    
+
+                    &nbsp;<br>
+                    <img src="/images/common/trans.gif" alt="" width="1" height="150"><br>
+
+              
+
+
+
+                </td>
+                <!-- ** END: Navigation Column ** //-->
+
+                <!-- ** BEGIN: Gutter Column ** //-->
+		<td width="10" nowrap><img src="/images/common/trans.gif" alt="" width="10" height="1"></td>
+                <!-- ** END: Gutter Column ** //-->
+
+                <!-- ** BEGIN: Content Column ** //-->
+                <td width="100%" valign="top">
+
+    
+<script type="text/javascript">
+
+String.prototype.trim = function() {
+        return this.replace(/^\s+|\s+$/g,"");
+}
+String.prototype.ltrim = function() {
+        return this.replace(/^\s+/,"");
+}
+String.prototype.rtrim = function() {
+        return this.replace(/\s+$/,"");
+}
+
+function validate_search() {
+	if (document.search.id.value == "Search JSRs" || document.search.id.value.trim().length == 0) {
+		alert("Search terms must be entered first");
+		return false;
+	}
+	return true;
+}
+
+function validate_findjsr() {
+	if (document.findjsr.id.value == "Search JSRs" || document.findjsr.id.value.trim().length == 0) {
+		alert("Search terms must be entered first");
+		return false;
+	}
+	return true;
+}
+
+function nullify_if_equal(field, str) {
+	// alert("val=" + field.value);
+	if (field.value == str) {
+		field.value = "";
+	}
+}
+
+</script>
+<!-- ** END: header.jsp ** //-->
+
+
+
+
+<b>
+  <font color="#663399" size="+1">
+    JSR #178<br>
+    Mobile Game API<br>
+    JSR Review Reconsideration Ballot<br>
+  </font>
+  Ballot duration: 2002-04-23&nbsp;&nbsp; to: 2002-05-06<br>
+</b>
+
+<P>
+
+
+
+
+
+
+
+These are the final results of the JSR Review Reconsideration Ballot for JSR #178.
+
+	
+
+The <a href="/en/participation/committee#ME">Executive Committee for ME</a> has not approved this ballot.
+
+	
+
+
+</P>
+
+<h3>Votes</h3><BR>
+<table width="600" border="0" cellspacing="0" cellpadding="3">
+  <tr>
+    <td>
+
+<B>ME</B>
+
+<table width="600" border="1" cellspacing="0" cellpadding="5">
+  <tr>
+
+  <td>
+    <table width="100%">
+      <tr>
+        <td align="left"><font size="2">BEA Systems</font></td>
+        <td align="right"><img src="/images/common/no.gif" width="23" height="23" alt="No"></td>
+      </tr>
+    </table>
+  </td>
+
+  <td>
+    <table width="100%">
+      <tr>
+        <td align="left"><font size="2">Cisco Systems</font></td>
+        <td align="right"><img src="/images/common/yes.gif" width="23" height="23" alt="Yes"></td>
+      </tr>
+    </table>
+  </td>
+
+  <td>
+    <table width="100%">
+      <tr>
+        <td align="left"><font size="2">Ericsson Inc.</font></td>
+        <td align="right"><img src="/images/common/no.gif" width="23" height="23" alt="No"></td>
+      </tr>
+    </table>
+  </td>
+
+  <td>
+    <table width="100%">
+      <tr>
+        <td align="left"><font size="2">IBM</font></td>
+        <td align="right"><img src="/images/common/no.gif" width="23" height="23" alt="No"></td>
+      </tr>
+    </table>
+  </td>
+  </tr>
+  <tr>
+
+  <td>
+    <table width="100%">
+      <tr>
+        <td align="left"><font size="2">Insignia Solutions</font></td>
+        <td align="right"><img src="/images/common/yes.gif" width="23" height="23" alt="Yes"></td>
+      </tr>
+    </table>
+  </td>
+
+  <td>
+    <table width="100%">
+      <tr>
+        <td align="left"><font size="2">Matsushita Electric Industrial Co., Ltd.</font></td>
+        <td align="right"><img src="/images/common/abstain.gif" width="23" height="23" alt="Abstain"></td>
+      </tr>
+    </table>
+  </td>
+
+  <td>
+    <table width="100%">
+      <tr>
+        <td align="left"><font size="2">Motorola</font></td>
+        <td align="right"><img src="/images/common/no.gif" width="23" height="23" alt="No"></td>
+      </tr>
+    </table>
+  </td>
+
+  <td>
+    <table width="100%">
+      <tr>
+        <td align="left"><font size="2">Nokia Corporation</font></td>
+        <td align="right"><img src="/images/common/no.gif" width="23" height="23" alt="No"></td>
+      </tr>
+    </table>
+  </td>
+  </tr>
+  <tr>
+
+  <td>
+    <table width="100%">
+      <tr>
+        <td align="left"><font size="2">PalmSource, Inc.</font></td>
+        <td align="right"><img src="/images/common/yes.gif" width="23" height="23" alt="Yes"></td>
+      </tr>
+    </table>
+  </td>
+
+  <td>
+    <table width="100%">
+      <tr>
+        <td align="left"><font size="2">Philips Electronics UK Ltd</font></td>
+        <td align="right"><img src="/images/common/yes.gif" width="23" height="23" alt="Yes"></td>
+      </tr>
+    </table>
+  </td>
+
+  <td>
+    <table width="100%">
+      <tr>
+        <td align="left"><font size="2">Research In Motion, LTD (RIM)</font></td>
+        <td align="right"><img src="/images/common/yes.gif" width="23" height="23" alt="Yes"></td>
+      </tr>
+    </table>
+  </td>
+
+  <td>
+    <table width="100%">
+      <tr>
+        <td align="left"><font size="2">Siemens AG</font></td>
+        <td align="right"><img src="/images/common/no.gif" width="23" height="23" alt="No"></td>
+      </tr>
+    </table>
+  </td>
+  </tr>
+  <tr>
+
+  <td>
+    <table width="100%">
+      <tr>
+        <td align="left"><font size="2">Sony International (Europe) GmbH</font></td>
+        <td align="right"><img src="/images/common/no.gif" width="23" height="23" alt="No"></td>
+      </tr>
+    </table>
+  </td>
+
+  <td>
+    <table width="100%">
+      <tr>
+        <td align="left"><font size="2">Sun Microsystems, Inc.</font></td>
+        <td align="right"><img src="/images/common/no.gif" width="23" height="23" alt="No"></td>
+      </tr>
+    </table>
+  </td>
+
+  <td>
+    <table width="100%">
+      <tr>
+        <td align="left"><font size="2">Texas Instruments Inc.</font></td>
+        <td align="right"><img src="/images/common/no.gif" width="23" height="23" alt="No"></td>
+      </tr>
+    </table>
+  </td>
+
+  <td>
+    <table width="100%">
+      <tr>
+        <td align="left"><font size="2">Zucotto Wireless</font></td>
+        <td align="right"><img src="/images/common/yes.gif" width="23" height="23" alt="Yes"></td>
+      </tr>
+    </table>
+  </td>
+  </tr>
+
+</table>
+<br>
+
+
+
+</td>
+<td width="20"><img src="/images/common/pixel.gif" width="20" height="1" alt=""></td>
+<td valign="top">
+  <table border="0" cellspacing="0" cellpadding="5" height="100%">
+    <tr align="left">
+      <td colspan="2">
+        <b>Icon Legend</b>
+      </td>
+    </tr>
+    <tr valign="top">
+      <td alt="left">Yes</td>
+      <td align="right"><img src="/images/common/yes.gif" width="23" height="23" alt="Yes"></td>
+    </tr>
+    <tr valign="top">
+      <td align="left">No</td>
+      <td align="right"><img src="/images/common/no.gif" width="23" height="23" alt="No"></td>
+    </tr>
+    <tr valign="top">
+      <td>Abstain</td>
+      <td align="right"><img src="/images/common/abstain.gif" width="23" height="23" alt="Abstain"></td>
+    </tr>
+    <tr valign="top">
+      <td>Not voted</td>
+      <td align="right"><img src="/images/common/none21.gif" width="23" height="23" alt="Not voted"></td>
+   </tr>
+ </table>
+</td>
+</tr>
+</table>
+<br>
+
+
+<HR NOSHADE ALIGN="left" WIDTH="70%">
+<h3>View Vote Log</h3>
+<BR>
+
+<FORM>
+
+
+
+
+<br><br>
+
+
+<strong>ME</strong><br>
+<TEXTAREA ROWS="10" COLS="80" WRAP="soft" READONLY>On 2002-05-06 Texas Instruments Inc. voted No with the following comment:
+TI believes that the immediate market need for advanced game support far exceeds the threat of further fragmentation in this space. Given the absence of any comprehensive alternative proposals to support this market need at this time, we are compelled to support this JSR. We are encouraged further by the willingness of the specification lead to address the concerns of the EC members, in addition to service providers, network operators and game developers.However, we cannot in good conscience throw the proposed expert group into an intractable situation. Without consensus on the expansion path for MIDP, it is unlikely that the group could make progress in a timely manner. Once an expansion path has been developed, we encourage the spec lead to consider resubmitting this JSR within that context.
+------------------------------------------------------------------------------
+On 2002-05-06 Sony International (Europe) GmbH voted No with the following comment:
+Sony feels a situation of mobile game profile is too confusing at this time.
+------------------------------------------------------------------------------
+On 2002-05-06 BEA Systems voted No with the following comment:
+BEA feels it must vote no due to the strong opposition to this JSR as currently proposed.  The concerns over MIDP 2.0 and fragementation are valid.
+------------------------------------------------------------------------------
+On 2002-05-06 Sun Microsystems, Inc. voted No with the following comment:
+Although Sun is supportive of an optional packageextending MIDP to rich gaming, we think thatJSR-178, which defines an optional package usableby MIDP 1.0 as well as MIDP 2.0, is on the balancethe wrong solution.A MIDP 1.0-based stack would be contemporary withMIDP 2.0 in the market and be of a similar size.It would thus would compete against MIDP 2.0 (with or without the games extensions) fordevelopers and space in devices, impeding theadoption of MIDP 2.0.  Were such a thing to existtoday it would probably be a good thing, but inthe time it would take to complete the standardand get products into devices, the value ofworking with MIDP 1.0 would be lost and thenegatives would dominate.  Sun would be likely to support a proposal for agame-oriented optional package built strictly ontop of MIDP 2.0.  Should this hurdle be overcome,a close relationship between the gaming optionalpackage, MIDP 2.0, and other JSRs (135, 184), asnoted by Zucotto and others, would be critical.
+------------------------------------------------------------------------------
+On 2002-05-06 IBM voted No with the following comment:
+In general, we support adding optional APIs as a separate JSR, rather than as part of a base profile.  However, in this case, MIDP 2.0 already has the basis for gaming defined in it's package 'javax.microedition.lcdui.game'.  We question the ability of this JSR to proceed without overlapping and competing with the MIDP 2.0 profile.  In addition, the 3D graphics portion of this JSR is better addressed as an optional component API, in a separate JSR (184).  Fragmentation can result when generic APIs are made available as part of industry specific APIs.
+------------------------------------------------------------------------------
+On 2002-05-06 Zucotto Wireless voted Yes with the following comment:
+We support this JSR but do share similar concerns with those who have opposed, namely fragmentation and co-operation between JSRs. We also acknowledge a need to address directly a substantial application market in a rapid fashion. We will all face significant threats from competing technologies such as BREW, .net and proprietary APIs and need to ensure Java remains the application development platform of choice for mobile gaming.We are pleased with the breadth and experience of the companies initially committed to JSR-178 including the important mix of geography and market specific expertise. We are also encouraged by the commitment to build upon existing technology and technology being developed in parallel, namely MIDP 2.0, JSR-184 for 3D graphics and JSR-135 for audio/video. In order to be successful, the following MUST be followed and are committed to in the re-submitted JSR-178 proposal:· JSR-178 MUST use the gaming API developed in MIDP 2.0 as the basis and must be compatible (superset)· JSR-178 MUST use audio interfaces from JSR-135· JSR-178 MUST contribute to and use the 3D API being developed in JSR-184 (re-use)· Conversely JSR-184 MUST take input from the gaming industry led JSR-178 to ensure the 3D API is well suited to the needs of game developers who will likely be the most important factor in its success.In addition, MIDP 3.0 should adopt features of JSR-178 and 184 as appropriate to create a new base for future handsets. We see JSR-178 and 184 as highly focused advance sub-expert groups for MIDP 3.0 addressing critical application development areas that may well be best addressed outside of the larger MIDP context. Optional packages can lead to fragmentation but they also allow specific needs of large and lucrative application spaces to evolve very quickly.  As the market, developers and users determine the success of these optional APIs they can be later subsumed by the profiles in future iterations.
+------------------------------------------------------------------------------
+On 2002-05-05 Ericsson Inc. voted No with the following comment:
+Ericsson has many of the same concerns and issues with this JSR as have already been highlighted in the e-mail dialogue between other EC member companies and In-Fusio. Specifically:- We believe that the overlap between this JSR and MIDP 2.0 is a cause for concern from a Developers perspective and could most likely cause market fragmentation (as described by other EC members)- We believe that any platform capable of supporting the functionality proposed in JSR-178 would also be capable of supporting MIDP2.0. Therefore we prefer that generic functionality be built around MIDP2.0 and any future versions of this Profile- We want to see 3D Graphics API support in a separate JSR (now filed as JSR-184)
+------------------------------------------------------------------------------
+On 2002-05-02 Cisco Systems voted Yes with no comment.
+------------------------------------------------------------------------------
+On 2002-05-02 Nokia Corporation voted No with the following comment:
+Reason for not being able to support this JSR in its current form is that we have not seen JSR178 been changed towards the principes described below.1. Our aim is to support a consistent architecture for the wireless terminals to decrease fragmentation. Allowing critical volume of devices with consistent APIs is vital to create the applications and services market. We, together with other wireless device manufacturers, need to take the responsibility for a platform supporting a variety of different services and innovations (not only games) by the developer community and other businesses as well. We think this would best benefit all of us, including game developers.2. We do not wish 3D (or any other generic functionality described in JSR178) to be part of the game specific API.  If we'd do so it would  force terminal manufacturers to implement game API, including e.g. physics engine etc., even if they only want good graphics functionality and want to rely on MIDP 2.0 to provide addit. game functionality.3. Rather we'd like to see generic API functionality be placed in a profile, such as MIDP 2.0 and its next versions, or into a generic optional package. Therefore  we want to have good 3D graphics support as a separate JSR (now filed as JSR-184, and  we wish Infusio will join it as well).4. Furthermore we also see that a large portion of the games can be well developed without a dedicated game engine - as long as good graphics and audio support is there. 5. We see good 3D graphics use in many non-game applications; navigation applications, location-based interactive maps, animated characters, screen savers, product catalogs to show products, 3D UI components. With the long experience in making mobile personalised devices, we feel that the above examples include important uses, at least for us.6.We do not see even timing advantage compared to MIDP 2.0-based solutions, since MIDP 2.0 will bring the game functionality earlier
+------------------------------------------------------------------------------
+On 2002-05-01 Siemens AG voted No with the following comment:
+Siemens shares most of the discussed concerns:1. Only one 3D API can be run on top of CLDC and it has to support for more native semantics than games. Otherwise fragmentation is the case. Siemens does not believe that designing a 3D API for games will end up supporting other 3D-based native semantics and duplication will be the case.2. We do not envision mobile devices with smaller footprint as those manufactured currently, therefore the generic 3D API will run together with MIDP on the smallest-budget phones and obviously also an higher end devices with the SAME APIs.3. Many of the listed features (section 2.1) are or will be duplicated by MIDP current or next versions.
+------------------------------------------------------------------------------
+On 2002-04-29 Insignia Solutions voted Yes with no comment.
+------------------------------------------------------------------------------
+On 2002-04-29 PalmSource, Inc. voted Yes with the following comment:
+Much better revision to the proposal.  While not agreeing the reasoning given for going to MIDP 1.0 (MIDP 2.0 for high-end devices), we believe targeting MIDP 1.0 is correct in providing the API to the largest set of possible platforms (e.g. if this JSR did not target MIDP 1.0, PDAP 1.0 could not use it). - The supersetting of the MIDP 2.0 LCDUI game APIs is viewed in our opinion as a REQUIREMENT in order to preserve future compatibility and potential adoption in MIDP 3.0 of the package should the industry demand it.  - This JSR MUST work closely with JSR 134 to leverage API sets to reduce discrepancies between CLDC and CDC API sets.- This JSR MUST work closely with JSR 184 to REUSE the same base 3D modeling engine.  The 3D modeling engine is generic enough to be provided in a separate package, as proven by the JSR 184 submission.  However, REUSE is a MUST to prevent API fragmentation.  Supersetting?- An ideal outcome is that 178 supersets MIDP 2.0 game APIs and reuses 184's base 3D modeling APIs. This produces one single game profile for the CLDC space that is compatible and reuses other API packages.Fragmentation:It is true that optional packages IN GENERAL will cause SHORT TERM market fragmentation.  But we see this as a necessary evil in order to promote advancement of the J2ME platform and "push the envelope" as far as APIs are concerned. Optional packages give the market what they want immediately (therefore the short term fragmentation), but in turn lets the market dictate what needs to be adopted as standard APIs in subsequent profile versions (reincorporating the fragmentation into the standard profile).
+------------------------------------------------------------------------------
+On 2002-04-26 Research In Motion, LTD (RIM) voted Yes with the following comment:
+A focused game API building block designed for and by game industry players is a useful JSR.  It allows vendors to decide on their market and support targeted JSRs for their customers on their own schedule.  We feel this will reduce fragmentation in game APIs.
+------------------------------------------------------------------------------
+On 2002-04-26 Motorola voted No with the following comment:
+Since the original proposal of JSR-178, we have raised our concerns through repeated e-mails and then teleconferences with In-Fusio as several other companies have. However, the JSR that has been re-submitted here is not significantly different than the original one we voted down in early April. The central reasons on why this JSR is unacceptable remain intact.  In-Fusio makes it clear that they disagree with JSR-184 and will implement their 3D engine in JSR-178 should 184 not be approved. So the end result would be effectively no change from their original submission. Several companies had objections to this JSR and tried to address them with In-Fusio to no avail.The central issue is how game development support is being enabled for the mobile information devices. The desired approach that SEVERAL companies approached In-Fusio with was to build off MIDP 2.0, complemented with optional packages. Unfortunately, In-Fusio did not want to discuss anything other than a name change and potential separation of the 3D engine. JSR-178 will fragment the industry. It clearly has competing and overlapping APIs with MIDP 2.0. In-Fusio is a member of the JSR-118 expert group, but chose not to discuss these proposals within that JSR, but rather to create a competing implementation that will actually release after MIDP 2.0. In summary of this point, JSR-178 significantly overlaps with JSR-118, which means that they either have to request a building block from JSR-118 or develop competing APIs. The prospect of creating a building block was discussed in the MIDP expert group and it was voted down almost unanimously in an effort to keep the game API evolution as a core part of the MIDP evolution. This reduces the market fragmentation. In-Fusio states that this JSR is not competing with MIDP 2.0, but it cannot be otherwise. This JSR is targeting the same devices with different APIs that accomplish similar tasks. How can this be anything other than competing APIs?
+------------------------------------------------------------------------------
+On 2002-04-25 Matsushita Electric Industrial Co., Ltd. voted Abstain with the following comment:
+Matsushita abstains from voting this JSR with the following comments: JSR185 also defines the 3D APIs for J2ME. If JSR185 overlaps with JSR178, it will cause the fragmentation of the  3D APIs for J2ME. We believe the JSR should be revised to clarify the relation with JSR185.
+------------------------------------------------------------------------------
+On 2002-04-24 Philips Electronics UK Ltd voted Yes with no comment.
+------------------------------------------------------------------------------
+</TEXTAREA>
+
+
+</FORM>
+
+
+
+
+
+<!-- ** BEGIN: footer.jsp ** //-->
+
+
+
+
+
+
+
+
+</td>
+</tr>
+</table>
+
+<!-- ** END: Content Table ** //-->
+
+<!-- ** BEGIN: Footer Table ** //-->
+
+<div id="footer" style="clear: both;">
+    <div class="footleft">
+        <a href="/en/resources/contacts">Contact Us</a>
+    </div>
+	
+    <div class="botbar"><img src="/images/spacer.gif" alt="" height="23" width="1"></div>
+
+    <div class="footleft2">
+         &copy; 2019, Oracle Corporation and/or its affiliates. 
+        <a href="/en/home/terms">Terms of Use</a>. <a href="http://www.oracle.com/us/legal/privacy/index.html">Privacy Policy</a>. <a href="http://www.oracle.com/us/legal/third-party-trademarks/third-party-trademarks-078568.html">Trademarks</a>
+    </div>
+
+    <div class="footright">
+        <img src="/images/common/logo_oracle_footer.gif" alt="Oracle Corporation" height="22" width="91">
+    </div>
+
+    <div style="clear: both;"><img src="/images/spacer.gif" alt="" height="30" width="1"></div>
+</div>
+
+<!-- ** END: Footer Table ** //-->
+
+
+
+<!-- ** Menu Start ** //-->
+
+
+
+</body>
+</html>
+<!-- ** END: footer.jsp ** //-->
+

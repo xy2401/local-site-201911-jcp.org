@@ -1,0 +1,981 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- ** BEGIN: header.jsp ** //-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3c.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+<head>
+    
+
+   
+    <link href="/includes/css/menu.css" rel="stylesheet" type="text/css"></link>
+    <link href="/includes/css/style.css" rel="stylesheet" type="text/css"></link>
+    <!--[if lt IE 6]><link href="/includes/css/style5.css" rel="stylesheet" type="text/css" ></link><![endif]-->
+    <!--[if gte IE 5]><link href="/includes/css/style6.css" rel="stylesheet" type="text/css" ></link><![endif]-->
+    <link href="/includes/css/tabs.css"  rel="stylesheet" type="text/css"></link>
+
+    <script type="text/javascript" src="/includes/scripts/tabs.js"></script>
+    <script type="text/javascript" src="/includes/scripts/menu.js"></script>
+   
+
+    
+
+    
+        <title>The Java Community Process(SM) Program - JSRs: Java Specification Requests - nominations JSR# 371</title>
+    
+
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+
+
+<body onload="P7_initPM(0,1,0,0,-1)">
+
+    <a name="top"></a>
+
+    <div id="header">
+	<div id="logo">
+		<a href="/en/home/index"><img src="/images/spacer.gif" alt="Java Community Process" height="81" width="151"></a>
+	</div>
+	<div id="tools">
+		<div class="search">
+			<form name="search" action="/en/jsr/summary" method="get" onsubmit="return validate_search()">
+				<input name="id" value="Search JSRs" size="16" class="form" onfocus="nullify_if_equal(this, 'Search JSRs')" type="text">
+				<a href="javascript:document.search.submit()" onclick="return validate_search()"><img src="/images/button_go.gif" width="21" height="16" border="0" alt="Submit this Search" name="sub_search"></a>
+			</form>
+		</div>
+		<div class="tools">
+			<a href="/en/press/pressroom">Press Room</a> &nbsp;|&nbsp;
+			<a href="http://java.com/java/download/index.jsp?cid=jdp78399">Get Java Here</a> &nbsp;|&nbsp;
+			<!-- <a href="javascript:void(0)">Print Format</a> &nbsp;|&nbsp;&nbsp; -->
+		</div>
+
+	</div>
+	<div style="clear: right;"></div>
+
+        
+
+	<div class="topbar"><img src="/images/spacer.gif" alt="" height="3" width="154"></div>
+	<div id="update"> </div>
+    </div>
+
+
+    
+
+        <!-- ** BEGIN: Content Table ** //-->
+
+        <table width="100%" border="0" cellpadding="0" cellspacing="0">
+
+            <tr>
+
+                <!-- ** BEGIN: Navigation Column ** //-->
+                <td width="150" id="leftcontent" valign="top">
+                    <!-- Navigation Placeholder //-->
+
+                    
+
+                    <div class="bar"><img src="/images/hr_dots1.gif" alt="" height="3" width="150"></div>
+
+        <!-- begin find JSRs form -->
+        <!-- IMPORTANT! do not convert this form to Struts < html : form > tag.  javascript change of form.action property fails. -->
+        <img src="/images/hd_find-jsrs.gif" alt="Find JSRs" height="18" width="150">
+        <form name="findjsr" action="/en/jsr/summary" method="get" class="pt5" onsubmit="return validate_findjsr()">
+            <input name="id" size="18" class="form" value="Search JSRs" onfocus="nullify_if_equal(this, 'Search JSRs')" type="text">
+	    <a href="javascript:document.findjsr.submit()" onclick="return validate_findjsr()"><img src="/images/button_go.gif" width="21" height="16" border="0" alt="Submit this Search" name="sub_search"></a>
+        </form><br><br>
+
+        <!-- ** Menu Start ** //-->
+
+        <ul id="p7PMnav">
+            <li><a href="/en/jsr/platform">JSRs by Platform</a></li>
+            <li><a href="/en/jsr/tech">JSRs by Technology</a></li>
+            <li><a href="/en/jsr/stage">JSRs by Stage</a></li>
+            <li><a href="/en/jsr/ec">JSRs by Committee</a></li>
+            <li><a href="/en/jsr/all">List of All JSRs</a></li>
+
+            <!--end find JSRs form -->
+            <div style="clear: both;"><img src="/images/spacer.gif" alt="" height="25" width="1"></div>
+
+            <!--begin my JCP -->
+            <img src="/images/hd_my-jcp.gif" alt="My JCP" height="18" width="150">
+            
+
+          <form name="login" method="get" action="/en/user/login" >
+            <input name="Sign-in" type="submit" title="Sign-in" value="Sign-in" />
+          </form>
+
+            <div style="clear:both"><img src="/images/global/spacer.gif" width="1" height="3" alt=""></div>
+            <div class="noNav">
+                <a href="/en/user/register">Register for Site</a>
+            </div>
+
+             <div class="bar"><img src="/images/hr_dots1.gif" alt="" height="3" width="150"></div>
+           <div class="noNav" style="color: #666666; padding: 0;">
+              Use of JCP site is subject to the
+              <a href="/en/home/terms" style="display:inline;padding: 0">JCP Terms of Use</a> and the
+              <a href="http://www.oracle.com/us/legal/privacy/index.html" style="display:inline;padding: 0" href="">Oracle Privacy Policy</a>
+          </div>
+
+            
+
+            <div style="clear:both"><img src="/images/global/spacer.gif" width="1" height="25" alt=""></div>
+
+            <!--begin JCP info -->
+            <img src="/images/hd_jcp-info.gif" alt="JCP Info" height="18" width="150">
+
+            <li><a href="/en/procedures/overview" class="p7PMtrg">About JCP</a>
+                <ul>
+                    <li><a href="/en/procedures/overview">Program Overview</a></li>
+                    <li><a href="/en/procedures/jcp2">JCP Process Document</a></li>
+                    <li><a href="/en/whatsnew/calendar">Calendar</a></li>
+                    <li><a href="/en/participation/members">JCP Members</a></li>
+                    <li><a href="/en/participation/committee">Executive Committee</a></li>
+                    <li><a href="/en/whatsnew/elections">Elections</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/en/participation/overview" class="p7PMtrg">Get Involved</a>
+		<ul>
+                    <li><a href="/en/participation/overview">Overview</a></li>
+                    <li><a href="/en/participation/membership">Becoming a JCP Member</a></li>
+		</ul>
+            </li>
+
+            <li><a href="/en/resources/contents" class="p7PMtrg">Community Resources</a>
+                <ul>
+                    <li><a href="/en/resources/contents">Overview</a></li>
+                    <li><a href="/en/resources/tutorials">Tutorials</a></li>
+                    <li><a href="/en/resources/multimedia">JCP Podcasts</a></li>
+                    <li><a href="/en/resources/guide">Spec Lead Guide</a></li>
+                    <li><a href="/en/resources/tdk">TCK Tool & Info</a></li>
+                    <li><a href="/en/resources/license_reference">License Reference</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/en/press/pmo" class="p7PMtrg">Community News</a>
+                <ul>
+                    <li><a href="/en/press/pmo">News</a></li>
+                    <li><a href="/en/press/news/awards/awards_main">Programs &amp; Awards</a></li>
+                    <li><a href="/en/press/releases">Press Releases</a></li>
+                    <li><a href="/en/press/success">Success Stories</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/en/introduction/faq">FAQ</a></li>
+
+            <li><a href="/en/resources/contacts">Contact Us</a></li>
+
+            <div style="clear: both;"><img src="/images/spacer.gif" alt="" height="25" width="1"></div>
+
+            <!--[if lte IE 6]><style>#p7PMnav a{height:1em;}#p7PMnav li{height:1em;float:left;clear:both;width:100%}</style><![endif]-->
+            <!--[if IE 6]><style>#p7PMnav li{clear:none;}</style><![endif]-->
+            <!--[if IE 7]><style>#p7PMnav a{zoom:100%;}#p7PMnav li{float:left;clear:both;width:100%;}</style><![endif]-->
+        </ul>
+
+        
+
+        <!--begin ad space -->
+        <div class="ads">
+            <a href="http://java.com/java/download/index.jsp?cid=jdp78399" target="_blank"><img style="display: ;" src="/images/ad_banner2.gif" alt="Ad Banner" border="1" height="70" width="150"></a>
+        </div>
+        <!--end ad space -->
+
+<!-- ** Menu End ** //-->
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;<br>
+
+    
+
+                    &nbsp;<br>
+                    <img src="/images/common/trans.gif" alt="" width="1" height="150"><br>
+
+              
+
+
+
+                </td>
+                <!-- ** END: Navigation Column ** //-->
+
+                <!-- ** BEGIN: Gutter Column ** //-->
+		<td width="10" nowrap><img src="/images/common/trans.gif" alt="" width="10" height="1"></td>
+                <!-- ** END: Gutter Column ** //-->
+
+                <!-- ** BEGIN: Content Column ** //-->
+                <td width="100%" valign="top">
+
+    
+<script type="text/javascript">
+
+String.prototype.trim = function() {
+        return this.replace(/^\s+|\s+$/g,"");
+}
+String.prototype.ltrim = function() {
+        return this.replace(/^\s+/,"");
+}
+String.prototype.rtrim = function() {
+        return this.replace(/\s+$/,"");
+}
+
+function validate_search() {
+	if (document.search.id.value == "Search JSRs" || document.search.id.value.trim().length == 0) {
+		alert("Search terms must be entered first");
+		return false;
+	}
+	return true;
+}
+
+function validate_findjsr() {
+	if (document.findjsr.id.value == "Search JSRs" || document.findjsr.id.value.trim().length == 0) {
+		alert("Search terms must be entered first");
+		return false;
+	}
+	return true;
+}
+
+function nullify_if_equal(field, str) {
+	// alert("val=" + field.value);
+	if (field.value == str) {
+		field.value = "";
+	}
+}
+
+</script>
+<!-- ** END: header.jsp ** //-->
+
+
+
+
+
+        <!--  BEGIN NAVIGATION TABS -->
+        <div id="p7TP1">
+                <div class="p7TP_tabs">
+                        <div id="p7tpb1_1" class="down"><a class="down">JSR</a></div>
+                        <div><a href="/en/egc/view?id=371">Community</a></div>
+                        <div><a href="/en/eg/eghome?id=371">Expert Group</a></div>
+			
+
+                <br class="p7TPclear" />
+                </div>
+
+                <div class="p7TPcontent">
+                        <div id="p7tpc1_1">
+
+			
+                                <a href="summary?id=371">Summary</a>
+			
+			
+                                &nbsp;|&nbsp;
+				<a href="proposalDetails?id=371">Proposal</a>
+			
+			
+                                &nbsp;|&nbsp;
+                                <a href="detail?id=371">Detail (Summary &amp; Proposal)</a>
+			
+		
+                        
+                                &nbsp;|&nbsp;
+                                <span>Nominations</span>
+			
+		
+                        </div>
+
+                </div>
+                <!--[if lte IE 6]><style type="text/css">.p7TPpanel div,.p7TPpanel a{height:1%;}.p7TP_tabs a{white-space:nowrap;}</style><![endif]-->
+        </div>
+        <script type="text/javascript">
+                P7_initTP(1,0);
+        </script>
+        <!--  END NAVIGATION TABS -->
+
+
+<div class="anybar"><img src="/images/global/bar_green.gif" alt="" width="12" height="4"></div>
+
+<div class="header2">JSRs: Java Specification Requests</div>
+<div class="header1">JSR 371: Model-View-Controller (MVC 1.0) Specification</div>
+<div class="anybar"><img src="/images/global/bar_green.gif" alt="" width="12" height="4"></div>
+<br>
+
+
+
+
+
+
+<!-- ********************************************** -->
+<!--  Nominations Info                              -->
+<!-- ********************************************** -->
+<p>
+
+
+	    
+    <h2>Open Nominations</h2>
+    <table border="1px" style="border-collapse: collapse; ">
+        <tr style="background:#D2E2F3;">
+            <td width=10% align="center">Nomination Type</td>
+            <td width=10% align="center">Full Name</td>
+            <td width="30%" align="center">Biography</td>
+            <td width="30%" align="center">Spec Lead Comments</td>
+            <td align="center">Submission date</td>
+            <td align="center">Spec Lead Vote</td>
+            <td align="center">PMO Vote</td>
+        </tr>
+            
+    </table>
+    
+	    
+		<br> <br>
+	    
+    <h2>Approved Nominations</h2>
+    <table border="1px" style="border-collapse: collapse; ">
+        <tr style="background:#D2E2F3;">
+            <td width=10% align="center">Nomination Type</td>
+            <td width=10% align="center">Full Name</td>
+            <td width="30%" align="center">Biography</td>
+            <td width="30%" align="center">Spec Lead Comments</td>
+            <td align="center">Submission date</td>
+            <td align="center">Spec Lead Vote</td>
+            <td align="center">PMO Vote</td>
+        </tr>
+            
+        <tr>
+            <td>Expert Group</td>
+            <td>Florian Hirsch</td>
+            <td width="40%">I've contributed among other things the uri-builder part to the specification and reference implementation. 
+
+https://github.com/mvc-spec/mvc-spec/commits?author=lefloh
+
+https://github.com/mvc-spec/ozark/commits?author=lefloh</td>
+            <td>Thanks a lot for all your contributions!</td>
+            <td>Dec 2, 2017</td>
+            <td align="center">Y</td>
+            <td align="center">Y</td>
+        </tr>
+	
+
+            
+        <tr>
+            <td>Expert Group</td>
+            <td>Christian Kaltepoth</td>
+            <td width="40%">The PMO asked me to resubmit the online EG nomination form. The reason for this is that I switched my individual JCP membership to a representative of my employer "ingenit GmbH & Co. KG" for which I'm the primary JCP contact. Let me know if you need any more details. Thanks.</td>
+            <td></td>
+            <td>May 24, 2016</td>
+            <td align="center">Y</td>
+            <td align="center">Y</td>
+        </tr>
+	
+
+            
+        <tr>
+            <td>Expert Group</td>
+            <td>Rahman USTA</td>
+            <td width="40%">I'm Rahman from Istanbul JUG and I'm a Java* trainer. I wrote a Java EE and a Java 8 book in Turkey. I love to contribute JSRs in Adopt a JSR concept. I'm interested with MVC 1.0 and I've contributed some this JSR. I'm also Duke's Choice Award 2015 winner (AsciidocFX). Christian, Ivar and Rodrigo can have something to say about me.
+
+[blog posts]
+
+1) https://kodcu.com/2015/02/first-look-at-jsr-371-mvc-1-0-spesification-and-ozark-ri/
+
+2) http://istanbul-jug.org/2016/03/shipping-mvc-1-0-into-glassfish-5/
+
+[contributions]
+
+1) https://github.com/mvc-spec/ozark/commits?author=rahmanusta
+
+2) https://github.com/mvc-spec/mvc-spec/pull/4
+
+3) https://github.com/mvc-spec/ozark/pull/4
+
+I will be happy to contribute this JSR more as an EG member.
+
+Best regards.</td>
+            <td></td>
+            <td>Apr 16, 2016</td>
+            <td align="center">Y</td>
+            <td align="center">Y</td>
+        </tr>
+	
+
+            
+        <tr>
+            <td>Expert Group</td>
+            <td>Kito Mann</td>
+            <td width="40%">Kito D. Mann is the Principal Consultant at Virtua, Inc., specializing in enterprise application architecture, training, development, and mentoring with JavaServer Faces, portlets, Liferay, and Java EE technologies. He is also the editor-in-chief of JSFCentral.com (www.jsfcentral.com), co-host of the Enterprise Java Newscast (http://www.enterprisejavanews.com), host of the JSF Podcast interview series (http://www.jsfcentral.com/resources/jsfcentralpodcasts/), and the author of JavaServer Faces in Action (Manning). Mann has participated in several Java Community Process expert groups (including CDI, JSF and Portlets) and is also an internationally recognized speaker. He holds a BA in Computer Science from Johns Hopkins University.</td>
+            <td></td>
+            <td>Jan 19, 2015</td>
+            <td align="center">Y</td>
+            <td align="center">Y</td>
+        </tr>
+	
+
+            
+        <tr>
+            <td>Expert Group</td>
+            <td>Paul Nicolucci</td>
+            <td width="40%">I've participated in the JSF 2.2 expert group and am also submitting for participation for JSF 2.3.  It makes logical sense to also participate within this JSR for MVC as a representative for IBM.  Within IBM I am one of the developers on the web tier team, specializing in JSF / JSP / EL / Servlet technologies.</td>
+            <td></td>
+            <td>Dec 2, 2014</td>
+            <td align="center">Y</td>
+            <td align="center">Y</td>
+        </tr>
+	
+
+            
+        <tr>
+            <td>Expert Group</td>
+            <td>Stefan Tilkov</td>
+            <td width="40%">Stefan Tilkov was a member of the JAX-RS spec, has been working on web-based systems for a decade, is the author of numerous articles and a book on REST, co-authored the ROCA style web page [1], and has been looking for a Java web framework that respects web principles for a long time. He has experience with a number of web frameworks for different programming languages, including Spring MVC, Struts and Play (Java), Rails and Sinatra (Ruby), and Compojure/Ring (Clojure).  
+
+[1] http://roca-style.org</td>
+            <td></td>
+            <td>Oct 2, 2014</td>
+            <td align="center">Y</td>
+            <td align="center">Y</td>
+        </tr>
+	
+
+            
+        <tr>
+            <td>Expert Group</td>
+            <td>Joshua Wilson</td>
+            <td width="40%">Joshua Wilson has extensive experience with Spring MVC as well as various other Java and JavaScript based MVC Web Frameworks.</td>
+            <td></td>
+            <td>Sep 12, 2014</td>
+            <td align="center">Y</td>
+            <td align="center">Y</td>
+        </tr>
+	
+
+            
+        <tr>
+            <td>Expert Group</td>
+            <td>Guilherme Silveira</td>
+            <td width="40%">Part of the JAX-RS2.0 expert group JSR, I was the creator of VRaptor 3. The creator and main developer of VRAptor 4 is Rodrigo Turini (who also sent a participant request to this JSR from his user).
+
+Having created and influenced the path of VRaptor 3, I have a large experience with driving the main MVC features into what the mainstream public would use, while keeping everything configurable via a programmatic API. By doing that, the evolution of the framework was possible minimizing compatibility issues, since one could provide alternate implementations to core components, which would make the framework behave in a much different way in its 3.5 release than from it's 3.0, although dozens of releases were made in between. At that time there was no CDI specification and implementation and since then VRaptor 4 has adopted CDI (and weld) by the hands of Turini.
+
+I am the author of Restfulie and tech leader at Caelum and Alura, the most renowed Java schools in Brazil, as I am the cofounder of GUJ, the biggest portuguese language Java website and community in the world.
+
+If possible, I would be glad to discuss the points of decision in which we failed earlier on MVC's frameworks like and which ones were successful and why.</td>
+            <td></td>
+            <td>Sep 6, 2014</td>
+            <td align="center">Y</td>
+            <td align="center">Y</td>
+        </tr>
+	
+
+            
+        <tr>
+            <td>Expert Group</td>
+            <td>Ivar Grimstad</td>
+            <td width="40%">I have programmed with Java since 1995 and professionally since 1998. Mostly with Java EE and related technologies.
+
+http://www.agilejava.eu/
+
+In my work as a consultant, I have used most of the major MVC framework, such as Struts, Spring MVC and JSF. In some cases, mostly "pre-Spring-era", even developed our own implementation.
+
+I think I can contribute to JSR 371 with my practical experience of using MVC in a wide range of applications.</td>
+            <td></td>
+            <td>Sep 3, 2014</td>
+            <td align="center">Y</td>
+            <td align="center">Y</td>
+        </tr>
+	
+
+            
+        <tr>
+            <td>Expert Group</td>
+            <td>Rodrigo Turini</td>
+            <td width="40%">Rodrigo Turini currently works as JavaEE instructor and developer at Caelum, a famous training company in Brazil. He's the project leader behind VRaptor 4, that is an action based MVC framework on top of CDI, and also contribute to several other open source projects.</td>
+            <td></td>
+            <td>Sep 3, 2014</td>
+            <td align="center">Y</td>
+            <td align="center">Y</td>
+        </tr>
+	
+
+            
+        <tr>
+            <td>Expert Group</td>
+            <td>Frank Caputo</td>
+            <td width="40%">I was EG member for JSR344 and contributed for passthrough elements and resource library contracts. I will be an EG member for JSR 372. I'd like to see, into which direction MVC will go. Hopefully I can contribute some ideas or even code.</td>
+            <td></td>
+            <td>Sep 3, 2014</td>
+            <td align="center">Y</td>
+            <td align="center">Y</td>
+        </tr>
+	
+
+            
+        <tr>
+            <td>Expert Group</td>
+            <td>Christian Kaltepoth</td>
+            <td width="40%">My name is Christian Kaltepoth. I'm senior developer at ingenit in Dortmund, Germany. I've many years of experience with different Java web frameworks. Most of the time I worked with JSF which I used since the early days (JSF 1.1 back in 2005). But I'm also familiar with classic frameworks like Apache Struts and newer ones like VRaptor.
+I'm the project lead of PrettyFaces [1], the popular URL-rewriting library for JSF which enables creation of RESTful URLs and allows to use JSF in a more action-oriented way. I've talked about RESTful JSF on several conferences in the last years.
+I'm also PMC member of Apache DeltaSpike [2], co-author of the OcpSoft Rewrite framework [3] and creator of Togglz [4]. 
+
+As I worked with JSF for many years, I know that it isn't the optimal choice for all usecases. Especially the heavy use of JavaScript on the client side doesn't always work well with the stateful component-based approach of JSF.
+ 
+
+I strongly believe that a more lightweight and action-oriented web framework will be a huge win for the Java EE platform and would therefore love to contribute to the specification.
+
+[1] http://ocpsoft.org/prettyfaces/
+[2] http://deltaspike.apache.org/
+[3] http://ocpsoft.org/rewrite/
+[4] http://www.togglz.org/</td>
+            <td></td>
+            <td>Sep 1, 2014</td>
+            <td align="center">Y</td>
+            <td align="center">Y</td>
+        </tr>
+	
+
+            
+        <tr>
+            <td>Expert Group</td>
+            <td>Woong-ki Lee</td>
+            <td width="40%">I(Woongki Lee) am a Java EE platform Web Container developer working at TmaxSoft R&D Center in South Korea. My official title is Junior researcher of TmaxSoft. Currently I'm working on TmaxSoft Web Container platform JEUS, mainly developing Servlet Container and WebSocket Container.With my experience and expertise on Java EE technologies, I think I can contribute to this JSR.</td>
+            <td></td>
+            <td>Aug 31, 2014</td>
+            <td align="center">Y</td>
+            <td align="center">Y</td>
+        </tr>
+	
+
+            
+        <tr>
+            <td>Expert Group</td>
+            <td>Neil Griffin</td>
+            <td width="40%">Neil Griffin is a Software Architect for Liferay and is the project lead for Liferay Faces. Neil has over 20 years of experience in software engineering and represents the company on the JSR 362 (Portlet 3.0) Expert Group. In past years he has served on the JSR 314 (JSF 2.0/2.1) and JSR 344 (JSF 2.2) Expert Groups. He is also a contributing author to the JSF 2.0 Complete Reference, published by McGraw-Hill.</td>
+            <td></td>
+            <td>Aug 28, 2014</td>
+            <td align="center">Y</td>
+            <td align="center">Y</td>
+        </tr>
+	
+
+            
+        <tr>
+            <td>Expert Group</td>
+            <td>Mathieu Ancelin</td>
+            <td width="40%">I am a software engineer at SERLI, specialized in web programming and in modern web frameworks, and with a good background in Java EE technologies. I'm involved in several open-source projects such as GlassFish and Weld, and even leads some like ReactiveCouchbase and Weld-OSGi. I am a JSR-346 (CDI 1.1) expert group member, OSGi EEG member and a crew member of the Poitou-Charentes JUG.
+
+I really love web frameworks, I even authored some. I'm really psyched that Java EE 8 will include an MVC web framework and I'd love to be involved.</td>
+            <td></td>
+            <td>Aug 27, 2014</td>
+            <td align="center">Y</td>
+            <td align="center">Y</td>
+        </tr>
+	
+
+            
+        <tr>
+            <td>Contributor</td>
+            <td>Andreas Badelt</td>
+            <td width="40%">I am a freelance software developer and architect - and also an active member of the German Oracle User Group as well as the iJUG (umbrella JUG of german-speaking JUGs).
+I helped the MVC JSR with setting up code coverage reporting on spec assertions.</td>
+            <td></td>
+            <td>May 18, 2018</td>
+            <td align="center">Y</td>
+            <td align="center">Y</td>
+        </tr>
+	
+
+            
+        <tr>
+            <td>Contributor</td>
+            <td>Phillip Krüger</td>
+            <td width="40%">I helped with moving the spec from LaTeX to AsciiDoc. I will continue to assist going forward in any way I can.</td>
+            <td>Thanks a lot for your help with AsciiDoc</td>
+            <td>Nov 29, 2017</td>
+            <td align="center">Y</td>
+            <td align="center">Y</td>
+        </tr>
+	
+
+            
+        <tr>
+            <td>Contributor</td>
+            <td>Daniel Dias dos Santos</td>
+            <td width="40%">A dedicated programmer and student, member of SouJava, RioJUG and Associate JCP. I like all kinds of technology and am always looking, reading and trying new and different technologies, languages &#8203;&#8203;and the like. Always practicing to improve my knowledge. 
+
+I'm interested in MVC 1.0 and would like to contribute to this JSR. I recently made a simple CRUD with this JSR along with MongoDB and donated the same to Adopt-a-jsr at the following link: 
+
+https://github.com/Adopt-a-JSR/MVC1.0.Ozark 
+
+and an article in portuguese(Brazil) : 
+
+https://danieldiasjava.wordpress.com/2017/01/25/criando-uma-aplicacao-com-jsr-371mvc-1-0/ . 
+
+I will be happy to contribute to this JSR. 
+
+Thank you.</td>
+            <td>Great job promoting MVC 1.0 in Brazil</td>
+            <td>Feb 4, 2017</td>
+            <td align="center">Y</td>
+            <td align="center">Y</td>
+        </tr>
+	
+
+            
+    </table>
+    
+	    
+		<br> <br>
+	    
+    <h2>Processed Nominations</h2>
+    <table border="1px" style="border-collapse: collapse; ">
+        <tr style="background:#D2E2F3;">
+            <td width=10% align="center">Nomination Type</td>
+            <td width=10% align="center">Full Name</td>
+            <td width="30%" align="center">Biography</td>
+            <td width="30%" align="center">Spec Lead Comments</td>
+            <td align="center">Submission date</td>
+            <td align="center">Spec Lead Vote</td>
+            <td align="center">PMO Vote</td>
+        </tr>
+            
+        <tr>
+            <td>Expert Group</td>
+            <td>John Hogan</td>
+            <td width="40%">Java Developer since 1995, Sun/Oracle certified Java architect J2EE, Java EE 5 and 6.  Currently working as a Principal Software Architect at Boston Children's Hospital.</td>
+            <td>Joining the EG is not necessary to contribute. You seem to have the qualifications for doing some good work. Please join the mailing list (https://groups.google.com/forum/?hl=en#!forum/jsr371-users) and join in on the discussion. We can consider expanding the EG at a later stage.</td>
+            <td>Sep 1, 2017</td>
+            <td align="center">P</td>
+            <td align="center">I</td>
+        </tr>
+	
+
+            
+        <tr>
+            <td>Expert Group</td>
+            <td>Florian Hirsch</td>
+            <td width="40%">I'm working as senior consultant for adorsys in Nuremberg / Germany and have long term experience in developing web applications with JSF, JAX-RS and various JavaScript frameworks.</td>
+            <td></td>
+            <td>Jun 16, 2016</td>
+            <td align="center">-</td>
+            <td align="center">Y</td>
+        </tr>
+	
+
+            
+        <tr>
+            <td>Expert Group</td>
+            <td>Mahdi El Masaoudi</td>
+            <td width="40%">Academic behavior :
++ Bachelor in computer science applied to management (Informatique de gestion) From Sherbrooke University.
++ Master. Sc in Software Engineering from Sherbrooke University.
+
+Experience :
+
+3.5 Years experience as Java developer / CGI inc
+
+Currently Analyst programmer in Desjardins.</td>
+            <td></td>
+            <td>Oct 19, 2015</td>
+            <td align="center">N</td>
+            <td align="center">X<sub>M</sub></td>
+        </tr>
+	
+
+            
+        <tr>
+            <td>Expert Group</td>
+            <td>Thomas Modeneis</td>
+            <td width="40%">I have +10 years experience on mvc, jsp, servlets, struts, jsf, seam etc.
+I would like to help on the implementation, documenting and designing for JSR-371 because it will affect my day-to-day work.
+I have experience as SDET, therefore I believe I'm able to help with the testing and the quality assurance for this JSR.</td>
+            <td></td>
+            <td>May 10, 2015</td>
+            <td align="center">N</td>
+            <td align="center">Y</td>
+        </tr>
+	
+
+            
+        <tr>
+            <td>Expert Group</td>
+            <td>Alexander Salvanos</td>
+            <td width="40%">Currently, I am the author of the 1000 page Bestseller "Professionell entwickeln mit Java EE 7" and also I am a member of the expert Group for the JSR 367.</td>
+            <td></td>
+            <td>Apr 5, 2015</td>
+            <td align="center">N</td>
+            <td align="center">X<sub>A</sub></td>
+        </tr>
+	
+
+            
+        <tr>
+            <td>Expert Group</td>
+            <td>Sebastian Daschner</td>
+            <td width="40%">I'm working as a freelancer in the Java / Java EE ecosystem. I have been working a lot with Spring MVC in the last 3-4 years and recently also with Java EE -- mainly JAX-RS / Servlets. I have evaluated the JAX-RS 2.0 JSR for my Bachelor thesis (in which I developed an algorithm for analysing JAX-RS projects via Java Bytecode). For my projects I'm partly using an own JAX-RS extension, which allows the usages of own Views (that a forwarded to a JSP/HTML page) -- so a small 'MVC extension'. IMO the lack of a MVC JSR was one of the last 'disadvantages' of JEE compared to Spring.</td>
+            <td></td>
+            <td>Mar 26, 2015</td>
+            <td align="center">N</td>
+            <td align="center">Y</td>
+        </tr>
+	
+
+            
+        <tr>
+            <td>Expert Group</td>
+            <td>Vaibhav Gupta</td>
+            <td width="40%">I am working as a software developer in technologies related to frontend such as JSF, Struts, Spring MVC and Javascript. I have worked in a startup and seen its growth from 5 employees to 750 employees. I have a good grasp on frontend technologies, specifically web frameworks (both action and component based MVC) and javascript. I have introduced MV* pattern in javascript as well in my company using angularjs. Hence, I consider myself qualified to be a part of Expert Group for MVC 1.0</td>
+            <td></td>
+            <td>Oct 23, 2014</td>
+            <td align="center">N</td>
+            <td align="center">X<sub>M</sub></td>
+        </tr>
+	
+
+            
+        <tr>
+            <td>Expert Group</td>
+            <td>Kito Mann</td>
+            <td width="40%">Kito D. Mann is the Principal Consultant at Virtua, Inc., specializing in enterprise application architecture, training, development, and mentoring with JavaServer Faces, portlets, Liferay, and Java EE technologies. He is also the editor-in-chief of JSFCentral.com (www.jsfcentral.com), co-host of the Enterprise Java Newscast (http://www.enterprisejavanews.com), host of the JSF Podcast interview series (http://www.jsfcentral.com/resources/jsfcentralpodcasts/), and the author of JavaServer Faces in Action (Manning). Mann has participated in several Java Community Process expert groups (including JSF and Portlets) and is also an internationally recognized speaker. He holds a BA in Computer Science from Johns Hopkins University.</td>
+            <td></td>
+            <td>Oct 20, 2014</td>
+            <td align="center">Y</td>
+            <td align="center">X<sub>A</sub></td>
+        </tr>
+	
+
+            
+        <tr>
+            <td>Expert Group</td>
+            <td>Werner Keil</td>
+            <td width="40%">See https://jcp.org/en/press/news/ec-feature#keil</td>
+            <td></td>
+            <td>Oct 13, 2014</td>
+            <td align="center">N</td>
+            <td align="center">X<sub>A</sub></td>
+        </tr>
+	
+
+            
+        <tr>
+            <td>Expert Group</td>
+            <td>Otávio Garcia</td>
+            <td width="40%">I'm a Java developer since 1999, and one of main commiters of VRaptor project, a MVC framework focused on simplicity and fast development. I contribute for the project actively since 2009. In my Github profile I have contributions for some opensource projects.
+
+And I can share my knowledge and experience gained in this project.</td>
+            <td></td>
+            <td>Sep 30, 2014</td>
+            <td align="center">N</td>
+            <td align="center">X<sub>M</sub></td>
+        </tr>
+	
+
+            
+        <tr>
+            <td>Expert Group</td>
+            <td>Francisco Sokol</td>
+            <td width="40%">Graduated in Computer Science, Francisco (aka Chico) works as a software developer and instructor of Java and Android courses in Caelum (http://www.caelum.com.br), a brazilian company specialized in Java training. As a developer, worked in several projects of the company, using different technologies in Java and Ruby. Chico (https://github.com/csokol) also participates in several open source projects of the company such as Tubaina (https://github.com/caelum/tubaina) and VRaptor (https://github.com/caelum/vraptor), being the creator of some plugins for this framework.</td>
+            <td></td>
+            <td>Sep 3, 2014</td>
+            <td align="center">N</td>
+            <td align="center">X<sub>M</sub></td>
+        </tr>
+	
+
+            
+        <tr>
+            <td>Expert Group</td>
+            <td>Frans Thamura</td>
+            <td width="40%">I have create framework integration since 2003, based on Web Work (sf.net/projects/cimande, now splitted become JAXRS-MVC integration framework, and we have experience create MVC + JAXRS in one shared environment), and WW become Struts2 and we create revision of REST plugin in S2, https://java.net/projects/s2restplugins/pages/Home</td>
+            <td></td>
+            <td>Aug 29, 2014</td>
+            <td align="center">N</td>
+            <td align="center">X<sub>M</sub></td>
+        </tr>
+	
+
+            
+        <tr>
+            <td>Contributor</td>
+            <td>Mohammad Taufik</td>
+            <td width="40%">Hi team, I'm Taufik, I am newcomers in JCP. I've become Java Developer around 7 years, I know that is not enough guarantee I have a good experiment in this field, so I do appreciate to join this group to contribute the JSR, beside actually I want to find many experience regarding teamwork with any expert people in this group. Therefore I very hope that I allowed and can contribute anything here.</td>
+            <td>Encouraged to join mailing list and start contributing in order to be listed</td>
+            <td>Feb 13, 2018</td>
+            <td align="center">N</td>
+            <td align="center">Y</td>
+        </tr>
+	
+
+            
+        <tr>
+            <td>Contributor</td>
+            <td>Jeyvison Nascimento</td>
+            <td width="40%">I work with Java since 2010. I started with JEE (EJB 1.0) and some years ago i moved to a spring project. Nowadays i work in a company that contributes with some JSR's (Liferay) and i look forward to help you guys with this important specification.</td>
+            <td>Keep up the activity on the mailing list! A Contributor status is within reach...</td>
+            <td>Sep 29, 2017</td>
+            <td align="center">P</td>
+            <td align="center">Y</td>
+        </tr>
+	
+
+            
+        <tr>
+            <td>Contributor</td>
+            <td>Alexsandro Felix Alexsandro</td>
+            <td width="40%">Help with Java SE documentation and encoding processes.</td>
+            <td>No contributions made yet, so I am sorry to be unable to list him as a contributor yet. May change in the future</td>
+            <td>Aug 2, 2017</td>
+            <td align="center">N</td>
+            <td align="center">Y</td>
+        </tr>
+	
+
+            
+        <tr>
+            <td>Contributor</td>
+            <td>Daniel Dias dos Santos</td>
+            <td width="40%">Technologist in Analysis and Development of System and Post Graduate in Java Development.
+
+In constant study, always seeking knowledge and experience in other development platforms. A Carioca in love with technology. Interested in and getting better at Java technology. Member of SouJava and RioJUG.
+
+Knowledge and development skills in Java, JEE, JSP, HTML5, CSS3, Servlet, MySQL, Oracle BD, JPA, UML, JDBC, JQuery, Java Script, Apache Maven, TomCat, GlassFish and WildFly servers, GitHub, Eclipse IDE , Hibernate, Struts,
+Android, MongoDB, Git, Spring.</td>
+            <td></td>
+            <td>Nov 9, 2016</td>
+            <td align="center">-</td>
+            <td align="center">Y</td>
+        </tr>
+	
+
+            
+        <tr>
+            <td>Contributor</td>
+            <td>Fernando Almeida</td>
+            <td width="40%">As a 8 years of experience with Java development, always have a project to write an Official MVC specification to the organizations that i've been worked. I Think MVC  is a real design pattern (design pattern) and makes it easy to maintain the application with modular rapid development packages. Crafting application tasks into separate models, views and controllers makes the application very light and independent. New features are easily added and can be new faces on old features in a flash.</td>
+            <td></td>
+            <td>Oct 28, 2016</td>
+            <td align="center">-</td>
+            <td align="center">Y</td>
+        </tr>
+	
+
+            
+    </table>
+    
+
+<ol>
+<a name="legend"></a>Spec Lead Vote Legend:<br>
+<table border="1">
+<tr><th>Spec<br>Lead<br>Vote</th><th align="left">Description</th><tr>
+<tr><td align="center" scope="colgroup">-</td><td>Not yet reviewed/pending - The Spec Lead has not processed this nomination</td></tr>
+<tr><td align="center">P</td><td>Processing - The Spec Lead has seen the nomination and needs more time to arrive at a decision</td></tr>
+<tr><td align="center">N</td><td>No - The Spec Lead has decided that this nominee should not be on the JSR</td></tr>
+<tr><td align="center">Y</td><td>Yes - The Spec Lead wants the nominee on the JSR</td></tr>
+</table>
+</ol>
+<br>
+
+<ol>
+<a name="legend2"></a>PMO Vote Legend:<br>
+<table border="1">
+<tr><th>PMO<br>Vote</th><th align="left">Description</th><tr>
+<tr><td align="center" scope="colgroup">-</td><td>The PMO has not yet voted on this nomination</td></tr>
+<tr><td align="center">P</td><td>Processing - The nominee can not yet participate on this JSR, but the legal agreements are being processed</td></tr>
+<tr><td align="center">I</td><td>Incomplete, Illegible, or Inaccurate nomination</td></tr>
+<tr><td align="center">X<sub>A</sub></td><td>Missing required agreement to participate on this JSR - Addendum (ECA) Required</td></tr>
+<tr><td align="center">X<sub>M</sub></td><td>Missing required agreement to participate on any JSR - Not a JCP Member</td></tr>
+<tr><td align="center">X</td><td>Not able to be on a JSR - The PMO has determined that this person cannot be on this JSR</td></tr>
+<tr><td align="center">Y</td><td>Yes - The PMO views this as a valid nomination with a current Membership in place</td></tr>
+</table>
+</ol>
+
+
+
+
+
+
+
+<!-- ** BEGIN: footer.jsp ** //-->
+
+
+
+
+
+
+
+
+</td>
+</tr>
+</table>
+
+<!-- ** END: Content Table ** //-->
+
+<!-- ** BEGIN: Footer Table ** //-->
+
+<div id="footer" style="clear: both;">
+    <div class="footleft">
+        <a href="/en/resources/contacts">Contact Us</a>
+    </div>
+	
+    <div class="botbar"><img src="/images/spacer.gif" alt="" height="23" width="1"></div>
+
+    <div class="footleft2">
+         &copy; 2019, Oracle Corporation and/or its affiliates. 
+        <a href="/en/home/terms">Terms of Use</a>. <a href="http://www.oracle.com/us/legal/privacy/index.html">Privacy Policy</a>. <a href="http://www.oracle.com/us/legal/third-party-trademarks/third-party-trademarks-078568.html">Trademarks</a>
+    </div>
+
+    <div class="footright">
+        <img src="/images/common/logo_oracle_footer.gif" alt="Oracle Corporation" height="22" width="91">
+    </div>
+
+    <div style="clear: both;"><img src="/images/spacer.gif" alt="" height="30" width="1"></div>
+</div>
+
+<!-- ** END: Footer Table ** //-->
+
+
+
+<!-- ** Menu Start ** //-->
+
+
+
+</body>
+</html>
+<!-- ** END: footer.jsp ** //-->
+

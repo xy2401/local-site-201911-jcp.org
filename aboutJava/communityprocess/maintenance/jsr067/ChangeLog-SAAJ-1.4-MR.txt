@@ -1,0 +1,27 @@
+Change Log for JSR 67: Java APIs for XML Messaging 1.0
+
+Description: Changes for SAAJ API 1.4 MR
+
+Maintenance Lead: Lukas Jungmann, Oracle Corporation
+
+Feedback: comments should be sent to spec@saaj.java.net
+
+Proposed changes:
+* define JDK 9 module for the SAAJ API to be 'java.xml.soap'
+* change the definition of the discovery process of SAAJ implementation
+* add generics where applicable
+* changed MAY to MUST in javax.xml.soap.SOAPElement.getChildElements methods
+* javadoc
+   - add @since 1.6 where applicable
+   - add missing parameter description
+   - add missing exception description
+   - add missing return value description
+* end of JSR 67 as a standalone technology
+     SAAJ API 1.4 will be the last maintenance release of the JSR 67 specification as a standalone technology.
+   SAAJ API will continue to be released with the Java API for XML-Based Web Services (JAX-WS) 2.0 JSR,
+   but will no longer exist as a standalone technology. Future changes to the SAAJ API will be defined through
+   the JAX-WS JSR. The subsumption of SAAJ API into the JAX-WS JSR does not change any mechanisms
+   defined in SAAJ API. The interfaces are the same except that they will then be directly specified
+   in the JAX-WS JSR. Deployment of alternative implementations of the SAAJ API will continue to be supported.
+
+

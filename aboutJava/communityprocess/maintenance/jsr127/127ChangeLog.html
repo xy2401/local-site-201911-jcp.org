@@ -1,0 +1,870 @@
+
+<!-- ** BEGIN: header.jsp ** //-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3c.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+<head>
+    
+
+   
+    <link href="/includes/css/menu.css" rel="stylesheet" type="text/css"></link>
+    <link href="/includes/css/style.css" rel="stylesheet" type="text/css"></link>
+    <!--[if lt IE 6]><link href="/includes/css/style5.css" rel="stylesheet" type="text/css" ></link><![endif]-->
+    <!--[if gte IE 5]><link href="/includes/css/style6.css" rel="stylesheet" type="text/css" ></link><![endif]-->
+    <link href="/includes/css/tabs.css"  rel="stylesheet" type="text/css"></link>
+
+    <script type="text/javascript" src="/includes/scripts/tabs.js"></script>
+    <script type="text/javascript" src="/includes/scripts/menu.js"></script>
+   
+
+    
+
+    
+        <title>The Java Community Process(SM) Program - communityprocess - maintenance</title>
+    
+
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+
+
+<body onload="P7_initPM(0,1,0,0,-1)">
+
+    <a name="top"></a>
+
+    <div id="header">
+	<div id="logo">
+		<a href="/en/home/index"><img src="/images/spacer.gif" alt="Java Community Process" height="81" width="151"></a>
+	</div>
+	<div id="tools">
+		<div class="search">
+			<form name="search" action="/en/jsr/summary" method="get" onsubmit="return validate_search()">
+				<input name="id" value="Search JSRs" size="16" class="form" onfocus="nullify_if_equal(this, 'Search JSRs')" type="text">
+				<a href="javascript:document.search.submit()" onclick="return validate_search()"><img src="/images/button_go.gif" width="21" height="16" border="0" alt="Submit this Search" name="sub_search"></a>
+			</form>
+		</div>
+		<div class="tools">
+			<a href="/en/press/pressroom">Press Room</a> &nbsp;|&nbsp;
+			<a href="http://java.com/java/download/index.jsp?cid=jdp78399">Get Java Here</a> &nbsp;|&nbsp;
+			<!-- <a href="javascript:void(0)">Print Format</a> &nbsp;|&nbsp;&nbsp; -->
+		</div>
+
+	</div>
+	<div style="clear: right;"></div>
+
+        
+
+	<div class="topbar"><img src="/images/spacer.gif" alt="" height="3" width="154"></div>
+	<div id="update"> </div>
+    </div>
+
+
+    
+
+        <!-- ** BEGIN: Content Table ** //-->
+
+        <table width="100%" border="0" cellpadding="0" cellspacing="0">
+
+            <tr>
+
+                <!-- ** BEGIN: Navigation Column ** //-->
+                <td width="150" id="leftcontent" valign="top">
+                    <!-- Navigation Placeholder //-->
+
+                    
+
+                    <div class="bar"><img src="/images/hr_dots1.gif" alt="" height="3" width="150"></div>
+
+        <!-- begin find JSRs form -->
+        <!-- IMPORTANT! do not convert this form to Struts < html : form > tag.  javascript change of form.action property fails. -->
+        <img src="/images/hd_find-jsrs.gif" alt="Find JSRs" height="18" width="150">
+        <form name="findjsr" action="/en/jsr/summary" method="get" class="pt5" onsubmit="return validate_findjsr()">
+            <input name="id" size="18" class="form" value="Search JSRs" onfocus="nullify_if_equal(this, 'Search JSRs')" type="text">
+	    <a href="javascript:document.findjsr.submit()" onclick="return validate_findjsr()"><img src="/images/button_go.gif" width="21" height="16" border="0" alt="Submit this Search" name="sub_search"></a>
+        </form><br><br>
+
+        <!-- ** Menu Start ** //-->
+
+        <ul id="p7PMnav">
+            <li><a href="/en/jsr/platform">JSRs by Platform</a></li>
+            <li><a href="/en/jsr/tech">JSRs by Technology</a></li>
+            <li><a href="/en/jsr/stage">JSRs by Stage</a></li>
+            <li><a href="/en/jsr/ec">JSRs by Committee</a></li>
+            <li><a href="/en/jsr/all">List of All JSRs</a></li>
+
+            <!--end find JSRs form -->
+            <div style="clear: both;"><img src="/images/spacer.gif" alt="" height="25" width="1"></div>
+
+            <!--begin my JCP -->
+            <img src="/images/hd_my-jcp.gif" alt="My JCP" height="18" width="150">
+            
+
+          <form name="login" method="get" action="/en/user/login" >
+            <input name="Sign-in" type="submit" title="Sign-in" value="Sign-in" />
+          </form>
+
+            <div style="clear:both"><img src="/images/global/spacer.gif" width="1" height="3" alt=""></div>
+            <div class="noNav">
+                <a href="/en/user/register">Register for Site</a>
+            </div>
+
+             <div class="bar"><img src="/images/hr_dots1.gif" alt="" height="3" width="150"></div>
+           <div class="noNav" style="color: #666666; padding: 0;">
+              Use of JCP site is subject to the
+              <a href="/en/home/terms" style="display:inline;padding: 0">JCP Terms of Use</a> and the
+              <a href="http://www.oracle.com/us/legal/privacy/index.html" style="display:inline;padding: 0" href="">Oracle Privacy Policy</a>
+          </div>
+
+            
+
+            <div style="clear:both"><img src="/images/global/spacer.gif" width="1" height="25" alt=""></div>
+
+            <!--begin JCP info -->
+            <img src="/images/hd_jcp-info.gif" alt="JCP Info" height="18" width="150">
+
+            <li><a href="/en/procedures/overview" class="p7PMtrg">About JCP</a>
+                <ul>
+                    <li><a href="/en/procedures/overview">Program Overview</a></li>
+                    <li><a href="/en/procedures/jcp2">JCP Process Document</a></li>
+                    <li><a href="/en/whatsnew/calendar">Calendar</a></li>
+                    <li><a href="/en/participation/members">JCP Members</a></li>
+                    <li><a href="/en/participation/committee">Executive Committee</a></li>
+                    <li><a href="/en/whatsnew/elections">Elections</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/en/participation/overview" class="p7PMtrg">Get Involved</a>
+		<ul>
+                    <li><a href="/en/participation/overview">Overview</a></li>
+                    <li><a href="/en/participation/membership">Becoming a JCP Member</a></li>
+		</ul>
+            </li>
+
+            <li><a href="/en/resources/contents" class="p7PMtrg">Community Resources</a>
+                <ul>
+                    <li><a href="/en/resources/contents">Overview</a></li>
+                    <li><a href="/en/resources/tutorials">Tutorials</a></li>
+                    <li><a href="/en/resources/multimedia">JCP Podcasts</a></li>
+                    <li><a href="/en/resources/guide">Spec Lead Guide</a></li>
+                    <li><a href="/en/resources/tdk">TCK Tool & Info</a></li>
+                    <li><a href="/en/resources/license_reference">License Reference</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/en/press/pmo" class="p7PMtrg">Community News</a>
+                <ul>
+                    <li><a href="/en/press/pmo">News</a></li>
+                    <li><a href="/en/press/news/awards/awards_main">Programs &amp; Awards</a></li>
+                    <li><a href="/en/press/releases">Press Releases</a></li>
+                    <li><a href="/en/press/success">Success Stories</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/en/introduction/faq">FAQ</a></li>
+
+            <li><a href="/en/resources/contacts">Contact Us</a></li>
+
+            <div style="clear: both;"><img src="/images/spacer.gif" alt="" height="25" width="1"></div>
+
+            <!--[if lte IE 6]><style>#p7PMnav a{height:1em;}#p7PMnav li{height:1em;float:left;clear:both;width:100%}</style><![endif]-->
+            <!--[if IE 6]><style>#p7PMnav li{clear:none;}</style><![endif]-->
+            <!--[if IE 7]><style>#p7PMnav a{zoom:100%;}#p7PMnav li{float:left;clear:both;width:100%;}</style><![endif]-->
+        </ul>
+
+        
+
+        <!--begin ad space -->
+        <div class="ads">
+            <a href="http://java.com/java/download/index.jsp?cid=jdp78399" target="_blank"><img style="display: ;" src="/images/ad_banner2.gif" alt="Ad Banner" border="1" height="70" width="150"></a>
+        </div>
+        <!--end ad space -->
+
+<!-- ** Menu End ** //-->
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;<br>
+
+    
+
+                    &nbsp;<br>
+                    <img src="/images/common/trans.gif" alt="" width="1" height="150"><br>
+
+              
+
+
+
+                </td>
+                <!-- ** END: Navigation Column ** //-->
+
+                <!-- ** BEGIN: Gutter Column ** //-->
+		<td width="10" nowrap><img src="/images/common/trans.gif" alt="" width="10" height="1"></td>
+                <!-- ** END: Gutter Column ** //-->
+
+                <!-- ** BEGIN: Content Column ** //-->
+                <td width="100%" valign="top">
+
+    
+<script type="text/javascript">
+
+String.prototype.trim = function() {
+        return this.replace(/^\s+|\s+$/g,"");
+}
+String.prototype.ltrim = function() {
+        return this.replace(/^\s+/,"");
+}
+String.prototype.rtrim = function() {
+        return this.replace(/\s+$/,"");
+}
+
+function validate_search() {
+	if (document.search.id.value == "Search JSRs" || document.search.id.value.trim().length == 0) {
+		alert("Search terms must be entered first");
+		return false;
+	}
+	return true;
+}
+
+function validate_findjsr() {
+	if (document.findjsr.id.value == "Search JSRs" || document.findjsr.id.value.trim().length == 0) {
+		alert("Search terms must be entered first");
+		return false;
+	}
+	return true;
+}
+
+function nullify_if_equal(field, str) {
+	// alert("val=" + field.value);
+	if (field.value == str) {
+		field.value = "";
+	}
+}
+
+</script>
+<!-- ** END: header.jsp ** //-->
+
+
+
+
+
+
+<html>
+<head>
+<title>
+Change Log for JSR-000127 JavaServer Faces 1.0 Specification 
+</title>
+</head>
+<body>
+<h2><center>
+Change Log for JSR-000127 JavaServer<sup><font size="-2">TM</font></sup> Faces 1.0 Specification
+</center>
+</h2>
+
+This page details the proposed, accepted and deferred changes to JSR
+127, documenting the changes that will go into the next revision, per <a
+href="http://jcp.org/en/procedures/jcp2#4.2">Section 4.2 of the JCP 2.6
+document</a>.<P>
+
+<p>Last updated: 12 April 2004</p>
+
+<table border width="100%">
+<B>PROPOSED CHANGES</b>
+<tr><td>
+<PRE>
+
+JavaServer Faces 1.0 Specification Errata
+
+C001
+
+  Made the "for" attribute no longer required for the outputLabel tag.
+  This is necessary when tools want to allow the user to stick the label
+  on the page before associating the component with it.
+
+C002
+
+  renderkit spec changes around SelectManyMenu, SelectManyList,
+  SelectOneRadio, SelectManyCheckboxlist
+
+  M doc/standard-html-renderkit.xml
+
+    - Remove span around "select" tags in SelectManyMenu, SelectManyList,
+      SelectOneMenu and SelectOneList.
+
+    - Remove span around SelectOne radio buttons and SelectMany checkboxes.
+      Render "id", "style", "styleclass" as part of outer table.
+
+C003
+
+  Introduce the concept of "no value" for SelectOne and SelectMany.
+
+  M src/javax/faces/component/UIInput.java
+
+  - modify isEmpty() method to consider values that are zero length array
+    or List instances to be empty.
+
+C004
+
+  Portlet compatability
+
+  M src/javax/faces/webapp/UIComponentTag
+
+  - Remove compile time dependency on Servlet API classes.  Get the
+    classes at runtime from the pageContext ivar.
+
+C005
+
+  Spec section 2.5.2.4 
+
+  Remove LIMIT messages, a hold over from a deprecated concept
+
+C006
+
+  Spec sections 9.4.12 - 9.4.14 
+
+  Make sure that all validator and converter IDs in the spec match
+  what's in the code.
+
+C007
+
+  Spec section 9.4.10
+
+  &lt;f:selectItems&gt;
+
+  Section 9.4.10 contains a number of errors: * The description of the
+  getComponentType() return value omits the "javax.faces" prefix. * The
+  list of acceptable data types for the "value" attribute doesn't match
+  the data type for UISelectItems.
+
+C008
+
+  Spec section 9.4.9 
+
+  The attributes table for &lt;f:selectItem&gt; in 9.4.9 states that the
+  "itemValue" attribute takes a String but it should be Object to match
+  the type of the UISelectItem property.
+
+  The syntax section in 9.4.9 for &lt;f:selectItem&gt; is missing a couple of
+  right square brackets to mark the end for optional attributes. 
+
+  Spec section 9.4.8 
+
+  Both syntax sections for &lt;f:param&gt; in 9.4.8 are missing the "binding"
+  attribute, which is included in the attributes table.
+
+C009
+
+  Spec section 9.4.3
+
+  The "timeZone" attribute for &lt;f:convertDateTime&gt; in 9.4.3 is
+  described to only accept a TimeZone instance, but it also accepts a
+  String. 
+
+  The "locale" attribute for &lt;f:convertDateTime&gt; and
+  &lt;f:convertNumber&gt; in 9.4.3 and 9.4.4 is described to only accept
+  a Locale instance, but it also accepts a String
+
+C010
+
+  UISelectOne and UISelectMany can fire spurious ValueChangeEvents
+
+  M jsf-api/src/javax/faces/component/UIInput.java
+
+  - refactor the validate() method so that straight up validation is
+    separable from "membership test" validation, as done in UISelect*.  Do
+    this by introducing two new protected methods, which can be overridden
+    by subclasses.
+
+    getConvertedValue()
+
+    validateValue()
+
+    The latter is overridden in UISelect* to first call the superclass
+    version, to do straight up validation, then upon return to do the
+    "membership test" validation.
+
+  M jsf-api/src/javax/faces/component/UISelectMany.java
+  M jsf-api/src/javax/faces/component/UISelectOne.java
+
+  - replace validate() override with validateValue() overrides.
+
+  M jsf-api/test/javax/faces/component/UISelectManyTestCase.java
+
+  - fix this testcase.  It was making incorrect assumptions that have been
+    fixed by this change-bundle.
+
+C011
+
+  javax.faces.webapp.FacetTag doEndTag() override unnecessary.
+
+  - Since TagSupport does this, we don't need to override it here.
+
+C012
+
+  UIViewRoot getRenderKitId() doesn't consult the ViewHandler
+
+  Per a later EG thread, the EG decided it would be better to have this method
+  return null if the renderkitid was not explicitely set as in 
+  javax.faces.application.ViewHandler.createView.
+
+M src/javax/faces/component/UIViewRoot.java
+- getRenderKitId method  - unless renderKitId has been set - null will be returned.
+
+
+
+C013
+
+
+Date:         Wed, 17 Mar 2004 15:32:41 -0800
+From:         Adam Winer &lt;adam.winer@ORACLE.COM&gt;
+Subject:      [BUG] DoubleRangeValidator message formatting
+
+When DoubleRangeValidator constructs an error message, it passes
+java.lang.Double objects to MessageFormat. The RI's default messages
+simply say use "{0}" and "{1}", so these Doubles will simply be
+toString()'d, and are therefore not properly localized. A possible
+temporary solution is to change these to {0, number} and {1, number}. A
+better solution would be keep using {0} and {1} and stop passing
+java.lang.Double objects; instead, use the Converter registered on the
+component, and if that is null, use the Converter registered on the
+Application with the id "javax.faces.Double". This would ensure that the
+values displayed in error messages are formatted identically to the
+values displayed in the field. At any rate, we do need to specify what
+type of object is passed for {0} and {1}, and that in turn implies which
+of these two solutions we need to use. Unless we specify this, it is
+impossible to portably override the messages used by
+DoubleRangeValidator. Finally, this all applies equally to
+LongRangeValidator, and somewhat less to LengthValidator.
+
+
+Item #: 005703
+Type: apichange richange specedit
+area: messages
+owner: edburns
+Release: 1.1
+
+C014
+
+  MethodBinding getType() value for void
+
+  The JavaDocs for the MethodBinding getType() method says that null
+  is returned for a void return type. It would make more sense to
+  return Void.class.
+
+C015
+
+   Invalid parameter name in FactoryFinder JavaDocs
+
+   The FactoryFinder JavaDocs refers to the config file context param as
+   "javax.faces.application.CONFIG_FILES" but the spec doc has it as
+   "javax.faces.CONFIG_FILES" in 10.3.2
+
+C016
+
+   The JavaDocs description of the ResultSetDataModel getRowData()
+   method doesn't specify that the returned Map must use a
+   case-insensitive Comparator.  Make this specification explicit.
+
+C017
+
+
+From:         Hans Bergsten &lt;hans@GEFIONSOFTWARE.COM&gt;
+Subject:      [BUG] Incorrect JavaDocs for DataModelEvent
+
+JavaDocs for the DataModelEvent getRowIndex() method says that 0 is returned if the event isn't for a specific row. It must be -1, since 0 is a valid index.
+
+EB&gt; Check with Craig on this one.  The choice of 0 index or 1 index was
+EB&gt; problematic IIRC.
+
+Item #: 005691
+Type: apichange 
+area: component
+owner: edburns
+Release: 1.1
+
+C018
+
+   The defaults for showDetail and showSummary for UIMessage are reversed
+   in the JavaDocs for the getter methods. It claims that showDetail is
+   false and showSummary is true by default, but the code (correctly)
+   has them as true and false, respectively.
+
+C019
+
+   The UIForm class overrides saveState() to reset the "submitted" flag,
+   but this is an example of how the saveState() method should _not_ be
+   used, since it's not necessarily not called for all state-saving
+   scenarios. The method should be removed, because the "submitted"
+   property is also (correctly) reset by the renderer in the decode()
+   method.
+
+
+C020
+
+  The Checkbox renderer for UISelectMany and the Radio renderer for
+  UISelectOne renders the &lt;input&gt; elements within &lt;label&gt;
+  elements. The problem is that the "for" attribute is set to the client
+  ID for the UISelectOne/Many component on each of the &lt;label&gt;
+  elements. The "for" attribute shouldn't be used at all when the
+  &lt;label&gt; element encloses the labelled element, and when it is
+  use, it must refer to the labelled element. The current RI behavior
+  (and the spec) is incorrect on both accounts.
+
+  There's two styles of &lt;label&gt; (1) &lt;label for="foo"&gt;The
+  Label&lt;/label&gt; &lt;input id="foo" ...&gt; (2) &lt;label&gt;The
+  Label &lt;input id="foo" ...&gt; &lt;/label&gt; Moreover, form #2 is
+  deprecated and considered highly undesirable by our accessibility
+  experts over here.
+
+C021
+
+  The TLD description of &lt;h:selectOneRadio&gt; doesn't mention that
+  &lt;label&gt; elements are rendered to hold the labels, and
+  incorrectly refers to the ListboxRenderer description for how to
+  render &lt;option&gt; elements.
+
+
+C022
+
+
+  TLD description of &lt;h:selectMany&gt; says that the "size" attribute
+  is set either to the value specified by the action element's "size"
+  attribute or to the number of items (i.e., the description that
+  applies to the Listbox renderer), but there's no "size" attribute
+  defined for this action element (which is correct, of course).
+
+C023
+
+  This thread in the forum deals with problems using the
+  &lt;h:outputLabel&gt; action:
+  &lt;http://forum.java.sun.com/thread.jsp?forum=427&thread=500037&tstart=0&trange=15&gt;
+  The thread comes to the conclusion that the label value must be
+  specified as a child component, but that's not true: the renderer
+  renders the &lt;label&gt; tag in its encodeBegin() method and the
+  &lt;/label&gt; tag in its encodeEnd() method, and any text in between
+  (generated by a component or just plain template text) ends up as the
+  &lt;label&gt; element's value. What I consider a bug is that the
+  UIOutput component's value isn't used as the &lt;label&gt; element
+  body instead. There's a "value" attribute for the
+  &lt;h:outputLabel&gt; action element, but it's ignored. Neither the
+  render kit docs nor the HTML tag library docs say anything about where
+  the &lt;label&gt; element's value should come from.
+
+  Another reason for the problem described in the thread is that the
+  component identifed by the "for" attribute must exist when the
+  &lt;h:outputLabel&gt; element is processed, i.e., appear before the
+  &lt;h:outputLabel&gt; element in the JSP page or have been added
+  programatically.
+
+  The "for" attribute processing, now that's a nasty bug, since the
+  label will appear before the tag it labels 99.9% of the time.
+  Including the &lt;h:outputLabel&gt; in a "rendersChildren" tag works
+  around the problem, but that's not perfect.
+
+  The best I can come up with is that, in the case where "for"
+  does not point to any known component, the LabelRenderer
+  should assume it's a component that doesn't *yet* exist, and run
+  the equivalent of UIComponentBase.getClientId()'s logic over
+  "for".  Ugh, but it would largely work.
+
+  EB&gt; Yes, but only for cases where the component and the label are in the
+  EB&gt; same naming container.
+
+C024
+
+
+   The Javadocs for EditableValueHolder getSubmittedValue() says that this
+   method should only be called by decode() and validate(). This is
+   incorrect (the comment belongs to setSubmittedValue()). This method
+   should be called by encodeXXX() methods.
+
+C025
+
+   The UIComponentTag setProperties() Javadocs says that it sets the
+   componentId, component, rendered and rendererType for the component
+   if the same properties are set for the tag handler, but it only sets
+   the last two (I don't even know what the first two are supposed to
+   be).
+
+C026
+
+  Nesting dataTable within dataTable didn't work in 1.0.  Make it work in 1.1.
+
+C027
+
+
+4996223 Table 5.1 action component property method signature conflicts
+        with description
+
+C028
+
+Issue id: JSFA59 BACK button
+
+Description: 
+          What should the spec say about the eternal issues of dealing with
+    a browser user using the BACK button, such as transaction tokens to
+    avoid processing the same form submit more than once?  Note that tokens
+    should be scoped to specific forms, not a global property of a JSF
+    implementation (i.e. probably don't want one on search forms).
+
+Date:         Wed, 24 Mar 2004 13:23:19 -0800
+From:         Hans Bergsten &lt;hans@GEFIONSOFTWARE.COM&gt;
+Subject:      [BUG/RFE] Command links and Back button behavior
+
+There are numerous reports about problems with the browser back button
+when combined with command links in the forum, for instance this one:
+
+   &lt;http://forum.java.sun.com/thread.jsp?forum=427&thread=496856&gt;
+
+It's very simple to reproduce:
+1) Create a page with command links, e.g., created by &lt;h:dataTable&gt;
+    for a number of rows, bound to an action method that returns an
+    outcome which leads to a redirect to another view.
+2) Run the page and click on one link. Redirects correctly.
+3) Use the back button to return to the first page.
+4) Click on another link. Results in an IllegalStateException.
+
+There are many variations on this, but the main problem seem to be
+with the JavaScript produced by the Command/Link renderer. The "onclick"
+handler sets a hidden field for command link and submits the form. The
+problem is that there's one hidden field per rendered link:
+1) The first time I click a link, its hidden field is set.
+2) When I use the back button, the hidden field is not restet (it's
+    part of the browser's page state).
+3) If I click another link, yet another hidden field is set, so
+    during decoding _two_ ActionEvents fire. Processing the first
+    leads to a redirect (committing the response). Processing the
+    second leads to a redirect, but since the response is committed,
+    this results in an IllegalStateException.
+
+With a regular forward navigation, this may be even worse, because
+you have no idea in which order the events are handled and there's
+no exception. Instead, you may simply get the wrong result.
+
+Note that this has nothing to do with server vs. client state saving,
+as some reports claim.
+
+AFAIK, the fix is simple: use a single hidden field for all command
+links and use the value of this field to decide which command link
+triggered the submit. Unfortunately, the renderer docs are too
+explicit to allow this to be treated as an RI bug fix, so we need an
+errata to fix it.
+
+Item #: 005711
+Type: apichange richange 
+Priority: 
+      Low
+
+area: lifecycle
+owner: edburns
+    
+Release: 1.1
+
+C029
+
+      "enabledClass"/"disabledClass" attributes only specified for
+      selectmany_checkbox, selectone_radio.  They should be specified
+      for other "select" components as well (components with nested
+      select item(s)).
+
+M doc/listbox-attrs.xml
+  - generated from listbox-props
+M doc/listbox-props.xml
+     - added "enabledClass"/"disabledClass"
+     this will add these attributes for selectmany_listbox, selectone_listbox
+A doc/menu-attrs.xml
+   - generated from menu-props
+A doc/menu-props.xml
+   - contains "enabledClass"/"disabledClass"
+     this will add these attributes for selectmany_menu, selectone_menu
+M doc/standard-html-renderkit.xml
+  - added menu-props definition;
+  - added menu-attrs definition;
+  - added menu-props for HtmlSelectManyMenu, HtmlSelectOneMenu component entries
+  - added menu-attrs for selectmany-menu, selectone-menu renderer entries 
+
+C030
+
+[JSFA170]
+
+AW&gt; Recommendation: add the following element to the DTD in
+AW&gt; JSFv1.1:
+
+AW&gt; &lt;facet&gt;
+AW&gt;    &lt;description/&gt;  (Usual meaning)
+AW&gt;    &lt;display-name/&gt; (Usual meaning)
+AW&gt;    &lt;icon/&gt;         (Usual meaning)
+AW&gt;    &lt;facet-name/&gt;   (actual name of the facet)
+AW&gt;    &lt;facet-extension/&gt; (impl specific extension capability)
+AW&gt; &lt;/facet&gt;
+
+AW&gt; ... and support adding &lt;facet&gt; (arbitrary numbers)
+AW&gt; inside of both &lt;component&gt; and &lt;renderer&gt;.
+
+C031
+
+Adding a convenience method to FacesContext:
+
+   /**
+    * Adds a page-level message that is not tied to any
+    * specific component.  This is commonly used for messages
+    * generated by actions, but can be used for any such
+    * page-level message.
+    */
+   public void addPageMessage(FacesMessage message);
+
+... that is nothing more than a cover for passing "null"
+as the clientId to FacesContext.addMessage().
+
+</pre>
+</td></tr>
+
+</table>
+
+<table border width="100%">
+<B>ACCEPTED CHANGES</B>
+<TR><TD>&nbsp;</TD></TR>
+</table>
+
+<table border width="100%">
+<B>DEFERRED CHANGES</B>
+<TR><TD>&nbsp;</td></tr>
+</table>
+
+
+
+</body>
+</html>
+
+C032
+
+Adam Winer wrote:
+
+> Just a request to consider JSFA153 for 1.1.
+>
+> This request included 3 requests for the default NavigationHandler,
+> two of which are still relevant:
+>
+> 1. Currently, there's no way to specify "don't navigate
+> away at all in this outcome":  the spec says "a rule
+> match always causes a new view to be created, losing
+> the state of the old view".  Easy to patch:  just
+> make <to-view-id> an optional element, and interpret
+> a rule without <to-view-id> as one that causes
+> navigation back to the same page, preserving state.
+>
+> Justification: if I have a "next 5 rows" button, implemented
+> via an Action, I'd want that to stay on the same page, and
+> I certainly wouldn't want to lose my state.
+>
+>
+> 2.  There's no way to declaratively specify "navigate to this
+> non-Faces URL".  Loosely speaking, the JSF NavigationHandler
+> is a roach motel - you can check in to JSF, but you can't
+> check out (without writing code, anyway).  Adding this would
+> dramatically simplify the ease of integrating some Faces pages
+> - and some Faces pageflows - into a non-Faces webapp.  It's
+> also useful for "show my (non-JSF) FAQ", or "here's an external
+> website to navigate to"; this seems a big win for little cost.
+>
+> Recommendation:
+>
+>   Add <to-url> element, which can be specified instead of
+>   <to-view-id>.  Specifying both is an error.  If the
+>   contained URL begins with a slash, it is assumed to be
+>   context-relative;  JSF will perform either a
+>   RequestDispatcher.forward() call or an HTTP redirect
+>   depending on the presence or absence of a <redirect>
+>   element. If the contained URL does not begin with
+>   a slash, a <redirect> element *must* be present and JSF
+>   will only perform an HTTP redirect.  If the container
+>   URL does not begin with a slash and no <redirect> element
+>   is present, it is an error.
+>
+> I've had a requests for both of these internally.
+>
+> -- Adam
+
+
+We'll include this for 1.1
+
+-roger 
+
+
+C033
+
+web-facesconfig dtd needs a correction - "default-value" element needs
+to exist under "attribute-extension" and property-extension"
+
+
+
+
+
+<!-- ** BEGIN: footer.jsp ** //-->
+
+
+
+
+
+
+
+
+</td>
+</tr>
+</table>
+
+<!-- ** END: Content Table ** //-->
+
+<!-- ** BEGIN: Footer Table ** //-->
+
+<div id="footer" style="clear: both;">
+    <div class="footleft">
+        <a href="/en/resources/contacts">Contact Us</a>
+    </div>
+	
+    <div class="botbar"><img src="/images/spacer.gif" alt="" height="23" width="1"></div>
+
+    <div class="footleft2">
+         &copy; 2019, Oracle Corporation and/or its affiliates. 
+        <a href="/en/home/terms">Terms of Use</a>. <a href="http://www.oracle.com/us/legal/privacy/index.html">Privacy Policy</a>. <a href="http://www.oracle.com/us/legal/third-party-trademarks/third-party-trademarks-078568.html">Trademarks</a>
+    </div>
+
+    <div class="footright">
+        <img src="/images/common/logo_oracle_footer.gif" alt="Oracle Corporation" height="22" width="91">
+    </div>
+
+    <div style="clear: both;"><img src="/images/spacer.gif" alt="" height="30" width="1"></div>
+</div>
+
+<!-- ** END: Footer Table ** //-->
+
+
+
+<!-- ** Menu Start ** //-->
+
+
+
+</body>
+</html>
+<!-- ** END: footer.jsp ** //-->
+

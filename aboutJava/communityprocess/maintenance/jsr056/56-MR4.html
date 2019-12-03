@@ -1,0 +1,502 @@
+
+<!-- ** BEGIN: header.jsp ** //-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3c.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+<head>
+    
+
+   
+    <link href="/includes/css/menu.css" rel="stylesheet" type="text/css"></link>
+    <link href="/includes/css/style.css" rel="stylesheet" type="text/css"></link>
+    <!--[if lt IE 6]><link href="/includes/css/style5.css" rel="stylesheet" type="text/css" ></link><![endif]-->
+    <!--[if gte IE 5]><link href="/includes/css/style6.css" rel="stylesheet" type="text/css" ></link><![endif]-->
+    <link href="/includes/css/tabs.css"  rel="stylesheet" type="text/css"></link>
+
+    <script type="text/javascript" src="/includes/scripts/tabs.js"></script>
+    <script type="text/javascript" src="/includes/scripts/menu.js"></script>
+   
+
+    
+
+    
+        <title>The Java Community Process(SM) Program - communityprocess - maintenance</title>
+    
+
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+
+
+<body onload="P7_initPM(0,1,0,0,-1)">
+
+    <a name="top"></a>
+
+    <div id="header">
+	<div id="logo">
+		<a href="/en/home/index"><img src="/images/spacer.gif" alt="Java Community Process" height="81" width="151"></a>
+	</div>
+	<div id="tools">
+		<div class="search">
+			<form name="search" action="/en/jsr/summary" method="get" onsubmit="return validate_search()">
+				<input name="id" value="Search JSRs" size="16" class="form" onfocus="nullify_if_equal(this, 'Search JSRs')" type="text">
+				<a href="javascript:document.search.submit()" onclick="return validate_search()"><img src="/images/button_go.gif" width="21" height="16" border="0" alt="Submit this Search" name="sub_search"></a>
+			</form>
+		</div>
+		<div class="tools">
+			<a href="/en/press/pressroom">Press Room</a> &nbsp;|&nbsp;
+			<a href="http://java.com/java/download/index.jsp?cid=jdp78399">Get Java Here</a> &nbsp;|&nbsp;
+			<!-- <a href="javascript:void(0)">Print Format</a> &nbsp;|&nbsp;&nbsp; -->
+		</div>
+
+	</div>
+	<div style="clear: right;"></div>
+
+        
+
+	<div class="topbar"><img src="/images/spacer.gif" alt="" height="3" width="154"></div>
+	<div id="update"> </div>
+    </div>
+
+
+    
+
+        <!-- ** BEGIN: Content Table ** //-->
+
+        <table width="100%" border="0" cellpadding="0" cellspacing="0">
+
+            <tr>
+
+                <!-- ** BEGIN: Navigation Column ** //-->
+                <td width="150" id="leftcontent" valign="top">
+                    <!-- Navigation Placeholder //-->
+
+                    
+
+                    <div class="bar"><img src="/images/hr_dots1.gif" alt="" height="3" width="150"></div>
+
+        <!-- begin find JSRs form -->
+        <!-- IMPORTANT! do not convert this form to Struts < html : form > tag.  javascript change of form.action property fails. -->
+        <img src="/images/hd_find-jsrs.gif" alt="Find JSRs" height="18" width="150">
+        <form name="findjsr" action="/en/jsr/summary" method="get" class="pt5" onsubmit="return validate_findjsr()">
+            <input name="id" size="18" class="form" value="Search JSRs" onfocus="nullify_if_equal(this, 'Search JSRs')" type="text">
+	    <a href="javascript:document.findjsr.submit()" onclick="return validate_findjsr()"><img src="/images/button_go.gif" width="21" height="16" border="0" alt="Submit this Search" name="sub_search"></a>
+        </form><br><br>
+
+        <!-- ** Menu Start ** //-->
+
+        <ul id="p7PMnav">
+            <li><a href="/en/jsr/platform">JSRs by Platform</a></li>
+            <li><a href="/en/jsr/tech">JSRs by Technology</a></li>
+            <li><a href="/en/jsr/stage">JSRs by Stage</a></li>
+            <li><a href="/en/jsr/ec">JSRs by Committee</a></li>
+            <li><a href="/en/jsr/all">List of All JSRs</a></li>
+
+            <!--end find JSRs form -->
+            <div style="clear: both;"><img src="/images/spacer.gif" alt="" height="25" width="1"></div>
+
+            <!--begin my JCP -->
+            <img src="/images/hd_my-jcp.gif" alt="My JCP" height="18" width="150">
+            
+
+          <form name="login" method="get" action="/en/user/login" >
+            <input name="Sign-in" type="submit" title="Sign-in" value="Sign-in" />
+          </form>
+
+            <div style="clear:both"><img src="/images/global/spacer.gif" width="1" height="3" alt=""></div>
+            <div class="noNav">
+                <a href="/en/user/register">Register for Site</a>
+            </div>
+
+             <div class="bar"><img src="/images/hr_dots1.gif" alt="" height="3" width="150"></div>
+           <div class="noNav" style="color: #666666; padding: 0;">
+              Use of JCP site is subject to the
+              <a href="/en/home/terms" style="display:inline;padding: 0">JCP Terms of Use</a> and the
+              <a href="http://www.oracle.com/us/legal/privacy/index.html" style="display:inline;padding: 0" href="">Oracle Privacy Policy</a>
+          </div>
+
+            
+
+            <div style="clear:both"><img src="/images/global/spacer.gif" width="1" height="25" alt=""></div>
+
+            <!--begin JCP info -->
+            <img src="/images/hd_jcp-info.gif" alt="JCP Info" height="18" width="150">
+
+            <li><a href="/en/procedures/overview" class="p7PMtrg">About JCP</a>
+                <ul>
+                    <li><a href="/en/procedures/overview">Program Overview</a></li>
+                    <li><a href="/en/procedures/jcp2">JCP Process Document</a></li>
+                    <li><a href="/en/whatsnew/calendar">Calendar</a></li>
+                    <li><a href="/en/participation/members">JCP Members</a></li>
+                    <li><a href="/en/participation/committee">Executive Committee</a></li>
+                    <li><a href="/en/whatsnew/elections">Elections</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/en/participation/overview" class="p7PMtrg">Get Involved</a>
+		<ul>
+                    <li><a href="/en/participation/overview">Overview</a></li>
+                    <li><a href="/en/participation/membership">Becoming a JCP Member</a></li>
+		</ul>
+            </li>
+
+            <li><a href="/en/resources/contents" class="p7PMtrg">Community Resources</a>
+                <ul>
+                    <li><a href="/en/resources/contents">Overview</a></li>
+                    <li><a href="/en/resources/tutorials">Tutorials</a></li>
+                    <li><a href="/en/resources/multimedia">JCP Podcasts</a></li>
+                    <li><a href="/en/resources/guide">Spec Lead Guide</a></li>
+                    <li><a href="/en/resources/tdk">TCK Tool & Info</a></li>
+                    <li><a href="/en/resources/license_reference">License Reference</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/en/press/pmo" class="p7PMtrg">Community News</a>
+                <ul>
+                    <li><a href="/en/press/pmo">News</a></li>
+                    <li><a href="/en/press/news/awards/awards_main">Programs &amp; Awards</a></li>
+                    <li><a href="/en/press/releases">Press Releases</a></li>
+                    <li><a href="/en/press/success">Success Stories</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/en/introduction/faq">FAQ</a></li>
+
+            <li><a href="/en/resources/contacts">Contact Us</a></li>
+
+            <div style="clear: both;"><img src="/images/spacer.gif" alt="" height="25" width="1"></div>
+
+            <!--[if lte IE 6]><style>#p7PMnav a{height:1em;}#p7PMnav li{height:1em;float:left;clear:both;width:100%}</style><![endif]-->
+            <!--[if IE 6]><style>#p7PMnav li{clear:none;}</style><![endif]-->
+            <!--[if IE 7]><style>#p7PMnav a{zoom:100%;}#p7PMnav li{float:left;clear:both;width:100%;}</style><![endif]-->
+        </ul>
+
+        
+
+        <!--begin ad space -->
+        <div class="ads">
+            <a href="http://java.com/java/download/index.jsp?cid=jdp78399" target="_blank"><img style="display: ;" src="/images/ad_banner2.gif" alt="Ad Banner" border="1" height="70" width="150"></a>
+        </div>
+        <!--end ad space -->
+
+<!-- ** Menu End ** //-->
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;<br>
+
+    
+
+                    &nbsp;<br>
+                    <img src="/images/common/trans.gif" alt="" width="1" height="150"><br>
+
+              
+
+
+
+                </td>
+                <!-- ** END: Navigation Column ** //-->
+
+                <!-- ** BEGIN: Gutter Column ** //-->
+		<td width="10" nowrap><img src="/images/common/trans.gif" alt="" width="10" height="1"></td>
+                <!-- ** END: Gutter Column ** //-->
+
+                <!-- ** BEGIN: Content Column ** //-->
+                <td width="100%" valign="top">
+
+    
+<script type="text/javascript">
+
+String.prototype.trim = function() {
+        return this.replace(/^\s+|\s+$/g,"");
+}
+String.prototype.ltrim = function() {
+        return this.replace(/^\s+/,"");
+}
+String.prototype.rtrim = function() {
+        return this.replace(/\s+$/,"");
+}
+
+function validate_search() {
+	if (document.search.id.value == "Search JSRs" || document.search.id.value.trim().length == 0) {
+		alert("Search terms must be entered first");
+		return false;
+	}
+	return true;
+}
+
+function validate_findjsr() {
+	if (document.findjsr.id.value == "Search JSRs" || document.findjsr.id.value.trim().length == 0) {
+		alert("Search terms must be entered first");
+		return false;
+	}
+	return true;
+}
+
+function nullify_if_equal(field, str) {
+	// alert("val=" + field.value);
+	if (field.value == str) {
+		field.value = "";
+	}
+}
+
+</script>
+<!-- ** END: header.jsp ** //-->
+
+
+
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<h1><a name="This_is_the_proposed_change_log"> </a><a name="This_is_the_proposed_change_log_"> </a> This is the proposed change log for a Maintenance Review of JSR-056 version 6.0. </h1>
+<h2><a name="The_proposed_new_version_number"> </a><a name="The_proposed_new_version_number_"> </a> The proposed new version number will be 6.0.10 </h2>
+
+<p />
+<p />
+<h3><a name="Change_1_bump_the_specification"> </a><a name="Change_1_bump_the_specification_"> </a> Change 1 - bump the specification version number to 6.0.10 </h3>
+<p />
+In The title page (index.html) replace (in 2 places):
+<p />
+<ul>
+<li> Version 6.0
+</li>
+</ul>
+<p />
+with:
+
+<p />
+<ul>
+<li> Version 6.0.10
+</li>
+</ul>
+<p />
+<p />
+<h3><a name="Change_2_add_this_revision_histo"> </a> Change 2 - add this revision history to section 0.7: </h3>
+<p />
+Add section 0.7.4 as follows:
+<p />
+0.7.4 Changes since release 6.0
+<p />
+
+This is a minor update of the version 6.0 specification.  The change are described below:
+<p />
+<ul>
+<li> Modify section 5.5 to allow untrusted content to include untrusted (as well as trusted) extensions from any host. (no longer restrict to the download host).
+</li>
+<li> Modify section 3.7 to allow implementations to implement a subset of the descriptor types.
+</li>
+<li> Modify section 3.7.2 to allow implementation to override jnlp applet parameters, and use relative codebases.
+</li>
+<li> Modify section 5.5 yo allow implementation to optionally allow exitVM permission depending on model.
+</li>
+<li> Modify Appendix C, the DTD,to fix existing typos and inconsistancys.
+
+</li>
+</ul>
+<p />
+<p />
+This revision introduces the version number (6.0.10) for the JNLP file and the JNLP API. Version 6.0.10 is a proper superset of 1.0, and of version 6.0. A JNLP Client implementing this specification must be able to run a JNLP file which requires 1.0, 1.5, 6.0, or 6.10; i.e., the spec attribute in the jnlp element is set to any of 1.0, 1.5, 6.0, or 6.0.10.
+<p />
+A complete list of changes for v6.0.10 can be found at:
+<p />
+<ul>
+<li> {include URL to where this change log is posted on jcp.org}
+</li>
+</ul>
+<p />
+<h3><a name="Change_3_Allowing_untrusted_cont"> </a> Change 3 - Allowing untrusted content to include untrusted (as well as trusted) extensions from any host. </h3>
+
+<p />
+In Section 5.5, replace the following text:
+<p />
+<ul>
+<li> Extensions: The JNLP file can request extensions and JREs from any host. An application cannot make a socket connection back to any of the hosts where JREs or extensions are downloaded from (unless it happens to be the same host as for the JAR files). Extensions requested from hosts other than the one that the JAR files were downloaded from must be signed and trusted as per section 5.4.
+</li>
+</ul>
+<p />
+with: 
+<p />
+<ul>
+<li> Extensions: The JNLP file can request extensions and JREs from any host. Permissions are granted to downloaded code based on its origin as well as its signing and trust. Unsigned and untrusted code, whether in the application or an extension, may only make a socket connection back to the host from which it originated, according to the <a href="http://java.sun.com/javase/6/docs/technotes/guides/security/">Java   Security Architecture</a>.
+</li>
+
+</ul>
+<p />
+<h3><a name="Change_4_Allowing_implementation"> </a> Change 4 - Allowing implementations to implement a subset of Descriptor types. </h3>
+<p />
+Replace section 3.7 with:
+<p />
+<ul>
+<li> 3.7 Application Descriptors
+</li>
+</ul>
+Each jnlp file must contain one of the 4 descriptor types: "application-desc", "applet-desc", "component-desc", or "installer-desc" which are described below.  
+Descriptors of type "application-desc" or "applet-desc" are collectively referred to as Application Descriptors.  Descriptors of type "component-desc" or "installer-desc" are collectively referred to as Extension Descriptors.
+<p />
+A JNLP client may optionally implement any subset of Descriptor types, except that at least one Application Descriptor type must be implemented.  For example, a helper application might implement all 4 types, while an implementation of a Java Plug-in may choose not to implement "application-desc", implementing only the other three.
+
+<p />
+also, in section 1.5 replace: 
+"Applications launched with JNLP do not run inside a browser window, but instead are separate applications ..."
+with:
+"Applications launched with JNLP need not run inside a browser window, but instead can be separate applications ..."
+<p />
+<h3><a name="Change_5_Allowing_implementation"> </a> Change 5 - Allowing implementation to override jnlp applet parameters, and use relative codebases. </h3>
+<p />
+in section 3.7.2:
+<p />
+replace:
+<p />
+"The documentbase is provided explicitly since an applet launched with a JNLP Client is not embedded in a Web page."
+<p />
+with:
+<p />
+"The documentbase can be provided explicitly since an applet launched with a JNLP Client may not be embedded in a Web page."
+
+<p />
+and add at end of 3.7.2, (before the last line):
+<p />
+The JNLP Client may override the applet parameters, or complete a relative codebase, by using information available in its environment.  For example, a JNLP Client that is implemented as a browser plugin can complete a relative codebase using the address of the page the applet is on, or override applet parameters with applet parameters specified on the page.
+<p />
+<p />
+<h3><a name="Change_6_Allowing_permission_to"> </a><a name="Change_6_Allowing_permission_to_"> </a> Change 6 - Allowing permission to optionally allow exitVM permission depending on model. </h3>
+<p />
+In section 5.5, replace the following:
+<p />
+<ul>
+<li> Security Manager: The application must run with a SecurityManager installer.  The following table lists the exact set of permissions thast must be granted to the applications resources:
+
+</li>
+</ul>
+<p />
+with:
+<p />
+<ul>
+<li> Security Manager: The application must run with a SecurityManager installed.  The following table lists the set of permissions that must be granted to the applications resources.  Other permissions can only be granted if deemed secure by the JNLP Client. The permissions that must be granted are: 
+</li>
+</ul>
+<p />
+also, remove the table items for exitVM, and stopThread, and add the following at the end of section 5.5:
+<p />
+<ul>
+<li> Environment:  A JNLP Client may allow untrusted code other permissions appropriate to the environment.  For example, a JNLP Client that implements multiple applications/applets in one JVM session will not allow exitVM permission, while one that enforces one separate JVM instance per application/applet could.
+</li>
+
+</ul>
+<p />
+<h3><a name="Change_7_Fixing_typos_in_the_dtd"> </a> Change 7 - Fixing typos in the dtd in Appendix C. </h3>
+<p />
+in C.1:
+<p />
+replace: 
+<pre>
+&lt;!DOCTYPE jnlp PUBLIC "-//Sun Microsystems, Inc//DTD JNLP Descriptor 6.0//EN"&gt;
+</pre>
+<p />
+with: 
+<p />
+
+<pre>
+&lt;!DOCTYPE jnlp PUBLIC "-//Sun Microsystems, Inc//DTD JNLP Descriptor 6.10//EN" "http://java.sun.com/dtd/JNLP-6.10.dtd"&gt;
+</pre>
+<p />
+in C.2:
+<p />
+replace: 
+<pre>
+&lt;!ELEMENT information (title?, vendor?, homepage?, description*, icon*,offline-allowed?, shortcut?, association?, related-content*)&gt;
+</pre>
+with: 
+<pre>
+&lt;!ELEMENT information (title, vendor, homepage?, description*, icon*, offline-allowed?, shortcut?, association*, related-content*)&gt;
+</pre>
+
+<p />
+replace: 
+<pre>
+&lt;!ELEMENT update&gt;
+</pre>
+with: 
+<pre>
+&lt;!ELEMENT update EMPTY&gt;
+</pre></div>
+<!---->
+<!---->
+<p />
+</body></html>
+
+
+
+<!-- ** BEGIN: footer.jsp ** //-->
+
+
+
+
+
+
+
+
+</td>
+</tr>
+</table>
+
+<!-- ** END: Content Table ** //-->
+
+<!-- ** BEGIN: Footer Table ** //-->
+
+<div id="footer" style="clear: both;">
+    <div class="footleft">
+        <a href="/en/resources/contacts">Contact Us</a>
+    </div>
+	
+    <div class="botbar"><img src="/images/spacer.gif" alt="" height="23" width="1"></div>
+
+    <div class="footleft2">
+         &copy; 2019, Oracle Corporation and/or its affiliates. 
+        <a href="/en/home/terms">Terms of Use</a>. <a href="http://www.oracle.com/us/legal/privacy/index.html">Privacy Policy</a>. <a href="http://www.oracle.com/us/legal/third-party-trademarks/third-party-trademarks-078568.html">Trademarks</a>
+    </div>
+
+    <div class="footright">
+        <img src="/images/common/logo_oracle_footer.gif" alt="Oracle Corporation" height="22" width="91">
+    </div>
+
+    <div style="clear: both;"><img src="/images/spacer.gif" alt="" height="30" width="1"></div>
+</div>
+
+<!-- ** END: Footer Table ** //-->
+
+
+
+<!-- ** Menu Start ** //-->
+
+
+
+</body>
+</html>
+<!-- ** END: footer.jsp ** //-->
+

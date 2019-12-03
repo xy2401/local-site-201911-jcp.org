@@ -1,0 +1,655 @@
+
+<!-- ** BEGIN: header.jsp ** //-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3c.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+<head>
+    
+
+   
+    <link href="/includes/css/menu.css" rel="stylesheet" type="text/css"></link>
+    <link href="/includes/css/style.css" rel="stylesheet" type="text/css"></link>
+    <!--[if lt IE 6]><link href="/includes/css/style5.css" rel="stylesheet" type="text/css" ></link><![endif]-->
+    <!--[if gte IE 5]><link href="/includes/css/style6.css" rel="stylesheet" type="text/css" ></link><![endif]-->
+    <link href="/includes/css/tabs.css"  rel="stylesheet" type="text/css"></link>
+
+    <script type="text/javascript" src="/includes/scripts/tabs.js"></script>
+    <script type="text/javascript" src="/includes/scripts/menu.js"></script>
+   
+
+    
+
+    
+        <title>The Java Community Process(SM) Program - communityprocess - maintenance</title>
+    
+
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+
+
+<body onload="P7_initPM(0,1,0,0,-1)">
+
+    <a name="top"></a>
+
+    <div id="header">
+	<div id="logo">
+		<a href="/en/home/index"><img src="/images/spacer.gif" alt="Java Community Process" height="81" width="151"></a>
+	</div>
+	<div id="tools">
+		<div class="search">
+			<form name="search" action="/en/jsr/summary" method="get" onsubmit="return validate_search()">
+				<input name="id" value="Search JSRs" size="16" class="form" onfocus="nullify_if_equal(this, 'Search JSRs')" type="text">
+				<a href="javascript:document.search.submit()" onclick="return validate_search()"><img src="/images/button_go.gif" width="21" height="16" border="0" alt="Submit this Search" name="sub_search"></a>
+			</form>
+		</div>
+		<div class="tools">
+			<a href="/en/press/pressroom">Press Room</a> &nbsp;|&nbsp;
+			<a href="http://java.com/java/download/index.jsp?cid=jdp78399">Get Java Here</a> &nbsp;|&nbsp;
+			<!-- <a href="javascript:void(0)">Print Format</a> &nbsp;|&nbsp;&nbsp; -->
+		</div>
+
+	</div>
+	<div style="clear: right;"></div>
+
+        
+
+	<div class="topbar"><img src="/images/spacer.gif" alt="" height="3" width="154"></div>
+	<div id="update"> </div>
+    </div>
+
+
+    
+
+        <!-- ** BEGIN: Content Table ** //-->
+
+        <table width="100%" border="0" cellpadding="0" cellspacing="0">
+
+            <tr>
+
+                <!-- ** BEGIN: Navigation Column ** //-->
+                <td width="150" id="leftcontent" valign="top">
+                    <!-- Navigation Placeholder //-->
+
+                    
+
+                    <div class="bar"><img src="/images/hr_dots1.gif" alt="" height="3" width="150"></div>
+
+        <!-- begin find JSRs form -->
+        <!-- IMPORTANT! do not convert this form to Struts < html : form > tag.  javascript change of form.action property fails. -->
+        <img src="/images/hd_find-jsrs.gif" alt="Find JSRs" height="18" width="150">
+        <form name="findjsr" action="/en/jsr/summary" method="get" class="pt5" onsubmit="return validate_findjsr()">
+            <input name="id" size="18" class="form" value="Search JSRs" onfocus="nullify_if_equal(this, 'Search JSRs')" type="text">
+	    <a href="javascript:document.findjsr.submit()" onclick="return validate_findjsr()"><img src="/images/button_go.gif" width="21" height="16" border="0" alt="Submit this Search" name="sub_search"></a>
+        </form><br><br>
+
+        <!-- ** Menu Start ** //-->
+
+        <ul id="p7PMnav">
+            <li><a href="/en/jsr/platform">JSRs by Platform</a></li>
+            <li><a href="/en/jsr/tech">JSRs by Technology</a></li>
+            <li><a href="/en/jsr/stage">JSRs by Stage</a></li>
+            <li><a href="/en/jsr/ec">JSRs by Committee</a></li>
+            <li><a href="/en/jsr/all">List of All JSRs</a></li>
+
+            <!--end find JSRs form -->
+            <div style="clear: both;"><img src="/images/spacer.gif" alt="" height="25" width="1"></div>
+
+            <!--begin my JCP -->
+            <img src="/images/hd_my-jcp.gif" alt="My JCP" height="18" width="150">
+            
+
+          <form name="login" method="get" action="/en/user/login" >
+            <input name="Sign-in" type="submit" title="Sign-in" value="Sign-in" />
+          </form>
+
+            <div style="clear:both"><img src="/images/global/spacer.gif" width="1" height="3" alt=""></div>
+            <div class="noNav">
+                <a href="/en/user/register">Register for Site</a>
+            </div>
+
+             <div class="bar"><img src="/images/hr_dots1.gif" alt="" height="3" width="150"></div>
+           <div class="noNav" style="color: #666666; padding: 0;">
+              Use of JCP site is subject to the
+              <a href="/en/home/terms" style="display:inline;padding: 0">JCP Terms of Use</a> and the
+              <a href="http://www.oracle.com/us/legal/privacy/index.html" style="display:inline;padding: 0" href="">Oracle Privacy Policy</a>
+          </div>
+
+            
+
+            <div style="clear:both"><img src="/images/global/spacer.gif" width="1" height="25" alt=""></div>
+
+            <!--begin JCP info -->
+            <img src="/images/hd_jcp-info.gif" alt="JCP Info" height="18" width="150">
+
+            <li><a href="/en/procedures/overview" class="p7PMtrg">About JCP</a>
+                <ul>
+                    <li><a href="/en/procedures/overview">Program Overview</a></li>
+                    <li><a href="/en/procedures/jcp2">JCP Process Document</a></li>
+                    <li><a href="/en/whatsnew/calendar">Calendar</a></li>
+                    <li><a href="/en/participation/members">JCP Members</a></li>
+                    <li><a href="/en/participation/committee">Executive Committee</a></li>
+                    <li><a href="/en/whatsnew/elections">Elections</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/en/participation/overview" class="p7PMtrg">Get Involved</a>
+		<ul>
+                    <li><a href="/en/participation/overview">Overview</a></li>
+                    <li><a href="/en/participation/membership">Becoming a JCP Member</a></li>
+		</ul>
+            </li>
+
+            <li><a href="/en/resources/contents" class="p7PMtrg">Community Resources</a>
+                <ul>
+                    <li><a href="/en/resources/contents">Overview</a></li>
+                    <li><a href="/en/resources/tutorials">Tutorials</a></li>
+                    <li><a href="/en/resources/multimedia">JCP Podcasts</a></li>
+                    <li><a href="/en/resources/guide">Spec Lead Guide</a></li>
+                    <li><a href="/en/resources/tdk">TCK Tool & Info</a></li>
+                    <li><a href="/en/resources/license_reference">License Reference</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/en/press/pmo" class="p7PMtrg">Community News</a>
+                <ul>
+                    <li><a href="/en/press/pmo">News</a></li>
+                    <li><a href="/en/press/news/awards/awards_main">Programs &amp; Awards</a></li>
+                    <li><a href="/en/press/releases">Press Releases</a></li>
+                    <li><a href="/en/press/success">Success Stories</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/en/introduction/faq">FAQ</a></li>
+
+            <li><a href="/en/resources/contacts">Contact Us</a></li>
+
+            <div style="clear: both;"><img src="/images/spacer.gif" alt="" height="25" width="1"></div>
+
+            <!--[if lte IE 6]><style>#p7PMnav a{height:1em;}#p7PMnav li{height:1em;float:left;clear:both;width:100%}</style><![endif]-->
+            <!--[if IE 6]><style>#p7PMnav li{clear:none;}</style><![endif]-->
+            <!--[if IE 7]><style>#p7PMnav a{zoom:100%;}#p7PMnav li{float:left;clear:both;width:100%;}</style><![endif]-->
+        </ul>
+
+        
+
+        <!--begin ad space -->
+        <div class="ads">
+            <a href="http://java.com/java/download/index.jsp?cid=jdp78399" target="_blank"><img style="display: ;" src="/images/ad_banner2.gif" alt="Ad Banner" border="1" height="70" width="150"></a>
+        </div>
+        <!--end ad space -->
+
+<!-- ** Menu End ** //-->
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;<br>
+
+    
+
+                    &nbsp;<br>
+                    <img src="/images/common/trans.gif" alt="" width="1" height="150"><br>
+
+              
+
+
+
+                </td>
+                <!-- ** END: Navigation Column ** //-->
+
+                <!-- ** BEGIN: Gutter Column ** //-->
+		<td width="10" nowrap><img src="/images/common/trans.gif" alt="" width="10" height="1"></td>
+                <!-- ** END: Gutter Column ** //-->
+
+                <!-- ** BEGIN: Content Column ** //-->
+                <td width="100%" valign="top">
+
+    
+<script type="text/javascript">
+
+String.prototype.trim = function() {
+        return this.replace(/^\s+|\s+$/g,"");
+}
+String.prototype.ltrim = function() {
+        return this.replace(/^\s+/,"");
+}
+String.prototype.rtrim = function() {
+        return this.replace(/\s+$/,"");
+}
+
+function validate_search() {
+	if (document.search.id.value == "Search JSRs" || document.search.id.value.trim().length == 0) {
+		alert("Search terms must be entered first");
+		return false;
+	}
+	return true;
+}
+
+function validate_findjsr() {
+	if (document.findjsr.id.value == "Search JSRs" || document.findjsr.id.value.trim().length == 0) {
+		alert("Search terms must be entered first");
+		return false;
+	}
+	return true;
+}
+
+function nullify_if_equal(field, str) {
+	// alert("val=" + field.value);
+	if (field.value == str) {
+		field.value = "";
+	}
+}
+
+</script>
+<!-- ** END: header.jsp ** //-->
+
+
+
+
+
+
+<html>
+<head>
+<title>
+JSR-000314 JavaServer Faces 2, Accepted Changes
+</title>
+</head>
+<body>
+<h2><center>
+
+<table border width="100%">
+<tr><td>
+<P>
+<h2>Target Milestone 2.0 Rev A</h2>
+
+The source code repositories for the spec to which this change-log applies are:
+<P>
+   * <a href="https://mojarra.dev.java.net/svn/mojarra/branches/2_1_BRANCH">svn url for generated portion of spec, and implementation</a><BR>
+   * CVS info for non-generated portion of spec: cvs -d :pserver:USERNAME@cvs.dev.java.net:/cvs javaserverfaces-spec-eg
+<P>
+
+
+<table border="1">
+
+<tr><th>ID</th><th>Category</th><th>Description</th><th>Fixed in Source Code Repository of Specification</th><th>Issue</th></tr>
+
+<tr><td>C002</td><td>Errata</td><td>Section 5.6.2.2 is out of sync with the current resolver implementation.</td><td>yes</td><td><a href="https://javaserverfaces-spec-public.dev.java.net/issues/show_bug.cgi?id=848">Spec Public:848</a></td></tr>
+<tr><td>C004</td><td>Errata</td><td>RenderKitDoc for <code>OutcomeTarget</code> Renderers are incorrect with respect to intended design.  Refer to <a href="#ChangeC006">ChangeC006</a> in the footnotes section below.</td><td>yes</td><td><a href="https://javaserverfaces-spec-public.dev.java.net/issues/show_bug.cgi?id=823">Spec Public:823</a></td></tr> 
+
+<tr><td>C007</td><td>Errata</td><td>Section JSF.11.4.7 Ordering.  After the sentence "The &lt;others /&gt; element must be handled as follows" add a bullet point: "The &lt;others /&gt; element represents a set of application configuration resources.  This set is described as the set of all application configuration resources discovered in the application minus the one currently being processed, minus the application configuration resources mentioned by name in the &lt;ordering /&gt; section.  If this set is the empty set, at the time the application configuration resources are being processed, the &lt;others &gt; element must be ignored."</td><td>yes</td><td><a href="https://javaserverfaces-spec-public.dev.java.net/issues/show_bug.cgi?id=824">Spec Public:824</a></td></tr>
+
+<tr><td>C008</td><td>Errata</td><td>taglib docs for composite:interface are missing documentation for <code>componentType</code> attribute.</td><td>yes</td><td><a href="https://javaserverfaces-spec-public.dev.java.net/issues/show_bug.cgi?id=849">Spec Public:849</a></td></tr>
+<tr><td>C011</td><td>Errata</td><td>Section JSF.3.6.2.1 Composite Component Metadata Specification.  Add <code>BehaviorHolderAttachedObjectTarget</code> after iii. <code>ActionSource2AttachedObjectTarget</code></td><td>yes</td><td><a href="https://javaserverfaces-spec-public.dev.java.net/issues/show_bug.cgi?id=825">Spec Public:825</a></td></tr>
+
+<tr><td>C012</td><td>Errata</td><td>Javadocs for <code>ResourceHandler.createResource</code><code>(String resourceId)</code></code> need to me ammended to state that if there is an error in argument resourceId, null must be returned by this method.</td><td>yes</td><td><a href="https://javaserverfaces-spec-public.dev.java.net/issues/show_bug.cgi?id=851">Spec Public:851</a></td></tr> 
+<tr><td>C013</td><td>Errata</td><td>PDL DOCS: f:event listener attribute clarification:Change description to: "A method expression that JSF invokes when an event occurs. That event is specified with the name attribute."</td><td>yes</td><td><a href="https://javaserverfaces-spec-public.dev.java.net/issues/show_bug.cgi?id=586">Spec Public:586</a></td></tr> 
+<tr><td>C015</td><td>Errata</td><td><code>UIViewRoot.setBeforePhaseListeners()</code> removed the statement that all phases including <code>RestoreView</code> will have their <code>beforePhaseListeners</code> called.  Reverted to the way it was in 1.2</td><td>yes</td><td><a href="https://javaserverfaces-spec-public.dev.java.net/issues/show_bug.cgi?id=826">Spec Public:826</a></td></tr> 
+
+<tr><td>C016</td><td>Errata</td><td>Section 2.6.2.1 Relocatable Resources: code snippet: &lt;f:view..../&gt;  should be &lt;f:view...&gt; </td><td>yes</td><td><a href="https://javaserverfaces-spec-public.dev.java.net/issues/show_bug.cgi?id=565">Spec Public:565</a></td></tr>
+<tr><td>C017</td><td>Errata</td><td><code>UISelectItem</code> doesn't mention <code>itemEscaped</code>.  </td><td>yes</td><td><a href="https://javaserverfaces-spec-public.dev.java.net/issues/show_bug.cgi?id=430">Spec Public:430</a></td></tr> 
+
+<tr><td>C018</td><td>Errata</td><td><code>ViewDeclarationLanguage.retargetAttachedObjects()</code> misses talking about Behaviors</td><td>yes</td><td><a href="https://javaserverfaces-spec-public.dev.java.net/issues/show_bug.cgi?id=827">Spec Public:827</a></td></tr> 
+<tr><td>C021</td><td>Errata</td><td>ui:insert missing existing "name" attribute, implemented, tested, but not documented</td><td>yes</td><td><a href="https://javaserverfaces-spec-public.dev.java.net/issues/show_bug.cgi?id=667">Spec Public:667</a></td></tr>
+<tr><td>C022</td><td>Errata</td><td><code>f:valueChangeListener</code> missing "for" attribute.  Implemented, tested, but not documented</td><td>yes</td><td><a href="https://javaserverfaces-spec-public.dev.java.net/issues/show_bug.cgi?id=828">Spec Public:828</a></td></tr>
+
+<tr><td>C023</td><td>Change</td><td>in facelets VDLdoc, mark f:verbatim and f:subview as deprecated</td><td>no</td><td><a href="https://javaserverfaces-spec-public.dev.java.net/issues/show_bug.cgi?id=852">Spec Public:852</a></td></tr> 
+<tr><td>C024</td><td>Errata</td><td>Add an assertion to section 10.3.1 stating that EL expressions that appear in the facelet XHTML page must appear in the rendered view as if they were the right hand side of the value attribute of an <code>&lt;h:outputText&gt;</code> at the same point in the page as the EL expression</td><td>yes</td><td><a href="https://javaserverfaces-spec-public.dev.java.net/issues/show_bug.cgi?id=829">Spec Public:829</a></td></tr> 
+<tr><td>C027</td><td>Errata</td><td>web-facelettaglibrary_2_0.xsd type incorrect for composite-library-name. Should be ***javae:string***</td><td>no</td><td><a href="https://javaserverfaces-spec-public.dev.java.net/issues/show_bug.cgi?id=854">Spec Public:854</a></td></tr>
+
+<tr><td>C028</td><td>Errata</td><td><code>ui:remove</code> VDLDoc has attribute with no name</td><td>no</td><td><a href="https://javaserverfaces-spec-public.dev.java.net/issues/show_bug.cgi?id=842">Spec Public:842</a></td></tr> 
+<tr><td>C029</td><td>Errata</td><td><code>ui:param</code> has attribute duplicated. One of them should be "value"</td><td>yes</td><td><a href="https://javaserverfaces-spec-public.dev.java.net/issues/show_bug.cgi?id=855">Spec Public:855</a></td></tr> 
+<tr><td>C030</td><td>Errata</td><td>RenderKit Docs <code>javax.faces.CompositeFacet</code> change " The implementation of <code>encodeBegin()</code>, must obtain " to be " The implementation of <code>encodeChildren()</code>, must obtain "</td><td>no</td><td><a href="https://javaserverfaces-spec-public.dev.java.net/issues/show_bug.cgi?id=843">Spec Public:843</a></td></tr> 
+
+<tr><td>C031</td><td>Errata</td><td>VDL docs state that <code>composite:attribute</code> has a target attribute with <code>required=true</code>. This attribute is not really required on <code>composite:attribute</code>.   </td><td>yes</td><td><a href="https://javaserverfaces-spec-public.dev.java.net/issues/show_bug.cgi?id=644">Spec Public:644</a></td></tr> 
+<tr><td>C032</td><td>Errata</td><td>Mention in spec that Objects put in view scope may need to be Serializable</td><td>yes</td><td><a href="https://javaserverfaces-spec-public.dev.java.net/issues/show_bug.cgi?id=830">Spec Public:830</a></td></tr> 
+
+<tr><td>C033</td><td>Errata</td><td>Modify the javadoc for <code>ResourceHandler</code> to state that for resources residing at <code>META-INF/resources/&lt;resourceidentifier&gt;</code>. The implementation is not required to support the optional <code>libraryVersion</code> and <code>resourceVersion</code> segments</td><td>yes</td><td><a href="https://javaserverfaces-spec-public.dev.java.net/issues/show_bug.cgi?id=844">Spec Public:844</a></td></tr>
+
+<tr><td>C034</td><td>Change</td><td>Modify table 5-10 to state that implicit object cc returns the current composite component, relative to the composite component markup page in which the expression appears</td><td>yes</td><td><a href="https://javaserverfaces-spec-public.dev.java.net/issues/show_bug.cgi?id=831">Spec Public:831</a></td></tr>
+<tr><td>C035</td><td>Errata</td><td>3.6.2.1 Modify composite component metadata specification to state that, within the <code>cc:interface</code> element, the following attributes are not available unless <code>ProjectStage</code> is <code>Development</code>: displayName, expert, hidden, preferred, shortDescription</td><td>yes</td><td><a href="https://javaserverfaces-spec-public.dev.java.net/issues/show_bug.cgi?id=832">Spec Public:832</a></td></tr> 
+
+<tr><td>C037</td><td>Errata</td><td><code>UIComponent.restoreState()</code> javadocs must be changed to ***say*** NPE is thrown if context is null, but no action is taken if state argument is null</td><td>yes</td><td><a href="https://javaserverfaces-spec-public.dev.java.net/issues/show_bug.cgi?id=845">Spec Public:845</a></td></tr> 
+<tr><td>C040</td><td>Errata</td><td>VDLDocs for <code>f:metadata</code>. Don't mention <code>f:view</code>. State, "This tag must reside within the top level facelet page whose filename corresponds ot the <code>viewid</code> being loaded."</td><td>yes</td><td><a href="https://javaserverfaces-spec-public.dev.java.net/issues/show_bug.cgi?id=856">Spec Public:856</a></td></tr> 
+
+<tr><td>C043</td><td>Errata</td><td>Document <code>SEPARATOR_CHAR</code> in section 11.1.3 where all the other context-params are documented</td><td>yes</td><td><a href="https://javaserverfaces-spec-public.dev.java.net/issues/show_bug.cgi?id=833">Spec Public:833</a></td></tr> 
+<tr><td>C044</td><td>Errata</td><td>Section 11.4.6 doesn't include <code>ViewDeclarationLanguage</code>, <code>VisitContextFactory</code>, <code>ExceptionHandlerFactory</code>, <code>PartialViewContext</code>, <code>TagHandlerDelegateFactory</code> as decoratable</td><td>yes</td><td><a href="https://javaserverfaces-spec-public.dev.java.net/issues/show_bug.cgi?id=834">Spec Public:834</a></td></tr>
+
+<tr><td>C046</td><td>Errata</td><td>Section 10.4.1.1 specifies the use of <code>AjaxBehaviors pushBehavior</code> but <code>AjaxBehaviors</code> is an implementation detail (the class exists under com package)</td><td>yes</td><td><a href="https://javaserverfaces-spec-public.dev.java.net/issues/show_bug.cgi?id=836">Spec Public:836</a></td></tr>
+<tr><td>C047</td><td>Errata</td<td>Add "defaults" for "execute", "render" <code>AjaxBehavior</code> in vdldocs. </td><td>yes</td><td><a href="https://javaserverfaces-spec-public.dev.java.net/issues/show_bug.cgi?id=568">Spec Public:568</a></td></tr> 
+
+<tr><td>C048</td><td>Errata</td><td>JSP should not have <code>f:viewParam</code>. Facelets <code>f:viewParam</code> must have <code>name</code> attribute. </td><td>yes</td><td><a href="https://javaserverfaces-spec-public.dev.java.net/issues/show_bug.cgi?id=656">Spec Public:656</a></td></tr> 
+<tr><td>C049</td><td>Errata</td><td>Spec section 3.2.5 is empty. Fix that</td><td>yes</td><td><a href="https://javaserverfaces-spec-public.dev.java.net/issues/show_bug.cgi?id=835">Spec Public:835</a></td></tr> 
+
+<tr><td>C050</td><td>Errata</td><td>Spec for <code>UIComponent.setParent()</code> incomplete</td><td>yes</td><td><a href="https://javaserverfaces-spec-public.dev.java.net/issues/show_bug.cgi?id=837">Spec Public:837</a></td></tr>   
+<tr><td>C054</td><td>Errata</td><td><code>f:event name</code> attribute should be type. </td><td>yes</td><td><a href="https://javaserverfaces-spec-public.dev.java.net/issues/show_bug.cgi?id=639">Spec Public:639</a></td></tr> 
+
+<tr><td>C058</td><td>Errata</td><td>Section 14.4.1: Table 14-4: responseTxt should be responseText. Table 14-4: Add <code>status</code> property; Table 14-4: There is no "name" property. Table 14-3: reorder "status" values to be in chronological order. Section 14.4.1.1: Fix use case. </td><td>yes</td><td><a href="https://javaserverfaces-spec-public.dev.java.net/issues/show_bug.cgi?id=642">Spec Public:642</a></td></tr>
+<tr><td>C060</td><td>Change</td><td>Replace the last sentence in the javadoc for <code>FacesServlet.service()</code> to say "The implementation must make it so <code>FacesContext.release()</code> is called within a finally block as late as possible in the processing for the JSF related portion of this request".</td><td>yes</td><td><a href="https://javaserverfaces-spec-public.dev.java.net/issues/show_bug.cgi?id=846">Spec Public:846</a></td></tr>
+
+<tr><td>C061</td><td>Change</td><td>Non-normatively document that JavaBeans PropertyEditors will be used for EL Coercion.  Mention this in the context of JSF converters</td><td>yes</td><td><a href="https://javaserverfaces-spec-public.dev.java.net/issues/show_bug.cgi?id=838">Spec Public:838</a></td></tr>
+<tr><td>C062</td><td>Change</td><td>In 3.1.5, explicitly mention not to use view scope</td><td>yes</td><td><a href="https://javaserverfaces-spec-public.dev.java.net/issues/show_bug.cgi?id=839">Spec Public:839</a></td></tr>
+<tr><td>C063</td><td>Change</td><td>7.4.1 Clarify that, in the case of navigation actions, an empty string should be treated the same way as null: stay on the  same page.</td><td>yes</td><td><a href="https://javaserverfaces-spec-public.dev.java.net/issues/show_bug.cgi?id=747">Spec Public:747</a></td></tr>
+
+<tr><td>C064</td><td>Change</td><td>Correct <code>StateHolder.setTransient</code> JavaDoc (specified backwards)</td><td>yes</td><td><a href="https://javaserverfaces-spec-public.dev.java.net/issues/show_bug.cgi?id=840">Spec Public:840</a></td></tr>
+<tr><td>C065</td><td>Change</td><td>Correct typos in <code>Composite.tld</code> (for pdldocs).  Specifically, quotes around <code>actionListener</code>, <code>method-signature</code> (spelling).  Also clarify the default value "false" for "required" attribute.</td><td>yes</td><td><a href="https://javaserverfaces-spec-public.dev.java.net/issues/show_bug.cgi?id=841">Spec Public:841</a></td></tr>
+
+<tr><td>C066</td><td>Change</td><td>Specify that the Component Resource container facet must be marked transient.  Specifically, the JavaDocs for <code>UIViewRoot.getComponentResources</code> should include: "Set the transient property of the facet to true." </td><td>yes</td><td><a href="https://javaserverfaces-spec-public.dev.java.net/issues/show_bug.cgi?id=800">Spec Public:800</a></td></tr>
+<tr><td>C068</td><td>Change</td><td>Modify the facelet taglib xsd so that older versions of taglibs are acceptable. </td><td>yes</td><td><a href="https://javaserverfaces-spec-public.dev.java.net/issues/show_bug.cgi?id=744">Spec Public:744</a></td></tr>
+<tr><td>C069</td><td>Change</td><td>Make sure vdldocs for <code>f:event</code> list event all possible event types</td><td>yes</td><td><a href="https://javaserverfaces-spec-public.dev.java.net/issues/show_bug.cgi?id=712">Spec Public:712</a></td></tr>
+
+<tr><td>C072</td><td>Errata</td><td>Neither applyNextHandler of DelegatingMetaTagHandler or nextHandler of TagHandler 
+are documented. </td><td>yes</td><td><a href="https://javaserverfaces-spec-public.dev.java.net/issues/show_bug.cgi?id=780">Spec Public:780</a></td></tr>
+<tr><td>C073</td><td>Errata</td><td>Specify f:ajax execute/render id behavior in vdldocs (as outlined in Section 10.4.1.1 of the spec). </td><td>yes</td><td><a href="https://javaserverfaces-spec-public.dev.java.net/issues/show_bug.cgi?id=567">Spec Public:567</a></td></tr>
+<tr><td>C074</td><td>Errata</td><td>&lt;view-param&gt; has no business being a child of &lt;redirect&gt; and should be renamed to &lt;redirect-param&gt;. </td><td>yes</td><td><a href="https://javaserverfaces-spec-public.dev.java.net/issues/show_bug.cgi?id=698">Spec Public:698</a></td></tr>
+
+<tr><td>C075</td><td>Errata</td><td>includeViewParams implicit navigation flag should be faces-include-view-params. </td><td>yes</td><td><a href="https://javaserverfaces-spec-public.dev.java.net/issues/show_bug.cgi?id=699">Spec Public:699</a></td></tr>
+<tr><td>C077</td><td>Errata</td><td>Event broadcasting should apply to Behaviors (not just ClientBehaviors). </td><td>yes</td><td><a href="https://javaserverfaces-spec-public.dev.java.net/issues/show_bug.cgi?id=798">Spec Public:798</a></td></tr>
+<tr><td>C078</td><td>Errata</td><td>PostAddToViewEvent delivery specification needs clarification. Clarify UIComponent.getParent and getChildren for consistency. </td><td>yes</td><td><a href="https://javaserverfaces-spec-public.dev.java.net/issues/show_bug.cgi?id=805">Spec Public:805</a></td></tr>
+
+<tr><td>C079</td><td>Errata</td><td>RenderKit Docs - TableRenderer:Clarification - the docs say to render the footer the same as the header which causes the problem. </td><td>yes</td><td><a href="https://javaserverfaces-spec-public.dev.java.net/issues/show_bug.cgi?id=255">Spec Public:255</a></td></tr>
+<tr><td>C080</td><td>Errata</td><td>RenderKit Docs - ButtonRenderer Encode behavior w/r/t onclick attribute - should not be passthrough attribute. </td><td>yes</td><td><a href="https://javaserverfaces-spec-public.dev.java.net/issues/show_bug.cgi?id=257">Spec Public:257</a></td></tr>
+<tr><td>C081</td><td>Errata</td><td>h:message "for" attribute is mis-specified:"for" attribute should be relative id (not clientid). </td><td>yes</td><td><a href="https://javaserverfaces-spec-public.dev.java.net/issues/show_bug.cgi?id=266">Spec Public:266</a></td></tr>
+
+<tr><td>C082</td><td>Errata</td><td>clarify whether expression of binding-attribute of f:xxxxListener should be evaluated on postback. </td><td>yes</td><td><a href="https://javaserverfaces-spec-public.dev.java.net/issues/show_bug.cgi?id=320">Spec Public:320</a></td></tr>
+<tr><td>C083</td><td>Errata</td><td>Option rendering, specifically when dealing with SelectItemGroups, is too generic. </td><td>yes</td><td><a href="https://javaserverfaces-spec-public.dev.java.net/issues/show_bug.cgi?id=420">Spec Public:420</a></td></tr>
+<tr><td>C084</td><td>Errata</td><td>submittedValue get/set methods underspecified </td><td>yes</td><td><a href="https://javaserverfaces-spec-public.dev.java.net/issues/show_bug.cgi?id=434">Spec Public:434</a></td></tr>
+
+<tr><td>C085</td><td>Errata</td><td>Current wording in renderkit docs leads to double encoding of query parameters</td><td>yes</td><td><a href="https://javaserverfaces-spec-public.dev.java.net/issues/show_bug.cgi?id=436">Spec Public:436</a></td></tr>
+<tr><td>C086</td><td>Errata</td><td>SelectManyCheckBox Clarification</td><td>yes</td><td><a href="https://javaserverfaces-spec-public.dev.java.net/issues/show_bug.cgi?id=466">Spec Public:466</a></td></tr>
+<tr><td>C087</td><td>Errata</td><td>PDL document for JSTL(Facelets) has the incorrect URI for the NameSpace. </td><td>yes</td><td><a href="https://javaserverfaces-spec-public.dev.java.net/issues/show_bug.cgi?id=509">Spec Public:509</a></td></tr>
+
+<tr><td>C088</td><td>Errata</td><td>API docs missing for ExceptionEventContext.</td><td>yes</td><td><a href="https://javaserverfaces-spec-public.dev.java.net/issues/show_bug.cgi?id=515">Spec Public:515</a></td></tr>
+<tr><td>C089</td><td>Errata</td><td>composite:attribute component documentation for the attribute
+type should be for attribute method-signature.</td><td>yes</td><td><a href="https://javaserverfaces-spec-public.dev.java.net/issues/show_bug.cgi?id=524">Spec Public:524</a></td></tr>
+<tr><td>C090</td><td>Errata</td><td>The UML Diagram for javax.faces.event is out of date.</td><td>yes</td><td><a href="https://javaserverfaces-spec-public.dev.java.net/issues/show_bug.cgi?id=525">Spec Public:525</a></td></tr>
+
+<tr><td>C091</td><td>Errata</td><td>Minor typo in the Interface BehaviorHolder API.</td><td>yes</td><td><a href="https://javaserverfaces-spec-public.dev.java.net/issues/show_bug.cgi?id=534">Spec Public:534</a></td></tr>
+<tr><td>C092</td><td>Errata</td><td>Two references to the itemLabelEscaped attribute.</td><td>yes</td><td><a href="https://javaserverfaces-spec-public.dev.java.net/issues/show_bug.cgi?id=56">Spec Public:536</a></td></tr>
+<tr><td>C093</td><td>Errata</td><td>Missing class description for javax.faces.event.PostValidateEvent and javax.faces.event.PreValidateEvent.</td><td>yes</td><td><a href="https://javaserverfaces-spec-public.dev.java.net/issues/show_bug.cgi?id=537">Spec Public:537</a></td></tr>
+
+<tr><td>C094</td><td>Errata</td><td>Section 3.7.5 typo - ClientBehavorHolder should be ClientBehaviorHolder.</td><td>yes</td><td><a href="https://javaserverfaces-spec-public.dev.java.net/issues/show_bug.cgi?id=540">Spec Public:540</a></td></tr>
+<tr><td>C095</td><td>Errata</td><td>Section 4.1.3 typo - NamingContaier should be NamingContainer.</td><td>yes</td><td><a href="https://javaserverfaces-spec-public.dev.java.net/issues/show_bug.cgi?id=541">Spec Public:541</a></td></tr>
+<tr><td>C096</td><td>Errata</td><td>API Docs:  Application.publishEvent: Docs say to throw NPE if any of the arguments is null.  However, sourceBaseType arg can be null.</td><td>yes</td><td><a href="https://javaserverfaces-spec-public.dev.java.net/issues/show_bug.cgi?id=553">Spec Public:553</a></td></tr>
+
+<tr><td>C097</td><td>Errata</td><td>Facelets TLD Docs: Missing "for" attribute for "message" and "messages" tags.</td><td>yes</td><td><a href="https://javaserverfaces-spec-public.dev.java.net/issues/show_bug.cgi?id=558">Spec Public:558</a></td></tr>
+<tr><td>C099</td><td>Errata</td><td>ResourceHandler docs: Clarify that relative paths are disallowed in library names.</td><td>yes</td><td><a href="https://javaserverfaces-spec-public.dev.java.net/issues/show_bug.cgi?id=577">Spec Public:577</a></td></tr>
+<tr><td>C100</td><td>Errata</td><td>Renderkit Docs: h:link - Formatting - add paragraphs</td><td>yes</td><td><a href="https://javaserverfaces-spec-public.dev.java.net/issues/show_bug.cgi?id=588">Spec Public:588</a></td></tr>
+
+<tr><td>C101</td><td>Errata</td><td>Spec Section 2.5.9: Fix Grammar: "The first client behavior to provided by the JSF specification is the AjaxBehavior." should be: "The first client behavior provided by the JSF specification is the AjaxBehavior." </td><td>yes</td><td><a href="https://javaserverfaces-spec-public.dev.java.net/issues/show_bug.cgi?id=590">Spec Public:590</a></td></tr>
+<tr><td>C102</td><td>Errata</td><td>Spec Section 9.4 doesn't list all the validation tags and it lists the
+validateDoubleRange tag twice.</td><td>no</td><td><a href="https://javaserverfaces-spec-public.dev.java.net/issues/show_bug.cgi?id=591">Spec Public:591</a></td></tr>
+<tr><td>C103</td><td>Errata</td><td>Vdldocs and Spec section 3.6.2.1 have component:actionSource target attribute with commas as delimiters - should be "space" as delimiter.</td><td>yes</td><td><a href="https://javaserverfaces-spec-public.dev.java.net/issues/show_bug.cgi?id=592">Spec Public:592</a></td></tr>
+
+<tr><td>C104</td><td>Errata</td><td>Spec Section 7.4.1: getNavigationCase should return NavigationCase and not void. </td><td>yes</td><td><a href="https://javaserverfaces-spec-public.dev.java.net/issues/show_bug.cgi?id=605">Spec Public:605</a></td></tr>
+<tr><td>C105</td><td>Errata</td><td>Spec Section 10.4.1.4 says: f:validateBean should extend validateHandler. Should be ValidatorHandler.</td><td>yes</td><td><a href="https://javaserverfaces-spec-public.dev.java.net/issues/show_bug.cgi?id=615">Spec Public:615</a></td></tr>
+<tr><td>C106</td><td>Errata</td><td>Typo: Pages in the TLD docs says "JSF 2.0 Page Decraration Language". Should be "Declaration". </td><td>yes</td><td><a href="https://javaserverfaces-spec-public.dev.java.net/issues/show_bug.cgi?id=617">Spec Public:617</a></td></tr>
+
+<tr><td>C107</td><td>Errata</td><td>Typos: Table 14-1, 14-2, page 14-3.</td><td>yes</td><td><a href="https://javaserverfaces-spec-public.dev.java.net/issues/show_bug.cgi?id=629">Spec Public:629</a></td></tr>
+<tr><td>C108</td><td>Errata</td><td>UIData.invokeOnComponent docs need to be updated to include handling of column level facets. </td><td>yes</td><td><a href="https://javaserverfaces-spec-public.dev.java.net/issues/show_bug.cgi?id=632">Spec Public:632</a></td></tr>
+<tr><td>C109</td><td>Errata</td><td>Spec Section 3.5.6.1 needs to be corrected to state that default validators are added during tag execution time. </td><td>yes</td><td><a href="https://javaserverfaces-spec-public.dev.java.net/issues/show_bug.cgi?id=635">Spec Public:635</a></td></tr>
+
+<tr><td>C110</td><td>Errata</td><td>validateBean and validateRequired tags need to be removed from the JSP PDL
+documentation</td><td>yes</td><td><a href="https://javaserverfaces-spec-public.dev.java.net/issues/show_bug.cgi?id=645">Spec Public:645</a></td></tr>
+<tr><td>C111</td><td>Errata</td><td>jsf.ajax.response update element clarification needed in JavaScript docs. </td><td>yes</td><td><a href="https://javaserverfaces-spec-public.dev.java.net/issues/show_bug.cgi?id=646">Spec Public:646</a></td></tr>
+<tr><td>C112</td><td>Errata</td><td>Spec Section 10.4.1.1: Clarify what happens when nesting and wrapping f:ajax tags collide. </td><td>yes</td><td><a href="https://javaserverfaces-spec-public.dev.java.net/issues/show_bug.cgi?id=652">Spec Public:652</a></td></tr>
+
+<tr><td>C113</td><td>Errata</td><td>Typo: Spec Section 8.3.1: "renderkit-id" should be "render-kit-id" and "renderkit" should be "render-kit". </td><td>yes</td><td><a href="https://javaserverfaces-spec-public.dev.java.net/issues/show_bug.cgi?id=660">Spec Public:660</a></td></tr>
+<tr><td>C114</td><td>Errata</td><td>Add "rendered" attribute to VDL docs for ui:component and ui:fragment. </td><td>yes</td><td><a href="https://javaserverfaces-spec-public.dev.java.net/issues/show_bug.cgi?id=661">Spec Public:661</a></td></tr>
+<tr><td>C115</td><td>Errata</td><td>JavaDocs for UIComponent.processValidators is incomplete. It should mention <code>popComponentFromEL</code>. </td><td>yes</td><td><a href="https://javaserverfaces-spec-public.dev.java.net/issues/show_bug.cgi?id=664">Spec Public:664</a></td></tr>
+
+<tr><td>C116</td><td>Errata</td><td>Dead link in VDL docs.</td><td>yes</td><td><a href="https://javaserverfaces-spec-public.dev.java.net/issues/show_bug.cgi?id=666">Spec Public:666</a></td></tr>
+<tr><td>C117</td><td>Errata</td><td>Spec Section 2.5.2.4: Standard messages for LengthValidator are confusing.</td><td>yes</td><td><a href="https://javaserverfaces-spec-public.dev.java.net/issues/show_bug.cgi?id=668">Spec Public:668</a></td></tr>
+<tr><td>C118</td><td>Errata</td><td>Spec/pdldocs don't say what the default is for "target" in h:outputScript.</td><td>yes</td><td><a href="https://javaserverfaces-spec-public.dev.java.net/issues/show_bug.cgi?id=673">Spec Public:673</a></td></tr>
+
+<tr><td>C119</td><td>Errata</td><td>partial-view-context-factory is only mentioned in the schema part of the spec.  Houls be added to Spec Section 13.4.2.</td><td>yes</td><td><a href="https://javaserverfaces-spec-public.dev.java.net/issues/show_bug.cgi?id=705">Spec Public:705</a></td></tr>
+<tr><td>C120</td><td>Errata</td><td>Specification edits needed - see: <a href="http://docs.google.com/Doc?docid=0AW2H0u_g8JuTZGYycDZzdmhfMTRmOHo3ZmJncQ&hl=en">here</a></td><td>no</td><td><a href="https://javaserverfaces-spec-public.dev.java.net/issues/show_bug.cgi?id=714">Spec Public:714</a></td></tr>
+<tr><td>C121</td><td>Errata</td><td>Typo - Spec Section 7.5.2: "ViewHanlder" should be "ViewHandler"; "renderView" and "restoreView" methods should call "ViewDeclarationLanguage.renderView" and "ViewDeclarationLanguage.restoreView".</td><td>yes</td><td><a href="https://javaserverfaces-spec-public.dev.java.net/issues/show_bug.cgi?id=729">Spec Public:729</a></td></tr>
+
+<tr><td>C122</td><td>Errata</td><td>Spec Section 2.6.1.3: Specify that a libraryName or resourceName contains only XML NameChar, but not a colon; a libraryName or resourceName does not match the regex "[0-9]+(_[0-9]+)* or
+   [A-Za-z]{2}(_[A-Za-z]{2}(_[A-Za-z]+)*)?"</td><td>yes</td><td><a href="https://javaserverfaces-spec-public.dev.java.net/issues/show_bug.cgi?id=740">Spec Public:740</a></td></tr>
+<tr><td>C123</td><td>Errata</td><td>Typos in PDLDocs for ui:repeat</td><td>yes</td><td><a href="https://javaserverfaces-spec-public.dev.java.net/issues/show_bug.cgi?id=743">Spec Public:743</a></td></tr>
+<tr><td>C124</td><td>Errata</td><td>Remove "partial-traversal" application element from the spec as it does not exist in the schema.</td><td>yes</td><td><a href="https://javaserverfaces-spec-public.dev.java.net/issues/show_bug.cgi?id=767">Spec Public:767</a></td></tr>
+
+<tr><td>C125</td><td>Errata</td><td>Add mssing ID attributes to schema for: faces-config-orderingType,faces-config-ordering-orderingType,faces-config-absoluteOrderingType,faces-config-default-valueType,faces-config-from-view-idType,faces-config-client-behavior-rendererType,faces-config-behaviorType,faces-config-value-classType,faces-config-rendererType</td><td>yes</td><td><a href="https://javaserverfaces-spec-public.dev.java.net/issues/show_bug.cgi?id=768">Spec Public:768</a></td></tr>
+<tr><td>C126</td><td>Errata</td><td>UIInput JavaDocs: Specify the handling of conversion failures.</td><td>yes</td><td><a href="https://javaserverfaces-spec-public.dev.java.net/issues/show_bug.cgi?id=775">Spec Public:775</a></td></tr>
+<tr><td>C127</td><td>Errata</td><td>EditableValueHodler JavaDocs: Missing "@Since 2.0" for "resetValue" method.</td><td>yes</td><td><a href="https://javaserverfaces-spec-public.dev.java.net/issues/show_bug.cgi?id=779">Spec Public:779</a></td></tr>
+
+<tr><td>C128</td><td>Errata</td><td>VDL documentation for f:selectItem references the "escape" attribute.  It should be "itemEscaped".</td><td>yes</td><td><a href="https://javaserverfaces-spec-public.dev.java.net/issues/show_bug.cgi?id=788">Spec Public:788</a></td></tr>
+<tr><td>C129</td><td>Errata</td><td>Specify description for "f:param" "disabled" attribute.</td><td>yes</td><td><a href="https://javaserverfaces-spec-public.dev.java.net/issues/show_bug.cgi?id=794">Spec Public:794</a></td></tr>
+<tr><td>C130</td><td>Errata</td><td>Simplify PostRestoreStateEvent delivery requirements.</td><td>yes</td><td><a href="https://javaserverfaces-spec-public.dev.java.net/issues/show_bug.cgi?id=806">Spec Public:806</a></td></tr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</table>
+<br/>
+
+
+</table>
+
+</br>
+<h2>Footnotes for above changes</h2>
+</br>
+
+<a name="ChangeC006">ChangeC006</a>
+
+<h3>Rewrite Javadocs for <code>OutcomeTarget</code> renderers</h3>
+
+Docs for <code>OutcomeTargetButton</code>
+
+
+      <p>Encode Behavior</p>
+
+<p>Render an HTML "input" element of type "button".  The value of the
+component is rendered as the button text and the outcome of the
+component is used to determine the target URL which is activated by
+onclick.  If "image" attribute is specified, render it as the value of
+the "src" attribute after passing it to the
+<code>getResourceURL()</code> method of the <code>ViewHandler</code> for
+this application, and passing the result through the
+
+<code>encodeResourceURL()</code> method of the
+<code>ExternalContext</code>.</p>
+
+<p>If the component is not disabled, take the following actions.</p>
+
+<div>
+
+  <p><a name="UIOutcomeTargetGetEncodedTargetUrl">Algorithm to obtain the url to which the user-agent should issue a GET request when clicked</a></p>
+
+  <p>Obtain the <code>NavigationCase</code> that corresponds to the
+  component instance for this <code>Renderer</code>.</p>
+
+  <p>Obtain an instance of
+  <code>javax.faces.application.ConfigurableNavigationHandler</code> from
+  the <code>ViewHandler</code>.  If no such instance can be obtained,
+  write the "disabled" attribute on the button.  Otherwise, let
+  <em>outcome</em> be the result of calling <code>getOutcome()</code> on
+  the argument component, which must be an instance of
+  <code>UIOutcomeTarget</code>.  If this result is <code>null</code>, let
+  <em>outcome</em> be the viewId of the current <code>UIViewRoot</code>.
+  Let <em>navCase</em> be the return from calling
+  <code>getNavigationCase()</code> on the
+  <code>ConfigurableNavigationHandler</code>, passing the current
+  <code>FacesContext</code> as the first argument, <code>null</code>, as
+  the second argument, and <em>outcome</em> as the third argument.  If
+  this returns <code>null</code>, log an informative error which includes
+  the component id, and write the "disabled" attribute on the component
+  markup, with the value of <code>true</code>.  Otherwise obtain the
+  encoded target URL using the following algorithm.</p>
+
+  <p><a name="Algorithm to obtain the encoded target URL">Algorithm to obtain the encoded target URL</a></p>
+
+  <ul>
+
+	  <li><p>Let <em>params</em> be the <code>Map&lt;String,
+	  List&lt;String&gt;&gt;</code> to be passed to
+	  <code>ViewHandler.getBookmarkableURL()</code>.  Build this map up first
+	  from any child <code>UIParameter</code> components.  These children must
+	  be processed in the order in which they appear as children.  If multiple
+	  children with the same name are encountered, their values must appear in
+	  the <code>List&lt;String&gt;</code> in the <code>Map</code> entry with
+	  the same name, and appear in the list in the same order as their child
+	  order.</p></li>
+
+	  <li><p>Next, obtain any parameters included within the
+	  navigation case.  Call <code>getParameters()</code> on
+	  <em>navCase</em>.  The result will be a <code>Map&lt;String,
+	  List&lt;String&gt;&gt;</code>.  If the result is
+	  non-<code>null</code> and non-empty, iterate over the entries
+	  from the result <code>Map</code> and, if no entry with the
+	  same name exists in <em>params</em>, set the value from the
+	  current entry as the value in the <em>params</em>
+
+	  <code>Map</code>.</p></li>
+
+	  <li><p>Let <em>includeViewParams</em> be the result of a
+	  logical OR of the results from calling
+	  <code>isIncludeViewParams()</code> on the argument
+	  <code>UIOutcomeTarget</code> component and calling
+	  <code>isIncludeViewParams</code> on <em>navCase</em>.</p></li>
+
+
+	  <li><p>Call <code>getBookmarkableURL()</code> on the
+	  <code>ViewHandler</code>, passing the current
+	  <code>FacesContext</code> as the first argument, the return
+	  from calling <code>getToViewId()</code> as the second
+	  argument, <em>params</em> as the third argument, and
+	  <em>includeViewParams</em> as the last argument.</p></li>
+
+  </ul>
+
+  </div>
+
+  <p>The entire target URL string must be passed through a call to
+  the <code>encodeResourceURL()</code> method of the
+  <code>ExternalContext</code>.  The name of the
+  <code>UIParameter</code> goes on the left hand side, and the value of
+  the <code>UIParameter</code> on the right hand side.  The name and the
+  value must be URLEncoded.  Each <code>UIParameter</code> instance is
+  separeted by an ampersand, as dictated in the URL spec.  The final
+  encoded result will be written out to the onclick attribute of the
+  button as "window.location.href = '<encoded HREF value>'".  If the
+  developer has specified a custom onlclick the window.location.href
+  name/value pair will be appended at the end of the developer specified
+  script.  If the "fragment" attribute is specified, the value will be
+  included at the end of the resulting URL preceded by a hash mark.  If
+  the "styleClass" attribute is specified, render its value as the value
+  of the "class" attribute.  If the "id" attribute is specified, follow
+  the same steps as mentioned in the "General Notes on Encoding" section of the 
+  RenderKit docs regarding the "id" attribute for UIInput
+  components.  If the "disabled" attribute is specified, do not render
+  the "onclick" element and assign the "disabled" attribute a value of
+  true.</p>
+
+Docs for OutcomeTargetLink
+
+
+<p>Render an HTML "a" anchor element.  The value of the component is
+rendered as the anchor text and the outcome of the component is used to
+determine the target URL rendered in the "href" attribute.  Execute the
+<a href="#UIOutcomeTargetGetEncodedTargetUrl">Algorithm to obtain the URL to which the user-agent should issue a GET request
+when clicked</a>.  If the "id" attribute is specified, follow the same
+steps as mentioned in the "General Notes on Encoding" section of the RenderKit docs
+regarding the "id" attribute for UIInput
+components.  If the "disabled" attribute is specified, do not render the
+HTML "a" anchor element or the "href" element.  Instead, render a "span"
+element.  If the "styleClass" attribute is specified, render its value
+as the value of the "class" attribute on the "span".  Render any
+pass-through attributes on the "span".</p> 
+</td></tr>
+</table>
+
+
+
+
+
+</body>
+</html>
+
+
+
+<!-- ** BEGIN: footer.jsp ** //-->
+
+
+
+
+
+
+
+
+</td>
+</tr>
+</table>
+
+<!-- ** END: Content Table ** //-->
+
+<!-- ** BEGIN: Footer Table ** //-->
+
+<div id="footer" style="clear: both;">
+    <div class="footleft">
+        <a href="/en/resources/contacts">Contact Us</a>
+    </div>
+	
+    <div class="botbar"><img src="/images/spacer.gif" alt="" height="23" width="1"></div>
+
+    <div class="footleft2">
+         &copy; 2019, Oracle Corporation and/or its affiliates. 
+        <a href="/en/home/terms">Terms of Use</a>. <a href="http://www.oracle.com/us/legal/privacy/index.html">Privacy Policy</a>. <a href="http://www.oracle.com/us/legal/third-party-trademarks/third-party-trademarks-078568.html">Trademarks</a>
+    </div>
+
+    <div class="footright">
+        <img src="/images/common/logo_oracle_footer.gif" alt="Oracle Corporation" height="22" width="91">
+    </div>
+
+    <div style="clear: both;"><img src="/images/spacer.gif" alt="" height="30" width="1"></div>
+</div>
+
+<!-- ** END: Footer Table ** //-->
+
+
+
+<!-- ** Menu Start ** //-->
+
+
+
+</body>
+</html>
+<!-- ** END: footer.jsp ** //-->
+

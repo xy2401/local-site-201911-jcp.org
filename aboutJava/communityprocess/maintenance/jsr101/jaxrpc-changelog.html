@@ -1,0 +1,1074 @@
+
+<!-- ** BEGIN: header.jsp ** //-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3c.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+<head>
+    
+
+   
+    <link href="/includes/css/menu.css" rel="stylesheet" type="text/css"></link>
+    <link href="/includes/css/style.css" rel="stylesheet" type="text/css"></link>
+    <!--[if lt IE 6]><link href="/includes/css/style5.css" rel="stylesheet" type="text/css" ></link><![endif]-->
+    <!--[if gte IE 5]><link href="/includes/css/style6.css" rel="stylesheet" type="text/css" ></link><![endif]-->
+    <link href="/includes/css/tabs.css"  rel="stylesheet" type="text/css"></link>
+
+    <script type="text/javascript" src="/includes/scripts/tabs.js"></script>
+    <script type="text/javascript" src="/includes/scripts/menu.js"></script>
+   
+
+    
+
+    
+        <title>The Java Community Process(SM) Program - communityprocess - maintenance</title>
+    
+
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+
+
+<body onload="P7_initPM(0,1,0,0,-1)">
+
+    <a name="top"></a>
+
+    <div id="header">
+	<div id="logo">
+		<a href="/en/home/index"><img src="/images/spacer.gif" alt="Java Community Process" height="81" width="151"></a>
+	</div>
+	<div id="tools">
+		<div class="search">
+			<form name="search" action="/en/jsr/summary" method="get" onsubmit="return validate_search()">
+				<input name="id" value="Search JSRs" size="16" class="form" onfocus="nullify_if_equal(this, 'Search JSRs')" type="text">
+				<a href="javascript:document.search.submit()" onclick="return validate_search()"><img src="/images/button_go.gif" width="21" height="16" border="0" alt="Submit this Search" name="sub_search"></a>
+			</form>
+		</div>
+		<div class="tools">
+			<a href="/en/press/pressroom">Press Room</a> &nbsp;|&nbsp;
+			<a href="http://java.com/java/download/index.jsp?cid=jdp78399">Get Java Here</a> &nbsp;|&nbsp;
+			<!-- <a href="javascript:void(0)">Print Format</a> &nbsp;|&nbsp;&nbsp; -->
+		</div>
+
+	</div>
+	<div style="clear: right;"></div>
+
+        
+
+	<div class="topbar"><img src="/images/spacer.gif" alt="" height="3" width="154"></div>
+	<div id="update"> </div>
+    </div>
+
+
+    
+
+        <!-- ** BEGIN: Content Table ** //-->
+
+        <table width="100%" border="0" cellpadding="0" cellspacing="0">
+
+            <tr>
+
+                <!-- ** BEGIN: Navigation Column ** //-->
+                <td width="150" id="leftcontent" valign="top">
+                    <!-- Navigation Placeholder //-->
+
+                    
+
+                    <div class="bar"><img src="/images/hr_dots1.gif" alt="" height="3" width="150"></div>
+
+        <!-- begin find JSRs form -->
+        <!-- IMPORTANT! do not convert this form to Struts < html : form > tag.  javascript change of form.action property fails. -->
+        <img src="/images/hd_find-jsrs.gif" alt="Find JSRs" height="18" width="150">
+        <form name="findjsr" action="/en/jsr/summary" method="get" class="pt5" onsubmit="return validate_findjsr()">
+            <input name="id" size="18" class="form" value="Search JSRs" onfocus="nullify_if_equal(this, 'Search JSRs')" type="text">
+	    <a href="javascript:document.findjsr.submit()" onclick="return validate_findjsr()"><img src="/images/button_go.gif" width="21" height="16" border="0" alt="Submit this Search" name="sub_search"></a>
+        </form><br><br>
+
+        <!-- ** Menu Start ** //-->
+
+        <ul id="p7PMnav">
+            <li><a href="/en/jsr/platform">JSRs by Platform</a></li>
+            <li><a href="/en/jsr/tech">JSRs by Technology</a></li>
+            <li><a href="/en/jsr/stage">JSRs by Stage</a></li>
+            <li><a href="/en/jsr/ec">JSRs by Committee</a></li>
+            <li><a href="/en/jsr/all">List of All JSRs</a></li>
+
+            <!--end find JSRs form -->
+            <div style="clear: both;"><img src="/images/spacer.gif" alt="" height="25" width="1"></div>
+
+            <!--begin my JCP -->
+            <img src="/images/hd_my-jcp.gif" alt="My JCP" height="18" width="150">
+            
+
+          <form name="login" method="get" action="/en/user/login" >
+            <input name="Sign-in" type="submit" title="Sign-in" value="Sign-in" />
+          </form>
+
+            <div style="clear:both"><img src="/images/global/spacer.gif" width="1" height="3" alt=""></div>
+            <div class="noNav">
+                <a href="/en/user/register">Register for Site</a>
+            </div>
+
+             <div class="bar"><img src="/images/hr_dots1.gif" alt="" height="3" width="150"></div>
+           <div class="noNav" style="color: #666666; padding: 0;">
+              Use of JCP site is subject to the
+              <a href="/en/home/terms" style="display:inline;padding: 0">JCP Terms of Use</a> and the
+              <a href="http://www.oracle.com/us/legal/privacy/index.html" style="display:inline;padding: 0" href="">Oracle Privacy Policy</a>
+          </div>
+
+            
+
+            <div style="clear:both"><img src="/images/global/spacer.gif" width="1" height="25" alt=""></div>
+
+            <!--begin JCP info -->
+            <img src="/images/hd_jcp-info.gif" alt="JCP Info" height="18" width="150">
+
+            <li><a href="/en/procedures/overview" class="p7PMtrg">About JCP</a>
+                <ul>
+                    <li><a href="/en/procedures/overview">Program Overview</a></li>
+                    <li><a href="/en/procedures/jcp2">JCP Process Document</a></li>
+                    <li><a href="/en/whatsnew/calendar">Calendar</a></li>
+                    <li><a href="/en/participation/members">JCP Members</a></li>
+                    <li><a href="/en/participation/committee">Executive Committee</a></li>
+                    <li><a href="/en/whatsnew/elections">Elections</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/en/participation/overview" class="p7PMtrg">Get Involved</a>
+		<ul>
+                    <li><a href="/en/participation/overview">Overview</a></li>
+                    <li><a href="/en/participation/membership">Becoming a JCP Member</a></li>
+		</ul>
+            </li>
+
+            <li><a href="/en/resources/contents" class="p7PMtrg">Community Resources</a>
+                <ul>
+                    <li><a href="/en/resources/contents">Overview</a></li>
+                    <li><a href="/en/resources/tutorials">Tutorials</a></li>
+                    <li><a href="/en/resources/multimedia">JCP Podcasts</a></li>
+                    <li><a href="/en/resources/guide">Spec Lead Guide</a></li>
+                    <li><a href="/en/resources/tdk">TCK Tool & Info</a></li>
+                    <li><a href="/en/resources/license_reference">License Reference</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/en/press/pmo" class="p7PMtrg">Community News</a>
+                <ul>
+                    <li><a href="/en/press/pmo">News</a></li>
+                    <li><a href="/en/press/news/awards/awards_main">Programs &amp; Awards</a></li>
+                    <li><a href="/en/press/releases">Press Releases</a></li>
+                    <li><a href="/en/press/success">Success Stories</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/en/introduction/faq">FAQ</a></li>
+
+            <li><a href="/en/resources/contacts">Contact Us</a></li>
+
+            <div style="clear: both;"><img src="/images/spacer.gif" alt="" height="25" width="1"></div>
+
+            <!--[if lte IE 6]><style>#p7PMnav a{height:1em;}#p7PMnav li{height:1em;float:left;clear:both;width:100%}</style><![endif]-->
+            <!--[if IE 6]><style>#p7PMnav li{clear:none;}</style><![endif]-->
+            <!--[if IE 7]><style>#p7PMnav a{zoom:100%;}#p7PMnav li{float:left;clear:both;width:100%;}</style><![endif]-->
+        </ul>
+
+        
+
+        <!--begin ad space -->
+        <div class="ads">
+            <a href="http://java.com/java/download/index.jsp?cid=jdp78399" target="_blank"><img style="display: ;" src="/images/ad_banner2.gif" alt="Ad Banner" border="1" height="70" width="150"></a>
+        </div>
+        <!--end ad space -->
+
+<!-- ** Menu End ** //-->
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;<br>
+
+    
+
+                    &nbsp;<br>
+                    <img src="/images/common/trans.gif" alt="" width="1" height="150"><br>
+
+              
+
+
+
+                </td>
+                <!-- ** END: Navigation Column ** //-->
+
+                <!-- ** BEGIN: Gutter Column ** //-->
+		<td width="10" nowrap><img src="/images/common/trans.gif" alt="" width="10" height="1"></td>
+                <!-- ** END: Gutter Column ** //-->
+
+                <!-- ** BEGIN: Content Column ** //-->
+                <td width="100%" valign="top">
+
+    
+<script type="text/javascript">
+
+String.prototype.trim = function() {
+        return this.replace(/^\s+|\s+$/g,"");
+}
+String.prototype.ltrim = function() {
+        return this.replace(/^\s+/,"");
+}
+String.prototype.rtrim = function() {
+        return this.replace(/\s+$/,"");
+}
+
+function validate_search() {
+	if (document.search.id.value == "Search JSRs" || document.search.id.value.trim().length == 0) {
+		alert("Search terms must be entered first");
+		return false;
+	}
+	return true;
+}
+
+function validate_findjsr() {
+	if (document.findjsr.id.value == "Search JSRs" || document.findjsr.id.value.trim().length == 0) {
+		alert("Search terms must be entered first");
+		return false;
+	}
+	return true;
+}
+
+function nullify_if_equal(field, str) {
+	// alert("val=" + field.value);
+	if (field.value == str) {
+		field.value = "";
+	}
+}
+
+</script>
+<!-- ** END: header.jsp ** //-->
+
+
+
+
+
+
+<!DOCTYPE html PUBLIC "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+  <title>JAX-RPC 1.1 Change Log</title>
+		 		
+  <meta http-equiv="Content-Type"
+ content="text/html; charset=iso-8859-1">
+		
+  <meta name="AUTHOR" content="Roberto Chinnici">
+  <meta name="author" content="Roberto Chinnici">
+</head>
+<body>
+		
+<h1 align="center">Java<sup><font size="-2">TM </font></sup>API
+forXML-based RPC 			1.1 Change Log<br>
+		</h1>
+		
+<center>
+<p>March 12th, 2003<br>
+(Updated: April 11th, 2003)<BR>
+(Updated with approved changes 25 April 2003)</p>
+			 		</center>
+		
+<h2>Description</h2>
+		
+<p>Maintenance revision of the Java<sup><font size="-2">TM </font></sup>API
+for 			XML-based RPC, version 1.1.</p>
+		
+<h2><b>Maintenance Lead</b></h2>
+		
+<p>Roberto Chinnici, Sun Microsystems, Inc.</p>
+		
+<h2>Feedback</h2>
+		
+<p>Comments should be sent to <a href="mailto:jsr-101-leads@sun.com">jsr-101-leads@sun.com</a>.<br>
+			<span style="font-style: italic;"></span></p>
+		
+<h2>Proposed changes</h2>
+		
+<p>The main goal for JAX-RPC 1.1 is to add support for the WS-I
+BasicProfile 1.0.<br>
+		</p>
+		
+<p>Additional goals include fixing some bugs/inconsistencies in the
+previous version 			of the specification and making some limited
+additions to the APIs as requested 			by users and implementors of
+JAX-RPC 1.0.<br>
+</p>
+<h2>Accepted changes</h2>
+		<span style="font-style: italic;">(Changes accepted by the EC will be
+moved to this section.)</span> 		
+<p> 			The sections below correspond to different logical areas in
+JAX-RPC and don't 			necessarily match the outline of the JAX-RPC 1.0
+specification.<br>
+		</p>
+		
+<p>Each change is numbered for ease of reference.<br>
+</p>
+<p>The actual prose for most 			of the changes can be found in the
+attached specification draft at the 			section (or sections) mentioned
+below.<br>
+</p>
+<h3>1 Mapping Between Java and WSDL (Excluding Data Binding)</h3>
+		The goal of this set of changes is to ensure that JAX-RPC 1.1 tools
+are capable 		of producing and consuming WSDL documents which are WS-I
+Basic Profile 		1.0-conformant. 		<br>
+		<br>
+		
+<table cellpadding="2" cellspacing="10" border="0"
+ style="margin-left: auto; width: 90%; margin-right: auto; text-align: left;">
+			<tbody>
+				<tr>
+					<td> 						<span style="font-weight: bold;">1.1 Add support for
+rpc/literal -- sections 6.2 and 6.4</span><br style="font-weight: bold;">
+						The explanation of "wrappers" in section 6.2 must be removed
+because 						it conflicts with rpc/literal.<br>
+						Support for the rpc/literal style in the SOAP binding will be
+required.<br>
+						A detailed description of all the rules for the different styles
+possible in a 						SOAP binding is deferred to the interoperability
+						requirements section.<br>
+					</td>
+				</tr>
+				<tr>
+					<td><span style="font-weight: bold;">1.2 Add mapping for literal
+faults -- section 4.3.6</span><br style="font-weight: bold;">
+						Literal faults are mapped to Java exceptions in the usual way.
+The 						main difference is that they point to a message part which
+uses the 						"element" attribute, so we have to take that into account
+when deriving a 						Java type from it.<br>
+      <span style="font-weight: bold; color: rgb(204, 0, 0);"></span>
+					</td>
+				</tr>
+				<tr>
+					<td><span style="font-weight: bold;">1.4 Add mapping for
+headerfaults -- section 6.6</span><br>
+						When the explicit service context option is used on some header,
+all its 						headerfaults must be mapped to exceptions just like
+ordinary faults are.<br>
+					</td>
+				</tr>
+				<tr>
+					<td><span style="font-weight: bold;">1.5 Add full support for
+one-way operations --<span style="color: rgb(0, 0, 0);"> </span></span><span
+ style="font-weight: bold; color: rgb(0, 0, 0);">javadocs and </span><span
+ style="font-weight: bold;">sections 5.5.5, 8.2.4.1, 10.1.2</span><br
+ style="font-weight: bold;">
+						Specify that methods with void return type and not throwing any
+						checked exceptions aside from RemoteException may be mapped to
+one-way operations.<br>
+Tools need to provide an option (via metadata) to map methods of the
+kind 						listed above to one-way operations.<br>
+						Specify that Call.invokeOneWay() should wait until a HTTP
+response code is received 						from the server when using SOAP/HTTP.<br>
+						Specify that in the servlet-based case, implementations must
+return a HTTP 						response code before dispatching a one-way request
+to a servlet endpoint 						instance (so as not to block clients during
+processing).<br>
+					</td>
+				</tr>
+			
+  </tbody>
+</table>
+		<br>
+		
+<h3>2 Data Binding and Support for XML Schema</h3>
+		In this section we detail changes related to the data binding support
+in 		JAX-RPC.<br>
+		<br>
+		
+<table cellpadding="2" cellspacing="10" border="0"
+ style="margin-left: auto; width: 90%; margin-right: auto; text-align: left;">
+			<tbody>
+				<tr>
+					<td><span style="font-weight: bold;">2.1 Add mapping of the
+xsd:anyURI schema type to either the java.net.URIclass in J2SE 1.4 or
+java.lang.String -- section 4.2.1<span style="font-weight: bold;"></span></span><br>
+						<span style="font-weight: bold;"></span></td>
+				</tr>
+				<tr>
+					<td><span style="font-weight: bold;">2.2 Add mapping of the
+java.net.URI class in J2SE 1.4 to xsd:anyURI schematype -- sections
+5.1.3 and 5.3.2<br>
+      </span>This 						change complements 2.1.</td>
+				</tr>
+				<tr>
+					<td><span style="font-weight: bold;">2.3 Add mapping of the
+javax.xml.namespace.QName class to xsd:QName --sections 5.1.3 and 5.3.2</span><br>
+						This mapping was apparently omitted from the 1.0 specification.<br>
+					</td>
+				</tr>
+				<tr>
+					<td><span style="font-weight: bold;">2.4 Add support for mapping
+additional predefined XML Schema simple types to Java types -- section
+4.2.1 </span><br>
+						The types xsd:NOTATION, xsd:ENTITY and xsd:IDREF are specifically
+excluded.<br>
+					</td>
+				</tr>
+				<tr>
+					<td><span style="font-weight: bold;">2.5</span><span
+ style="font-weight: bold;"> Add support for simple types derived via
+restriction from a supported simple type -- section 4.2.5<br>
+      </span>Simple types derived by restriction from a supported
+simple type and for 						which there is no predefined mapping
+(i.e.enumerations) are mapped to the same 						Java type their base
+type is mapped to.<br>
+						In other words, if simple type ns:Foo is derived from ns2:Bar and
+there are no 						explicit rules to define the mapping (i.e. ns:Foo is
+not an enumeration type), 						then it should be mapped to the same
+Java type that ns2:Bar was mapped to. In 						particular, this applies
+when ns2:Bar is a predefined schema type.<span style="font-weight: bold;"><br>
+						</span></td>
+				</tr>
+				<tr>
+					<td><span style="font-weight: bold;">2.6 Add support for simple
+types defined using xsd:list -- section 4.2.6</span><br>
+						They are mapped to the java.util.List class. 					</td>
+				</tr>
+				<tr>
+					<td><span style="font-weight: bold;">2.7 Add support for complex
+type definitions defined using xsd:simpleContent -- section 4.2.3</span><br>
+						The content of the element will appear as an additional property
+of 						the enclosing value type with a default name of "value". 					</td>
+				</tr>
+				<tr>
+					<td><span style="font-weight: bold;">2.8 Add support for
+attributes of a complex type -- section 4.2.3</span><br>
+						Attributes are mapped to properties of value types. 					</td>
+				</tr>
+				<tr>
+					<td><span style="font-weight: bold;">2.9 Add support for wildcards
+(xsd:any) -- section 4.2.3</span><br>
+For analogy with the natural mapping of xsd:anyType, xsd:any is mapped
+to the 						javax.xml.soap.SOAPElement class.<br>
+						If the wildcard has maxOccurs&gt;1 then it is mapped to
+javax.xml.soap.SOAPElement[].</td>
+				</tr>
+				<tr>
+					<td style="background-color: rgb(255, 255, 255);"><span
+ style="font-weight: bold;">2.10 Add support for anonymous complex
+types -- sections 4.2.3 and 4.3.12</span><br style="font-weight: bold;">
+						Anonymous types are mapped to Java types.<br>
+By 						default, the name of the nearest enclosing xsd:element,
+xsd:simpleType or 						xsd:complexType should be used to derive the
+name of the Java type.<br>
+New collision resolution rules are defined for Java classes that are
+derived from a xsd:element.<br>
+					</td>
+				</tr>
+				<tr>
+      <td
+ style="vertical-align: top; background-color: rgb(255, 255, 255);"><span
+ style="font-weight: bold;">2.11 Add support for anonymous enumerations
+-- section 4.2.4<br>
+      </span> 						Anonymous enumerations are mapped by default to type
+safe Java enumeration classes.<br>
+The name of the nearest enclosing xsd:element, xsd:attribute,
+xsd:simpleType or 						xsd:complexType should be used to derive the
+name of the Java type.<br>
+New collision resolution rules are defined for Java classes that are
+derived from an enumeration type.<br>
+In order to be compatible with JAXB 1.0, implementations must support
+mapping anonymous enumerations to their base types.<br>
+      </td>
+    </tr>
+    <tr>
+					<td><span style="font-weight: bold;">2.12 Require implementations
+to support mapping any literal part to javax.xml.soap.SOAPElement --
+section 6.4.1</span><br style="font-weight: bold;">
+						Currently, it's impossible to selectively turn off data binding
+in JAX-RPC, and 						this makes using data binding frameworks (e.g.
+JAXB) in conjunction with JAX-RPC 						hard in certain cases.<br>
+						With this change, it is always possible to force a tool (via
+options and/or metadata) to use 						the default mapping to
+javax.xml.soap.SOAPElement for any message part, so that
+						application developers can use their favorite data binding
+technology.<br>
+						Note that SAAJ 1.2 will have SOAPElement extend the DOM Element
+interface, thus 						allowing a JAXB unmarshaller to process a fragment
+handed over to the 						application by JAX-RPC. We expect similar
+functionality to be provided by other 						data binding frameworks.<br>
+					</td>
+				</tr>
+				<tr>
+					<td><span style="font-weight: bold;">2.13 Clearly define the
+subset of XML Schema that tools must successfully handle -- appendix 18</span><br>
+						The table in appendix 18 needs to be updated with all the
+required data binding 						features enabled by the previous change
+items.<br>
+						Morever, we need to state how tools should behave when
+encountering documents 						that use schema features marked as optional.<br>
+In addition, tools will be required to support xsd:include and
+xsd:import constructs.<br>
+						We will also explicitely mark certain schema features as not
+required by JAX-RPC 						1.1, so that tools do not have to support them
+in order to comply with the 						specification. These features include:
+xsd:redefine, xsd:notation, substitution 						groups.<br>
+      <span style="font-weight: bold; color: rgb(204, 0, 0);"></span>
+					</td>
+				</tr>
+			
+  </tbody>
+</table>
+		<br>
+		
+<h3>3 Interoperability Requirements</h3>
+		This section details changes to the interoperability requirements
+forJAX-RPC 		implementations.<br>
+		<br>
+		
+<table cellpadding="2" cellspacing="10" border="0"
+ style="margin-left: auto; width: 90%; margin-right: auto; text-align: left;">
+			<tbody>
+				<tr>
+					<td><span style="font-weight: bold;">3.1 Remove 1.0
+interoperability requirements for document/literal --section 14.3.2<br>
+      </span>Interoperability 						requirements for all rpc/literal
+and document/literal style operations will be 						covered by change
+3.2.<br>
+					</td>
+				</tr>
+				<tr>
+					<td><span style="font-weight: bold;">3.2 Add WS-I Basic Profile
+Version 1.0 interoperability requirements --section 14.4</span><br>
+						These requirements are classified according to which portion of a
+JAX-RPC 						implementation they affect: Java-to-WSDL tools,
+WSDL-to-Javatools (including 						dynamic proxies and DII), runtime
+(further subdivided according to the 						different operations that it
+performs).<br>
+						The goals of these changes are:<br>
+						
+      <ul>
+							<li> 							to guarantee that a Java-to-WSDL tool is able to
+produce a conformant 							description for a large subset of all valid
+JAX-RPC 1.1 service endpoint 							interfaces (the main exception being
+types that are mapped to attachments); 							</li>
+        <li> 							to guarantee that a WSDL-to-Java tool is able to
+consume a conformant 							description and produce valid artifacts;
+							</li>
+        <li> 								to guarantee that, provided that user-written code
+or other container 								functionality beyond the scope of JAX-RPC 1.1
+does not alter incoming or 								outgoing SOAP messages or
+deliberately cause the generation of a non conformant 								message, a
+JAX-RPC 1.1 application will behave in a &nbsp;conformant way.<br>
+							</li>
+						
+      </ul>
+					</td>
+				</tr>
+				<tr>
+					<td><span style="font-weight: bold;">3.3 Remove mapping of Java
+remote exceptions to faults with faultcodes defined outside of the SOAP
+1.1 specification -- section 14.3.6</span><br>
+						These mappings refer to some fault codes defined in a working
+draft of the SOAP 						1.2 specification and violate WS-I Basic Profile
+Version 1.0 rules.<br>
+					</td>
+				</tr>
+			
+  </tbody>
+</table>
+		<br>
+		
+<h3>4 JAX-RPC APIs and Standard Properties</h3>
+		This section describes the proposed new APIs.<br>
+<br>
+		
+<table cellpadding="2" cellspacing="10" border="0"
+ style="margin-left: auto; width: 90%; margin-right: auto; text-align: left;">
+			<tbody>
+				<tr>
+					<td><span style="font-weight: bold;">4.1 Add prefix field,
+getPrefix() method and 3-ary constructor tojavax.xml.namespace.QName --
+javadocs only<br>
+      </span> 						
+      <p>Other specifications, namely JAXB 1.0 and StAX 1.0, depend on
+the 							javax.xml.namespace.QName class in JAX-RPC.<br>
+						</p>
+						
+      <p>In order to address the immediate needs of those technologies,
+and in particular 							to enable QName objects to carry with them the
+prefix that was used to serialize 							a QName value in a document, we
+propose to add the following:<br>
+						</p>
+						
+      <table cellpadding="2" cellspacing="2" border="1"
+ style="margin-left: 40px; width: 60%; text-align: left;">
+							<tbody>
+								<tr>
+									<td>Fields:<br>
+									</td>
+									<td><span style="font-family: monospace;"></span> 										
+            <h3>prefix</h3>
+										
+            <pre>private java.lang.String <b>prefix</b></pre>
+										
+            <dl>
+              <dd> 												
+                <p>The prefix of this <code>QName</code>.</p>
+											</dd>
+            </dl>
+									</td>
+								</tr>
+								<tr>
+									<td>Methods:<br>
+									</td>
+									<td><span style="font-family: monospace;"></span> 										
+            <h3>getPrefix</h3>
+										
+            <pre>public java.lang.String <b>getPrefix</b>()</pre>
+										
+            <dl>
+              <dd> 												
+                <p>Get the prefix of this <code>QName</code>.</p>
+												
+                <p>The prefix assigned to a <code>QName</code> may <strong><em>NOT</em></strong>
+be 													valid in a different context. For example, a <code>QName</code>
+maybe assigned 													a prefix in the context of parsing a
+document but that prefix may be invalid in 													the context of a
+different document.</p>
+												
+                <p> 												</p>
+												</dd>
+              <dd> 													<br>
+													</dd>
+              <dd> 														<br>
+														</dd>
+              <dl>
+                <dt><b>Returns:</b> 																</dt>
+                <dd> 																	prefix of this <code>QName</code></dd>
+              </dl>
+            </dl>
+										<br>
+									</td>
+								</tr>
+								<tr>
+									<td>Constructors:<br>
+									</td>
+									<td><span style="font-family: monospace;"></span> 										
+            <h3> 											QName</h3>
+										
+            <pre>public <b>QName</b>(java.lang.String&nbsp;namespaceURI,<br>             java.lang.String&nbsp;localPart)</pre>
+										
+            <dl>
+              <dd> 												
+                <p><code>QName</code> constructor specifying the
+Namespace URI and local part.</p>
+												
+                <p>If the Namespace URI is <code>null</code>, it is
+set to "". This value represents 													no explicitly defined
+Namespace as defined by the <a
+ href="http://www.w3.org/TR/REC-xml-names/#ns-qualnames">
+														Namespaces inXML</a> specification. This action preserves
+compatible 													behavior withQName 1.0.</p>
+												
+                <p>If the local part is <code>null</code> or <code>.equals("")</code>,
+an<code> IllegalArgumentException</code> 													is thrown.</p>
+												
+                <p>When using this constructor, the prefix is set to "".</p>
+												
+                <p> 												</p>
+												</dd>
+              <dt><b>Parameters:</b> 													</dt>
+              <dd> 														<code>namespaceURI</code> - Namespace
+URI of the <code>QName</code> 														</dd>
+              <dd> 															<code>localPart</code> - local part of
+the <code>QName</code><br>
+														</dd>
+            </dl>
+									</td>
+								</tr>
+							
+        </tbody> 						
+      </table>
+						<br>
+						The prefix is included in QName to retain lexical information
+when present in an 						XML input source.<br>
+						The prefix is not used in QName.equals(Object) or to compute
+						theQName.hashCode().<br>
+						Equality and the hash code are defined using only the Namespace
+URI and local 						part.<br>
+						If not specified, the prefix is set to "" (the empty string).<br>
+						<span
+ style="font-style: italic; font-weight: bold; color: rgb(204, 0, 0);"></span><br>
+					</td>
+				</tr>
+				<tr>
+					<td><span style="font-weight: bold;">4.2 Add
+javax.xml.rpc.server.ServletEndpointContext.isUserInRole(String) method
+-- javadocs and section 10.1.3<br>
+      <br>
+      </span>
+      <table cellpadding="2" cellspacing="2" border="1"
+ style="text-align: left; width: 80%; margin-left: auto; margin-right: auto;">
+        <tbody>
+          <tr>
+            <td style="vertical-align: top;">
+            <h3> 							isUserInRole</h3>
+						
+            <pre>public boolean <b>isUserInRole</b>(java.lang.String&nbsp;role)</pre>
+						
+            <dl>
+              <dd> 								Returns a boolean indicating whether the
+authenticated user for the current 								method invocation on the
+endpoint instance is included in the specified logical 								"role".
+								
+                <p> 								</p>
+								</dd>
+              <dd> 									<br>
+									</dd>
+              <dl>
+                <dt><b>Parameters:</b> 											</dt>
+                <dd> 												<code>role</code> - a <code>String</code>
+specifying the name of the role </dd>
+                <dt><b>Returns:</b> 													</dt>
+                <dd> 														a <code>boolean</code> indicating
+whether the authenticated user associated with 														the current
+method invocation belongs to a given role; <code>false</code> if the
+														user has not been authenticated</dd>
+              </dl>
+            </dl>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <br>
+					</td>
+				</tr>
+    <tr>
+      <td style="vertical-align: top;"><span style="font-weight: bold;">4.3
+Add javax.xml.rpc.ServiceFactory.loadService(java.net.URL,
+java.lang.Class, java.util.Properties) method -- javadocs and section
+8.2.5<br>
+      <br>
+      </span>
+      <table cellpadding="2" cellspacing="2" border="1"
+ style="width: 80%; text-align: left; margin-left: auto; margin-right: auto;">
+        <tbody>
+          <tr>
+            <td style="vertical-align: top;">
+            <h3> loadService</h3>
+            <pre>public abstract Service <b>loadService</b>(java.net.URL&nbsp;wsdlDocumentLocation,<br>                                    java.lang.Class&nbsp;serviceInterface,<br>                                    java.util.Properties&nbsp;properties)<br>                             throws ServiceException</pre>
+            <dl>
+              <dd>Create an instance of the generated service
+implementation class for a given service interface, if available.   An
+implementation may use the provided <code>wsdlDocumentLocation</code>
+and <code>properties</code> to help locate the generated implementation
+class. If no such class is present, a <code>ServiceException</code> will
+be thrown.
+                <p> </p>
+              </dd>
+              <dd><br>
+              </dd>
+              <dl>
+                <dt><b>Parameters:</b></dt>
+                <dd><code>wsdlDocumentLocation</code> - URL for the WSDL
+document location                               for the service or null</dd>
+                <dd><code>serviceInterface</code> - Service interface</dd>
+                <dd><code>properties</code> - A set of
+implementation-specific properties to help locate the generated service
+implementation class </dd>
+                <dt><b>Throws:</b> </dt>
+                <dd><code style="font-family: monospace;"></code><span
+ style="font-family: monospace;">ServiceException </span>- If there is
+any error while creating the                      specified service,
+including the case where                      a generated service
+implementation class cannot be located</dd>
+              </dl>
+            </dl>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <br>
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;"><span style="font-weight: bold;">4.4
+Add javax.xml.rpc.ServiceFactory.loadService(java.net.URL,
+javax.xml.namespace.QName, java.util.Properties) method - javadocs and
+section 8.2.5</span><br style="font-weight: bold;">
+      <br>
+      <table cellpadding="2" cellspacing="2" border="1"
+ style="text-align: left; width: 80%; margin-left: auto; margin-right: auto;">
+        <tbody>
+          <tr>
+            <td style="vertical-align: top;">
+            <h3> loadService</h3>
+            <pre>public abstract Service <b>loadService</b>(java.net.URL&nbsp;wsdlDocumentLocation,<br>                                    javax.xml.namespace.QName serviceName,<br>                                    java.util.Properties&nbsp;properties)<br>                             throws ServiceException</pre>
+            <dl>
+              <dd>Create an instance of the generated service
+implementation class for a given service, if available.   The service is
+uniquely identified by the <code>wsdlDocumentLocation</code> and <code>serviceName</code>
+arguments. An implementation  may use the provided <code>properties</code>
+to help   locate the generated implementation class. If no such class is
+present, a <code>ServiceException</code> will be thrown.
+                <p> </p>
+              </dd>
+              <dd><br>
+              </dd>
+              <dl>
+                <dt><b>Parameters:</b></dt>
+                <dd><code>wsdlDocumentLocation</code> - URL for the WSDL
+document location                               for the service or null</dd>
+                <dd><code>serviceName</code> - Qualified name for the
+service</dd>
+                <dd><code>properties</code> - A set of
+implementation-specific properties to help locate the generated service
+implementation class </dd>
+                <dt><b>Throws:</b> </dt>
+                <dd><code style="font-family: monospace;"></code><span
+ style="font-family: monospace;">ServiceException </span>- If there is
+any error while creating the                      specified service,
+including the case where                      a generated service
+implementation class cannot be located</dd>
+              </dl>
+            </dl>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <br>
+      </td>
+    </tr>
+    <tr>
+      <td
+ style="vertical-align: top; background-color: rgb(255, 255, 255);"><span
+ style="font-weight: bold;">4.5 Add
+javax.xml.rpc.ServiceFactory.loadService(java.lang.Class) method -
+javadocs and section 8.2.5<br>
+      <br>
+      <table cellpadding="2" cellspacing="2" border="1"
+ style="text-align: left; width: 80%; margin-left: auto; margin-right: auto;">
+        <tbody>
+          <tr>
+            <td style="vertical-align: top;">
+            <h3 style="background-color: rgb(255, 255, 255);">
+loadService</h3>
+            <pre>public abstract Service <b>loadService</b>(java.lang.Class&nbsp;serviceInterface)<br>                             throws ServiceException</pre>
+            <dl>
+              <dd>Create an instance of the generated service
+implementation class  for a given service interface, if available.
+ <p> </p>
+              </dd>
+              <dd><br>
+              </dd>
+              <dl>
+                <dt><b>Parameters:</b></dt>
+                <dd><code>serviceInterface</code> - Service interface </dd>
+                <dt><b>Throws:</b> </dt>
+                <dd><code style="font-family: monospace;"></code><span
+ style="font-family: monospace;">ServiceException </span>- If there is
+any error while creating the specified service, including the case where
+a generated service implementation class cannot                      be
+located</dd>
+              </dl>
+            </dl>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      </span></td>
+    </tr>
+			
+  </tbody>
+</table>
+		<br>
+		
+<h3>5 Clarifications and Bug Fixes</h3>
+		The following changes are sorted by the chapter of the JAX-RPC 1.0
+spec they 		affect.<br>
+		<br>
+		
+<table cellpadding="2" cellspacing="10" border="0"
+ style="margin-left: auto; width: 90%; margin-right: auto; text-align: left;">
+			<tbody>
+				<tr>
+					<td><span style="font-weight: bold;"></span><span
+ style="font-weight: bold;">5.1 Remove reference to the TCK -- section3
+(R05)</span><br>
+					</td>
+				</tr>
+				<tr>
+					<td><span style="font-weight: bold;">5.2 Clarify the name mapping
+for the get&lt;Port&gt; method -- section 4.3.11</span><br>
+					</td>
+				</tr>
+				<tr>
+					<td><span style="font-weight: bold;">5.3 Clarify the name mapping
+for the getter methods of boolean propertiesin value types -- section
+4.2.3<br>
+      </span>Following 						standard JavaBeans conventions, the getter
+method for a boolean properties 						should use "is" as a prefix
+instead of "get".<span style="font-weight: bold;"><span
+ style="font-weight: bold;"></span> 						</span><br>
+					</td>
+				</tr>
+				<tr>
+      <td
+ style="vertical-align: top; background-color: rgb(255, 255, 255);"><span
+ style="font-weight: bold;">5.4 Clarify treatment of the minOccurs="0"
+case for primitive types -- section 4.2.1</span><br>
+Wrappers should be used instead of primitive types when minOccus="0"
+and maxOccurs="1" (or absent).<br>
+      </td>
+    </tr>
+    <tr>
+					<td><span style="font-weight: bold;">5.5 Clarify treatment of the
+maxOccurs="1" case -- section 4.2.3</span><br>
+						Arrays should not be used when maxOccurs="1" is specified.<br>
+					</td>
+				</tr>
+				<tr>
+      <td style="vertical-align: top;"><span style="font-weight: bold;">5.6
+Deprecate mapping of java.lang.Byte[] to xsd:base64Binary type -- 5.3.3</span><br>
+The Java Byte[] type cannot be mapped to the xsd:base64Binary type
+because the latter doesn't allow null values to be represented.<br>
+Since the main reason that developers have to use Byte[] over byte[] is
+that the former allows null values, this mapping is incorrect and should
+be removed.</td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;"><span style="font-weight: bold;">5.7
+Allow mapping of value types to complex type using the xsd:sequence
+compositor -- section 5.4.1</span><br>
+The XML Schema specification places restrictions on the contents of a
+particle that uses the xsd:sequence compositor.<br>
+For this reason, many implementations already used xsd:sequence when
+mapping value types instead of &nbsp;xsd:all as required in JAX-RPC 1.0.<br>
+      </td>
+    </tr>
+    <tr>
+					<td><span style="font-weight: bold;">5.8 Clarify that one-way
+operations cannot have wsdl:output and wsdl:fault elements -- section
+5.5.5</span><br>
+					</td>
+				</tr>
+				<tr>
+					<td><span style="font-weight: bold;">5.9Clarify the rules used to
+recognize a "wrapper" in document/literal style operations -- sections
+6.4.1 and 6.4.3</span><br>
+					</td>
+				</tr>
+				<tr>
+					<td><span style="font-weight: bold;">5.10 Clarify that support for
+encoding attachments of type image/gif is not required -- section 7.5</span><br>
+					</td>
+				</tr>
+				<tr style="font-weight: bold;">
+					<td>5.11 Clarify that for one-way operations only the
+handleRequest methods are 						called -- section 12.1.4<br>
+					</td>
+				</tr>
+				<tr style="font-weight: bold;">
+					<td>5.12 Clarify that constants defined on the Call and Stub
+interfaces can be used 						in lieu of the hardcoded
+"javax.xml.rpc.security.auth.[username|password]" 						strings
+--section 13.1.1</td>
+				</tr>
+			
+  </tbody>
+</table>
+		<br>
+		
+<h3>6 Dependencies</h3>
+These changes concern the dependencies that JAX-RPC has on other
+technologies.<br>
+<br>
+<table cellpadding="2" cellspacing="10" border="0"
+ style="margin-left: auto; width: 90%; margin-right: auto; text-align: left;">
+			<tbody>
+				<tr>
+					<td><span style="font-weight: bold;"></span><span
+ style="font-weight: bold;">6.1 Update dependency on SAAJ to require
+SAAJ 1.2 -- section3 (R013)<br>
+      </span>The SAAJ 1.2 maintenance review is being submitted in
+parallel with the present one.<span style="font-weight: bold;"><span
+ style="font-weight: bold;"></span></span> 					</td>
+				</tr>
+				 				 				 				 				 				 				 				 			
+  </tbody>
+</table>
+		<br>
+<span style="font-style: italic;"></span>
+<h2>Deferred 			Changes</h2>
+		<span style="font-style: italic;">(Changes deferred by the EC will be
+moved to this section.)</span> 		<br>
+		<span style="font-style: italic;"></span><br>
+	
+</body>
+</html>
+
+
+
+<!-- ** BEGIN: footer.jsp ** //-->
+
+
+
+
+
+
+
+
+</td>
+</tr>
+</table>
+
+<!-- ** END: Content Table ** //-->
+
+<!-- ** BEGIN: Footer Table ** //-->
+
+<div id="footer" style="clear: both;">
+    <div class="footleft">
+        <a href="/en/resources/contacts">Contact Us</a>
+    </div>
+	
+    <div class="botbar"><img src="/images/spacer.gif" alt="" height="23" width="1"></div>
+
+    <div class="footleft2">
+         &copy; 2019, Oracle Corporation and/or its affiliates. 
+        <a href="/en/home/terms">Terms of Use</a>. <a href="http://www.oracle.com/us/legal/privacy/index.html">Privacy Policy</a>. <a href="http://www.oracle.com/us/legal/third-party-trademarks/third-party-trademarks-078568.html">Trademarks</a>
+    </div>
+
+    <div class="footright">
+        <img src="/images/common/logo_oracle_footer.gif" alt="Oracle Corporation" height="22" width="91">
+    </div>
+
+    <div style="clear: both;"><img src="/images/spacer.gif" alt="" height="30" width="1"></div>
+</div>
+
+<!-- ** END: Footer Table ** //-->
+
+
+
+<!-- ** Menu Start ** //-->
+
+
+
+</body>
+</html>
+<!-- ** END: footer.jsp ** //-->
+

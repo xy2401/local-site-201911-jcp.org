@@ -1,0 +1,736 @@
+
+<!-- ** BEGIN: header.jsp ** //-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3c.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+<head>
+    
+
+   
+    <link href="/includes/css/menu.css" rel="stylesheet" type="text/css"></link>
+    <link href="/includes/css/style.css" rel="stylesheet" type="text/css"></link>
+    <!--[if lt IE 6]><link href="/includes/css/style5.css" rel="stylesheet" type="text/css" ></link><![endif]-->
+    <!--[if gte IE 5]><link href="/includes/css/style6.css" rel="stylesheet" type="text/css" ></link><![endif]-->
+    <link href="/includes/css/tabs.css"  rel="stylesheet" type="text/css"></link>
+
+    <script type="text/javascript" src="/includes/scripts/tabs.js"></script>
+    <script type="text/javascript" src="/includes/scripts/menu.js"></script>
+   
+
+    
+
+    
+        <title>The Java Community Process(SM) Program - communityprocess - maintenance</title>
+    
+
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+
+
+<body onload="P7_initPM(0,1,0,0,-1)">
+
+    <a name="top"></a>
+
+    <div id="header">
+	<div id="logo">
+		<a href="/en/home/index"><img src="/images/spacer.gif" alt="Java Community Process" height="81" width="151"></a>
+	</div>
+	<div id="tools">
+		<div class="search">
+			<form name="search" action="/en/jsr/summary" method="get" onsubmit="return validate_search()">
+				<input name="id" value="Search JSRs" size="16" class="form" onfocus="nullify_if_equal(this, 'Search JSRs')" type="text">
+				<a href="javascript:document.search.submit()" onclick="return validate_search()"><img src="/images/button_go.gif" width="21" height="16" border="0" alt="Submit this Search" name="sub_search"></a>
+			</form>
+		</div>
+		<div class="tools">
+			<a href="/en/press/pressroom">Press Room</a> &nbsp;|&nbsp;
+			<a href="http://java.com/java/download/index.jsp?cid=jdp78399">Get Java Here</a> &nbsp;|&nbsp;
+			<!-- <a href="javascript:void(0)">Print Format</a> &nbsp;|&nbsp;&nbsp; -->
+		</div>
+
+	</div>
+	<div style="clear: right;"></div>
+
+        
+
+	<div class="topbar"><img src="/images/spacer.gif" alt="" height="3" width="154"></div>
+	<div id="update"> </div>
+    </div>
+
+
+    
+
+        <!-- ** BEGIN: Content Table ** //-->
+
+        <table width="100%" border="0" cellpadding="0" cellspacing="0">
+
+            <tr>
+
+                <!-- ** BEGIN: Navigation Column ** //-->
+                <td width="150" id="leftcontent" valign="top">
+                    <!-- Navigation Placeholder //-->
+
+                    
+
+                    <div class="bar"><img src="/images/hr_dots1.gif" alt="" height="3" width="150"></div>
+
+        <!-- begin find JSRs form -->
+        <!-- IMPORTANT! do not convert this form to Struts < html : form > tag.  javascript change of form.action property fails. -->
+        <img src="/images/hd_find-jsrs.gif" alt="Find JSRs" height="18" width="150">
+        <form name="findjsr" action="/en/jsr/summary" method="get" class="pt5" onsubmit="return validate_findjsr()">
+            <input name="id" size="18" class="form" value="Search JSRs" onfocus="nullify_if_equal(this, 'Search JSRs')" type="text">
+	    <a href="javascript:document.findjsr.submit()" onclick="return validate_findjsr()"><img src="/images/button_go.gif" width="21" height="16" border="0" alt="Submit this Search" name="sub_search"></a>
+        </form><br><br>
+
+        <!-- ** Menu Start ** //-->
+
+        <ul id="p7PMnav">
+            <li><a href="/en/jsr/platform">JSRs by Platform</a></li>
+            <li><a href="/en/jsr/tech">JSRs by Technology</a></li>
+            <li><a href="/en/jsr/stage">JSRs by Stage</a></li>
+            <li><a href="/en/jsr/ec">JSRs by Committee</a></li>
+            <li><a href="/en/jsr/all">List of All JSRs</a></li>
+
+            <!--end find JSRs form -->
+            <div style="clear: both;"><img src="/images/spacer.gif" alt="" height="25" width="1"></div>
+
+            <!--begin my JCP -->
+            <img src="/images/hd_my-jcp.gif" alt="My JCP" height="18" width="150">
+            
+
+          <form name="login" method="get" action="/en/user/login" >
+            <input name="Sign-in" type="submit" title="Sign-in" value="Sign-in" />
+          </form>
+
+            <div style="clear:both"><img src="/images/global/spacer.gif" width="1" height="3" alt=""></div>
+            <div class="noNav">
+                <a href="/en/user/register">Register for Site</a>
+            </div>
+
+             <div class="bar"><img src="/images/hr_dots1.gif" alt="" height="3" width="150"></div>
+           <div class="noNav" style="color: #666666; padding: 0;">
+              Use of JCP site is subject to the
+              <a href="/en/home/terms" style="display:inline;padding: 0">JCP Terms of Use</a> and the
+              <a href="http://www.oracle.com/us/legal/privacy/index.html" style="display:inline;padding: 0" href="">Oracle Privacy Policy</a>
+          </div>
+
+            
+
+            <div style="clear:both"><img src="/images/global/spacer.gif" width="1" height="25" alt=""></div>
+
+            <!--begin JCP info -->
+            <img src="/images/hd_jcp-info.gif" alt="JCP Info" height="18" width="150">
+
+            <li><a href="/en/procedures/overview" class="p7PMtrg">About JCP</a>
+                <ul>
+                    <li><a href="/en/procedures/overview">Program Overview</a></li>
+                    <li><a href="/en/procedures/jcp2">JCP Process Document</a></li>
+                    <li><a href="/en/whatsnew/calendar">Calendar</a></li>
+                    <li><a href="/en/participation/members">JCP Members</a></li>
+                    <li><a href="/en/participation/committee">Executive Committee</a></li>
+                    <li><a href="/en/whatsnew/elections">Elections</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/en/participation/overview" class="p7PMtrg">Get Involved</a>
+		<ul>
+                    <li><a href="/en/participation/overview">Overview</a></li>
+                    <li><a href="/en/participation/membership">Becoming a JCP Member</a></li>
+		</ul>
+            </li>
+
+            <li><a href="/en/resources/contents" class="p7PMtrg">Community Resources</a>
+                <ul>
+                    <li><a href="/en/resources/contents">Overview</a></li>
+                    <li><a href="/en/resources/tutorials">Tutorials</a></li>
+                    <li><a href="/en/resources/multimedia">JCP Podcasts</a></li>
+                    <li><a href="/en/resources/guide">Spec Lead Guide</a></li>
+                    <li><a href="/en/resources/tdk">TCK Tool & Info</a></li>
+                    <li><a href="/en/resources/license_reference">License Reference</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/en/press/pmo" class="p7PMtrg">Community News</a>
+                <ul>
+                    <li><a href="/en/press/pmo">News</a></li>
+                    <li><a href="/en/press/news/awards/awards_main">Programs &amp; Awards</a></li>
+                    <li><a href="/en/press/releases">Press Releases</a></li>
+                    <li><a href="/en/press/success">Success Stories</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/en/introduction/faq">FAQ</a></li>
+
+            <li><a href="/en/resources/contacts">Contact Us</a></li>
+
+            <div style="clear: both;"><img src="/images/spacer.gif" alt="" height="25" width="1"></div>
+
+            <!--[if lte IE 6]><style>#p7PMnav a{height:1em;}#p7PMnav li{height:1em;float:left;clear:both;width:100%}</style><![endif]-->
+            <!--[if IE 6]><style>#p7PMnav li{clear:none;}</style><![endif]-->
+            <!--[if IE 7]><style>#p7PMnav a{zoom:100%;}#p7PMnav li{float:left;clear:both;width:100%;}</style><![endif]-->
+        </ul>
+
+        
+
+        <!--begin ad space -->
+        <div class="ads">
+            <a href="http://java.com/java/download/index.jsp?cid=jdp78399" target="_blank"><img style="display: ;" src="/images/ad_banner2.gif" alt="Ad Banner" border="1" height="70" width="150"></a>
+        </div>
+        <!--end ad space -->
+
+<!-- ** Menu End ** //-->
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;<br>
+
+    
+
+                    &nbsp;<br>
+                    <img src="/images/common/trans.gif" alt="" width="1" height="150"><br>
+
+              
+
+
+
+                </td>
+                <!-- ** END: Navigation Column ** //-->
+
+                <!-- ** BEGIN: Gutter Column ** //-->
+		<td width="10" nowrap><img src="/images/common/trans.gif" alt="" width="10" height="1"></td>
+                <!-- ** END: Gutter Column ** //-->
+
+                <!-- ** BEGIN: Content Column ** //-->
+                <td width="100%" valign="top">
+
+    
+<script type="text/javascript">
+
+String.prototype.trim = function() {
+        return this.replace(/^\s+|\s+$/g,"");
+}
+String.prototype.ltrim = function() {
+        return this.replace(/^\s+/,"");
+}
+String.prototype.rtrim = function() {
+        return this.replace(/\s+$/,"");
+}
+
+function validate_search() {
+	if (document.search.id.value == "Search JSRs" || document.search.id.value.trim().length == 0) {
+		alert("Search terms must be entered first");
+		return false;
+	}
+	return true;
+}
+
+function validate_findjsr() {
+	if (document.findjsr.id.value == "Search JSRs" || document.findjsr.id.value.trim().length == 0) {
+		alert("Search terms must be entered first");
+		return false;
+	}
+	return true;
+}
+
+function nullify_if_equal(field, str) {
+	// alert("val=" + field.value);
+	if (field.value == str) {
+		field.value = "";
+	}
+}
+
+</script>
+<!-- ** END: header.jsp ** //-->
+
+
+
+
+
+
+<html>
+<body>
+<h2>Maintenance Review of JSR 901 (Java<sup>TM</sup> Language Specification) for Java SE 7</h2>
+
+<p><em>Last updated 2011-03-18 by Alex Buckley</em></p>
+
+<p>The clarifications and amendments below are proposed to
+the <a href="http://download.oracle.com/otndocs/jcp/jsr901-mrel2-spec/">Java
+Language Specification, Third Edition</a>.</p>
+
+<p>The complete amended specification is the Java Language
+Specification, <em>Java SE 7 Edition</em>. (The next edition of the
+Java Virtual Machine Specification will also be known as the <em>Java
+SE 7 Edition</em>.)</p>
+
+<p>As features are added to the Java language, the Java Language
+Specification grows longer and more complex. Features must be
+introduced, specified, exemplified, discussed, and interwoven with
+existing features. The Technology Compatibility Kit for the Java
+language must be updated too, as per
+the <a href="http://jcp.org/en/procedures/jcp2">Java Community
+Process</a>. To maintain readability and to support testability, it is
+desirable for the Java Language Specification to strongly
+differentiate normative material from informative material. For
+example, the compile-time errors possible for a field declaration are
+normative, but the conventional order of modifiers in a field
+declaration is informative. As another example, the rules of definite
+assignment are normative but an extended discussion of source code to
+show subtleties of the rules is informative.</p>
+
+<p>As a result, there are two versions available of the Java Language
+Specification, Java SE 7 Edition:</p>
+
+<ul>
+  <li><a href="http://download.oracle.com/otndocs/jcp/jls-7-mr3-normv-oth-JSpec/">The
+    normative version</a> (382 pages) contains only the syntax,
+    definitions, and rules of the Java programming language, without
+    examples or discussion.</li>
+  <li><a href="http://download.oracle.com/otndocs/jcp/jls-7-mr3-fullv-oth-JSpec/">The
+    full version</a> (586 pages) is the text of the normative version
+    plus inline examples and discussion, as was the style in the Third
+    Edition.</li>
+</ul>
+
+<p>In both versions, red text is new in the Java SE 7 Edition; blue
+text is changed with respect to the Third Edition.</p>
+
+<hr/>
+
+<h3>Clarifications and Amendments to the Java Language Specification, Third Edition</h3>
+
+<h4>Organization of the Specification</h4>
+
+<h5>Normative material</h5>
+
+<p>Cross-cutting rules concerning variable declarations have been
+centralized, rather than continuing to be spread throughout the
+Specification wherever a declaration of some kind of variable was
+discussed. Namely, the rules for scope, shadowing, mixed array
+notation, and exception checking are centralized in 6.3, 6.4.1, 10.2,
+and 11.2.3, and moreover are not duplicated in other
+sections. Informative text in other sections refers to the central
+definitions.</p>
+
+<p>4.5.1.1 Type Argument Containment and 4.12.2.1 Heap Pollution have
+been incorporated into their immediately preceding sections.</p>
+
+<p>5.5 Casting Conversion has been split into four sections for
+clarity.</p>
+
+<p>7.4.4 Scope of a Package Declaration has been removed (in line with
+the centralization theme discussed later), and its material
+incorporated into 6.3 Scope and 6.4.1 Shadowing.</p>
+
+<p>7.5.5 Automatic Imports has been removed, and its material
+incorporated into 7.3 Compilation Units (which it essentially
+duplicated already).</p>
+
+<p>8.9 Enums has been given two subsections for clarity.</p>
+
+<p>9.1.5 Access to Interface Member Names has been removed, since its
+point about implicitly public members is duplicated in 9.3, 9.4, and
+9.5.</p>
+
+<p>9.6 Annotation Types has been given two additional subsections for
+clarity. This has resulted in 9.6.1 Predefined Annotation Types
+shifting down to 9.6.3.</p>
+
+<p>11.3.1 Exceptions are Precise has been incorporated into 11.3
+Run-Time Handling of an Exception. 11.3.2 Handling Asynchronous
+Exceptions has been moved to 11.1. 11.5 The Exception Hierarchy mainly
+mirrored observations on exception types in 11.1 and 11.2, so has been
+removed and its material incorporated into those sections.</p>
+
+<p>15.8.1.1 String Conversion has been moved to 5.1.11.</p>
+
+<p>17.8 Wait Sets and Notification and 17.9 Sleep and Yield have been
+moved to 17.2 and 17.3 respectively. (See below for the original
+17.3.)</p>
+
+<h5>Informative material</h5>
+
+<p>It is desirable to keep section numbering consistent between the
+normative and full versions of the Specification, which means that
+example-only sections are not possible. As a result, example-only
+sections have been removed. Most were the last section at their level,
+so this one-time change has not affected broader section numbering
+(except in minor ways in chapters 10, 11, and 17). The examples have
+been added as informative material in closely related sections. The
+removed sections are:</p>
+
+<pre>
+6.6.3 An Example of Access Control
+6.6.4 Example: Access to public and Non-public Classes
+6.6.5 Example: Default-Access Fields, Methods, and Constructors
+6.6.6 Example: public Fields, Methods, and Constructors
+6.6.7 Example: protected Fields, Methods, and Constructors
+6.6.8 Example: private Fields, Methods, and Constructors
+7.5.6 A Strange Example
+8.2.1 Examples of Inheritance
+8.3.3 Examples of Field Declarations
+8.4.10 Examples of Method Declarations
+9.3.2 Examples of Field Declarations
+9.4.3 Examples of Abstract Method Declarations
+10.5 Arrays: A Simple Example
+11.4 An Example of Exceptions
+15.12.2.9 Examples
+15.12.2.10 Example: Overloading Ambiguity
+15.12.2.11 Example: Return Type Not Considered
+15.12.2.12 Example: Compile-Time Resolution
+15.13.2 Examples: Array Access Evaluation Order
+15.18.1.3 Examples of String Concatenation
+17.3 Incorrectly Synchronized Programs Exhibit Surprising Behaviors
+</pre>
+
+<p>6.4 Members and Inheritance appeared normative, but in fact merely
+duplicated many normative statements of chapters 7-10, as well as
+re-describing properties of packages and reference types implied by
+those chapters. A small amount of informative material from 6.4 has
+been incorporated into 7.1, 8.2, and 9.2 to improve readability; the
+rest of 6.4 has been deleted. 6.4 now contains the definitions of
+shadowing and obscuring formerly found in 6.3.1 and 6.3.2.</p>
+
+<p>6.8 Naming Conventions and 7.7 Unique Package Names were entirely
+informative, and have been incorporated as informative material into
+6.1 Declarations and 6.4 Shadowing and Obscuring.</p>
+
+<p>7.4.1.1 Package Annotations was mainly informative, so 7.4.1.1 has
+been removed and all its material incorporated into 7.4.1 Named
+Packages.</p>
+
+<p>Exploiting the ability to give more discussion without cluttering
+the normative version of the Specification, there are new discussions
+in 4.8 Raw Types, 6.6 Access Control, and 15.8 Primary Expressions
+that clarify some long-held principles of the Java language.</p>
+
+
+
+<h4>Proposed changes, by chapter</h4>
+
+<p>Defects in the Java Language Specification are tracked as bugs in
+the <code>java:specification</code> category of
+the <a href="http://bugs.sun.com/bugdatabase/">Java Bug
+Database</a>. The list below gives the ID and synopsis for each bug
+whose evaluation proposes a clarification or amendment to the Java
+Language Specification, Third Edition.</p>
+
+<p>Some defects in the Java Language Specification are related to
+defects in <code>javac</code>, the Reference Implementation of a
+compiler for the Java language. Bugs for compiler defects are tracked
+in the <code>java:compiler</code> category. If a specification bug is
+strongly related to a compiler bug, then the compiler bug is listed
+below the specification bug for completeness, indented and entirely
+surrounded by [ ].</p>
+
+<p>Occasionally, a compiler bug proposes a change in the Java Language
+Specification and it is more convenient to record the change in the
+compiler bug rather than creating a separate specification
+bug. Consequently, a few specification bugs below are actually in
+the <code>java:compiler</code> category, and are identified by [ ]
+around the synopsis.</p>
+
+<p>In addition to the bugs below, <code>7029127 Public comments on
+JLS3</code> records proposed changes due to comments sent between 2006
+and 2011 from members of the public to the Maintenance Lead of JSR 901
+regarding the Java Languge Specification.</p>
+
+<h5>Lexical Structure</h5>
+
+<pre>
+4685937 JLS3 3.10.2 has misleading information on largest/smallest floating-point literals
+</pre>
+
+<h5>Types</h5>
+
+<pre>
+6869735 Re-specify scope of type parameters
+7002097 Scope of a class or interface's type parameter
+6193815 No cycles in subtyping of type variables
+6674900 Clarify difference between a Type Variable and a Type Parameter
+6776599 [Accept explicit type arguments on call of nongeneric method]
+4922142 generic enclosing type in cast: allowed?
+6558462 Nested classes and reified types
+6806876 [ClassCastException occurs in assignment expressions without any heap pollutions]
+6651719 [Compiler crashes during forward reference of TypeParameter]
+6557279 Tweak provable distinctness
+</pre>
+
+<h5>Conversions</h5>
+
+<pre>
+6508599 No unchecked conversion for array types
+6526446 Fixes to JLS5.5 Casting Conversion
+ [6790039 overhaul cast-conversion (umbrella)]
+6558543 Widening reference conversion followed by unboxing isn't allowed
+6558557 Overhaul specification of unchecked casts
+6586958 Boxing conversion for the null type is unspecified
+6888770 conditional operator with autoboxing spec bug
+6730568 Type erasure affects return types + type parameters
+</pre>
+
+<h5>Names</h5>
+
+<pre>
+6493167 Ban use of static nested parameterized classes
+ [6486430 Compiler fails to reject access to static member in parameterized type]
+6865515 Unclear rule for qualified access to member types
+</pre>
+
+<h5>Packages</h5>
+
+<pre>
+4420532 Current compilation unit is observable, hence its packages too
+6536999 JLS3 chapter 7 Packages has several typos and inaccuracy
+6470991 Package statement affected by imports
+6975015 Stricter prohibition against import from unnamed package
+</pre>
+
+<h5>Classes</h5>
+
+<pre>
+6424261 Description of "override" in JLS 3 section 6.4.3 is misleading
+4713248 spurious constraint 8.8.5.1 re: anon classes+enclosing instances
+6748088 Abstract classes and interfaces should inherit methods similarly
+ [6294779 Problem with interface inheritance and covariant return types]
+6998735 Variable arity parameter type involving arrays
+7004835 Different handling for final in constructor
+4626788 implicit use of this before super() should be disallowed
+6708938 Synthetic super-constructor call should never use 'this' as qual
+ [6541876 "Enclosing Instance" error new in 1.6]
+6182950 [methods clash algorithm should not depend on return type]
+6487370 [javac warning with override-equivalent inherited methods]
+6510286 [Wording of javac error for inner classes]
+</pre>
+
+<h5>Interfaces</h5>
+
+<pre>
+6505167 Annotations syntax error in JLS 9.7
+5008260 @Override should be generalized from 'superclass' to 'supertype'
+ [6399361 CONFORMANCE: @Override specification and compiler inconsistent]
+</pre>
+
+<h5>Exceptions</h5>
+
+<pre>
+6554157 JLS uncaught exception handling documentation needs updating
+6720843 Clarify that the throw statement can take null
+6653965 'throw' statement over-simplifies when 'throws' clause is needed
+4948126 Unreachable code in catch(Exception/RuntimeException) blocks
+6412514 Message "except.never.thrown.in.try" have to be reported
+ [6558548 The compiler needs to be aligned with clarified specification of throws]
+</pre>
+
+<h5>Compiling, Linking, and Compatibility</h5>
+
+<pre>
+6519118 Classes are compiled but java.lang.AbstractMethodError is thrown
+6254762 Initializing a class requires acquiring lock on its class object
+6888125 Class initialization spec must allow static finals to be assigned early
+4644624 implicitly declared interface members do not appear in classfile
+4402219 Class.newInstance() versus inner classes
+6520153 values/valueof methods of enum should be marked as SYNTHETIC
+</pre>
+
+<h5>Statements</h5>
+
+<pre>
+6302175 Second argument of assert not always converted to a String
+6394986 assert must cause the enclosing top level class to be initialized?
+6690688 Enhanced-for-loop translation in JLS 14.14.2 is not type-safe
+6923689 Enhanced for loop with unsafe generics is incorrectly desugared
+6923696 Allow mixed array brackets for enhanced for loop's variable
+6906550 JLS3 14.17 is lax about enclosing method of a return statement
+6225454 Magic scope rule for enums
+</pre>
+
+<h5>Expressions</h5>
+
+<pre>
+4407262 ArrayInitializers and OutOfMemoryError
+7122416 super field access and accessibility
+6260924 The Primary of a method invocation must be a reference type
+7013170 varargs: accessibility check missing from JLS 15.12.{2,4}
+4721499 can a final variable be the operand of ++? --? +=?
+</pre>
+
+<h5>Expressions->Inference</h5>
+
+<pre>
+6371674 Inferred types' bounds should help infer type variables
+ [6369605 type-inference problems w/underconstrained t-vars & fbounds]
+6369608 Inferred types not substituted in bounds of type variables
+ [6730476 t-vars inferred in 15.12.2.8 not substituted into formals]
+6640435 inference: propagate >> constraints to help uninferred t-vars
+ [6638712 type-inference causes selection of inapplicable method]
+ [6650759 type-inference should propagate constraints]
+ [6278587 Compiler fails to infer type for under-constrained t-vars]
+6785114 Return type inference (15.12.2.8) doesn't work with autoboxing
+ [6995200 JDK 7 compiler crashes when type-variable is inferred from expected primitive type]
+6568599 inference: Failure of inference due to lci definition
+</pre>
+
+<h5>Reachability and Definite Assignment</h5>
+
+<pre>
+4088988 Not detecting unreachable (exit via break w/intervening finally)
+4642762 When can a statement complete normally? (break&cont v. finally)
+4770552 Conflict in DA spec for local classes
+6499725 "V is definitely unassigned after e2" is ambiguous for try statements
+7006251 Reachability/Def.assign when enum constants covered by switch  <!-- Should be undone -->
+</pre>
+
+<h5>Memory model</h5>
+
+<pre>
+6484465 Thread.getState states are under-specified
+6584700 17.9 "Sleep and Yield" statement about observable effects
+</pre>
+
+<h5>Syntax</h5>
+
+<pre>
+6442525 Syntax specification is inconsistent with other sections
+4266845 Explicitly mention that string literals can't contain \u0022
+4750181 javac should use grammar from JLS sections 4, 6-10, 14, 15
+6674901 Please clarify ReferenceType
+7006791 JLS3 4.4 grammar for TypeBound is confusing
+</pre>
+
+<h5>Miscellaneous</h5>
+
+<pre>
+7018430 Spelling/formatting errors in JLS3
+6678997 Incorrect sample code in JLS3 4.4 Type Variables
+7013667 typo in jls 3.0 section 6.3
+6502650 Enum sample program (JLS8.9) doesn't compile
+4396260 misleadingly incomplete xref in JLS2 15.28 Constant Expression
+</pre>
+
+<p>JLS3 4.4, 4.5, 4.8, 4.12.2: Terminology has been tightened around
+generics, such as the difference between type variables, type
+parameters (not "formal type parameters"), and type arguments. The
+conditions for unchecked warnings, and terminology around heap
+pollution, have been clarified.<p>
+
+<p>JLS3 6.5.6.1, 6.5.6.2, 15.14, 15.15: The meaning of names and final
+variables has been clarified.</p>
+
+<p>JLS3 5.1.3: Added: "Conversion of a double value to float is
+governed by the IEEE 754 rounding rules (4.2.4). This conversion can
+lose precision, but also lose range, resulting in a float zero from a
+nonzero double and a float infinity from a finite double. A double NaN
+is converted to a float NaN and a double infinity is converted to the
+same-signed float infinity."</p>
+
+<p>JLS3 5.1.7, 5.1.8: Boxing and unboxing conversion is specified to
+occur on values, but obviously works on variables too.</p>
+
+<p>JLS3 8.9.2: An explicit constructor declaration of an enum type
+must not be public or protected.</p>
+
+<p>JLS3 10.1: References to "component type" throughout the spec (but
+especially in 10.1 Array Types) have been changed to "element type",
+sometimes for correctness and sometimes for readability.</p>
+
+<p>JLS3 13.4.12: Changed: "Adding a method ... will not break
+compatibility with any pre-existing binaries, ***even*** in the case
+where..." (The word "even" was in JLS1 to subtly point out that Java
+does not suffer from fragile base classes. JLS2/3 dropped the word
+"even", but that made informative text appear like an important
+normative side-condition. It isn't; the word "even" is an important
+break to indicate an interesting, but ultimately unsurprisingly,
+informative sidebar.)</p>
+
+<p>JLS3 13.4.14: Changing the type of the last formal parameter of a
+method from T[] to T... is binary-compatible. (And source-compatible,
+since old clients which pass a T[] can be recompiled against the
+changed method declaration, thanks to 8.4.2's definition of T... as
+T[].)</p>
+
+<p>JLS3 15.12.2.1: A redundant rule about arity of a potentially
+applicable member has been removed.</p>
+
+<p>JLS3 15.16: An extra [] in a primitive type cast were erroneously
+allowed (compare with the copy in 15.15), even though these were
+technically not part of the target type in the subsequent normative
+text.</p>
+
+<p>JLS3 17.4.8: Well formed executions E_i,... should not mention
+O_i.</p>
+
+</body>
+</html>
+
+
+
+<!-- ** BEGIN: footer.jsp ** //-->
+
+
+
+
+
+
+
+
+</td>
+</tr>
+</table>
+
+<!-- ** END: Content Table ** //-->
+
+<!-- ** BEGIN: Footer Table ** //-->
+
+<div id="footer" style="clear: both;">
+    <div class="footleft">
+        <a href="/en/resources/contacts">Contact Us</a>
+    </div>
+	
+    <div class="botbar"><img src="/images/spacer.gif" alt="" height="23" width="1"></div>
+
+    <div class="footleft2">
+         &copy; 2019, Oracle Corporation and/or its affiliates. 
+        <a href="/en/home/terms">Terms of Use</a>. <a href="http://www.oracle.com/us/legal/privacy/index.html">Privacy Policy</a>. <a href="http://www.oracle.com/us/legal/third-party-trademarks/third-party-trademarks-078568.html">Trademarks</a>
+    </div>
+
+    <div class="footright">
+        <img src="/images/common/logo_oracle_footer.gif" alt="Oracle Corporation" height="22" width="91">
+    </div>
+
+    <div style="clear: both;"><img src="/images/spacer.gif" alt="" height="30" width="1"></div>
+</div>
+
+<!-- ** END: Footer Table ** //-->
+
+
+
+<!-- ** Menu Start ** //-->
+
+
+
+</body>
+</html>
+<!-- ** END: footer.jsp ** //-->
+

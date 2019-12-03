@@ -1,0 +1,924 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- ** BEGIN: header.jsp ** //-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3c.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+<head>
+    
+
+   
+    <link href="/includes/css/menu.css" rel="stylesheet" type="text/css"></link>
+    <link href="/includes/css/style.css" rel="stylesheet" type="text/css"></link>
+    <!--[if lt IE 6]><link href="/includes/css/style5.css" rel="stylesheet" type="text/css" ></link><![endif]-->
+    <!--[if gte IE 5]><link href="/includes/css/style6.css" rel="stylesheet" type="text/css" ></link><![endif]-->
+    <link href="/includes/css/tabs.css"  rel="stylesheet" type="text/css"></link>
+
+    <script type="text/javascript" src="/includes/scripts/tabs.js"></script>
+    <script type="text/javascript" src="/includes/scripts/menu.js"></script>
+   
+
+    
+
+    
+        <title>The Java Community Process(SM) Program - JSRs: Java Specification Requests - detail JSR# 261</title>
+    
+
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+
+
+<body onload="P7_initPM(0,1,0,0,-1)">
+
+    <a name="top"></a>
+
+    <div id="header">
+	<div id="logo">
+		<a href="/en/home/index"><img src="/images/spacer.gif" alt="Java Community Process" height="81" width="151"></a>
+	</div>
+	<div id="tools">
+		<div class="search">
+			<form name="search" action="/en/jsr/summary" method="get" onsubmit="return validate_search()">
+				<input name="id" value="Search JSRs" size="16" class="form" onfocus="nullify_if_equal(this, 'Search JSRs')" type="text">
+				<a href="javascript:document.search.submit()" onclick="return validate_search()"><img src="/images/button_go.gif" width="21" height="16" border="0" alt="Submit this Search" name="sub_search"></a>
+			</form>
+		</div>
+		<div class="tools">
+			<a href="/en/press/pressroom">Press Room</a> &nbsp;|&nbsp;
+			<a href="http://java.com/java/download/index.jsp?cid=jdp78399">Get Java Here</a> &nbsp;|&nbsp;
+			<!-- <a href="javascript:void(0)">Print Format</a> &nbsp;|&nbsp;&nbsp; -->
+		</div>
+
+	</div>
+	<div style="clear: right;"></div>
+
+        
+
+	<div class="topbar"><img src="/images/spacer.gif" alt="" height="3" width="154"></div>
+	<div id="update"> </div>
+    </div>
+
+
+    
+
+        <!-- ** BEGIN: Content Table ** //-->
+
+        <table width="100%" border="0" cellpadding="0" cellspacing="0">
+
+            <tr>
+
+                <!-- ** BEGIN: Navigation Column ** //-->
+                <td width="150" id="leftcontent" valign="top">
+                    <!-- Navigation Placeholder //-->
+
+                    
+
+                    <div class="bar"><img src="/images/hr_dots1.gif" alt="" height="3" width="150"></div>
+
+        <!-- begin find JSRs form -->
+        <!-- IMPORTANT! do not convert this form to Struts < html : form > tag.  javascript change of form.action property fails. -->
+        <img src="/images/hd_find-jsrs.gif" alt="Find JSRs" height="18" width="150">
+        <form name="findjsr" action="/en/jsr/summary" method="get" class="pt5" onsubmit="return validate_findjsr()">
+            <input name="id" size="18" class="form" value="Search JSRs" onfocus="nullify_if_equal(this, 'Search JSRs')" type="text">
+	    <a href="javascript:document.findjsr.submit()" onclick="return validate_findjsr()"><img src="/images/button_go.gif" width="21" height="16" border="0" alt="Submit this Search" name="sub_search"></a>
+        </form><br><br>
+
+        <!-- ** Menu Start ** //-->
+
+        <ul id="p7PMnav">
+            <li><a href="/en/jsr/platform">JSRs by Platform</a></li>
+            <li><a href="/en/jsr/tech">JSRs by Technology</a></li>
+            <li><a href="/en/jsr/stage">JSRs by Stage</a></li>
+            <li><a href="/en/jsr/ec">JSRs by Committee</a></li>
+            <li><a href="/en/jsr/all">List of All JSRs</a></li>
+
+            <!--end find JSRs form -->
+            <div style="clear: both;"><img src="/images/spacer.gif" alt="" height="25" width="1"></div>
+
+            <!--begin my JCP -->
+            <img src="/images/hd_my-jcp.gif" alt="My JCP" height="18" width="150">
+            
+
+          <form name="login" method="get" action="/en/user/login" >
+            <input name="Sign-in" type="submit" title="Sign-in" value="Sign-in" />
+          </form>
+
+            <div style="clear:both"><img src="/images/global/spacer.gif" width="1" height="3" alt=""></div>
+            <div class="noNav">
+                <a href="/en/user/register">Register for Site</a>
+            </div>
+
+             <div class="bar"><img src="/images/hr_dots1.gif" alt="" height="3" width="150"></div>
+           <div class="noNav" style="color: #666666; padding: 0;">
+              Use of JCP site is subject to the
+              <a href="/en/home/terms" style="display:inline;padding: 0">JCP Terms of Use</a> and the
+              <a href="http://www.oracle.com/us/legal/privacy/index.html" style="display:inline;padding: 0" href="">Oracle Privacy Policy</a>
+          </div>
+
+            
+
+            <div style="clear:both"><img src="/images/global/spacer.gif" width="1" height="25" alt=""></div>
+
+            <!--begin JCP info -->
+            <img src="/images/hd_jcp-info.gif" alt="JCP Info" height="18" width="150">
+
+            <li><a href="/en/procedures/overview" class="p7PMtrg">About JCP</a>
+                <ul>
+                    <li><a href="/en/procedures/overview">Program Overview</a></li>
+                    <li><a href="/en/procedures/jcp2">JCP Process Document</a></li>
+                    <li><a href="/en/whatsnew/calendar">Calendar</a></li>
+                    <li><a href="/en/participation/members">JCP Members</a></li>
+                    <li><a href="/en/participation/committee">Executive Committee</a></li>
+                    <li><a href="/en/whatsnew/elections">Elections</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/en/participation/overview" class="p7PMtrg">Get Involved</a>
+		<ul>
+                    <li><a href="/en/participation/overview">Overview</a></li>
+                    <li><a href="/en/participation/membership">Becoming a JCP Member</a></li>
+		</ul>
+            </li>
+
+            <li><a href="/en/resources/contents" class="p7PMtrg">Community Resources</a>
+                <ul>
+                    <li><a href="/en/resources/contents">Overview</a></li>
+                    <li><a href="/en/resources/tutorials">Tutorials</a></li>
+                    <li><a href="/en/resources/multimedia">JCP Podcasts</a></li>
+                    <li><a href="/en/resources/guide">Spec Lead Guide</a></li>
+                    <li><a href="/en/resources/tdk">TCK Tool & Info</a></li>
+                    <li><a href="/en/resources/license_reference">License Reference</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/en/press/pmo" class="p7PMtrg">Community News</a>
+                <ul>
+                    <li><a href="/en/press/pmo">News</a></li>
+                    <li><a href="/en/press/news/awards/awards_main">Programs &amp; Awards</a></li>
+                    <li><a href="/en/press/releases">Press Releases</a></li>
+                    <li><a href="/en/press/success">Success Stories</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/en/introduction/faq">FAQ</a></li>
+
+            <li><a href="/en/resources/contacts">Contact Us</a></li>
+
+            <div style="clear: both;"><img src="/images/spacer.gif" alt="" height="25" width="1"></div>
+
+            <!--[if lte IE 6]><style>#p7PMnav a{height:1em;}#p7PMnav li{height:1em;float:left;clear:both;width:100%}</style><![endif]-->
+            <!--[if IE 6]><style>#p7PMnav li{clear:none;}</style><![endif]-->
+            <!--[if IE 7]><style>#p7PMnav a{zoom:100%;}#p7PMnav li{float:left;clear:both;width:100%;}</style><![endif]-->
+        </ul>
+
+        
+
+        <!--begin ad space -->
+        <div class="ads">
+            <a href="http://java.com/java/download/index.jsp?cid=jdp78399" target="_blank"><img style="display: ;" src="/images/ad_banner2.gif" alt="Ad Banner" border="1" height="70" width="150"></a>
+        </div>
+        <!--end ad space -->
+
+<!-- ** Menu End ** //-->
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;<br>
+
+    
+
+                    &nbsp;<br>
+                    <img src="/images/common/trans.gif" alt="" width="1" height="150"><br>
+
+              
+
+
+
+                </td>
+                <!-- ** END: Navigation Column ** //-->
+
+                <!-- ** BEGIN: Gutter Column ** //-->
+		<td width="10" nowrap><img src="/images/common/trans.gif" alt="" width="10" height="1"></td>
+                <!-- ** END: Gutter Column ** //-->
+
+                <!-- ** BEGIN: Content Column ** //-->
+                <td width="100%" valign="top">
+
+    
+<script type="text/javascript">
+
+String.prototype.trim = function() {
+        return this.replace(/^\s+|\s+$/g,"");
+}
+String.prototype.ltrim = function() {
+        return this.replace(/^\s+/,"");
+}
+String.prototype.rtrim = function() {
+        return this.replace(/\s+$/,"");
+}
+
+function validate_search() {
+	if (document.search.id.value == "Search JSRs" || document.search.id.value.trim().length == 0) {
+		alert("Search terms must be entered first");
+		return false;
+	}
+	return true;
+}
+
+function validate_findjsr() {
+	if (document.findjsr.id.value == "Search JSRs" || document.findjsr.id.value.trim().length == 0) {
+		alert("Search terms must be entered first");
+		return false;
+	}
+	return true;
+}
+
+function nullify_if_equal(field, str) {
+	// alert("val=" + field.value);
+	if (field.value == str) {
+		field.value = "";
+	}
+}
+
+</script>
+<!-- ** END: header.jsp ** //-->
+
+
+
+
+
+        <!--  BEGIN NAVIGATION TABS -->
+        <div id="p7TP1">
+                <div class="p7TP_tabs">
+                        <div id="p7tpb1_1" class="down"><a class="down">JSR</a></div>
+                        <div><a href="/en/egc/view?id=261">Community</a></div>
+                        <div><a href="/en/eg/eghome?id=261">Expert Group</a></div>
+			
+
+                <br class="p7TPclear" />
+                </div>
+
+                <div class="p7TPcontent">
+                        <div id="p7tpc1_1">
+
+			
+                                <a href="summary?id=261">Summary</a>
+			
+			
+                                &nbsp;|&nbsp;
+				<a href="proposalDetails?id=261">Proposal</a>
+			
+			
+                                &nbsp;|&nbsp;
+                                <span>Detail (Summary &amp; Proposal)</span>
+			
+		
+                        </div>
+
+                </div>
+                <!--[if lte IE 6]><style type="text/css">.p7TPpanel div,.p7TPpanel a{height:1%;}.p7TP_tabs a{white-space:nowrap;}</style><![endif]-->
+        </div>
+        <script type="text/javascript">
+                P7_initTP(1,0);
+        </script>
+        <!--  END NAVIGATION TABS -->
+
+
+<div class="anybar"><img src="/images/global/bar_green.gif" alt="" width="12" height="4"></div>
+
+<div class="header2">JSRs: Java Specification Requests</div>
+<div class="header1">JSR 261: Java<sup><font size="-2">TM</font></sup> API for XML Web Services Addressing (JAX-WSA)</div>
+<div class="anybar"><img src="/images/global/bar_green.gif" alt="" width="12" height="4"></div>
+<br>
+
+
+
+<!-- ********************************************** -->
+<!--  JSR Status information                        -->
+<!-- ********************************************** -->
+
+
+                <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                    <tr>
+                        <td id="centercontent" valign="top">
+			<tr>
+			<td>
+                            <table class="tbl" cellpadding="4" cellspacing="1" width="100%">
+                                <tr valign="top">
+                                    <td class="bdtl">Stage</td>
+                                    <td class="bdtl">Access</td>
+                                    <td class="bdtl">Start</td>
+                                    <td class="bdtl">Finish</td>
+                                </tr>
+
+				<tr class="bgw" valign="top">
+                                        <td>Withdrawn </td>
+                                        
+                                            <td>&nbsp;</td>
+                                        
+                                        <td>15 Dec, 2006</td>
+                                        <td>&nbsp;</td>
+				</tr>
+
+				<tr class="bgw" valign="top">
+                                        <td>Early Draft Review  2</td>
+                                        
+                                            <td><a href="http://jcp.org/aboutJava/communityprocess/edr/jsr261/index2.html">Download page</a></td>
+                                        
+                                        <td>11 May, 2006</td>
+                                        <td>10 Jun, 2006</td>
+				</tr>
+
+				<tr class="bgw" valign="top">
+                                        <td>Early Draft Review </td>
+                                        
+                                            <td><a href="http://jcp.org/aboutJava/communityprocess/edr/jsr261/index2.html">Download page</a></td>
+                                        
+                                        <td>12 Oct, 2005</td>
+                                        <td>11 Nov, 2005</td>
+				</tr>
+
+				<tr class="bgw" valign="top">
+                                        <td>Expert Group Formation </td>
+                                        
+                                            <td>&nbsp;</td>
+                                        
+                                        <td>14 Dec, 2004</td>
+                                        <td>24 Mar, 2005</td>
+				</tr>
+
+				<tr class="bgw" valign="top">
+                                        <td>JSR Review Ballot </td>
+                                        
+                                            <td><a href="results?id=2948">View results</a></td>
+                                        
+                                        <td>30 Nov, 2004</td>
+                                        <td>13 Dec, 2004</td>
+				</tr>
+
+			</table>
+			</td>
+			</tr>
+                        </td>
+</tr>
+</table>
+
+<!-- ********************************************** -->
+<!--  JCP Version                                   -->
+<!-- ********************************************** -->
+
+<span style="padding: 10px; display: block;">
+
+    <b> Status: </b><a href="/en/introduction/glossary#status"><font color=red><span title="A JSR that was withdrawn from the JCP by the Specification Lead before Final Release.">Withdrawn</span></font></a><br>
+
+
+    <b> Reason:</b> All the work done under this JSR has been subsumed under JSR 224. This was conveyed to the EG at earlier instances as well and nobody objected.<br>
+
+
+    
+	<b>JCP version in use:</b> <a href="/procedures/jcp2_6"> 2.6</a><br>
+    
+
+    
+	<b>Java Specification Participation Agreement version in use:</b> 2.0<br>
+    
+
+    <br><br>
+        <b>Description</b>:<br>
+        The Java API for XML Web Services Addressing (JAX-WSA) 1.0 specification will define APIs and a framework for supporting transport-neutral addressing of Web services.
+    <br><br>
+
+    <!-- ********************************************** -->
+    <!--  JSR Comments Email excluding JSR 900 and up   -->
+    <!-- ********************************************** -->
+
+	    
+            <b> Please direct comments on this JSR to the Spec Lead(s) </b> <br>
+	    
+
+            </span>
+
+   <!-- ****************************************** -->
+
+                <div id="p7TP52">
+                        <div class="p7TP_tabs2">
+                            <div><span>Team</span></div>
+                            <br class="p7TPclear" />
+                        </div>
+                </div>
+
+                <table bgcolor="#f2f2f2" border="0" cellpadding="5" cellspacing="1" width="100%">
+	
+                    <tr valign="top">
+                            <td colspan="3"><span class="header4">Specification Leads</span></td>
+                    </tr>
+
+
+		
+        
+			<tr valign="top">
+                            
+                            <td width="20" nowrap>&nbsp;</td>
+                            
+                            <td>Mike&nbsp;Grogan</td>
+                            <td>Sun Microsystems, Inc.</td>
+			</tr>
+        
+			<tr valign="top">
+                            
+                            <td width="20" nowrap>&nbsp;</td>
+                            
+                            <td>Arun&nbsp;Gupta</td>
+                            <td>Sun Microsystems, Inc.</td>
+			</tr>
+        
+
+                <tr valign="top">
+                        <td colspan="4" class="spacerw"><img src="/images/global/spacer.gif" alt="" height="1" width="1"></td>
+                </tr>
+                <tr valign="top">
+                        <td colspan="3"><span class="header4">Expert Group</span></td>
+                </tr>
+
+
+			<tr valign="top">
+                            <td width="20" nowrap>&nbsp;</td> <!-- Gutter //-->
+                            <td>Apache Software Foundation</td>
+     
+
+                            <td>Arjuna Technologies Ltd.</td>
+    
+
+                            <td>BEA Systems</td>
+			</tr>
+
+
+			<tr valign="top">
+                            <td width="20" nowrap>&nbsp;</td> <!-- Gutter //-->
+                            <td>Cape Clear Software</td>
+     
+
+                            <td>Capgemini</td>
+    
+
+                            <td>Developmentor</td>
+			</tr>
+
+
+			<tr valign="top">
+                            <td width="20" nowrap>&nbsp;</td> <!-- Gutter //-->
+                            <td>Harby, John</td>
+     
+
+                            <td>Hewlett-Packard</td>
+    
+
+                            <td>IBM</td>
+			</tr>
+
+
+			<tr valign="top">
+                            <td width="20" nowrap>&nbsp;</td> <!-- Gutter //-->
+                            <td>Neward, Ted</td>
+     
+
+                            <td>Novell, Inc.</td>
+    
+
+                            <td>O'Toole, Neil</td>
+			</tr>
+
+
+			<tr valign="top">
+                            <td width="20" nowrap>&nbsp;</td> <!-- Gutter //-->
+                            <td>Oracle</td>
+     
+
+                            <td>Pramati Technologies</td>
+    
+
+                            <td>Progress Software</td>
+			</tr>
+
+
+			<tr valign="top">
+                            <td width="20" nowrap>&nbsp;</td> <!-- Gutter //-->
+                            <td>Red Hat</td>
+     
+
+                            <td>SAP SE</td>
+    
+
+                            <td>Sheikh, Jamiel</td>
+			</tr>
+
+
+			<tr valign="top">
+                            <td width="20" nowrap>&nbsp;</td> <!-- Gutter //-->
+                            <td>Sonic Software</td>
+     
+
+                            <td>Sun Microsystems, Inc.</td>
+    
+
+                            <td>TmaxSoft, Inc.</td>
+			</tr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		</table>
+                    <!-- ********************************************** -->
+                    <!--  Expert Group Status                           -->
+                    <!-- ********************************************** -->
+
+                    <table cellpadding="0" cellspacing="0" border="0">
+                        
+                    </table>
+
+   <!-- ****************************************** -->
+
+
+
+
+<!-- ********************************************** -->
+<!--  JSRProposal Info                              -->
+<!-- ********************************************** -->
+<p>
+
+		This JSR has been <a href="/en/introduction/glossary#status"><font color=red><span title="A JSR that was withdrawn from the JCP by the Specification Lead before Final Release.">Withdrawn</span></font></a><br>
+		<b> Reason:</b> All the work done under this JSR has been subsumed under JSR 224. This was conveyed to the EG at earlier instances as well and nobody objected.<br> <br>
+
+
+<a name="updates"><font size="+2">Updates to the Original JSR</font></a><p>
+The following has been updated from <a href="#orig">the original request</a>.
+<P>
+2005.09.15: The JSR Title was changed from 
+<BR>
+"Java<sup><font size="-2">TM</font></sup> API for XML-based Web Services Addressing (JAX-WSA)"
+<BR>to<BR>
+"Java<sup><font size="-2">TM</font></sup> API for XML Web Services Addressing (JAX-WSA)".
+
+<P><HR><P>
+
+<a name="orig"><font size="+2">Original Java Specification Request (JSR)</font></a><p>
+<FONT SIZE="-1">
+
+<!-- BEGIN-SUB TOPICS -->
+
+          <A HREF="#1"> Identification</A>  |
+          <A HREF="#2"> Request</A>  |
+          <A HREF="#3"> Contributions</A> 
+<BR>
+
+<!-- END-SUB TOPICS -->
+
+</FONT>
+<P>
+
+<!-- BEGIN TEMPLATE -->
+
+<!-- SECTION 1 -->
+
+<A NAME="1"></A>
+
+<P><FONT size=+2>Section 1. Identification</FONT>
+
+<P><b>Submitting Member:</b> Sun Microsystems, Inc. </P>
+
+<P><b>Name of Contact Person:</b> Arun Gupta</P>
+
+<P><b>E-Mail Address:</b> arun.gupta&#64;sun.com </P>
+
+<P><b>Telephone Number:</b> +1 408 276 7098 </P>
+
+<P><b>Fax Number:</b> +1 408 276 7503
+
+
+</P>
+
+<BR>
+<P><b>Specification Lead:</b> Arun Gupta & Mike Grogan </P>
+
+<P><b>E-Mail Address:</b> arun.gupta&#64;sun.com & mike.grogan&#64;sun.com</P>
+
+<P><b>Telephone Number:</b> +1 408 276 7098 & +1 425 818 1166</P>
+
+<P><b>Fax Number:</b> +1 408 276 7503 & +1 425 818 1166
+
+
+ </P>
+
+<BR>
+
+<P><B>Initial Expert Group Membership:</B>
+</P>
+
+<P>Apache Software Foundation<BR>
+BEA<BR>
+DevelopMentor<BR>
+JBoss<BR>
+Novell<BR>
+Oracle<BR>
+SAP<BR>
+Sonic Software<BR>
+Sun Microsystems Inc.<BR>
+Tmax Soft, Inc.</P>
+
+<P><B>Supporting this JSR:</B>
+
+</P>
+
+<P>Apache Software Foundation<BR>
+BEA<BR>
+DevelopMentor<BR>
+JBoss<BR>
+Novell<BR>
+Oracle<BR>
+SAP<BR>
+Sonic Software<BR>
+Sun Microsystems Inc.<BR>
+Tmax Soft, Inc.</p>
+
+<BR><BR>
+
+<!-- SECTION 2 -->
+
+<A NAME="2"></A>
+
+<P>
+<FONT SIZE="+2">Section 2: Request</FONT><P>
+</P>
+
+<H4>2.1 Please describe the proposed Specification:</H4>
+
+<P>W3C WS-Addressing provides transport neutral mechanisms to address Web services and messages and will become a key specification in the Web services world. WS-Addressing defines endpoint reference as a construct for conveying the information needed to access a Web service endpoint and also defines message information headers to enable uniform addressing of messages. This includes addressing for source and destination endpoints as well as message identity independent of underlying transport. Both of these constructs are designed to be extensible and re-usable so that other specifications can build on them. Thus it is beneficial to have a single JSR that cover all the addressing aspects of Web services in order to provide a coordinated effort among all other Web services-related JSRs.<P>
+
+The Java APIs for XML-based Web Services Addressing (JAX-WSA) 1.0 specification will define APIs and a framework for supporting transport-neutral addressing of Web services. JAX-WSA will align with JSR 224 (Java API for XML-based RPC 2.0) to define this API and the framework. It's scope includes, but is not limited to, the following set of features:<P>
+<ul>
+* Define standard APIs that a J2SE or a J2EE application can use to configure addressing capabilities for both client and server scenarios in conjunction with JAX-RPC. These APIs will include ones that set end-to-end characteristics of a message, set and get reference properties and parameters of endpoint references and use endpoint references to address messages.. To enable Ease-of-Development, JAX-WSA could benefit from defining standard annotations on Java in conjunction with JSR 181 (Web Services Metadata for the JavaTM Platform). For instance, the Action property on a message information header may be defined as annotation on the Java method in a service endpoint interface.<BR>
+* JSR 224 defines the javax.xml.rpc.JAXRPCContext interface that provides an extensible property mechanism that may be used to configure javax.xml.rpc.BindingProvider instances. We will define standard JAXRPCContext properties that can be used to access the addressing information.<BR>
+* W3C WS-Addressing defines the action property on message information headers to identify the semantics implied by a message. This attribute derives it's value from the Action attribute on input, output and fault messages in a WSDL port type (known as explicit mapping) or using the default rules as defined in W3C WS-Addressing and is used for internal dispatching of an incoming message. We will extend the WSDL-to-Java mapping defined in JSR 224 to support both explicit and default mapping.<BR>
+* We expect that a JAX-WSA compatible application will be deployable in a J2EE 5.0 compatible application server. This JSR will define a standard deployment descriptor for J2EE application to provide addressing configuration to the container. We will also define standard SPIs, to be honored by an underlying JAX-RPC implementation, that a J2EE container can use to access addressing information.<BR>
+* W3C WS-Addressing defines faults with code, subcode, reason, and detail that are generated if a particular condition is met. It also defines the binding of faults to SOAP 1.1 and SOAP 1.2. We will define a mapping of W3C WS-Addressing faults to Java exceptions.<BR>
+* JSR 224 and JSR 183 (Web Services Message Security APIs) define APIs and annotations for Web services message security. This JSR will define how these APIs and annotations interact with addressing.<BR>
+* Policy information can be specified as part of an endpoint reference. Policy describes the behavior, requirements, and capabilities of the endpoint and an endpoint may have multiple policies associated with it. JAX-WSA will define a standard way to attach and consume standards-based policy information associated with each endpoint reference. JAX-WSA will align with standard Java technologies to specify policy information. <BR>
+* Endpoints represented by endpoint references with different reference properties may have different associated metadata. We will define reference properties on endpoint references to enable conversational interactions associated with generic session capabilities between sender and receiver.<BR>
+* Message Information Headers consists of abstract properties that define interaction patterns such as "Request Reply". This JSR will define "synthetic interactions" defined using message information headers and how they map to the JAX-RPC programming model. For instance a request-response interaction can be created out of two separate one-way interaction. <BR>
+* Define interoperability requirements on a JAX-WSA compatible application based upon the W3C WS-Addressing specification.</ul>
+
+
+
+ </P>
+
+<H4>2.2 What is the target Java platform? (i.e., desktop, server, personal, embedded, card, etc.)</H4>
+
+<P>Like JAX-RPC, JAX-WSA is intended to be used in both J2SE and J2EE contexts.</P>
+
+<H4>2.3 The Executive Committees would like to ensure JSR submitters think about how their proposed technology relates to all of the Java platform editions. Please provide details here for which platform editions are being targeted by this JSR, and how this JSR has considered the relationship with the other platform editions.</H4>
+
+<P>Like JAX-RPC, JAX-WSA is intended to be used in both J2SE and J2EE contexts.</P>
+
+<H4>2.4 Should this JSR be voted on by both Executive Committees?</H4>
+
+<P>No</P>
+
+
+<H4>2.5 What need of the Java community will be addressed by the proposed specification?</H4>
+
+<P>This specification will provide Java APIs and framework for supporting transport-neutral addressing of Web services. </P>
+
+<H4>2.6 Why isn't this need met by existing specifications?</H4>
+
+<P>Please see 2.1 above. </P>
+
+<H4>2.7 Please give a short description of the underlying technology or technologies:</H4>
+
+<P>Please see 2.1 above.</P>
+
+<H4>2.8 Is there a proposed package name for the API Specification? (i.e., <TT>javapi.something</TT>, <TT>org.something</TT>, etc.)</H4>
+
+<P>javax.ws.addressing</P>
+
+<H4>2.9 Does the proposed specification have any dependencies on specific operating systems, CPUs, or I/O devices that you know of?</H4>
+
+<P>No</P>
+
+<H4>2.10 Are there any security issues that cannot be addressed by the current security model?</H4>
+
+<P>No</P>
+
+<H4>2.11 Are there any internationalization or localization issues?</H4>
+
+<P>No</P>
+
+<H4>2.12 Are there any existing specifications that might be rendered obsolete, deprecated, or in need of revision as a result of this work?</H4>
+
+<P>No</P>
+
+<H4>2.13 Please describe the anticipated schedule for the development of this
+specification.</H4>
+
+<P>The final schedule will need to be determined by the expert group, and will also be dependent on the progress of WS-Addressing Working Group at W3C. However, we expect to have a final draft by December 2005.</P>
+
+<H4>2.14 Please describe the anticipated working model for the Expert Group working on developing this
+specification.</H4>
+
+<P>The Expert Group will interact using the e-mail alias and web site provided by the JCP's PMO in addition to conference calls and face-to-face meetings as appropriate. Expert Group members have strong ties into the Java and Web Services communities and will call on domain experts as needed.
+
+
+</P>
+
+<H4>2.15 It is important to the success of the community and each JSR that the work of the Expert Group be handled in a manner which provides the community and the public with insight into the work the Expert Group is doing, and the decisions that the Expert Group has made. The Executive Committees would like to ensure Spec Leads understand the value of this transparency and ask that each JSR have an operating plan in place for how their JSR will address the involvement of the community and the public. Please provide your plan here, and refer to the Spec Lead Guide for a more detailed description and a set of example questions you may wish to answer in your plan.</H4>
+
+<P>We will leverage the Early Draft feature of JCP 2.6 to allow the public to see the specification in progress. The reference implementation will be developed entirely in a public project on java.net. The TCK will be developed privately by Sun.  </P>
+
+<H4>2.16 Please describe how the RI and TCK will de delivered, i.e. as part of a profile or platform edition, or stand-alone, or both. Include version information for the profile or platform in your answer.
+</H4>
+
+<P>They will be available as separate downloads.</P>
+
+<H4>2.17 Please state the rationale if previous versions are available stand-alone and you are now proposing in 2.13 to only deliver RI and TCK as part of a profile or platform edition (See sections 1.1.5 and 1.1.6 of the JCP 2 document).
+</H4>
+
+<P>N/A</P>
+
+<H4>2.18 Please provide a description of the business terms for the Specification, RI and TCK that will apply when this JSR is final.</H4>
+
+<P>In line with the Java Community Process version 2.6, the following is a summary of Sun's anticipated principal license terms and conditions for the JSR-tbd, JAX-WSA, version 1.0.<P>
+
+The Reference Implementation (RI) will be delivered in binary form free of charge. Licensing for the RI will be under the Sun Microsystems, Inc. Binary Code License Agreement.<P>
+
+The RI source will be available under Java Research License (JRL) and Java Distribution License (JDL). Licensing of the RI is not required for the licensing of the TCK.<P>
+
+The JAX-WSA TCK and RI source will be made available at no extra charge to J2EE licensees.<P>
+
+The JAX-WSA TCK will be licensed at no charge, without support or any trademark license rights under Sun's Compatibility Testing Scholarship Program, described at <a href="http://java.sun.com/scholarship/"> http://java.sun.com/scholarship/</a>. 
+
+
+</P>
+
+<BR><BR>
+<BR><BR>
+
+<!-- SECTION 3 -->
+
+<A NAME="3"></A>
+
+<P>
+<FONT SIZE="+2">Section 3: Contributions</FONT><P>
+</P>
+
+<H4>3.1 Please list any existing documents, specifications, or implementations that describe the technology. Please include links to the documents if they are publicly available.</H4>
+
+<P><ul>
+
+  <li><a href="http://www.w3.org/2002/ws/addr/">WS-Addressing</a></li>
+
+  <li><a href="http://jcp.org/en/jsr/detail?id=224">JSR 224</a> Java APIs for XML based RPC (JAX-RPC)
+
+    2.0</li>
+
+  <li> <a href="http://jcp.org/en/jsr/detail?id=181">JSR 181</a> Web Services Metadata for the Java<sup><font size="-2">TM</font></sup> Platform</li>
+
+  <li><a href="http://jcp.org/en/jsr/detail?id=183">JSR 183</a> Web Services
+
+    Message Security APIs</li>
+
+  <li><a href="http://www.w3.org/TR/2000/NOTE-SOAP-20000508/">SOAP 1.1</a></li>
+
+  <li><a href="http://www.w3.org/TR/soap12-part1/">SOAP 1.2 Part 1: Messaging Framework</a> and
+
+    <a href="http://www.w3.org/TR/soap12-part2/">SOAP 1.2 Part 2: Adjuncts</a></li>
+
+  <li><a href="http://www.w3.org/TR/2001/NOTE-wsdl-20010315">WSDL 1.1</a></li>
+
+  <li><a href="http://www.w3.org/TR/wsdl20/">WSDL 2.0 Core</a> and <a href="http://www.w3.org/TR/wsdl20-extensions/"> WSDL
+
+    2.0: Predefined Extensions</a> (public draft)</li>
+
+</ul>
+
+
+</P>
+
+<H4>3.2 Explanation of how these items might be used as a starting point for the work.</H4>
+
+<P>The Java APIs for Web services Addressing 1.0 specification will aim to support the work done under WS-Addressing Working Group at W3C. Other documents and specifications listed above will be used in the specification of functionality outlined in Section 2.1 of this JSR</P>
+
+<BR><BR>
+
+</p>
+
+
+
+
+
+
+
+
+<!-- ** BEGIN: footer.jsp ** //-->
+
+
+
+
+
+
+
+
+</td>
+</tr>
+</table>
+
+<!-- ** END: Content Table ** //-->
+
+<!-- ** BEGIN: Footer Table ** //-->
+
+<div id="footer" style="clear: both;">
+    <div class="footleft">
+        <a href="/en/resources/contacts">Contact Us</a>
+    </div>
+	
+    <div class="botbar"><img src="/images/spacer.gif" alt="" height="23" width="1"></div>
+
+    <div class="footleft2">
+         &copy; 2019, Oracle Corporation and/or its affiliates. 
+        <a href="/en/home/terms">Terms of Use</a>. <a href="http://www.oracle.com/us/legal/privacy/index.html">Privacy Policy</a>. <a href="http://www.oracle.com/us/legal/third-party-trademarks/third-party-trademarks-078568.html">Trademarks</a>
+    </div>
+
+    <div class="footright">
+        <img src="/images/common/logo_oracle_footer.gif" alt="Oracle Corporation" height="22" width="91">
+    </div>
+
+    <div style="clear: both;"><img src="/images/spacer.gif" alt="" height="30" width="1"></div>
+</div>
+
+<!-- ** END: Footer Table ** //-->
+
+
+
+<!-- ** Menu Start ** //-->
+
+
+
+</body>
+</html>
+<!-- ** END: footer.jsp ** //-->
+

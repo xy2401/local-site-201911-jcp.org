@@ -1,0 +1,808 @@
+
+<!-- ** BEGIN: header.jsp ** //-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3c.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+<head>
+    
+
+   
+    <link href="/includes/css/menu.css" rel="stylesheet" type="text/css"></link>
+    <link href="/includes/css/style.css" rel="stylesheet" type="text/css"></link>
+    <!--[if lt IE 6]><link href="/includes/css/style5.css" rel="stylesheet" type="text/css" ></link><![endif]-->
+    <!--[if gte IE 5]><link href="/includes/css/style6.css" rel="stylesheet" type="text/css" ></link><![endif]-->
+    <link href="/includes/css/tabs.css"  rel="stylesheet" type="text/css"></link>
+
+    <script type="text/javascript" src="/includes/scripts/tabs.js"></script>
+    <script type="text/javascript" src="/includes/scripts/menu.js"></script>
+   
+
+    
+
+    
+        <title>The Java Community Process(SM) Program - communityprocess - maintenance</title>
+    
+
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+
+
+<body onload="P7_initPM(0,1,0,0,-1)">
+
+    <a name="top"></a>
+
+    <div id="header">
+	<div id="logo">
+		<a href="/en/home/index"><img src="/images/spacer.gif" alt="Java Community Process" height="81" width="151"></a>
+	</div>
+	<div id="tools">
+		<div class="search">
+			<form name="search" action="/en/jsr/summary" method="get" onsubmit="return validate_search()">
+				<input name="id" value="Search JSRs" size="16" class="form" onfocus="nullify_if_equal(this, 'Search JSRs')" type="text">
+				<a href="javascript:document.search.submit()" onclick="return validate_search()"><img src="/images/button_go.gif" width="21" height="16" border="0" alt="Submit this Search" name="sub_search"></a>
+			</form>
+		</div>
+		<div class="tools">
+			<a href="/en/press/pressroom">Press Room</a> &nbsp;|&nbsp;
+			<a href="http://java.com/java/download/index.jsp?cid=jdp78399">Get Java Here</a> &nbsp;|&nbsp;
+			<!-- <a href="javascript:void(0)">Print Format</a> &nbsp;|&nbsp;&nbsp; -->
+		</div>
+
+	</div>
+	<div style="clear: right;"></div>
+
+        
+
+	<div class="topbar"><img src="/images/spacer.gif" alt="" height="3" width="154"></div>
+	<div id="update"> </div>
+    </div>
+
+
+    
+
+        <!-- ** BEGIN: Content Table ** //-->
+
+        <table width="100%" border="0" cellpadding="0" cellspacing="0">
+
+            <tr>
+
+                <!-- ** BEGIN: Navigation Column ** //-->
+                <td width="150" id="leftcontent" valign="top">
+                    <!-- Navigation Placeholder //-->
+
+                    
+
+                    <div class="bar"><img src="/images/hr_dots1.gif" alt="" height="3" width="150"></div>
+
+        <!-- begin find JSRs form -->
+        <!-- IMPORTANT! do not convert this form to Struts < html : form > tag.  javascript change of form.action property fails. -->
+        <img src="/images/hd_find-jsrs.gif" alt="Find JSRs" height="18" width="150">
+        <form name="findjsr" action="/en/jsr/summary" method="get" class="pt5" onsubmit="return validate_findjsr()">
+            <input name="id" size="18" class="form" value="Search JSRs" onfocus="nullify_if_equal(this, 'Search JSRs')" type="text">
+	    <a href="javascript:document.findjsr.submit()" onclick="return validate_findjsr()"><img src="/images/button_go.gif" width="21" height="16" border="0" alt="Submit this Search" name="sub_search"></a>
+        </form><br><br>
+
+        <!-- ** Menu Start ** //-->
+
+        <ul id="p7PMnav">
+            <li><a href="/en/jsr/platform">JSRs by Platform</a></li>
+            <li><a href="/en/jsr/tech">JSRs by Technology</a></li>
+            <li><a href="/en/jsr/stage">JSRs by Stage</a></li>
+            <li><a href="/en/jsr/ec">JSRs by Committee</a></li>
+            <li><a href="/en/jsr/all">List of All JSRs</a></li>
+
+            <!--end find JSRs form -->
+            <div style="clear: both;"><img src="/images/spacer.gif" alt="" height="25" width="1"></div>
+
+            <!--begin my JCP -->
+            <img src="/images/hd_my-jcp.gif" alt="My JCP" height="18" width="150">
+            
+
+          <form name="login" method="get" action="/en/user/login" >
+            <input name="Sign-in" type="submit" title="Sign-in" value="Sign-in" />
+          </form>
+
+            <div style="clear:both"><img src="/images/global/spacer.gif" width="1" height="3" alt=""></div>
+            <div class="noNav">
+                <a href="/en/user/register">Register for Site</a>
+            </div>
+
+             <div class="bar"><img src="/images/hr_dots1.gif" alt="" height="3" width="150"></div>
+           <div class="noNav" style="color: #666666; padding: 0;">
+              Use of JCP site is subject to the
+              <a href="/en/home/terms" style="display:inline;padding: 0">JCP Terms of Use</a> and the
+              <a href="http://www.oracle.com/us/legal/privacy/index.html" style="display:inline;padding: 0" href="">Oracle Privacy Policy</a>
+          </div>
+
+            
+
+            <div style="clear:both"><img src="/images/global/spacer.gif" width="1" height="25" alt=""></div>
+
+            <!--begin JCP info -->
+            <img src="/images/hd_jcp-info.gif" alt="JCP Info" height="18" width="150">
+
+            <li><a href="/en/procedures/overview" class="p7PMtrg">About JCP</a>
+                <ul>
+                    <li><a href="/en/procedures/overview">Program Overview</a></li>
+                    <li><a href="/en/procedures/jcp2">JCP Process Document</a></li>
+                    <li><a href="/en/whatsnew/calendar">Calendar</a></li>
+                    <li><a href="/en/participation/members">JCP Members</a></li>
+                    <li><a href="/en/participation/committee">Executive Committee</a></li>
+                    <li><a href="/en/whatsnew/elections">Elections</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/en/participation/overview" class="p7PMtrg">Get Involved</a>
+		<ul>
+                    <li><a href="/en/participation/overview">Overview</a></li>
+                    <li><a href="/en/participation/membership">Becoming a JCP Member</a></li>
+		</ul>
+            </li>
+
+            <li><a href="/en/resources/contents" class="p7PMtrg">Community Resources</a>
+                <ul>
+                    <li><a href="/en/resources/contents">Overview</a></li>
+                    <li><a href="/en/resources/tutorials">Tutorials</a></li>
+                    <li><a href="/en/resources/multimedia">JCP Podcasts</a></li>
+                    <li><a href="/en/resources/guide">Spec Lead Guide</a></li>
+                    <li><a href="/en/resources/tdk">TCK Tool & Info</a></li>
+                    <li><a href="/en/resources/license_reference">License Reference</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/en/press/pmo" class="p7PMtrg">Community News</a>
+                <ul>
+                    <li><a href="/en/press/pmo">News</a></li>
+                    <li><a href="/en/press/news/awards/awards_main">Programs &amp; Awards</a></li>
+                    <li><a href="/en/press/releases">Press Releases</a></li>
+                    <li><a href="/en/press/success">Success Stories</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/en/introduction/faq">FAQ</a></li>
+
+            <li><a href="/en/resources/contacts">Contact Us</a></li>
+
+            <div style="clear: both;"><img src="/images/spacer.gif" alt="" height="25" width="1"></div>
+
+            <!--[if lte IE 6]><style>#p7PMnav a{height:1em;}#p7PMnav li{height:1em;float:left;clear:both;width:100%}</style><![endif]-->
+            <!--[if IE 6]><style>#p7PMnav li{clear:none;}</style><![endif]-->
+            <!--[if IE 7]><style>#p7PMnav a{zoom:100%;}#p7PMnav li{float:left;clear:both;width:100%;}</style><![endif]-->
+        </ul>
+
+        
+
+        <!--begin ad space -->
+        <div class="ads">
+            <a href="http://java.com/java/download/index.jsp?cid=jdp78399" target="_blank"><img style="display: ;" src="/images/ad_banner2.gif" alt="Ad Banner" border="1" height="70" width="150"></a>
+        </div>
+        <!--end ad space -->
+
+<!-- ** Menu End ** //-->
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;<br>
+
+    
+
+                    &nbsp;<br>
+                    <img src="/images/common/trans.gif" alt="" width="1" height="150"><br>
+
+              
+
+
+
+                </td>
+                <!-- ** END: Navigation Column ** //-->
+
+                <!-- ** BEGIN: Gutter Column ** //-->
+		<td width="10" nowrap><img src="/images/common/trans.gif" alt="" width="10" height="1"></td>
+                <!-- ** END: Gutter Column ** //-->
+
+                <!-- ** BEGIN: Content Column ** //-->
+                <td width="100%" valign="top">
+
+    
+<script type="text/javascript">
+
+String.prototype.trim = function() {
+        return this.replace(/^\s+|\s+$/g,"");
+}
+String.prototype.ltrim = function() {
+        return this.replace(/^\s+/,"");
+}
+String.prototype.rtrim = function() {
+        return this.replace(/\s+$/,"");
+}
+
+function validate_search() {
+	if (document.search.id.value == "Search JSRs" || document.search.id.value.trim().length == 0) {
+		alert("Search terms must be entered first");
+		return false;
+	}
+	return true;
+}
+
+function validate_findjsr() {
+	if (document.findjsr.id.value == "Search JSRs" || document.findjsr.id.value.trim().length == 0) {
+		alert("Search terms must be entered first");
+		return false;
+	}
+	return true;
+}
+
+function nullify_if_equal(field, str) {
+	// alert("val=" + field.value);
+	if (field.value == str) {
+		field.value = "";
+	}
+}
+
+</script>
+<!-- ** END: header.jsp ** //-->
+
+
+
+
+
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<HEAD>
+	<META HTTP-EQUIV="CONTENT-TYPE" CONTENT="text/html; charset=iso-8859-1">
+	<TITLE>Portlet 1.0 Errata &ndash; May 11, 2005</TITLE>
+	<META NAME="GENERATOR" CONTENT="NeoOffice/J 1.1 Beta  (Unix)">
+	<META NAME="CREATED" CONTENT="20050511;3502700">
+	<META NAME="CHANGED" CONTENT="20050511;4064000">
+	<!-- saved from url=(0087)http://jcp.org/aboutJava/communityprocess/maintenance/jsr053/errata_1_2_a_20020321.html -->
+	<STYLE>
+	<!--
+		H1 { color: #000000 }
+		P { color: #000000 }
+		BLOCKQUOTE { color: #000000 }
+		H2 { color: #000000 }
+		H3 { color: #000000 }
+		H4 { color: #000000 }
+		PRE { color: #000000 }
+		A:link { color: #3366cc }
+		A:visited { color: #9999cc }
+	-->
+	</STYLE>
+</HEAD>
+<BODY LANG="en-US" TEXT="#000000" LINK="#3366cc" VLINK="#9999cc" BGCOLOR="#ffffff" DIR="LTR">
+<H1 ALIGN=CENTER STYLE="margin-left: 0.39in; margin-right: 0.39in; margin-top: 0in">
+<FONT FACE="Verdana, Arial, Helvetica, sans-serif"><FONT COLOR="#003366">Portlet
+1.0 Errata &ndash; May 11, 2005</FONT></FONT> 
+</H1>
+<HR>
+<BLOCKQUOTE STYLE="text-align: center"><FONT FACE="Verdana, Arial, Helvetica, sans-serif">Please
+send feedback to </FONT><A HREF="mailto:jsr-168-comments@jcp.org">jsr-168-comments@jcp.org
+</A>
+</BLOCKQUOTE>
+<BLOCKQUOTE><FONT FACE="Verdana, Arial, Helvetica, sans-serif">The
+following is a list of clarifications and corrections to the Portlet
+1.0 final specification (dated October 27th, 2003). </FONT>
+</BLOCKQUOTE>
+<BLOCKQUOTE><FONT FACE="Verdana, Arial, Helvetica, sans-serif">Issues
+were prompted by questions from vendors, implementors and end-users.
+All issues will be incorporated into the Portlet 1.1 specification. </FONT>
+</BLOCKQUOTE>
+<BLOCKQUOTE><FONT FACE="Verdana, Arial, Helvetica, sans-serif">The
+errata starts with a brief list of all issues. Each issue is then
+described in more detail and a resolution is given. All references
+are to the Portlet 1.0 final specification.</FONT></BLOCKQUOTE>
+<BLOCKQUOTE><BR><BR>
+</BLOCKQUOTE>
+<H2 STYLE="margin-left: 0.39in; margin-right: 0.39in; margin-top: 0in"><A NAME="issues"></A>
+<FONT COLOR="#003366"><FONT FACE="Verdana, Arial, Helvetica, sans-serif">All
+Issues </FONT></FONT>
+</H2>
+<BLOCKQUOTE><FONT FACE="Verdana, Arial, Helvetica, sans-serif"><A HREF="#issue1">1.
+Render Parameter</A> <A HREF="#issue2"><BR>2. Supported-Locale Format</A>
+<BR><A HREF="#issue3">3. Version Information Format</A> <BR><A HREF="#issue4">4.
+Preferences Validator Instance</A> <BR><A HREF="#issue5">5.
+Preferences setValue Method</A> <BR><A HREF="#issue6">6. encodeURL
+Method</A> <BR><A HREF="#issue7">7. iframe Tag</A> <BR><A HREF="#issue9">8.
+Typos Correction<BR>9. PortletURL Parameters</A> <BR><A HREF="#issue10">10.
+Request Attribute</A> <BR><A HREF="#issue11">11. PortletURL</A> </FONT><BR><FONT FACE="Verdana, Arial, Helvetica, sans-serif"><A HREF="#issue12">12.
+Servlet Lookup</A> </FONT><BR><A HREF="#issue13"><FONT FACE="Verdana, Arial, Helvetica, sans-serif">13.
+Exception Handling During processAction</FONT></A> <BR><FONT FACE="Verdana, Arial, Helvetica, sans-serif"><A HREF="#issue14">14.
+String[]</A> </FONT><BR><FONT FACE="Verdana, Arial, Helvetica, sans-serif"><A HREF="#issue15">15.
+Preferences Validator</A> </FONT><BR><FONT FACE="Verdana, Arial, Helvetica, sans-serif"><A HREF="#issue16">16.
+Typo Correction</A> </FONT>
+</BLOCKQUOTE>
+<BLOCKQUOTE><BR><BR>
+</BLOCKQUOTE>
+<H2 STYLE="margin-left: 0.39in; margin-right: 0.39in; margin-top: 0in">
+<FONT COLOR="#003366"><FONT FACE="Verdana, Arial, Helvetica, sans-serif">Detailed
+Issues </FONT></FONT>
+</H2>
+<BLOCKQUOTE><A NAME="issue1"></A><FONT FACE="Verdana, Arial, Helvetica, sans-serif"><FONT SIZE=6>Issue
+1</FONT></FONT></BLOCKQUOTE>
+<H3 STYLE="margin-left: 0.39in; margin-right: 0.39in; margin-top: 0in">
+<FONT COLOR="#003366"><FONT FACE="Verdana, Arial, Helvetica, sans-serif">Render
+Parameters</FONT></FONT></H3>
+<BLOCKQUOTE><FONT FACE="Verdana, Arial, Helvetica, sans-serif"><FONT SIZE=3>Portlet
+specification states that the render parameters must be the same
+parameters as of the previous render request. While most of the time
+this is true, there may be cases where the render parameters are
+different. </FONT></FONT>
+</BLOCKQUOTE>
+<H4 STYLE="margin-left: 0.39in; margin-right: 0.39in; margin-top: 0in">
+<FONT COLOR="#003366"><FONT FACE="Verdana, Arial, Helvetica, sans-serif">Resolution</FONT></FONT></H4>
+<H4 STYLE="margin-left: 0.39in; margin-right: 0.39in; margin-top: 0in">
+<FONT FACE="Verdana, Arial, Helvetica, sans-serif">PLT.11.1.1 Request
+Parameters</FONT></H4>
+<BLOCKQUOTE><FONT FACE="Verdana, Arial, Helvetica, sans-serif"><I>[This
+section <B>replaces </B></I>line <I>20 -21 on page 43 in the Portlet
+1.0 specification]<BR><BR><BR></I>If a portlet receives a render
+request that is the result of a client request targeted to another
+portlet in the portal page, the parameters should be the same
+parameters as of the previous render request from this client.</FONT></BLOCKQUOTE>
+<PRE STYLE="margin-left: 0.39in; margin-right: 0.39in">          
+<A NAME="issue2"></A><FONT FACE="Verdana, Arial, Helvetica, sans-serif"><FONT SIZE=6>Issue 2</FONT></FONT></PRE><H3 STYLE="margin-left: 0.39in; margin-right: 0.39in; margin-top: 0in">
+<FONT COLOR="#003366"><FONT FACE="Verdana, Arial, Helvetica, sans-serif">Supported
+Locale Format</FONT></FONT></H3>
+<BLOCKQUOTE><FONT FACE="Verdana, Arial, Helvetica, sans-serif"><FONT SIZE=3>Portlet
+specification requires the portlet to declare the locales it is going
+to support at run-time using the &lt;supported-locale&gt; element in
+the deployment descriptor. The specification however does not mention
+the format of the locale.</FONT></FONT></BLOCKQUOTE>
+<H4 STYLE="margin-left: 0.39in; margin-right: 0.39in; margin-top: 0in">
+<FONT COLOR="#003366"><FONT FACE="Verdana, Arial, Helvetica, sans-serif">Resolution
+</FONT></FONT>
+</H4>
+<H4 STYLE="margin-left: 0.39in; margin-right: 0.39in; margin-top: 0in">
+<FONT FACE="Verdana, Arial, Helvetica, sans-serif">PLT.21.8.2 Locales
+Supported by the Portlet</FONT></H4>
+<BLOCKQUOTE><FONT FACE="Verdana, Arial, Helvetica, sans-serif"><I>[This
+section <B>supplements</B> section PLT.21.8.2 on page 94 in the
+Portlet 1.0 specification, add the text]<BR><BR></I>The supported
+locales declared in the deployment descriptor should follow the
+lang_COUNTRY_variant format as defined by <A HREF="http://www.faqs.org/rfcs/rfc1766.html">RFC
+1766</A> .</FONT> 
+</BLOCKQUOTE>
+<PRE STYLE="margin-left: 0.39in; margin-right: 0.39in; margin-bottom: 0.2in"><A NAME="issue3"></A><FONT FACE="Verdana, Arial, Helvetica, sans-serif"><FONT SIZE=6>Issue 3</FONT></FONT></PRE><H3 STYLE="margin-left: 0.39in; margin-right: 0.39in; margin-top: 0in">
+<FONT COLOR="#003366"><FONT FACE="Verdana, Arial, Helvetica, sans-serif">Version
+Information Format</FONT></FONT></H3>
+<BLOCKQUOTE><FONT FACE="Verdana, Arial, Helvetica, sans-serif"><FONT SIZE=3>Portlet
+specification recommends that Implementation-* attributes in
+META-INF/MANIFEST.MF should be used to define the version
+information. The specification does not mention the format of the
+version information.</FONT></FONT></BLOCKQUOTE>
+<H4 STYLE="margin-left: 0.39in; margin-right: 0.39in; margin-top: 0in">
+<FONT COLOR="#003366"><FONT FACE="Verdana, Arial, Helvetica, sans-serif">Resolution</FONT></FONT></H4>
+<H4 STYLE="margin-left: 0.39in; margin-right: 0.39in; margin-top: 0in">
+<FONT FACE="Verdana, Arial, Helvetica, sans-serif">PLT.21.2.2 Version
+Information</FONT></H4>
+<BLOCKQUOTE><FONT FACE="Verdana, Arial, Helvetica, sans-serif"><I>[This
+section <B>supplements</B> section PLT.21.2.2 on page 80 in the
+Portlet 1.0 specification, add the text]<BR><BR></I>The version
+information should follow the format defined by the <A HREF="http://java.sun.com/j2se/1.4/pdf/versioning.pdf">Java
+Product Versioning Specification</A> </FONT>
+</BLOCKQUOTE>
+<PRE STYLE="margin-left: 0.39in; margin-right: 0.39in; margin-bottom: 0.2in"><A NAME="issue4"></A><FONT FACE="Verdana, Arial, Helvetica, sans-serif"><FONT SIZE=6>Issue 4</FONT></FONT></PRE><H3 STYLE="margin-left: 0.39in; margin-right: 0.39in; margin-top: 0in">
+<FONT COLOR="#003366"><FONT FACE="Verdana, Arial, Helvetica, sans-serif">Preferences
+Validator Instance</FONT></FONT></H3>
+<BLOCKQUOTE><FONT FACE="Verdana, Arial, Helvetica, sans-serif"><FONT SIZE=3>Portlet
+specification states that if a portlet definition includes a
+validator, the portlet container must create a single validator
+instance per portlet definition. If the application is a distributed
+application, the portlet container must create an instance per VM.
+&nbsp;In the case of distributed application, the wording is
+incorrect, the specification should state the the portlet container
+must create an instance of the validator per portlet definition per
+VM.</FONT></FONT></BLOCKQUOTE>
+<H4 STYLE="margin-left: 0.39in; margin-right: 0.39in; margin-top: 0in">
+<FONT COLOR="#003366"><FONT FACE="Verdana, Arial, Helvetica, sans-serif">Resolution</FONT></FONT></H4>
+<H4 STYLE="margin-left: 0.39in; margin-right: 0.39in; margin-top: 0in">
+<FONT FACE="Verdana, Arial, Helvetica, sans-serif">PLT.14.4
+Validating Preference Values</FONT></H4>
+<BLOCKQUOTE><FONT FACE="Verdana, Arial, Helvetica, sans-serif"><I>[This
+section <B>replaces</B> line 18-19 on page 60 in the Portlet 1.0
+specification, the change is in bold]</I></FONT></BLOCKQUOTE>
+<BLOCKQUOTE><FONT FACE="Verdana, Arial, Helvetica, sans-serif">If the
+application is a distributed application, the portlet container must
+create an instance of the validator <B>per portlet definition</B> per
+VM.</FONT></BLOCKQUOTE>
+<BLOCKQUOTE><BR><BR>
+</BLOCKQUOTE>
+<PRE STYLE="margin-left: 0.39in; margin-right: 0.39in; margin-bottom: 0.2in"><A NAME="issue5"></A><FONT FACE="Verdana, Arial, Helvetica, sans-serif"><FONT SIZE=6>Issue 5</FONT></FONT></PRE><H3 STYLE="margin-left: 0.39in; margin-right: 0.39in; margin-top: 0in">
+<FONT COLOR="#003366"><FONT FACE="Verdana, Arial, Helvetica, sans-serif">Preferences
+setValue Method</FONT></FONT></H3>
+<BLOCKQUOTE><FONT FACE="Verdana, Arial, Helvetica, sans-serif"><FONT SIZE=3>Portlet
+specification states that the Preferences setValue method sets a
+single value into the preferences attribute. Though implied, the
+specification does not state the behavior of setValue when setValues
+method has already been called with multiple values. It does not
+clearly state whether the single value replaces the existing set of
+values or the single value is added to the existing set of values. </FONT></FONT>
+</BLOCKQUOTE>
+<H4 STYLE="margin-left: 0.39in; margin-right: 0.39in; margin-top: 0in">
+<FONT COLOR="#003366"><FONT FACE="Verdana, Arial, Helvetica, sans-serif">Resolution</FONT></FONT></H4>
+<H4 STYLE="margin-left: 0.39in; margin-right: 0.39in; margin-top: 0in">
+<FONT FACE="Verdana, Arial, Helvetica, sans-serif">PLT.14.1
+PortletPreferences Interface</FONT></H4>
+<BLOCKQUOTE><FONT FACE="Verdana, Arial, Helvetica, sans-serif"><I>[This
+section <B>supplements</B> section PLT.14.1 on page 57 in the Portlet
+1.0 specification, add the text]</I></FONT></BLOCKQUOTE>
+<BLOCKQUOTE><FONT FACE="Verdana, Arial, Helvetica, sans-serif">If
+setValues method has been called with multiple values. The subsequent
+setValue method overwrites all existing values replacing them with
+the new single value.</FONT></BLOCKQUOTE>
+<PRE STYLE="margin-left: 0.39in; margin-right: 0.39in; margin-bottom: 0.2in"><A NAME="issue6"></A><FONT FACE="Verdana, Arial, Helvetica, sans-serif"><FONT SIZE=6>Issue 6</FONT></FONT></PRE><H3 STYLE="margin-left: 0.39in; margin-right: 0.39in; margin-top: 0in">
+<FONT COLOR="#003366"><FONT FACE="Verdana, Arial, Helvetica, sans-serif">encodeURL
+Method</FONT></FONT></H3>
+<BLOCKQUOTE><FONT FACE="Verdana, Arial, Helvetica, sans-serif"><FONT SIZE=3>Portlet
+specification defines the encodeURL method, however it doesn't
+caution the developer that the returned URL may not be a well formed
+URL.&nbsp;</FONT></FONT></BLOCKQUOTE>
+<H4 STYLE="margin-left: 0.39in; margin-right: 0.39in; margin-top: 0in">
+<FONT COLOR="#003366"><FONT FACE="Verdana, Arial, Helvetica, sans-serif">Resolution</FONT></FONT></H4>
+<H4 STYLE="margin-left: 0.39in; margin-right: 0.39in; margin-top: 0in">
+<FONT FACE="Verdana, Arial, Helvetica, sans-serif">PLT.12.1.2
+Encoding of URLs</FONT></H4>
+<BLOCKQUOTE><FONT FACE="Verdana, Arial, Helvetica, sans-serif"><I>[This
+section <B>supplements</B> section PLT.12.1.2 on page 49 in the
+Portlet 1.0 specification, add the text]</I></FONT></BLOCKQUOTE>
+<BLOCKQUOTE><FONT FACE="Verdana, Arial, Helvetica, sans-serif">Portlet
+developer should be aware that the returned url may not be a well
+formed URL but a special token at the time the portlet is generating
+its content.&nbsp;</FONT></BLOCKQUOTE>
+<BLOCKQUOTE><BR><BR>
+</BLOCKQUOTE>
+<PRE STYLE="margin-left: 0.39in; margin-right: 0.39in; margin-bottom: 0.2in"><A NAME="issue7"></A><FONT FACE="Verdana, Arial, Helvetica, sans-serif"><FONT SIZE=6>Issue 7</FONT></FONT></PRE><H3 STYLE="margin-left: 0.39in; margin-right: 0.39in; margin-top: 0in">
+<FONT COLOR="#003366"><FONT FACE="Verdana, Arial, Helvetica, sans-serif">iframe
+Tag</FONT></FONT></H3>
+<BLOCKQUOTE><FONT FACE="Verdana, Arial, Helvetica, sans-serif"><FONT SIZE=3>Portlet
+specification forbids portlet to generate HTML fragment using iframe
+tag. &nbsp;Further discussion leads to the conclusion that iframe tag
+can be used, though it must be used with caution.</FONT></FONT></BLOCKQUOTE>
+<H4 STYLE="margin-left: 0.39in; margin-right: 0.39in; margin-top: 0in">
+<FONT COLOR="#003366"><FONT FACE="Verdana, Arial, Helvetica, sans-serif">Resolution</FONT></FONT></H4>
+<H4 STYLE="margin-left: 0.39in; margin-right: 0.39in; margin-top: 0in">
+<FONT FACE="Verdana, Arial, Helvetica, sans-serif">PLT.B Markup
+Fragments</FONT></H4>
+<BLOCKQUOTE><FONT FACE="Verdana, Arial, Helvetica, sans-serif"><I>[This
+section <B>replaces</B> line 9-10 on page 113 in the Portlet 1.0
+specification, iframe is removed from the list of must not use tags
+and extra caution is listed]</I></FONT></BLOCKQUOTE>
+<BLOCKQUOTE><FONT FACE="Verdana, Arial, Helvetica, sans-serif">Portlets
+generating HTML fragments must not use the following tags: base,
+body, frame, frameset, head, html and title. iframe tag can be used,
+however it must be used with caution. The usage of the iframe tag
+should not break the portal paradigm.</FONT></BLOCKQUOTE>
+<H4 STYLE="margin-left: 0.39in; margin-right: 0.39in; margin-top: 0in">
+<BR><BR>
+</H4>
+<PRE STYLE="margin-left: 0.39in; margin-right: 0.39in; margin-bottom: 0.2in"><A NAME="issue8"></A><FONT FACE="Verdana, Arial, Helvetica, sans-serif"><FONT SIZE=6>Issue 8</FONT></FONT></PRE><H3 STYLE="margin-left: 0.39in; margin-right: 0.39in; margin-top: 0in">
+<FONT COLOR="#003366"><FONT FACE="Verdana, Arial, Helvetica, sans-serif">Typos
+Corrections</FONT></FONT></H3>
+<BLOCKQUOTE><FONT FACE="Verdana, Arial, Helvetica, sans-serif"><FONT SIZE=3>There
+are a number of typos in the specification. The following shows the
+corrections.</FONT></FONT></BLOCKQUOTE>
+<H4 STYLE="margin-left: 0.39in; margin-right: 0.39in; margin-top: 0in">
+<FONT COLOR="#003366"><FONT FACE="Verdana, Arial, Helvetica, sans-serif">Resolution</FONT></FONT></H4>
+<H4 STYLE="margin-left: 0.39in; margin-right: 0.39in; margin-top: 0in">
+<FONT FACE="Verdana, Arial, Helvetica, sans-serif">PLT.1.5 Other
+Important References</FONT></H4>
+<BLOCKQUOTE><FONT FACE="Verdana, Arial, Helvetica, sans-serif"><I>[This
+section <B>replaces</B> line 17 on page 10 in the Portlet 1.0
+specification, 1776 is replaced with 1766]</I></FONT></BLOCKQUOTE>
+<BLOCKQUOTE><FONT FACE="Verdana, Arial, Helvetica, sans-serif">RFC
+1766 Tags for the Identification of Languages.</FONT></BLOCKQUOTE>
+<H4 STYLE="margin-left: 0.39in; margin-right: 0.39in; margin-top: 0in">
+<FONT FACE="Verdana, Arial, Helvetica, sans-serif">PLT.18.1
+Expiration Cache</FONT></H4>
+<BLOCKQUOTE><FONT FACE="Verdana, Arial, Helvetica, sans-serif"><I>[This
+section <B>replaces</B> line 23-25 on page 71 in the Portlet 1.0
+specification, PortletResponse is replaced with RenderResponse]</I></FONT></BLOCKQUOTE>
+<BLOCKQUOTE><FONT FACE="Verdana, Arial, Helvetica, sans-serif">A
+portlet that has defined an expiration cache in its portlet
+definition may programmatically alter the expiration time by setting
+a property in the RenderResponse object using the EXPIRATION_CACHE
+constant defined in the <B>RenderResponse</B> interface.</FONT></BLOCKQUOTE>
+<H4 STYLE="margin-left: 0.39in; margin-right: 0.39in; margin-top: 0in">
+<BR><BR>
+</H4>
+<H4 STYLE="margin-left: 0.39in; margin-right: 0.39in; margin-top: 0in">
+<FONT FACE="Verdana, Arial, Helvetica, sans-serif">PLT.20.3
+Programmatic Security</FONT></H4>
+<BLOCKQUOTE><FONT FACE="Verdana, Arial, Helvetica, sans-serif"><I>[This
+section <B>replaces</B> example on page 76 in the Portlet 1.0
+specification, &lt;/manager&gt; is replaced with &lt;/role-link&gt;]</I></FONT></BLOCKQUOTE>
+<BLOCKQUOTE><FONT FACE="Verdana, Arial, Helvetica, sans-serif"><B>&lt;</B>security-role-ref
+<B>&gt;</B><BR>&nbsp;&nbsp;&nbsp; &lt;role-name&gt;FOO&lt;/role-name&gt;<BR>&nbsp;
+&nbsp; &lt;role-link&gt;manager&lt;/role-link&gt;<BR>&lt;/security-role-ref&gt;</FONT></BLOCKQUOTE>
+<H4 STYLE="margin-left: 0.39in; margin-right: 0.39in; margin-top: 0in">
+<FONT FACE="Verdana, Arial, Helvetica, sans-serif">PLT.20.4
+Specifying Security Constraints</FONT></H4>
+<BLOCKQUOTE><FONT FACE="Verdana, Arial, Helvetica, sans-serif"><I>[This
+section <B>replaces</B> example on page 77 in the Portlet 1.0
+specification, the extra &quot;/&quot; is removed]</I></FONT></BLOCKQUOTE>
+<BLOCKQUOTE><FONT FACE="Verdana, Arial, Helvetica, sans-serif"><B>&lt;user-data-constraint&gt;</B><BR>&nbsp;&nbsp;&nbsp;
+&lt;transport-guarantee&gt;CONFIDENTIAL&lt;/transport-guarantee&gt;<BR>&lt;/user-data-constraint&gt;</FONT></BLOCKQUOTE>
+<BLOCKQUOTE><BR><BR>
+</BLOCKQUOTE>
+<H4 STYLE="margin-left: 0.39in; margin-right: 0.39in; margin-top: 0in">
+<FONT FACE="Verdana, Arial, Helvetica, sans-serif">PLT.A.1 About
+Portlet Mode</FONT></H4>
+<BLOCKQUOTE><FONT FACE="Verdana, Arial, Helvetica, sans-serif"><I>[This
+section <B>replaces</B> line 37-39 on page 111 in the Portlet 1.0
+specification, &lt;name&gt; is replaced with &lt;portlet-mode&gt;]</I></FONT></BLOCKQUOTE>
+<BLOCKQUOTE><FONT FACE="Verdana, Arial, Helvetica, sans-serif">&lt;custom-portlet-mode&gt;<BR>&nbsp;&nbsp;&nbsp;
+<B>&lt;portlet-mode&gt;about&lt;/portlet-mode&gt;<BR>&lt;</B>/custom-portlet-mode&gt;<BR></FONT><BR><BR>
+</BLOCKQUOTE>
+<PRE STYLE="margin-left: 0.39in; margin-right: 0.39in; margin-bottom: 0.2in"><A NAME="issue9"></A><FONT FACE="Verdana, Arial, Helvetica, sans-serif"><FONT SIZE=6>Issue 9</FONT></FONT></PRE><H3 STYLE="margin-left: 0.39in; margin-right: 0.39in; margin-top: 0in">
+<FONT COLOR="#003366"><FONT FACE="Verdana, Arial, Helvetica, sans-serif">PortletURL
+Parameters&nbsp;</FONT></FONT></H3>
+<BLOCKQUOTE><FONT FACE="Verdana, Arial, Helvetica, sans-serif">Though
+the specification states that the portlet must not see parameters
+targeted to other portlets which implies that the portlet parameters
+are per portlet, it may be clearer to state it's not neccessary to
+namespace or encode the parameters</FONT></BLOCKQUOTE>
+<H4 STYLE="margin-left: 0.39in; margin-right: 0.39in; margin-top: 0in">
+<FONT COLOR="#003366"><FONT FACE="Verdana, Arial, Helvetica, sans-serif">Resolution
+</FONT></FONT>
+</H4>
+<H4 STYLE="margin-left: 0.39in; margin-right: 0.39in; margin-top: 0in">
+<FONT FACE="Verdana, Arial, Helvetica, sans-serif">PLT.11.1.1 Request
+Parameters</FONT></H4>
+<BLOCKQUOTE><FONT FACE="Verdana, Arial, Helvetica, sans-serif"><I>[This
+section <B>supplements</B> section PLT.11.1.1 Request Parameters on
+page 43 in the Portlet 1.0 specification, add the text]</I></FONT></BLOCKQUOTE>
+<BLOCKQUOTE><FONT FACE="Verdana, Arial, Helvetica, sans-serif">The
+portlet must not see parameters targeted to other portlets. Portlet
+should not namespace or encode URL parameters or form parameters.</FONT>
+</BLOCKQUOTE>
+<PRE STYLE="margin-left: 0.39in; margin-right: 0.39in; margin-bottom: 0.2in"><A NAME="issue10"></A><FONT FACE="Verdana, Arial, Helvetica, sans-serif"><FONT SIZE=6>Issue 10</FONT></FONT></PRE><H3 STYLE="margin-left: 0.39in; margin-right: 0.39in; margin-top: 0in">
+<FONT COLOR="#003366"><FONT FACE="Verdana, Arial, Helvetica, sans-serif">Request
+Attribute</FONT></FONT></H3>
+<BLOCKQUOTE><FONT FACE="Verdana, Arial, Helvetica, sans-serif">The
+specification states that request attributes are objects associated
+with a portlet during a single portlet request. While not stated
+explicitly, the intent of the spec is that portlet developers can not
+assume that attributes are shared between action and render
+requests.&nbsp; </FONT>
+</BLOCKQUOTE>
+<H4 STYLE="margin-left: 0.39in; margin-right: 0.39in; margin-top: 0in">
+<FONT COLOR="#003366"><FONT FACE="Verdana, Arial, Helvetica, sans-serif">Resolution
+</FONT></FONT>
+</H4>
+<H4 STYLE="margin-left: 0.39in; margin-right: 0.39in; margin-top: 0in">
+<FONT FACE="Verdana, Arial, Helvetica, sans-serif">PLT.11.1.3 Request
+Attributes</FONT></H4>
+<BLOCKQUOTE><FONT FACE="Verdana, Arial, Helvetica, sans-serif"><I>[This
+section <B>supplements</B> section PLT.11.1.3 Request Attributes on
+page 44 in the Portlet 1.0 specification, add the text]</I></FONT></BLOCKQUOTE>
+<BLOCKQUOTE><FONT FACE="Verdana, Arial, Helvetica, sans-serif">Request
+attributes are objects associated with a portlet during a single
+portlet request. Portlet can not assume that attributes are shared
+between action and render requests. </FONT>
+</BLOCKQUOTE>
+<PRE STYLE="margin-left: 0.39in; margin-right: 0.39in; margin-bottom: 0.2in"><A NAME="issue11"></A><FONT FACE="Verdana, Arial, Helvetica, sans-serif"><FONT SIZE=6>Issue 11</FONT></FONT></PRE><H3 STYLE="margin-left: 0.39in; margin-right: 0.39in; margin-top: 0in">
+<FONT COLOR="#003366"><FONT FACE="Verdana, Arial, Helvetica, sans-serif">Portlet
+URL</FONT></FONT></H3>
+<BLOCKQUOTE><FONT FACE="Verdana, Arial, Helvetica, sans-serif">Whereas
+the specification states what happens when mode and state are not set
+for the Portlet URL tag, the specification does not mention what
+happens when mode and state are not set for the Portlet URL. We need
+to add the same text to the Portlet URL section. </FONT>
+</BLOCKQUOTE>
+<H4 STYLE="margin-left: 0.39in; margin-right: 0.39in; margin-top: 0in">
+<FONT COLOR="#003366"><FONT FACE="Verdana, Arial, Helvetica, sans-serif">Resolution
+</FONT></FONT>
+</H4>
+<H4 STYLE="margin-left: 0.39in; margin-right: 0.39in; margin-top: 0in">
+<FONT FACE="Verdana, Arial, Helvetica, sans-serif">PLT.7.1.1
+Including a Portlet Mode or Window State</FONT></H4>
+<BLOCKQUOTE><FONT FACE="Verdana, Arial, Helvetica, sans-serif"><I>[This
+section <B>supplements</B> section PLT.7.1.1 Including a Portlet Mode
+or Window State on page 32 in the Portlet 1.0 specification, add the
+text]</I></FONT></BLOCKQUOTE>
+<BLOCKQUOTE><FONT FACE="Verdana, Arial, Helvetica, sans-serif">If the
+portlet mode is not set for a URL, it must stay the same as the mode
+of the current request. <BR><BR>If the window state is not set for a
+URL, it should stay the same as the window state of the current
+request. <BR></FONT><BR><BR>
+</BLOCKQUOTE>
+<PRE STYLE="margin-left: 0.39in; margin-right: 0.39in; margin-bottom: 0.2in"><A NAME="issue12"></A><FONT FACE="Verdana, Arial, Helvetica, sans-serif"><FONT SIZE=6>Issue 12</FONT></FONT></PRE><H3 STYLE="margin-left: 0.39in; margin-right: 0.39in; margin-top: 0in">
+<FONT COLOR="#003366"><FONT FACE="Verdana, Arial, Helvetica, sans-serif">Servlet
+Lookup</FONT></FONT></H3>
+<BLOCKQUOTE><FONT FACE="Verdana, Arial, Helvetica, sans-serif">The
+specification doesn't indicate how the path is resolved to a servlet
+when using the request dispatcher.</FONT></BLOCKQUOTE>
+<H4 STYLE="margin-left: 0.39in; margin-right: 0.39in; margin-top: 0in">
+<FONT COLOR="#003366"><FONT FACE="Verdana, Arial, Helvetica, sans-serif">Resolution
+</FONT></FONT>
+</H4>
+<H4 STYLE="margin-left: 0.39in; margin-right: 0.39in; margin-top: 0in">
+<FONT FACE="Verdana, Arial, Helvetica, sans-serif">PLT.16.3 The
+Include Method</FONT></H4>
+<BLOCKQUOTE><FONT FACE="Verdana, Arial, Helvetica, sans-serif"><I>[This
+section <B>supplements</B> section PLT.16.3 The Include Method on
+page 66 in the Portlet 1.0 specification, add the text]</I></FONT></BLOCKQUOTE>
+<BLOCKQUOTE><FONT FACE="Verdana, Arial, Helvetica, sans-serif">The
+lookup of the servlet given a path is done according to the servlet
+path matching rule defined in SRV.11 section of the servlet
+specification.<BR></FONT><BR><BR>
+</BLOCKQUOTE>
+<PRE STYLE="margin-left: 0.39in; margin-right: 0.39in; margin-bottom: 0.2in"><A NAME="issue13"></A><FONT FACE="Verdana, Arial, Helvetica, sans-serif"><FONT SIZE=6>Issue 13</FONT></FONT></PRE><H3 STYLE="margin-left: 0.39in; margin-right: 0.39in; margin-top: 0in">
+<FONT COLOR="#003366"><FONT FACE="Verdana, Arial, Helvetica, sans-serif">Exception
+Handling During processAction&nbsp;</FONT></FONT></H3>
+<BLOCKQUOTE><FONT FACE="Verdana, Arial, Helvetica, sans-serif">The
+specification states that if a portlet throws an exception in the
+processAction method, all operations on the ActionResponse must be
+ignored and the render method must not be invoked within the current
+client request. The specification needs not to mandate that the
+render method must not be invoked within the current client request. </FONT>
+</BLOCKQUOTE>
+<H4 STYLE="margin-left: 0.39in; margin-right: 0.39in; margin-top: 0in">
+<FONT COLOR="#003366"><FONT FACE="Verdana, Arial, Helvetica, sans-serif">Resolution
+</FONT></FONT>
+</H4>
+<BLOCKQUOTE><FONT FACE="Verdana, Arial, Helvetica, sans-serif"><I>[This
+section <B>replaces</B> line 14-16 on page 27 in the Portlet 1.0
+specification, &quot;render method must not be invoked within the
+current client request&quot; is removed]</I></FONT></BLOCKQUOTE>
+<BLOCKQUOTE><FONT FACE="Verdana, Arial, Helvetica, sans-serif">If a
+portlet throws an exception in the processAction method, all
+operations on the ActionResponse must be ignored.</FONT></BLOCKQUOTE>
+<BLOCKQUOTE><BR><BR>
+</BLOCKQUOTE>
+<PRE STYLE="margin-left: 0.39in; margin-right: 0.39in; margin-bottom: 0.2in"><A NAME="issue14"></A><FONT FACE="Verdana, Arial, Helvetica, sans-serif"><FONT SIZE=6>Issue 14</FONT></FONT></PRE><H3 STYLE="margin-left: 0.39in; margin-right: 0.39in; margin-top: 0in">
+<FONT COLOR="#003366"><FONT FACE="Verdana, Arial, Helvetica, sans-serif">String[]&nbsp;</FONT></FONT></H3>
+<BLOCKQUOTE><FONT FACE="Verdana, Arial, Helvetica, sans-serif">For
+those method parameters that take String[], the specification fails
+to state that the portlet container must make a copy of the String[].
+Similarly the specification fails to state when Map which contain
+String[] as values is returned, the portlet container must ensure
+changes to the String[] will not affect the portlet container.</FONT></BLOCKQUOTE>
+<H4 STYLE="margin-left: 0.39in; margin-right: 0.39in; margin-top: 0in">
+<FONT COLOR="#003366"><FONT FACE="Verdana, Arial, Helvetica, sans-serif">Resolution
+</FONT></FONT>
+</H4>
+<BLOCKQUOTE><A NAME="issue15"></A><FONT FACE="Verdana, Arial, Helvetica, sans-serif">For
+those method parameters or return values that take String[] or Map
+with values that are String[], the portlet container must make copies
+of the String[] such that modification to the String[] by the portlet
+after the method call will not affect the function of the portlet
+container. </FONT><BR><BR><FONT SIZE=6><FONT FACE="Verdana, Arial, Helvetica, sans-serif">Issue
+15</FONT></FONT></BLOCKQUOTE>
+<H3 STYLE="margin-left: 0.39in; margin-right: 0.39in; margin-top: 0in">
+<FONT COLOR="#003366"><FONT FACE="Verdana, Arial, Helvetica, sans-serif">Preferences
+Validator</FONT></FONT></H3>
+<BLOCKQUOTE><FONT FACE="Verdana, Arial, Helvetica, sans-serif">The
+specification does not indicate that Preference values cannot be
+changed within the Validator object when the validate method is
+invoked.</FONT></BLOCKQUOTE>
+<H4 STYLE="margin-left: 0.39in; margin-right: 0.39in; margin-top: 0in">
+<FONT COLOR="#003366"><FONT FACE="Verdana, Arial, Helvetica, sans-serif">Resolution
+</FONT></FONT>
+</H4>
+<H4 STYLE="margin-left: 0.39in; margin-right: 0.39in; margin-top: 0in">
+<FONT FACE="Verdana, Arial, Helvetica, sans-serif">PLT.14.4
+Validating Preferences Values</FONT></H4>
+<BLOCKQUOTE><FONT FACE="Verdana, Arial, Helvetica, sans-serif"><I>[This
+section <B>supplements</B> section PLT.14.4 on page 60 in the Portlet
+1.0 specification, add the text to line 26]</I></FONT></BLOCKQUOTE>
+<BLOCKQUOTE><A NAME="issue16"></A><FONT FACE="Verdana, Arial, Helvetica, sans-serif">Portlet
+preferences cannot be modified when they are being validated by a
+PreferencesValidator object. If the store method is invoked within
+the scope of the PreferenceValidator's validate method invocation, an
+IllegalStateException must be thrown.<BR><BR><FONT SIZE=6>Issue 16</FONT></FONT></BLOCKQUOTE>
+<H3 STYLE="margin-left: 0.39in; margin-right: 0.39in; margin-top: 0in">
+<FONT COLOR="#003366"><FONT FACE="Verdana, Arial, Helvetica, sans-serif">Typo
+correction</FONT></FONT></H3>
+<BLOCKQUOTE><FONT FACE="Verdana, Arial, Helvetica, sans-serif">An
+additional typo correction to those indicated in Issue 8.</FONT></BLOCKQUOTE>
+<H4 STYLE="margin-left: 0.39in; margin-right: 0.39in; margin-top: 0in">
+<FONT COLOR="#003366"><FONT FACE="Verdana, Arial, Helvetica, sans-serif">Resolution
+</FONT></FONT>
+</H4>
+<H4 STYLE="margin-left: 0.39in; margin-right: 0.39in; margin-top: 0in">
+<FONT FACE="Verdana, Arial, Helvetica, sans-serif">PLT.8.4 Custom
+Portlet Modes</FONT></H4>
+<BLOCKQUOTE><FONT FACE="Verdana, Arial, Helvetica, sans-serif"><I>[This
+section <B>replaces</B> example on page 36, &lt;name&gt; is replaced
+with &lt;portlet-mode&gt;]</I></FONT></BLOCKQUOTE>
+<BLOCKQUOTE><FONT FACE="Verdana, Arial, Helvetica, sans-serif">Portlet
+preferences cannot be modified when they are being validated by a
+PreferencesValidator object. If the store method is invoked within
+the scope of the PreferenceValidator's validate method invocation, an
+IllegalStateException must be thrown.<BR></FONT><BR><BR>
+</BLOCKQUOTE>
+<BLOCKQUOTE STYLE="margin-bottom: 0in">  <FONT FACE="Courier, sans-serif">&lt;portlet-app&gt;</FONT></BLOCKQUOTE>
+<BLOCKQUOTE STYLE="margin-bottom: 0in">    <FONT FACE="Courier, sans-serif">...</FONT></BLOCKQUOTE>
+<BLOCKQUOTE STYLE="margin-bottom: 0in">    <FONT FACE="Courier, sans-serif">&lt;custom-portlet-mode&gt;</FONT></BLOCKQUOTE>
+<BLOCKQUOTE STYLE="margin-bottom: 0in">      <FONT FACE="Courier, sans-serif">&lt;description&gt;Creates
+content for Cut and Paste&lt;/description&gt;</FONT></BLOCKQUOTE>
+<BLOCKQUOTE STYLE="margin-bottom: 0in">     
+<FONT FACE="Courier, sans-serif"><B>&lt;portlet-mode&gt;</B>clipboard<B>&lt;/portlet-mode&gt;</B></FONT></BLOCKQUOTE>
+<BLOCKQUOTE STYLE="margin-bottom: 0in">    <FONT FACE="Courier, sans-serif">&lt;/custom-portlet-mode&gt;</FONT></BLOCKQUOTE>
+<BLOCKQUOTE STYLE="margin-bottom: 0in">    <FONT FACE="Courier, sans-serif">&lt;custom-portlet-mode&gt;</FONT></BLOCKQUOTE>
+<BLOCKQUOTE STYLE="margin-bottom: 0in">      <FONT FACE="Courier, sans-serif">&lt;description&gt;Provides
+administration functions&lt;/description&gt;</FONT></BLOCKQUOTE>
+<BLOCKQUOTE STYLE="margin-bottom: 0in">     
+<FONT FACE="Courier, sans-serif"><B>&lt;portlet-mode&gt;</B>config<B>&lt;/portlet-mode&gt;</B></FONT></BLOCKQUOTE>
+<BLOCKQUOTE STYLE="margin-bottom: 0in">    <FONT FACE="Courier, sans-serif">&lt;/custom-portlet-mode&gt;</FONT></BLOCKQUOTE>
+<BLOCKQUOTE STYLE="margin-bottom: 0in">    <FONT FACE="Courier, sans-serif">...</FONT></BLOCKQUOTE>
+<BLOCKQUOTE STYLE="margin-bottom: 0in">  <FONT FACE="Courier, sans-serif">&lt;/portlet-app&gt;</FONT><BR><BR>
+</BLOCKQUOTE>
+<HR>
+</BODY>
+</HTML>
+
+
+
+<!-- ** BEGIN: footer.jsp ** //-->
+
+
+
+
+
+
+
+
+</td>
+</tr>
+</table>
+
+<!-- ** END: Content Table ** //-->
+
+<!-- ** BEGIN: Footer Table ** //-->
+
+<div id="footer" style="clear: both;">
+    <div class="footleft">
+        <a href="/en/resources/contacts">Contact Us</a>
+    </div>
+	
+    <div class="botbar"><img src="/images/spacer.gif" alt="" height="23" width="1"></div>
+
+    <div class="footleft2">
+         &copy; 2019, Oracle Corporation and/or its affiliates. 
+        <a href="/en/home/terms">Terms of Use</a>. <a href="http://www.oracle.com/us/legal/privacy/index.html">Privacy Policy</a>. <a href="http://www.oracle.com/us/legal/third-party-trademarks/third-party-trademarks-078568.html">Trademarks</a>
+    </div>
+
+    <div class="footright">
+        <img src="/images/common/logo_oracle_footer.gif" alt="Oracle Corporation" height="22" width="91">
+    </div>
+
+    <div style="clear: both;"><img src="/images/spacer.gif" alt="" height="30" width="1"></div>
+</div>
+
+<!-- ** END: Footer Table ** //-->
+
+
+
+<!-- ** Menu Start ** //-->
+
+
+
+</body>
+</html>
+<!-- ** END: footer.jsp ** //-->
+

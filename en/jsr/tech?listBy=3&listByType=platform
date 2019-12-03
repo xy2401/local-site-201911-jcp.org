@@ -1,0 +1,3765 @@
+
+
+
+<!-- ** BEGIN: header.jsp ** //-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3c.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+<head>
+    
+
+   
+    <link href="/includes/css/menu.css" rel="stylesheet" type="text/css"></link>
+    <link href="/includes/css/style.css" rel="stylesheet" type="text/css"></link>
+    <!--[if lt IE 6]><link href="/includes/css/style5.css" rel="stylesheet" type="text/css" ></link><![endif]-->
+    <!--[if gte IE 5]><link href="/includes/css/style6.css" rel="stylesheet" type="text/css" ></link><![endif]-->
+    <link href="/includes/css/tabs.css"  rel="stylesheet" type="text/css"></link>
+
+    <script type="text/javascript" src="/includes/scripts/tabs.js"></script>
+    <script type="text/javascript" src="/includes/scripts/menu.js"></script>
+   
+
+    
+
+    
+        <title>The Java Community Process(SM) Program - JSRs: Java Specification Requests - List by Technology</title>
+    
+
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+
+
+<body onload="P7_initPM(0,1,0,0,-1)">
+
+    <a name="top"></a>
+
+    <div id="header">
+	<div id="logo">
+		<a href="/en/home/index"><img src="/images/spacer.gif" alt="Java Community Process" height="81" width="151"></a>
+	</div>
+	<div id="tools">
+		<div class="search">
+			<form name="search" action="/en/jsr/summary" method="get" onsubmit="return validate_search()">
+				<input name="id" value="Search JSRs" size="16" class="form" onfocus="nullify_if_equal(this, 'Search JSRs')" type="text">
+				<a href="javascript:document.search.submit()" onclick="return validate_search()"><img src="/images/button_go.gif" width="21" height="16" border="0" alt="Submit this Search" name="sub_search"></a>
+			</form>
+		</div>
+		<div class="tools">
+			<a href="/en/press/pressroom">Press Room</a> &nbsp;|&nbsp;
+			<a href="http://java.com/java/download/index.jsp?cid=jdp78399">Get Java Here</a> &nbsp;|&nbsp;
+			<!-- <a href="javascript:void(0)">Print Format</a> &nbsp;|&nbsp;&nbsp; -->
+		</div>
+
+	</div>
+	<div style="clear: right;"></div>
+
+        
+
+	<div class="topbar"><img src="/images/spacer.gif" alt="" height="3" width="154"></div>
+	<div id="update"> </div>
+    </div>
+
+
+    
+
+        <!-- ** BEGIN: Content Table ** //-->
+
+        <table width="100%" border="0" cellpadding="0" cellspacing="0">
+
+            <tr>
+
+                <!-- ** BEGIN: Navigation Column ** //-->
+                <td width="150" id="leftcontent" valign="top">
+                    <!-- Navigation Placeholder //-->
+
+                    
+
+                    <div class="bar"><img src="/images/hr_dots1.gif" alt="" height="3" width="150"></div>
+
+        <!-- begin find JSRs form -->
+        <!-- IMPORTANT! do not convert this form to Struts < html : form > tag.  javascript change of form.action property fails. -->
+        <img src="/images/hd_find-jsrs.gif" alt="Find JSRs" height="18" width="150">
+        <form name="findjsr" action="/en/jsr/summary" method="get" class="pt5" onsubmit="return validate_findjsr()">
+            <input name="id" size="18" class="form" value="Search JSRs" onfocus="nullify_if_equal(this, 'Search JSRs')" type="text">
+	    <a href="javascript:document.findjsr.submit()" onclick="return validate_findjsr()"><img src="/images/button_go.gif" width="21" height="16" border="0" alt="Submit this Search" name="sub_search"></a>
+        </form><br><br>
+
+        <!-- ** Menu Start ** //-->
+
+        <ul id="p7PMnav">
+            <li><a href="/en/jsr/platform">JSRs by Platform</a></li>
+            <li><a href="/en/jsr/tech">JSRs by Technology</a></li>
+            <li><a href="/en/jsr/stage">JSRs by Stage</a></li>
+            <li><a href="/en/jsr/ec">JSRs by Committee</a></li>
+            <li><a href="/en/jsr/all">List of All JSRs</a></li>
+
+            <!--end find JSRs form -->
+            <div style="clear: both;"><img src="/images/spacer.gif" alt="" height="25" width="1"></div>
+
+            <!--begin my JCP -->
+            <img src="/images/hd_my-jcp.gif" alt="My JCP" height="18" width="150">
+            
+
+          <form name="login" method="get" action="/en/user/login" >
+            <input name="Sign-in" type="submit" title="Sign-in" value="Sign-in" />
+          </form>
+
+            <div style="clear:both"><img src="/images/global/spacer.gif" width="1" height="3" alt=""></div>
+            <div class="noNav">
+                <a href="/en/user/register">Register for Site</a>
+            </div>
+
+             <div class="bar"><img src="/images/hr_dots1.gif" alt="" height="3" width="150"></div>
+           <div class="noNav" style="color: #666666; padding: 0;">
+              Use of JCP site is subject to the
+              <a href="/en/home/terms" style="display:inline;padding: 0">JCP Terms of Use</a> and the
+              <a href="http://www.oracle.com/us/legal/privacy/index.html" style="display:inline;padding: 0" href="">Oracle Privacy Policy</a>
+          </div>
+
+            
+
+            <div style="clear:both"><img src="/images/global/spacer.gif" width="1" height="25" alt=""></div>
+
+            <!--begin JCP info -->
+            <img src="/images/hd_jcp-info.gif" alt="JCP Info" height="18" width="150">
+
+            <li><a href="/en/procedures/overview" class="p7PMtrg">About JCP</a>
+                <ul>
+                    <li><a href="/en/procedures/overview">Program Overview</a></li>
+                    <li><a href="/en/procedures/jcp2">JCP Process Document</a></li>
+                    <li><a href="/en/whatsnew/calendar">Calendar</a></li>
+                    <li><a href="/en/participation/members">JCP Members</a></li>
+                    <li><a href="/en/participation/committee">Executive Committee</a></li>
+                    <li><a href="/en/whatsnew/elections">Elections</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/en/participation/overview" class="p7PMtrg">Get Involved</a>
+		<ul>
+                    <li><a href="/en/participation/overview">Overview</a></li>
+                    <li><a href="/en/participation/membership">Becoming a JCP Member</a></li>
+		</ul>
+            </li>
+
+            <li><a href="/en/resources/contents" class="p7PMtrg">Community Resources</a>
+                <ul>
+                    <li><a href="/en/resources/contents">Overview</a></li>
+                    <li><a href="/en/resources/tutorials">Tutorials</a></li>
+                    <li><a href="/en/resources/multimedia">JCP Podcasts</a></li>
+                    <li><a href="/en/resources/guide">Spec Lead Guide</a></li>
+                    <li><a href="/en/resources/tdk">TCK Tool & Info</a></li>
+                    <li><a href="/en/resources/license_reference">License Reference</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/en/press/pmo" class="p7PMtrg">Community News</a>
+                <ul>
+                    <li><a href="/en/press/pmo">News</a></li>
+                    <li><a href="/en/press/news/awards/awards_main">Programs &amp; Awards</a></li>
+                    <li><a href="/en/press/releases">Press Releases</a></li>
+                    <li><a href="/en/press/success">Success Stories</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/en/introduction/faq">FAQ</a></li>
+
+            <li><a href="/en/resources/contacts">Contact Us</a></li>
+
+            <div style="clear: both;"><img src="/images/spacer.gif" alt="" height="25" width="1"></div>
+
+            <!--[if lte IE 6]><style>#p7PMnav a{height:1em;}#p7PMnav li{height:1em;float:left;clear:both;width:100%}</style><![endif]-->
+            <!--[if IE 6]><style>#p7PMnav li{clear:none;}</style><![endif]-->
+            <!--[if IE 7]><style>#p7PMnav a{zoom:100%;}#p7PMnav li{float:left;clear:both;width:100%;}</style><![endif]-->
+        </ul>
+
+        
+
+        <!--begin ad space -->
+        <div class="ads">
+            <a href="http://java.com/java/download/index.jsp?cid=jdp78399" target="_blank"><img style="display: ;" src="/images/ad_banner2.gif" alt="Ad Banner" border="1" height="70" width="150"></a>
+        </div>
+        <!--end ad space -->
+
+<!-- ** Menu End ** //-->
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;<br>
+
+    
+
+                    &nbsp;<br>
+                    <img src="/images/common/trans.gif" alt="" width="1" height="150"><br>
+
+              
+
+
+
+                </td>
+                <!-- ** END: Navigation Column ** //-->
+
+                <!-- ** BEGIN: Gutter Column ** //-->
+		<td width="10" nowrap><img src="/images/common/trans.gif" alt="" width="10" height="1"></td>
+                <!-- ** END: Gutter Column ** //-->
+
+                <!-- ** BEGIN: Content Column ** //-->
+                <td width="100%" valign="top">
+
+    
+<script type="text/javascript">
+
+String.prototype.trim = function() {
+        return this.replace(/^\s+|\s+$/g,"");
+}
+String.prototype.ltrim = function() {
+        return this.replace(/^\s+/,"");
+}
+String.prototype.rtrim = function() {
+        return this.replace(/\s+$/,"");
+}
+
+function validate_search() {
+	if (document.search.id.value == "Search JSRs" || document.search.id.value.trim().length == 0) {
+		alert("Search terms must be entered first");
+		return false;
+	}
+	return true;
+}
+
+function validate_findjsr() {
+	if (document.findjsr.id.value == "Search JSRs" || document.findjsr.id.value.trim().length == 0) {
+		alert("Search terms must be entered first");
+		return false;
+	}
+	return true;
+}
+
+function nullify_if_equal(field, str) {
+	// alert("val=" + field.value);
+	if (field.value == str) {
+		field.value = "";
+	}
+}
+
+</script>
+<!-- ** END: header.jsp ** //-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<p>
+<div class="header2">JSRs: Java Specification Requests</div>
+<div class="header1">List by JCP Technology</div>
+<div class="anybar"><img src="/images/global/bar_green.gif" alt="" width="12" height="4"></div>
+
+</p>
+
+
+
+<font size="-1">Java&nbsp;EE&nbsp;(54&nbsp;JSRs)&nbsp;| &nbsp;<a href="/en/jsr/tech?listBy=2&listByType=platform">Java&nbsp;SE&nbsp;(65&nbsp;JSRs)</a>&nbsp;| &nbsp;<a href="/en/jsr/tech?listBy=1&listByType=platform">Java&nbsp;ME&nbsp;(85&nbsp;JSRs)</a>
+	</font>
+
+
+<font size="-1">&nbsp;| &nbsp;<a href="/en/jsr/tech?listBy=3&listByType=tech">OSS&nbsp;(13&nbsp;JSRs)</a>&nbsp;| &nbsp;<a href="/en/jsr/tech?listBy=2&listByType=tech">JAIN&nbsp;(22&nbsp;JSRs)</a>&nbsp;| &nbsp;<a href="/en/jsr/tech?listBy=1&listByType=tech">XML&nbsp;(18&nbsp;JSRs)</a>
+	</font>
+	<br><br>
+
+
+
+
+
+	<p><b>Java EE</b></p>
+	<p>The Java Enterprise Edition offers APIs and tools for developing multitier enterprise applications. The JSRs in this list are part of the Java EE platform as component or umbrella JSRs.</p>
+
+
+
+
+
+
+
+
+		<a name="5"></a>
+		<table cellpadding="2" cellspacing="0" border="0" class="listBy_table">
+		<tr>
+			<td class="listBy_tableTitle"><b>5</b></td>
+			<td nowrap><img src="/images/common/trans.gif" alt="" width="20" height="1"></td>
+			<td class="listBy_tableTitle"><b><a href="/en/jsr/detail?id=5">XML Parsing Specification</a></b></td>
+			</tr>
+
+			<tr>
+			<td valign="top" class="listBy_tableHeader">Description:</td>
+			<td></td>
+			<td>The Java<sup><font size="-2">TM</font></sup> API for XML Parsing (JAXP) allows developers to easily use XML Parsers in their applications via the industry standard SAX and DOM APIs.</td>
+			</tr>
+
+			<tr>
+			<td valign="top" class="listBy_tableHeader">Status:</td>
+			<td></td>
+			<td><a href="/en/introduction/glossary#status"><font color=black><span title="A JSR that has produced a Final Release milestone more than a year ago.">Final</span></font></a>
+
+			
+
+			
+
+			<tr>
+			<td valign="top" class="listBy_tableHeader">Latest Stage:</td>
+			<td></td>
+			<td>
+			<table border="1" cellpadding="4">
+			<tr>
+			<td>Final Release</td>
+			
+			<td><a href="http://jcp.org/aboutJava/communityprocess/final/jsr005/index.html">Download page</a></td>
+			
+			
+			<td>Start: 2000-03-21</td>
+			<td></td>
+			</tr>
+			</table>
+
+
+			<tr>
+			<td valign="top" class="listBy_tableHeader">Spec Lead:</td>
+
+				<td></td>
+
+			<td>
+Rajiv&nbsp;Mordani, Oracle</td>
+</tr>
+
+			<tr>
+			  <td colspan="2" valign="top" class="listBy_tableHeader">&nbsp;</td>
+			  <td><img src="/images/jsr/yel-horiz-bar.gif" width="220" height="8" border="0"></td>
+			  </tr>
+		</table>
+
+		&nbsp;<br>
+		&nbsp;<br>
+
+
+
+		<a name="16"></a>
+		<table cellpadding="2" cellspacing="0" border="0" class="listBy_table">
+		<tr>
+			<td class="listBy_tableTitle"><b>16</b></td>
+			<td nowrap><img src="/images/common/trans.gif" alt="" width="20" height="1"></td>
+			<td class="listBy_tableTitle"><b><a href="/en/jsr/detail?id=16">J2EE<sup><font size="-2">TM</font></sup> Connector Architecture</a></b></td>
+			</tr>
+
+			<tr>
+			<td valign="top" class="listBy_tableHeader">Description:</td>
+			<td></td>
+			<td>The J2EE<sup><font size="-2">TM</font></sup> Connector architecture defines a standard architecture for integrating Java<sup><font size="-2">TM</font></sup> applications with existing back-end Enterprise Information systems.</td>
+			</tr>
+
+			<tr>
+			<td valign="top" class="listBy_tableHeader">Status:</td>
+			<td></td>
+			<td><a href="/en/introduction/glossary#status"><font color=black><span title="A JSR that has produced a Final Release milestone more than a year ago.">Final</span></font></a>
+
+			
+
+			
+
+			<tr>
+			<td valign="top" class="listBy_tableHeader">Latest Stage:</td>
+			<td></td>
+			<td>
+			<table border="1" cellpadding="4">
+			<tr>
+			<td>Final Release</td>
+			
+			<td><a href="http://jcp.org/aboutJava/communityprocess/final/jsr016/index.html">Download page</a></td>
+			
+			
+			<td>Start: 2001-09-24</td>
+			<td></td>
+			</tr>
+			</table>
+
+
+			<tr>
+			<td valign="top" class="listBy_tableHeader">Spec Lead:</td>
+
+				<td></td>
+
+			<td>
+Binod&nbsp;PG, Sun Microsystems, Inc.</td>
+</tr>
+
+			<tr>
+			  <td colspan="2" valign="top" class="listBy_tableHeader">&nbsp;</td>
+			  <td><img src="/images/jsr/yel-horiz-bar.gif" width="220" height="8" border="0"></td>
+			  </tr>
+		</table>
+
+		&nbsp;<br>
+		&nbsp;<br>
+
+
+
+		<a name="19"></a>
+		<table cellpadding="2" cellspacing="0" border="0" class="listBy_table">
+		<tr>
+			<td class="listBy_tableTitle"><b>19</b></td>
+			<td nowrap><img src="/images/common/trans.gif" alt="" width="20" height="1"></td>
+			<td class="listBy_tableTitle"><b><a href="/en/jsr/detail?id=19">Enterprise JavaBeans<sup><font size="-2">TM</font></sup> 2.0</a></b></td>
+			</tr>
+
+			<tr>
+			<td valign="top" class="listBy_tableHeader">Description:</td>
+			<td></td>
+			<td>The Enterprise JavaBeans<sup><font size="-2">TM</font></sup> 2.0 specification extends the architecture with integration with JMS, improved support for entity bean persistence, 
+a portable query language for finder methods, and support for server interoperability.</td>
+			</tr>
+
+			<tr>
+			<td valign="top" class="listBy_tableHeader">Status:</td>
+			<td></td>
+			<td><a href="/en/introduction/glossary#status"><font color=black><span title="A JSR that has produced a Maintenance Review or Maintenance Release more than a year ago.">Maintenance</span></font></a>
+
+			
+
+			
+
+			<tr>
+			<td valign="top" class="listBy_tableHeader">Latest Stage:</td>
+			<td></td>
+			<td>
+			<table border="1" cellpadding="4">
+			<tr>
+			<td>Maintenance Draft Review</td>
+			
+			<td><a href="http://jcp.org/aboutJava/communityprocess/maintenance/jsr019/index.html">Download page</a></td>
+			
+			
+			<td>Start: 2002-02-20</td>
+			<td>End: 2002-03-25</td>
+			</tr>
+			</table>
+
+
+			<tr>
+			<td valign="top" class="listBy_tableHeader">Spec Lead:</td>
+
+				<td><a href="/en/press/news/star"><img src="/images/jsr/stars-final-sml-anim-ir.gif" alt="Star Spec Lead" border="0" width="20" height="20" hspace="3" vspace="2"></a></td>
+
+			<td>
+Linda&nbsp;Demichiel, Oracle</td>
+</tr>
+
+			<tr>
+			  <td colspan="2" valign="top" class="listBy_tableHeader">&nbsp;</td>
+			  <td><img src="/images/jsr/yel-horiz-bar.gif" width="220" height="8" border="0"></td>
+			  </tr>
+		</table>
+
+		&nbsp;<br>
+		&nbsp;<br>
+
+
+
+		<a name="45"></a>
+		<table cellpadding="2" cellspacing="0" border="0" class="listBy_table">
+		<tr>
+			<td class="listBy_tableTitle"><b>45</b></td>
+			<td nowrap><img src="/images/common/trans.gif" alt="" width="20" height="1"></td>
+			<td class="listBy_tableTitle"><b><a href="/en/jsr/detail?id=45">Debugging Support for Other Languages</a></b></td>
+			</tr>
+
+			<tr>
+			<td valign="top" class="listBy_tableHeader">Description:</td>
+			<td></td>
+			<td>This specification establishes standardized tools for correlating Java<sup><font size="-2">TM</font></sup> virtual machine byte code to source code of languages other than the Java<sup><font size="-2">TM</font></sup> programming language.</td>
+			</tr>
+
+			<tr>
+			<td valign="top" class="listBy_tableHeader">Status:</td>
+			<td></td>
+			<td><a href="/en/introduction/glossary#status"><font color=black><span title="A JSR that has produced a Final Release milestone more than a year ago.">Final</span></font></a>
+
+			
+
+			
+
+			<tr>
+			<td valign="top" class="listBy_tableHeader">Latest Stage:</td>
+			<td></td>
+			<td>
+			<table border="1" cellpadding="4">
+			<tr>
+			<td>Final Release</td>
+			
+			<td><a href="http://jcp.org/aboutJava/communityprocess/final/jsr045/index.html">Download page</a></td>
+			
+			
+			<td>Start: 2003-11-24</td>
+			<td></td>
+			</tr>
+			</table>
+
+
+			<tr>
+			<td valign="top" class="listBy_tableHeader">Spec Lead:</td>
+
+				<td></td>
+
+			<td>
+Robert&nbsp;Field, Oracle</td>
+</tr>
+
+			<tr>
+			  <td colspan="2" valign="top" class="listBy_tableHeader">&nbsp;</td>
+			  <td><img src="/images/jsr/yel-horiz-bar.gif" width="220" height="8" border="0"></td>
+			  </tr>
+		</table>
+
+		&nbsp;<br>
+		&nbsp;<br>
+
+
+
+		<a name="52"></a>
+		<table cellpadding="2" cellspacing="0" border="0" class="listBy_table">
+		<tr>
+			<td class="listBy_tableTitle"><b>52</b></td>
+			<td nowrap><img src="/images/common/trans.gif" alt="" width="20" height="1"></td>
+			<td class="listBy_tableTitle"><b><a href="/en/jsr/detail?id=52">A Standard Tag Library for JavaServer Pages<sup><font size="-2">TM</font></sup></a></b></td>
+			</tr>
+
+			<tr>
+			<td valign="top" class="listBy_tableHeader">Description:</td>
+			<td></td>
+			<td>A standard tag library for JSP<sup><font size="-2">TM</font></sup> pages.</td>
+			</tr>
+
+			<tr>
+			<td valign="top" class="listBy_tableHeader">Status:</td>
+			<td></td>
+			<td><a href="/en/introduction/glossary#status"><font color=black><span title="A JSR that has produced a Maintenance Review or Maintenance Release more than a year ago.">Maintenance</span></font></a>
+
+			
+
+			
+
+			<tr>
+			<td valign="top" class="listBy_tableHeader">Latest Stage:</td>
+			<td></td>
+			<td>
+			<table border="1" cellpadding="4">
+			<tr>
+			<td>Maintenance Draft Review 3</td>
+			
+			<td><a href="http://jcp.org/aboutJava/communityprocess/maintenance/jsr052/index3.html">Download page</a></td>
+			
+			
+			<td>Start: 2006-10-04</td>
+			<td>End: 2006-11-06</td>
+			</tr>
+			</table>
+
+
+			<tr>
+			<td valign="top" class="listBy_tableHeader">Spec Lead:</td>
+
+				<td></td>
+
+			<td>
+Jan&nbsp;Luehe, Sun Microsystems, Inc.</td>
+</tr>
+
+			<tr>
+			<td valign="top" class="listBy_tableHeader">Spec Lead:</td>
+
+				<td></td>
+
+			<td>
+Eduardo&nbsp;Pelegri-Llopart, Sun Microsystems, Inc.</td>
+</tr>
+
+			<tr>
+			  <td colspan="2" valign="top" class="listBy_tableHeader">&nbsp;</td>
+			  <td><img src="/images/jsr/yel-horiz-bar.gif" width="220" height="8" border="0"></td>
+			  </tr>
+		</table>
+
+		&nbsp;<br>
+		&nbsp;<br>
+
+
+
+		<a name="53"></a>
+		<table cellpadding="2" cellspacing="0" border="0" class="listBy_table">
+		<tr>
+			<td class="listBy_tableTitle"><b>53</b></td>
+			<td nowrap><img src="/images/common/trans.gif" alt="" width="20" height="1"></td>
+			<td class="listBy_tableTitle"><b><a href="/en/jsr/detail?id=53">Java<sup><font size="-2">TM</font></sup> Servlet 2.3 and JavaServer Pages<sup><font size="-2">TM</font></sup> 1.2 Specifications</a></b></td>
+			</tr>
+
+			<tr>
+			<td valign="top" class="listBy_tableHeader">Description:</td>
+			<td></td>
+			<td>The next versions of the Java<sup><font size="-2">TM</font></sup> Servlet and JavaServer Pages<sup><font size="-2">TM</font></sup> (JSP) specifications.</td>
+			</tr>
+
+			<tr>
+			<td valign="top" class="listBy_tableHeader">Status:</td>
+			<td></td>
+			<td><a href="/en/introduction/glossary#status"><font color=black><span title="A JSR that has produced a Maintenance Review or Maintenance Release more than a year ago.">Maintenance</span></font></a>
+
+			
+
+			
+
+			<tr>
+			<td valign="top" class="listBy_tableHeader">Latest Stage:</td>
+			<td></td>
+			<td>
+			<table border="1" cellpadding="4">
+			<tr>
+			<td>Maintenance Draft Review 2</td>
+			
+			<td><a href="http://jcp.org/aboutJava/communityprocess/maintenance/jsr053/index2.html">Download page</a></td>
+			
+			
+			<td>Start: 2002-05-24</td>
+			<td>End: 2002-06-24</td>
+			</tr>
+			</table>
+
+
+			<tr>
+			<td valign="top" class="listBy_tableHeader">Spec Lead:</td>
+
+				<td></td>
+
+			<td>
+Eduardo&nbsp;Pelegri-Llopart, Sun Microsystems, Inc.</td>
+</tr>
+
+			<tr>
+			  <td colspan="2" valign="top" class="listBy_tableHeader">&nbsp;</td>
+			  <td><img src="/images/jsr/yel-horiz-bar.gif" width="220" height="8" border="0"></td>
+			  </tr>
+		</table>
+
+		&nbsp;<br>
+		&nbsp;<br>
+
+
+
+		<a name="58"></a>
+		<table cellpadding="2" cellspacing="0" border="0" class="listBy_table">
+		<tr>
+			<td class="listBy_tableTitle"><b>58</b></td>
+			<td nowrap><img src="/images/common/trans.gif" alt="" width="20" height="1"></td>
+			<td class="listBy_tableTitle"><b><a href="/en/jsr/detail?id=58">Java<sup><font size="-2">TM</font></sup> 2 Platform, Enterprise Edition 1.3 Specification</a></b></td>
+			</tr>
+
+			<tr>
+			<td valign="top" class="listBy_tableHeader">Description:</td>
+			<td></td>
+			<td>Defines the Java<sup><font size="-2">TM</font></sup> 2 Platform, Enterprise Edition, version 1.3.</td>
+			</tr>
+
+			<tr>
+			<td valign="top" class="listBy_tableHeader">Status:</td>
+			<td></td>
+			<td><a href="/en/introduction/glossary#status"><font color=black><span title="A JSR that has produced a Final Release milestone more than a year ago.">Final</span></font></a>
+
+			
+
+			
+
+			<tr>
+			<td valign="top" class="listBy_tableHeader">Latest Stage:</td>
+			<td></td>
+			<td>
+			<table border="1" cellpadding="4">
+			<tr>
+			<td>Final Release</td>
+			
+			<td><a href="http://jcp.org/aboutJava/communityprocess/final/jsr058/index.html">Download page</a></td>
+			
+			
+			<td>Start: 2001-09-24</td>
+			<td></td>
+			</tr>
+			</table>
+
+
+			<tr>
+			<td valign="top" class="listBy_tableHeader">Spec Lead:</td>
+
+				<td><a href="/en/press/news/star"><img src="/images/jsr/stars-final-sml-anim-ir.gif" alt="Star Spec Lead" border="0" width="20" height="20" hspace="3" vspace="2"></a></td>
+
+			<td>
+Bill&nbsp;Shannon, Sun Microsystems, Inc.</td>
+</tr>
+
+			<tr>
+			  <td colspan="2" valign="top" class="listBy_tableHeader">&nbsp;</td>
+			  <td><img src="/images/jsr/yel-horiz-bar.gif" width="220" height="8" border="0"></td>
+			  </tr>
+		</table>
+
+		&nbsp;<br>
+		&nbsp;<br>
+
+
+
+		<a name="63"></a>
+		<table cellpadding="2" cellspacing="0" border="0" class="listBy_table">
+		<tr>
+			<td class="listBy_tableTitle"><b>63</b></td>
+			<td nowrap><img src="/images/common/trans.gif" alt="" width="20" height="1"></td>
+			<td class="listBy_tableTitle"><b><a href="/en/jsr/detail?id=63">Java<sup><font size="-2">TM</font></sup> API for XML Processing 1.1</a></b></td>
+			</tr>
+
+			<tr>
+			<td valign="top" class="listBy_tableHeader">Description:</td>
+			<td></td>
+			<td>The proposed specification will define a set of implementation independent portable APIs supporting XML Processing.</td>
+			</tr>
+
+			<tr>
+			<td valign="top" class="listBy_tableHeader">Status:</td>
+			<td></td>
+			<td><a href="/en/introduction/glossary#status"><font color=black><span title="A JSR that has produced a Final Release milestone more than a year ago.">Final</span></font></a>
+
+			
+
+			
+
+			<tr>
+			<td valign="top" class="listBy_tableHeader">Latest Stage:</td>
+			<td></td>
+			<td>
+			<table border="1" cellpadding="4">
+			<tr>
+			<td>Final Release 2</td>
+			
+			<td><a href="http://jcp.org/aboutJava/communityprocess/final/jsr063/index2.html">Download page</a></td>
+			
+			
+			<td>Start: 2002-09-10</td>
+			<td></td>
+			</tr>
+			</table>
+
+
+			<tr>
+			<td valign="top" class="listBy_tableHeader">Spec Lead:</td>
+
+				<td></td>
+
+			<td>
+Rajiv&nbsp;Mordani, Oracle</td>
+</tr>
+
+			<tr>
+			  <td colspan="2" valign="top" class="listBy_tableHeader">&nbsp;</td>
+			  <td><img src="/images/jsr/yel-horiz-bar.gif" width="220" height="8" border="0"></td>
+			  </tr>
+		</table>
+
+		&nbsp;<br>
+		&nbsp;<br>
+
+
+
+		<a name="67"></a>
+		<table cellpadding="2" cellspacing="0" border="0" class="listBy_table">
+		<tr>
+			<td class="listBy_tableTitle"><b>67</b></td>
+			<td nowrap><img src="/images/common/trans.gif" alt="" width="20" height="1"></td>
+			<td class="listBy_tableTitle"><b><a href="/en/jsr/detail?id=67">Java<sup><font size="-2">TM</font></sup> APIs for XML Messaging 1.0</a></b></td>
+			</tr>
+
+			<tr>
+			<td valign="top" class="listBy_tableHeader">Description:</td>
+			<td></td>
+			<td>JAXM provides an API for packaging and transporting business transactions using on-the-wire protocols being defined by ebXML.org, Oasis, W3C and IETF.</td>
+			</tr>
+
+			<tr>
+			<td valign="top" class="listBy_tableHeader">Status:</td>
+			<td></td>
+			<td><a href="/en/introduction/glossary#status"><font color=black><span title="A JSR that has produced a Maintenance Review or Maintenance Release more than a year ago.">Maintenance</span></font></a>
+
+			
+
+			
+
+			<tr>
+			<td valign="top" class="listBy_tableHeader">Latest Stage:</td>
+			<td></td>
+			<td>
+			<table border="1" cellpadding="4">
+			<tr>
+			<td>Maintenance Release 4</td>
+			
+			<td><a href="http://jcp.org/aboutJava/communityprocess/mrel/jsr067/index4.html">Download page</a></td>
+			
+			
+			<td>Start: 2017-09-15</td>
+			<td></td>
+			</tr>
+			</table>
+
+
+			<tr>
+			<td valign="top" class="listBy_tableHeader">Spec Lead:</td>
+
+				<td></td>
+
+			<td>
+Lukas&nbsp;Jungmann, Oracle</td>
+</tr>
+
+			<tr>
+			  <td colspan="2" valign="top" class="listBy_tableHeader">&nbsp;</td>
+			  <td><img src="/images/jsr/yel-horiz-bar.gif" width="220" height="8" border="0"></td>
+			  </tr>
+		</table>
+
+		&nbsp;<br>
+		&nbsp;<br>
+
+
+
+		<a name="77"></a>
+		<table cellpadding="2" cellspacing="0" border="0" class="listBy_table">
+		<tr>
+			<td class="listBy_tableTitle"><b>77</b></td>
+			<td nowrap><img src="/images/common/trans.gif" alt="" width="20" height="1"></td>
+			<td class="listBy_tableTitle"><b><a href="/en/jsr/detail?id=77">J2EE<sup><font size="-2">TM</font></sup> Management</a></b></td>
+			</tr>
+
+			<tr>
+			<td valign="top" class="listBy_tableHeader">Description:</td>
+			<td></td>
+			<td>The Java<sup><font size="-2">TM</font></sup> 2 Platform, Enterprise Edition Management Specification will provide server vendors and tool vendors with a standard model for managing the J2EE Platform.</td>
+			</tr>
+
+			<tr>
+			<td valign="top" class="listBy_tableHeader">Status:</td>
+			<td></td>
+			<td><a href="/en/introduction/glossary#status"><font color=black><span title="A JSR that has produced a Maintenance Review or Maintenance Release more than a year ago.">Maintenance</span></font></a>
+
+			
+
+			
+
+			<tr>
+			<td valign="top" class="listBy_tableHeader">Latest Stage:</td>
+			<td></td>
+			<td>
+			<table border="1" cellpadding="4">
+			<tr>
+			<td>Maintenance Release</td>
+			
+			<td><a href="http://jcp.org/aboutJava/communityprocess/mrel/jsr077/index.html">Download page</a></td>
+			
+			
+			<td>Start: 2006-06-22</td>
+			<td></td>
+			</tr>
+			</table>
+
+
+			<tr>
+			<td valign="top" class="listBy_tableHeader">Spec Lead:</td>
+
+				<td></td>
+
+			<td>
+Hans&nbsp;Hrasna, Oracle</td>
+</tr>
+
+			<tr>
+			  <td colspan="2" valign="top" class="listBy_tableHeader">&nbsp;</td>
+			  <td><img src="/images/jsr/yel-horiz-bar.gif" width="220" height="8" border="0"></td>
+			  </tr>
+		</table>
+
+		&nbsp;<br>
+		&nbsp;<br>
+
+
+
+		<a name="88"></a>
+		<table cellpadding="2" cellspacing="0" border="0" class="listBy_table">
+		<tr>
+			<td class="listBy_tableTitle"><b>88</b></td>
+			<td nowrap><img src="/images/common/trans.gif" alt="" width="20" height="1"></td>
+			<td class="listBy_tableTitle"><b><a href="/en/jsr/detail?id=88">Java<font size="-2"><sup>TM</sup></font> EE Application Deployment</a></b></td>
+			</tr>
+
+			<tr>
+			<td valign="top" class="listBy_tableHeader">Description:</td>
+			<td></td>
+			<td>This specification provides a complete description of the APIs required by the J2EE platform to enable development of platform-independent deployment tools.</td>
+			</tr>
+
+			<tr>
+			<td valign="top" class="listBy_tableHeader">Status:</td>
+			<td></td>
+			<td><a href="/en/introduction/glossary#status"><font color=black><span title="A JSR that has produced a Maintenance Review or Maintenance Release more than a year ago.">Maintenance</span></font></a>
+
+			
+
+			
+
+			<tr>
+			<td valign="top" class="listBy_tableHeader">Latest Stage:</td>
+			<td></td>
+			<td>
+			<table border="1" cellpadding="4">
+			<tr>
+			<td>Maintenance Release 2</td>
+			
+			<td><a href="http://jcp.org/aboutJava/communityprocess/mrel/jsr088/index.html">Download page</a></td>
+			
+			
+			<td>Start: 2006-06-07</td>
+			<td></td>
+			</tr>
+			</table>
+
+
+			<tr>
+			<td valign="top" class="listBy_tableHeader">Spec Lead:</td>
+
+				<td></td>
+
+			<td>
+Gerald&nbsp;Ingalls, Oracle</td>
+</tr>
+
+			<tr>
+			  <td colspan="2" valign="top" class="listBy_tableHeader">&nbsp;</td>
+			  <td><img src="/images/jsr/yel-horiz-bar.gif" width="220" height="8" border="0"></td>
+			  </tr>
+		</table>
+
+		&nbsp;<br>
+		&nbsp;<br>
+
+
+
+		<a name="93"></a>
+		<table cellpadding="2" cellspacing="0" border="0" class="listBy_table">
+		<tr>
+			<td class="listBy_tableTitle"><b>93</b></td>
+			<td nowrap><img src="/images/common/trans.gif" alt="" width="20" height="1"></td>
+			<td class="listBy_tableTitle"><b><a href="/en/jsr/detail?id=93">Java<sup><font size="-2">TM</font></sup> API for XML Registries 1.0 (JAXR)</a></b></td>
+			</tr>
+
+			<tr>
+			<td valign="top" class="listBy_tableHeader">Description:</td>
+			<td></td>
+			<td>JAXR provides an API for a set of distributed Registry Services that enables business-to-business integration between business enterprises, using the protocols being defined by ebXML.org, Oasis, ISO 11179.</td>
+			</tr>
+
+			<tr>
+			<td valign="top" class="listBy_tableHeader">Status:</td>
+			<td></td>
+			<td><a href="/en/introduction/glossary#status"><font color=black><span title="A JSR that has produced a Final Release milestone more than a year ago.">Final</span></font></a>
+
+			
+
+			
+
+			<tr>
+			<td valign="top" class="listBy_tableHeader">Latest Stage:</td>
+			<td></td>
+			<td>
+			<table border="1" cellpadding="4">
+			<tr>
+			<td>Final Release</td>
+			
+			<td><a href="http://jcp.org/aboutJava/communityprocess/final/jsr093/index.html">Download page</a></td>
+			
+			
+			<td>Start: 2002-06-11</td>
+			<td></td>
+			</tr>
+			</table>
+
+
+			<tr>
+			<td valign="top" class="listBy_tableHeader">Spec Lead:</td>
+
+				<td></td>
+
+			<td>
+Paul&nbsp;Sterk, Sun Microsystems, Inc.</td>
+</tr>
+
+			<tr>
+			  <td colspan="2" valign="top" class="listBy_tableHeader">&nbsp;</td>
+			  <td><img src="/images/jsr/yel-horiz-bar.gif" width="220" height="8" border="0"></td>
+			  </tr>
+		</table>
+
+		&nbsp;<br>
+		&nbsp;<br>
+
+
+
+		<a name="101"></a>
+		<table cellpadding="2" cellspacing="0" border="0" class="listBy_table">
+		<tr>
+			<td class="listBy_tableTitle"><b>101</b></td>
+			<td nowrap><img src="/images/common/trans.gif" alt="" width="20" height="1"></td>
+			<td class="listBy_tableTitle"><b><a href="/en/jsr/detail?id=101">Java<sup><font size="-2">TM</font></sup> APIs for XML based RPC</a></b></td>
+			</tr>
+
+			<tr>
+			<td valign="top" class="listBy_tableHeader">Description:</td>
+			<td></td>
+			<td>Java APIs to support emerging industry XML based RPC standards.</td>
+			</tr>
+
+			<tr>
+			<td valign="top" class="listBy_tableHeader">Status:</td>
+			<td></td>
+			<td><a href="/en/introduction/glossary#status"><font color=black><span title="A JSR that has produced a Final Release milestone more than a year ago.">Final</span></font></a>
+
+			
+
+			
+
+			<tr>
+			<td valign="top" class="listBy_tableHeader">Latest Stage:</td>
+			<td></td>
+			<td>
+			<table border="1" cellpadding="4">
+			<tr>
+			<td>Final Release 2</td>
+			
+			<td><a href="http://jcp.org/aboutJava/communityprocess/final/jsr101/index2.html">Download page</a></td>
+			
+			
+			<td>Start: 2003-10-28</td>
+			<td></td>
+			</tr>
+			</table>
+
+
+			<tr>
+			<td valign="top" class="listBy_tableHeader">Spec Lead:</td>
+
+				<td></td>
+
+			<td>
+Roberto&nbsp;Chinnici, Oracle</td>
+</tr>
+
+			<tr>
+			  <td colspan="2" valign="top" class="listBy_tableHeader">&nbsp;</td>
+			  <td><img src="/images/jsr/yel-horiz-bar.gif" width="220" height="8" border="0"></td>
+			  </tr>
+		</table>
+
+		&nbsp;<br>
+		&nbsp;<br>
+
+
+
+		<a name="109"></a>
+		<table cellpadding="2" cellspacing="0" border="0" class="listBy_table">
+		<tr>
+			<td class="listBy_tableTitle"><b>109</b></td>
+			<td nowrap><img src="/images/common/trans.gif" alt="" width="20" height="1"></td>
+			<td class="listBy_tableTitle"><b><a href="/en/jsr/detail?id=109">Implementing Enterprise Web Services</a></b></td>
+			</tr>
+
+			<tr>
+			<td valign="top" class="listBy_tableHeader">Description:</td>
+			<td></td>
+			<td>This specification defines the programming model and runtime 
+architecture for implementing web services in Java.</td>
+			</tr>
+
+			<tr>
+			<td valign="top" class="listBy_tableHeader">Status:</td>
+			<td></td>
+			<td><a href="/en/introduction/glossary#status"><font color=black><span title="A JSR that has produced a Maintenance Review or Maintenance Release more than a year ago.">Maintenance</span></font></a>
+
+			
+
+			
+
+			<tr>
+			<td valign="top" class="listBy_tableHeader">Latest Stage:</td>
+			<td></td>
+			<td>
+			<table border="1" cellpadding="4">
+			<tr>
+			<td>Maintenance Release 3</td>
+			
+			<td><a href="http://jcp.org/aboutJava/communityprocess/mrel/jsr109/index3.html">Download page</a></td>
+			
+			
+			<td>Start: 2013-06-07</td>
+			<td></td>
+			</tr>
+			</table>
+
+
+			<tr>
+			<td valign="top" class="listBy_tableHeader">Spec Lead:</td>
+
+				<td></td>
+
+			<td>
+Jitendra&nbsp;Kotamraju, Oracle</td>
+</tr>
+
+			<tr>
+			  <td colspan="2" valign="top" class="listBy_tableHeader">&nbsp;</td>
+			  <td><img src="/images/jsr/yel-horiz-bar.gif" width="220" height="8" border="0"></td>
+			  </tr>
+		</table>
+
+		&nbsp;<br>
+		&nbsp;<br>
+
+
+
+		<a name="112"></a>
+		<table cellpadding="2" cellspacing="0" border="0" class="listBy_table">
+		<tr>
+			<td class="listBy_tableTitle"><b>112</b></td>
+			<td nowrap><img src="/images/common/trans.gif" alt="" width="20" height="1"></td>
+			<td class="listBy_tableTitle"><b><a href="/en/jsr/detail?id=112">J2EE<sup><font size="-2">TM</font></sup> Connector Architecture 1.5</a></b></td>
+			</tr>
+
+			<tr>
+			<td valign="top" class="listBy_tableHeader">Description:</td>
+			<td></td>
+			<td>The J2EE(TM) Connector Architecture 1/5 extends the existing 1.0 specification with new features including asynchronous integration with enterprise information systems, Java Message Service (JMS)
+provider pluggability.</td>
+			</tr>
+
+			<tr>
+			<td valign="top" class="listBy_tableHeader">Status:</td>
+			<td></td>
+			<td><a href="/en/introduction/glossary#status"><font color=black><span title="A JSR that has produced a Final Release milestone more than a year ago.">Final</span></font></a>
+
+			
+
+			
+
+			<tr>
+			<td valign="top" class="listBy_tableHeader">Latest Stage:</td>
+			<td></td>
+			<td>
+			<table border="1" cellpadding="4">
+			<tr>
+			<td>Final Release</td>
+			
+			<td><a href="http://jcp.org/aboutJava/communityprocess/final/jsr112/index.html">Download page</a></td>
+			
+			
+			<td>Start: 2003-11-24</td>
+			<td></td>
+			</tr>
+			</table>
+
+
+			<tr>
+			<td valign="top" class="listBy_tableHeader">Spec Lead:</td>
+
+				<td></td>
+
+			<td>
+Binod&nbsp;PG, Sun Microsystems, Inc.</td>
+</tr>
+
+			<tr>
+			  <td colspan="2" valign="top" class="listBy_tableHeader">&nbsp;</td>
+			  <td><img src="/images/jsr/yel-horiz-bar.gif" width="220" height="8" border="0"></td>
+			  </tr>
+		</table>
+
+		&nbsp;<br>
+		&nbsp;<br>
+
+
+
+		<a name="115"></a>
+		<table cellpadding="2" cellspacing="0" border="0" class="listBy_table">
+		<tr>
+			<td class="listBy_tableTitle"><b>115</b></td>
+			<td nowrap><img src="/images/common/trans.gif" alt="" width="20" height="1"></td>
+			<td class="listBy_tableTitle"><b><a href="/en/jsr/detail?id=115">Java<sup><font size="-2">TM</font></sup> Authorization Contract for Containers</a></b></td>
+			</tr>
+
+			<tr>
+			<td valign="top" class="listBy_tableHeader">Description:</td>
+			<td></td>
+			<td>This JSR seeks to define a contract between containers and authorization service providers that will result in the implementation of providers for use by containers.</td>
+			</tr>
+
+			<tr>
+			<td valign="top" class="listBy_tableHeader">Status:</td>
+			<td></td>
+			<td><a href="/en/introduction/glossary#status"><font color=black><span title="A JSR that has produced a Maintenance Review or Maintenance Release more than a year ago.">Maintenance</span></font></a>
+
+			
+
+			
+
+			<tr>
+			<td valign="top" class="listBy_tableHeader">Latest Stage:</td>
+			<td></td>
+			<td>
+			<table border="1" cellpadding="4">
+			<tr>
+			<td>Maintenance Release 3</td>
+			
+			<td><a href="http://jcp.org/aboutJava/communityprocess/mrel/jsr115/index3.html">Download page</a></td>
+			
+			
+			<td>Start: 2013-06-10</td>
+			<td></td>
+			</tr>
+			</table>
+
+
+			<tr>
+			<td valign="top" class="listBy_tableHeader">Spec Lead:</td>
+
+				<td></td>
+
+			<td>
+Ronald&nbsp;Monzillo, Oracle</td>
+</tr>
+
+			<tr>
+			  <td colspan="2" valign="top" class="listBy_tableHeader">&nbsp;</td>
+			  <td><img src="/images/jsr/yel-horiz-bar.gif" width="220" height="8" border="0"></td>
+			  </tr>
+		</table>
+
+		&nbsp;<br>
+		&nbsp;<br>
+
+
+
+		<a name="151"></a>
+		<table cellpadding="2" cellspacing="0" border="0" class="listBy_table">
+		<tr>
+			<td class="listBy_tableTitle"><b>151</b></td>
+			<td nowrap><img src="/images/common/trans.gif" alt="" width="20" height="1"></td>
+			<td class="listBy_tableTitle"><b><a href="/en/jsr/detail?id=151">Java<sup><font size="-2">TM</font></sup> 2 Platform, Enterprise Edition 1.4 (J2EE 1.4) Specification</a></b></td>
+			</tr>
+
+			<tr>
+			<td valign="top" class="listBy_tableHeader">Description:</td>
+			<td></td>
+			<td>This JSR is to develop J2EE 1.4, the next release of the Java 2 Platform, Enterprise Edition.</td>
+			</tr>
+
+			<tr>
+			<td valign="top" class="listBy_tableHeader">Status:</td>
+			<td></td>
+			<td><a href="/en/introduction/glossary#status"><font color=black><span title="A JSR that has produced a Maintenance Review or Maintenance Release more than a year ago.">Maintenance</span></font></a>
+
+			
+
+			
+
+			<tr>
+			<td valign="top" class="listBy_tableHeader">Latest Stage:</td>
+			<td></td>
+			<td>
+			<table border="1" cellpadding="4">
+			<tr>
+			<td>Maintenance Draft Review</td>
+			
+			<td><a href="http://jcp.org/aboutJava/communityprocess/maintenance/jsr151/index.html">Download page</a></td>
+			
+			
+			<td>Start: 2004-03-24</td>
+			<td>End: 2004-04-26</td>
+			</tr>
+			</table>
+
+
+			<tr>
+			<td valign="top" class="listBy_tableHeader">Spec Lead:</td>
+
+				<td></td>
+
+			<td>
+Mark&nbsp;Hapner, Sun Microsystems, Inc.</td>
+</tr>
+
+			<tr>
+			<td valign="top" class="listBy_tableHeader">Spec Lead:</td>
+
+				<td><a href="/en/press/news/star"><img src="/images/jsr/stars-final-sml-anim-ir.gif" alt="Star Spec Lead" border="0" width="20" height="20" hspace="3" vspace="2"></a></td>
+
+			<td>
+Bill&nbsp;Shannon, Sun Microsystems, Inc.</td>
+</tr>
+
+			<tr>
+			  <td colspan="2" valign="top" class="listBy_tableHeader">&nbsp;</td>
+			  <td><img src="/images/jsr/yel-horiz-bar.gif" width="220" height="8" border="0"></td>
+			  </tr>
+		</table>
+
+		&nbsp;<br>
+		&nbsp;<br>
+
+
+
+		<a name="152"></a>
+		<table cellpadding="2" cellspacing="0" border="0" class="listBy_table">
+		<tr>
+			<td class="listBy_tableTitle"><b>152</b></td>
+			<td nowrap><img src="/images/common/trans.gif" alt="" width="20" height="1"></td>
+			<td class="listBy_tableTitle"><b><a href="/en/jsr/detail?id=152">JavaServer Pages<sup><font size="-2">TM</font></sup> 2.0 Specification</a></b></td>
+			</tr>
+
+			<tr>
+			<td valign="top" class="listBy_tableHeader">Description:</td>
+			<td></td>
+			<td>Next revision of the JavaServer Pages<sup><font size="-2">TM</font></sup> specification.</td>
+			</tr>
+
+			<tr>
+			<td valign="top" class="listBy_tableHeader">Status:</td>
+			<td></td>
+			<td><a href="/en/introduction/glossary#status"><font color=black><span title="A JSR that has produced a Final Release milestone more than a year ago.">Final</span></font></a>
+
+			
+
+			
+
+			<tr>
+			<td valign="top" class="listBy_tableHeader">Latest Stage:</td>
+			<td></td>
+			<td>
+			<table border="1" cellpadding="4">
+			<tr>
+			<td>Final Release</td>
+			
+			<td><a href="http://jcp.org/aboutJava/communityprocess/final/jsr152/index.html">Download page</a></td>
+			
+			
+			<td>Start: 2003-11-24</td>
+			<td></td>
+			</tr>
+			</table>
+
+
+			<tr>
+			<td valign="top" class="listBy_tableHeader">Spec Lead:</td>
+
+				<td></td>
+
+			<td>
+Eduardo&nbsp;Pelegri-Llopart, Sun Microsystems, Inc.</td>
+</tr>
+
+			<tr>
+			<td valign="top" class="listBy_tableHeader">Spec Lead:</td>
+
+				<td></td>
+
+			<td>
+Mark&nbsp;Roth, Sun Microsystems, Inc.</td>
+</tr>
+
+			<tr>
+			  <td colspan="2" valign="top" class="listBy_tableHeader">&nbsp;</td>
+			  <td><img src="/images/jsr/yel-horiz-bar.gif" width="220" height="8" border="0"></td>
+			  </tr>
+		</table>
+
+		&nbsp;<br>
+		&nbsp;<br>
+
+
+
+		<a name="153"></a>
+		<table cellpadding="2" cellspacing="0" border="0" class="listBy_table">
+		<tr>
+			<td class="listBy_tableTitle"><b>153</b></td>
+			<td nowrap><img src="/images/common/trans.gif" alt="" width="20" height="1"></td>
+			<td class="listBy_tableTitle"><b><a href="/en/jsr/detail?id=153">Enterprise JavaBeans<sup><font size="-2">TM</font></sup> 2.1</a></b></td>
+			</tr>
+
+			<tr>
+			<td valign="top" class="listBy_tableHeader">Description:</td>
+			<td></td>
+			<td>The Enterprise JavaBeans 2.1 specification adds to the EJB
+architecture support for web services, extensions to message-driven beans, enhancements to EJB QL, and a container-managed timer service.</td>
+			</tr>
+
+			<tr>
+			<td valign="top" class="listBy_tableHeader">Status:</td>
+			<td></td>
+			<td><a href="/en/introduction/glossary#status"><font color=black><span title="A JSR that has produced a Final Release milestone more than a year ago.">Final</span></font></a>
+
+			
+
+			
+
+			<tr>
+			<td valign="top" class="listBy_tableHeader">Latest Stage:</td>
+			<td></td>
+			<td>
+			<table border="1" cellpadding="4">
+			<tr>
+			<td>Final Release</td>
+			
+			<td><a href="http://jcp.org/aboutJava/communityprocess/final/jsr153/index.html">Download page</a></td>
+			
+			
+			<td>Start: 2003-11-24</td>
+			<td></td>
+			</tr>
+			</table>
+
+
+			<tr>
+			<td valign="top" class="listBy_tableHeader">Spec Lead:</td>
+
+				<td><a href="/en/press/news/star"><img src="/images/jsr/stars-final-sml-anim-ir.gif" alt="Star Spec Lead" border="0" width="20" height="20" hspace="3" vspace="2"></a></td>
+
+			<td>
+Linda&nbsp;Demichiel, Oracle</td>
+</tr>
+
+			<tr>
+			  <td colspan="2" valign="top" class="listBy_tableHeader">&nbsp;</td>
+			  <td><img src="/images/jsr/yel-horiz-bar.gif" width="220" height="8" border="0"></td>
+			  </tr>
+		</table>
+
+		&nbsp;<br>
+		&nbsp;<br>
+
+
+
+		<a name="154"></a>
+		<table cellpadding="2" cellspacing="0" border="0" class="listBy_table">
+		<tr>
+			<td class="listBy_tableTitle"><b>154</b></td>
+			<td nowrap><img src="/images/common/trans.gif" alt="" width="20" height="1"></td>
+			<td class="listBy_tableTitle"><b><a href="/en/jsr/detail?id=154">Java<sup><font size="-2">TM</font></sup> Servlet 2.4 Specification</a></b></td>
+			</tr>
+
+			<tr>
+			<td valign="top" class="listBy_tableHeader">Description:</td>
+			<td></td>
+			<td>This specification will build on servlet specification version 2.3 by enhancing existing features and adding new facilities of a reasonably small
+nature.</td>
+			</tr>
+
+			<tr>
+			<td valign="top" class="listBy_tableHeader">Status:</td>
+			<td></td>
+			<td><a href="/en/introduction/glossary#status"><font color=black><span title="A JSR that has produced a Maintenance Review or Maintenance Release more than a year ago.">Maintenance</span></font></a>
+
+			
+
+			
+
+			<tr>
+			<td valign="top" class="listBy_tableHeader">Latest Stage:</td>
+			<td></td>
+			<td>
+			<table border="1" cellpadding="4">
+			<tr>
+			<td>Maintenance Release 2</td>
+			
+			<td><a href="http://jcp.org/aboutJava/communityprocess/mrel/jsr154/index2.html">Download page</a></td>
+			
+			
+			<td>Start: 2007-09-11</td>
+			<td></td>
+			</tr>
+			</table>
+
+
+			<tr>
+			<td valign="top" class="listBy_tableHeader">Spec Lead:</td>
+
+				<td></td>
+
+			<td>
+Rajiv&nbsp;Mordani, Oracle</td>
+</tr>
+
+			<tr>
+			  <td colspan="2" valign="top" class="listBy_tableHeader">&nbsp;</td>
+			  <td><img src="/images/jsr/yel-horiz-bar.gif" width="220" height="8" border="0"></td>
+			  </tr>
+		</table>
+
+		&nbsp;<br>
+		&nbsp;<br>
+
+
+
+		<a name="181"></a>
+		<table cellpadding="2" cellspacing="0" border="0" class="listBy_table">
+		<tr>
+			<td class="listBy_tableTitle"><b>181</b></td>
+			<td nowrap><img src="/images/common/trans.gif" alt="" width="20" height="1"></td>
+			<td class="listBy_tableTitle"><b><a href="/en/jsr/detail?id=181">Web Services Metadata for the Java<sup><font size="-2">TM</font></sup> Platform</a></b></td>
+			</tr>
+
+			<tr>
+			<td valign="top" class="listBy_tableHeader">Description:</td>
+			<td></td>
+			<td>This JSR defines an annotated Java<sup><font size="-2">TM</font></sup> format that that uses Java<sup><font size="-2">TM</font></sup> Language Metadata (JSR 175) to enable easy definition of Java Web Services in
+a J2EE container.</td>
+			</tr>
+
+			<tr>
+			<td valign="top" class="listBy_tableHeader">Status:</td>
+			<td></td>
+			<td><a href="/en/introduction/glossary#status"><font color=black><span title="A JSR that has produced a Maintenance Review or Maintenance Release more than a year ago.">Maintenance</span></font></a>
+
+			
+
+			
+
+			<tr>
+			<td valign="top" class="listBy_tableHeader">Latest Stage:</td>
+			<td></td>
+			<td>
+			<table border="1" cellpadding="4">
+			<tr>
+			<td>Maintenance Release 2</td>
+			
+			<td><a href="http://jcp.org/aboutJava/communityprocess/mrel/jsr181/index2.html">Download page</a></td>
+			
+			
+			<td>Start: 2013-06-18</td>
+			<td></td>
+			</tr>
+			</table>
+
+
+			<tr>
+			<td valign="top" class="listBy_tableHeader">Spec Lead:</td>
+
+				<td></td>
+
+			<td>
+Alan&nbsp;Mullendore, Oracle</td>
+</tr>
+
+			<tr>
+			  <td colspan="2" valign="top" class="listBy_tableHeader">&nbsp;</td>
+			  <td><img src="/images/jsr/yel-horiz-bar.gif" width="220" height="8" border="0"></td>
+			  </tr>
+		</table>
+
+		&nbsp;<br>
+		&nbsp;<br>
+
+
+
+		<a name="220"></a>
+		<table cellpadding="2" cellspacing="0" border="0" class="listBy_table">
+		<tr>
+			<td class="listBy_tableTitle"><b>220</b></td>
+			<td nowrap><img src="/images/common/trans.gif" alt="" width="20" height="1"></td>
+			<td class="listBy_tableTitle"><b><a href="/en/jsr/detail?id=220">Enterprise JavaBeans<sup><font size="-2">TM</font></sup> 3.0</a></b></td>
+			</tr>
+
+			<tr>
+			<td valign="top" class="listBy_tableHeader">Description:</td>
+			<td></td>
+			<td>The purpose of Enterprise JavaBeans (EJB) 3.0 is to improve the EJB architecture by reducing its complexity from the developer's point of view.</td>
+			</tr>
+
+			<tr>
+			<td valign="top" class="listBy_tableHeader">Status:</td>
+			<td></td>
+			<td><a href="/en/introduction/glossary#status"><font color=black><span title="A JSR that has produced a Maintenance Review or Maintenance Release more than a year ago.">Maintenance</span></font></a>
+
+			
+
+			
+
+			<tr>
+			<td valign="top" class="listBy_tableHeader">Latest Stage:</td>
+			<td></td>
+			<td>
+			<table border="1" cellpadding="4">
+			<tr>
+			<td>Maintenance Draft Review</td>
+			
+			<td><a href="http://jcp.org/aboutJava/communityprocess/maintenance/jsr220/index.html">Download page</a></td>
+			
+			
+			<td>Start: 2007-11-14</td>
+			<td>End: 2007-12-17</td>
+			</tr>
+			</table>
+
+
+			<tr>
+			<td valign="top" class="listBy_tableHeader">Spec Lead:</td>
+
+				<td><a href="/en/press/news/star"><img src="/images/jsr/stars-final-sml-anim-ir.gif" alt="Star Spec Lead" border="0" width="20" height="20" hspace="3" vspace="2"></a></td>
+
+			<td>
+Linda&nbsp;Demichiel, Oracle</td>
+</tr>
+
+			<tr>
+			<td valign="top" class="listBy_tableHeader">Spec Lead:</td>
+
+				<td></td>
+
+			<td>
+Mike&nbsp;Keith, Oracle</td>
+</tr>
+
+			<tr>
+			  <td colspan="2" valign="top" class="listBy_tableHeader">&nbsp;</td>
+			  <td><img src="/images/jsr/yel-horiz-bar.gif" width="220" height="8" border="0"></td>
+			  </tr>
+		</table>
+
+		&nbsp;<br>
+		&nbsp;<br>
+
+
+
+		<a name="222"></a>
+		<table cellpadding="2" cellspacing="0" border="0" class="listBy_table">
+		<tr>
+			<td class="listBy_tableTitle"><b>222</b></td>
+			<td nowrap><img src="/images/common/trans.gif" alt="" width="20" height="1"></td>
+			<td class="listBy_tableTitle"><b><a href="/en/jsr/detail?id=222">Java<sup><font size="-2">TM</font></sup> Architecture for XML Binding (JAXB) 2.0</a></b></td>
+			</tr>
+
+			<tr>
+			<td valign="top" class="listBy_tableHeader">Description:</td>
+			<td></td>
+			<td>JAXB 2.0 is the next version of JAXB, The Java<sup><font size="-2">TM</font></sup> Architecture for XML Binding. This JSR proposes additional functionality while retaining ease of development as a key goal.</td>
+			</tr>
+
+			<tr>
+			<td valign="top" class="listBy_tableHeader">Status:</td>
+			<td></td>
+			<td><a href="/en/introduction/glossary#status"><font color=black><span title="A JSR that has produced a Maintenance Review or Maintenance Release more than a year ago.">Maintenance</span></font></a>
+
+			
+
+			
+
+			<tr>
+			<td valign="top" class="listBy_tableHeader">Latest Stage:</td>
+			<td></td>
+			<td>
+			<table border="1" cellpadding="4">
+			<tr>
+			<td>Maintenance Release 3</td>
+			
+			<td><a href="http://jcp.org/aboutJava/communityprocess/mrel/jsr222/index3.html">Download page</a></td>
+			
+			
+			<td>Start: 2017-09-19</td>
+			<td></td>
+			</tr>
+			</table>
+
+
+			<tr>
+			<td valign="top" class="listBy_tableHeader">Spec Lead:</td>
+
+				<td></td>
+
+			<td>
+Roman&nbsp;Grigoriadi, Oracle</td>
+</tr>
+
+			<tr>
+			  <td colspan="2" valign="top" class="listBy_tableHeader">&nbsp;</td>
+			  <td><img src="/images/jsr/yel-horiz-bar.gif" width="220" height="8" border="0"></td>
+			  </tr>
+		</table>
+
+		&nbsp;<br>
+		&nbsp;<br>
+
+
+
+		<a name="224"></a>
+		<table cellpadding="2" cellspacing="0" border="0" class="listBy_table">
+		<tr>
+			<td class="listBy_tableTitle"><b>224</b></td>
+			<td nowrap><img src="/images/common/trans.gif" alt="" width="20" height="1"></td>
+			<td class="listBy_tableTitle"><b><a href="/en/jsr/detail?id=224">Java<sup><font Size="-2">TM</font></sup> API for XML-Based Web Services (JAX-WS) 2.0</a></b></td>
+			</tr>
+
+			<tr>
+			<td valign="top" class="listBy_tableHeader">Description:</td>
+			<td></td>
+			<td>The JAX-WS 2.0 specification is the next generation web services API replacing JAX-RPC 1.0.</td>
+			</tr>
+
+			<tr>
+			<td valign="top" class="listBy_tableHeader">Status:</td>
+			<td></td>
+			<td><a href="/en/introduction/glossary#status"><font color=black><span title="A JSR that has produced a Maintenance Review or Maintenance Release more than a year ago.">Maintenance</span></font></a>
+
+			
+
+			
+
+			<tr>
+			<td valign="top" class="listBy_tableHeader">Latest Stage:</td>
+			<td></td>
+			<td>
+			<table border="1" cellpadding="4">
+			<tr>
+			<td>Maintenance Release 5</td>
+			
+			<td><a href="http://jcp.org/aboutJava/communityprocess/mrel/jsr224/index5.html">Download page</a></td>
+			
+			
+			<td>Start: 2017-09-21</td>
+			<td></td>
+			</tr>
+			</table>
+
+
+			<tr>
+			<td valign="top" class="listBy_tableHeader">Spec Lead:</td>
+
+				<td></td>
+
+			<td>
+Lukas&nbsp;Jungmann, Oracle</td>
+</tr>
+
+			<tr>
+			  <td colspan="2" valign="top" class="listBy_tableHeader">&nbsp;</td>
+			  <td><img src="/images/jsr/yel-horiz-bar.gif" width="220" height="8" border="0"></td>
+			  </tr>
+		</table>
+
+		&nbsp;<br>
+		&nbsp;<br>
+
+
+
+		<a name="244"></a>
+		<table cellpadding="2" cellspacing="0" border="0" class="listBy_table">
+		<tr>
+			<td class="listBy_tableTitle"><b>244</b></td>
+			<td nowrap><img src="/images/common/trans.gif" alt="" width="20" height="1"></td>
+			<td class="listBy_tableTitle"><b><a href="/en/jsr/detail?id=244">Java<sup><font size="-2">TM</font></sup> Platform, Enterprise Edition 5 (Java EE 5) Specification</a></b></td>
+			</tr>
+
+			<tr>
+			<td valign="top" class="listBy_tableHeader">Description:</td>
+			<td></td>
+			<td>This JSR is to develop Java EE 5, the next release of the Java Platform, Enterprise Edition, targeted to ship in the second quarter of 2006.</td>
+			</tr>
+
+			<tr>
+			<td valign="top" class="listBy_tableHeader">Status:</td>
+			<td></td>
+			<td><a href="/en/introduction/glossary#status"><font color=black><span title="A JSR that has produced a Final Release milestone more than a year ago.">Final</span></font></a>
+
+			
+
+			
+
+			<tr>
+			<td valign="top" class="listBy_tableHeader">Latest Stage:</td>
+			<td></td>
+			<td>
+			<table border="1" cellpadding="4">
+			<tr>
+			<td>Final Release</td>
+			
+			<td><a href="http://jcp.org/aboutJava/communityprocess/final/jsr244/index.html">Download page</a></td>
+			
+			
+			<td>Start: 2006-05-11</td>
+			<td></td>
+			</tr>
+			</table>
+
+
+			<tr>
+			<td valign="top" class="listBy_tableHeader">Spec Lead:</td>
+
+				<td><a href="/en/press/news/star"><img src="/images/jsr/stars-final-sml-anim-ir.gif" alt="Star Spec Lead" border="0" width="20" height="20" hspace="3" vspace="2"></a></td>
+
+			<td>
+Bill&nbsp;Shannon, Sun Microsystems, Inc.</td>
+</tr>
+
+			<tr>
+			  <td colspan="2" valign="top" class="listBy_tableHeader">&nbsp;</td>
+			  <td><img src="/images/jsr/yel-horiz-bar.gif" width="220" height="8" border="0"></td>
+			  </tr>
+		</table>
+
+		&nbsp;<br>
+		&nbsp;<br>
+
+
+
+		<a name="245"></a>
+		<table cellpadding="2" cellspacing="0" border="0" class="listBy_table">
+		<tr>
+			<td class="listBy_tableTitle"><b>245</b></td>
+			<td nowrap><img src="/images/common/trans.gif" alt="" width="20" height="1"></td>
+			<td class="listBy_tableTitle"><b><a href="/en/jsr/detail?id=245">JavaServer<sup><font size="-2">TM</font></sup> Pages 2.1</a></b></td>
+			</tr>
+
+			<tr>
+			<td valign="top" class="listBy_tableHeader">Description:</td>
+			<td></td>
+			<td>This is the next revision of the JavaServer<sup><font size="-2">TM</font></sup> Pages specification.  The purpose of JSP 2.1 is to improve alignment with JavaServer<sup><font size="-2">TM</font></sup> Faces (JSF) and enhance ease of development.</td>
+			</tr>
+
+			<tr>
+			<td valign="top" class="listBy_tableHeader">Status:</td>
+			<td></td>
+			<td><a href="/en/introduction/glossary#status"><font color=black><span title="A JSR that has produced a Maintenance Review or Maintenance Release more than a year ago.">Maintenance</span></font></a>
+
+			
+
+			
+
+			<tr>
+			<td valign="top" class="listBy_tableHeader">Latest Stage:</td>
+			<td></td>
+			<td>
+			<table border="1" cellpadding="4">
+			<tr>
+			<td>Maintenance Release 2</td>
+			
+			<td><a href="http://jcp.org/aboutJava/communityprocess/mrel/jsr245/index2.html">Download page</a></td>
+			
+			
+			<td>Start: 2013-06-12</td>
+			<td></td>
+			</tr>
+			</table>
+
+
+			<tr>
+			<td valign="top" class="listBy_tableHeader">Spec Lead:</td>
+
+				<td></td>
+
+			<td>
+Kinman&nbsp;Chung, Oracle</td>
+</tr>
+
+			<tr>
+			  <td colspan="2" valign="top" class="listBy_tableHeader">&nbsp;</td>
+			  <td><img src="/images/jsr/yel-horiz-bar.gif" width="220" height="8" border="0"></td>
+			  </tr>
+		</table>
+
+		&nbsp;<br>
+		&nbsp;<br>
+
+
+
+		<a name="250"></a>
+		<table cellpadding="2" cellspacing="0" border="0" class="listBy_table">
+		<tr>
+			<td class="listBy_tableTitle"><b>250</b></td>
+			<td nowrap><img src="/images/common/trans.gif" alt="" width="20" height="1"></td>
+			<td class="listBy_tableTitle"><b><a href="/en/jsr/detail?id=250">Common Annotations for the Java<sup>TM</sup> Platform</a></b></td>
+			</tr>
+
+			<tr>
+			<td valign="top" class="listBy_tableHeader">Description:</td>
+			<td></td>
+			<td>This JSR will develop annotations for common semantic 
+concepts in the J2SE and J2EE platforms that apply across a variety of individual technologies.</td>
+			</tr>
+
+			<tr>
+			<td valign="top" class="listBy_tableHeader">Status:</td>
+			<td></td>
+			<td><a href="/en/introduction/glossary#status"><font color=black><span title="A JSR that has produced a Maintenance Review or Maintenance Release more than a year ago.">Maintenance</span></font></a>
+
+			
+
+			
+
+			<tr>
+			<td valign="top" class="listBy_tableHeader">Latest Stage:</td>
+			<td></td>
+			<td>
+			<table border="1" cellpadding="4">
+			<tr>
+			<td>Maintenance Release 3</td>
+			
+			<td><a href="https://jcp.org/aboutJava/communityprocess/mrel/jsr250/index3.html">Download page</a></td>
+			
+			
+			<td>Start: 2016-09-02</td>
+			<td></td>
+			</tr>
+			</table>
+
+
+			<tr>
+			<td valign="top" class="listBy_tableHeader">Spec Lead:</td>
+
+				<td></td>
+
+			<td>
+Rajiv&nbsp;Mordani, Oracle</td>
+</tr>
+
+			<tr>
+			  <td colspan="2" valign="top" class="listBy_tableHeader">&nbsp;</td>
+			  <td><img src="/images/jsr/yel-horiz-bar.gif" width="220" height="8" border="0"></td>
+			  </tr>
+		</table>
+
+		&nbsp;<br>
+		&nbsp;<br>
+
+
+
+		<a name="252"></a>
+		<table cellpadding="2" cellspacing="0" border="0" class="listBy_table">
+		<tr>
+			<td class="listBy_tableTitle"><b>252</b></td>
+			<td nowrap><img src="/images/common/trans.gif" alt="" width="20" height="1"></td>
+			<td class="listBy_tableTitle"><b><a href="/en/jsr/detail?id=252">JavaServer Faces 1.2</a></b></td>
+			</tr>
+
+			<tr>
+			<td valign="top" class="listBy_tableHeader">Description:</td>
+			<td></td>
+			<td>This JSR is an update to the 1.1 version of the JavaServer Faces specification.  Its scope goes beyond a JCP maintenance release, but is short of a new feature release.</td>
+			</tr>
+
+			<tr>
+			<td valign="top" class="listBy_tableHeader">Status:</td>
+			<td></td>
+			<td><a href="/en/introduction/glossary#status"><font color=black><span title="A JSR that has produced a Maintenance Review or Maintenance Release more than a year ago.">Maintenance</span></font></a>
+
+			
+
+			
+
+			<tr>
+			<td valign="top" class="listBy_tableHeader">Latest Stage:</td>
+			<td></td>
+			<td>
+			<table border="1" cellpadding="4">
+			<tr>
+			<td>Maintenance Draft Review 3</td>
+			
+			<td><a href="http://jcp.org/aboutJava/communityprocess/maintenance/jsr252/index3.html">Download page</a></td>
+			
+			
+			<td>Start: 2008-07-22</td>
+			<td>End: 2008-08-25</td>
+			</tr>
+			</table>
+
+
+			<tr>
+			<td valign="top" class="listBy_tableHeader">Spec Lead:</td>
+
+				<td><a href="/en/press/news/star"><img src="/images/jsr/stars-final-sml-anim-ir.gif" alt="Star Spec Lead" border="0" width="20" height="20" hspace="3" vspace="2"></a></td>
+
+			<td>
+Ed&nbsp;Burns, Oracle</td>
+</tr>
+
+			<tr>
+			<td valign="top" class="listBy_tableHeader">Spec Lead:</td>
+
+				<td></td>
+
+			<td>
+Roger&nbsp;Kitain, Oracle</td>
+</tr>
+
+			<tr>
+			  <td colspan="2" valign="top" class="listBy_tableHeader">&nbsp;</td>
+			  <td><img src="/images/jsr/yel-horiz-bar.gif" width="220" height="8" border="0"></td>
+			  </tr>
+		</table>
+
+		&nbsp;<br>
+		&nbsp;<br>
+
+
+
+		<a name="313"></a>
+		<table cellpadding="2" cellspacing="0" border="0" class="listBy_table">
+		<tr>
+			<td class="listBy_tableTitle"><b>313</b></td>
+			<td nowrap><img src="/images/common/trans.gif" alt="" width="20" height="1"></td>
+			<td class="listBy_tableTitle"><b><a href="/en/jsr/detail?id=313">Java<font size="-2"><sup>TM</sup></font> Platform, Enterprise Edition 6 (Java EE 6) Specification</a></b></td>
+			</tr>
+
+			<tr>
+			<td valign="top" class="listBy_tableHeader">Description:</td>
+			<td></td>
+			<td>This JSR is to develop Java EE 6, a release of the Java Platform, Enterprise Edition targeted to ship in 2008.</td>
+			</tr>
+
+			<tr>
+			<td valign="top" class="listBy_tableHeader">Status:</td>
+			<td></td>
+			<td><a href="/en/introduction/glossary#status"><font color=red><span title="A JSR that was withdrawn from the JCP by the Specification Lead before Final Release.">Withdrawn</span></font></a>
+
+			
+			<tr>
+			<td valign="top" class="listBy_tableHeader">Reason:</td>
+			<td></td>
+			<td>Withdrawn at the Spec Lead's request during the JSR Approval Ballot.</td>
+			</tr>
+			
+
+			
+
+			<tr>
+			<td valign="top" class="listBy_tableHeader">Latest Stage:</td>
+			<td></td>
+			<td>
+			<table border="1" cellpadding="4">
+			<tr>
+			<td>Withdrawn</td>
+			
+			<td></td>
+			
+			
+			<td>Effective: 2007-04-13</td>
+			<td></td>
+			</tr>
+			</table>
+
+
+			<tr>
+			<td valign="top" class="listBy_tableHeader">Spec Lead:</td>
+
+				<td></td>
+
+			<td>
+Roberto&nbsp;Chinnici, Oracle</td>
+</tr>
+
+			<tr>
+			<td valign="top" class="listBy_tableHeader">Spec Lead:</td>
+
+				<td><a href="/en/press/news/star"><img src="/images/jsr/stars-final-sml-anim-ir.gif" alt="Star Spec Lead" border="0" width="20" height="20" hspace="3" vspace="2"></a></td>
+
+			<td>
+Bill&nbsp;Shannon, Sun Microsystems, Inc.</td>
+</tr>
+
+			<tr>
+			  <td colspan="2" valign="top" class="listBy_tableHeader">&nbsp;</td>
+			  <td><img src="/images/jsr/yel-horiz-bar.gif" width="220" height="8" border="0"></td>
+			  </tr>
+		</table>
+
+		&nbsp;<br>
+		&nbsp;<br>
+
+
+
+		<a name="315"></a>
+		<table cellpadding="2" cellspacing="0" border="0" class="listBy_table">
+		<tr>
+			<td class="listBy_tableTitle"><b>315</b></td>
+			<td nowrap><img src="/images/common/trans.gif" alt="" width="20" height="1"></td>
+			<td class="listBy_tableTitle"><b><a href="/en/jsr/detail?id=315">Java<sup><font size="-2">TM</font></sup> Servlet 3.0 Specification</a></b></td>
+			</tr>
+
+			<tr>
+			<td valign="top" class="listBy_tableHeader">Description:</td>
+			<td></td>
+			<td>This JSR will be an update to the existing Servlet 2.5 specification.</td>
+			</tr>
+
+			<tr>
+			<td valign="top" class="listBy_tableHeader">Status:</td>
+			<td></td>
+			<td><a href="/en/introduction/glossary#status"><font color=black><span title="A JSR that has produced a Maintenance Review or Maintenance Release more than a year ago.">Maintenance</span></font></a>
+
+			
+
+			
+
+			<tr>
+			<td valign="top" class="listBy_tableHeader">Latest Stage:</td>
+			<td></td>
+			<td>
+			<table border="1" cellpadding="4">
+			<tr>
+			<td>Maintenance Release</td>
+			
+			<td><a href="http://jcp.org/aboutJava/communityprocess/mrel/jsr315/index.html">Download page</a></td>
+			
+			
+			<td>Start: 2011-03-09</td>
+			<td></td>
+			</tr>
+			</table>
+
+
+			<tr>
+			<td valign="top" class="listBy_tableHeader">Spec Lead:</td>
+
+				<td></td>
+
+			<td>
+Rajiv&nbsp;Mordani, Oracle</td>
+</tr>
+
+			<tr>
+			  <td colspan="2" valign="top" class="listBy_tableHeader">&nbsp;</td>
+			  <td><img src="/images/jsr/yel-horiz-bar.gif" width="220" height="8" border="0"></td>
+			  </tr>
+		</table>
+
+		&nbsp;<br>
+		&nbsp;<br>
+
+
+
+		<a name="316"></a>
+		<table cellpadding="2" cellspacing="0" border="0" class="listBy_table">
+		<tr>
+			<td class="listBy_tableTitle"><b>316</b></td>
+			<td nowrap><img src="/images/common/trans.gif" alt="" width="20" height="1"></td>
+			<td class="listBy_tableTitle"><b><a href="/en/jsr/detail?id=316">Java<font size="-2"><sup>TM</sup></font> Platform, Enterprise Edition 6 (Java EE 6) Specification</a></b></td>
+			</tr>
+
+			<tr>
+			<td valign="top" class="listBy_tableHeader">Description:</td>
+			<td></td>
+			<td>This JSR is to develop Java EE 6, a release of the Java Platform, Enterprise Edition targeted to ship in 2008.</td>
+			</tr>
+
+			<tr>
+			<td valign="top" class="listBy_tableHeader">Status:</td>
+			<td></td>
+			<td><a href="/en/introduction/glossary#status"><font color=black><span title="A JSR that has produced a Final Release milestone more than a year ago.">Final</span></font></a>
+
+			
+
+			
+
+			<tr>
+			<td valign="top" class="listBy_tableHeader">Latest Stage:</td>
+			<td></td>
+			<td>
+			<table border="1" cellpadding="4">
+			<tr>
+			<td>Final Release</td>
+			
+			<td><a href="http://jcp.org/aboutJava/communityprocess/final/jsr316/index.html">Download page</a></td>
+			
+			
+			<td>Start: 2009-12-10</td>
+			<td></td>
+			</tr>
+			</table>
+
+
+			<tr>
+			<td valign="top" class="listBy_tableHeader">Spec Lead:</td>
+
+				<td></td>
+
+			<td>
+Roberto&nbsp;Chinnici, Oracle</td>
+</tr>
+
+			<tr>
+			<td valign="top" class="listBy_tableHeader">Spec Lead:</td>
+
+				<td><a href="/en/press/news/star"><img src="/images/jsr/stars-final-sml-anim-ir.gif" alt="Star Spec Lead" border="0" width="20" height="20" hspace="3" vspace="2"></a></td>
+
+			<td>
+William&nbsp;Shannon, Oracle</td>
+</tr>
+
+			<tr>
+			  <td colspan="2" valign="top" class="listBy_tableHeader">&nbsp;</td>
+			  <td><img src="/images/jsr/yel-horiz-bar.gif" width="220" height="8" border="0"></td>
+			  </tr>
+		</table>
+
+		&nbsp;<br>
+		&nbsp;<br>
+
+
+
+		<a name="317"></a>
+		<table cellpadding="2" cellspacing="0" border="0" class="listBy_table">
+		<tr>
+			<td class="listBy_tableTitle"><b>317</b></td>
+			<td nowrap><img src="/images/common/trans.gif" alt="" width="20" height="1"></td>
+			<td class="listBy_tableTitle"><b><a href="/en/jsr/detail?id=317">Java<font size="-2"><sup>TM</sup></font> Persistence 2.0</a></b></td>
+			</tr>
+
+			<tr>
+			<td valign="top" class="listBy_tableHeader">Description:</td>
+			<td></td>
+			<td>The Java Persistence API is the Java API for the management of persistence and object/relational mapping for Java EE and Java SE environments.</td>
+			</tr>
+
+			<tr>
+			<td valign="top" class="listBy_tableHeader">Status:</td>
+			<td></td>
+			<td><a href="/en/introduction/glossary#status"><font color=black><span title="A JSR that has produced a Final Release milestone more than a year ago.">Final</span></font></a>
+
+			
+
+			
+
+			<tr>
+			<td valign="top" class="listBy_tableHeader">Latest Stage:</td>
+			<td></td>
+			<td>
+			<table border="1" cellpadding="4">
+			<tr>
+			<td>Final Release</td>
+			
+			<td><a href="http://jcp.org/aboutJava/communityprocess/final/jsr317/index.html">Download page</a></td>
+			
+			
+			<td>Start: 2009-12-10</td>
+			<td></td>
+			</tr>
+			</table>
+
+
+			<tr>
+			<td valign="top" class="listBy_tableHeader">Spec Lead:</td>
+
+				<td><a href="/en/press/news/star"><img src="/images/jsr/stars-final-sml-anim-ir.gif" alt="Star Spec Lead" border="0" width="20" height="20" hspace="3" vspace="2"></a></td>
+
+			<td>
+Linda&nbsp;Demichiel, Oracle</td>
+</tr>
+
+			<tr>
+			  <td colspan="2" valign="top" class="listBy_tableHeader">&nbsp;</td>
+			  <td><img src="/images/jsr/yel-horiz-bar.gif" width="220" height="8" border="0"></td>
+			  </tr>
+		</table>
+
+		&nbsp;<br>
+		&nbsp;<br>
+
+
+
+		<a name="318"></a>
+		<table cellpadding="2" cellspacing="0" border="0" class="listBy_table">
+		<tr>
+			<td class="listBy_tableTitle"><b>318</b></td>
+			<td nowrap><img src="/images/common/trans.gif" alt="" width="20" height="1"></td>
+			<td class="listBy_tableTitle"><b><a href="/en/jsr/detail?id=318">Enterprise JavaBeans<font size="-2"><sup>TM</sup></font> 3.1/Interceptors 1.2</a></b></td>
+			</tr>
+
+			<tr>
+			<td valign="top" class="listBy_tableHeader">Description:</td>
+			<td></td>
+			<td>Enterprise JavaBeans is an architecture for the development and deployment of component-based business applications.</td>
+			</tr>
+
+			<tr>
+			<td valign="top" class="listBy_tableHeader">Status:</td>
+			<td></td>
+			<td><a href="/en/introduction/glossary#status"><font color=black><span title="A JSR that has produced a Maintenance Review or Maintenance Release more than a year ago.">Maintenance</span></font></a>
+
+			
+
+			
+
+			<tr>
+			<td valign="top" class="listBy_tableHeader">Latest Stage:</td>
+			<td></td>
+			<td>
+			<table border="1" cellpadding="4">
+			<tr>
+			<td>Maintenance Release 3</td>
+			
+			<td><a href="http://jcp.org/aboutJava/communityprocess/mrel/jsr318/index3.html">Download page</a></td>
+			
+			
+			<td>Start: 2017-08-18</td>
+			<td></td>
+			</tr>
+			</table>
+
+
+			<tr>
+			<td valign="top" class="listBy_tableHeader">Spec Lead:</td>
+
+				<td><a href="/en/press/news/star"><img src="/images/jsr/stars-final-sml-anim-ir.gif" alt="Star Spec Lead" border="0" width="20" height="20" hspace="3" vspace="2"></a></td>
+
+			<td>
+Linda&nbsp;Demichiel, Oracle</td>
+</tr>
+
+			<tr>
+			  <td colspan="2" valign="top" class="listBy_tableHeader">&nbsp;</td>
+			  <td><img src="/images/jsr/yel-horiz-bar.gif" width="220" height="8" border="0"></td>
+			  </tr>
+		</table>
+
+		&nbsp;<br>
+		&nbsp;<br>
+
+
+
+		<a name="322"></a>
+		<table cellpadding="2" cellspacing="0" border="0" class="listBy_table">
+		<tr>
+			<td class="listBy_tableTitle"><b>322</b></td>
+			<td nowrap><img src="/images/common/trans.gif" alt="" width="20" height="1"></td>
+			<td class="listBy_tableTitle"><b><a href="/en/jsr/detail?id=322">Java<sup><font size="-2">TM</font></sup> EE Connector Architecture 1.6</a></b></td>
+			</tr>
+
+			<tr>
+			<td valign="top" class="listBy_tableHeader">Description:</td>
+			<td></td>
+			<td>The Java EE Connector Architecture 1.5 defines a standard architecture for
+connecting to Enterprise Information Systems. This JSR will enhance the 
+existing specification with features requested by experts and community.</td>
+			</tr>
+
+			<tr>
+			<td valign="top" class="listBy_tableHeader">Status:</td>
+			<td></td>
+			<td><a href="/en/introduction/glossary#status"><font color=black><span title="A JSR that has produced a Maintenance Review or Maintenance Release more than a year ago.">Maintenance</span></font></a>
+
+			
+
+			
+
+			<tr>
+			<td valign="top" class="listBy_tableHeader">Latest Stage:</td>
+			<td></td>
+			<td>
+			<table border="1" cellpadding="4">
+			<tr>
+			<td>Maintenance Release</td>
+			
+			<td><a href="http://jcp.org/aboutJava/communityprocess/mrel/jsr322/index.html">Download page</a></td>
+			
+			
+			<td>Start: 2013-06-10</td>
+			<td></td>
+			</tr>
+			</table>
+
+
+			<tr>
+			<td valign="top" class="listBy_tableHeader">Spec Lead:</td>
+
+				<td></td>
+
+			<td>
+Sivakumar&nbsp;Thyagarajan, Oracle</td>
+</tr>
+
+			<tr>
+			  <td colspan="2" valign="top" class="listBy_tableHeader">&nbsp;</td>
+			  <td><img src="/images/jsr/yel-horiz-bar.gif" width="220" height="8" border="0"></td>
+			  </tr>
+		</table>
+
+		&nbsp;<br>
+		&nbsp;<br>
+
+
+
+		<a name="342"></a>
+		<table cellpadding="2" cellspacing="0" border="0" class="listBy_table">
+		<tr>
+			<td class="listBy_tableTitle"><b>342</b></td>
+			<td nowrap><img src="/images/common/trans.gif" alt="" width="20" height="1"></td>
+			<td class="listBy_tableTitle"><b><a href="/en/jsr/detail?id=342">Java<font size="-2"><sup>TM</sup></font> Platform, Enterprise Edition 7 (Java EE 7) Specification</a></b></td>
+			</tr>
+
+			<tr>
+			<td valign="top" class="listBy_tableHeader">Description:</td>
+			<td></td>
+			<td>This JSR will develop Java EE 7, the next version of the Java Platform, Enterprise Edition.</td>
+			</tr>
+
+			<tr>
+			<td valign="top" class="listBy_tableHeader">Status:</td>
+			<td></td>
+			<td><a href="/en/introduction/glossary#status"><font color=black><span title="A JSR that has produced a Maintenance Review or Maintenance Release more than a year ago.">Maintenance</span></font></a>
+
+			
+
+			
+
+			<tr>
+			<td valign="top" class="listBy_tableHeader">Latest Stage:</td>
+			<td></td>
+			<td>
+			<table border="1" cellpadding="4">
+			<tr>
+			<td>Maintenance Release</td>
+			
+			<td><a href="https://jcp.org/aboutJava/communityprocess/mrel/jsr342/index.html">Download page</a></td>
+			
+			
+			<td>Start: 2015-07-03</td>
+			<td></td>
+			</tr>
+			</table>
+
+
+			<tr>
+			<td valign="top" class="listBy_tableHeader">Spec Lead:</td>
+
+				<td><a href="/en/press/news/star"><img src="/images/jsr/stars-final-sml-anim-ir.gif" alt="Star Spec Lead" border="0" width="20" height="20" hspace="3" vspace="2"></a></td>
+
+			<td>
+Linda&nbsp;Demichiel, Oracle</td>
+</tr>
+
+			<tr>
+			<td valign="top" class="listBy_tableHeader">Spec Lead:</td>
+
+				<td><a href="/en/press/news/star"><img src="/images/jsr/stars-final-sml-anim-ir.gif" alt="Star Spec Lead" border="0" width="20" height="20" hspace="3" vspace="2"></a></td>
+
+			<td>
+William&nbsp;Shannon, Oracle</td>
+</tr>
+
+			<tr>
+			  <td colspan="2" valign="top" class="listBy_tableHeader">&nbsp;</td>
+			  <td><img src="/images/jsr/yel-horiz-bar.gif" width="220" height="8" border="0"></td>
+			  </tr>
+		</table>
+
+		&nbsp;<br>
+		&nbsp;<br>
+
+
+
+		<a name="343"></a>
+		<table cellpadding="2" cellspacing="0" border="0" class="listBy_table">
+		<tr>
+			<td class="listBy_tableTitle"><b>343</b></td>
+			<td nowrap><img src="/images/common/trans.gif" alt="" width="20" height="1"></td>
+			<td class="listBy_tableTitle"><b><a href="/en/jsr/detail?id=343">Java<font size="-2"><sup>TM</sup></font> Message Service 2.0</a></b></td>
+			</tr>
+
+			<tr>
+			<td valign="top" class="listBy_tableHeader">Description:</td>
+			<td></td>
+			<td>This is an update to the Java Message Service API, an existing API for accessing enterprise messaging systems from Java programs.</td>
+			</tr>
+
+			<tr>
+			<td valign="top" class="listBy_tableHeader">Status:</td>
+			<td></td>
+			<td><a href="/en/introduction/glossary#status"><font color=black><span title="A JSR that has produced a Maintenance Review or Maintenance Release more than a year ago.">Maintenance</span></font></a>
+
+			
+
+			
+
+			<tr>
+			<td valign="top" class="listBy_tableHeader">Latest Stage:</td>
+			<td></td>
+			<td>
+			<table border="1" cellpadding="4">
+			<tr>
+			<td>Maintenance Release</td>
+			
+			<td><a href="https://jcp.org/aboutJava/communityprocess/mrel/jsr343/index.html">Download page</a></td>
+			
+			
+			<td>Start: 2015-03-16</td>
+			<td></td>
+			</tr>
+			</table>
+
+
+			<tr>
+			<td valign="top" class="listBy_tableHeader">Spec Lead:</td>
+
+				<td></td>
+
+			<td>
+Nigel&nbsp;Deakin, Oracle</td>
+</tr>
+
+			<tr>
+			  <td colspan="2" valign="top" class="listBy_tableHeader">&nbsp;</td>
+			  <td><img src="/images/jsr/yel-horiz-bar.gif" width="220" height="8" border="0"></td>
+			  </tr>
+		</table>
+
+		&nbsp;<br>
+		&nbsp;<br>
+
+
+
+		<a name="366"></a>
+		<table cellpadding="2" cellspacing="0" border="0" class="listBy_table">
+		<tr>
+			<td class="listBy_tableTitle"><b>366</b></td>
+			<td nowrap><img src="/images/common/trans.gif" alt="" width="20" height="1"></td>
+			<td class="listBy_tableTitle"><b><a href="/en/jsr/detail?id=366">Java Platform, Enterprise Edition 8 (Java EE 8) Specification</a></b></td>
+			</tr>
+
+			<tr>
+			<td valign="top" class="listBy_tableHeader">Description:</td>
+			<td></td>
+			<td>This JSR is to develop Java EE 8, the next release of the Java Platform, Enterprise Edition.</td>
+			</tr>
+
+			<tr>
+			<td valign="top" class="listBy_tableHeader">Status:</td>
+			<td></td>
+			<td><a href="/en/introduction/glossary#status"><font color=black><span title="A JSR that has produced a Final Release milestone more than a year ago.">Final</span></font></a>
+
+			
+
+			
+
+			<tr>
+			<td valign="top" class="listBy_tableHeader">Latest Stage:</td>
+			<td></td>
+			<td>
+			<table border="1" cellpadding="4">
+			<tr>
+			<td>Final Release</td>
+			
+			<td><a href="https://jcp.org/aboutJava/communityprocess/final/jsr366/index.html">Download page</a></td>
+			
+			
+			<td>Start: 2017-09-18</td>
+			<td></td>
+			</tr>
+			</table>
+
+
+			<tr>
+			<td valign="top" class="listBy_tableHeader">Spec Lead:</td>
+
+				<td><a href="/en/press/news/star"><img src="/images/jsr/stars-final-sml-anim-ir.gif" alt="Star Spec Lead" border="0" width="20" height="20" hspace="3" vspace="2"></a></td>
+
+			<td>
+Linda&nbsp;Demichiel, Oracle</td>
+</tr>
+
+			<tr>
+			<td valign="top" class="listBy_tableHeader">Spec Lead:</td>
+
+				<td><a href="/en/press/news/star"><img src="/images/jsr/stars-final-sml-anim-ir.gif" alt="Star Spec Lead" border="0" width="20" height="20" hspace="3" vspace="2"></a></td>
+
+			<td>
+William&nbsp;Shannon, Oracle</td>
+</tr>
+
+			<tr>
+			  <td colspan="2" valign="top" class="listBy_tableHeader">&nbsp;</td>
+			  <td><img src="/images/jsr/yel-horiz-bar.gif" width="220" height="8" border="0"></td>
+			  </tr>
+		</table>
+
+		&nbsp;<br>
+		&nbsp;<br>
+
+
+
+		<a name="367"></a>
+		<table cellpadding="2" cellspacing="0" border="0" class="listBy_table">
+		<tr>
+			<td class="listBy_tableTitle"><b>367</b></td>
+			<td nowrap><img src="/images/common/trans.gif" alt="" width="20" height="1"></td>
+			<td class="listBy_tableTitle"><b><a href="/en/jsr/detail?id=367">Java<sup><font size="-2">TM</font></sup> API for JSON Binding (JSON-B)</a></b></td>
+			</tr>
+
+			<tr>
+			<td valign="top" class="listBy_tableHeader">Description:</td>
+			<td></td>
+			<td>A standard binding layer (metadata & runtime) for converting Java objects to/from JSON messages.</td>
+			</tr>
+
+			<tr>
+			<td valign="top" class="listBy_tableHeader">Status:</td>
+			<td></td>
+			<td><a href="/en/introduction/glossary#status"><font color=black><span title="A JSR that has produced a Final Release milestone more than a year ago.">Final</span></font></a>
+
+			
+
+			
+
+			<tr>
+			<td valign="top" class="listBy_tableHeader">Latest Stage:</td>
+			<td></td>
+			<td>
+			<table border="1" cellpadding="4">
+			<tr>
+			<td>Final Release</td>
+			
+			<td><a href="https://jcp.org/aboutJava/communityprocess/final/jsr367/index.html">Download page</a></td>
+			
+			
+			<td>Start: 2017-07-07</td>
+			<td></td>
+			</tr>
+			</table>
+
+
+			<tr>
+			<td valign="top" class="listBy_tableHeader">Spec Lead:</td>
+
+				<td></td>
+
+			<td>
+Dmitry&nbsp;Kornilov, Oracle</td>
+</tr>
+
+			<tr>
+			  <td colspan="2" valign="top" class="listBy_tableHeader">&nbsp;</td>
+			  <td><img src="/images/jsr/yel-horiz-bar.gif" width="220" height="8" border="0"></td>
+			  </tr>
+		</table>
+
+		&nbsp;<br>
+		&nbsp;<br>
+
+
+
+		<a name="368"></a>
+		<table cellpadding="2" cellspacing="0" border="0" class="listBy_table">
+		<tr>
+			<td class="listBy_tableTitle"><b>368</b></td>
+			<td nowrap><img src="/images/common/trans.gif" alt="" width="20" height="1"></td>
+			<td class="listBy_tableTitle"><b><a href="/en/jsr/detail?id=368">Java<font size="-2"><sup>TM</sup></font> Message Service 2.1</a></b></td>
+			</tr>
+
+			<tr>
+			<td valign="top" class="listBy_tableHeader">Description:</td>
+			<td></td>
+			<td>The JMS API is an API for accessing enterprise messaging systems from Java programs. This JSR is to develop JMS 2.1, the next version of the API.</td>
+			</tr>
+
+			<tr>
+			<td valign="top" class="listBy_tableHeader">Status:</td>
+			<td></td>
+			<td><a href="/en/introduction/glossary#status"><font color=red><span title="A JSR that was withdrawn from the JCP by the Specification Lead before Final Release.">Withdrawn</span></font></a>
+
+			
+			<tr>
+			<td valign="top" class="listBy_tableHeader">Reason:</td>
+			<td></td>
+			<td>Withdrawn at the request of the Spec Lead.</td>
+			</tr>
+			
+
+			
+
+			<tr>
+			<td valign="top" class="listBy_tableHeader">Latest Stage:</td>
+			<td></td>
+			<td>
+			<table border="1" cellpadding="4">
+			<tr>
+			<td>Withdrawn</td>
+			
+			<td></td>
+			
+			
+			<td>Effective: 2016-11-29</td>
+			<td></td>
+			</tr>
+			</table>
+
+
+			<tr>
+			<td valign="top" class="listBy_tableHeader">Spec Lead:</td>
+
+				<td></td>
+
+			<td>
+Nigel&nbsp;Deakin, Oracle</td>
+</tr>
+
+			<tr>
+			  <td colspan="2" valign="top" class="listBy_tableHeader">&nbsp;</td>
+			  <td><img src="/images/jsr/yel-horiz-bar.gif" width="220" height="8" border="0"></td>
+			  </tr>
+		</table>
+
+		&nbsp;<br>
+		&nbsp;<br>
+
+
+
+		<a name="369"></a>
+		<table cellpadding="2" cellspacing="0" border="0" class="listBy_table">
+		<tr>
+			<td class="listBy_tableTitle"><b>369</b></td>
+			<td nowrap><img src="/images/common/trans.gif" alt="" width="20" height="1"></td>
+			<td class="listBy_tableTitle"><b><a href="/en/jsr/detail?id=369">Java<font size="-2"><sup>TM</sup></font> Servlet 4.0 Specification</a></b></td>
+			</tr>
+
+			<tr>
+			<td valign="top" class="listBy_tableHeader">Description:</td>
+			<td></td>
+			<td>This JSR aims to expose the latest advances in HTTP to users of JavaEE as well as providing a vehicle for continual improvement in this foundational Java EE API.</td>
+			</tr>
+
+			<tr>
+			<td valign="top" class="listBy_tableHeader">Status:</td>
+			<td></td>
+			<td><a href="/en/introduction/glossary#status"><font color=black><span title="A JSR that has produced a Final Release milestone more than a year ago.">Final</span></font></a>
+
+			
+
+			
+
+			<tr>
+			<td valign="top" class="listBy_tableHeader">Latest Stage:</td>
+			<td></td>
+			<td>
+			<table border="1" cellpadding="4">
+			<tr>
+			<td>Final Release</td>
+			
+			<td><a href="https://jcp.org/aboutJava/communityprocess/final/jsr369/index.html">Download page</a></td>
+			
+			
+			<td>Start: 2017-09-05</td>
+			<td></td>
+			</tr>
+			</table>
+
+
+			<tr>
+			<td valign="top" class="listBy_tableHeader">Spec Lead:</td>
+
+				<td><a href="/en/press/news/star"><img src="/images/jsr/stars-final-sml-anim-ir.gif" alt="Star Spec Lead" border="0" width="20" height="20" hspace="3" vspace="2"></a></td>
+
+			<td>
+Ed&nbsp;Burns, Oracle</td>
+</tr>
+
+			<tr>
+			<td valign="top" class="listBy_tableHeader">Spec Lead:</td>
+
+				<td></td>
+
+			<td>
+Shing wai&nbsp;Chan, Oracle</td>
+</tr>
+
+			<tr>
+			  <td colspan="2" valign="top" class="listBy_tableHeader">&nbsp;</td>
+			  <td><img src="/images/jsr/yel-horiz-bar.gif" width="220" height="8" border="0"></td>
+			  </tr>
+		</table>
+
+		&nbsp;<br>
+		&nbsp;<br>
+
+
+
+		<a name="370"></a>
+		<table cellpadding="2" cellspacing="0" border="0" class="listBy_table">
+		<tr>
+			<td class="listBy_tableTitle"><b>370</b></td>
+			<td nowrap><img src="/images/common/trans.gif" alt="" width="20" height="1"></td>
+			<td class="listBy_tableTitle"><b><a href="/en/jsr/detail?id=370">Java<font size="-2"><sup>TM</sup></font> API for RESTful Web Services (JAX-RS 2.1) Specification</a></b></td>
+			</tr>
+
+			<tr>
+			<td valign="top" class="listBy_tableHeader">Description:</td>
+			<td></td>
+			<td>This JSR is to develop JAX-RS 2.1, the next release of Java API for RESTful Web Services.</td>
+			</tr>
+
+			<tr>
+			<td valign="top" class="listBy_tableHeader">Status:</td>
+			<td></td>
+			<td><a href="/en/introduction/glossary#status"><font color=black><span title="A JSR that has produced a Final Release milestone more than a year ago.">Final</span></font></a>
+
+			
+
+			
+
+			<tr>
+			<td valign="top" class="listBy_tableHeader">Latest Stage:</td>
+			<td></td>
+			<td>
+			<table border="1" cellpadding="4">
+			<tr>
+			<td>Final Release</td>
+			
+			<td><a href="https://jcp.org/aboutJava/communityprocess/final/jsr370/index.html">Download page</a></td>
+			
+			
+			<td>Start: 2017-08-22</td>
+			<td></td>
+			</tr>
+			</table>
+
+
+			<tr>
+			<td valign="top" class="listBy_tableHeader">Spec Lead:</td>
+
+				<td></td>
+
+			<td>
+Pavel&nbsp;Bucek, Oracle</td>
+</tr>
+
+			<tr>
+			<td valign="top" class="listBy_tableHeader">Spec Lead:</td>
+
+				<td><a href="/en/press/news/star"><img src="/images/jsr/stars-final-sml-anim-ir.gif" alt="Star Spec Lead" border="0" width="20" height="20" hspace="3" vspace="2"></a></td>
+
+			<td>
+Santiago&nbsp;Pericasgeertsen, Oracle</td>
+</tr>
+
+			<tr>
+			  <td colspan="2" valign="top" class="listBy_tableHeader">&nbsp;</td>
+			  <td><img src="/images/jsr/yel-horiz-bar.gif" width="220" height="8" border="0"></td>
+			  </tr>
+		</table>
+
+		&nbsp;<br>
+		&nbsp;<br>
+
+
+
+		<a name="371"></a>
+		<table cellpadding="2" cellspacing="0" border="0" class="listBy_table">
+		<tr>
+			<td class="listBy_tableTitle"><b>371</b></td>
+			<td nowrap><img src="/images/common/trans.gif" alt="" width="20" height="1"></td>
+			<td class="listBy_tableTitle"><b><a href="/en/jsr/detail?id=371">Model-View-Controller (MVC 1.0) Specification</a></b></td>
+			</tr>
+
+			<tr>
+			<td valign="top" class="listBy_tableHeader">Description:</td>
+			<td></td>
+			<td>This JSR is to develop MVC 1.0, a model-view-controller specification for Java EE.</td>
+			</tr>
+
+			<tr>
+			<td valign="top" class="listBy_tableHeader">Status:</td>
+			<td></td>
+			<td><a href="/en/introduction/glossary#status"><font color=green><span title="A JSR that has posted a milestone within the last twelve months.">Active</span></font></a>
+
+			
+
+			
+
+			<tr>
+			<td valign="top" class="listBy_tableHeader">Latest Stage:</td>
+			<td></td>
+			<td>
+			<table border="1" cellpadding="4">
+			<tr>
+			<td>Proposed Final Draft</td>
+			
+			<td><a href="https://jcp.org/aboutJava/communityprocess/pfd/jsr371/index.html">Download page</a></td>
+			
+			
+			<td>Start: 2018-09-28</td>
+			<td></td>
+			</tr>
+			</table>
+
+
+			<tr>
+			<td valign="top" class="listBy_tableHeader">Spec Lead:</td>
+
+				<td></td>
+
+			<td>
+Ivar&nbsp;Grimstad, Grimstad, Ivar</td>
+</tr>
+
+			<tr>
+			<td valign="top" class="listBy_tableHeader">Spec Lead:</td>
+
+				<td></td>
+
+			<td>
+Christian&nbsp;Kaltepoth, ingenit GmbH & Co. KG</td>
+</tr>
+
+			<tr>
+			  <td colspan="2" valign="top" class="listBy_tableHeader">&nbsp;</td>
+			  <td><img src="/images/jsr/yel-horiz-bar.gif" width="220" height="8" border="0"></td>
+			  </tr>
+		</table>
+
+		&nbsp;<br>
+		&nbsp;<br>
+
+
+
+		<a name="372"></a>
+		<table cellpadding="2" cellspacing="0" border="0" class="listBy_table">
+		<tr>
+			<td class="listBy_tableTitle"><b>372</b></td>
+			<td nowrap><img src="/images/common/trans.gif" alt="" width="20" height="1"></td>
+			<td class="listBy_tableTitle"><b><a href="/en/jsr/detail?id=372">JavaServer Faces (JSF 2.3) Specification.</a></b></td>
+			</tr>
+
+			<tr>
+			<td valign="top" class="listBy_tableHeader">Description:</td>
+			<td></td>
+			<td>This JSR is to develop JSF 2.3, the next release of Java Server Faces.</td>
+			</tr>
+
+			<tr>
+			<td valign="top" class="listBy_tableHeader">Status:</td>
+			<td></td>
+			<td><a href="/en/introduction/glossary#status"><font color=black><span title="A JSR that has produced a Final Release milestone more than a year ago.">Final</span></font></a>
+
+			
+
+			
+
+			<tr>
+			<td valign="top" class="listBy_tableHeader">Latest Stage:</td>
+			<td></td>
+			<td>
+			<table border="1" cellpadding="4">
+			<tr>
+			<td>Final Release</td>
+			
+			<td><a href="https://jcp.org/aboutJava/communityprocess/final/jsr372/index.html">Download page</a></td>
+			
+			
+			<td>Start: 2017-04-17</td>
+			<td></td>
+			</tr>
+			</table>
+
+
+			<tr>
+			<td valign="top" class="listBy_tableHeader">Spec Lead:</td>
+
+				<td><a href="/en/press/news/star"><img src="/images/jsr/stars-final-sml-anim-ir.gif" alt="Star Spec Lead" border="0" width="20" height="20" hspace="3" vspace="2"></a></td>
+
+			<td>
+Ed&nbsp;Burns, Oracle</td>
+</tr>
+
+			<tr>
+			<td valign="top" class="listBy_tableHeader">Spec Lead:</td>
+
+				<td></td>
+
+			<td>
+Manfred&nbsp;Riem, Oracle</td>
+</tr>
+
+			<tr>
+			  <td colspan="2" valign="top" class="listBy_tableHeader">&nbsp;</td>
+			  <td><img src="/images/jsr/yel-horiz-bar.gif" width="220" height="8" border="0"></td>
+			  </tr>
+		</table>
+
+		&nbsp;<br>
+		&nbsp;<br>
+
+
+
+		<a name="373"></a>
+		<table cellpadding="2" cellspacing="0" border="0" class="listBy_table">
+		<tr>
+			<td class="listBy_tableTitle"><b>373</b></td>
+			<td nowrap><img src="/images/common/trans.gif" alt="" width="20" height="1"></td>
+			<td class="listBy_tableTitle"><b><a href="/en/jsr/detail?id=373">Java<sup><font size="-2">TM</font></sup> EE Management API 2.0</a></b></td>
+			</tr>
+
+			<tr>
+			<td valign="top" class="listBy_tableHeader">Description:</td>
+			<td></td>
+			<td>This JSR is to update JSR 77 with REST interfaces and incorporate deployment as a standard part of the management interface.</td>
+			</tr>
+
+			<tr>
+			<td valign="top" class="listBy_tableHeader">Status:</td>
+			<td></td>
+			<td><a href="/en/introduction/glossary#status"><font color=red><span title="A JSR that was withdrawn from the JCP by the Specification Lead before Final Release.">Withdrawn</span></font></a>
+
+			
+			<tr>
+			<td valign="top" class="listBy_tableHeader">Reason:</td>
+			<td></td>
+			<td>Withdrawn at the request of the Spec Lead.</td>
+			</tr>
+			
+
+			
+
+			<tr>
+			<td valign="top" class="listBy_tableHeader">Latest Stage:</td>
+			<td></td>
+			<td>
+			<table border="1" cellpadding="4">
+			<tr>
+			<td>Withdrawn</td>
+			
+			<td></td>
+			
+			
+			<td>Effective: 2016-11-29</td>
+			<td></td>
+			</tr>
+			</table>
+
+
+			<tr>
+			<td valign="top" class="listBy_tableHeader">Spec Lead:</td>
+
+				<td></td>
+
+			<td>
+Martin&nbsp;Mares, Oracle</td>
+</tr>
+
+			<tr>
+			  <td colspan="2" valign="top" class="listBy_tableHeader">&nbsp;</td>
+			  <td><img src="/images/jsr/yel-horiz-bar.gif" width="220" height="8" border="0"></td>
+			  </tr>
+		</table>
+
+		&nbsp;<br>
+		&nbsp;<br>
+
+
+
+		<a name="374"></a>
+		<table cellpadding="2" cellspacing="0" border="0" class="listBy_table">
+		<tr>
+			<td class="listBy_tableTitle"><b>374</b></td>
+			<td nowrap><img src="/images/common/trans.gif" alt="" width="20" height="1"></td>
+			<td class="listBy_tableTitle"><b><a href="/en/jsr/detail?id=374">Java<sup><font size="-2">TM</font></sup> API for JSON Processing 1.1</a></b></td>
+			</tr>
+
+			<tr>
+			<td valign="top" class="listBy_tableHeader">Description:</td>
+			<td></td>
+			<td>This JSR is to provide an update for the Java API for JSON Processing Specification.</td>
+			</tr>
+
+			<tr>
+			<td valign="top" class="listBy_tableHeader">Status:</td>
+			<td></td>
+			<td><a href="/en/introduction/glossary#status"><font color=black><span title="A JSR that has produced a Final Release milestone more than a year ago.">Final</span></font></a>
+
+			
+
+			
+
+			<tr>
+			<td valign="top" class="listBy_tableHeader">Latest Stage:</td>
+			<td></td>
+			<td>
+			<table border="1" cellpadding="4">
+			<tr>
+			<td>Final Release</td>
+			
+			<td><a href="https://jcp.org/aboutJava/communityprocess/final/jsr374/index.html">Download page</a></td>
+			
+			
+			<td>Start: 2017-05-24</td>
+			<td></td>
+			</tr>
+			</table>
+
+
+			<tr>
+			<td valign="top" class="listBy_tableHeader">Spec Lead:</td>
+
+				<td></td>
+
+			<td>
+Dmitry&nbsp;Kornilov, Oracle</td>
+</tr>
+
+			<tr>
+			  <td colspan="2" valign="top" class="listBy_tableHeader">&nbsp;</td>
+			  <td><img src="/images/jsr/yel-horiz-bar.gif" width="220" height="8" border="0"></td>
+			  </tr>
+		</table>
+
+		&nbsp;<br>
+		&nbsp;<br>
+
+
+
+		<a name="375"></a>
+		<table cellpadding="2" cellspacing="0" border="0" class="listBy_table">
+		<tr>
+			<td class="listBy_tableTitle"><b>375</b></td>
+			<td nowrap><img src="/images/common/trans.gif" alt="" width="20" height="1"></td>
+			<td class="listBy_tableTitle"><b><a href="/en/jsr/detail?id=375">Java<sup><font size="-2">TM</font></sup> EE Security API</a></b></td>
+			</tr>
+
+			<tr>
+			<td valign="top" class="listBy_tableHeader">Description:</td>
+			<td></td>
+			<td>The goal of this JSR is to improve the Java EE platform by ensuring the Security API aspect is useful in the modern cloud/PaaS application paradigm.</td>
+			</tr>
+
+			<tr>
+			<td valign="top" class="listBy_tableHeader">Status:</td>
+			<td></td>
+			<td><a href="/en/introduction/glossary#status"><font color=black><span title="A JSR that has produced a Final Release milestone more than a year ago.">Final</span></font></a>
+
+			
+
+			
+
+			<tr>
+			<td valign="top" class="listBy_tableHeader">Latest Stage:</td>
+			<td></td>
+			<td>
+			<table border="1" cellpadding="4">
+			<tr>
+			<td>Final Release</td>
+			
+			<td><a href="https://jcp.org/aboutJava/communityprocess/final/jsr375/index.html">Download page</a></td>
+			
+			
+			<td>Start: 2017-09-19</td>
+			<td></td>
+			</tr>
+			</table>
+
+
+			<tr>
+			<td valign="top" class="listBy_tableHeader">Spec Lead:</td>
+
+				<td></td>
+
+			<td>
+Will&nbsp;Hopkins, Oracle</td>
+</tr>
+
+			<tr>
+			  <td colspan="2" valign="top" class="listBy_tableHeader">&nbsp;</td>
+			  <td><img src="/images/jsr/yel-horiz-bar.gif" width="220" height="8" border="0"></td>
+			  </tr>
+		</table>
+
+		&nbsp;<br>
+		&nbsp;<br>
+
+
+
+		<a name="380"></a>
+		<table cellpadding="2" cellspacing="0" border="0" class="listBy_table">
+		<tr>
+			<td class="listBy_tableTitle"><b>380</b></td>
+			<td nowrap><img src="/images/common/trans.gif" alt="" width="20" height="1"></td>
+			<td class="listBy_tableTitle"><b><a href="/en/jsr/detail?id=380">Bean Validation 2.0</a></b></td>
+			</tr>
+
+			<tr>
+			<td valign="top" class="listBy_tableHeader">Description:</td>
+			<td></td>
+			<td>This JSR aims at evolving the Bean Validation specification by leveraging Java 8 language constructs for the purposes of validation.</td>
+			</tr>
+
+			<tr>
+			<td valign="top" class="listBy_tableHeader">Status:</td>
+			<td></td>
+			<td><a href="/en/introduction/glossary#status"><font color=black><span title="A JSR that has produced a Final Release milestone more than a year ago.">Final</span></font></a>
+
+			
+
+			
+
+			<tr>
+			<td valign="top" class="listBy_tableHeader">Latest Stage:</td>
+			<td></td>
+			<td>
+			<table border="1" cellpadding="4">
+			<tr>
+			<td>Final Release</td>
+			
+			<td><a href="https://jcp.org/aboutJava/communityprocess/final/jsr380/index.html">Download page</a></td>
+			
+			
+			<td>Start: 2017-08-21</td>
+			<td></td>
+			</tr>
+			</table>
+
+
+			<tr>
+			<td valign="top" class="listBy_tableHeader">Spec Lead:</td>
+
+				<td></td>
+
+			<td>
+Gunnar&nbsp;Morling, Red Hat</td>
+</tr>
+
+			<tr>
+			  <td colspan="2" valign="top" class="listBy_tableHeader">&nbsp;</td>
+			  <td><img src="/images/jsr/yel-horiz-bar.gif" width="220" height="8" border="0"></td>
+			  </tr>
+		</table>
+
+		&nbsp;<br>
+		&nbsp;<br>
+
+
+
+		<a name="902"></a>
+		<table cellpadding="2" cellspacing="0" border="0" class="listBy_table">
+		<tr>
+			<td class="listBy_tableTitle"><b>902</b></td>
+			<td nowrap><img src="/images/common/trans.gif" alt="" width="20" height="1"></td>
+			<td class="listBy_tableTitle"><b><a href="/en/jsr/detail?id=902">Java<sup><font size="-2">TM</font></sup> Servlet API Specification, Version 2.2, Errata Sheet, 4/1/2000</a></b></td>
+			</tr>
+
+			<tr>
+			<td valign="top" class="listBy_tableHeader">Description:</td>
+			<td></td>
+			<td>Maintenance revision for the Java<sup><font size="-2">TM</font></sup> Servlet API Specification, version 2.2.</td>
+			</tr>
+
+			<tr>
+			<td valign="top" class="listBy_tableHeader">Status:</td>
+			<td></td>
+			<td><a href="/en/introduction/glossary#status"><font color=black><span title="A JSR that has produced a Maintenance Review or Maintenance Release more than a year ago.">Maintenance</span></font></a>
+
+			
+
+			
+
+			<tr>
+			<td valign="top" class="listBy_tableHeader">Latest Stage:</td>
+			<td></td>
+			<td>
+			<table border="1" cellpadding="4">
+			<tr>
+			<td>Maintenance Review</td>
+			
+			<td><a href="http://jcp.org/aboutJava/communityprocess/maintenance/servlet2.2/index.html">Download page</a></td>
+			
+			
+			<td>Start: 2000-04-12</td>
+			<td>End: 2000-05-12</td>
+			</tr>
+			</table>
+
+
+			<tr>
+			<td valign="top" class="listBy_tableHeader">Spec Lead:</td>
+
+				<td><a href="/en/press/news/star"><img src="/images/jsr/stars-final-sml-anim-ir.gif" alt="Star Spec Lead" border="0" width="20" height="20" hspace="3" vspace="2"></a></td>
+
+			<td>
+Danny&nbsp;Coward, Oracle</td>
+</tr>
+
+			<tr>
+			  <td colspan="2" valign="top" class="listBy_tableHeader">&nbsp;</td>
+			  <td><img src="/images/jsr/yel-horiz-bar.gif" width="220" height="8" border="0"></td>
+			  </tr>
+		</table>
+
+		&nbsp;<br>
+		&nbsp;<br>
+
+
+
+		<a name="903"></a>
+		<table cellpadding="2" cellspacing="0" border="0" class="listBy_table">
+		<tr>
+			<td class="listBy_tableTitle"><b>903</b></td>
+			<td nowrap><img src="/images/common/trans.gif" alt="" width="20" height="1"></td>
+			<td class="listBy_tableTitle"><b><a href="/en/jsr/detail?id=903">Java<sup><font size="-2">TM</font></sup> Servlet API Specification, Version 2.2, Errata Sheet, 4/27/2000</a></b></td>
+			</tr>
+
+			<tr>
+			<td valign="top" class="listBy_tableHeader">Description:</td>
+			<td></td>
+			<td>Maintenance revision for the Java<sup><font size="-2">TM</font></sup> Servlet API Specification, version 2.2.</td>
+			</tr>
+
+			<tr>
+			<td valign="top" class="listBy_tableHeader">Status:</td>
+			<td></td>
+			<td><a href="/en/introduction/glossary#status"><font color=black><span title="A JSR that has produced a Maintenance Review or Maintenance Release more than a year ago.">Maintenance</span></font></a>
+
+			
+
+			
+
+			<tr>
+			<td valign="top" class="listBy_tableHeader">Latest Stage:</td>
+			<td></td>
+			<td>
+			<table border="1" cellpadding="4">
+			<tr>
+			<td>Maintenance Review</td>
+			
+			<td><a href="http://jcp.org/aboutJava/communityprocess/maintenance/jsr903/index.html">Download page</a></td>
+			
+			
+			<td>Start: 2000-05-05</td>
+			<td>End: 2000-06-05</td>
+			</tr>
+			</table>
+
+
+			<tr>
+			<td valign="top" class="listBy_tableHeader">Spec Lead:</td>
+
+				<td><a href="/en/press/news/star"><img src="/images/jsr/stars-final-sml-anim-ir.gif" alt="Star Spec Lead" border="0" width="20" height="20" hspace="3" vspace="2"></a></td>
+
+			<td>
+Danny&nbsp;Coward, Oracle</td>
+</tr>
+
+			<tr>
+			  <td colspan="2" valign="top" class="listBy_tableHeader">&nbsp;</td>
+			  <td><img src="/images/jsr/yel-horiz-bar.gif" width="220" height="8" border="0"></td>
+			  </tr>
+		</table>
+
+		&nbsp;<br>
+		&nbsp;<br>
+
+
+
+		<a name="904"></a>
+		<table cellpadding="2" cellspacing="0" border="0" class="listBy_table">
+		<tr>
+			<td class="listBy_tableTitle"><b>904</b></td>
+			<td nowrap><img src="/images/common/trans.gif" alt="" width="20" height="1"></td>
+			<td class="listBy_tableTitle"><b><a href="/en/jsr/detail?id=904">JavaMail<sup><font size="-2">TM</font></sup> Specification</a></b></td>
+			</tr>
+
+			<tr>
+			<td valign="top" class="listBy_tableHeader">Description:</td>
+			<td></td>
+			<td>Maintenance revision 1.2 for the JavaMail<sup><font size="-2">TM</font></sup> API.</td>
+			</tr>
+
+			<tr>
+			<td valign="top" class="listBy_tableHeader">Status:</td>
+			<td></td>
+			<td><a href="/en/introduction/glossary#status"><font color=black><span title="A JSR that has produced a Maintenance Review or Maintenance Release more than a year ago.">Maintenance</span></font></a>
+
+			
+
+			
+
+			<tr>
+			<td valign="top" class="listBy_tableHeader">Latest Stage:</td>
+			<td></td>
+			<td>
+			<table border="1" cellpadding="4">
+			<tr>
+			<td>Maintenance Review</td>
+			
+			<td><a href="http://jcp.org/aboutJava/communityprocess/maintenance/jsr904/index.html">Download page</a></td>
+			
+			
+			<td>Start: 2000-05-25</td>
+			<td>End: 2000-06-25</td>
+			</tr>
+			</table>
+
+
+			<tr>
+			<td valign="top" class="listBy_tableHeader">Spec Lead:</td>
+
+				<td><a href="/en/press/news/star"><img src="/images/jsr/stars-final-sml-anim-ir.gif" alt="Star Spec Lead" border="0" width="20" height="20" hspace="3" vspace="2"></a></td>
+
+			<td>
+William&nbsp;Shannon, Oracle</td>
+</tr>
+
+			<tr>
+			  <td colspan="2" valign="top" class="listBy_tableHeader">&nbsp;</td>
+			  <td><img src="/images/jsr/yel-horiz-bar.gif" width="220" height="8" border="0"></td>
+			  </tr>
+		</table>
+
+		&nbsp;<br>
+		&nbsp;<br>
+
+
+
+		<a name="907"></a>
+		<table cellpadding="2" cellspacing="0" border="0" class="listBy_table">
+		<tr>
+			<td class="listBy_tableTitle"><b>907</b></td>
+			<td nowrap><img src="/images/common/trans.gif" alt="" width="20" height="1"></td>
+			<td class="listBy_tableTitle"><b><a href="/en/jsr/detail?id=907">Java<sup><font size="-2">TM</font></sup> Transaction API (JTA)</a></b></td>
+			</tr>
+
+			<tr>
+			<td valign="top" class="listBy_tableHeader">Description:</td>
+			<td></td>
+			<td>Revisions to the JTA specification.</td>
+			</tr>
+
+			<tr>
+			<td valign="top" class="listBy_tableHeader">Status:</td>
+			<td></td>
+			<td><a href="/en/introduction/glossary#status"><font color=black><span title="A JSR that has produced a Maintenance Review or Maintenance Release more than a year ago.">Maintenance</span></font></a>
+
+			
+
+			
+
+			<tr>
+			<td valign="top" class="listBy_tableHeader">Latest Stage:</td>
+			<td></td>
+			<td>
+			<table border="1" cellpadding="4">
+			<tr>
+			<td>Maintenance Release 2</td>
+			
+			<td><a href="http://jcp.org/aboutJava/communityprocess/mrel/jsr907/index3.html">Download page</a></td>
+			
+			
+			<td>Start: 2018-04-02</td>
+			<td></td>
+			</tr>
+			</table>
+
+
+			<tr>
+			<td valign="top" class="listBy_tableHeader">Spec Lead:</td>
+
+				<td></td>
+
+			<td>
+Stephen&nbsp;Felts, Oracle</td>
+</tr>
+
+			<tr>
+			<td valign="top" class="listBy_tableHeader">Spec Lead:</td>
+
+				<td></td>
+
+			<td>
+Mark&nbsp;Little, Eclipse Foundation, Inc</td>
+</tr>
+
+			<tr>
+			  <td colspan="2" valign="top" class="listBy_tableHeader">&nbsp;</td>
+			  <td><img src="/images/jsr/yel-horiz-bar.gif" width="220" height="8" border="0"></td>
+			  </tr>
+		</table>
+
+		&nbsp;<br>
+		&nbsp;<br>
+
+
+
+		<a name="914"></a>
+		<table cellpadding="2" cellspacing="0" border="0" class="listBy_table">
+		<tr>
+			<td class="listBy_tableTitle"><b>914</b></td>
+			<td nowrap><img src="/images/common/trans.gif" alt="" width="20" height="1"></td>
+			<td class="listBy_tableTitle"><b><a href="/en/jsr/detail?id=914">Java<sup><font size="-2">TM</font></sup> Message Service (JMS) API</a></b></td>
+			</tr>
+
+			<tr>
+			<td valign="top" class="listBy_tableHeader">Description:</td>
+			<td></td>
+			<td>Java<sup><font size="-2">TM</font></sup> Message Service API Errata.</td>
+			</tr>
+
+			<tr>
+			<td valign="top" class="listBy_tableHeader">Status:</td>
+			<td></td>
+			<td><a href="/en/introduction/glossary#status"><font color=black><span title="A JSR that has produced a Final Release milestone more than a year ago.">Final</span></font></a>
+
+			
+
+			
+
+			<tr>
+			<td valign="top" class="listBy_tableHeader">Latest Stage:</td>
+			<td></td>
+			<td>
+			<table border="1" cellpadding="4">
+			<tr>
+			<td>Final Release</td>
+			
+			<td><a href="http://jcp.org/aboutJava/communityprocess/final/jsr914/index.html">Download page</a></td>
+			
+			
+			<td>Start: 2003-12-02</td>
+			<td></td>
+			</tr>
+			</table>
+
+
+			<tr>
+			<td valign="top" class="listBy_tableHeader">Spec Lead:</td>
+
+				<td></td>
+
+			<td>
+Nigel&nbsp;Deakin, Oracle</td>
+</tr>
+
+			<tr>
+			  <td colspan="2" valign="top" class="listBy_tableHeader">&nbsp;</td>
+			  <td><img src="/images/jsr/yel-horiz-bar.gif" width="220" height="8" border="0"></td>
+			  </tr>
+		</table>
+
+		&nbsp;<br>
+		&nbsp;<br>
+
+
+
+		<a name="919"></a>
+		<table cellpadding="2" cellspacing="0" border="0" class="listBy_table">
+		<tr>
+			<td class="listBy_tableTitle"><b>919</b></td>
+			<td nowrap><img src="/images/common/trans.gif" alt="" width="20" height="1"></td>
+			<td class="listBy_tableTitle"><b><a href="/en/jsr/detail?id=919">JavaMail<sup><font size="-2">TM</font></sup></a></b></td>
+			</tr>
+
+			<tr>
+			<td valign="top" class="listBy_tableHeader">Description:</td>
+			<td></td>
+			<td>A description of the new APIs that are being
+introduced in JavaMail.</td>
+			</tr>
+
+			<tr>
+			<td valign="top" class="listBy_tableHeader">Status:</td>
+			<td></td>
+			<td><a href="/en/introduction/glossary#status"><font color=black><span title="A JSR that has produced a Maintenance Review or Maintenance Release more than a year ago.">Maintenance</span></font></a>
+
+			
+
+			
+
+			<tr>
+			<td valign="top" class="listBy_tableHeader">Latest Stage:</td>
+			<td></td>
+			<td>
+			<table border="1" cellpadding="4">
+			<tr>
+			<td>Maintenance Release 3</td>
+			
+			<td><a href="http://jcp.org/aboutJava/communityprocess/mrel/jsr919/index3.html">Download page</a></td>
+			
+			
+			<td>Start: 2017-08-21</td>
+			<td></td>
+			</tr>
+			</table>
+
+
+			<tr>
+			<td valign="top" class="listBy_tableHeader">Spec Lead:</td>
+
+				<td><a href="/en/press/news/star"><img src="/images/jsr/stars-final-sml-anim-ir.gif" alt="Star Spec Lead" border="0" width="20" height="20" hspace="3" vspace="2"></a></td>
+
+			<td>
+William&nbsp;Shannon, Oracle</td>
+</tr>
+
+			<tr>
+			  <td colspan="2" valign="top" class="listBy_tableHeader">&nbsp;</td>
+			  <td><img src="/images/jsr/yel-horiz-bar.gif" width="220" height="8" border="0"></td>
+			  </tr>
+		</table>
+
+		&nbsp;<br>
+		&nbsp;<br>
+
+
+
+		<a name="921"></a>
+		<table cellpadding="2" cellspacing="0" border="0" class="listBy_table">
+		<tr>
+			<td class="listBy_tableTitle"><b>921</b></td>
+			<td nowrap><img src="/images/common/trans.gif" alt="" width="20" height="1"></td>
+			<td class="listBy_tableTitle"><b><a href="/en/jsr/detail?id=921">Implementing Enterprise Web Services 1.1</a></b></td>
+			</tr>
+
+			<tr>
+			<td valign="top" class="listBy_tableHeader">Description:</td>
+			<td></td>
+			<td>This is a Maintenance Revision of the Implementing Enterprise Web Services 1.1 Specification.</td>
+			</tr>
+
+			<tr>
+			<td valign="top" class="listBy_tableHeader">Status:</td>
+			<td></td>
+			<td><a href="/en/introduction/glossary#status"><font color=black><span title="A JSR that has produced a Final Release milestone more than a year ago.">Final</span></font></a>
+
+			
+
+			
+
+			<tr>
+			<td valign="top" class="listBy_tableHeader">Latest Stage:</td>
+			<td></td>
+			<td>
+			<table border="1" cellpadding="4">
+			<tr>
+			<td>Final Release</td>
+			
+			<td><a href="http://jcp.org/aboutJava/communityprocess/final/jsr921/index.html">Download page</a></td>
+			
+			
+			<td>Start: 2004-01-23</td>
+			<td></td>
+			</tr>
+			</table>
+
+
+			<tr>
+			<td valign="top" class="listBy_tableHeader">Spec Lead:</td>
+
+				<td></td>
+
+			<td>
+Dhiru&nbsp;Pandey, Sun Microsystems, Inc.</td>
+</tr>
+
+			<tr>
+			  <td colspan="2" valign="top" class="listBy_tableHeader">&nbsp;</td>
+			  <td><img src="/images/jsr/yel-horiz-bar.gif" width="220" height="8" border="0"></td>
+			  </tr>
+		</table>
+
+		&nbsp;<br>
+		&nbsp;<br>
+
+
+
+
+
+
+
+	
+
+
+
+
+<!-- ** BEGIN: footer.jsp ** //-->
+
+
+
+
+
+
+
+
+</td>
+</tr>
+</table>
+
+<!-- ** END: Content Table ** //-->
+
+<!-- ** BEGIN: Footer Table ** //-->
+
+<div id="footer" style="clear: both;">
+    <div class="footleft">
+        <a href="/en/resources/contacts">Contact Us</a>
+    </div>
+	
+    <div class="botbar"><img src="/images/spacer.gif" alt="" height="23" width="1"></div>
+
+    <div class="footleft2">
+         &copy; 2019, Oracle Corporation and/or its affiliates. 
+        <a href="/en/home/terms">Terms of Use</a>. <a href="http://www.oracle.com/us/legal/privacy/index.html">Privacy Policy</a>. <a href="http://www.oracle.com/us/legal/third-party-trademarks/third-party-trademarks-078568.html">Trademarks</a>
+    </div>
+
+    <div class="footright">
+        <img src="/images/common/logo_oracle_footer.gif" alt="Oracle Corporation" height="22" width="91">
+    </div>
+
+    <div style="clear: both;"><img src="/images/spacer.gif" alt="" height="30" width="1"></div>
+</div>
+
+<!-- ** END: Footer Table ** //-->
+
+
+
+<!-- ** Menu Start ** //-->
+
+
+
+</body>
+</html>
+<!-- ** END: footer.jsp ** //-->
+

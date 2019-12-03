@@ -1,0 +1,427 @@
+
+
+
+<!-- ** BEGIN: header.jsp ** //-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3c.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+<head>
+    
+
+   
+    <link href="/includes/css/menu.css" rel="stylesheet" type="text/css"></link>
+    <link href="/includes/css/style.css" rel="stylesheet" type="text/css"></link>
+    <!--[if lt IE 6]><link href="/includes/css/style5.css" rel="stylesheet" type="text/css" ></link><![endif]-->
+    <!--[if gte IE 5]><link href="/includes/css/style6.css" rel="stylesheet" type="text/css" ></link><![endif]-->
+    <link href="/includes/css/tabs.css"  rel="stylesheet" type="text/css"></link>
+
+    <script type="text/javascript" src="/includes/scripts/tabs.js"></script>
+    <script type="text/javascript" src="/includes/scripts/menu.js"></script>
+   
+
+    
+
+    
+        <title>The Java Community Process(SM) Program - Community Resources - guide-writejsr</title>
+    
+
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+
+
+<body onload="P7_initPM(0,1,0,0,-1)">
+
+    <a name="top"></a>
+
+    <div id="header">
+	<div id="logo">
+		<a href="/en/home/index"><img src="/images/spacer.gif" alt="Java Community Process" height="81" width="151"></a>
+	</div>
+	<div id="tools">
+		<div class="search">
+			<form name="search" action="/en/jsr/summary" method="get" onsubmit="return validate_search()">
+				<input name="id" value="Search JSRs" size="16" class="form" onfocus="nullify_if_equal(this, 'Search JSRs')" type="text">
+				<a href="javascript:document.search.submit()" onclick="return validate_search()"><img src="/images/button_go.gif" width="21" height="16" border="0" alt="Submit this Search" name="sub_search"></a>
+			</form>
+		</div>
+		<div class="tools">
+			<a href="/en/press/pressroom">Press Room</a> &nbsp;|&nbsp;
+			<a href="http://java.com/java/download/index.jsp?cid=jdp78399">Get Java Here</a> &nbsp;|&nbsp;
+			<!-- <a href="javascript:void(0)">Print Format</a> &nbsp;|&nbsp;&nbsp; -->
+		</div>
+
+	</div>
+	<div style="clear: right;"></div>
+
+        
+
+	<div class="topbar"><img src="/images/spacer.gif" alt="" height="3" width="154"></div>
+	<div id="update"> </div>
+    </div>
+
+
+    
+
+        <!-- ** BEGIN: Content Table ** //-->
+
+        <table width="100%" border="0" cellpadding="0" cellspacing="0">
+
+            <tr>
+
+                <!-- ** BEGIN: Navigation Column ** //-->
+                <td width="150" id="leftcontent" valign="top">
+                    <!-- Navigation Placeholder //-->
+
+                    
+
+                    <div class="bar"><img src="/images/hr_dots1.gif" alt="" height="3" width="150"></div>
+
+        <!-- begin find JSRs form -->
+        <!-- IMPORTANT! do not convert this form to Struts < html : form > tag.  javascript change of form.action property fails. -->
+        <img src="/images/hd_find-jsrs.gif" alt="Find JSRs" height="18" width="150">
+        <form name="findjsr" action="/en/jsr/summary" method="get" class="pt5" onsubmit="return validate_findjsr()">
+            <input name="id" size="18" class="form" value="Search JSRs" onfocus="nullify_if_equal(this, 'Search JSRs')" type="text">
+	    <a href="javascript:document.findjsr.submit()" onclick="return validate_findjsr()"><img src="/images/button_go.gif" width="21" height="16" border="0" alt="Submit this Search" name="sub_search"></a>
+        </form><br><br>
+
+        <!-- ** Menu Start ** //-->
+
+        <ul id="p7PMnav">
+            <li><a href="/en/jsr/platform">JSRs by Platform</a></li>
+            <li><a href="/en/jsr/tech">JSRs by Technology</a></li>
+            <li><a href="/en/jsr/stage">JSRs by Stage</a></li>
+            <li><a href="/en/jsr/ec">JSRs by Committee</a></li>
+            <li><a href="/en/jsr/all">List of All JSRs</a></li>
+
+            <!--end find JSRs form -->
+            <div style="clear: both;"><img src="/images/spacer.gif" alt="" height="25" width="1"></div>
+
+            <!--begin my JCP -->
+            <img src="/images/hd_my-jcp.gif" alt="My JCP" height="18" width="150">
+            
+
+          <form name="login" method="get" action="/en/user/login" >
+            <input name="Sign-in" type="submit" title="Sign-in" value="Sign-in" />
+          </form>
+
+            <div style="clear:both"><img src="/images/global/spacer.gif" width="1" height="3" alt=""></div>
+            <div class="noNav">
+                <a href="/en/user/register">Register for Site</a>
+            </div>
+
+             <div class="bar"><img src="/images/hr_dots1.gif" alt="" height="3" width="150"></div>
+           <div class="noNav" style="color: #666666; padding: 0;">
+              Use of JCP site is subject to the
+              <a href="/en/home/terms" style="display:inline;padding: 0">JCP Terms of Use</a> and the
+              <a href="http://www.oracle.com/us/legal/privacy/index.html" style="display:inline;padding: 0" href="">Oracle Privacy Policy</a>
+          </div>
+
+            
+
+            <div style="clear:both"><img src="/images/global/spacer.gif" width="1" height="25" alt=""></div>
+
+            <!--begin JCP info -->
+            <img src="/images/hd_jcp-info.gif" alt="JCP Info" height="18" width="150">
+
+            <li><a href="/en/procedures/overview" class="p7PMtrg">About JCP</a>
+                <ul>
+                    <li><a href="/en/procedures/overview">Program Overview</a></li>
+                    <li><a href="/en/procedures/jcp2">JCP Process Document</a></li>
+                    <li><a href="/en/whatsnew/calendar">Calendar</a></li>
+                    <li><a href="/en/participation/members">JCP Members</a></li>
+                    <li><a href="/en/participation/committee">Executive Committee</a></li>
+                    <li><a href="/en/whatsnew/elections">Elections</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/en/participation/overview" class="p7PMtrg">Get Involved</a>
+		<ul>
+                    <li><a href="/en/participation/overview">Overview</a></li>
+                    <li><a href="/en/participation/membership">Becoming a JCP Member</a></li>
+		</ul>
+            </li>
+
+            <li><a href="/en/resources/contents" class="p7PMtrg">Community Resources</a>
+                <ul>
+                    <li><a href="/en/resources/contents">Overview</a></li>
+                    <li><a href="/en/resources/tutorials">Tutorials</a></li>
+                    <li><a href="/en/resources/multimedia">JCP Podcasts</a></li>
+                    <li><a href="/en/resources/guide">Spec Lead Guide</a></li>
+                    <li><a href="/en/resources/tdk">TCK Tool & Info</a></li>
+                    <li><a href="/en/resources/license_reference">License Reference</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/en/press/pmo" class="p7PMtrg">Community News</a>
+                <ul>
+                    <li><a href="/en/press/pmo">News</a></li>
+                    <li><a href="/en/press/news/awards/awards_main">Programs &amp; Awards</a></li>
+                    <li><a href="/en/press/releases">Press Releases</a></li>
+                    <li><a href="/en/press/success">Success Stories</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/en/introduction/faq">FAQ</a></li>
+
+            <li><a href="/en/resources/contacts">Contact Us</a></li>
+
+            <div style="clear: both;"><img src="/images/spacer.gif" alt="" height="25" width="1"></div>
+
+            <!--[if lte IE 6]><style>#p7PMnav a{height:1em;}#p7PMnav li{height:1em;float:left;clear:both;width:100%}</style><![endif]-->
+            <!--[if IE 6]><style>#p7PMnav li{clear:none;}</style><![endif]-->
+            <!--[if IE 7]><style>#p7PMnav a{zoom:100%;}#p7PMnav li{float:left;clear:both;width:100%;}</style><![endif]-->
+        </ul>
+
+        
+
+        <!--begin ad space -->
+        <div class="ads">
+            <a href="http://java.com/java/download/index.jsp?cid=jdp78399" target="_blank"><img style="display: ;" src="/images/ad_banner2.gif" alt="Ad Banner" border="1" height="70" width="150"></a>
+        </div>
+        <!--end ad space -->
+
+<!-- ** Menu End ** //-->
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;<br>
+
+    
+
+                    &nbsp;<br>
+                    <img src="/images/common/trans.gif" alt="" width="1" height="150"><br>
+
+              
+
+
+
+                </td>
+                <!-- ** END: Navigation Column ** //-->
+
+                <!-- ** BEGIN: Gutter Column ** //-->
+		<td width="10" nowrap><img src="/images/common/trans.gif" alt="" width="10" height="1"></td>
+                <!-- ** END: Gutter Column ** //-->
+
+                <!-- ** BEGIN: Content Column ** //-->
+                <td width="100%" valign="top">
+
+    
+<script type="text/javascript">
+
+String.prototype.trim = function() {
+        return this.replace(/^\s+|\s+$/g,"");
+}
+String.prototype.ltrim = function() {
+        return this.replace(/^\s+/,"");
+}
+String.prototype.rtrim = function() {
+        return this.replace(/\s+$/,"");
+}
+
+function validate_search() {
+	if (document.search.id.value == "Search JSRs" || document.search.id.value.trim().length == 0) {
+		alert("Search terms must be entered first");
+		return false;
+	}
+	return true;
+}
+
+function validate_findjsr() {
+	if (document.findjsr.id.value == "Search JSRs" || document.findjsr.id.value.trim().length == 0) {
+		alert("Search terms must be entered first");
+		return false;
+	}
+	return true;
+}
+
+function nullify_if_equal(field, str) {
+	// alert("val=" + field.value);
+	if (field.value == str) {
+		field.value = "";
+	}
+}
+
+</script>
+<!-- ** END: header.jsp ** //-->
+
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<TR>
+<TD align="left" valign="top">
+		<div class="header2">Community Resources</div>
+		<div class="header1">Spec Lead Guide: Writing a JSR Proposal</div>
+		<br>
+<div class="anybar"><img src="/images/global/bar_green.gif" alt="" width="12" height="4"></div>
+<p>
+
+
+
+
+
+<span class="headLinks"><font size="-1">
+Write&nbsp;a&nbsp;JSR&nbsp;|
+&nbsp;<a href="guide-submitjsr">Submit&nbsp;a&nbsp;JSR</a>&nbsp;|
+&nbsp;<a href="guide-jsrreview">JSR&nbsp;Review</a>&nbsp;|
+&nbsp;<a href="guide-eg">EG&nbsp;formation</a>&nbsp;|
+&nbsp;<a href="guide-edr">Early&nbsp;Draft&nbsp;Review</a>&nbsp;|
+&nbsp;<a href="guide-pr">Public&nbsp;Review</a>&nbsp;|
+&nbsp;<a href="guide-pfd">Proposed&nbsp;Final&nbsp;Draft</a>&nbsp;|
+&nbsp;<a href="guide-final">Final&nbsp;Ballot</a>&nbsp;|
+&nbsp;<a href="guide-maintenance">Maintenance</a>&nbsp;|
+&nbsp;<a href="guide">Spec&nbsp;Lead&nbsp;Guide</a>
+
+</font></span>
+&nbsp;<br>
+
+
+		&nbsp;<br>
+
+The Spec Lead's role is to drive the proposed specification through the process.Communication between the Spec Lead and the PMO is essential to achieve the goal of releasing a final spec within the schedule outlined in the Proposal. This schedule should be updated by the Spec Lead at regular intervals to show the correct information on the JSR public page. <br>
+
+		&nbsp;<br>
+		If you are submitting a Proposal as an employee of a JCP Executive Committee (EC) Member company, please indicate the internal approval of your JSR Proposal by copying the EC Representative on your submission to the PMO. Otherwise the PMO will delay the posting of your Proposal to the Ballot until the internal approval confirmation is received.<br>
+
+		&nbsp;<br>
+		Please provide the PMO at your earliest convenience with your complete contact info, including postal address. If the Spec Lead and the Submitter of the Proposal are not the same person, please provide this information for both. The PMO will then provide you with your login to the Expert Group private page of the JSR.<br>
+
+		The first step in the process is to write the proposal.  The Proposal should describe clearly what is being proposed -- what problem is being solved, what the constraints are on the solution, what approach will be taken, what existing technologies may be used as a starting point, etc.  The Spec Lead should consider marketing and business issues as well -- who are the customers for the solution, how will the solution be delivered, and what companies should be involved in creation of the specification. The Spec Lead should find endorsers/supporters for the proposal before submitting it, so as to demonstrate community support/interest in the specification.<br>
+
+		&nbsp;<br>
+		You may want to solicit support for your Proposal from the Members of the voting Executive Committee at this early stage. EC Members will look at various aspects of the JSR Proposal:<br>
+		
+		<ul>
+		<li>Is the schedule credible?</li>
+		<li>Does the submitter have the appropriate expertise?</li>
+		<li>Does the Proposal address appropriate needs in specific markets?</li>
+		<li>Is the featureset appropriate?</li>
+		<li>Is there enough detailed information?</li>
+		</ul>
+		
+		The Spec Lead should look at some of <a href="http://jcp.org/aboutJava/communityprocess/rejected.html">the JSRs that were voted down</a> to get an impression of some EC objections.<br>
+		
+		&nbsp;<br>
+		The JCP 2.7 Proposal Form requires the actual text of the licenses that will apply to the final Specification, Reference Implementation and Technology Compatibility Kit. Knowing the license terms gives potential Expert Group members the opportunity to decide at this early stage whether or not they want to become members of your Expert Group and accept these terms, and it also allows the community to anticipate how they will license the final products of the JSR..
+<BR>&nbsp;<BR>
+
+You may choose to use any of the following license templates for your proposed license terms under JCP 2.7. You are also free to choose another licensing model, as long as it is not in conflict with the JSPA.
+<BR>&nbsp;<BR>
+
+		<ul>
+                <li><a href="/aboutJava/communityprocess/cddl.txt">Common Development and Distribution License (CDDL)</a></li>
+
+		<li><a href="/aboutJava/communityprocess/JRL.rtf">Java Research License (JRL)</a></li>
+		<li><a href="/aboutJava/communityprocess/SPL1.0.rtf">SPL 1.0</a></li>
+                <LI><a href="/aboutJava/communityprocess/JDL.rtf">Java Distribution License (JDL)</a></LI>
+                
+		</ul>
+	Note that a requirement introduced with JCP 2.7 is to provide all license terms that will apply to the Expert Group, including the terms of service/terms of use of other web sites which you decide to use (wikis, collaborative code repositories, etc).<P>
+	
+As compatibility testing is an essential component of the JCP, the Spec Lead should consider how the technology will be tested, how the test suite will be developed, and what testing infrastructure might be needed. You should also plan the budget for the development of the RI and TCK. The more completely and clearly the JSR provides this information, the easier it will be for others to review the JSR, and the easier it will be for the Spec Lead to recruit EG Members.
+<P>
+
+Spec Leads are also asked in the JSR submission form to consider which Java platform editions their JSR will target and how their JSR will relate to those they are not targeting.  Spec Leads should carefully consider this question, to ensure they are taking possible migration of the technology to other platforms into account.  If the Spec Lead has questions about the applicability of the JSR to other platforms, they are encouraged to contact EC members for the editions in question, they will be happy to help.
+<P>
+
+JSRs may choose to target both Executive Committees, if the technology of the JSR is applicable across multiple platform editions.  If a Spec Lead chooses this option, the JSR will be voted on by both the ECs at each ballot stage, and the JSR must pass both ballots (the votes are not combined into one ballot) in order to proceed. Alternatively, Spec Leads can also create two separate JSRs for the technology, and operate them in parallel.
+<P>
+
+Spec Leads must also carefully consider how the work of their JSR will be made available to the community and the public. The Executive Committees will review the Spec Lead's plans for how their Expert Group will inform the outside world of the progress and decisions that have been made, and could choose to reject a JSR if the operating plan does not take the community and the public into account. In addition to the <a href="/en/resources/transparency">transparency checklist</a> which every JSR is required to provide, Spec Leads are encouraged to answer the following questions in their transparency plan:
+<ol>
+<li>How often will you provide a draft specification to the community and to the public?
+<li>How will the community be made aware of the open issues that the Expert Group is working on, and the decisions it has made?
+</ol>
+<P>
+There are tools available that can help Spec Leads create a more successful and more transparent JSR.  Here are some of the tools that Spec Leads are encouraged to use:
+<ul>
+<li>	JSR Update tab - This is a page Spec Leads can edit to provide the community with updates of the draft spec and information about the current topics and issues of the EG.  Spec Leads should provide regular updates to this page. The PMO will post your <a href="/en/resources/transparency">transparency checklist</a> to this page if you do not.
+<li>	observers discussion board - Each JSR is provided with a discussion board that the Spec Lead can administer to inform interested members about the progress and issues within the JSR.  Spec Leads are encouraged to use this alias as a means of reaching out to the members of the community who are most interested in the progress of their JSR. Community members will submit requests to be given access to the jsr-xxx-observers discussion board (where "xxx" is the JSR number); Spec Leads can review, approve or decline these requests from the Administration tab of the JSR's page.
+<P>
+
+<a href="/aboutJava/communityprocess/media/JCP_podcast_1.mp3">Listen the audio tutorial on the Community Update page and observer alias</a>.<BR>
+
+<li>	<a href="http;//java.net">java.net</a> - This is a software development site aimed at easing the burden of collaboration and group development.  This site is most valuable for maintaining a tree of source code and opening the development of the code to multiple participants. Spec Leads and Expert Groups are also using the <a href="http://community.java.net/jsr/">JSR Community on java.net</a>.
+</ul>
+
+	
+<BR>&nbsp;<br>
+		The PMO welcomes suggestions and requests from the Spec Leads for improvements of this guide and the process: pmo<fake_tag>&#064;</fake_tag>jcp.org<br>
+
+
+		&nbsp;<br>
+		&nbsp;<br>
+		</div>
+</td>
+</tr>
+</table>
+
+<!-- ** BEGIN: footer.jsp ** //-->
+
+
+
+
+
+
+
+
+</td>
+</tr>
+</table>
+
+<!-- ** END: Content Table ** //-->
+
+<!-- ** BEGIN: Footer Table ** //-->
+
+<div id="footer" style="clear: both;">
+    <div class="footleft">
+        <a href="/en/resources/contacts">Contact Us</a>
+    </div>
+	
+    <div class="botbar"><img src="/images/spacer.gif" alt="" height="23" width="1"></div>
+
+    <div class="footleft2">
+         &copy; 2019, Oracle Corporation and/or its affiliates. 
+        <a href="/en/home/terms">Terms of Use</a>. <a href="http://www.oracle.com/us/legal/privacy/index.html">Privacy Policy</a>. <a href="http://www.oracle.com/us/legal/third-party-trademarks/third-party-trademarks-078568.html">Trademarks</a>
+    </div>
+
+    <div class="footright">
+        <img src="/images/common/logo_oracle_footer.gif" alt="Oracle Corporation" height="22" width="91">
+    </div>
+
+    <div style="clear: both;"><img src="/images/spacer.gif" alt="" height="30" width="1"></div>
+</div>
+
+<!-- ** END: Footer Table ** //-->
+
+
+
+<!-- ** Menu Start ** //-->
+
+
+
+</body>
+</html>
+<!-- ** END: footer.jsp ** //-->
+
+
+

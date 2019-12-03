@@ -1,0 +1,4136 @@
+
+<!-- ** BEGIN: header.jsp ** //-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3c.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+<head>
+    
+
+   
+    <link href="/includes/css/menu.css" rel="stylesheet" type="text/css"></link>
+    <link href="/includes/css/style.css" rel="stylesheet" type="text/css"></link>
+    <!--[if lt IE 6]><link href="/includes/css/style5.css" rel="stylesheet" type="text/css" ></link><![endif]-->
+    <!--[if gte IE 5]><link href="/includes/css/style6.css" rel="stylesheet" type="text/css" ></link><![endif]-->
+    <link href="/includes/css/tabs.css"  rel="stylesheet" type="text/css"></link>
+
+    <script type="text/javascript" src="/includes/scripts/tabs.js"></script>
+    <script type="text/javascript" src="/includes/scripts/menu.js"></script>
+   
+
+    
+
+    
+        <title>The Java Community Process(SM) Program - communityprocess - maintenance</title>
+    
+
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+
+
+<body onload="P7_initPM(0,1,0,0,-1)">
+
+    <a name="top"></a>
+
+    <div id="header">
+	<div id="logo">
+		<a href="/en/home/index"><img src="/images/spacer.gif" alt="Java Community Process" height="81" width="151"></a>
+	</div>
+	<div id="tools">
+		<div class="search">
+			<form name="search" action="/en/jsr/summary" method="get" onsubmit="return validate_search()">
+				<input name="id" value="Search JSRs" size="16" class="form" onfocus="nullify_if_equal(this, 'Search JSRs')" type="text">
+				<a href="javascript:document.search.submit()" onclick="return validate_search()"><img src="/images/button_go.gif" width="21" height="16" border="0" alt="Submit this Search" name="sub_search"></a>
+			</form>
+		</div>
+		<div class="tools">
+			<a href="/en/press/pressroom">Press Room</a> &nbsp;|&nbsp;
+			<a href="http://java.com/java/download/index.jsp?cid=jdp78399">Get Java Here</a> &nbsp;|&nbsp;
+			<!-- <a href="javascript:void(0)">Print Format</a> &nbsp;|&nbsp;&nbsp; -->
+		</div>
+
+	</div>
+	<div style="clear: right;"></div>
+
+        
+
+	<div class="topbar"><img src="/images/spacer.gif" alt="" height="3" width="154"></div>
+	<div id="update"> </div>
+    </div>
+
+
+    
+
+        <!-- ** BEGIN: Content Table ** //-->
+
+        <table width="100%" border="0" cellpadding="0" cellspacing="0">
+
+            <tr>
+
+                <!-- ** BEGIN: Navigation Column ** //-->
+                <td width="150" id="leftcontent" valign="top">
+                    <!-- Navigation Placeholder //-->
+
+                    
+
+                    <div class="bar"><img src="/images/hr_dots1.gif" alt="" height="3" width="150"></div>
+
+        <!-- begin find JSRs form -->
+        <!-- IMPORTANT! do not convert this form to Struts < html : form > tag.  javascript change of form.action property fails. -->
+        <img src="/images/hd_find-jsrs.gif" alt="Find JSRs" height="18" width="150">
+        <form name="findjsr" action="/en/jsr/summary" method="get" class="pt5" onsubmit="return validate_findjsr()">
+            <input name="id" size="18" class="form" value="Search JSRs" onfocus="nullify_if_equal(this, 'Search JSRs')" type="text">
+	    <a href="javascript:document.findjsr.submit()" onclick="return validate_findjsr()"><img src="/images/button_go.gif" width="21" height="16" border="0" alt="Submit this Search" name="sub_search"></a>
+        </form><br><br>
+
+        <!-- ** Menu Start ** //-->
+
+        <ul id="p7PMnav">
+            <li><a href="/en/jsr/platform">JSRs by Platform</a></li>
+            <li><a href="/en/jsr/tech">JSRs by Technology</a></li>
+            <li><a href="/en/jsr/stage">JSRs by Stage</a></li>
+            <li><a href="/en/jsr/ec">JSRs by Committee</a></li>
+            <li><a href="/en/jsr/all">List of All JSRs</a></li>
+
+            <!--end find JSRs form -->
+            <div style="clear: both;"><img src="/images/spacer.gif" alt="" height="25" width="1"></div>
+
+            <!--begin my JCP -->
+            <img src="/images/hd_my-jcp.gif" alt="My JCP" height="18" width="150">
+            
+
+          <form name="login" method="get" action="/en/user/login" >
+            <input name="Sign-in" type="submit" title="Sign-in" value="Sign-in" />
+          </form>
+
+            <div style="clear:both"><img src="/images/global/spacer.gif" width="1" height="3" alt=""></div>
+            <div class="noNav">
+                <a href="/en/user/register">Register for Site</a>
+            </div>
+
+             <div class="bar"><img src="/images/hr_dots1.gif" alt="" height="3" width="150"></div>
+           <div class="noNav" style="color: #666666; padding: 0;">
+              Use of JCP site is subject to the
+              <a href="/en/home/terms" style="display:inline;padding: 0">JCP Terms of Use</a> and the
+              <a href="http://www.oracle.com/us/legal/privacy/index.html" style="display:inline;padding: 0" href="">Oracle Privacy Policy</a>
+          </div>
+
+            
+
+            <div style="clear:both"><img src="/images/global/spacer.gif" width="1" height="25" alt=""></div>
+
+            <!--begin JCP info -->
+            <img src="/images/hd_jcp-info.gif" alt="JCP Info" height="18" width="150">
+
+            <li><a href="/en/procedures/overview" class="p7PMtrg">About JCP</a>
+                <ul>
+                    <li><a href="/en/procedures/overview">Program Overview</a></li>
+                    <li><a href="/en/procedures/jcp2">JCP Process Document</a></li>
+                    <li><a href="/en/whatsnew/calendar">Calendar</a></li>
+                    <li><a href="/en/participation/members">JCP Members</a></li>
+                    <li><a href="/en/participation/committee">Executive Committee</a></li>
+                    <li><a href="/en/whatsnew/elections">Elections</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/en/participation/overview" class="p7PMtrg">Get Involved</a>
+		<ul>
+                    <li><a href="/en/participation/overview">Overview</a></li>
+                    <li><a href="/en/participation/membership">Becoming a JCP Member</a></li>
+		</ul>
+            </li>
+
+            <li><a href="/en/resources/contents" class="p7PMtrg">Community Resources</a>
+                <ul>
+                    <li><a href="/en/resources/contents">Overview</a></li>
+                    <li><a href="/en/resources/tutorials">Tutorials</a></li>
+                    <li><a href="/en/resources/multimedia">JCP Podcasts</a></li>
+                    <li><a href="/en/resources/guide">Spec Lead Guide</a></li>
+                    <li><a href="/en/resources/tdk">TCK Tool & Info</a></li>
+                    <li><a href="/en/resources/license_reference">License Reference</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/en/press/pmo" class="p7PMtrg">Community News</a>
+                <ul>
+                    <li><a href="/en/press/pmo">News</a></li>
+                    <li><a href="/en/press/news/awards/awards_main">Programs &amp; Awards</a></li>
+                    <li><a href="/en/press/releases">Press Releases</a></li>
+                    <li><a href="/en/press/success">Success Stories</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/en/introduction/faq">FAQ</a></li>
+
+            <li><a href="/en/resources/contacts">Contact Us</a></li>
+
+            <div style="clear: both;"><img src="/images/spacer.gif" alt="" height="25" width="1"></div>
+
+            <!--[if lte IE 6]><style>#p7PMnav a{height:1em;}#p7PMnav li{height:1em;float:left;clear:both;width:100%}</style><![endif]-->
+            <!--[if IE 6]><style>#p7PMnav li{clear:none;}</style><![endif]-->
+            <!--[if IE 7]><style>#p7PMnav a{zoom:100%;}#p7PMnav li{float:left;clear:both;width:100%;}</style><![endif]-->
+        </ul>
+
+        
+
+        <!--begin ad space -->
+        <div class="ads">
+            <a href="http://java.com/java/download/index.jsp?cid=jdp78399" target="_blank"><img style="display: ;" src="/images/ad_banner2.gif" alt="Ad Banner" border="1" height="70" width="150"></a>
+        </div>
+        <!--end ad space -->
+
+<!-- ** Menu End ** //-->
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;<br>
+
+    
+
+                    &nbsp;<br>
+                    <img src="/images/common/trans.gif" alt="" width="1" height="150"><br>
+
+              
+
+
+
+                </td>
+                <!-- ** END: Navigation Column ** //-->
+
+                <!-- ** BEGIN: Gutter Column ** //-->
+		<td width="10" nowrap><img src="/images/common/trans.gif" alt="" width="10" height="1"></td>
+                <!-- ** END: Gutter Column ** //-->
+
+                <!-- ** BEGIN: Content Column ** //-->
+                <td width="100%" valign="top">
+
+    
+<script type="text/javascript">
+
+String.prototype.trim = function() {
+        return this.replace(/^\s+|\s+$/g,"");
+}
+String.prototype.ltrim = function() {
+        return this.replace(/^\s+/,"");
+}
+String.prototype.rtrim = function() {
+        return this.replace(/\s+$/,"");
+}
+
+function validate_search() {
+	if (document.search.id.value == "Search JSRs" || document.search.id.value.trim().length == 0) {
+		alert("Search terms must be entered first");
+		return false;
+	}
+	return true;
+}
+
+function validate_findjsr() {
+	if (document.findjsr.id.value == "Search JSRs" || document.findjsr.id.value.trim().length == 0) {
+		alert("Search terms must be entered first");
+		return false;
+	}
+	return true;
+}
+
+function nullify_if_equal(field, str) {
+	// alert("val=" + field.value);
+	if (field.value == str) {
+		field.value = "";
+	}
+}
+
+</script>
+<!-- ** END: header.jsp ** //-->
+
+
+
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+    <meta content=
+    "HTML Tidy for Windows (vers 1st February 2003), see www.w3.org"
+          name="generator">
+    <meta http-equiv="CONTENT-TYPE" content="text/html; charset=us-ascii">
+    <title>
+      SAAJ 1.2 Change Log
+    </title>
+    <style type="text/css">
+
+        <!--
+
+                @page {
+
+                        margin-left: 3.18cm;
+                        margin-right: 3.18cm;
+                        margin-top: 2.54cm;
+                        margin-bottom: 2.54cm
+                }
+                h2.changeId {font-style: italic; font-weight: bold; background-color: LightGrey; width: 2em}
+                u.fauxLink {color: blue}
+                hr.descriptionSeparator {text-align: left}
+                td.summaryReturnType {font-size: 80%}
+                td.summaryHeader {font-size: 144%}
+                dt.detailSection {font-weight: bold}
+                div.center {text-align: center}
+                div.left {text-align: left}
+                div.listMargin {margin-left: 2em}
+                p {margin-bottom: 0.2cm}
+                p.typeOfChange {font-style: italic; font-weight: bold}
+                p.normalFont {font-style: normal;}
+                p.sectionHeader {font-size: 120%; font-style: italic; font-weight: bold}
+                p.notice {font-weight: bold; text-align: center}
+                p.center {text-align: center}
+                span.bigger {font-size: 120%}
+                span.smaller {font-size: 80%}
+                span.normal {font-style: normal;}
+                span.trademark {font-size: 70%}
+                span.title {font-size: 150%}
+        -->
+
+
+
+
+    </style>
+  </head>
+  <body lang="en-US">
+    <p class="center">
+      <span class="title">SOAP with Attachments API for
+         Java</span><span class="trademark"><sup>TM</sup></span> <span class=
+         "title">(SAAJ) 1.2</span>
+    </p>
+    <p class="center">
+      April 10, 2003
+    </p>
+    <hr>
+    <p class="notice">
+      &nbsp;
+    </p>
+    <p class="sectionHeader" align="center">
+      Quick jump to changes
+    </p>
+    <p class="normalFont">
+      <a href="#C001_">C001</a>, <a href="#C002_">C002</a>,
+      <a href="#C003_">C003</a>, <a href="#C004_">C004</a>,
+      <a href="#C005_">C005</a>, <a href="#C006_">C006</a>,
+      <a href="#C007_">C007</a>, <a href="#C008_">C008</a>,
+      <a href="#C009_">C009</a>, <a href="#C010_">C010</a>,
+      <a href="#C011_">C011</a>, <a href="#C012_">C012</a>,
+      <a href="#C013_">C013</a>, <a href="#C014_">C014</a>,
+      <a href="#C015_">C015</a>, <a href="#C016_">C016</a>,
+      <a href="#C017_">C017</a>, <a href="#C018_">C018</a>,
+      <a href="#C019_">C019</a>, <a href="#C020_">C020</a>,
+      <a href="#C021_">C021</a>, <a href="#C022_">C022</a>,
+      <a href="#C023_">C023</a>, <a href="#C024_">C024</a>,
+      <a href="#C025_">C025</a>, <a href="#C026_">C026</a>,
+      <a href="#C027_">C027</a>, <a href="#C028_">C028</a>,
+      <a href="#C029_">C029</a>, <a href="#C030_">C030</a>,
+      <a href="#C031_">C031</a>, <a href="#C032_">C032</a>,
+      <a href="#C033_">C033</a>, <a href="#C034_">C034</a>,
+      <a href="#C035_">C035</a>, <a href="#C036_">C036</a>,
+      <a href="#C037_">C037</a>, <a href="#C038_">C038</a>,
+      <a href="#C039_">C039</a>, <a href="#C040_">C040</a>,
+      <a href="#C041_">C041</a>, <a href="#C042_">C042</a>,
+      <a href="#C043_">C043</a>, <a href="#C044_">C044</a>,
+      <a href="#C045_">C045</a>, <a href="#C046_">C046</a>,
+      <a href="#C047_">C047</a>
+    </p>
+    <hr>
+    <p class="sectionHeader">
+      1) Description
+    </p>
+    <p>
+      Maintenance revision of the SOAP with Attachments API for
+         Java<span class="trademark"><sup>TM</sup></span> (SAAJ), version 1.2.
+    </p>
+    <p class="sectionHeader">
+      2) Specification Leads
+    </p>
+    <p>
+      Nicholas Kassem and Phil Goodwin, Sun Microsystems, Inc.
+    </p>
+    <p class="sectionHeader">
+      3) Feedback
+    </p>
+    <p>
+      Comments should be sent to <a href=
+      "mailto:jaxm-final@sun.com">mailto:jaxm-final@sun.com</a>
+    </p>
+    <hr>
+    <p class="sectionHeader">
+      4) Rationale for proposed changes
+    </p>
+    <p>
+      The goal of this maintenance release is to provide support for the
+      proposed WS-I Basic Profile of SOAP 1.1. In addition we would like to
+      take the opportunity to make a number of corrections and clarifications
+      to the specification and JavaDocs.
+    </p>
+    <p>
+      The WS-I Basic Profile does not add any capabilities to the SOAP 1.1
+      document that it moderates. It does, however, promote the use of some
+      SOAP 1.1 features even as it proscribes the use of others. The goal of
+      this change log is to make it easier for applications to create and use
+      messages that are WS-I conformant. This maintenance release is concerned
+      with the following areas:
+    </p>
+    <div class="listMargin">
+      <ol>
+        <li>
+          <p>
+            The use of literal encoding
+          </p>
+        </li>
+        <li>
+          <p>
+            Access to SOAP 1.1 features that are of increased <span lang=
+            "en-US">prominence</span>
+          </p>
+        </li>
+        <li>
+          <p>
+            Easier conformance to WS-I recommendations
+          </p>
+        </li>
+      </ol>
+    </div>SOAP 1.2 support has been considered and set aside for the current
+    maintenance cycle in order to reinforce the JCP's focus on WS-I support in
+    J2EE 1.4 <br>
+
+    <hr>
+    <p class="sectionHeader">
+      5) Summary of Proposed changes
+    </p>
+    <div class="listMargin">
+      <ol>
+        <li>
+          <p>
+            <a href="#DOM_Changes">Bind SAAJ APIs to DOM APIs</a><br>
+             <i>Rationale:</i> <span class="normal">DOM is already in use in
+            many environments. If SAAJ trees are also DOM trees then SAAJ will
+            be able to integrate more easily with many applications and
+            tools.</span>
+          </p>
+        </li>
+        <li>
+          <p class="normalFont">
+            <a href="#SOAPMessage_properties">Add properties to
+            SOAPMessage</a><br>
+             <i>Rationale:</i> There are several details about the formatting
+            and encoding of a SOAP message that can affect interoperability.
+            Giving the end user control over these details while retaining the
+            same defaults as SAAJ 1.1 allows us to deliver a higher degree of
+            potential interoperability without sacrificing usability or
+            backward compatibility.
+          </p>
+        </li>
+        <li>
+          <p class="normalFont">
+            <span class="normal"><a href="#Ease_of_Use">Add ease of use methods
+            to key APIs</a><br></span> <i>Rationale:</i> <span class=
+            "normal">There are several opportunities in the SAAJ API to make it
+            easier on the end user to conform to the recommendations of SOAP
+            1.1 or WS-I. These new methods will automate frequent or
+            error-prone tasks, leading to higher productivity, fewer errors -
+            and less technical support.In addition, it is expected that the
+            average developer will not have extensive knowledge of DOM APIs and
+            so we would like to support common SOAP use cases involving DOM
+            through the SAAJ APIs.</span>
+          </p>
+        </li>
+        <li>
+          <p class="normalFont">
+            <a href="#Corrections">Clarify and correct the wording of JavaDocs
+            and specification</a><br>
+             <i>Scope:</i> None of these changes will break backward
+            compatibility or allow new behavior that was explicitly forbidden
+            before. In particular, conforming implementations will not break
+            existing clients and will be capable of passing the existing TCK.
+            Some of these changes will impose new requirements on
+            implementations. Where that is the case the changes will be
+            specifically enumerated in this document.<br>
+             <i>Rationale:</i> Corrections of this nature cost little and
+            improve the overall integrity of the specification making correct
+            implementations easier to create, validate and use.
+          </p>
+        </li>
+      </ol>
+    </div>
+    <hr>
+    <br>
+
+    <p class="sectionHeader">
+      <a name="DOM_Changes"></a> 6) Proposed Changes Supporting the addition of
+      DOM Interfaces<br>
+       The following classes and interfaces would implement interfaces from the
+      org.w3c.dom package:
+    </p>
+    <hr width="50%" size="2">
+    <h2 class="changeId">
+      <a name="C001_"></a> <span class="smaller">C001</span>
+    </h2>
+    <blockquote>
+      <blockquote>
+        <h2>
+          <span class="smaller">javax.xml.soap</span><br>
+           Interface Node
+        </h2>
+        <dl>
+          <dt class="detailSection">
+            All Superinterfaces:
+          </dt>
+          <dd>
+            org.w3c.dom.Node
+          </dd>
+        </dl>
+        <dl>
+          <dt>
+            public interface <b>Node</b>
+          </dt>
+          <dt>
+            extends org.w3c.dom.Node
+          </dt>
+        </dl>
+        <p>
+          <u>A representation of a node (element) in an XML document. This
+          interface extends the standard DOM Node interface with methods for
+          getting and setting the value of a node, for getting and setting the
+          parent of a node, and for removing a node.</u>
+        </p>
+      </blockquote>
+      <blockquote>
+        <table border="1" cellpadding="3" cellspacing="0" width="100%">
+          <tbody>
+            <tr bgcolor="#CCCCFF" class="TableHeadingColor">
+              <td class="summaryHeader" colspan="2">
+                <b>Field Summary</b>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </blockquote>
+      <blockquote>
+        <table border="1" cellpadding="3" cellspacing="0" width="100%">
+          <tbody>
+            <tr bgcolor="#EEEEFF" class="TableSubHeadingColor">
+              <td>
+                <b>Fields inherited from interface org.w3c.dom.Node</b>
+              </td>
+            </tr>
+            <tr bgcolor="white" class="TableRowColor">
+              <td>
+                <code>ATTRIBUTE_NODE, CDATA_SECTION_NODE, COMMENT_NODE,
+                DOCUMENT_FRAGMENT_NODE, DOCUMENT_NODE, DOCUMENT_TYPE_NODE,
+                ELEMENT_NODE, ENTITY_NODE, ENTITY_REFERENCE_NODE,
+                NOTATION_NODE, PROCESSING_INSTRUCTION_NODE, TEXT_NODE</code>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </blockquote>
+      <blockquote>
+        <table border="1" cellpadding="3" cellspacing="0" width="100%">
+          <tbody>
+            <tr bgcolor="#CCCCFF" class="TableHeadingColor">
+              <td class="summaryHeader">
+                <b>Method Summary</b>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </blockquote>
+      <blockquote>
+        <table border="1" cellpadding="3" cellspacing="0" width="100%">
+          <tbody>
+            <tr bgcolor="#EEEEFF" class="TableSubHeadingColor">
+              <td>
+                <b>Methods inherited from interface org.w3c.dom.Node</b>
+              </td>
+            </tr>
+            <tr bgcolor="white" class="TableRowColor">
+              <td>
+                <code>appendChild, cloneNode, getAttributes, getChildNodes,
+                getFirstChild, getLastChild, getLocalName, getNamespaceURI,
+                getNextSibling, getNodeName, getNodeType, getNodeValue,
+                getOwnerDocument, getParentNode, getPrefix, getPreviousSibling,
+                hasAttributes, hasChildNodes, insertBefore, isSupported,
+                normalize, removeChild, replaceChild, setNodeValue,
+                setPrefix</code>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </blockquote>
+    </blockquote><!-- ======== NESTED CLASS SUMMARY ======== -->
+    <!-- =========== FIELD SUMMARY =========== -->
+    <!-- ======== CONSTRUCTOR SUMMARY ======== -->
+    <!-- ========== METHOD SUMMARY =========== -->
+    <hr width="50%" size="2">
+    <br>
+
+    <h2 class="changeId">
+      <a name="C002_"></a> <span class="smaller">C002</span>
+    </h2>
+    <blockquote>
+      <blockquote>
+        <h2>
+          <span class="smaller">javax.xml.soap</span><br>
+           Interface SOAPElement
+        </h2>
+        <dl>
+          <dt class="detailSection">
+            All Superinterfaces:
+          </dt>
+          <dd>
+            org.w3c.dom.Element, <a href="#foo">Node</a>, org.w3c.dom.Node
+          </dd>
+        </dl>
+        <dl>
+          <dt>
+            public interface <b>SOAPElement</b>
+          </dt>
+          <dt>
+            extends <a href="#foo">Node</a>, org.w3c.dom.Element
+          </dt>
+        </dl>
+        <p>
+          <!-- ======== NESTED CLASS SUMMARY ======== -->
+           <!-- =========== FIELD SUMMARY =========== -->
+          </p>
+        <p>
+          <strike>An object representing the contents in a
+          <code>SOAPBody</code> object, the contents in a
+          <code>SOAPHeader</code> object, the content that can follow the
+          <code>SOAPBody</code> object in a <code>SOAPEnvelope</code> object,
+          or what can follow the detail element in a <code>SOAPFault</code>
+          object. It is the base class for all of the classes that represent
+          the SOAP objects as defined in the SOAP specification.</strike><br>
+           <u>An object representing an element of a SOAP message that is
+          allowed but not specifically prescribed by a SOAP specification. This
+          interface serves as the base interface for those objects that are
+          specifically prescribed by a SOAP specification.</u>
+        </p>
+        <p>
+          <u>Methods in this interface that are required to return SAAJ
+          specific objects may "silently" replace nodes in the tree as required
+          to successfully return objects of the correct type. See <a href=
+          "#foo"><code>getChildElements()</code></a> and <a href=
+          "#foo">javax.xml.soap</a></u><a><u>for details.</u></a>
+        </p><br>
+        <br>
+
+        <table border="1" cellpadding="3" cellspacing="0" width="100%">
+          <tbody>
+            <tr bgcolor="#CCCCFF" class="TableHeadingColor">
+              <td class="summaryHeader" colspan="2">
+                <b>Field Summary</b>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <table border="1" cellpadding="3" cellspacing="0" width="100%">
+          <tbody>
+            <tr bgcolor="#EEEEFF" class="TableSubHeadingColor">
+              <td>
+                <b>Fields inherited from interface org.w3c.dom.Node</b>
+              </td>
+            </tr>
+            <tr bgcolor="white" class="TableRowColor">
+              <td>
+                <code>ATTRIBUTE_NODE, CDATA_SECTION_NODE, COMMENT_NODE,
+                DOCUMENT_FRAGMENT_NODE, DOCUMENT_NODE, DOCUMENT_TYPE_NODE,
+                ELEMENT_NODE, ENTITY_NODE, ENTITY_REFERENCE_NODE,
+                NOTATION_NODE, PROCESSING_INSTRUCTION_NODE, TEXT_NODE</code>
+              </td>
+            </tr>
+          </tbody>
+        </table><!-- ======== CONSTRUCTOR SUMMARY ======== -->
+        <!-- ========== METHOD SUMMARY =========== -->
+        <table border="1" cellpadding="3" cellspacing="0" width="100%">
+          <tbody>
+            <tr bgcolor="#CCCCFF" class="TableHeadingColor">
+              <td class="summaryHeader" colspan="2">
+                <b>Method Summary</b>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <table border="1" cellpadding="3" cellspacing="0" width="100%">
+          <tbody>
+            <tr bgcolor="#EEEEFF" class="TableSubHeadingColor">
+              <td>
+                <b>Methods inherited from interface org.w3c.dom.Node</b>
+              </td>
+            </tr>
+            <tr bgcolor="white" class="TableRowColor">
+              <td>
+                <code>appendChild, cloneNode, getAttributes, getChildNodes,
+                getFirstChild, getLastChild, getLocalName, getNamespaceURI,
+                getNextSibling, getNodeName, getNodeType, getNodeValue,
+                getOwnerDocument, getParentNode, getPrefix, getPreviousSibling,
+                hasAttributes, hasChildNodes, insertBefore, isSupported,
+                normalize, removeChild, replaceChild, setNodeValue,
+                setPrefix</code>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <table border="1" cellpadding="3" cellspacing="0" width="100%">
+          <tbody>
+            <tr bgcolor="#EEEEFF" class="TableSubHeadingColor">
+              <td>
+                <b>Methods inherited from interface org.w3c.dom.Element</b>
+              </td>
+            </tr>
+            <tr bgcolor="white" class="TableRowColor">
+              <td>
+                <code>getAttribute, getAttributeNode, getAttributeNodeNS,
+                getAttributeNS, getElementsByTagName, getElementsByTagNameNS,
+                getTagName, hasAttribute, hasAttributeNS, removeAttribute,
+                removeAttributeNode, removeAttributeNS, setAttribute,
+                setAttributeNode, setAttributeNodeNS, setAttributeNS</code>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </blockquote>
+    </blockquote><br>
+
+    <hr width="50%" size="2">
+    <h2 class="changeId">
+      <a name="C003_"></a> <span class="smaller">C003</span>
+    </h2>
+    <blockquote>
+      <blockquote>
+        <h2>
+          <span class="smaller">javax.xml.soap</span><br>
+           Class SOAPPart
+        </h2>
+        <pre>
+java.lang.Object<br>  |<br>  +--<b>javax.xml.soap.SOAPPart</b><br>
+        </pre>
+        <dl>
+          <dt class="detailSection">
+            All Implemented Interfaces:
+          </dt>
+          <dd>
+            org.w3c.dom.Document, org.w3c.dom.Node
+          </dd>
+        </dl>
+        <dl>
+          <dt>
+            public abstract class <b>SOAPPart</b>
+          </dt>
+          <dt>
+            extends java.lang.Object
+          </dt>
+          <dt>
+            implements org.w3c.dom.Document
+          </dt>
+        </dl>
+      </blockquote>
+      <blockquote>
+        <table border="1" cellpadding="3" cellspacing="0" width="100%">
+          <tbody>
+            <tr bgcolor="#CCCCFF" class="TableHeadingColor">
+              <td class="summaryHeader" colspan="2">
+                <b>Field Summary</b>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </blockquote>
+      <blockquote>
+        <table border="1" cellpadding="3" cellspacing="0" width="100%">
+          <tbody>
+            <tr bgcolor="#EEEEFF" class="TableSubHeadingColor">
+              <td>
+                <b>Fields inherited from interface org.w3c.dom.Node</b>
+              </td>
+            </tr>
+            <tr bgcolor="white" class="TableRowColor">
+              <td>
+                <code>ATTRIBUTE_NODE, CDATA_SECTION_NODE, COMMENT_NODE,
+                DOCUMENT_FRAGMENT_NODE, DOCUMENT_NODE, DOCUMENT_TYPE_NODE,
+                ELEMENT_NODE, ENTITY_NODE, ENTITY_REFERENCE_NODE,
+                NOTATION_NODE, PROCESSING_INSTRUCTION_NODE, TEXT_NODE</code>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </blockquote>
+      <blockquote>
+        <table border="1" cellpadding="3" cellspacing="0" width="100%">
+          <tbody>
+            <tr bgcolor="#CCCCFF" class="TableHeadingColor">
+              <td class="summaryHeader" colspan="2">
+                <b>Method Summary</b>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </blockquote>
+      <blockquote>
+        <table border="1" cellpadding="3" cellspacing="0" width="100%">
+          <tbody>
+            <tr bgcolor="#EEEEFF" class="TableSubHeadingColor">
+              <td>
+                <b>Methods inherited from interface org.w3c.dom.Document</b>
+              </td>
+            </tr>
+            <tr bgcolor="white" class="TableRowColor">
+              <td>
+                <code>createAttribute, createAttributeNS, createCDATASection,
+                createComment, createDocumentFragment, createElement,
+                createElementNS, createEntityReference,
+                createProcessingInstruction, createTextNode, getDoctype,
+                getDocumentElement, getElementById, getElementsByTagName,
+                getElementsByTagNameNS, getImplementation, importNode</code>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </blockquote>
+      <blockquote>
+        <table border="1" cellpadding="3" cellspacing="0" width="100%">
+          <tbody>
+            <tr bgcolor="#EEEEFF" class="TableSubHeadingColor">
+              <td>
+                <b>Methods inherited from interface org.w3c.dom.Node</b>
+              </td>
+            </tr>
+            <tr bgcolor="white" class="TableRowColor">
+              <td>
+                <code>appendChild, cloneNode, getAttributes, getChildNodes,
+                getFirstChild, getLastChild, getLocalName, getNamespaceURI,
+                getNextSibling, getNodeName, getNodeType, getNodeValue,
+                getOwnerDocument, getParentNode, getPrefix, getPreviousSibling,
+                hasAttributes, hasChildNodes, insertBefore, isSupported,
+                normalize, removeChild, replaceChild, setNodeValue,
+                setPrefix</code>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </blockquote>
+    </blockquote><!-- ======== NESTED CLASS SUMMARY ======== -->
+    <!-- =========== FIELD SUMMARY =========== -->
+    <!-- ======== CONSTRUCTOR SUMMARY ======== --><br>
+
+    <hr width="50%" size="2">
+    <h2 class="changeId">
+      <a name="C004_"></a> <span class="smaller">C004</span>
+    </h2>
+    <blockquote>
+      <blockquote>
+        <h2>
+          <span class="smaller">javax.xml.soap</span><br>
+           Interface Text
+        </h2>
+        <dl>
+          <dt class="detailSection">
+            All Superinterfaces:
+          </dt>
+          <dd>
+            org.w3c.dom.CharacterData, <a href="#foo">Node</a>,
+            org.w3c.dom.Node, org.w3c.dom.Text
+          </dd>
+        </dl>
+        <dl>
+          <dt>
+            public interface <b>Text</b>
+          </dt>
+          <dt>
+            extends <a href="#foo">Node</a>, org.w3c.dom.Text
+          </dt>
+        </dl>
+        <p>
+          <!-- ======== NESTED CLASS SUMMARY ======== -->
+           <!-- =========== FIELD SUMMARY =========== -->
+          </p>
+        <table border="1" cellpadding="3" cellspacing="0" width="100%">
+          <tbody>
+            <tr bgcolor="#CCCCFF" class="TableHeadingColor">
+              <td class="summaryHeader" colspan="2">
+                <b>Field Summary</b>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <table border="1" cellpadding="3" cellspacing="0" width="100%">
+          <tbody>
+            <tr bgcolor="#EEEEFF" class="TableSubHeadingColor">
+              <td>
+                <b>Fields inherited from interface org.w3c.dom.Node</b>
+              </td>
+            </tr>
+            <tr bgcolor="white" class="TableRowColor">
+              <td>
+                <code>ATTRIBUTE_NODE, CDATA_SECTION_NODE, COMMENT_NODE,
+                DOCUMENT_FRAGMENT_NODE, DOCUMENT_NODE, DOCUMENT_TYPE_NODE,
+                ELEMENT_NODE, ENTITY_NODE, ENTITY_REFERENCE_NODE,
+                NOTATION_NODE, PROCESSING_INSTRUCTION_NODE, TEXT_NODE</code>
+              </td>
+            </tr>
+          </tbody>
+        </table><!-- ======== CONSTRUCTOR SUMMARY ======== -->
+        <!-- ========== METHOD SUMMARY =========== -->
+        <table border="1" cellpadding="3" cellspacing="0" width="100%">
+          <tbody>
+            <tr bgcolor="#CCCCFF" class="TableHeadingColor">
+              <td class="summaryHeader" colspan="2">
+                <b>Method Summary</b>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <table border="1" cellpadding="3" cellspacing="0" width="100%">
+          <tbody>
+            <tr bgcolor="#EEEEFF" class="TableSubHeadingColor">
+              <td>
+                <b>Methods inherited from interface org.w3c.dom.Node</b>
+              </td>
+            </tr>
+            <tr bgcolor="white" class="TableRowColor">
+              <td>
+                <code>appendChild, cloneNode, getAttributes, getChildNodes,
+                getFirstChild, getLastChild, getLocalName, getNamespaceURI,
+                getNextSibling, getNodeName, getNodeType, getNodeValue,
+                getOwnerDocument, getParentNode, getPrefix, getPreviousSibling,
+                hasAttributes, hasChildNodes, insertBefore, isSupported,
+                normalize, removeChild, replaceChild, setNodeValue,
+                setPrefix</code>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <table border="1" cellpadding="3" cellspacing="0" width="100%">
+          <tbody>
+            <tr bgcolor="#EEEEFF" class="TableSubHeadingColor">
+              <td>
+                <b>Methods inherited from interface org.w3c.dom.Text</b>
+              </td>
+            </tr>
+            <tr bgcolor="white" class="TableRowColor">
+              <td>
+                <code>splitText</code>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <table border="1" cellpadding="3" cellspacing="0" width="100%">
+          <tbody>
+            <tr bgcolor="#EEEEFF" class="TableSubHeadingColor">
+              <td>
+                <b>Methods inherited from interface
+                org.w3c.dom.CharacterData</b>
+              </td>
+            </tr>
+            <tr bgcolor="white" class="TableRowColor">
+              <td>
+                <code>appendData, deleteData, getData, getLength, insertData,
+                replaceData, setData, substringData</code>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </blockquote>
+    </blockquote><!-- ============ FIELD DETAIL =========== -->
+    <!-- ========= CONSTRUCTOR DETAIL ======== -->
+    <!-- ============ METHOD DETAIL ========== -->
+    <p class="normalFont">
+      &nbsp;
+    </p>
+    <h2 class="changeId"></h2>
+    <hr width="50%" size="2">
+    <h2 class="changeId">
+      <a name="C046_"></a><span class="smaller">C046</span>
+    </h2>
+    <p class="sectionHeader">
+      This would be added to the package comment:
+    </p>
+    <blockquote>
+      <blockquote>
+        <p class="normalFont">
+          In addition the APIs in the <code>javax.xml.soap</code> package
+          extend their counterparts in the <code>org.w3c.dom</code> package.
+          This means that the <code>SOAPPart</code> of a
+          <code>SOAPMessage</code> is also a DOM Level 2 <code>Document</code>,
+          and can be manipulated as such by applications, tools and libraries
+          that use DOM (see http://www.w3.org/DOM/ for more information). It is
+          important to note that, while it is possible to use DOM APIs to add
+          ordinary DOM nodes to a SAAJ tree, the SAAJ APIs are still required
+          to return SAAJ types when examining or manipulating the tree. In
+          order to accomplish this the SAAJ APIs (specifically <a href=
+          "#foo"><code>SOAPElement.getChildElements()</code></a>) are allowed
+          to "silently" replace objects that are incorrectly typed relative to
+          SAAJ requirements with equivalent objects of the required type. These
+          replacements must never cause the logical structure of the tree to
+          change, so from the perspective of the DOM APIs the tree will remain
+          unchanged. However, the physical composition of the tree will have
+          changed so that references to the nodes that were replaced will refer
+          to nodes that are no longer a part of the tree. The SAAJ APIs are not
+          allowed to make these replacements if they are not required so the
+          replacement objects will never subsequently be "silently" replaced by
+          future calls to the SAAJ API. What this means in practical terms is
+          that an application that starts to use SAAJ APIs on a tree after
+          manipulating it using DOM APIs must assume that the tree has been
+          translated into an all SAAJ tree and that any references to objects
+          within the tree that were obtained using DOM APIs are no longer
+          valid. Switching from SAAJ APIs to DOM APIs is not allowed to cause
+          invalid references and neither is using SAAJ APIs exclusively. It is
+          only switching from using DOM APIs on a particular SAAJ tree to using
+          SAAJ APIs that causes the risk of invalid references.
+        </p>
+      </blockquote>
+    </blockquote>
+    <hr>
+    <p class="sectionHeader">
+      <a name="SOAPMessage_properties"></a> 7) Proposed Changes for Adding
+      Properties to SOAPMessage<br>
+      <br>
+       These are the additional methods and constants intended to provide user
+      control over SOAPMessage properties.
+    </p>
+    <hr width="50%" size="2">
+    <blockquote>
+      <blockquote>
+        <h2>
+          <span class="smaller">javax.xml.soap</span><br>
+           Class SOAPMessage
+        </h2>
+        <pre>
+java.lang.Object<br>  |<br>  +--<b>javax.xml.soap.SOAPMessage</b><br>
+        </pre>
+        <dl>
+          <dt>
+            public abstract class <b>SOAPMessage</b>
+          </dt>
+          <dt>
+            extends java.lang.Object
+          </dt>
+        </dl>
+        <p>
+          <!-- ========== METHOD SUMMARY =========== -->
+          </p>
+        <table border="1" cellpadding="3" cellspacing="0" width="100%">
+          <tbody>
+            <tr bgcolor="#CCCCFF" class="TableHeadingColor">
+              <td class="summaryHeader" colspan="2">
+                <b>Method Summary</b>
+              </td>
+            </tr>
+            <tr bgcolor="white" class="TableRowColor">
+              <td class="summaryReturnType" align="right" valign="top"
+                  width="1%">
+                <code>abstract java.lang.String</code>
+              </td>
+              <td>
+                <code><b><a href=
+                "#getProperty%28java.lang.String%29">getProperty</a></b>(java.lang.String
+                property)</code><br>
+                 Retrieves value of the specified property.<br>
+              </td>
+            </tr>
+            <tr bgcolor="white" class="TableRowColor">
+              <td class="summaryReturnType" align="right" valign="top"
+                  width="1%">
+                <code>abstract void</code>
+              </td>
+              <td>
+                <code><b><a href=
+                "#setProperty%28java.lang.String,%20java.lang.Object%29">setProperty</a></b>(java.lang.String
+                property, java.lang.Object value)</code><br>
+                 Associates the specified value with the specified
+                property.<br>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </blockquote><br>
+      <br>
+
+      <blockquote>
+        <table border="1" cellpadding="3" cellspacing="0" width="100%">
+          <tbody>
+            <tr bgcolor="#CCCCFF" class="TableHeadingColor">
+              <td class="summaryHeader" colspan="1">
+                <b>Method Detail</b>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </blockquote>
+    </blockquote>
+    <h2 class="changeId">
+      <a name="C005_"></a> <span class="smaller">C005</span>
+    </h2>
+    <blockquote>
+      <blockquote>
+        <h3>
+          getProperty
+        </h3>
+        <pre>
+public abstract java.lang.Object <b>getProperty</b>(java.lang.String property)<br>                                      throws <a href="#foo">SOAPException</a><br>
+        </pre>
+        <dl>
+          <dd>
+            Retrieves value of the specified property.
+          </dd>
+          <dd>
+            <br>
+          </dd>
+          <dd>
+            <br>
+          </dd>
+          <dd>
+            <dl>
+              <dt class="detailSection">
+                Parameters:
+              </dt>
+              <dd>
+                <code>property</code> - the name of the property to retrieve
+              </dd>
+              <dt class="detailSection">
+                Returns:
+              </dt>
+              <dd>
+                the value of the property or <code>null</code> if no such
+                property exists.
+              </dd>
+              <dt class="detailSection">
+                Throws:
+              </dt>
+              <dd>
+                <code><a href="#foo">SOAPException</a></code> - if the property
+                name is not recognized.
+              </dd>
+              <dt class="detailSection">
+                Since:
+              </dt>
+              <dd>
+                SAAJ 1.2
+              </dd>
+            </dl>
+          </dd>
+        </dl>
+        <hr class="descriptionSeparator" size="2" width="33%">
+      </blockquote>
+    </blockquote>
+    <h2 class="changeId">
+      <a name="C006_"></a><span class="smaller">C006</span>
+    </h2>
+    <blockquote>
+      <blockquote>
+        <h3>
+          setProperty
+        </h3>
+        <pre>
+public abstract void <b>setProperty</b>(java.lang.String property,
+                                 java.lang.Object value)
+                          throws <a href="#foo">SOAPException</a><br>
+        </pre>
+        <dl>
+          <dd>
+            Associates the specified value with the specified property. If
+            there was already a value associated with this property, the old
+            value is replaced.
+            <p>
+              The valid property names include <a href=
+              "#WRITE_XML_DECLARATION"><code>WRITE_XML_DECLARATION</code></a>
+              and <a href=
+              "#CHARACTER_SET_ENCODING"><code>CHARACTER_SET_ENCODING</code></a>.
+              All of these standard SAAJ properties are prefixed by
+              "javax.xml.soap". Vendors may also add implementation specific
+              properties. These properties must be prefixed with package names
+              that are unique to the vendor.
+            </p>
+            <p>
+              Setting the property <code>WRITE_XML_DECLARATION</code> to
+              <code>"true"</code> will cause an XML Declaration to be written
+              out at the start of the SOAP message. The default value of
+              "false" suppresses this declaration.
+            </p>
+            <p>
+              The property <code>CHARACTER_SET_ENCODING</code> defaults to the
+              value <code>"utf-8"</code> which causes the SOAP message to be
+              encoded using UTF-8. Setting <code>CHARACTER_SET_ENCODING</code>
+              to <code>"utf-16"</code> causes the SOAP message to be encoded
+              using UTF-16.
+            </p>
+            <p>
+              Some implementations may allow encodings in addition to UTF-8 and
+              UTF-16. Refer to your vendor's documentation for details.
+            </p><br>
+          </dd>
+          <dd>
+            <br>
+          </dd>
+          <dd>
+            <br>
+          </dd>
+          <dd>
+            <dl>
+              <dt class="detailSection">
+                Parameters:
+              </dt>
+              <dd>
+                <code>property</code> - the property with which the specified
+                value is to be associated.
+              </dd>
+              <dd>
+                <code>value</code> - the value to be associated with the
+                specified property
+              </dd>
+              <dt class="detailSection">
+                Throws:
+              </dt>
+              <dd>
+                <code><a href="#foo">SOAPException</a></code> - if the property
+                name is not recognized.
+              </dd>
+              <dt class="detailSection">
+                Since:
+              </dt>
+              <dd>
+                SAAJ 1.2
+                <hr class="descriptionSeparator" size="2" width="33%">
+              </dd>
+            </dl>
+          </dd>
+        </dl>
+      </blockquote>
+    </blockquote>
+    <blockquote>
+      <blockquote>
+        <table border="1" cellpadding="3" cellspacing="0" width="100%">
+          <tbody>
+            <tr bgcolor="#CCCCFF" class="TableHeadingColor">
+              <td class="summaryHeader" colspan="2">
+                <b>Field Summary</b>
+              </td>
+            </tr>
+            <tr bgcolor="white" class="TableRowColor">
+              <td class="summaryReturnType" align="right" valign="top"
+                  width="1%">
+                <code>static java.lang.String</code>
+              </td>
+              <td>
+                <code><b><a href=
+                "#CHARACTER_SET_ENCODING">CHARACTER_SET_ENCODING</a></b></code><br>
+
+                 Specifies the character type encoding for the SOAP Message.
+              </td>
+            </tr>
+            <tr bgcolor="white" class="TableRowColor">
+              <td class="summaryReturnType" align="right" valign="top"
+                  width="1%">
+                <code>static java.lang.String</code>
+              </td>
+              <td>
+                <code><b><a href=
+                "#OMIT_XML_DECLARATION">WRITE_XML_DECLARATION</a></b></code><br>
+
+                 WRITE_XML_DECLARATION specifies whether the SOAP Message
+                should contain an XML declaration; the value must be "true" or
+                "false".
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <h3>
+          <!-- ======== CONSTRUCTOR SUMMARY ======== -->
+           <!-- ========== METHOD SUMMARY =========== -->
+          </h3>
+        <p>
+          <!-- ============ FIELD DETAIL =========== -->
+          </p>
+        <table border="1" cellpadding="3" cellspacing="0" width="100%">
+          <tbody>
+            <tr bgcolor="#CCCCFF" class="TableHeadingColor">
+              <td class="summaryHeader" colspan="1">
+                <b>Field Detail</b>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </blockquote>
+    </blockquote>
+    <h2 class="changeId">
+      <a name="C007_"></a><span class="smaller">C007</span>
+    </h2>
+    <blockquote>
+      <blockquote>
+        <h3>
+          CHARACTER_SET_ENCODING
+        </h3>
+        <pre>
+public static final java.lang.String <b>CHARACTER_SET_ENCODING</b><br>
+        </pre>
+        <dl>
+          <dd>
+            Specifies the character type encoding for the SOAP Message. Valid
+            values include "utf-8" and "utf-16". See vendor documentation for
+            additional supported values. The default is "utf-8".
+          </dd>
+          <dd>
+            <br>
+          </dd>
+          <dd>
+            <dl>
+              <dt class="detailSection">
+                Since:
+              </dt>
+              <dd>
+                SAAJ 1.2
+              </dd>
+              <dt class="detailSection">
+                See Also:
+              </dt>
+              <dd>
+                <a href=
+                "#setProperty%28java.lang.String,%20java.lang.Object%29"><code>SOAPMessage.setProperty</code></a>,
+                <a href=
+                "#javax.xml.soap.SOAPConstants.CHARACTER_SET_ENCODING">Constant
+                Field Values</a>
+              </dd>
+            </dl>
+          </dd>
+        </dl><!-- ========= CONSTRUCTOR DETAIL ======== -->
+        <!-- ============ METHOD DETAIL ========== -->
+        <!-- ========= END OF CLASS DATA ========= -->
+        <hr class="descriptionSeparator" size="2" width="33%">
+      </blockquote>
+    </blockquote>
+    <h2 class="changeId">
+      <a name="C008_"></a><span class="smaller">C008</span>
+    </h2>
+    <blockquote>
+      <blockquote>
+        <h3>
+          WRITE_XML_DECLARATION
+        </h3>
+        <pre>
+public static final java.lang.String <b>WRITE_XML_DECLARATION</b><br>
+        </pre>
+        <dl>
+          <dd>
+            Specifies whether the SOAP Message should contain an XML
+            declaration. The only valid values are "true" and "false". The
+            default is "false".
+          </dd>
+          <dd>
+            <br>
+          </dd>
+          <dd>
+            <dl>
+              <dt class="detailSection">
+                Since:
+              </dt>
+              <dd>
+                SAAJ 1.2
+              </dd>
+              <dt class="detailSection">
+                See Also:
+              </dt>
+              <dd>
+                <a href=
+                "#setProperty%28java.lang.String,%20java.lang.Object%29"><code>SOAPMessage.setProperty</code></a>,
+                <a href=
+                "#javax.xml.soap.SOAPConstants.OMIT_XML_DECLARATION">Constant
+                Field Values</a>
+              </dd>
+            </dl>
+          </dd>
+        </dl>
+        <hr class="descriptionSeparator" size="2" width="33%">
+        <br>
+
+        <div class="center">
+          <h1>
+            Constant Field Values
+          </h1>
+        </div>
+        <table border="1" cellpadding="3" cellspacing="0">
+          <tbody>
+            <tr bgcolor="#EEEEFF" class="TableSubHeadingColor">
+              <td colspan="3">
+                <b>javax.xml.soap. <a href="#foo">SOAPMessage</a></b>
+              </td>
+            </tr>
+            <tr bgcolor="white" class="TableRowColor">
+              <td class="summaryReturnType" align="right">
+                <code>public static final java.lang.String</code>
+              </td>
+              <td align="left">
+                <code><a href=
+                "#CHARACTER_SET_ENCODING">CHARACTER_SET_ENCODING</a></code>
+              </td>
+              <td align="right">
+                <code>"</code>javax.xml.soap.<code>character-set-encoding"</code>
+              </td>
+            </tr>
+            <tr bgcolor="white" class="TableRowColor">
+              <td class="summaryReturnType" align="right">
+                <code>public static final java.lang.String</code>
+              </td>
+              <td align="left">
+                <code><a href=
+                "#OMIT_XML_DECLARATION">WRITE_XML_DECLARATION</a></code>
+              </td>
+              <td align="right">
+                <code>"</code>javax.xml.soap.write<code>-xml-declaration"</code>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </blockquote>
+    </blockquote>
+    <p class="normalFont">
+      &nbsp;
+    </p>
+    <hr>
+    <p class="sectionHeader">
+      <a name="Ease_of_Use"></a> 8) Proposed Changes to Enhance Ease of Use
+    </p>
+    <h2 class="changeId">
+      <a name="C009_"></a><span class="smaller">C009</span>
+    </h2>
+    <p class="typeOfChange">
+      Change JavaDoc:
+    </p>
+    <blockquote>
+      <blockquote>
+        <h2>
+          <span class="smaller">javax.xml.soap</span><br>
+           Interface Node
+        </h2>
+      </blockquote>
+    </blockquote>
+    <blockquote>
+      <blockquote>
+        <table border="1" cellpadding="3" cellspacing="0" width="100%">
+          <tbody>
+            <tr bgcolor="#CCCCFF" class="TableHeadingColor">
+              <td class="summaryHeader" colspan="2">
+                <b>Method Summary</b>
+              </td>
+            </tr>
+            <tr bgcolor="white" class="TableRowColor">
+              <td class="summaryReturnType" align="right" valign="top"
+                  width="1%">
+                <code>void</code>
+              </td>
+              <td>
+                <code><b><a href=
+                "#detachNode%28%29">detachNode</a></b>()</code><br>
+                 Removes this <code>Node</code> object from the tree.
+                <strike>Once removed, this node can be garbage collected if
+                there are no application references to it.</strike>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </blockquote>
+    </blockquote><br>
+     <i><big><b>Rationale:</b></big> This was too much of a restriction on
+    implementors.</i><br>
+
+    <hr width="50%" size="2">
+    <h2 class="changeId">
+      <a name="C010_"></a><span class="smaller">C010</span>
+    </h2><i><b>Add method:</b></i><br>
+
+    <blockquote>
+      <blockquote>
+        <h2>
+          <span class="smaller">javax.xml.soap</span><br>
+           Interface Node
+        </h2>
+      </blockquote>
+      <blockquote>
+        <table border="1" cellpadding="3" cellspacing="0" width="100%">
+          <tbody>
+            <tr bgcolor="#CCCCFF" class="TableHeadingColor">
+              <td class="summaryHeader" colspan="2">
+                <b>Method Summary</b>
+              </td>
+            </tr>
+            <tr bgcolor="white" class="TableRowColor">
+              <td class="summaryReturnType" align="right" valign="top"
+                  width="1%">
+                <code>void</code>
+              </td>
+              <td>
+                <a href=
+                "#setValue%28java.lang.String%29"><code><b>setValue</b></code></a>(java.lang.String
+                value)<br>
+                 If this is a <code>Text</code> node then this method will set
+                its value, otherwise it sets the value of the immediate
+                (<code>Text</code>) child of this node.<br>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <table border="1" cellpadding="3" cellspacing="0" width="100%">
+          <tbody>
+            <tr bgcolor="#CCCCFF" class="TableHeadingColor">
+              <td class="summaryHeader" colspan="1">
+                <b>Method Detail</b>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </blockquote>
+    </blockquote>
+    <blockquote>
+      <blockquote>
+        <h3>
+          setValue
+        </h3>
+        <pre>
+public void <b>setValue</b>(java.lang.String value)
+</pre>
+        <dl>
+          <dd>
+            If this is a Text node then this method will set its value,
+            otherwise it sets the value of the immediate (Text) child of this
+            node. The value of the immediate child of this node can be set only
+            if, there is one child node and that node is a <code>Text</code>
+            node, or if there are no children in which case a child
+            <code>Text</code> node will be created.
+          </dd>
+          <dd>
+            <br>
+          </dd>
+          <dd>
+            <br>
+          </dd>
+          <dd>
+            <br>
+          </dd>
+          <dd>
+            <dl>
+              <dt class="detailSection">
+                Throws:
+              </dt>
+              <dd>
+                <code>java.lang.IllegalStateException</code> - if the node is
+                not a <code>Text</code> node and either has more than one child
+                node or has a child node that is not a <code>Text</code> node.
+              </dd>
+              <dt>
+                <b>Since:</b>
+              </dt>
+              <dd>
+                SAAJ 1.2
+              </dd>
+              <dt>
+                <br>
+              </dt>
+            </dl>
+          </dd>
+        </dl>
+      </blockquote>
+    </blockquote><br>
+     <i><big><b>Rationale:</b></big> This simplifies a common case where
+    developers want to change a value in a tree without changing the structure
+    of the tree. The equivalent operation, using only SAAJ APIs, is thought by
+    some to be cumbersome and error prone.</i><br>
+
+    <blockquote>
+      <blockquote>
+        <hr width="50%" size="2">
+      </blockquote>
+    </blockquote><i><b>Add methods:</b></i>
+    <blockquote>
+      <blockquote>
+        <h2>
+          <span class="smaller">javax.xml.soap</span><br>
+           Interface SOAPFault
+        </h2>
+        <dl>
+          <dt>
+            <br>
+          </dt>
+        </dl>
+        <p>
+          <!-- ======== CONSTRUCTOR SUMMARY ======== -->
+           <!-- ========== METHOD SUMMARY =========== -->
+          </p>
+        <table border="1" cellpadding="3" cellspacing="0" width="100%">
+          <tbody>
+            <tr bgcolor="#CCCCFF" class="TableHeadingColor">
+              <td class="summaryHeader" colspan="2">
+                <b>Method Summary</b>
+              </td>
+            </tr>
+            <tr bgcolor="white" class="TableRowColor">
+              <td class="summaryReturnType" align="right" valign="top"
+                  width="1%">
+                <code><a href="#foo">Name</a></code>
+              </td>
+              <td>
+                <code><b><a href=
+                "#getFaultCodeAsName%28%29">getFaultCodeAsName</a></b>()</code><br>
+
+                 Gets the mandatory SOAP 1.1 fault code for this
+                <code>SOAPFault</code> object as a SAAJ <code>Name</code>
+                object.
+              </td>
+            </tr>
+            <tr bgcolor="white" class="TableRowColor">
+              <td class="summaryReturnType" align="right" valign="top"
+                  width="1%">
+                <code>void</code>
+              </td>
+              <td>
+                <code><b><a href=
+                "#setFaultCode%28javax.xml.soap.Name%29">setFaultCode</a></b>(
+                <a href="#foo">Name</a> faultCodeQName)</code><br>
+                 Sets this <code>SOAPFault</code> object with the given fault
+                code.
+              </td>
+            </tr>
+            <tr>
+              <td align="right" valign="top">
+                <span class="smaller"><code>void</code></span><br>
+              </td>
+              <td valign="top">
+                <code><b><a href=
+                "#setFaultString%28java.lang.String,%20java.util.Locale%29">setFaultString</a></b>(java.lang.String
+                faultString, java.util.Locale locale)</code><br>
+                 Sets the fault string for this <code>SOAPFault</code> object
+                to the given string and localized to the given locale.<br>
+              </td>
+            </tr>
+            <tr>
+              <td valign="top" align="right">
+                <span class="smaller"><code>java.util.Locale</code></span><br>
+              </td>
+              <td valign="top">
+                <code><b><a href=
+                "#getFaultStringLocale%28%29">getFaultStringLocale</a></b>()</code><br>
+
+                 Gets the locale of the fault string for this
+                <code>SOAPFault</code> object.<br>
+              </td>
+            </tr>
+          </tbody>
+        </table><br>
+        <br>
+        <br>
+        <br>
+
+        <p>
+          <!-- ============ FIELD DETAIL =========== -->
+           <!-- ========= CONSTRUCTOR DETAIL ======== -->
+           <!-- ============ METHOD DETAIL ========== -->
+          </p>
+        <table border="1" cellpadding="3" cellspacing="0" width="100%">
+          <tbody>
+            <tr bgcolor="#CCCCFF" class="TableHeadingColor">
+              <td class="summaryHeader" colspan="1">
+                <b>Method Detail</b>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </blockquote>
+    </blockquote>
+    <h2 class="changeId">
+      <a name="C011_"></a><span class="smaller">C011</span>
+    </h2>
+    <blockquote>
+      <blockquote>
+        <h3>
+          getFaultCodeAsName
+        </h3>
+        <pre>
+public <a href="#foo">Name</a> <b>getFaultCodeAsName</b>()
+</pre>
+        <dl>
+          <dd>
+            Gets the mandatory SOAP 1.1 fault code for this
+            <code>SOAPFault</code> object as a SAAJ <code>Name</code> object.
+            The SOAP 1.1 specification requires the value of the "faultcode"
+            element to be of type QName. This method returns the content of the
+            element as a QName in the form of a SAAJ Name object. This method
+            should be used instead of the <code>getFaultCode</code> method
+            since it allows applications to easily access the namespace name
+            without additional parsing.
+            <p>
+              In the future, a QName object version of this method may also be
+              added.
+            </p>
+          </dd>
+          <dd>
+            <br>
+          </dd>
+          <dd>
+            <br>
+          </dd>
+          <dd>
+            <br>
+          </dd>
+          <dd>
+            <dl>
+              <dt class="detailSection">
+                Returns:
+              </dt>
+              <dd>
+                a <code>Name</code> representing the faultcode
+              </dd>
+              <dt class="detailSection">
+                Since:
+              </dt>
+              <dd>
+                SAAJ 1.2
+              </dd>
+              <dt class="detailSection">
+                See Also:
+              </dt>
+              <dd>
+                <a href=
+                "#setFaultCode%28javax.xml.soap.Name%29"><code>setFaultCode(Name)</code></a>
+              </dd>
+            </dl>
+          </dd>
+        </dl>
+        <dl>
+          <dd>
+            <br>
+          </dd>
+          <dd>
+            <dl>
+              <dd>
+                <br>
+              </dd>
+            </dl>
+          </dd>
+        </dl>
+        <hr class="descriptionSeparator" size="2" width="33%">
+      </blockquote>
+    </blockquote>
+    <h2 class="changeId">
+      <a name="C012_"></a><span class="smaller">C012</span>
+    </h2>
+    <blockquote>
+      <blockquote>
+        <h3>
+          setFaultCode
+        </h3>
+        <pre>
+public void <b>setFaultCode</b>(<code><a href=
+"#foo">Name</a></code> <code>faultCodeQName)</code> throws <a href=
+"#foo">SOAPException</a><br>
+        </pre>
+        <dl>
+          <dd>
+            Sets this <code>SOAPFault</code> object with the given fault code.
+            <p>
+              Fault codes, which give information about the fault, are defined
+              in the SOAP 1.1 specification. A fault code is mandatory and must
+              be of type <code>QName</code>. This method provides a convenient
+              way to set a fault code. For example,
+            </p>
+            <pre>
+ SOAPEnvelope se = ...;
+ // Create a qualified name in the SOAP namespace with a localName
+ // of "Client".  Note that prefix parameter is optional and is null
+ // here which causes the implementation to use an appropriate prefix.
+ Name qname = se.createName("Client", null,
+                             SOAPConstants.URI_NS_SOAP_ENVELOPE);
+ SOAPFault fault = ...;<br>
+ fault.setFaultCode(qname);
+</pre>It is preferable to use this method over <a href=
+"#setFaultCode%28java.lang.String%29"><code>setFaultCode(String)</code></a>.
+          </dd>
+          <dd>
+            <br>
+          </dd>
+          <dd>
+            <br>
+          </dd>
+          <dd>
+            <br>
+          </dd>
+          <dd>
+            <dl>
+              <dt class="detailSection">
+                Parameters:
+              </dt>
+              <dd>
+                <code>faultCodeQName</code> - a <code>Name</code> object giving
+                the fault code to be set.It must be namespace qualified.
+              </dd>
+              <dt class="detailSection">
+                Throws:
+              </dt>
+              <dd>
+                <code><a href="#foo">SOAPException</a></code> - if there was an
+                error in adding the <code>faultcode</code> element to the
+                underlying XML tree.
+              </dd>
+              <dt class="detailSection">
+                Since:
+              </dt>
+              <dd>
+                SAAJ 1.2
+              </dd>
+              <dt class="detailSection">
+                See Also:
+              </dt>
+              <dd>
+                <a href=
+                "#getFaultCodeAsName%28%29"><code>getFaultCodeAsName()</code></a>
+              </dd>
+            </dl>
+          </dd>
+        </dl>
+        <dl>
+          <dd>
+            <br>
+          </dd>
+          <dd>
+            <dl>
+              <dd>
+                <br>
+              </dd>
+            </dl>
+          </dd>
+        </dl>
+        <hr class="descriptionSeparator" size="2" width="33%">
+      </blockquote>
+    </blockquote>
+    <h2 class="changeId">
+      <a name="C013_"></a><span class="smaller">C013</span>
+    </h2>
+    <blockquote>
+      <blockquote>
+        <h3>
+          setFaultString
+        </h3>
+        <pre>
+public void <b>setFaultString</b>(java.lang.String faultString,
+                            java.util.Locale locale)
+                    throws <a href="#foo">SOAPException</a>
+        </pre>
+        <dl>
+          <dd>
+            Sets the fault string for this <code>SOAPFault</code> object to the
+            given string and localized to the given locale.
+          </dd>
+          <dd>
+            <br>
+          </dd>
+          <dd>
+            <br>
+          </dd>
+          <dd>
+            <br>
+          </dd>
+          <dd>
+            <dl>
+              <dt class="detailSection">
+                Parameters:
+              </dt>
+              <dd>
+                <code>faultString</code> - a <code>String</code> giving an
+                explanation of the fault
+              </dd>
+              <dd>
+                <code>locale</code> - a <code>Locale</code> object indicating
+                the native language of the <code>faultString</code>
+              </dd>
+              <dt class="detailSection">
+                Throws:
+              </dt>
+              <dd>
+                <code><a href="#foo">SOAPException</a></code> - if there was an
+                error in adding the <code>faultString</code> to the underlying
+                XML tree.
+              </dd>
+              <dt class="detailSection">
+                Since:
+              </dt>
+              <dd>
+                SAAJ 1.2
+              </dd>
+              <dt class="detailSection">
+                See Also:
+              </dt>
+              <dd>
+                <a href=
+                "#getFaultString%28%29"><code>getFaultString()</code></a>
+              </dd>
+            </dl>
+          </dd>
+        </dl>
+        <hr class="descriptionSeparator" size="2" width="33%">
+      </blockquote>
+    </blockquote>
+    <h2 class="changeId">
+      <a name="C014_"></a><span class="smaller">C014</span>
+    </h2>
+    <blockquote>
+      <blockquote>
+        <h3>
+          getFaultStringLocale
+        </h3>
+        <pre>
+public java.util.Locale <b>getFaultStringLocale</b>()
+</pre>
+        <dl>
+          <dd>
+            Gets the locale of the fault string for this <code>SOAPFault</code>
+            object.
+          </dd>
+          <dd>
+            <br>
+          </dd>
+          <dd>
+            <br>
+          </dd>
+          <dd>
+            <br>
+          </dd>
+          <dd>
+            <dl>
+              <dt class="detailSection">
+                Returns:
+              </dt>
+              <dd>
+                a <code>Locale</code> object indicating the native language of
+                the fault string or <code>null</code> if no locale was
+                specified
+              </dd>
+              <dt class="detailSection">
+                <br>
+              </dt>
+              <dt>
+                <b>Since:</b>
+              </dt>
+              <dd>
+                SAAJ 1.2
+              </dd>
+              <dt class="detailSection">
+                See Also:
+              </dt>
+              <dd>
+                <a href=
+                "#setFaultString%28java.lang.String,%20java.util.Locale%29"><code>
+                setFaultString(String, Locale)</code></a>
+              </dd>
+            </dl>
+          </dd>
+        </dl>
+        <hr class="descriptionSeparator" size="2" width="33%">
+      </blockquote>
+    </blockquote><i><big><b>Rationale:</b></big> These two methods allow the
+    fault code to be treated as a fully qualified name, as required by SOAP
+    1.1.</i> <br>
+
+    <blockquote>
+      <blockquote>
+        <br>
+
+        <hr size="2" width="50%">
+      </blockquote>
+    </blockquote>
+    <h2 class="changeId">
+      <a name="C015_"></a><span class="smaller">C015</span>
+    </h2>
+    <p class="typeOfChange">
+      Add method:
+    </p>
+    <blockquote>
+      <blockquote>
+        <h2>
+          <span class="smaller">javax.xml.soap</span><br>
+           Interface SOAPBody
+        </h2>
+        <p>
+          <!-- ============ FIELD DETAIL =========== -->
+           <!-- ========= CONSTRUCTOR DETAIL ======== -->
+           <!-- ============ METHOD DETAIL ========== -->
+          </p>
+        <table border="1" cellpadding="3" cellspacing="0" width="100%">
+          <tbody>
+            <tr bgcolor="#CCCCFF" class="TableHeadingColor">
+              <td class="summaryHeader" colspan="1">
+                <b>Method Detail</b>
+              </td>
+            </tr>
+          </tbody>
+        </table><br>
+
+        <h3>
+          addDocument
+        </h3>
+        <pre>
+public <a href=
+"#foo">SOAPBodyElement</a> <b>addDocument</b>(org.w3c.dom.Document document)
+</pre>
+        <dl>
+          <dd>
+            Adds the root node of the DOM <code>Document</code> to this
+            <code>SOAPBody</code> object.
+          </dd>
+        </dl>
+      </blockquote>
+    </blockquote>
+    <blockquote>
+      <blockquote>
+        <blockquote>
+          <h2 class="changeId">
+            <a name="C016_"></a><span class="smaller">C016</span>
+          </h2>
+        </blockquote>
+      </blockquote>
+    </blockquote>
+    <blockquote>
+      <blockquote>
+        <dl>
+          <dd>
+            <p>
+              Calling this method invalidates the <code>document</code>
+              parameter. The client application should discard all references
+              to this <code>Document</code> and its contents upon calling
+              <code>addDocument</code>. The behavior of an application that
+              continues to use such references is undefined. <i>[end of
+              C045]</i>
+            </p>
+          </dd>
+          <dd>
+            <br>
+          </dd>
+          <dd>
+            <br>
+          </dd>
+          <dd>
+            <dl>
+              <dt class="detailSection">
+                <br>
+              </dt>
+              <dt>
+                <b>Parameters:</b>
+              </dt>
+              <dd>
+                <code>document</code> - the <code>Document</code> object whose
+                root node will be added to this <code>SOAPBody</code>.
+              </dd>
+              <dt class="detailSection">
+                Returns:
+              </dt>
+              <dd>
+                the <code>SOAPBodyElement</code> that represents the root node
+                that was added.
+              </dd>
+              <dt class="detailSection">
+                Throws:
+              </dt>
+              <dd>
+                <code><a href="#foo">SOAPException</a></code> - if the
+                <code>Document</code> cannot be added
+              </dd>
+              <dt class="detailSection">
+                Since:
+              </dt>
+              <dd>
+                SAAJ 1.2
+              </dd>
+            </dl>
+          </dd>
+        </dl>
+      </blockquote>
+    </blockquote>
+    <p>
+      <i><big><b>Rationale:</b></big> This user requested method makes it
+      easier to use DOM in SAAJ applications. Without this method the end user
+      must rely entirely on DOM APIs to perform this operation. C045 allows a
+      wider range of implementation choices including possible optimizations at
+      the expense of some usability.</i>
+    </p>
+    <blockquote>
+      <blockquote>
+        <hr size="2" width="50%">
+      </blockquote>
+    </blockquote>
+    <h2 class="changeId">
+      <a name="C047_"></a><span class="smaller">C047</span>
+    </h2>
+    <p class="typeOfChange">
+      Add methods:
+    </p>
+    <blockquote>
+      <blockquote>
+        <h2>
+          <span class="smaller">javax.xml.soap</span><br>
+           Interface SOAPBody
+        </h2>
+        <p>
+          <!-- ============ FIELD DETAIL =========== -->
+           <!-- ========= CONSTRUCTOR DETAIL ======== -->
+           <!-- ============ METHOD DETAIL ========== -->
+          </p>
+      </blockquote>
+      <blockquote>
+        <table border="1" cellpadding="3" cellspacing="0" width="100%">
+          <tbody>
+            <tr bgcolor="#CCCCFF" class="TableHeadingColor">
+              <td class="summaryHeader" colspan="1">
+                <b>Method Detail</b>
+              </td>
+            </tr>
+          </tbody>
+        </table><br>
+
+        <h3>
+          addFault
+        </h3>
+        <pre>
+public <a href="#foo">SOAPFault</a> <b>addFault</b>(<a href="#foo">Name</a> faultCode,
+                          java.lang.String faultString,
+                          java.util.Locale locale)
+                          throws <a href="#foo">SOAPException</a>
+</pre>
+        <dl>
+          <dd>
+            Creates a new <code>SOAPFault</code> object and adds it to this
+            <code>SOAPBody</code> object. The new <code>SOAPFault</code> will
+            have a <code>faultcode</code> element that is set to the
+            <code>faultCode</code> parameter and a <code>faultstring</code> set
+            to <code>faultString</code> and localized to <code>locale</code>.
+            <p>
+              A <code>SOAPBody</code> may contain at most one
+              <code>SOAPFault</code> child element
+            </p>
+          </dd>
+          <dd>
+            <br>
+          </dd>
+          <dd>
+            <br>
+          </dd>
+          <dd>
+            <dl>
+              <dt>
+                <b>Parameters:</b>
+              </dt>
+              <dd>
+                <code>faultCode</code> - a <code>Name</code> object giving the
+                fault code to be set; must be one of the fault codes defined in
+                the SOAP 1.1 specification and of type QName
+              </dd>
+              <dd>
+                <code>faultString</code> - a <code>String</code> giving an
+                explanation of the fault
+              </dd>
+              <dd>
+                <code>locale</code> - a <code>Locale</code> object indicating
+                the native language of the <code>faultString</code>
+              </dd>
+              <dt>
+                <b>Returns:</b>
+              </dt>
+              <dd>
+                the new <code>SOAPFault</code> object
+              </dd>
+              <dt>
+                <b>Throws:</b>
+              </dt>
+              <dd>
+                <code><a href="#foo">SOAPException</a></code> - if there is a
+                SOAP error
+              </dd>
+              <dt class="detailSection">
+                Since:
+              </dt>
+              <dd>
+                SAAJ 1.2
+              </dd>
+              <dt>
+                <b>See Also:</b>
+              </dt>
+              <dd>
+                <a href=
+                "#foo"><code>SOAPFault.setFaultCode(javax.xml.soap.Name)</code></a>,
+                <a href=
+                "#foo"><code>SOAPFault.setFaultString(java.lang.String)</code></a>
+              </dd>
+            </dl>
+          </dd>
+        </dl>
+        <hr size="2" width="50%">
+        <a name="addFault(javax.xml.soap.Name, java.lang.String)"><!-- --></a>
+        <h3>
+          addFault
+        </h3>
+        <pre>
+public <a href="#foo">SOAPFault</a> <b>addFault</b>(<a href="#foo">Name</a> faultCode,
+                          java.lang.String faultString)
+                   throws <a href="#foo">SOAPException</a>
+</pre>
+        <dl>
+          <dd>
+            Creates a new <code>SOAPFault</code> object and adds it to this
+            <code>SOAPBody</code> object. The new <code>SOAPFault</code> will
+            have a <code>faultcode</code> element that is set to the
+            <code>faultCode</code> parameter and a <code>faultstring</code> set
+            to <code>faultString</code>.
+            <p>
+              A <code>SOAPBody</code> may contain at most one
+              <code>SOAPFault</code> child element
+            </p>
+          </dd>
+          <dd>
+            <br>
+          </dd>
+          <dd>
+            <br>
+          </dd>
+          <dd>
+            <dl>
+              <dt>
+                <b>Parameters:</b>
+              </dt>
+              <dd>
+                <code>faultCode</code> - a <code>Name</code> object giving the
+                fault code to be set; must be one of the fault codes defined in
+                the SOAP 1.1 specification and of type QName
+              </dd>
+              <dd>
+                <code>faultString</code> - a <code>String</code> giving an
+                explanation of the fault
+              </dd>
+              <dt>
+                <b>Returns:</b>
+              </dt>
+              <dd>
+                the new <code>SOAPFault</code> object
+              </dd>
+              <dt>
+                <b>Throws:</b>
+              </dt>
+              <dd>
+                <code><a href="#foo">SOAPException</a></code> - if there is a
+                SOAP error
+              </dd>
+              <dt class="detailSection">
+                Since:
+              </dt>
+              <dd>
+                SAAJ 1.2
+              </dd>
+              <dt>
+                <b>See Also:</b>
+              </dt>
+              <dd>
+                <a href=
+                "#foo"><code>SOAPFault.setFaultCode(javax.xml.soap.Name)</code></a>,
+                <a href=
+                "#foo"><code>SOAPFault.setFaultString(java.lang.String)</code></a>
+              </dd>
+            </dl>
+          </dd>
+        </dl>
+        <hr size="2" width="50%">
+      </blockquote>
+    </blockquote>
+    <p>
+      <i><big><b>Rationale:</b></big> Use of these methods would let developers
+      create faults that contain all of the necessary sub-elements, properly
+      initialized, with a single call.</i>
+    </p>
+    <hr class="descriptionSeparator" size="2" width="33%">
+    <br>
+     <br>
+
+    <h2 class="changeId">
+      <a name="C017_"></a><span class="smaller">C017</span>
+    </h2>
+    <p class="typeOfChange">
+      Add method:
+    </p>
+    <blockquote>
+      <blockquote>
+        <h2>
+          <span class="smaller">javax.xml.soap</span><br>
+           Interface SOAPElement
+        </h2><br>
+
+        <p>
+          <!-- ============ FIELD DETAIL =========== -->
+           <!-- ========= CONSTRUCTOR DETAIL ======== -->
+           <!-- ============ METHOD DETAIL ========== -->
+          </p>
+        <table border="1" cellpadding="3" cellspacing="0" width="100%">
+          <tbody>
+            <tr bgcolor="#CCCCFF" class="TableHeadingColor">
+              <td class="summaryHeader" colspan="1">
+                <b>Method Detail</b>
+              </td>
+            </tr>
+          </tbody>
+        </table><br>
+        <br>
+        <br>
+        <br>
+
+        <h3>
+          removeContents
+        </h3>
+        <pre>
+public void <b>removeContents</b>()
+</pre><br>
+         Detaches all children of this <code>SOAPElement</code>.
+        <p>
+          This method is useful for rolling back the construction of partially
+          completed <code>SOAPHeaders</code> and <code>SOAPBodys</code> in
+          preparation for sending a fault when an error condition is detected.
+          It is also useful for recycling portions of a document within a SOAP
+          message.
+        </p>
+        <dl>
+          <dt class="detailSection">
+            Since:
+          </dt>
+          <dd>
+            SAAJ 1.2
+          </dd>
+        </dl>
+      </blockquote>
+    </blockquote>
+    <p>
+      <i><big><b>Rationale:</b></big> This method supports a common use case
+      where elements in a partially assembled body are replaced with a fault in
+      response to an error condition. It originated in the SOAPBody interface
+      and was pulled up into SOAPElement because of its general utility.</i>
+    </p>
+    <blockquote>
+      <blockquote>
+        <hr size="2" width="50%">
+      </blockquote>
+    </blockquote>
+    <h2 class="changeId">
+      <a name="C018_"></a><span class="smaller">C018</span>
+    </h2>
+    <p class="typeOfChange">
+      Add method:
+    </p>
+    <blockquote>
+      <blockquote>
+        <h2>
+          <span class="smaller">javax.xml.soap</span><br>
+           Interface SOAPElement
+        </h2><br>
+
+        <p>
+          <!-- ============ FIELD DETAIL =========== -->
+           <!-- ========= CONSTRUCTOR DETAIL ======== -->
+           <!-- ============ METHOD DETAIL ========== -->
+          </p>
+        <table border="1" cellpadding="3" cellspacing="0" width="100%">
+          <tbody>
+            <tr bgcolor="#CCCCFF" class="TableHeadingColor">
+              <td class="summaryHeader" colspan="1">
+                <b>Method Detail</b>
+              </td>
+            </tr>
+          </tbody>
+        </table><br>
+        <br>
+        <br>
+
+        <h3>
+          getVisibleNamespacePrefixes
+        </h3>
+        <pre>
+public java.util.Iterator <b>getVisibleNamespacePrefixes</b>()
+</pre>
+        <dl>
+          <dd>
+            Returns an <code>Iterator</code> over the namespace prefix
+            <code>String</code>s visible to this element. The prefixes returned
+            by this iterator can be passed to the method
+            <code>getNamespaceURI</code> to retrieve the URI of each namespace.
+          </dd>
+          <dd>
+            <dl>
+              <dt>
+                <b>Returns:</b>
+              </dt>
+              <dd>
+                an iterator over the namespace prefixes that are within scope
+                of this <code>SOAPElement</code> object
+              </dd>
+              <dt>
+                <b>Since:</b>
+              </dt>
+              <dd>
+                SAAJ 1.2
+              </dd>
+            </dl>
+          </dd>
+        </dl>
+      </blockquote>
+    </blockquote><i><big><b>Rationale:</b></big> This is a common operation. It
+    is likely that vendors can provide an implementation that is more efficient
+    than what can be obtained directly from the other SAAJ or DOM APIs.</i><br>
+
+    <blockquote>
+      <blockquote>
+        <hr size="2" width="50%">
+      </blockquote>
+    </blockquote>
+    <p class="typeOfChange">
+      Add methods:
+    </p>
+    <blockquote>
+      <blockquote>
+        <h2>
+          <span class="smaller">javax.xml.soap</span><br>
+           Interface SOAPHeader
+        </h2>
+      </blockquote>
+    </blockquote>
+    <blockquote>
+      <blockquote>
+        <!-- ======== CONSTRUCTOR SUMMARY ======== -->
+        <!-- ========== METHOD SUMMARY =========== -->
+        <table border="1" cellpadding="3" cellspacing="0" width="100%">
+          <tbody>
+            <tr bgcolor="#CCCCFF" class="TableHeadingColor">
+              <td class="summaryHeader" colspan="2">
+                <b>Method Summary</b>
+              </td>
+            </tr>
+            <tr bgcolor="white" class="TableRowColor">
+              <td class="summaryReturnType" align="right" valign="top"
+                  width="1%">
+                <code>java.util.Iterator</code>
+              </td>
+              <td>
+                <code><b><a href=
+                "#examineAllHeaderElements%28%29">examineAllHeaderElements</a></b>()</code><br>
+
+                 Returns an <code>Iterator</code> over all the
+                <code>SOAPHeaderElement</code> objects in this
+                <code>SOAPHeader</code> object.
+              </td>
+            </tr>
+            <tr bgcolor="white" class="TableRowColor">
+              <td class="summaryReturnType" align="right" valign="top"
+                  width="1%">
+                <code>java.util.Iterator</code>
+              </td>
+              <td>
+                <code><b><a href="#examineMustUnderstandHeaderElements%28java.lang.String%29">
+                examineMustUnderstandHeaderElements</a></b>(java.lang.String actor)</code><br>
+                 Returns an <code>Iterator</code> over all the
+                <code>SOAPHeaderElement</code> objects in this
+                <code>SOAPHeader</code> object that have the specified
+                actor and that have a MustUnderstand attribute whose value is
+                equivalent to <code>true</code>.
+              </td>
+            </tr>
+            <tr bgcolor="white" class="TableRowColor">
+              <td class="summaryReturnType" align="right" valign="top"
+                  width="1%">
+                <code>java.util.Iterator</code>
+              </td>
+              <td>
+                <code><b><a href=
+                "#extractAllHeaderElements%28%29">extractAllHeaderElements</a></b>()</code><br>
+
+                 Returns an <code>Iterator</code> over all the
+                <code>SOAPHeaderElement</code> objects in this
+                <code>SOAPHeader</code> object and detaches them from this
+                <code>SOAPHeader</code> object.
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </blockquote>
+    </blockquote>
+    <h2 class="changeId">
+      <a name="C019_"></a><span class="smaller">C019</span>
+    </h2>
+    <blockquote>
+      <blockquote>
+        <h3>
+          examineAllHeaderElements
+        </h3>
+        <pre>
+public java.util.Iterator <b>examineAllHeaderElements</b>()
+</pre>
+        <dl>
+          <dd>
+            Returns an <code>Iterator</code> over all the
+            <code>SOAPHeaderElement</code> objects in this
+            <code>SOAPHeader</code> object.
+          </dd>
+          <dd>
+            <br>
+          </dd>
+          <dd>
+            <br>
+          </dd>
+          <dd>
+            <br>
+          </dd>
+          <dd>
+            <dl>
+              <dt class="detailSection">
+                Returns:
+              </dt>
+              <dd>
+                an <code>Iterator</code> object over all the
+                <code>SOAPHeaderElement</code> objects contained by this
+                <code>SOAPHeader</code>
+              </dd>
+              <dt class="detailSection">
+                Since:
+              </dt>
+              <dd>
+                SAAJ 1.2
+              </dd>
+              <dt class="detailSection">
+                See Also:
+              </dt>
+              <dd>
+                <a href=
+                "#extractAllHeaderElements%28%29"><code>extractAllHeaderElements()</code></a>
+              </dd>
+            </dl>
+          </dd>
+        </dl>
+        <hr class="descriptionSeparator" size="2" width="33%">
+      </blockquote>
+    </blockquote>
+    <h2 class="changeId">
+      <a name="C020_"></a><span class="smaller">C020</span>
+    </h2>
+    <blockquote>
+      <blockquote>
+        <h3>
+          examineMustUnderstandHeaderElements
+        </h3>
+        <pre>
+public java.util.Iterator <b>examineMustUnderstandHeaderElements</b>(java.lang.String actor)
+</pre>
+        <dl>
+          <dd>
+            Returns an <code>Iterator</code> over all the
+            <code>SOAPHeaderElement</code> objects in this
+            <code>SOAPHeader</code> object that have the specified actor
+            and that have a MustUnderstand attribute whose value is equivalent
+            to <code>true</code>.
+          </dd>
+          <dd>
+            <br>
+          </dd>
+          <dd>
+            <br>
+          </dd>
+          <dd>
+            <br>
+          </dd>
+          <dd>
+            <dl>
+              <dt class="detailSection">
+                Parameters:
+              </dt>
+              <dd>
+                <code>actor</code> - a <code>String</code> giving the URI of
+                the actor for which to search
+              </dd>
+              <dt class="detailSection">
+                Returns:
+              </dt>
+              <dd>
+                an <code>Iterator</code> object over all the
+                <code>SOAPHeaderElement</code> objects that contain the
+                specified actor and are marked as MustUnderstand
+              </dd>
+              <dt class="detailSection">
+                Since:
+              </dt>
+              <dd>
+                SAAJ 1.2
+              </dd>
+              <dt class="detailSection">
+                See Also:
+              </dt>
+              <dd>
+                <a href="#examineHeaderElements%28java.lang.String%29"><code>
+                examineHeaderElements(java.lang.String)</code></a>,
+                <a href="#extractHeaderElements%28java.lang.String%29"><code>
+                extractHeaderElements(java.lang.String)</code></a>,
+                <a href="#URI_SOAP_ACTOR_NEXT"><code>SOAPConstants.URI_SOAP_ACTOR_NEXT</code></a>
+              </dd>
+            </dl>
+          </dd>
+        </dl>
+        <hr class="descriptionSeparator" size="2" width="33%">
+      </blockquote>
+    </blockquote>
+    <h2 class="changeId">
+      <a name="C021_"></a><span class="smaller">C021</span>
+    </h2>
+    <blockquote>
+      <blockquote>
+        <h3>
+          extractAllHeaderElements
+        </h3>
+        <pre>
+public java.util.Iterator <b>extractAllHeaderElements</b>()
+</pre>
+        <dl>
+          <dd>
+            Returns an <code>Iterator</code> over all the
+            <code>SOAPHeaderElement</code> objects in this
+            <code>SOAPHeader</code> object and detaches them from this
+            <code>SOAPHeader</code> object.
+          </dd>
+          <dd>
+            <br>
+          </dd>
+          <dd>
+            <br>
+          </dd>
+          <dd>
+            <br>
+          </dd>
+          <dd>
+            <dl>
+              <dt class="detailSection">
+                Returns:
+              </dt>
+              <dd>
+                an <code>Iterator</code> object over all the
+                <code>SOAPHeaderElement</code> objects contained by this
+                <code>SOAPHeader</code>
+              </dd>
+              <dt class="detailSection">
+                Since:
+              </dt>
+              <dd>
+                SAAJ 1.2
+              </dd>
+              <dt class="detailSection">
+                See Also:
+              </dt>
+              <dd>
+                <a href=
+                "#examineAllHeaderElements%28%29"><code>examineAllHeaderElements()</code></a>
+              </dd>
+            </dl>
+          </dd>
+        </dl><!-- ========= END OF CLASS DATA ========= -->
+        <!-- ========== START OF NAVBAR ========== -->
+        </blockquote>
+    </blockquote>
+    <p>
+      <i><big><b>Rationale:</b></big> The ability to examine or extract all
+      header elements gives an application flexibility to implement its own
+      processing model. Applications implementing SOAP processing will need to
+      be able to examine all of the header elements marked must understand in
+      order to correctly fulfill the must understand contract. The
+      examineMustUnderstandHeaderElements(String) method provides easy and
+      correct access to this piece of necessary and routine processing.</i>
+    </p>
+    <blockquote>
+      <blockquote>
+        <hr size="2" width="50%">
+      </blockquote>
+    </blockquote>
+    <p class="typeOfChange">
+      Add methods:
+    </p>
+    <blockquote>
+      <blockquote>
+        <h2>
+          <span class="smaller">javax.xml.soap</span><br>
+           Class SOAPMessage
+        </h2>
+      </blockquote>
+      <blockquote>
+        <table border="1" cellpadding="3" cellspacing="0" width="100%">
+          <tbody>
+            <tr bgcolor="#CCCCFF" class="TableHeadingColor">
+              <td class="summaryHeader" colspan="2">
+                <b>Method Summary</b>
+              </td>
+            </tr>
+            <tr bgcolor="white" class="TableRowColor">
+              <td class="summaryReturnType" align="right" valign="top"
+                  width="1%">
+                <code>abstract <a href="#foo">SOAPBody</a></code>
+              </td>
+              <td>
+                <code><b><a href=
+                "#getSOAPBody%28%29">getSOAPBody</a></b>()</code><br>
+                 Gets the SOAP Body contained in this <code>SOAPMessage</code>
+                object.
+              </td>
+            </tr>
+            <tr bgcolor="white" class="TableRowColor">
+              <td class="summaryReturnType" align="right" valign="top"
+                  width="1%">
+                <code>abstract <a href="#foo">SOAPHeader</a></code>
+              </td>
+              <td>
+                <code><b><a href=
+                "#getSOAPHeader%28%29">getSOAPHeader</a></b>()</code><br>
+                 Gets the SOAP Header contained in this
+                <code>SOAPMessage</code> object.
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </blockquote><br>
+
+      <blockquote>
+        <table border="1" cellpadding="3" cellspacing="0" width="100%">
+          <tbody>
+            <tr bgcolor="#CCCCFF" class="TableHeadingColor">
+              <td class="summaryHeader" colspan="1">
+                <b>Method Detail</b>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </blockquote>
+    </blockquote>
+    <h2 class="changeId">
+      <a name="C022_"></a><span class="smaller">C022</span>
+    </h2>
+    <blockquote>
+      <blockquote>
+        <h3>
+          getSOAPBody
+        </h3>
+        <pre>
+public abstract <a href="#foo">SOAPBody</a> <b>getSOAPBody</b>()
+</pre>
+        <dl>
+          <dd>
+            Gets the SOAP Body contained in this <code>SOAPMessage</code>
+            object.
+          </dd>
+          <dd>
+            <br>
+          </dd>
+          <dd>
+            <br>
+          </dd>
+          <dd>
+            <br>
+          </dd>
+          <dd>
+            <br>
+          </dd>
+          <dd>
+            <dl>
+              <dt class="detailSection">
+                Returns:
+              </dt>
+              <dd>
+                the <code>SOAPBody</code> object contained by this
+                <code>SOAPMessage</code> object
+              </dd>
+              <dt>
+                <br>
+              </dt>
+              <dt class="detailSection">
+                Throws:
+              </dt>
+              <dd>
+                <code><a href="#foo">SOAPException</a></code> - if the SOAP
+                Body does not exist or cannot be retrieved
+              </dd>
+              <dt class="detailSection">
+                Since:
+              </dt>
+              <dd>
+                SAAJ 1.2
+              </dd>
+            </dl>
+          </dd>
+        </dl>
+        <hr class="descriptionSeparator" size="2" width="33%">
+      </blockquote>
+    </blockquote>
+    <h2 class="changeId">
+      <a name="C023_"></a><span class="smaller">C023</span>
+    </h2>
+    <blockquote>
+      <blockquote>
+        <h3>
+          getSOAPHeader
+        </h3>
+        <pre>
+public abstract <a href="#foo">SOAPHeader</a> <b>getSOAPHeader</b>()
+</pre>
+        <dl>
+          <dd>
+            Gets the SOAP Header contained in this <code>SOAPMessage</code>
+            object.
+          </dd>
+          <dd>
+            <br>
+          </dd>
+          <dd>
+            <br>
+          </dd>
+          <dd>
+            <br>
+          </dd>
+          <dd>
+            <br>
+          </dd>
+          <dd>
+            <dl>
+              <dt class="detailSection">
+                Returns:
+              </dt>
+              <dd>
+                the <code>SOAPHeader</code> object contained by this
+                <code>SOAPMessage</code> object
+              </dd>
+              <dt>
+                <br>
+              </dt>
+              <dt class="detailSection">
+                Throws:
+              </dt>
+              <dd>
+                <code><a href="#foo">SOAPException</a></code> - if the SOAP
+                Header does not exist or cannot be retrieved
+              </dd>
+              <dt class="detailSection">
+                Since:
+              </dt>
+              <dd>
+                SAAJ 1.2
+              </dd>
+            </dl>
+          </dd>
+        </dl>
+        <hr class="descriptionSeparator" size="2" width="33%">
+      </blockquote>
+    </blockquote><!-- ========== METHOD SUMMARY =========== -->
+    <!-- ============ METHOD DETAIL ========== -->
+    <p>
+      <i><big><b>Rationale:</b></big> These methods make writing SAAJ clients
+      easier by eliminating the getSOAPPart().getEnvelope() call sequence for
+      gaining access to the header and body elements of the message. This
+      allows developers to focus on their application needs rather than the
+      details of the structure of SOAP messages.</i>
+    </p>
+    <blockquote>
+      <blockquote>
+        <hr size="2" width="50%">
+      </blockquote>
+    </blockquote><br>
+
+    <p class="normalFont">
+      &nbsp;
+    </p>
+    <hr>
+    <p class="sectionHeader">
+      <a name="Corrections"></a> 9) Corrections<br>
+       The following JavaDoc changes will correct ambiguities and errors from
+      earlier versions.
+    </p>
+    <blockquote>
+      <blockquote>
+        <h2>
+          <span class="smaller">javax.xml.soap</span><br>
+           Interface Detail
+        </h2>
+        <table border="1" cellpadding="3" cellspacing="0" width="100%">
+          <tbody>
+            <tr bgcolor="#CCCCFF" class="TableHeadingColor">
+              <td class="summaryHeader" colspan="1">
+                <b>Method Detail</b>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </blockquote>
+    </blockquote>
+    <h2 class="changeId">
+      <a name="C024_"></a><span class="smaller">C024</span>
+    </h2>
+    <blockquote>
+      <blockquote>
+        <h3>
+          getDetailEntries
+        </h3>
+        <pre>
+public java.util.Iterator <b>getDetailEntries</b>()
+</pre>
+        <dl>
+          <dd>
+            <strike>Gets a list of detail entries</strike> <u>Gets an Iterator
+            over all of the <code>DetailEntry</code>s</u> in this
+            <code>Detail</code> object.
+          </dd>
+          <dd>
+            <br>
+          </dd>
+          <dd>
+            <br>
+          </dd>
+          <dd>
+            <br>
+          </dd>
+          <dd>
+            <dl>
+              <dt class="detailSection">
+                Returns:
+              </dt>
+              <dd>
+                an <code>Iterator</code> object over the
+                <code>DetailEntry</code> objects in this <code>Detail</code>
+                object
+              </dd>
+            </dl>
+          </dd>
+        </dl>
+      </blockquote>
+    </blockquote><i><big><b>Rationale:</b></big>The actual return type is an
+    Iterator, not a List.</i><br>
+
+    <hr width="50%" size="2">
+    <blockquote>
+      <blockquote>
+        <h2>
+          <span class="smaller">javax.xml.soap</span><br>
+           Class MessageFactory
+        </h2>
+        <hr class="descriptionSeparator" size="2" width="33%">
+      </blockquote>
+    </blockquote>
+    <h2 class="changeId">
+      <a name="C025_"></a><span class="smaller">C025</span>
+    </h2>
+    <blockquote>
+      <blockquote>
+        <dl>
+          <dt>
+            public abstract class <b>MessageFactory</b>
+          </dt>
+          <dt>
+            extends java.lang.Object
+          </dt>
+        </dl>
+        <p>
+          A factory for creating <code>SOAPMessage</code> objects. <strike>A
+          JAXM client performs the following steps to create a
+          message.</strike>
+        </p>
+        <ul>
+          <li>
+            <strike>Creates a <code>MessageFactory</code> object from a
+            <code>ProviderConnection</code> object (<code>con</code> in the
+            following line of code). The <code>String</code> passed to the
+            <code>createMessageFactory</code> method is the name of a
+            messaging profile, which must be the URL for the schema.</strike>
+            <pre>
+<strike>MessageFactory mf = con.createMessageFactory(schemaURL);<br></strike><br>
+            </pre>
+          </li>
+          <li>
+            <strike>Calls the method <code>createMessage</code> on the
+            <code>MessageFactory</code> object. All messages produced by this
+            <code>MessageFactory</code> object will have the header information
+            appropriate for the messaging profile that was specified when the
+            <code>MessageFactory</code> object was created.</strike>
+            <pre>
+<strike>SOAPMessage m = mf.createMessage();<br></strike><br>
+            </pre>
+          </li>
+        </ul><strike>It is also possible to create a
+        <code>MessageFactory</code> object</strike>
+        <p>
+          <u>A SAAJ client can create a <code>MessageFactory</code> object</u>
+          using the method <code>newInstance</code>, as shown in the following
+          line of code.
+        </p>
+        <p>
+          [...] <strike>If a <code>MessageFactory</code> object was created
+          using a <code>ProviderConnection</code> object, which means that it
+          was initialized with a specified profile, it</strike>
+          <u><code>MessageFactory</code> objects can be initialized with a JAXM
+          profile. In such a case it</u> will produce messages that also come
+          prepopulated with additional entries in the <code>SOAPHeader</code>
+          object and the <code>SOAPBody</code> object.<br>
+           [...]
+        </p>
+      </blockquote>
+    </blockquote><i><big><b>Rationale:</b></big> SAAJ is independent of JAXM.
+    While it is appropriate to mention the available interactions between the
+    two, it is misleading to suggest that JAXM APIs are the endorsed mechanism
+    for accessing the SAAJ factory classes.</i>
+    <hr width="50%" size="2">
+    <blockquote>
+      <blockquote>
+        <h2>
+          <span class="smaller">javax.xml.soap</span><br>
+           Class MimeHeaders
+        </h2>
+        <hr class="descriptionSeparator" size="2" width="33%">
+      </blockquote>
+    </blockquote>
+    <h2 class="changeId">
+      <a name="C026_"></a><span class="smaller">C026</span>
+    </h2>
+    <blockquote>
+      <blockquote>
+        <table border="1" cellpadding="3" cellspacing="0" width="100%">
+          <tbody>
+            <tr bgcolor="#CCCCFF" class="TableHeadingColor">
+              <td class="summaryHeader" colspan="2">
+                <b>Method Summary</b>
+              </td>
+            </tr>
+            <tr bgcolor="white" class="TableRowColor">
+              <td class="summaryReturnType" align="right" valign="top"
+                  width="1%">
+                <code>java.util.Iterator</code>
+              </td>
+              <td>
+                <code><b><a href=
+                "#getAllHeaders%28%29">getAllHeaders</a></b>()</code><br>
+                 Returns all the <strike>headers</strike>
+                <u><code>MimeHeader</code> objects</u> in this
+                <code>MimeHeaders</code> object.
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </blockquote>
+    </blockquote>
+    <p>
+      <i><big><b>Rationale:</b></big>The method summaries for methods that
+      return Iterators should indicate the types of the objects contained by
+      the iterated collections. Otherwise clients will be unable to use the
+      objects returned by the iteration process.</i>
+    </p>
+    <hr width="50%" size="2">
+    <blockquote>
+      <blockquote>
+        <h2>
+          <span class="smaller">javax.xml.soap</span><br>
+           Interface Name
+        </h2>
+        <hr class="descriptionSeparator" size="2" width="33%">
+        <table border="1" cellpadding="3" cellspacing="0" width="100%">
+          <tbody>
+            <tr bgcolor="#CCCCFF" class="TableHeadingColor">
+              <td class="summaryHeader" colspan="1">
+                <b>Method Detail</b>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </blockquote>
+    </blockquote>
+    <h2 class="changeId">
+      <a name="C027_"></a><span class="smaller">C027</span>
+    </h2>
+    <blockquote>
+      <blockquote>
+        <h3>
+          getPrefix
+        </h3>
+        <pre>
+public java.lang.String <b>getPrefix</b>()
+</pre>
+        <dl>
+          <dd>
+            <strike>Returns the prefix associated with the namespace for the
+            XML</strike> <u>Returns the prefix that was specified when this
+            <code>Name</code> object was initialized. This prefix is associated
+            with the namespace for the XML</u> name that this <code>Name</code>
+            object represents.
+          </dd>
+          <dd>
+            <br>
+          </dd>
+          <dd>
+            <br>
+          </dd>
+          <dd>
+            <dl>
+              <dt class="detailSection">
+                Returns:
+              </dt>
+              <dd>
+                the prefix as a string
+              </dd>
+            </dl>
+          </dd>
+        </dl>
+      </blockquote>
+    </blockquote>
+    <p>
+      <i><big><b>Rationale:</b></big>The phrase "the prefix" was ambiguous
+      since there may be zero or many prefixes associated with a given
+      namespace within a given context. This change helps to clarify that a
+      Name is a simple value, unassociated with any context and providing no
+      claims with respect to the validity of its prefix. The TCK already
+      enforces this interpretation of the original wording. This is simply a
+      clarification of the original intent. It is also consistent with the
+      thinking that is driving the evolution of the QName class.</i>
+    </p>
+    <blockquote>
+      <blockquote>
+        <hr width="50%" size="2">
+        <h2>
+          <span class="smaller">javax.xml.soap</span><br>
+           Interface Node
+        </h2>
+        <table border="1" cellpadding="3" cellspacing="0" width="100%">
+          <tbody>
+            <tr bgcolor="#CCCCFF" class="TableHeadingColor">
+              <td class="summaryHeader" colspan="1">
+                <b>Method Detail</b>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </blockquote>
+    </blockquote>
+    <h2 class="changeId">
+      <a name="C028_"></a><span class="smaller">C028</span>
+    </h2>
+    <blockquote>
+      <blockquote>
+        <h3>
+          getValue
+        </h3>
+        <pre>
+public java.lang.String <b>getValue</b>()
+</pre>
+        <dl>
+          <dd>
+            <strike>Returns the value of the immediate child of this
+            <code>Node</code> object if a child exists and its value is
+            text.</strike>
+          </dd>
+          <dd>
+            <u>Returns the value of this node if this is a <code>Text</code>
+            node or the value of the immediate child of this node otherwise. If
+            there is an immediate child of this <code>Node</code> that it is a
+            <code>Text</code> node then it's value will be returned. If there
+            is more than one <code>Text</code> node then the value of the first
+            <code>Text</code> Node will be returned. Otherwise
+            <code>null</code> is returned.</u>
+          </dd>
+          <dd>
+            <br>
+          </dd>
+          <dd>
+            <br>
+          </dd>
+          <dd>
+            <br>
+          </dd>
+          <dd>
+            <dl>
+              <dt class="detailSection">
+                Returns:
+              </dt>
+              <dd>
+                <strike>a <code>String</code> with the text of the immediate
+                child of this <code>Node</code> object if (1) there is a child
+                and (2) the child is a <code>Text</code> object;
+                <code>null</code> otherwise</strike>
+              </dd>
+              <dd>
+                <u>a <code>String</code> with the text of this node if this is
+                a <code>Text</code> node or the text contained by the first
+                immediate child of this <code>Node</code> object that is a
+                <code>Text</code> object if such a child exists;
+                <code>null</code> otherwise.</u>
+              </dd>
+            </dl>
+          </dd>
+        </dl>
+      </blockquote>
+    </blockquote>
+    <p>
+      <i><big><b>Rationale:</b></big>This reflects the actual behavior of the
+      Reference Implementation, the original intent of the specification, the
+      equivalent behavior of DOM, and what we believe the end user will expect.
+      It does represent a new behavior rather than a new restriction which
+      raises the possibility of broken backward compatibility, however, in
+      light of the facts listed above coupled with the fact that the TCK
+      already allows this behavior (or else the Reference Implementation would
+      not have passed) we believe that it is both safe and desirable to make
+      this change.</i>
+    </p>
+    <blockquote>
+      <hr width="50%" size="2">
+      <blockquote>
+        <h2>
+          <span class="smaller">javax.xml.soap</span><br>
+           Interface SOAPBody
+        </h2>
+        <p>
+          <!-- ============ FIELD DETAIL =========== -->
+           <!-- ========= CONSTRUCTOR DETAIL ======== -->
+           <!-- ============ METHOD DETAIL ========== -->
+          </p>
+        <table border="1" cellpadding="3" cellspacing="0" width="100%">
+          <tbody>
+            <tr bgcolor="#CCCCFF" class="TableHeadingColor">
+              <td class="summaryHeader" colspan="1">
+                <b>Method Detail</b>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </blockquote>
+    </blockquote>
+    <h2 class="changeId">
+      <a name="C029_"></a><span class="smaller">C029</span>
+    </h2>
+    <blockquote>
+      <blockquote>
+        <h3>
+          addFault
+        </h3>
+        <pre>
+public <a href="#foo">SOAPException</a><br>
+        </pre>
+        <dl>
+          <dd>
+            Creates a new <code>SOAPFault</code> object and adds it to this
+            <code>SOAPBody</code> object.&nbsp;<u>The new
+            <code>SOAPFault</code> will have default values set for the
+            mandatory child elements <code>faultcode</code> and
+            <code>faultstring</code>.</u>
+            <p>
+              <u>A <code>SOAPBody</code> may contain at most
+              one<code>SOAPFault</code> child element<code>.</code></u>
+            </p>
+          </dd>
+          <dd>
+            <br>
+          </dd>
+          <dd>
+            <br>
+          </dd>
+          <dd>
+            <br>
+          </dd>
+          <dd>
+            <dl>
+              <dt class="detailSection">
+                Returns:
+              </dt>
+              <dd>
+                the new <code>SOAPFault</code> object
+              </dd>
+              <dt class="detailSection">
+                Throws:
+              </dt>
+              <dd>
+                <code><a href="#foo">SOAPException</a></code> - if there is a
+                SOAP error
+              </dd>
+            </dl>
+          </dd>
+        </dl>
+      </blockquote>
+    </blockquote>
+    <p>
+      <i><big><b>Rationale:</b></big>This reflects restrictions present in the
+      SOAP 1.1 specification.</i>
+    </p>
+    <hr width="50%" size="2">
+    <blockquote>
+      <blockquote>
+        <h2>
+          <span class="smaller">javax.xml.soap</span><br>
+           Class SOAPConnection
+        </h2>
+        <hr class="descriptionSeparator" size="2" width="33%">
+      </blockquote>
+    </blockquote>
+    <h2 class="changeId">
+      <a name="C030_"></a><span class="smaller">C030</span>
+    </h2>
+    <blockquote>
+      <blockquote>
+        <dl>
+          <dt>
+            public abstract class <b>SOAPConnection</b>
+          </dt>
+          <dt>
+            extends java.lang.Object
+          </dt>
+        </dl>
+        <p>
+          A point-to-point connection that a client can use for sending
+          messages directly to a remote party (represented by a URL, for
+          instance).
+        </p>
+        <p>
+          <strike>A client can obtain a <code>SOAPConnection</code> object
+          simply by calling the following static method.</strike>
+        </p>
+        <pre>
+<strike>SOAPConnection con = SOAPConnection.newInstance();</strike><br>
+        </pre>
+        <p>
+          <br>
+           <u>A client can obtain a <code>SOAPConnection</code> object using a
+          <a href="#foo"><code>SOAPConnectionFactory</code></a> object as in
+          the following example:</u>
+        </p>
+        <pre>
+      <u>SOAPConnectionFactory factory = SOAPConnectionFactory.newInstance();
+      SOAPConnection con = factory.createConnection();</u>
+        </pre>A <code>SOAPConnection</code> object can be used to send messages
+        directly to a URL following the request/response paradigm. That is,
+        messages are sent using the method <code>call</code>, which sends the
+        message and then waits until it gets a reply.
+      </blockquote>
+    </blockquote>
+    <p>
+      <i><big><b>Rationale:</b></big>The original JavaDoc was wrong.</i>
+    </p>
+    <blockquote>
+      <hr width="50%" size="2">
+      <blockquote>
+        <h2>
+          <span class="smaller">javax.xml.soap</span><br>
+           Class SOAPConnectionFactory
+        </h2>
+        <hr class="descriptionSeparator" size="2" width="33%">
+      </blockquote>
+    </blockquote>
+    <h2 class="changeId">
+      <a name="C031_"></a><span class="smaller">C031</span>
+    </h2>
+    <blockquote>
+      <blockquote>
+        <dl>
+          <dt>
+            public abstract class <b>SOAPConnectionFactory</b>
+          </dt>
+          <dt>
+            extends java.lang.Object
+          </dt>
+        </dl>
+        <p>
+          <u>A factory for creating <code>SOAPConnection</code> objects.
+          Implementation of this class is optional. If
+          <code>SOAPConnectionFactory.newInstance()</code> throws an
+          UnsupportedOperationException then the implementation does not
+          support the SAAJ communication infrastructure. Otherwise <a href=
+          "#foo"><code>SOAPConnection</code></a> objects can be created by
+          calling <code>createConnection()</code> on the newly created
+          <code>SOAPConnectionFactory</code> object.</u>
+        </p>
+      </blockquote>
+    </blockquote>
+    <p>
+      <i><big><b>Rationale:</b></big>There was no JavaDoc class comment for
+      this class before. This comment clearly states the optional nature of the
+      SAAJ communication artifacts and exposes the mechanism that allows them
+      to be optional.</i>
+    </p>
+    <hr width="50%" size="2">
+    <blockquote>
+      <blockquote>
+        <h2>
+          <span class="smaller">javax.xml.soap</span><br>
+           Interface SOAPConstants
+        </h2>
+        <p>
+          <!-- ============ FIELD DETAIL =========== -->
+          </p>
+        <table border="1" cellpadding="3" cellspacing="0" width="100%">
+          <tbody>
+            <tr bgcolor="#CCCCFF" class="TableHeadingColor">
+              <td class="summaryHeader" colspan="1">
+                <b>Field Detail</b>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </blockquote>
+    </blockquote>
+    <h2 class="changeId">
+      <a name="C032_"></a><span class="smaller">C032</span>
+    </h2>
+    <blockquote>
+      <blockquote>
+        <h3>
+          URI_NS_SOAP_ENVELOPE
+        </h3>
+        <pre>
+public static final java.lang.String <b>URI_NS_SOAP_ENVELOPE</b><br>
+        </pre>
+        <dl>
+          <dd>
+            The namespace identifier for the SOAP 1.1 envelope. <u>All
+            <code>SOAPElement</code>s in this namespace are defined by the SOAP
+            1.1 specification.</u>
+          </dd>
+          <dd>
+            <br>
+          </dd>
+          <dd>
+            <br>
+          </dd>
+          <dd>
+            <dl>
+              <dt class="detailSection">
+                See Also:
+              </dt>
+              <dd>
+                <a href=
+                "#javax.xml.soap.SOAPConstants.URI_NS_SOAP_ENVELOPE">Constant
+                Field Values</a>
+              </dd>
+            </dl>
+          </dd>
+        </dl>
+        <hr class="descriptionSeparator" size="2" width="33%">
+      </blockquote>
+    </blockquote>
+    <h2 class="changeId">
+      <a name="C033_"></a><span class="smaller">C033</span>
+    </h2>
+    <blockquote>
+      <blockquote>
+        <h3>
+          URI_NS_SOAP_ENCODING
+        </h3>
+        <pre>
+public static final java.lang.String <b>URI_NS_SOAP_ENCODING</b><br>
+        </pre>
+        <dl>
+          <dd>
+            The namespace identifier for the SOAP 1.1 encoding. <u>An attribute
+            named <code>encodingStyle</code> in the
+            <code>URI_NS_SOAP_ENVELOPE</code> namespace and set to the value
+            <code>URI_NS_SOAP_ENCODING</code> can be added to an element to
+            indicate that it is encoded using the rules in section 5 of the
+            SOAP 1.1 specification.</u>
+          </dd>
+          <dd>
+            <br>
+          </dd>
+          <dd>
+            <dl>
+              <dt class="detailSection">
+                See Also:
+              </dt>
+              <dd>
+                <a href=
+                "#javax.xml.soap.SOAPConstants.URI_NS_SOAP_ENCODING">Constant
+                Field Values</a>
+              </dd>
+            </dl>
+          </dd>
+        </dl>
+        <hr class="descriptionSeparator" size="2" width="33%">
+      </blockquote>
+    </blockquote>
+    <h2 class="changeId">
+      <a name="C034_"></a><span class="smaller">C034</span>
+    </h2>
+    <blockquote>
+      <blockquote>
+        <h3>
+          URI_SOAP_ACTOR_NEXT
+        </h3>
+        <pre>
+public static final java.lang.String <b>URI_SOAP_ACTOR_NEXT</b><br>
+        </pre>
+        <dl>
+          <dd>
+            The URI identifying the <strike>first</strike> <u>next</u>
+            application processing a SOAP request as the intended actor for a
+            SOAP 1.1 header entry (see section 4.2.2 of the SOAP 1.1
+            specification).
+            <p>
+              <u>This value can be passed to <a href=
+              "#examineMustUnderstandHeaderElements%28java.lang.String%29"><code>
+              SOAPHeader.examineMustUnderstandHeaderElements(String)</code></a>,
+              <a href="#examineHeaderElements%28java.lang.String%29"><code>
+              SOAPHeader.examineHeaderElements(String)</code></a>
+              and <a href="#extractHeaderElements%28java.lang.String%29"><code>
+              SOAPHeader.extractHeaderElements(String)</code></a></u>
+            </p>
+          </dd>
+          <dd>
+            <br>
+          </dd>
+          <dd>
+            <dl>
+              <dt class="detailSection">
+                See Also:
+              </dt>
+              <dd>
+                <a href=
+                "#javax.xml.soap.SOAPConstants.URI_SOAP_ACTOR_NEXT">Constant
+                Field Values</a>
+              </dd>
+            </dl>
+          </dd>
+        </dl>
+        <hr class="descriptionSeparator" size="2" width="33%">
+      </blockquote>
+    </blockquote>
+    <p>
+      <i><big><b>Rationale:</b></big>These are just informational changes. They
+      do not change the meaning of the specification at all.</i>
+    </p>
+    <hr width="50%" size="2">
+    <blockquote>
+      <blockquote>
+        <h2>
+          <span class="smaller">javax.xml.soap</span><br>
+           Interface SOAPElement
+        </h2>
+        <hr class="descriptionSeparator" size="2" width="33%">
+      </blockquote>
+    </blockquote>
+    <blockquote>
+      <blockquote>
+        <dl>
+          <dt>
+            public interface <b>SOAPElement</b>
+          </dt>
+          <dt>
+            extends <a href="#foo">Node</a>, org.w3c.dom.Element
+          </dt>
+        </dl>
+        <p>
+          <!-- ======== CONSTRUCTOR SUMMARY ======== -->
+           <!-- ========== METHOD SUMMARY =========== -->
+          </p>
+        <table border="1" cellpadding="3" cellspacing="0" width="100%">
+          <tbody>
+            <tr bgcolor="#CCCCFF" class="TableHeadingColor">
+              <td class="summaryHeader" colspan="2">
+                <b>Method Summary</b>
+              </td>
+            </tr>
+            <tr bgcolor="white" class="TableRowColor">
+              <td class="summaryReturnType" align="right" valign="top"
+                  width="1%">
+                <code><a href="#foo">SOAPElement</a></code>
+              </td>
+              <td>
+                <h2 class="changeId">
+                  <a name="C035_"></a><span class="smaller">C035</span>
+                </h2><code><b><a href=
+                "#addChildElement%28java.lang.String%29">addChildElement</a></b>(java.lang.String
+                localName)</code><br>
+                 Creates a new <code>SOAPElement</code> object initialized with
+                the <strike>given <code>String</code></strike> <u>specified
+                local name</u> and adds the new element to this
+                <code>SOAPElement</code> object.
+              </td>
+            </tr>
+            <tr bgcolor="white" class="TableRowColor">
+              <td class="summaryReturnType" align="right" valign="top"
+                  width="1%">
+                <code>java.util.Iterator</code>
+              </td>
+              <td>
+                <h2 class="changeId">
+                  <a name="C036_"></a><span class="smaller">C036</span>
+                </h2><code><b><a href=
+                "#getAllAttributes%28%29">getAllAttributes</a></b>()</code><br>
+                 Returns an <strike>iterator over all of the attribute
+                names</strike> <u><code>Iterator</code> over all of the
+                attribute <code>Name</code> objects</u> in this
+                <code>SOAPElement</code> object.
+              </td>
+            </tr>
+            <tr bgcolor="white" class="TableRowColor">
+              <td class="summaryReturnType" align="right" valign="top"
+                  width="1%">
+                <code>java.util.Iterator</code>
+              </td>
+              <td>
+                <h2 class="changeId">
+                  <a name="C037_"></a><span class="smaller">C037</span>
+                </h2><code><b><a href=
+                "#getChildElements%28%29">getChildElements</a></b>()</code><br>
+                 <strike>Returns an iterator over all the immediate content of
+                this element.</strike> <u><br>
+                 Returns an <code>Iterator</code> over all the immediate child
+                <a href="#foo"><code>Node</code></a></u><u>s</u> <u><code>of
+                this element</code>. This includes <code>Text</code> objects as
+                well as <code>SOAPElement</code> objects.<br></u>
+                <p>
+                  <u>Calling this method may cause child <code>Element</code>,
+                  <code>SOAPElement</code> and <code>org.w3c.dom.Text</code>
+                  nodes to be replaced by <code>SOAPElement</code>,
+                  <code>SOAPHeaderElement</code>, <code>SOAPBodyElement</code>
+                  or <code>javax.xml.soap.Text</code> nodes as appropriate for
+                  the type of this parent node. As a result the calling
+                  application must treat any existing references to these child
+                  nodes that have been obtained through DOM APIs as invalid and
+                  either discard them or refresh them with the values returned
+                  by this <code>Iterator</code>. This behavior can be avoided
+                  by calling the equivalent DOM APIs. See <a href=
+                  "#foo">javax.xml.soap</a></u><a><u>for more details.</u></a>
+                </p><br>
+              </td>
+            </tr>
+            <tr>
+              <td valign="top">
+                <span class=
+                "smaller"><code>java.util.Iterator</code></span><br>
+              </td>
+              <td valign="top">
+                <h2 class="changeId">
+                  <a name="C038_"></a><span class="smaller">C038</span>
+                </h2><code><b><a href=
+                "#getChildElements%28javax.xml.soap.Name%29">getChildElements</a></b>(
+                <a href="#foo">Name</a> name)</code><br>
+                 <strike>Returns an iterator over all the child elements with
+                the specified name.</strike> <u>Returns an
+                <code>Iterator</code> over all the immediate child <a href=
+                "#foo"><code>Node</code></a></u><u>s</u> <u><code>of this
+                element with the specified name.</code> All of these children
+                will be <code>SOAPElement</code> nodes.</u>
+                <p>
+                  <u>Calling this method may cause child <code>Element</code>,
+                  <code>SOAPElement</code> and <code>org.w3c.dom.Text</code>
+                  nodes to be replaced by <code>SOAPElement</code>,
+                  <code>SOAPHeaderElement</code>, <code>SOAPBodyElement</code>
+                  or <code>javax.xml.soap.Text</code> nodes as appropriate for
+                  the type of this parent node. As a result the calling
+                  application must treat any existing references to these child
+                  nodes that have been obtained through DOM APIs as invalid and
+                  either discard them or refresh them with the values returned
+                  by this <code>Iterator</code>. This behavior can be avoided
+                  by calling the equivalent DOM APIs. See <a href=
+                  "#foo">javax.xml.soap</a></u><a><u>for more details.</u></a>
+                </p><br>
+              </td>
+            </tr>
+            <tr bgcolor="white" class="TableRowColor">
+              <td class="summaryReturnType" align="right" valign="top"
+                  width="1%">
+                <code>java.util.Iterator</code>
+              </td>
+              <td>
+                <h2 class="changeId">
+                  <a name="C039_"></a><span class="smaller">C039</span>
+                </h2><code><b><a href=
+                "#getNamespacePrefixes%28%29">getNamespacePrefixes</a></b>()</code><br>
+
+                 Returns an <strike>iterator of namespace prefixes</strike>
+                <u><code>Iterator</code> over the namespace prefix
+                <code>String</code>s declared by this element. The prefixes
+                returned by this iterator can be passed to the method
+                <code>getNamespaceURI</code> to retrieve the URI of each
+                namespace</u>.
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </blockquote>
+    </blockquote>
+    <p>
+      <i><big><b>Rationale:</b></big> Clarifies that the <code>String</code>
+      parameter of <code>addChildElement</code> is intended to be the name of
+      the new element -- not its value, and specifies the types to expect to be
+      able to extract from <code>Iterator</code> return values. C037 and C038
+      clarify the consequences of moving nodes around in the SAAJ tree and the
+      option of avoiding these consequences via DOM interfaces.</i>
+    </p>
+    <hr width="50%" size="2">
+    <blockquote>
+      <blockquote>
+        <h2>
+          <span class="smaller">javax.xml.soap</span><br>
+           Class SOAPException
+        </h2><!-- ============ METHOD DETAIL ========== -->
+        <table border="1" cellpadding="3" cellspacing="0" width="100%">
+          <tbody>
+            <tr bgcolor="#CCCCFF" class="TableHeadingColor">
+              <td class="summaryHeader" colspan="1">
+                <b>Method Detail</b>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <h3>
+          initCause
+        </h3>
+        <pre>
+public java.lang.Throwable <b>initCause</b>(java.lang.Throwable cause)
+</pre>
+        <dl>
+          <dd>
+            [...]
+          </dd>
+          <dd>
+            <br>
+          </dd>
+          <dd>
+            <br>
+          </dd>
+          <dd>
+            <dl>
+              <dd>
+                <br>
+              </dd>
+            </dl>
+          </dd>
+        </dl>
+      </blockquote>
+    </blockquote>
+    <h2 class="changeId">
+      <a name="C040_"></a><span class="smaller">C040</span>
+    </h2>
+    <blockquote>
+      <blockquote>
+        <dl>
+          <dd>
+            <br>
+          </dd>
+          <dd>
+            <dl>
+              <dt class="detailSection">
+                Throws:
+              </dt>
+              <dd>
+                <code>[...]</code>
+              </dd>
+              <dd>
+                <code>java.lang.IllegalStateException</code> - <strike>if this
+                <code>SOAPException</code> object was created with <u class=
+                "fauxLink">SOAPException(Throwable)</u> or <u class=
+                "fauxLink">SOAPException(String,Throwable)</u>, or this method
+                has already been called on this <code>SOAPException</code>
+                object</strike>
+              </dd>
+              <dd>
+                <u>if the cause for this <code>SOAPException</code> object has
+                already been initialized</u>
+              </dd>
+            </dl>
+          </dd>
+        </dl>
+      </blockquote>
+    </blockquote>
+    <p>
+      <i><big><b>Rationale:</b></big>Tightens up the language.</i>
+    </p>
+    <hr width="50%" size="2">
+    <blockquote>
+      <blockquote>
+        <h2>
+          <span class="smaller">javax.xml.soap</span><br>
+           Interface SOAPHeader
+        </h2>
+        <table border="1" cellpadding="3" cellspacing="0" width="100%">
+          <tbody>
+            <tr bgcolor="#CCCCFF" class="TableHeadingColor">
+              <td class="summaryHeader" colspan="2">
+                <b>Method Summary</b>
+              </td>
+            </tr>
+            <tr bgcolor="white" class="TableRowColor">
+              <td class="summaryReturnType" align="right" valign="top"
+                  width="1%">
+                <code>java.util.Iterator</code>
+              </td>
+              <td>
+                <h2 class="changeId">
+                  <a name="C041_"></a><span class="smaller">C041</span>
+                </h2><code><b><a href=
+                "#examineHeaderElements%28java.lang.String%29">examineHeaderElements</a></b>(java.lang.String
+                actor)</code><br>
+                 <strike>Returns a list of all the
+                <code>SOAPHeaderElement</code> objects</strike> <u>Returns an
+                <code>Iterator</code> over all the
+                <code>SOAPHeaderElement</code> objects</u> in this
+                <code>SOAPHeader</code> object that have the specified
+                actor.
+              </td>
+            </tr>
+            <tr bgcolor="white" class="TableRowColor">
+              <td class="summaryReturnType" align="right" valign="top"
+                  width="1%">
+                <code>java.util.Iterator</code>
+              </td>
+              <td>
+                <h2 class="changeId">
+                  <a name="C042_"></a><span class="smaller">C042</span>
+                </h2><code><b><a href=
+                "#extractHeaderElements%28java.lang.String%29">extractHeaderElements</a></b>(java.lang.String
+                actor)</code><br>
+                 <strike>Returns a list of all the
+                <code>SOAPHeaderElement</code> objects</strike> <u>Returns an
+                <code>Iterator</code> over all the
+                <code>SOAPHeaderElement</code> objects</u> in this
+                <code>SOAPHeader</code> object that have the specified
+                actor and detaches them from this <code>SOAPHeader</code>
+                object.
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </blockquote>
+    </blockquote>
+    <p>
+      <i><big><b>Rationale:</b></big>These methods return iterators, not
+      lists.</i>
+    </p>
+    <hr width="50%" size="2">
+    <!-- ============ METHOD DETAIL ========== -->
+    <blockquote>
+      <blockquote>
+        <h2>
+          <span class="smaller">javax.xml.soap</span><br>
+           Class SOAPMessage
+        </h2>
+        <h3>
+          saveRequired
+        </h3>
+        <pre>
+public abstract boolean <b>saveRequired</b>()
+</pre>
+      </blockquote>
+    </blockquote>
+    <h2 class="changeId">
+      <a name="C043_"></a><span class="smaller">C043</span>
+    </h2>
+    <blockquote>
+      <blockquote>
+        <dl>
+          <dd>
+            <strike>Indicates whether this <code>SOAPMessage</code> object has
+            had the method <code>saveChanges</code> called on it.</strike>
+            <u>Indicates whether this <code>SOAPMessage</code> object needs to
+            have the method <code>saveChanges</code> called on it.</u>
+          </dd>
+          <dd>
+            <br>
+          </dd>
+          <dd>
+            <br>
+          </dd>
+          <dd>
+            <dl>
+              <dt class="detailSection">
+                Returns:
+              </dt>
+              <dd>
+                <strike>true</strike> <code><strike>if</strike></code>
+                <strike>saveChanges</strike> <code><strike>has been called on
+                this message at least once;</strike> <u>true</u></code> <u>if
+                <code>saveChanges</code> needs to be called;</u>
+                <code>false</code> otherwise.
+              </dd>
+            </dl>
+          </dd>
+        </dl>
+        <hr class="descriptionSeparator" size="2" width="33%">
+      </blockquote>
+    </blockquote>
+    <p>
+      <i><big><b>Rationale:</b></big>Original wording was almost the exact
+      opposite of the intent.</i>
+    </p>
+    <hr width="50%" size="2">
+    <blockquote>
+      <blockquote>
+        <!-- ============ METHOD DETAIL ========== -->
+        <h2>
+          <font size="-1">javax.xml.soap</font><br>
+           Class AttachmentPart
+        </h2>
+        <pre>
+java.lang.Object<br>  |<br>  +--<b>javax.xml.soap.AttachmentPart</b><br>
+        </pre>
+        <table border="1" cellpadding="3" cellspacing="0" width="100%">
+          <tbody>
+            <tr bgcolor="#CCCCFF" class="TableHeadingColor">
+              <td colspan="1">
+                <font size="+2"><b>Method Detail</b></font>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <h3>
+          getContent
+        </h3>public abstract java.lang.Object <b>getContent</b>() throws
+        <a href="#foo">SOAPException</a>
+        <dl>
+          <dd>
+            [...]
+          </dd>
+        </dl>
+      </blockquote>
+    </blockquote>
+    <h2 class="changeId">
+      <a name="C044_"></a><span class="smaller">C044</span>
+    </h2>
+    <blockquote>
+      <blockquote>
+        <dl>
+          <dd>
+            <p>
+              A <strike>JAXM</strike><u>SAAJ</u>-compliant implementation must,
+              as a minimum, return a <code>java.lang.String</code> object
+              corresponding to any content stream with a
+              <code>Content-Type</code> value of <code>text/plain</code>, a
+              <code>javax.xml.transform.<u>stream.</u>StreamSource</code>
+              object corresponding to a content stream with a
+              <code>Content-Type</code> value of <code>text/xml</code>, a
+              <code>java.awt.Image</code> object corresponding to a content
+              stream with a <code>Content-Type</code> value of
+              <code>image/gif</code> or <code>image/jpeg</code>. For those
+              content types that an installed <code>DataContentHandler</code>
+              object does not understand, the <code>DataContentHandler</code>
+              object is required to return a <code>java.io.InputStream</code>
+              object with the raw bytes.
+            </p>
+          </dd>
+          <dd>
+            <br>
+          </dd>
+          <dd>
+            <br>
+          </dd>
+          <dd>
+            <dl>
+              <dt>
+                <b>Returns:</b>
+              </dt>
+              <dd>
+                a Java object with the content of this
+                <code>AttachmentPart</code> object
+              </dd>
+              <dt>
+                <b>Throws:</b>
+              </dt>
+              <dd>
+                <code><a href="#foo">SOAPException</a></code> - if there is no
+                content set into this <code>AttachmentPart</code> object or if
+                there was a data transformation error
+              </dd>
+            </dl>
+          </dd>
+        </dl>
+      </blockquote>
+    </blockquote>
+    <blockquote>
+      <blockquote>
+        <hr class="descriptionSeparator" size="2" width="33%">
+      </blockquote>
+    </blockquote>
+    <p>
+      <i><big><b>Rationale:</b></big> This is the SAAJ API not JAXM. The
+      package name was wrong.</i>
+    </p>
+    <hr width="50%" size="2">
+    <blockquote>
+      <blockquote>
+        <!-- ============ METHOD DETAIL ========== -->
+        <h2>
+          <font size="-1">javax.xml.soap</font><br>
+           Class SOAPPart
+        </h2>
+        <pre>
+java.lang.Object<br>  |<br>  +--<b>javax.xml.soap.SOAPPart</b><br>
+        </pre>
+        <dl>
+          <dt>
+            <br>
+          </dt>
+        </dl>
+        <table border="1" cellpadding="3" cellspacing="0" width="100%">
+          <tbody>
+            <tr bgcolor="#CCCCFF" class="TableHeadingColor">
+              <td colspan="1">
+                <font size="+2"><b>Method Detail</b></font>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <h3>
+          setContent
+        </h3>
+        <pre>
+public abstract void <b>setContent</b>(javax.xml.transform.Source source)
+                         throws <a href="#foo">SOAPException</a>
+        </pre>
+        <dl>
+          <dd>
+            <br>
+          </dd>
+        </dl>
+      </blockquote>
+    </blockquote>
+    <h2 class="changeId">
+      <a name="C045_"></a><span class="smaller">C045</span>
+    </h2>
+    <blockquote>
+      <dl>
+        <dd>
+          <br>
+        </dd>
+        <dd>
+          <dl>
+            <dd>
+              Sets the content of the <code>SOAPEnvelope</code> object with the
+              data from the given <code>Source</code> object. <u>This
+              <code>Source</code> must contain a valid SOAP document.</u>
+            </dd>
+            <dd>
+              <br>
+            </dd>
+            <dd>
+              <br>
+            </dd>
+            <dd>
+              <dl>
+                <dt>
+                  <b>Throws:</b>
+                </dt>
+                <dd>
+                  <code><a href="#SOAPException">SOAPException</a></code> - if
+                  there is a problem in setting the source
+                </dd>
+                <dt>
+                  <b>See Also:</b>
+                </dt>
+                <dd>
+                  <a href="#getContent%28%29"><code>getContent()</code></a>
+                </dd>
+              </dl>
+            </dd>
+          </dl>
+        </dd>
+      </dl>
+    </blockquote>
+    <blockquote>
+      <blockquote>
+        <hr class="descriptionSeparator" size="2" width="33%">
+      </blockquote>
+    </blockquote>
+    <p>
+      <i><big><b>Rationale:</b></big> It was not clear that the SOAPPart could
+      contain only a SOAP document.</i>
+    </p>
+    <hr width="50%" size="2">
+    <hr width="100%" size="2">
+    <p class="sectionHeader">
+      10) Deferred Changes
+    </p>
+    <ol>
+      <li>
+        Deprecating the Name interface in favor of the QName class.<br>
+         <i>Rationale:</i> The QName class is currently in the process of being
+        upgraded and moved into a more appropriate package. While it would be
+        appropriate for SAAJ to adopt QName as it's preferred representation of
+        XML qualified names, it makes sense for us to defer this move until the
+        changes to QName are complete. Since the adoption of QName will have no
+        impact on WS-I compatibility it is not urgent that we make this change
+        at this time.
+      </li>
+    </ol><br>
+     <br>
+     <br>
+     <br>
+     <br>
+  </body>
+</html>
+
+
+
+
+<!-- ** BEGIN: footer.jsp ** //-->
+
+
+
+
+
+
+
+
+</td>
+</tr>
+</table>
+
+<!-- ** END: Content Table ** //-->
+
+<!-- ** BEGIN: Footer Table ** //-->
+
+<div id="footer" style="clear: both;">
+    <div class="footleft">
+        <a href="/en/resources/contacts">Contact Us</a>
+    </div>
+	
+    <div class="botbar"><img src="/images/spacer.gif" alt="" height="23" width="1"></div>
+
+    <div class="footleft2">
+         &copy; 2019, Oracle Corporation and/or its affiliates. 
+        <a href="/en/home/terms">Terms of Use</a>. <a href="http://www.oracle.com/us/legal/privacy/index.html">Privacy Policy</a>. <a href="http://www.oracle.com/us/legal/third-party-trademarks/third-party-trademarks-078568.html">Trademarks</a>
+    </div>
+
+    <div class="footright">
+        <img src="/images/common/logo_oracle_footer.gif" alt="Oracle Corporation" height="22" width="91">
+    </div>
+
+    <div style="clear: both;"><img src="/images/spacer.gif" alt="" height="30" width="1"></div>
+</div>
+
+<!-- ** END: Footer Table ** //-->
+
+
+
+<!-- ** Menu Start ** //-->
+
+
+
+</body>
+</html>
+<!-- ** END: footer.jsp ** //-->
+

@@ -1,0 +1,510 @@
+
+<!-- ** BEGIN: header.jsp ** //-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3c.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+<head>
+    
+
+   
+    <link href="/includes/css/menu.css" rel="stylesheet" type="text/css"></link>
+    <link href="/includes/css/style.css" rel="stylesheet" type="text/css"></link>
+    <!--[if lt IE 6]><link href="/includes/css/style5.css" rel="stylesheet" type="text/css" ></link><![endif]-->
+    <!--[if gte IE 5]><link href="/includes/css/style6.css" rel="stylesheet" type="text/css" ></link><![endif]-->
+    <link href="/includes/css/tabs.css"  rel="stylesheet" type="text/css"></link>
+
+    <script type="text/javascript" src="/includes/scripts/tabs.js"></script>
+    <script type="text/javascript" src="/includes/scripts/menu.js"></script>
+   
+
+    
+
+    
+        <title>The Java Community Process(SM) Program - communityprocess - newsletter</title>
+    
+
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+
+
+<body onload="P7_initPM(0,1,0,0,-1)">
+
+    <a name="top"></a>
+
+    <div id="header">
+	<div id="logo">
+		<a href="/en/home/index"><img src="/images/spacer.gif" alt="Java Community Process" height="81" width="151"></a>
+	</div>
+	<div id="tools">
+		<div class="search">
+			<form name="search" action="/en/jsr/summary" method="get" onsubmit="return validate_search()">
+				<input name="id" value="Search JSRs" size="16" class="form" onfocus="nullify_if_equal(this, 'Search JSRs')" type="text">
+				<a href="javascript:document.search.submit()" onclick="return validate_search()"><img src="/images/button_go.gif" width="21" height="16" border="0" alt="Submit this Search" name="sub_search"></a>
+			</form>
+		</div>
+		<div class="tools">
+			<a href="/en/press/pressroom">Press Room</a> &nbsp;|&nbsp;
+			<a href="http://java.com/java/download/index.jsp?cid=jdp78399">Get Java Here</a> &nbsp;|&nbsp;
+			<!-- <a href="javascript:void(0)">Print Format</a> &nbsp;|&nbsp;&nbsp; -->
+		</div>
+
+	</div>
+	<div style="clear: right;"></div>
+
+        
+
+	<div class="topbar"><img src="/images/spacer.gif" alt="" height="3" width="154"></div>
+	<div id="update"> </div>
+    </div>
+
+
+    
+
+        <!-- ** BEGIN: Content Table ** //-->
+
+        <table width="100%" border="0" cellpadding="0" cellspacing="0">
+
+            <tr>
+
+                <!-- ** BEGIN: Navigation Column ** //-->
+                <td width="150" id="leftcontent" valign="top">
+                    <!-- Navigation Placeholder //-->
+
+                    
+
+                    <div class="bar"><img src="/images/hr_dots1.gif" alt="" height="3" width="150"></div>
+
+        <!-- begin find JSRs form -->
+        <!-- IMPORTANT! do not convert this form to Struts < html : form > tag.  javascript change of form.action property fails. -->
+        <img src="/images/hd_find-jsrs.gif" alt="Find JSRs" height="18" width="150">
+        <form name="findjsr" action="/en/jsr/summary" method="get" class="pt5" onsubmit="return validate_findjsr()">
+            <input name="id" size="18" class="form" value="Search JSRs" onfocus="nullify_if_equal(this, 'Search JSRs')" type="text">
+	    <a href="javascript:document.findjsr.submit()" onclick="return validate_findjsr()"><img src="/images/button_go.gif" width="21" height="16" border="0" alt="Submit this Search" name="sub_search"></a>
+        </form><br><br>
+
+        <!-- ** Menu Start ** //-->
+
+        <ul id="p7PMnav">
+            <li><a href="/en/jsr/platform">JSRs by Platform</a></li>
+            <li><a href="/en/jsr/tech">JSRs by Technology</a></li>
+            <li><a href="/en/jsr/stage">JSRs by Stage</a></li>
+            <li><a href="/en/jsr/ec">JSRs by Committee</a></li>
+            <li><a href="/en/jsr/all">List of All JSRs</a></li>
+
+            <!--end find JSRs form -->
+            <div style="clear: both;"><img src="/images/spacer.gif" alt="" height="25" width="1"></div>
+
+            <!--begin my JCP -->
+            <img src="/images/hd_my-jcp.gif" alt="My JCP" height="18" width="150">
+            
+
+          <form name="login" method="get" action="/en/user/login" >
+            <input name="Sign-in" type="submit" title="Sign-in" value="Sign-in" />
+          </form>
+
+            <div style="clear:both"><img src="/images/global/spacer.gif" width="1" height="3" alt=""></div>
+            <div class="noNav">
+                <a href="/en/user/register">Register for Site</a>
+            </div>
+
+             <div class="bar"><img src="/images/hr_dots1.gif" alt="" height="3" width="150"></div>
+           <div class="noNav" style="color: #666666; padding: 0;">
+              Use of JCP site is subject to the
+              <a href="/en/home/terms" style="display:inline;padding: 0">JCP Terms of Use</a> and the
+              <a href="http://www.oracle.com/us/legal/privacy/index.html" style="display:inline;padding: 0" href="">Oracle Privacy Policy</a>
+          </div>
+
+            
+
+            <div style="clear:both"><img src="/images/global/spacer.gif" width="1" height="25" alt=""></div>
+
+            <!--begin JCP info -->
+            <img src="/images/hd_jcp-info.gif" alt="JCP Info" height="18" width="150">
+
+            <li><a href="/en/procedures/overview" class="p7PMtrg">About JCP</a>
+                <ul>
+                    <li><a href="/en/procedures/overview">Program Overview</a></li>
+                    <li><a href="/en/procedures/jcp2">JCP Process Document</a></li>
+                    <li><a href="/en/whatsnew/calendar">Calendar</a></li>
+                    <li><a href="/en/participation/members">JCP Members</a></li>
+                    <li><a href="/en/participation/committee">Executive Committee</a></li>
+                    <li><a href="/en/whatsnew/elections">Elections</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/en/participation/overview" class="p7PMtrg">Get Involved</a>
+		<ul>
+                    <li><a href="/en/participation/overview">Overview</a></li>
+                    <li><a href="/en/participation/membership">Becoming a JCP Member</a></li>
+		</ul>
+            </li>
+
+            <li><a href="/en/resources/contents" class="p7PMtrg">Community Resources</a>
+                <ul>
+                    <li><a href="/en/resources/contents">Overview</a></li>
+                    <li><a href="/en/resources/tutorials">Tutorials</a></li>
+                    <li><a href="/en/resources/multimedia">JCP Podcasts</a></li>
+                    <li><a href="/en/resources/guide">Spec Lead Guide</a></li>
+                    <li><a href="/en/resources/tdk">TCK Tool & Info</a></li>
+                    <li><a href="/en/resources/license_reference">License Reference</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/en/press/pmo" class="p7PMtrg">Community News</a>
+                <ul>
+                    <li><a href="/en/press/pmo">News</a></li>
+                    <li><a href="/en/press/news/awards/awards_main">Programs &amp; Awards</a></li>
+                    <li><a href="/en/press/releases">Press Releases</a></li>
+                    <li><a href="/en/press/success">Success Stories</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/en/introduction/faq">FAQ</a></li>
+
+            <li><a href="/en/resources/contacts">Contact Us</a></li>
+
+            <div style="clear: both;"><img src="/images/spacer.gif" alt="" height="25" width="1"></div>
+
+            <!--[if lte IE 6]><style>#p7PMnav a{height:1em;}#p7PMnav li{height:1em;float:left;clear:both;width:100%}</style><![endif]-->
+            <!--[if IE 6]><style>#p7PMnav li{clear:none;}</style><![endif]-->
+            <!--[if IE 7]><style>#p7PMnav a{zoom:100%;}#p7PMnav li{float:left;clear:both;width:100%;}</style><![endif]-->
+        </ul>
+
+        
+
+        <!--begin ad space -->
+        <div class="ads">
+            <a href="http://java.com/java/download/index.jsp?cid=jdp78399" target="_blank"><img style="display: ;" src="/images/ad_banner2.gif" alt="Ad Banner" border="1" height="70" width="150"></a>
+        </div>
+        <!--end ad space -->
+
+<!-- ** Menu End ** //-->
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;<br>
+
+    
+
+                    &nbsp;<br>
+                    <img src="/images/common/trans.gif" alt="" width="1" height="150"><br>
+
+              
+
+
+
+                </td>
+                <!-- ** END: Navigation Column ** //-->
+
+                <!-- ** BEGIN: Gutter Column ** //-->
+		<td width="10" nowrap><img src="/images/common/trans.gif" alt="" width="10" height="1"></td>
+                <!-- ** END: Gutter Column ** //-->
+
+                <!-- ** BEGIN: Content Column ** //-->
+                <td width="100%" valign="top">
+
+    
+<script type="text/javascript">
+
+String.prototype.trim = function() {
+        return this.replace(/^\s+|\s+$/g,"");
+}
+String.prototype.ltrim = function() {
+        return this.replace(/^\s+/,"");
+}
+String.prototype.rtrim = function() {
+        return this.replace(/\s+$/,"");
+}
+
+function validate_search() {
+	if (document.search.id.value == "Search JSRs" || document.search.id.value.trim().length == 0) {
+		alert("Search terms must be entered first");
+		return false;
+	}
+	return true;
+}
+
+function validate_findjsr() {
+	if (document.findjsr.id.value == "Search JSRs" || document.findjsr.id.value.trim().length == 0) {
+		alert("Search terms must be entered first");
+		return false;
+	}
+	return true;
+}
+
+function nullify_if_equal(field, str) {
+	// alert("val=" + field.value);
+	if (field.value == str) {
+		field.value = "";
+	}
+}
+
+</script>
+<!-- ** END: header.jsp ** //-->
+
+
+
+
+
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN">
+<HTML>
+<HEAD>
+<!--#config timefmt="%d-%b-%y" -->
+
+<TITLE>The Java Community Process Program -- June 2004 Newsletter</TITLE>
+
+</HEAD>
+
+<BODY BGCOLOR="#FFFFFF" TEXT="#000000" LINK="#0000FF" ALINK="#FF0000" VLINK="#660066">
+
+<!-- server side include for top part of page -->
+
+<!--#include virtual="/share/include/normal.header.v4.0.html"-->
+
+<!-- end server side include for top of page -->
+
+<!-- begin table for main body navigation and content -->
+
+<TABLE BORDER="0" CELLSPACING="0" CELLPADDING="0" WIDTH="100%">
+<TR ALIGN="left" VALIGN="top">
+<TD>
+<IMG SRC="/images/pixel.gif" WIDTH="1" HEIGHT="20" ALT="">
+<BR CLEAR="all">
+
+<!-- server side include for main java.sun.com navigation -->
+
+<!--#include virtual="/share/include/navigate.v4.0.html"-->
+<BR>
+
+<!-- end server side include for main java.sun.com navigation -->
+
+
+</TD>
+<TD WIDTH="100%" VALIGN="top">
+
+<FONT SIZE="+2">Java Community Process<SUP><FONT SIZE="-2">SM</FONT></SUP> &#151; June 2004 Newsletter</FONT>
+<BR>
+
+<!-  begin content here -->
+<P>
+<PRE>
+
+JCP News Bulletin
+June 2004
+
+Here is your June edition of the PMO News Bulletin.  This Bulletin is
+sent to JCP (sm) Members, Spec Leads and Experts and is scheduled to be
+a monthly insert in your email inbox. This edition covers some recent
+news, the JCP program member logo, JCP activities at the 2004 JavaOne
+Conference (sm), a reminder for upcoming JCP training and some
+noteworthy JSRs.
+
+ ** RECENT NEWS **
+ ----------------------
+ Find out about more about the latest happenings in the Java Community
+ Process (JCP) program, by visiting the JCP web site--our front page now
+highlights for you recent JCP happenings.  Check here for the 2004 JCP
+Award Winners to be posted later this week:
+http://jcp.org .
+
+** NEW JCP MEMBER LOGO **
+ -------------------------------------------
+The JCP program logo is now available for JCP member use only.  A member
+version of the JCP program logo can now be used on your website,
+promotional materials, business cards, tradeshow signage, and more.
+Showcase your participation in  evolving Java technology specifications.
+
+All current JCP members can apply online here:
+http://logos.sun.com/logosite.jsp?Category=third&Logo=java-jcp-member .
+
+ ** THE JAVAONE CONFERENCE 2004 **
+---------------------------------------------------------
+Save the following dates and times for the JCP activities at JavaOne San
+Francisco, including the annual Community Event & Awards, the JCP BOF,
+the JCP Expert Group room at the Argent and the JCP pod.
+
+-The Java Communities in Action Event, Tuesday, 29 June, 6:00 PM - 9:00
+PM, The Argent Hotel, Metro 3 Room.  This event is open to all JCP
+members and will include the presentation of the second annual JCP Awards,
+along with the JavaPro Community Awards.  All JCP members welcome! Spec Leads
+and EG members interested in highlighting their JCP efforts at the
+event, please contact the PMO at pmo@jcp.org.
+
+-The JCP BOF 2744 Wednesday, June 30, 7:30 PM, Golden Gate #1, The
+Marriott Hotel.
+
+-The JCP Pod #816 at the Sun booth in the Pavilion.  Stop by to visit
+with members of the PMO and to pick up your JCP member, JCP EC member or
+
+JCP spec lead badge ribbons.
+
+ -The JCP EG Meeting Room, The Argent Hotel, Cornell Room
+This room will be available for JCP expert groups use Monday, Tuesday
+and Wednesday all day.  Contact liz.cadd@sun.com to reserve your time
+slot.
+
+For more information on the JavaOne Conference visit:
+http://java.sun.com/javaone/index.jsp .
+
+** EC MEETING SUMMARIES **
+------------------------------------------------
+Summaries of the JCP EC Meetings are available on jcp.org for JCP
+members only.  Use your Member access information to access the minutes
+posted here:
+http://jal.sun.com/aboutJava/communityprocess/participant/ec-archive/index.html
+
+.
+
+** 2004 JCP Training **
+--------------------------------
+Liz Cadd is conducting her famous JCP training in three locations during
+2004.  Two very successful sessions have been completed in the US (West
+Coast) and Europe (France)--thank you to the participants of those
+sessions for your valuable feedback. The JCP training session is coming
+soon to the US East Coast at the Sun Campus in Burlington, MA: 7 - 8
+September 2004 .  Contact Liz Cadd to reserve your space and view more
+information here: http://www.jcp.org/en/press/news/JCPtraining04 .
+
+** JSRs OF INTEREST **
+---------------------------------
+-JSR 73, Java Data Mining Specification (JDM), is now in the Final
+Approval Ballot. Significant enhancements and clarifications have been
+made to the specification and the proposed final draft includes a Web
+Services interface for JDM with XML Schema and WSDL.  This JSR  provides
+a framework for performing common data mining operations, while
+facilitating the introduction of new or non-standard mining algorithms.
+To facilitate public exchange of ideas on JDM, a new project on java.net
+is getting started:
+datamining at https://datamining.dev.java.net/,
+providing a discussion forum, announcements, and document sharing among
+Java Data Mining users.
+You can view the JSR here: http://jcp.org/en/jsr/detail?id=73 .
+
+-JSR 240, JSLEE v1.1, held its kick-off meeting in Dallas on 25 May. The
+expert group identified the key priorities for JSLEE evolution. Some of
+the key priorities discussed include Resource Adapter Architecture,
+JSLEE and J2EE Integration, JSLEE relevance to other standard bodies,
+Profile Updates and Service examples.  The expert group also decided to
+close the JSR's to new experts at the end of June. If you are planning
+to attend the 2004 JavaOne Conference, stop by the JSLEE booth and check
+out the JSLEE SIP (JSR 32) demo from the Japanese team.  To view JSR 240
+or to sign up for the expert group: http://jcp.org/en/jsr/detail?id=240.
+
+-JSR 75, PDA Optional Packages for the J2ME tm Platform, is now final.
+Download the final release here:
+http://jcp.org/aboutJava/communityprocess/final/jsr075/index.html .
+
+
+** CONTACT INFORMATION **
+ ---------------------------------------------
+Here is how to contact the Program Office:
+- http://www.jcp.org/en/jsr/proposal: to submit proposals for new JSRs.
+
+- spec-submit@jcp.org: to send in your draft and/or final specificationb
+
+documents and related materials (as .pdf or Zip archive, please. Other
+formats will not be posted).
+
+- participant-access@jcp.org: in case you misplaced your Member access
+information....
+
+- pmo@jcp.org: to reach the PMO.
+
+
+ 
+</pre>
+
+See Also<BR>
+<FONT SIZE="-1"><A HREF="http://jcp.org/">Community Process Main Page</A><BR>
+
+</FONT>
+
+
+
+</TD>
+</TR>
+</TABLE>
+
+
+<!-- begin server side include for footer -->
+
+<!--#include virtual="/share/include/normal.footer.v4.0.html"-->
+
+<!-- end server side include for footer -->
+
+</BODY>
+</HTML>
+
+
+
+<!-- ** BEGIN: footer.jsp ** //-->
+
+
+
+
+
+
+
+
+</td>
+</tr>
+</table>
+
+<!-- ** END: Content Table ** //-->
+
+<!-- ** BEGIN: Footer Table ** //-->
+
+<div id="footer" style="clear: both;">
+    <div class="footleft">
+        <a href="/en/resources/contacts">Contact Us</a>
+    </div>
+	
+    <div class="botbar"><img src="/images/spacer.gif" alt="" height="23" width="1"></div>
+
+    <div class="footleft2">
+         &copy; 2019, Oracle Corporation and/or its affiliates. 
+        <a href="/en/home/terms">Terms of Use</a>. <a href="http://www.oracle.com/us/legal/privacy/index.html">Privacy Policy</a>. <a href="http://www.oracle.com/us/legal/third-party-trademarks/third-party-trademarks-078568.html">Trademarks</a>
+    </div>
+
+    <div class="footright">
+        <img src="/images/common/logo_oracle_footer.gif" alt="Oracle Corporation" height="22" width="91">
+    </div>
+
+    <div style="clear: both;"><img src="/images/spacer.gif" alt="" height="30" width="1"></div>
+</div>
+
+<!-- ** END: Footer Table ** //-->
+
+
+
+<!-- ** Menu Start ** //-->
+
+
+
+</body>
+</html>
+<!-- ** END: footer.jsp ** //-->
+

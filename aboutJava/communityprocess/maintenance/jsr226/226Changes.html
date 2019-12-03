@@ -1,0 +1,1680 @@
+
+<!-- ** BEGIN: header.jsp ** //-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3c.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+<head>
+    
+
+   
+    <link href="/includes/css/menu.css" rel="stylesheet" type="text/css"></link>
+    <link href="/includes/css/style.css" rel="stylesheet" type="text/css"></link>
+    <!--[if lt IE 6]><link href="/includes/css/style5.css" rel="stylesheet" type="text/css" ></link><![endif]-->
+    <!--[if gte IE 5]><link href="/includes/css/style6.css" rel="stylesheet" type="text/css" ></link><![endif]-->
+    <link href="/includes/css/tabs.css"  rel="stylesheet" type="text/css"></link>
+
+    <script type="text/javascript" src="/includes/scripts/tabs.js"></script>
+    <script type="text/javascript" src="/includes/scripts/menu.js"></script>
+   
+
+    
+
+    
+        <title>The Java Community Process(SM) Program - communityprocess - maintenance</title>
+    
+
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+
+
+<body onload="P7_initPM(0,1,0,0,-1)">
+
+    <a name="top"></a>
+
+    <div id="header">
+	<div id="logo">
+		<a href="/en/home/index"><img src="/images/spacer.gif" alt="Java Community Process" height="81" width="151"></a>
+	</div>
+	<div id="tools">
+		<div class="search">
+			<form name="search" action="/en/jsr/summary" method="get" onsubmit="return validate_search()">
+				<input name="id" value="Search JSRs" size="16" class="form" onfocus="nullify_if_equal(this, 'Search JSRs')" type="text">
+				<a href="javascript:document.search.submit()" onclick="return validate_search()"><img src="/images/button_go.gif" width="21" height="16" border="0" alt="Submit this Search" name="sub_search"></a>
+			</form>
+		</div>
+		<div class="tools">
+			<a href="/en/press/pressroom">Press Room</a> &nbsp;|&nbsp;
+			<a href="http://java.com/java/download/index.jsp?cid=jdp78399">Get Java Here</a> &nbsp;|&nbsp;
+			<!-- <a href="javascript:void(0)">Print Format</a> &nbsp;|&nbsp;&nbsp; -->
+		</div>
+
+	</div>
+	<div style="clear: right;"></div>
+
+        
+
+	<div class="topbar"><img src="/images/spacer.gif" alt="" height="3" width="154"></div>
+	<div id="update"> </div>
+    </div>
+
+
+    
+
+        <!-- ** BEGIN: Content Table ** //-->
+
+        <table width="100%" border="0" cellpadding="0" cellspacing="0">
+
+            <tr>
+
+                <!-- ** BEGIN: Navigation Column ** //-->
+                <td width="150" id="leftcontent" valign="top">
+                    <!-- Navigation Placeholder //-->
+
+                    
+
+                    <div class="bar"><img src="/images/hr_dots1.gif" alt="" height="3" width="150"></div>
+
+        <!-- begin find JSRs form -->
+        <!-- IMPORTANT! do not convert this form to Struts < html : form > tag.  javascript change of form.action property fails. -->
+        <img src="/images/hd_find-jsrs.gif" alt="Find JSRs" height="18" width="150">
+        <form name="findjsr" action="/en/jsr/summary" method="get" class="pt5" onsubmit="return validate_findjsr()">
+            <input name="id" size="18" class="form" value="Search JSRs" onfocus="nullify_if_equal(this, 'Search JSRs')" type="text">
+	    <a href="javascript:document.findjsr.submit()" onclick="return validate_findjsr()"><img src="/images/button_go.gif" width="21" height="16" border="0" alt="Submit this Search" name="sub_search"></a>
+        </form><br><br>
+
+        <!-- ** Menu Start ** //-->
+
+        <ul id="p7PMnav">
+            <li><a href="/en/jsr/platform">JSRs by Platform</a></li>
+            <li><a href="/en/jsr/tech">JSRs by Technology</a></li>
+            <li><a href="/en/jsr/stage">JSRs by Stage</a></li>
+            <li><a href="/en/jsr/ec">JSRs by Committee</a></li>
+            <li><a href="/en/jsr/all">List of All JSRs</a></li>
+
+            <!--end find JSRs form -->
+            <div style="clear: both;"><img src="/images/spacer.gif" alt="" height="25" width="1"></div>
+
+            <!--begin my JCP -->
+            <img src="/images/hd_my-jcp.gif" alt="My JCP" height="18" width="150">
+            
+
+          <form name="login" method="get" action="/en/user/login" >
+            <input name="Sign-in" type="submit" title="Sign-in" value="Sign-in" />
+          </form>
+
+            <div style="clear:both"><img src="/images/global/spacer.gif" width="1" height="3" alt=""></div>
+            <div class="noNav">
+                <a href="/en/user/register">Register for Site</a>
+            </div>
+
+             <div class="bar"><img src="/images/hr_dots1.gif" alt="" height="3" width="150"></div>
+           <div class="noNav" style="color: #666666; padding: 0;">
+              Use of JCP site is subject to the
+              <a href="/en/home/terms" style="display:inline;padding: 0">JCP Terms of Use</a> and the
+              <a href="http://www.oracle.com/us/legal/privacy/index.html" style="display:inline;padding: 0" href="">Oracle Privacy Policy</a>
+          </div>
+
+            
+
+            <div style="clear:both"><img src="/images/global/spacer.gif" width="1" height="25" alt=""></div>
+
+            <!--begin JCP info -->
+            <img src="/images/hd_jcp-info.gif" alt="JCP Info" height="18" width="150">
+
+            <li><a href="/en/procedures/overview" class="p7PMtrg">About JCP</a>
+                <ul>
+                    <li><a href="/en/procedures/overview">Program Overview</a></li>
+                    <li><a href="/en/procedures/jcp2">JCP Process Document</a></li>
+                    <li><a href="/en/whatsnew/calendar">Calendar</a></li>
+                    <li><a href="/en/participation/members">JCP Members</a></li>
+                    <li><a href="/en/participation/committee">Executive Committee</a></li>
+                    <li><a href="/en/whatsnew/elections">Elections</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/en/participation/overview" class="p7PMtrg">Get Involved</a>
+		<ul>
+                    <li><a href="/en/participation/overview">Overview</a></li>
+                    <li><a href="/en/participation/membership">Becoming a JCP Member</a></li>
+		</ul>
+            </li>
+
+            <li><a href="/en/resources/contents" class="p7PMtrg">Community Resources</a>
+                <ul>
+                    <li><a href="/en/resources/contents">Overview</a></li>
+                    <li><a href="/en/resources/tutorials">Tutorials</a></li>
+                    <li><a href="/en/resources/multimedia">JCP Podcasts</a></li>
+                    <li><a href="/en/resources/guide">Spec Lead Guide</a></li>
+                    <li><a href="/en/resources/tdk">TCK Tool & Info</a></li>
+                    <li><a href="/en/resources/license_reference">License Reference</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/en/press/pmo" class="p7PMtrg">Community News</a>
+                <ul>
+                    <li><a href="/en/press/pmo">News</a></li>
+                    <li><a href="/en/press/news/awards/awards_main">Programs &amp; Awards</a></li>
+                    <li><a href="/en/press/releases">Press Releases</a></li>
+                    <li><a href="/en/press/success">Success Stories</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/en/introduction/faq">FAQ</a></li>
+
+            <li><a href="/en/resources/contacts">Contact Us</a></li>
+
+            <div style="clear: both;"><img src="/images/spacer.gif" alt="" height="25" width="1"></div>
+
+            <!--[if lte IE 6]><style>#p7PMnav a{height:1em;}#p7PMnav li{height:1em;float:left;clear:both;width:100%}</style><![endif]-->
+            <!--[if IE 6]><style>#p7PMnav li{clear:none;}</style><![endif]-->
+            <!--[if IE 7]><style>#p7PMnav a{zoom:100%;}#p7PMnav li{float:left;clear:both;width:100%;}</style><![endif]-->
+        </ul>
+
+        
+
+        <!--begin ad space -->
+        <div class="ads">
+            <a href="http://java.com/java/download/index.jsp?cid=jdp78399" target="_blank"><img style="display: ;" src="/images/ad_banner2.gif" alt="Ad Banner" border="1" height="70" width="150"></a>
+        </div>
+        <!--end ad space -->
+
+<!-- ** Menu End ** //-->
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;<br>
+
+    
+
+                    &nbsp;<br>
+                    <img src="/images/common/trans.gif" alt="" width="1" height="150"><br>
+
+              
+
+
+
+                </td>
+                <!-- ** END: Navigation Column ** //-->
+
+                <!-- ** BEGIN: Gutter Column ** //-->
+		<td width="10" nowrap><img src="/images/common/trans.gif" alt="" width="10" height="1"></td>
+                <!-- ** END: Gutter Column ** //-->
+
+                <!-- ** BEGIN: Content Column ** //-->
+                <td width="100%" valign="top">
+
+    
+<script type="text/javascript">
+
+String.prototype.trim = function() {
+        return this.replace(/^\s+|\s+$/g,"");
+}
+String.prototype.ltrim = function() {
+        return this.replace(/^\s+/,"");
+}
+String.prototype.rtrim = function() {
+        return this.replace(/\s+$/,"");
+}
+
+function validate_search() {
+	if (document.search.id.value == "Search JSRs" || document.search.id.value.trim().length == 0) {
+		alert("Search terms must be entered first");
+		return false;
+	}
+	return true;
+}
+
+function validate_findjsr() {
+	if (document.findjsr.id.value == "Search JSRs" || document.findjsr.id.value.trim().length == 0) {
+		alert("Search terms must be entered first");
+		return false;
+	}
+	return true;
+}
+
+function nullify_if_equal(field, str) {
+	// alert("val=" + field.value);
+	if (field.value == str) {
+		field.value = "";
+	}
+}
+
+</script>
+<!-- ** END: header.jsp ** //-->
+
+
+
+
+
+
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns:st1="urn:schemas-microsoft-com:office:smarttags"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=iso-8859-1">
+<meta name=ProgId content=Word.Document>
+<meta name=Generator content="Microsoft Word 11">
+<meta name=Originator content="Microsoft Word 11">
+<link rel=File-List href="JSR-226%20Change%20Log_files/filelist.xml">
+<title>JSR-226 Change Log</title>
+<o:SmartTagType namespaceuri="urn:schemas-microsoft-com:office:smarttags"
+ name="place"/>
+<!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>Chitturi Suresh</o:Author>
+  <o:LastAuthor>Chitturi Suresh</o:LastAuthor>
+  <o:Revision>298</o:Revision>
+  <o:TotalTime>219</o:TotalTime>
+  <o:Created>2005-11-26T18:38:00Z</o:Created>
+  <o:LastSaved>2005-12-09T16:11:00Z</o:LastSaved>
+  <o:Pages>1</o:Pages>
+  <o:Words>3737</o:Words>
+  <o:Characters>21301</o:Characters>
+  <o:Company>Nokia Oyj</o:Company>
+  <o:Lines>177</o:Lines>
+  <o:Paragraphs>49</o:Paragraphs>
+  <o:CharactersWithSpaces>24989</o:CharactersWithSpaces>
+  <o:Version>11.6408</o:Version>
+ </o:DocumentProperties>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:SpellingState>Clean</w:SpellingState>
+  <w:GrammarState>Clean</w:GrammarState>
+  <w:ValidateAgainstSchemas/>
+  <w:SaveIfXMLInvalid>false</w:SaveIfXMLInvalid>
+  <w:IgnoreMixedContent>false</w:IgnoreMixedContent>
+  <w:AlwaysShowPlaceholderText>false</w:AlwaysShowPlaceholderText>
+  <w:BrowserLevel>MicrosoftInternetExplorer4</w:BrowserLevel>
+ </w:WordDocument>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:LatentStyles DefLockedState="false" LatentStyleCount="156">
+ </w:LatentStyles>
+</xml><![endif]--><!--[if !mso]><object
+ classid="clsid:38481807-CA0E-42D2-BF39-B33AF135CC4D" id=ieooui></object>
+<style>
+st1\:*{behavior:url(#ieooui) }
+</style>
+<![endif]-->
+<style>
+<!--
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-parent:"";
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+h2
+	{mso-margin-top-alt:auto;
+	margin-right:0in;
+	mso-margin-bottom-alt:auto;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	mso-outline-level:2;
+	font-size:18.0pt;
+	font-family:"Times New Roman";
+	font-weight:bold;}
+a:link, span.MsoHyperlink
+	{color:blue;
+	text-decoration:underline;
+	text-underline:single;}
+a:visited, span.MsoHyperlinkFollowed
+	{color:purple;
+	text-decoration:underline;
+	text-underline:single;}
+p
+	{mso-margin-top-alt:auto;
+	margin-right:0in;
+	mso-margin-bottom-alt:auto;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+code
+	{font-family:"Courier New";
+	mso-ascii-font-family:"Courier New";
+	mso-fareast-font-family:"Times New Roman";
+	mso-hansi-font-family:"Courier New";
+	mso-bidi-font-family:"Courier New";}
+pre
+	{margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt;
+	font-size:10.0pt;
+	font-family:"Courier New";
+	mso-fareast-font-family:"Times New Roman";}
+span.SpellE
+	{mso-style-name:"";
+	mso-spl-e:yes;}
+span.GramE
+	{mso-style-name:"";
+	mso-gram-e:yes;}
+@page Section1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.25in 1.0in 1.25in;
+	mso-header-margin:.5in;
+	mso-footer-margin:.5in;
+	mso-paper-source:0;}
+div.Section1
+	{page:Section1;}
+ /* List Definitions */
+ @list l0
+	{mso-list-id:296760163;
+	mso-list-type:hybrid;
+	mso-list-template-ids:43958228 67698705 67698713 67698715 67698703 67698713 67698715 67698703 67698713 67698715;}
+@list l0:level1
+	{mso-level-text:"%1\)";
+	mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l0:level2
+	{mso-level-tab-stop:1.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l0:level3
+	{mso-level-tab-stop:1.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l0:level4
+	{mso-level-tab-stop:2.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l0:level5
+	{mso-level-tab-stop:2.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l0:level6
+	{mso-level-tab-stop:3.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l0:level7
+	{mso-level-tab-stop:3.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l0:level8
+	{mso-level-tab-stop:4.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l0:level9
+	{mso-level-tab-stop:4.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+ol
+	{margin-bottom:0in;}
+ul
+	{margin-bottom:0in;}
+-->
+</style>
+<!--[if gte mso 10]>
+<style>
+ /* Style Definitions */
+ table.MsoNormalTable
+	{mso-style-name:"Table Normal";
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-noshow:yes;
+	mso-style-parent:"";
+	mso-padding-alt:0in 5.4pt 0in 5.4pt;
+	mso-para-margin:0in;
+	mso-para-margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-ansi-language:#0400;
+	mso-fareast-language:#0400;
+	mso-bidi-language:#0400;}
+</style>
+<![endif]--><!--[if gte mso 9]><xml>
+ <o:shapedefaults v:ext="edit" spidmax="12290"/>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <o:shapelayout v:ext="edit">
+  <o:idmap v:ext="edit" data="1"/>
+ </o:shapelayout></xml><![endif]-->
+</head>
+
+<body lang=EN-US link=blue vlink=purple style='tab-interval:.5in'>
+
+<div class=Section1>
+
+<h2 align=center style='text-align:center'><u><span style='color:black'>JSR-226
+Maintenance Release Change Log (09 December, 2005)<o:p></o:p></span></u></h2>
+
+<h2><span style='color:black'><o:p>&nbsp;</o:p></span></h2>
+
+<h2><span style='font-size:14.0pt;color:black;font-weight:normal;mso-bidi-font-weight:
+bold'>The following table provides the list of issues addressed by the JSR 226
+Expert Group during the maintenance phase, including the proposed changes to the
+specification that will benefit the users (application developers, content
+providers, and implementers) of JSR-226 specification.<o:p></o:p></span></h2>
+
+<p class=MsoNormal>&nbsp; </p>
+
+<table class=MsoNormalTable border=1 cellpadding=0 style='mso-cellspacing:1.5pt;
+ mso-padding-alt:2.25pt 2.25pt 2.25pt 2.25pt'>
+ <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes'>
+  <td style='background:silver;padding:2.25pt 2.25pt 2.25pt 2.25pt'>
+  <p class=MsoNormal align=center style='text-align:center'><b>#<o:p></o:p></b></p>
+  </td>
+  <td style='background:silver;padding:2.25pt 2.25pt 2.25pt 2.25pt'>
+  <p class=MsoNormal align=center style='text-align:center'><b>Issue<o:p></o:p></b></p>
+  </td>
+  <td style='background:silver;padding:2.25pt 2.25pt 2.25pt 2.25pt'>
+  <p class=MsoNormal align=center style='text-align:center'><b>Description<o:p></o:p></b></p>
+  </td>
+  <td style='background:silver;padding:2.25pt 2.25pt 2.25pt 2.25pt'>
+  <p class=MsoNormal align=center style='text-align:center'><b>Change<o:p></o:p></b></p>
+  </td>
+  <td style='background:silver;padding:2.25pt 2.25pt 2.25pt 2.25pt'>
+  <p class=MsoNormal align=center style='text-align:center'><b>Status<o:p></o:p></b></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:1'>
+  <td style='padding:2.25pt 2.25pt 2.25pt 2.25pt'>
+  <p class=MsoNormal>1</p>
+  </td>
+  <td style='padding:2.25pt 2.25pt 2.25pt 2.25pt'>
+  <p class=MsoNormal>System Properties</p>
+  </td>
+  <td style='padding:2.25pt 2.25pt 2.25pt 2.25pt'>
+  <p class=MsoNormal>The EG realized that JSR226 1.0 version lacked the
+  definition of system properties that are specific to JSR 226 implementations.
+  System properties are typically used by the application developers to
+  discover or query the API version supported by the underlying implementation.
+  </p>
+  <p class=MsoNormal><o:p>&nbsp;</o:p></p>
+  <p class=MsoNormal>In this regard, the expert group agreed to add three
+  properties that are considered useful to the developers. </p>
+  <p class=MsoNormal style='margin-left:.5in;text-indent:-.25in;mso-list:l0 level1 lfo2;
+  tab-stops:list .5in'><![if !supportLists]><span style='mso-list:Ignore'>1)<span
+  style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><![endif]>m2g.version</p>
+  <p class=MsoNormal style='margin-left:.5in;text-indent:-.25in;mso-list:l0 level1 lfo2;
+  tab-stops:list .5in'><![if !supportLists]><span style='mso-list:Ignore'>2)<span
+  style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><![endif]>m2g.svg.version</p>
+  <p class=MsoNormal style='margin-left:.5in;text-indent:-.25in;mso-list:l0 level1 lfo2;
+  tab-stops:list .5in'><![if !supportLists]><span style='mso-list:Ignore'>3)<span
+  style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><![endif]>m2g.svg.baseProfile</p>
+  </td>
+  <td valign=top style='padding:2.25pt 2.25pt 2.25pt 2.25pt'>
+  <p class=MsoNormal>The following text will be added to JSR 226 overview page
+  to indicate that the following system properties must be supported by the
+  underlying implementations.</p>
+  <p class=MsoNormal><o:p>&nbsp;</o:p></p>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><i
+  style='mso-bidi-font-style:normal'>1) <o:p></o:p></i></p>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><i
+  style='mso-bidi-font-style:normal'>Key:<o:p></o:p></i></p>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><i
+  style='mso-bidi-font-style:normal'>microedition.m2g.version<o:p></o:p></i></p>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><i
+  style='mso-bidi-font-style:normal'><o:p>&nbsp;</o:p></i></p>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><i
+  style='mso-bidi-font-style:normal'>Description:<o:p></o:p></i></p>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><i
+  style='mso-bidi-font-style:normal'>The String returned designates the version
+  of the <st1:place w:st="on">Mobile</st1:place> Scalable 2D Vector Graphics API
+  specification that is implemented. It is &quot;1.0&quot; for this version of
+  the specification<o:p></o:p></i></p>
+  <p class=MsoNormal><i style='mso-bidi-font-style:normal'><o:p>&nbsp;</o:p></i></p>
+  <p class=MsoNormal><i style='mso-bidi-font-style:normal'>2) <o:p></o:p></i></p>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><i
+  style='mso-bidi-font-style:normal'>Key:<o:p></o:p></i></p>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><i
+  style='mso-bidi-font-style:normal'>microedition.m2g.svg.baseProfile<o:p></o:p></i></p>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><i
+  style='mso-bidi-font-style:normal'><o:p>&nbsp;</o:p></i></p>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><i
+  style='mso-bidi-font-style:normal'>Description:<o:p></o:p></i></p>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><i
+  style='mso-bidi-font-style:normal'>The String returned indicates the <span
+  class=SpellE>baseProfile</span> of SVG that is supported by the underlying
+  implementation. It is &quot;tiny&quot; for this version of the specification.<o:p></o:p></i></p>
+  <p class=MsoNormal><i style='mso-bidi-font-style:normal'><o:p>&nbsp;</o:p></i></p>
+  <p class=MsoNormal><i style='mso-bidi-font-style:normal'>3)<o:p></o:p></i></p>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><i
+  style='mso-bidi-font-style:normal'>Key:<o:p></o:p></i></p>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><i
+  style='mso-bidi-font-style:normal'>microedition.m2g.svg.version<o:p></o:p></i></p>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><i
+  style='mso-bidi-font-style:normal'><o:p>&nbsp;</o:p></i></p>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><i
+  style='mso-bidi-font-style:normal'>Description:<o:p></o:p></i></p>
+  <p class=MsoNormal><i style='mso-bidi-font-style:normal'>The String returned
+  indicates the version of SVG that is supported by the underlying
+  implementation. For example, if the underlying SVG engine is compliant to W3C
+  SVGT 1.1 specification the returned string would be &quot;1.1&quot; and for
+  SVGT 1.2 it would be &quot;1.2&quot; and so on. For more information on the
+  version and the supported feature set please refer to W3C SVG pages <a
+  href="http://www.w3.org/Graphics/SVG/">http://www.w3.org/Graphics/SVG/</a><o:p></o:p></i></p>
+  <p class=MsoNormal><i style='mso-bidi-font-style:normal'><o:p>&nbsp;</o:p></i></p>
+  <p class=MsoNormal><o:p>&nbsp;</o:p></p>
+  </td>
+  <td style='padding:2.25pt 2.25pt 2.25pt 2.25pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.0pt'>PROPOSED</span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:2'>
+  <td style='padding:2.25pt 2.25pt 2.25pt 2.25pt'>
+  <p class=MsoNormal>2</p>
+  </td>
+  <td style='padding:2.25pt 2.25pt 2.25pt 2.25pt'>
+  <p class=MsoNormal>Live <span class=SpellE>SVGRect</span> <span class=SpellE>bboxes</span></p>
+  </td>
+  <td style='padding:2.25pt 2.25pt 2.25pt 2.25pt'>
+  <p class=MsoNormal>Clarify whether <span class=SpellE>SVGRect</span> for <span
+  class=SpellE>bboxes</span> are live or not for the <span class=SpellE>SVGLocatableElement</span>
+  description. The EG agrees that the <span class=SpellE>SVGRect</span> instances
+  returned be copies of the bounding boxes at the time the method is called and
+  not live.</p>
+  </td>
+  <td style='padding:2.25pt 2.25pt 2.25pt 2.25pt'>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'>In
+  the <span class=SpellE>getScreenBBox</span>, <span class=SpellE>getScreenCTM</span>
+  and <span class=SpellE>getBBox</span> methods of the <span class=SpellE>SVGLocatableElement</span>
+  interface, the following text will be added to the return value</p>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'>descriptions:</p>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><o:p>&nbsp;</o:p></p>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+  class=SpellE>getBBox</span></p>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><i
+  style='mso-bidi-font-style:normal'>&#8220;The returned object is a copy of
+  the current bounding box value and will not change if the corresponding
+  bounding box changes.&#8221;<o:p></o:p></i></p>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><o:p>&nbsp;</o:p></p>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+  class=SpellE>getScreenBBox</span></p>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><i
+  style='mso-bidi-font-style:normal'>&#8220;The returned object is a copy of
+  the current screen bounding box value and will not change if the corresponding
+  screen bounding box changes.&#8221;<o:p></o:p></i></p>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><o:p>&nbsp;</o:p></p>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+  class=SpellE>getScreenCTM</span></p>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><i
+  style='mso-bidi-font-style:normal'>&#8220;The returned object is a copy of
+  the current screen CTM value and will not change if the corresponding screen
+  CTM changes.&#8221;<o:p></o:p></i></p>
+  <p class=MsoNormal><o:p>&nbsp;</o:p></p>
+  </td>
+  <td style='padding:2.25pt 2.25pt 2.25pt 2.25pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt'>PROPOSED</span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:3'>
+  <td style='padding:2.25pt 2.25pt 2.25pt 2.25pt'>
+  <p class=MsoNormal>3</p>
+  </td>
+  <td style='padding:2.25pt 2.25pt 2.25pt 2.25pt'>
+  <p class=MsoNormal>Trait access</p>
+  </td>
+  <td style='padding:2.25pt 2.25pt 2.25pt 2.25pt'>
+  <p class=MsoNormal>This issue concerns trait access and what the
+  implementation should do for traits that are not listed in the traits table.
+  The intent in the EG was to allow implementations to go beyond the minimal
+  requirement list i.e. bigger implementations could support more traits than
+  those defined in trait table of <span class=SpellE>SVGElement</span>
+  interface.</p>
+  </td>
+  <td style='padding:2.25pt 2.25pt 2.25pt 2.25pt'>
+  <p class=MsoNormal>In the &quot;Traits supported in this specification, SVG
+  Tiny 1.1 DOM&quot; section, add, after the first sentence:</p>
+  <p class=MsoNormal><o:p>&nbsp;</o:p></p>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><i
+  style='mso-bidi-font-style:normal'>&quot;Implementations that support
+  multiple versions of the SVG Tiny language must allow trait access to the
+  most extensive set and support the types supported by each trait in the most
+  extensive set. However, content relying on traits or trait types available in
+  future versions may not work in all conformant JSR 226 1.0 implementations&quot;</i>.</p>
+  <p class=MsoNormal><o:p>&nbsp;</o:p></p>
+  </td>
+  <td style='padding:2.25pt 2.25pt 2.25pt 2.25pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt'>PROPOSED</span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:4'>
+  <td style='padding:2.25pt 2.25pt 2.25pt 2.25pt'>
+  <p class=MsoNormal>4</p>
+  </td>
+  <td style='padding:2.25pt 2.25pt 2.25pt 2.25pt'>
+  <p class=MsoNormal><span class=SpellE>dispatchMouseEvent</span> event type</p>
+  </td>
+  <td style='padding:2.25pt 2.25pt 2.25pt 2.25pt'>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'>This
+  issue is related to <span class=SpellE>dispatchMouseEvent</span>(), where
+  there is a similar crafted wording with the supported event types. The spec. currently
+  allows more event types than click but only click is required.</p>
+  <p class=MsoNormal><o:p>&nbsp;</o:p></p>
+  </td>
+  <td style='padding:2.25pt 2.25pt 2.25pt 2.25pt'>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'>In
+  the <span class=SpellE>dispatchMouseEvent</span> method, the following text
+  will be added, after the sentence &quot;The only required mouse event type is
+  &quot;click&quot;:</p>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><o:p>&nbsp;</o:p></p>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><i
+  style='mso-bidi-font-style:normal'>&quot;Implementations may support more
+  event types than click. However, using these additional event types may not
+  work in all conformant JSR 226 1.0 implementations&quot;<o:p></o:p></i></p>
+  <p class=MsoNormal><o:p>&nbsp;</o:p></p>
+  </td>
+  <td style='padding:2.25pt 2.25pt 2.25pt 2.25pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.0pt'>PROPOSED</span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:5'>
+  <td style='padding:2.25pt 2.25pt 2.25pt 2.25pt'>
+  <p class=MsoNormal>5</p>
+  </td>
+  <td style='padding:2.25pt 2.25pt 2.25pt 2.25pt'>
+  <p class=MsoNormal><span class=SpellE>capturePhase</span></p>
+  </td>
+  <td style='padding:2.25pt 2.25pt 2.25pt 2.25pt'>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'>Currently,
+  the <span class=SpellE>addEventLlistener</span> under <span class=SpellE>EventTarget</span>
+  interface, a <span class=SpellE>DOMException</span> is thrown with error code
+  NOT_SUPPORTED_ERR if <span class=SpellE>useCapture</span> is true since
+  capture phase is not supported in SVG Tiny.</p>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><o:p>&nbsp;</o:p></p>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'>The
+  group agrees to add <span class=SpellE>documention</span> to allow bigger
+  implementations if necessary to support <span class=SpellE>capturePhase</span>
+  but not mandate 226 conformant implementations to support listeners for <span
+  class=SpellE>capturePhase</span>.</p>
+  <p class=MsoNormal><o:p>&nbsp;</o:p></p>
+  </td>
+  <td style='padding:2.25pt 2.25pt 2.25pt 2.25pt'>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'>The
+  following changes/additions will be made to specification to clarify this
+  behavior.</p>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><o:p>&nbsp;</o:p></p>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+  class=SpellE>EventTarget</span> change.</p>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'>==============</p>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><o:p>&nbsp;</o:p></p>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+  class=SpellE>EventTarget.addEventListener</span> &amp; <span class=SpellE>EventTarget.removeEventListener</span></p>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><o:p>&nbsp;</o:p></p>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'>Modify
+  the documentation for <span class=SpellE>DOMException</span>.</p>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><o:p>&nbsp;</o:p></p>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'>Replace:
+  <i style='mso-bidi-font-style:normal'>&quot;DOMException - with error code
+  NOT_SUPPORTED_ERR if <span class=SpellE>useCapture</span> is true since
+  capture phase is not supported in SVG Tiny.&quot;<o:p></o:p></i></p>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><o:p>&nbsp;</o:p></p>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'>With<i
+  style='mso-bidi-font-style:normal'>: &quot;<span class=SpellE>DOMException</span>
+  - with error code NOT_SUPPORTED_ERR if <span class=SpellE>useCapture</span>
+  is true since capture phase is not required in SVG Tiny and implementations
+  may not support registering listeners for the capture phase.&quot;<o:p></o:p></i></p>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><o:p>&nbsp;</o:p></p>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><o:p>&nbsp;</o:p></p>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+  class=SpellE>SVGAnimator</span> change.</p>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'>===============</p>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><o:p>&nbsp;</o:p></p>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><i
+  style='mso-bidi-font-style:normal'>&#8220;Events dispatched by the <span
+  class=SpellE>SVGAnimator</span> are limited to the at-target and bubble phase
+  of the DOM Level 2 event flow (<a
+  href="http://www.w3.org/TR/2000/REC-DOM-Level-2-Events-20001113/events.html#Events-flow">http://www.w3.org/TR/2000/REC-DOM-Level-2-Events-20001113/events.html#Events-flow</a>)&#8221;.<o:p></o:p></i></p>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><o:p>&nbsp;</o:p></p>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+  class=SpellE>SVGImage</span> change.</p>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'>=============</p>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><o:p>&nbsp;</o:p></p>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'>In
+  the class description add:</p>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><o:p>&nbsp;</o:p></p>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><i
+  style='mso-bidi-font-style:normal'>&#8220;Note that the DOM event flow
+  resulting from invoking methods such as <span class=SpellE>focusOn</span> or <span
+  class=SpellE>dispatchMouseEvent</span> are limited to the at-target and
+  bubble phase of the DOM Level 2 event flow(<a
+  href="http://www.w3.org/TR/2000/REC-DOM-Level-2-Events-20001113/events.html#Events-flow">http://www.w3.org/TR/2000/REC-DOM-Level-2-Events-20001113/events.html#Events-flow</a>)&#8221;</i>.</p>
+  <p class=MsoNormal><o:p>&nbsp;</o:p></p>
+  </td>
+  <td style='padding:2.25pt 2.25pt 2.25pt 2.25pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.0pt'>PROPOSED</span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:6'>
+  <td style='padding:2.25pt 2.25pt 2.25pt 2.25pt'>
+  <p class=MsoNormal>6</p>
+  </td>
+  <td style='padding:2.25pt 2.25pt 2.25pt 2.25pt'>
+  <p class=MsoNormal>Automatic event dispatching by <span class=SpellE>SVGAnimator</span></p>
+  </td>
+  <td style='padding:2.25pt 2.25pt 2.25pt 2.25pt'>
+  <p class=MsoNormal>Clarify that events are automatically dispatched by the <span
+  class=SpellE>SVGAnimator</span> to the <span class=SpellE>SVGImage</span></p>
+  </td>
+  <td style='padding:2.25pt 2.25pt 2.25pt 2.25pt'>
+  <p class=MsoNormal>The following text will be added to <span class=SpellE>SVGAnimator</span>
+  class documentation:</p>
+  <p class=MsoNormal><o:p>&nbsp;</o:p></p>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><i
+  style='mso-bidi-font-style:normal'>&#8220;The <span class=SpellE>SVGAnimator</span>
+  dispatches events to the <span class=SpellE>SVGEventListener</span> and
+  automatically dispatches events it detects to the <span class=SpellE>SVGImage</span>.&#8221;<o:p></o:p></i></p>
+  <p class=MsoNormal><o:p>&nbsp;</o:p></p>
+  <p class=MsoNormal>Also see issue#5.</p>
+  </td>
+  <td style='padding:2.25pt 2.25pt 2.25pt 2.25pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.0pt'>PROPOSED</span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:7'>
+  <td style='padding:2.25pt 2.25pt 2.25pt 2.25pt'>
+  <p class=MsoNormal>7</p>
+  </td>
+  <td style='padding:2.25pt 2.25pt 2.25pt 2.25pt'>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'>Specify
+  the thread for calling <span class=SpellE>dispatchEvents</span> and / or
+  specify the thread in which <span class=SpellE>SVGEventListener</span>
+  listeners are called back.</p>
+  <p class=MsoNormal><span style='color:black'><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style='padding:2.25pt 2.25pt 2.25pt 2.25pt'>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'>The
+  <span class=SpellE>SVGEventListener</span> is an abstraction over the
+  platform specific event mechanism (MIDP or AWT events). However, the current
+  226 specification does not say anything about the thread in which the <span
+  class=SpellE>SVGEventListener</span> is called.</p>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><o:p>&nbsp;</o:p></p>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'>The
+  EG agrees to specify that the <span class=SpellE>SVGEventListener</span> is
+  called in the platform's event thread.</p>
+  <p class=MsoNormal><span style='color:black'><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style='padding:2.25pt 2.25pt 2.25pt 2.25pt'>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'>The
+  following wording will be added to <span class=SpellE>SVGEventListener</span>
+  interface description.</p>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><o:p>&nbsp;</o:p></p>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><i
+  style='mso-bidi-font-style:normal'>&#8220;Note:<o:p></o:p></i></p>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+  class=SpellE><i style='mso-bidi-font-style:normal'>SVGEventListener</i></span><i
+  style='mso-bidi-font-style:normal'> implementations are called back in the
+  platform's event thread. In MIDP, the <span class=SpellE>SVGEventListener</span>
+  is called back in the same thread as the one used to invoke event methods on
+  the <span class=SpellE>javax.microedition.lcdui.Canvas</span> class
+  extensions. In AWT, the <span class=SpellE>SVGEventListener</span> is called
+  back in the AWT event thread.&#8221;<o:p></o:p></i></p>
+  <p class=MsoNormal><span style='color:black'><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style='padding:2.25pt 2.25pt 2.25pt 2.25pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt'>PROPOSED</span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:8'>
+  <td style='padding:2.25pt 2.25pt 2.25pt 2.25pt'>
+  <p class=MsoNormal>8</p>
+  </td>
+  <td style='padding:2.25pt 2.25pt 2.25pt 2.25pt'>
+  <p class=MsoNormal><span style='color:black'>Issue with invalid SVG
+  content/DOM<o:p></o:p></span></p>
+  </td>
+  <td style='padding:2.25pt 2.25pt 2.25pt 2.25pt'>
+  <p class=MsoNormal><span style='color:black'>The issue is related to the
+  validity of SVG content&#8217;s document/DOM structure.<o:p></o:p></span></p>
+  <p class=MsoNormal><span style='color:black'><o:p>&nbsp;</o:p></span></p>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+  style='color:black'>For ex: The following fragment in an SVG document does
+  not conform to SVG schema however, a valid document structure. <o:p></o:p></span></p>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'>&lt;<span
+  class=SpellE>rect</span> ...&gt;</p>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+  style='mso-spacerun:yes'>�� </span>&lt;<span class=SpellE>rect</span>
+  .../&gt;</p>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'>&lt;/<span
+  class=SpellE>rect</span>&gt;</p>
+  <p class=MsoNormal><span style='color:black'><o:p>&nbsp;</o:p></span></p>
+  <p class=MsoNormal><span style='color:black'>The EG has multiple views on how
+  much validation must be performed by the underlying implementations in this
+  regard. After extensive discussions, the group agreed to clarify that such
+  document fragments may be handled differently by different implementations
+  and content developers must be aware of this issue. <o:p></o:p></span></p>
+  </td>
+  <td style='padding:2.25pt 2.25pt 2.25pt 2.25pt'>
+  <p class=MsoNormal><span style='color:black'>The following text will be added
+  to Node interface:<o:p></o:p></span></p>
+  <p class=MsoNormal><span style='color:black'><o:p>&nbsp;</o:p></span></p>
+  <p class=MsoNormal><i style='mso-bidi-font-style:normal'><span
+  style='color:black'>&#8220;</span>The methods defined in this interface allow
+  DOM manipulation such as removal and insertion which may lead to the creation
+  of a non-conforming SVG document fragment as described in the SVG1.1
+  specification, section G2. The rendering of these fragments may be handled
+  differently by different SVG engine implementations, and therefore, it is
+  strongly recommended that any application using this interface ensures that
+  the resulting document is SVG-conformant. An example of non-conforming SVG
+  fragment would be a rectangle inserted as a child of an other rectangle or as
+  a child of an animation.&#8221;<span style='color:black'><o:p></o:p></span></i></p>
+  </td>
+  <td style='padding:2.25pt 2.25pt 2.25pt 2.25pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt'>PROPOSED</span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:9'>
+  <td style='padding:2.25pt 2.25pt 2.25pt 2.25pt'>
+  <p class=MsoNormal>9</p>
+  </td>
+  <td style='padding:2.25pt 2.25pt 2.25pt 2.25pt'>
+  <p class=MsoNormal><span class=SpellE>BBox</span> of an empty &lt;SVG&gt; and
+  &lt;text&gt; element<span style='color:black'><o:p></o:p></span></p>
+  </td>
+  <td style='padding:2.25pt 2.25pt 2.25pt 2.25pt'>
+  <p class=MsoNormal>The specification lacks clarification on the <span
+  class=SpellE>bbox</span> values for empty &lt;<span class=SpellE>svg</span>&gt;
+  and &lt;text&gt; elements.</p>
+  <p class=MsoNormal>For ex: the TCK expects the following:</p>
+  <p class=MsoNormal><o:p>&nbsp;</o:p></p>
+  <p class=MsoNormal>Empty &lt;<span class=SpellE>svg</span>&gt;:</p>
+  <p class=MsoNormal>&lt;<span class=SpellE>svg</span>&gt;</p>
+  <p class=MsoNormal>&lt;/<span class=SpellE>svg</span>&gt; </p>
+  <p class=MsoNormal><span class=SpellE>BBox</span>: (0,0,0,0)</p>
+  <p class=MsoNormal><o:p>&nbsp;</o:p></p>
+  <p class=MsoNormal>Empty &lt;text&gt;:</p>
+  <p class=MsoNormal>&lt;text x=10 y=10&gt;</p>
+  <p class=MsoNormal>&lt;/text&gt;</p>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+  class=SpellE>BBox</span>: (10,10,0,0)</p>
+  <p class=MsoNormal><o:p>&nbsp;</o:p></p>
+  <p class=MsoNormal>The group agrees to return null for &lt;text&gt; and &lt;<span
+  class=SpellE>svg</span>&gt; with no content.<span style='color:black'><o:p></o:p></span></p>
+  </td>
+  <td style='padding:2.25pt 2.25pt 2.25pt 2.25pt'>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><u>Empty
+  &lt;<span class=SpellE>svg</span>&gt;:<o:p></o:p></u></p>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><o:p>&nbsp;</o:p></p>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'>In the
+  description, it is clearly shown that the bounding box of a structure node
+  (such as a group) which contains no children is null. This is described in
+  &quot;Example #6: Empty group<i style='mso-bidi-font-style:normal'>&quot;.
+  The same behavior applies to the root <span class=SpellE>svg</span> element,
+  which should also return a null bounding box when it is empty.<o:p></o:p></i></p>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><o:p>&nbsp;</o:p></p>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><u>Empty
+  &lt;text&gt;:<o:p></o:p></u></p>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'>In
+  SVG, the bounding box computation for a text element is based on the cells of
+  the glyphs it lays out:</p>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><o:p>&nbsp;</o:p></p>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'>From:
+  <a href="http://www.w3.org/TR/SVG11/coords.html#ObjectBoundingBox">http://www.w3.org/TR/SVG11/coords.html#ObjectBoundingBox</a>
+  &quot;For 'text' elements, for the purposes of the bounding box calculation,
+  each glyph is treated as a separate graphics element. The calculations assume
+  that all glyphs occupy the full glyph cell.&quot;</p>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><o:p>&nbsp;</o:p></p>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'>When
+  a text node has not text content, it has no child <span class=SpellE>glyp</span>
+  to be treated as a separate graphics element. It is similar to a group with
+  no children elements. The JSR 226 <span class=SpellE>SVGLocatableElement</span>
+  explains that the bounding box for an empty group is null. <i
+  style='mso-bidi-font-style:normal'>Therefore, the bounding box for an empty
+  text element should also be null.<o:p></o:p></i></p>
+  <p class=MsoNormal><span style='color:black'><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style='padding:2.25pt 2.25pt 2.25pt 2.25pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt'>PROPOSED</span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:10'>
+  <td style='padding:2.25pt 2.25pt 2.25pt 2.25pt'>
+  <p class=MsoNormal>10</p>
+  </td>
+  <td style='padding:2.25pt 2.25pt 2.25pt 2.25pt'>
+  <p class=MsoNormal><span style='color:black'>Missing <span class=SpellE>DOMException</span>
+  error codes<o:p></o:p></span></p>
+  </td>
+  <td style='padding:2.25pt 2.25pt 2.25pt 2.25pt'>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'>The
+  JSR 226 <span class=SpellE>Document.createElementNS</span> method only
+  documents 2 exceptions</p>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><o:p>&nbsp;</o:p></p>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'>/**</p>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'>*
+  [...]</p>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'>*
+  @throws <span class=SpellE>DOMException</span> NOT_SUPPORTED_ERR if the type of
+  element is not supported by the implementation. JSR 226 only requires
+  creation support for some of the SVG namespace elements and only for a
+  limited number of local names in that namespace (see above documentation).
+  Therefore, in a conformant JSR 226 implementation, trying to create elements
+  with a namespace <span class=SpellE>URIs</span> other than the SVG namespace
+  URI and with a qualified name not in the list of required qualified names may
+  result in this exception being thrown. </p>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><o:p>&nbsp;</o:p></p>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'>@throws
+  <span class=SpellE>NullPointerException</span> if &lt;code&gt;<span
+  class=SpellE>namespaceURI</span>&lt;/code&gt; or &lt;code&gt;<span
+  class=SpellE>qualifiedName</span>&lt;/code&gt; is null.</p>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'>*/</p>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><o:p>&nbsp;</o:p></p>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'>public
+  Element <span class=SpellE>createElementNS</span>(String <span class=SpellE>namespaceURI</span>,
+  String <span class=SpellE>qualifiedName</span>)</p>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'>throws
+  <span class=SpellE>DOMException</span>;</p>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><o:p>&nbsp;</o:p></p>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'>This
+  documentation does not cover the case where the <span class=SpellE>qualifiedName</span>
+  has an incorrect syntax according to the &quot;Namespaces in XML&quot;
+  specification.</p>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><o:p>&nbsp;</o:p></p>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'>In
+  the DOM Core Level 2 specification, there is are additional error code thrown
+  when the syntax of the <span class=SpellE>qualifiedName</span> is invalid,
+  which covers that case:</p>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><o:p>&nbsp;</o:p></p>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+  class=SpellE>DOMException</span></p>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><o:p>&nbsp;</o:p></p>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'>INVALID_CHARACTER_ERR:
+  Raised if the specified qualified name contains an illegal character.</p>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><o:p>&nbsp;</o:p></p>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'>NAMESPACE_ERR:
+  Raised if the <span class=SpellE>qualifiedName</span> is malformed, if the <span
+  class=SpellE>qualifiedName</span> has a prefix and the <span class=SpellE>namespaceURI</span>
+  is null, or if the <span class=SpellE>qualifiedName</span> has a prefix that
+  is &quot;xml&quot; and the <span class=SpellE>namespaceURI</span> is
+  different from &#8220;<a href="http://www.w3.org/XML/1998/namespace">http://www.w3.org/XML/1998/namespace</a>&quot;
+  </p>
+  <p class=MsoNormal><span style='color:black'><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style='padding:2.25pt 2.25pt 2.25pt 2.25pt'>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'>After
+  discussions within the EG, it was agreed that adding these exceptions would
+  introduce computational overhead for JSR 226 implementations and the use
+  cases for this feature are very limited.</p>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><o:p>&nbsp;</o:p></p>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'>Therefore,
+  the EG has agreed to add the following text to <span class=SpellE>DOMException.NOT_SUPPORTED_ERR</span>
+  documentation under <span class=SpellE>Document.createElementNS</span>:</p>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><o:p>&nbsp;</o:p></p>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><i
+  style='mso-bidi-font-style:normal'>&#8220;Note that a full DOM implementation
+  of the JSR 226 API will throw a <span class=SpellE>DOMException.INVALID_CHARACTER_ERR</span>
+  or a <span class=SpellE>DOMException.NAMESPACE_ERR</span> if the <span
+  class=SpellE>qualifiedName</span> contains illegal characters or is otherwise
+  malformed.<o:p></o:p></i></p>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><i
+  style='mso-bidi-font-style:normal'>These error codes are not supported in JSR
+  226, and a NOT_SUPPORTED_ERR code is thrown instead.&#8221;<o:p></o:p></i></p>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><o:p>&nbsp;</o:p></p>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><o:p>&nbsp;</o:p></p>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'>In
+  addition, the group agreed that TCK must only check for <span class=SpellE>DOMException</span>
+  and not the specific error codes.</p>
+  <p class=MsoNormal><span style='color:black'><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style='padding:2.25pt 2.25pt 2.25pt 2.25pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt'>PROPOSED</span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:11'>
+  <td style='padding:2.25pt 2.25pt 2.25pt 2.25pt'>
+  <p class=MsoNormal>11</p>
+  </td>
+  <td style='padding:2.25pt 2.25pt 2.25pt 2.25pt'>
+  <p class=MsoNormal><span style='color:black'>Relocation of Node with Id<o:p></o:p></span></p>
+  </td>
+  <td style='padding:2.25pt 2.25pt 2.25pt 2.25pt'>
+  <p class=MsoNormal>What should happen if an <span class=SpellE>appendChild</span>
+  or <span class=SpellE>insertBefore</span> is called with a <span
+  class=SpellE>newChild</span> or node that has an &quot;id&quot; and is already
+  part of the document tree.<span style='mso-spacerun:yes'>� </span>The current
+  spec does not address this issue.</p>
+  <p class=MsoNormal><o:p>&nbsp;</o:p></p>
+  <p class=MsoNormal>Ex:</p>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'>1)
+  Node a = <span class=SpellE>getNewNode</span>();</p>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'>2) <span
+  class=SpellE>a.setId</span>( &quot;a&quot; );</p>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'>3)
+  Node b = <span class=SpellE>doc.getElementById</span>( &quot;b&quot; );</p>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'>4) <span
+  class=SpellE>b.appendChild</span>( a );</p>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'>5) <span
+  class=SpellE>b.appendChild</span>( a );</p>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><o:p>&nbsp;</o:p></p>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'>The
+  API clearly says that (<span class=SpellE>Node.insertBefore</span>):</p>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'>&quot;If
+  the <span class=SpellE>newChild</span> is already part of the tree, it is
+  first removed.&quot;</p>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><o:p>&nbsp;</o:p></p>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'>Now
+  in <span class=SpellE>Node.removeChild</span>, it says that :</p>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'>&quot;@throws<span
+  style='mso-spacerun:yes'>� </span>INVALID_ACCESS_ERR: if the element being
+  removed or one of its <span class=SpellE>decendants</span> have non-null
+  id.&quot;</p>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><o:p>&nbsp;</o:p></p>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'>Can
+  we conclude that a Node with Id cannot be relocated?</p>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><o:p>&nbsp;</o:p></p>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'>The
+  main issue was with the interpretation of the term &#8220;removed&#8221; in <span
+  class=SpellE>Node.insertBefore</span> that could lead to two different
+  behaviors. If this term &#8220;removed&#8221; implies calling the <span
+  class=SpellE>removeChild</span>() then an Exception must be thrown and
+  otherwise we should not.</p>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+  style='color:black'><o:p>&nbsp;</o:p></span></p>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+  style='color:black'>Since this is core DOM issue, the EG agreed to clarify
+  the behavior with Mr. </span>Philippe Le <span class=SpellE>Hegaret</span>,
+  chair of DOM working group.<span style='color:black'><o:p></o:p></span></p>
+  </td>
+  <td style='padding:2.25pt 2.25pt 2.25pt 2.25pt'>
+  <p class=MsoNormal>After evaluating the response from <span class=SpellE>Phillippe</span>,
+  the EG agreed that a Node with Id cannot be relocated and therefore the
+  following wording will be added to the <span class=SpellE>insertChild</span>()
+  and <span class=SpellE>appendChild</span>() methods.</p>
+  <p class=MsoNormal><o:p>&nbsp;</o:p></p>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+  class=SpellE>insertChild</span></p>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><o:p>&nbsp;</o:p></p>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><i
+  style='mso-bidi-font-style:normal'>&#8220;<span class=SpellE>DOMException</span>
+  -<o:p></o:p></i></p>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><i
+  style='mso-bidi-font-style:normal'>with error code INVALID_ACCESS_ERR: if the
+  element being inserted into the tree already has a parent and itself or one of
+  its descendants has a non-null id.&#8221;<o:p></o:p></i></p>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><o:p>&nbsp;</o:p></p>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+  class=SpellE>appendChild</span></p>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><o:p>&nbsp;</o:p></p>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><i
+  style='mso-bidi-font-style:normal'>&#8220;<span class=SpellE>DOMException</span>
+  -<o:p></o:p></i></p>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><i
+  style='mso-bidi-font-style:normal'>with error code INVALID_ACCESS_ERR: if the
+  element being appended to the tree already has a parent and itself or one of
+  its descendants has a non-null id.&#8221;<o:p></o:p></i></p>
+  <p class=MsoNormal><span style='color:black'><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style='padding:2.25pt 2.25pt 2.25pt 2.25pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt'>PROPOSED</span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:12'>
+  <td style='padding:2.25pt 2.25pt 2.25pt 2.25pt'>
+  <p class=MsoNormal>12</p>
+  </td>
+  <td style='padding:2.25pt 2.25pt 2.25pt 2.25pt'>
+  <p class=MsoNormal><span style='color:black'>render() and <span class=SpellE>releaseTarget</span>()<o:p></o:p></span></p>
+  </td>
+  <td style='padding:2.25pt 2.25pt 2.25pt 2.25pt'>
+  <p class=MsoNormal>render()<br>
+  &nbsp;- Renders the specified <span class=SpellE>ScalableImage</span> using
+  the supplied anchor point. The anchor point given is relative to the upper
+  left corner of the rendering surface. <strong><i style='mso-bidi-font-style:
+  normal'><span style='font-weight:normal;mso-bidi-font-weight:bold'>It is
+  important to note that the content is made visible or flushed to the display
+  only after a call is made to <span class=SpellE>releaseTarget</span></span></i>.</strong><b><br>
+  </b><br>
+  <span class=SpellE>releaseTarget</span>()<br>
+  &nbsp;- Flushes the rendered <span class=SpellE>ScalableImage</span> to the
+  currently bound target and then releases the target. This ensures that the <span
+  class=SpellE>ScalableImage</span> is actually made visible on the target that
+  was set in <span class=SpellE>bindTarget</span>. <strong><i style='mso-bidi-font-style:
+  normal'><span style='font-weight:normal;mso-bidi-font-weight:bold'>Otherwise,
+  the image may or may not become visible</span></i></strong><b
+  style='mso-bidi-font-weight:normal'><i style='mso-bidi-font-style:normal'>.<br>
+  </i></b><br>
+  The issue is that the last sentences in the method description of these two
+  methods (in italic), are contradicting to each other.&nbsp;</p>
+  <p class=MsoNormal><o:p>&nbsp;</o:p></p>
+  <p class=MsoNormal>Currently there is&nbsp;also a test in the TCK that does
+  the following:</p>
+  <p class=MsoNormal>&nbsp;</p>
+  <p class=MsoNormal>The test binds the target and then renders an image.
+  Before releasing the target it checks if the image is already present into
+  the targets <span class=SpellE>pixmap</span>. The test expects the image not
+  to be present in the targets <span class=SpellE>pixmap</span> until the target
+  is released based on the description in render() method.</p>
+  <p class=MsoNormal>&nbsp;</p>
+  <p class=MsoNormal>Now, to implement this behavior you will need to have an
+  intermediate buffer on which to copy images at the rendering time and then at
+  the <span class=SpellE>releaseTarget</span>() time to actually copy that
+  buffer onto the targets <span class=SpellE>pixmap</span>. Implementation
+  feedback shows that&nbsp;this is not necessary and has a considerable
+  negative&nbsp;impact on the performance&nbsp;due to&nbsp;a buffer copy
+  operation at each frame in order to pass this test.</p>
+  <p class=MsoNormal><o:p>&nbsp;</o:p></p>
+  </td>
+  <td style='padding:2.25pt 2.25pt 2.25pt 2.25pt'>
+  <p class=MsoNormal>Since this is an implementation issue, the resolution was
+  to reword the&nbsp;last sentence in&nbsp;render() method to match the
+  text&nbsp;in <span class=SpellE>releaseTarget</span>() and exclude this
+  test&nbsp;in the TCK.</p>
+  <p class=MsoNormal><o:p>&nbsp;</o:p></p>
+  <p class=MsoNormal>Replace the following:</p>
+  <p class=MsoNormal><o:p>&nbsp;</o:p></p>
+  <p class=MsoNormal><strong><i style='mso-bidi-font-style:normal'><span
+  style='font-weight:normal;mso-bidi-font-weight:bold'>&quot;It is important to
+  note that the content is made visible or flushed to the display only after a call
+  is made to <span class=SpellE>releaseTarget</span>.&quot;</span></i></strong><i
+  style='mso-bidi-font-style:normal'><o:p></o:p></i></p>
+  <p class=MsoNormal>&nbsp;</p>
+  <p class=MsoNormal>with</p>
+  <p class=MsoNormal>&nbsp;</p>
+  <p class=MsoNormal><strong><i style='mso-bidi-font-style:normal'><span
+  style='font-weight:normal;mso-bidi-font-weight:bold'>&quot;It is important to
+  note that on implementations, the content&nbsp;may&nbsp;be&nbsp;visible or
+  flushed to the display only after a call is made to <span class=SpellE>releaseTarget</span>.&quot;</span></i></strong><i
+  style='mso-bidi-font-style:normal'><o:p></o:p></i></p>
+  <p class=MsoNormal><o:p>&nbsp;</o:p></p>
+  </td>
+  <td style='padding:2.25pt 2.25pt 2.25pt 2.25pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt'>PROPOSED<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:13'>
+  <td style='padding:2.25pt 2.25pt 2.25pt 2.25pt'>
+  <p class=MsoNormal>13</p>
+  </td>
+  <td style='padding:2.25pt 2.25pt 2.25pt 2.25pt'>
+  <p class=MsoNormal><span style='color:black'>Clarification on URI format for external
+  resource request<o:p></o:p></span></p>
+  </td>
+  <td style='padding:2.25pt 2.25pt 2.25pt 2.25pt'>
+  <p class=MsoNormal>The current spec lacks clarification about the URI format
+  for external request resource.</p>
+  <p class=MsoNormal><o:p>&nbsp;</o:p></p>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'>Ex:
+  For &lt;image&gt; element with <span class=SpellE>href</span>=&quot;<span
+  class=SpellE>myImage.png</span>&quot; we require the implementations to
+  compute the absolute URI by applying the <span class=SpellE>xml:base</span>
+  of its parents all the way <span class=SpellE>upto</span> the root SVG
+  element, and pass this back to the implementation of <span class=SpellE>ExternalResourceHandler</span>.
+  There are two cases:</p>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><o:p>&nbsp;</o:p></p>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'>&lt;<span
+  class=SpellE>svg</span>&gt;</p>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+  style='mso-spacerun:yes'>��� </span>&lt;image <span class=SpellE>xlink:href</span>=&quot;<span
+  class=SpellE>myImage.png</span>&quot; /&gt;</p>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'>&lt;/<span
+  class=SpellE>svg</span>&gt;</p>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><o:p>&nbsp;</o:p></p>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'>Case1:
+  The <span class=SpellE>SVGImage</span> is loaded using <span class=SpellE>createImage</span>(<span
+  class=SpellE>InputStream</span>, ..).</p>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><o:p>&nbsp;</o:p></p>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'>In
+  this case, the group agrees the URI that is passed back is &quot;<span
+  class=SpellE>myImage.png</span>&quot; based on the above understanding.</p>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><o:p>&nbsp;</o:p></p>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'>Case2:
+  The SVG Image is loaded using <span class=SpellE>createImage</span>(URL,
+  ...).</p>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><o:p>&nbsp;</o:p></p>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'>What
+  is the expected behavior in this case? <span class=SpellE>i.e</span> if the <span
+  class=SpellE>SVGImage</span> was created using <span class=SpellE>ScalableImage.createImage</span>(&#8220;<u><span
+  style='color:blue'><a href="http://www.foo.com/doc.svg">http://www.foo.com/doc.svg</a>&#8221;</span></u></p>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'>,&#8230;)</p>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><o:p>&nbsp;</o:p></p>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+  class=GramE>should</span> the request for resource be for URI &quot;<u><span
+  style='color:blue'><a href="http://www.fooo.com/myImage.png">http://www.fooo.com/myImage.png</a></span></u>&quot;
+  or just &quot;<span class=SpellE>myImage.png</span>&quot;?</p>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><o:p>&nbsp;</o:p></p>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'>The
+  EG agrees that the URI format for external resource must include the base URL
+  from which the document was loaded.</p>
+  <p class=MsoNormal><o:p>&nbsp;</o:p></p>
+  </td>
+  <td style='padding:2.25pt 2.25pt 2.25pt 2.25pt'>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'>The
+  following change will be made under the documentation for <span class=SpellE>requestResource</span>()</p>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><o:p>&nbsp;</o:p></p>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'>Replace
+  URI parameter documentation:</p>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><o:p>&nbsp;</o:p></p>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+  style='mso-spacerun:yes'>������ </span><i style='mso-bidi-font-style:normal'><span
+  style='mso-spacerun:yes'>�</span>&quot;URI - the URI for the external
+  resource.&quot;<o:p></o:p></i></p>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><o:p>&nbsp;</o:p></p>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'>With:</p>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><o:p>&nbsp;</o:p></p>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><i
+  style='mso-bidi-font-style:normal'><span style='mso-spacerun:yes'>�������
+  </span>&quot;URI - the URI for the external resource. The URI must always be
+  computed to its absolute form, to the extent possible. For ex: if the <span
+  class=SpellE>ScalableImage</span> is loaded using an URL, then the computed
+  absolute URI for the requested external resource must include this base URL.
+  For more information please refer to <a href="http://www.w3.org/TR/xmlbase/">http://www.w3.org/TR/xmlbase/</a>&quot;<o:p></o:p></i></p>
+  <p class=MsoNormal><o:p>&nbsp;</o:p></p>
+  </td>
+  <td style='padding:2.25pt 2.25pt 2.25pt 2.25pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt'>PROPOSED<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:14'>
+  <td style='padding:2.25pt 2.25pt 2.25pt 2.25pt'>
+  <p class=MsoNormal>14</p>
+  </td>
+  <td style='padding:2.25pt 2.25pt 2.25pt 2.25pt'>
+  <p class=MsoNormal><span style='color:black'>Accessing <span class=SpellE>SVGImage</span>
+  in the implementation of </span><span class=SpellE>ExternalResourceHandler</span>
+  interface<span style='color:black'><o:p></o:p></span></p>
+  </td>
+  <td style='padding:2.25pt 2.25pt 2.25pt 2.25pt'>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'>The
+  JSR 226 API was designed such that user would always have a 'valid' SVG
+  document that is not in error. That guided us to have the <span class=SpellE>createImage</span>
+  method throw an exception if the document is in error (and the user does not
+  get an SVG image object) and throw exceptions for methods which would put the
+  document in error.</p>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><o:p>&nbsp;</o:p></p>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'>However,
+  the <span class=SpellE>ExternalResourceHandler</span> is an exception to that
+  approach since it may be called _during_ the image loading process and that
+  raises an issue.</p>
+  <p class=MsoNormal><o:p>&nbsp;</o:p></p>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'>Can
+  the user do anything with the <span class=SpellE>SVGImage</span> instance
+  that is passed to its <span class=SpellE>requestResource</span>() method? For
+  example, can the <span class=SpellE>SVGImage</span> be rendered in the <span
+  class=SpellE>requestResource</span> method implementation?</p>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><o:p>&nbsp;</o:p></p>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'>The
+  EG agreed this to be an issue and the resolution was to<span
+  style='mso-spacerun:yes'>� </span>provide additional wording to clarify that <span
+  class=SpellE>SVGImage/ScalableImage</span> instance should only be used for <span
+  class=SpellE>requestCompleted</span>() and using it for any other purposes
+  would lead to an undefined behavior.</p>
+  <p class=MsoNormal><o:p>&nbsp;</o:p></p>
+  </td>
+  <td style='padding:2.25pt 2.25pt 2.25pt 2.25pt'>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'>The
+  following text will be added to <span class=SpellE>ExternalResourceHandler</span>
+  interface documentation.</p>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><o:p>&nbsp;</o:p></p>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><i
+  style='mso-bidi-font-style:normal'>&#8220;The <span class=SpellE>ScalableImage</span>
+  instances are primarily used to call the <span class=SpellE>requestCompleted</span>()
+  method. Using it for anything else should be carefully considered because <span
+  class=SpellE>requestResource</span> may be called before the <span
+  class=SpellE>SVGImage</span> gets fully loaded (through <span class=SpellE>createImage</span>()),
+  and any method invocation referencing such an <span class=SpellE>SVGImage</span>
+  has an undefined behavior. For example, it is discouraged to create an
+  animator or render the image during the <span class=SpellE>requestResource</span>()
+  call, as their behavior is only defined on valid <span class=SpellE>SVGImages</span>
+  (returned with no exception from either <span class=SpellE>createImage</span>()
+  or <span class=SpellE>createEmptyImage</span>()).&#8221;<o:p></o:p></i></p>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><o:p>&nbsp;</o:p></p>
+  </td>
+  <td style='padding:2.25pt 2.25pt 2.25pt 2.25pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt'>PROPOSED<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:15'>
+  <td style='padding:2.25pt 2.25pt 2.25pt 2.25pt'>
+  <p class=MsoNormal>15</p>
+  </td>
+  <td style='padding:2.25pt 2.25pt 2.25pt 2.25pt'>
+  <p class=MsoNormal><span style='color:black'>Clarification for <span
+  class=SpellE>setTrait/setTraitNS</span><o:p></o:p></span></p>
+  </td>
+  <td style='padding:2.25pt 2.25pt 2.25pt 2.25pt'>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'>The
+  TCK team&#8217;s assumption has been that traits in SVG namespace can be
+  accessed using <span class=SpellE><span class=GramE>getTraitNS</span></span><span
+  class=GramE>(</span>) with <span class=SpellE>namespaceURI</span> = &quot;<a
+  href="http://www.w3.org/2000/svg">http://www.w3.org/2000/svg</a>&quot;.</p>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><o:p>&nbsp;</o:p></p>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'>This
+  case was challenged by the following:</p>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'>=================</p>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'>In
+  SVG, attributes on SVG elements are not in the SVG namespace. They are in
+  what is called the &quot;per-element type partition&quot;:</p>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><o:p>&nbsp;</o:p></p>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'>References:
+  <a href="http://www.w3.org/TR/1999/REC-xml-names-19990114/#NT-NCName">http://www.w3.org/TR/1999/REC-xml-names-19990114/#NT-NCName</a></p>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'>A.2
+  XML Namespace Partitions: &quot;In XML documents conforming to this
+  specification, the names of all qualified (prefixed) attributes are assigned
+  to the global attribute partition, and the names of all unqualified
+  attributes are assigned to the appropriate per-element-type partition.&quot;</p>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><o:p>&nbsp;</o:p></p>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'>Concretely
+  this means the attributes are in the &quot;null&quot; or &quot;no-namespace&quot;</p>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'>namespace.
+  In DOM Core Level 2, <span class=SpellE>setAttributeNS</span>(null, <span
+  class=SpellE>attributeName</span>) is equivalent to <span class=SpellE>setAttribute</span>(<span
+  class=SpellE>attributeName</span>).</p>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><o:p>&nbsp;</o:p></p>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'>&quot;Applications
+  must use the value null as the <span class=SpellE>namespaceURI</span>
+  parameter for methods if they wish to have no namespace&quot;</p>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><u><span
+  style='color:blue'><a
+  href="http://www.w3.org/TR/2000/REC-DOM-Level-2-Core-20001113/core.html#Namespaces">http://www.w3.org/TR/2000/REC-DOM-Level-2-Core-20001113/core.html#Namespaces</a></span></u></p>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><o:p>&nbsp;</o:p></p>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'>Therefore,
+  <span class=SpellE>getTraitNS</span>(null, <span class=SpellE>traitName</span>)
+  is equivalent to <span class=SpellE>getTrait</span>(<span class=SpellE>traitName</span>).</p>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'>It
+  should check that <span class=SpellE>getTraitNS</span>([SVG namespace],
+  &quot;target&quot;) throws a <span class=SpellE>DOMException</span> with
+  UNSUPPORTED_ERR code.</p>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'>=================</p>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><o:p>&nbsp;</o:p></p>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'>The
+  EG believes that challenger is making a valid point and agreed to clarify the
+  spec accordingly.</p>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><o:p>&nbsp;</o:p></p>
+  </td>
+  <td style='padding:2.25pt 2.25pt 2.25pt 2.25pt'>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><o:p>&nbsp;</o:p></p>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'>The
+  following text will be added to <span class=SpellE>SVGElement</span> Interface
+  documentation just before &quot;Traits supported in this
+  specification....&#8221;:</p>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><o:p>&nbsp;</o:p></p>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><i
+  style='mso-bidi-font-style:normal'>&quot;Note that SVG traits are in the
+  so-called <span class=GramE>element's</span> 'per-element type partitions
+  namespaces' (see the &quot;Namespaces in XML&quot; specification, section A.2
+  [<a href="http://www.w3.org/TR/1999/REC-xml-names-19990114/#NT-NCName">http://www.w3.org/TR/1999/REC-xml-names-19990114/#NT-NCName</a>].
+  Invoking <span class=SpellE>setTraitNS</span>(null, <span class=SpellE>traitName</span>)
+  is equivalent to invoking <span class=SpellE>setTrait</span>(<span
+  class=SpellE>traitName</span>). In particular, this means that the SVG traits
+  are not in the SVG namespace and invoking <span class=SpellE>setTraitNS</span>(SVG
+  namespace,<o:p></o:p></i></p>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+  class=SpellE><i style='mso-bidi-font-style:normal'>traitName</i></span><i
+  style='mso-bidi-font-style:normal'>) is not equivalent to invoking <span
+  class=SpellE>setTrait</span>(<span class=SpellE>traitName</span>).&quot;.<o:p></o:p></i></p>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><o:p>&nbsp;</o:p></p>
+  </td>
+  <td style='padding:2.25pt 2.25pt 2.25pt 2.25pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt'>PROPOSED<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:16'>
+  <td style='padding:2.25pt 2.25pt 2.25pt 2.25pt'>
+  <p class=MsoNormal>16</p>
+  </td>
+  <td style='padding:2.25pt 2.25pt 2.25pt 2.25pt'>
+  <p class=MsoNormal><span style='color:black'>Getters for Animator state<o:p></o:p></span></p>
+  </td>
+  <td style='padding:2.25pt 2.25pt 2.25pt 2.25pt'>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'>Currently,
+  there is no way to query the <span class=SpellE>SVGAnimator</span> for its
+  state.</p>
+  <p class=MsoNormal>However, the <span class=SpellE>SVGAnimator</span> throws
+  exceptions when some methods are called while in the 'wrong' state (e.g.,
+  calling play() while the <span class=SpellE>SVGAnimator</span> is in the play
+  state). The EG considers adding a <span class=SpellE>getState</span>() method
+  which returns a constant defining the animator's state.</p>
+  </td>
+  <td style='padding:2.25pt 2.25pt 2.25pt 2.25pt'>
+  <p class=MsoNormal><span style='color:black'>The following will be added
+  under <span class=SpellE>SVGAnimator</span> class:<o:p></o:p></span></p>
+  <p class=MsoNormal><span style='color:black'><o:p>&nbsp;</o:p></span></p>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'>static
+  public final <span class=SpellE>int</span> PLAYING;</p>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'>static
+  public final <span class=SpellE>int</span> PAUSED;</p>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'>static
+  public final <span class=SpellE>int</span> STOPPED;</p>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><o:p>&nbsp;</o:p></p>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'>/**</p>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'>*
+  @return one of PLAYING, PAUSED, STOPPED.</p>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'>*/</p>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+  class=SpellE>int</span> <span class=SpellE>getState</span>();</p>
+  <p class=MsoNormal><span style='color:black'><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style='padding:2.25pt 2.25pt 2.25pt 2.25pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt'>DEFERRED</span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:17'>
+  <td style='padding:2.25pt 2.25pt 2.25pt 2.25pt'>
+  <p class=MsoNormal>17</p>
+  </td>
+  <td style='padding:2.25pt 2.25pt 2.25pt 2.25pt'>
+  <p class=MsoNormal>Support for dispatching key events<span style='color:black'><o:p></o:p></span></p>
+  </td>
+  <td style='padding:2.25pt 2.25pt 2.25pt 2.25pt'>
+  <p class=MsoNormal>SVG Tiny 1.1 has a time condition called <span
+  class=SpellE>accessKeys</span> which is very useful for mobile content.
+  However, <span class=SpellE>SVGImage</span> has no method to dispatch key
+  events to the engine.</p>
+  <p class=MsoNormal><o:p>&nbsp;</o:p></p>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'>The
+  discussion resulted in three options for <span class=SpellE>dispatchKeyEvent</span>():</p>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><o:p>&nbsp;</o:p></p>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+  class=SpellE>i</span>) <span class=SpellE>dispatchKeyEvent</span> (String
+  event, <span class=SpellE>int</span> <span class=SpellE>keyCode</span>);</p>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+  style='mso-spacerun:yes'>������� </span>- The key event is dispatched to the
+  document node. This will invoke the listeners on the root node invoked
+  including the animations (listening to key events) which are registered to
+  the root node. </p>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><o:p>&nbsp;</o:p></p>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'>ii)
+  <span class=SpellE>dispatchKeyEvent</span> (String event, <span class=SpellE>int</span>
+  <span class=SpellE>keyCode</span>)</p>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'>-
+  The key event is dispatched element in focus. This will invoke the listeners
+  on the focused element and all the parents up to the root node including the
+  animations that are registers to the root node.</p>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><o:p>&nbsp;</o:p></p>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'>iii)
+  <span class=SpellE>dispatchKeyEvent</span> (String event, <span class=SpellE>int</span>
+  <span class=SpellE>keyCode</span>, <span class=SpellE>SVGElement</span>
+  target)</p>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'>-
+  The key event is dispatched to the specified target element. This will invoke
+  the listeners on the target element and all the parents up to the root node
+  including the animations that are registers to the root node.</p>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><o:p>&nbsp;</o:p></p>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'>Resolution:
+  </p>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'>The
+  group agrees with option3 where the key events are dispatched to the
+  specified target. </p>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'>The
+  group agrees to map key codes in MIDP and AWT to DOM Level3 spec.</p>
+  <p class=MsoNormal><span style='color:black'><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style='padding:2.25pt 2.25pt 2.25pt 2.25pt'>
+  <p class=MsoNormal><span style='color:black'><o:p>&nbsp;</o:p></span></p>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'>/**</p>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+  style='mso-spacerun:yes'>�</span>* This method is used to dispatch a key
+  event of the specified |type| to a specific target. The key code is platform
+  specific and is mapped to a DOM Events Level 3 key identifier according to
+  the mapping table described in the class description. The only required key
+  event types are &quot;<span class=SpellE>keyup</span>&quot; and
+  &quot;keydown&quot;. If a different</p>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'>type
+  is specified, a <span class=SpellE>DOMException</span> with error code
+  NOT_SUPPORTED_ERR may be thrown. In the case, where the key code value has no
+  corresponding DOM Events Level 3 key identifier (as per the key code mapping
+  table), no event is dispatched.</p>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><o:p>&nbsp;</o:p></p>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'>@<span
+  class=SpellE>param</span> <span class=SpellE>keyCode</span> - the integer
+  code for an actual key on the keyboard</p>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'>@<span
+  class=SpellE>param</span> |type| - the type of key event.</p>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'>@<span
+  class=SpellE>param</span> <span class=SpellE>eventTarget</span> - the <span
+  class=SpellE>EventTarget</span> instance on which the key event should be
+  dispatched.</p>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><o:p>&nbsp;</o:p></p>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'>@throws
+  <span class=SpellE>DOMException</span> - with error code NOT_SUPPORTED_ERR if
+  type is not supported.</p>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'>@throws
+  <span class=SpellE>NullPointerException</span> - if type or target is null.</p>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'>*/</p>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><o:p>&nbsp;</o:p></p>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'>public
+  void <span class=SpellE>dispatchKeyEvent</span>(String type, <span
+  class=SpellE>int</span> <span class=SpellE>keyCode</span>,<span
+  style='mso-spacerun:yes'>���������������� </span><span class=SpellE>EventTarget</span>
+  target)</p>
+  <p class=MsoNormal><span style='color:black'><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style='padding:2.25pt 2.25pt 2.25pt 2.25pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt'>DEFERRED</span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:18'>
+  <td style='padding:2.25pt 2.25pt 2.25pt 2.25pt'>
+  <p class=MsoNormal>18</p>
+  </td>
+  <td style='padding:2.25pt 2.25pt 2.25pt 2.25pt'>
+  <p class=MsoNormal>Support for <span class=SpellE>MouseEvents</span><span
+  style='color:black'><o:p></o:p></span></p>
+  </td>
+  <td style='padding:2.25pt 2.25pt 2.25pt 2.25pt'>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'>When
+  listening to mouse event, the DOM listeners only get a DOM Event object. It
+  would be good to support <span class=SpellE>MouseEvents</span> so that the
+  handles have access to the event coordinates (see <u><span style='color:blue'><a
+  href="http://www.w3.org/TR/2003/NOTE-DOM-Level-3-Events-20031107/events.html#Events-MouseEvent">http://www.w3.org/TR/2003/NOTE-DOM-Level-3-Events-20031107/events.html#Events-MouseEvent</a></span></u>).</p>
+  <p class=MsoNormal><span style='color:black'><o:p>&nbsp;</o:p></span></p>
+  <p class=MsoNormal><span style='color:black'>The EG considered this feature
+  useful but following<span style='mso-spacerun:yes'>� </span>the scope of
+  maintenance, it was decided to add this feature to the subsequent release of
+  this JSR.<o:p></o:p></span></p>
+  </td>
+  <td style='padding:2.25pt 2.25pt 2.25pt 2.25pt'>
+  <p class=MsoNormal><span style='color:black'>The subsequent release of this
+  JSR will subset the <span class=SpellE>MouseEvent</span> interface as defined
+  in DOM Level 3 Events specification.<o:p></o:p></span></p>
+  </td>
+  <td style='padding:2.25pt 2.25pt 2.25pt 2.25pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt'>DEFERRED</span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:19;mso-yfti-lastrow:yes'>
+  <td style='padding:2.25pt 2.25pt 2.25pt 2.25pt'>
+  <p class=MsoNormal><o:p>&nbsp;</o:p></p>
+  </td>
+  <td style='padding:2.25pt 2.25pt 2.25pt 2.25pt'>
+  <p class=MsoNormal><span style='color:black'><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style='padding:2.25pt 2.25pt 2.25pt 2.25pt'>
+  <p class=MsoNormal><span style='color:black'><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style='padding:2.25pt 2.25pt 2.25pt 2.25pt'>
+  <p class=MsoNormal><span style='color:black'><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style='padding:2.25pt 2.25pt 2.25pt 2.25pt'>
+  <p class=MsoNormal><o:p>&nbsp;</o:p></p>
+  </td>
+ </tr>
+</table>
+
+<blockquote style='margin-top:5.0pt;margin-bottom:5.0pt'>
+
+<p class=MsoNormal><span style='color:black'><o:p>&nbsp;</o:p></span></p>
+
+</blockquote>
+
+</div>
+
+</body>
+
+</html>
+
+
+
+<!-- ** BEGIN: footer.jsp ** //-->
+
+
+
+
+
+
+
+
+</td>
+</tr>
+</table>
+
+<!-- ** END: Content Table ** //-->
+
+<!-- ** BEGIN: Footer Table ** //-->
+
+<div id="footer" style="clear: both;">
+    <div class="footleft">
+        <a href="/en/resources/contacts">Contact Us</a>
+    </div>
+	
+    <div class="botbar"><img src="/images/spacer.gif" alt="" height="23" width="1"></div>
+
+    <div class="footleft2">
+         &copy; 2019, Oracle Corporation and/or its affiliates. 
+        <a href="/en/home/terms">Terms of Use</a>. <a href="http://www.oracle.com/us/legal/privacy/index.html">Privacy Policy</a>. <a href="http://www.oracle.com/us/legal/third-party-trademarks/third-party-trademarks-078568.html">Trademarks</a>
+    </div>
+
+    <div class="footright">
+        <img src="/images/common/logo_oracle_footer.gif" alt="Oracle Corporation" height="22" width="91">
+    </div>
+
+    <div style="clear: both;"><img src="/images/spacer.gif" alt="" height="30" width="1"></div>
+</div>
+
+<!-- ** END: Footer Table ** //-->
+
+
+
+<!-- ** Menu Start ** //-->
+
+
+
+</body>
+</html>
+<!-- ** END: footer.jsp ** //-->
+

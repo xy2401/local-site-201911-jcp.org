@@ -1,0 +1,799 @@
+
+<!-- ** BEGIN: header.jsp ** //-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3c.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+<head>
+    
+
+   
+    <link href="/includes/css/menu.css" rel="stylesheet" type="text/css"></link>
+    <link href="/includes/css/style.css" rel="stylesheet" type="text/css"></link>
+    <!--[if lt IE 6]><link href="/includes/css/style5.css" rel="stylesheet" type="text/css" ></link><![endif]-->
+    <!--[if gte IE 5]><link href="/includes/css/style6.css" rel="stylesheet" type="text/css" ></link><![endif]-->
+    <link href="/includes/css/tabs.css"  rel="stylesheet" type="text/css"></link>
+
+    <script type="text/javascript" src="/includes/scripts/tabs.js"></script>
+    <script type="text/javascript" src="/includes/scripts/menu.js"></script>
+   
+
+    
+
+    
+        <title>The Java Community Process(SM) Program - communityprocess - maintenance</title>
+    
+
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+
+
+<body onload="P7_initPM(0,1,0,0,-1)">
+
+    <a name="top"></a>
+
+    <div id="header">
+	<div id="logo">
+		<a href="/en/home/index"><img src="/images/spacer.gif" alt="Java Community Process" height="81" width="151"></a>
+	</div>
+	<div id="tools">
+		<div class="search">
+			<form name="search" action="/en/jsr/summary" method="get" onsubmit="return validate_search()">
+				<input name="id" value="Search JSRs" size="16" class="form" onfocus="nullify_if_equal(this, 'Search JSRs')" type="text">
+				<a href="javascript:document.search.submit()" onclick="return validate_search()"><img src="/images/button_go.gif" width="21" height="16" border="0" alt="Submit this Search" name="sub_search"></a>
+			</form>
+		</div>
+		<div class="tools">
+			<a href="/en/press/pressroom">Press Room</a> &nbsp;|&nbsp;
+			<a href="http://java.com/java/download/index.jsp?cid=jdp78399">Get Java Here</a> &nbsp;|&nbsp;
+			<!-- <a href="javascript:void(0)">Print Format</a> &nbsp;|&nbsp;&nbsp; -->
+		</div>
+
+	</div>
+	<div style="clear: right;"></div>
+
+        
+
+	<div class="topbar"><img src="/images/spacer.gif" alt="" height="3" width="154"></div>
+	<div id="update"> </div>
+    </div>
+
+
+    
+
+        <!-- ** BEGIN: Content Table ** //-->
+
+        <table width="100%" border="0" cellpadding="0" cellspacing="0">
+
+            <tr>
+
+                <!-- ** BEGIN: Navigation Column ** //-->
+                <td width="150" id="leftcontent" valign="top">
+                    <!-- Navigation Placeholder //-->
+
+                    
+
+                    <div class="bar"><img src="/images/hr_dots1.gif" alt="" height="3" width="150"></div>
+
+        <!-- begin find JSRs form -->
+        <!-- IMPORTANT! do not convert this form to Struts < html : form > tag.  javascript change of form.action property fails. -->
+        <img src="/images/hd_find-jsrs.gif" alt="Find JSRs" height="18" width="150">
+        <form name="findjsr" action="/en/jsr/summary" method="get" class="pt5" onsubmit="return validate_findjsr()">
+            <input name="id" size="18" class="form" value="Search JSRs" onfocus="nullify_if_equal(this, 'Search JSRs')" type="text">
+	    <a href="javascript:document.findjsr.submit()" onclick="return validate_findjsr()"><img src="/images/button_go.gif" width="21" height="16" border="0" alt="Submit this Search" name="sub_search"></a>
+        </form><br><br>
+
+        <!-- ** Menu Start ** //-->
+
+        <ul id="p7PMnav">
+            <li><a href="/en/jsr/platform">JSRs by Platform</a></li>
+            <li><a href="/en/jsr/tech">JSRs by Technology</a></li>
+            <li><a href="/en/jsr/stage">JSRs by Stage</a></li>
+            <li><a href="/en/jsr/ec">JSRs by Committee</a></li>
+            <li><a href="/en/jsr/all">List of All JSRs</a></li>
+
+            <!--end find JSRs form -->
+            <div style="clear: both;"><img src="/images/spacer.gif" alt="" height="25" width="1"></div>
+
+            <!--begin my JCP -->
+            <img src="/images/hd_my-jcp.gif" alt="My JCP" height="18" width="150">
+            
+
+          <form name="login" method="get" action="/en/user/login" >
+            <input name="Sign-in" type="submit" title="Sign-in" value="Sign-in" />
+          </form>
+
+            <div style="clear:both"><img src="/images/global/spacer.gif" width="1" height="3" alt=""></div>
+            <div class="noNav">
+                <a href="/en/user/register">Register for Site</a>
+            </div>
+
+             <div class="bar"><img src="/images/hr_dots1.gif" alt="" height="3" width="150"></div>
+           <div class="noNav" style="color: #666666; padding: 0;">
+              Use of JCP site is subject to the
+              <a href="/en/home/terms" style="display:inline;padding: 0">JCP Terms of Use</a> and the
+              <a href="http://www.oracle.com/us/legal/privacy/index.html" style="display:inline;padding: 0" href="">Oracle Privacy Policy</a>
+          </div>
+
+            
+
+            <div style="clear:both"><img src="/images/global/spacer.gif" width="1" height="25" alt=""></div>
+
+            <!--begin JCP info -->
+            <img src="/images/hd_jcp-info.gif" alt="JCP Info" height="18" width="150">
+
+            <li><a href="/en/procedures/overview" class="p7PMtrg">About JCP</a>
+                <ul>
+                    <li><a href="/en/procedures/overview">Program Overview</a></li>
+                    <li><a href="/en/procedures/jcp2">JCP Process Document</a></li>
+                    <li><a href="/en/whatsnew/calendar">Calendar</a></li>
+                    <li><a href="/en/participation/members">JCP Members</a></li>
+                    <li><a href="/en/participation/committee">Executive Committee</a></li>
+                    <li><a href="/en/whatsnew/elections">Elections</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/en/participation/overview" class="p7PMtrg">Get Involved</a>
+		<ul>
+                    <li><a href="/en/participation/overview">Overview</a></li>
+                    <li><a href="/en/participation/membership">Becoming a JCP Member</a></li>
+		</ul>
+            </li>
+
+            <li><a href="/en/resources/contents" class="p7PMtrg">Community Resources</a>
+                <ul>
+                    <li><a href="/en/resources/contents">Overview</a></li>
+                    <li><a href="/en/resources/tutorials">Tutorials</a></li>
+                    <li><a href="/en/resources/multimedia">JCP Podcasts</a></li>
+                    <li><a href="/en/resources/guide">Spec Lead Guide</a></li>
+                    <li><a href="/en/resources/tdk">TCK Tool & Info</a></li>
+                    <li><a href="/en/resources/license_reference">License Reference</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/en/press/pmo" class="p7PMtrg">Community News</a>
+                <ul>
+                    <li><a href="/en/press/pmo">News</a></li>
+                    <li><a href="/en/press/news/awards/awards_main">Programs &amp; Awards</a></li>
+                    <li><a href="/en/press/releases">Press Releases</a></li>
+                    <li><a href="/en/press/success">Success Stories</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/en/introduction/faq">FAQ</a></li>
+
+            <li><a href="/en/resources/contacts">Contact Us</a></li>
+
+            <div style="clear: both;"><img src="/images/spacer.gif" alt="" height="25" width="1"></div>
+
+            <!--[if lte IE 6]><style>#p7PMnav a{height:1em;}#p7PMnav li{height:1em;float:left;clear:both;width:100%}</style><![endif]-->
+            <!--[if IE 6]><style>#p7PMnav li{clear:none;}</style><![endif]-->
+            <!--[if IE 7]><style>#p7PMnav a{zoom:100%;}#p7PMnav li{float:left;clear:both;width:100%;}</style><![endif]-->
+        </ul>
+
+        
+
+        <!--begin ad space -->
+        <div class="ads">
+            <a href="http://java.com/java/download/index.jsp?cid=jdp78399" target="_blank"><img style="display: ;" src="/images/ad_banner2.gif" alt="Ad Banner" border="1" height="70" width="150"></a>
+        </div>
+        <!--end ad space -->
+
+<!-- ** Menu End ** //-->
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;<br>
+
+    
+
+                    &nbsp;<br>
+                    <img src="/images/common/trans.gif" alt="" width="1" height="150"><br>
+
+              
+
+
+
+                </td>
+                <!-- ** END: Navigation Column ** //-->
+
+                <!-- ** BEGIN: Gutter Column ** //-->
+		<td width="10" nowrap><img src="/images/common/trans.gif" alt="" width="10" height="1"></td>
+                <!-- ** END: Gutter Column ** //-->
+
+                <!-- ** BEGIN: Content Column ** //-->
+                <td width="100%" valign="top">
+
+    
+<script type="text/javascript">
+
+String.prototype.trim = function() {
+        return this.replace(/^\s+|\s+$/g,"");
+}
+String.prototype.ltrim = function() {
+        return this.replace(/^\s+/,"");
+}
+String.prototype.rtrim = function() {
+        return this.replace(/\s+$/,"");
+}
+
+function validate_search() {
+	if (document.search.id.value == "Search JSRs" || document.search.id.value.trim().length == 0) {
+		alert("Search terms must be entered first");
+		return false;
+	}
+	return true;
+}
+
+function validate_findjsr() {
+	if (document.findjsr.id.value == "Search JSRs" || document.findjsr.id.value.trim().length == 0) {
+		alert("Search terms must be entered first");
+		return false;
+	}
+	return true;
+}
+
+function nullify_if_equal(field, str) {
+	// alert("val=" + field.value);
+	if (field.value == str) {
+		field.value = "";
+	}
+}
+
+</script>
+<!-- ** END: header.jsp ** //-->
+
+
+
+
+
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head><!-- saved from url=(0083)https://javadatamining.dev.java.net/files/documents/715/10779/JDM-1_1-ChangeLog.htm --><title>JDM: Change log for JDM 1.1 (final)</title>
+<meta http-equiv="Content-Type" content="text/html;charset=ISO-8859-1">
+<meta content="MSHTML 6.00.2900.2627" name="GENERATOR"></head>
+
+<body bgcolor="#ffffff" text="#000000"><br>
+<div align="center"><font face="Verdana, Arial, Helvetica, sans-serif"><b><font color="#0000ff" size="4">Java Data Mining</font></b></font><br></div>
+<div align="center"><font face="Verdana, Arial, Helvetica, sans-serif" size="1"><br>Last updated: March 9, 2005<br><br></font></div>
+<p align="center"><font face="Verdana, Arial, Helvetica, sans-serif" size="5"><b><font color="#0000ff">Change Log for JDM 1.1</font></b></font></p>
+<table style="width: 100%; height: 69px;" border="1" cellpadding="4" cellspacing="2">
+  <tbody>
+  <tr bgcolor="#ff9999">
+    <td valign="top"><small><span style="font-weight: bold;">No.</span></small><br></td>
+    <td width="11%"><font face="Verdana, Arial, Helvetica, sans-serif" size="1"><b>Packages &amp; Interfaces<br></b></font></td>
+    <td style="width: 25%;"><font face="Verdana, Arial, Helvetica, sans-serif" size="1"><b>Issue </b></font></td>
+    <td style="width: 25%;"><font face="Verdana, Arial, Helvetica, sans-serif" size="1"><b>Changes</b></font></td>
+    <td width="29%"><font face="Verdana, Arial, Helvetica, sans-serif" size="1"><b>Comment </b></font></td></tr>
+  <tr>
+    <td valign="top"><small>1<br></small></td>
+    <td align="left" valign="top" width="11%"><small>javax.datamining.<u>base</u>.<br><i>BuildSettings 
+      </i></small></td>
+    <td style="width: 25%;" align="left" valign="top"><small></small>
+      <p><small>public void setOutlierTreatment (String logicalAttrName, 
+      OutlierTreatment treatment)&nbsp; <br>public void 
+      setOutlierIdentification(String logicalAttrName, Interval bounds) 
+      <br></small></p>
+      <p><small>Methods descriptions are inconsistent, noting name existence is 
+      verified by the verify method and&nbsp; that they throw exception if the 
+      attribute does not exist.<br></small></p></td>
+    <td style="width: 25%;" align="left" valign="top"><small></small>
+      <ul>
+        <li><small>setOutlierTreatment does not throw JDMException if the 
+        attribute does not exist. </small>
+        </li><li><small>setOutlierIdentification does not throw JDMException if the 
+        attribute does not exist. </small></li></ul></td>
+    <td align="left" valign="top" width="29%"><small></small><br></td></tr>
+  <tr>
+    <td align="left" valign="top"><small>2<br></small></td>
+    <td align="left" valign="top"><small>javax.datamining.<u>base</u>.<br><i>BuildSettings 
+      </i></small></td>
+    <td style="width: 25%;" align="left" valign="top"><small>With BuildSettings, 
+      attributes can be specified with usage, weight, outlier treatment and 
+      outlier identification. However, the API does not provide means to 
+      retrieve these attributes. This is needed when dealing with a restored 
+      BuildSettings.<br></small></td>
+    <td style="width: 25%;" align="left" valign="top"><small></small>
+      <ul>
+        <li><small>New enumeration - AttributeRetrievalType {usage, weight, 
+        outlierTreatment, outlierIdentification} </small>
+        </li><li><small>New method - public String[] 
+        getAttributeNames(AttributeRetrievalType) </small></li></ul></td>
+    <td align="left" valign="top"><small><br></small></td></tr>
+  <tr>
+    <td align="left" valign="top"><small>3<br></small></td>
+    <td align="left" valign="top"><small>javax.datamining.<u>resource</u>.<br><i>Connection 
+      </i></small></td>
+    <td style="width: 25%;" align="left" valign="top"><small>There are methods that 
+      return named objects, but not only the names of those objects. Returning 
+      the object names is important for efficiency is displaying objects in a 
+      GUI.<br></small></td>
+    <td style="width: 25%;" align="left" valign="top"><small>New methods added to 
+      Connection:<br></small>
+      <ul>
+        <li><small>public Collection getObjectNames(Date, Date, 
+        NamedObject)<br></small>
+        </li><li><small>public Collection getObjectNames(Date, Date, NamedObject, 
+        Enum)<br></small>
+        </li><li><small>public Collection getModelNames(MiningFunction, 
+        MiningAlgorithm, Date, Date) </small></li></ul><small>Note: getModelNames 
+      - function cannot be null. </small></td>
+    <td align="left" valign="top"><small>Consideration for JDM 2.0 is a more 
+      general and powerful ObjectFilter-based interface. This requires a 
+      proposal with use cases, and agreement from vendors / users on need / 
+      uptake.<br></small></td></tr>
+  <tr>
+    <td valign="top"><small>4<br></small></td>
+    <td valign="top"><small>javax.datamining.<u>resource</u>.<br><i>Connection</i><br></small></td>
+    <td style="width: 25%;" valign="top"><small>Allow users to explicitly inform 
+      the DME to load data as an optimization hint. This is analogous to models 
+      that can be loaded into memory upon requests by the user. One use case is 
+      where there are different logical data and algorithms to build different 
+      model on the same data.<br>If not supported by the DME, the methods must 
+      be a no-op, as for models.<br></small></td>
+    <td style="width: 25%;" valign="top"><small>New methods:<br></small>
+      <ul>
+        <li><small>public String[] getLoadedData() - Returns an array of data 
+        URIs that are currently loaded. The result is an empty array if data 
+        loading is not supported. </small>
+        </li><li><small>public void requestDataLoad(String) - Requests the DME to 
+        load the specified data in memory to enhance efficiency and performance. 
+        The intent is for the data to remain in memory until 
+        <big><code>requestUnloadData</code> </big>is invoked for the same data, 
+        or the connection terminates and there are no connections using the 
+        data.<br>This may be a no-op if the vendor need not load data into 
+        memory or does not support the capability. It is an idempotent operation 
+        if the data has not changed.<br>This method can be invoked on multiple 
+        data. If the specified data does not exist or cannot be located, an 
+        exception is thrown. </small>
+        </li><li><small>public void requestDataUnloaded(String) - Informs the DME 
+        that the specified data is no longer needed and that the data may be 
+        removed from memory if necessary.<br>This may be a no-op if vendor does 
+        not require loading data into memory. It is an idempotent 
+        operation.<br>If the requested data does not exist or cannot be located, 
+        an exception is thrown. </small></li></ul></td>
+    <td valign="top"><small><br></small></td></tr>
+  <tr>
+    <td align="left" valign="top"><small>5<br></small></td>
+    <td align="left" valign="top"><small>javax.datamining.<br><u>modeldetail.tree</u>.<br><i>TreeModelDetail</i><br></small></td>
+    <td style="width: 25%;" align="left" valign="top"><small>Tree model details 
+      were omitted from the API. Add new methods for more information about the 
+      decision tree model: the number of nodes, the number of leaf nodes, and 
+      the tree depth.<br></small></td>
+    <td style="width: 25%;" align="left" valign="top"><small>New 
+      methods:<br></small>
+      <ul>
+        <li><small>public int getTreeDepth()<br></small>
+        </li><li><small>public int getNumberOfNodes()<br></small>
+        </li><li><small>public int getNumberOfLeafNodes()<br></small></li></ul></td>
+    <td align="left" valign="top"><small><br></small></td></tr>
+  <tr>
+    <td valign="top"><small>6<br></small></td>
+    <td valign="top"><small>javax.datamining.<u>modeldetail.tree</u>.<br><i>TreeNode</i><br></small></td>
+    <td style="width: 25%;" valign="top"><small>TreeModelDetail has getRules() 
+      and getRule(int nodeId) methods, but not an ability to get the rule on a 
+      TreeNode.&nbsp; Such functionality is present in Clustering which&nbsp; 
+      also supports rules. </small></td>
+    <td style="width: 25%;" valign="top"><small>New method:<br></small>
+      <ul>
+        <li><small>public Rule getRule() - Javadoc: Returns the rule associated 
+        with the node. Any node in the tree can return its associated rule. 
+        </small></li></ul></td>
+    <td valign="top"><small><br></small></td></tr>
+  <tr>
+    <td valign="top"><small>7<br></small></td>
+    <td valign="top"><small>javax.datamining.<u>algorithm.tree</u>.<br><i>TreeSettings</i><br></small></td>
+    <td style="width: 25%;" valign="top"><small>Currently only one kind of 
+      minimum node size is allowed and precludes vendors from accepting two 
+      kinds (count and percent).<br></small></td>
+    <td style="width: 25%;" valign="top"><small>Deprecated methods:<br></small>
+      <ul>
+        <li><small>public double getMinNodeSize()</small> 
+        </li><li><small>public SizeUnit getMinNodeSizeUnit()</small> 
+      </li></ul><small>Note: These two methods return the value last 
+      set.<br><br></small><small>New method in TreeSettings:<br></small>
+      <ul>
+        <li><small>public double getMinNodeSize(SizeUnit)</small> 
+      </li></ul><small>Note: the semantics when both count and percent are 
+      specified is that node split does not happen when either criterion is 
+      satisfied.</small><br><small><br>New method in 
+      TreeSettingsFactory:<br></small>
+      <ul>
+        <li><small>public boolean 
+        supportsMinNodeSizeUnit(SizeUnit)<br></small></li></ul></td>
+    <td valign="top"><br></td></tr>
+  <tr>
+    <td valign="top"><small>8<br></small></td>
+    <td valign="top"><small>javax.datamining.<br><u>modeldeatil.tree</u>.<br><i>TreeModelDeatail</i><br><u>clustering</u>.<br><i>ClusteringModel</i><br></small></td>
+    <td style="width: 25%;" valign="top"><small>Clarify the ranges of the values 
+      for tree depth, level, and number of clusters returned from the models 
+      </small></td>
+    <td style="width: 25%;" valign="top"><small>Javadoc change: <br>Explicitly 
+      specify that all hierarchies start from level 0: Tree, clustering, 
+      taxonomy <br>Tree depth &gt; 0 <br>Number of nodes in the tree &gt; 1 
+      <br>Number of leaf nodes in the tree &gt; 1 <br>Number of clusters &gt; 0 
+      </small></td>
+    <td valign="top"><small><br></small></td></tr>
+  <tr>
+    <td align="left" valign="top"><small>9<br></small></td>
+    <td align="left" valign="top"><small>javax.datamining.<u>clustering</u>.<br><i>ClusteringSettingsFactory</i><br></small></td>
+    <td style="width: 25%;" align="left" valign="top"><small>Aggregation function 
+      and attribute comparison function need to be coupled since each since they 
+      are not independent. but there's no capability that takes both 
+      parameters.<br></small></td>
+    <td style="width: 25%;" align="left" valign="top"><small>Deprecated 
+      methods<br></small>
+      <ul>
+        <li><small>public boolean supportsCapability(AggregationFunction) 
+        <br></small>
+        </li><li><small>public boolean 
+        supportsCapability(AttributeComparisonFunction) 
+      <br></small></li></ul><small>New Method</small><br>
+      <ul>
+        <li><small>public boolean supportsCapability(AggregationFunction, 
+        AttributeComparisonFunction) </small></li></ul><small>Note: Both arguments 
+      for the new method must be non-null. Either or both could be systemDefault 
+      or systemDetermined. </small></td>
+    <td align="left" valign="top"><small><br></small></td></tr>
+  <tr>
+    <td valign="top"><small>10<br></small></td>
+    <td valign="top"><small>javax.datamining.<u>clustering</u>.<br><i>ClusteringApplySettings</i><br></small></td>
+    <td style="width: 25%;" valign="top"><small>Unify descriptions for create 
+      methods on apply settings:<br></small>
+      <ul>
+        <li><small>ClassificationApplySettings.create() - Creates an instance of 
+        ClassificationApplySettings initialized to vendor-specific default 
+        values </small>
+        </li><li><small>RegressionApplySettings.create() - Creates an instance of 
+        RegressionApplySettings initialized to vendor-specific default values 
+        </small>
+        </li><li><small>ClusteringApplySettings.create() - <br>Creates an empty 
+        instance of ClusteringApplySettings</small> </li></ul></td>
+    <td style="width: 25%;" valign="top"><small>ClusteringApplySettingsFactory.create() - javadoc 
+      changed as following:<br>Creates an instance of 
+      <big><code>ClusteringApplySettings</code> </big>initialized to 
+      vendor-specific default values.<br></small></td>
+    <td valign="top"><small><br></small></td></tr>
+  <tr>
+    <td valign="top"><small>11<br></small></td>
+    <td valign="top"><small>javax.datamining.<u>clustering</u>.<br><i>ClusteringApplyCapability</i><br></small></td>
+    <td style="width: 25%;" valign="top"><small>Correct Javadoc which uses 
+      ClusteringApplyContentCapability, instead of 
+      ClusteringApplyCapability.</small></td>
+    <td style="width: 25%;" valign="top"><small>Javadoc changed to use 
+      ClusteringApplyCapability.</small></td>
+    <td valign="top"><small><br></small></td></tr>
+  <tr>
+    <td valign="top"><small>12<br></small></td>
+    <td valign="top"><small>javax.datamining.<br><u>supervised.classification</u>.<br><i>ClassificationApplySettings<br></i></small><small><u>clustering</u>.<br><i>ClusteringApplySettings<br></i></small><br></td>
+    <td style="width: 25%;" valign="top"><small>Once an array of destination 
+      attribute names are mapped with an apply content by mapByRank method, 
+      there is no way to get such attribute names for inspection. This is the 
+      same in ClusteringApplySetting.<br></small></td>
+    <td style="width: 25%;" valign="top"><small>The following methods have been 
+      added:<br>ClassificationApplySettings<br></small>
+      <ul>
+        <li><small>public String[] 
+        getMappedDestinationAttributeNames(ClassificationApplyContent) 
+        </small></li></ul><small>ClusteringApplySettings<br></small>
+      <ul>
+        <li><small>public String[] 
+        getMappedDestinationAttributeNames(ClusteringApplyContent) 
+      </small></li></ul></td>
+    <td valign="top"><small></small>
+      <p><small><br></small></p></td></tr>
+  <tr>
+    <td valign="top"><small>13</small><br></td>
+    <td valign="top"><small>javax.datamining.<br><u>clustering</u>.<br><i>ClusteringApplySettings</i><br><u>supervised.classification</u>.<br><i>ClassificationApplySettings</i></small></td>
+    <td valign="top"><small>Clarify in Javadoc that the cardinality of the 
+      destination attribute names specified with the mapByRank method must be 
+      the same across different invocations (with different apply 
+      contents).<br>Clarify also the effect of invoking<font color="#000000"> 
+      mapByCategory and </font></small><small><font color="#000000">mapTopPrediction </font></small><small><font color="#000000">methods with the apply content.</font><br>State clearly that 
+      the map methods cannot be used together, e.g., mapByRank and 
+      mapPredictions cannot be used with the same apply settings.</small></td>
+    <td valign="top"><small>Make changes to the Javadoc accordingly, including 
+      the following descriptions at interface level for ClusteringApplySettings 
+      and ClassificationApplySettings: </small>
+      <ul>
+        <li><small>The map methods in this interface are to be used mutually 
+        exclusively. If a different kind of mapping is needed, then the previous 
+        settings must be reset by <big><code>resetMapping</code> 
+        </big>method.</small> 
+      </li></ul><small>ClassificationApplySettings<br></small>
+      <ul>
+        <li><small>mapByRank - If this method is invoked on the same 
+        <code>content</code>, the previous mapping is replaced with the new 
+        one.<br>The cardinality of the destination attribute names specified 
+        with this method must be the same across multiple invocations with 
+        different apply contents. If the cardinality is different for an apply 
+        content that has already been specified previously, then all previous 
+        settings become nullified and the current invocation creates a new 
+        setting. </small>
+        </li><li><small>MapByCategory - If this method is invoked on the same pair of 
+        apply content and cluster identifier, then the previous setting is 
+        replaced with the new one. </small>
+        </li><li><small>mapPredictions - If the same <big><code>content</code> 
+        </big>is used, the previous mapping is replaced with the new one. 
+        </small>
+        </li><li><small>mapTopPrediction - If this method is invoked on the same 
+        apply content, then the previous setting is replaced with the new one. 
+        </small></li></ul><small>ClusteringApplySettings<br></small>
+      <ul>
+        <li><small>mapByClusterIdentifier - If this method is invoked on the 
+        same pair of apply content and cluster identifier, then the previous 
+        setting is replaced with the new one. </small>
+        </li><li><small>mapByRank - same as ClassificationApplySettings.mapByRank 
+        </small>
+        </li><li><small>mapClusters - same as 
+        ClassificationApplySettings.mapPredictions </small>
+        </li><li><small>mapTopCluster - same as 
+        ClassificationApplySettings.mapTopPrediction </small></li></ul></td>
+    <td valign="top"><br></td></tr>
+  <tr>
+    <td valign="top"><small>14<br></small></td>
+    <td valign="top"><small>javax.datamining.<u>base</u>.<br><i>Task 
+    </i></small></td>
+    <td style="width: 25%;" valign="top"><small>Each Task subtype has a verify 
+      method. Produce a cleaner design by moving method to Task. Each child 
+      interface must still implement the method.<br>The Javadoc of each child 
+      interface must describe how verification can be done, and that 
+      verification is vendor specific.<br></small></td>
+    <td style="width: 25%;" valign="top"><small>Methods moved Task:<br></small>
+      <ul>
+        <li><small>public VerificationReport BuildTask.verify() : <br></small>
+        </li><li><small>public VerificationReport ImportTask.verify()<br></small>
+        </li><li><small>public VerificationReport ExportTask.verify()<br></small>
+        </li><li><small>public VerificationReport 
+        ComputeStatisticsTask.verify()<br></small>
+        </li><li><small>public VerificationReport ApplyTask.verify()<br></small>
+        </li><li><small>public VerificationReport 
+        ClassificationTestTask.verify()<br></small>
+        </li><li><small>public VerificationReport 
+        ClassificationTestMetricsTask.verify()<br></small></li></ul></td>
+    <td valign="top"><small><br></small></td></tr>
+  <tr>
+    <td valign="top"><small>15<br></small></td>
+    <td valign="top"><small>javax.datamining.<u>task.apply</u>.<br><i>ApplyTask</i><br></small></td>
+    <td style="width: 25%;" valign="top"><small>The Javadoc for verify() says at 
+      the end:&nbsp; </small>
+      <p><small>On execute, if a signature attribute does not have a mapped 
+      input, an exception is raised if synchronous, or a error status if 
+      asynchronous.&nbsp; </small></p>
+      <p><small>This means that an exception is thrown if an attribute is 
+      missing in the apply data. But it should depends on implementation. For 
+      one, record apply may contain only a partial set of attributes in the 
+      record. This should apply to data set apply as well. </small></p></td>
+    <td style="width: 25%;" valign="top"><small>Javadoc change:<br><br>ApplyTask 
+      description augmented with:<br><br>If a signature attribute does not have 
+      a mapped attribute in the input data, it is the vendor's choice to regard 
+      it as a missing value and continue the apply operation. An exception may 
+      also be thrown if the vendor does not support such a feature.</small></td>
+    <td valign="top"><small>Related to change #13<br></small></td></tr>
+  <tr>
+    <td align="left" valign="top"><small>16<br></small></td>
+    <td align="left" valign="top"><small>javax.datamining.<br><u>supervised.classification</u>.<br><i>ClassificationTestTask</i><br></small></td>
+    <td style="width: 25%;" align="left" valign="top"><small>&lt;?&gt; omits a 
+      method to set the description for the test metrics object it creates 
+      because test metrics is a named object.<br></small></td>
+    <td style="width: 25%;" align="left" valign="top"><small>New methods 
+      added:<br></small>
+      <ul>
+        <li><small>public String getTestMetricsDescription()</small> 
+        </li><li><small>public void setTestMetricsDescription(String description) 
+        </small></li></ul></td>
+    <td align="left" valign="top"><small><br></small></td></tr>
+  <tr>
+    <td valign="top"><small>17<br></small></td>
+    <td valign="top"><small>javax.datamining.algorithm.svm.<br><u>classification</u>.<br><i>SVMClassificationSettingsFactory</i><br><u>regression</u>.<br><i>SVMRegressionSettingsFactory</i><br></small></td>
+    <td style="width: 25%;" valign="top"><small>SVM classification and regression 
+      need supportsCapability method to check which kernel functions are 
+      supported by the implementation.&nbsp;</small></td>
+    <td style="width: 25%;" valign="top"><small>New 
+      Methods:<br><br>SVMClassificationSettingsFactory<br></small>
+      <ul>
+        <li><small>public boolean supportsCapability(KernelFunction) 
+        </small></li></ul><small>SVMRegressionSettingsFactory<br></small>
+      <ul>
+        <li><small>public boolean supportsCapability(KernelFunction) 
+        </small></li></ul><small>Note: The argument kernelFunction cannot be null. 
+      </small></td>
+    <td valign="top"><small><br></small></td></tr>
+  <tr>
+    <td valign="top"><small>18<br></small></td>
+    <td valign="top"><small>javax.datamining.algorithm.<br><u>svm.classification</u>.<br><i>SVMClassificationSettings</i><br><u>svm.regression</u>.<br><i>SVMRegressionSettings</i><br></small></td>
+    <td style="width: 25%;" valign="top"><small>The following parameters for SVM 
+      should not allow 0: </small><small>Complexity factor, Tolerance, 
+      Epsilon.</small><small> For example, accepting 0 for tolerance precludes 
+      convergence.&nbsp; <br><br></small></td>
+    <td style="width: 25%;" valign="top"><small>Javadoc 
+      changed:<br><br>SVMClassificationSetting<br></small>
+      <ul>
+        <li><small>setComplexityFactor - The factor must be a positive number. 
+        </small>
+        </li><li><small>setTolerance - The value must be greater than 0 and less than 
+        1. </small></li></ul><small>SVMRegressionSetting<br></small>
+      <ul>
+        <li><small>setComplexityFactor - The factor must be a positive number. 
+        </small>
+        </li><li><small>setTolerance - The value must be greater than 0 and less than 
+        1. </small>
+        </li><li><small>setEpsilon - The value must be a positive number that is less 
+        than 1. </small></li></ul></td>
+    <td valign="top"><small><br></small></td></tr>
+  <tr>
+    <td valign="top"><small>19<br></small></td>
+    <td valign="top"><small>javax.datamining.<br><u>modeldetail.svm.</u><br><i>SVMClassificationModelDeatil<br></i><i>SVMRegressionModelDeatil</i><br><u>modeldetail.naivebayes</u>.<br><i>NaiveBayesModelDetail</i><br></small></td>
+    <td style="width: 25%;" valign="top"><small>It is difficult to get 
+      coefficients or target probabilities when logical data is absent with the 
+      model because these methods require knowledge of data by taking attribute 
+      values as arguments.<br></small></td>
+    <td style="width: 25%;" valign="top"><small>New 
+      methods:<br><br>SVMClassificationModelDetail<br></small>
+      <ul>
+        <li><small>public java.util.Map getCoefficients(Object targetValue, 
+        String attrName) - returns a Map of pairs of attribute value and its 
+        coefficient associated with the specified target 
+      value<br></small></li></ul><small>SVMRegressionModelDetail<br></small>
+      <ul>
+        <li><small>public java.util.Map getCoefficients(String attrName) - 
+        returns a Map of pairs of attribute value and its coefficient 
+        </small></li></ul><small>NaiveBayesModelDetail<br></small>
+      <ul>
+        <li><small>public java.util.Map getPairProbabilties(attrName : String, 
+        targetValue : Object) </small></li></ul></td>
+    <td valign="top"><small><br></small></td></tr>
+  <tr>
+    <td align="left" valign="top"><small>20<br></small></td>
+    <td align="left" valign="top"><small>javax.datamining.<u>association</u>.<br><i>AssociationSettings<br>AssociationModel</i><br></small></td>
+    <td style="width: 25%;" align="left" valign="top"><small>Unify the range 
+      specification of support and confidence. Some use [0..1] and some use 
+      [0..100].&nbsp; In addition, both boundary values must be 
+      allowed.<br></small></td>
+    <td style="width: 25%;" align="left" valign="top"><small>Javadoc descriptions 
+      have been changed to use [0..100] in 
+      interfaces:<br><br>AssociationModel<br></small>
+      <ul>
+        <li><small>getMaxConfidence </small>
+        </li><li><small>getMinConfidence 
+      </small></li></ul><small>AssociationSettings<br></small>
+      <ul>
+        <li><small>setMinConfidence </small>
+        </li><li><small>setMinSupport </small></li></ul></td>
+    <td align="left" valign="top"><small><br></small></td></tr>
+  <tr>
+    <td valign="top"><small>21</small></td>
+    <td valign="top"><small>javax.datamining.<u>association</u>.<br><i>AssociationRule</i></small></td>
+    <td valign="top"><small>Rule ID is necessary in preparation of apply with AR 
+      to provide the rule ID associated with the prediction.</small></td>
+    <td valign="top"><small>New method:<br></small>
+      <ul>
+        <li><small>public in getRuleIdentifier() </small></li></ul></td>
+    <td valign="top"><br></td></tr>
+  <tr>
+    <td valign="top"><small>22</small></td>
+    <td valign="top"><small>javax.datamining.<u>data</u>.<br><i>CategoryMatrix</i></small></td>
+    <td valign="top"><small>public Double getValue(Object rowCategoryValue, 
+      Object columnCategoryValue) throws JDMException <br><br>This method 
+      returns Double, but its behavior is not clear when a non-existing entry is 
+      specified. If it returns null for such entries, then it would not be able 
+      to support sparse representation of matrices. Also, it looks as though 
+      exception does not need to be thrown because it returns null for 
+      non-existing entries.<br><br>Need to introduce a method with a new name, 
+      such as getCellValue, since method overloading is not possible. Then, a 
+      new set method also needs to be introduced for completeness.<br><br>It is 
+      also noted that CategoryMatrix is a common super interface of three other 
+      interfaces, but they share little in common; they are tied together as a 
+      CategoryMatrix simply because they bear a name that includes 
+      Matrix.<br>CategoryMatrix is deprecated.</small></td>
+    <td valign="top"><small>CategoryMatrix: </small><small>deprecated (along 
+      with getValue method)</small><br><br><small>New methods in 
+      SimilarityMatrix<br></small>
+      <ul>
+        <li><small>public double getCellValue(Object category1, Object 
+        category2)</small> 
+        </li><li><small>public void setCellValue(Object category1, Object category2, 
+        double similarityValue) </small></li></ul><small>New methods in 
+      CostMatrix:</small><br>
+      <ul>
+        <li><small>public double getCellValue(Object actualTarget, Object 
+        predictedTarget)</small><small><br></small>
+        </li><li><small>public double setCellValue(Object actualTarget, Object 
+        predictedTarget, double cost)</small> </li></ul><small>Note: The new get 
+      methods now return the default value depending on the type of the 
+      interface if the entry does not exist, and do not throw exception. For 
+      example, CostMatrix getCellValue returns 0 for diagonal entries, even if 
+      they are not specified. The new set methods also do not throw exception 
+      because they return null if the cell is not found.<br><br>Note: 
+      </small><small>ConfusionMatrix already has a method getNumberOfPredictions 
+      that is equivalent of getCellValue.<br></small></td>
+    <td valign="top"><small>From JDM 2.0, the two remaining methods in 
+      CategoryMatrix will be moved down to CostMatrix, ConfusionMatrix and 
+      SimilarityMatrix and </small><small>CategoryMatrix&nbsp; will 
+      </small><small>be removed (deprecated) entirely.</small><br></td></tr>
+  <tr>
+    <td valign="top"><small>23</small><br></td>
+    <td valign="top"><small>javax.datamining.<u>data</u>.<br><i>PhysicalDataSet</i></small></td>
+    <td valign="top"><small>The API does not provide a means to inspect the 
+      physical attributes based on data type or role. For example, if a physical 
+      data is created by metadata import, attributes with unsupported data type 
+      will be marked as unknown. </small></td>
+    <td valign="top"><small>New methods:<br></small>
+      <ul>
+        <li><small>getAttributeNames(AttributeDataType dataType) : Collection 
+        </small>
+        </li><li><small>getAttributeNames(PhysicalAttributeRole role) : Collection 
+        </small></li></ul><small>Note: These methods return a collection of 
+      attribute names.<br></small></td>
+    <td valign="top"><br></td></tr></tbody></table></body></html>
+
+
+<!-- ** BEGIN: footer.jsp ** //-->
+
+
+
+
+
+
+
+
+</td>
+</tr>
+</table>
+
+<!-- ** END: Content Table ** //-->
+
+<!-- ** BEGIN: Footer Table ** //-->
+
+<div id="footer" style="clear: both;">
+    <div class="footleft">
+        <a href="/en/resources/contacts">Contact Us</a>
+    </div>
+	
+    <div class="botbar"><img src="/images/spacer.gif" alt="" height="23" width="1"></div>
+
+    <div class="footleft2">
+         &copy; 2019, Oracle Corporation and/or its affiliates. 
+        <a href="/en/home/terms">Terms of Use</a>. <a href="http://www.oracle.com/us/legal/privacy/index.html">Privacy Policy</a>. <a href="http://www.oracle.com/us/legal/third-party-trademarks/third-party-trademarks-078568.html">Trademarks</a>
+    </div>
+
+    <div class="footright">
+        <img src="/images/common/logo_oracle_footer.gif" alt="Oracle Corporation" height="22" width="91">
+    </div>
+
+    <div style="clear: both;"><img src="/images/spacer.gif" alt="" height="30" width="1"></div>
+</div>
+
+<!-- ** END: Footer Table ** //-->
+
+
+
+<!-- ** Menu Start ** //-->
+
+
+
+</body>
+</html>
+<!-- ** END: footer.jsp ** //-->
+

@@ -1,0 +1,649 @@
+
+
+
+
+<!-- ** BEGIN: header.jsp ** //-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3c.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+<head>
+    
+
+   
+    <link href="/includes/css/menu.css" rel="stylesheet" type="text/css"></link>
+    <link href="/includes/css/style.css" rel="stylesheet" type="text/css"></link>
+    <!--[if lt IE 6]><link href="/includes/css/style5.css" rel="stylesheet" type="text/css" ></link><![endif]-->
+    <!--[if gte IE 5]><link href="/includes/css/style6.css" rel="stylesheet" type="text/css" ></link><![endif]-->
+    <link href="/includes/css/tabs.css"  rel="stylesheet" type="text/css"></link>
+
+    <script type="text/javascript" src="/includes/scripts/tabs.js"></script>
+    <script type="text/javascript" src="/includes/scripts/menu.js"></script>
+   
+
+    
+
+    
+        <title>The Java Community Process(SM) Program - JSRs: Java Specification Requests - results</title>
+    
+
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+
+
+<body onload="P7_initPM(0,1,0,0,-1)">
+
+    <a name="top"></a>
+
+    <div id="header">
+	<div id="logo">
+		<a href="/en/home/index"><img src="/images/spacer.gif" alt="Java Community Process" height="81" width="151"></a>
+	</div>
+	<div id="tools">
+		<div class="search">
+			<form name="search" action="/en/jsr/summary" method="get" onsubmit="return validate_search()">
+				<input name="id" value="Search JSRs" size="16" class="form" onfocus="nullify_if_equal(this, 'Search JSRs')" type="text">
+				<a href="javascript:document.search.submit()" onclick="return validate_search()"><img src="/images/button_go.gif" width="21" height="16" border="0" alt="Submit this Search" name="sub_search"></a>
+			</form>
+		</div>
+		<div class="tools">
+			<a href="/en/press/pressroom">Press Room</a> &nbsp;|&nbsp;
+			<a href="http://java.com/java/download/index.jsp?cid=jdp78399">Get Java Here</a> &nbsp;|&nbsp;
+			<!-- <a href="javascript:void(0)">Print Format</a> &nbsp;|&nbsp;&nbsp; -->
+		</div>
+
+	</div>
+	<div style="clear: right;"></div>
+
+        
+
+	<div class="topbar"><img src="/images/spacer.gif" alt="" height="3" width="154"></div>
+	<div id="update"> </div>
+    </div>
+
+
+    
+
+        <!-- ** BEGIN: Content Table ** //-->
+
+        <table width="100%" border="0" cellpadding="0" cellspacing="0">
+
+            <tr>
+
+                <!-- ** BEGIN: Navigation Column ** //-->
+                <td width="150" id="leftcontent" valign="top">
+                    <!-- Navigation Placeholder //-->
+
+                    
+
+                    <div class="bar"><img src="/images/hr_dots1.gif" alt="" height="3" width="150"></div>
+
+        <!-- begin find JSRs form -->
+        <!-- IMPORTANT! do not convert this form to Struts < html : form > tag.  javascript change of form.action property fails. -->
+        <img src="/images/hd_find-jsrs.gif" alt="Find JSRs" height="18" width="150">
+        <form name="findjsr" action="/en/jsr/summary" method="get" class="pt5" onsubmit="return validate_findjsr()">
+            <input name="id" size="18" class="form" value="Search JSRs" onfocus="nullify_if_equal(this, 'Search JSRs')" type="text">
+	    <a href="javascript:document.findjsr.submit()" onclick="return validate_findjsr()"><img src="/images/button_go.gif" width="21" height="16" border="0" alt="Submit this Search" name="sub_search"></a>
+        </form><br><br>
+
+        <!-- ** Menu Start ** //-->
+
+        <ul id="p7PMnav">
+            <li><a href="/en/jsr/platform">JSRs by Platform</a></li>
+            <li><a href="/en/jsr/tech">JSRs by Technology</a></li>
+            <li><a href="/en/jsr/stage">JSRs by Stage</a></li>
+            <li><a href="/en/jsr/ec">JSRs by Committee</a></li>
+            <li><a href="/en/jsr/all">List of All JSRs</a></li>
+
+            <!--end find JSRs form -->
+            <div style="clear: both;"><img src="/images/spacer.gif" alt="" height="25" width="1"></div>
+
+            <!--begin my JCP -->
+            <img src="/images/hd_my-jcp.gif" alt="My JCP" height="18" width="150">
+            
+
+          <form name="login" method="get" action="/en/user/login" >
+            <input name="Sign-in" type="submit" title="Sign-in" value="Sign-in" />
+          </form>
+
+            <div style="clear:both"><img src="/images/global/spacer.gif" width="1" height="3" alt=""></div>
+            <div class="noNav">
+                <a href="/en/user/register">Register for Site</a>
+            </div>
+
+             <div class="bar"><img src="/images/hr_dots1.gif" alt="" height="3" width="150"></div>
+           <div class="noNav" style="color: #666666; padding: 0;">
+              Use of JCP site is subject to the
+              <a href="/en/home/terms" style="display:inline;padding: 0">JCP Terms of Use</a> and the
+              <a href="http://www.oracle.com/us/legal/privacy/index.html" style="display:inline;padding: 0" href="">Oracle Privacy Policy</a>
+          </div>
+
+            
+
+            <div style="clear:both"><img src="/images/global/spacer.gif" width="1" height="25" alt=""></div>
+
+            <!--begin JCP info -->
+            <img src="/images/hd_jcp-info.gif" alt="JCP Info" height="18" width="150">
+
+            <li><a href="/en/procedures/overview" class="p7PMtrg">About JCP</a>
+                <ul>
+                    <li><a href="/en/procedures/overview">Program Overview</a></li>
+                    <li><a href="/en/procedures/jcp2">JCP Process Document</a></li>
+                    <li><a href="/en/whatsnew/calendar">Calendar</a></li>
+                    <li><a href="/en/participation/members">JCP Members</a></li>
+                    <li><a href="/en/participation/committee">Executive Committee</a></li>
+                    <li><a href="/en/whatsnew/elections">Elections</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/en/participation/overview" class="p7PMtrg">Get Involved</a>
+		<ul>
+                    <li><a href="/en/participation/overview">Overview</a></li>
+                    <li><a href="/en/participation/membership">Becoming a JCP Member</a></li>
+		</ul>
+            </li>
+
+            <li><a href="/en/resources/contents" class="p7PMtrg">Community Resources</a>
+                <ul>
+                    <li><a href="/en/resources/contents">Overview</a></li>
+                    <li><a href="/en/resources/tutorials">Tutorials</a></li>
+                    <li><a href="/en/resources/multimedia">JCP Podcasts</a></li>
+                    <li><a href="/en/resources/guide">Spec Lead Guide</a></li>
+                    <li><a href="/en/resources/tdk">TCK Tool & Info</a></li>
+                    <li><a href="/en/resources/license_reference">License Reference</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/en/press/pmo" class="p7PMtrg">Community News</a>
+                <ul>
+                    <li><a href="/en/press/pmo">News</a></li>
+                    <li><a href="/en/press/news/awards/awards_main">Programs &amp; Awards</a></li>
+                    <li><a href="/en/press/releases">Press Releases</a></li>
+                    <li><a href="/en/press/success">Success Stories</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/en/introduction/faq">FAQ</a></li>
+
+            <li><a href="/en/resources/contacts">Contact Us</a></li>
+
+            <div style="clear: both;"><img src="/images/spacer.gif" alt="" height="25" width="1"></div>
+
+            <!--[if lte IE 6]><style>#p7PMnav a{height:1em;}#p7PMnav li{height:1em;float:left;clear:both;width:100%}</style><![endif]-->
+            <!--[if IE 6]><style>#p7PMnav li{clear:none;}</style><![endif]-->
+            <!--[if IE 7]><style>#p7PMnav a{zoom:100%;}#p7PMnav li{float:left;clear:both;width:100%;}</style><![endif]-->
+        </ul>
+
+        
+
+        <!--begin ad space -->
+        <div class="ads">
+            <a href="http://java.com/java/download/index.jsp?cid=jdp78399" target="_blank"><img style="display: ;" src="/images/ad_banner2.gif" alt="Ad Banner" border="1" height="70" width="150"></a>
+        </div>
+        <!--end ad space -->
+
+<!-- ** Menu End ** //-->
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;<br>
+
+    
+
+                    &nbsp;<br>
+                    <img src="/images/common/trans.gif" alt="" width="1" height="150"><br>
+
+              
+
+
+
+                </td>
+                <!-- ** END: Navigation Column ** //-->
+
+                <!-- ** BEGIN: Gutter Column ** //-->
+		<td width="10" nowrap><img src="/images/common/trans.gif" alt="" width="10" height="1"></td>
+                <!-- ** END: Gutter Column ** //-->
+
+                <!-- ** BEGIN: Content Column ** //-->
+                <td width="100%" valign="top">
+
+    
+<script type="text/javascript">
+
+String.prototype.trim = function() {
+        return this.replace(/^\s+|\s+$/g,"");
+}
+String.prototype.ltrim = function() {
+        return this.replace(/^\s+/,"");
+}
+String.prototype.rtrim = function() {
+        return this.replace(/\s+$/,"");
+}
+
+function validate_search() {
+	if (document.search.id.value == "Search JSRs" || document.search.id.value.trim().length == 0) {
+		alert("Search terms must be entered first");
+		return false;
+	}
+	return true;
+}
+
+function validate_findjsr() {
+	if (document.findjsr.id.value == "Search JSRs" || document.findjsr.id.value.trim().length == 0) {
+		alert("Search terms must be entered first");
+		return false;
+	}
+	return true;
+}
+
+function nullify_if_equal(field, str) {
+	// alert("val=" + field.value);
+	if (field.value == str) {
+		field.value = "";
+	}
+}
+
+</script>
+<!-- ** END: header.jsp ** //-->
+
+
+
+
+<b>
+  <font color="#663399" size="+1">
+    JSR #291<br>
+    Dynamic Component Support for Java<sup><font size="-2">TM</font></sup> SE<br>
+    JSR Review Ballot<br>
+  </font>
+  Ballot duration: 2006-02-28&nbsp;&nbsp; to: 2006-03-13<br>
+</b>
+
+<P>
+
+
+
+
+
+
+
+These are the final results of the JSR Review Ballot for JSR #291.
+
+	
+
+The <a href="/en/participation/committee#SEEE">Executive Committee for SE/EE</a> has  approved this ballot.
+	
+
+
+</P>
+
+<h3>Votes</h3><BR>
+<table width="600" border="0" cellspacing="0" cellpadding="3">
+  <tr>
+    <td>
+
+<B>SE/EE</B>
+
+<table width="600" border="1" cellspacing="0" cellpadding="5">
+  <tr>
+
+  <td>
+    <table width="100%">
+      <tr>
+        <td align="left"><font size="2">Apache Software Foundation</font></td>
+        <td align="right"><img src="/images/common/yes.gif" width="23" height="23" alt="Yes"></td>
+      </tr>
+    </table>
+  </td>
+
+  <td>
+    <table width="100%">
+      <tr>
+        <td align="left"><font size="2">BEA Systems</font></td>
+        <td align="right"><img src="/images/common/yes.gif" width="23" height="23" alt="Yes"></td>
+      </tr>
+    </table>
+  </td>
+
+  <td>
+    <table width="100%">
+      <tr>
+        <td align="left"><font size="2">Borland Software Corporation</font></td>
+        <td align="right"><img src="/images/common/yes.gif" width="23" height="23" alt="Yes"></td>
+      </tr>
+    </table>
+  </td>
+
+  <td>
+    <table width="100%">
+      <tr>
+        <td align="left"><font size="2">Fujitsu Limited</font></td>
+        <td align="right"><img src="/images/common/yes.gif" width="23" height="23" alt="Yes"></td>
+      </tr>
+    </table>
+  </td>
+  </tr>
+  <tr>
+
+  <td>
+    <table width="100%">
+      <tr>
+        <td align="left"><font size="2">Google Inc.</font></td>
+        <td align="right"><img src="/images/common/no.gif" width="23" height="23" alt="No"></td>
+      </tr>
+    </table>
+  </td>
+
+  <td>
+    <table width="100%">
+      <tr>
+        <td align="left"><font size="2">Hewlett-Packard</font></td>
+        <td align="right"><img src="/images/common/yes.gif" width="23" height="23" alt="Yes"></td>
+      </tr>
+    </table>
+  </td>
+
+  <td>
+    <table width="100%">
+      <tr>
+        <td align="left"><font size="2">IBM</font></td>
+        <td align="right"><img src="/images/common/yes.gif" width="23" height="23" alt="Yes"></td>
+      </tr>
+    </table>
+  </td>
+
+  <td>
+    <table width="100%">
+      <tr>
+        <td align="left"><font size="2">Intel Corp.</font></td>
+        <td align="right"><img src="/images/common/yes.gif" width="23" height="23" alt="Yes"></td>
+      </tr>
+    </table>
+  </td>
+  </tr>
+  <tr>
+
+  <td>
+    <table width="100%">
+      <tr>
+        <td align="left"><font size="2">Lea, Doug</font></td>
+        <td align="right"><img src="/images/common/abstain.gif" width="23" height="23" alt="Abstain"></td>
+      </tr>
+    </table>
+  </td>
+
+  <td>
+    <table width="100%">
+      <tr>
+        <td align="left"><font size="2">Nortel</font></td>
+        <td align="right"><img src="/images/common/yes.gif" width="23" height="23" alt="Yes"></td>
+      </tr>
+    </table>
+  </td>
+
+  <td>
+    <table width="100%">
+      <tr>
+        <td align="left"><font size="2">Oracle</font></td>
+        <td align="right"><img src="/images/common/yes.gif" width="23" height="23" alt="Yes"></td>
+      </tr>
+    </table>
+  </td>
+
+  <td>
+    <table width="100%">
+      <tr>
+        <td align="left"><font size="2">Red Hat</font></td>
+        <td align="right"><img src="/images/common/no.gif" width="23" height="23" alt="No"></td>
+      </tr>
+    </table>
+  </td>
+  </tr>
+  <tr>
+
+  <td>
+    <table width="100%">
+      <tr>
+        <td align="left"><font size="2">SAP SE</font></td>
+        <td align="right"><img src="/images/common/yes.gif" width="23" height="23" alt="Yes"></td>
+      </tr>
+    </table>
+  </td>
+
+  <td>
+    <table width="100%">
+      <tr>
+        <td align="left"><font size="2">SAS Institute Inc.</font></td>
+        <td align="right"><img src="/images/common/yes.gif" width="23" height="23" alt="Yes"></td>
+      </tr>
+    </table>
+  </td>
+
+  <td>
+    <table width="100%">
+      <tr>
+        <td align="left"><font size="2">Suleiman, Hani</font></td>
+        <td align="right"><img src="/images/common/no.gif" width="23" height="23" alt="No"></td>
+      </tr>
+    </table>
+  </td>
+
+  <td>
+    <table width="100%">
+      <tr>
+        <td align="left"><font size="2">Sun Microsystems, Inc.</font></td>
+        <td align="right"><img src="/images/common/no.gif" width="23" height="23" alt="No"></td>
+      </tr>
+    </table>
+  </td>
+  </tr>
+
+</table>
+<br>
+
+
+
+</td>
+<td width="20"><img src="/images/common/pixel.gif" width="20" height="1" alt=""></td>
+<td valign="top">
+  <table border="0" cellspacing="0" cellpadding="5" height="100%">
+    <tr align="left">
+      <td colspan="2">
+        <b>Icon Legend</b>
+      </td>
+    </tr>
+    <tr valign="top">
+      <td alt="left">Yes</td>
+      <td align="right"><img src="/images/common/yes.gif" width="23" height="23" alt="Yes"></td>
+    </tr>
+    <tr valign="top">
+      <td align="left">No</td>
+      <td align="right"><img src="/images/common/no.gif" width="23" height="23" alt="No"></td>
+    </tr>
+    <tr valign="top">
+      <td>Abstain</td>
+      <td align="right"><img src="/images/common/abstain.gif" width="23" height="23" alt="Abstain"></td>
+    </tr>
+    <tr valign="top">
+      <td>Not voted</td>
+      <td align="right"><img src="/images/common/none21.gif" width="23" height="23" alt="Not voted"></td>
+   </tr>
+ </table>
+</td>
+</tr>
+</table>
+<br>
+
+
+<HR NOSHADE ALIGN="left" WIDTH="70%">
+<h3>View Vote Log</h3>
+<BR>
+
+<FORM>
+
+
+
+<strong>SE/EE</strong><br>
+<TEXTAREA ROWS="10" COLS="80" WRAP="soft" READONLY>On 2006-03-01 IBM voted Yes with no comment.
+------------------------------------------------------------------------------
+On 2006-03-01 BEA Systems voted Yes with no comment.
+------------------------------------------------------------------------------
+On 2006-03-01 SAP SE voted Yes with no comment.
+------------------------------------------------------------------------------
+On 2006-03-01 SAS Institute Inc. voted Yes with no comment.
+------------------------------------------------------------------------------
+On 2006-03-08 Red Hat voted No with the following comment:
+We fail to see the need for this work to be rubberstamped within the JCP process. If it cannot be simply referenced by some other JSR, then it's relevancy is immediately called into question. If the OSGi work is sufficiently well formed that no further input is required by JCP members, then why not have a 2 page JSR that simply says "Go to the OGSi site if you need this capability". If it really requires a more indepth specification, then we should be allowed to modify the work as it progresses through JCP.
+------------------------------------------------------------------------------
+On 2006-03-10 Apache Software Foundation voted Yes with the following comment:
+As we are a supporter of this JSR, and a proposed member of the Expert Group, we would like to see this JSR begin.  Apache has an OSGi implementation project (http://incubator.apache.org/felix/), and therefore has an interest in how the community standardizes this technology in the Java ecosystem.
+
+That said, we do have concerns.  We recognize that the objections of other EC members about "rubberstamping" should not be dismissed.  However, we believe that this is a judgment that can only be made later, and we welcome the opportunity to bridge two technical communities and try to remove the obvious tension between JSR-277 and OSGi.
+
+We emphasize our interest in seeing collaborative  community engagement in the expert group, and expect that as with any other JSR, the proposed timeline will shift to accommodate the needs of EG as it does it's work.
+
+Finally, we congratulate the spec lead on opening the expert group mail list to read-only access to any interested party, and expect that there will be no requirements for such access other than an expression of interest.  Further, in the interest of widespread adoption, we again urge the spec lead to create the RI and TCK as open source software, either through a new effort, or via one of the existing open source communities currently engaged in OSGi implementation.
+------------------------------------------------------------------------------
+On 2006-03-10 Oracle voted Yes with the following comment:
+Oracle supports a JCP-sanctioned solution for OSGI bundling and believes JSR291 will accomplish that without undue confusion as has been cited by other members of the community.  While a Java-based OSGI solution is available through OSGI, it is Oracle's view that formalizing the JCP RI and TCK will be helpful to the Java community.  At the same time, we strongly support the work of JSR277 in addressing the next generation module specification for the platform.  We are grateful to the 277 expert group for also recognizing the need to accommodate custom class loader based solutions such as OSGI, and we feel that the formation of JSR291 will help clarify the role of OSGI modules within the broader scope of JSR277 platform specification.
+
+------------------------------------------------------------------------------
+On 2006-03-12 Nortel voted Yes with the following comment:
+Nortel recognizes the importance of the work being done under the OSGi and supports the JSR291. 
+
+We do have concerns regarding "fast-tracking" this JSR.As the member of the expert group and as a supporter, we look forward to working wiht the Spec Lead in ensuring proper due diligence is taken while working on this important JSR.
+
+
+------------------------------------------------------------------------------
+On 2006-03-12 Sun Microsystems, Inc. voted No with the following comment:
+Sun remains unclear on the intended purpose of this JSR.
+
+The OSGi specification already exists.  As we understand it, this
+JSR does not plan to modify the specification.
+
+JSR-277 is defining the next generation module specification for the
+Java platform.  As has been noted by others, JSR-277 is intended to
+cleanly accommodate current custom class loader based solutions such
+as OSGi.
+
+This vote is not intended as a negative comment on the OSGi work.
+Rather, it is unclear why the community needs a JSR that merely 
+duplicates the existing OSGi work. 
+
+
+------------------------------------------------------------------------------
+On 2006-03-13 Hewlett-Packard voted Yes with no comment.
+------------------------------------------------------------------------------
+On 2006-03-13 Suleiman, Hani voted No with the following comment:
+As stated in other responses, I have a number of issues with this JSR. The first of which is the 'rubberstamping' aspect, where the expert group is not allowed to modify the OSGi specification or enhance it for the needs of the greater Java community, within the JSR. The proposal seems to aim solely to have a JSR number attached to an external specification.
+
+While further modifications to this JSR are possible in future revisions, the existence of this JSR would impose too many restrictions on these future amendment/alignment revisions.
+
+Secondly, the timing for this JSR also places an undue burden on JSR-277. There is significant overlap between the two specifications, and the community at large would be ill-served if both sides were not prepared to offer some compromises, and attempt to minimise the overlap and ensure compatibility. JSR-291 unfortunately, due to its timeline, would force JSR-277 to take it into consideration, without reciprocating.
+
+My vote is also not intended as a negative comment on the OSGi specs, which I believe to be technically sound and useful for many Java developers and industries, and would be happy to support a JSR based on this specification, provided it allows for a real Expert Group and can be developed, evolved, and matured within the JCP.
+------------------------------------------------------------------------------
+On 2006-03-13 Intel Corp. voted Yes with the following comment:
+(note added after 12 EC members had voted - order in this list doesn't change when comments are added later).  We hope the JCP can continue to work with other organizations and communities in flexible ways.  e.g. W3C creates Java DOM API's and JCP decides whether or not to copy those into a JCP spec.  Or some framework (and spec) develops in open source and JCP decides whether to adopt the spec as an optional JCP spec.  In either case, development of the "spec" may continue in the other organization that initiated it (e.g. W3C) and JCP can decide whether or not it is useful to incorporate that work into an optional JCP spec.  There is no automatic rubber stamp - there is the usual process for whether to approve a spec in the JCP.  Would JCP want to exclude all possibly collaborations of that type that would result in a JCP spec?  In working with some other organization (like the hypothetical open source org that develops a framework that becomes popular) both sides always have to agree for it to wind up in a JCP spec.  In the end, the JCP benefits by the work done elsewhere and the community benefits through the added compatibility JCP provides through TCKs.
+------------------------------------------------------------------------------
+On 2006-03-13 Google Inc. voted No with the following comment:
+Google is concerned about the relationship between JSR-277 and JSR-291.  JSR-277 defines the core platform's approach to modularity, an area that is crucial to the continuing success of the Java platform.  We are confident of JSR-277's success, but worried about the possible effects of further constraints.  We are sympathetic to JCP standardization of OSGi standards, but we believe that this task is best undertaken after the underlying foundations have been established by JSR-277.
+
+------------------------------------------------------------------------------
+On 2006-03-13 Lea, Doug voted Abstain with the following comment:
+I still don't understand some of the issues here
+well enough to make a voting decision. Even though
+I have reservations about some of those issues I
+think I do understand, out of fairness, I'm 
+abstaining.
+------------------------------------------------------------------------------
+On 2006-03-13 Fujitsu Limited voted Yes with no comment.
+------------------------------------------------------------------------------
+On 2006-03-13 Borland Software Corporation voted Yes with the following comment:
+Borland recognizes the importance and current levels of interest and adoption of the OSGi spec by the Java Community at large. And hence the cautious "yes" vote.
+
+However we have concerns as to what this JSR will provide over and above the OSGi if any. Moreover, we are also concerned about the overlap and relationship between JSR-277 and JSR-291. In a broader sense, we would like to see at the minimum strong interoperability between OSGi and JSR-277 and hence JSR-291.
+
+ 
+------------------------------------------------------------------------------
+</TEXTAREA>
+
+
+<br><br>
+
+
+
+</FORM>
+
+
+
+
+
+<!-- ** BEGIN: footer.jsp ** //-->
+
+
+
+
+
+
+
+
+</td>
+</tr>
+</table>
+
+<!-- ** END: Content Table ** //-->
+
+<!-- ** BEGIN: Footer Table ** //-->
+
+<div id="footer" style="clear: both;">
+    <div class="footleft">
+        <a href="/en/resources/contacts">Contact Us</a>
+    </div>
+	
+    <div class="botbar"><img src="/images/spacer.gif" alt="" height="23" width="1"></div>
+
+    <div class="footleft2">
+         &copy; 2019, Oracle Corporation and/or its affiliates. 
+        <a href="/en/home/terms">Terms of Use</a>. <a href="http://www.oracle.com/us/legal/privacy/index.html">Privacy Policy</a>. <a href="http://www.oracle.com/us/legal/third-party-trademarks/third-party-trademarks-078568.html">Trademarks</a>
+    </div>
+
+    <div class="footright">
+        <img src="/images/common/logo_oracle_footer.gif" alt="Oracle Corporation" height="22" width="91">
+    </div>
+
+    <div style="clear: both;"><img src="/images/spacer.gif" alt="" height="30" width="1"></div>
+</div>
+
+<!-- ** END: Footer Table ** //-->
+
+
+
+<!-- ** Menu Start ** //-->
+
+
+
+</body>
+</html>
+<!-- ** END: footer.jsp ** //-->
+

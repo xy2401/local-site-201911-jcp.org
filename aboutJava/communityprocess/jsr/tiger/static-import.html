@@ -1,0 +1,914 @@
+
+<!-- ** BEGIN: header.jsp ** //-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3c.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+<head>
+    
+
+   
+    <link href="/includes/css/menu.css" rel="stylesheet" type="text/css"></link>
+    <link href="/includes/css/style.css" rel="stylesheet" type="text/css"></link>
+    <!--[if lt IE 6]><link href="/includes/css/style5.css" rel="stylesheet" type="text/css" ></link><![endif]-->
+    <!--[if gte IE 5]><link href="/includes/css/style6.css" rel="stylesheet" type="text/css" ></link><![endif]-->
+    <link href="/includes/css/tabs.css"  rel="stylesheet" type="text/css"></link>
+
+    <script type="text/javascript" src="/includes/scripts/tabs.js"></script>
+    <script type="text/javascript" src="/includes/scripts/menu.js"></script>
+   
+
+    
+
+    
+        <title>The Java Community Process(SM) Program - communityprocess - jsr</title>
+    
+
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+
+
+<body onload="P7_initPM(0,1,0,0,-1)">
+
+    <a name="top"></a>
+
+    <div id="header">
+	<div id="logo">
+		<a href="/en/home/index"><img src="/images/spacer.gif" alt="Java Community Process" height="81" width="151"></a>
+	</div>
+	<div id="tools">
+		<div class="search">
+			<form name="search" action="/en/jsr/summary" method="get" onsubmit="return validate_search()">
+				<input name="id" value="Search JSRs" size="16" class="form" onfocus="nullify_if_equal(this, 'Search JSRs')" type="text">
+				<a href="javascript:document.search.submit()" onclick="return validate_search()"><img src="/images/button_go.gif" width="21" height="16" border="0" alt="Submit this Search" name="sub_search"></a>
+			</form>
+		</div>
+		<div class="tools">
+			<a href="/en/press/pressroom">Press Room</a> &nbsp;|&nbsp;
+			<a href="http://java.com/java/download/index.jsp?cid=jdp78399">Get Java Here</a> &nbsp;|&nbsp;
+			<!-- <a href="javascript:void(0)">Print Format</a> &nbsp;|&nbsp;&nbsp; -->
+		</div>
+
+	</div>
+	<div style="clear: right;"></div>
+
+        
+
+	<div class="topbar"><img src="/images/spacer.gif" alt="" height="3" width="154"></div>
+	<div id="update"> </div>
+    </div>
+
+
+    
+
+        <!-- ** BEGIN: Content Table ** //-->
+
+        <table width="100%" border="0" cellpadding="0" cellspacing="0">
+
+            <tr>
+
+                <!-- ** BEGIN: Navigation Column ** //-->
+                <td width="150" id="leftcontent" valign="top">
+                    <!-- Navigation Placeholder //-->
+
+                    
+
+                    <div class="bar"><img src="/images/hr_dots1.gif" alt="" height="3" width="150"></div>
+
+        <!-- begin find JSRs form -->
+        <!-- IMPORTANT! do not convert this form to Struts < html : form > tag.  javascript change of form.action property fails. -->
+        <img src="/images/hd_find-jsrs.gif" alt="Find JSRs" height="18" width="150">
+        <form name="findjsr" action="/en/jsr/summary" method="get" class="pt5" onsubmit="return validate_findjsr()">
+            <input name="id" size="18" class="form" value="Search JSRs" onfocus="nullify_if_equal(this, 'Search JSRs')" type="text">
+	    <a href="javascript:document.findjsr.submit()" onclick="return validate_findjsr()"><img src="/images/button_go.gif" width="21" height="16" border="0" alt="Submit this Search" name="sub_search"></a>
+        </form><br><br>
+
+        <!-- ** Menu Start ** //-->
+
+        <ul id="p7PMnav">
+            <li><a href="/en/jsr/platform">JSRs by Platform</a></li>
+            <li><a href="/en/jsr/tech">JSRs by Technology</a></li>
+            <li><a href="/en/jsr/stage">JSRs by Stage</a></li>
+            <li><a href="/en/jsr/ec">JSRs by Committee</a></li>
+            <li><a href="/en/jsr/all">List of All JSRs</a></li>
+
+            <!--end find JSRs form -->
+            <div style="clear: both;"><img src="/images/spacer.gif" alt="" height="25" width="1"></div>
+
+            <!--begin my JCP -->
+            <img src="/images/hd_my-jcp.gif" alt="My JCP" height="18" width="150">
+            
+
+          <form name="login" method="get" action="/en/user/login" >
+            <input name="Sign-in" type="submit" title="Sign-in" value="Sign-in" />
+          </form>
+
+            <div style="clear:both"><img src="/images/global/spacer.gif" width="1" height="3" alt=""></div>
+            <div class="noNav">
+                <a href="/en/user/register">Register for Site</a>
+            </div>
+
+             <div class="bar"><img src="/images/hr_dots1.gif" alt="" height="3" width="150"></div>
+           <div class="noNav" style="color: #666666; padding: 0;">
+              Use of JCP site is subject to the
+              <a href="/en/home/terms" style="display:inline;padding: 0">JCP Terms of Use</a> and the
+              <a href="http://www.oracle.com/us/legal/privacy/index.html" style="display:inline;padding: 0" href="">Oracle Privacy Policy</a>
+          </div>
+
+            
+
+            <div style="clear:both"><img src="/images/global/spacer.gif" width="1" height="25" alt=""></div>
+
+            <!--begin JCP info -->
+            <img src="/images/hd_jcp-info.gif" alt="JCP Info" height="18" width="150">
+
+            <li><a href="/en/procedures/overview" class="p7PMtrg">About JCP</a>
+                <ul>
+                    <li><a href="/en/procedures/overview">Program Overview</a></li>
+                    <li><a href="/en/procedures/jcp2">JCP Process Document</a></li>
+                    <li><a href="/en/whatsnew/calendar">Calendar</a></li>
+                    <li><a href="/en/participation/members">JCP Members</a></li>
+                    <li><a href="/en/participation/committee">Executive Committee</a></li>
+                    <li><a href="/en/whatsnew/elections">Elections</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/en/participation/overview" class="p7PMtrg">Get Involved</a>
+		<ul>
+                    <li><a href="/en/participation/overview">Overview</a></li>
+                    <li><a href="/en/participation/membership">Becoming a JCP Member</a></li>
+		</ul>
+            </li>
+
+            <li><a href="/en/resources/contents" class="p7PMtrg">Community Resources</a>
+                <ul>
+                    <li><a href="/en/resources/contents">Overview</a></li>
+                    <li><a href="/en/resources/tutorials">Tutorials</a></li>
+                    <li><a href="/en/resources/multimedia">JCP Podcasts</a></li>
+                    <li><a href="/en/resources/guide">Spec Lead Guide</a></li>
+                    <li><a href="/en/resources/tdk">TCK Tool & Info</a></li>
+                    <li><a href="/en/resources/license_reference">License Reference</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/en/press/pmo" class="p7PMtrg">Community News</a>
+                <ul>
+                    <li><a href="/en/press/pmo">News</a></li>
+                    <li><a href="/en/press/news/awards/awards_main">Programs &amp; Awards</a></li>
+                    <li><a href="/en/press/releases">Press Releases</a></li>
+                    <li><a href="/en/press/success">Success Stories</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/en/introduction/faq">FAQ</a></li>
+
+            <li><a href="/en/resources/contacts">Contact Us</a></li>
+
+            <div style="clear: both;"><img src="/images/spacer.gif" alt="" height="25" width="1"></div>
+
+            <!--[if lte IE 6]><style>#p7PMnav a{height:1em;}#p7PMnav li{height:1em;float:left;clear:both;width:100%}</style><![endif]-->
+            <!--[if IE 6]><style>#p7PMnav li{clear:none;}</style><![endif]-->
+            <!--[if IE 7]><style>#p7PMnav a{zoom:100%;}#p7PMnav li{float:left;clear:both;width:100%;}</style><![endif]-->
+        </ul>
+
+        
+
+        <!--begin ad space -->
+        <div class="ads">
+            <a href="http://java.com/java/download/index.jsp?cid=jdp78399" target="_blank"><img style="display: ;" src="/images/ad_banner2.gif" alt="Ad Banner" border="1" height="70" width="150"></a>
+        </div>
+        <!--end ad space -->
+
+<!-- ** Menu End ** //-->
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;<br>
+
+    
+
+                    &nbsp;<br>
+                    <img src="/images/common/trans.gif" alt="" width="1" height="150"><br>
+
+              
+
+
+
+                </td>
+                <!-- ** END: Navigation Column ** //-->
+
+                <!-- ** BEGIN: Gutter Column ** //-->
+		<td width="10" nowrap><img src="/images/common/trans.gif" alt="" width="10" height="1"></td>
+                <!-- ** END: Gutter Column ** //-->
+
+                <!-- ** BEGIN: Content Column ** //-->
+                <td width="100%" valign="top">
+
+    
+<script type="text/javascript">
+
+String.prototype.trim = function() {
+        return this.replace(/^\s+|\s+$/g,"");
+}
+String.prototype.ltrim = function() {
+        return this.replace(/^\s+/,"");
+}
+String.prototype.rtrim = function() {
+        return this.replace(/\s+$/,"");
+}
+
+function validate_search() {
+	if (document.search.id.value == "Search JSRs" || document.search.id.value.trim().length == 0) {
+		alert("Search terms must be entered first");
+		return false;
+	}
+	return true;
+}
+
+function validate_findjsr() {
+	if (document.findjsr.id.value == "Search JSRs" || document.findjsr.id.value.trim().length == 0) {
+		alert("Search terms must be entered first");
+		return false;
+	}
+	return true;
+}
+
+function nullify_if_equal(field, str) {
+	// alert("val=" + field.value);
+	if (field.value == str) {
+		field.value = "";
+	}
+}
+
+</script>
+<!-- ** END: header.jsp ** //-->
+
+
+
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+               
+  <meta http-equiv="content-type" content="text/html; charset=ISO-8859-1">
+  <title>staticImport</title>
+    
+</head>
+<body>
+<h2>Importing Static Members in the Java<sup>tm</sup> Programming Language</h2>
+<font><br>
+</font>
+<h2><font>Summary</font></h2>
+<font><br>
+    The proposal is to introduce variants of the import statement into the<br>
+    Java<sup>TM</sup> programming language so as to allow importation of static methods<br>
+    and fields in the manner that classes and interfaces can now be imported.<br>
+    We propose that a declaration of the form<br>
+<br>
+<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<tt> import static TypeName 
+.  Identifier ;</tt><br>
+<br>
+<br>
+    should import into the current compilation unit the name specified by<br>
+    the Identifier, which must be a static member of the class or interface<br>
+    named by TypeName.&nbsp; We also propose that a declaration of the form<br>
+<br>
+<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<tt> import static TypeName 
+.  * ;</tt><br>
+<br>
+<br>
+    should import into the current compilation unit the names of all<br>
+    static members of the class or interface named by TypeName.<br>
+<br>
+<br>
+    This proposal requires no changes to the JVM; it involves only the<br>
+    processing of additional forms of import declarations and an extended<br>
+    interpretation of simple names at compile time.<br>
+<br>
+<br>
+</font>
+<h2><font>Motivation</font></h2>
+<font><br>
+    This proposal addresses two problems in current practice.<br>
+<br>
+<br>
+</font>
+<h4><font>(1) Mathematical functions</font></h4>
+<font><br>
+    First is the customary notation for mathematical functions such as<br>
+    "abs" and "sqrt" and "max".&nbsp; In the Java programming language,<br>
+    when applying such functions to arguments of type float or double,<br>
+    it is necessary to write<br>
+<br>
+<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<tt> Math.abs(x)&nbsp;&nbsp;&nbsp;&nbsp;
+  Math.sqrt(x)&nbsp;&nbsp;&nbsp; Math.max(a, b)<br>
+</tt><br>
+<br>
+    where "Math" refers to the class whose full name is "java.lang.Math".<br>
+    This is undesirably verbose for numerical code compared to what<br>
+    one can write in languages such as C, Fortran, and Pascal:<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <tt>abs(x)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  sqrt(x)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; max(a, b)</tt><br>
+<br>
+</font>
+<h4><font>(2) Named constants</font></h4>
+<font><br>
+    It is desirable in many situations to have a set of named constants<br>
+    such as<br>
+<br>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; public static final int RED
+  = 0;<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; public static final int YELLOW
+  = 1;<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; public static final int GREEN
+  = 2;<br>
+</tt><br>
+<br>
+    for a traffic light, and it is often deemed undesirably verbose simply<br>
+    to put them in some utility class <tt>TrafficLight</tt>and refer to them
+ always<br>
+    as <tt>TrafficLight.RED</tt>, <tt>TrafficLight.YELLOW</tt>, and <tt>TrafficLight.GREEN</tt>
+;<br>
+    therefore some programmers have taken to defining such constants in<br>
+    a utility *interface* and then "importing" such constants into a class<br>
+    by the strategem of declaring the class to "implement" the (otherwise<br>
+    vacuous) interface.&nbsp; But, inheriting from an interface to get access 
+ to <br>
+   constants in an implementation is a publicly visible operation, and is 
+therefore  <br>
+   subject to all the rules for binary compatibility when modifying the constatnts.&nbsp; 
+ <br>
+   Moreover, it requires all other implementations to inherit the same interface 
+ and the same constants, <br>
+   even though that other implementation may not require them. <br>
+<br>
+<br>
+    This proposal provides a more straightforward mechanism: define the<br>
+    constants in a utility class, and then import them:<br>
+<br>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; import static TrafficLight.*;</tt><br>
+<br>
+<br>
+    Another advantage: such a declaration is needed only once per<br>
+    compilation unit rather than once per class.<br>
+<br>
+<br>
+    Note: &nbsp;assuming the accompanying proposal for enumerations is adopted<br>
+<br>
+<br>
+<tt>  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; public class TrafficLight {<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ...<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; public enum
+  Color {RED, YELLOW, GREEN}<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ...<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }</tt><br>
+<br>
+<br>
+    Then one has the the choices of:<br>
+<br>
+<br>
+    (a) Writing <tt>import mypackage.TrafficLight;&nbsp;</tt> and <tt>TrafficLight.Color.RED</tt>
+   .<br>
+    (b) Writing <tt>import mypackage.TrafficLight.Color</tt>; and <tt>Color.RED</tt>
+  .<br>
+    (c) Writing <tt>import static mypackage.TrafficLight.Color.*;</tt> and
+ <tt>RED</tt>.<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+</font>
+<h2><font>Rationale for Choice of Syntax</font></h2>
+<font><br>
+<br>
+    One might well ask why the keyword static should appear in the<br>
+</font><font>import declaration, for the compiler can easily
+  tell what is to be<br>
+    imported without the presence of that keyword.&nbsp; There are two reasons:<br>
+<br>
+<br>
+    (a) To distinguish visually the importation of members, such as<br>
+    methods and fields, from the importation of classes and interfaces<br>
+    (while it easy for the compiler to tell them apart, it is harder<br>
+    for people, so a redundant visual cue is useful).<br>
+<br>
+<br>
+    (b) To remind the reader (and the programmer) that only static members<br>
+    can be so imported.&nbsp; (It does not work to try to refer to an instance<br>
+    member of an arbitrary class by a simple name, because a simple name<br>
+    fails to supply necessary information as to which instance of the<br>
+    class is involved.)<br>
+<br>
+<br>
+<br>
+</font>
+<h2><font>Full Proposal</font></h2>
+<font><br>
+<br>
+    Here we describe the necessary modifications the the Java Language<br>
+    Specification (JLS), second edition, for this proposal.<br>
+<br>
+<br>
+    Augment the syntax of the import statement (JLS 7.5) to allow two<br>
+    more possibilities:<br>
+<br>
+<br>
+<i> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ImportDeclaration:<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  SingleTypeImportDeclaration<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  TypeImportOnDemandDeclaration<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  SingleStaticImportDeclaration<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  StaticImportOnDemandDeclaration<br>
+<br>
+<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; SingleStaticImportDeclaration:<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  import static TypeName . Identifier ;<br>
+<br>
+<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; StaticImportOnDemandDeclaration:<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  import static TypeName . * ;<br>
+</i>
+<br>
+<br>
+    &nbsp; The TypeName must be the canonical name of a class or interface
+ type;<br>
+    &nbsp; a compile-time error occurs if the named type does not exist.&nbsp;
+  The named<br>
+    &nbsp; type must be accessible or a compile-time error occurs.&nbsp;
+For   a<br>
+    &nbsp; single-static-import declaration, the Identifier must name a static<br>
+    &nbsp; member of the named type; a compile-time error occurs if there 
+is<br>
+    &nbsp; no member of that name or if the named member is not accessible.</i><br>
+<br>
+<br>
+    &nbsp; A single-static-import declaration in compilation unit c of<br>
+    &nbsp; package p that imports a member named n shadows the declarations 
+ of:<br>
+<br>
+<br>
+    &nbsp; * any top level type named n declared in another compilation unit
+  of p.<br>
+<br>
+<br>
+    &nbsp; * any type named n imported by a type-import-on-demand declaration
+  in c.<br>
+<br>
+<br>
+    &nbsp; * any static member named n imported by a static-import-on-demand
+  declaration <br>
+    in c.</i><br>
+<br>
+<br>
+    (The rules for a single-type-import declaration in JLS 7.5.1 must have<br>
+    a similar third bullet added.)<br>
+<br>
+<br>
+    &nbsp; <i>A static-import-on-demand declaration never causes any other
+ declaration<br>
+    &nbsp; to be shadowed.</i><br>
+<br>
+<br>
+    (These rules also need to be added to JLS 6.3.1.)<br>
+<br>
+<br>
+    &nbsp; <i>If two single-static-import declarations in the same compilation 
+ unit<br>
+    &nbsp; attempt to import members with the same simple name, then a compile-time<br>
+    &nbsp; error occurs, unless the two members are the same member of the
+ same  type,<br>
+    &nbsp; in which case the duplicate declaration is ignored.<br>
+<br>
+<br>
+    &nbsp; If a single-static-import declaration imports a member whose simple<br>
+    &nbsp; name is n, and the compilation unit also contains a single-type-import<br>
+    &nbsp; declaration that imports a type whose simple name is n, a compile-time<br>
+    &nbsp; error occurs.&nbsp; (This error occurs even if both declarations 
+ refer to<br>
+    &nbsp; the same type, on the grounds that it is confusing to use two
+different<br>
+    &nbsp; mechanisms to redundantly import the same type.)<br>
+<br>
+<br>
+    &nbsp; If a single-static-import declaration imports a member whose simple<br>
+    &nbsp; name is n, and the compilation unit also declares a top level
+type<br>
+    &nbsp; whose simple name is n, a compile-time error occurs.<br>
+</i><br>
+<br>
+    Option: We could choose to have another set of automatic imports (JLS<br>
+    7.5.3) by specifying that each compilation unit, besides automatically<br>
+    importing all public type names in package java.lang, should also<br>
+    automatically import all public static members of </font><tt><font><tt>
+java.lang.Math</tt><br>
+</font></tt><font>    thereby making </font><tt><font><tt>
+abs&nbsp;</tt><tt>sqrt</tt></font></tt><font> and </font><font>
+PI</font><font> automatically  available in all programs.<br>
+<br>
+</font><tt><font><br>
+</font></tt><font>    The rules in JLS 6.5.2 for classification
+of an AmbiguousName that is<br>
+    a simple name must be augmented.&nbsp; Between the third and fourth<br>
+    diamond-bulleted subparagraphs, add:<br>
+<br>
+<br>
+<i>&nbsp;&nbsp;&nbsp;&nbsp; &lt;&gt; Otherwise, if a static member of that
+  name is declared<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; in the compilation unit containing
+  the Identifier by a<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; single-static-import-declaration,
+  then the AmbiguousName<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; is reclassified as a Typename,
+  a MethodName, or an<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Expressionname according to
+ whether  that static member<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; is a class or interface, a 
+method,  or a field.</i><br>
+<br>
+<br>
+    Also, the fifth and sixth diamond-bulleted subparagraphs are replaced 
+by<br>
+    these three paragraphs:<br>
+<br>
+<i><br>
+    &nbsp;&nbsp;&nbsp;&nbsp; &lt;&gt; Otherwise, if a type of that name is
+ declared  by exactly one<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; type-import-on-demand declaration
+  of the compilation unit<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; containing the Identifier, 
+and  not by any static-import-on-demand<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; declaration of the compilation
+  unit containing the Identifier,<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; then the AmbiguousName is
+reclassified   as a TypeName.<br>
+<br>
+<br>
+    &nbsp;&nbsp;&nbsp;&nbsp; &lt;&gt; Otherwise, if a member of that name 
+is  declared by exactly one<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; static-import-on-demand declaration
+  of the compilation unit<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; containing the Identifier, 
+and  not by any type-import-on-demand<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; declaration of the compilation
+  unit containing the Identifier,<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; then the AmbiguousName is
+reclassified   as a TypeName, a MethodName,<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; or an Expressionname according
+  to whether that static member<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; is a class or interface, a 
+method,  or a field.<br>
+<br>
+<br>
+    &nbsp;&nbsp;&nbsp;&nbsp; &lt;&gt; Otherwise, if a type of that name is
+ declared  by more than one<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; type-import-on-demand declaration
+  of the compilation unit<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; containing the Identifier, 
+or  a member of that name is declared by<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; more than one static-import-on-demand
+  declaration of that compilation<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; unit, or a type of that name 
+ is declared by a type-import-on-demand<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; declaration of that compilation
+  unit and a member of that name is <br>
+    declared<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; by a static-import-on-demand 
+ declaration of that compilation unit,<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; then a compile-time error
+occurs.</i><br>
+<br>
+<br>
+    The rules in JLS 6.5.5.1 for the meaning of a simple type name must<br>
+    be augmented.&nbsp; The fourth bulleted paragraph is replaced by:<br>
+<br>
+<br>
+    &nbsp;<i>&nbsp;&nbsp;&nbsp;&nbsp; * Otherwise, if a type with that name 
+ is declared in the current<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; compilation unit, either by
+ a  single-type-import declaration,<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; by a single-static-import
+declaration,   or by a declaration<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; of a class or interface type,
+  then the simple type name denotes<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; that type.</i><br>
+<br>
+<br>
+    Also, the sixth and seventh bulleted paragraphs are replaced by these<br>
+    three paragraphs:<br>
+<br>
+<br>
+<i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; * Otherwise, if a type of that name is
+declared by exactly one<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; type-import-on-demand declaration
+  of the compilation unit<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; containing the Identifier, 
+and  not by any static-import-on-demand<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; declaration of the compilation
+  unit containing the Identifier,<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; then the simple type name
+denotes   that type.<br>
+<br>
+<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; * Otherwise, if a type of that name is 
+declared  by exactly one<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; static-import-on-demand declaration
+  of the compilation unit<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; containing the Identifier, 
+and  not by any type-import-on-demand<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; declaration of the compilation
+  unit containing the Identifier,<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; then the simple type name
+denotes   that type.<br>
+<br>
+<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; * Otherwise, if a type of that name is 
+declared  by more than one<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; type-import-on-demand declaration
+  of the compilation unit<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; containing the Identifier, 
+or  a member of that name is declared by<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; more than one static-import-on-demand
+  declaration of that compilation<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; unit, or a type of that name 
+ is declared by a type-import-on-demand<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; declaration of that compilation
+  unit and a member of that name is <br>
+    declared<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; by a static-import-on-demand 
+ declaration of that compilation unit,<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; then the name is ambiguous 
+as  a type name; a compile-time error occurs.</i><br>
+<br>
+<br>
+    The rules in JLS 6.5.6.1 for the meaning of a simple expression name
+must<br>
+    be augmented.&nbsp; In the second bulleted paragraph, the second and
+third<br>
+    diamond-bulleted subparagraphs are replaced by these five subparagraphs:<br>
+<br>
+<br>
+<i>&nbsp;&nbsp;&nbsp;&nbsp; &lt;&gt; Otherwise, if the class has a member
+  field of that name:<br>
+<br>
+<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; :: If the single member field
+  of that name is declared final ...<br>
+<br>
+<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; :: Otherwise, the expression 
+ name denotes a variable ...<br>
+<br>
+<br>
+    &nbsp;&nbsp;&nbsp;&nbsp; &lt;&gt; Otherwise, if a field of that name
+is  declared by exactly one<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; nonredundant single-static-import
+  declaration of the compilation unit<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; containing the Identifier:<br>
+<br>
+<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; :: If the static field of
+that   name is declared final or the<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; field is 
+a  member of an interface ...<br>
+<br>
+<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; :: Otherwise, the expression 
+ name denotes a variable ...<br>
+<br>
+<br>
+    &nbsp;&nbsp;&nbsp;&nbsp; &lt;&gt; Otherwise, if a field of that name
+is  declared by exactly one<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; static-import-on-demand declaration
+  of the compilation unit<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; containing the Identifier:<br>
+<br>
+<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; :: If the static field of
+that   name is declared final or the<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; field is 
+a  member of an interface ...<br>
+<br>
+<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; :: Otherwise, the expression 
+ name denotes a variable ...<br>
+<br>
+<br>
+    &nbsp;&nbsp;&nbsp;&nbsp; &lt;&gt; Otherwise, if a field of that name
+is  declared by more than one<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; static-import-on-demand declaration
+  of the compilation unit<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; containing the Identifier, 
+then  the name is ambiguous as<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; an expression name; a compile-time
+  error occurs.<br>
+<br>
+<br>
+    &nbsp;&nbsp;&nbsp;&nbsp; &lt;&gt; Otherwise, the name is undefined as 
+an  expression name;<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; a compile-time error occurs.<br>
+</i><br>
+<br>
+    In the third bulleted paragraph, the second diamond-bulleted<br>
+    subparagraph is replaced by these five subparagraphs:<br>
+<br>
+<br>
+<i>&nbsp;&nbsp;&nbsp;&nbsp; &lt;&gt; Otherwise, if the interface has a member
+  field of that name,<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; the expression name denotes
+ the  value of the member field ...<br>
+<br>
+<br>
+    &nbsp;&nbsp;&nbsp;&nbsp; &lt;&gt; Otherwise, if a field of that name
+is  declared by exactly one<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; nonredundant single-static-import
+  declaration of the compilation unit<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; containing the Identifier, 
+the  expression name denotes the value<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; of the member field ...<br>
+<br>
+<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; :: If the static field of
+that   name is declared final or the<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; field is 
+a  member of an interface ...<br>
+<br>
+<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; :: Otherwise, the expression 
+ name denotes a variable ...<br>
+<br>
+<br>
+    &nbsp;&nbsp;&nbsp;&nbsp; &lt;&gt; Otherwise, if a field of that name
+is  declared by exactly one<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; static-import-on-demand declaration
+  of the compilation unit<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; containing the Identifier:<br>
+<br>
+<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; :: If the static field of
+that   name is declared final or the<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; field is 
+a  member of an interface ...<br>
+<br>
+<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; :: Otherwise, the expression 
+ name denotes a variable ...<br>
+<br>
+<br>
+    &nbsp;&nbsp;&nbsp;&nbsp; &lt;&gt; Otherwise, if a field of that name
+is  declared by more than one<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; static-import-on-demand declaration
+  of the compilation unit<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; containing the Identifier, 
+then  the name is ambiguous as<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; an expression name; a compile-time
+  error occurs.<br>
+<br>
+<br>
+    &nbsp;&nbsp;&nbsp;&nbsp; &lt;&gt; Otherwise, the name is undefined as 
+an  expression name;<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; a compile-time error occurs.<br>
+</i><br>
+<br>
+    The second sentence of JLS section 6.5.7.1 is replaced by:<br>
+<br>
+<br>
+<i>&nbsp; The Identifier must name either at least one method of a class
+or interface<br>
+    &nbsp; within whose declaration the Identifier appears, or a method imported<br>
+    &nbsp; by a single-static-import declaration or static-import-on-demand<br>
+    &nbsp; declaration within the compilation unit within which the Identifier
+  appears.<br>
+</i><br>
+<br>
+    JLS section 8.4.6.1 is amended by adding this sentence:<br>
+<br>
+<br>
+<i>&nbsp; An instance method hides all methods of the same signature that<br>
+    &nbsp; may be imported by single-static-import and static-import-on-demand<br>
+    &nbsp; declarations.</i><br>
+<br>
+<br>
+    JLS section 8.4.6.2 is amended by adding this sentence:<br>
+<br>
+<br>
+    &nbsp;<i> A static method also hides all methods of the same signature
+ that<br>
+    &nbsp; may be imported by single-static-import and static-import-on-demand<br>
+    &nbsp; declarations.</i><br>
+<br>
+<br>
+    JLS section 15.12.2.1, the paragraph after the two bulleted paragraphs<br>
+    has a sentence added to it, so that the whole paragraph reads as follows:<br>
+<br>
+<br>
+    &nbsp;<i> The class or interface determined by the process described
+in  section<br>
+    &nbsp; 15.12.1 is searched for all method declarations applicable to
+this<br>
+    &nbsp; method invocation; method definitions inherited from superclasses
+  and<br>
+    &nbsp; superinterfaces are included in this search.&nbsp; In addition,
+ if  the<br>
+    &nbsp; method invocation has, before the left parenthesis, a MethodName 
+ of<br>
+    &nbsp; the form Identifier, then the search process also examines all 
+methods<br>
+    &nbsp; that are (a) imported by single-static-import declarations and<br>
+    &nbsp; static-import-on-demand declarations within the compilation unit<br>
+    &nbsp; within which the method invocation occurs, and (b) not hidden
+at  the<br>
+    &nbsp; place where the method invocation appears.<br>
+</i><br>
+</font>
+<br><br>
+<font size=-2>Copyright 2001-2002 Sun Microsystems, Inc., 901 San Antonio
+Road, Palo Alto, California 94303 U.S.A. All rights reserved.</font>
+</body>
+</html>
+
+
+
+
+<!-- ** BEGIN: footer.jsp ** //-->
+
+
+
+
+
+
+
+
+</td>
+</tr>
+</table>
+
+<!-- ** END: Content Table ** //-->
+
+<!-- ** BEGIN: Footer Table ** //-->
+
+<div id="footer" style="clear: both;">
+    <div class="footleft">
+        <a href="/en/resources/contacts">Contact Us</a>
+    </div>
+	
+    <div class="botbar"><img src="/images/spacer.gif" alt="" height="23" width="1"></div>
+
+    <div class="footleft2">
+         &copy; 2019, Oracle Corporation and/or its affiliates. 
+        <a href="/en/home/terms">Terms of Use</a>. <a href="http://www.oracle.com/us/legal/privacy/index.html">Privacy Policy</a>. <a href="http://www.oracle.com/us/legal/third-party-trademarks/third-party-trademarks-078568.html">Trademarks</a>
+    </div>
+
+    <div class="footright">
+        <img src="/images/common/logo_oracle_footer.gif" alt="Oracle Corporation" height="22" width="91">
+    </div>
+
+    <div style="clear: both;"><img src="/images/spacer.gif" alt="" height="30" width="1"></div>
+</div>
+
+<!-- ** END: Footer Table ** //-->
+
+
+
+<!-- ** Menu Start ** //-->
+
+
+
+</body>
+</html>
+<!-- ** END: footer.jsp ** //-->
+

@@ -1,0 +1,752 @@
+
+
+<!-- ** BEGIN: header.jsp ** //-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3c.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+<head>
+    
+
+   
+    <link href="/includes/css/menu.css" rel="stylesheet" type="text/css"></link>
+    <link href="/includes/css/style.css" rel="stylesheet" type="text/css"></link>
+    <!--[if lt IE 6]><link href="/includes/css/style5.css" rel="stylesheet" type="text/css" ></link><![endif]-->
+    <!--[if gte IE 5]><link href="/includes/css/style6.css" rel="stylesheet" type="text/css" ></link><![endif]-->
+    <link href="/includes/css/tabs.css"  rel="stylesheet" type="text/css"></link>
+
+    <script type="text/javascript" src="/includes/scripts/tabs.js"></script>
+    <script type="text/javascript" src="/includes/scripts/menu.js"></script>
+   
+
+    
+
+    
+        <title>The Java Community Process(SM) Program - Introduction - faq-speclead</title>
+    
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head>
+
+
+
+<body onload="P7_initPM(0,1,0,0,-1)">
+
+    <a name="top"></a>
+
+    <div id="header">
+	<div id="logo">
+		<a href="/ja/home/index"><img src="/images/spacer.gif" alt="Java Community Process" height="81" width="151"></a>
+	</div>
+	<div id="tools">
+		<div class="search">
+			<form name="search" action="/ja/jsr/summary" method="get" onsubmit="return validate_search()">
+				<input name="id" value="Search JSRs" size="16" class="form" onfocus="nullify_if_equal(this, 'Search JSRs')" type="text">
+				<a href="javascript:document.search.submit()" onclick="return validate_search()"><img src="/images/button_go.gif" width="21" height="16" border="0" alt="Submit this Search" name="sub_search"></a>
+			</form>
+		</div>
+		<div class="tools">
+			<a href="/ja/press/pressroom">Press Room</a> &nbsp;|&nbsp;
+			<a href="http://java.com/java/download/index.jsp?cid=jdp78399">Get Java Here</a> &nbsp;|&nbsp;
+			<!-- <a href="javascript:void(0)">Print Format</a> &nbsp;|&nbsp;&nbsp; -->
+		</div>
+
+	</div>
+	<div style="clear: right;"></div>
+
+        
+
+	<div class="topbar"><img src="/images/spacer.gif" alt="" height="3" width="154"></div>
+	<div id="update"> </div>
+    </div>
+
+
+    
+
+        <!-- ** BEGIN: Content Table ** //-->
+
+        <table width="100%" border="0" cellpadding="0" cellspacing="0">
+
+            <tr>
+
+                <!-- ** BEGIN: Navigation Column ** //-->
+                <td width="150" id="leftcontent" valign="top">
+                    <!-- Navigation Placeholder //-->
+
+                    
+
+                    <div class="bar"><img src="/images/hr_dots1.gif" alt="" height="3" width="150"></div>
+
+        <!-- begin find JSRs form -->
+        <!-- IMPORTANT! do not convert this form to Struts < html : form > tag.  javascript change of form.action property fails. -->
+        <img src="/images/hd_find-jsrs.gif" alt="Find JSRs" height="18" width="150">
+        <form name="findjsr" action="/ja/jsr/summary" method="get" class="pt5" onsubmit="return validate_findjsr()">
+            <input name="id" size="18" class="form" value="Search JSRs" onfocus="nullify_if_equal(this, 'Search JSRs')" type="text">
+	    <a href="javascript:document.findjsr.submit()" onclick="return validate_findjsr()"><img src="/images/button_go.gif" width="21" height="16" border="0" alt="Submit this Search" name="sub_search"></a>
+        </form><br><br>
+
+        <!-- ** Menu Start ** //-->
+
+        <ul id="p7PMnav">
+            <li><a href="/ja/jsr/platform">JSRs by Platform</a></li>
+            <li><a href="/ja/jsr/tech">JSRs by Technology</a></li>
+            <li><a href="/ja/jsr/stage">JSRs by Stage</a></li>
+            <li><a href="/ja/jsr/ec">JSRs by Committee</a></li>
+            <li><a href="/ja/jsr/all">List of All JSRs</a></li>
+
+            <!--end find JSRs form -->
+            <div style="clear: both;"><img src="/images/spacer.gif" alt="" height="25" width="1"></div>
+
+            <!--begin my JCP -->
+            <img src="/images/hd_my-jcp.gif" alt="My JCP" height="18" width="150">
+            
+
+          <form name="login" method="get" action="/en/user/login" >
+            <input name="Sign-in" type="submit" title="Sign-in" value="Sign-in" />
+          </form>
+
+            <div style="clear:both"><img src="/images/global/spacer.gif" width="1" height="3" alt=""></div>
+            <div class="noNav">
+                <a href="/en/user/register">Register for Site</a>
+            </div>
+
+             <div class="bar"><img src="/images/hr_dots1.gif" alt="" height="3" width="150"></div>
+           <div class="noNav" style="color: #666666; padding: 0;">
+              Use of JCP site is subject to the
+              <a href="/en/home/terms" style="display:inline;padding: 0">JCP Terms of Use</a> and the
+              <a href="http://www.oracle.com/us/legal/privacy/index.html" style="display:inline;padding: 0" href="">Oracle Privacy Policy</a>
+          </div>
+
+            
+
+            <div style="clear:both"><img src="/images/global/spacer.gif" width="1" height="25" alt=""></div>
+
+            <!--begin JCP info -->
+            <img src="/images/hd_jcp-info.gif" alt="JCP Info" height="18" width="150">
+
+            <li><a href="/ja/procedures/overview" class="p7PMtrg">About JCP</a>
+                <ul>
+                    <li><a href="/ja/procedures/overview">Program Overview</a></li>
+                    <li><a href="/ja/procedures/jcp2">JCP Process Document</a></li>
+                    <li><a href="/ja/whatsnew/calendar">Calendar</a></li>
+                    <li><a href="/ja/participation/members">JCP Members</a></li>
+                    <li><a href="/ja/participation/committee">Executive Committee</a></li>
+                    <li><a href="/ja/whatsnew/elections">Elections</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/ja/participation/overview" class="p7PMtrg">Get Involved</a>
+		<ul>
+                    <li><a href="/ja/participation/overview">Overview</a></li>
+                    <li><a href="/ja/participation/membership">Becoming a JCP Member</a></li>
+		</ul>
+            </li>
+
+            <li><a href="/ja/resources/contents" class="p7PMtrg">Community Resources</a>
+                <ul>
+                    <li><a href="/ja/resources/contents">Overview</a></li>
+                    <li><a href="/ja/resources/tutorials">Tutorials</a></li>
+                    <li><a href="/ja/resources/multimedia">JCP Podcasts</a></li>
+                    <li><a href="/ja/resources/guide">Spec Lead Guide</a></li>
+                    <li><a href="/ja/resources/tdk">TCK Tool & Info</a></li>
+                    <li><a href="/ja/resources/license_reference">License Reference</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/ja/press/pmo" class="p7PMtrg">Community News</a>
+                <ul>
+                    <li><a href="/ja/press/pmo">News</a></li>
+                    <li><a href="/ja/press/news/awards/awards_main">Programs &amp; Awards</a></li>
+                    <li><a href="/ja/press/releases">Press Releases</a></li>
+                    <li><a href="/ja/press/success">Success Stories</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/ja/introduction/faq">FAQ</a></li>
+
+            <li><a href="/ja/resources/contacts">Contact Us</a></li>
+
+            <div style="clear: both;"><img src="/images/spacer.gif" alt="" height="25" width="1"></div>
+
+            <!--[if lte IE 6]><style>#p7PMnav a{height:1em;}#p7PMnav li{height:1em;float:left;clear:both;width:100%}</style><![endif]-->
+            <!--[if IE 6]><style>#p7PMnav li{clear:none;}</style><![endif]-->
+            <!--[if IE 7]><style>#p7PMnav a{zoom:100%;}#p7PMnav li{float:left;clear:both;width:100%;}</style><![endif]-->
+        </ul>
+
+        
+
+        <!--begin ad space -->
+        <div class="ads">
+            <a href="http://java.com/java/download/index.jsp?cid=jdp78399" target="_blank"><img style="display: ;" src="/images/ad_banner2.gif" alt="Ad Banner" border="1" height="70" width="150"></a>
+        </div>
+        <!--end ad space -->
+
+<!-- ** Menu End ** //-->
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;<br>
+
+    
+
+                    &nbsp;<br>
+                    <img src="/images/common/trans.gif" alt="" width="1" height="150"><br>
+
+              
+
+
+
+                </td>
+                <!-- ** END: Navigation Column ** //-->
+
+                <!-- ** BEGIN: Gutter Column ** //-->
+		<td width="10" nowrap><img src="/images/common/trans.gif" alt="" width="10" height="1"></td>
+                <!-- ** END: Gutter Column ** //-->
+
+                <!-- ** BEGIN: Content Column ** //-->
+                <td width="100%" valign="top">
+
+    
+<script type="text/javascript">
+
+String.prototype.trim = function() {
+        return this.replace(/^\s+|\s+$/g,"");
+}
+String.prototype.ltrim = function() {
+        return this.replace(/^\s+/,"");
+}
+String.prototype.rtrim = function() {
+        return this.replace(/\s+$/,"");
+}
+
+function validate_search() {
+	if (document.search.id.value == "Search JSRs" || document.search.id.value.trim().length == 0) {
+		alert("Search terms must be entered first");
+		return false;
+	}
+	return true;
+}
+
+function validate_findjsr() {
+	if (document.findjsr.id.value == "Search JSRs" || document.findjsr.id.value.trim().length == 0) {
+		alert("Search terms must be entered first");
+		return false;
+	}
+	return true;
+}
+
+function nullify_if_equal(field, str) {
+	// alert("val=" + field.value);
+	if (field.value == str) {
+		field.value = "";
+	}
+}
+
+</script>
+<!-- ** END: header.jsp ** //-->
+
+
+
+
+
+
+
+
+
+		<div class="header2">Introduction</div>
+		<div class="header1">FAQ: Spec Lead Questions</div>		
+
+		&nbsp;<br>
+<div class="anybar"><img src="/images/global/bar_green.gif" alt="" width="12" height="4"></div>
+<p>
+
+
+
+
+
+<span class="headLinks"><font size="-1">
+<a href="faq">General&nbsp;questions</a>&nbsp;| &nbsp;<a href="faq-membership">Membership&nbsp;questions</a>&nbsp;| &nbsp;<a href="faq-jsr">JSR&nbsp;and&nbsp;Expert&nbsp;Group&nbsp;questions</a>&nbsp;| &nbsp;Spec&nbsp;Lead&nbsp;process&nbsp;questions&nbsp;| &nbsp;<a href="faq-sso">Login&nbsp;questions</a>&nbsp;| &nbsp;<a href="faq-site">Web&nbsp;Site&nbsp;questions</a>&nbsp;| &nbsp;<a href="glossary">Glossary</a>
+
+</font></span>
+&nbsp;<br>
+
+		
+		&nbsp;<br>
+		<div class="header3">Spec Lead JSR Questions</div>
+		
+		&nbsp;<br><UL>
+<li><a href="#howlong">How long does it take to move through the JSR process?</a><BR>
+<li><a href="#slnames">I share the Spec Lead role with X other people. How can I change the order of the Spec Lead names listed on the JSR XXX
+detail page?</a><BR>
+                <li><a href="#slmembercancel">The Member I represent as
+Spec Lead is considering canceling its JCP Membership. How will that affect my JSR?</a><BR>
+                <li><a href="#slresigns">I can no longer act as Spec Lead. How do I end my JSR(s)?</a><BR>
+                <li><a href="#draftposting">How do I submit a draft for posting?</a><BR>
+                <li><a href="#informcommunity"> I want to let the community know what's happening with my JSR. How can I do this?</a><BR>
+                <li><a href="#updateproposal"> I've updated my Community tab, but I want to make
+changes to the old, out-of-date information on my JSR detail page. How do I do this?</a><BR>
+                <li><a href="#inactive">My JSR is listed as "Inactive"! What does that mean?</a><BR>
+                <li><a href="#withdrawal">I would like to withdraw my JSR. How do I do this?</a><BR>
+                <li><a href="#observers">I want to add someone to my observers list. How do I get the PMO to add someone?</a><BR>
+                <li><a href="#finallicense">I'm ready to submit a new JSR proposal, but I don't have the final license terms decided yet. What do I do?</a><BR>
+                <li><a href="#ballottiming">My JSR has a milestone with a ballot approaching. What factors can affect when a ballot begins and ends?</a><BR>
+                <li><a href="#ballotresults">My JSR is in a ballot being voted on by the Executive Committee. How can I tell what the status of the ballot is?</a><BR>
+                <li><a href="#pfdfab">I've just submitted my Proposed Final Draft. When will the Final Approval Ballot begin/end?</a><BR>
+<li><a href="#slhelp">I have more questions that aren't answered here. Are
+there any more resources for Specification Leads?</a><BR>
+                </ul>
+                &nbsp;<BR>
+
+                <div class="header3">Spec Lead Expert Group Questions</div>
+
+                <ul>
+                <li><a href="#egprocess">I have an expert in mind for my Expert Group. How can I
+make this happen?</a><BR>
+                <li><a href="#publicnomination">As a Spec Lead, I'm required to publish information about the EG nominations. What do I need to post, and how?</a><BR>
+                <li><a href="#pmovotes"> I've voted to approve a nomination, but the expert isn't on my group yet. What's the delay?</a><BR>
+                <li><a href="#egcontactupdates">Some of the experts on my Expert Group
+have changed their contact info. How can this be updated on jcp.org?</a><BR>
+                <li><a href="#egchangemember">Some of the experts on my group have moved from one JCP Member company to another. Can I make those edits
+on the Expert Group private page?</a><BR>
+                <li><a href="#fixbounce">One of my experts' e-mail addresses is bouncing. How do I remedy this so that we don't see many, many bounce messages in our Expert Group communications?</a><BR>
+                <li><a href="#closeeg">My Expert Group is complete and I want to close the EG from receiving further nominations. How do I do that?</a><BR>
+                <li><a href="#anotherexpert">I have contacted an expert I'd like to add to
+the Expert Group, but the "I would like to join this Expert Group" link is missing! What do I do?</a><BR>
+                <li><a href="#postfinaleg">I'm the Maintenance Lead for JSR XXX. How do I add experts to my Expert Group?</a>
+<BR>
+                <li><a href="#initialeg"> I submitted a JSR but the people I listed as being on the Initial Expert Group are not listed in the Expert Group table and/or the Expert Group private page for my JSR! What gives??</a><BR>
+                
+                </ul>
+
+                <div class="header3">Spec Lead JCP Version Questions</div>
+
+                <ul>
+                <li><a href="#27changes">I've heard a lot about the changes that have come with JCP 2.7, and I wonder: how do these changes affect me?</a>
+<BR>
+<li><a href="#issuetracker">JCP 2.8 and above mention an issue tracker for my JSR, but I don't see it anywhere on the site. What do I do?</a><br>
+<li><a href="#28changes">What has changed for Spec Leads in JCP 2.8?</a><br>
+<li><a href="#29changes">What are the differences between JCP 2.8 and JCP 2.9?</a><BR>
+<LI><a href="#210changes">How is JCP 2.10 different from JCP 2.9?</a><BR>
+<LI><a href="#211changes">What do I need to know about what's different in JCP 2.11?</a><BR>
+<li><a href="#29switch">My JSR is in JCP 2.8. What will happen to it now that JCP 2.9 has released?</a><BR>
+<li><a href="#publicposts">With JCP 2.8/2.9, am I required to allow public users to post to my Issue Tracker?</a><BR>
+<li><a href="#slipdeadlines">The schedule for my JCP 2.8/2.9 JSR is slipping, and I'm worried that I'm going to miss one of the deadlines! What do I do?</a><BR>
+<li><a href="#newjsrs">I submitted my JCP 2.9 JSR; when will it go up for JSR Approval Ballot?</a><BR>
+<li><a href="#quarterlyupdate"> I'm a JCP 2.8/2.9 Maintenance Lead. If there are no changes to the list of implementations, do I still need to provide the quarterly update?</a><br>
+<li><a href="#changejcp">I'm a Specification Lead and I wish to move my JSR to JCP 2.9. How do I do this?"</a><BR>
+<li><a href="#egconsult">I'm the Spec Lead of a JCP 2.8/2.9 JSR. How do I consult with the Expert Group on new EG nominations?</a><BR>
+<li><a href="#egnomspublic">I'm a JCP 2.8/2.9 JSR Spec Lead, and I'm supposed to make all deliberations, discussions, and decisions on every Expert Group nomination - as well as the nominee's name, qualifications and expertise - available to the public. How?</a><BR>
+</UL>
+&nbsp;<BR>
+                <div class="header3">Spec Lead JSR Questions</div>
+<a name="howlong"></a><B>Q: How long does it take to move through the JSR process?</b><BR>
+<B>A:</b><BR>
+<img src="/images/introduction/JCP.Timeline.12.png"><BR>
+There is also the <a href="/images/resources/2_9gantt.gif">JCP Gantt chart</a>, which applies to JSRs under JCP version 2.8 and newer.<BR>
+&nbsp;
+<BR>
+
+                <a name="slnames"></a><B>Q: I share the Spec Lead role with X other people. How can I change the order of the Spec Lead names listed on the JSR XXX detail page?</b><BR>
+                <B>A:</b> Multiple Spec Leads are listed alphabetically by last name/surname. This order is built into the site and cannot be changed.<BR>
+&nbsp;<BR>
+              
+                <a name="slmembercancel"></a><B>Q: The Member I represent as Spec Lead is considering canceling its Full Membership. How will that affect my JSR?</b><BR>
+                <B>A:</b> When a Full Member cancels its Membership, all of its active representatives are removed from all JSRs and their accounts are deactivated. This means that you will no longer be the Spec Lead of any JSRs you currently lead. It also means that you will be removed from any Expert Groups on which your
+organization is represented. JSRs must find new Spec Leads or be withdrawn, though JSRs that have gone final already will maintain a record that your organization had Contributed or was on the Expert Group.<BR>&nbsp;<BR>
+
+                <a name="slresigns"></a><B>Q: For whatever reason, I can no longer act as Spec Lead. How do I end my JSR(s)?</b><BR>
+                <B>A:</b> Your JSRs do not end when you leave the Spec Lead role. If the Full Member you represent will still be a Member after you leave, it is responsible to appoint a new person to act as its representative Spec Lead. Please make sure to communicate the identity of your replacement to the PMO at admin<faketag></faketag>&#64;jcp.org before you leave.<BR>
+
+If, however, the Full Member you represent is also leaving the Spec Lead role, you need to attempt to find a new Full Member to assume the Spec Leadership. Let the
+PMO know via admin<faketag>&#64;</faketag>jcp.org that you are trying to find a new Spec Lead. Next, the minimum effort must be to ask the Expert Group of the JSR if any of them are willing and able to fill the role of the new Spec Lead. If no one on the Expert Group (or any other JCP Member representative) is ready to act as Spec Lead, then the JSR will be withdrawn.<BR>&nbsp;<BR>
+
+<a name="draftposting"></a><B>Q: I'm ready to submit a draft for a posting. How do I do this?</b><BR>
+                    <B>A:</B> The <a href="/en/resources/guide">Spec Lead Guide</a> provides detailed instructions for submitting each milestone for a JSR.<BR>&nbsp;<BR>
+
+                    <a name="informcommunity"></a><B>Q: I want to let the community know what's happening with my JSR. How can I do this?</b><BR>
+
+<B>A:</b> You may do this in a number of ways, such as posting to a web journal,
+blog, web site, collaborative project page, et cetera. However, you should always make sure that you provide links to those sites on the JSR's pages on jcp.org, as that is
+the place most people will look for information first. jcp.org also provides a number of ways to communicate with the community. As a Spec Lead, you can:
+
+<ul>
+<LI>Post updates to your Community tab.<P>
+
+Every JSR has an area set aside for Spec Leads to edit with up-to-the-minute information about the progress of their JSR, questions being considered in the Expert Group, and the like. You reach this by clicking the "Community" tab on your JSR's page. This points to http://jcp.org/en/egc/view?id=XXX, where "XXX" is the JSR
+number. As Spec Lead, you can edit the HTML of that page as well as post files for the community to view. For more information about updating your Community tab,
+you may listen to <a href="/aboutJava/communityprocess/media/JCP_podcast_1.mp3">the audio recording of the Community tab talk</a> (the tab used to be called a "Community
+Update tab").
+</LI>
+
+<LI>JCP 2.8 and newer JSRs are required to provide a public communications "channel" and an Issue Tracker. If you are the Spec Lead for a JSR under JCP version 2.8 or newer, you will have already created these two things, and you should be using the channel for all Expert Group communication and the Issue Tracker to track all issues relating to the JSR.
+</LI>
+</ul>
+<BR>&nbsp;<BR>
+
+                <a name="updateproposal"></a><B>Q: I've updated my Community tab, but I want to make changes to the old, out-of-date information on my JSR detail page. How do I do this?</b>
+<BR>
+
+<B>A:</b> You may send edits to the JSR detail page to admin<faketag></faketag>&#64;jcp.org and the PMO will add these changes to the "Updates to the original JSR" section on the JSR detail page. When you send these updates/changes, make sure
+to send just the changed sections.
+<P>
+Note that edits cannot be made to a JSR detail page during any of the JSR ballots. Also realize that every section of the JSR detail page and all changes to those sections will remain for historic record; they will not be deleted. In this way, the community can track the progress of the JSR over its lifetime: how the schedule changed, how the initial ideas may or may not have changed leading up to the
+Final Release, et cetera.
+</LI>
+<BR>&nbsp;<BR>
+
+                <a name="inactive"></a><B>Q: I looked at my JSR page, and I see that my JSR is listed as "Inactive"! What does that mean?</b><BR>
+
+<B>A:</b> The "Inactive" label means that no milestones for your non-Final JSR have been posted for at least 12 months. If your JSR does not post a milestone for
+more than 18 months, the PMO will approach you about withdrawing your JSR. Note,
+however, that the Inactive label is not intended to mean that no work has been done on the JSR: your updates to the JSR detail page and the Community tab, as well as traffic on discussion forums or aliases you may have created for your JSR, should all make your work on the JSR clear to the community.<BR>&nbsp;<BR>
+
+<a name="withdrawal"></a><B>Q: I would like to withdraw my JSR. How do I do this?</B><BR>
+<B>A:</b> Usually a PMO will contact you about withdrawing your JSR, such as when your JSR has been Dormant for an extended period. But if you have tried and failed to find a replacement Spec Lead, you can initiate withdrawing your JSR. Just send mail to admin<faketag>&#64;</faketag>jcp.org with the subject line "Withdraw JSR XXX" (where 'XXX' is your JSR's number). Make sure that the body of the message includes a reason for the withdrawal; this reason will be posted online as the record for why the JSR was withdrawn.<BR>&nbsp;<BR>
+ 
+                <a name="finallicense"></a><B>Q: I'm ready to submit a new JSR proposal, but I don't have the final license terms decided yet. What do I do?</b><BR>
+
+<B>A:</b> Do the work to figure out the final license now. Then come back to submit the JSR proposal form once you have the full license text for the Final Release Specification, Reference Implementation and Technology Compatibility Kit. JCP 2.7 and later JSRs submitted without the full license text are incomplete.<BR>
+&nbsp;<BR>
+
+
+                <a name="ballottiming"></a><B>Q: My JSR has a milestone with a ballot approaching. What factors can affect when a ballot begins and ends?</B><BR>
+<B>A:</B> All ballots start on Tuesdays, and they usually end on Mondays. Mostly, the ballot lengths are determined by the type of ballot it is, as follows:<BR>
+<ul>
+<li>JSR Approval Ballot: 7 days 
+<li>Draft Specification Approval Ballot (JCP 2.0 - 2.5): 1 week, last week of Community Review period
+<li>Public Draft Specification Approval Ballot (JCP 2.6 - 2.7): 1 week, last week of Public Review period
+<li>Public Draft Specification Approval Ballot (JCP 2.8 - 2.9): 1 week, starting first Tuesday after the Public Review
+<li>Public Review Ballot (JCP 2.10): 1 week, starting first Tuesday after the Public Review
+<li>Final Approval Ballot (JCP 2.0-2.10.1): 2 weeks
+<li>Final Approval Ballot (JCP 2.10.2): 1 week
+<li>Item Exception Ballot (JCP 2.0 - 2.7): 1 week
+<li>Appeal Ballot (JCP 2.8 - 2.10): 1 week
+<li>Renewal Ballot (JCP 2.8 - 2.10.1): 2 weeks
+<li>Renewal Ballot (JCP 2.10.2): 1 week
+<li>Withdrawal Ballot (JCP 2.8 - 2.10.1): 2 weeks
+<li>Withdrawal Ballot (JCP 2.10.2): 1 week
+<li>Maintenance Review Ballot (JCP 2.8 - 2.10): 1 week, first Tuesday after Maintenance Review
+<li>Transfer Ballot (JCP 2.8 - 2.10.1): 2 weeks
+<li>Transfer Ballot (JCP 2.10.2): 1 week
+</ul><BR>
+
+For ballots that take place at the end of a review period, the duration of the review period, taken with the fact that all ballots start on Tuesdays, can affect when the ballot begins. Review periods never are shorter than the minimum length (14 or 30 days, depending on the review), and so a ballot may start as much as 6 days after the review closes. For instance, a Community Review that started on a Wednesday for a thirty-day review would end on a Friday, 4 days before the Community Draft Approval Ballot would begin on the following Tuesday.
+<P>
+
+Two other factors can affect the beginning and end dates of a ballot: PMO holidays and the EC changeover following an EC Election. Both should be listed on the <a href="/en/whatsnew/calendar">JCP calendar</a>.<P>
+
+ When the PMO is closed for a holiday, EC Ballots may be affected. If a ballot would close on a Monday that the PMO is closed for a single-day holiday, the ballot is instead extended to the day after (Tuesday). Ballots will not span a multi-day holiday, however: instead they are postponed until after the holiday period. For example, a ballot will not begin on the Tuesday before Christmas, but would instead start on the first Tuesday of the New Year.
+<P>
+
+Each year the Executive Committee Elections are held in the Fall, and there is a
+period when the old EC has left and the new EC has yet to begin. Ballots that would begin or end in this period are instead postponed until the new EC begins its
+term. This means that a 1-week ballot may not begin from the time the old EC ends its term until the new EC begins its term, and it means that a 2-week ballot may not begin the last week of the old EC's term but will be postponed until the new EC begins its term.
+<P>
+
+<a name="ballotresults"></a><B>Q: My JSR is in a ballot being voted on by the Executive Committee. How can I tell what the status of the ballot is?</b><BR>
+During the ballot, a link to "current ballot results" appears on the JSR Stage table for any Specification Lead of that JSR. Click that link to view a tally of the current votes and all comments that EC Members have posted on the ballot.
+<P>  
+
+<a name="pfdfab"></a><B>Q: I've just submitted my Proposed Final Draft. When will the Final Approval Ballot begin/end?</b><BR>
+<B>A:</b> Sometime after the Proposed Final Draft is posted, depending on when you submit the materials for the Final Approval Ballot. The Final Approval Ballot is a separate milestone from the posting of the Proposed Final Draft with a separate set of instructions and deliverables. Submitting the materials for Proposed Final Draft does not result in a Final Approval Ballot, as they are separate.
+<P>
+
+<a name="slhelp"></a><B>Q: I have more questions that aren't answered here. Are there any more resources for Specification Leads?</b><BR>
+<B>A:</b> The primary reference for Specification Leads is the <a href="/en/resources/guide">online Spec Lead Guide</a>. Most information about moving a JSR through the process is available there. Also, if you have questions, you can always send them in e-mail to pmo<faketag>&#64;</faketag>jcp.org.
+
+&nbsp;<BR>
+
+                <div class="header3">Spec Lead Contributor and Expert Group Questions</div>
+<P>
+                <a name="egprocess"></a><B>Q: I have someone in mind to become a Contributor or Expert Group member. How can I make this happen?</B><BR>
+<B>A:</b> The following must happen:<ol type=a>
+<li>The person must <a href="/en/user/add">register for the site</a>, if he or she hasn't already done so in the past
+<li>The person must fill out the <a href="/en/jsr/egnom">Expert Group nomination
+form</a> and submit it (if the nominee is missing any legal agreements related to participating in the JCP, the PMO will follow up with the nominee)
+<li>The Spec Lead must go to his JSR's page on jcp.org, log in, and click on the
+"Administration" tab
+<li>The Spec Lead must find the nomination in the list of open nominations
+<li>The Spec Lead must consult with the existing Expert Group before approving any new nominations (JCP 2.8 and newer)
+<li>The Spec Lead casts a vote for the nomination: <b>Y</b> to approve, <b>N</b>
+to reject, or <b>P</b> if more time is needed (as when the Spec Lead contacts the nominee to discuss it)
+<li>The Spec Lead posts the nomination, the vote on the nomination, and all discussion and/or materials related to the decision on how to vote on the nomination,
+to the public (JCP 2.8 and newer)
+<li>When the Spec Lead and the PMO have both approved the nomination, the nominee is added as a Contributor or Expert Group member.
+</ol>
+<BR>&nbsp;<BR>
+
+<a name="publicnomination"></a><B>As a Spec Lead, I'm required to
+publish information about the JSR nominations. What do I need to post, and how?</b><BR>
+<B>A:</b> Spec Leads of JSRs operating under JCP 2.8 and later have a requirement to publish JSR nomination information publicly, both for Contributors and Expert Group members. This includes the name of the JCP Member, the name of the nominee, the status of the nomination (considering, approved, rejected), and any deliberations you had in coming to your decision. JCP 2.8 and newer JSRs have all provided information about their public communication channels in section 2.19 of their JSR proposals: you should be posting all this information for each nomination you receive there, in that public communication channel.
+<BR>&nbsp;<BR>
+
+                 <a name="pmovotes"></a><B>Q: I've voted to approve a nomination, but the person isn't on my JSR page yet. What's the delay?</b><BR>
+<b>A:</b> The PMO has not approved the nomination, for one of several reasons. The reasons are described below, with the corresponding vote you will see on the EG nomination page in parentheses:<ul>
+<li>PMO hasn't voted on the nomination yet (-)
+<li>the nominee needs to represent a JCP Member (XJ)
+<li>the nominee is an individual Full Member who needs an Employer Contribution Agreement for your JSR (XB)
+<li>the nominee is otherwise legally unable to participate (X)
+<li>the nominee has submitted all the requisite paperwork and it is being processed (P)
+<li>there are problems with the paperwork the nominee has submitted (I)
+</ul><BR>
+
+Note that this information is also provided in the vote legend on the EG nomination page.<br>&nbsp;<BR>
+
+
+                <a name="egcontactupdates"></a><B>Q: Some of the experts on my Expert Group have changed their contact info. How can this be updated on jcp.org?</B><BR>
+                <B>A:</b> The easiest way is for the expert to log in and make the changes himself. Any registered user on jcp.org can maintain his own contact information by clicking "My Profile" and then "Edit Profile" if changes are needed. Changes to e-mail addresses may take up to 24 hours to refresh to all servers, so don't be alarmed if the updates don't instantly take effect.<BR>
+ <font color="red">NOTE</font> that this cannot be used to change which company/organization an expert represents (see next question).<BR>&nbsp;<BR>
+
+                 <a name="egchangemember"></a><B>Q: Some of the Contributors and/or Expert Group members on my group have moved from one JCP Member company to another. Can I make those edits on the Expert Group private page?</b><BR>
+                <B>A:</b> <u>No.</u> Each person's account is tied to a specific JCP Membership, so editing the e-mail address will not change which Members are listed on the JSR page as Contributors or Expert Group members. To make the change, notify the PMO of which people are moving from Member X to Member Y, and that you approve their continued participation as representatives of Member Y. In parallel, have the people <a href="/en/jsr/egnom">submit new nominations for your JSR</a> as representatives of Member Y. The PMO will remove the people and, once they have submitted new nominations, will approve their addition. Then all that remains is for you to approve the nominations and the people will be back on the JSR page with the correct Member affiliation.<BR>&nbsp;<BR>
+
+<a name="closeeg"></a><B>Q: My Expert Group is complete and I want to close the EG from receiving further nominations. How do I do that?</b><BR>
+
+<B>A:</b> First, notify the PMO (pmo<faketag>&#64;</faketag>jcp.org) that you wish to close your Expert Group and provide the reason for that closure in the e-mail. The PMO will update the JSR page and remove the "I would like to join this Expert Group" link. Second, post the reason for the closure to your public communications channel so that the community can know why your EG is closed. <BR>
+Note that this will also remove the link for Contributors, but you can always direct people whom you would like to add as either Contributors or Expert Groups members to go directly to the nomination form to nominate themselves.
+<BR>&nbsp;<BR>
+
+<a name="anotherexpert"></a><B>Q: I have contacted a person I'd like to add to the JSR as a Contributor or Expert Group member, but the "I would like to join this Expert Group" link is missing! What do I do?</b><BR>
+
+<B>A:</b> The "I would like to join this Expert Group" link disappears in either of two circumstances: you request to close the Expert Group, or the JSR posts its Final Release. If the JSR hasn't produced a Final Release and you want to re-open the Expert Group, just send a message to the PMO (pmo<faketag>&#64;</faketag>jcp.org) asking to reopen the EG.<P>
+Alternatively, the person can still nominate to a closed Expert Group. The person goes to <a href="http://jcp.org/en/jsr/egnom">the EG nomination form</a> and fills it out as usual, specifying the closed JSR. But the Spec Lead must notify the PMO to accept this one nominee as an exception, because by default the PMO will reject new nominations to closed Expert Groups.
+<BR>&nbsp;<BR>
+  
+                  <A name="postfinaleg"></a><B>Q: I'm the Maintenance Lead for JSR XXX. How do I add Contributors and/or Expert Group members?</b><BR>
+<B>A:</b> Though you may choose to actively solicit proposed changes from the community for your Change Log, the Expert Group officially disbanded at Final Release. No additions or subtractions are made to the list of Contributors or Expert Group members following Final Release.
+<BR>&nbsp;<BR>
+
+                  <a name="initialeg"></a><B>Q: I submitted a JSR but the people I listed as being
+on the Initial Expert Group are not listed in the Expert Group table and/or the Expert Group private page for my JSR! What gives??</b><BR>
+<B>A:</b> All experts on Expert Groups must nominate themselves using the <a href="/en/jsr/egnom">online nomination form</a>, so that it isn't just you saying that they want to be on the Expert Group. In addition, for JCP 2.8 and newer JSRs, all JSR nominations must be made public, along
+with your decisions on the nominations and any discussion/deliberations on those
+decisions. This includes your Initial Expert Group.
+
+<BR>&nbsp;<BR>
+
+
+
+
+
+                  <div class="header3">Spec Lead JCP Version Questions</div>
+
+<a name="27changes"></a><B>Q: I've heard a lot about the changes that have come with JCP 2.7, and I wonder: how do these changes affect me?</b><BR>
+
+<B>A:</b> There are a lot of changes. They are summarized <a href="/en/resources/2.7">here for your reference</a>.<BR>
+&nbsp;<BR>
+
+
+<A name="issuetracker"></a><B>Q: JCP 2.8 mentions an issue tracker for my JSR, but I don't see it anywhere on the site. What do I do?</b><BR>
+<B>A:</b> You have to create one of your own, but we do have a guide on how to create one on java.net.
+<BR>
+&nbsp;<BR>
+
+
+<a name="28changes"></a><B>Q: What has changed for Spec Leads in JCP 2.8?</b><BR>
+<B>A:</b> For a summary of the changes to the process, please refer to <a href="/en/resources/2.8">this 2.8 overview page</a>.
+
+<BR>&nbsp;<BR>
+
+<a name="29changes"></a><B>Q: What are the differences between JCP 2.8 and JCP 2.9?</b><BR>
+<B>A:</b> JCP 2.9 is exactly the same as JCP 2.8, but that it describes how the previously separate Executive Committees have merged into the single Executive Committee we have now.
+
+<BR>&nbsp;<BR>
+
+<a name="210changes"></a>
+<B>Q: How is JCP 2.10 different from JCP 2.9?</B><BR>
+<B>A:</B> JCP 2.10 makes three changes to the JCP: all JSR ballots are set to be 7 days in length, two more Member categories are introduced (Partner and Associate Members, in addition to the original Full Members), and the Executive Committee is modified to be composed of seats that correspond to the different types of JCP Members. For more detail about what's new in JCP 2.10, refer to <a href="https://jcp.org/en/resources/2.10">the overview of JCP 2.10 changes page</a>.
+
+<BR>&nbsp;
+<BR>
+
+<a name="211changes"></a>
+<B>Q: What do I need to know about what's different in JCP 2.11?</B><BR>
+<B>A:</B> JCP 2.11 makes significant changes to the lifecycle of a JSR, introduces the option of Iterative JSRs, and the option of Errata Maintenance Releases. For a more detailed summary of the changes to the process in JCP 2.11, please refer to the <a href="/en/resources/2.11">JCP 2.11 overview page</a>.</B>
+
+<BR>&nbsp;<BR>
+
+<a name="29switch"></a><B>Q: My JSR is in JCP 2.8. What will happen to it now that JCP 2.9 has released?</B><BR>
+<B>A:</b> Your JSR will be listed as operating under JCP 2.9 as soon as you publish the next JCP milestone for your JSR.
+
+<BR>&nbsp;<BR>
+
+<a name="publicposts"></a><B>Q: With JCP 2.8/2.9, am I required to allow public users to post to my Issue Tracker?</b><BR>
+<B>A:</b> JCP 2.8 and above requires that you track all Issues that have been raised with a publicly readable Issue Tracker. You may choose to allow the public to submit issues directly into your Issue Tracker, or you may choose only to allow reading of the tracker...as long as you have provided explicit instructions on how the public can submit issues to be logged.
+<BR>&nbsp;<BR>
+
+<a name="slipdeadlines"></a><B>Q: The schedule for my JCP 2.8/2.9 JSR is slipping, and I'm worried that I'm going to miss one of the deadlines! What do I do?</b><BR>
+<B>A:</b> JCP 2.8 introduced the ideas of deadlines for certain milestones in a JSR's development: 9 months to produce an Early Draft Review, 12 months after that to post a Public Review, 12 months after that for the Final Release, and the Maintenance Lead must set his/her own target for Maintenance Release when submitting changes for a Maintenance Review. The Executive Committee has the option of calling for a Renewal Ballot to decide if the JSR should be allowed to continue or be withdrawn when a deadline is missed, but these renewal ballots don't happen automatically. If the Executive Committee is made aware of your extenuating circumstances - for instance if you explain it to the committee representatives - then they may let you set a new deadline without calling for the Renewal Ballot.
+<BR>&nbsp;<BR>
+
+<a name="newjsrs"></a><B>Q: I submitted my JCP 2.9 JSR; when will it go up for JSR Approval Ballot?</b><BR>
+<B>A:</b> If there is a problem with your submission, the PMO will contact you with a request for clarification or to identify the missing pieces, but the PMO will always respond to submitters via e-mail to confirm receipt of the submission. If you have not received such a confirmation, it is possible that the PMO did not receive your submission.<P>
+
+Note, too, that JSR Review and the JSR Approval Ballot are separate in JCP 2.8/2.9 and above. Part of your JCP 2.9 proposal indicated the length of time you wanted for the JSR Review, a review period that takes place before the JSR Approval Ballot which was introduced in JCP 2.8. So, once the JSR is posted, the review should be two weeks or four weeks before the ballot begins, according to whether you selected a 2 week or 4 week JSR Review. All ballots begin on Tuesdays, however, so your JSR Review will be extended to the Monday before the next ballot if 2 weeks or 4 weeks does not already fall on a Monday.
+
+<BR>&nbsp;<BR>
+
+<a name="ballottiming"></a><B>Q: My JSR has a milestone with a ballot approaching. What factors can affect when a ballot begins and ends?</B><BR>
+<B>A:</B> All ballots start on Tuesdays, and they usually end on Mondays. Mostly, the ballot lengths are determined by the type of ballot it is, as follows:<BR>
+<ul>
+<li>JSR Approval Ballot: 2 weeks
+<li>Draft Specification Approval Ballot (JCP 2.0 - 2.5): 1 week, last week of Community Review period
+<li>Public Draft Specification Approval Ballot (JCP 2.6 - 2.7): 1 week, last week of Public Review period
+<li>Public Draft Specification Approval Ballot (JCP 2.8 - 2.9): 1 week, immediately after Public Review 
+<li>Final Approval Ballot: 2 weeks
+<li>Item Exception Ballot (JCP 2.0 - 2.7): 1 week
+<li>Appeal Ballot (JCP 2.8 - 2.9): 1 week
+<li>Renewal Ballot (JCP 2.8 - 2.9): 2 weeks
+<li>Withdrawal Ballot (JCP 2.8 - 2.9): 2 weeks
+<li>Maintenance Review Ballot (JCP 2.8 - 2.9): 1 week, immediately after Maintenance Review
+<li>Transfer Ballot (JCP 2.8 - 2.9): 2 weeks
+</ul><BR>
+
+For ballots that take place at the end of a review period, the duration of the review period, taken with the fact that all ballots start on Tuesdays, can affect when the ballot begins. Review periods never are shorter than the minimum length (30 days), but may be extended to allow for the ballot length. For instance, a Community Review that started on a Wednesday for a thirty-day review would end on a Monday, 4 days after the Thursday that would be the actual 30 days after it began. In this example, the ballot would start on the last Tuesday of the review, which is actually the 28th day of the review.<P>
+
+It should be noted that, for ballots that take place after a review period, the reviews that they follow may be extended to the Monday before the ballot begins. For example, a 30-day JCP 2.9 Public Review starting on a Tuesday would end on a Monday, extended from the previous Wednesday (the actual 30th day), making the review period actually 35 days in length. Then the Public Draft Specification Approval Ballot would begin on the following Tuesday and run for one week as specified.<P>
+
+Two other factors can affect the beginning and end dates of a ballot: PMO holidays and the EC changeover following an EC Election. Both should be listed on the <a href="/en/whatsnew/calendar">JCP calendar</a>.<P>
+
+ When the PMO is closed for a holiday, EC Ballots may be affected. If a ballot would close on a Monday that the PMO is closed for a single-day holiday, the ballot is instead extended to the day after (Tuesday). Ballots will not span a multi-day holiday, however: instead they are postponed until after the holiday period. For example, a ballot will not begin on the Tuesday before Christmas, but would instead start on the first Tuesday of the New Year.  
+<P>
+
+Each year the Executive Committee Elections are held in the Fall, and there is a period when the old EC has left and the new EC has yet to begin. Ballots that would begin or end in this period are instead postponed until the new EC begins its term. This means that a 1-week ballot may not begin from the time the old EC ends its term until the new EC begins its term, and it means that a 2-week ballot may not begin the last week of the old EC's term but will be postponed until the new EC begins its term. 
+<P>
+
+<a name="quarterlyupdate"></a><B>Q: I'm a JCP 2.8/2.9 Maintenance Lead. If there are no changes to the list of implementations, do I still need to provide the quarterly update?</b><BR>
+<B>A:</b> Yes. Even if there is no change to the list, the list of publicly/commercially released implementations that have been certified as compatible must be provided to the PMO at least quarterly. Send it to admin&#64;jcp.org.
+<P>
+
+<a name="changejcp"></a><B>Q: I'm a Specification Lead and I wish to move my JSR to JCP 2.10. How do I do this?</b><BR>
+<B>A:</b> Send mail to admin&#64;jcp.org with the answers to the following questions:<P>
+Which JSR do you want to move to 2.10?<BR>
+Do all of the experts on your Expert Group agree to change to JCP 2.10?<BR>
+What is the specific URL for the document archive?<BR>
+What is the specific URL for the Issue Tracker?<BR>
+What is the specific URL for the EG communication archive?<BR>
+What is the description of your communications channel/how the public should provide feedback?<BR>
+How will you consult with your Expert Group before adding any new experts to the Expert Group of your JSR?<BR>
+How will you provide details of the Expert Group nominations for your JSR?<P>
+
+The PMO will confirm receipt and follow-up with you on any answers that aren't clear. Once the answers are clear and the Expert Group agrees to make the change, the PMO will update your JSR listing to show that your JSR is now operating under JCP 2.10.
+<P>
+
+<a name="egconsult"></a><B>Q: I'm the Spec Lead of a JCP 2.8/2.9/2.10 JSR. How do I consult with the Expert Group on new EG nominations?</b><BR>
+<B>A:</b> Provide the relevant details of each nomination that comes in to the Expert Group: which JCP member is represented by the nominee, what the nominees qualifications are, the expertise of the nominee's organization, how many hours/week the nominee claims to be available to work on the JSR. You can do this in person, on the phone, or using a forum or mailing list. But you have to also make the deliberations on each nomination available to the public, as well, so you might wish to save yourself the trouble of transcribing the discussions and put it all into mail or a forum in the first place.
+<BR>&nbsp;<BR>
+
+<a name="egnomspublic"></a><B>Q: I'm a JCP 2.8/2.9/2.10 JSR Spec Lead, and I'm supposed to make all deliberations, discussions, and decisions on every Expert Group nomination - as well as the nominee's name, qualifications and expertise - available to the public. How?</b><BR>
+<B>A:</b> Use the public communications channel you created for JCP 2.8/2.9/2.10 and post the information about each nomination there.
+
+&nbsp;<BR>
+&nbsp;<BR>
+&nbsp;<BR>
+&nbsp;<BR>
+&nbsp;<BR>
+&nbsp;<BR>
+&nbsp;<BR>
+&nbsp;<BR>
+&nbsp;<BR>
+&nbsp;<BR>
+&nbsp;<BR>
+&nbsp;<BR>
+&nbsp;<BR>
+&nbsp;<BR>
+&nbsp;<BR>
+&nbsp;<BR>
+&nbsp;<BR>
+&nbsp;<BR>
+&nbsp;<BR>
+&nbsp;<BR>
+&nbsp;<BR>
+&nbsp;<BR>
+&nbsp;<BR>
+&nbsp;<BR>
+&nbsp;<BR>
+&nbsp;<BR>
+&nbsp;<BR>
+&nbsp;<BR>
+&nbsp;<BR>
+&nbsp;<BR>
+&nbsp;<BR>
+&nbsp;<BR>
+&nbsp;<BR>
+
+ 
+
+
+
+</OL>
+               &nbsp;
+<BR>
+&nbsp;<BR>
+	
+<!-- ** BEGIN: footer.jsp ** //-->
+
+
+
+
+
+
+
+
+</td>
+</tr>
+</table>
+
+<!-- ** END: Content Table ** //-->
+
+<!-- ** BEGIN: Footer Table ** //-->
+
+<div id="footer" style="clear: both;">
+    <div class="footleft">
+        <a href="/en/resources/contacts">Contact Us</a>
+    </div>
+	
+    <div class="botbar"><img src="/images/spacer.gif" alt="" height="23" width="1"></div>
+
+    <div class="footleft2">
+         &copy; 2019, Oracle Corporation and/or its affiliates. 
+        <a href="/en/home/terms">Terms of Use</a>. <a href="http://www.oracle.com/us/legal/privacy/index.html">Privacy Policy</a>. <a href="http://www.oracle.com/us/legal/third-party-trademarks/third-party-trademarks-078568.html">Trademarks</a>
+    </div>
+
+    <div class="footright">
+        <img src="/images/common/logo_oracle_footer.gif" alt="Oracle Corporation" height="22" width="91">
+    </div>
+
+    <div style="clear: both;"><img src="/images/spacer.gif" alt="" height="30" width="1"></div>
+</div>
+
+<!-- ** END: Footer Table ** //-->
+
+
+
+<!-- ** Menu Start ** //-->
+
+
+
+</body>
+</html>
+<!-- ** END: footer.jsp ** //-->
+
+

@@ -1,0 +1,949 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- ** BEGIN: header.jsp ** //-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3c.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+<head>
+    
+
+   
+    <link href="/includes/css/menu.css" rel="stylesheet" type="text/css"></link>
+    <link href="/includes/css/style.css" rel="stylesheet" type="text/css"></link>
+    <!--[if lt IE 6]><link href="/includes/css/style5.css" rel="stylesheet" type="text/css" ></link><![endif]-->
+    <!--[if gte IE 5]><link href="/includes/css/style6.css" rel="stylesheet" type="text/css" ></link><![endif]-->
+    <link href="/includes/css/tabs.css"  rel="stylesheet" type="text/css"></link>
+
+    <script type="text/javascript" src="/includes/scripts/tabs.js"></script>
+    <script type="text/javascript" src="/includes/scripts/menu.js"></script>
+   
+
+    
+
+    
+        <title>The Java Community Process(SM) Program - JSRs: Java Specification Requests - proposalDetails JSR# 379</title>
+    
+
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+
+
+<body onload="P7_initPM(0,1,0,0,-1)">
+
+    <a name="top"></a>
+
+    <div id="header">
+	<div id="logo">
+		<a href="/en/home/index"><img src="/images/spacer.gif" alt="Java Community Process" height="81" width="151"></a>
+	</div>
+	<div id="tools">
+		<div class="search">
+			<form name="search" action="/en/jsr/summary" method="get" onsubmit="return validate_search()">
+				<input name="id" value="Search JSRs" size="16" class="form" onfocus="nullify_if_equal(this, 'Search JSRs')" type="text">
+				<a href="javascript:document.search.submit()" onclick="return validate_search()"><img src="/images/button_go.gif" width="21" height="16" border="0" alt="Submit this Search" name="sub_search"></a>
+			</form>
+		</div>
+		<div class="tools">
+			<a href="/en/press/pressroom">Press Room</a> &nbsp;|&nbsp;
+			<a href="http://java.com/java/download/index.jsp?cid=jdp78399">Get Java Here</a> &nbsp;|&nbsp;
+			<!-- <a href="javascript:void(0)">Print Format</a> &nbsp;|&nbsp;&nbsp; -->
+		</div>
+
+	</div>
+	<div style="clear: right;"></div>
+
+        
+
+	<div class="topbar"><img src="/images/spacer.gif" alt="" height="3" width="154"></div>
+	<div id="update"> </div>
+    </div>
+
+
+    
+
+        <!-- ** BEGIN: Content Table ** //-->
+
+        <table width="100%" border="0" cellpadding="0" cellspacing="0">
+
+            <tr>
+
+                <!-- ** BEGIN: Navigation Column ** //-->
+                <td width="150" id="leftcontent" valign="top">
+                    <!-- Navigation Placeholder //-->
+
+                    
+
+                    <div class="bar"><img src="/images/hr_dots1.gif" alt="" height="3" width="150"></div>
+
+        <!-- begin find JSRs form -->
+        <!-- IMPORTANT! do not convert this form to Struts < html : form > tag.  javascript change of form.action property fails. -->
+        <img src="/images/hd_find-jsrs.gif" alt="Find JSRs" height="18" width="150">
+        <form name="findjsr" action="/en/jsr/summary" method="get" class="pt5" onsubmit="return validate_findjsr()">
+            <input name="id" size="18" class="form" value="Search JSRs" onfocus="nullify_if_equal(this, 'Search JSRs')" type="text">
+	    <a href="javascript:document.findjsr.submit()" onclick="return validate_findjsr()"><img src="/images/button_go.gif" width="21" height="16" border="0" alt="Submit this Search" name="sub_search"></a>
+        </form><br><br>
+
+        <!-- ** Menu Start ** //-->
+
+        <ul id="p7PMnav">
+            <li><a href="/en/jsr/platform">JSRs by Platform</a></li>
+            <li><a href="/en/jsr/tech">JSRs by Technology</a></li>
+            <li><a href="/en/jsr/stage">JSRs by Stage</a></li>
+            <li><a href="/en/jsr/ec">JSRs by Committee</a></li>
+            <li><a href="/en/jsr/all">List of All JSRs</a></li>
+
+            <!--end find JSRs form -->
+            <div style="clear: both;"><img src="/images/spacer.gif" alt="" height="25" width="1"></div>
+
+            <!--begin my JCP -->
+            <img src="/images/hd_my-jcp.gif" alt="My JCP" height="18" width="150">
+            
+
+          <form name="login" method="get" action="/en/user/login" >
+            <input name="Sign-in" type="submit" title="Sign-in" value="Sign-in" />
+          </form>
+
+            <div style="clear:both"><img src="/images/global/spacer.gif" width="1" height="3" alt=""></div>
+            <div class="noNav">
+                <a href="/en/user/register">Register for Site</a>
+            </div>
+
+             <div class="bar"><img src="/images/hr_dots1.gif" alt="" height="3" width="150"></div>
+           <div class="noNav" style="color: #666666; padding: 0;">
+              Use of JCP site is subject to the
+              <a href="/en/home/terms" style="display:inline;padding: 0">JCP Terms of Use</a> and the
+              <a href="http://www.oracle.com/us/legal/privacy/index.html" style="display:inline;padding: 0" href="">Oracle Privacy Policy</a>
+          </div>
+
+            
+
+            <div style="clear:both"><img src="/images/global/spacer.gif" width="1" height="25" alt=""></div>
+
+            <!--begin JCP info -->
+            <img src="/images/hd_jcp-info.gif" alt="JCP Info" height="18" width="150">
+
+            <li><a href="/en/procedures/overview" class="p7PMtrg">About JCP</a>
+                <ul>
+                    <li><a href="/en/procedures/overview">Program Overview</a></li>
+                    <li><a href="/en/procedures/jcp2">JCP Process Document</a></li>
+                    <li><a href="/en/whatsnew/calendar">Calendar</a></li>
+                    <li><a href="/en/participation/members">JCP Members</a></li>
+                    <li><a href="/en/participation/committee">Executive Committee</a></li>
+                    <li><a href="/en/whatsnew/elections">Elections</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/en/participation/overview" class="p7PMtrg">Get Involved</a>
+		<ul>
+                    <li><a href="/en/participation/overview">Overview</a></li>
+                    <li><a href="/en/participation/membership">Becoming a JCP Member</a></li>
+		</ul>
+            </li>
+
+            <li><a href="/en/resources/contents" class="p7PMtrg">Community Resources</a>
+                <ul>
+                    <li><a href="/en/resources/contents">Overview</a></li>
+                    <li><a href="/en/resources/tutorials">Tutorials</a></li>
+                    <li><a href="/en/resources/multimedia">JCP Podcasts</a></li>
+                    <li><a href="/en/resources/guide">Spec Lead Guide</a></li>
+                    <li><a href="/en/resources/tdk">TCK Tool & Info</a></li>
+                    <li><a href="/en/resources/license_reference">License Reference</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/en/press/pmo" class="p7PMtrg">Community News</a>
+                <ul>
+                    <li><a href="/en/press/pmo">News</a></li>
+                    <li><a href="/en/press/news/awards/awards_main">Programs &amp; Awards</a></li>
+                    <li><a href="/en/press/releases">Press Releases</a></li>
+                    <li><a href="/en/press/success">Success Stories</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/en/introduction/faq">FAQ</a></li>
+
+            <li><a href="/en/resources/contacts">Contact Us</a></li>
+
+            <div style="clear: both;"><img src="/images/spacer.gif" alt="" height="25" width="1"></div>
+
+            <!--[if lte IE 6]><style>#p7PMnav a{height:1em;}#p7PMnav li{height:1em;float:left;clear:both;width:100%}</style><![endif]-->
+            <!--[if IE 6]><style>#p7PMnav li{clear:none;}</style><![endif]-->
+            <!--[if IE 7]><style>#p7PMnav a{zoom:100%;}#p7PMnav li{float:left;clear:both;width:100%;}</style><![endif]-->
+        </ul>
+
+        
+
+        <!--begin ad space -->
+        <div class="ads">
+            <a href="http://java.com/java/download/index.jsp?cid=jdp78399" target="_blank"><img style="display: ;" src="/images/ad_banner2.gif" alt="Ad Banner" border="1" height="70" width="150"></a>
+        </div>
+        <!--end ad space -->
+
+<!-- ** Menu End ** //-->
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;<br>
+
+    
+
+                    &nbsp;<br>
+                    <img src="/images/common/trans.gif" alt="" width="1" height="150"><br>
+
+              
+
+
+
+                </td>
+                <!-- ** END: Navigation Column ** //-->
+
+                <!-- ** BEGIN: Gutter Column ** //-->
+		<td width="10" nowrap><img src="/images/common/trans.gif" alt="" width="10" height="1"></td>
+                <!-- ** END: Gutter Column ** //-->
+
+                <!-- ** BEGIN: Content Column ** //-->
+                <td width="100%" valign="top">
+
+    
+<script type="text/javascript">
+
+String.prototype.trim = function() {
+        return this.replace(/^\s+|\s+$/g,"");
+}
+String.prototype.ltrim = function() {
+        return this.replace(/^\s+/,"");
+}
+String.prototype.rtrim = function() {
+        return this.replace(/\s+$/,"");
+}
+
+function validate_search() {
+	if (document.search.id.value == "Search JSRs" || document.search.id.value.trim().length == 0) {
+		alert("Search terms must be entered first");
+		return false;
+	}
+	return true;
+}
+
+function validate_findjsr() {
+	if (document.findjsr.id.value == "Search JSRs" || document.findjsr.id.value.trim().length == 0) {
+		alert("Search terms must be entered first");
+		return false;
+	}
+	return true;
+}
+
+function nullify_if_equal(field, str) {
+	// alert("val=" + field.value);
+	if (field.value == str) {
+		field.value = "";
+	}
+}
+
+</script>
+<!-- ** END: header.jsp ** //-->
+
+
+
+
+
+        <!--  BEGIN NAVIGATION TABS -->
+        <div id="p7TP1">
+                <div class="p7TP_tabs">
+                        <div id="p7tpb1_1" class="down"><a class="down">JSR</a></div>
+                        <div><a href="/en/egc/view?id=379">Community</a></div>
+                        <div><a href="/en/eg/eghome?id=379">Expert Group</a></div>
+			
+
+                <br class="p7TPclear" />
+                </div>
+
+                <div class="p7TPcontent">
+                        <div id="p7tpc1_1">
+
+			
+                                <a href="summary?id=379">Summary</a>
+			
+			
+                                &nbsp;|&nbsp;
+				<span>Proposal</span>
+			
+			
+                                &nbsp;|&nbsp;
+                                <a href="detail?id=379">Detail (Summary &amp; Proposal)</a>
+			
+		
+                        
+                                &nbsp;|&nbsp;
+                                <a href="nominations?id=379">Nominations</a>
+			
+		
+                        </div>
+
+                </div>
+                <!--[if lte IE 6]><style type="text/css">.p7TPpanel div,.p7TPpanel a{height:1%;}.p7TP_tabs a{white-space:nowrap;}</style><![endif]-->
+        </div>
+        <script type="text/javascript">
+                P7_initTP(1,0);
+        </script>
+        <!--  END NAVIGATION TABS -->
+
+
+<div class="anybar"><img src="/images/global/bar_green.gif" alt="" width="12" height="4"></div>
+
+<div class="header2">JSRs: Java Specification Requests</div>
+<div class="header1">JSR 379: Java<sup><font size="-2">TM</font></sup> SE 9 Release Contents</div>
+<div class="anybar"><img src="/images/global/bar_green.gif" alt="" width="12" height="4"></div>
+<br>
+
+
+
+
+<!-- ********************************************** -->
+<!--  JSRProposal Info                              -->
+<!-- ********************************************** -->
+<p>
+
+
+<a name="updates"><font size="+2">Updates to the Original JSR</font></a><p>
+The following changes have been made to <a href="#orig">the original proposal</a>:<P>
+
+<a name="20160629"></a>
+<U><B>Proposal update 2016.06.29</B></U>:<P>
+
+<P><B>Initial Expert Group Membership:</B>
+</P>
+
+<P>
+Azul Systems:  Simon Ritter<BR>
+    Google:        Kevin Bourrillion<BR>
+    IBM:           Tim Ellison<BR>
+    Oracle:        Iris Clark<BR>
+    Oracle:        Mark Reinhold<BR>
+    Red Hat:       Andrew Haley
+</P>
+
+<a name="orig"><font size="+2">Original Java Specification Request (JSR)</font></a><p>
+<FONT SIZE="-1">
+
+<!-- BEGIN-SUB TOPICS -->
+
+          <A HREF="#1"> Identification</A>  |
+          <A HREF="#2"> Request</A>  |
+          <A HREF="#3"> Contributions</A>  
+<BR>
+
+<!-- END-SUB TOPICS -->
+
+</FONT>
+<P>
+
+<!-- BEGIN TEMPLATE -->
+
+<!-- SECTION 1 -->
+
+<A NAME="1"></A>
+
+<P><FONT size=+2>Section 1. Identification</FONT>
+
+<P><b>Submitting Member:</b> Oracle </P>
+
+<P><b>Name of Contact Person:</b> Iris Clark </P>
+
+<P><b>E-Mail Address:</b> iris.clark<faketag>&#64;</faketag>oracle.com</P>
+
+<P><b>Telephone Number:</b> +1 408 276 3909</P>
+
+<P><b>Fax Number:</b> -</P>
+
+<BR>
+<P><b>Specification Lead Member:</b> Oracle America, Inc.</P>
+
+<P><B>Specification Leads:</b> Iris Clark, Mark Reinhold</P>
+
+<P><b>E-Mail Address:</b> iris.clark<faketag>&#64;</faketag>oracle.com, mark.reinhold<faketag>&#64;</faketag>oracle.com</P>
+
+<P><b>Telephone Number:</b> +1 408 276 3909, +1 408 276 7256</P>
+
+<P><b>Fax Number:</b> -</P>
+
+<BR>
+
+<P><B>Initial Expert Group Membership:</B>
+</P>
+
+<P>
+Oracle <br>
+Google<br>
+IBM <br>
+Red Hat
+</P>
+<font color="red">Note</font> that this information <a href="#20160629">has been updated</a> from this original proposal.<P>
+
+<P><B>Supporting this JSR:</B>
+
+</P>
+
+<P>
+Oracle <br>
+Google<br>
+IBM <br>
+Red Hat
+</P>
+
+<BR><BR>
+<!-- SECTION 2 -->
+
+<A NAME="2"></A>
+
+<P>
+<FONT SIZE="+2">Section 2: Request</FONT><P>
+</P>
+
+<H4>2.1 Please describe the proposed Specification:</H4>
+
+<P>
+The Java Platform, Standard Edition ("Java SE") is the core Java platform for
+general-purpose computing.  In this release of the platform, Java SE 9, we
+intend to address a number of areas based upon trends in the programming
+community, trends in hardware architectures, and above all our continued
+commitment to ensuring the broadest possible success of core Java technology
+for years to come.
+</P>
+
+<P>
+The Java SE 9 Platform Specification will build upon the Java Language
+Specification, the Java Virtual Machine Specification, and the Java SE APIs
+defined in Java SE 8.  As an Umbrella Platform Specification, this document
+will specify significant features by reference to other Specifications which
+are either defined in new Component JSRs or revised in JCP Maintenance
+Releases of existing such JSRs.  This Specification will directly specify
+smaller features, enhancements, clarifications, and bug fixes that are not
+part of any Component JSR Specification.
+</P>
+
+<P> The primary changes proposed for this release of the Java SE Platform are
+the introduction of a module system and the use of that system to modularize
+the Platform itself.  The module system will be specified by
+<a href="https://jcp.org/en/jsr/detail?id=376">JSR 376</a>; the modularization
+of the Platform, being a global concern, will be specified by this Umbrella
+JSR.
+</P>
+
+<H4>2.2 What is the target Java platform? (i.e., desktop, server, personal, embedded, card, etc.)</H4>
+
+<P>
+This JSR defines a release of the Java SE platform targeted at embedded,
+desktop, server, and cloud environments.
+</P>
+
+<H4>2.3 The Executive Committees would like to ensure JSR submitters think about how their proposed technology relates to all of the Java platform editions. Please provide details here for which platform editions are being targeted by this JSR, and how this JSR has considered the relationship with the other platform editions.</H4>
+
+<P>
+This JSR defines version 9 of the Java platform, Standard Edition.
+</P>
+
+<H4>2.4 What need of the Java community will be addressed by the proposed specification?</H4>
+
+<P>
+The introduction of a module system will address two fundamental needs of all
+large Java applications, namely reliable configuration and strong
+encapsulation, as explained in 
+<a href="https://jcp.org/en/jsr/detail?id=376">JSR 376</a>.  The application
+of the module system to the Java SE Platform itself will enable
+implementations of the Platform to be configured as needed for use in small
+computing devices and dense cloud deployments, to improve their security by
+encapsulating implementation-internal APIs, and to improve their performance
+via more effective ahead-of-time, whole-program optimization techniques.
+</P>
+
+<H4>2.5 Why isn't this need met by existing specifications?</H4>
+
+<P>
+While existing (in progress) JSRs and open-source projects have investigated
+the evolution of the Java language, the JVM, and the Java SE APIs, only a
+platform JSR can unite the results of these investigations into a new edition
+of the Java SE platform.
+</P>
+
+<H4>2.6 Please give a short description of the underlying technology or technologies:</H4>
+
+<P>
+The technologies that make up Java SE 9 will be described in component
+JSRs and smaller features enumerated in the Java SE 9 Platform Specification.
+Candidate lists are proposed in section 3.1.
+</P>
+
+<H4>2.7 Is there a proposed package name for the API Specification? (i.e., <TT>javapi.something</TT>, <TT>org.something</TT>, etc.)</H4>
+
+<P>
+The Java SE platform itself does not have a single package name.  All of its
+requirements are reflected in the packages of its constituent Java SE APIs.
+</P>
+
+<H4>2.8 Does the proposed specification have any dependencies on specific operating systems, CPUs, or I/O devices that you know of?</H4>
+
+<P>No.</P>
+
+<H4>2.9 Are there any security issues that cannot be addressed by the current security model?</H4>
+
+<P>
+None are known at this time.
+</P>
+<H4>2.10 Are there any internationalization or localization issues?</H4>
+
+<P>
+None are known at this time.
+</P>
+
+<H4>2.11 Are there any existing specifications that might be rendered obsolete, deprecated, or in need of revision as a result of this work?</H4>
+
+<P>
+The Java Language Specification, the Java Virtual Machine Specification, the
+Java Native Interface, and other elements of the Java SE Platform
+Specification will be revised by this JSR.
+</P>
+
+<H4>2.12 Please describe the anticipated schedule for the development of this
+specification.</H4>
+
+<P>
+Expert Group formation:  June 2016 <br />
+Early Draft Review: July 2016 <br />
+Public Review: September 2016 <br />
+Proposed Final Draft: January 2017 <br />
+Final Release: March 2017 <br /> </p>
+</P>
+
+<H4>2.13 Please describe the anticipated working model for the Expert Group working on developing this
+specification.</H4>
+
+<P>
+The Expert Group will communicate primarily via e-mail, using a
+publicly-readable mailing list.
+</P>
+
+<H4>2.14 Provide detailed answers to the transparency checklist, making sure to
+include URLs as appropriate:</H4>
+
+<P>
+<ul>
+<li><p> Is the schedule for the JSR publicly available, current, and updated
+  regularly? </p>
+  <p> We intend this to be the case. </p></li>
+<li><p> Can the public read and/or write to a wiki for the JSR? </p>
+  <p> We do not plan to have a wiki, but there will be a well-known public
+  home web page for the JSR. </p>
+  </li>
+<li><p> Is there a publicly accessible discussion board for the JSR that you
+  read and respond to regularly? </p>
+  <p> No. There will be three public mailing lists (see 2.18, below). </p>
+  </li>
+<li><p> Have you spoken at conferences and events about the JSR recently? </p>
+  <p> Yes.  Members of the Java SE team at Oracle, as well as external
+  contributors, have spoken and written about planned enhancements for some
+  time at several conferences including FOSDEM, JavaOne, Jfokus, and
+  Devoxx. </p></li> 
+<li><p> Are you using open-source processes for the development of the RI
+  and/or the TCK? </p>
+  <p> The source code for the Reference Implementation will be developed in
+  the <a href="http://openjdk.java.net/projects/jdk9">JDK 9 Project</a>,
+  in the <a href="http://openjdk.java.net">OpenJDK Community</a>, similar to
+  development for Java SE 8.  The weekly early-access
+  builds <a href="https://jdk9.java.net/download/">are available</a> for
+  anyone to test and review. </p></li>
+<li><p> What are the Terms of Use required to use the collaboration tools you
+  have prepared to use with the Expert Group, so that prospective EG members
+  can judge whether they are compatible with the JSPA? </p>
+  <p> <a href="http://openjdk.java.net/legal/tou/">http://openjdk.java.net/legal/tou/</a></p>
+  </li>
+<li><p> What is the location of your publicly-accessible Issue list?  In order
+  to enable EC members to judge whether Issues have been adequately addressed,
+  the list must make a clear distinction between Issues that are still open,
+  Issues that have been deferred, and those that are closed, and must indicate
+  the reason for any change of state. </p>
+  <p> <a href="http://openjdk.java.net/projects/jdk9/spec/issues">http://openjdk.java.net/projects/jdk9/spec/issues</a>
+  </li>
+<li><p> What is the mechanism for the public to provide feedback on your JSR?
+  </p>
+  <p> The public "comments" list (see 2.18, below). </p>
+  </li>
+<li><p> Where is the publicly-accessible document archive for your Expert
+  Group? </p>
+  <p> (See 2.20, below.)</p>
+  </li>
+<li><p> Does the Community tab for my JSR have links to and information about
+  all public communication mechanisms and sites for the development of my JSR?
+  </p>
+  <p> We intend this to be the case. </p></li>
+<li><p> Do you have a Twitter account or other social networking feed which
+  people can follow for updates on your JSR? </p>
+  <p> Yes. </p>
+  </li>
+<li><p> Which specific areas of feedback should interested community members
+  (such as the Adopt-a-JSR program) provide to improve the JSR (please also
+  post this to your Community tab)? </p>
+  <p> Feedback in all areas is welcomed. </p>
+  </li>
+</ul>
+</P>
+
+<H4>2.15 Please describe how the RI and TCK will de delivered, i.e. as part of a profile or platform edition, or stand-alone, or both. Include version information for the profile or platform in your answer.
+</H4>
+
+<P>
+The RI will be the Java Development Kit (JDK), version 9.  The TCK will be the
+Java Compatibility Kit (JCK), version 9.
+</P>
+
+
+<H4>2.16 Please state the rationale if previous versions are available stand-alone and you are now proposing in 2.13 to only deliver RI and TCK as part of a profile or platform edition (See sections 1.1.5 and 1.1.6 of the JCP 2 document).
+</H4>
+
+<P>
+(Not applicable.)
+</P>
+
+<H4>2.17 Please provide a description of the business terms for the Specification, RI and TCK that will apply when this JSR is final.</H4>
+
+<P>
+These are the licenses for the 
+<a href="/aboutJava/communityprocess/licenses/jsr379/SpecLicense-JSR_379-SE_9_Release_Contents-4.28.16v2.pdf">specification</a> 
+and the 
+<a href="/aboutJava/communityprocess/licenses/jsr379/SATCK-JSR_379-SE-9.pdf">TCK</a>.
+They are similar to those for Java
+SE 8 (<a href="https://jcp.org/en/jsr/detail?id=337">JSR 337</a>).  Minor
+adjustments to these licenses may be necessary to allow modular
+run-time images. </p>
+
+<p> Similar to Java SE 8, the RI will  be made available under the GNU
+General Public License, version 2 for the virtual machine and the
+<a href="http://openjdk.java.net/legal/gplv2+ce.html">
+GNU General Public License, version 2, with the Classpath Exception</a>. for
+class libraries and portions of the virtual machine that expose public APIs
+</P>
+
+<H4>2.18 Please describe the communications channel you have established for the public to observe Expert Group deliberations, provide feedback, and view archives of all Expert Group communications.</H4>
+
+<P>
+We will implement a trio of mailing lists in an approach already used by
+earlier JSRs, including that for Java SE 8 (JSR 337): </p>
+
+<ul>
+
+<li> Expert Group discussions will be carried out on an "experts" mailing
+  list, limited to Expert Group members. </li>
+
+<li> The "observers" list will be for those who wish to monitor and, perhaps,
+  discuss the EG's progress. Messages sent to the "experts" list will
+  automatically be forwarded to this list. Anyone may subscribe to this list,
+  and any subscriber may post. EG members are under no obligation to follow
+  the traffic on this list. </li>
+
+<li> The "comments" list will be for sending comments, suggestions, and other
+  feedback directly to the EG. Only EG members may subscribe to this list, but
+  anyone may post. The EG will read all messages sent to this list, and will
+  record feedback in the issue tracker as appropriate. </li>
+
+</ul>
+
+<p> The archives of all of these lists will be publicly readable. 
+</P>
+
+<H4>2.19 What is the URL of the Issue Tracker that the public can read, and how does the public log issues in the Issue Tracker?</H4>
+
+<P>
+The public may log issues to the Issue Tracker, 
+<a href="http://openjdk.java.net/projects/jdk9/spec/issues">http://openjdk.java.net/projects/jdk9/spec/issues</a>,
+by sending mail to the public "comments" lists (see 2.18, above).
+</P>
+
+<H4>2.20 Please provide the location of the publicly accessible document archive you have created for the Expert Group.</H4>
+
+<P>
+<a href="http://openjdk.java.net/projects/jdk9/spec">
+http://openjdk.java.net/projects/jdk9/spec</a>
+</P>
+
+
+<BR><BR>
+<BR><BR>
+
+<!-- SECTION 3 -->
+
+<A NAME="3"></A>
+
+<P>
+<FONT SIZE="+2">Section 3: Contributions</FONT><P>
+</P>
+
+<H4>3.1 Please list any existing documents, specifications, or implementations that describe the technology. Please include links to the documents if they are publicly available.</H4>
+
+<P>
+The following JSR will be proposed for inclusion as a component of the
+Java SE 9 Umbrella JSR.  The final Java SE 9 Platform Specification might not
+include this JSR, and it might include some JSRs which are not listed
+here. </p>
+
+<ul>
+<li><a href="https://jcp.org/en/jsr/detail?id=376">JSR 376</a>: 
+  Java Platform Module System</li>
+</ul>
+
+<p> The following pre-existing component JSRs will be subsumed by the Umbrella
+JSR: </p>
+
+<ul>
+<li><a href="https://jcp.org/en/jsr/detail?id=3">JSR 3</a>:
+  <a href="https://jcp.org/aboutJava/communityprocess/maintenance/jsr003/jsr3-mr6-changes.html">Java
+  Management Extensions (JMX)</a></li>
+<li><a href="https://jcp.org/en/jsr/detail?id=160">JSR 160</a>: 
+  <a href="https://jcp.org/aboutJava/communityprocess/maintenance/jsr160/160-mr3-changes.html">Java
+  Management Extensions (JMX) Remote API</a></li>
+<li><a href="https://jcp.org/en/jsr/detail?id=206">JSR 206</a>:
+  <a href="https://jcp.org/aboutJava/communityprocess/maintenance/jsr206/JAXP1-6ChangeList.pdf">Java API for XML Processing (JAXP)</a></li>
+</ul>
+
+<p> Maintenance Releases are planned for the following pre-existing component
+JSRs: </p>
+
+<ul>
+<li><a href="https://jcp.org/en/jsr/detail?id=199">JSR 199</a>: Java Compiler
+  API </li>
+<li><a href="https://jcp.org/en/jsr/detail?id=221">JSR 221</a>: JDBC API </li>
+<li><a href="https://jcp.org/en/jsr/detail?id=269">JSR 269</a>: Pluggable
+  Annotation Processing API </li>
+</ul>
+
+<p> The following core Java SE specifications will be modified under the
+auspices of this Umbrella JSR to incorporate changes made for routine
+maintenance and small-scale enhancements: </p>
+
+<ul>
+<li> Java Language Specification </li>
+<li> JVM Specification </li>
+<li> Java SE APIs </li>
+<li> Java Native Interface </li>
+</ul>
+
+<p> Smaller features will be specified directly by this Umbrella JSR.
+Many of these are being prototyped in the 
+<a href="http://openjdk.java.net/projects/jdk9">JDK 9 Project</a> and
+are described, for now, by 
+<a href="http://openjdk.java.net/jeps/1">JDK Enhancement Proposals (JEPs)</a>.
+Each feature listed below includes a link to the corresponding JEP document as
+a convenience, but that document will not be a normative part of the Java SE 9
+Platform Specification.  The final Specification might not include all of
+these features, and it might include some features which are not listed here.
+</p>
+
+<table style="margin: 10px 0 10px 0;" summary="features">
+<tr style="padding-top: 10px;">
+  <td style="text-align: right; padding-right: 20px">Platform</td>
+  <td><a href="http://openjdk.java.net/jeps/220">
+    Modular Run-Time Images</a></td></tr> 
+<tr><td></td>
+  <td><a href="http://openjdk.java.net/jeps/261">
+    Module System</a>
+    (<span><a href="https://jcp.org/en/jsr/detail?id=376">JSR 376</a></span>)
+  </td></tr>
+<tr><td></td>
+  <td><a href="http://openjdk.java.net/jeps/238">
+    Multi-Release JAR Files</a></td></t4>
+<tr><td></td>
+  <td><a href="http://openjdk.java.net/jeps/223">
+    New Version-String Scheme</a></td></t4>
+<tr><td></td>
+  <td><a href="http://openjdk.java.net/jeps/200">
+    The Modular JDK</a></td></tr>
+<tr><td> </td><td></td>
+
+<tr style="padding-top: 10px;">
+  <td style="text-align: right; padding-right: 20px">Language</td>
+  <td><a href="http://openjdk.java.net/jeps/211">
+    Elide Deprecation Warnings on Import Statements</a></td></tr>
+<tr><td></td>
+  <td><a href="http://openjdk.java.net/jeps/286">
+    Local-Variable Type Inference</a></td></tr>
+<tr><td></td>
+  <td><a href="http://openjdk.java.net/jeps/213">
+    Milling Project Coin</a></td></tr>
+<tr><td> </td><td></td>
+
+<tr style="padding-top: 10px;">
+  <td style="text-align: right; padding-right: 20px">Core Libraries</td>
+  <td><a href="http://openjdk.java.net/jeps/269">
+    Convenience Factory Methods for Collections</a></td></tr>
+<tr><td></td>
+  <td><a href="http://openjdk.java.net/jeps/277">
+    Enhanced Deprecation</a></td></tr>
+<tr><td></td>
+  <td><a href="http://openjdk.java.net/jeps/274">
+    Enhanced Method Handles</a></td></tr>
+<tr><td></td>
+  <td><a href="http://openjdk.java.net/jeps/264">
+    Platform Logging API and Service</a></td></tr>
+<tr><td></td>
+  <td><a href="http://openjdk.java.net/jeps/102">
+    Process API Updates</a></td></tr>
+<tr><td></td>
+  <td><a href="http://openjdk.java.net/jeps/285">
+    Spin-Wait Hints</a></td></tr>
+<tr><td></td>
+  <td><a href="http://openjdk.java.net/jeps/193">
+    Variable Handles</a></td></tr>
+<tr><td> </td><td></td>
+
+<tr style="padding-top: 10px;">
+  <td style="text-align: right; padding-right: 20px">Networking</td>
+  <td><a href="http://openjdk.java.net/jeps/110">
+    HTTP/2 Client</a></td></tr>
+<tr><td> </td><td></td>
+
+<tr style="padding-top: 10px;">
+  <td style="text-align: right; padding-right: 20px">Security</td>
+  <td><a href="http://openjdk.java.net/jeps/229">
+    Create PKCS12 Keystores by Default</a></td></tr>
+<tr><td></td>
+  <td><a href="http://openjdk.java.net/jeps/273">
+    DRBG-Based SecureRandom Implementations</a></td></tr>
+<tr><td></td>
+  <td><a href="http://openjdk.java.net/jeps/219">
+    Datagram Transport Layer Security (DTLS)</a></td></tr>
+<tr><td></td>
+  <td><a href="http://openjdk.java.net/jeps/249">
+    OCSP Stapling for TLS</a></td></tr>
+<tr><td></td>
+  <td><a href="http://openjdk.java.net/jeps/244">
+    TLS Application-Layer Protocol Negotiation Extension</a></td></tr>
+<tr><td> </td><td></td>
+
+<tr style="padding-top: 10px;">
+  <td style="text-align: right; padding-right: 20px">Client Libraries</td>
+  <td><a href="http://openjdk.java.net/jeps/289">
+    Deprecate the Applet API</a></td></tr>
+<tr><td></td>
+  <td><a href="http://openjdk.java.net/jeps/251">
+    Multi-Resolution Images</a></td></tr>
+<tr><td></td>
+  <td><a href="http://openjdk.java.net/jeps/272">
+    Platform-Specific Desktop Features</a></td></tr>
+<tr><td></td>
+  <td><a href="http://openjdk.java.net/jeps/262">
+    TIFF Image I/O</a></td></tr>
+<tr><td> </td><td></td>
+
+<tr style="padding-top: 10px;">
+  <td style="text-align: right; padding-right: 20px">XML</td>
+  <td><a href="http://openjdk.java.net/jeps/268">
+    XML Catalogs</a></td></tr>
+</table>
+</P>
+
+<H4>3.2 Explanation of how these items might be used as a starting point for the work.</H4>
+
+<P>
+See section 2.1.
+</P>
+
+<BR><BR>
+</p>
+
+
+
+
+
+
+
+
+<!-- ** BEGIN: footer.jsp ** //-->
+
+
+
+
+
+
+
+
+</td>
+</tr>
+</table>
+
+<!-- ** END: Content Table ** //-->
+
+<!-- ** BEGIN: Footer Table ** //-->
+
+<div id="footer" style="clear: both;">
+    <div class="footleft">
+        <a href="/en/resources/contacts">Contact Us</a>
+    </div>
+	
+    <div class="botbar"><img src="/images/spacer.gif" alt="" height="23" width="1"></div>
+
+    <div class="footleft2">
+         &copy; 2019, Oracle Corporation and/or its affiliates. 
+        <a href="/en/home/terms">Terms of Use</a>. <a href="http://www.oracle.com/us/legal/privacy/index.html">Privacy Policy</a>. <a href="http://www.oracle.com/us/legal/third-party-trademarks/third-party-trademarks-078568.html">Trademarks</a>
+    </div>
+
+    <div class="footright">
+        <img src="/images/common/logo_oracle_footer.gif" alt="Oracle Corporation" height="22" width="91">
+    </div>
+
+    <div style="clear: both;"><img src="/images/spacer.gif" alt="" height="30" width="1"></div>
+</div>
+
+<!-- ** END: Footer Table ** //-->
+
+
+
+<!-- ** Menu Start ** //-->
+
+
+
+</body>
+</html>
+<!-- ** END: footer.jsp ** //-->
+
+

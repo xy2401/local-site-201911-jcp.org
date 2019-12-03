@@ -1,0 +1,535 @@
+
+
+<!-- ** BEGIN: header.jsp ** //-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3c.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+<head>
+    
+
+   
+    <link href="/includes/css/menu.css" rel="stylesheet" type="text/css"></link>
+    <link href="/includes/css/style.css" rel="stylesheet" type="text/css"></link>
+    <!--[if lt IE 6]><link href="/includes/css/style5.css" rel="stylesheet" type="text/css" ></link><![endif]-->
+    <!--[if gte IE 5]><link href="/includes/css/style6.css" rel="stylesheet" type="text/css" ></link><![endif]-->
+    <link href="/includes/css/tabs.css"  rel="stylesheet" type="text/css"></link>
+
+    <script type="text/javascript" src="/includes/scripts/tabs.js"></script>
+    <script type="text/javascript" src="/includes/scripts/menu.js"></script>
+   
+
+    
+
+    
+        <title>The Java Community Process(SM) Program - Participation - jcpwomen</title>
+    
+
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+
+
+<body onload="P7_initPM(0,1,0,0,-1)">
+
+    <a name="top"></a>
+
+    <div id="header">
+	<div id="logo">
+		<a href="/en/home/index"><img src="/images/spacer.gif" alt="Java Community Process" height="81" width="151"></a>
+	</div>
+	<div id="tools">
+		<div class="search">
+			<form name="search" action="/en/jsr/summary" method="get" onsubmit="return validate_search()">
+				<input name="id" value="Search JSRs" size="16" class="form" onfocus="nullify_if_equal(this, 'Search JSRs')" type="text">
+				<a href="javascript:document.search.submit()" onclick="return validate_search()"><img src="/images/button_go.gif" width="21" height="16" border="0" alt="Submit this Search" name="sub_search"></a>
+			</form>
+		</div>
+		<div class="tools">
+			<a href="/en/press/pressroom">Press Room</a> &nbsp;|&nbsp;
+			<a href="http://java.com/java/download/index.jsp?cid=jdp78399">Get Java Here</a> &nbsp;|&nbsp;
+			<!-- <a href="javascript:void(0)">Print Format</a> &nbsp;|&nbsp;&nbsp; -->
+		</div>
+
+	</div>
+	<div style="clear: right;"></div>
+
+        
+
+	<div class="topbar"><img src="/images/spacer.gif" alt="" height="3" width="154"></div>
+	<div id="update"> </div>
+    </div>
+
+
+    
+
+        <!-- ** BEGIN: Content Table ** //-->
+
+        <table width="100%" border="0" cellpadding="0" cellspacing="0">
+
+            <tr>
+
+                <!-- ** BEGIN: Navigation Column ** //-->
+                <td width="150" id="leftcontent" valign="top">
+                    <!-- Navigation Placeholder //-->
+
+                    
+
+                    <div class="bar"><img src="/images/hr_dots1.gif" alt="" height="3" width="150"></div>
+
+        <!-- begin find JSRs form -->
+        <!-- IMPORTANT! do not convert this form to Struts < html : form > tag.  javascript change of form.action property fails. -->
+        <img src="/images/hd_find-jsrs.gif" alt="Find JSRs" height="18" width="150">
+        <form name="findjsr" action="/en/jsr/summary" method="get" class="pt5" onsubmit="return validate_findjsr()">
+            <input name="id" size="18" class="form" value="Search JSRs" onfocus="nullify_if_equal(this, 'Search JSRs')" type="text">
+	    <a href="javascript:document.findjsr.submit()" onclick="return validate_findjsr()"><img src="/images/button_go.gif" width="21" height="16" border="0" alt="Submit this Search" name="sub_search"></a>
+        </form><br><br>
+
+        <!-- ** Menu Start ** //-->
+
+        <ul id="p7PMnav">
+            <li><a href="/en/jsr/platform">JSRs by Platform</a></li>
+            <li><a href="/en/jsr/tech">JSRs by Technology</a></li>
+            <li><a href="/en/jsr/stage">JSRs by Stage</a></li>
+            <li><a href="/en/jsr/ec">JSRs by Committee</a></li>
+            <li><a href="/en/jsr/all">List of All JSRs</a></li>
+
+            <!--end find JSRs form -->
+            <div style="clear: both;"><img src="/images/spacer.gif" alt="" height="25" width="1"></div>
+
+            <!--begin my JCP -->
+            <img src="/images/hd_my-jcp.gif" alt="My JCP" height="18" width="150">
+            
+
+          <form name="login" method="get" action="/en/user/login" >
+            <input name="Sign-in" type="submit" title="Sign-in" value="Sign-in" />
+          </form>
+
+            <div style="clear:both"><img src="/images/global/spacer.gif" width="1" height="3" alt=""></div>
+            <div class="noNav">
+                <a href="/en/user/register">Register for Site</a>
+            </div>
+
+             <div class="bar"><img src="/images/hr_dots1.gif" alt="" height="3" width="150"></div>
+           <div class="noNav" style="color: #666666; padding: 0;">
+              Use of JCP site is subject to the
+              <a href="/en/home/terms" style="display:inline;padding: 0">JCP Terms of Use</a> and the
+              <a href="http://www.oracle.com/us/legal/privacy/index.html" style="display:inline;padding: 0" href="">Oracle Privacy Policy</a>
+          </div>
+
+            
+
+            <div style="clear:both"><img src="/images/global/spacer.gif" width="1" height="25" alt=""></div>
+
+            <!--begin JCP info -->
+            <img src="/images/hd_jcp-info.gif" alt="JCP Info" height="18" width="150">
+
+            <li><a href="/en/procedures/overview" class="p7PMtrg">About JCP</a>
+                <ul>
+                    <li><a href="/en/procedures/overview">Program Overview</a></li>
+                    <li><a href="/en/procedures/jcp2">JCP Process Document</a></li>
+                    <li><a href="/en/whatsnew/calendar">Calendar</a></li>
+                    <li><a href="/en/participation/members">JCP Members</a></li>
+                    <li><a href="/en/participation/committee">Executive Committee</a></li>
+                    <li><a href="/en/whatsnew/elections">Elections</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/en/participation/overview" class="p7PMtrg">Get Involved</a>
+		<ul>
+                    <li><a href="/en/participation/overview">Overview</a></li>
+                    <li><a href="/en/participation/membership">Becoming a JCP Member</a></li>
+		</ul>
+            </li>
+
+            <li><a href="/en/resources/contents" class="p7PMtrg">Community Resources</a>
+                <ul>
+                    <li><a href="/en/resources/contents">Overview</a></li>
+                    <li><a href="/en/resources/tutorials">Tutorials</a></li>
+                    <li><a href="/en/resources/multimedia">JCP Podcasts</a></li>
+                    <li><a href="/en/resources/guide">Spec Lead Guide</a></li>
+                    <li><a href="/en/resources/tdk">TCK Tool & Info</a></li>
+                    <li><a href="/en/resources/license_reference">License Reference</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/en/press/pmo" class="p7PMtrg">Community News</a>
+                <ul>
+                    <li><a href="/en/press/pmo">News</a></li>
+                    <li><a href="/en/press/news/awards/awards_main">Programs &amp; Awards</a></li>
+                    <li><a href="/en/press/releases">Press Releases</a></li>
+                    <li><a href="/en/press/success">Success Stories</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/en/introduction/faq">FAQ</a></li>
+
+            <li><a href="/en/resources/contacts">Contact Us</a></li>
+
+            <div style="clear: both;"><img src="/images/spacer.gif" alt="" height="25" width="1"></div>
+
+            <!--[if lte IE 6]><style>#p7PMnav a{height:1em;}#p7PMnav li{height:1em;float:left;clear:both;width:100%}</style><![endif]-->
+            <!--[if IE 6]><style>#p7PMnav li{clear:none;}</style><![endif]-->
+            <!--[if IE 7]><style>#p7PMnav a{zoom:100%;}#p7PMnav li{float:left;clear:both;width:100%;}</style><![endif]-->
+        </ul>
+
+        
+
+        <!--begin ad space -->
+        <div class="ads">
+            <a href="http://java.com/java/download/index.jsp?cid=jdp78399" target="_blank"><img style="display: ;" src="/images/ad_banner2.gif" alt="Ad Banner" border="1" height="70" width="150"></a>
+        </div>
+        <!--end ad space -->
+
+<!-- ** Menu End ** //-->
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;<br>
+
+    
+
+                    &nbsp;<br>
+                    <img src="/images/common/trans.gif" alt="" width="1" height="150"><br>
+
+              
+
+
+
+                </td>
+                <!-- ** END: Navigation Column ** //-->
+
+                <!-- ** BEGIN: Gutter Column ** //-->
+		<td width="10" nowrap><img src="/images/common/trans.gif" alt="" width="10" height="1"></td>
+                <!-- ** END: Gutter Column ** //-->
+
+                <!-- ** BEGIN: Content Column ** //-->
+                <td width="100%" valign="top">
+
+    
+<script type="text/javascript">
+
+String.prototype.trim = function() {
+        return this.replace(/^\s+|\s+$/g,"");
+}
+String.prototype.ltrim = function() {
+        return this.replace(/^\s+/,"");
+}
+String.prototype.rtrim = function() {
+        return this.replace(/\s+$/,"");
+}
+
+function validate_search() {
+	if (document.search.id.value == "Search JSRs" || document.search.id.value.trim().length == 0) {
+		alert("Search terms must be entered first");
+		return false;
+	}
+	return true;
+}
+
+function validate_findjsr() {
+	if (document.findjsr.id.value == "Search JSRs" || document.findjsr.id.value.trim().length == 0) {
+		alert("Search terms must be entered first");
+		return false;
+	}
+	return true;
+}
+
+function nullify_if_equal(field, str) {
+	// alert("val=" + field.value);
+	if (field.value == str) {
+		field.value = "";
+	}
+}
+
+</script>
+<!-- ** END: header.jsp ** //-->
+
+
+
+    <table width="60%" border="0" cellpadding="0" cellspacing="0">
+      <tr>
+        <td width="95%" valign="top"><div class="header1">A Good Look at Women in the JCP<span class="style1"><sup>SM</sup></span> Program
+          </div>
+				<br /><em>By Susan Mitchell</em> <br />
+
+
+			<p>The Java Community Process (JCP) program has a lot to be proud of. The five-year anniversary has come and gone, leaving the community with a sense of being rooted in history. The efficiencies predicted with the launch of <A href=http://www.jcp.org/en/press/news/jcp-v2.6-anniversary>JCP 2.6</a>  have come to pass, so that Java Specification Requests (JSRs) are progressing twice as fast as they did in earlier years. High quality JSRs continue to be submitted, developed, and approved, with about 40 attaining final approval each year. Implementations of the specs are showing up in many products in the marketplace. And women spec leads are down in the trenches helping make it happen.
+<BR><BR>
+When Women's History Month rolled by in March, the JCP Program Management Office (PMO) decided to take a closer look at how those women engineers are doing in the JCP program and to encourage more of them to join the fun. 
+			  <br />
+&nbsp;			</p>
+<div class=header3>Women ARE Hard to Find</div>
+<P>
+The first task, identifying the women participating in the program, was not so easy -- but for the best of reasons. The JCP program is completely gender-neutral. The Java Specification Participation Agreement (JSPA) does not request gender information simply because it does not matter: All roles are open to any member. As a result, the PMO has no way to quickly list women participants in the individual member category. Furthermore, the PMO does not keep track of individual representatives of member organizations.
+<BR><BR>
+The diversity of represented cultures and their naming traditions also hides gender information. While Kay is typically a woman's name in the United States, Kay can be a man in Europe, and Kai can be a man in Asia. 
+<BR><BR>
+Although JCP members rarely see each other face to face, relying on gender-obscuring email for most communication, we were able to pool our knowledge base and figure out who among the Spec Leads was a she rather than a he. 
+			  <br />
+&nbsp;			</p>
+<div class=header3>Women Are NOT Hard to Find</div>
+<p>Once you know who you're looking for, you can see the women interwoven, albeit sporadically, throughout much of the JCP fabric, serving in Expert Groups, commenting on specs, and taking the technical reins as Spec Leads. 
+<BR><BR>
+Until  recently you could even find them on the Executive Committees as representatives of member companies. <a href=/en/press/ec/commFocusEC-Begersen>Rebecca Bergersen</a> of IONA Technologies sat on the Java Standard Edition (SE)/Enterprise Edition (EE) EC and Angana Ghosh formerly of Ericsson was part of the Java Micro Edition (ME) EC until June 2006. Changes occurred though and now the executive room is filled with men only. However this can change again, as <a href=/en/participation/committee>EC elections</a> come up annually and this year's edition is just around the corner.
+<BR><BR>
+Scrolling through the list of 300-plus <a href=http://www.jcp.org/en/jsr/all>Java Specification Requests (JSRs)</a> reveals that about 20 women have started or led Expert Groups, and 13 of those Spec Leads remain involved with the JCP. There is no question that women are certainly capable of guiding these kinds of technical efforts. Linda DeMichiel of Sun Microsystems received the JCP program's coveted <a href=http://www.jcp.org/en/press/news/awards/2006award_winners>Outstanding Java SE/EE Spec Lead Award for 2006</a>. Moreover, three of the 23 elite Star Spec Leads are women, including <a href=http://www.jcp.org/en/press/news/specLeadStars/commFocus_stars_demichiel>Linda</a>, <a href=http://www.jcp.org/en/press/news/specLeadStars/commFocus_stars_chtcherbina>Ekaterina Chtcherbina</a> of Siemens AG, and <a href=http://www.jcp.org/en/press/news/specLeadStars/commFocus_stars_majakangas>Jaana Majakangas</a> of Nokia Corporation.
+			  <br />
+&nbsp;			</p>
+<div class=header3>Working Out the Issues</div>
+<p>Capable women are around, and the PMO would like to see more. What would it take for additional women to step into the role of Spec Lead, for example? 
+
+Clearly, specification leadership is hard work that can and often does require more than regular work hours. At the 2006 JavaOne conference held in San Francisco, one woman programmer was discussing her work life over lunch. She stated, 'Whnw I leave work, I leave work.It's family time.' This sentiment is not unusual among women, but there are creative ways to address it and still find time for the technical challenges that can be so exciting. 
+<BR><BR>
+The most obvious solution is to work for a company that will pay you to do the work of a Spec Lead, usually because the technology to be developed is something the company needs. Another strategy is to reduce the work load to manageable chunks by splitting the task among a set of partners known as co-Spec Leads. Typically, such partnerships are two people, but they can include as many as three or four. 
+<BR><BR>
+Another obstacle might be inexperience with the role. Many successful women and men refer to mentors who helped them along their career path. Some bodies of knowledge are best handed down from person to person. The JCP program tries to make it easy to find mentors. Spec Leads are listed with their contact information with each JSR. Success stories, case studies, and Star Spec Lead profiles are other places to identify and learn from successful Spec Leads and Experts. The PMO offers training sessions to explain the process in detail. 
+<BR><BR>
+Like any organization, it can be helpful to start at a lower level of responsibility and work up from there. In the JCP context, that might mean getting involved with reviewing and commenting on drafts of JSRs, joining an Expert Group as an Observer or an Expert. Spec Leads occasionally step down to move on to other tasks, leaving a natural opening for someone who might be interested in taking over. 
+			  <br />
+&nbsp;			</p>
+<div class=header3>Spotlight on Women Spec Leads</div>
+<p> Boyd Dimmock of IBM was one of the early Spec Lead role models in that she was the source of an early case study of <a href=http://www.jcp.org/en/resources/guide/jsr80>JSR 80, Java USB API</a>.
+<BR><BR>
+Recently, several other women Spec Leads have been willing to share their stories about how they entered their professions and eventually moved into areas of technical responsibility within the JCP program. 
+<BR><BR>
+<div class="header2"><img src="/images/press/memberFocus/stars/stars-final-sml-anim-ir.gif" width="18" height="18" hspace="6" vspace="0" align="baseline"><a href=#Ekaterina>Ekaterina Chtcherbina of Siemens</a></div>
+<BR>
+<div class="header2"><img src="/images/press/memberFocus/stars/stars-final-sml-anim-ir.gif" width="18" height="18" hspace="6" vspace="0" align="baseline"><a href=#Linda>Linda DeMichiel of Sun Microsystems</a></div>
+<BR>
+<div class="header2"><img src="/images/press/memberFocus/stars/stars-final-sml-anim-ir.gif" width="18" height="18" hspace="6" vspace="0" align="baseline"><a href=#Jaana>Jaana Majakangas of Nokia Corporation</a></div>
+<BR>
+<div class="header2"><a href=#Pia>Pia Niemela  of Nokia Corporation</a></div>
+<BR>
+<div class="header2"><a href=#Ellen>Ellen Siegel of Sun Microsystems</a></div>
+<BR>
+<div class="header2"><a href=#Mary>Mary Trumble of IBM</a></div>
+			  <br />
+&nbsp;			</p>
+
+<div class=header3 id=Ekaterina>Ekaterina Chtcherbina of Siemens</div>
+<P>Innovation is Ekaterina Chtcherbina's thing, and she joined Siemens AG Corporate Technology to be in the right place to drive innovative ideas towards market success. Finding it 'absolutely rewarding' to be in the center of unfolding developments, Ekaterina landed in the Expert Group for JSR 205, Wireless Messaging API 2.0. She initialized <a href=http://www.jcp.org/en/jsr/detail?id=253>JSR 253, Mobile Telephony API (MTA)</a>,  becoming a co-Spec Lead with Eric Overtoom of Motorola. Ekaterina and Eric were both recognized as <a href=http://www.jcp.org/en/press/news/specLeadStars/commFocus_stars_chtcherbina>Star Spec Leads</a> for their exceptional work.
+<BR><BR>
+			<table width="107" border="0" align="left" cellpadding="0" cellspacing="0">
+              <tr align="left" valign="top">
+                <td><img src="/images/press/memberFocus/stars/Ekaterina_Chtcherbina.jpg" width="87" height="122"></td>
+                <td>&nbsp;</td>
+              </tr>
+              <tr align="left" valign="top">
+                <td align="center"><span class="style3">Ekaterina Chtcherbina</span></td>
+                <td><img src="/images/common/trans.gif" width="23" height="31" border="0" /></td>
+              </tr>
+            </table>
+			<p>While still employed by Siemens, Ekaterina is currently an MBA student at the <a href=http://www.imd.ch>IMD International business school in Switzerland</a>. She enrolled in the intensive ten-month management program to learn more about leadership and how to create a leadership culture. 'From my point of view, an entrepreneurial way of thinking on all levels of an organization is becoming more and more important as a crucial factor for the success of organizations', especially standards bodies like the JCP program. 'Very often the best team fails to succeed because of the obstacles related to the lack of leadership,' she says. 'I saw my role as a Spec Lead with the JSR 253 Expert Group in creating an open collaborative environment where teamwork supports leadership of all kinds, enables creativity, and motivates the know-how exchange between the Experts. And this formula worked for us.'
+<BR><BR>
+Ekaterina recognizes that women are still in the minority in the JCP program and the IT industry in general. However, in the JSR 253 Expert Group, she was glad to have 'a good representation of women. Having this diversity within the group, I believe I had an easier task as a Spec Lead because diversity allowed us to have more balanced discussions and at the end of the day impacted results in a very positive way.'
+<BR><BR>
+Ekaterina believes women could be encouraged to enter the IT industry if its opportunities were advertised to young girls and the industry's entry barrier for women were minimized. She says, 'These two points require long-term investment in communication and change in the culture of organizations. Many companies today are still not open enough to accept women in technical and especially in management positions.'
+<BR><BR>
+Coaches and mentors have helped Ekaterina along the way. Mentors at Siemens, Lothar Borrmann and Marquart Franz, helped her clarify her own goals and the means for achieving them. At IMD, she has several coaches who are helping her develop personal and career goals and better understand her own leadership style. Ekaterina provides the same service in turn, mentoring several younger women who have just joined or are about to join the industry after graduation. She says, 'I consider the best way to help is to reassure the strengths of the person and to encourage the formulation of authentic and clear life goals.'
+<BR><BR>
+In Ekaterina's recipe for a technical woman's success, she recommends the woman be passionate about the topics in her area of responsibility. Sincerely relating with other people is another important ingredient that will help colleagues and teams bond and get the best out of their combined best efforts.  
+			  <br />
+			  &nbsp;<br />			
+<div class=header3 id=Linda> Linda DeMichiel of Sun Microsystems</div>
+<p>Linda DeMichiel has set herself up to achieve big goals in a focused area. She holds a Ph.D. in Computer Science from Stanford University and has more than 15 years of experience in the areas of databases, object persistence, distributed computing, and object-oriented languages. She is a senior architect in the Java Enterprise Edition (EE) Platform group at Sun Microsystems and Sun's chief architect for Enterprise JavaBeans (EJB) and the Java Persistence API. 
+<BR><BR>
+			<table width="107" border="0" align="left" cellpadding="0" cellspacing="0">
+              <tr align="left" valign="top">
+                <td><img src="/images/press/memberFocus/stars/Linda_DeMichiel.jpg" width="100" height="100"></td>
+                <td>&nbsp;</td>
+              </tr>
+              <tr align="left" valign="top">
+                <td align="center"><span class="style3">Linda DeMichiel</span></td>
+                <td><img src="/images/common/trans.gif" width="23" height="31" border="0" /></td>
+              </tr>
+            </table>
+<p>Linda's experience with the JCP program dates back to 1999, around the time that J2EE director Mala Chandra, a woman, recruited Linda to drive EJB. Linda took over as Spec Lead of EJB with JSR 19 and, later, JSR 153, and, most recently, JSR 220.  She has also represented Sun Microsystems as an Expert Group member on several other JSRs:
+<ul>
+<li> JSR 26, UML/EJB Mapping Specification</li>
+<li> JSR 107, JCACHE - Java Temporary Caching API</li>
+<li> JSR 207, Process Definition for Java</li>
+<li> JSR 225 XQuery API for JavaTM (XQJ)</li>
+</UL><BR> 
+In 2005, Linda achieved recognition as a <a href=/en/press/news/specLeadStars/commFocus_stars_demichiel>Star Spec Lead</a>, and the following year she earned the JCP program award  for Outstanding Java SE/EE Spec Lead of the Year. Linda has been interviewed by <a href=http://www.artima.com/lejava/articles/refactoring_ejb2.html>artima developer</a> and other online and print publications. She is in demand as a speaker at the TheServerSide.com Java Symposium, JavaPolis, O'Reilly Conference on Enterprise Java, and other venues. Her technical session was listed as the <a href=http://java.sun.com/developer/technicalArticles/JavaOne2006/Top10EnterpriseSessions.html>top destination for enterprise developers at the 2006 JavaOne</a> conference.
+<BR><BR>
+Linda has gotten used to being the only woman in her 40-member Expert Group, but she can't help noticing the absence of other women and the need for the industry to encourage senior technical women to become leaders in the Java community.
+<BR><BR>
+She says, 'It's not that universities aren't graduating sufficient technical women--including with masters degrees and even PhDs. However, I have noticed a definite thinning of the ranks in terms of women in positions of senior technical leadership, as opposed to senior management positions such as women directors and VPs. I think we need to put more work into understanding the reasons why that is, and address them.  The longer I have served in my current role, the more noticeable this has become to me.  It is a waste; there should be more of us.'
+			  <br />
+			  &nbsp;<br />			
+<div class=header3 id=Jaana> Jaana Majakangas of Nokia Corporation</div>
+<p>Jaana Majakangas has a masters degree in mathematics and is working as a senior design engineer in the Technology Platforms unit of Nokia Corporation. She was attracted to the multi-faceted nature of her current position, which combines project management and technical work. She appreciates the challenge of learning new technical areas and the opportunity to apply her knowledge to the technical side of the project. 
+<BR><BR>
+			<table width="107" border="0" align="left" cellpadding="0" cellspacing="0">
+              <tr align="left" valign="top">
+                <td><img src="/images/press/memberFocus/stars/Jaana_Majakangas.jpg" width="87" height="122"></td>
+                <td>&nbsp;</td>
+              </tr>
+              <tr align="left" valign="top">
+                <td align="center"><span class="style3">Jaana Majakangas</span></td>
+                <td><img src="/images/common/trans.gif" width="23" height="31" border="0" /></td>
+              </tr>
+            </table>
+<p>In the JCP program, Jaana serves as an Expert for JSR 218, Connected Device Configuration (CDC) 1.1 and JSR, 219 Foundation Profile 1.1. She is also the <a href=http://www.jcp.org/en/press/news/specLeadStars/commFocus_stars_majakangas>Star Spec Lead</a> for JSR 257, Contactless Communication API, and JSR 293, Location API 2.0. Jaana feels that her contributions make a difference. 'The progress of the project depends greatly on my efforts and my ability to get people from several companies working together,' she says.
+<BR><BR>
+As long as a woman  Spec Lead earns the respect of her colleagues, Jaana doesn't think her gender is significant. She says, 'I don't think I'm that different from my male  colleagues; we all do the same job, but maybe through a bit different methods. I set myself and the project clear goals and work to achieve those goals.' On the other hand, since women are a minority in the industry, sometimes Jaana feels she has to work a little harder to get her own ideas through or on rare occasions to keep control in meetings. In her view, these small issues even out pretty quickly. 'My genderB might have been a surprise to some of my Expert Group members in the beginning, but they have gotten used to it already,' she says.
+<BR><BR>
+Jaana senses that the highly masculine image of technology communities may be offputting or intimidating to women.  The difficulties of the technology are often discussed using very technical terminology. She suggests that if community members talked instead about the opportunities the industry brings using less jargon-filled syntax, more women might get interested. Ultimately, Jaana admits, 'It always depends on the personal interests of women. But having worked in an almost completely female work-environment, I personally prefer this current situation when I'm in the minority.'
+<BR><BR>
+Jaana's high school math teacher was instrumental in lighting a fire under her to study mathematics. Once lit, she was hot to trot. In fact, her career in the IT industry started with Nokia before she even graduated from the university, and she's still pleased to be in the career she chose: 'I haven't had any regrets.' Jaana passes on the message to others that her math teacher instilled in her: 'You should believe in yourself. You can do as good a job as any man.'
+<BR><BR>
+Some workers are quite happy to be in the position they are in, while others have ambitions to shoulder an increased level of responsibility. For those who aspire to technical greatness, Jaana urges them to 'go after it; the work can be very rewarding.'
+			  <br />
+			  &nbsp;<br />			
+<div class=header3 id=Pia> Pia Niemela of Nokia Corporation</div>
+<p>Parents often have the strongest influence on a child's career. Because of her mother's strong encouragement and example, Pia Niemela is a senior design engineer at Nokia today. She says, 'It was my mother who all through my school years emphasized that girls should be good at math.'
+<BR><BR>
+			<table width="107" border="0" align="left" cellpadding="0" cellspacing="0">
+              <tr align="left" valign="top">
+                <td><img src="/images/press/memberFocus/pia_niemela.jpg" width="94" height="122"></td>
+                <td>&nbsp;</td>
+              </tr>
+              <tr align="left" valign="top">
+                <td align="center"><span class="style3">Pia Niemela</span></td>
+                <td><img src="/images/common/trans.gif" width="23" height="31" border="0" /></td>
+              </tr>
+            </table>
+<p>Women are still a minority in high tech fields, and Pia believes that parents and schools, not technical communities, are key to turning that around. 'I have to confess to being so old-fashioned that I see benefits in separating girls and boys in certain subjects, including math, physics, and computer science,' says Pia. She offers the example of a child's computer class to explain how mixed-gender classes allow the strong to become stronger and the weak to become weaker. 'When somebody can do something, he becomes the trusted one and the first to grip the tasks. Boys are keen on playing computer games, so they can cope with the computer. If in a computer science class a boy and a girl share a computer, it is the boy who is doing the task and the girl is just looking,' she says. 'As adults we see only the consequences.'
+<BR><BR>
+Pia's own 'benefit-oriented'  personality also contributed to her technical career choice because, as she puts it, 'When doing something concrete you can, at least to certain point, show that you are doing something 'useful' Pia's work with Expert Groups enables her to produce such concrete, useful artifacts. Moreover, she enjoys her Spec Lead role, expecially the exposure to new concepts, new people, and a moderate amount of travel. She worked on:
+<ul>
+<li> JSR 253, Mobile Telephony API (MTA) as an Expert</li>
+<li>JSR 256, Mobile Sensor API as an Expert and later as a Spec Lead</li>
+<li>JSR 280, XML API for Java ME as an Expert and later as a co-Spec Lead with Ellen Siegel of Sun Microsystems </li>
+</ul><br>
+Gender plays a role in how men and women carry out their technical business, but it's up to individuals within the JCP community to act responsibly and learn new, effective tools wherever they can. Recently Pia was challenged by the 'very passive' dynamic of the Mobile Sensor API Expert Group, wondering if she had done something wrong or if the Experts had joined the group only to attain early access to the documents. When Pia discussed the problem with some other Spec Leads during JavaOne conference, an older, experienced man suggested that Pia try offending the members, a startling last resort to jump-start them into action. This approach does not come naturally to Pia, and she's not planning to try it, but she can appreciate  'that it might help, at least for a short while.'
+<BR><BR>
+Pia believes women who are up-and-coming in the technical ranks should bear in mind the concept summarized in the Finnish proverb,  'Nainen on naiselle susi,' which translates, 'A woman is a wolf to another woman.' ' This quotation should be proven false by women showing respect to other women,' Pia advises. She herself has benefited from the feedback and 'competence transfer' of technical women, including her officemate and fellow Spec Lead, Jaana Majakangas, and Natalia Mulligan, the previous Spec Lead for JSR 256. But a woman should accept good input from men, too, as Pia has received from her other colleagues Panu &Aring;kerman, Erkki Rys&auml;, and&nbsp;Kimmo L&ouml;yt&auml;n&auml;.  <br />
+			  &nbsp;<br />			
+<div class=header3 id=Ellen> Ellen Siegel of Sun Microsystems</div>
+<p>Ellen Siegel understands through her experiences what most of us sense instinctively: it's hard to institutionalize change, but individuals can be powerfully influential when they change their own actions. Ellen has seen this play out in her professional life where individuals helped give her some perspective and where she, in turn, had the opportunity to help others adjust.
+<BR><BR>
+			<table width="107" border="0" align="left" cellpadding="0" cellspacing="0">
+              <tr align="left" valign="top">
+                <td><img src="/images/press/memberFocus/ellen_siegel.jpg" width="100" height="100"></td>
+                <td>&nbsp;</td>
+              </tr>
+              <tr align="left" valign="top">
+                <td align="center"><span class="style3">Ellen Siegel</span></td>
+                <td><img src="/images/common/trans.gif" width="23" height="31" border="0" /></td>
+              </tr>
+            </table>
+<p>Professionally, Ellen is an architect for the Mobile and Embedded Architecture and Standards group at Sun Microsystems. Her technical interests focus on communication infrastructure and distributed systems. She holds B.S. degrees in Chemistry and Computer Science from MIT, and M.S. and Ph.D. degrees in Computer Science from Carnegie-Mellon. Ellen portrays her background as broad rather than specific, having explored XML, Web services, networking, operating systems, file systems, and middleware, primarily in the Java Standard Edition (SE)/Enterprise Edition (EE) space. So it is something of a surprise that Ellen is currently an architect in the Java Micro Edition (ME) Architecture and Standards group  at Sun. 'The increased capabilities of the ME platform made it feasible for subsets of key Web service technologies to run on that platform, and my background made me a good candidate to drive some of these JSRs when Sun decided that the time was right to move forward,' she explains.
+<BR><BR>
+Ellen's primary direct involvement with the JCP program is as co-Spec Lead for two JSRs:
+<ul>
+<LI>JSR 279, Service Connection API for Java ME, with Steve Lewontin of Nokia Corporation</li>
+<LI>JSR 280, XML API for Java ME, with Pia Niemela of Nokia Corporation</li></ul>
+As a member of the Architecture and Standards group, she is also involved in ongoing discussions of strategic issues and interrelationships of many current and possibly future JSRs.
+<BR><BR>
+Ellen hasn't paid much attention to her status as a woman in the program partly because, as she says, 'It's a little bit less noticeable being in the minority in a small group than if you're constantly in the larger pool.' Moreover, her minority status is not new. She says, 'I've been in the minority at least since high school. You kind of get used to it, especially if you're the only one. From your perspective, everyone looks uniform, and it's only everyone else who sees that there's somebody different in the group.' She has also noticed that the electronic nature of the interactions of the JCP participants tends to mask gender differences in many ways.
+<BR><BR>
+Ellen wonders if the different ways that men and women communicate may dissuade women from entering technical communities like the JCP program. She says, 'There's not purposeful  exclusion, but there's a tendency for women to avoid the kind of interactions that they are not comfortable with.' This kind of communication might show up in an Expert Group, when someone proposes a new idea. 'One style of discussion is for people to jump on it and tear it apart and turn it into a fairly confrontational kind of discussion, which many people would see as analytical rather than hostile, but others would find very off-putting and difficult to handle. It could be so uncomfortable that some people might hesitate to put their ideas forward and really participate in that kind of a discussion,' Ellen says.
+<BR><BR>
+Now that Ellen understands these interactive styles, she's chosen to adopt some of them when necessary in order to fully engage in group discussions. However, she tries to keep an eye out for those who feel excluded from discussions, so she can draw them in. 'It's hard to institutionalize change, but individuals -- especially those in leadership positions -- can become aware of the tone of the discussion and try to shift it into a cooperative rather than confrontational tone. This kind of change has to be kind of nudged rather than mandated because people don't like being told what not to do.'
+<BR><BR>
+An attempt to change the culture of communication wholesale is practically impossible. Ellen says, 'When dissuasion of women is purposeful and overt, it's easier to fight. When it's subtle and not necessarily even intentional, it's a lot harder to come to grips with.'
+<BR><BR>
+Women who aspire to great technical responsibility should probably build a network of people to talk to when they run into trouble, Ellen says. 'The hardest thing is to be really isolated. Social networking is something that women often do, but we're often more hesitant to try work-oriented, political networking, which generally turns out to be really invaluable.'
+<BR><BR>
+Whenever Ellen needed help, it was there for her. 'I was lucky enough to have people paced throughout my career who allowed me to talk to them for a sanity check or to get their impressions and help make suggestions. There tend to be at least a few people who make a point of  looking out for those who are  behind them in their career ladder and help move them along.' Ellen tries to reciprocate by doing mentoring-type things for people, both by informally easing the interactions among people, and also through more formal mentoring programs.
+			  <br />
+			  &nbsp;<br />			
+<div class=header3 id=Mary> Mary Trumble of IBM</div>
+<p>From early in her career, Mary Trumble has focused on product development, keeping her eyes open for jobs that would let her do a bit of programming as well as get involved in the wider architecture and design issues of globalizing software. For nearly 20 years she has specialized in internationalization. She is currently a Spec Lead for JSR 150, Internationalization Service for J2EE, and a senior software engineer for the Software Group at IBM Corporation. Mary is also active in the W3C I18N Core Working Group, which is part of the effort to make W3C technology useable worldwide, with different languages, scripts, and cultures.
+<BR><BR>
+			<table width="107" border="0" align="left" cellpadding="0" cellspacing="0">
+              <tr align="left" valign="top">
+                <td><img src="/images/press/memberFocus/mary_trumble.jpg" width="100" height="100"></td>
+                <td>&nbsp;</td>
+              </tr>
+              <tr align="left" valign="top">
+                <td align="center"><span class="style3">Mary Trumble</span></td>
+                <td><img src="/images/common/trans.gif" width="23" height="31" border="0" /></td>
+              </tr>
+            </table>
+<p>In some ways, the industry is becoming somewhat more gender-neutral, Mary believes, at least with respect to developers, and she attributes that partly to the new tools we use on a daily basis. 'Except on very small projects, we all collaborate to a much larger extent by email and instant messaging these days, rather than face-to-face, so the focus is more on what's being said than on who's saying it,' she says.
+<BR><BR>
+Although IBM and other large companies where she has been employed have had mentorship programs, Mary has always been able to identify her own male and female role models and emulate them on a less formal basis. She says, 'Even now, when I'm faced with a difficult problem or situation, I sometimes sit back and think, 'OK, I don't know how to handle this, but maybe I can figure out what so-and-so would do in this case.'
+<BR><BR>
+Room to explore and encouraging relationships can have the greatest impact on allowing girls to consider a technical career. Mary says, 'I think it's most important to make sure girls get the opportunity to figure out whether this is something they'd love to do. On an individual level, we all need to remember how easy it is to influence kids with our attitudes and remarks. Teenagers, especially, are watching and listening to us, even when they pretend that they aren't!' In the same way, Mary doesn't formally advise any specific individuals, but she makes a point of getting to know the co-ops and new hires. 
+<BR><BR>
+Mary suggests that those who want more technical and leadership responsibility should do whatever it takes to become the 'go-to person' in their current job assignment, no matter what that happens to be. A go-to person can be counted on to get the most difficult jobs done, having demonstrated a willingness to take charge and follow through. 
+<BR><BR>
+It also helps to be able to 'master the other side of your interfaces by having a deep knowledge of the things that you directly own, and a fairly decent knowledge of the things with which you interface,' Mary says. This kind of technical or practical underpinning increases a person's value to the team while making the job more interesting to perform. Although it may not be possible for everyone, Mary believes one of the best ways to acquire this knowledge base is to specialize in something that cuts across the industry, such as security or globalization. 'Becoming an expert in a cross-system discipline gives you a point of view around which to organize your thoughts and questions when you wade into a new problem or technology,' she says.
+<BR><BR>
+
+<!-- ** BEGIN: footer.jsp ** //-->
+
+
+
+
+
+
+
+
+</td>
+</tr>
+</table>
+
+<!-- ** END: Content Table ** //-->
+
+<!-- ** BEGIN: Footer Table ** //-->
+
+<div id="footer" style="clear: both;">
+    <div class="footleft">
+        <a href="/en/resources/contacts">Contact Us</a>
+    </div>
+	
+    <div class="botbar"><img src="/images/spacer.gif" alt="" height="23" width="1"></div>
+
+    <div class="footleft2">
+         &copy; 2019, Oracle Corporation and/or its affiliates. 
+        <a href="/en/home/terms">Terms of Use</a>. <a href="http://www.oracle.com/us/legal/privacy/index.html">Privacy Policy</a>. <a href="http://www.oracle.com/us/legal/third-party-trademarks/third-party-trademarks-078568.html">Trademarks</a>
+    </div>
+
+    <div class="footright">
+        <img src="/images/common/logo_oracle_footer.gif" alt="Oracle Corporation" height="22" width="91">
+    </div>
+
+    <div style="clear: both;"><img src="/images/spacer.gif" alt="" height="30" width="1"></div>
+</div>
+
+<!-- ** END: Footer Table ** //-->
+
+
+
+<!-- ** Menu Start ** //-->
+
+
+
+</body>
+</html>
+<!-- ** END: footer.jsp ** //-->
+

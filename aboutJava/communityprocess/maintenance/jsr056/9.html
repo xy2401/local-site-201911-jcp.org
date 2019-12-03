@@ -1,0 +1,597 @@
+
+<!-- ** BEGIN: header.jsp ** //-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3c.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+<head>
+    
+
+   
+    <link href="/includes/css/menu.css" rel="stylesheet" type="text/css"></link>
+    <link href="/includes/css/style.css" rel="stylesheet" type="text/css"></link>
+    <!--[if lt IE 6]><link href="/includes/css/style5.css" rel="stylesheet" type="text/css" ></link><![endif]-->
+    <!--[if gte IE 5]><link href="/includes/css/style6.css" rel="stylesheet" type="text/css" ></link><![endif]-->
+    <link href="/includes/css/tabs.css"  rel="stylesheet" type="text/css"></link>
+
+    <script type="text/javascript" src="/includes/scripts/tabs.js"></script>
+    <script type="text/javascript" src="/includes/scripts/menu.js"></script>
+   
+
+    
+
+    
+        <title>The Java Community Process(SM) Program - communityprocess - maintenance</title>
+    
+
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+
+
+<body onload="P7_initPM(0,1,0,0,-1)">
+
+    <a name="top"></a>
+
+    <div id="header">
+	<div id="logo">
+		<a href="/en/home/index"><img src="/images/spacer.gif" alt="Java Community Process" height="81" width="151"></a>
+	</div>
+	<div id="tools">
+		<div class="search">
+			<form name="search" action="/en/jsr/summary" method="get" onsubmit="return validate_search()">
+				<input name="id" value="Search JSRs" size="16" class="form" onfocus="nullify_if_equal(this, 'Search JSRs')" type="text">
+				<a href="javascript:document.search.submit()" onclick="return validate_search()"><img src="/images/button_go.gif" width="21" height="16" border="0" alt="Submit this Search" name="sub_search"></a>
+			</form>
+		</div>
+		<div class="tools">
+			<a href="/en/press/pressroom">Press Room</a> &nbsp;|&nbsp;
+			<a href="http://java.com/java/download/index.jsp?cid=jdp78399">Get Java Here</a> &nbsp;|&nbsp;
+			<!-- <a href="javascript:void(0)">Print Format</a> &nbsp;|&nbsp;&nbsp; -->
+		</div>
+
+	</div>
+	<div style="clear: right;"></div>
+
+        
+
+	<div class="topbar"><img src="/images/spacer.gif" alt="" height="3" width="154"></div>
+	<div id="update"> </div>
+    </div>
+
+
+    
+
+        <!-- ** BEGIN: Content Table ** //-->
+
+        <table width="100%" border="0" cellpadding="0" cellspacing="0">
+
+            <tr>
+
+                <!-- ** BEGIN: Navigation Column ** //-->
+                <td width="150" id="leftcontent" valign="top">
+                    <!-- Navigation Placeholder //-->
+
+                    
+
+                    <div class="bar"><img src="/images/hr_dots1.gif" alt="" height="3" width="150"></div>
+
+        <!-- begin find JSRs form -->
+        <!-- IMPORTANT! do not convert this form to Struts < html : form > tag.  javascript change of form.action property fails. -->
+        <img src="/images/hd_find-jsrs.gif" alt="Find JSRs" height="18" width="150">
+        <form name="findjsr" action="/en/jsr/summary" method="get" class="pt5" onsubmit="return validate_findjsr()">
+            <input name="id" size="18" class="form" value="Search JSRs" onfocus="nullify_if_equal(this, 'Search JSRs')" type="text">
+	    <a href="javascript:document.findjsr.submit()" onclick="return validate_findjsr()"><img src="/images/button_go.gif" width="21" height="16" border="0" alt="Submit this Search" name="sub_search"></a>
+        </form><br><br>
+
+        <!-- ** Menu Start ** //-->
+
+        <ul id="p7PMnav">
+            <li><a href="/en/jsr/platform">JSRs by Platform</a></li>
+            <li><a href="/en/jsr/tech">JSRs by Technology</a></li>
+            <li><a href="/en/jsr/stage">JSRs by Stage</a></li>
+            <li><a href="/en/jsr/ec">JSRs by Committee</a></li>
+            <li><a href="/en/jsr/all">List of All JSRs</a></li>
+
+            <!--end find JSRs form -->
+            <div style="clear: both;"><img src="/images/spacer.gif" alt="" height="25" width="1"></div>
+
+            <!--begin my JCP -->
+            <img src="/images/hd_my-jcp.gif" alt="My JCP" height="18" width="150">
+            
+
+          <form name="login" method="get" action="/en/user/login" >
+            <input name="Sign-in" type="submit" title="Sign-in" value="Sign-in" />
+          </form>
+
+            <div style="clear:both"><img src="/images/global/spacer.gif" width="1" height="3" alt=""></div>
+            <div class="noNav">
+                <a href="/en/user/register">Register for Site</a>
+            </div>
+
+             <div class="bar"><img src="/images/hr_dots1.gif" alt="" height="3" width="150"></div>
+           <div class="noNav" style="color: #666666; padding: 0;">
+              Use of JCP site is subject to the
+              <a href="/en/home/terms" style="display:inline;padding: 0">JCP Terms of Use</a> and the
+              <a href="http://www.oracle.com/us/legal/privacy/index.html" style="display:inline;padding: 0" href="">Oracle Privacy Policy</a>
+          </div>
+
+            
+
+            <div style="clear:both"><img src="/images/global/spacer.gif" width="1" height="25" alt=""></div>
+
+            <!--begin JCP info -->
+            <img src="/images/hd_jcp-info.gif" alt="JCP Info" height="18" width="150">
+
+            <li><a href="/en/procedures/overview" class="p7PMtrg">About JCP</a>
+                <ul>
+                    <li><a href="/en/procedures/overview">Program Overview</a></li>
+                    <li><a href="/en/procedures/jcp2">JCP Process Document</a></li>
+                    <li><a href="/en/whatsnew/calendar">Calendar</a></li>
+                    <li><a href="/en/participation/members">JCP Members</a></li>
+                    <li><a href="/en/participation/committee">Executive Committee</a></li>
+                    <li><a href="/en/whatsnew/elections">Elections</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/en/participation/overview" class="p7PMtrg">Get Involved</a>
+		<ul>
+                    <li><a href="/en/participation/overview">Overview</a></li>
+                    <li><a href="/en/participation/membership">Becoming a JCP Member</a></li>
+		</ul>
+            </li>
+
+            <li><a href="/en/resources/contents" class="p7PMtrg">Community Resources</a>
+                <ul>
+                    <li><a href="/en/resources/contents">Overview</a></li>
+                    <li><a href="/en/resources/tutorials">Tutorials</a></li>
+                    <li><a href="/en/resources/multimedia">JCP Podcasts</a></li>
+                    <li><a href="/en/resources/guide">Spec Lead Guide</a></li>
+                    <li><a href="/en/resources/tdk">TCK Tool & Info</a></li>
+                    <li><a href="/en/resources/license_reference">License Reference</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/en/press/pmo" class="p7PMtrg">Community News</a>
+                <ul>
+                    <li><a href="/en/press/pmo">News</a></li>
+                    <li><a href="/en/press/news/awards/awards_main">Programs &amp; Awards</a></li>
+                    <li><a href="/en/press/releases">Press Releases</a></li>
+                    <li><a href="/en/press/success">Success Stories</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/en/introduction/faq">FAQ</a></li>
+
+            <li><a href="/en/resources/contacts">Contact Us</a></li>
+
+            <div style="clear: both;"><img src="/images/spacer.gif" alt="" height="25" width="1"></div>
+
+            <!--[if lte IE 6]><style>#p7PMnav a{height:1em;}#p7PMnav li{height:1em;float:left;clear:both;width:100%}</style><![endif]-->
+            <!--[if IE 6]><style>#p7PMnav li{clear:none;}</style><![endif]-->
+            <!--[if IE 7]><style>#p7PMnav a{zoom:100%;}#p7PMnav li{float:left;clear:both;width:100%;}</style><![endif]-->
+        </ul>
+
+        
+
+        <!--begin ad space -->
+        <div class="ads">
+            <a href="http://java.com/java/download/index.jsp?cid=jdp78399" target="_blank"><img style="display: ;" src="/images/ad_banner2.gif" alt="Ad Banner" border="1" height="70" width="150"></a>
+        </div>
+        <!--end ad space -->
+
+<!-- ** Menu End ** //-->
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;<br>
+
+    
+
+                    &nbsp;<br>
+                    <img src="/images/common/trans.gif" alt="" width="1" height="150"><br>
+
+              
+
+
+
+                </td>
+                <!-- ** END: Navigation Column ** //-->
+
+                <!-- ** BEGIN: Gutter Column ** //-->
+		<td width="10" nowrap><img src="/images/common/trans.gif" alt="" width="10" height="1"></td>
+                <!-- ** END: Gutter Column ** //-->
+
+                <!-- ** BEGIN: Content Column ** //-->
+                <td width="100%" valign="top">
+
+    
+<script type="text/javascript">
+
+String.prototype.trim = function() {
+        return this.replace(/^\s+|\s+$/g,"");
+}
+String.prototype.ltrim = function() {
+        return this.replace(/^\s+/,"");
+}
+String.prototype.rtrim = function() {
+        return this.replace(/\s+$/,"");
+}
+
+function validate_search() {
+	if (document.search.id.value == "Search JSRs" || document.search.id.value.trim().length == 0) {
+		alert("Search terms must be entered first");
+		return false;
+	}
+	return true;
+}
+
+function validate_findjsr() {
+	if (document.findjsr.id.value == "Search JSRs" || document.findjsr.id.value.trim().length == 0) {
+		alert("Search terms must be entered first");
+		return false;
+	}
+	return true;
+}
+
+function nullify_if_equal(field, str) {
+	// alert("val=" + field.value);
+	if (field.value == str) {
+		field.value = "";
+	}
+}
+
+</script>
+<!-- ** END: header.jsp ** //-->
+
+
+
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head>
+	<meta http-equiv="CONTENT-TYPE" content="text/html; charset=windows-1252">
+	<title></title>
+	<meta name="GENERATOR" content="OpenOffice 4.0.0  (Win32)">
+	<meta name="AUTHOR" content="Andrew Herrick">
+	<meta name="CREATED" content="20150511;12572352">
+	<meta name="CHANGEDBY" content="Andrew Herrick">
+	<meta name="CHANGED" content="20150720;13294415">
+	<meta name="CHANGEDBY" content="Andrew Herrick">
+	<meta name="CHANGEDBY" content="Andrew Herrick">
+	<style type="text/css">
+	<!--
+		@page { margin: 0.79in }
+		H2.cjk { font-family: "SimSun" }
+		H2.ctl { font-family: "Mangal" }
+		H3.cjk { font-family: "SimSun" }
+		H3.ctl { font-family: "Mangal" }
+		H4.cjk { font-family: "SimSun" }
+		H4.ctl { font-family: "Mangal" }
+		A:link { so-language: zxx }
+		CODE.cjk { font-family: "NSimSun", monospace }
+	-->
+	</style>
+</head>
+<body dir="LTR" lang="en-US">
+<h2 class="western" style="page-break-after: avoid"><a name="JNLPSpecification9-FollowingareproposedspecificationchangesforJSR056forversion9:"></a>
+Following are proposed specification changes for JSR 056 for version
+9:</h2>
+<h3 class="western"><a name="JNLPSpecification9.)Specificationversionupdateto9"></a>
+0.) Specification version update to 9</h3>
+<p>The objective here is to update section 0, the Preface, to reflect
+specification version 9 and to include this list of changes since
+version 8.20</p>
+<p>&nbsp;</p>
+<p><strong>Section 0</strong> - change three instances of "v8.20"
+to "v9"</p>
+<p><strong>add section 0.7.8 as follows:</strong></p>
+<p><strong>0.7.8 Changes since release 8.20</strong></p>
+<p>This is a minor update of the version 8.20 specification. The
+changes are described below:</p>
+<ul>
+	<li><p>Modify Appendix A to avoid the non-transitive definition of
+	version comparisons when only one of two versions can be parsed as a
+	Java int.</p>
+	</li><li><p>Modify section 3.8.1 to clarify use of "java"
+	resource elements with nested resources in extension descriptors.</p>
+	</li><li><p>Modify section 3.4 and Appendix A to conform to XML
+	specification by requiring "&amp;" version-range combiner
+	be expressed as "&amp;amp;"</p>
+	</li><li><p>Modify sections 4 and 5, and Appendix C, to introduce the new
+	attribute "type" to the "application-desc" , and
+	to add the "param" sub element. 
+	</p>
+</li></ul>
+<p>This revision introduces the version number (9) for the JNLP
+file and the JNLP API. Version 9 is a proper super set of version
+1.0, and of version 8.20. A JNLP Client implementing this
+specification must be able to run a JNLP file which requires 1.0,
+1.5, 6.0, 6.0.10, 6.0.18, 7.0, 8.20, or 9; i.e., the spec attribute
+in the jnlp element is set to any of 1.0, 1.5, 6.0, 6.0.10, 6.0.18,
+7.0, 8.20 or 9.</p>
+<p>A complete list of changes for v9 can be found at:</p>
+<p><code class="western"><a href="http://jcp.org/aboutJava/communityprocess/maintenance/jsr056/9.html">http://jcp.org/aboutJava/communityprocess/maintenance/jsr056/9.html</a></code></p>
+<p>&nbsp;</p>
+<h3 class="western"><a name="JNLPSpecification9-1.)JDK-6506300:JNLPSpecification:VersionSelectionNotWellDefined"></a>
+1.) <a href="https://bugs.openjdk.java.net/browse/JDK-6506300">JDK-6506300</a>:
+JNLP Specification: Version Selection Not Well Defined</h3>
+<p>The objective here is to re-define how version components are
+compared when one can parsed as a java int, and the other cannot, to
+avoid the existing non-transitive definition.</p>
+<p>&nbsp;</p>
+<p><strong>Appendix A says:</strong></p>
+<p>"Each element in a tuple is treated as either a numeric or
+alphanumeric. Two elements are compared numerically if they can both
+be parsed as Java <code class="western">ints</code>, otherwise they
+are compared lexicographically according to the ASCII value<sup>15</sup>
+of the individual characters."</p>
+<p><strong>Change to:</strong></p>
+<p>"
+Each element in a tuple is either numeric or alphanumeric. An element is numeric if it can be parsed as a Java <code class="western">int</code>,
+ otherwise it is alphanumeric. Two numeric elements are compared 
+numerically. Two alphanumeric elements are compared lexicographically 
+according to the Unicode value of the individual characters. When one 
+element is numeric and the other is alphanumeric, the alphanumeric 
+element is greater than the numeric element. (Numeric elements have 
+lower precedence than non-numeric elements.)
+"
+</p><p>&nbsp;</p>
+<h3 class="western"><a name="JNLPSpecification9-2.)JDK-6758890:Nestedresourcesinjnlporj2setagofcomponentextensionsjnlpspecissue."></a>
+2.) <a href="https://bugs.openjdk.java.net/browse/JDK-6758890">JDK-6758890</a>:
+Nested resources in jnlp or j2se tag of component extensions jnlp
+spec issue.</h3>
+<p>The objective here is to allow extension jnlp files to have to
+have java (or j2se) resources.&nbsp; Though those java resources
+cannot govern what jre is used, they can can have nested resources
+that are only used when the specified version is used.</p>
+<p>&nbsp;</p>
+<p><strong>Section 3.8.1 says:</strong></p>
+<p>"No java elements can be specified as part of the resources."</p>
+<p><strong>Change to:</strong></p>
+<p>"A java element in a component extension will not govern what
+version of java is used, but may be used containing nested resource
+elements, and then those resources may be used only when using a java
+version that matches the given version as specified in section 4.6"</p>
+<p>&nbsp;</p>
+<h3 class="western"><a name="JNLPSpecification9-3.)JDK-8075194:Testcaseshttp_requests/VersionBasedProtocol/index_version_andandindex_version_and2failswithjnlpclientexitcodeis-1"></a>
+3.) <a href="https://bugs.openjdk.java.net/browse/JDK-8075194">JDK-8075194</a>:
+Test cases http_requests/VersionBasedProtocol/index_version_and and
+index_version_and2 fails with jnlp client exit code is -1</h3>
+<p>The objective here is to fix problem where specification is
+contradictory to xml specification.&nbsp; The use of ampersand "&amp;"
+instead of "&amp;amp;" is prohibited in xml:</p>
+<p>(also note typo in Appendix A, "simple-element" instead
+of "simple-range")</p>
+<p>&nbsp;</p>
+<p><strong>Section 3.4 says:</strong></p>
+<p>"A version range is either a version-id, a version-id
+followed by a star (*), a version-id followed by a plus sign (+) , or
+two version-ranges combined using an ampersand (&amp;)."</p>
+<p><strong>change to:</strong></p>
+<p>"A version range is either a version-id, a version-id
+followed by a star (*), a version-id followed by a plus sign (+) , or
+two version-ranges combined using an ampersand (&amp;amp;)."</p>
+<p><strong>Appendix A says:</strong></p>
+<p>"&nbsp; version-range ::= simple-range ( "&amp;"
+simple-element) * "</p>
+<p><strong>change to:</strong></p>
+<p>"&nbsp; version-range ::= simple-range ( "&amp;amp;"
+simple-range) *</p>
+<p><a name="JNLPSpecification9-4.)JDK-8062186:RevisituseofFXxmlextension"></a>
+&nbsp;<strong><font size="4">4.) <a href="https://bugs.openjdk.java.net/browse/JDK-8062186">JDK-8062186</a>:
+Revisit use of FX xml extension</font></strong></p>
+<h4 class="western"><a name="JNLPSpecification9-4.1)Section3.7.1"></a>
+4.1) Section 3.7.1</h4>
+<p>change from:</p>
+<h3 class="western"><a name="JNLPSpecification9-3.7.1ApplicationDescriptorforanApplication"></a>
+<code class="western">3.7.1 Application Descriptor for an Application</code></h3>
+<p><code class="western">A JNLP file is an application descriptor if
+the application-desc element is specified.</code></p>
+<p><code class="western">The application-desc element contains all
+information needed to launch an application, given the resources
+described by the resources element. For example:</code></p>
+<blockquote><code class="western">&lt;application-desc
+main-class="com.example.MyMain"&gt;</code><br><code class="western">&nbsp;&nbsp;&lt;argument&gt;Arg1&lt;/argument&gt;</code><br><code class="western">&nbsp;&nbsp;&lt;argument&gt;Arg2&lt;/argument&gt;</code><br><code class="western">&lt;/application-desc&gt;</code></blockquote>
+<p><code class="western"><strong>main-class</strong></code><strong>
+attribute:</strong><code class="western"> The name of the class
+containing the public static void main(String[]) method of the
+application. This attribute can be omitted if the main class can be
+found from the Main-Class manifest entry in the main JAR file. See
+section <a href="http://oklahoma.us.oracle.com/www/doc/jnlp/8.20/launch.html#launching">5.2</a>.</code></p>
+<p><strong>progress-class attribute:</strong><code class="western">
+The name of a class containing an implementation of the
+javax.jnlp.DownloadServiceListener interface.</code></p>
+<p><code class="western">The optional progress-class attribute can be
+used by an application to indicate to the JNLP client it's preference
+that the specified class be used as a replacement for the client's
+default method of displaying download progress to the user. If the
+JNLP client can find and load this class, and it implements the
+DownloadServiceListener interface, it is free to call it during the
+downloading of other resources, instead of displaying progress in
+it's default way. (see section 4.4).</code></p>
+<p><strong>argument element:</strong><code class="western"> Contains
+an ordered list of arguments for the application.</code></p>
+<p><code class="western">Section <a href="http://oklahoma.us.oracle.com/www/doc/jnlp/8.20/launch.html#launching">5.2</a>
+describes how an application is launched.</code></p>
+<p>to:</p>
+<h3 class="western"><a name="JNLPSpecification9-3.7.1ApplicationDescriptorforanApplication.1"></a>
+<code class="western">3.7.1 Application Descriptor for an Application</code></h3>
+<p><code class="western">A JNLP file is an application descriptor if
+the application-desc element is specified.</code></p>
+<p><code class="western">The application-desc element contains all
+information needed to launch an application, given the resources
+described by the resources element. For example:</code></p>
+<p>&nbsp;</p>
+<blockquote><code class="western">&lt;application-desc type="Java"
+main-class="com.example.MyMain"&gt;</code><br><code class="western">&nbsp;&nbsp;&lt;argument&gt;Arg1&lt;/argument&gt;</code><br><code class="western">&nbsp;&nbsp;&lt;argument&gt;Arg2&lt;/argument&gt;</code>&nbsp;</blockquote>
+<blockquote><code class="western">&nbsp; </code><code class="western">&lt;param
+name="Param1" value="Value1"/&gt;</code><br><code class="western">&nbsp;&nbsp;&lt;param
+name="Param2" value="Value2"/&gt;</code><br><code class="western">&lt;/application-desc&gt;</code></blockquote>
+<p><strong>type attribute:&nbsp;</strong><code class="western">The
+optional type attribute indicates the type of application contained
+in the resources and identified by the main-class attribute.&nbsp;
+The only value of type required to be supported by a JNLP Client is
+the default value "Java".&nbsp; If given the type attribute
+value&nbsp; is not supported by the JNLP Client, the launch should be
+aborted.&nbsp; If a JNLP Client supports other types of applications
+(such as "JavaFX", or "JRuby"), The meaning
+and/or use of the other application-desc attributes (main-class and
+progress-class) and sub-elements (argument and param) may vary as is
+appropriate for that type of application.</code></p>
+<p>A value of "Java" (default) indicates the application is
+a java application.</p>
+<p><strong>main-class attribute:</strong><code class="western"> (for
+type "Java") The name of the class containing the public
+static void main(String[]) method of the application. This attribute
+can be omitted if the main class can be found from the Main-Class
+manifest entry in the main JAR file. See section <a href="http://oklahoma.us.oracle.com/www/doc/jnlp/8.20/launch.html#launching">5.2</a>.</code></p>
+<p><strong>progress-class attribute:</strong><code class="western">
+(for type "Java") The name of a class containing an
+implementation of the javax.jnlp.DownloadServiceListener interface.</code></p>
+<p><code class="western">The optional progress-class attribute can be
+used by an application to indicate to the JNLP client it's preference
+that the specified class be used as a replacement for the client's
+default method of displaying download progress to the user. If the
+JNLP client can find and load this class, and it implements the
+DownloadServiceListener interface, it is free to call it during the
+downloading of other resources, instead of displaying progress in
+it's default way. (see section 4.4).</code></p>
+<p><strong>argument element:</strong><code class="western"> (for type
+"Java") Contains an ordered list of arguments for the
+application.</code></p>
+<p><strong>param element:</strong> Contains a parameter to the
+Application. The <code class="western">name</code> attribute contains
+the name of the parameter, and the <code class="western">value</code>
+attribute contains the value. The parameters of an application-desc
+of type "Java" shall be ignored.</p>
+<p><code class="western">Section <a href="http://oklahoma.us.oracle.com/www/doc/jnlp/8.20/launch.html#launching">5.2</a>
+describes how an application is launched.</code></p>
+<h3 class="western"><a name="JNLPSpecification9-4.1)Section5.2"></a>
+<strong>4.1) Section 5.2</strong></h3>
+<p>change:</p>
+<h3 class="western"><a name="JNLPSpecification9-5.2.1LaunchinganApplication"></a>
+5.2.1 Launching an Application</h3>
+<p>If the JNLP file contains the <code class="western">application-desc</code>
+element, then an application must be launched.</p>
+<p>The main class for the application is by default determined by the
+main-class attribute of the <code class="western">application-desc</code>
+element. If this is not specified, then the Main-Class manifest entry
+for the main JAR file is used. If neither is specified, then the
+launch must be aborted.</p>
+<p>The application is launched by invoking the static public void
+main(String[] argv) method of the main class. The argv argument is
+constructed from the <code class="western">argument</code> elements
+of the application-descriptor element.</p>
+<p>to:</p>
+<h3 class="western"><a name="JNLPSpecification9-5.2.1LaunchinganApplication.1"></a>
+5.2.1 Launching an Application</h3>
+<p>If the JNLP file contains the <code class="western">application-desc</code>
+element, and the type attribute is "Java" then a Java
+application must be launched.</p>
+<p>The main class for the application is by default determined by the
+main-class attribute of the <code class="western">application-desc</code>
+element. If this is not specified, then the Main-Class manifest entry
+for the main JAR file is used. If neither is specified, then the
+launch must be aborted.</p>
+<p>The application is launched by invoking the static public void
+main(String[] argv) method of the main class. The argv argument is
+constructed from the <code class="western">argument</code> elements
+of the application-descriptor element.</p>
+<p>It is not the intent of this specification to define the behavior
+for launching an application of any other type, only to provide the
+syntax of the jnlp file for jnlp clients that chose to support other
+application type.</p>
+<h3 class="western"><a name="JNLPSpecification9-4.2)AppendixC"></a><strong>4.2)
+Appendix C</strong></h3>
+<p>change :</p>
+<p>&lt;!ELEMENT application-desc (argument*)<strong>&gt;</strong></p>
+<p>to:</p>
+<p>&lt;!ELEMENT application-desc (argument*) (param*)&gt;</p>
+<p>and add:</p>
+<blockquote><code class="western">&lt;!--</code><br><code class="western">The
+type attribute of the application-desc element describes the type of
+application to run.</code> <code class="western">Default value(i.e.,
+if the element is not specified) is Java.</code><br><code class="western">--&gt;</code></blockquote>
+<p><code class="western"><strong>&lt;!ATTLIST application-desc type
+CDATA #IMPLIED&gt;</strong></code></p>
+<p>&nbsp;</p>
+<p><br><br>
+</p>
+<p><br><br>
+</p>
+
+
+</body></html>
+
+
+
+<!-- ** BEGIN: footer.jsp ** //-->
+
+
+
+
+
+
+
+
+</td>
+</tr>
+</table>
+
+<!-- ** END: Content Table ** //-->
+
+<!-- ** BEGIN: Footer Table ** //-->
+
+<div id="footer" style="clear: both;">
+    <div class="footleft">
+        <a href="/en/resources/contacts">Contact Us</a>
+    </div>
+	
+    <div class="botbar"><img src="/images/spacer.gif" alt="" height="23" width="1"></div>
+
+    <div class="footleft2">
+         &copy; 2019, Oracle Corporation and/or its affiliates. 
+        <a href="/en/home/terms">Terms of Use</a>. <a href="http://www.oracle.com/us/legal/privacy/index.html">Privacy Policy</a>. <a href="http://www.oracle.com/us/legal/third-party-trademarks/third-party-trademarks-078568.html">Trademarks</a>
+    </div>
+
+    <div class="footright">
+        <img src="/images/common/logo_oracle_footer.gif" alt="Oracle Corporation" height="22" width="91">
+    </div>
+
+    <div style="clear: both;"><img src="/images/spacer.gif" alt="" height="30" width="1"></div>
+</div>
+
+<!-- ** END: Footer Table ** //-->
+
+
+
+<!-- ** Menu Start ** //-->
+
+
+
+</body>
+</html>
+<!-- ** END: footer.jsp ** //-->
+

@@ -1,0 +1,393 @@
+
+<!-- ** BEGIN: header.jsp ** //-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3c.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+<head>
+    
+
+   
+    <link href="/includes/css/menu.css" rel="stylesheet" type="text/css"></link>
+    <link href="/includes/css/style.css" rel="stylesheet" type="text/css"></link>
+    <!--[if lt IE 6]><link href="/includes/css/style5.css" rel="stylesheet" type="text/css" ></link><![endif]-->
+    <!--[if gte IE 5]><link href="/includes/css/style6.css" rel="stylesheet" type="text/css" ></link><![endif]-->
+    <link href="/includes/css/tabs.css"  rel="stylesheet" type="text/css"></link>
+
+    <script type="text/javascript" src="/includes/scripts/tabs.js"></script>
+    <script type="text/javascript" src="/includes/scripts/menu.js"></script>
+   
+
+    
+
+    
+        <title>The Java Community Process(SM) Program - communityprocess - maintenance</title>
+    
+
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+
+
+<body onload="P7_initPM(0,1,0,0,-1)">
+
+    <a name="top"></a>
+
+    <div id="header">
+	<div id="logo">
+		<a href="/en/home/index"><img src="/images/spacer.gif" alt="Java Community Process" height="81" width="151"></a>
+	</div>
+	<div id="tools">
+		<div class="search">
+			<form name="search" action="/en/jsr/summary" method="get" onsubmit="return validate_search()">
+				<input name="id" value="Search JSRs" size="16" class="form" onfocus="nullify_if_equal(this, 'Search JSRs')" type="text">
+				<a href="javascript:document.search.submit()" onclick="return validate_search()"><img src="/images/button_go.gif" width="21" height="16" border="0" alt="Submit this Search" name="sub_search"></a>
+			</form>
+		</div>
+		<div class="tools">
+			<a href="/en/press/pressroom">Press Room</a> &nbsp;|&nbsp;
+			<a href="http://java.com/java/download/index.jsp?cid=jdp78399">Get Java Here</a> &nbsp;|&nbsp;
+			<!-- <a href="javascript:void(0)">Print Format</a> &nbsp;|&nbsp;&nbsp; -->
+		</div>
+
+	</div>
+	<div style="clear: right;"></div>
+
+        
+
+	<div class="topbar"><img src="/images/spacer.gif" alt="" height="3" width="154"></div>
+	<div id="update"> </div>
+    </div>
+
+
+    
+
+        <!-- ** BEGIN: Content Table ** //-->
+
+        <table width="100%" border="0" cellpadding="0" cellspacing="0">
+
+            <tr>
+
+                <!-- ** BEGIN: Navigation Column ** //-->
+                <td width="150" id="leftcontent" valign="top">
+                    <!-- Navigation Placeholder //-->
+
+                    
+
+                    <div class="bar"><img src="/images/hr_dots1.gif" alt="" height="3" width="150"></div>
+
+        <!-- begin find JSRs form -->
+        <!-- IMPORTANT! do not convert this form to Struts < html : form > tag.  javascript change of form.action property fails. -->
+        <img src="/images/hd_find-jsrs.gif" alt="Find JSRs" height="18" width="150">
+        <form name="findjsr" action="/en/jsr/summary" method="get" class="pt5" onsubmit="return validate_findjsr()">
+            <input name="id" size="18" class="form" value="Search JSRs" onfocus="nullify_if_equal(this, 'Search JSRs')" type="text">
+	    <a href="javascript:document.findjsr.submit()" onclick="return validate_findjsr()"><img src="/images/button_go.gif" width="21" height="16" border="0" alt="Submit this Search" name="sub_search"></a>
+        </form><br><br>
+
+        <!-- ** Menu Start ** //-->
+
+        <ul id="p7PMnav">
+            <li><a href="/en/jsr/platform">JSRs by Platform</a></li>
+            <li><a href="/en/jsr/tech">JSRs by Technology</a></li>
+            <li><a href="/en/jsr/stage">JSRs by Stage</a></li>
+            <li><a href="/en/jsr/ec">JSRs by Committee</a></li>
+            <li><a href="/en/jsr/all">List of All JSRs</a></li>
+
+            <!--end find JSRs form -->
+            <div style="clear: both;"><img src="/images/spacer.gif" alt="" height="25" width="1"></div>
+
+            <!--begin my JCP -->
+            <img src="/images/hd_my-jcp.gif" alt="My JCP" height="18" width="150">
+            
+
+          <form name="login" method="get" action="/en/user/login" >
+            <input name="Sign-in" type="submit" title="Sign-in" value="Sign-in" />
+          </form>
+
+            <div style="clear:both"><img src="/images/global/spacer.gif" width="1" height="3" alt=""></div>
+            <div class="noNav">
+                <a href="/en/user/register">Register for Site</a>
+            </div>
+
+             <div class="bar"><img src="/images/hr_dots1.gif" alt="" height="3" width="150"></div>
+           <div class="noNav" style="color: #666666; padding: 0;">
+              Use of JCP site is subject to the
+              <a href="/en/home/terms" style="display:inline;padding: 0">JCP Terms of Use</a> and the
+              <a href="http://www.oracle.com/us/legal/privacy/index.html" style="display:inline;padding: 0" href="">Oracle Privacy Policy</a>
+          </div>
+
+            
+
+            <div style="clear:both"><img src="/images/global/spacer.gif" width="1" height="25" alt=""></div>
+
+            <!--begin JCP info -->
+            <img src="/images/hd_jcp-info.gif" alt="JCP Info" height="18" width="150">
+
+            <li><a href="/en/procedures/overview" class="p7PMtrg">About JCP</a>
+                <ul>
+                    <li><a href="/en/procedures/overview">Program Overview</a></li>
+                    <li><a href="/en/procedures/jcp2">JCP Process Document</a></li>
+                    <li><a href="/en/whatsnew/calendar">Calendar</a></li>
+                    <li><a href="/en/participation/members">JCP Members</a></li>
+                    <li><a href="/en/participation/committee">Executive Committee</a></li>
+                    <li><a href="/en/whatsnew/elections">Elections</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/en/participation/overview" class="p7PMtrg">Get Involved</a>
+		<ul>
+                    <li><a href="/en/participation/overview">Overview</a></li>
+                    <li><a href="/en/participation/membership">Becoming a JCP Member</a></li>
+		</ul>
+            </li>
+
+            <li><a href="/en/resources/contents" class="p7PMtrg">Community Resources</a>
+                <ul>
+                    <li><a href="/en/resources/contents">Overview</a></li>
+                    <li><a href="/en/resources/tutorials">Tutorials</a></li>
+                    <li><a href="/en/resources/multimedia">JCP Podcasts</a></li>
+                    <li><a href="/en/resources/guide">Spec Lead Guide</a></li>
+                    <li><a href="/en/resources/tdk">TCK Tool & Info</a></li>
+                    <li><a href="/en/resources/license_reference">License Reference</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/en/press/pmo" class="p7PMtrg">Community News</a>
+                <ul>
+                    <li><a href="/en/press/pmo">News</a></li>
+                    <li><a href="/en/press/news/awards/awards_main">Programs &amp; Awards</a></li>
+                    <li><a href="/en/press/releases">Press Releases</a></li>
+                    <li><a href="/en/press/success">Success Stories</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/en/introduction/faq">FAQ</a></li>
+
+            <li><a href="/en/resources/contacts">Contact Us</a></li>
+
+            <div style="clear: both;"><img src="/images/spacer.gif" alt="" height="25" width="1"></div>
+
+            <!--[if lte IE 6]><style>#p7PMnav a{height:1em;}#p7PMnav li{height:1em;float:left;clear:both;width:100%}</style><![endif]-->
+            <!--[if IE 6]><style>#p7PMnav li{clear:none;}</style><![endif]-->
+            <!--[if IE 7]><style>#p7PMnav a{zoom:100%;}#p7PMnav li{float:left;clear:both;width:100%;}</style><![endif]-->
+        </ul>
+
+        
+
+        <!--begin ad space -->
+        <div class="ads">
+            <a href="http://java.com/java/download/index.jsp?cid=jdp78399" target="_blank"><img style="display: ;" src="/images/ad_banner2.gif" alt="Ad Banner" border="1" height="70" width="150"></a>
+        </div>
+        <!--end ad space -->
+
+<!-- ** Menu End ** //-->
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;<br>
+
+    
+
+                    &nbsp;<br>
+                    <img src="/images/common/trans.gif" alt="" width="1" height="150"><br>
+
+              
+
+
+
+                </td>
+                <!-- ** END: Navigation Column ** //-->
+
+                <!-- ** BEGIN: Gutter Column ** //-->
+		<td width="10" nowrap><img src="/images/common/trans.gif" alt="" width="10" height="1"></td>
+                <!-- ** END: Gutter Column ** //-->
+
+                <!-- ** BEGIN: Content Column ** //-->
+                <td width="100%" valign="top">
+
+    
+<script type="text/javascript">
+
+String.prototype.trim = function() {
+        return this.replace(/^\s+|\s+$/g,"");
+}
+String.prototype.ltrim = function() {
+        return this.replace(/^\s+/,"");
+}
+String.prototype.rtrim = function() {
+        return this.replace(/\s+$/,"");
+}
+
+function validate_search() {
+	if (document.search.id.value == "Search JSRs" || document.search.id.value.trim().length == 0) {
+		alert("Search terms must be entered first");
+		return false;
+	}
+	return true;
+}
+
+function validate_findjsr() {
+	if (document.findjsr.id.value == "Search JSRs" || document.findjsr.id.value.trim().length == 0) {
+		alert("Search terms must be entered first");
+		return false;
+	}
+	return true;
+}
+
+function nullify_if_equal(field, str) {
+	// alert("val=" + field.value);
+	if (field.value == str) {
+		field.value = "";
+	}
+}
+
+</script>
+<!-- ** END: header.jsp ** //-->
+
+
+
+
+
+
+<HTML><HEAD><TITLE>Change Log for JSR-000181 Web Services Metadata for the Java Platform</TITLE>
+</HEAD><BODY><H2><CENTER>Change Log for JSR-000181 Web Services Metadata for the Java Platform</CENTER></H2>
+This page details the proposed, accepted and deferred changes to JSR 181 documenting the changes that 
+will go into the next revision, per <A href="http://jcp.org/en/procedures/jcp2#4.2">Section 4.2 of the JCP 2.6 document</A>.
+
+<P>Last updated: 24 March 2006
+
+<h2>Description</h2><p>Maintenance revision of Web Services Metadata for the Java Platform
+
+</p><h2><b>Maintenance Lead</b></h2><p>Stuart Edmondston, BEA Systems<br>Brian Zotter, BEA Systems
+
+</p><h2>Feedback</h2><p>Comments should be sent to <a href="mailto:jsr-181-comments@jcp.org">jsr-181-comments@jcp.org  </a>.
+
+<br></p><p><TABLE width="100%" border=1><THEAD>
+<TD COLSPAN=99><h2>PROPOSED CHANGES</h2></TD>
+</THEAD>
+
+<TBODY><TR>
+<TD><B>Request</B></TD>
+<TD><B>Summary</B></TD>
+<TD><B>Specification</B></TD>
+</TR><TR><TD width="2%">1</TD><TD width="28%">Change version to 2.0&nbsp;</TD><TD width="70%">Title page<br><br>Replace:<br><br>Version 1.0<br><br>With:<br><br>Version 2.0<br>&nbsp;</TD></TR>
+
+<TR><TD width="2%">2</TD><TD width="28%">WebResult - WebParam has a header="true" annotation element. WebResult does not have any such annotation element. Without that we cannot bind a return type(WebResult) to a header.&nbsp;</TD><TD width="70%">Section 4.5.1 - Description<br><br>Add:<br><br>header	If true, the parameter is in the message header rather then the message body.  	false<br><br>Section 4.5.2 - Annotation Type Definition<br><br>Add:<br><br>boolean header() default false;<br><br>Section 6.2 - Headers<br><br>Add:<br><br>Results annotated with the @WebResult.header annotation element map to SOAP headers instead of elements in the SOAP body.  Header results appear as parts in the operation's output message.  Header results are included as soap:header elements in the appropriate wsdl:output sections of the binding operation.  Headers are always literal.  The @WebResult.name and @WebResult.targetNamespace annotations determine the QName of the XML element representing the header.<br>&nbsp;</TD></TR>
+
+<TR><TD width="2%">3</TD><TD width="28%">A document "bare" style operation can have a void return type and a Holder as a parameter. The Holder of course would have to be INOUT. It could also have 2 parameters one IN and one OUT.&nbsp;</TD><TD width="70%">Section 6.1.2.2 - Document 'Bare' Style<br><br>Replace:<br><br>Web Services that use the document "bare" style MUST adhere to several restrictions.  Each document "bare" operation MUST have only a single non-header parameter.  If the operation is not marked @Oneway, it MUST also have a non-void return value.<br><br>With:<br><br>Web Services that use the document "bare" style MUST adhere to the following restrictions:<br><br>o	If the operation is marked @Oneway, it MUST have a void return value, a single non-header parameter marked as IN and zero or more header parameters.<br>o	If the operation is not marked @Oneway, it may have one of the following forms:<br>o	A non-header parameter marked as IN, a non-header parameter marked as OUT, a void return value and zero or more header parameters.<br>o	A single non-header parameters marked as IN_OUT, a void return value and zero or more header parameters.<br>o	A single non-header parameter marked as IN, non-void return value and zero or more header parameters.<br>&nbsp;</TD></TR>
+
+<TR><TD width="2%">7</TD><TD width="28%">SOAPBinding - support for unwrapped (bare) vs wrapped to be configurable on a per operation basis rather than on the entire interface.&nbsp;</TD><TD width="70%">Section 4.7.1 - Description<br><br>Add:<br><br>The SOAPBinding annotation has a target of TYPE and METHOD.    The annotation may be placed on a method if and only if the SOAPBinding.style is DOCUMENT.    Implementations MUST report an error if the SOAPBinding annotation is placed on a method with a SOAPBinding.style of RPC.  Methods which do not have a SOAPBinding annotation accept the SOAPBinding behavior defined on the type.<br><br>Section 4.7.2 - Annotation Type Definition<br><br>Replace:<br><br>@Target({TYPE})<br><br>With:<br><br>@Target({TYPE, METHOD})<br>&nbsp;</TD></TR>
+
+<TR><TD width="2%">12</TD><TD width="28%">For HandlerChains in the JAX-WS, the name is not required.&nbsp;</TD><TD width="70%">Section 4.6.1 - Description<br><br>Replace:<br><br>name	Name of the handler chain in the configuration file.		None<br><br>With:<br><br>name	Deprecated. As of Web Services Metadata 2.0 with no replacement.<br><br>The name was originally used to associate a JAX-RPC handler in a handler chain with the web service it is declared in.  JAX-WS handlers are associated to web services via elements in the handler chain itself.  In this version, the name is ALWAYS ignored.<br><br>This member-value will be permanently removed in a future version of Web Services Metadata.	""<br><br>Section 4.6.2 - Annotation Type Definition<br><br>Replace:<br><br>String name();<br><br>With:<br><br>String name() default "";<br>&nbsp;</TD></TR>
+
+<TR><TD width="2%">14</TD><TD width="28%">@SOAPMessageHandlers are not supported in JAX-WS.&nbsp;</TD><TD width="70%">Section 3.1 - Service Implementation Bean<br><br>Replace:<br><br>, @HandlerChain and @SOAPMessageHandlers<br><br>With:<br><br>and @HandlerChain<br><br>Section 4.8 - Annotation: javax.jws.soap.SOAPMessageHandlers<br><br>Replace:<br><br>4.8.1	Description<br>Specifies a list of SOAP protocol handlers that run before and after business methods on the Web Service.  These handlers are called in response to SOAP messages targeting the service.  The handler API and processing rules are described in JAX-RPC 1.1 [5], section 12.  <br><br>The @SOAPMessageHandlers annotation is an array of SOAPMessageHandler types.  The handlers are run in the order in which they appear in the annotation, starting with the first handler in the array.  Each SOAPMessageHandler has the following member-values:<br><br>It is an error to combine this annotation with the @HandlerChain annotation.<br><br>The @SOAPMessageHandlers annotation MAY be present on the endpoint interface and service implementation bean.  The service implementation bean's @SOAPMessageHandlers is used if @SOAPMessageHandlers is present on both.<br><br><br>Member-Value	Meaning	Default<br>name	Name of the handler.	Name of the handler class <br>className	Name of the handler class	None<br>initParams	Array of name/value pairs that will be passed to the handler during initialization	No init params<br>roles	List of SOAP roles  implemented by the handler	No roles<br>headers	List of SOAP headers processed by the handler.  Each element in this array contains a QName which defines the header element processed by the handler.  The QNames are specified using the string notation described in the documentation for javax.xml.namespace.QName.valueOf(String qNameAsString).	No headers<br>4.8.2	Annotation Type Definition<br>public @interface InitParam {<br>    String name();<br>    String value();<br>};<br><br>public @interface SOAPMessageHandler {<br>    String name() default "";<br>    String className();<br>    InitParam[] initParams() default {};<br>    String[] roles() default {};<br>    String[] headers() default {};<br>};<br><br>@Retention(value=RetentionPolicy.RUNTIME)<br>Target({TYPE})<br>public @interface SOAPMessageHandlers {<br>    SOAPMessageHandler[] value();<br>};<br>4.8.3	Example:<br><br>Java source (simple scenario):<br><br>@WebService <br>@SOAPMessageHandlers({ <br>   @SOAPMessageHandler(<br>       className = "com.fabrikam.handlers.LogHandler"),<br>    @SOAPMessageHandler(<br>       className = "com.fabrikam.handlers.AuthorizationHandler"), <br>    @SOAPMessageHandler(<br>       className = "com.fabrikam.handlers.RoutingHandler")<br>}) <br>public class MyWebService { <br> <br>   @WebMethod <br>   public String echo(String input) { <br>      return input; <br>   } <br>};<br><br>Java source (complex scenario):<br><br>@SOAPMessageHandlers({ <br>   @SOAPMessageHandler(<br>          className = "com.fabrikam.handlers.LogHandler",  <br>          initParams = {@InitParam(name="logCategory", value="MyService")}<br>    ),<br>    @SOAPMessageHandler(<br>       className = "com.fabrikam.handlers.AuthorizationHandler",<br>       roles = {"SecurityProvider"},<br>       headers = {"{http://openuri.org/examples/security}/SecurityHeader"}<br>    ), <br>    @SOAPMessageHandler(<br>       className = "com.fabrikam.handlers.RoutingHandler"<br>    )<br>})  <br>public class MyWebService { <br> <br>   @WebMethod <br>   public String echo(String input) { <br>      return input; <br>   } <br>};<br><br>With:<br><br>Deprecated. As of Web Services Metadata 2.0 with no replacement.<br><br>This annotation was originally used to create a JAX-RPC handler chain.  In this version, the annotation is ALWAYS ignored.<br><br>This annotation will be permanently removed in a future version of Web Services Metadata.<br>&nbsp;</TD></TR>
+
+<TR><TD width="2%">16</TD><TD width="28%">Add support for JAX-WS. <br>Currenty the spec refers to JAX-RPC 1.1 wrt:<br><ul><li>Class defintion</li><li>Method signature</li><li>Parameter and return types</li><li>Holder types</li><li>Handler API and processing</li><li>Name mangling</li></ul><br><br>It would be nice if it stated that JAX-WS would use these annotations at runtime on both the client and server.&nbsp;</TD><TD width="70%">Section 1 - Introduction<br><br>Replace:<br><br>JAX-RPC 1.1<br><br>With:<br><br>JAX-WS 2.0<br><br>Section 1.4 - Objectives<br><br>Replace:<br><br>It is not a goal of this specification to support every feature or to enable the creation of every Web Service that is possible to write with existing specifications (JAX-WS 2.0 [5] extends on this specification to provide finer control over the resultant Web Service). However, it is a goal to make it easy to build the commonly needed types of Web Services.<br><br>With:<br><br>It is not a goal of this specification to support every feature or to enable the creation of every Web Service that is possible to write with existing specifications (JAX-WS 2.0 [5] provides finer control over the resultant Web Service). However, it is a goal to make it easy to build the commonly needed types of Web Services.<br><br>Section 2.1 - Programming Model Overview<br><br>Replace:<br><br>JSR-181 builds on the existing J2EE 1.4 server programming model described by JAX-RPC and JSR-109.<br><br>With:<br><br>JSR-181, along with JAX-WS and JSR109, defines a programming model for building web services on the Java platform.<br><br>Section 2.2.1 - Start With Java<br><br>Replace:<br><br>By default, the WSDL produced from the Java source follows the Java to XML/WSDL mapping defined by JAX-RPC 1.1.<br><br>With:<br><br>By default, the WSDL produced from the Java source follows the Java to XML/WSDL mapping defined by JAX-WS 2.0.<br><br>Section 2.4 - Runtime Responsibilities<br><br>Remove:<br><br>Chapter 9 defines one such a mapping, to the Java EE 5 environment.  Subsequent revisions to the specification will update this mapping for other environments, such as Java EE 5.<br><br>Section 3 - Server Programming Model<br><br>Replace:<br><br>The JSR-181 server programming model is a simplification of the existing J2EE Web Services server programming models, as defined in JAX-RPC and JSR-109.<br><br>With:<br><br>The JSR-181 server programming model is a simplification of the existing Java EE Web Services server programming models, as defined in JAX-WS and JSR-109.<br><br>Section 3.2 - Service Endpoint Interface<br><br>Replace:<br><br>A JSR-181 service endpoint interface MUST meet the requirements specified by JAX-RPC 1.1 [5], section 5.2,<br><br>With:<br><br>A JSR-181 service endpoint interface MUST meet the requirements specified by JAX-WS 2.0 [5], section 3.4,<br><br>Section 3.2 - Service Endpoint Interface<br><br>Remove:<br><br>Section 7.1 contains the complete list of annotations allowed on a service endpoint interface.<br><br>Section 3.3 - Web Methods<br><br>Replace:<br><br>The method's parameters, return value, and exceptions MUST follow the rules defined by JAX-RPC 1.1 [5], section 5.<br><br>With:<br><br>The method's parameters, return value, and exceptions MUST follow the rules defined by JAX-WS 2.0 [5], section 3.6.<br><br>Section 4.4.1 - Description<br><br>Replace:<br><br>JAX-RPC 1.1 [5],  section 4.3.5<br><br>With:<br><br>JAX-WS 2.0 [5], section 2.3.3<br><br>Section 5 - Java Mapping to XML/WSDL<br><br>Replace:<br><br>By default, JSR-181 follows the Java to XML/WSDL mapping defined in JAX-RPC 1.1 [5] section 5, except as noted in this section.<br><br>With:<br><br>By default, JSR-181 follows the Java to XML/WSDL mapping defined in JAX-WS 2.0 [5] section 3, except as noted in this section.<br><br>Section 5.1 - Service Endpoint Interface<br><br>Remove:<br><br>As described in JAX-RPC 1.1 [5] section 5.2,<br><br>Section 5.1 - Service Endpoint Interface<br><br>Replace:<br><br>JAX-RPC<br><br>With:<br><br>JAX-WS<br><br>Section 5.3 - Web Method Mapping<br><br>Replace:<br><br>If not present, the wsdl:operation local name is mapped from the name of the Java method according to the rules defined in JAX-RPC 1.1 [5], section 5.5.5.<br><br>With:<br><br>If not present, the wsdl:operation local name is mapped from the name of the Java method according to the rules defined in JAX-WS 2.0 [5], section 3.5.<br><br>Section 5.3 - Web Method Mapping<br><br>Replace:<br><br>Java types used as method parameters, return values, and exceptions are mapped according to the rules defined in JAX-RPC 1.1 [5], section 5.5.5.<br><br>With:<br><br>Java types used as method parameters, return values, and exceptions are mapped according to the rules defined in JAX-WS 2.0 [5], section 3.6.<br><br>Section 6 - SOAP Binding<br><br>Replace:<br><br>By default JSR-181 follows the SOAP binding defined in JAX-RPC 1.1 [5], section 6.<br><br>With:<br><br>By default JSR-181 follows the SOAP binding defined in JAX-WS 2.0 [5], section 10.<br><br>Section 6 - SOAP Binding<br><br>Remove:<br><br>The @SOAPBinding, @WebParam, and @WebResult annotations allow the developer to further customize this binding for a particular Web Service.<br><br>Section 7 - Mapping JSR-181 to the J2EE 1.4 Runtime Environment<br><br>Remove:<br><br>7	Mapping JSR-181 to the J2EE 1.4 Runtime Environment<br>7.1	Overview<br>This section describes the mapping of JSR-181 metadata onto J2EE 1.4 Web Services, as defined in JAX-RPC 1.1 and JSR-109 v1.1.  <br><br>Note:  Although this specification defines a standard mapping for metadata to JSR-109 deployment descriptors, the actual production or export of JSR-109 artifacts is OPTIONAL.  Semantic support for this mapping is mandatory and is what guarantees portable deployment across J2EE environments.<br><br>The following diagram shows the non-normative processing model for JSR-181 on top of J2EE 1.4.  <br><br> <br><br><br>One or more service implementation beans are passed to the JSR-181 processor in source or class form.  The JSR-181 processor examines the annotations in each Web Service file and uses this information to generate a JSR-109 deployment unit (EAR or WAR file).  The JSR-109 deployment unit contains the following artifacts:<br><br>o	The compiled Java classes required for deployment.  This includes the Web Service implementations, all referenced Java classes, and any generated Home or Remote interfaces.<br>o	WSDL documents describing each service.  If @WebService.wsdlLocation is specified, the WSDL file will be copied with all of its dependencies from this location and placed into the deployment unit.  If @WebService.wsdlLocation is not specified, the WSDL file is generated from the annotations in the service implementation bean.<br>o	Service endpoint interfaces defining the methods implemented by each service.  The service endpoint interface may be written by the developer or generated from the annotations on the service implementation bean.<br>o	The webservices.xml deployment descriptor.  This deployment descriptor contains references to all of the Web Services in the deployment unit.  There will be one webservice entry for each Web Service class processed by the JSR-181 processor.  Section 7.4.1 Mapping from JSR-181 to webservices.xml describes the mapping from JSR-181 annotations to entries in webservices.xml.<br>o	The jax-rpc-mapping.xml deployment descriptor.  Section 7.4.3 - Mapping from JSR-181 to jax-rpc-mapping.xml describes the mapping from JSR-181 annotations to entries in jax-rpc-mapping.xml.<br>o	One of either a web.xml or ejb-jar.xml deployment descriptor.  The JSR-181 processor will generate either a web.xml deployment descriptor (for servlet endpoints) or an ejb-jar.xml deployment descriptor (for stateless session beans) depending on the implementation model chosen for the service.  See the next section for more information on selecting an implementation model.<br><br>Once generated, the values in the deployment descriptors may be overridden by the deployer or administrator using standard deployment tools, including JSR 88 deployment plans.  This capability allows customization of the Web Service without requiring access to the source code.<br>7.2	Implementation Models<br>J2EE 1.4 Web Services may be implemented as plain classes in the servlet container or as stateless session beans in the EJB container.  A JSR-181 implementation targeting J2EE 1.4 MUST provide an out-of-band mechanism allowing the developer to specify explicitly the container in which a particular Web Service implementation should run.  Future versions of the specification will combine with other J2EE 5.0 technologies (such as EJB3) to provide a standard annotation-driven approach to specifying container-specific technologies and qualities of service.<br>7.3	Service Endpoint Interface<br>Every J2EE 1.4 Web Service is required to reference a service endpoint interface that defines the methods implemented by the service.  If the JSR-181 service implementation bean does not reference a service endpoint interface through the @WebService.endpointInterface annotation, the JSR-181 processor is REQUIRED to generate the interface from the annotations on the implementation bean.  The generated service endpoint interface is given an implementation-defined name, placed in an implementation-defined package, and contains a method for each designated web method on the service implementation bean.  The signature of each service endpoint interface method is identical to that of the corresponding web method, except that it includes java.rmi.RemoteException in the list of checked exceptions.<br>7.4	Mapping from JSR-181 to JSR-109 Deployment Descriptors<br>The JSR-109 deployment model for Web Services defines two deployment descriptors - the JSR-109 deployment descriptor (webservices.xml) and the JAX-RPC mapping file (jax-rpc-mapping.xml).  These files contain deployment and mapping information for J2EE Web Services.  The following sections describe the mapping from JSR-181 to the JSR-109 deployment descriptors.  A JSR-181 implementation that produces JSR-109 deployment descriptors MUST conform to this mapping.<br>7.4.1	Mapping from JSR-181 to webservices.xml<br>Every endpoint supported by a JSR-181 Web Service results in a unique webservice entry in webservices.xml.  The following table shows the relationship between elements in the webservice and JSR-181 annotations:<br>webservices.xml entry	JSR-181 Annotation and Member-Value<br>webservices/webservice	One entry per Web Service<br>webservices/webservice/wsdl-file	WSDL generated from service implementation bean or copied from  @WebService.wsdlLocation<br>webservices/webservice/jax-rpc-mapping-file	JAX-RPC mapping file generated from service implementation bean<br>webservices/webservice/port-component/port-component-name	Implementation defined<br>webservices/webservice/port-component/wsdl-port	Implementation defined<br>webservices/webservice/port-component/service-endpoint-interface	Generated from the annotations defined on the Web Service<br>webservices/webservice/service-impl-bean/ejb-link or webservices/webservice/service-impl-bean/service-link	Implementation defined<br>webservices/webservice/handler	@SOAPMessageHandlers or @HandlerChain<br><br>7.4.2	Example - Mapping JSR-181 to webservices.xml<br><br>Java Source:<br><br>@WebService(targetNamespace="http://www.openuri.org/MyNamespace"<br>            name="StockQuoteService")<br>@SOAPBinding<br>@SOAPMessageHandlers({ <br>   @SOAPMessageHandler(<br>       className = "com.fabrikam.handlers.LogHandler",<br>       initParams = {<br>          @InitParam(name="logCategory", value="MyService")<br>       }<br>    ),<br>    @SOAPMessageHandler(<br>       className = "com.fabrikam.handlers.AuthorizationHandler"<br>       roles = {"SecurityProvider"},<br>       headers = {<br>          "{http://openuri.org/examples/security}SecurityHeader"<br>       }<br>    ),<br>    @SOAPMessageHandler(<br>       className = "com.fabrikam.handlers.RoutingHandler"<br>    )<br>}) <br>public class StockQuoteServiceImpl {<br><br>     @WebMethod(operationName="GetLastTrade")<br>     public long getLastTrade(String tickerSymbol) {<br>        // . . .<br>     }<br><br>    @WebMethod(operationName="GetTickerSymbols")<br>    public String[] getTickerSymbols() {<br>        // . . .<br>    }<br>}<br><br>Resulting webservices.xml:<br><br>&lt;webservices><br>    &lt;webservice <br>         xmlns:ns1="http://www.openuri.org/MyNamespace"><br>      &lt;wsdl-file>StockQuoteService.wsdl&lt;/wsdl-file><br>      &lt;port-component><br>         &lt;port-component-name><br>             StockQuoteServiceSoapHttp<br>         &lt;/port-component-name><br>         &lt;service-endpoint-interface><br>             StockQuoteService<br>         &lt;/service-endpoint-interface><br>         &lt;wsdl-port>ns1:StockQuoteServiceSoapHttpPort&lt;/wsdl-port><br><br>         &lt;handler><br>            &lt;handler-name><br>               com.fabrikam.handlers.LogHandler<br>            &lt;/handler-name><br>            &lt;handler-class> <br>               com.fabrikam.handlers.LogHandler<br>            &lt;/handler-class><br>            &lt;init-param><br>               &lt;param-name>logCategory&lt;/param-name><br>               &lt;param-value>MyService&lt;/param-value><br>            &lt;/init-param><br>         &lt;/handler><br>         &lt;handler><br>            &lt;handler-name><br>               com.fabrikam.handlers.AuthorizationHandler<br>            &lt;/handler-name><br>            &lt;handler-class> <br>              com.fabrikam.handlers.AuthorizationHandler<br>            &lt;/handler-class><br>            &lt;soap-role>SecurityProvider&lt;/soap-role><br>            &lt;soap-header <br>               xmlns:ns2=http://openuri.org/examples/security><br>                ns2:SecurityHeader<br>            &lt;/soap-header><br>          &lt;/handler><br>         &lt;handler><br>            &lt;handler-name><br>               com.fabrikam.handlers.RoutingHandler<br>            &lt;/handler-name><br>            &lt;handler-class> <br>               com.fabrikam.handlers.RoutingHandler<br>            &lt;/handler-class><br>         &lt;/handler><br>         &lt;ejb-link>StockQuoteServiceEJB&lt;/ejb-link>        <br>       &lt;/port-component><br>    &lt;/webservice><br>&lt;/webservices><br><br>7.4.3	Mapping from JSR-181 to jax-rpc-mapping.xml<br><br>Every JSR-181 Web Service results in a unique service-endpoint-mapping entry in the jax-rpc-mapping file.  The following table shows the relationship between the elements in the service-endpoint-mapping and JSR-181 annotations.<br><br>Jax-rpc-mapping.xml entry	JSR-181 Annotation and Member-Value<br>/java-wsdl-mapping/service-endpoint-mapping	One entry per Web Service<br>/java-wsdl-mapping/service-endpoint-mapping/service-endpoint-interface	Generated from the annotations on the Web Service.<br>/java-wsdl-mapping/service-endpoint-mapping/wsdl-port-type	@WebService.name<br>/java-wsdl-mapping/service-endpoint-mapping/wsdl-binding	Implementation defined<br>/java-wsdl-mapping/service-endpoint-mapping/service-endpoint-method-mapping/wsdl-operation	@WebMethod.operationName<br>/java-wsdl-mapping/service-endpoint-mapping/service-endpoint-method-mapping/wrapped-element	Present if @SOAPBinding.parameterStyle is WRAPPED<br><br>7.4.4	Example - Mapping from JSR-181 to jax-rpc-mapping.xml<br><br>Java Source:<br><br>@WebService(targetNamespace="http://www.openuri.org/MyNamespace"<br>            name="StockQuoteService")<br>@SOAPBinding(name="StockQuoteServiceSoap")<br>public class StockQuoteServiceImpl {<br><br>     @WebMethod(operationName="GetLastTrade")     <br>     public GetLastTradeResponse getLastTrade(<br>            GetLastTradeRequest request) {<br>        // . . .<br>     }<br><br>    @WebMethod(operationName="GetTickerSymbols")<br>    public String[] getTickerSymbols() {<br>        // . . .<br>    }<br>}<br><br>Resulting java-xml-rpc-mapping.xml:<br><br>&lt;java-wsdl-mapping><br>    &lt;service-endpoint-mapping <br>        xmlns:ns1="http://www.openuri.org/MyNamespace"><br>         &lt;service-endpoint-interface>StockQuoteService&lt;/service-endpoint-interface><br>         &lt;wsdl-port-type>ns1:StockQuoteService&lt;/wsdl-port-type><br>         &lt;wsdl-binding>ns1:StockQuoteServiceSoap&lt;/wsdl-binding><br>         &lt;service-endpoint-method-mapping><br>              &lt;java-method-name>getLastTrade&lt;/java-method-name><br>              &lt;wsdl-operation>GetLastTrade&lt;/wsdl-operation><br>              &lt;wrapped-element/><br>         &lt;/service-endpoint-method-mapping><br>         &lt;service-endpoint-method-mapping><br>              &lt;java-method-name>getTickerSymbols&lt;/java-method-name><br>              &lt;wsdl-operation>GetTickerSymbols&lt;/wsdl-operation><br>              &lt;wrapped-element/><br>         &lt;/service-endpoint-method-mapping><br>    &lt;/service-endpoint-mapping><br>&lt;/java-wsdl-mapping><br><br>Section 9 - References<br><br>Add:<br><br>12.	JAX-WS V2.0<br>http://www.jcp.org/en/jsr/detail?id=224<br><br>Appendix A:  Relationship to Other Standards<br><br>Replace:<br><br>JAX-RPC 1.1<br><br>With:<br><br>JAX-WS 2.0<br>&nbsp;</TD></TR>
+
+<TR><TD width="2%">17</TD><TD width="28%">Update section 3.1 Service Implementation Bean, Item 6 that describe exposing all public methods if not @WebMethod annotations are declared to include consideration of annotation inheritence.&nbsp;</TD><TD width="70%">Section 3.1 - Service Implementation Bean<br><br>Replace:<br><br>6.	If the implementation bean does not implement a service endpoint interface all public methods other than those inherited from java.lang.Object will be exposed as Web Service operations.  This behavior can be overridden by using the WebMethod annotation to specify explicitly those public methods that are to be exposed.  If a WebMethod annotation is present, only the methods to which it is applied are exposed.<br><br>With:<br><br>6.	If the implementation bean does not implement a service endpoint interface and there are no @WebMethod annotations in the implementation bean (excluding @WebMethod annotations used to exclude inherited @WebMethods), all public methods other than those inherited from java.lang.Object will be exposed as Web Service operations, subject to the inheritance rules specified in Common Annotations for the Java Platform [12], section 2.1.<br><br>Section 3.2 - Service Endpoint Interface<br><br>Replace:<br><br>-	All of the methods on the service endpoint interface are mapped to WSDL operations, regardless of whether they include a @WebMethod annotation.<br><br>With:<br><br>-	All of the methods on the service endpoint interface are mapped to WSDL operations (including methods inherited from super-interfaces), regardless of whether they include a @WebMethod annotation.<br><br>Section 9 - References<br><br>Add:<br><br>12.	Common Annotations for the Java Platform<br>http://www.jcp.org/en/jsr/detail?id=250<br>&nbsp;</TD></TR>
+
+<TR><TD width="2%">18</TD><TD width="28%">Change default of @WebResult.name to @WebMethod.operationName + "Response" for Doc/lit/bare operations.&nbsp;</TD><TD width="70%">Section 4.5.1 - Description<br><br>Replace:<br><br>"return"<br><br>With:<br><br>If the operation is document style and the parameter style is BARE, @WebParam.operationName+"Response"<br><br>Otherwise, "return"<br><br>Section 4.5.2 - Annotation Type Definition<br><br>Replace:<br><br>String name() default "return";<br><br>With:<br><br>String name() default "";<br>&nbsp;</TD></TR>
+
+<TR><TD width="2%">19</TD><TD width="28%">Clarify the usage of @webService.targetNamespace&nbsp;</TD><TD width="70%">Section 3.1<br><br>Replace:<br><br>In this case, the service implementation bean MUST NOT include any JSR-181 annotations other than @WebService(endpointInterface and serviceName attributes only) and @HandlerChain.<br><br>With:<br><br>In this case, the service implementation bean MUST NOT include any JSR-181 annotations other than @WebService and @HandlerChain.  In addition, the @WebService annotation MUST NOT include the name annotation element.<br><br>Section 4.1.1 - Description<br><br>Replace:<br><br>The XML namespace used for the WSDL and XML elements generated from this Web Service.<br><br>With:<br><br>If the @WebService.targetNamespace annotation is on a service endpoint interface, the targetNamespace is used for the namespace for the wsdl:portType (and associated XML elements).<br><br>If the @WebService.targetNamespace annotation is on a service implementation bean that does NOT reference a service endpoint interface (via the endpointInterface annotation element), the targetNamespace is used for both the wsdl:portType and the wsdl:service (and associated XML elements).<br><br>If the @WebService.targetNamespace annotation is on a service implementation bean that does reference a service endpoint interface (via the endpointInterface annotation element), the targetNamespace is used for only the wsdl:service (and associated XML elements).<br>&nbsp;</TD></TR>
+
+<TR><TD width="2%">20</TD><TD width="28%">WebParam - The spec now states that OUT and INOUT modes are only used in RPC bindings and parameters marked as headers. Currently JAXRPC will also map doc/lit wrapped sub-elements to OUT, INOUT params. It is possible to use holders in doc/lit bare mode as well. Also, the spec should require that if a parameter is a Holder, that the mode annotation must be present and it should be OUT or INOUT.&nbsp;</TD><TD width="70%">Section 4.4.1 WebParam.mode<br><br>Remove:<br><br>OUT and INOUT modes are only supported for RPC bindings or for parameters that map to headers.<br><br>Section 4.4.1 WebParam.mode<br><br>Add:<br><br>Parameters that are Holder Types MUST be OUT or INOUT.<br><br>Section 4.4.1 WebParam.mode<br><br>Replace:<br><br>IN<br><br>With:<br><br>IN (if not a Holder type)<br>INOUT (if a Holder type)<br><br>Section 6.1.2.1 - Document "Wrapped" Style<br><br>Remove:<br><br>The return value, if any, is the sole child element of the global element declaration for the output message.<br>&nbsp;</TD></TR>
+
+<TR><TD width="2%">21</TD><TD width="28%">Add a new exclude element to @WebMethod that is used to override inherited @WebMethod annotations.&nbsp;</TD><TD width="70%">Section 4.2.1 - Description<br><br>Add:<br><br>exclude	Marks a method to NOT be exposed as a web method.  Used to stop an inherited method from being exposed as part of this web service.<br><br>If this element is specified, other elements MUST NOT be specified for the @WebMethod.<br><br>Not allowed on interfaces.	false<br><br>Section 4.2.2 - Annotation Type Definition<br><br>Add:<br><br>boolean exclude() default false;<br>&nbsp;</TD></TR>
+
+<TR><TD width="2%">22</TD><TD width="28%">Need to spell out that if an implementation bean references an endpoint interface, it must implement all the methods in the service endpoint interface.&nbsp;</TD><TD width="70%">Section 3.1 Service Implementation Bean<br><br>Replace:<br><br>The implementation bean MAY reference a service endpoint interface by using the @WebService.endpointInterface annotation.<br><br>With:<br><br>The implementation bean MAY reference a service endpoint interface by using the @WebService.endpointInterface annotation.  &lt;b>If the implementation bean references a service endpoint interface, it MUST implement all the methods on the service endpoint interface.&lt;/b><br>&nbsp;</TD></TR>
+
+<TR><TD width="2%">23</TD><TD width="28%">Change the @WebParam.name to default to arg0, arg1, etc (based on position in the method signature).<br><br>This is to provide support for JAX-WS processing from a class file (when the real parameter names are no longer available)&nbsp;</TD><TD width="70%">Section 4.4.1 - Description<br><br>Replace:<br><br>Name of the parameter as it appears in the argument list.<br><br>With:<br><br>If the operation is document style and the parameter style is BARE, @WebMethod.operationName<br><br>Otherwise, argN where N represents the index of the parameter in the method signature (starting at arg0).<br>&nbsp;</TD></TR>
+
+<TR><TD width="2%">24</TD><TD width="28%">Add @WebParam.partName and @WebResult.partName to specify part name used in the binding.&nbsp;</TD><TD width="70%">Section 4.4.1 - Description<br><br>Add:<br><br>partName	The name of the wsdl:part representing this parameter.  This is only used if the operation is rpc style or if the operation is document style and the parameter style is BARE.	@WebParam.name<br><br>Section 4.4.1 - Description<br><br>Replace:<br><br>Name of the parameter as it appears in the WSDL.  For RPC bindings, this is name of the wsdl:part representing the parameter.  For document bindings, this is the local name of the XML element representing the parameter.<br><br>With:<br><br>Name of the parameter.<br><br>If the operation is rpc style and @WebParam.partName has not been specified, this is name of the wsdl:part representing the parameter.  <br><br>If the operation is document style or the parameter maps to a header, this is the local name of the XML element representing the parameter.<br><br>Section 4.4.2 - Annotation Type Definition<br><br>Add:<br><br>String partName() default "";<br><br>Section 4.5.1 - Description<br><br>Add:<br><br>partName	The name of the wsdl:part representing this parameter.  This is only used if the operation is rpc style or if the operation is document style and the parameter style is BARE.	@WebResult.name<br><br>Section 4.5.1 - Description<br><br>Replace:<br><br>Name of return value as it appears in the WSDL and messages on the wire.  For RPC bindings, this is the name of the wsdl:part representing the return value.  For document bindings, this is the local name of the XML element representing the return value.<br><br>With:<br><br>Name of return value.<br><br>If the operation is rpc style and @WebResult.partName has not been specified, this is the name of the wsdl:part representing the return value.  <br><br>If the operation is document style or the return value maps to a header, this is the local name of the XML element representing the return value.<br><br>Section 4.5.2 - Annotation Type Definition<br><br>Add:<br><br>String partName() default "";<br><br>Section 6.1.1 - RPC Operation Style<br><br>Remove:<br><br>The names of the parts default to the names of the parameters.  If a parameter is annotated with @WebParam.name annotation, this name will be used as the name of the part instead of the parameter name.<br>&nbsp;</TD></TR>
+
+<TR><TD width="2%">25</TD><TD width="28%">The name for headers must be unique with an operation.&nbsp;</TD><TD width="70%">Section 6.2 - Headers<br><br>Add:<br><br>This QName must be unique within all headers of the method.<br>&nbsp;</TD></TR>
+
+<TR><TD width="2%">26</TD><TD width="28%">Clean up references to SOAPAction&nbsp;</TD><TD width="70%">Section 4.2.1 - Description<br><br>Replace:<br><br>The action for this operation.  For SOAP bindings, this determines the value of the SOAPAction header.<br><br>With:<br><br>The action for this operation.  For SOAP bindings, this determines the value of the soap action.<br>&nbsp;</TD></TR>
+
+<TR><TD width="2%">29</TD><TD width="28%">If target namespace is set to "", this should map to the empty namespace, not the web service namespace.&nbsp;</TD><TD width="70%">Section 4.4.1 - Description<br><br>Replace:<br><br>targetNamespace	The XML namespace for the parameter.	The targetNamespace for the Web Service<br><br>With:<br><br>targetNamespace	The XML namespace for the parameter. <br><br>Only used if the operation is document style or the paramater maps to a header.<br><br>If the target namespace is set to "", this represents the empty namespace.<br>If the operation is document style and the parameter style is WRAPPED and the parameter does not map to a header, the empty namespace.<br><br>Otherwise, the targetNamespace for the Web Service.<br><br>Section 4.5.1 - Description<br><br>Replace:<br><br>targetNamespace	The XML namespace for the parameter.	The targetNamespace for the Web Service<br><br>With:<br><br>targetNamespace	The XML namespace for the return value.  <br><br>Only used if the operation is document style or the return value maps to a header.<br><br>If the target namespace is set to "", this represents the empty namespace.<br>If the operation is document style and the parameter style is WRAPPED and the return value does not map to a header, the empty namespace.<br><br>Otherwise, the targetNamespace for the Web Service.<br>.<br>&nbsp;</TD></TR>
+
+<TR><TD width="2%">30</TD><TD width="28%">For the WebService targetNamespace default, this should reference section 3.2 of the JAX-WS spec for the algorithm to calculate a namespace from a Java package.&nbsp;</TD><TD width="70%">Section 4.1.1 - Description<br><br>Replace:<br><br>Implementation-defined, as described in JAX-RPC 1.1 [5], section 5.5.2.  Typically derived from the package containing the Web Service.<br><br>With:<br><br>Implementation-defined, as described in JAX-WS 2.0 [5], section 3.2.<br>&nbsp;</TD></TR>
+
+<TR><TD width="2%">31</TD><TD width="28%">For doc/lit bare, we might want to require that any INOUT or OUT parameters must have a WebParam.name specified to avoid name clashes with the input parameter.&nbsp;</TD><TD width="70%">Section 4.1.1 - Description<br><br>Add:<br><br>A name MUST be specified if the operation is document style and the parameter style is BARE and the mode is OUT or INOUT.<br>&nbsp;</TD></TR>
+
+<TR><TD width="2%">32</TD><TD width="28%">Add a portName to @WebService for the wsdl:port&nbsp;</TD><TD width="70%">Section 3.2 - Web Service<br><br>Add:<br><br>The service endpoint interface MUST NOT include the JSR-181 annotation elements portName, serviceName and endpointInterface of the annotation @WebService.<br><br>Section 4.1.1 - Description<br><br>Add:<br><br>portName	Used as the name of the wsdl:port when mapped to WSDL 1.1.<br>Not allowed on interfaces.	@WebService.name +"Port"<br><br>Section 4.1.2 - Annotation Type Definition<br><br>Add:<br><br>String portName() default "";<br><br>Section 5.2 - Web Service Class Mapping<br><br>Replace:<br><br>-	The names of the wsdl:port and wsdl:binding sections are not significant and are left implementation-defined.<br><br>With:<br><br>-	The local name of the wsdl:port maps to the value of the @WebService.portName member-value.<br>-	The name wsdl:binding sections is not significant and are left implementation-defined.<br>&nbsp;</TD></TR>
+
+<TR><TD width="2%">33</TD><TD width="28%">Include the updated Handler Schema&nbsp;</TD><TD width="70%">Section 4.6.1<br><br>Replace:<br><br>The @HandlerChain annotation associates the Web Service with an externally defined handler chain.  This annotation is typically used in scenarios where embedding the handler configuration directly in the Java source is not appropriate; for example, where the handler configuration needs to be shared across multiple Web Services, or where the handler chain consists of handlers for multiple transports.<br><br>It is an error to combine this annotation with the @SOAPMessageHandlers annotation.<br><br>With:<br><br>The @HandlerChain annotation associates the Web Service with an externally defined handler chain (JAX-WS 2.0 [5], Section 9).<br><br>Section 4.6.1 - Description<br><br>Add:<br><br>The @HandlerChain annotation MAY  be specified on the type only.  The annotation target includes METHOD and FIELD for use by JAX-WS 2.0 [5].  A JSR-181 Processor is REQUIRED to report an error if the @HanderChain annotation is used on a method.<br><br>Section 4.6.3 - Examples<br><br>Replace:<br><br>>&lt;handler-config><br>    &lt;handler-chain><br>         &lt;handler-chain-name>StandardHandlerChain&lt;/handler-chain-name><br>         &lt;handler><br>            &lt;handler-name><br>               com.fabrikam.handlers.LogHandler<br>            &lt;/handler-name><br>            &lt;handler-class> <br>               com.fabrikam.handlers.LogHandler<br>            &lt;/handler-class><br>            &lt;init-param><br>               &lt;param-name>logCategory&lt;/param-name><br>               &lt;param-value>MyService&lt;/param-value><br>            &lt;/init-param><br>         &lt;/handler><br>         &lt;handler><br>            &lt;handler-name><br>               com.fabrikam.handlers.AuthorizationHandler<br>            &lt;/handler-name><br>            &lt;handler-class> <br>              com.fabrikam.handlers.AuthorizationHandler<br>            &lt;/handler-class><br>            &lt;soap-role>SecurityProvider&lt;/soap-role><br>            &lt;soap-header <br>               xmlns:ns2=http://openuri.org/examples/security><br>                ns2:SecurityHeader<br>            &lt;/soap-header><br>          &lt;/handler><br>         &lt;handler><br>            &lt;handler-name><br>               com.fabrikam.handlers.RoutingHandler<br>            &lt;/handler-name><br>            &lt;handler-class> <br>               com.fabrikam.handlers.RoutingHandler<br>            &lt;/handler-class><br>         &lt;/handler><br>   &lt;/handler-chain><br>&lt;/handler-config><br><br>With:<br><br>&lt;?xml version="1.0" encoding="UTF-8" standalone="yes"?><br>&lt;bindings wsdlLocation="http://localhost:8080/jaxrpc-fromwsdl_handler/test?wsdl"<br>    xmlns="http://java.sun.com/xml/ns/jaxws"><br>    <br>  &lt;bindings node="ns1:definitions" xmlns:ns1="http://schemas.xmlsoap.org/wsdl/"><br>    &lt;package name="fromwsdl.handler.client"/><br>  &lt;/bindings><br>  <br>  &lt;bindings node="ns1:definitions/ns1:types/xs:schema[@targetNamespace='urn:test:types']"<br>      xmlns:xs="http://www.w3.org/2001/XMLSchema"<br>      xmlns:ns1="http://schemas.xmlsoap.org/wsdl/"><br>    &lt;ns2:schemaBindings xmlns:ns2="http://java.sun.com/xml/ns/jaxb"><br>      &lt;ns2:package name="fromwsdl.handler.client"/><br>    &lt;/ns2:schemaBindings><br>  &lt;/bindings><br><br>  &lt;bindings><br>    &lt;handler-chains xmlns="http://java.sun.com/xml/ns/javaee"><br>      &lt;handler-chain><br>        &lt;handler><br>          &lt;handler-class>fromwsdl.handler.common.BaseLogicalHandler&lt;/handler-class><br>          &lt;init-param><br>            &lt;param-name>handlerName&lt;/param-name><br>            &lt;param-value>client0&lt;/param-value><br>          &lt;/init-param><br>        &lt;/handler><br>      &lt;/handler-chain><br>      &lt;handler-chain><br>        &lt;port-name-pattern xmlns:ns2="urn:test">ns2:Report*&lt;/port-name-pattern><br>        &lt;handler><br>          &lt;handler-class>fromwsdl.handler.common.BaseLogicalHandler&lt;/handler-class><br>          &lt;init-param><br>            &lt;param-name>handlerName&lt;/param-name><br>            &lt;param-value>client2&lt;/param-value><br>          &lt;/init-param><br>        &lt;/handler><br>      &lt;/handler-chain><br>      &lt;handler-chain><br>        &lt;port-name-pattern xmlns:ns2="urn:test">ns2:ReportServicePort&lt;/port-name-pattern><br>        &lt;handler><br>          &lt;handler-class>fromwsdl.handler.common.BaseSOAPHandler&lt;/handler-class><br>          &lt;init-param><br>            &lt;param-name>handlerName&lt;/param-name><br>            &lt;param-value>client6&lt;/param-value><br>          &lt;/init-param><br>        &lt;/handler><br>      &lt;/handler-chain><br>      &lt;handler-chain><br>        &lt;protocol-bindings>##SOAP11_HTTP&lt;/protocol-bindings><br>        &lt;handler><br>          &lt;handler-class>fromwsdl.handler.common.BaseSOAPHandler&lt;/handler-class><br>          &lt;init-param><br>            &lt;param-name>handlerName&lt;/param-name><br>            &lt;param-value>client7&lt;/param-value><br>          &lt;/init-param><br>          &lt;soap-role>http://sun.com/client/role1&lt;/soap-role><br>          &lt;soap-role>http://sun.com/client/role2&lt;/soap-role><br>        &lt;/handler><br>      &lt;/handler-chain><br>      &lt;handler-chain><br>        &lt;protocol-bindings>##SOAP11_HTTP&lt;/protocol-bindings><br>        &lt;handler><br>          &lt;handler-class>fromwsdl.handler.common.BaseLogicalHandler&lt;/handler-class><br>          &lt;init-param><br>            &lt;param-name>handlerName&lt;/param-name><br>            &lt;param-value>client3&lt;/param-value><br>          &lt;/init-param><br>        &lt;/handler><br>      &lt;/handler-chain><br>    &lt;/handler-chains><br>  &lt;/bindings><br><br>&lt;/bindings><br><br>Appendix B - Handler Chain Configuration File Schema<br><br>Replace:<br><br>This is the schema for the handler configuration file:<br><br>&lt;?xml version="1.0" encoding="UTF-8"?><br>&lt;xsd:schema xmlns="http://www.w3.org/2001/XMLSchema"<br>	    targetNamespace="http://www.bea.com/xml/ns/jws"<br>          xmlns:jws="http://www.bea.com/xml/ns/jws"<br>	    xmlns:j2ee="http://java.sun.com/xml/ns/j2ee"<br>	    xmlns:xsd="http://www.w3.org/2001/XMLSchema"<br>	    elementFormDefault="qualified"<br>	    annotation elementFormDefault="unqualified"<br>	    version="1.1"><br><br>  &lt;xsd:annotation><br>    &lt;xsd:documentation><br>     &lt;![CDATA[<br><br>      This is the schema definition for the handler chain configuration<br>      file used by JSR-181.  It relies on the handler definitions that<br>      are part of the standard J2EE deployment descriptors.<br><br>      ]]><br>    &lt;/xsd:documentation><br>  &lt;/xsd:annotation><br><br>  &lt;xsd:include schemaLocation="j2ee_1_4.xsd"/><br>  &lt;xsd:include schemaLocation="j2ee_web_services_1_1.xsd"/><br><br>  &lt;xsd:complexType name="handler-chainType"><br>    &lt;xsd:sequence><br>      &lt;xsd:element name="handler-chain-name"<br>               type="j2ee:string"/><br>      &lt;xsd:element name="handler"<br>		   type="j2ee:port-component_handlerType"<br>		   minOccurs="0" maxOccurs="unbounded"/><br>    &lt;/xsd:sequence><br>  &lt;/xsd:complexType><br><br>  &lt;xsd:complexType name="handler-configType"><br>    &lt;xsd:sequence><br>      &lt;xsd:element name="handler-chain" <br>                   type="jws:handler-chainType"<br>                   minOccurs="1" maxOccurs="unbounded"/><br>    &lt;/xsd:sequence><br>  &lt;/xsd:complexType><br><br>  &lt;xsd:element name="handler-config" type="jws:handler-configType"/><br>&lt;/xsd:schema><br><br>With:<br><br>&lt;?xml version="1.0" encoding="UTF-8"?><br>&lt;xsd:schema xmlns="http://www.w3.org/2001/XMLSchema"<br>	    targetNamespace="http://java.sun.com/xml/ns/javaee"<br>	    xmlns:javaee="http://java.sun.com/xml/ns/javaee"<br>	    xmlns:xsd="http://www.w3.org/2001/XMLSchema"<br>	    elementFormDefault="qualified"<br>	    annotation elementFormDefault="unqualified"<br>	    version="1.0"><br><br>  &lt;xsd:include schemaLocation="javaee_5.xsd"/><br><br>&lt;!-- **************************************************** --><br><br>  &lt;xsd:element name="handler-chains" <br>               type="javaee:handler-chainsType"/><br>    &lt;xsd:annotation><br>      &lt;xsd:documentation><br><br>	The handler-chains element is the root element for defining handlerchains.<br><br>      &lt;/xsd:documentation><br>    &lt;/xsd:annotation><br>  &lt;/xsd:element><br><br>&lt;!-- **************************************************** --><br><br>  &lt;xsd:complexType name="handler-chainsType"><br>    &lt;xsd:annotation><br>      &lt;xsd:documentation><br><br>      The handler-chains element defines the handlerchains associated with this<br>      service or service endpoint.<br><br>      &lt;/xsd:documentation><br>    &lt;/xsd:annotation><br><br>    &lt;xsd:sequence><br>      &lt;xsd:element name="handler-chain" <br>                   type="javaee:handler-chainType"<br>		   minOccurs="1" maxOccurs="unbounded"/><br>    &lt;/xsd:sequence><br><br>    &lt;xsd:annotation element name="id" type="xsd:ID"/><br>  &lt;/xsd:complexType><br>  <br>&lt;!-- **************************************************** --><br><br>  &lt;xsd:complexType name="handler-chainType"><br>    &lt;xsd:annotation><br>      &lt;xsd:documentation><br><br>      The handler-chain element defines the handlerchain.<br>      Handlerchain can be defined such that the handlers in the<br>      handlerchain operate,all ports of a service, on a specific<br>      port or on a list of protocol-bindings. The choice of elements<br>      service-name-pattern, port-name-pattern and protocol-bindings<br>      are used to specify whether the handlers in handler-chain are<br>      for a service, port or protocol binding. If none of these<br>      choices are specified with the handler-chain element then the<br>      handlers specified in the handler-chain will be applied on<br>      everything.<br><br>      &lt;/xsd:documentation><br>    &lt;/xsd:annotation><br><br>    &lt;xsd:sequence><br><br>      &lt;xsd:choice minOccurs="0" maxOccurs="1"><br>         &lt;xsd:element name="service-name-pattern"<br>		      type="javaee:qname-pattern" /><br>         &lt;xsd:element name="port-name-pattern"<br>		      type="javaee:qname-pattern" /><br>         &lt;xsd:element name="protocol-bindings"<br>		      type="javaee:protocol-bindingListType"/><br>      &lt;/xsd:choice><br><br>      &lt;xsd:element name="handler"<br>                   type="javaee:handlerType"<br>		   minOccurs="1" maxOccurs="unbounded"/><br>    &lt;/xsd:sequence><br><br>    &lt;xsd:annotation element name="id" type="xsd:ID"/><br>  &lt;/xsd:complexType><br><br>&lt;!-- **************************************************** --><br><br>  &lt;xsd:simpleType name="protocol-URIAliasType"><br>     &lt;xsd:annotation><br>        &lt;xsd:documentation><br>	   Defines the type that is used for specifying tokens that<br>	   start with ## which are used to alias existing standard<br>	   protocol bindings and support aliases for new standard<br>	   binding URIs that are introduced in future specifications.<br><br>	   The following tokens alias the standard protocol binding<br>	   URIs:<br><br>	   ##SOAP11_HTTP = "http://schemas.xmlsoap.org/wsdl/soap/http"<br>           ##SOAP12_HTTP = "http://www.w3.org/2003/05/soap/bindings/HTTP/"<br>           ##XML_HTTP = "http://www.w3.org/2004/08/wsdl/http"<br><br>        &lt;/xsd:documentation><br>     &lt;/xsd:annotation><br>     &lt;xsd:restriction base="xsd:token"><br>        &lt;xsd:pattern value="##.+"/><br>     &lt;/xsd:restriction><br>  &lt;/xsd:simpleType><br><br>&lt;!-- **************************************************** --><br><br>  &lt;xsd:simpleType name="protocol-bindingListType"><br>     &lt;xsd:annotation><br>        &lt;xsd:documentation><br>	   Defines the type used for specifying a list of<br>	   protocol-bindingType(s). For e.g.<br><br>	    ##SOAP11_HTTP ##SOAP12_HTTP ##XML_HTTP<br><br>        &lt;/xsd:documentation><br>     &lt;/xsd:annotation><br>     &lt;xsd:list itemType="javaee:protocol-bindingType"/><br>  &lt;/xsd:simpleType><br><br>&lt;!-- **************************************************** --><br><br>  &lt;xsd:simpleType name="protocol-bindingType"><br>     &lt;xsd:annotation><br>        &lt;xsd:documentation><br>	   Defines the type used for specifying the URI for the<br>	   protocol binding used by the port-component.  For<br>	   portability one could use one of the following tokens that<br>	   alias the standard binding types:<br><br>	    ##SOAP11_HTTP<br>	    ##SOAP12_HTTP<br>	    ##XML_HTTP<br><br>	   Other specifications could define tokens that start with ##<br>	   to alias new standard binding URIs that are introduced.<br><br>        &lt;/xsd:documentation><br>     &lt;/xsd:annotation><br>     &lt;xsd:union memberTypes="xsd:anyURI javaee:protocol-URIAliasType"/><br>  &lt;/xsd:simpleType><br><br>&lt;!-- **************************************************** --><br><br>  &lt;xsd:simpleType name="qname-pattern"><br>     &lt;xsd:annotation><br>        &lt;xsd:documentation><br>	     This is used to specify the QName pattern in the<br>	     annotation element service-name-pattern and port-name-pattern in<br>	     the handler-chain element<br><br>	     For example, the various forms acceptable here for<br>	     service-name-pattern annotation element in handler-chain element<br>	     are :<br><br>	     Exact Name: service-name-pattern="ns1:EchoService"<br><br>		 In this case, handlers specified in this<br>		 handler-chain element will apply to all ports with<br>		 this exact service name. The namespace prefix must<br>		 have been declared in a namespace declaration<br>		 annotation element in either the start-tag of the element<br>		 where the prefix is used or in an an ancestor<br>		 element (i.e. an element in whose content the<br>		 prefixed markup occurs)<br><br>	     Pattern : service-name-pattern="ns1:EchoService*"<br><br>		 In this case, handlers specified in this<br>		 handler-chain element will apply to all ports whose<br>		 Service names are like EchoService1, EchoServiceFoo<br>		 etc. The namespace prefix must have been declared in<br>		 a namespace declaration annotation element in either the<br>		 start-tag of the element where the prefix is used or<br>		 in an an ancestor element (i.e. an element in whose<br>		 content the prefixed markup occurs)<br><br>	     Wild Card : service-name-pattern="*"<br><br>		In this case, handlers specified in this handler-chain<br>		element will apply to ports of all service names.<br><br>	    The same can be applied to port-name annotation element in<br>	    handler-chain element.<br><br>        &lt;/xsd:documentation><br>     &lt;/xsd:annotation><br><br>     &lt;xsd:restriction base="xsd:token"><br>        &lt;xsd:pattern value="\*|([\i-[:]][\c-[:]]*:)?[\i-[:]][\c-[:]]*\*?"/><br>     &lt;/xsd:restriction><br><br>  &lt;/xsd:simpleType><br><br><br>&lt;!-- **************************************************** --><br><br>  &lt;xsd:complexType name="handlerType"><br>    &lt;xsd:annotation><br>      &lt;xsd:documentation><br><br>	Declares the handler. Handlers can access the<br>	init-param name/value pairs using the HandlerInfo interface.<br><br>      &lt;/xsd:documentation><br>    &lt;/xsd:annotation><br>    &lt;xsd:sequence><br>      &lt;xsd:group ref="javaee:descriptionGroup"/><br>      &lt;xsd:element name="handler-name"<br>		   type="javaee:string"><br>	&lt;xsd:annotation><br>	  &lt;xsd:documentation><br><br>	    Defines the name of the handler.<br><br>	  &lt;/xsd:documentation><br>	&lt;/xsd:annotation><br>      &lt;/xsd:element><br>      &lt;xsd:element name="handler-class"<br>		   type="javaee:fully-qualified-classType"><br>	&lt;xsd:annotation><br>	  &lt;xsd:documentation><br><br>	    Defines a fully qualified class name for the handler implementation.<br><br>	  &lt;/xsd:documentation><br>	&lt;/xsd:annotation><br>      &lt;/xsd:element><br>      &lt;xsd:element name="init-param"<br>		   type="javaee:param-valueType"<br>		   minOccurs="0" maxOccurs="unbounded"/><br><br>      &lt;xsd:element name="soap-role"<br>		   type="javaee:string"<br>		   minOccurs="0" maxOccurs="unbounded"><br>	&lt;xsd:annotation><br>	  &lt;xsd:documentation><br><br>	    The soap-role element contains a SOAP actor definition that the<br>	    Handler will play as a role.<br><br>	  &lt;/xsd:documentation><br>	&lt;/xsd:annotation><br>      &lt;/xsd:element><br>    &lt;/xsd:sequence><br>    &lt;xsd:annotation element name="id" type="xsd:ID"/><br>  &lt;/xsd:complexType><br><br>&lt;/xsd:schema><br>&nbsp;</TD></TR>
+
+<TR><TD width="2%">35</TD><TD width="28%">Use consistent terminology when referring to document or rpc styles.&nbsp;</TD><TD width="70%">Section 4.5.1 - Description<br><br>Replace:<br><br>For RPC bindings where @WebResult.partName has not been specified, this is the name of the wsdl:part representing the return value.  <br><br>For document bindings, this is the local name of the XML element representing the return value.<br><br>With:<br><br>If the operation is rpc style and @WebResult.partName has not been specified, this is the name of the wsdl:part representing the return value.  <br><br>If the operation is document style, this is the local name of the XML element representing the return value.<br>&nbsp;</TD></TR>
+
+<TR><TD width="2%">38</TD><TD width="28%">Add a document/literal example to Using JSR-181 annotation to affect the shape of the WSDL&nbsp;</TD><TD width="70%">Section 7 - Using JSR-181 annotations to affect the shape of the WSDL<br><br>Add:<br><br>7.2	Document Literal Style<br>Below is a complete example of a java source file with annotations followed by the resulting WSDL:<br><br>Java source:<br><br>import javax.jws.*;<br>import javax.jws.soap.*;<br><br>@WebService(<br>   name="ExampleWebService",<br>   targetNamespace="http://openuri.org/11/2003/ExampleWebService")<br>@SOAPBinding(style=SOAPBinding.Style.DOCUMENT, use=SOAPBinding.Use.LITERAL)<br>public class ExampleWebServiceImpl {<br>    <br>   @WebMethod(action="urn:login")<br>   @WebResult(name="Token")   <br>   public LoginToken login(<br>      @WebParam(name="UserName") String username, <br>      @WebParam(name="Password") String password) {<br>	// ... <br>   }<br><br>   @WebMethod (action="urn:createCustomer")<br>   @WebResult(name="CustomerId")<br>   public String createCustomer(<br>       @WebParam(name="Customer") Customer customer,<br>       @WebParam(name="Token", header=true) LoginToken token) {<br>      // ...<br>   }<br><br>   @WebMethod(action="urn:notifyTransfer")<br>   @Oneway<br>   public void notifyTransfer(<br>       @WebParam(name="CustomerId") String customerId, <br>       @WebParam(name="TransferData") TransferDocument transferData, <br>       @WebParam(name="Token", header=true) LoginToken token) {<br>   }<br>};<br> <br><br>Resulting WSDL:<br><br>&lt;?xml version='1.0' encoding='UTF-8'?><br>&lt;definitions <br>  name="ExampleWebServiceImplServiceDefinitions" <br>  targetNamespace="http://openuri.org/11/2003/ExampleWebService" <br>  xmlns="http://schemas.xmlsoap.org/wsdl/" <br>  xmlns:tns="http://openuri.org/11/2003/ExampleWebService" <br>  xmlns:xs="http://www.w3.org/2001/XMLSchema"  <br>  xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/"><br><br>  &lt;types><br>    &lt;xs:schema annotation elementFormDefault="unqualified" <br>        targetNamespace="http://openuri.org/11/2003/ExampleWebService"><br><br>      &lt;xs:complexType name="LoginToken"><br>		...<br>      &lt;/xs:complexType><br><br>      &lt;xs:complexType name="Customer"><br>		...<br>      &lt;/xs:complexType><br><br>      &lt;xs:complexType name="TransferDocument"><br>		...<br>      &lt;/xs:complexType><br><br>      &lt;xs:element name="Token" type="tns:LoginToken"/><br><br>      &lt;xs:element name="createCustomer"><br>        &lt;xs:complexType><br>          &lt;xs:sequence><br>            &lt;xs:element name="Customer" type="tns:Customer"/><br>          &lt;/xs:sequence><br>        &lt;/xs:complexType><br>      &lt;/xs:element><br><br>      &lt;xs:element name="createCustomerResponse"><br>        &lt;xs:complexType><br>          &lt;xs:sequence><br>            &lt;xs:element name="CustomerId" type="xs:string"/><br>          &lt;/xs:sequence><br>        &lt;/xs:complexType><br>      &lt;/xs:element><br><br>      &lt;xs:element name="notifyTransfer"><br>        &lt;xs:complexType><br>          &lt;xs:sequence><br>            &lt;xs:element name="CustomerId" type="xs:string"/><br>            &lt;xs:element name="TransferData" type="tns:TransferDocument"/><br>          &lt;/xs:sequence><br>        &lt;/xs:complexType><br>      &lt;/xs:element><br><br>      &lt;xs:element name="login"><br>        &lt;xs:complexType><br>          &lt;xs:sequence><br>            &lt;xs:element name="UserName" type="xs:string"/><br>            &lt;xs:element name="Password" type="xs:string"/><br>          &lt;/xs:sequence><br>        &lt;/xs:complexType><br>      &lt;/xs:element><br><br>      &lt;xs:element name="loginResponse"><br>        &lt;xs:complexType><br>          &lt;xs:sequence><br>            &lt;xs:element name="Token" type="tns:LoginToken"/><br>          &lt;/xs:sequence><br>        &lt;/xs:complexType><br>      &lt;/xs:element><br><br>    &lt;/xs:schema><br>  &lt;/types><br><br>  &lt;message name="createCustomer"><br>    &lt;part element="tns:createCustomer" name="parameters"/><br>    &lt;part element="tns:Token" name="token"/><br>  &lt;/message><br>  &lt;message name="createCustomerResponse"><br>    &lt;part element="tns:createCustomerResponse" name="parameters"/><br>  &lt;/message><br><br>  &lt;message name="notifyTransfer"><br>    &lt;part element="tns:notifyTransfer" name="parameters"/><br>    &lt;part element="tns:Token" name="token"/><br>  &lt;/message><br><br>  &lt;message name="login"><br>    &lt;part element="tns:login" name="parameters"/><br>  &lt;/message><br>  &lt;message name="loginResponse"><br>    &lt;part element="tns:loginResponse" name="parameters"/><br>  &lt;/message><br><br>  &lt;portType name="ExampleWebService"><br><br>    &lt;operation name="createCustomer" parameterOrder="parameters token"><br>      &lt;input message="tns:createCustomer"/><br>      &lt;output message="tns:createCustomerResponse"/><br>    &lt;/operation><br><br>    &lt;operation name="notifyTransfer" parameterOrder="token"><br>      &lt;input message="tns:notifyTransfer"/><br>    &lt;/operation><br><br>    &lt;operation name="login" parameterOrder="parameters"><br>      &lt;input message="tns:login"/><br>      &lt;output message="tns:loginResponse"/><br>    &lt;/operation><br><br>  &lt;/portType><br><br>  &lt;binding name="ExampleWebServiceImplServiceSoapBinding" type="tns:ExampleWebService"><br>    &lt;soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/><br><br>    &lt;operation name="createCustomer"><br>      &lt;soap:operation soapAction="urn:createCustomer" style="document"/><br>      &lt;input><br>        &lt;soap:body parts="parameters" use="literal"/><br>        &lt;soap:header message="tns:createCustomer" part="token" use="literal"/><br>      &lt;/input><br>      &lt;output><br>        &lt;soap:body parts="parameters" use="literal"/><br>      &lt;/output><br>    &lt;/operation><br><br>    &lt;operation name="notifyTransfer"><br>      &lt;soap:operation soapAction="urn:notifyTransfer" style="document"/><br>      &lt;input><br>        &lt;soap:body parts="parameters" use="literal"/><br>        &lt;soap:header message="tns:notifyTransfer" part="token" use="literal"/><br>      &lt;/input><br>    &lt;/operation><br><br>    &lt;operation name="login"><br>      &lt;soap:operation soapAction="urn:login" style="document"/><br>      &lt;input><br>        &lt;soap:body parts="parameters" use="literal"/><br>      &lt;/input><br>      &lt;output><br>        &lt;soap:body parts="parameters" use="literal"/><br>      &lt;/output><br>    &lt;/operation><br><br>  &lt;/binding><br><br>  &lt;service name="ExampleWebServiceImplService"><br>    &lt;port binding="tns:ExampleWebServiceImplServiceSoapBinding" name="ExampleWebServiceSoapPort"><br>      &lt;soap:address location="http://localhost:7001/ExampleWebServiceImpl/ExampleWebServiceImpl"/><br>    &lt;/port><br>  &lt;/service><br><br>&lt;/definitions><br>&nbsp;</TD></TR>
+
+</TBODY></TABLE>
+
+
+
+
+<!-- ** BEGIN: footer.jsp ** //-->
+
+
+
+
+
+
+
+
+</td>
+</tr>
+</table>
+
+<!-- ** END: Content Table ** //-->
+
+<!-- ** BEGIN: Footer Table ** //-->
+
+<div id="footer" style="clear: both;">
+    <div class="footleft">
+        <a href="/en/resources/contacts">Contact Us</a>
+    </div>
+	
+    <div class="botbar"><img src="/images/spacer.gif" alt="" height="23" width="1"></div>
+
+    <div class="footleft2">
+         &copy; 2019, Oracle Corporation and/or its affiliates. 
+        <a href="/en/home/terms">Terms of Use</a>. <a href="http://www.oracle.com/us/legal/privacy/index.html">Privacy Policy</a>. <a href="http://www.oracle.com/us/legal/third-party-trademarks/third-party-trademarks-078568.html">Trademarks</a>
+    </div>
+
+    <div class="footright">
+        <img src="/images/common/logo_oracle_footer.gif" alt="Oracle Corporation" height="22" width="91">
+    </div>
+
+    <div style="clear: both;"><img src="/images/spacer.gif" alt="" height="30" width="1"></div>
+</div>
+
+<!-- ** END: Footer Table ** //-->
+
+
+
+<!-- ** Menu Start ** //-->
+
+
+
+</body>
+</html>
+<!-- ** END: footer.jsp ** //-->
+

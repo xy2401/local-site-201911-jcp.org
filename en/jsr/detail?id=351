@@ -1,0 +1,1488 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- ** BEGIN: header.jsp ** //-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3c.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+<head>
+    
+
+   
+    <link href="/includes/css/menu.css" rel="stylesheet" type="text/css"></link>
+    <link href="/includes/css/style.css" rel="stylesheet" type="text/css"></link>
+    <!--[if lt IE 6]><link href="/includes/css/style5.css" rel="stylesheet" type="text/css" ></link><![endif]-->
+    <!--[if gte IE 5]><link href="/includes/css/style6.css" rel="stylesheet" type="text/css" ></link><![endif]-->
+    <link href="/includes/css/tabs.css"  rel="stylesheet" type="text/css"></link>
+
+    <script type="text/javascript" src="/includes/scripts/tabs.js"></script>
+    <script type="text/javascript" src="/includes/scripts/menu.js"></script>
+   
+
+    
+
+    
+        <title>The Java Community Process(SM) Program - JSRs: Java Specification Requests - detail JSR# 351</title>
+    
+
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+
+
+<body onload="P7_initPM(0,1,0,0,-1)">
+
+    <a name="top"></a>
+
+    <div id="header">
+	<div id="logo">
+		<a href="/en/home/index"><img src="/images/spacer.gif" alt="Java Community Process" height="81" width="151"></a>
+	</div>
+	<div id="tools">
+		<div class="search">
+			<form name="search" action="/en/jsr/summary" method="get" onsubmit="return validate_search()">
+				<input name="id" value="Search JSRs" size="16" class="form" onfocus="nullify_if_equal(this, 'Search JSRs')" type="text">
+				<a href="javascript:document.search.submit()" onclick="return validate_search()"><img src="/images/button_go.gif" width="21" height="16" border="0" alt="Submit this Search" name="sub_search"></a>
+			</form>
+		</div>
+		<div class="tools">
+			<a href="/en/press/pressroom">Press Room</a> &nbsp;|&nbsp;
+			<a href="http://java.com/java/download/index.jsp?cid=jdp78399">Get Java Here</a> &nbsp;|&nbsp;
+			<!-- <a href="javascript:void(0)">Print Format</a> &nbsp;|&nbsp;&nbsp; -->
+		</div>
+
+	</div>
+	<div style="clear: right;"></div>
+
+        
+
+	<div class="topbar"><img src="/images/spacer.gif" alt="" height="3" width="154"></div>
+	<div id="update"> </div>
+    </div>
+
+
+    
+
+        <!-- ** BEGIN: Content Table ** //-->
+
+        <table width="100%" border="0" cellpadding="0" cellspacing="0">
+
+            <tr>
+
+                <!-- ** BEGIN: Navigation Column ** //-->
+                <td width="150" id="leftcontent" valign="top">
+                    <!-- Navigation Placeholder //-->
+
+                    
+
+                    <div class="bar"><img src="/images/hr_dots1.gif" alt="" height="3" width="150"></div>
+
+        <!-- begin find JSRs form -->
+        <!-- IMPORTANT! do not convert this form to Struts < html : form > tag.  javascript change of form.action property fails. -->
+        <img src="/images/hd_find-jsrs.gif" alt="Find JSRs" height="18" width="150">
+        <form name="findjsr" action="/en/jsr/summary" method="get" class="pt5" onsubmit="return validate_findjsr()">
+            <input name="id" size="18" class="form" value="Search JSRs" onfocus="nullify_if_equal(this, 'Search JSRs')" type="text">
+	    <a href="javascript:document.findjsr.submit()" onclick="return validate_findjsr()"><img src="/images/button_go.gif" width="21" height="16" border="0" alt="Submit this Search" name="sub_search"></a>
+        </form><br><br>
+
+        <!-- ** Menu Start ** //-->
+
+        <ul id="p7PMnav">
+            <li><a href="/en/jsr/platform">JSRs by Platform</a></li>
+            <li><a href="/en/jsr/tech">JSRs by Technology</a></li>
+            <li><a href="/en/jsr/stage">JSRs by Stage</a></li>
+            <li><a href="/en/jsr/ec">JSRs by Committee</a></li>
+            <li><a href="/en/jsr/all">List of All JSRs</a></li>
+
+            <!--end find JSRs form -->
+            <div style="clear: both;"><img src="/images/spacer.gif" alt="" height="25" width="1"></div>
+
+            <!--begin my JCP -->
+            <img src="/images/hd_my-jcp.gif" alt="My JCP" height="18" width="150">
+            
+
+          <form name="login" method="get" action="/en/user/login" >
+            <input name="Sign-in" type="submit" title="Sign-in" value="Sign-in" />
+          </form>
+
+            <div style="clear:both"><img src="/images/global/spacer.gif" width="1" height="3" alt=""></div>
+            <div class="noNav">
+                <a href="/en/user/register">Register for Site</a>
+            </div>
+
+             <div class="bar"><img src="/images/hr_dots1.gif" alt="" height="3" width="150"></div>
+           <div class="noNav" style="color: #666666; padding: 0;">
+              Use of JCP site is subject to the
+              <a href="/en/home/terms" style="display:inline;padding: 0">JCP Terms of Use</a> and the
+              <a href="http://www.oracle.com/us/legal/privacy/index.html" style="display:inline;padding: 0" href="">Oracle Privacy Policy</a>
+          </div>
+
+            
+
+            <div style="clear:both"><img src="/images/global/spacer.gif" width="1" height="25" alt=""></div>
+
+            <!--begin JCP info -->
+            <img src="/images/hd_jcp-info.gif" alt="JCP Info" height="18" width="150">
+
+            <li><a href="/en/procedures/overview" class="p7PMtrg">About JCP</a>
+                <ul>
+                    <li><a href="/en/procedures/overview">Program Overview</a></li>
+                    <li><a href="/en/procedures/jcp2">JCP Process Document</a></li>
+                    <li><a href="/en/whatsnew/calendar">Calendar</a></li>
+                    <li><a href="/en/participation/members">JCP Members</a></li>
+                    <li><a href="/en/participation/committee">Executive Committee</a></li>
+                    <li><a href="/en/whatsnew/elections">Elections</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/en/participation/overview" class="p7PMtrg">Get Involved</a>
+		<ul>
+                    <li><a href="/en/participation/overview">Overview</a></li>
+                    <li><a href="/en/participation/membership">Becoming a JCP Member</a></li>
+		</ul>
+            </li>
+
+            <li><a href="/en/resources/contents" class="p7PMtrg">Community Resources</a>
+                <ul>
+                    <li><a href="/en/resources/contents">Overview</a></li>
+                    <li><a href="/en/resources/tutorials">Tutorials</a></li>
+                    <li><a href="/en/resources/multimedia">JCP Podcasts</a></li>
+                    <li><a href="/en/resources/guide">Spec Lead Guide</a></li>
+                    <li><a href="/en/resources/tdk">TCK Tool & Info</a></li>
+                    <li><a href="/en/resources/license_reference">License Reference</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/en/press/pmo" class="p7PMtrg">Community News</a>
+                <ul>
+                    <li><a href="/en/press/pmo">News</a></li>
+                    <li><a href="/en/press/news/awards/awards_main">Programs &amp; Awards</a></li>
+                    <li><a href="/en/press/releases">Press Releases</a></li>
+                    <li><a href="/en/press/success">Success Stories</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/en/introduction/faq">FAQ</a></li>
+
+            <li><a href="/en/resources/contacts">Contact Us</a></li>
+
+            <div style="clear: both;"><img src="/images/spacer.gif" alt="" height="25" width="1"></div>
+
+            <!--[if lte IE 6]><style>#p7PMnav a{height:1em;}#p7PMnav li{height:1em;float:left;clear:both;width:100%}</style><![endif]-->
+            <!--[if IE 6]><style>#p7PMnav li{clear:none;}</style><![endif]-->
+            <!--[if IE 7]><style>#p7PMnav a{zoom:100%;}#p7PMnav li{float:left;clear:both;width:100%;}</style><![endif]-->
+        </ul>
+
+        
+
+        <!--begin ad space -->
+        <div class="ads">
+            <a href="http://java.com/java/download/index.jsp?cid=jdp78399" target="_blank"><img style="display: ;" src="/images/ad_banner2.gif" alt="Ad Banner" border="1" height="70" width="150"></a>
+        </div>
+        <!--end ad space -->
+
+<!-- ** Menu End ** //-->
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;<br>
+
+    
+
+                    &nbsp;<br>
+                    <img src="/images/common/trans.gif" alt="" width="1" height="150"><br>
+
+              
+
+
+
+                </td>
+                <!-- ** END: Navigation Column ** //-->
+
+                <!-- ** BEGIN: Gutter Column ** //-->
+		<td width="10" nowrap><img src="/images/common/trans.gif" alt="" width="10" height="1"></td>
+                <!-- ** END: Gutter Column ** //-->
+
+                <!-- ** BEGIN: Content Column ** //-->
+                <td width="100%" valign="top">
+
+    
+<script type="text/javascript">
+
+String.prototype.trim = function() {
+        return this.replace(/^\s+|\s+$/g,"");
+}
+String.prototype.ltrim = function() {
+        return this.replace(/^\s+/,"");
+}
+String.prototype.rtrim = function() {
+        return this.replace(/\s+$/,"");
+}
+
+function validate_search() {
+	if (document.search.id.value == "Search JSRs" || document.search.id.value.trim().length == 0) {
+		alert("Search terms must be entered first");
+		return false;
+	}
+	return true;
+}
+
+function validate_findjsr() {
+	if (document.findjsr.id.value == "Search JSRs" || document.findjsr.id.value.trim().length == 0) {
+		alert("Search terms must be entered first");
+		return false;
+	}
+	return true;
+}
+
+function nullify_if_equal(field, str) {
+	// alert("val=" + field.value);
+	if (field.value == str) {
+		field.value = "";
+	}
+}
+
+</script>
+<!-- ** END: header.jsp ** //-->
+
+
+
+
+
+        <!--  BEGIN NAVIGATION TABS -->
+        <div id="p7TP1">
+                <div class="p7TP_tabs">
+                        <div id="p7tpb1_1" class="down"><a class="down">JSR</a></div>
+                        <div><a href="/en/egc/view?id=351">Community</a></div>
+                        <div><a href="/en/eg/eghome?id=351">Expert Group</a></div>
+			
+
+                <br class="p7TPclear" />
+                </div>
+
+                <div class="p7TPcontent">
+                        <div id="p7tpc1_1">
+
+			
+                                <a href="summary?id=351">Summary</a>
+			
+			
+                                &nbsp;|&nbsp;
+				<a href="proposalDetails?id=351">Proposal</a>
+			
+			
+                                &nbsp;|&nbsp;
+                                <span>Detail (Summary &amp; Proposal)</span>
+			
+		
+                        
+                                &nbsp;|&nbsp;
+                                <a href="nominations?id=351">Nominations</a>
+			
+		
+                        </div>
+
+                </div>
+                <!--[if lte IE 6]><style type="text/css">.p7TPpanel div,.p7TPpanel a{height:1%;}.p7TP_tabs a{white-space:nowrap;}</style><![endif]-->
+        </div>
+        <script type="text/javascript">
+                P7_initTP(1,0);
+        </script>
+        <!--  END NAVIGATION TABS -->
+
+
+<div class="anybar"><img src="/images/global/bar_green.gif" alt="" width="12" height="4"></div>
+
+<div class="header2">JSRs: Java Specification Requests</div>
+<div class="header1">JSR 351: Java<font size="-2"><sup>TM</sup></font> Identity API</div>
+<div class="anybar"><img src="/images/global/bar_green.gif" alt="" width="12" height="4"></div>
+<br>
+
+
+
+<!-- ********************************************** -->
+<!--  JSR Status information                        -->
+<!-- ********************************************** -->
+
+
+                <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                    <tr>
+                        <td id="centercontent" valign="top">
+			<tr>
+			<td>
+                            <table class="tbl" cellpadding="4" cellspacing="1" width="100%">
+                                <tr valign="top">
+                                    <td class="bdtl">Stage</td>
+                                    <td class="bdtl">Access</td>
+                                    <td class="bdtl">Start</td>
+                                    <td class="bdtl">Finish</td>
+                                </tr>
+
+				<tr class="bgw" valign="top">
+                                        <td>Withdrawn </td>
+                                        
+                                            <td>&nbsp;</td>
+                                        
+                                        <td>06 Jul, 2016</td>
+                                        <td>&nbsp;</td>
+				</tr>
+
+				<tr class="bgw" valign="top">
+                                        <td>JSR Renewal Ballot </td>
+                                        
+                                            <td><a href="results?id=5779">View results</a></td>
+                                        
+                                        <td>28 Apr, 2015</td>
+                                        <td>11 May, 2015</td>
+				</tr>
+
+				<tr class="bgw" valign="top">
+                                        <td>Early Draft Review </td>
+                                        
+                                            <td><a href="http://jcp.org/aboutJava/communityprocess/edr/jsr351/index.html">Download page</a></td>
+                                        
+                                        <td>09 Oct, 2013</td>
+                                        <td>07 Jan, 2014</td>
+				</tr>
+
+				<tr class="bgw" valign="top">
+                                        <td>Expert Group Formation </td>
+                                        
+                                            <td>&nbsp;</td>
+                                        
+                                        <td>04 Oct, 2011</td>
+                                        <td>15 Dec, 2012</td>
+				</tr>
+
+				<tr class="bgw" valign="top">
+                                        <td>JSR Review Ballot </td>
+                                        
+                                            <td><a href="results?id=5246">View results</a></td>
+                                        
+                                        <td>20 Sep, 2011</td>
+                                        <td>03 Oct, 2011</td>
+				</tr>
+
+			</table>
+			</td>
+			</tr>
+                        </td>
+</tr>
+</table>
+
+<!-- ********************************************** -->
+<!--  JCP Version                                   -->
+<!-- ********************************************** -->
+
+<span style="padding: 10px; display: block;">
+
+    <b> Status: </b><a href="/en/introduction/glossary#status"><font color=red><span title="A JSR that was withdrawn from the JCP by the Specification Lead before Final Release.">Withdrawn</span></font></a><br>
+
+
+    <b> Reason:</b> Withdrawn at the request of the Spec Lead.<br>
+
+
+    
+	<b>JCP version in use:</b> <a href="/procedures/jcp2_9"> 2.9</a><br>
+    
+
+    
+	<b>Java Specification Participation Agreement version in use:</b> 2.0<br>
+    
+
+    <br><br>
+        <b>Description</b>:<br>
+        This JSR will develop the Identity API for the Java Platform.
+    <br><br>
+
+    <!-- ********************************************** -->
+    <!--  JSR Comments Email excluding JSR 900 and up   -->
+    <!-- ********************************************** -->
+
+	    
+		    <b>Expert Group Transparency:</b><br>
+				&nbsp;&nbsp;<a href="http://java.net/projects/identity-api-spec/lists">Public Communications</a><br>
+			
+				&nbsp;&nbsp;<a href="http://java.net/jira/browse/IDENTITY_API_SPEC">Issue Tracking</a><br>
+			
+			<br>
+	    
+
+            </span>
+
+   <!-- ****************************************** -->
+
+                <div id="p7TP52">
+                        <div class="p7TP_tabs2">
+                            <div><span>Team</span></div>
+                            <br class="p7TPclear" />
+                        </div>
+                </div>
+
+                <table bgcolor="#f2f2f2" border="0" cellpadding="5" cellspacing="1" width="100%">
+	
+                    <tr valign="top">
+                            <td colspan="3"><span class="header4">Specification Leads</span></td>
+                    </tr>
+
+
+		
+        
+			<tr valign="top">
+                            
+                            <td width="20" nowrap>&nbsp;</td>
+                            
+                            <td>Ronald&nbsp;Monzillo</td>
+                            <td>Oracle</td>
+			</tr>
+        
+
+                <tr valign="top">
+                        <td colspan="4" class="spacerw"><img src="/images/global/spacer.gif" alt="" height="1" width="1"></td>
+                </tr>
+                <tr valign="top">
+                        <td colspan="3"><span class="header4">Expert Group</span></td>
+                </tr>
+
+
+			<tr valign="top">
+                            <td width="20" nowrap>&nbsp;</td> <!-- Gutter //-->
+                            <td>Gowadia, Vaibhav<br>: Vaibhav Gowadia</td>
+     
+
+                            <td>IBM<br>: Bruce Rich</td>
+    
+
+                            <td>Werner Keil</td>
+			</tr>
+
+
+			<tr valign="top">
+                            <td width="20" nowrap>&nbsp;</td> <!-- Gutter //-->
+                            <td>Oracle<br>: Will Hopkins</td>
+     
+
+                            <td>Oracle<br>: Ronald Monzillo</td>
+    
+
+                            <td>Parks, Nicholas<br>: Nicholas Parks</td>
+			</tr>
+
+
+			<tr valign="top">
+                            <td width="20" nowrap>&nbsp;</td> <!-- Gutter //-->
+                            <td>Peterson, Gunnar<br>: gunnar peterson</td>
+     
+
+                            <td>Red Hat<br>: Shane Bryzak</td>
+    
+
+                            <td>Red Hat<br>: Boleslaw Dawidowicz</td>
+			</tr>
+
+
+			<tr valign="top">
+                            <td width="20" nowrap>&nbsp;</td> <!-- Gutter //-->
+                            <td>SAP SE<br>: Stephan Zlatarev</td>
+     
+
+                            <td>Williams, Jeff<br>: Jeff Williams</td>
+    
+
+
+
+
+
+
+
+
+
+			</tr>
+
+
+
+                <tr valign="top">
+                        <td colspan="4" class="spacerw"><img src="/images/global/spacer.gif" alt="" height="1" width="1"></td>
+                </tr>
+                <tr valign="top">
+                        <td colspan="3"><span class="header4">Contributors</span></td>
+                </tr>
+
+
+
+
+
+
+			<tr valign="top">
+                            <td width="20" nowrap>&nbsp;</td> <!-- Gutter //-->
+
+
+			    <td width="30%">&nbsp;</td>
+
+
+			    <td width="30%">&nbsp;</td>
+
+
+			    <td width="30%">&nbsp;</td>
+
+
+			</tr>
+
+		</table>
+                    <!-- ********************************************** -->
+                    <!--  Expert Group Status                           -->
+                    <!-- ********************************************** -->
+
+                    <table cellpadding="0" cellspacing="0" border="0">
+                        
+                        <tr><td><ul><li>I would like to <a href="egnom?id=351">join this JSR</a></li></ul></td></tr>
+                        
+                    </table>
+
+   <!-- ****************************************** -->
+
+
+
+
+<!-- ********************************************** -->
+<!--  JSRProposal Info                              -->
+<!-- ********************************************** -->
+<p>
+
+		This JSR has been <a href="/en/introduction/glossary#status"><font color=red><span title="A JSR that was withdrawn from the JCP by the Specification Lead before Final Release.">Withdrawn</span></font></a><br>
+		<b> Reason:</b> Withdrawn at the request of the Spec Lead.<br> <br>
+
+
+<a name="updates"><font size="+2">Updates to the Original JSR</font></a><p>
+
+The following updates have been made since the <a href="#orig">original proposal</a>:<P>
+
+<B><U>2013.01.05</u></b>:<BR>
+The JSR has moved to <a href="/en/procedures/jcp2_9">JCP 2.9</a>.
+
+<P>
+<HR>
+<P>
+
+<a name="orig"><font size="+2">Original Java Specification Request (JSR)</font></a><p>
+<FONT SIZE="-1">
+
+<!-- BEGIN-SUB TOPICS -->
+
+          <A HREF="#1"> Identification</A>  |
+          <A HREF="#2"> Request</A>  |
+          <A HREF="#3"> Contributions</A>  |
+          <A HREF="#4"> Additional Information</A>
+<BR>
+
+<!-- END-SUB TOPICS -->
+
+</FONT>
+<P>
+
+<!-- BEGIN TEMPLATE -->
+
+<!-- SECTION 1 -->
+
+<A NAME="1"></A>
+
+<P><FONT size=+2>Section 1. Identification</FONT>
+
+<P><b>Submitting Member:</b> Oracle America, Inc. </P>
+
+<P><b>Name of Contact Person:</b> Prateek Mishra </P>
+
+<P><b>E-Mail Address:</b> prateek.mishra<faketag>&#64;</faketag>oracle.com</P>
+
+<P><b>Telephone Number:</b> +1 617 872 7737</P>
+
+<P><b>Fax Number:</b> +1 781 442 1610</P>
+
+<BR>
+<P><b>Specification Lead:</b> Ron Monzillo, Prateek Mishra</P>
+
+<P><b>E-Mail Address:</b> ron.monzillo<faketag>&#64;</faketag>oracle.com, prateek.mishra<faketag>&#64;</faketag>oracle.com</P>
+
+<P><b>Telephone Number:</b> +1 781 442 0968, +1 617 872 7737</P>
+
+<P><b>Fax Number:</b> +1 781 442 1610</P>
+
+<BR>
+
+<P><B>Initial Expert Group Membership:</B>
+</P>
+
+<P>IBM<BR>
+Oracle<BR>
+RedHat<BR>
+SAP AG
+</P>
+
+<P><B>Supporting this JSR:</B>
+
+</P>
+
+<P>American Express<BR>
+Aspect Security<BR>
+Boeing<BR>
+Ericsson AB<BR>
+OWASP</p>
+
+<BR><BR>
+
+<!-- SECTION 2 -->
+
+<A NAME="2"></A>
+
+<P>
+<FONT SIZE="+2">Section 2: Request</FONT><P>
+</P>
+
+<H4>2.1 Please describe the proposed Specification:</H4>
+
+<P><DL>
+    <DD><FONT FACE="Helvetica, sans serif, sans-serif">The objective of
+    this project is to define application programming interfaces and
+    identity interaction models that facilitate and control the use of
+    identity by applications and in access control decisions.</FONT></DD><DD>
+    <BR>
+    </DD><DD>
+    <FONT FACE="Helvetica, sans serif, sans-serif">To meet this
+    objective, we will define interfaces that are integrated with the
+    Java security model and that enable a declarative application
+    programming style. We will also define interfaces to attach
+    meta-data to identity attributes (e.g., email address, social
+    security number, bank account number, date of birth, nationality,
+    gender) and a vocabulary of identity characterizing meta-data (e.g.,
+    issuer, validity period, usage constraints) to be used in support of
+    the identity interaction models. We will define an attribute service
+    as the point of governance and of interaction with distributed
+    sources of identity. We will also define interfaces that do the
+    following:</FONT></DD><DD>
+    <BR>
+    </DD><DD>
+    <FONT FACE="Helvetica, sans serif, sans-serif">- Enable applications
+    to act both as consumers and as providers of attributes</FONT></DD><DD>
+    <FONT FACE="Helvetica, sans serif, sans-serif">- Facilitate the
+    insertion of access control checks in applications and the use of
+    attributes in access control decisions</FONT></DD><DD>
+    <FONT FACE="Helvetica, sans serif, sans-serif">- Allow users to
+    authorize disclosure and use of their identity attributes</FONT></DD><DD STYLE="margin-bottom: 0.2in">
+    <FONT FACE="Helvetica, sans serif, sans-serif">- Sustain the
+    protection of identity attributes during their propagation between
+    applications and systems</FONT></DD><DD STYLE="margin-bottom: 0.2in">
+    <FONT FACE="Helvetica, sans serif, sans-serif"><I>Example: A
+    developer creates a prescription renewal application for use by
+    subscribers of a health care provider. The developer uses the Java
+    Identity API to reference attributes of the subscriber such as
+    subscriber identifier, preferred pharmacy, renewable prescriptions,
+    and service affiliation groups. The developer may also utilize
+    attribute meta-data such as the last time the attributes were
+    updated.</I></FONT></DD><DD STYLE="margin-bottom: 0.2in">
+    <FONT FACE="Helvetica, sans serif, sans-serif"><I>The developer does
+    not describe how the attributes are to be obtained. When the
+    application is deployed by a specific health care provider, the
+    attribute references are resolved against the distributed attribute
+    sources and user authentication tokens in use by the health care
+    provider. This linkage is established without recompiling or
+    changing the application. Further, the governance aspects of the API
+    support tracking and managing the use of attributes both within the
+    application and in its communication with other components. </I></FONT>
+    </DD></DL>
+ </P>
+
+<H4>2.2 What is the target Java platform? (i.e., desktop, server, personal, embedded, card, etc.)</H4>
+
+<P><P STYLE="margin-left: 0.4in"><FONT FACE="Helvetica, sans serif, sans-serif">The
+target platform is Java SE and the proposed API is intended to be
+applicable to Java platforms that retain the SE security framework
+(including Java EE). It is assumed that the proposed API will depend
+on a small set of basic services, including resource injection and
+life-cycle callbacks, that are provided by the encompassing
+environment.</FONT></P></P>
+
+<H4>2.3 The Executive Committees would like to ensure JSR submitters think about how their proposed technology relates to all of the Java platform editions. Please provide details here for which platform editions are being targeted by this JSR, and how this JSR has considered the relationship with the other platform editions.</H4>
+
+<P STYLE="margin-left: 0.4in"><FONT FACE="Helvetica, sans serif, sans-serif">This
+specification is targeted for compatibility with Java SE and Java EE
+platforms beginning with Version 6.0. We also expect the output of
+this project to be relevant to Java applications running in consumer
+appliances.</FONT></P>
+
+<H4>2.4 Should this JSR be voted on by both Executive Committees?</H4>
+
+<P STYLE="margin-left: 0.4in"><FONT FACE="Helvetica, sans-serif">No</FONT></P>
+
+
+<H4>2.5 What need of the Java community will be addressed by the proposed specification?</H4>
+
+<P STYLE="margin-left: 0.4in"><FONT FACE="Helvetica, sans serif, sans-serif">The
+advent of social networking sites, the adoption of single-sign-on and
+identity federation services, and more generally, the increased use
+of the internet in conducting business, have combined to amplify the
+need for Java developers to be able to appropriately consume,
+produce, and safeguard the disclosure of network identity. The lack
+of adequate interfaces in the Java platform is forcing application,
+system, and identity framework developers to rely on non-standard
+interfaces, which is resulting in indirect, inconsistent, poorly
+integrated, and inferior support for network identity.</FONT></FONT></P>
+<P STYLE="margin-left: 0.4in"><FONT FACE="Helvetica, sans serif, sans-serif">Java
+developers need interfaces that allow them to:</FONT></FONT></P>
+<DL>
+	<DD><FONT FACE="Helvetica, sans serif, sans-serif">- encapsulate and
+	attribute application-specific types and mechanism-specific security
+	credentials to sustain their common use and interpretation as
+	identity attributes</FONT></DD><DD>
+	<BR>
+	</DD><DD>
+	<FONT FACE="Helvetica, sans serif, sans-serif">- interact (including
+	lookup, read, create, and delete) in a portable fashion with
+	identity information of potentially varying type and from
+	potentially distributed sources</FONT></DD><DD>
+	<BR>
+	</DD><DD>
+	<FONT FACE="Helvetica, sans serif, sans-serif">- establish
+	references that identify the one or more attributes of the one or
+	more entities that are to be the target of an interaction</FONT></DD><DD>
+	<BR>
+	</DD><DD>
+	<FONT FACE="Helvetica, sans serif, sans-serif">- export attributes
+	from applications such that they can be referenced in context from
+	other systems, including in support of the processing of
+	fine-grained policies during access control decisions performed in
+	the context of the application.</FONT></DD><DD>
+	<BR>
+	</DD><DD>
+	<FONT FACE="Helvetica, sans serif, sans-serif">- establish the use
+	and authorization policies relating to any attributes they create,
+	export, or otherwise manage.</FONT></DD><DD>
+	<BR>
+	</DD><DD>
+	<FONT FACE="Helvetica, sans serif, sans-serif">- exchange attributes
+	between applications and systems including in a manner that sustains
+	authorization protection of the attributes</FONT></DD><DD STYLE="margin-left: 0in; margin-bottom: 0.2in">
+	<BR><BR>
+	</DD></DL>
+<P STYLE="margin-left: 0.4in">
+<FONT FACE="Helvetica, sans serif, sans-serif">In
+addition to the needs of Java developers, an effective interaction
+model for network identity requires a governance model in which it
+must be possible to predict, monitor, and control (such as via access
+control checks) interactions by applications with identity
+attributes. </FONT></FONT>
+</P>
+
+<H4>2.6 Why isn't this need met by existing specifications?</H4>
+
+<P STYLE="margin-left: 0.4in"><FONT FACE="Helvetica, sans serif, sans-serif">The
+Java security model protects the resources of the Java runtime
+environment from both the calling code and the entity (for example,
+user) on whose behalf the calling code is executing. Unlike the
+CodeSource object which provides a standard interface for identifying
+code and for certifying its integrity, the Principal interface, which
+is used to represent on whose behalf the code is running,
+standardizes only a very superficial representation of that entity.
+While Java defines some objects (e.g., KerberosTicket and
+X509Certificate) that encapsulate identity and identity qualifying
+information(for example, issuer and validity period) such objects are
+poorly suited to the task of representing identity values that are
+not intrinsic to the corresponding security mechanism and its
+associated transfer syntax (e.g., ASN.1). For example, neither a
+KerberosTicket or an X509Certificate can offer an effective Java
+binding for a generic identity attribute such as social security
+number. Moreover, as noted above, it is the Principal objects (e.g.,
+KerberosPrincipal and X500Principal) that represent on whose behalf
+some java code is running. Information in any encapsulating
+credentials is not generally available when (for example) an access
+control decision is being performed, and the existing Principal
+interface represents only a name without any common capacity to
+represent identity qualifying information. As such, Java developers
+and the Java security model require additional interfaces to
+standardize a more complete representation and interaction model for
+identity attributes. Further, Java does not assign or otherwise
+establish a model or architecture for use in defining the terms that
+govern the disclosure of its representations of network identity.</FONT></FONT></P>
+
+<H4>2.7 Please give a short description of the underlying technology or technologies:</H4>
+
+<P STYLE="margin-left: 0.4in; margin-bottom: 0.2in"><FONT FACE="Helvetica, sans serif, sans-serif">As
+an initial proposal, this JSR proposes to deliver standard interfaces
+and functionality at 3 layers. </FONT></FONT>
+</P>
+<P STYLE="margin-left: 0.4in; margin-bottom: 0.2in"><FONT FACE="Helvetica, sans serif, sans-serif">Layer
+1: Representation and JRE integration</FONT></FONT></P>
+<P STYLE="margin-left: 0.4in"><FONT FACE="Helvetica, sans serif, sans-serif">We
+propose to define new attribute interfaces to represent identity
+attributes and associated meta-data. These interfaces would be used
+to facilitate common representation of existing Java Object types as
+identity attributes, to convey identity attributes within the Java
+access control context, to facilitate integration with the standard
+java.security.Policy decision interface, and to reference and
+represent content acquired from the attribute service.</FONT></FONT></P>
+<P STYLE="margin-left: 0.4in"><FONT FACE="Helvetica, sans serif, sans-serif">We
+expect consideration of the representation of relationships among
+attributes and collections of attributes to factor in the definition
+of the representation layer.</FONT></FONT></P>
+<P STYLE="margin-left: 0.4in"><FONT FACE="Helvetica, sans serif, sans-serif">Layer
+2: Services</FONT></FONT></P>
+<P STYLE="margin-left: 0.4in"><FONT FACE="Helvetica, sans serif, sans-serif">We
+propose to define Attribute Service interfaces to support interaction
+with attributes in one or more attribute repositories, and to support
+the integration of applications as attribute providers accessible
+within this service framework.</FONT></FONT></P>
+<P STYLE="margin-left: 0.4in"><FONT FACE="Helvetica, sans serif, sans-serif">For
+the reference implementation, we will provide a Policy subsystem that
+is able to consume policies that are contingent on identity
+attributes acquired from the Attribute Service. </FONT></FONT>
+</P>
+<P STYLE="margin-left: 0.4in"><FONT FACE="Helvetica, sans serif, sans-serif">The
+reference implementation will also include one or more attribute
+providers that facilitate integration with existing identity
+repositories and protocols. The specific integrations included in the
+reference implementation will be decided by the Expert Group; while
+recognizing that the specification will define contracts to
+facilitate additional repository integrations by third parties.
+FaceBook, Twitter, and LinkedIn will be among the identity
+repositories considered for integration within the reference
+integration, as will their associated programming interfaces and
+protocols, including FaceBook Connect, OpenID Connect, and OAUTH 2.0.
+</FONT></FONT>
+</P>
+<P STYLE="margin-left: 0.4in"><FONT FACE="Helvetica, sans serif, sans-serif">We
+expect consideration of support for multi-tenancy to factor in the
+definition of the services layer. </FONT></FONT>
+</P>
+<P STYLE="margin-left: 0.4in; margin-bottom: 0.2in"><FONT FACE="Helvetica, sans serif, sans-serif">Layer
+3: Application development</FONT></FONT></P>
+<P STYLE="margin-left: 0.4in; margin-bottom: 0.2in"><FONT FACE="Helvetica, sans serif, sans-serif">We
+propose to define annotations that will cause the injection of
+Identity attributes and or references to identity attributes into
+applications. We also propose to define annotations that will cause
+application fields to be exported as attributes to the attribute
+service.</FONT></FONT></P>
+<P STYLE="margin-left: 0.4in; margin-bottom: 0.2in"><FONT FACE="Helvetica, sans serif, sans-serif">We
+also intend to describe the use of annotations to cause the insertion
+of attribute-based policy enforcement points within applications.
+Where feasible, we will reuse or extend extend existing standard
+annotations. We will also propose and advocate for improvements in
+the existing Java access control interfaces to facilitate more
+efficient enforcement of user-centric
+access control decisions.</FONT></FONT></P>
+
+<H4>2.8 Is there a proposed package name for the API Specification? (i.e., <TT>javapi.something</TT>, <TT>org.something</TT>, etc.)</H4>
+
+<P STYLE="margin-left: 0.4in"><FONT FACE="Helvetica, sans serif, sans-serif">javax.security.identity</FONT></P>
+
+<H4>2.9 Does the proposed specification have any dependencies on specific operating systems, CPUs, or I/O devices that you know of?</H4>
+
+<P STYLE="margin-left: 0.4in"><FONT FACE="Helvetica, sans-serif">no</FONT></FONT></P>
+
+<H4>2.10 Are there any security issues that cannot be addressed by the current security model?</H4>
+
+<P STYLE="margin-left: 0.4in"><FONT FACE="Helvetica, sans-serif">The
+current security model does not describe or otherwise address the
+need for an identity governance model; i.e., a model or framework
+that is used to determine and control how identity information is
+used, stored and propagated between systems.</FONT></P>
+
+<H4>2.11 Are there any internationalization or localization issues?</H4>
+
+<P STYLE="margin-left: 0.4in"><FONT FACE="Helvetica, sans serif, sans-serif">This
+specification will rely on I18N support in Java SE</FONT></FONT></P>
+
+<H4>2.12 Are there any existing specifications that might be rendered obsolete, deprecated, or in need of revision as a result of this work?</H4>
+
+<P STYLE="margin-left: 0.4in"><FONT FACE="Helvetica, sans-serif">no</FONT></P>
+
+<H4>2.13 Please describe the anticipated schedule for the development of this
+specification.</H4>
+
+<DL>
+	<DD>Expert Group formed: October 2011</FONT></DD><DD>
+	Early Draft: March 2012</DD><DD>
+	Public Review: July 2012</DD><DD STYLE="margin-bottom: 0.2in">
+	Final Release: January 2013</DD></DL>
+
+<H4>2.14 Please describe the anticipated working model for the Expert Group working on developing this
+specification.</H4>
+
+<P ALIGN=LEFT STYLE="margin-left: 0.4in; margin-bottom: 0in"><FONT FACE="Helvetica, sans-serif">The
+primary means of communication will be email and conference calls.
+Face-to-face meetings will be scheduled if needed.</FONT></FONT></P>
+
+<H4>2.15 It is important to the success of the community and each JSR that the work of the Expert Group be handled in a manner which provides the community and the public with insight into the work the Expert Group is doing, and the decisions that the Expert Group has made. The Executive Committees would like to ensure Spec Leads understand the value of this transparency and ask that each JSR have an operating plan in place for how their JSR will address the involvement of the community and the public. Please provide your plan here, and refer to the Spec Lead Guide for a more detailed description and a set of example questions you may wish to answer in your plan.</H4>
+
+<UL>
+	<LI><P STYLE="margin-bottom: 0.1in"><I>The
+	public can read the names of the people on the Expert Group. </I>
+	</P>
+	<P STYLE="margin-bottom: 0.1in"><FONT FACE="Helvetica, sans serif, sans-serif">The
+	members of the expert group will be listed on the JSR project page
+	and in every draft of the specification.</FONT></FONT></P>
+	<LI><P STYLE="margin-bottom: 0.1in"><I>The
+	Expert Group business is regularly reported on a publicly readable
+	alias.</I></P>
+	<P STYLE="margin-bottom: 0.1in"><FONT FACE="Helvetica, sans serif, sans-serif">The
+	Expert Group will conduct business on a publicly readable email
+	alias. A private alias will be used only for
+	EG-confidential information, as needed. </font></FONT>
+	</P>
+	<LI><P STYLE="margin-bottom: 0.1in"><I>The
+	schedule for the JSR is publicly available, it's current, and I
+	update it regularly. </I>
+	</P>
+	<P STYLE="margin-bottom: 0.1in"><FONT FACE="Helvetica, sans serif, sans-serif">The
+	schedule will be available on the project page of the JSR and will
+	be kept current.</FONT></FONT></P>
+</UL>
+<UL>
+	<LI><P STYLE="margin-bottom: 0.1in"><I>The
+	public can read/write to a wiki for my JSR. </I>
+	</P>
+	<P STYLE="margin-bottom: 0.1in"><FONT FACE="Helvetica, sans serif, sans-serif">A
+	public email list will be used for comments.</FONT></FONT></P>
+</UL>
+<UL>
+	<LI><P STYLE="margin-bottom: 0.1in"><I>There
+	is an issue-tracker for my JSR that the public can read.</I></P>
+	<P STYLE="margin-bottom: 0.1in"><FONT FACE="Helvetica, sans serif, sans-serif">The
+	issue-tracker will be accessible from the JSR project page.</FONT></FONT></P>
+	<LI><P STYLE="margin-bottom: 0.1in"><I>I
+	have spoken at conferences and events about my JSR recently. </I>
+	</P>
+	<P STYLE="margin-bottom: 0.1in"><FONT FACE="Helvetica, sans serif, sans-serif">Not
+	yet, but will do so</FONT></FONT></P>
+	<LI><P STYLE="margin-bottom: 0.1in"><I>I
+	am using open-source processes for the development of the RI and/or
+	TCK.</I></P>
+	<P STYLE="margin-bottom: 0.1in"><FONT FACE="Helvetica, sans serif, sans-serif">The
+	RI will be hosted at java.net as an open source project. </FONT></FONT>
+	</P>
+	<LI><P STYLE="margin-bottom: 0.1in"><I>The
+	Community tab for my JSR has links to and information about all public
+	communication mechanisms and sites for the development of my JSR.</I></P>
+	<P STYLE="margin-bottom: 0.1in"><FONT FACE="Helvetica, sans serif, sans-serif">This
+	will be the case.</FONT></FONT></P>
+</UL>
+
+<H4>2.16 Please describe how the RI and TCK will de delivered, i.e. as part of a profile or platform edition, or stand-alone, or both. Include version information for the profile or platform in your answer.
+</H4>
+
+<P ALIGN=LEFT STYLE="margin-left: 0.4in; margin-bottom: 0in"><FONT FACE="Helvetica, sans-serif">Oracle
+Corporation will deliver a standalone Reference Implementation (RI)
+and Technology Compatibility Kit (TCK).</FONT></FONT></P>
+
+<H4>2.17 Please state the rationale if previous versions are available stand-alone and you are now proposing in 2.13 to only deliver RI and TCK as part of a profile or platform edition (See sections 1.1.5 and 1.1.6 of the JCP 2 document).
+</H4>
+
+<P STYLE="margin-left: 0.4in"><FONT FACE="Helvetica, sans-serif">Not
+applicable</FONT></P>
+
+<H4>2.18 Please provide a description of the business terms for the Specification, RI and TCK that will apply when this JSR is final.</H4>
+
+<P STYLE="margin-left: 0.4in"><A HREF="http://jcp.org/aboutJava/communityprocess/licenses/jsr351/351SpecLicenseIdentityJSR.pdf"><FONT FACE="Helvetica, sans-serif"><SPAN STYLE="font-weight: normal">License
+for Final Final Release Specification</SPAN></FONT></A></P>
+<P STYLE="margin-left: 0.4in"><A HREF="http://jcp.org/aboutJava/communityprocess/licenses/jsr351/351SATCKJSRIdentity1.pdf"><FONT FACE="Helvetica, sans-serif"><SPAN STYLE="font-weight: normal">License
+for Technology Compatibility Kit</SPAN></FONT></A></P>
+<P STYLE="margin-left: 0.4in"><FONT FACE="Helvetica, sans-serif"><SPAN STYLE="font-weight: normal">Apache
+License, version 2.0, at <A HREF="http://www.apache.org/licenses/LICENSE-2.0">http://www.apache.org/licenses/LICENSE-2.0</A>
+will apply to the Reference Implementation.</SPAN></FONT></P>
+
+<H4>2.19 Please describe the communications channel you have established for the public to observe Expert Group deliberations, provide feedback, and view archives of all Expert Group communications.</H4>
+
+<P>
+The public should provide feedback via the public user email list, users<faketag>&#64;</faketag>identity-api-spec.java.net, or via the public discussion board at: <a href="http://java.net/projects/identity-api-spec/forums/message-forum">http://java.net/projects/identity-api-spec/forums/message-forum</a><P>
+We document nominations in our Expert Group teleconference minutes, which are made available to the public via the public user email list and archive. The archive is available at: <a href="http://java.net/projects/identity-api-spec/lists/users/archive">http://java.net/projects/identity-api-spec/lists/users/archive</a>
+<P>
+Expert Group communications are made available to the public via the <a href="http://java.net/projects/identity-api-spec/lists/jsr351-experts/archive">EG communication archive</a>.<BR>
+Minutes of our Expert Group meetings are also made available via the project wiki: <a href="http://java.net/projects/identity-api-spec/pages/MeetingMinutes">http://java.net/projects/identity-api-spec/pages/MeetingMinutes</a>
+</P>
+
+<H4>2.20 What is the URL of the Issue Tracker that the public can read, and how does the public log issues in the Issue Tracker?</H4>
+
+<P>
+<a href="http://java.net/jira/browse/IDENTITY_API_SPEC">http://java.net/jira/browse/IDENTITY_API_SPEC</a>
+</P>
+
+<H4>2.21 Please provide the location of the publicly accessible document archive you have created for the Expert Group.</H4>
+
+<P>
+<a href="http://java.net/projects/identity-api-spec/downloads">http://java.net/projects/identity-api-spec/downloads</a>
+</P>
+
+<BR><BR>
+<BR><BR>
+
+<!-- SECTION 3 -->
+
+<A NAME="3"></A>
+
+<P>
+<FONT SIZE="+2">Section 3: Contributions</FONT><P>
+</P>
+
+<H4>3.1 Please list any existing documents, specifications, or implementations that describe the technology. Please include links to the documents if they are publicly available.</H4>
+
+<P STYLE="margin-left: 0.4in"><FONT FACE="Helvetica, sans-serif">Project
+Aristotle, the ArisID API, and the Liberty Identity Governance
+Framework(IGF). Please see:
+<A HREF="http://www.openliberty.org/wiki/index.php/ProjectAris">http://www.openliberty.org/wiki/index.php/ProjectAris</A></FONT></P>
+<P STYLE="margin-left: 0.4in"><FONT FACE="Helvetica, sans-serif">The
+Open Az project. Please see:
+<A HREF="http://www.openliberty.org/wiki/index.php/OpenAz_Main_Page">http://www.openliberty.org/wiki/index.php/OpenAz_Main_Page</A></FONT></P>
+<P STYLE="margin-left: 0.4in"><FONT FACE="Helvetica, sans-serif">ABAC
+Reference - A Report on the Privilege (Access) Management Workshop,
+NISTIR 7657, March 2010:
+<A HREF="http://csrc.nist.gov/publications/nistir/ir7657/nistir-7657.pdf">http://csrc.nist.gov/publications/nistir/ir7657/nistir-7657.pdf</A></FONT></P>
+<P STYLE="margin-left: 0.4in"><SPAN STYLE="font-style: normal">Glossary
+for the OASIS Security Assertion Markup Language (SAML) V2.0. P</SPAN><FONT FACE="Helvetica, sans serif, sans-serif"><SPAN STYLE="font-style: normal"><SPAN STYLE="font-weight: normal">lease
+see:
+<A HREF="http://docs.oasis-open.org/security/saml/v2.0/saml-glossary-2.0-os.pdf">http://</A></SPAN></SPAN></FONT><CITE><A HREF="http://docs.oasis-open.org/security/saml/v2.0/saml-glossary-2.0-os.pdf"><FONT FACE="Helvetica, sans serif, sans-serif"><SPAN STYLE="font-style: normal"><SPAN STYLE="font-weight: normal">docs.oasis-open.org/security/saml/v2.0/saml-glossary-2.0-os.pdf</SPAN></SPAN></FONT></A></CITE></P>
+<P STYLE="margin-left: 0.4in"><CITE><FONT FACE="Helvetica, sans serif, sans-serif"><SPAN STYLE="font-style: normal"><SPAN STYLE="font-weight: normal">The
+Java Naming and Directory Interface (JNDI) Tutorial. Please see:
+<A HREF="http://download.oracle.com/javase/jndi/tutorial/">http://download.oracle.com/javase/jndi/tutorial/</A></SPAN></SPAN></FONT></CITE></P>
+<P STYLE="margin-left: 0.4in"><CITE><FONT FACE="Helvetica, sans serif, sans-serif"><SPAN STYLE="font-style: normal"><SPAN STYLE="font-weight: normal">JSR
+299: Contexts and Dependency Injection for the Java</SPAN></SPAN></FONT></CITE><CITE><SUP><FONT FACE="Helvetica, sans serif, sans-serif"><FONT SIZE=1><SPAN STYLE="font-style: normal"><SPAN STYLE="font-weight: normal">TM</SPAN></SPAN></FONT></FONT></SUP></CITE><CITE>
+</CITE><CITE><FONT FACE="Helvetica, sans serif, sans-serif"><SPAN STYLE="font-style: normal"><SPAN STYLE="font-weight: normal">EE
+platform. Please see: <A HREF="http://jcp.org/en/jsr/summary?id=299">http://jcp.org/en/jsr/summary?id=299</A></SPAN></SPAN></FONT></CITE></P>
+
+<H4>3.2 Explanation of how these items might be used as a starting point for the work.</H4>
+
+<P STYLE="margin-left: 0.4in"><FONT FACE="Helvetica, sans-serif">The
+ArisID and Open Az APIs will be reviewed for their approaches to
+representing identity attributes in Java. The interaction, attribute
+reference and Subject integration mechanisms of ArisID will be
+reviewed, as will its use of CARML as the means by which applications
+declare their use of identity attributes. </FONT>
+</P>
+<P STYLE="margin-left: 0.4in"><FONT FACE="Helvetica, sans-serif">It
+is expected that the output of the JSR will be an API that
+accommodates a wide range of Java Object types within an identity
+attribute programming model that features the use of Java annotations
+and dependency injection.</FONT></P>
+
+<BR><BR>
+
+<!-- SECTION 4 -->
+
+<A NAME="4"></A>
+
+<P>
+<FONT SIZE="+2">Section 4: Additional Information (Optional)</FONT><P>
+</P>
+
+<H4>4.1 This section contains any additional information that the submitting Member wishes to include in the JSR.</H4>
+
+<P STYLE="margin-left: 0.4in; margin-top: 0.17in; font-weight: normal">
+<FONT FACE="Helvetica, sans serif, sans-serif">The
+following use case descriptions were used to develop this proposal.</FONT></P>
+<DL>
+	<DL>
+		<DT STYLE="margin-left: 0.01in; margin-bottom: 0.2in; page-break-before: always">
+		<B>1. Application is Client of Attribute Service</B></DT><DT STYLE="margin-left: 0.4in; margin-bottom: 0.2in">
+		<FONT FACE="Helvetica, sans serif, sans-serif">At runtime, an
+		application, e.g., a business application, interacts with an
+		Attribute Service to perform operations on individual attributes or
+		collections of attributes pertaining to one or more identified
+		entities. In one scenario, the operations are performed on the
+		attributes of the entity identified by the access control context
+		of the thread on which the interaction with the Attribute Service
+		is performed. In another scenario the operations are performed on
+		the attributes of one or more entities independent of the entity
+		associated with the thread. At compile time, target attributes are
+		identified using logical constructs that are bound, at runtime, by
+		the Attribute Service to physical attribute repositories and
+		values. In some scenarios, only lookup or read type attribute
+		operations will be performed. In other scenarios, update, create,
+		and or delete operations will also be performed.</FONT></DT></DL>
+</DL>
+<P CLASS="list-western" STYLE="margin-left: 0.4in">
+<FONT FACE="Helvetica, sans serif, sans-serif">In user registration
+scenarios, an application will create entities that are integrated
+with an authentication system such that the authentication system can
+establish an access control context that identifies the entity. Some
+such applications will establish the governance policy for the
+attributes of the entities they create. </FONT>
+</P>
+<DL>
+	<DL>
+		<DL>
+			<DL>
+				<DL>
+					<DD STYLE="margin-left: 0.79in; margin-bottom: 0.2in"><FONT FACE="Helvetica, sans serif, sans-serif"><I>Example:
+					</I></FONT>
+					</DD><DD STYLE="margin-left: 0.79in; margin-bottom: 0.2in">
+					<FONT FACE="Helvetica, sans serif, sans-serif"><I>Part 1: Sally
+					uses her browser to interact with a web application to renew her
+					prescription at her health care provider. Before being afforded
+					access to the application, Sally must provide proof of her
+					identity to the authentication system used by her health care
+					provider. Once Sally has been authenticated, the application
+					will serve her request on a thread that identifies Sally as the
+					application user. Within the application there are variables
+					that are linked by attribute reference to the prescription that
+					Sally may renew, Sally's preferred pharmacy, and her current
+					primary care physician. During initialization of the application
+					request, the corresponding attribute values are acquired (via
+					the attribute service) from the corresponding subscriber and
+					patient record repositories and assigned to the application
+					variables. The application processes the request by creating a
+					prescription renewal request for handling by Sally's physician.
+					The request identifies Sally, her prescription, and her
+					preferred pharmacy. </I></FONT>
+					</DD><DD STYLE="margin-left: 0.79in; margin-bottom: 0.2in">
+					<FONT FACE="Helvetica, sans serif, sans-serif"><I>Part 2:
+					Sally's physician is notified of the request pending approval,
+					and interacts with an application to authorize the prescription.
+					Sally's physician must provide proof of her identity to the
+					authentication system used by the physician application. Once
+					the physician has been authenticated, the physician application
+					will process the request on a thread that identifies the
+					physician as the user of the application. The physician
+					application contains a variable that is linked by an attribute
+					reference to the email address of the patient identified by the
+					renewal request (i.e., Sally). The physician interacts with the
+					application to renew Sally's prescription at the preferred
+					pharmacy, which causes the completed prescription to be sent to
+					the pharmacy, and a confirmation email to be sent to Sally.</I></FONT></DD></DL>
+			</DL>
+		</DL>
+	</DL>
+	<DD STYLE="margin-left: 0in; margin-bottom: 0.2in; text-align: left">
+	<B>2. Application is Attribute Provider</B></DD></DL>
+<P STYLE="margin-left: 0.4in; margin-bottom: 0.2in">
+<FONT FACE="Helvetica, sans serif, sans-serif">An
+application embodies attributes that are to be made available to
+other applications via the attribute service. These attributes are
+associated with specific scopes or contexts, such that client
+applications may be provided with attributes appropriate to the
+context in which the client is operating. In some scenarios, the
+attributes are provided from a common context independent of that of
+the client application. In other scenarios, the attributes are
+provided from a context associated with the client application, or
+from a request, session, or user authentication context shared
+between the attribute provider and the client application or system.</FONT></P>
+<P STYLE="margin-left: 0.4in; margin-bottom: 0.2in"><FONT FACE="Helvetica, sans serif, sans-serif">In
+one specific use case, an application is a client of an authorization
+system and the policy being enforced by the authorization system is
+based on contextual attribute values held within the application, The
+application cannot reliably predict the additional contextual
+application attributes that will be required by the authorization
+system. As such, the application (as attribute provider) must respond
+to requests, from the decision agent, for additional contextual
+attributes as needed by the authorization system. </FONT>
+</P>
+<DL>
+	<DL>
+		<DL>
+			<DL>
+				<DL>
+					<DD STYLE="margin-left: 0.79in; margin-bottom: 0.2in"><FONT FACE="Helvetica, sans serif, sans-serif"><I>Example
+					(contextual attribute details): </I></FONT>
+					</DD><DD STYLE="margin-left: 0.79in; margin-bottom: 0.2in; text-decoration: none">
+					<FONT FACE="Helvetica, sans serif, sans-serif"><I>The
+					prescription renewal application propagates Sally's patient
+					identifier, the prescription, and Sally's preferred pharmacy to
+					the physician application. During initialization of a request to
+					the physician application, a request-scoped attribute containing
+					the patient identifier is exported from the physician
+					application such that is available via the attribute service to
+					applications or systems invoked by the physician application. </I></FONT>
+					</DD></DL>
+			</DL>
+		</DL>
+	</DL>
+	<DD STYLE="margin-left: 0.01in; page-break-before: always">
+	<B>3. Identity Propagation</B></DD><DD STYLE="margin-bottom: 0.2in">
+	<BR><BR>
+	</DD></DL>
+<P STYLE="margin-left: 0.4in">
+<FONT FACE="Helvetica, sans serif, sans-serif">Application or system
+wishes to propagate Identity attributes to other system or
+application. In one common case, the attributes to be propagated will
+be those of the current authenticated entity. In other cases, the
+attributes to be propagated may pertain to an arbitrary entity. In
+some cases, specific attributes are to be propagated; while in
+others, it will be necessary to propagate an ability for the
+recipient to acquire additional attributes (of some entity) that the
+propagator may either be unfamiliar with or unauthorized to acquire.
+It will also be necessary to be able to pass attributes by reference,
+in order to force the recipient to interact with the attribute
+service to acquire the attribute values (which will ensure that it
+have rights to do so). In cases where the receiving system is outside
+the java identity framework (including the cases where it is a
+non-Java system), it will be necessary for the propagator to
+represent the attributes in a form that will be understood by the
+recipient.</FONT></P>
+<DL>
+	<DL>
+		<DL>
+			<DL>
+				<DL>
+					<DD STYLE="margin-left: 0.79in; margin-bottom: 0.2in"><FONT FACE="Helvetica, sans serif, sans-serif"><I>Example
+					(propagation details): </I></FONT>
+					</DD><DD STYLE="margin-left: 0.79in; margin-bottom: 0.2in; text-decoration: none">
+					<FONT FACE="Helvetica, sans serif, sans-serif"><I>The
+					prescription renewal application propagates Sally's patient
+					identifier, the prescription, and Sally's preferred pharmacy to
+					the physician application. In a variation, attribute references
+					are propagated to the physician application which uses the
+					references to acquire the values of the corresponding attributes
+					based on the physician application and the physician being
+					authorized by the attribute service to do so. In either case,
+					the physician application uses the patient identifier to acquire
+					the email address at which the patient is to receive
+					confirmation of the physician's approval of the prescription.</I></FONT></DD></DL>
+			</DL>
+		</DL>
+	</DL>
+	<DD STYLE="margin-left: 0.01in; page-break-before: always">
+	<B>4. Authentication System binds Attributes to Java Authentication
+	State</B></DD><DD STYLE="margin-bottom: 0.2in">
+	<BR><BR>
+	</DD></DL>
+<P STYLE="margin-left: 0.4in; margin-bottom: 0.2in">
+<FONT FACE="Helvetica, sans serif, sans-serif">A Java
+authentication system collects and validates security
+mechanism-specific tokens or credentials and establishes a
+corresponding representation of authentication state within the Java
+access control context of the thread for which the authentication was
+performed. </FONT>
+</P>
+<P STYLE="margin-left: 0.4in; margin-bottom: 0.2in"><FONT FACE="Helvetica, sans serif, sans-serif">The
+credentials may be collected directly from the user of the runtime
+environment, or from messages conveyed to the runtime. The
+authentication system converts the validated credentials into
+authenticated identity attributes which are then established within
+the Java access control context. The access control context is
+established within the runtime environment for which the system is
+performing the authentication. The authentication system may use the
+authenticated identity attributes to acquire additional identity
+attributes pertaining to the authenticated entity. When additional
+attributes are acquired, they are acquired from an Attribute Service,
+and are represented in the established access control context. The
+Attribute Service must be able to locate any additional attributes
+requested by the authentication system based on the authenticated
+identity attributes. The Attribute Service must return any additional
+attributes in a form that can be established within the access
+control context and suitably conveyed within the runtime.</FONT></P>
+<DL>
+	<DL>
+		<DL>
+			<DL>
+				<DL>
+					<DD STYLE="margin-left: 0.79in; margin-bottom: 0.2in"><FONT FACE="Helvetica, sans serif, sans-serif"><I>Example
+					(authentication details): </I></FONT>
+					</DD><DD STYLE="margin-left: 0.79in; margin-bottom: 0.2in">
+					<FONT FACE="Helvetica, sans serif, sans-serif"><I>Sally
+					must provide proof of her identity to the authentication system
+					used by her health care provider, and Sally's physician must
+					provide proof of her identity to the authentication system used
+					by the physician application. When such proof is provided, the
+					respective authentication systems create a security credential
+					which embodies the identity of the authenticated entity, the
+					identity of the service performing the authentication, and other
+					characteristics detailing the quality or properties of the
+					authentication that was performed. The credential produced by
+					the authentication system used by the patient will also include
+					the service affiliation groups of the patient. The credential
+					produced by the physician authentication system will also
+					include the caregiver privilege groups to which the physician is
+					a member. The credentials are represented in an interoperable
+					network transfer syntax (e.g., ASN.1, XML, or JSON). The
+					authentication agents within the application hosting platforms
+					interpret the content of the respective security credentials and
+					create corresponding Java identity attributes that are added to
+					the authentication state that represents the application user to
+					the respective application. The identity of the authentication
+					service and other qualitative properties contained within the
+					credential from which the attributes were derived are captured
+					as meta-data within the user and group attributes derived from
+					the credential. </I></FONT>
+					</DD></DL>
+			</DL>
+		</DL>
+	</DL>
+	<DD STYLE="margin-left: 0.01in; page-break-before: always">
+	<B>5. Authorization Subsystem Consumes Attributes</B></DD><DD STYLE="margin-bottom: 0.2in">
+	<BR><BR>
+	</DD></DL>
+<P STYLE="margin-left: 0.4in; margin-bottom: 0.2in; font-weight: normal; widows: 2; orphans: 2">
+<FONT FACE="Helvetica, sans serif, sans-serif">The
+Authorization Subsystem is presumed to be composed of one or more
+decision agents each exporting a decision interface for use by policy
+enforcement points embedded in the application or middleware. The
+decision agents make calls to an underlying Policy engine. Each
+decision agent is responsible for converting the artifacts passed to
+it, via its associated decision interface, to the artifacts required
+by the Policy engine. The decision agents are presumed to be
+co-located with an Attribute Service and with the enforcement points
+that rely on them. </FONT>
+</P>
+<P STYLE="margin-left: 0.4in; margin-bottom: 0.2in; font-weight: normal; widows: 2; orphans: 2">
+<FONT FACE="Helvetica, sans serif, sans-serif">An
+application or runtime/IDE uses decision interface to embed
+enforcement point(s). Target resource, action, and actor to be tested
+for authorization are established at the enforcement point and passed
+to the decision agent via the decision interface. In one scenario,
+the target resource and action are derived from the Java language
+coordinates of the enforcement point (i.e., the method or class on
+which the enforcement point is embedded). In another scenario,
+including instance specific access control, the target resource and
+action are established using decision interface specific objects
+(e.g., AzAPI Resource attributes, or Java Permission objects) that
+are orthogonal to the language coordinates. In active entity
+scenarios, the enforcement point may test the actor who is currently
+executing the code at the enforcement point (as represented by the
+access control context). In target entity scenarios, the enforcement
+point may test some other proposed or predicted actor (e.g., as
+represented in an unbound access control context). In either case,
+the actor is commonly expected to correspond to some potential user
+of the system, but may also include information identifying the code
+from which an invocation or potential invocation originated.</FONT></P>
+<P STYLE="margin-left: 0.4in; margin-bottom: 0.2in; font-weight: normal; widows: 2; orphans: 2">
+<FONT FACE="Helvetica, sans serif, sans-serif">The
+Policy engine may use the identity attributes of the actor to request
+additional attributes from the attribute service. The Policy engine
+may interact with the application to obtain any additional contextual
+attributes determined to be required to complete the processing of
+the access control decision. For the case where the Policy engine is
+remote with respect to the decision agent (and thus the enforcement
+point and the corresponding Attribute Service) the Policy engine may
+direct its requests for additional attributes to the decision agent;
+which would then interact with the Attribute service or application,
+as appropriate. In all cases, it is the Policy engine that is
+responsible for determining, based on the rules that it is
+processing, when an additional attribute should be acquired, and
+whether to interact with the Attribute Service, the application, or
+the decision agent to acquire it.</FONT></P>
+<P STYLE="margin-left: 0.79in; margin-bottom: 0.2in; text-decoration: none">
+<FONT FACE="Helvetica, sans serif, sans-serif"><I>Example
+(authorization decision details): </I></FONT>
+</P>
+<P STYLE="margin-left: 0.79in; margin-bottom: 0.2in; text-decoration: none">
+<FONT FACE="Helvetica, sans serif, sans-serif"><I>The
+physician application exports a request-scoped attribute containing
+the patient identifier such that it is available via the attribute
+service to applications or systems invoked by the physician
+application. The physician application makes an embedded call to the
+authorization system to determine if the physician (using the
+application) is authorized to prescribe the medication. The request
+to the authorization system identifies the prescription to be
+authorized and the physician. During its processing of the
+authorization request, the authorization system determines that the
+medication being prescribed can only be authorized by a physician who
+is listed as a primary care provider to the patient. To determine if
+this is the case, the authorization system uses the attribute service
+to obtain the patient identifier from the application, and to acquire
+the attribute identifying the patient's primary care provider which
+it then compares to the physician's identifier. If the physician is
+authorized to prescribe the medication, the physician application
+submits the prescription to Sally's pharmacy for processing. </I></FONT>
+</P>
+<P STYLE="margin-top: 0.17in; page-break-after: avoid"><BR><BR>
+</P>
+<P STYLE="margin-top: 0.17in; page-break-after: avoid"><BR><BR>
+</P>
+<DL>
+	<DD STYLE="margin-left: 0in; margin-bottom: 0.2in"><BR><BR>
+	</DD></DL>
+
+<BR><BR>
+</p>
+
+
+
+
+
+
+
+
+<!-- ** BEGIN: footer.jsp ** //-->
+
+
+
+
+
+
+
+
+</td>
+</tr>
+</table>
+
+<!-- ** END: Content Table ** //-->
+
+<!-- ** BEGIN: Footer Table ** //-->
+
+<div id="footer" style="clear: both;">
+    <div class="footleft">
+        <a href="/en/resources/contacts">Contact Us</a>
+    </div>
+	
+    <div class="botbar"><img src="/images/spacer.gif" alt="" height="23" width="1"></div>
+
+    <div class="footleft2">
+         &copy; 2019, Oracle Corporation and/or its affiliates. 
+        <a href="/en/home/terms">Terms of Use</a>. <a href="http://www.oracle.com/us/legal/privacy/index.html">Privacy Policy</a>. <a href="http://www.oracle.com/us/legal/third-party-trademarks/third-party-trademarks-078568.html">Trademarks</a>
+    </div>
+
+    <div class="footright">
+        <img src="/images/common/logo_oracle_footer.gif" alt="Oracle Corporation" height="22" width="91">
+    </div>
+
+    <div style="clear: both;"><img src="/images/spacer.gif" alt="" height="30" width="1"></div>
+</div>
+
+<!-- ** END: Footer Table ** //-->
+
+
+
+<!-- ** Menu Start ** //-->
+
+
+
+</body>
+</html>
+<!-- ** END: footer.jsp ** //-->
+

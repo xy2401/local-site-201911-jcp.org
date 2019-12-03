@@ -1,0 +1,128 @@
+
+ISSUE #1
+
+[The following was posted by Andrew Rubinger to jsr-318-public]
+
+Hi EG:
+
+While implementing EJBContainer for JBoss I've come across:
+http://java.sun.com/javaee/6/docs/api/javax/ejb/spi/EJBContainerProvider.html#createEJBContainer(java.util.Map)
+Which states:
+"...The javax.ejb.embeddable.initial property was included in the Map passed to createEJBContainer and the value of the property is the provider's implementation class..."
+I believe this conflicts with:
+http://java.sun.com/javaee/6/docs/api/constant-values.html#javax.ejb.embeddable.EJBContainer.PROVIDER
+Which notes: "javax.ejb.embeddable.provider"
+Could the group please confirm, and if necessary, adjust the JavaDoc in the next revision?
+
+
+RATIONALE FOR CHANGE:
+
+This is a bug in the javadoc documentation for the given method.
+The specification and RI both have the correct name for this property,
+namely javax.ejb.embeddable.provider, which was the name agreed upon
+by the EJB 3.1 Expert Group.
+
+-------------------------------------------
+
+
+ISSUE #2
+
+[The following was posted as a bug to glassfish.dev.java.net
+https://glassfish.dev.java.net/issues/show_bug.cgi?id=12450]
+
+Summary:  	SerialVersion UID for javax.ejb.CreateException
+
+The SerialVersionUID  for CreateException  in GF 3.0.1 was incorrectly set to
+    private static final long serialVersionUID = 7899534274371798660L;
+But this value is wrong as for Java EE 5 the value was (via serialver):
+serialver -classpath javaee.jar javax.ejb.CreateException
+javax.ejb.CreateException:    static final long serialVersionUID = 6295951740865457514L;
+This is causing interop failures in certain cases.
+The EJB classes which were serializable had their SerialVersionUID added but it appears the wrong value was added to javax.ejb.CreateException
+
+
+RATIONALE FOR CHANGE:
+
+This is a bug in the CreateException file which resulted from a cut-and-paste
+error, as the value for the CreateException was copied from the value of
+the ConcurrentAccessTimeoutException.  The correct value, as agreed upon
+by the EJB 3.1 Expert Group is 6295951740865457514L.  
+
+---------------------------------------------
+
+
+ISSUE #3
+
+[The following was posted as a bug to glassfish.dev.java.net
+https://glassfish.dev.java.net/issues/show_bug.cgi?id=11247]
+
+Summary:  	Add examples to java docs in javax.ejb
+
+( I will ask the questions someone reading the Java-Doc may ask)
+
+1) http://java.sun.com/javaee/6/docs/api/javax/ejb/Schedule.html
+
+hour is a String (is this 24 hour, 12 hour, should I put AM after the hour ?, I
+know I can * etc, what else ?)
+info is a String , what is that ?
+timezone is a String , what is that ?
+month is a String , can this be 1, Jan, January, jan etc ?
+day is a String, I know it can't be Thur, it must be Thu ( I only found this out by trial and error)
+
+
+Some examples like 'man contab' would be great :
+
+       # MIN HOUR DAY MONTH DAYOFWEEK   COMMAND
+       # at 6:10 a.m. every day
+       10 6 * * * date
+
+       # every two hours at the top of the hour
+       0 */2 * * * date
+
+       # every two hours from 11p.m. to 7a.m., and at 8a.m.
+       0 23-7/2,8 * * * date
+
+       # at 11:00 a.m. on the 4th and on every mon, tue, wed
+       0 11 4 * mon-wed date
+
+       # 4:00 a.m. on january 1st
+       0 4 1 jan * date
+
+
+2) http://java.sun.com/javaee/6/docs/api/javax/ejb/ScheduleExpression.html
+ 
+ScheduleExpression ScheduleExpression::end(java.util.Date e) , what is that, how
+do I use this ? Why does it return another instance of ScheduleExpression ?
+Should this be static ?
+
+ScheduleExpression second(int s), what is that ? Why does it return another
+instance of ScheduleExpression ? Should this be static ?
+
+etc.
+
+There are some great docs here :
+http://docs.sun.com/app/docs/doc/820-7627/bnbpe?a=view
+
+------- Additional comments from pauldavies Fri Dec 4 17:19:00 +0000 2009 -------
+
+The fix to this issue requires a change to the code from which this
+documentation is generated. Therefore, I have changed the subcomponent from docs
+to the subcomponent that includes the affected code.
+
+------- Additional comments from kumara Mon Dec 7 02:06:11 +0000 2009 -------
+
+Once specification is approved, it will take an MR to update java doc. Excluding from v3 defect tracking.
+
+------- Additional comments from mvatkina Wed Sep 8 17:58:38 +0000 2010 -------
+
+Linda is working on it
+
+
+RATIONALE FOR CHANGE:
+
+The javadoc documentation for some of the new features added in EJB
+3.1 are quite lacking, resulting in the need for developers to search
+out the missing information in the specification document itself (not
+always an easy task).  This is a usability issue for members of the
+Java EE community.
+

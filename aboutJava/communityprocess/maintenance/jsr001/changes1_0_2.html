@@ -1,0 +1,874 @@
+
+<!-- ** BEGIN: header.jsp ** //-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3c.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+<head>
+    
+
+   
+    <link href="/includes/css/menu.css" rel="stylesheet" type="text/css"></link>
+    <link href="/includes/css/style.css" rel="stylesheet" type="text/css"></link>
+    <!--[if lt IE 6]><link href="/includes/css/style5.css" rel="stylesheet" type="text/css" ></link><![endif]-->
+    <!--[if gte IE 5]><link href="/includes/css/style6.css" rel="stylesheet" type="text/css" ></link><![endif]-->
+    <link href="/includes/css/tabs.css"  rel="stylesheet" type="text/css"></link>
+
+    <script type="text/javascript" src="/includes/scripts/tabs.js"></script>
+    <script type="text/javascript" src="/includes/scripts/menu.js"></script>
+   
+
+    
+
+    
+        <title>The Java Community Process(SM) Program - communityprocess - maintenance</title>
+    
+
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+
+
+<body onload="P7_initPM(0,1,0,0,-1)">
+
+    <a name="top"></a>
+
+    <div id="header">
+	<div id="logo">
+		<a href="/en/home/index"><img src="/images/spacer.gif" alt="Java Community Process" height="81" width="151"></a>
+	</div>
+	<div id="tools">
+		<div class="search">
+			<form name="search" action="/en/jsr/summary" method="get" onsubmit="return validate_search()">
+				<input name="id" value="Search JSRs" size="16" class="form" onfocus="nullify_if_equal(this, 'Search JSRs')" type="text">
+				<a href="javascript:document.search.submit()" onclick="return validate_search()"><img src="/images/button_go.gif" width="21" height="16" border="0" alt="Submit this Search" name="sub_search"></a>
+			</form>
+		</div>
+		<div class="tools">
+			<a href="/en/press/pressroom">Press Room</a> &nbsp;|&nbsp;
+			<a href="http://java.com/java/download/index.jsp?cid=jdp78399">Get Java Here</a> &nbsp;|&nbsp;
+			<!-- <a href="javascript:void(0)">Print Format</a> &nbsp;|&nbsp;&nbsp; -->
+		</div>
+
+	</div>
+	<div style="clear: right;"></div>
+
+        
+
+	<div class="topbar"><img src="/images/spacer.gif" alt="" height="3" width="154"></div>
+	<div id="update"> </div>
+    </div>
+
+
+    
+
+        <!-- ** BEGIN: Content Table ** //-->
+
+        <table width="100%" border="0" cellpadding="0" cellspacing="0">
+
+            <tr>
+
+                <!-- ** BEGIN: Navigation Column ** //-->
+                <td width="150" id="leftcontent" valign="top">
+                    <!-- Navigation Placeholder //-->
+
+                    
+
+                    <div class="bar"><img src="/images/hr_dots1.gif" alt="" height="3" width="150"></div>
+
+        <!-- begin find JSRs form -->
+        <!-- IMPORTANT! do not convert this form to Struts < html : form > tag.  javascript change of form.action property fails. -->
+        <img src="/images/hd_find-jsrs.gif" alt="Find JSRs" height="18" width="150">
+        <form name="findjsr" action="/en/jsr/summary" method="get" class="pt5" onsubmit="return validate_findjsr()">
+            <input name="id" size="18" class="form" value="Search JSRs" onfocus="nullify_if_equal(this, 'Search JSRs')" type="text">
+	    <a href="javascript:document.findjsr.submit()" onclick="return validate_findjsr()"><img src="/images/button_go.gif" width="21" height="16" border="0" alt="Submit this Search" name="sub_search"></a>
+        </form><br><br>
+
+        <!-- ** Menu Start ** //-->
+
+        <ul id="p7PMnav">
+            <li><a href="/en/jsr/platform">JSRs by Platform</a></li>
+            <li><a href="/en/jsr/tech">JSRs by Technology</a></li>
+            <li><a href="/en/jsr/stage">JSRs by Stage</a></li>
+            <li><a href="/en/jsr/ec">JSRs by Committee</a></li>
+            <li><a href="/en/jsr/all">List of All JSRs</a></li>
+
+            <!--end find JSRs form -->
+            <div style="clear: both;"><img src="/images/spacer.gif" alt="" height="25" width="1"></div>
+
+            <!--begin my JCP -->
+            <img src="/images/hd_my-jcp.gif" alt="My JCP" height="18" width="150">
+            
+
+          <form name="login" method="get" action="/en/user/login" >
+            <input name="Sign-in" type="submit" title="Sign-in" value="Sign-in" />
+          </form>
+
+            <div style="clear:both"><img src="/images/global/spacer.gif" width="1" height="3" alt=""></div>
+            <div class="noNav">
+                <a href="/en/user/register">Register for Site</a>
+            </div>
+
+             <div class="bar"><img src="/images/hr_dots1.gif" alt="" height="3" width="150"></div>
+           <div class="noNav" style="color: #666666; padding: 0;">
+              Use of JCP site is subject to the
+              <a href="/en/home/terms" style="display:inline;padding: 0">JCP Terms of Use</a> and the
+              <a href="http://www.oracle.com/us/legal/privacy/index.html" style="display:inline;padding: 0" href="">Oracle Privacy Policy</a>
+          </div>
+
+            
+
+            <div style="clear:both"><img src="/images/global/spacer.gif" width="1" height="25" alt=""></div>
+
+            <!--begin JCP info -->
+            <img src="/images/hd_jcp-info.gif" alt="JCP Info" height="18" width="150">
+
+            <li><a href="/en/procedures/overview" class="p7PMtrg">About JCP</a>
+                <ul>
+                    <li><a href="/en/procedures/overview">Program Overview</a></li>
+                    <li><a href="/en/procedures/jcp2">JCP Process Document</a></li>
+                    <li><a href="/en/whatsnew/calendar">Calendar</a></li>
+                    <li><a href="/en/participation/members">JCP Members</a></li>
+                    <li><a href="/en/participation/committee">Executive Committee</a></li>
+                    <li><a href="/en/whatsnew/elections">Elections</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/en/participation/overview" class="p7PMtrg">Get Involved</a>
+		<ul>
+                    <li><a href="/en/participation/overview">Overview</a></li>
+                    <li><a href="/en/participation/membership">Becoming a JCP Member</a></li>
+		</ul>
+            </li>
+
+            <li><a href="/en/resources/contents" class="p7PMtrg">Community Resources</a>
+                <ul>
+                    <li><a href="/en/resources/contents">Overview</a></li>
+                    <li><a href="/en/resources/tutorials">Tutorials</a></li>
+                    <li><a href="/en/resources/multimedia">JCP Podcasts</a></li>
+                    <li><a href="/en/resources/guide">Spec Lead Guide</a></li>
+                    <li><a href="/en/resources/tdk">TCK Tool & Info</a></li>
+                    <li><a href="/en/resources/license_reference">License Reference</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/en/press/pmo" class="p7PMtrg">Community News</a>
+                <ul>
+                    <li><a href="/en/press/pmo">News</a></li>
+                    <li><a href="/en/press/news/awards/awards_main">Programs &amp; Awards</a></li>
+                    <li><a href="/en/press/releases">Press Releases</a></li>
+                    <li><a href="/en/press/success">Success Stories</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/en/introduction/faq">FAQ</a></li>
+
+            <li><a href="/en/resources/contacts">Contact Us</a></li>
+
+            <div style="clear: both;"><img src="/images/spacer.gif" alt="" height="25" width="1"></div>
+
+            <!--[if lte IE 6]><style>#p7PMnav a{height:1em;}#p7PMnav li{height:1em;float:left;clear:both;width:100%}</style><![endif]-->
+            <!--[if IE 6]><style>#p7PMnav li{clear:none;}</style><![endif]-->
+            <!--[if IE 7]><style>#p7PMnav a{zoom:100%;}#p7PMnav li{float:left;clear:both;width:100%;}</style><![endif]-->
+        </ul>
+
+        
+
+        <!--begin ad space -->
+        <div class="ads">
+            <a href="http://java.com/java/download/index.jsp?cid=jdp78399" target="_blank"><img style="display: ;" src="/images/ad_banner2.gif" alt="Ad Banner" border="1" height="70" width="150"></a>
+        </div>
+        <!--end ad space -->
+
+<!-- ** Menu End ** //-->
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;<br>
+
+    
+
+                    &nbsp;<br>
+                    <img src="/images/common/trans.gif" alt="" width="1" height="150"><br>
+
+              
+
+
+
+                </td>
+                <!-- ** END: Navigation Column ** //-->
+
+                <!-- ** BEGIN: Gutter Column ** //-->
+		<td width="10" nowrap><img src="/images/common/trans.gif" alt="" width="10" height="1"></td>
+                <!-- ** END: Gutter Column ** //-->
+
+                <!-- ** BEGIN: Content Column ** //-->
+                <td width="100%" valign="top">
+
+    
+<script type="text/javascript">
+
+String.prototype.trim = function() {
+        return this.replace(/^\s+|\s+$/g,"");
+}
+String.prototype.ltrim = function() {
+        return this.replace(/^\s+/,"");
+}
+String.prototype.rtrim = function() {
+        return this.replace(/\s+$/,"");
+}
+
+function validate_search() {
+	if (document.search.id.value == "Search JSRs" || document.search.id.value.trim().length == 0) {
+		alert("Search terms must be entered first");
+		return false;
+	}
+	return true;
+}
+
+function validate_findjsr() {
+	if (document.findjsr.id.value == "Search JSRs" || document.findjsr.id.value.trim().length == 0) {
+		alert("Search terms must be entered first");
+		return false;
+	}
+	return true;
+}
+
+function nullify_if_equal(field, str) {
+	// alert("val=" + field.value);
+	if (field.value == str) {
+		field.value = "";
+	}
+}
+
+</script>
+<!-- ** END: header.jsp ** //-->
+
+
+
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+	<head>
+		<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+		<meta name="generator" content="Adobe GoLive" />
+		<title>1.0.2 change list</title>
+	</head>
+
+	<body>
+		<h1>Proposed Changes for RTSJ 1.0.2<br />
+			28 November 2005</h1>
+		<h2>Requirements and Conventions Chapter</h2>
+		<table width="562" border="1" cellspacing="2" cellpadding="0">
+			<tr>
+				<td>Change 1:</td>
+				<td>
+					<p>New base requirement:</p>
+					<p>Static final values, as found in AperiodicParameters, PhysicalMemoryManager, SporadicParameters, RealtimeSystem, and PriorityScheduler, must be handled by the implementation such that their values cannot be resolved at compile time.</p>
+				</td>
+			</tr>
+			<tr>
+				<td>Change 2:</td>
+				<td>New base requirement:
+					<p>Except where otherwise specified, when this specification requires object creation the object is created in the current allocation context.</p>
+				</td>
+			</tr>
+			<tr>
+				<td>Change 3:</td>
+				<td>In required documentation (2), change &quot;Also document&quot; to &quot;Document&quot;</td>
+			</tr>
+			<tr>
+				<td>Change_4:    </td>
+				<td>
+					<p>In required documentation (2), add</p>
+					<p>&quot;If there are restrictions on use of the scheduler from a non-heap context, document those restrictions.&quot;</p>
+				</td>
+			</tr>
+			<tr>
+				<td>Change 5</td>
+				<td>In required documentation (4), change &quot;support&quot; to &quot;supports&quot;</td>
+			</tr>
+			<tr>
+				<td>Change 6</td>
+				<td>In required documentation (9), change &quot;instance&quot; to &quot;monitor control policy&quot;</td>
+			</tr>
+			<tr>
+				<td>Change 7</td>
+				<td>Add at end: &quot;If there are restrictions on use of the scheduler from a no-heap context, the documentation must detail the effect of these restrictions for each RTSJ API.&quot;</td>
+			</tr>
+			<tr>
+				<td>Change 8</td>
+				<td>
+					<p>Insert documentation requirement</p>
+					<p>&quot;If cost enforcement is supported, and enforcement (blocked-by-cost-overrun) can be delayed beyond the enforcement time granularity, the maximum such delay shall be documented.&quot;</p>
+				</td>
+			</tr>
+			<tr>
+				<td>Change 9</td>
+				<td>
+					<p>Delete documentation requirement</p>
+					<p>&quot;An implementation may run finalizers for objects in scoped memory before the scope is reentered and before it returns from any call to getReferenceCount() for that scope. It must, however, document when it runs those finalizers.&quot;</p>
+				</td>
+			</tr>
+			<tr>
+				<td>Change 10</td>
+				<td>
+					<p>At end of the last documentation requirement add:</p>
+					<p>&quot;If they cannot be used in no-heap context, the documentation must detail the consequences of passing the clock, or a time that uses the clock to a no-heap schedulable object.&quot;</p>
+				</td>
+			</tr>
+		</table>
+		<p></p>
+		<h2>Changes to Standard Java Classes Chapter</h2>
+		<h3>Change 11</h3>
+		<p>Insert new Section</p>
+		<h4>&quot;<font color="lime">System Properties</font></h4>
+		<p><font color="lime">System properties and their String values allocated during system initialization shall be allocated in immortal memory.</font>&quot;</p>
+		<h2>RealtimeThread class</h2>
+		<h3>Change 12</h3>
+		<p>Fourth constructor,  in description of @throws IllegalAssignmentError, add</p>
+		<p>&quot;<font color="lime">Also thrown if the new RealtimeThread instance cannot hold a reference to non-null values of area or logic.</font>&quot;</p>
+		<h3>Change 13</h3>
+		<p>getInitialMemoryAreaIndex() method description changed from</p>
+		<p><font color="red">This method returns the position in the memory area stack of the initial memory area. Memory area stacks may include inherited stacks from parent threads. The initial memory area for the current RealtimeThread or AsyncEventHandler is the memory area given as a parameter to the constructor. The index on the memory area stack of the initial memory area is a fixed property of the real-time thread.</font></p>
+		<p><font color="red">Returns: The index into the memory area stack of the initial memory area of the current RealtimeThread</font></p>
+		<p><font color="red">Throws:</font></p>
+		<p><font color="red">java.lang.ClassCastException - Thrown if the current execution context is that of a Java thread.</font></p>
+		<p><font color="red">java.lang.IllegalStateException - Thrown if the initial memory area is not currently on the current real-time thread���s scope stack. This can happen if the thread uses executeInArea to ���slide down��� the stack past the initial memory area.</font></p>
+		<p>to</p>
+		<p><font color="lime">Returns the position in the initial memory area stack, of the initial memory area for the current real-time thread. Memory area stacks may include inherited stacks from parent threads. The initial memory area of a RealtimeThread or AsyncEventHandler is the memory area given as a parameter to its constructor. The index in the initial memory area stack of the initial memory area is a fixed property of the real-time thread.</font></p>
+		<p><font color="lime">If the current memory area stack of the current real-time thread is not the original stack and the memory area at the initial memory area index is not the initial memory area, then IllegalStateException is thrown. </font></p>
+		<p><font color="lime">Returns: The index into the initial memory area stack of the initial memory area of the current RealtimeThread.</font></p>
+		<p><font color="lime">Throws:</font></p>
+		<p><font color="lime">java.lang.IllegalStateException - Thrown if the memory area at the initial memory area index, in the current scope stack is not the initial memory area. </font></p>
+		<p><font color="lime">java.lang.ClassCastException - Thrown if the current execution context is that of a Java thread.</font></p>
+		<h2>NoHeapRealtimeThread class</h2>
+		<h3>Change 14</h3>
+		<p>Second constructor change</p>
+		<p><font color="red">IllegalAssignmentError - Thrown if the new NoHeapRealtimeThread instance cannot hold a reference to non-null values of scheduling and release, or if those parameters cannot hold a reference to the new NoHeapRealtimeThread.</font></p>
+		<p>to</p>
+		<p><font color="lime">IllegalAssignmentError - Thrown if the new NoHeapRealtimeThread instance cannot hold a reference to non-null values of scheduling, release and area, or if scheduling and release cannot hold a reference to the new NoHeapRealtimeThread.</font></p>
+		<h3>Change 13</h3>
+		<p>Fourth constructor, at the end of the IllegalAssignmentError clause add</p>
+		<p>&quot;<font color="lime">Also thrown if area or logic cannot be stored in the new RealtimeThread object</font>&quot;</p>
+		<h2>Scheduling Chapter</h2>
+		<h3>Change 14</h3>
+		<p>Change the description of active priority from</p>
+		<p><font color="red">The active priority of a schedulable object, or a Java thread, is the maximum of its base priority and any priority it has acquired due to the action of priority inversion avoidance algorithms (see the Synchronization Chapter).</font></p>
+		<p>to</p>
+		<p><font color="lime">When it is not in the enforced state, the active priority of a schedulable object or a Java thread is the maximum of its base priority and any priority it has acquired due to the action of priority inversion avoidance algorithms (see the Synchronization Chapter),</font></p>
+		<h3>Change 15</h3>
+		<p>In the cost monitoring semantics, at the end of bullets 4.a and 4.b, add</p>
+		<p><font color="lime">There may be a bounded delay between the time at which the blocking condition is removed and the time at which the SO becomes blocked-by-cost-overrun.</font></p>
+		<h3>Change 16</h3>
+		<p>In Aperiodic and Sporadic Release Control for Asynchronous Event Handlers</p>
+		<p>Replace semantic 4, a-c </p>
+		<p><font color="red">a. Each invocation of handleAsyncEvent, in this way, is a release.</font></p>
+		<p><font color="red">b. The return from handleAsyncEvent is the completion of a release: the fire- Count is decremented and the front entry (if still present) removed from the<br />
+				arrival-time queue.</font></p>
+		<p><font color="red">c. Processing of any exceptions thrown by handleAsyncEvent occurs prior to completion.</font></p>
+		<p>with</p>
+		<p><font color="lime">a. Before invoking handleAsyncEvent, the fireCount is decremented and the front entry (if still present) removed from the arrival-time queue. </font></p>
+		<p><font color="lime">b. Each invocation of handleAsyncEvent, in this way, is a release. </font></p>
+		<p><font color="lime">c. The return from handleAsyncEvent is the completion of a release. </font></p>
+		<p><font color="lime">d. Processing of any exceptions thrown by handleAsyncEvent occurs prior to completion.</font></p>
+		<h3>Change 17</h3>
+		<p>In Aperiodic and Sporadic Release Control for Asynchronous Event Handlers</p>
+		<p>Delete &quot;<font color="red">invoked by handleAsyncEvent&quot; from semantic 6&quot;</font></p>
+		<h3>Change 18</h3>
+		<p>Replace Aperiodic and Sporadic Release Control for Asynchronous Event Handlers </p>
+		<p>Semantics 6.a</p>
+		<p><font color="red">a. The getAndDecrementPendingFireCount method decreases the fireCount by one (if it was greater than zero), and returns the old value. This removes the front entry from the arrival-time queue but does not constitute a completion: the deadline of the most current release is unchanged and the current CPU consumption is not set to zero.</font></p>
+		<p>with</p>
+		<p><font color="lime">a. The getAndDecrementPendingFireCount method decreases the fireCount by one (if it was greater than zero), and returns the old value. This removes the front entry from the arrival-time queue but otherwise has no effect on the scheduling of the current scheulable object, nor the handler itself.</font></p>
+		<h3>Change 19</h3>
+		<p>Replace Aperiodic and Sporadic Release Control for Asynchronous Event Handlers</p>
+		<p>Semantics 6.c</p>
+		<p><font color="red">c. The getAndIncrementPendingFireCount method attempts to increase the fireCount by one, and returns the old value. It effectively generates an arrival for this handler, and if that arrival is accepted, it becomes a release event that is added to the arrival-time queue and the fireCount is incremented by one. If the handler is not active, that is execution is not within the flow of control of handleAsyncEvent, at the time this method is called, then the handler may not be released in response to this new release event, until an additional release event is generated by firing the associated asynchronous event.</font></p>
+		<p>with</p>
+		<p><font color="lime">c. The getAndIncrementPendingFireCount method attempts to increase the fireCount by one , and returns the old value. It behaves effectively as if a private event, associated only with this handler, were fired, in accordance with semantic (1) above. This pseudo-firing is treated as a normal firing with respect to the other semantics in this section.</font></p>
+		<h3>Processings Groups</h3>
+		<h3>Change 20</h3>
+		<p>Add </p>
+		<h4><font color="lime">Definitions for Processing Groups</font></h4>
+		<p><font color="lime">The enforced priority of a schedulable object is a priority with no execution eligibility.</font></p>
+		<h4><font color="lime">Semantics for Processing Groups</font></h4>
+		<h3>Change 21</h3>
+		<p>Replace processing group semantic 7a-b</p>
+		<p><font color="red">a. If the state of the SO is either executing or eligible-for-execution, then the SO is placed into the state blocked-by-group-cost-overrun.</font></p>
+		<p><font color="red">b. Otherwise, the SO must have been blocked for a reason other than blockedby-group-cost-overrun. In this case, the state change to blocked-by-groupcost-overrun is left pending: if the blocking condition for the SO is removed, then its state changes to blocked-by-group-cost-overrun.</font></p>
+		<p>with</p>
+		<p><font color="lime">a. The SO is placed into the enforced state.</font></p>
+		<p><font color="lime">b. When a SO is in the enforced state the base scheduler schedules that SO effectively as if the enforced priority were used in place of the SO���s base priority.</font></p>
+		<h3>Change 22</h3>
+		<p>Replace processing group semantic 8.b.</p>
+		<p><font color="red">b. Otherwise the processing group is in the enforced state. It is removed from the enforced state, the current CPU consumption of the group is set to zero, and for each member of the processing group:</font></p>
+		<p><font color="red">i. If there is a pending state change to blocked-by-group-cost-overrun then: the pending state change is removed, and the SO remains in its current blocked state;</font></p>
+		<p><font color="red">ii. If the SO is in the block-by-group-cost-overrun state, it is made eligible for execution.</font></p>
+		<p><font color="red">iii. Otherwise no cost monitoring action is taken for that SO.</font></p>
+		<p>with</p>
+		<p><font color="lime">b. Otherwise the processing group is in the enforced state. It is removed from the enforced state, the current CPU consumption of the group is set to zero, and each member of the group is removed from the enforced state.</font></p>
+		<h3>Change 23</h3>
+		<p>At the end of Scheduling Rationale, add</p>
+		<p><font color="lime">Cost enforcement may be deferred while the overrun schedulable object holds locks that are out of application control, such as locks used to protect garbage collection. Applications should include the resulting jitter in any analysis that depends on cost enforcement.</font></p>
+		<p><font color="lime">When a schedulable object is enforced because of cost overrun in a processing group the enforced priority is used for scheduling instead of the schedulable object���s base priority. The enforced priority���s application is limited. The enforced priority is not returned as the schedulable object���s priority from methods such as getPriority(),and the semantics of the active priority continue to operate when a schedulable object is enforced.</font></p>
+		<h2>Scheduler class</h2>
+		<h3>Change 24</h3>
+		<p>Change the description for getPolicyName() from</p>
+		<p><font color="red">Gets a string representing the policy of this. The string value need not be interned, but it must be created in a memory area that is compatible with the caller���s execution environment.</font></p>
+		<p>to</p>
+		<p><font color="lime">Gets a string representing the policy of this. The string value need not be interned, but it must be created in a memory area that does not cause an illegal assignment error if stored in the current allocation context and does not cause a MemoryAccessError when accessed.</font></p>
+		<h2>PriorityScheduler class</h2>
+		<h3>Change 25</h3>
+		<p>Change the description for static int getMaxPriority(java.lang.Thread thread) method from</p>
+		<p><font color="red">Gets the maximum priority for the given thread. If the given thread is a real-time thread that is scheduled by an instance of PriorityScheduler, then the maximum priority for that scheduler is returned. If the given thread is a Java thread then Thread.MAX_PRIORITY is returned. Otherwise an exception is thrown.</font></p>
+		<p>to</p>
+		<p><font color="lime">Gets the maximum priority for the given thread. If the given thread is a real-time thread that is scheduled by an instance of PriorityScheduler, then the maximum priority for that scheduler is returned. If the given thread is a Java thread then the maximum priority of its thread group is returned. Otherwise an exception is thrown.</font></p>
+		<h2>PeriodicParameters class</h2>
+		<h3>Change 26</h3>
+		<p>In the setPeriod() method, add &quot;<font color="lime">Also thrown if period is incompatible with the scheduler for any associated schedulable object.</font>&quot; to the end of the IllegalArgumentException clause.</p>
+		<h2>AperiodicParameters class</h2>
+		<h3>Change 27</h3>
+		<p>In the setArrivalTimeQueueOverflowBehavior() method, add the following paragraph:</p>
+		<p><font color="lime">Values of behavior are compared using reference equality (==) not value equality (equals()).</font></p>
+		<h2>SporadicParameters class</h2>
+		<h3>Change 28</h3>
+		<p>In the setMitViolationBehavior() method, add the following paragraph:</p>
+		<p><font color="lime">Values of behavior are compared using reference equality (==) not value equality (equals()).</font></p>
+		<h2>Memory Management chapter</h2>
+		<h3>Change 29</h3>
+		<p>Replace semantic 18</p>
+		<p><font color="red">18. When the reference count for an instance of the class ScopedMemory is ready to be decremented from one to zero, all unfinalized objects within that area are considered ready for finalization. If after the finalizers for all unfinalized objects in the scoped memory area run to completion, the reference count for the memory area is still ready to be decremented to zero, then it is decremented to zero and the memory scope is emptied of all objects. The RTSJ implementation must complete finalization of objects in the scope and, if the reference count is zero after finalizers run, deletion of the objects in the scope before that memory scope can again become the current allocation context for any schedulable object. (This is a special case of the finalization implementation specified in The Java Language Specification, second edition, section 12.6.1)</font></p>
+		<p>with</p>
+		<p><font color="lime">18. When the reference count for an instance of the class ScopedMemory is ready to be decremented from one to zero, all unfinalized objects within that area are considered ready for finalization. If after the finalizers for all such unfinalized objects in the scoped memory area run to completion, the reference count for the memoryarea is still ready to be decremented to zero, any newly created unfinalized objects are considered ready for finalization and the process is repeated until no new objects are created or the scoped memory���s reference count is no longer ready to be decremented from one to zero. When the scope contains no unfinalized objects and its reference count is ready to be decremented from one to zero, then the reference count is decremented to zero and the memory scope is emptied of all objects. The RTSJ implementation must complete finalization of objects in the scope and, if the reference count is zero after finalizers run, deletion of the objects in the scope before that memory scope can again become the current allocation context for any schedulable object. (This is a special case of the finalization implementation specified in The Java Language Specification, second edition, section 12.6.1)</font></p>
+		<h3>Change 30</h3>
+		<p>Replace semantic 19</p>
+		<p><font color="red">19. Finalization of objects in scoped memory shall take place in a schedulable entity that can reference each object with assignment and reference rules no more restrictive than those in place when the object was created. Finalization may start when the all unfinalized objects in the scope are ready for finalization. The current allocation context for the finalizers is equal to the finalizing scope with a scope stack that is valid under the single parent rule. The scope stack need not be minimal; it may contain heap and immortal memory areas. The finalizing schedulable entity may be heap, or no-heap, and it may run at any real-time priority, but it is subject to boosting to avoid priority inversion,</font></p>
+		<p>with</p>
+		<p><font color="lime">19. Finalization may start when all unfinalized objects in the scope are ready for finalization. Finalizers are executed with the current allocation context set to thefinalizing scope and are executed by the schedulable object in control of the scope when its reference count is ready to be decremented from one to zero</font></p>
+		<h3>Change 31</h3>
+		<p>At the end of memory management rationale, add</p>
+		<p>&quot;<font color="lime">If a scoped memory area is used by both heap and non-heap SOs, there could becases where a finalizer executed in non-heap context could attempt to use a heapreference left by a heap-using SO. The code in the finalizer would throw a memoryaccess error. If that exception is not caught in the finalizer, it will be handled by the implementation so finalization will continue undisturbed, but the problem in finalizer that caused the illegal memory access could be hard to locate. So, catch clauses in finalizers for objects allocated in scoped memory are even more useful than they are for normal finalizers.</font>&quot;</p>
+		<h2>MemoryArea class</h2>
+		<h3>Change 32</h3>
+		<p>In each constructor that accepts a SizeEstimator argument, add to the IllegalArgumentException clause, &quot;<font color="lime">or size.getEstimate() is negative</font>&quot;</p>
+		<h3>Change 33</h3>
+		<p>In the enter() method  insert &quot;<font color="lime">if the caller is a schedulable object and</font>&quot; in the IllegalArgumentException clause</p>
+		<h3>Change 34</h3>
+		<p>To the enter() method,  add</p>
+		<p><font color="lime">MemoryAccessError - Thrown if caller is a no-heap schedulable object and this memory area���s logic value is allocated in heap memory.</font></p>
+		<h3>Change 35</h3>
+		<p>In the enter(logic) method, change the first two exception descriptions from</p>
+		<p><font color="red">java.lang.IllegalArgumentException - Thrown if logic is null.</font></p>
+		<p><font color="red">java.lang.IllegalThreadStateException - Thrown if the caller is a Java thread.</font></p>
+		<p>to</p>
+		<p><font color="lime">java.lang.IllegalThreadStateException - Thrown if the caller is a Java thread.</font></p>
+		<p><font color="lime">java.lang.IllegalArgumentException - Thrown if the caller is a schedulable object and logic is null.</font></p>
+		<h2>SizeEstimator class</h2>
+		<h3>Change 36</h3>
+		<p>In class description, second paragraph, replace &quot;<font color="red">several parts</font>&quot; with &quot;<font color="lime">several parts (if for instance the object and its monitor are separate)</font>&quot;</p>
+		<h3>Change 37</h3>
+		<p>In method reserve(Class c, int number) add throws clause</p>
+		<p><font color="lime">java.lang.IllegalArgumentException - Thrown if c is null.</font></p>
+		<h3>Change 38</h3>
+		<p>In reserve(SizeEstimator size) add throws clause</p>
+		<p><font color="lime">java.lang.IllegalArgumentException - Thrown if size is null.</font></p>
+		<h3>Change 39</h3>
+		<p>In reserve(SizeEstimator estimator, int number) add throws clause</p>
+		<p><font color="lime">java.lang.IllegalArgumentException - Thrown if estimator is null.</font></p>
+		<h2>ScopedMemory class</h2>
+		<h3>Change 40</h3>
+		<p>In each constructor that accepts a SizeEstimator argument, add to the IllegalArgumentException clause, &quot;<font color="lime">or size.getEstimate() is negative</font>&quot;</p>
+		<h3>Change 41</h3>
+		<p>In each enter() or joinAndEnter() method, remove the IllegalThreadStateException clause it is present, and add</p>
+		<p><font color="lime">java.lang.IllegalThreadStateException - Thrown if the caller is a Java thread, or if this method is invoked during finalization of objects in scoped memory and entering this scoped memory area would force deletion of the SO that triggered finalization. This would include the scope containing the SO, and the scope (if any) containing the scope containing the SO.</font></p>
+		<h3>Change 42</h3>
+		<p>For enter(), and enter(logic) insert &quot;<font color="lime">if the caller is a schedulable object and</font>&quot; in the IllegalArgumentException clause</p>
+		<h3>Change 43</h3>
+		<p>For enter() add</p>
+		<p><font color="lime">MemoryAccessError - Thrown if caller is a no-heap schedulable object and this memory area���s logic value is allocated in heap memory.</font></p>
+		<h3>Change 44</h3>
+		<p>For executeInArea(logic), add</p>
+		<p><font color="lime">java.lang.IllegalArgumentException - Thrown if the caller is a schedulable object and logic is null.</font></p>
+		<h3>Change 45</h3>
+		<p>In the getPortal() method, delete the MemoryAccessError clause</p>
+		<h3>Change 46</h3>
+		<p>In the getPortal() method, change &quot;<font color="red">context</font>&quot; to &quot;<font color="lime">context or not on the caller's scope stack</font>&quot; in the IllegalAssignmentError clause.</p>
+		<h3>Change 47</h3>
+		<p>In getReferenceCount() change the description from</p>
+		<p><font color="red">Returns the reference count of this ScopedMemory. The reference count is an indication of the number of schedulable objects that may have access to this scope.</font></p>
+		<p>to</p>
+		<p><font color="lime">Returns the reference count of this ScopedMemory. </font></p>
+		<p><font color="lime">Note: A reference count of 0 reliably means that the scope is not referenced, but other reference counts are subject to artifacts of lazy/eager maintenance by the implementation.</font></p>
+		<h3>Change 48</h3>
+		<p>In the join(), and join(time), methods, add</p>
+		<p><font color="lime">java.lang.IllegalThreadStateException - Thrown if the caller is a Java thread.</font></p>
+		<h3>Change 49</h3>
+		<p>In the join(time), joinAndEnter(), joinAndEnter(time), joinAndEnter(logic), and joinAndEnter(logic, time) methods' IllegalArgumentException clause, replace &quot;<font color="red">if</font>&quot; with &quot;<font color="lime">if the caller is a schedulable object and</font>&quot;</p>
+		<h3>Change 50</h3>
+		<p>In the joinAndEnter(), and joinAndEnter(time) methods, add</p>
+		<p><font color="lime">MemoryAccessError  Thrown if caller is a non-heap schedulable object and this memory area���s logic value is allocated in heap memory.</font></p>
+		<h3>Change 51</h3>
+		<p>In the joinAndEnter(time), and joinAndEnter(logic, time) methods' ScopedCycleException description, change &quot;<font color="red">if</font>&quot; to &quot;<font color="lime">if the caller is a schedulable object and</font>&quot;</p>
+		<h3>Change 52</h3>
+		<p>In the setPortal method description, delete</p>
+		<p><font color="red">IllegalThreadStateException is thrown when called by a Java thread even when the invocation could also throw IllegalArgumentException.</font></p>
+		<p>and change the exception descriptions from </p>
+		<p><font color="red">IllegalAssignmentError - Thrown if object is not allocated in this scoped memory instance. </font></p>
+		<p><font color="red">InaccessibleAreaException - Thrown if this memory area is not in the caller���s scope stack.</font></p>
+		<p><font color="red">java.lang.IllegalThreadStateException - Thrown if the caller is a Java thread.</font></p>
+		<p>to</p>
+		<p><font color="lime">java.lang.IllegalThreadStateException - Thrown if the caller is a Java Thread, and object is not null.</font></p>
+		<p><font color="lime">IllegalAssignmentError - Thrown if the caller is a schedulable object, and object is not allocated in this scoped memory instance and not null.</font></p>
+		<p><font color="lime">InaccessibleAreaException - Thrown if the caller is a schedulable object, this memory area is not in the caller���s scope stack and object is not null.</font></p>
+		<h2>LTMemory class</h2>
+		<h3>Change 53</h3>
+		<p>Throughout the constructor and method documentation, convert references to SizeEstimator values size, and initial to size.getEstimate() and initial.getEstimate() as appropriate.</p>
+		<h3>Change 54</h3>
+		<p>In the 7th and 8th constructors' IllegalArgument descriptions, replace &quot;<font color="red">the size estimate from maximum</font>&quot; with &quot;<font color="lime">maximum.getEstimate()</font>&quot;</p>
+		<h2>VTMemory class</h2>
+		<h3>Change 55</h3>
+		<p>Throughout the constructor and method documentation, convert references to SizeEstimator values size, and initial to size.getEstimate() and initial.getEstimate() as appropriate.</p>
+		<h3>Change 56</h3>
+		<p>In the 7th and 8th constructors' IllegalArgument descriptions, replace &quot;<font color="red">the size estimate from maximum</font>&quot; with &quot;<font color="lime">maximum.getEstimate()</font>&quot;</p>
+		<h2>PhysicalMemoryManager class</h2>
+		<h3>Change 57</h3>
+		<p>For each method that has a Object name parameter, add the note:</p>
+		<p><font color="lime">Values of name are compared using reference equality (==) not value equality (equals()).</font></p>
+		<h2>ImmortalPhysicalMemory LTPhysicalMemory, and VTPhysicalMemory classes</h2>
+		<h3>Change 58</h3>
+		<p>After the first paragraph of the class description, add</p>
+		<p>&quot;<font color="lime">No provision is made for sharing object in [memory class] with entities outside the JVM that creates them, and, while the memory backing an instance of [memory class] could be shared by multiple JVMs, the class does not support such sharing</font>.&quot;</p>
+		<h3>Change 59</h3>
+		<p>In the type parameter description for each constructor that has an Object type parameter, add</p>
+		<p>&quot;<font color="lime">Note that type values are compared by reference (==), not by value (equals).</font>&quot;</p>
+		<h3>Change 60</h3>
+		<p>In the InvalidArgumentException clause of each constructor that has a SizeEstimator size parameter, add</p>
+		<p>&quot;<font color="lime">or size.getEstimate() is negative</font>&quot;</p>
+		<h2>RawMemoryAccess class</h2>
+		<h3>Change 61</h3>
+		<p>In the type parameter description for each constructor that has an Object type parameter, add</p>
+		<p>&quot;<font color="lime">Note that type values are compared by reference (==), not by value (equals).</font>&quot;</p>
+		<h3>Change 62</h3>
+		<p>In the map(long base) method's IllegalArgumentException description, add, &quot;<font color="lime">or the memory-mapping hardware cannot place the physical memory at the designated address.</font>&quot;</p>
+		<h3>Change 63</h3>
+		<p>In the map(long base, long size) method's IllegalArgumentException description, replace</p>
+		<p><font color="red">java.lang.IllegalArgumentException - Thrown if size is not greater than zero, or base is not a legal value for a virtual address.</font></p>
+		<p>with</p>
+		<p><font color="lime">java.lang.IllegalArgumentException - Thrown if size is not greater than zero, base is not a legal value for a virtual address, or the memory-mapping hardware cannot place the physical memory at the designated address.</font></p>
+		<h2>RawMemoryFloatAccess class</h2>
+		<h3>Change 64</h3>
+		<p>In the type parameter description for each constructor that has an Object type parameter, add</p>
+		<p>&quot;<font color="lime">Note that type values are compared by reference (==), not by value (equals).</font>&quot;</p>
+		<h2>Synchronization Chapter</h2>
+		<h3>Change 65</h3>
+		<p>In the fourth paragraph of the chapter, replace &quot;<font color="red">schedulable entities</font>&quot; with &quot;<font color="lime">schedulable objects</font>&quot;</p>
+		<h3>Change 66</h3>
+		<p>In semantics for the base scheduler 2, replace</p>
+		<p><font color="red">��� pparams.setPriority(prio) if t is a schedulable object whose SchedulingParameters is pparams, the<br />
+				new base priority is prio </font></p>
+		<p><font color="red">��� t.setSchedulingParameters(pparams) if t is a schedulable object and pparams is an instance of Priority- Parameters; the new base priority is pparams.getPriority()</font></p>
+		<p><font color="red">��� t.setPriority(prio) if t is an instance of java.lang.Thread the new base priority is the lesser of prio, Thread.MAX_PRIORITY, and the maximum priority for t���s thread group. If t is a schedulable object, the new base priority is prio.</font></p>
+		<p>with</p>
+		<p><font color="lime">��� pparams.setPriority(prio) if t is a schedulable object with pparams as its SchedulingParameters, where pparams is an instance of PriorityParameters; the new base priority is prio</font></p>
+		<p><font color="lime">��� t.setSchedulingParameters(pparams) if t is a schedulable object and pparams is an instance of Priority- Parameters; the new base priority is pparams.getPriority()</font></p>
+		<p><font color="lime">��� t.setPriority(prio) if t is a schedulable object, the new base priority is prio. If it is a Java thread, the new base priority is the lesser of prio, and the maximum priority for t���s thread group.</font></p>
+		<h2>PriorityCeilingEmulation class</h2>
+		<h3>Change 67</h3>
+		<p>In the class description's third paragraph, replace</p>
+		<p><font color="red">In order for this protocol to have the desired effect in terms of avoiding unbounded priority inversions and preventing deadlock, the</font></p>
+		<p>with</p>
+		<p><font color="lime">The</font></p>
+		<h3>Change 68</h3>
+		<p>In the instance(int ceiling) method's IllegalArgumentException description, add, &quot;<font color="lime">for the base scheduler</font>&quot;</p>
+		<h2>WaitFreeWriteQueue class</h2>
+		<h3>Change 69</h3>
+		<p>In the second constructor add</p>
+		<p><font color="lime">InaccessibleAreaException - Thrown if memory is a scoped memory that is not on the caller���s scope stack.</font></p>
+		<h3>Change 70</h3>
+		<p>Fix mis-spellings of <font color="lime">InaccessibleAreaException</font> as <font color="red">InnaccessibleAreaException</font> throughout the wait-free queue classes.</p>
+		<h2>WaitFreeReadQueue class</h2>
+		<h3>Change 71</h3>
+		<p>In the second constructor add</p>
+		<p><font color="lime">InaccessibleAreaException - Thrown if memory is a scoped memory that is not on the caller���s scope stack.</font></p>
+		<h2>RationalTime class</h2>
+		<h3>Change 72</h3>
+		<p>In the first constructor, add</p>
+		<p><font color="lime">java.lang.IllegalArgumentException - Thrown if frequency is less than or equal to zero.</font></p>
+		<h3>Change 73</h3>
+		<p>In the second constructor, add &quot;or if frequency is equal to zero.&quot; to the IllegalArgumentException description.</p>
+		<h3>Change 74</h3>
+		<p>In the third constructor, change the IllegalArgumentException description from</p>
+		<p><font color="red">java.lang.IllegalArgumentException - If any of the argument values are less than zero.</font></p>
+		<p>to</p>
+		<p><font color="lime">java.lang.IllegalArgumentException - If either of the argument values are less than zero, or if frequency is equal to zero.</font></p>
+		<h3>Change 75</h3>
+		<p>Add to the setFrequency(int frequency) method,</p>
+		<p><font color="lime">java.lang.IllegalArgumentException - Thrown if frequency is less than or equal to zero.</font></p>
+		<h3>Change 76</h3>
+		<p>Add method override.</p>
+		<p><font color="lime">public java.lang.String toString()</font></p>
+		<p><font color="lime">Deprecated. 1.0.1</font></p>
+		<p><font color="lime">Create a printable string of the time given by this. The string shall be a decimal representation of the frequency, milliseconds and nanosecond values; formatted as follows ���(100, 2251 ms, 750000 ns)��� </font></p>
+		<p><font color="lime">Overrides: toString in class RelativeTime </font></p>
+		<p><font color="lime">Returns: String object converted from the time given by this.</font></p>
+		<h2>Clocks and Timers Chapter</h2>
+		<h3>Change 77</h3>
+		<p>To semantic 8, add &quot;<font color="lime">(See semantics in the Memory chapter for details.)</font>&quot;</p>
+		<h2>Timer class</h2>
+		<h3>Change 78</h3>
+		<p>To the constructor, add &quot;<font color="lime">IllegalAssignmentError - Thrown if this Timer cannot hold references to handler and clock.</font>&quot;</p>
+		<p>To the addHandler and setHandler methods add &quot;<font color="lime">IllegalAssignmentError - Thrown if this AsyncEvent cannot hold a reference to handler.</font>&quot;</p>
+		<h2>OneShotTimer class</h2>
+		<h3>Change 79</h3>
+		<p>To the first constructor add &quot;<font color="lime">IllegalAssignmentError - Thrown if this OneShotTimer cannot hold a reference to handler.</font>&quot;</p>
+		<p>To the second constructor add &quot;<font color="lime">IllegalAssignmentError - Thrown if this OneShotTimer cannot hold references to handler and clock.</font>&quot;</p>
+		<h2>PeriodicTimer class</h2>
+		<h3>Change 80</h3>
+		<p>To the first constructor add &quot;<font color="lime">IllegalAssignmentError - Thrown if this PeriodicTimer cannot hold references to handler and interval.</font>&quot;</p>
+		<p>To the second constructor add &quot;<font color="lime">IllegalAssignmentError - Thrown if this PeriodicTimer cannot hold references to handler, clock and interval.</font>&quot;</p>
+		<p>To the setInterval() method add &quot;<font color="lime">IllegalAssignmentError - Thrown if this PeriodicTimer cannot hold a reference to interval.</font>&quot;</p>
+		<h3>Change 81</h3>
+		<p>In the getInterval() method replace</p>
+		<p><font color="red">Returns: The RelativeTime instance with the value of this timer���s interval.</font></p>
+		<p>with</p>
+		<p><font color="lime">Returns: The RelativeTime instance assigned as this periodic timer���s interval by the constructor or setInterval(RelativeTime).</font></p>
+		<h2>Asynchrony chapter</h2>
+		<h3>Change 82</h3>
+		<p>Add the definition</p>
+		<p><font color="lime">Interruptible blocking methods. The RTSJ and standard Java methods that are explicitly interruptible by an AIE. The interruptible blocking methods comprise HighResolutionTime.waitForObject(), Object.wait(), Thread.sleep(), RealtimeThread.sleep(), Thread.join(), ScopedMemory.join(), ScopedMemory.joinAndEnter(), RealtimeThread.waitForNextPeriodInterruptible(), WaitFreeWriteQueue.read(), WaitFreeReadQueue.waitForData(), WaitFreeReadQueue.write(), WaitFreeDequeue.blockingRead(), WaitFreeDequeue.blockingWrite() and their overloaded forms.</font></p>
+		<h3>Change 83</h3>
+		<p>In Semantics and Requirements for Asynchronous Transfer of Control, semantic 1 replace</p>
+		<p><font color="red">An AIE is generated when the fire() method is called on an AIE or the RealtimeThread.interrupt() method is called;</font></p>
+		<p>with</p>
+		<p><font color="lime">An AIE is generated for a given schedulable object, when the fire() method is called on an AIE for which the schedulable object is executing within the doInterruptible() method, or the RealtimeThread.interrupt() method is called</font></p>
+		<h3>Change 84</h3>
+		<p>In Semantics and Requirements for Asynchronous Transfer of Control, insert semantic 2 after semantic 1</p>
+		<p><font color="lime">2. The RealtimeThread.interrupt() method throws the generic AIE at the target real-time thread and has the behaviors defined for Thread.interrupt(). This is the only interaction between the ATC mechanism and the conventional interrupt() mechanism.</font></p>
+		<h3>Change 85</h3>
+		<p>In Semantics and Requirements for Asynchronous Transfer of Control, insert semantic 4 after what was semantic 2</p>
+		<p><font color="lime">4. The generation of an AIE through the fire() mechanism behaves as if it set an asynchronously-interrupted status in the schedulable object. If the schedulable object is blocked within an interruptible blocking method, or invokes an interruptible blocking method, when this asynchronously-interrupted status is set, then the invocation immediately completes by throwing the pending AIE and clearing the asynchronously-interrupted status. When a pending AIE is explicitly cleared then the asynchronously-interrupted status is also cleared.</font></p>
+		<h3>Change 86</h3>
+		<p>In the previous semantic 3, replace</p>
+		<p><font color="red">Methods which block through mechanisms other than the wait(), sleep(), join(), MemoryArea.join(), MemoryArea.joinAndEnter() or Realtime- Thread.waitForNextPeriodInterruptible() methods,</font></p>
+		<p>with</p>
+		<p><font color="lime">Methods which block through mechanisms other than the interruptible blocking methods,</font></p>
+		<h3>Change 87</h3>
+		<p>In Summary of ATC Operation, bullet 3, replace </p>
+		<p><font color="red">If control is in one of the wait(), sleep(), or join() methods</font></p>
+		<p>with</p>
+		<p><font color="lime">If control is in an interruptible blocking method</font></p>
+		<h2>AsyncEvent class</h2>
+		<h3>Change 88</h3>
+		<p>To the addHandler() method, add</p>
+		<p><font color="lime">IllegalAssignmentError - Thrown if this AsyncEvent cannot hold a reference to handler.</font></p>
+		<h3>Change 89</h3>
+		<p>To the fire() method's MITViolationException description, change the first sentence from</p>
+		<p><font color="red">Thrown if there is a handler associated with this event that has its MIT violated by the call to fire (and it has set the minimum inter-arrival time violation behavior to MITViolationExcept).</font></p>
+		<p>to</p>
+		<p><font color="lime">Thrown under the base priority scheduler���s semantics if there is a handler associated with this event that has its MIT violated by the call to fire (and it has set the minimum inter-arrival time violation behavior to MITViolationExcept).</font></p>
+		<h3>Change 90</h3>
+		<p>To the setHandler method, add</p>
+		<p><font color="lime">IllegalAssignmentError - Thrown if this AsyncEvent cannot hold a reference to handler.</font></p>
+		<h2>AsyncEventHandler class</h2>
+		<h3>Change 91</h3>
+		<p>In the second constructor, change the IllegalArgumentException description from</p>
+		<p><font color="red">java.lang.IllegalArgumentException - Thrown if the initial memory area or this is in heap memory, and the nonheap parameter is true.</font></p>
+		<p>to</p>
+		<p><font color="lime">java.lang.IllegalArgumentException - Thrown if this is in heap memory, and nonheap is true.</font></p>
+		<h3>Change 92</h3>
+		<p>In the third constructor, change the IllegalArgumentException from</p>
+		<p><font color="red">java.lang.IllegalArgumentException - Thrown if the nonheap parameter is true and any parameter, or the AsyncEventHandler instance is in heap memory or the initial memory area is heap memory.</font></p>
+		<p>to</p>
+		<p><font color="lime">java.lang.IllegalArgumentException - Thrown if logic or this is in heap memory, and nonheap is tru</font>e.</p>
+		<h3>Change 93</h3>
+		<p>In the third and fourth constructors, add</p>
+		<p><font color="lime">IllegalAssignmentError - Thrown if the new AsyncEventHandler instance cannot hold a reference to logic.</font></p>
+		<h3>Change 94</h3>
+		<p>In the fifth constructor, change the IllegalArgumentException description from</p>
+		<p><font color="red">java.lang.IllegalArgumentException - Thrown if the nonheap parameter is true and any parameter, or the AsyncEventHandler instance is in heap memory or the initial memory area is heap memory.</font></p>
+		<p>to</p>
+		<p><font color="lime">java.lang.IllegalArgumentException - Thrown if nonheap is true and this or any object passed as a parameter is in heap memory. Also thrown if noheap is true and area is heapmemory.</font></p>
+		<h3>Change 95</h3>
+		<p>To the fifth constructor, add</p>
+		<p><font color="lime">IllegalAssignmentError - Thrown if the new AsyncEventHandler instance cannot hold a reference to nonnull values of scheduling release memory and group, or if those parameters cannot hold a reference to the new AsyncEventHandler. Also thrown if the new AsyncEventHandler instance cannot hold a reference to area.</font></p>
+		<h3>Change 96</h3>
+		<p>In the sixth constructor's description of the release parameter, change &quot;<font color="red">the AEH's</font>&quot; to &quot;<font color="lime">this AEH's</font>&quot;</p>
+		<h3>Change 97</h3>
+		<p>In the sixth constructor's description of the logic parameter, change </p>
+		<p><font color="red">logic - The java.lang.Runnable object whose run() method is executed by handleAsyncEvent() .If null, the logic will default to the AEH���s run method.</font></p>
+		<p>to</p>
+		<p><font color="lime">logic - The java.lang.Runnable object whose run() method is executed by handleAsyncEvent()401 . If null, the default handleAsyncEvent() method invokes nothing.</font></p>
+		<h3>Change 98</h3>
+		<p>In the sixth constructor's description of the IllegalArgumentException, replace</p>
+		<p><font color="red">java.lang.IllegalArgumentException - Thrown if the nonheap parameter is true and any parameter, or the AsyncEventHandler instance is in heap memory or the initial memory area is heap memory.</font></p>
+		<p>with</p>
+		<p><font color="lime">java.lang.IllegalArgumentException - Thrown if nonheap is true and any parameter, or this is in heap memory or area is heap memory.</font></p>
+		<h3>Change 99</h3>
+		<p>To the sixth constructor add</p>
+		<p><font color="lime">IllegalAssignmentError - Thrown if the new AsyncEventHandler instance cannot hold a reference to nonnull values of scheduling release memory and group, or if those parameters cannot hold a reference to the new AsyncEventHandler. Also thrown if the new AsyncEventHandler instance cannot hold a reference to nonnull values of area and logic.</font></p>
+		<h3>Change 100</h3>
+		<p>In the seventh constructor's description of the IllegalArgumentException, change</p>
+		<p><font color="red">java.lang.IllegalArgumentException - Thrown if the initial memory area, logic, any parameter object, or this is in heap memory, and the nonheap parameter is true.</font></p>
+		<p>to</p>
+		<p><font color="lime">java.lang.IllegalArgumentException - Thrown if nonheap is true and logic, any parameter object, or this is in heap memory. Also thrown if noheap is true and area is heap memory.</font></p>
+		<h3>Change 101</h3>
+		<p>To the seventh constructor, add</p>
+		<p><font color="lime">IllegalAssignmentError - Thrown if the new AsyncEventHandler instance cannot hold a reference to nonnull values of scheduling release memory and group, or if those parameters cannot hold a reference to the new AsyncEventHandler. Also thrown if the new AsyncEventHandler instance cannot hold a reference to nonnull values of area and logic.</font></p>
+		<h3>Change 102</h3>
+		<p>Change &quot;<font color="red">the AEH</font>&quot; to &quot;<font color="lime">this AEH</font>&quot; twice in the last paragraph of the getAndClearPendingFireCount(), getAndDecrementPendingFireCount(), and getAndIncrementPendingFireCount() descriptions</p>
+		<h3>Change 103</h3>
+		<p>In the last paragraph of the getAndIncrementPendingFireCount() description, change &quot;<font color="red">the scheduling</font>&quot; to &quot;<font color="lime">the arrival-time queue and the scheduling</font>&quot;</p>
+		<h3>Change 104</h3>
+		<p>Add to getAndIncrementPendingFireCount()</p>
+		<p><font color="lime">MITViolationException - Thrown when this AEH is controlled by sporadic scheduling parameters under the base scheduler, the parameters specify the mitViolationExcept policy, and this method would introduce a release that would violate the specified minimum interarrival time.</font></p>
+		<p><font color="lime">ArrivalTimeQueueOverflowException - Thrown when this AEH is controlled by aperiodic scheduling parameters under the base scheduler, the release parameters specify the arrivalTimeQueueOverflowExcept policy, and this method would cause the arrival time queue to overflow.</font></p>
+		<h3>Change 105</h3>
+		<p>Change the description of handleAsyncEvent() from</p>
+		<p><font color="red">This method holds the logic which is to be executed when associated instances of AsyncEvent occur. The default logic is null. If this handler was constructed using an instance of java.lang.Runnable as an argument to the constructor, then that instance���s run() method will be invoked from this method. This method will be invoked repeatedly while fireCount is greater than zero. All throwables from (or propagated through) handleAsyncEvent are caught, a stack trace is printed and execution continues as if handleAsyncEvent had returned normally.</font></p>
+		<p>to</p>
+		<p><font color="lime">This method holds the logic which is to be executed when any AsyncEvent with which this handler is associated is fired. This method will be invoked repeatedly while fireCount is greater than zero. The default implementation of this method invokes the run method of any non-null logic instance passed to the constructor of this handler. If the initial memory area of this AsyncEventHandler is a ScopedMemory, the initial memory area���s reference count does not drop below one between invocations of handleAsyncEvent(). All throwables from (or propagated through) handleAsyncEvent are caught, a stack trace is printed and execution continues as if handleAsyncEvent had returned normally.</font></p>
+		<h3>Change 106</h3>
+		<p>Change the description of run() from</p>
+		<p><font color="red">Used by the asynchronous event mechanism, see AsyncEvent. This method invokes handleAsyncEvent() repeatedly while the fireCount is greater than zero. Applications cannot override this method and should thus override handleAsyncEvent() in subclasses with the logic of the handler.</font></p>
+		<p>to</p>
+		<p><font color="lime">When used as part of the internal mechanism activated by firing an async event, this method���s detailed semantics are defined by the scheduler associated with this handler. The general outline is:<br />
+				while (fireCount &gt; 0) {<br />
+				  [initiate release]<br />
+				  fireCount--;<br />
+				  try {<br />
+				   handleAsyncEvent();<br />
+				  } catch (Throwable th){<br />
+				   th.printStackTrace();<br />
+				  }<br />
+				  [effect completion]<br />
+				}<br />
+				All throwables from (or propagated through) handleAsyncEvent() are caught, a stack trace is printed and execution continues as if handleAsyncEvent had returned normally. </font></p>
+		<p><font color="lime">When it is directly invoked, this method invokes handleAsyncEvent() repeatedly while the fireCount is greater than zero; e.g.,<br />
+				  while (getAndDecrementPendingFireCount() &gt; 0) <br />
+				    handleAsyncEvent();<br />
+				however direct invocation of run is not recommended as it may interact with the normal release of this handler. Applications cannot override this method and thus should use the logic parameter at construction, or override handleAsyncEvent() in subclasses with the logic of the handler.</font></p>
+		<h2>BoundAsyncEventHandler class</h2>
+		<h3>Change 107</h3>
+		<p>In the second constructor's description of the logic parameter, change</p>
+		<p><font color="red">logic - The java.lang.Runnable object whose run() method is executed by AsyncEventHandler.handleAsyncEvent(). If null, the logic will default to the BAEH���s run method.</font></p>
+		<p>to</p>
+		<p><font color="lime">logic - The java.lang.Runnable object whose run() method is executed by AsyncEventHandler.handleAsyncEvent(). If null, the default AsyncEventHandler.handleAsyncEvent() method invokes nothing.</font></p>
+		<h3>Change 108</h3>
+		<p>Change the second constructor's description of IllegalArgumentException from</p>
+		<p><font color="red">java.lang.IllegalArgumentException - Thrown if the initial memory area is in heap memory, and the noheap parameter is true.</font></p>
+		<p>to</p>
+		<p><font color="lime">java.lang.IllegalArgumentException - Thrown if nonheap is true and logic, any parameter object, or this is in heap memory. Also thrown if noheap is true and area is heap memory.</font></p>
+		<h3>Change 109</h3>
+		<p>To the second constructor, add</p>
+		<p><font color="lime">IllegalAssignmentError - Thrown if the new AsyncEventHandler instance cannot hold a reference to nonnull values of scheduling release memory and group, or if those parameters cannot hold a reference to the new AsyncEventHandler. Also thrown if the new AsyncEventHandler instance cannot hold a reference to nonnull values of area and logic.</font></p>
+		<h2>AsynchronouslyInterruptedException class</h2>
+		<h3>Change 110</h3>
+		<p>Change the description of the fire() method from</p>
+		<p><font color="red">Generate this exception if its doInterruptible() has been invoked and not completed. If this is the only outstanding AIE on the current schedulable object, it becomes the current AIE. Otherwise, it only becomes the current AIE if it is at a less deeper level of nesting compared with the current outstanding AIE.</font></p>
+		<p>to</p>
+		<p><font color="lime">Generate this exception if its doInterruptible() has been invoked and not completed. If this is the only outstanding AIE on the schedulable object that invoked this AIE���s doInterruptible(Interruptible) method, this AIE becomes that schedulable object���s current AIE. Otherwise, it only becomes the current AIE if it is at a less deeper level of nesting compared with the current outstanding AIE.</font></p>
+		<h2>ArrivalTimeQuewueOverflowException class</h2>
+		<h3>Change 111</h3>
+		<p>Change the class description from</p>
+		<p><font color="red">If an arrival time occurs and should be queued but the queue already holds a number<br />
+				of times equal to the initial queue length defined by this then the fire() method shall<br />
+				throw an instance of this class. If the arrival time is a result of a happening to which<br />
+				the instance of AsyncEventHandler is bound then the arrival time is ignored.</font></p>
+		<p>to</p>
+		<p><font color="lime">If an arrival time occurs and should be queued but the queue already holds a number<br />
+				of times equal to the initial queue length defined by this an instance of this class may<br />
+				be be thrown. If the arrival time is a result of a happening to which the instance of<br />
+				AsyncEventHandler is bound then the arrival time is ignored.</font></p>
+		<h2>InaccessibleAreaException class</h2>
+		<h3>Change 112</h3>
+		<p>Change the class description from</p>
+		<p><font color="red">The specified memory area is not above the current allocation context on the current thread scope stack.</font></p>
+		<p>to</p>
+		<p><font color="lime">The specified memory area is not on the current thread���s scope stack.</font></p>
+		<h2>MITViolationException class</h2>
+		<h3>Change 113</h3>
+		<p>Change the class description from</p>
+		<p><font color="red">Thrown by the fire method of an instance of AsyncEvent when on a minimum interarrival time violation. More specifically, it is thrown when: </font></p>
+		<p><font color="red">��� any instance of AsyncEventHandler associated with the AsyncEvent has ReleaseParameters from the clas  SporadicParameters</font></p>
+		<p><font color="red">��� The MIT violation behavior for the async event handler is mitViolationExcept</font></p>
+		<p><font color="red">��� The invocation of fire violates the minimum interarrival time constraint.</font></p>
+		<p>to</p>
+		<p><font color="lime">Thrown by the AsyncEvent.fire() or AsyncEventHandler.getAndIncrementPendingFireCount() on a minimum interarrival time violation. More specifically, it is thrown under the semantics of the base priority scheduler���s sporadic parameters��� mitViolationExcept policy when an attempt is made to introduce a release that would violate the MIT constraint.</font></p>
+	</body>
+
+</html>
+
+
+<!-- ** BEGIN: footer.jsp ** //-->
+
+
+
+
+
+
+
+
+</td>
+</tr>
+</table>
+
+<!-- ** END: Content Table ** //-->
+
+<!-- ** BEGIN: Footer Table ** //-->
+
+<div id="footer" style="clear: both;">
+    <div class="footleft">
+        <a href="/en/resources/contacts">Contact Us</a>
+    </div>
+	
+    <div class="botbar"><img src="/images/spacer.gif" alt="" height="23" width="1"></div>
+
+    <div class="footleft2">
+         &copy; 2019, Oracle Corporation and/or its affiliates. 
+        <a href="/en/home/terms">Terms of Use</a>. <a href="http://www.oracle.com/us/legal/privacy/index.html">Privacy Policy</a>. <a href="http://www.oracle.com/us/legal/third-party-trademarks/third-party-trademarks-078568.html">Trademarks</a>
+    </div>
+
+    <div class="footright">
+        <img src="/images/common/logo_oracle_footer.gif" alt="Oracle Corporation" height="22" width="91">
+    </div>
+
+    <div style="clear: both;"><img src="/images/spacer.gif" alt="" height="30" width="1"></div>
+</div>
+
+<!-- ** END: Footer Table ** //-->
+
+
+
+<!-- ** Menu Start ** //-->
+
+
+
+</body>
+</html>
+<!-- ** END: footer.jsp ** //-->
+

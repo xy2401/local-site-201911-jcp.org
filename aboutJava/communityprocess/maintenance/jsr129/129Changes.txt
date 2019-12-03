@@ -1,0 +1,79 @@
+Proposed Changes for PBP 1.0b Maintenance Release
+-------------------------------------------------
+
+overview.html : Update reference from Foundation 1.0 to Foundation
+1.0b.
+
+overview.html : Add reference to JDK 1.3.1.
+
+AWTEvent : Define PAINT_EVENT_MASK and INVOCATION_EVENT_MASK constants.
+
+Dimension, Point, Rectangle: Change to inherit from Cloneable
+
+Dimension, Point, Rectangle: Override clone() with public method.
+
+Point: Override hashCode() for consistancy for Hashtable contract
+
+Rectangle: Override hashCode() for consistancy for Hashtable contract 
+
+Update javax.microedition.xlet and xlet.ixc APIs with corrected PBP 1.1 semantics.
+
+Add XletContext.getClassLoader() method per PBP 1.1 spec.
+
+Add IxcPermission and associated security checks per PBP 1.1 spec.
+
+Window.getWarningString() : Remove statement that the window is
+always secure in PBP.
+
+Frame : Remove unused ownedWindows field from serial form.
+
+Window: Remove undefined focusMgr field from serial form.
+
+MediaTracker: Remove undefined head field from serial form, and add
+note saying that MediaTracker objects could not be fully serialized.
+
+Toolkit.createImage(URL) : Clarify that this method can
+throw SecurityException.
+
+Toolkit.getImage(URL): Clarify that this method can
+throw SecurityException.
+
+Toolkit.get/createImage(String) : Clarify that these
+methdods can throw SecurityException.
+
+AlphaComposite : Add explanation concerning premultplication of
+alpha values from JDK 1.3.1.
+
+java.rmi.registry.Registry : Delete references to ServerException.
+
+Tookit: Delete reference to java.awt.peer package.
+
+Toolkit.loadSystemColors() : Add a profile-specific note
+that the order of the color values in the systemColors argument is
+implementation-dependent.
+
+FlowLayout: Remove unused newAlign, serialVersionOnStream serial fields.
+
+FlowLayout: Remove unneeded readObject() method.
+
+SystemColor : Clarify that the color-widget association may be arbitrary
+in PBP.
+
+KeyEvent: Add clarification that applications are still permitted
+to create events and post them to the system event queue.
+
+MouseEvent: Add clarification that applications are still permitted
+to create events and post them to the system event queue.
+
+javax.microedition.xlet/package.html: Simplified explanation of the
+loaded state to say that it is entered after the xlet is "created".
+
+Window: Add explanation of interaction of setSize/Location operations with window system, per PBP 1.1.
+
+Window: Add explanation of setSize/Location behavior for invisible Windows.
+
+Frame, Component: Update restriction definitions with PBP 1.1 equivalents.
+
+Color : Add assertion that Color.color constants are instances of
+java.awt.Color.
+

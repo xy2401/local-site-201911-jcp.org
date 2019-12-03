@@ -1,0 +1,21 @@
+JSR-218 (Proposed changes for CDC 1.1.2)
+--------
+
+overview.html : Add the following:
+"A conformant implementation need only support loopback communication to
+the local host.  Network communication to external hosts is not
+required.  If an implementation does not support network communication
+to external hosts, the system property java.net.isRestricted shall be
+set to "true".
+If java.net.isRestricted is set to "true", then the APIs of java.net and
+java.microedition.io shall throw exceptions as specified (i.e.,
+java.io.IOException and subclasses) at any point that external
+communication would be required, e.g., resolving a host name or
+establishing a connection."
+
+java.util.jar : Fix broken link to "JAR manifest and signature
+specification"
+
+
+
+

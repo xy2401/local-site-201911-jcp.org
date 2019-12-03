@@ -1,0 +1,658 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- ** BEGIN: header.jsp ** //-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3c.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+<head>
+    
+
+   
+    <link href="/includes/css/menu.css" rel="stylesheet" type="text/css"></link>
+    <link href="/includes/css/style.css" rel="stylesheet" type="text/css"></link>
+    <!--[if lt IE 6]><link href="/includes/css/style5.css" rel="stylesheet" type="text/css" ></link><![endif]-->
+    <!--[if gte IE 5]><link href="/includes/css/style6.css" rel="stylesheet" type="text/css" ></link><![endif]-->
+    <link href="/includes/css/tabs.css"  rel="stylesheet" type="text/css"></link>
+
+    <script type="text/javascript" src="/includes/scripts/tabs.js"></script>
+    <script type="text/javascript" src="/includes/scripts/menu.js"></script>
+   
+
+    
+
+    
+        <title>The Java Community Process(SM) Program - JSRs: Java Specification Requests - proposalDetails JSR# 262</title>
+    
+
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+
+
+<body onload="P7_initPM(0,1,0,0,-1)">
+
+    <a name="top"></a>
+
+    <div id="header">
+	<div id="logo">
+		<a href="/en/home/index"><img src="/images/spacer.gif" alt="Java Community Process" height="81" width="151"></a>
+	</div>
+	<div id="tools">
+		<div class="search">
+			<form name="search" action="/en/jsr/summary" method="get" onsubmit="return validate_search()">
+				<input name="id" value="Search JSRs" size="16" class="form" onfocus="nullify_if_equal(this, 'Search JSRs')" type="text">
+				<a href="javascript:document.search.submit()" onclick="return validate_search()"><img src="/images/button_go.gif" width="21" height="16" border="0" alt="Submit this Search" name="sub_search"></a>
+			</form>
+		</div>
+		<div class="tools">
+			<a href="/en/press/pressroom">Press Room</a> &nbsp;|&nbsp;
+			<a href="http://java.com/java/download/index.jsp?cid=jdp78399">Get Java Here</a> &nbsp;|&nbsp;
+			<!-- <a href="javascript:void(0)">Print Format</a> &nbsp;|&nbsp;&nbsp; -->
+		</div>
+
+	</div>
+	<div style="clear: right;"></div>
+
+        
+
+	<div class="topbar"><img src="/images/spacer.gif" alt="" height="3" width="154"></div>
+	<div id="update"> </div>
+    </div>
+
+
+    
+
+        <!-- ** BEGIN: Content Table ** //-->
+
+        <table width="100%" border="0" cellpadding="0" cellspacing="0">
+
+            <tr>
+
+                <!-- ** BEGIN: Navigation Column ** //-->
+                <td width="150" id="leftcontent" valign="top">
+                    <!-- Navigation Placeholder //-->
+
+                    
+
+                    <div class="bar"><img src="/images/hr_dots1.gif" alt="" height="3" width="150"></div>
+
+        <!-- begin find JSRs form -->
+        <!-- IMPORTANT! do not convert this form to Struts < html : form > tag.  javascript change of form.action property fails. -->
+        <img src="/images/hd_find-jsrs.gif" alt="Find JSRs" height="18" width="150">
+        <form name="findjsr" action="/en/jsr/summary" method="get" class="pt5" onsubmit="return validate_findjsr()">
+            <input name="id" size="18" class="form" value="Search JSRs" onfocus="nullify_if_equal(this, 'Search JSRs')" type="text">
+	    <a href="javascript:document.findjsr.submit()" onclick="return validate_findjsr()"><img src="/images/button_go.gif" width="21" height="16" border="0" alt="Submit this Search" name="sub_search"></a>
+        </form><br><br>
+
+        <!-- ** Menu Start ** //-->
+
+        <ul id="p7PMnav">
+            <li><a href="/en/jsr/platform">JSRs by Platform</a></li>
+            <li><a href="/en/jsr/tech">JSRs by Technology</a></li>
+            <li><a href="/en/jsr/stage">JSRs by Stage</a></li>
+            <li><a href="/en/jsr/ec">JSRs by Committee</a></li>
+            <li><a href="/en/jsr/all">List of All JSRs</a></li>
+
+            <!--end find JSRs form -->
+            <div style="clear: both;"><img src="/images/spacer.gif" alt="" height="25" width="1"></div>
+
+            <!--begin my JCP -->
+            <img src="/images/hd_my-jcp.gif" alt="My JCP" height="18" width="150">
+            
+
+          <form name="login" method="get" action="/en/user/login" >
+            <input name="Sign-in" type="submit" title="Sign-in" value="Sign-in" />
+          </form>
+
+            <div style="clear:both"><img src="/images/global/spacer.gif" width="1" height="3" alt=""></div>
+            <div class="noNav">
+                <a href="/en/user/register">Register for Site</a>
+            </div>
+
+             <div class="bar"><img src="/images/hr_dots1.gif" alt="" height="3" width="150"></div>
+           <div class="noNav" style="color: #666666; padding: 0;">
+              Use of JCP site is subject to the
+              <a href="/en/home/terms" style="display:inline;padding: 0">JCP Terms of Use</a> and the
+              <a href="http://www.oracle.com/us/legal/privacy/index.html" style="display:inline;padding: 0" href="">Oracle Privacy Policy</a>
+          </div>
+
+            
+
+            <div style="clear:both"><img src="/images/global/spacer.gif" width="1" height="25" alt=""></div>
+
+            <!--begin JCP info -->
+            <img src="/images/hd_jcp-info.gif" alt="JCP Info" height="18" width="150">
+
+            <li><a href="/en/procedures/overview" class="p7PMtrg">About JCP</a>
+                <ul>
+                    <li><a href="/en/procedures/overview">Program Overview</a></li>
+                    <li><a href="/en/procedures/jcp2">JCP Process Document</a></li>
+                    <li><a href="/en/whatsnew/calendar">Calendar</a></li>
+                    <li><a href="/en/participation/members">JCP Members</a></li>
+                    <li><a href="/en/participation/committee">Executive Committee</a></li>
+                    <li><a href="/en/whatsnew/elections">Elections</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/en/participation/overview" class="p7PMtrg">Get Involved</a>
+		<ul>
+                    <li><a href="/en/participation/overview">Overview</a></li>
+                    <li><a href="/en/participation/membership">Becoming a JCP Member</a></li>
+		</ul>
+            </li>
+
+            <li><a href="/en/resources/contents" class="p7PMtrg">Community Resources</a>
+                <ul>
+                    <li><a href="/en/resources/contents">Overview</a></li>
+                    <li><a href="/en/resources/tutorials">Tutorials</a></li>
+                    <li><a href="/en/resources/multimedia">JCP Podcasts</a></li>
+                    <li><a href="/en/resources/guide">Spec Lead Guide</a></li>
+                    <li><a href="/en/resources/tdk">TCK Tool & Info</a></li>
+                    <li><a href="/en/resources/license_reference">License Reference</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/en/press/pmo" class="p7PMtrg">Community News</a>
+                <ul>
+                    <li><a href="/en/press/pmo">News</a></li>
+                    <li><a href="/en/press/news/awards/awards_main">Programs &amp; Awards</a></li>
+                    <li><a href="/en/press/releases">Press Releases</a></li>
+                    <li><a href="/en/press/success">Success Stories</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/en/introduction/faq">FAQ</a></li>
+
+            <li><a href="/en/resources/contacts">Contact Us</a></li>
+
+            <div style="clear: both;"><img src="/images/spacer.gif" alt="" height="25" width="1"></div>
+
+            <!--[if lte IE 6]><style>#p7PMnav a{height:1em;}#p7PMnav li{height:1em;float:left;clear:both;width:100%}</style><![endif]-->
+            <!--[if IE 6]><style>#p7PMnav li{clear:none;}</style><![endif]-->
+            <!--[if IE 7]><style>#p7PMnav a{zoom:100%;}#p7PMnav li{float:left;clear:both;width:100%;}</style><![endif]-->
+        </ul>
+
+        
+
+        <!--begin ad space -->
+        <div class="ads">
+            <a href="http://java.com/java/download/index.jsp?cid=jdp78399" target="_blank"><img style="display: ;" src="/images/ad_banner2.gif" alt="Ad Banner" border="1" height="70" width="150"></a>
+        </div>
+        <!--end ad space -->
+
+<!-- ** Menu End ** //-->
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;<br>
+
+    
+
+                    &nbsp;<br>
+                    <img src="/images/common/trans.gif" alt="" width="1" height="150"><br>
+
+              
+
+
+
+                </td>
+                <!-- ** END: Navigation Column ** //-->
+
+                <!-- ** BEGIN: Gutter Column ** //-->
+		<td width="10" nowrap><img src="/images/common/trans.gif" alt="" width="10" height="1"></td>
+                <!-- ** END: Gutter Column ** //-->
+
+                <!-- ** BEGIN: Content Column ** //-->
+                <td width="100%" valign="top">
+
+    
+<script type="text/javascript">
+
+String.prototype.trim = function() {
+        return this.replace(/^\s+|\s+$/g,"");
+}
+String.prototype.ltrim = function() {
+        return this.replace(/^\s+/,"");
+}
+String.prototype.rtrim = function() {
+        return this.replace(/\s+$/,"");
+}
+
+function validate_search() {
+	if (document.search.id.value == "Search JSRs" || document.search.id.value.trim().length == 0) {
+		alert("Search terms must be entered first");
+		return false;
+	}
+	return true;
+}
+
+function validate_findjsr() {
+	if (document.findjsr.id.value == "Search JSRs" || document.findjsr.id.value.trim().length == 0) {
+		alert("Search terms must be entered first");
+		return false;
+	}
+	return true;
+}
+
+function nullify_if_equal(field, str) {
+	// alert("val=" + field.value);
+	if (field.value == str) {
+		field.value = "";
+	}
+}
+
+</script>
+<!-- ** END: header.jsp ** //-->
+
+
+
+
+
+        <!--  BEGIN NAVIGATION TABS -->
+        <div id="p7TP1">
+                <div class="p7TP_tabs">
+                        <div id="p7tpb1_1" class="down"><a class="down">JSR</a></div>
+                        <div><a href="/en/egc/view?id=262">Community</a></div>
+                        <div><a href="/en/eg/eghome?id=262">Expert Group</a></div>
+			
+
+                <br class="p7TPclear" />
+                </div>
+
+                <div class="p7TPcontent">
+                        <div id="p7tpc1_1">
+
+			
+                                <a href="summary?id=262">Summary</a>
+			
+			
+                                &nbsp;|&nbsp;
+				<span>Proposal</span>
+			
+			
+                                &nbsp;|&nbsp;
+                                <a href="detail?id=262">Detail (Summary &amp; Proposal)</a>
+			
+		
+                        </div>
+
+                </div>
+                <!--[if lte IE 6]><style type="text/css">.p7TPpanel div,.p7TPpanel a{height:1%;}.p7TP_tabs a{white-space:nowrap;}</style><![endif]-->
+        </div>
+        <script type="text/javascript">
+                P7_initTP(1,0);
+        </script>
+        <!--  END NAVIGATION TABS -->
+
+
+<div class="anybar"><img src="/images/global/bar_green.gif" alt="" width="12" height="4"></div>
+
+<div class="header2">JSRs: Java Specification Requests</div>
+<div class="header1">JSR 262: Web Services Connector for Java Management Extensions (JMX) Agents</div>
+<div class="anybar"><img src="/images/global/bar_green.gif" alt="" width="12" height="4"></div>
+<br>
+
+
+
+
+<!-- ********************************************** -->
+<!--  JSRProposal Info                              -->
+<!-- ********************************************** -->
+<p>
+
+		This JSR has been <a href="/en/introduction/glossary#status"><font color=red><span title="A JSR that was withdrawn from the JCP by the Specification Lead before Final Release.">Withdrawn</span></font></a><br>
+		<b> Reason:</b> JSR 262 specified the javax.management.remote.ws API which was subsequently abandoned due to lack of resources, and was not included in the Java SE 7 Platform. It was determined in 2014 that future changes to JMX technology would be specified directly by the umbrella JSR for the Java SE Platform.<br> <br>
+
+
+<a name="updates"><font size="+2">Updates to the Java Specification Request (JSR)</font></a><p>
+The following information has been updated from <a href="#orig">the original JSR</a>:<P>
+
+<B><U>2012.03.21</U></b>:<BR>
+Staffan Larsen is the new Maintenance Lead.<BR>
+<B>Maintenance Lead</b>: Staffan Larsen, Oracle America<P>
+<B>E-mail</b>: staffan.larsen<faketag>&#64;</faketag>oracle.com<P>
+<B>Telephone</b>: +46 8 506 309 00<P>
+
+<b>2008.03.14</b>:  2.18 Please provide a description of the business terms for the Specification, RI and TCK that will apply when this JSR is final.<P>
+In addition to delivering the Reference Implementation (RI) and TCK pursuant to existing contractual obligations, if and where applicable, Sun will:<P>
+
+(i) Deliver the RI in binary form, free of charge and under the Sun Microsystems, Inc. Binary Code License Agreement. Additionally, Sun will make the RI source code available under an open source license free of charge; and<P>
+
+(ii) Make the standalone TCK for this JSR available at no extra charge to J2SE and J2EE TCK licensees, and for a flat fee of $50 K to other interested parties. In addition, Sun will grant access to the TCK to qualified individuals and not-for-profit organizations at no charge. The TCK license does not limit how a compatible implementation of the specification can be used or distributed, e.g., by limiting the hardware devices or operating environments that can be supported.<P>
+
+<P><HR><P>
+
+<a name="orig"><font size="+2">Original Java Specification Request (JSR)</font></a><p>
+<FONT SIZE="-1">
+
+<!-- BEGIN-SUB TOPICS -->
+
+          <A HREF="#1"> Identification</A>  |
+          <A HREF="#2"> Request</A>  |
+          <A HREF="#3"> Contributions</A>  |
+          <A HREF="#4"> Additional Information</A>
+<BR>
+
+<!-- END-SUB TOPICS -->
+
+</FONT>
+<P>
+
+<!-- BEGIN TEMPLATE -->
+
+<!-- SECTION 1 -->
+
+<A NAME="1"></A>
+
+<P><FONT size=+2>Section 1. Identification</FONT>
+
+<P><b>Submitting Member:</b> Sun Microsystems, Inc </P>
+
+<P><b>Name of Contact Person:</b> Eamonn McManus</P>
+
+<P><b>E-Mail Address:</b> eamonn.mcmanus&#64;sun.com</P>
+
+<P><b>Telephone Number:</b> +33 476 188 352</P>
+
+<P><b>Fax Number:</b> +33 476 188 282</P>
+
+<BR>
+<P><b>Specification Lead:</b> Eamonn McManus</P>
+
+<P><b>E-Mail Address:</b> eamonn.mcmanus&#64;sun.com</P>
+
+<P><b>Telephone Number:</b> +33 476 188 352</P>
+
+<P><b>Fax Number:</b> +33 476 188 282</P>
+
+<BR>
+
+<P><B>Initial Expert Group Membership:</B>
+</P>
+
+<P>Sun<BR>
+Oracle<BR>
+HP
+</P>
+
+<P><B>Supporting this JSR:</B>
+
+</P>
+
+<P>Sun<BR>
+Oracle<BR>
+HP
+</p>
+
+<BR><BR>
+
+<!-- SECTION 2 -->
+
+<A NAME="2"></A>
+
+<P>
+<FONT SIZE="+2">Section 2: Request</FONT><P>
+</P>
+
+<H4>2.1 Please describe the proposed Specification:</H4>
+
+<P>The JMX API is the standard for management on the Java platform. This specification will define a way to use Web Services to access JMX instrumentation remotely. It will provide a way to use the server part of the JMX Remote API to create a Web Services agent exposing JMX instrumentation, and a way to use the client part of the API to access the instrumentation remotely from a Java application. It will also specify the WSDL definitions used so that the instrumentation will be available from clients that are not based on the Java platform, or from Java platform clients accessing the instrumentation directly using the JAX-RPC API.<P>
+
+This JSR will also investigate connecting JMX to emerging web service management standards such as WSDM and WS-Management. The exact degree of support for these standards will be determined by the Expert Group based on factors such as the timing and maturity of applicable standards and by the overall needs of the Java community.</P>
+
+<H4>2.2 What is the target Java platform? (i.e., desktop, server, personal, embedded, card, etc.)</H4>
+
+<P>J2SE</P>
+
+<H4>2.3 The Executive Committees would like to ensure JSR submitters think about how their proposed technology relates to all of the Java platform editions. Please provide details here for which platform editions are being targeted by this JSR, and how this JSR has considered the relationship with the other platform editions.</H4>
+
+<P>The J2EE platform includes a specification (JSR 77) based on the JMX API, and most if not all implementations of this platform use the JMX API extensively. Greater accessibility to JMX instrumentation will therefore be useful on the J2EE platform in addition to the J2SE platform.<P>
+
+Although some investigations have been done concerning the use of the JMX API on certain configurations of the J2ME platform, there are no current plans to standardize that, so that platform is not targeted by this JSR.
+
+
+</P>
+
+<H4>2.4 Should this JSR be voted on by both Executive Committees?</H4>
+
+<P>No</P>
+
+
+<H4>2.5 What need of the Java community will be addressed by the proposed specification?</H4>
+
+<P>Access to management and monitoring of Java applications and of the Java Virtual Machine itself from clients not using the Java platform and in network configurations where the existing JMX connector protocols are inappropriate (for example because of firewalls).
+
+
+</P>
+
+<H4>2.6 Why isn't this need met by existing specifications?</H4>
+
+<P>The JMX Remote API specified by JSR 160 defines a way to access JMX instrumentation remotely. It defines client and server APIs for the Java platform, and standard protocols. However, these standard protocols are not easily accessible from clients that are not based on Java technology, for example C++ programs or perl scripts. Also, these protocols are specific to JMX technology and so cannot easily take advantage of network configuration that might already be in place for HTTP.
+
+
+</P>
+
+<H4>2.7 Please give a short description of the underlying technology or technologies:</H4>
+
+<P>JSR 3 (JMX API) defined a way to create named objects called MBeans (managed beans) or managed objects, and to store those objects in a repository called the MBean Server. Access to the objects is then exclusively through the MBean Server. MBeans have attributes (properties), operations (methods), and can emit notifications (events).<P>
+
+The API provides services, which are themselves MBeans, that allow MBean attributes (properties) to be monitored periodically; notifications to be sent at a scheduled time or times; new MBeans to be created from dynamically loaded classes; and relations to be defined between MBeans.<P>
+
+JSR 160 (JMX Remote API) defined a framework for remote access to an MBean Server, and standardized an access protocol based on RMI.<BR>
+These two JSRs are included in the J2SE platform. The Java Virtual Machine is instrumented using them, and they are also the default way for user applications to define their own instrumentation.<P>
+
+SOAP is the standard protocol for Web Services. In its most usual form, it consists of XML documents exchanged over HTTP.<P>
+
+The JAX-RPC API defined by JSR 101 is the standard way to code clients and servers for XML-based protocols such as SOAP on the Java platform.</P>
+
+<H4>2.8 Is there a proposed package name for the API Specification? (i.e., <TT>javapi.something</TT>, <TT>org.something</TT>, etc.)</H4>
+
+<P>Since the existing RMI connector is in the package javax.management.remote.rmi, the most logical home for the Web Services connector is javax.management.remote.ws.
+
+
+</P>
+
+<H4>2.9 Does the proposed specification have any dependencies on specific operating systems, CPUs, or I/O devices that you know of?</H4>
+
+<P>No</P>
+
+<H4>2.10 Are there any security issues that cannot be addressed by the current security model?</H4>
+
+<P>No</P>
+
+<H4>2.11 Are there any internationalization or localization issues?</H4>
+
+<P>No</P>
+
+<H4>2.12 Are there any existing specifications that might be rendered obsolete, deprecated, or in need of revision as a result of this work?</H4>
+
+<P>No</P>
+
+<H4>2.13 Please describe the anticipated schedule for the development of this
+specification.</H4>
+
+<P>The exact schedule will depend on Expert Group decisions, but we would expect to have the final draft in late 2005.</P>
+
+<H4>2.14 Please describe the anticipated working model for the Expert Group working on developing this
+specification.</H4>
+
+<P>The primary form of collaboration will be e-mail. Conference calls will be used as required.
+
+
+</P>
+
+<H4>2.15 It is important to the success of the community and each JSR that the work of the Expert Group be handled in a manner which provides the community and the public with insight into the work the Expert Group is doing, and the decisions that the Expert Group has made. The Executive Committees would like to ensure Spec Leads understand the value of this transparency and ask that each JSR have an operating plan in place for how their JSR will address the involvement of the community and the public. Please provide your plan here, and refer to the Spec Lead Guide for a more detailed description and a set of example questions you may wish to answer in your plan.</H4>
+
+<P>Draft specifications will be uploaded to the community page for this JSR with at least monthly frequency. Open issues will be signalled on the observer alias for this JSR.</P>
+
+<H4>2.16 Please describe how the RI and TCK will de delivered, i.e. as part of a profile or platform edition, or stand-alone, or both. Include version information for the profile or platform in your answer.
+</H4>
+
+<P>This JSR will be delivered stand-alone based on version 5.0 (Tiger) of the J2SE platform. It is planned for it to be bundled into a future J2SE release. It is anticipated that subsequent revisions of this JSR will only be available as part of J2SE.
+
+
+</P>
+
+<H4>2.17 Please state the rationale if previous versions are available stand-alone and you are now proposing in 2.13 to only deliver RI and TCK as part of a profile or platform edition (See sections 1.1.5 and 1.1.6 of the JCP 2 document).
+</H4>
+
+<P>N/A</P>
+
+<H4>2.18 Please provide a description of the business terms for the Specification, RI and TCK that will apply when this JSR is final.</H4>
+
+<P>The Reference Implementation (RI) will be delivered in binary form free of charge. Licensing for the RI will be under the Sun Microsystems, Inc. Binary Code License Agreement.<P>
+
+The TCK will be made available at no extra charge to J2SE and J2EE TCK licensees. In addition, qualified individuals and not-for-profit organizations will receive access to the TCK at no charge.
+<font color="red">Note</font> that this information <a
+href="#updates">has been updated</a> from the original JSR.
+
+
+</P>
+
+<BR><BR>
+<BR><BR>
+
+<!-- SECTION 3 -->
+
+<A NAME="3"></A>
+
+<P>
+<FONT SIZE="+2">Section 3: Contributions</FONT><P>
+</P>
+
+<H4>3.1 Please list any existing documents, specifications, or implementations that describe the technology. Please include links to the documents if they are publicly available.</H4>
+
+<P><a href="http://jcp.org/en/jsr/detail?id=3"> JSR 3: JMX Specification</a><P>
+
+<a href="http://jcp.org/en/jsr/detail?id=160"> JSR 160: JMX Remote API</a><P>
+
+<a href="http://java.sun.com/jmx"> JMX technology home page</a><P>
+
+The Open Source MX4J project implements the JMX API and includes a <a href="http://mx4j.sourceforge.net/docs/ch03s20.html#N105F9"> SOAP connector</a>.<P>
+
+OASIS defines <a href="http://www.oasis-open.org/committees/tc_home.php?wg_abbrev=wsdm%5C"> Web Services Distributed Management</a> (WSDM), which covers management both of and using Web Services. <P>
+
+A framework for management using (but not of) Web Services called <a href="http://developers.sun.com/techtopics/webservices/management/"> Web Services Management</a> (WS-Management) has been submitted to the DMTF.
+
+
+
+</P>
+
+<H4>3.2 Explanation of how these items might be used as a starting point for the work.</H4>
+
+<P>See section 2.1.</P>
+
+<BR><BR>
+
+<!-- SECTION 4 -->
+
+<A NAME="4"></A>
+
+<P>
+<FONT SIZE="+2">Section 4: Additional Information (Optional)</FONT><P>
+</P>
+
+<H4>4.1 This section contains any additional information that the submitting Member wishes to include in the JSR.</H4>
+
+<P> </P>
+
+<BR><BR>
+</p>
+
+
+
+
+
+
+
+
+<!-- ** BEGIN: footer.jsp ** //-->
+
+
+
+
+
+
+
+
+</td>
+</tr>
+</table>
+
+<!-- ** END: Content Table ** //-->
+
+<!-- ** BEGIN: Footer Table ** //-->
+
+<div id="footer" style="clear: both;">
+    <div class="footleft">
+        <a href="/en/resources/contacts">Contact Us</a>
+    </div>
+	
+    <div class="botbar"><img src="/images/spacer.gif" alt="" height="23" width="1"></div>
+
+    <div class="footleft2">
+         &copy; 2019, Oracle Corporation and/or its affiliates. 
+        <a href="/en/home/terms">Terms of Use</a>. <a href="http://www.oracle.com/us/legal/privacy/index.html">Privacy Policy</a>. <a href="http://www.oracle.com/us/legal/third-party-trademarks/third-party-trademarks-078568.html">Trademarks</a>
+    </div>
+
+    <div class="footright">
+        <img src="/images/common/logo_oracle_footer.gif" alt="Oracle Corporation" height="22" width="91">
+    </div>
+
+    <div style="clear: both;"><img src="/images/spacer.gif" alt="" height="30" width="1"></div>
+</div>
+
+<!-- ** END: Footer Table ** //-->
+
+
+
+<!-- ** Menu Start ** //-->
+
+
+
+</body>
+</html>
+<!-- ** END: footer.jsp ** //-->
+
+

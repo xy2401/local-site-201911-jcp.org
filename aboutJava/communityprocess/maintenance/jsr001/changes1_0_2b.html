@@ -1,0 +1,446 @@
+
+<!-- ** BEGIN: header.jsp ** //-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3c.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+<head>
+    
+
+   
+    <link href="/includes/css/menu.css" rel="stylesheet" type="text/css"></link>
+    <link href="/includes/css/style.css" rel="stylesheet" type="text/css"></link>
+    <!--[if lt IE 6]><link href="/includes/css/style5.css" rel="stylesheet" type="text/css" ></link><![endif]-->
+    <!--[if gte IE 5]><link href="/includes/css/style6.css" rel="stylesheet" type="text/css" ></link><![endif]-->
+    <link href="/includes/css/tabs.css"  rel="stylesheet" type="text/css"></link>
+
+    <script type="text/javascript" src="/includes/scripts/tabs.js"></script>
+    <script type="text/javascript" src="/includes/scripts/menu.js"></script>
+   
+
+    
+
+    
+        <title>The Java Community Process(SM) Program - communityprocess - maintenance</title>
+    
+
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+
+
+<body onload="P7_initPM(0,1,0,0,-1)">
+
+    <a name="top"></a>
+
+    <div id="header">
+	<div id="logo">
+		<a href="/en/home/index"><img src="/images/spacer.gif" alt="Java Community Process" height="81" width="151"></a>
+	</div>
+	<div id="tools">
+		<div class="search">
+			<form name="search" action="/en/jsr/summary" method="get" onsubmit="return validate_search()">
+				<input name="id" value="Search JSRs" size="16" class="form" onfocus="nullify_if_equal(this, 'Search JSRs')" type="text">
+				<a href="javascript:document.search.submit()" onclick="return validate_search()"><img src="/images/button_go.gif" width="21" height="16" border="0" alt="Submit this Search" name="sub_search"></a>
+			</form>
+		</div>
+		<div class="tools">
+			<a href="/en/press/pressroom">Press Room</a> &nbsp;|&nbsp;
+			<a href="http://java.com/java/download/index.jsp?cid=jdp78399">Get Java Here</a> &nbsp;|&nbsp;
+			<!-- <a href="javascript:void(0)">Print Format</a> &nbsp;|&nbsp;&nbsp; -->
+		</div>
+
+	</div>
+	<div style="clear: right;"></div>
+
+        
+
+	<div class="topbar"><img src="/images/spacer.gif" alt="" height="3" width="154"></div>
+	<div id="update"> </div>
+    </div>
+
+
+    
+
+        <!-- ** BEGIN: Content Table ** //-->
+
+        <table width="100%" border="0" cellpadding="0" cellspacing="0">
+
+            <tr>
+
+                <!-- ** BEGIN: Navigation Column ** //-->
+                <td width="150" id="leftcontent" valign="top">
+                    <!-- Navigation Placeholder //-->
+
+                    
+
+                    <div class="bar"><img src="/images/hr_dots1.gif" alt="" height="3" width="150"></div>
+
+        <!-- begin find JSRs form -->
+        <!-- IMPORTANT! do not convert this form to Struts < html : form > tag.  javascript change of form.action property fails. -->
+        <img src="/images/hd_find-jsrs.gif" alt="Find JSRs" height="18" width="150">
+        <form name="findjsr" action="/en/jsr/summary" method="get" class="pt5" onsubmit="return validate_findjsr()">
+            <input name="id" size="18" class="form" value="Search JSRs" onfocus="nullify_if_equal(this, 'Search JSRs')" type="text">
+	    <a href="javascript:document.findjsr.submit()" onclick="return validate_findjsr()"><img src="/images/button_go.gif" width="21" height="16" border="0" alt="Submit this Search" name="sub_search"></a>
+        </form><br><br>
+
+        <!-- ** Menu Start ** //-->
+
+        <ul id="p7PMnav">
+            <li><a href="/en/jsr/platform">JSRs by Platform</a></li>
+            <li><a href="/en/jsr/tech">JSRs by Technology</a></li>
+            <li><a href="/en/jsr/stage">JSRs by Stage</a></li>
+            <li><a href="/en/jsr/ec">JSRs by Committee</a></li>
+            <li><a href="/en/jsr/all">List of All JSRs</a></li>
+
+            <!--end find JSRs form -->
+            <div style="clear: both;"><img src="/images/spacer.gif" alt="" height="25" width="1"></div>
+
+            <!--begin my JCP -->
+            <img src="/images/hd_my-jcp.gif" alt="My JCP" height="18" width="150">
+            
+
+          <form name="login" method="get" action="/en/user/login" >
+            <input name="Sign-in" type="submit" title="Sign-in" value="Sign-in" />
+          </form>
+
+            <div style="clear:both"><img src="/images/global/spacer.gif" width="1" height="3" alt=""></div>
+            <div class="noNav">
+                <a href="/en/user/register">Register for Site</a>
+            </div>
+
+             <div class="bar"><img src="/images/hr_dots1.gif" alt="" height="3" width="150"></div>
+           <div class="noNav" style="color: #666666; padding: 0;">
+              Use of JCP site is subject to the
+              <a href="/en/home/terms" style="display:inline;padding: 0">JCP Terms of Use</a> and the
+              <a href="http://www.oracle.com/us/legal/privacy/index.html" style="display:inline;padding: 0" href="">Oracle Privacy Policy</a>
+          </div>
+
+            
+
+            <div style="clear:both"><img src="/images/global/spacer.gif" width="1" height="25" alt=""></div>
+
+            <!--begin JCP info -->
+            <img src="/images/hd_jcp-info.gif" alt="JCP Info" height="18" width="150">
+
+            <li><a href="/en/procedures/overview" class="p7PMtrg">About JCP</a>
+                <ul>
+                    <li><a href="/en/procedures/overview">Program Overview</a></li>
+                    <li><a href="/en/procedures/jcp2">JCP Process Document</a></li>
+                    <li><a href="/en/whatsnew/calendar">Calendar</a></li>
+                    <li><a href="/en/participation/members">JCP Members</a></li>
+                    <li><a href="/en/participation/committee">Executive Committee</a></li>
+                    <li><a href="/en/whatsnew/elections">Elections</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/en/participation/overview" class="p7PMtrg">Get Involved</a>
+		<ul>
+                    <li><a href="/en/participation/overview">Overview</a></li>
+                    <li><a href="/en/participation/membership">Becoming a JCP Member</a></li>
+		</ul>
+            </li>
+
+            <li><a href="/en/resources/contents" class="p7PMtrg">Community Resources</a>
+                <ul>
+                    <li><a href="/en/resources/contents">Overview</a></li>
+                    <li><a href="/en/resources/tutorials">Tutorials</a></li>
+                    <li><a href="/en/resources/multimedia">JCP Podcasts</a></li>
+                    <li><a href="/en/resources/guide">Spec Lead Guide</a></li>
+                    <li><a href="/en/resources/tdk">TCK Tool & Info</a></li>
+                    <li><a href="/en/resources/license_reference">License Reference</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/en/press/pmo" class="p7PMtrg">Community News</a>
+                <ul>
+                    <li><a href="/en/press/pmo">News</a></li>
+                    <li><a href="/en/press/news/awards/awards_main">Programs &amp; Awards</a></li>
+                    <li><a href="/en/press/releases">Press Releases</a></li>
+                    <li><a href="/en/press/success">Success Stories</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/en/introduction/faq">FAQ</a></li>
+
+            <li><a href="/en/resources/contacts">Contact Us</a></li>
+
+            <div style="clear: both;"><img src="/images/spacer.gif" alt="" height="25" width="1"></div>
+
+            <!--[if lte IE 6]><style>#p7PMnav a{height:1em;}#p7PMnav li{height:1em;float:left;clear:both;width:100%}</style><![endif]-->
+            <!--[if IE 6]><style>#p7PMnav li{clear:none;}</style><![endif]-->
+            <!--[if IE 7]><style>#p7PMnav a{zoom:100%;}#p7PMnav li{float:left;clear:both;width:100%;}</style><![endif]-->
+        </ul>
+
+        
+
+        <!--begin ad space -->
+        <div class="ads">
+            <a href="http://java.com/java/download/index.jsp?cid=jdp78399" target="_blank"><img style="display: ;" src="/images/ad_banner2.gif" alt="Ad Banner" border="1" height="70" width="150"></a>
+        </div>
+        <!--end ad space -->
+
+<!-- ** Menu End ** //-->
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;<br>
+
+    
+
+                    &nbsp;<br>
+                    <img src="/images/common/trans.gif" alt="" width="1" height="150"><br>
+
+              
+
+
+
+                </td>
+                <!-- ** END: Navigation Column ** //-->
+
+                <!-- ** BEGIN: Gutter Column ** //-->
+		<td width="10" nowrap><img src="/images/common/trans.gif" alt="" width="10" height="1"></td>
+                <!-- ** END: Gutter Column ** //-->
+
+                <!-- ** BEGIN: Content Column ** //-->
+                <td width="100%" valign="top">
+
+    
+<script type="text/javascript">
+
+String.prototype.trim = function() {
+        return this.replace(/^\s+|\s+$/g,"");
+}
+String.prototype.ltrim = function() {
+        return this.replace(/^\s+/,"");
+}
+String.prototype.rtrim = function() {
+        return this.replace(/\s+$/,"");
+}
+
+function validate_search() {
+	if (document.search.id.value == "Search JSRs" || document.search.id.value.trim().length == 0) {
+		alert("Search terms must be entered first");
+		return false;
+	}
+	return true;
+}
+
+function validate_findjsr() {
+	if (document.findjsr.id.value == "Search JSRs" || document.findjsr.id.value.trim().length == 0) {
+		alert("Search terms must be entered first");
+		return false;
+	}
+	return true;
+}
+
+function nullify_if_equal(field, str) {
+	// alert("val=" + field.value);
+	if (field.value == str) {
+		field.value = "";
+	}
+}
+
+</script>
+<!-- ** END: header.jsp ** //-->
+
+
+
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+	<head>
+		<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+		<meta name="generator" content="Adobe GoLive" />
+		<title>JSR 1 Maint 1.0.2 second pass</title>
+	</head>
+
+	<body>
+		<h1>Proposed Changes from RTSJ 1.0.2 to 1.0.2-Second Submission</h1>
+		<h2>Change Set 1</h2>
+		<p>The first two changes close a scoped memory leak.  If an AEH uses the default initial memory area, 1.0.1's semantic 17 will  prevent that memory area from ever returning to a zero reference count.  In the case of a thread, the reference count could return to zero if and only if the thread is started and terminates.</p>
+		<p>This set of changes primarily revises semantic 17 so being an initial memory area is only a source of non-zero reference if it is not the default initial memory area.  This closes the above leak.</p>
+		<h3>Change 1</h3>
+		<p>In Memory Semantics, add the following definitions</p>
+		<p><font color="#009900">For purposes of scoped memory reference counting, the following are treated as <em>execution contexts</em>:</font></p>
+		<ul>
+			<li><font color="#009900"><code>RealtimeThread</code> objects that have been started and have not terminated,</font></li>
+			<li><font color="#009900"><code>AsyncEventHandler</code> objects that are currently in a released state,</font></li>
+			<li><font color="#009900"><code>AsyncEvent</code> objects that are bound to happenings,</font></li>
+			<li><font color="#009900"><code>Timer</code> objects that have been started and have not been destroyed,</font></li>
+			<li><font color="#009900">other schedulable objects that control an execution engine</font></li>
+		</ul>
+		<p><font color="#009900">The initial memory area for a schedulable object is a <em>non-default initial memory area</em> if it is not the memory area where the schedulable object was created.</font></p>
+		<h3>Change 2</h3>
+		<p><font color="#000033">In Memory Semantic 17, change</font></p>
+		<p><font color="red">17. Each instance of the class ScopedMemory or its subclasses must maintain a reference count which is greater than zero if and only if either:</font></p>
+		<ul>
+			<li><font color="red">the scoped memory area is the current allocation context or an outer allocation context for one or more execution contexts; or else</font></li>
+			<li><font color="red">the scoped memory area is the initial memory area for a schedulable object. In this context, a schedulable objects ceases to be a source of a non-zero reference count on its initial memory area when either:</font>
+				<ul>
+					<li><font color="red">the schedulable object is a RealtimeThread and it terminates; or else</font></li>
+					<li><font color="red">the schedulable object is de-allocated from its memory area. </font></li>
+				</ul>
+			</li>
+		</ul>
+		<p><font color="red">For purposes of this semantic the following are treated as execution contexts:</font></p>
+		<ul>
+			<li><font color="red">RealtimeThread objects that have been started and have not terminated,</font></li>
+			<li><font color="red">AsyncEventHandler objects that are currently in a released state,</font></li>
+			<li><font color="red">AsyncEvent objects that are bound to happenings,</font></li>
+			<li><font color="red">Timer objects that have been started and have not been destroyed,</font></li>
+			<li><font color="red">other schedulable objects that control an execution engine</font></li>
+		</ul>
+		<p><font color="#000033">To</font></p>
+		<p><font color="#009900">17. Each instance of the class <code>ScopedMemory</code> or its subclasses must maintain a reference count which is greater than zero if and only if either:</font></p>
+			<li>
+				<ul>
+					<li><font color="#009900">the scoped memory area is the current allocation context or an outer allocation context for one or more <em><a href="#Anchor-execution-49575">execution contexts</a></em>; or else</font></li>
+					<li><font color="#009900">the scoped memory area is the <em><a href="#Anchor-non-default-47857">non-default initial memory area</a></em> for a schedulable object. In this context, a schedulable objects ceases to be a source of a non-zero reference count on its initial memory area when either:</font>
+						<ul>
+							<li><font color="#009900">the schedulable object is a <code>RealtimeThread</code> and it terminates; or else</font></li>
+							<li><font color="#009900">the schedulable object is de-allocated from its memory area.</font></li>
+						</ul>
+					</li>
+				</ul>
+			</li>
+		
+		<p><font color="#000033">Note that this change has two elements: the definition of an execution context has been moved to the definitions section, and &quot;initial memory area&quot; has been changed to &quot;non-default initial memory area&quot; in the second bullet of semantic 17.</font></p>
+		<h2>Change Set 2</h2>
+		<p>Finalization of non-default initial memory areas can trigger a paradox in the specification.  Semantic 17 triggers finalization when an initial memory area's reference count to goes to zero because the SO is de-allocated, and semantic 19 requires that finalizers in the initial memory area are executed by the SO leaving the initial memory area.  In several cases, there will be no SO that can be viewed as leaving the initial memory area.  Consider, for instance, the initial memory area of a real-time thread that has never been started and is being de-allocated.</p>
+		<p>This set of changes separates assignment of the initial memory's parent from incrementing its reference count. The updated semantics only support a non-zero reference count when an activation can be associated with the initial memory area.  This separation lets start() and fire() continue to work without the risk of a scope cycle exception, but the joinAndEnter() methods now risk a scope cycle exception because that method can see the case where the reference count is zero but the scope has a parent.</p>
+		<p>For simplicity, change 5 is expressed based on the specification after change 2.</p>
+		<h3>Change 3</h3>
+		<p>In the Memory Management Chapter, at the end of the definitions section, add:</p>
+		<p><font color="#009900">An AsyncEventHandler is <em>fireable</em> if it is:</font></p>
+		<ul>
+			<li><font color="#009900">A handler for an AsyncEvent</font></li>
+			<li><font color="#009900">A miss handler or overrun handler for a fireable AsyncEventHandler or an execution<br />
+					context.</font></li>
+		</ul>
+		<h3>Change 4</h3>
+		<p><font color="black">Change semantic 11 from</font></p>
+		<p><font color="red">11. Instances of ScopedMemory have special semantics including definition of parent. If a ScopedMemory object is not in use, it has no parent scope. When a ScopedMemory object becomes in use, its parent is the nearest ScopedMemory object outside it on the current scope stack. If there is no outside ScopedMemory object in the current scope stack, the parent is the primordial scope which is not actually a memory area, but only a marker that constrains the parentage of ScopedMemory objects</font></p>
+		<p><font color="black">to</font></p>
+		<p><font color="#009900">11. Instances of ScopedMemory have special semantics including definition of parent. If a ScopedMemory object is neither in use nor the initial memory area for a schedulable object, it has no parent scope.</font></p>
+		<ul>
+			<li><font color="#009900">When a ScopedMemory object becomes in use, its parent is the nearest ScopedMemory object outside it on the current scope stack. If there is no outside ScopedMemory object in the current scope stack, the parent is the primordial scope which is not actually a memory area, but only a marker that constrains the parentage of ScopedMemory objects.</font></li>
+			<li><font color="#009900">At construction of a schedulable object, if the initial memory area has no parent, the initial memory area is assigned the parent it will have when the schedulable object is in execution. This rule determines the initial memory area���s parent until the schedulable object is de-allocated from its memory area, or, if the schedulable object is a RealtimeThread, it completes execution</font></li>
+		</ul>
+		<h3>Change 5</h3>
+		<p><font color="black">Change semantic 17 from</font></p>
+		<p><font color="red">17. Each instance of the class <code>ScopedMemory</code> or its subclasses must maintain a reference count which is greater than zero if and only if either:</font></p>
+				<ul>
+					<li><font color="red">the scoped memory area is the current allocation context or an outer allocation context for one or more <em><a href="#Anchor-execution-49575">execution contexts</a></em>; or else</font></li>
+					<li><font color="red">the scoped memory area is the <em><a href="#Anchor-non-default-47857">non-default initial memory area</a></em> for a schedulable object. In this context, a schedulable objects ceases to be a source of a non-zero reference count on its initial memory area when either:</font>
+						<ul>
+							<li><font color="red">the schedulable object is a <code>RealtimeThread</code> and it terminates; or else</font></li>
+							<li><font color="red">the schedulable object is de-allocated from its memory area.</font></li>
+						</ul>
+					</li>
+				</ul>
+		<p><font color="black">to</font></p>
+		<p><font color="#009900">17. Each instance of the class ScopedMemory or its subclasses must maintain a reference count which is greater than zero if and only if either:</font></p>
+		<ul>
+			<li><font color="#009900">the scoped memory area is the current allocation context or an outer allocation context for one or more </font><font color="#0000cc"><u>execution contexts</u></font><font color="#009900">; or else</font></li>
+			<li><font color="#009900">the scoped memory area is the </font><font color="#0000cc"><u>non-default initial memory area</u></font><font color="#009900"> for a </font><font color="#0000cc"><u>fireable</u></font><font color="#009900"> <code>AsyncEventHandler</code>.</font></li>
+		</ul>
+		<h3>Change 6</h3>
+		<p><font color="black">Add to the end of semantic 19</font></p>
+		<p><font color="#009900">If finalizers are executed because a RealtimeThread terminates or an AsyncEventHandler becomes non-fireable, that RealtimeThread or AsyncEventHandler is considered in control of the scope and must execute the finalizers.</font></p>
+		<h3>Change 7</h3>
+		<p><font color="black">Change the last clause of the pseudo-code for constructing an SO </font><font color="black">from</font></p>
+		<p><font color="black"><code>if ima != cma<br />
+					push ima on new scope stack --<br />
+					which may throw ScopedCycleException</code></font></p>
+		<p><font color="black">to</font></p>
+		<p><font color="#009900"><code>if ima != cma<br />
+					set the parent of ima --<br />
+					which may throw ScopedCycleException</code></font></p>
+		<h3>Change 8</h3>
+		<p>Add</p>
+		<p><font color="#009900"><code>ScopedCycleException - Thrown if this invocation would<br />
+					break the single parent rule.</code></font></p>
+		<p>To the two ScopedMemory joinAndEnter methods that do not take a high-resolution time parameter.</p>
+		<h3>Change 9</h3>
+		<p>In the Asynchrony Chapter, AsyncEventHandler class, handleAsyncEvent() method, third paragraph of description, add</p>
+		<p><font color="#009900">unless this AsyncEventHandler becomes unfireable.</font></p>
+	</body>
+
+</html>
+
+
+
+
+<!-- ** BEGIN: footer.jsp ** //-->
+
+
+
+
+
+
+
+
+</td>
+</tr>
+</table>
+
+<!-- ** END: Content Table ** //-->
+
+<!-- ** BEGIN: Footer Table ** //-->
+
+<div id="footer" style="clear: both;">
+    <div class="footleft">
+        <a href="/en/resources/contacts">Contact Us</a>
+    </div>
+	
+    <div class="botbar"><img src="/images/spacer.gif" alt="" height="23" width="1"></div>
+
+    <div class="footleft2">
+         &copy; 2019, Oracle Corporation and/or its affiliates. 
+        <a href="/en/home/terms">Terms of Use</a>. <a href="http://www.oracle.com/us/legal/privacy/index.html">Privacy Policy</a>. <a href="http://www.oracle.com/us/legal/third-party-trademarks/third-party-trademarks-078568.html">Trademarks</a>
+    </div>
+
+    <div class="footright">
+        <img src="/images/common/logo_oracle_footer.gif" alt="Oracle Corporation" height="22" width="91">
+    </div>
+
+    <div style="clear: both;"><img src="/images/spacer.gif" alt="" height="30" width="1"></div>
+</div>
+
+<!-- ** END: Footer Table ** //-->
+
+
+
+<!-- ** Menu Start ** //-->
+
+
+
+</body>
+</html>
+<!-- ** END: footer.jsp ** //-->
+

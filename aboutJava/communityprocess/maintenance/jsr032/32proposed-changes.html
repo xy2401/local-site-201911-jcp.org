@@ -1,0 +1,957 @@
+
+<!-- ** BEGIN: header.jsp ** //-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3c.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+<head>
+    
+
+   
+    <link href="/includes/css/menu.css" rel="stylesheet" type="text/css"></link>
+    <link href="/includes/css/style.css" rel="stylesheet" type="text/css"></link>
+    <!--[if lt IE 6]><link href="/includes/css/style5.css" rel="stylesheet" type="text/css" ></link><![endif]-->
+    <!--[if gte IE 5]><link href="/includes/css/style6.css" rel="stylesheet" type="text/css" ></link><![endif]-->
+    <link href="/includes/css/tabs.css"  rel="stylesheet" type="text/css"></link>
+
+    <script type="text/javascript" src="/includes/scripts/tabs.js"></script>
+    <script type="text/javascript" src="/includes/scripts/menu.js"></script>
+   
+
+    
+
+    
+        <title>The Java Community Process(SM) Program - communityprocess - maintenance</title>
+    
+
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+
+
+<body onload="P7_initPM(0,1,0,0,-1)">
+
+    <a name="top"></a>
+
+    <div id="header">
+	<div id="logo">
+		<a href="/en/home/index"><img src="/images/spacer.gif" alt="Java Community Process" height="81" width="151"></a>
+	</div>
+	<div id="tools">
+		<div class="search">
+			<form name="search" action="/en/jsr/summary" method="get" onsubmit="return validate_search()">
+				<input name="id" value="Search JSRs" size="16" class="form" onfocus="nullify_if_equal(this, 'Search JSRs')" type="text">
+				<a href="javascript:document.search.submit()" onclick="return validate_search()"><img src="/images/button_go.gif" width="21" height="16" border="0" alt="Submit this Search" name="sub_search"></a>
+			</form>
+		</div>
+		<div class="tools">
+			<a href="/en/press/pressroom">Press Room</a> &nbsp;|&nbsp;
+			<a href="http://java.com/java/download/index.jsp?cid=jdp78399">Get Java Here</a> &nbsp;|&nbsp;
+			<!-- <a href="javascript:void(0)">Print Format</a> &nbsp;|&nbsp;&nbsp; -->
+		</div>
+
+	</div>
+	<div style="clear: right;"></div>
+
+        
+
+	<div class="topbar"><img src="/images/spacer.gif" alt="" height="3" width="154"></div>
+	<div id="update"> </div>
+    </div>
+
+
+    
+
+        <!-- ** BEGIN: Content Table ** //-->
+
+        <table width="100%" border="0" cellpadding="0" cellspacing="0">
+
+            <tr>
+
+                <!-- ** BEGIN: Navigation Column ** //-->
+                <td width="150" id="leftcontent" valign="top">
+                    <!-- Navigation Placeholder //-->
+
+                    
+
+                    <div class="bar"><img src="/images/hr_dots1.gif" alt="" height="3" width="150"></div>
+
+        <!-- begin find JSRs form -->
+        <!-- IMPORTANT! do not convert this form to Struts < html : form > tag.  javascript change of form.action property fails. -->
+        <img src="/images/hd_find-jsrs.gif" alt="Find JSRs" height="18" width="150">
+        <form name="findjsr" action="/en/jsr/summary" method="get" class="pt5" onsubmit="return validate_findjsr()">
+            <input name="id" size="18" class="form" value="Search JSRs" onfocus="nullify_if_equal(this, 'Search JSRs')" type="text">
+	    <a href="javascript:document.findjsr.submit()" onclick="return validate_findjsr()"><img src="/images/button_go.gif" width="21" height="16" border="0" alt="Submit this Search" name="sub_search"></a>
+        </form><br><br>
+
+        <!-- ** Menu Start ** //-->
+
+        <ul id="p7PMnav">
+            <li><a href="/en/jsr/platform">JSRs by Platform</a></li>
+            <li><a href="/en/jsr/tech">JSRs by Technology</a></li>
+            <li><a href="/en/jsr/stage">JSRs by Stage</a></li>
+            <li><a href="/en/jsr/ec">JSRs by Committee</a></li>
+            <li><a href="/en/jsr/all">List of All JSRs</a></li>
+
+            <!--end find JSRs form -->
+            <div style="clear: both;"><img src="/images/spacer.gif" alt="" height="25" width="1"></div>
+
+            <!--begin my JCP -->
+            <img src="/images/hd_my-jcp.gif" alt="My JCP" height="18" width="150">
+            
+
+          <form name="login" method="get" action="/en/user/login" >
+            <input name="Sign-in" type="submit" title="Sign-in" value="Sign-in" />
+          </form>
+
+            <div style="clear:both"><img src="/images/global/spacer.gif" width="1" height="3" alt=""></div>
+            <div class="noNav">
+                <a href="/en/user/register">Register for Site</a>
+            </div>
+
+             <div class="bar"><img src="/images/hr_dots1.gif" alt="" height="3" width="150"></div>
+           <div class="noNav" style="color: #666666; padding: 0;">
+              Use of JCP site is subject to the
+              <a href="/en/home/terms" style="display:inline;padding: 0">JCP Terms of Use</a> and the
+              <a href="http://www.oracle.com/us/legal/privacy/index.html" style="display:inline;padding: 0" href="">Oracle Privacy Policy</a>
+          </div>
+
+            
+
+            <div style="clear:both"><img src="/images/global/spacer.gif" width="1" height="25" alt=""></div>
+
+            <!--begin JCP info -->
+            <img src="/images/hd_jcp-info.gif" alt="JCP Info" height="18" width="150">
+
+            <li><a href="/en/procedures/overview" class="p7PMtrg">About JCP</a>
+                <ul>
+                    <li><a href="/en/procedures/overview">Program Overview</a></li>
+                    <li><a href="/en/procedures/jcp2">JCP Process Document</a></li>
+                    <li><a href="/en/whatsnew/calendar">Calendar</a></li>
+                    <li><a href="/en/participation/members">JCP Members</a></li>
+                    <li><a href="/en/participation/committee">Executive Committee</a></li>
+                    <li><a href="/en/whatsnew/elections">Elections</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/en/participation/overview" class="p7PMtrg">Get Involved</a>
+		<ul>
+                    <li><a href="/en/participation/overview">Overview</a></li>
+                    <li><a href="/en/participation/membership">Becoming a JCP Member</a></li>
+		</ul>
+            </li>
+
+            <li><a href="/en/resources/contents" class="p7PMtrg">Community Resources</a>
+                <ul>
+                    <li><a href="/en/resources/contents">Overview</a></li>
+                    <li><a href="/en/resources/tutorials">Tutorials</a></li>
+                    <li><a href="/en/resources/multimedia">JCP Podcasts</a></li>
+                    <li><a href="/en/resources/guide">Spec Lead Guide</a></li>
+                    <li><a href="/en/resources/tdk">TCK Tool & Info</a></li>
+                    <li><a href="/en/resources/license_reference">License Reference</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/en/press/pmo" class="p7PMtrg">Community News</a>
+                <ul>
+                    <li><a href="/en/press/pmo">News</a></li>
+                    <li><a href="/en/press/news/awards/awards_main">Programs &amp; Awards</a></li>
+                    <li><a href="/en/press/releases">Press Releases</a></li>
+                    <li><a href="/en/press/success">Success Stories</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/en/introduction/faq">FAQ</a></li>
+
+            <li><a href="/en/resources/contacts">Contact Us</a></li>
+
+            <div style="clear: both;"><img src="/images/spacer.gif" alt="" height="25" width="1"></div>
+
+            <!--[if lte IE 6]><style>#p7PMnav a{height:1em;}#p7PMnav li{height:1em;float:left;clear:both;width:100%}</style><![endif]-->
+            <!--[if IE 6]><style>#p7PMnav li{clear:none;}</style><![endif]-->
+            <!--[if IE 7]><style>#p7PMnav a{zoom:100%;}#p7PMnav li{float:left;clear:both;width:100%;}</style><![endif]-->
+        </ul>
+
+        
+
+        <!--begin ad space -->
+        <div class="ads">
+            <a href="http://java.com/java/download/index.jsp?cid=jdp78399" target="_blank"><img style="display: ;" src="/images/ad_banner2.gif" alt="Ad Banner" border="1" height="70" width="150"></a>
+        </div>
+        <!--end ad space -->
+
+<!-- ** Menu End ** //-->
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;<br>
+
+    
+
+                    &nbsp;<br>
+                    <img src="/images/common/trans.gif" alt="" width="1" height="150"><br>
+
+              
+
+
+
+                </td>
+                <!-- ** END: Navigation Column ** //-->
+
+                <!-- ** BEGIN: Gutter Column ** //-->
+		<td width="10" nowrap><img src="/images/common/trans.gif" alt="" width="10" height="1"></td>
+                <!-- ** END: Gutter Column ** //-->
+
+                <!-- ** BEGIN: Content Column ** //-->
+                <td width="100%" valign="top">
+
+    
+<script type="text/javascript">
+
+String.prototype.trim = function() {
+        return this.replace(/^\s+|\s+$/g,"");
+}
+String.prototype.ltrim = function() {
+        return this.replace(/^\s+/,"");
+}
+String.prototype.rtrim = function() {
+        return this.replace(/\s+$/,"");
+}
+
+function validate_search() {
+	if (document.search.id.value == "Search JSRs" || document.search.id.value.trim().length == 0) {
+		alert("Search terms must be entered first");
+		return false;
+	}
+	return true;
+}
+
+function validate_findjsr() {
+	if (document.findjsr.id.value == "Search JSRs" || document.findjsr.id.value.trim().length == 0) {
+		alert("Search terms must be entered first");
+		return false;
+	}
+	return true;
+}
+
+function nullify_if_equal(field, str) {
+	// alert("val=" + field.value);
+	if (field.value == str) {
+		field.value = "";
+	}
+}
+
+</script>
+<!-- ** END: header.jsp ** //-->
+
+
+
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+  <title>JSR 32 - JAIN SIP Specification</title>
+                                                                        
+                                                    
+  <meta name="description" content="Change Log for JAIN SIPv1.1">
+</head>
+  <body>
+                                     
+<h2>JSR 32 - JAIN SIP v1.1 Specification<br>
+ Final Change Log</h2>
+ <big>Author: Phelim O'Doherty, Sun Microsystems</big><br>
+                                     
+<p>                   
+<table border="1">
+                   <tbody>
+                      <tr>
+                   <td><b>                                              
+                                                                         
+     
+      <center>ACCEPTED CHANGES</center>
+                        </b></td>
+                   </tr>
+                   <tr>
+                   <td><b> GENERAL:</b><br>
+                                                                        
+                                                                       
+      <ol>
+                    <li>Repackage the JAIN SIP Specification under 'javax.sip'
+   as  opposed     to 'jain.protocol.ip.sip'.&nbsp;                     
+                                                                        
+                                                                        
+                               
+          <p><b>IMPACT</b>: There is agreement in the development community
+         that this is a better packaging structure, however this has implications
+        on the backwards compatibility of the API, the maintenance   lead
+has    worked  with the JAIN SIP Community at 'JAIN-SIP-INTEREST@java.sun.com'
+     to ensure  this non backwards compatibility change is acceptable to
+the    development   community.&nbsp;<br>
+                       </p>
+                     </li>
+                     <li>The JAIN SIP specification will tighten its default
+  behaviour/scope  to explicitly    state that two types of configurations
+ are allowed for a  JAIN SIP implementation,  stateful and stateless. A stateful
+  implementation  of JAIN SIP implements the state machine which must be
+an   exact representation  of the SIP common transaction layer  for User
+Agent   [CS] and stateful Proxies  as specified by Chapter 17 of the SIP
+RFC 3261,   which is independent of the  TU core used i.e UAC,&nbsp; UAS
+or stateful  proxy. A stateless implementation  of JAIN SIP leaves the TU
+core i.e. stateless   proxy or protocol tester in  charge of implementing
+the state machine, it   is the TU's responsibility to  manage retransmissions
+and all responses and  requests corresponding to the  outstanding transactions
+are made visible  to the TU.<br>
+                                                                        
+                                                                        
+         
+          <p><b>IMPACT: </b>JAIN SIP upon instantiation will operate in either 
+    stateful or stateless behaviour, with a mechanism that allow stateful 
+implementations    to handle specific requests statelessly, i.e. unrecognized 
+transactions.             <br>
+                  </p>
+                </li>
+                <li>Explicitly tighten up JAIN SIP architecture  model.<br>
+                                                                        
+                      
+          <p><b>IMPACT:</b>&nbsp; Muliple  ListeningPoints can be contained
+    by a single SipStack at  any specific time.  A single SipStack can be
+associated    with multiple SipProviders,  however a single SipProvider can
+only be associated    with a single SipStack.  A single SipProvider can be
+associated with one   ListeningPoint. JAIN SIP allows only a single SipListener
+in the system,  therefore a single SipListener can be registered with a SipProvider
+ at any  specific   time. Therefore there is an explicit M:1:M:1 relationship
+ between  ListeningPoint:SipStack:SipProvider:SipListener.&nbsp;A JAIN SIP
+ application  must implement a single SipListener Object  that will act as
+ a proxy object  and pass all events to the TU.  This higher level  core
+application  programming  logic is outside the scope  of JAIN SIP.&nbsp;A
+SIP Lite implementation,  SIP Servlet or an EJB SIP implementation can implement
+the UAS, UAC  and Proxy cores respectively on top of JAIN-SIP as defined
+by RFC3261.                </p>
+                </li>
+                          <li>JAIN SIP will provide a convenience utility 
+to  allow  a JAIN SIP implementation to be configured to handle all retransmissions 
+  i.e. 2xx's and ACK's for an invite transaction, when being used by a UA 
+core.  This feature can be turned 'on or off' and is not default behaviour. 
+          <br>
+                                                                         
+         
+          <p><b>IMPACT: </b>Specify a mechanism to set retransmission scheme 
+   to FULL and define restrictions associated with this behaviour and define 
+  a mechanism to alert the application when no response was recieved after 
+ the maximum number of retransmissions, i.e. TRANSACTION_EXPIRED.</p>
+               </li>
+               <li>JAIN SIP must be able to support recieiving messages same  port  and  interface for TCP. This is because a message may need to
+be sent  using  TCP,  rather than UDP, if it is too large.<br>
+                                                                        
+                                              
+          <p><b>IMPACT:</b> Enable multiple providers on the same port with
+    different transports.        </p>
+                  </li>
+                                    <li>Update JAIN SIP specification  to 
+the   latest    protocol changes in the SIP RFC3261 including Dialog semantics.<br>
+                                                                        
+                                                                        
+                                 
+          <p><b>IMPACT</b>: &nbsp;Support new functionality supported    in
+the current SIP RFC.           </p>
+                       </li>
+                          <li>Add generic Error handling  mechanism for transport 
+    or  implementational defined errors.<b><br>
+                       </b>                                             
+                                                                        
+                       
+          <p><b>IMPACT: </b>Additional mechanism to report errors not defined 
+       in the specification.</p>
+                                                                        
+                                                                        
+         
+          <p></p>
+                     </li>
+                     <li>Deprecate lazy parsing at the JAIN SIP API level 
+this   can  be handled within the implementation of the specification.   
+                                                                        
+                                           
+          <p><b>IMPACT:</b> This involves removing 'throws SIPParseException' 
+      of all get methods.</p>
+                 </li>
+                                 <li>                Support functionality
+outlined in the following SIP RFC's: &nbsp;RFC 3261 functionality and the
+following SIP extensions;   the INFO method (RFC 2976), Reliability of provisional
+responses (RFC 3262),   Event Notification Framework (RFC 3265), the UPDATE
+method (RFC 3311), the   Reason Header (RFC 3326), the Message method (RFC
+3428) defined for instant   messaging and the REFER method (RFC 3515).  
+                                                                        
+                                                                        
+                                                   
+          <p><b>IMPACT: </b>Update JAIN SIP API with relevent changes outlined
+    in RFC's.<br>
+                 </p>
+               </li>
+               <li>Define a simple generic framework for handling protocol
+ extensions.   &nbsp;                                                   
+                         
+          <p><b>IMPACT: </b>Allows JAIN SIP to be extensible with regards 
+   to additional protocol extensions.</p>
+               </li>
+                                                                        
+                                                                        
+      </ol>
+                                                                        
+                                                                        
+      <p><b>  SipProvider Interface</b><br>
+                   </p>
+                                                                        
+                                                                      
+      <ol>
+                    <li> Deprecate the sendBye method with invite transaction 
+  and   replace with a   new createRequest method on an Dialog.         
+                                                                        
+                                                                        
+                                            
+          <p><b>IMPACT</b>:&nbsp;As the    JAIN SIP API support Dialog's,
+a BYE is better suited to Dialog's as opposed to INVITE transactions.<br>
+                          </p>
+                   </li>
+                    <li>                       Remove 'throws SipListenerNotRegisteredException'
+        from removeSipListener method and deprecate Exception.&nbsp;    
+                                                                        
+                                                                        
+                         
+          <p><b>IMPACT</b>: &nbsp;Application programmer no longers need
+to catch exception not defined in the JavaBean event pattern. <br>
+                    </p>
+                   </li>
+                    <li>                                              Remove
+  'throws     SipListenerAlreadyRegisteredException'   from addSipListener
+ method and   deprecate  Exception.                                     
+                                                                        
+                                                                 
+          <p><b>IMPACT</b>: &nbsp;Application programmer no longers need
+to catch exception not defined in the JavaBean event pattern.&nbsp;</p>
+                                                                        
+                                              
+          <p>             </p>
+                     </li>
+                     <li>Clearly define semantics of stateful and stateless 
+ behaviour      of  an implementation through the transaction model. This 
+is necessary    as multiple TU's in a  SIP application server may expect 
+ different behaviour    from the same SIP Stack  servicing the Application 
+server. JAIN SIP must   also be able to transition between stateful and stateless 
+behaviour for handling   of requests assuming no contracts have been broken 
+that prevent this.<br>
+                                                                        
+                                                                        
+         
+          <p><b>IMPACT:</b> A single JAIN SIP Provider must be able to support 
+    a TU's that requires both stateful or stateless behaviour  during operation.&nbsp;This 
+      allows a TU applications with different  behavioural requirements  to
+  interact  with the same JAIN SIP stack on a per call basis. These semantics 
+    prevent  hard coding the TU operation mode in the JAIN SIP implementation. 
+              </p>
+                     </li>
+                                                                        
+                                                                        
+     
+      </ol>
+                                                                        
+                                                                       
+      <p><b>  SipStack Interface</b><br>
+                   </p>
+                                                                        
+                                                                      
+      <ol>
+                    <li>Return empty Iterators instead of null values in
+getListeningPoints         and getSipProviders.                         
+                                                                        
+                                                                        
+                           
+          <p><b>IMPACT</b>: Make application programmer code simplier, by
+        removing explicit check for null as opposed to using the hasMore(
+)  method     on Iterator.<br>
+                       </p>
+                                                                        
+                                                                        
+         
+          <p></p>
+                     </li>
+                     <li>Introduce management capabilities for ListeningPoints.&nbsp; 
+                                                                         
+                                                                        
+                                                           
+          <p><b>IMPACT</b>: This allows users to dynamically create listening 
+      points and start/stop the existing SIP stack while configuring the ListeningPoint
+      of a JAIN SIP Stack, therefore these methods must throw exceptions
+for    those     stacks that don't allow permissions to configure the underlying
+   JAIN SIP    Stack.&nbsp;</p>
+                                                                        
+                                                                        
+         
+          <p></p>
+                     </li>
+                     <li>Deprecate getSipProviders and replace with getSipProvider. 
+                                                                         
+                                                                        
+                                                       
+          <p><b>IMPACT</b>: The JAIN SIP architecture now mandates a single 
+      SIP Provider.</p>
+                     </li>
+                     <li>Introduce management capabilities to route requests
+  based     on   arbitrary routing schemes rather than just on the request
+ URI, as  well   as  capibilities to set the OutBound Proxy.<br>
+                                                                        
+                                                                        
+         
+          <p><b>IMPACT</b>: These management capabilities can be implemented
+         by&nbsp; the JAIN-SIP stack to make routing decisions so that these
+   are    not hard-coded into the implementation itself. A Router interface
+  could  have   methods to return a list of destinations in order of priority.<br>
+                       </p>
+                     </li>
+                     <li>Introduce management capabilities to handle both 
+stateful    and stateless operating modes and clearly define retransmission 
+schemes  associated  with each mode.                                     
+                                                                        
+                                                                        
+               
+          <p><b>IMPACT: </b>This ensures clear semantics of behaviour of a
+JAIN SIP implementation however does not limit the flexibility of JAIN SIP
+for different &nbsp;applications.</p>
+                 </li>
+                                                                        
+                                                                        
+  
+      </ol>
+                                                                        
+                                                                        
+      <p></p>
+                                                                        
+                                                      
+      <p>  </p>
+                                                                        
+                                              
+      <p><b>  SipFactory Interface</b><br>
+                     </p>
+                                                                        
+                                              
+      <ol>
+                       <li>Deprecate getPathName and setPathName methods
+and   add   string    classname argument to the createSipStack method.  
+                                                                        
+                                                                        
+                                                 
+          <p><b>IMPACT: </b>Removes additional programming step from SipStack
+        creation.<br>
+                    </p>
+                  </li>
+                                                                        
+                                              
+      </ol>
+                                                                        
+                                              
+      <p><b>Request Interface</b><br>
+                </p>
+                                                                         
+     
+      <ol>
+                  <li>Introduce an easy way of including extension headers
+ and   bodies          in Response messages.&nbsp;<br>
+                                                                        
+                                              
+          <p><b>IMPACT:&nbsp;</b>This involves adding a new method to the
+     Request interface to create a default response from this request.</p>
+                  </li>
+                                                                         
+     
+      </ol>
+                                                                         
+     
+      <p><b>AddressFactory Interface</b><br>
+                     </p>
+                                                                        
+                                              
+      <ol>
+                       <li>Deprecate createURI(String scheme, String schemeData)
+    method.<br>
+                                                                        
+                                                                        
+                                 
+          <p><b>IMPACT: </b>Align with SipServlet specification.</p>
+                       </li>
+                                                                        
+             
+      </ol>
+                                                                       
+      <p><b>HeaderFactory Interface</b><br>
+                     </p>
+                                                                        
+                                              
+      <ol>
+                       <li>Add factory methods  for newly supported headers,
+  see   Headers.<br>
+                                                                        
+                                                                      
+          <p><b>IMPACT:&nbsp;</b>Enables the creation of newly formatted
+headers.</p>
+                    </li>
+                    <li>Deprecate&nbsp;HideHeader, EncryptionHeader and ResponseKeyHeader
+      factory methods, see Headers.<br>
+                                                                        
+                                                                      
+          <p><b>IMPACT: </b>Deprecate headers removed from RFC 3261.</p>
+                    </li>
+                    <li>Add hasEncoding and removeEncoding methods to the 
+AcceptEncodingHeader.                 <br>
+                                                                        
+                                                                      
+          <p><b>IMPACT:&nbsp;</b>Enables the Accept-Encoding to be empty.</p>
+                    </li>
+                                                                        
+                      
+      </ol>
+                                                                        
+                                                                        
+                            
+      <ol>
+                                                                        
+                                              
+      </ol>
+                                                                        
+                                              
+      <p><b>AllowHeader Class</b><br>
+                   </p>
+                                                                        
+                              
+      <ol>
+                     <li>Fix name constant in class from 'Accept' to 'Allow'
+                                                                        
+                                                                        
+                                                           
+          <p><b>IMPACT: </b>Fixes bug in JAIN SIP v1.0 specification.</p>
+                     </li>
+                                                                        
+                              
+      </ol>
+                                                                        
+                              
+      <p><b>Headers</b><br>
+                  </p>
+                                                                        
+                      
+      <ol>
+                    <li>Add new Header interfaces for AlertInfoHeader, AuthentificationInfoHeader,
+      CallInfoHeader, ContentDispositionHeader, ContentLanguageHeader, ErrorInfoHeader,
+      InReplyToHeader, MIMEVersionHeader, MinExpiresHeader, ReplyToHeader
+and    SupportedHeader.                                                 
+                                                                        
+                           
+          <p><b>IMPACT: </b>This updates JAIN SIP with the latest Headers
+      in RFC3261.<br>
+                      </p>
+                    </li>
+                    <li>Deprecate&nbsp;HideHeader, EncryptionHeader and ResponseKeyHeader. 
+                                                                         
+                                                                        
+  
+          <p><b>IMPACT: </b>This updates JAIN SIP with the latest Headers
+      in RFC3261.</p>
+        </li>
+        <li>Add new Headers from RFC's: <br>
+RFC3262 - RAckHeader and RSeqHeaders for the reliable delivery of provisional 
+responses.<br>
+RFC3265 - AllowEventsHeader, EventHeader and SubscriptionStateHeader to support
+the event notification framework.<br>
+RFC3326 - ReasonHeader to support information on why the request was issued.<br>
+RFC3515 - ReferToHeader to support recipients to refer requests to another 
+resource                                                                
+                                                                        
+            
+          <p><b>IMPACT: </b>This updates JAIN SIP with the latest Headers
+      in newly supporting RFC's.</p>
+        </li>
+        <li>Deprecated setDate(String), setDate(Date), getDate  and   isDate
+   in ExpiresHeader and RetryAfterHeader.                               
+                                                                        
+                                            
+          <p><b>IMPACT: </b>These methods are not required within the headers.<br>
+                      </p>
+                    </li>
+                    <li>Deprecated the getAction, hasAction, removeAction 
+and   setAction    in ContactHeader.                                     
+                                                                        
+                                      
+          <p><b>IMPACT: </b>These methods are not required within the header.<br>
+                      </p>
+                    </li>
+                    <li>Add the magic cookie "z9hG4bK" as a constant in ViaHeader.
+                                                                        
+                                                                        
+       
+          <p><b>IMPACT: </b>Convenience constant for Via headers.<br>
+                      </p>
+                    </li>
+                                                                        
+                      
+      </ol>
+                                                                        
+                      
+      <p><b>Responses</b><br>
+                 </p>
+                                                                        
+              
+      <ol>
+                   <li>Deprecate (3XX)SEE_OTHER, (4XX)CONFLICT, LENGTH_REQUIRED 
+   Responses.                                                            
+                                                                        
+                  
+          <p><b>IMPACT: </b>This updates JAIN SIP with the latest Responses 
+     in RFC3261.<br>
+                     </p>
+                   </li>
+                   <li>Add (183) SESSION_PROGRESS, (416) UNSUPPORTED_URI_SCHEME,
+    (421)  EXTENSION_REQUIRED, (423) INTERVAL_TOO_BRIEF, (487) REQUEST_TERMINATED, 
+    (488)  NOT_ACCEPTABLE_HERE, (491) REQUEST_PENDING, (493) UNDECIPERABLE, 
+  (513)  MESSAGE_TOO_LARGE.                                              
+                                                                        
+                          
+          <p><b>IMPACT: </b>This updates JAIN SIP with the latest Responses 
+     in RFC3261.<br>
+                     </p>
+                   </li>
+                   <li>Deprecate URI_TOO_LARGE and replace with URI_TOO_LONG. 
+                                                                         
+                                                                        
+   
+          <p><b>IMPACT: </b>This keeps consistent with RFC 3261.<br>
+                     </p>
+                   </li>
+                   <li>Deprecate TEMPORARILY_NOT_AVAILABLE and replace with 
+ TEMPORARILY_UNAVAILABLE.                                                
+                                                                        
+                                
+          <p><b>IMPACT:&nbsp;</b>This keeps consistent with RFC 3261.<br>
+                     </p>
+                   </li>
+                   <li>Deprecate CALL_LEG_OR_TRANSACTION_DOES_NOT_EXIST and 
+ replace     with&nbsp;CALL_OR_TRANSACTION_DOES_NOT_EXIST.               
+                                                                        
+                                                           
+          <p><b>IMPACT:&nbsp;</b>This keeps consistent with RFC 3261.<br>
+                     </p>
+                   </li>
+                   <li>Deprecate GATEWAY_TIME_OUT and replace with SERVER_TIMEOUT.
+                                                                        
+                                                                        
+       
+          <p><b>IMPACT:&nbsp;</b>This keeps consistent with RFC 3261.<br>
+                     </p>
+                   </li>
+                   <li>Deprecate SIP_VERSION_NOT_SUPPORTED and replace with 
+ VERSION_NOT_SUPPORTED.                                                  
+                                                                        
+                            
+          <p><b>IMPACT:&nbsp;</b>This keeps consistent with RFC 3261.<br>
+                     </p>
+                   </li>
+                   <li>Deprecate NOT_ACCEPTABLE_ANYWHERE and replace with 
+NOT_ACCEPTABLE.                                                          
+                                                                        
+                     
+          <p><b>IMPACT:&nbsp;</b>This keeps consistent with RFC 3261.</p>
+                   </li>
+                                                                        
+              
+      </ol>
+                                                                        
+              
+      <p><b>Message Interface</b><br>
+                   </p>
+                                                                        
+                              
+      <ol>
+                     <li>                                               
+            Add Deep Copy Clone semantics to the all SIP Messages.      
+                                                                        
+                                                               
+          <p><b>IMPACT: </b>This facility will dramatically reduce the overhead 
+      for proxy TU's.</p>
+                     </li>
+                                                                        
+                              
+      </ol>
+                                                                        
+                              
+      <ol>
+                                                                       
+      </ol>
+                                                                       
+      <p><b>Addressing</b><br>
+                      </p>
+                                                                        
+                                                      
+      <ol>
+                        <li>Add additional TelURL class as defined by RFC 
+2806   in  the   address package.                                        
+                                                                        
+                                                   
+          <p><b>IMPACT:</b> Missing in previous draft of specification.</p>
+                     </li>
+                     <li>Deprecate SipURL and replace with SipURI for both
+ "sip:"    and   "sips:" schemes following RFC 2396.                    
+                                                                        
+                                                                        
+          <p><b>IMPACT:</b> Update to recent addressing schema defined in 
+      the RFC3261.<br>
+                   </p>
+                     </li>
+                                                                        
+                                                               
+      </ol>
+                                                                        
+                                                      
+      <p> </p>
+                        </td>
+                   </tr>
+                   <tr>
+                   <td><b>                                              
+                                                                         
+     
+      <center>REJECTED CHANGES - Not deemed necessary by Spec leads</center>
+                        </b></td>
+                   </tr>
+                   <tr>
+                        <td>
+      <p><b>Define a new ParserUtility Interface.                       
+                                                                        
+                                                                        
+                             </b><br>
+      </p>
+      <p><b><br>
+- ParserUtility Interface</b><br>
+               </p>
+                                                                       
+      <ol>
+        <li>Add parseURI(String URI) method.<br>
+                 </li>
+        <li>Add parseAddress(String addressName) method.<br>
+                 </li>
+        <li>Add generic parseHeader(String header) method.              
+                                                                        
+                                                                        
+                                                       </li>
+        <li>Add generic parseMessage(String message) method.            
+                                                                        
+                                                                        
+                                                         </li>
+      </ol>
+      <b>REASON:</b> Factory methods take care of this Parsing, a better
+logical fit within the specification.<br>
+      <p><b>URI Interface</b><br>
+                     </p>
+                                                                        
+                                              Deprecate URI interface and
+replace with javax.net.URI.<br>
+      <br>
+                                                                        
+                                                                        
+                                 <b>REASON:</b> javax.net.URI is final and
+can't be extended by SIP URI and Tel URL.<br>
+      <br>
+                                                                        
+                                                                      
+      <p></p>
+                        </td>
+                      </tr>
+                   <tr>
+                   <td><b>                                              
+                                                                         
+     
+      <center>DEFERRED CHANGES</center>
+                        </b> </td>
+                      </tr>
+                   <tr>
+                        <td><br>
+                                                                        
+                                                                      
+      <p></p>
+                        </td>
+                      </tr>
+                                                                        
+  </tbody>                  
+</table>
+                    </p>
+                                   <br>
+</body>
+</html>
+
+
+
+<!-- ** BEGIN: footer.jsp ** //-->
+
+
+
+
+
+
+
+
+</td>
+</tr>
+</table>
+
+<!-- ** END: Content Table ** //-->
+
+<!-- ** BEGIN: Footer Table ** //-->
+
+<div id="footer" style="clear: both;">
+    <div class="footleft">
+        <a href="/en/resources/contacts">Contact Us</a>
+    </div>
+	
+    <div class="botbar"><img src="/images/spacer.gif" alt="" height="23" width="1"></div>
+
+    <div class="footleft2">
+         &copy; 2019, Oracle Corporation and/or its affiliates. 
+        <a href="/en/home/terms">Terms of Use</a>. <a href="http://www.oracle.com/us/legal/privacy/index.html">Privacy Policy</a>. <a href="http://www.oracle.com/us/legal/third-party-trademarks/third-party-trademarks-078568.html">Trademarks</a>
+    </div>
+
+    <div class="footright">
+        <img src="/images/common/logo_oracle_footer.gif" alt="Oracle Corporation" height="22" width="91">
+    </div>
+
+    <div style="clear: both;"><img src="/images/spacer.gif" alt="" height="30" width="1"></div>
+</div>
+
+<!-- ** END: Footer Table ** //-->
+
+
+
+<!-- ** Menu Start ** //-->
+
+
+
+</body>
+</html>
+<!-- ** END: footer.jsp ** //-->
+

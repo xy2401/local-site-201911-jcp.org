@@ -1,0 +1,28 @@
+Add the following to the semantics of ServiceContext.select(Locator[]):
+
+If the service containing the specified parts is the same as the service
+currently selected in this service context then the following shall apply;
+- the specified media components shall be selected.
+- if locators to Xlets are listed then the specified Xlets shall be
+started and other running Xlets in that service context shall be stopped
+- if no locators to Xlets are listed and the ServiceContext on which the
+method is called is the one returned by passing the calling Xlet's
+XletContext to ServiceContextFactory.getServiceContext(XletContext) then
+the Xlets selected shall be the same as would be selected by calling
+select(Service) on the service of which the specified components are
+members. (I.e., if the components belong to a different service than is
+being presented, the auto-start Xlets of the service will be selected;
+if the components belong to the same service as is being presented, then
+no change is made to the currently selected Xlets.)
+- if no locators to Xlets are listed and the ServiceContext on which the
+method is called is not the one returned by passing the calling Xlet's
+XletContext to ServiceContextFactory.getServiceContext(XletContext) then
+all running Xlets in that ServiceContext shall be stopped.
+
+--------------------------------
+
+Add the following to the specification of
+javax.media.Clock.mapToTimeBase(Time):
+
+If this method is called when the clock rate is 0.0, no exception will be thrown, and the getSeconds() method of the returned Time object will yield an undefined value.
+

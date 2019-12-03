@@ -1,0 +1,431 @@
+
+<!-- ** BEGIN: header.jsp ** //-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3c.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+<head>
+    
+
+   
+    <link href="/includes/css/menu.css" rel="stylesheet" type="text/css"></link>
+    <link href="/includes/css/style.css" rel="stylesheet" type="text/css"></link>
+    <!--[if lt IE 6]><link href="/includes/css/style5.css" rel="stylesheet" type="text/css" ></link><![endif]-->
+    <!--[if gte IE 5]><link href="/includes/css/style6.css" rel="stylesheet" type="text/css" ></link><![endif]-->
+    <link href="/includes/css/tabs.css"  rel="stylesheet" type="text/css"></link>
+
+    <script type="text/javascript" src="/includes/scripts/tabs.js"></script>
+    <script type="text/javascript" src="/includes/scripts/menu.js"></script>
+   
+
+    
+
+    
+        <title>The Java Community Process(SM) Program - communityprocess - maintenance</title>
+    
+
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+
+
+<body onload="P7_initPM(0,1,0,0,-1)">
+
+    <a name="top"></a>
+
+    <div id="header">
+	<div id="logo">
+		<a href="/en/home/index"><img src="/images/spacer.gif" alt="Java Community Process" height="81" width="151"></a>
+	</div>
+	<div id="tools">
+		<div class="search">
+			<form name="search" action="/en/jsr/summary" method="get" onsubmit="return validate_search()">
+				<input name="id" value="Search JSRs" size="16" class="form" onfocus="nullify_if_equal(this, 'Search JSRs')" type="text">
+				<a href="javascript:document.search.submit()" onclick="return validate_search()"><img src="/images/button_go.gif" width="21" height="16" border="0" alt="Submit this Search" name="sub_search"></a>
+			</form>
+		</div>
+		<div class="tools">
+			<a href="/en/press/pressroom">Press Room</a> &nbsp;|&nbsp;
+			<a href="http://java.com/java/download/index.jsp?cid=jdp78399">Get Java Here</a> &nbsp;|&nbsp;
+			<!-- <a href="javascript:void(0)">Print Format</a> &nbsp;|&nbsp;&nbsp; -->
+		</div>
+
+	</div>
+	<div style="clear: right;"></div>
+
+        
+
+	<div class="topbar"><img src="/images/spacer.gif" alt="" height="3" width="154"></div>
+	<div id="update"> </div>
+    </div>
+
+
+    
+
+        <!-- ** BEGIN: Content Table ** //-->
+
+        <table width="100%" border="0" cellpadding="0" cellspacing="0">
+
+            <tr>
+
+                <!-- ** BEGIN: Navigation Column ** //-->
+                <td width="150" id="leftcontent" valign="top">
+                    <!-- Navigation Placeholder //-->
+
+                    
+
+                    <div class="bar"><img src="/images/hr_dots1.gif" alt="" height="3" width="150"></div>
+
+        <!-- begin find JSRs form -->
+        <!-- IMPORTANT! do not convert this form to Struts < html : form > tag.  javascript change of form.action property fails. -->
+        <img src="/images/hd_find-jsrs.gif" alt="Find JSRs" height="18" width="150">
+        <form name="findjsr" action="/en/jsr/summary" method="get" class="pt5" onsubmit="return validate_findjsr()">
+            <input name="id" size="18" class="form" value="Search JSRs" onfocus="nullify_if_equal(this, 'Search JSRs')" type="text">
+	    <a href="javascript:document.findjsr.submit()" onclick="return validate_findjsr()"><img src="/images/button_go.gif" width="21" height="16" border="0" alt="Submit this Search" name="sub_search"></a>
+        </form><br><br>
+
+        <!-- ** Menu Start ** //-->
+
+        <ul id="p7PMnav">
+            <li><a href="/en/jsr/platform">JSRs by Platform</a></li>
+            <li><a href="/en/jsr/tech">JSRs by Technology</a></li>
+            <li><a href="/en/jsr/stage">JSRs by Stage</a></li>
+            <li><a href="/en/jsr/ec">JSRs by Committee</a></li>
+            <li><a href="/en/jsr/all">List of All JSRs</a></li>
+
+            <!--end find JSRs form -->
+            <div style="clear: both;"><img src="/images/spacer.gif" alt="" height="25" width="1"></div>
+
+            <!--begin my JCP -->
+            <img src="/images/hd_my-jcp.gif" alt="My JCP" height="18" width="150">
+            
+
+          <form name="login" method="get" action="/en/user/login" >
+            <input name="Sign-in" type="submit" title="Sign-in" value="Sign-in" />
+          </form>
+
+            <div style="clear:both"><img src="/images/global/spacer.gif" width="1" height="3" alt=""></div>
+            <div class="noNav">
+                <a href="/en/user/register">Register for Site</a>
+            </div>
+
+             <div class="bar"><img src="/images/hr_dots1.gif" alt="" height="3" width="150"></div>
+           <div class="noNav" style="color: #666666; padding: 0;">
+              Use of JCP site is subject to the
+              <a href="/en/home/terms" style="display:inline;padding: 0">JCP Terms of Use</a> and the
+              <a href="http://www.oracle.com/us/legal/privacy/index.html" style="display:inline;padding: 0" href="">Oracle Privacy Policy</a>
+          </div>
+
+            
+
+            <div style="clear:both"><img src="/images/global/spacer.gif" width="1" height="25" alt=""></div>
+
+            <!--begin JCP info -->
+            <img src="/images/hd_jcp-info.gif" alt="JCP Info" height="18" width="150">
+
+            <li><a href="/en/procedures/overview" class="p7PMtrg">About JCP</a>
+                <ul>
+                    <li><a href="/en/procedures/overview">Program Overview</a></li>
+                    <li><a href="/en/procedures/jcp2">JCP Process Document</a></li>
+                    <li><a href="/en/whatsnew/calendar">Calendar</a></li>
+                    <li><a href="/en/participation/members">JCP Members</a></li>
+                    <li><a href="/en/participation/committee">Executive Committee</a></li>
+                    <li><a href="/en/whatsnew/elections">Elections</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/en/participation/overview" class="p7PMtrg">Get Involved</a>
+		<ul>
+                    <li><a href="/en/participation/overview">Overview</a></li>
+                    <li><a href="/en/participation/membership">Becoming a JCP Member</a></li>
+		</ul>
+            </li>
+
+            <li><a href="/en/resources/contents" class="p7PMtrg">Community Resources</a>
+                <ul>
+                    <li><a href="/en/resources/contents">Overview</a></li>
+                    <li><a href="/en/resources/tutorials">Tutorials</a></li>
+                    <li><a href="/en/resources/multimedia">JCP Podcasts</a></li>
+                    <li><a href="/en/resources/guide">Spec Lead Guide</a></li>
+                    <li><a href="/en/resources/tdk">TCK Tool & Info</a></li>
+                    <li><a href="/en/resources/license_reference">License Reference</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/en/press/pmo" class="p7PMtrg">Community News</a>
+                <ul>
+                    <li><a href="/en/press/pmo">News</a></li>
+                    <li><a href="/en/press/news/awards/awards_main">Programs &amp; Awards</a></li>
+                    <li><a href="/en/press/releases">Press Releases</a></li>
+                    <li><a href="/en/press/success">Success Stories</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/en/introduction/faq">FAQ</a></li>
+
+            <li><a href="/en/resources/contacts">Contact Us</a></li>
+
+            <div style="clear: both;"><img src="/images/spacer.gif" alt="" height="25" width="1"></div>
+
+            <!--[if lte IE 6]><style>#p7PMnav a{height:1em;}#p7PMnav li{height:1em;float:left;clear:both;width:100%}</style><![endif]-->
+            <!--[if IE 6]><style>#p7PMnav li{clear:none;}</style><![endif]-->
+            <!--[if IE 7]><style>#p7PMnav a{zoom:100%;}#p7PMnav li{float:left;clear:both;width:100%;}</style><![endif]-->
+        </ul>
+
+        
+
+        <!--begin ad space -->
+        <div class="ads">
+            <a href="http://java.com/java/download/index.jsp?cid=jdp78399" target="_blank"><img style="display: ;" src="/images/ad_banner2.gif" alt="Ad Banner" border="1" height="70" width="150"></a>
+        </div>
+        <!--end ad space -->
+
+<!-- ** Menu End ** //-->
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;<br>
+
+    
+
+                    &nbsp;<br>
+                    <img src="/images/common/trans.gif" alt="" width="1" height="150"><br>
+
+              
+
+
+
+                </td>
+                <!-- ** END: Navigation Column ** //-->
+
+                <!-- ** BEGIN: Gutter Column ** //-->
+		<td width="10" nowrap><img src="/images/common/trans.gif" alt="" width="10" height="1"></td>
+                <!-- ** END: Gutter Column ** //-->
+
+                <!-- ** BEGIN: Content Column ** //-->
+                <td width="100%" valign="top">
+
+    
+<script type="text/javascript">
+
+String.prototype.trim = function() {
+        return this.replace(/^\s+|\s+$/g,"");
+}
+String.prototype.ltrim = function() {
+        return this.replace(/^\s+/,"");
+}
+String.prototype.rtrim = function() {
+        return this.replace(/\s+$/,"");
+}
+
+function validate_search() {
+	if (document.search.id.value == "Search JSRs" || document.search.id.value.trim().length == 0) {
+		alert("Search terms must be entered first");
+		return false;
+	}
+	return true;
+}
+
+function validate_findjsr() {
+	if (document.findjsr.id.value == "Search JSRs" || document.findjsr.id.value.trim().length == 0) {
+		alert("Search terms must be entered first");
+		return false;
+	}
+	return true;
+}
+
+function nullify_if_equal(field, str) {
+	// alert("val=" + field.value);
+	if (field.value == str) {
+		field.value = "";
+	}
+}
+
+</script>
+<!-- ** END: header.jsp ** //-->
+
+
+
+
+
+
+<html>
+<head>
+<title>
+Change Log for JSR-000314 JavaServer Faces 2
+</title>
+</head>
+<body>
+<h2><center>
+Change Log for JSR-000314 JavaServer<font size="-2"><sup>TM</sup></font> Faces 2
+</center>
+</h2>
+This page details the proposed, accepted and deferred changes to JSR 314, documenting the changes that will go into the next revision, per <a href="http://jcp.org/en/procedures/jcp2#4.2">Section 4.2 of the JCP 2.7 document</a>. It contains a snapshot of the issue log for JSR 314, located here: <a href="http://wiki.jcp.org/wiki/index.php?page=JSF+2.0+Rev+A+Change+Log">http://wiki.jcp.org/wiki/index.php?page=JSF+2.0+Rev+A+Change+Log</a>.<P>
+
+Last updated: 15 November 2010<p>
+
+<table border width="100%">
+<B>PROPOSED CHANGES</b>
+<tr>
+<td>
+&nbsp;
+</td>
+</tr>
+</table>
+<P>
+
+<table border width="100%">
+<B>ACCEPTED CHANGES</b>
+<tr>
+<td>
+<a href="./jsf-2_1-changelog.html">Maintenance Review 2</a>, approved on 23 October 2010
+</td>
+</tr>
+<tr><td>
+<P>
+<a href="./jsf-mr1.html">Target Milestone 2.0 Rev A (Maintenance Review 1)</a>, accepted on 8 July 2010
+
+</td></tr>
+</table>
+<P>
+
+
+<table border width="100%">
+<B>DEFERRED CHANGES</B>
+<TR><TD><BR>
+<table border="1">
+<tr><th>ID</th><th>Category</th><th>Description</th><th>Fixed in Source Code Repository of Specification</th></tr>
+
+<tr class="a"> <td>
+        <a href="https://javaserverfaces-spec-public.dev.java.net/issues/show_bug.cgi?id=731">731</a>
+        </td>
+<td>&nbsp;</td>
+        <td><span class="summary">Clarify f:event listener method parameter requirements</span>
+        </td>
+<td>&nbsp;</td>
+</tr>
+
+</tr>
+<tr class="a">
+<td>
+        <a href="https://javaserverfaces-spec-public.dev.java.net/issues/show_bug.cgi?id=869">869</a>
+        </td>
+<td>&nbsp;</td>
+<td><span class="summary">Specify CSRF solution.</span>
+</td>
+<td>&nbsp;</td>
+</tr>
+
+
+<tr><td>C005</td><td>Errata</td><td>Change validate method on <nop>UIInput to require a call to protected <code>compareValues()</code> method.  Modify spec for
+<code>compareValues()</code> to require using the <code>Comparable</code> interface if the equals check fails</td><td>yes</td></tr>
+<tr><td>C003</td><td>Errata</td><td>JavaDoc for <code>UIInput</code> does not have a constant for <code>INTERPRET_EMPTY_STRING_SUBMITTED_VALUES_AS_NULL</code></td><td>yes</td></tr>
+
+<tr><td>C014</td><td>Errata</td><td>Jsdocs for specifying form view state updating must also include any forms specified in the render list.  Currently the view state is only updated for the form containing the control that fired the Ajax request. <a href="https://javaserverfaces-spec-public.dev.java.net/issues/show_bug.cgi?id=790">Spec Public:790</a> </td><td>no</td></tr>
+<tr><td>C039</td><td>Errata</td><td>view metadata must be traversed on Ajax request during the execute portion of the lifecycle if there is at least one execute id other then "@none"</td><td>no</td></tr>
+<tr><td>C042</td><td>Errata</td><td>Modify managed bean annotation spec to say the annotations can be on the setter <b>or</b> the field</td><td>no</td></tr>
+
+<tr><td>C045</td><td>Change</td><td>Add <codeConfigurableNavigationHandlerWrapper</code></td><td>no</td></tr>
+<tr><td>C055</td><td>Errata</td><td>Handled by <a href="https://javaserverfaces.dev.java.net/issues/show_bug.cgi?id=1402">1402</a></td><td>no</td></tr>
+<tr><td>C056</td><td>Errata</td><td>JSF ManagedBean implementations must support 330 style injection (@inject) if running in a container that supports 330 style injection.</td><td>no</td></tr>
+<tr><td>C057</td><td>Errata</td><td>Make <code>OutputTarget</code> <code>Head</code> renderer not specify exactly where within the HEAD the resource must be rendered</td><td>yes</td></tr>
+
+
+<tr><td>C059</td><td>Change</td><td>Make the flash be stored in session by default.</td><td>yes, see mojarra issue 1449</td></tr>
+<tr><td>C067</td><td>Change</td><td>Specify return value for jsf.util.chain() in JS</td><td>no</td></tr>
+<tr><td>C006</td><td>Change</td><td>If, when processing an &lt;absolute-ordering&gt; section in the <code>WEB-INF/faces-config.xml</code> file, we come across a <code>&lt;name&gt;</code> entry, and there are multiple jars in the <code>WEB-INF/lib</code> that declare this value as their <code>&lt;name&gt;</code> entry,
+the runtime must log a descriptive error message listing the value of the <code>&lt;name&gt;</code> entry, and information from which each of the jars that declares that value as their <code>&lt;name&gt;</code> entry, and fail to deploy the application.</td><td>no</td></tr>
+
+<tr><td>C019</td><td>Errata</td><td><code>OutputStyleSheet Renderer</code>: don't output a "media='screen'" attribute, as specified.</td><td>yes</td></tr>
+<tr><td>C020</td><td>Change</td><td><code>OutputStyleSheet Renderer</code>: add
+a "media" attribute.</td><td>yes</td></tr>
+<tr><td>C025</td><td>Errata</td><td>Class <code>javax.faces.event.PostAddToViewNonPDLEvent</code> should have been removed before the spec went final</td><td>no</td></tr>
+
+<tr><td>C036</td><td>Errata</td><td>EL Evaluation needs to be specified in the javadocs for <code>Resource.getInputStream()</code></td><td>no</td></tr>
+<tr><td>C038</td><td>Errata</td><td>In section 3.6.2 state that if the implementation detects the occurrence of a composite component directly or indirectly including itself in its implementation section, the page must not be rendered and a helpful specific error message must be shown</td><td>no</td></tr>
+<tr><td>C041</td><td>Errata</td><td>Modify absolute-ordering section to declare
+that the detection of a duplicate name should cause an error and fail to deploy
+rather then the current behavior of "just keep going"</td><td>no</td></tr>
+<tr><td>C070</td><td>Change</td><td>Add a context-param <code>javax.faces.STORE_FLASH_IN_SESSION_SCOPE</code> to section 11.1.3.</td><td>yes, see mojarra issue
+1449</td></tr>
+
+<tr><td>C076</td><td>Errata</td><td>f:selectItems value="#{myMap}" underspecified. <a href="https://javaserverfaces-spec-public.dev.java.net/issues/show_bug.cgi?id=772">Spec Public:772</a></td><td>no</td></tr>
+
+</td></tr>
+</table>
+
+
+
+</body>
+</html>
+
+
+
+<!-- ** BEGIN: footer.jsp ** //-->
+
+
+
+
+
+
+
+
+</td>
+</tr>
+</table>
+
+<!-- ** END: Content Table ** //-->
+
+<!-- ** BEGIN: Footer Table ** //-->
+
+<div id="footer" style="clear: both;">
+    <div class="footleft">
+        <a href="/en/resources/contacts">Contact Us</a>
+    </div>
+	
+    <div class="botbar"><img src="/images/spacer.gif" alt="" height="23" width="1"></div>
+
+    <div class="footleft2">
+         &copy; 2019, Oracle Corporation and/or its affiliates. 
+        <a href="/en/home/terms">Terms of Use</a>. <a href="http://www.oracle.com/us/legal/privacy/index.html">Privacy Policy</a>. <a href="http://www.oracle.com/us/legal/third-party-trademarks/third-party-trademarks-078568.html">Trademarks</a>
+    </div>
+
+    <div class="footright">
+        <img src="/images/common/logo_oracle_footer.gif" alt="Oracle Corporation" height="22" width="91">
+    </div>
+
+    <div style="clear: both;"><img src="/images/spacer.gif" alt="" height="30" width="1"></div>
+</div>
+
+<!-- ** END: Footer Table ** //-->
+
+
+
+<!-- ** Menu Start ** //-->
+
+
+
+</body>
+</html>
+<!-- ** END: footer.jsp ** //-->
+

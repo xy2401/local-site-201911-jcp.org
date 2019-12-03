@@ -1,0 +1,862 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- ** BEGIN: header.jsp ** //-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3c.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+<head>
+    
+
+   
+    <link href="/includes/css/menu.css" rel="stylesheet" type="text/css"></link>
+    <link href="/includes/css/style.css" rel="stylesheet" type="text/css"></link>
+    <!--[if lt IE 6]><link href="/includes/css/style5.css" rel="stylesheet" type="text/css" ></link><![endif]-->
+    <!--[if gte IE 5]><link href="/includes/css/style6.css" rel="stylesheet" type="text/css" ></link><![endif]-->
+    <link href="/includes/css/tabs.css"  rel="stylesheet" type="text/css"></link>
+
+    <script type="text/javascript" src="/includes/scripts/tabs.js"></script>
+    <script type="text/javascript" src="/includes/scripts/menu.js"></script>
+   
+
+    
+
+    
+        <title>The Java Community Process(SM) Program - JSRs: Java Specification Requests - proposalDetails JSR# 368</title>
+    
+
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+
+
+<body onload="P7_initPM(0,1,0,0,-1)">
+
+    <a name="top"></a>
+
+    <div id="header">
+	<div id="logo">
+		<a href="/en/home/index"><img src="/images/spacer.gif" alt="Java Community Process" height="81" width="151"></a>
+	</div>
+	<div id="tools">
+		<div class="search">
+			<form name="search" action="/en/jsr/summary" method="get" onsubmit="return validate_search()">
+				<input name="id" value="Search JSRs" size="16" class="form" onfocus="nullify_if_equal(this, 'Search JSRs')" type="text">
+				<a href="javascript:document.search.submit()" onclick="return validate_search()"><img src="/images/button_go.gif" width="21" height="16" border="0" alt="Submit this Search" name="sub_search"></a>
+			</form>
+		</div>
+		<div class="tools">
+			<a href="/en/press/pressroom">Press Room</a> &nbsp;|&nbsp;
+			<a href="http://java.com/java/download/index.jsp?cid=jdp78399">Get Java Here</a> &nbsp;|&nbsp;
+			<!-- <a href="javascript:void(0)">Print Format</a> &nbsp;|&nbsp;&nbsp; -->
+		</div>
+
+	</div>
+	<div style="clear: right;"></div>
+
+        
+
+	<div class="topbar"><img src="/images/spacer.gif" alt="" height="3" width="154"></div>
+	<div id="update"> </div>
+    </div>
+
+
+    
+
+        <!-- ** BEGIN: Content Table ** //-->
+
+        <table width="100%" border="0" cellpadding="0" cellspacing="0">
+
+            <tr>
+
+                <!-- ** BEGIN: Navigation Column ** //-->
+                <td width="150" id="leftcontent" valign="top">
+                    <!-- Navigation Placeholder //-->
+
+                    
+
+                    <div class="bar"><img src="/images/hr_dots1.gif" alt="" height="3" width="150"></div>
+
+        <!-- begin find JSRs form -->
+        <!-- IMPORTANT! do not convert this form to Struts < html : form > tag.  javascript change of form.action property fails. -->
+        <img src="/images/hd_find-jsrs.gif" alt="Find JSRs" height="18" width="150">
+        <form name="findjsr" action="/en/jsr/summary" method="get" class="pt5" onsubmit="return validate_findjsr()">
+            <input name="id" size="18" class="form" value="Search JSRs" onfocus="nullify_if_equal(this, 'Search JSRs')" type="text">
+	    <a href="javascript:document.findjsr.submit()" onclick="return validate_findjsr()"><img src="/images/button_go.gif" width="21" height="16" border="0" alt="Submit this Search" name="sub_search"></a>
+        </form><br><br>
+
+        <!-- ** Menu Start ** //-->
+
+        <ul id="p7PMnav">
+            <li><a href="/en/jsr/platform">JSRs by Platform</a></li>
+            <li><a href="/en/jsr/tech">JSRs by Technology</a></li>
+            <li><a href="/en/jsr/stage">JSRs by Stage</a></li>
+            <li><a href="/en/jsr/ec">JSRs by Committee</a></li>
+            <li><a href="/en/jsr/all">List of All JSRs</a></li>
+
+            <!--end find JSRs form -->
+            <div style="clear: both;"><img src="/images/spacer.gif" alt="" height="25" width="1"></div>
+
+            <!--begin my JCP -->
+            <img src="/images/hd_my-jcp.gif" alt="My JCP" height="18" width="150">
+            
+
+          <form name="login" method="get" action="/en/user/login" >
+            <input name="Sign-in" type="submit" title="Sign-in" value="Sign-in" />
+          </form>
+
+            <div style="clear:both"><img src="/images/global/spacer.gif" width="1" height="3" alt=""></div>
+            <div class="noNav">
+                <a href="/en/user/register">Register for Site</a>
+            </div>
+
+             <div class="bar"><img src="/images/hr_dots1.gif" alt="" height="3" width="150"></div>
+           <div class="noNav" style="color: #666666; padding: 0;">
+              Use of JCP site is subject to the
+              <a href="/en/home/terms" style="display:inline;padding: 0">JCP Terms of Use</a> and the
+              <a href="http://www.oracle.com/us/legal/privacy/index.html" style="display:inline;padding: 0" href="">Oracle Privacy Policy</a>
+          </div>
+
+            
+
+            <div style="clear:both"><img src="/images/global/spacer.gif" width="1" height="25" alt=""></div>
+
+            <!--begin JCP info -->
+            <img src="/images/hd_jcp-info.gif" alt="JCP Info" height="18" width="150">
+
+            <li><a href="/en/procedures/overview" class="p7PMtrg">About JCP</a>
+                <ul>
+                    <li><a href="/en/procedures/overview">Program Overview</a></li>
+                    <li><a href="/en/procedures/jcp2">JCP Process Document</a></li>
+                    <li><a href="/en/whatsnew/calendar">Calendar</a></li>
+                    <li><a href="/en/participation/members">JCP Members</a></li>
+                    <li><a href="/en/participation/committee">Executive Committee</a></li>
+                    <li><a href="/en/whatsnew/elections">Elections</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/en/participation/overview" class="p7PMtrg">Get Involved</a>
+		<ul>
+                    <li><a href="/en/participation/overview">Overview</a></li>
+                    <li><a href="/en/participation/membership">Becoming a JCP Member</a></li>
+		</ul>
+            </li>
+
+            <li><a href="/en/resources/contents" class="p7PMtrg">Community Resources</a>
+                <ul>
+                    <li><a href="/en/resources/contents">Overview</a></li>
+                    <li><a href="/en/resources/tutorials">Tutorials</a></li>
+                    <li><a href="/en/resources/multimedia">JCP Podcasts</a></li>
+                    <li><a href="/en/resources/guide">Spec Lead Guide</a></li>
+                    <li><a href="/en/resources/tdk">TCK Tool & Info</a></li>
+                    <li><a href="/en/resources/license_reference">License Reference</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/en/press/pmo" class="p7PMtrg">Community News</a>
+                <ul>
+                    <li><a href="/en/press/pmo">News</a></li>
+                    <li><a href="/en/press/news/awards/awards_main">Programs &amp; Awards</a></li>
+                    <li><a href="/en/press/releases">Press Releases</a></li>
+                    <li><a href="/en/press/success">Success Stories</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/en/introduction/faq">FAQ</a></li>
+
+            <li><a href="/en/resources/contacts">Contact Us</a></li>
+
+            <div style="clear: both;"><img src="/images/spacer.gif" alt="" height="25" width="1"></div>
+
+            <!--[if lte IE 6]><style>#p7PMnav a{height:1em;}#p7PMnav li{height:1em;float:left;clear:both;width:100%}</style><![endif]-->
+            <!--[if IE 6]><style>#p7PMnav li{clear:none;}</style><![endif]-->
+            <!--[if IE 7]><style>#p7PMnav a{zoom:100%;}#p7PMnav li{float:left;clear:both;width:100%;}</style><![endif]-->
+        </ul>
+
+        
+
+        <!--begin ad space -->
+        <div class="ads">
+            <a href="http://java.com/java/download/index.jsp?cid=jdp78399" target="_blank"><img style="display: ;" src="/images/ad_banner2.gif" alt="Ad Banner" border="1" height="70" width="150"></a>
+        </div>
+        <!--end ad space -->
+
+<!-- ** Menu End ** //-->
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;<br>
+
+    
+
+                    &nbsp;<br>
+                    <img src="/images/common/trans.gif" alt="" width="1" height="150"><br>
+
+              
+
+
+
+                </td>
+                <!-- ** END: Navigation Column ** //-->
+
+                <!-- ** BEGIN: Gutter Column ** //-->
+		<td width="10" nowrap><img src="/images/common/trans.gif" alt="" width="10" height="1"></td>
+                <!-- ** END: Gutter Column ** //-->
+
+                <!-- ** BEGIN: Content Column ** //-->
+                <td width="100%" valign="top">
+
+    
+<script type="text/javascript">
+
+String.prototype.trim = function() {
+        return this.replace(/^\s+|\s+$/g,"");
+}
+String.prototype.ltrim = function() {
+        return this.replace(/^\s+/,"");
+}
+String.prototype.rtrim = function() {
+        return this.replace(/\s+$/,"");
+}
+
+function validate_search() {
+	if (document.search.id.value == "Search JSRs" || document.search.id.value.trim().length == 0) {
+		alert("Search terms must be entered first");
+		return false;
+	}
+	return true;
+}
+
+function validate_findjsr() {
+	if (document.findjsr.id.value == "Search JSRs" || document.findjsr.id.value.trim().length == 0) {
+		alert("Search terms must be entered first");
+		return false;
+	}
+	return true;
+}
+
+function nullify_if_equal(field, str) {
+	// alert("val=" + field.value);
+	if (field.value == str) {
+		field.value = "";
+	}
+}
+
+</script>
+<!-- ** END: header.jsp ** //-->
+
+
+
+
+
+        <!--  BEGIN NAVIGATION TABS -->
+        <div id="p7TP1">
+                <div class="p7TP_tabs">
+                        <div id="p7tpb1_1" class="down"><a class="down">JSR</a></div>
+                        <div><a href="/en/egc/view?id=368">Community</a></div>
+                        <div><a href="/en/eg/eghome?id=368">Expert Group</a></div>
+			
+
+                <br class="p7TPclear" />
+                </div>
+
+                <div class="p7TPcontent">
+                        <div id="p7tpc1_1">
+
+			
+                                <a href="summary?id=368">Summary</a>
+			
+			
+                                &nbsp;|&nbsp;
+				<span>Proposal</span>
+			
+			
+                                &nbsp;|&nbsp;
+                                <a href="detail?id=368">Detail (Summary &amp; Proposal)</a>
+			
+		
+                        
+                                &nbsp;|&nbsp;
+                                <a href="nominations?id=368">Nominations</a>
+			
+		
+                        </div>
+
+                </div>
+                <!--[if lte IE 6]><style type="text/css">.p7TPpanel div,.p7TPpanel a{height:1%;}.p7TP_tabs a{white-space:nowrap;}</style><![endif]-->
+        </div>
+        <script type="text/javascript">
+                P7_initTP(1,0);
+        </script>
+        <!--  END NAVIGATION TABS -->
+
+
+<div class="anybar"><img src="/images/global/bar_green.gif" alt="" width="12" height="4"></div>
+
+<div class="header2">JSRs: Java Specification Requests</div>
+<div class="header1">JSR 368: Java<font size="-2"><sup>TM</sup></font> Message Service 2.1</div>
+<div class="anybar"><img src="/images/global/bar_green.gif" alt="" width="12" height="4"></div>
+<br>
+
+
+
+
+<!-- ********************************************** -->
+<!--  JSRProposal Info                              -->
+<!-- ********************************************** -->
+<p>
+
+		This JSR has been <a href="/en/introduction/glossary#status"><font color=red><span title="A JSR that was withdrawn from the JCP by the Specification Lead before Final Release.">Withdrawn</span></font></a><br>
+		<b> Reason:</b> Withdrawn at the request of the Spec Lead.<br> <br>
+
+
+<a name="updates"><font size="+2">Updates to the Original JSR</font></a>
+<BR>
+The following updates have been made to <a href="#orig">the original proposal</a>:<P>
+
+<u><b>2015.07.14</b></u>:<BR>
+The schedule has been updated:<br>
+Q4 2015  Early Draft<BR>
+Q1 2016  Public Review<BR>
+Q3 2016  Proposed Final Draft<BR>
+H1 2017  Final Release<BR>
+
+<P>
+<HR>
+<P>
+
+<a name="orig"><font size="+2">Original Java Specification Request (JSR)</font></a><p>
+<FONT SIZE="-1">
+
+<!-- BEGIN-SUB TOPICS -->
+
+          <A HREF="#1"> Identification</A>  |
+          <A HREF="#2"> Request</A>  |
+          <A HREF="#3"> Contributions</A>  
+<BR>
+
+<!-- END-SUB TOPICS -->
+
+</FONT>
+<P>
+
+<!-- BEGIN TEMPLATE -->
+
+<!-- SECTION 1 -->
+
+<A NAME="1"></A>
+
+<P><FONT size=+2>Section 1. Identification</FONT>
+
+<P><b>Submitting Member:</b> Oracle </P>
+
+<P><b>Name of Contact Person:</b> Nigel Deakin </P>
+
+<P><b>E-Mail Address:</b> nigel.deakin<faketag>&#64;</faketag>oracle.com</P>
+
+<P><b>Telephone Number:</b> +44 20 7562 6736</P>
+
+<P><b>Fax Number:</b> -</P>
+
+<BR>
+<P><b>Specification Lead:</b> Nigel Deakin, Oracle</P>
+
+<P><b>E-Mail Address:</b> nigel.deakin<faketag>&#64;</faketag>oracle.com</P>
+
+<P><b>Telephone Number:</b> +44 20 7562 6736</P>
+
+<P><b>Fax Number:</b> -</P>
+
+<BR>
+
+<P><B>Initial Expert Group Membership:</B>
+</P>
+
+<P>Oracle
+</P>
+
+<P><B>Supporting this JSR:</B>
+
+</P>
+
+<P>Red Hat<BR>
+London Java Community<BR>
+Egypt Java Users' Group<BR>
+Werner Keil<BR>
+Antonio Goncalves<BR>
+Josh Juneau<BR>
+Nicholas Wright<BR>
+Seunghoon Han, TmaxSoft</p>
+
+<BR><BR>
+
+<!-- SECTION 2 -->
+
+<A NAME="2"></A>
+
+<P>
+<FONT SIZE="+2">Section 2: Request</FONT><P>
+</P>
+
+<H4>2.1 Please describe the proposed Specification:</H4>
+
+<P>The Java Message Service (JMS) API is a Java API for accessing enterprise messaging systems from Java programs in both Java EE and Java SE environments. It provides a common way for Java programs to create, send, receive and read an enterprise messaging system's messages.
+<P>
+
+The current version of this API is 2.0, which was developed as JSR 343 and which achieved final release in 2013.
+<P>
+
+The JMS 2.0 API may be implemented standalone for use in a Java SE environment. It is also a required service that must be available in a full Java EE 7 environment, in the EJB, web and application client containers. When used in a Java EE environment, certain parts of the JMS specification are overridden by parts of the Java EE, EJB and Servlet specifications, which define further how the JMS API should behave.
+<P>
+
+This JSR proposes that a new revision of the JMS specification be developed, JMS 2.1. The proposed content of JMS 2.1 is as follows:
+<ul>
+
+<li> The ease-of-use improvements started in JMS 2.0 will be completed in JMS 2.1 by simplifying and extending the API required to receive messages asynchronously, both in a Java SE environment and in Java EE. 
+<P>
+
+For Java EE applications an easier-to-use and more general alternative to JMS message-driven beans will be defined. The details of this feature will be determined by the expert group. The intention is to provide a simpler and more compact syntax than JMS MDBs, which will avoid the restrictions of the MDB lifecycle, and the JMS MessageListener interface, by allowing any CDI managed bean to be used to listen for messages. If possible, this feature will be aligned with CDI event observers.
+<P>
+
+<li> The portability of JMS providers within Java EE servers will be improved by reviewing the two alternative APIs defined for this purpose and identifying improvements.
+<P>
+
+There are currently two alternative APIs for integrating a JMS provider with a Java EE application server: the "application server facilities" API defined in JMS 2.0 chapter 13, and the resource adapter API defined in the Java Connector Architecture (JCA) specification.  It is optional whether a JMS provider implement either of these APIs and as a result there are no CTS tests for either. 
+<P>
+
+<li> The optional "application server facilities" API defined in JMS 2.0 chapter 11 are not well defined and there is confusion about how they should be used. The following improvements are proposed:
+<P>
+<ul>
+<li> Clarifying the relationship between the "XA" interfaces and their normal equivalents and when each should be used. 
+<P>
+<li> Defining of how asynchronous message delivery should be integrated with JTA (XA) transactions, especially where XA resource enlistment and delistment should take place. If necessary additional APIs will be defined to support this.
+<P>
+
+<li> Defining a new API to allow JMS ConnectionFactory and Destination objects to be created.
+</ul>
+<P>
+
+<li> JMS 2.0 was the first version of JMS that recommended that JMS providers implement a JCA resource adapter. A new chapter, 13, was added which defined a number of recommended MDB activation properties. The JSR 343 expert group discussed whether to make it mandatory for JMS providers to implement a resource adapter and decided that this was too onerous a requirement and that it should remain optional.
+<P>
+
+There is further scope to improve this part of the specification, especially in areas other than activation properties, and to formally define compliance tests that vendors can use to determine whether their implementation conforms to this optional part of the specification.
+<P>
+
+<li> JMS 2.0 included a number of changes to define how a JMS provider must behave when used in a Java EE transaction. However a number of improvements are still needed and will be addressed in JMS 2.1. These include:
+<P>
+<ul>
+<li> Defining the behaviour of a JMS session that is created outside a JTA transaction but used to send or receive a message within a JTA transaction, and vice versa.
+<P>
+
+<li> Defining an API to allow a JMS connection factory, connection or session to opt-out of a JTA transaction 
+<P>
+
+<li> Clarifying the existing restrictions on using client-acknowledgement and local transactions in a Java EE environment and removing these restrictions where possible. 
+</ul>
+
+<P>
+<li> Providing features to allow applications to control the redelivery behaviour when a MDB or MessageListener throws an exception. These may include redelivery delay, redelivery limits and dead message queues. In addition there may be a need for a standard way for a non-transactional MDB to be able to force a redelivery.
+<P>
+
+<li> The new revision will contain a number of corrections and minor enhancements to features added in JMS 2.0, based on feedback from developers who have implemented JMS 2.0. 
+<P>
+These include adding new APIs to allow application servers or resource adapters to implement JMSContext without needing an additional connection pool, and adding new APIs to allow multiple XAJMSContext objects to share the same underlying connection.
+<P>
+
+<li> Some minor changes may be added to make use of new features of Java SE 8. 
+<P>
+
+The existing resource definition annotations will be extended to support repeatable annotations. 
+<P>
+
+Existing methods that use callbacks to support asynchronous operations will be reviewed to determine whether there is scope to make use of the new CompleteableFuture class in Java SE 8 and related API. 
+<P>
+
+<li> Other features and changes will be included as requested by the community and as decided by the Expert Group. The JMS specification wiki already contains approximately 80 proposals that will be considered in detail and prioritised by the expert group. Additional proposals will be invited as well. 
+</ul>
+
+
+ </P>
+
+<H4>2.2 What is the target Java platform? (i.e., desktop, server, personal, embedded, card, etc.)</H4>
+
+<P>The target platforms are Java EE and Java SE. 
+</P>
+
+<H4>2.3 The Executive Committees would like to ensure JSR submitters think about how their proposed technology relates to all of the Java platform editions. Please provide details here for which platform editions are being targeted by this JSR, and how this JSR has considered the relationship with the other platform editions.</H4>
+
+<P>The Java Message Service (JMS) API is designed for both Java EE and Java SE platform environments. 
+<P>
+It is intended that JMS 2.1 will be included as a required part of the Java Platform, Enterprise Edition version 8. 
+<P>
+Aligning the timeline of this JSR with that of Java EE 8  may therefore impact the scope of the JMS 2.1 release. 
+</P>
+
+<H4>2.4 What need of the Java community will be addressed by the proposed specification?</H4>
+
+<P>See 2.1 above.</P>
+
+<H4>2.5 Why isn't this need met by existing specifications?</H4>
+
+<P>See 2.1 above.</P>
+
+<H4>2.6 Please give a short description of the underlying technology or technologies:</H4>
+
+<P>See 2.1 above.
+</P>
+
+<H4>2.7 Is there a proposed package name for the API Specification? (i.e., <TT>javapi.something</TT>, <TT>org.something</TT>, etc.)</H4>
+
+<P>The API Specification will continue to use the javax.jms package. 
+</P>
+
+<H4>2.8 Does the proposed specification have any dependencies on specific operating systems, CPUs, or I/O devices that you know of?</H4>
+
+<P>No.</P>
+
+<H4>2.9 Are there any security issues that cannot be addressed by the current security model?</H4>
+
+<P>No.</P>
+
+<H4>2.10 Are there any internationalization or localization issues?</H4>
+
+<P>No.</P>
+
+<H4>2.11 Are there any existing specifications that might be rendered obsolete, deprecated, or in need of revision as a result of this work?</H4>
+
+<P>This JSR is proposing to define new API for receiving messages asynchronously. 
+<P>
+The EJB specification currently defines a way to do this using message-driven beans (MDBs).
+<P>
+The use of MDBs to receive JMS messages may become partially or wholly obsolete as a result of this work.
+ <P>
+The use of MDBs to receive non-JMS messages is outside the scope of the JMS specification and will neither change nor become obsolete.
+<P>
+It is not expected that major changes will be needed to the EJB specification, but small changes are likely since the two specifications are so closely-related.
+<P>
+It is intended that it will be possible for application servers to implement the proposed new API for receiving messages asynchronously by using a JCA resource adapter. However it is possible that changes may be required to the Java Connector Architecture (JCA) specification to support this.
+</P>
+
+<H4>2.12 Please describe the anticipated schedule for the development of this
+specification.</H4>
+
+<P>Q3 2014  Expert Group formed<BR>
+Q1 2015  Early Draft<BR>
+Q3 2015  Public Review <BR>
+Q4 2015  Proposed Final Draft<BR>
+Q3 2016  Final Release 
+</P>
+
+<H4>2.13 Please describe the anticipated working model for the Expert Group working on developing this
+specification.</H4>
+
+<P>The primary means of communication will be email, with conference calls and face-to-face meetings scheduled as needed.
+</P>
+
+<H4>2.14 Provide detailed answers to the transparency checklist, making sure to
+include URLs as appropriate:</H4>
+
+<P>The jms-spec.java.net project site will be used to track all issues and disseminate information on the progress of the JSR.
+
+<P><I>Q. Is the schedule for the JSR publicly available, current, and updated regularly?
+</i><P>
+
+A. The schedule will be available on the project site jms-spec.java.net.
+
+<P><I>Q. Can the public read and/or write to a wiki for the JSR?
+</i><P>
+
+A. The project site jms-spec.java.net includes a wiki which may be read by anyone. Only expert group members will be able to update the wiki.
+
+<P><I>Q. Is there a publicly accessible discussion board for the JSR that you read and respond to regularly?
+</i><P>
+
+A. The existing email alias users&#64;jms-spec.java.net will be used for this purpose. Anyone may subscribe to and post to this alias, and an online archive of past messages will be available on the project website. 
+
+<P><I>Q. Have you spoken at conferences and events about the JSR recently?
+</I><P>
+
+In the past year I gave two presentations at JavaOne 2013 in San Francisco. One was a summary of the new features of JMS 2.0, and the other was a consultation session to discuss what might be in JMS 2.1. I have submitted proposals for two similar talks at JavaOne 2014.
+
+<P><I>Q. Are you using open-source processes for the development of the RI and/or the TCK?
+</I><P>
+
+A. The RI for JMS 2.0 is Open Message Queue. It is part of GlassFish Server, Open Source Edition. Both are open source. It is expected that the RI for JMS 2.1 will continue in the same vein. The TCK for JMS is not open source. 
+
+<P><I>Q. What are the Terms of Use required to use the collaboration tools you have prepared to use with the Expert Group, so that prospective EG members can judge whether they are compatible with the JSPA?
+</I><P>
+
+A. The collaboration tools use java.net terms of service. These are available at https://home.java.net/javanet-web-site-terms-use
+
+<P><I>Q. What is the location of your publicly-accessible Issue list? In order to enable EC members to judge whether Issues have been adequately addressed, the list must make a clear distinction between Issues that are still open, Issues that have been deferred, and those that are closed, and must indicate the reason for any change of state.
+</i><P>
+
+A. The issue list is available to anyone at https://java.net/jira/browse/JMS_SPEC. This uses JIRA. Each issue has a status field which reflects its status.
+<P>
+
+Issues that have been incorporated into a release of the specification are closed, and the "fix version" shows which release of the spec  incorporates the change.
+<P>
+
+Issues which are rejected as invalid, incomplete or inappropriate and which will not be reconsidered are marked as closed, with an appropriate comment to explain why the issue was closed.
+<P>
+
+All new issues, and any older issues which have been deferred for future consideration, are left open and are listed on the JMS 2.1 planning page https://java.net/projects/jms-spec/pages/JMS21Planning.
+<P>
+
+Each issue on that page is given a JIRA tag to classify whether the issue is major or minor, whether it was deferred, and so on. That page lists the possible tags that are used.
+
+<P><I>Q. What is the mechanism for the public to provide feedback on your JSR?
+</I><P>
+
+A. The jms-spec project front page jms-spec.java.net explains the various ways in which feedback may be provided. This invites members of the community to log an issue in the issue tracker or send an email to the community email alias. Once work on the JSR begins this will be updated and given greater prominence on the site.
+
+<P><I>Q. Where is the publicly-accessible document archive for your Expert Group?
+</I><P>
+
+A. The document archive is at https://java.net/projects/jms-spec/downloads
+<P>
+
+The API interfaces and specification itself (including work-in-progress drafts) are stored in a publicly-available svn repository. Access details are at https://java.net/projects/jms-spec/sources and the contents of the repository may be browsed at https://java.net/projects/jms-spec/sources/repository/show
+
+<P><I>Q. Does the Community tab for my JSR have links to and information about all public communication mechanisms and sites for the development of my JSR?
+</I><P>
+
+A. The community tab for JSR 343 (https://jcp.org/en/egc/view?id=343) directs readers to the project website jms-spec.java.net. When this new JSR is approved, its community tab will be similarly updated.
+
+<P><I>Q. Do you have a Twitter account or other social networking feed which people can follow for updates on your JSR?
+</I><P>
+
+A. No, though I will consider creating a Twitter account specifically for this JSR for JMS 2.1.
+
+<P><I>Q. Which specific areas of feedback should interested community members (such as the Adopt-a-JSR program) provide to improve the JSR
+</I><P>
+
+A. The formation of Adopt-a-JSR groups for JMS 2.1 will be encouraged and supported. The London Java Community expressed interest in participating in the Adopt-a-JSR programme for JSR 343 though little support was provided by the expert group. It is intended that the formation of this and other Adopt-a-JSR programmes for the new JSR will be encouraged and supported rather more.
+
+</P>
+
+<H4>2.15 Please describe how the RI and TCK will de delivered, i.e. as part of a profile or platform edition, or stand-alone, or both. Include version information for the profile or platform in your answer.
+</H4>
+
+<P>Oracle Corporation will deliver a Reference Implementation (RI) and Technology Compatibility Kit (TCK) available both stand-alone and as part of Java EE 8. 
+</P>
+
+<H4>2.16 Please state the rationale if previous versions are available stand-alone and you are now proposing in 2.13 to only deliver RI and TCK as part of a profile or platform edition (See sections 1.1.5 and 1.1.6 of the JCP 2 document).
+</H4>
+
+<P>No change is proposed from what was delivered for previous versions of JMS.
+</P>
+
+<H4>2.17 Please provide a description of the business terms for the Specification, RI and TCK that will apply when this JSR is final.</H4>
+
+<P><P><a href="/aboutJava/communityprocess/licenses/jsr368/JSR_368-Spec_License-JMS-2.1-8.18.14.pdf">Specification license</a>
+<p>
+
+<p>
+RI license
+<ol>
+<li>Commercial use
+<P>
+The RI will be available for commercial use under the 
+<a href="http://glassfish.java.net/public/CDDL+GPL_1_1.html">CDDL 1.1</a> open source license, 
+the <a href="http://glassfish.java.net/public/CDDL+GPL_1_1.html">GPLv2 with Classpath Exception</a> open source license, 
+or <a href="/aboutJava/communityprocess/licenses/jsr368/OCSL-JSR_368-JMS-2.1-AttachD-8.18.14.pdf">this RI license</a>.
+<p>
+<li> Non-Commercial use
+<P>
+The RI will be available for non-Commercial use under the <a href="http://glassfish.java.net/public/CDDL+GPL_1_1.html">CDDL 1.1</a> open source license 
+or the <a href="http://glassfish.java.net/public/CDDL+GPL_1_1.html">GPLv2 with Classpath Exception</a> open source license.
+</ol>
+<p>
+TCK license
+<ol>
+<li> Commercial use
+<P>
+The TCK will be available for commercial use under <a href="/aboutJava/communityprocess/licenses/jsr368/SATCK-JSR_368-JMS-2.1-8.18.14.pdf"> this TCK license</a>.
+</li>
+<li> Non-Commercial use
+<P>
+As required by the Java Specification Participation Agreement (JSPA), the TCK will be licensed at no charge without support to qualified not-for-profit.  The Compatibility Testing Scholarship Program will verify such qualification. Support may also be provided at no charge with approval of the scholarship board. For more information, please refer to:
+<a href="http://www.oracle.com/technetwork/java/index-137188.html">http://www.oracle.com/technetwork/java/index-137188.html</a>
+</li>
+</ol>
+</P>
+</P>
+
+<H4>2.18 Please describe the communications channel you have established for the public to observe Expert Group deliberations, provide feedback, and view archives of all Expert Group communications.</H4>
+
+<P>
+The Expert Group will conduct business using a publicly readable email alias for the JSR, similar to the email alias which was used for JSR 343. All messages sent to this alias by expert group members will be forwarded to the JMS specification community email alias. An online archive of messages will be available.
+<P>
+
+The existing JMS specification community alias users&#64;jms-spec.java.net, will continue to be used to allow members of the community to receive copies of all emails sent to the expert group alias, as well as to provide feedback and allow discussion on any issue related to the JMS specification. An online archive of messages will be available.
+<P>
+
+There will also be a publicly accessible issue tracker, source repository (used for draft API classes and the draft specification itself) and a document archive (used for discussion documents). See also 2.19 and 2.20 below.
+
+</P>
+
+<H4>2.19 What is the URL of the Issue Tracker that the public can read, and how does the public log issues in the Issue Tracker?</H4>
+
+<P>
+https://java.net/jira/browse/JMS_SPEC
+<P>
+
+Instructions on how members of the community may log issues are given at https://java.net/projects/jms-spec/pages/Home#How_to_create_an_issue
+
+</P>
+
+<H4>2.20 Please provide the location of the publicly accessible document archive you have created for the Expert Group.</H4>
+
+<P>
+The document archive is at <a href="https://java.net/projects/jms-spec/downloads">https://java.net/projects/jms-spec/downloads</a>
+<P>
+
+In addition, draft API classes and the draft specification itself will be available in a svn repository. Access details at <a href="https://java.net/projects/jms-spec/sources">https://java.net/projects/jms-spec/sources</a>
+
+</P>
+
+
+<BR><BR>
+<BR><BR>
+
+<!-- SECTION 3 -->
+
+<A NAME="3"></A>
+
+<P>
+<FONT SIZE="+2">Section 3: Contributions</FONT><P>
+</P>
+
+<H4>3.1 Please list any existing documents, specifications, or implementations that describe the technology. Please include links to the documents if they are publicly available.</H4>
+
+<P>
+The JSR that developed JMS 2.0 was JSR 343. The formal JSR page is http://jcp.org/en/jsr/detail?id=343
+<P>
+
+The final specification for JMS 2.0 is available at https://jcp.org/aboutJava/communityprocess/final/jsr343/index.html
+<P>
+
+The API docs for JMS 2.0 is available at https://jms-spec.java.net/2.0/apidocs/index.html
+<P>
+
+The standalone JMS RI is Open Message Queue: http://mq.java.net/
+<P>
+
+The Java EE 7 RI, which include Open Message Queue and some additional JMS components  to provide support for JMS 2.0 in a Java EE environment, is GlassFish Server Open Source Edition. This is available at https://glassfish.dev.java.net/
+
+</P>
+
+<H4>3.2 Explanation of how these items might be used as a starting point for the work.</H4>
+
+<P>This new JSR will develop the specification for JMS 2.1 as as a revision of the existing JMS 2.0 specification and API.
+<P>
+
+The standalone RI for JMS 2.1 will be developed as a revision of the existing RI for JMS 2.0, Open Message Queue.
+<P>
+
+The Java EE 8 RI will similarly be developed as a revision of the existing Java EE 7 RI, GlassFish Server, Open Source Edition.
+<P>
+
+This will include Open Message Queue as well as some updated components to provide support for JMS 2.1 in a Java EE environment.
+</P>
+
+<BR><BR>
+</p>
+
+
+
+
+
+
+
+
+<!-- ** BEGIN: footer.jsp ** //-->
+
+
+
+
+
+
+
+
+</td>
+</tr>
+</table>
+
+<!-- ** END: Content Table ** //-->
+
+<!-- ** BEGIN: Footer Table ** //-->
+
+<div id="footer" style="clear: both;">
+    <div class="footleft">
+        <a href="/en/resources/contacts">Contact Us</a>
+    </div>
+	
+    <div class="botbar"><img src="/images/spacer.gif" alt="" height="23" width="1"></div>
+
+    <div class="footleft2">
+         &copy; 2019, Oracle Corporation and/or its affiliates. 
+        <a href="/en/home/terms">Terms of Use</a>. <a href="http://www.oracle.com/us/legal/privacy/index.html">Privacy Policy</a>. <a href="http://www.oracle.com/us/legal/third-party-trademarks/third-party-trademarks-078568.html">Trademarks</a>
+    </div>
+
+    <div class="footright">
+        <img src="/images/common/logo_oracle_footer.gif" alt="Oracle Corporation" height="22" width="91">
+    </div>
+
+    <div style="clear: both;"><img src="/images/spacer.gif" alt="" height="30" width="1"></div>
+</div>
+
+<!-- ** END: Footer Table ** //-->
+
+
+
+<!-- ** Menu Start ** //-->
+
+
+
+</body>
+</html>
+<!-- ** END: footer.jsp ** //-->
+
+

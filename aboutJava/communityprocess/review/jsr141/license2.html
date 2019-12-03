@@ -1,0 +1,508 @@
+
+<!-- ** BEGIN: header.jsp ** //-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3c.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+<head>
+    
+
+   
+    <link href="/includes/css/menu.css" rel="stylesheet" type="text/css"></link>
+    <link href="/includes/css/style.css" rel="stylesheet" type="text/css"></link>
+    <!--[if lt IE 6]><link href="/includes/css/style5.css" rel="stylesheet" type="text/css" ></link><![endif]-->
+    <!--[if gte IE 5]><link href="/includes/css/style6.css" rel="stylesheet" type="text/css" ></link><![endif]-->
+    <link href="/includes/css/tabs.css"  rel="stylesheet" type="text/css"></link>
+
+    <script type="text/javascript" src="/includes/scripts/tabs.js"></script>
+    <script type="text/javascript" src="/includes/scripts/menu.js"></script>
+   
+
+    
+
+    
+        <title>The Java Community Process(SM) Program - communityprocess - review</title>
+    
+
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+
+
+<body onload="P7_initPM(0,1,0,0,-1)">
+
+    <a name="top"></a>
+
+    <div id="header">
+	<div id="logo">
+		<a href="/en/home/index"><img src="/images/spacer.gif" alt="Java Community Process" height="81" width="151"></a>
+	</div>
+	<div id="tools">
+		<div class="search">
+			<form name="search" action="/en/jsr/summary" method="get" onsubmit="return validate_search()">
+				<input name="id" value="Search JSRs" size="16" class="form" onfocus="nullify_if_equal(this, 'Search JSRs')" type="text">
+				<a href="javascript:document.search.submit()" onclick="return validate_search()"><img src="/images/button_go.gif" width="21" height="16" border="0" alt="Submit this Search" name="sub_search"></a>
+			</form>
+		</div>
+		<div class="tools">
+			<a href="/en/press/pressroom">Press Room</a> &nbsp;|&nbsp;
+			<a href="http://java.com/java/download/index.jsp?cid=jdp78399">Get Java Here</a> &nbsp;|&nbsp;
+			<!-- <a href="javascript:void(0)">Print Format</a> &nbsp;|&nbsp;&nbsp; -->
+		</div>
+
+	</div>
+	<div style="clear: right;"></div>
+
+        
+
+	<div class="topbar"><img src="/images/spacer.gif" alt="" height="3" width="154"></div>
+	<div id="update"> </div>
+    </div>
+
+
+    
+
+        <!-- ** BEGIN: Content Table ** //-->
+
+        <table width="100%" border="0" cellpadding="0" cellspacing="0">
+
+            <tr>
+
+                <!-- ** BEGIN: Navigation Column ** //-->
+                <td width="150" id="leftcontent" valign="top">
+                    <!-- Navigation Placeholder //-->
+
+                    
+
+                    <div class="bar"><img src="/images/hr_dots1.gif" alt="" height="3" width="150"></div>
+
+        <!-- begin find JSRs form -->
+        <!-- IMPORTANT! do not convert this form to Struts < html : form > tag.  javascript change of form.action property fails. -->
+        <img src="/images/hd_find-jsrs.gif" alt="Find JSRs" height="18" width="150">
+        <form name="findjsr" action="/en/jsr/summary" method="get" class="pt5" onsubmit="return validate_findjsr()">
+            <input name="id" size="18" class="form" value="Search JSRs" onfocus="nullify_if_equal(this, 'Search JSRs')" type="text">
+	    <a href="javascript:document.findjsr.submit()" onclick="return validate_findjsr()"><img src="/images/button_go.gif" width="21" height="16" border="0" alt="Submit this Search" name="sub_search"></a>
+        </form><br><br>
+
+        <!-- ** Menu Start ** //-->
+
+        <ul id="p7PMnav">
+            <li><a href="/en/jsr/platform">JSRs by Platform</a></li>
+            <li><a href="/en/jsr/tech">JSRs by Technology</a></li>
+            <li><a href="/en/jsr/stage">JSRs by Stage</a></li>
+            <li><a href="/en/jsr/ec">JSRs by Committee</a></li>
+            <li><a href="/en/jsr/all">List of All JSRs</a></li>
+
+            <!--end find JSRs form -->
+            <div style="clear: both;"><img src="/images/spacer.gif" alt="" height="25" width="1"></div>
+
+            <!--begin my JCP -->
+            <img src="/images/hd_my-jcp.gif" alt="My JCP" height="18" width="150">
+            
+
+          <form name="login" method="get" action="/en/user/login" >
+            <input name="Sign-in" type="submit" title="Sign-in" value="Sign-in" />
+          </form>
+
+            <div style="clear:both"><img src="/images/global/spacer.gif" width="1" height="3" alt=""></div>
+            <div class="noNav">
+                <a href="/en/user/register">Register for Site</a>
+            </div>
+
+             <div class="bar"><img src="/images/hr_dots1.gif" alt="" height="3" width="150"></div>
+           <div class="noNav" style="color: #666666; padding: 0;">
+              Use of JCP site is subject to the
+              <a href="/en/home/terms" style="display:inline;padding: 0">JCP Terms of Use</a> and the
+              <a href="http://www.oracle.com/us/legal/privacy/index.html" style="display:inline;padding: 0" href="">Oracle Privacy Policy</a>
+          </div>
+
+            
+
+            <div style="clear:both"><img src="/images/global/spacer.gif" width="1" height="25" alt=""></div>
+
+            <!--begin JCP info -->
+            <img src="/images/hd_jcp-info.gif" alt="JCP Info" height="18" width="150">
+
+            <li><a href="/en/procedures/overview" class="p7PMtrg">About JCP</a>
+                <ul>
+                    <li><a href="/en/procedures/overview">Program Overview</a></li>
+                    <li><a href="/en/procedures/jcp2">JCP Process Document</a></li>
+                    <li><a href="/en/whatsnew/calendar">Calendar</a></li>
+                    <li><a href="/en/participation/members">JCP Members</a></li>
+                    <li><a href="/en/participation/committee">Executive Committee</a></li>
+                    <li><a href="/en/whatsnew/elections">Elections</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/en/participation/overview" class="p7PMtrg">Get Involved</a>
+		<ul>
+                    <li><a href="/en/participation/overview">Overview</a></li>
+                    <li><a href="/en/participation/membership">Becoming a JCP Member</a></li>
+		</ul>
+            </li>
+
+            <li><a href="/en/resources/contents" class="p7PMtrg">Community Resources</a>
+                <ul>
+                    <li><a href="/en/resources/contents">Overview</a></li>
+                    <li><a href="/en/resources/tutorials">Tutorials</a></li>
+                    <li><a href="/en/resources/multimedia">JCP Podcasts</a></li>
+                    <li><a href="/en/resources/guide">Spec Lead Guide</a></li>
+                    <li><a href="/en/resources/tdk">TCK Tool & Info</a></li>
+                    <li><a href="/en/resources/license_reference">License Reference</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/en/press/pmo" class="p7PMtrg">Community News</a>
+                <ul>
+                    <li><a href="/en/press/pmo">News</a></li>
+                    <li><a href="/en/press/news/awards/awards_main">Programs &amp; Awards</a></li>
+                    <li><a href="/en/press/releases">Press Releases</a></li>
+                    <li><a href="/en/press/success">Success Stories</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/en/introduction/faq">FAQ</a></li>
+
+            <li><a href="/en/resources/contacts">Contact Us</a></li>
+
+            <div style="clear: both;"><img src="/images/spacer.gif" alt="" height="25" width="1"></div>
+
+            <!--[if lte IE 6]><style>#p7PMnav a{height:1em;}#p7PMnav li{height:1em;float:left;clear:both;width:100%}</style><![endif]-->
+            <!--[if IE 6]><style>#p7PMnav li{clear:none;}</style><![endif]-->
+            <!--[if IE 7]><style>#p7PMnav a{zoom:100%;}#p7PMnav li{float:left;clear:both;width:100%;}</style><![endif]-->
+        </ul>
+
+        
+
+        <!--begin ad space -->
+        <div class="ads">
+            <a href="http://java.com/java/download/index.jsp?cid=jdp78399" target="_blank"><img style="display: ;" src="/images/ad_banner2.gif" alt="Ad Banner" border="1" height="70" width="150"></a>
+        </div>
+        <!--end ad space -->
+
+<!-- ** Menu End ** //-->
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;<br>
+
+    
+
+                    &nbsp;<br>
+                    <img src="/images/common/trans.gif" alt="" width="1" height="150"><br>
+
+              
+
+
+
+                </td>
+                <!-- ** END: Navigation Column ** //-->
+
+                <!-- ** BEGIN: Gutter Column ** //-->
+		<td width="10" nowrap><img src="/images/common/trans.gif" alt="" width="10" height="1"></td>
+                <!-- ** END: Gutter Column ** //-->
+
+                <!-- ** BEGIN: Content Column ** //-->
+                <td width="100%" valign="top">
+
+    
+<script type="text/javascript">
+
+String.prototype.trim = function() {
+        return this.replace(/^\s+|\s+$/g,"");
+}
+String.prototype.ltrim = function() {
+        return this.replace(/^\s+/,"");
+}
+String.prototype.rtrim = function() {
+        return this.replace(/\s+$/,"");
+}
+
+function validate_search() {
+	if (document.search.id.value == "Search JSRs" || document.search.id.value.trim().length == 0) {
+		alert("Search terms must be entered first");
+		return false;
+	}
+	return true;
+}
+
+function validate_findjsr() {
+	if (document.findjsr.id.value == "Search JSRs" || document.findjsr.id.value.trim().length == 0) {
+		alert("Search terms must be entered first");
+		return false;
+	}
+	return true;
+}
+
+function nullify_if_equal(field, str) {
+	// alert("val=" + field.value);
+	if (field.value == str) {
+		field.value = "";
+	}
+}
+
+</script>
+<!-- ** END: header.jsp ** //-->
+
+
+
+
+
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2//EN">
+<HTML>
+<HEAD>
+	<META HTTP-EQUIV="CONTENT-TYPE" CONTENT="text/html; charset=iso-8859-1">
+	<TITLE></TITLE>
+	<META NAME="GENERATOR" CONTENT="StarOffice 6.0  (Solaris Sparc)">
+	<META NAME="CREATED" CONTENT="20021118;17130400">
+	<META NAME="CHANGED" CONTENT="20030130;8455700">
+	<STYLE>
+	<!--
+		@page { size: 21.59cm 27.94cm; margin: 2.54cm }
+		P { margin-bottom: 0.21cm }
+	-->
+	</STYLE>
+</HEAD>
+<BODY LANG="en-US">
+<P><B><FONT COLOR="#000000">Session Description Protocol (&quot;SDP&quot;)
+Specification (&quot;Specification&quot;)</FONT></B> <BR><B>Version:
+20030103</B><BR><B>Status: Pre-FCS</B> <BR><B>Specification Lead: 
+<FONT COLOR="#000000">Dynamicsoft </FONT><FONT COLOR="#ff0000">
+</FONT>(&quot;Specification Lead&quot;)</B> <BR><B>Release: February
+5, 2003</B></P>
+<P STYLE="margin-bottom: 0cm"><B>Copyright 2003  <FONT COLOR="#000000">Dynamicsoft
+</FONT><BR>All rights reserved. </B>
+</P>
+<P STYLE="margin-bottom: 0cm"><BR>
+</P>
+<P STYLE="margin-bottom: 0cm"><B>NOTICE</B></P>
+<P STYLE="margin-bottom: 0cm">The Specification is protected by
+copyright and the information described therein may be protected by
+one or more U.S. patents, foreign patents, or pending applications.
+Except as provided under the following license, no part of the
+Specification may be reproduced in any form by any means without the
+prior written authorization of Specification Lead and its licensors,
+if any. Any use of the Specification and the information described
+therein will be governed by the terms and conditions of this
+Agreement. 
+</P>
+<P STYLE="margin-bottom: 0cm"><BR>
+</P>
+<P STYLE="margin-bottom: 0cm">Subject to the terms and conditions of
+this license, Specification Lead hereby grants you a fully-paid,
+non-exclusive, non-transferable, limited license (without the right
+to sublicense) under Specification Lead's intellectual property
+rights to review the Specification only for the purposes of
+evaluation. This license includes the right to discuss the
+Specification (including the right to provide limited excerpts of
+text to the extent relevant to the point[s] under discussion) with
+other licensees (under this or a substantially similar version of
+this Agreement) of the Specification. Other than this limited
+license, you acquire no right, title or interest in or to the
+Specification or any other Specification Lead intellectual property,
+and the Specification may only be used in accordance with the license
+terms set forth herein. This license will expire on the earlier of:
+(i) two (2) years from the date of Release listed above; (ii) the
+date on which the final version of the Specification is publicly
+released; or (iii) the date on which the Java Specification Request
+(JSR) to which the Specification corresponds is withdrawn. In
+addition, this license will terminate immediately without notice from
+Specification Lead if you fail to comply with any provision of this
+license. Upon termination, you must cease use of or destroy the
+Specification.</P>
+<P STYLE="margin-bottom: 0cm"><BR>
+</P>
+<P STYLE="margin-bottom: 0cm"><B>TRADEMARKS</B></P>
+<P STYLE="margin-bottom: 0cm"><FONT COLOR="#000000">No right, title,
+or interest in or to any trademarks, service marks, or trade names of
+Sun or Sun's licensors, the Specification Lead or the Specification
+Lead's licensors is granted hereunder.&nbsp; Sun, Sun Microsystems,
+the Sun logo, Java,<SPAN STYLE="background: transparent"> the Java
+Coffee Cup logo, and JAIN </SPAN>are trademarks or registered
+trademarks of Sun Microsystems, Inc. in the U.S. and other countries.</FONT></P>
+<P STYLE="margin-bottom: 0cm"><BR>
+</P>
+<P STYLE="margin-bottom: 0cm"><B>DISCLAIMER OF WARRANTIES</B></P>
+<P STYLE="margin-bottom: 0cm">THE SPECIFICATION IS PROVIDED &quot;AS
+IS&quot; AND IS EXPERIMENTAL AND MAY CONTAIN DEFECTS OR DEFICIENCIES
+WHICH CANNOT OR WILL NOT BE CORRECTED BY SPECIFICATION LEAD.
+SPECIFICATION LEAD MAKES NO REPRESENTATIONS OR WARRANTIES, EITHER
+EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO, WARRANTIES OF
+MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, OR
+NON-INFRINGEMENT THAT THE CONTENTS OF THE SPECIFICATION ARE SUITABLE
+FOR ANY PURPOSE OR THAT ANY PRACTICE OR IMPLEMENTATION OF SUCH
+CONTENTS WILL NOT INFRINGE ANY THIRD PARTY PATENTS, COPYRIGHTS, TRADE
+SECRETS OR OTHER RIGHTS. This document does not represent any
+commitment to release or implement any portion of the Specification
+in any product.</P>
+<P STYLE="margin-bottom: 0cm"><BR>
+</P>
+<P STYLE="margin-bottom: 0cm">THE SPECIFICATION COULD INCLUDE
+TECHNICAL INACCURACIES OR TYPOGRAPHICAL ERRORS. CHANGES ARE
+PERIODICALLY ADDED TO THE INFORMATION THEREIN; THESE CHANGES WILL BE
+INCORPORATED INTO NEW VERSIONS OF THE SPECIFICATION, IF ANY.
+SPECIFICATION LEAD MAY MAKE IMPROVEMENTS AND/OR CHANGES TO THE
+PRODUCT(S) AND/OR THE PROGRAM(S) DESCRIBED IN THE SPECIFICATION AT
+ANY TIME. Any use of such changes in the Specification will be
+governed by the then-current license for the applicable version of
+the Specification.</P>
+<P STYLE="margin-bottom: 0cm"><BR>
+</P>
+<P STYLE="margin-bottom: 0cm"><B>LIMITATION OF LIABILITY</B></P>
+<P STYLE="margin-bottom: 0cm">TO THE EXTENT NOT PROHIBITED BY LAW, IN
+NO EVENT WILL SPECIFICATION LEAD OR ITS LICENSORS BE LIABLE FOR ANY
+DAMAGES, INCLUDING WITHOUT LIMITATION, LOST REVENUE, PROFITS OR DATA,
+OR FOR SPECIAL, INDIRECT, CONSEQUENTIAL, INCIDENTAL OR PUNITIVE
+DAMAGES, HOWEVER CAUSED AND REGARDLESS OF THE THEORY OF LIABILITY,
+ARISING OUT OF OR RELATED TO ANY FURNISHING, PRACTICING, MODIFYING OR
+ANY USE OF THE SPECIFICATION, EVEN IF SPECIFICATION LEAD AND/OR ITS
+LICENSORS HAVE BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.</P>
+<P STYLE="margin-bottom: 0cm"><BR>
+</P>
+<P STYLE="margin-bottom: 0cm">You will hold Specification Lead (and
+its licensors) harmless from any claims based on your use of the
+Specification for any purposes other than the limited right of
+evaluation as described above, and from any claims that later
+versions or releases of any Specification furnished to you are
+incompatible with the Specification provided to you under this
+license.</P>
+<P STYLE="margin-bottom: 0cm"><BR>
+</P>
+<P STYLE="margin-bottom: 0cm"><B>RESTRICTED RIGHTS LEGEND</B></P>
+<P STYLE="margin-bottom: 0cm">If this Software is being acquired by
+or on behalf of the U.S. Government or by a U.S. Government prime
+contractor or subcontractor (at any tier), then the Government's
+rights in the Software and accompanying documentation shall be only
+as set forth in this license; this is in</P>
+<P STYLE="margin-bottom: 0cm">accordance with 48 C.F.R. 227.7201
+through 227.7202-4 (for Department of Defense (DoD) acquisitions) and
+with 48 C.F.R. 2.101 and 12.212 (for non-DoD acquisitions).</P>
+<P STYLE="margin-bottom: 0cm"><BR>
+</P>
+<P STYLE="margin-bottom: 0cm"><B>REPORT</B></P>
+<P STYLE="margin-bottom: 0cm">You may wish to report any ambiguities,
+inconsistencies or inaccuracies you may find in connection with your
+evaluation of the Specification (&quot;Feedback&quot;). To the extent
+that you provide Specification Lead with any Feedback, you hereby:
+(i) agree that such Feedback is provided on a non-proprietary and
+non-confidential basis, and (ii) grant Specification Lead a
+perpetual, non-exclusive, worldwide, fully paid-up, irrevocable
+license, with the right to sublicense through multiple levels of
+sublicensees, to incorporate, disclose, and use without limitation
+the Feedback for any purpose related to the Specification and future
+versions, implementations, and test suites thereof.</P>
+<P STYLE="margin-bottom: 0cm"><BR>
+</P>
+<P ALIGN=JUSTIFY STYLE="margin-bottom: 0cm"><FONT FACE="Thorndale"><FONT SIZE=3><B>GENERAL
+TERMS</B></FONT></FONT></P>
+<P ALIGN=JUSTIFY STYLE="margin-bottom: 0cm; font-weight: medium"><FONT FACE="Thorndale"><FONT SIZE=3>Any
+action related to this Agreement will be governed by California law
+and controlling U.S. federal law. The U.N. Convention for the
+International Sale of Goods and the choice of law rules of any
+jurisdiction will not apply.</FONT></FONT></P>
+<P ALIGN=JUSTIFY STYLE="margin-bottom: 0cm"><BR>
+</P>
+<P ALIGN=JUSTIFY STYLE="margin-bottom: 0cm; font-weight: medium"><FONT FACE="Thorndale"><FONT SIZE=3>The
+Specification is subject to U.S. export control laws and may be
+subject to export or import regulations in other countries. Licensee
+agrees to comply strictly with all such laws and regulations and
+acknowledges that it has the responsibility to obtain such licenses
+to export, re-export or import as may be required after delivery to
+Licensee.</FONT></FONT></P>
+<P ALIGN=JUSTIFY STYLE="margin-bottom: 0cm"><BR>
+</P>
+<P ALIGN=JUSTIFY STYLE="margin-bottom: 0cm; font-weight: medium"><FONT FACE="Thorndale"><FONT SIZE=3>Neither
+party may assign or otherwise transfer any of its rights or
+obligations under this Agreement, without the prior written consent
+of the other party, except that Specification Lead may assign this
+Agreement to an affiliated company.</FONT></FONT></P>
+<P ALIGN=JUSTIFY STYLE="margin-bottom: 0cm"><BR>
+</P>
+<P STYLE="font-weight: medium"><FONT FACE="Thorndale"><FONT SIZE=3>This
+Agreement is the parties' entire agreement relating to its subject
+matter. It supersedes all prior or contemporaneous oral or written
+communications, proposals, conditions, representations and warranties
+and prevails over any conflicting or additional terms of any quote,
+order, acknowledgment, or other communication between the parties
+relating to its subject matter during the term of this Agreement. No
+modification to this Agreement will be binding, unless in writing and
+signed by an authorized representative of each party.</FONT></FONT></P>
+<P><I><FONT COLOR="#000000">(LFI#124417/Form ID#011801)</FONT></I></P>
+<DIV TYPE=FOOTER>
+	<P STYLE="margin-top: 0.51cm; margin-bottom: 0cm"><BR>
+	</P>
+</DIV>
+</BODY>
+</HTML>
+
+
+
+<!-- ** BEGIN: footer.jsp ** //-->
+
+
+
+
+
+
+
+
+</td>
+</tr>
+</table>
+
+<!-- ** END: Content Table ** //-->
+
+<!-- ** BEGIN: Footer Table ** //-->
+
+<div id="footer" style="clear: both;">
+    <div class="footleft">
+        <a href="/en/resources/contacts">Contact Us</a>
+    </div>
+	
+    <div class="botbar"><img src="/images/spacer.gif" alt="" height="23" width="1"></div>
+
+    <div class="footleft2">
+         &copy; 2019, Oracle Corporation and/or its affiliates. 
+        <a href="/en/home/terms">Terms of Use</a>. <a href="http://www.oracle.com/us/legal/privacy/index.html">Privacy Policy</a>. <a href="http://www.oracle.com/us/legal/third-party-trademarks/third-party-trademarks-078568.html">Trademarks</a>
+    </div>
+
+    <div class="footright">
+        <img src="/images/common/logo_oracle_footer.gif" alt="Oracle Corporation" height="22" width="91">
+    </div>
+
+    <div style="clear: both;"><img src="/images/spacer.gif" alt="" height="30" width="1"></div>
+</div>
+
+<!-- ** END: Footer Table ** //-->
+
+
+
+<!-- ** Menu Start ** //-->
+
+
+
+</body>
+</html>
+<!-- ** END: footer.jsp ** //-->
+

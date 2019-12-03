@@ -1,0 +1,633 @@
+
+
+<!-- ** BEGIN: header.jsp ** //-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3c.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+<head>
+    
+
+   
+    <link href="/includes/css/menu.css" rel="stylesheet" type="text/css"></link>
+    <link href="/includes/css/style.css" rel="stylesheet" type="text/css"></link>
+    <!--[if lt IE 6]><link href="/includes/css/style5.css" rel="stylesheet" type="text/css" ></link><![endif]-->
+    <!--[if gte IE 5]><link href="/includes/css/style6.css" rel="stylesheet" type="text/css" ></link><![endif]-->
+    <link href="/includes/css/tabs.css"  rel="stylesheet" type="text/css"></link>
+
+    <script type="text/javascript" src="/includes/scripts/tabs.js"></script>
+    <script type="text/javascript" src="/includes/scripts/menu.js"></script>
+   
+
+    
+
+    
+        <title>The Java Community Process(SM) Program - Introduction - FAQ</title>
+    
+
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+
+
+<body onload="P7_initPM(0,1,0,0,-1)">
+
+    <a name="top"></a>
+
+    <div id="header">
+	<div id="logo">
+		<a href="/en/home/index"><img src="/images/spacer.gif" alt="Java Community Process" height="81" width="151"></a>
+	</div>
+	<div id="tools">
+		<div class="search">
+			<form name="search" action="/en/jsr/summary" method="get" onsubmit="return validate_search()">
+				<input name="id" value="Search JSRs" size="16" class="form" onfocus="nullify_if_equal(this, 'Search JSRs')" type="text">
+				<a href="javascript:document.search.submit()" onclick="return validate_search()"><img src="/images/button_go.gif" width="21" height="16" border="0" alt="Submit this Search" name="sub_search"></a>
+			</form>
+		</div>
+		<div class="tools">
+			<a href="/en/press/pressroom">Press Room</a> &nbsp;|&nbsp;
+			<a href="http://java.com/java/download/index.jsp?cid=jdp78399">Get Java Here</a> &nbsp;|&nbsp;
+			<!-- <a href="javascript:void(0)">Print Format</a> &nbsp;|&nbsp;&nbsp; -->
+		</div>
+
+	</div>
+	<div style="clear: right;"></div>
+
+        
+
+	<div class="topbar"><img src="/images/spacer.gif" alt="" height="3" width="154"></div>
+	<div id="update"> </div>
+    </div>
+
+
+    
+
+        <!-- ** BEGIN: Content Table ** //-->
+
+        <table width="100%" border="0" cellpadding="0" cellspacing="0">
+
+            <tr>
+
+                <!-- ** BEGIN: Navigation Column ** //-->
+                <td width="150" id="leftcontent" valign="top">
+                    <!-- Navigation Placeholder //-->
+
+                    
+
+                    <div class="bar"><img src="/images/hr_dots1.gif" alt="" height="3" width="150"></div>
+
+        <!-- begin find JSRs form -->
+        <!-- IMPORTANT! do not convert this form to Struts < html : form > tag.  javascript change of form.action property fails. -->
+        <img src="/images/hd_find-jsrs.gif" alt="Find JSRs" height="18" width="150">
+        <form name="findjsr" action="/en/jsr/summary" method="get" class="pt5" onsubmit="return validate_findjsr()">
+            <input name="id" size="18" class="form" value="Search JSRs" onfocus="nullify_if_equal(this, 'Search JSRs')" type="text">
+	    <a href="javascript:document.findjsr.submit()" onclick="return validate_findjsr()"><img src="/images/button_go.gif" width="21" height="16" border="0" alt="Submit this Search" name="sub_search"></a>
+        </form><br><br>
+
+        <!-- ** Menu Start ** //-->
+
+        <ul id="p7PMnav">
+            <li><a href="/en/jsr/platform">JSRs by Platform</a></li>
+            <li><a href="/en/jsr/tech">JSRs by Technology</a></li>
+            <li><a href="/en/jsr/stage">JSRs by Stage</a></li>
+            <li><a href="/en/jsr/ec">JSRs by Committee</a></li>
+            <li><a href="/en/jsr/all">List of All JSRs</a></li>
+
+            <!--end find JSRs form -->
+            <div style="clear: both;"><img src="/images/spacer.gif" alt="" height="25" width="1"></div>
+
+            <!--begin my JCP -->
+            <img src="/images/hd_my-jcp.gif" alt="My JCP" height="18" width="150">
+            
+
+          <form name="login" method="get" action="/en/user/login" >
+            <input name="Sign-in" type="submit" title="Sign-in" value="Sign-in" />
+          </form>
+
+            <div style="clear:both"><img src="/images/global/spacer.gif" width="1" height="3" alt=""></div>
+            <div class="noNav">
+                <a href="/en/user/register">Register for Site</a>
+            </div>
+
+             <div class="bar"><img src="/images/hr_dots1.gif" alt="" height="3" width="150"></div>
+           <div class="noNav" style="color: #666666; padding: 0;">
+              Use of JCP site is subject to the
+              <a href="/en/home/terms" style="display:inline;padding: 0">JCP Terms of Use</a> and the
+              <a href="http://www.oracle.com/us/legal/privacy/index.html" style="display:inline;padding: 0" href="">Oracle Privacy Policy</a>
+          </div>
+
+            
+
+            <div style="clear:both"><img src="/images/global/spacer.gif" width="1" height="25" alt=""></div>
+
+            <!--begin JCP info -->
+            <img src="/images/hd_jcp-info.gif" alt="JCP Info" height="18" width="150">
+
+            <li><a href="/en/procedures/overview" class="p7PMtrg">About JCP</a>
+                <ul>
+                    <li><a href="/en/procedures/overview">Program Overview</a></li>
+                    <li><a href="/en/procedures/jcp2">JCP Process Document</a></li>
+                    <li><a href="/en/whatsnew/calendar">Calendar</a></li>
+                    <li><a href="/en/participation/members">JCP Members</a></li>
+                    <li><a href="/en/participation/committee">Executive Committee</a></li>
+                    <li><a href="/en/whatsnew/elections">Elections</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/en/participation/overview" class="p7PMtrg">Get Involved</a>
+		<ul>
+                    <li><a href="/en/participation/overview">Overview</a></li>
+                    <li><a href="/en/participation/membership">Becoming a JCP Member</a></li>
+		</ul>
+            </li>
+
+            <li><a href="/en/resources/contents" class="p7PMtrg">Community Resources</a>
+                <ul>
+                    <li><a href="/en/resources/contents">Overview</a></li>
+                    <li><a href="/en/resources/tutorials">Tutorials</a></li>
+                    <li><a href="/en/resources/multimedia">JCP Podcasts</a></li>
+                    <li><a href="/en/resources/guide">Spec Lead Guide</a></li>
+                    <li><a href="/en/resources/tdk">TCK Tool & Info</a></li>
+                    <li><a href="/en/resources/license_reference">License Reference</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/en/press/pmo" class="p7PMtrg">Community News</a>
+                <ul>
+                    <li><a href="/en/press/pmo">News</a></li>
+                    <li><a href="/en/press/news/awards/awards_main">Programs &amp; Awards</a></li>
+                    <li><a href="/en/press/releases">Press Releases</a></li>
+                    <li><a href="/en/press/success">Success Stories</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/en/introduction/faq">FAQ</a></li>
+
+            <li><a href="/en/resources/contacts">Contact Us</a></li>
+
+            <div style="clear: both;"><img src="/images/spacer.gif" alt="" height="25" width="1"></div>
+
+            <!--[if lte IE 6]><style>#p7PMnav a{height:1em;}#p7PMnav li{height:1em;float:left;clear:both;width:100%}</style><![endif]-->
+            <!--[if IE 6]><style>#p7PMnav li{clear:none;}</style><![endif]-->
+            <!--[if IE 7]><style>#p7PMnav a{zoom:100%;}#p7PMnav li{float:left;clear:both;width:100%;}</style><![endif]-->
+        </ul>
+
+        
+
+        <!--begin ad space -->
+        <div class="ads">
+            <a href="http://java.com/java/download/index.jsp?cid=jdp78399" target="_blank"><img style="display: ;" src="/images/ad_banner2.gif" alt="Ad Banner" border="1" height="70" width="150"></a>
+        </div>
+        <!--end ad space -->
+
+<!-- ** Menu End ** //-->
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;<br>
+
+    
+
+                    &nbsp;<br>
+                    <img src="/images/common/trans.gif" alt="" width="1" height="150"><br>
+
+              
+
+
+
+                </td>
+                <!-- ** END: Navigation Column ** //-->
+
+                <!-- ** BEGIN: Gutter Column ** //-->
+		<td width="10" nowrap><img src="/images/common/trans.gif" alt="" width="10" height="1"></td>
+                <!-- ** END: Gutter Column ** //-->
+
+                <!-- ** BEGIN: Content Column ** //-->
+                <td width="100%" valign="top">
+
+    
+<script type="text/javascript">
+
+String.prototype.trim = function() {
+        return this.replace(/^\s+|\s+$/g,"");
+}
+String.prototype.ltrim = function() {
+        return this.replace(/^\s+/,"");
+}
+String.prototype.rtrim = function() {
+        return this.replace(/\s+$/,"");
+}
+
+function validate_search() {
+	if (document.search.id.value == "Search JSRs" || document.search.id.value.trim().length == 0) {
+		alert("Search terms must be entered first");
+		return false;
+	}
+	return true;
+}
+
+function validate_findjsr() {
+	if (document.findjsr.id.value == "Search JSRs" || document.findjsr.id.value.trim().length == 0) {
+		alert("Search terms must be entered first");
+		return false;
+	}
+	return true;
+}
+
+function nullify_if_equal(field, str) {
+	// alert("val=" + field.value);
+	if (field.value == str) {
+		field.value = "";
+	}
+}
+
+</script>
+<!-- ** END: header.jsp ** //-->
+
+
+
+
+
+
+
+
+
+		<div class="header2">Introduction</div>
+		<div class="header1">FAQ: General JCP Questions</div>		
+
+		&nbsp;<br>
+<div class="anybar"><img src="/images/global/bar_green.gif" alt="" width="12" height="4"></div>
+<p>
+
+
+
+
+
+<span class="headLinks"><font size="-1">
+General&nbsp;questions&nbsp;| &nbsp;<a href="faq-membership">Membership&nbsp;questions</a>&nbsp;| &nbsp;<a href="faq-jsr">JSR&nbsp;and&nbsp;Expert&nbsp;Group&nbsp;questions</a>&nbsp;| &nbsp;<a href="faq-speclead">Spec&nbsp;Lead&nbsp;process&nbsp;questions</a>&nbsp;| &nbsp;<a href="faq-sso">Login&nbsp;questions</a>&nbsp;| &nbsp;<a href="faq-site">Web&nbsp;Site&nbsp;questions</a>&nbsp;| &nbsp;<a href="glossary">Glossary</a>
+
+</font></span>
+&nbsp;<br>
+
+		&nbsp;<br>
+		<div class="header3">General Questions</div>
+	<ul>
+           <li><a href="#jcp">What is the Java Community Process (JCP)?</a>
+           <li><a href="#participate">How can I participate in the JCP?</a>
+           <li><a href="#member">What is a JCP Member?</a>
+           <li><a href="#jsr">What is a Java Specification Request (JSR)?</a>
+           <li><a href="#speclead">What is a Specification Lead?</a>
+           <li><a href="#pmo">What is the Program Management Office (PMO)?</a>
+           <li><a href="#ec">What is the Executive Committee (EC) and what is its purpose?</a>
+           <li><a href="#ecduties">What are the Executive Committee members' duties and expected time commitments?</a>
+           <li><a href="#oracle">What prevents Oracle from controlling or dominating the groups that develop and maintain Java specifications?</a> 
+           <li><a href="#eg">What is an Expert Group?</a>
+           <li><a href="#ri">What is a Reference Implementation (RI)?</a>
+           <li><a href="#tck">What is a Technology Compatibility Kit (TCK)?</a>
+           <li><a href="#ritckimplementation">To what extent does a Reference Implementation (RI) and a Technology Compatibility Kit (TCK) need to support a specification? In other words, do they need to implement and test everything in the specification? Also, what about vendor implementations--if a vendor says his product supports a Java technology, does the product need to implement all the APIs defined in that technology?</a>
+        </ul>	
+		&nbsp;<br>
+                <div class="header3">Participation Questions</div>
+                <ul>
+                   <li><a href="#participation">How many people participate in the JCP?</a>
+                   <li><a href="#findajsr">How do I find a JSR to review?</a>
+                   <li><a href="#review">How can I find a specification to review?</a>
+                   <li><a href="#member">How do I become a JCP Member?</a>
+                   <li><a href="#contributor">How do I get listed as a Contributor to a JSR?</a>
+                   <li><a href="#expert">How do I become an Expert on an Expert Group?</a>
+                   <li><a href="#sl">How do I become a Specification Lead?</a>
+                   <li><a href="#ecelection">How do I become an Executive Committee Member?</a>
+                   <li><a href="#obligation">If I become a JCP member, do I have any obligations I need to fulfill?</a>
+                   <li><a href="#cost">Does it cost anything to be a JCP member? Why?</a>
+                   <li><a href="#memberassociation">My employer is a JCP Member. How do I participate in the JCP as part of that Membership?</a>
+                   <li><a href="#when">How do I find out when a specification is available for review?</a>
+                   <li><a href="#egnom">How does an Expert Group get picked?</a>
+                   <li><a href="#comment">I want to provide comments on a draft specification, but the review period has already ended. What do I do?</a>
+                   <li><a href="#changes">I've heard a lot about the changes that have come with the latest JCP revisions, and I wonder: how do these changes affect me?</a>
+
+                </ul>
+                &nbsp;<BR>
+
+                <div class="header3">General Questions</div>
+
+		<a name="jcp"></a><b>Q: What is the Java Community Process (JCP)?</b><br>
+		<b>A:</b> The Java Community Process (JCP) is the open, participative process to develop and revise the Java&#153; technology specifications, reference implementations, and test suites introduced in 1998. The Java Community Process (JCP) program fosters the evolution of the Java platform in cooperation with the international Java developer community.<br>
+		&nbsp;<br>
+
+                <a name="participate"></a><B>Q: How can I participate in the JCP?</b><br>
+                <B>A:</b> 
+                Anyone with an internet connection can review and comment on draft specifications and JSR proposals, as well as read the <a href="https://blogs.oracle.com/jcp/">JCP blog</a>. Anyone with accounts on those sites can follow JCP updates on <a href="http://www.facebook.com/pages/Java-Community-Process/109537315786054">Facebook</a> or <a href="http://twitter.com/#!/jcp_org">Twitter</a>. Anyone with an internet connection and an e-mail address can <a href="http://jcp.org/en/user/register">register as a user of the site</a>. Any registered user can nominate himself as a Contributor or Expert Group member (but must be JCP Members to serve), maintain a watch list of JSRs of interest, request to be associated with an existing JCP Member, or <a href="http://jcp.org/en/participation/membership">become a JCP Member</a>. <BR>
+&nbsp;
+<BR>
+
+<A name="member"></a><B>Q: What is a JCP Member?</b><BR>
+<B>A:</b> Any organization or individual which has signed a Java Specification Participation Agreement (JSPA), Associate Membership Agreement (AMA), or a Partner Membership Agreement (PMA) has <a href="/en/participation/membership">become a JCP Member</a>. Signing the AMA confers Associate Membership; Associate Members can serve as Contributors to a JSR and vote for the Associate seats on the Executive Committee. Signing the PMA grants Partner Membership; Partner Members can serve on the Executive Committee and vote for Ratified and Elected seats. Signing the JSPA grants Full Membership; Full Members can propose new JSRs, serve on Expert Groups, vote in the Executive Committee elections, and run for a seat on an Executive Committee. <BR>&nbsp;<BR>
+
+<a name="contributor"></a><B>Q: How do I get listed as a Contributor to a JSR?</B><BR>
+<B>A:</B> Any registered user can <a href="/en/jsr/egnom">nominate to be listed as a Contributor to a JSR</a>, but only Associate Members or Full Members can be accepted as Contributors. So if you've filled out the form, make sure to <a href="/en/participation/membership">become an Associate or Full Member</a> soon after. The Specification Lead of the JSR will review your qualifications and vote to either accept or reject your request. Once the Specification Lead has voted yes and you are either an Associate Member or a Member Representative of a Full Member, you will be listed as a Contributor.<BR>&nbsp;<BR> 
+
+<a name="expert"></a><B>Q: How do I become an Expert on an Expert Group?</b><BR>
+<B>A:</b> Any registered user can <a href="/en/jsr/egnom">fill out the Expert Group nomination form</a>, but only Full Members can participate on an EG, so if you've filled out the form, make sure to <a href="/en/participation/membership">become a Full Member</a> soon after. Once you are a Full Member (or are representing one) and have nominated onto an Expert Group, the Specification Lead of the JSR will review your qualifications and vote to either accept or reject you from the Expert Group. If you are accepted, you will instantly be on the Expert Group.<P>
+
+ You can view the status of your nominations under <a href="/en/eg/myjsrs">"My JSRs"</a> when you are logged in to the jcp.org site. Additionally, JCP 2.8 and later JSRs are required to publicly provide the reasons for accepting or rejecting every EG nomination. Details of how they provide that information are described on the JSR page of each JSR 2.8 or later JSR.<BR>
+&nbsp;
+<BR>
+
+<a name="sl"></a><B>Q: How do I become a Specification Lead?</b><BR>
+<B>A:</b> Once you are a Member Representative of a Full Member (or are a Full Member yourself, as an individual), you can <a href="/en/jsr/proposal">submit a proposal for a new JSR</a>. In that form, you can specify yourself as the person who will be Specification Lead once the JSR is posted. Additionally, if you represent a Full Member that is a company or other organization, that Full Member may choose to add you as a Specification Lead to a JSR that the Full Member already leads.
+<BR>
+&nbsp;
+<BR>
+
+<a name="ecelection"></a><B>Q: How do I become an Executive Committee Member?</b><BR>
+<B>A:</b> Partner Members and Full Members can nominate themselves as a candidate for a seat on the Executive Committee (for either an Elected or Associate seat) during the annual <a href="/en/whatsnew/elections">Executive Committee elections</a>. Then it's up to all the JCP Members to select you by voting in the elections. If you win the election, the PMO will contact you to welcome you to the Executive Committee for your two-year term.<BR>
+&nbsp;
+<BR>
+
+                <a name="jsr"></a><b>Q: What is a Java Specification Request (JSR)?</b><br>
+                <b>A:</b> A JSR is a Java Specification Request. This is the document submitted to the PMO by one or more members to propose the development of a
+new specification or significant revision to an existing specification. There are currently many Java technology specifications in development in the JCP
+program, including the next versions of Java&#153;  Micro Edition (Java ME&#153;), Java&#153; Platform Enterprise Edition (Java EE&#153;), and Java&#153;  Standard Edition (Java SE&#153;). JSR also refers to the specification development efforts arising from these proposals. To see the JSRs, refer to <a href="/en/jsr/all">the complete list of all JSRs</a>.<br>
+                &nbsp;<br>
+
+<a name="speclead"></a><B>Q: What is a Specification Lead?</b><BR>
+<B>A:</b> A Specification Lead is a representative of a Full Member who leads a group of experts in developing a specification described in a Java Specification Request (JSR).<BR>
+&nbsp;
+<BR>
+
+                <a name="pmo"></a><b>Q: What is the Program Management Office (PMO)?</b><br>
+                <b>A:</b> The Program Management Office is the group within Oracle designated to oversee the Java Community Process and manage the daily running of the program. The actual development of the specification occurs within the Expert Groups. To contact the PMO, send email to pmo<fake_tag>&#064;</fake_tag>jcp.org.<br>
+                &nbsp;<br>
+    
+                <a name="ec"></a><b>Q: What is the EC and what is its purpose?</b><br>
+                <b>A:</b> With <a href="/en/procedures/jcp2_9">JCP 2.9</a> and onward, the JCP has one Executive Committee (EC). Previously there were two Executive Committees, divided by platforms (Standard/Enterprise Edition, and Micro Edition). Voting Members on the EC serve two-year terms. There are fourteen ratified seats, eight elected seats, two associate seats, and the permanent seat held by Oracle America, Inc. The two-year terms are staggered so that half of the seats are normally up for
+ratification/election each year. <br>
+
+                &nbsp;<br>
+                The EC members guide the evolution of Java technologies. The EC represents a cross-section of major stakeholders and other members of the Java Community. Duties are: <br>
+                <ul>
+                <li>Select JSRs for development</li>
+                <li>Approve draft specifications for public review</li>
+                <li>Approve final specifications</li>
+                <li>Review Technology Compatibility Kit (TCK) appeals</li>
+                <li>Approve maintenance revisions and possibly defer some features to a new JSR</li>
+                <li>Approve transfer of maintenance duties between members</li>
+                <li>Provide guidance to the Process Management Office </li>
+                </ul>
+
+        For the list of current EC Members, please visit the <A HREF="/en/participation/committee">Executive Committee info page</A>.
+        <BR>
+                &nbsp;<br>
+                
+                <a name="ecduties"></a><B>Q: What are the Executive Committee members' duties and expected time commitments?</b><BR>
+<p>The EC meets approximately monthly. Most of these meetings are two-hour teleconferences but three are face-to-face meetings that last a day and a half or two days. You can read about the current year's EC meetings in <a href="/en/whatsnew/calendar">the JCP calendar</a>. The amount of preparation required for these meetings is usually minimal. EC members are expected to attend all meetings.
+</p>
+<p>To learn more about EC meetings see the summaries and meeting minutes online at <a href="/en/resources/EC_summaries">http://jcp.org/en/resources/EC_summaries</a>. (Before September 2008 only brief summaries were posted publicly. From that date onwards all meeting materials and full minutes were published.)
+</p>
+<p>In addition to attending meetings, members have the duty of voting on JSRs as
+they pass through the process. EC members have a responsibility to review the technical content and business terms of the JSRs before casting their votes. (This task is often delegated to other people in the member organization.) How thoroughly the materials are reviewed is up to each member, but a reasonable job could probably be done in a few hours - unless the member had a particular technical interest and wanted to review the spec in detail. In an average year there might be about 20 JSRs to review.
+</p>
+<p>Finally, the EC is also working as an Expert Group to modify the JCP's "constitution" and its rules of operation. The majority of the work is carried out  by a sub-group of the EC. Participation in this working group will require a commitment of a few hours a week. For those who do not join the working group, participation will be limited to the regularly scheduled meetings.
+</p>
+<p>In summary, the minimum commitment probably averages about one to one and a half to two days each month. Active participation in the JCP reform working group - which is encouraged - would probably double that.
+</p>
+<br>&nbsp;<BR>
+
+                <a name="oracle"></a><b>Q: What prevents Oracle from controlling
+or dominating the groups that develop and maintain Java specifications?</b><br>
+                <b>A:</b> Oracle, and the other Executive Committee (EC) members, serve as technology oversight groups for the work of the Expert Groups. The EC
+does not micro-manage the day-to-day workings of Expert Groups. Rather, the EC has the opportunity to review the work of each Expert Group at well-defined points
+as their specifications proceed through the JCP. The primary function of the EC
+is to ensure that specifications do not overlap or conflict with one another and
+that the specifications meet the needs of the industry segment for which they are being written.<br>
+                &nbsp;<br>
+ 
+                <a name="eg"></a><B>Q: What is an Expert Group (EG)?</b><BR>
+                <B>A:</b> The group of JCP Members who collaborate on developing a Java Specification through a JSR. The members of an Expert Group are listed on each JSR's summary page.<br>
+                &nbsp;<br>
+                
+                <a name="ri"></a><B>Q: What is a Reference Implementation (RI)?</b><BR>
+                <B>A:</b> A Reference Implementation is one of the outputs of a JSR at Final and Maintenance Releases. The RI is an implementation of the Final Specification that proves that the specification can be implemented. The Final Release (as well as any subsequent Maintenance Release) milestone page for any Final JSR should have a link to the Reference Implementation or an explanation on how to get it.<BR>
+                &nbsp;<BR>
+  
+                <a name="tck"></a><B>Q: What is a Technology Compatibility Kit (TCK)?</b><BR>
+                <B>A:</b> A Technology Compatibility Kit is another output of a JSR at Final and Maintenance Releases. The TCK is used to test implementations of the Final Specification to make sure that they are fully compatible.<br>
+                &nbsp;<BR>
+ 
+                <a name="ritckimplementation"></a><b>Q: To what extent does a Reference Implementation (RI) and a Technology Compatibility Kit (TCK) need to support a specification? In other words, do they need to implement and test everything in the specification? Also, what about vendor implementations--if a vendor says his product supports a Java technology, does the product need to implement all the APIs defined in that technology?</b><br>
+                <b>A:</b> A TCK must test all aspects of a specification that impact how compatible an implementation of that specification would be, such as the
+public API and all mandatory elements of the specification. The Reference Implementation is required to pass the TCK. A vendor's implementation of a specification is only considered compatible if the implementation passes the TCK fully and completely. For more information on developing a TCK, refer to the <a href="/en/resources/tdk/">TCK Tools and Info Page</a>.<br>
+        <BR>
+ 
+                <div class="header3">Participation Questions</div>
+
+		<A name="participation"></a><b>Q: How many people participate in
+the JCP?</b><br>
+                <b>A:</b> More than 12,000 people have registered accounts on jcp.org, and the JCP has more than 1400 Members.<br>
+                &nbsp;<br>
+
+                <a name="findajsr"></a><B>Q: How do I find a JSR to review?</b><BR>
+                <B>A:</b> To find a JSR, try any of these:
+                <ul>
+                <li>Select a JSR from the <a href="/en/jsr/all">list of all JSRs</a>
+                <li>Use the search box near the top of the left navigation bar on jcp.org
+                <li>Follow a link to a JSR from an entry in the <a href="http://blogs.oracle.com/jcp/">JCP Blog</a> 
+                <li>Follow a link to a JSR from an announcement on the <a href="http://www.facebook.com/pages/Java-Community-Process/109537315786054">JCP Facebook page</a>
+                <li>Follow a link from the <a href="http://twitter.com/#!/jcp_org">JCP Twitter feed</a>
+                </ul>
+ 
+                <P>Once you are on the JSR page, click "Proposal" or "Detail (Summary & Proposal)" to read the original JSR Proposal and any updates to it.<BR>
+                &nbsp;<BR>
+
+                <a name="review"></a><B>Q: How can I find a specification to review?</b><BR>
+                <B>A:</b>  
+                There are three possible ways to retrieve a draft specification for review:
+                <ul>
+                <li>To review a milestone draft specification, click "Summary" or "Detail (Summary & Proposal)" so that you can see the Stage Table for the JSR. If the JSR has produced a draft to review, there will be a "Download page" link in this table. The table is organized with the most recent milestones at the top (reverse chronological order). Click the "Download page" link for the milestone posting you wish to review. There's a bunch of information about that milestone posting on the resulting page, including a "Download" button. Clicking that button will present you with the license for the download. Review the license; if you accept it, you will be presented with a download dialog box. Select the location of your download and proceed.
+               <li>Some Specification Leads will post intermediate drafts to the Community tab of their JSR pages. To see whether there are such drafts posted for your review, login to jcp.org, go to the JSR page, and click the "Community" tab at the top of the page. If there are any drafts to download, they will be listed on that tab. Just click the download link next to the one you wish to review to begin the download. 
+               <li>Some Expert Groups have agreed to make their work available to the public, often through a collaborative web site such as java.net. The location of such sites are disclosed on the Community tab of each JSR. Note that JCP 2.8 JSRs are required to make their work in the Expert Group available to the public. Look for the "Public Discussion" links on JCP 2.8 pages. 
+               </ul>
+ 
+                <a name="member"></a><b>Q: How do I become a JCP member?</b><br>
+		<b>A:</b> You or your organization can become a JCP member by signing one of the membership agreements (Associate Membership Agreement, Partner Membership Agreement, or Java Specification Participation Agreement). These are agreements between a company, organization or individual, and Oracle, setting out each Community Member's rights and obligations when participating on the development of Java technology specifications in the JCP. These agreements are filled out using the online forms linked from the <a href="/en/participation/membership">Becoming a Member page.</a><br>
+		
+		&nbsp;<br>
+		<a name="obligation"></a><b>Q: If I become a JCP member, do I have any obligations I need to fulfill?</b><br>
+		<b>A:</b> There are no fees or other obligations of Membership. While there are no obligations, successful JCP Members participate in the JCP in the following ways: <br>
+		<ul>
+		<li>Provides feedback on proposed JSRs and draft specifications </li>
+		<li>Submits JSRs (Full Members only)</li>
+		<li>Nominates people to be on Expert Groups (Full Members only)</li>
+		<li>Leads Experts Groups as a Specification Lead (Full Members only)</li>
+		<li>Builds independent implementations </li>
+		<li>Votes on Executive Committee candidates </li>
+                <li>Serves on the Executive Committee (Partner and Full Members only)</li>
+		</ul>
+		
+		
+		<a name="cost"></a><b>Q: Does it cost anything to be a JCP member? Why?</b><br>
+		<b>A:</b> No. All process cost sharing fees are waived.
+<BR>&nbsp;<BR>
+		
+	        <a name="memberassociation"></a><B>Q: My employer is a Full 
+Member. How do I participate in the JCP as part of that Membership?</b><BR>
+                 <B>A:</b> First, if you haven't already registered, do so now:
+<a href="/en/user/register">https://jcp.org/en/user/register</a>. Then log in, click "My Profile," then click "request Member association." On the resulting form, select your organization from the list and click "submit."<BR>
+This will
+generate an e-mail message to the primary contact of your organization. Then the primary contact will confirm you as a representative of your organization. Once you are representing your employer's Full Membership, you can nominate yourself to Expert Groups and submit JSR proposals.
+<BR>&nbsp;<BR>
+	
+		<a name="when"></a><b>Q: How do I find out when a specification is available for review?</b><br>
+		<b>A:</b> Anyone with an Internet connection can review and comment on all specifications developed using the JCP, all proposals for new or revised specifications, and all proposed error corrections and changes to existing specifications. Reviews are posted as links from the JSR detail pages. For a list of all current stages, refer to the <a href="/en/jsr/stage">List JSRs by JCP Stage page</a>.<br>
+
+		&nbsp;<br>
+		Here's how reviews such as the Public Review, JSR Review, and Maintenance Review, fit into the JCP timeline:<br>
+		
+		&nbsp;<br>
+		<img src="/images/JSR_Life_Cycle_Dec2018.png"><br>
+		
+		&nbsp;<br>
+There are several general announcement channels on the web, which you can follow to receive updates on the process, JCP events, and the development of JSRs.
+
+		<ul>
+		<li>Facebook: The Java Community Process Facebook page posts announcements in the discussion board, sorted by various topics. <a href="http://www.facebook.com/pages/Java-Community-Process/109537315786054">http://www.facebook.com/pages/Java-Community-Process/109537315786054</a> </li> 
+<li>Twitter: The PMO regularly tweets about JSR progress and other developments. <a href="http://twitter.com/#!/jcp_org">http://twitter.com/#!/jcp_org</a> </li>
+<li>JCP blog: The PMO posts announcements and longer articles to the JCP blog online. <a href="http://blogs.oracle.com/jcp/">http://blogs.oracle.com/jcp/</a></li>
+		</ul>
+		&nbsp;<br>
+
+		<a name="egnom"></a><b>Q: How does an Expert Group get picked?</b><br>
+		<b>A:</b> The JSR submitter (Specification Lead) has responsibility for the formation of the Expert Group, including selection of the experts for the Expert Group. Ideally, the Expert Group should be large enough and diverse enough to insure wide adoption of the resulting specification. Any representative of a Full Member can nominate themselves to serve on one of the Expert Groups that write Java specifications. Individuals not affiliated with a member can also nominate themselves to serve on an Expert Group. The PMO forwards nominations received using the JSR web page to the Spec Lead, with an indication of whether the nominee is a member. In order to insure that all experts have agreed to the same terms for the sharing of intellectual property, and other terms of Expert Group participation, only JCP Members can join Expert Groups. Expert Group members can: <br>
+		<ul>
+		<li>Actively shape the content and direction of new and revised Java specifications (Expert Group) </li>
+		<li>Review comments from members and the public and use them to improve the quality of a specification (Community Review, Public Review) </li>
+		<li>Serve as the Specification Lead of the Expert Group and be responsible for choosing the other members of the Expert Group, and for completing the specification, its reference implementation, and associated compatibility test suites (Initiate a new or revised specification, Create the Community Draft, Complete the specification) </li>
+		<li>Assume responsibility for maintaining a specification after it is written (Maintenance Lead) </li>
+		</ul>
+		
+		Nominations for the Expert Group are accepted from the first day that the JSR is available for review from <a href="/en/jsr/all">here</a>.<br>
+		&nbsp;<br>
+		
+                <a name="comment"></a><B>Q: I want to provide comments on a draft specification, but the review period has already ended. What do I do?</b><BR>
+                <B>A:</b> Feel free to submit comments on the most current draft of a specification at any time. The duration of the review periods in the process is more to ensure that the Spec Lead and Expert Group allow enough time for comments, rather than limiting feedback to a certain span of time.	
+		&nbsp;<br>&nbsp;<BR>
+
+               <a name="changes"></a><B>Q: I've heard a lot about the changes that have come with the latest JCP revisions, and I wonder: how do these changes affect me as a general user of the site?</b><BR>
+<B>A:</b> The changes from the last several JCP versions have been summarized on dedicated pages with each release.
+<ul>
+<li>JCP 2.10:<BR>
+<a href="/en/resources/2.10">summary of JCP 2.10 changes</a><BR>
+<a href="/en/procedures/jcp2_10">JCP 2.10 document</a>
+<li>JCP 2.8/2.9:<BR>
+<a href="/en/resources/2.8">summary of JCP 2.8 & 2.9 changes</a><BR>
+<a href="/en/procedures/jcp2_8">JCP 2.8 document</a><BR>
+<a href="/en/procedures/jcp2_9">JCP 2.9 document</a><BR>
+<a href="/aboutJava/communityprocess/JCP_EC_Standing_Rules.pdf">EC Standing Rules</a>
+<li>JCP 2.7:<BR>
+<a href="/en/resources/2.7">summary of JCP 2.7 changes</a><BR>
+<a href="/en/procedures/jcp2_7">JCP 2.7 document</a>
+</ul>
+                &nbsp;<br>&nbsp;<BR>
+
+
+                	
+<!-- ** BEGIN: footer.jsp ** //-->
+
+
+
+
+
+
+
+
+</td>
+</tr>
+</table>
+
+<!-- ** END: Content Table ** //-->
+
+<!-- ** BEGIN: Footer Table ** //-->
+
+<div id="footer" style="clear: both;">
+    <div class="footleft">
+        <a href="/en/resources/contacts">Contact Us</a>
+    </div>
+	
+    <div class="botbar"><img src="/images/spacer.gif" alt="" height="23" width="1"></div>
+
+    <div class="footleft2">
+         &copy; 2019, Oracle Corporation and/or its affiliates. 
+        <a href="/en/home/terms">Terms of Use</a>. <a href="http://www.oracle.com/us/legal/privacy/index.html">Privacy Policy</a>. <a href="http://www.oracle.com/us/legal/third-party-trademarks/third-party-trademarks-078568.html">Trademarks</a>
+    </div>
+
+    <div class="footright">
+        <img src="/images/common/logo_oracle_footer.gif" alt="Oracle Corporation" height="22" width="91">
+    </div>
+
+    <div style="clear: both;"><img src="/images/spacer.gif" alt="" height="30" width="1"></div>
+</div>
+
+<!-- ** END: Footer Table ** //-->
+
+
+
+<!-- ** Menu Start ** //-->
+
+
+
+</body>
+</html>
+<!-- ** END: footer.jsp ** //-->
+
+                &nbsp;<br>&nbsp;<BR>
+                &nbsp;<br>&nbsp;<BR>
+                &nbsp;<br>&nbsp;<BR>
+                &nbsp;<br>&nbsp;<BR>
+                &nbsp;<br>&nbsp;<BR>
+                &nbsp;<br>&nbsp;<BR>
+                &nbsp;<br>&nbsp;<BR>
+                &nbsp;<br>&nbsp;<BR>
+                &nbsp;<br>&nbsp;<BR>
+                &nbsp;<br>&nbsp;<BR>
+                &nbsp;<br>&nbsp;<BR>
+                &nbsp;<br>&nbsp;<BR>
+                &nbsp;<br>&nbsp;<BR>
+                &nbsp;<br>&nbsp;<BR>
+                &nbsp;<br>&nbsp;<BR>
+                &nbsp;<br>&nbsp;<BR>
+                &nbsp;<br>&nbsp;<BR>
+                &nbsp;<br>&nbsp;<BR>
+                &nbsp;<br>&nbsp;<BR>
+                &nbsp;<br>&nbsp;<BR>
+                &nbsp;<br>&nbsp;<BR>
+                &nbsp;<br>&nbsp;<BR>
+                &nbsp;<br>&nbsp;<BR>
+                &nbsp;<br>&nbsp;<BR>
+                &nbsp;<br>&nbsp;<BR>
+                &nbsp;<br>&nbsp;<BR>
+                &nbsp;<br>&nbsp;<BR>
+                &nbsp;<br>&nbsp;<BR>
+                &nbsp;<br>&nbsp;<BR>
+
+

@@ -1,0 +1,614 @@
+
+<!-- ** BEGIN: header.jsp ** //-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3c.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+<head>
+    
+
+   
+    <link href="/includes/css/menu.css" rel="stylesheet" type="text/css"></link>
+    <link href="/includes/css/style.css" rel="stylesheet" type="text/css"></link>
+    <!--[if lt IE 6]><link href="/includes/css/style5.css" rel="stylesheet" type="text/css" ></link><![endif]-->
+    <!--[if gte IE 5]><link href="/includes/css/style6.css" rel="stylesheet" type="text/css" ></link><![endif]-->
+    <link href="/includes/css/tabs.css"  rel="stylesheet" type="text/css"></link>
+
+    <script type="text/javascript" src="/includes/scripts/tabs.js"></script>
+    <script type="text/javascript" src="/includes/scripts/menu.js"></script>
+   
+
+    
+
+    
+        <title>The Java Community Process(SM) Program - communityprocess - ec-public</title>
+    
+
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+
+
+<body onload="P7_initPM(0,1,0,0,-1)">
+
+    <a name="top"></a>
+
+    <div id="header">
+	<div id="logo">
+		<a href="/en/home/index"><img src="/images/spacer.gif" alt="Java Community Process" height="81" width="151"></a>
+	</div>
+	<div id="tools">
+		<div class="search">
+			<form name="search" action="/en/jsr/summary" method="get" onsubmit="return validate_search()">
+				<input name="id" value="Search JSRs" size="16" class="form" onfocus="nullify_if_equal(this, 'Search JSRs')" type="text">
+				<a href="javascript:document.search.submit()" onclick="return validate_search()"><img src="/images/button_go.gif" width="21" height="16" border="0" alt="Submit this Search" name="sub_search"></a>
+			</form>
+		</div>
+		<div class="tools">
+			<a href="/en/press/pressroom">Press Room</a> &nbsp;|&nbsp;
+			<a href="http://java.com/java/download/index.jsp?cid=jdp78399">Get Java Here</a> &nbsp;|&nbsp;
+			<!-- <a href="javascript:void(0)">Print Format</a> &nbsp;|&nbsp;&nbsp; -->
+		</div>
+
+	</div>
+	<div style="clear: right;"></div>
+
+        
+
+	<div class="topbar"><img src="/images/spacer.gif" alt="" height="3" width="154"></div>
+	<div id="update"> </div>
+    </div>
+
+
+    
+
+        <!-- ** BEGIN: Content Table ** //-->
+
+        <table width="100%" border="0" cellpadding="0" cellspacing="0">
+
+            <tr>
+
+                <!-- ** BEGIN: Navigation Column ** //-->
+                <td width="150" id="leftcontent" valign="top">
+                    <!-- Navigation Placeholder //-->
+
+                    
+
+                    <div class="bar"><img src="/images/hr_dots1.gif" alt="" height="3" width="150"></div>
+
+        <!-- begin find JSRs form -->
+        <!-- IMPORTANT! do not convert this form to Struts < html : form > tag.  javascript change of form.action property fails. -->
+        <img src="/images/hd_find-jsrs.gif" alt="Find JSRs" height="18" width="150">
+        <form name="findjsr" action="/en/jsr/summary" method="get" class="pt5" onsubmit="return validate_findjsr()">
+            <input name="id" size="18" class="form" value="Search JSRs" onfocus="nullify_if_equal(this, 'Search JSRs')" type="text">
+	    <a href="javascript:document.findjsr.submit()" onclick="return validate_findjsr()"><img src="/images/button_go.gif" width="21" height="16" border="0" alt="Submit this Search" name="sub_search"></a>
+        </form><br><br>
+
+        <!-- ** Menu Start ** //-->
+
+        <ul id="p7PMnav">
+            <li><a href="/en/jsr/platform">JSRs by Platform</a></li>
+            <li><a href="/en/jsr/tech">JSRs by Technology</a></li>
+            <li><a href="/en/jsr/stage">JSRs by Stage</a></li>
+            <li><a href="/en/jsr/ec">JSRs by Committee</a></li>
+            <li><a href="/en/jsr/all">List of All JSRs</a></li>
+
+            <!--end find JSRs form -->
+            <div style="clear: both;"><img src="/images/spacer.gif" alt="" height="25" width="1"></div>
+
+            <!--begin my JCP -->
+            <img src="/images/hd_my-jcp.gif" alt="My JCP" height="18" width="150">
+            
+
+          <form name="login" method="get" action="/en/user/login" >
+            <input name="Sign-in" type="submit" title="Sign-in" value="Sign-in" />
+          </form>
+
+            <div style="clear:both"><img src="/images/global/spacer.gif" width="1" height="3" alt=""></div>
+            <div class="noNav">
+                <a href="/en/user/register">Register for Site</a>
+            </div>
+
+             <div class="bar"><img src="/images/hr_dots1.gif" alt="" height="3" width="150"></div>
+           <div class="noNav" style="color: #666666; padding: 0;">
+              Use of JCP site is subject to the
+              <a href="/en/home/terms" style="display:inline;padding: 0">JCP Terms of Use</a> and the
+              <a href="http://www.oracle.com/us/legal/privacy/index.html" style="display:inline;padding: 0" href="">Oracle Privacy Policy</a>
+          </div>
+
+            
+
+            <div style="clear:both"><img src="/images/global/spacer.gif" width="1" height="25" alt=""></div>
+
+            <!--begin JCP info -->
+            <img src="/images/hd_jcp-info.gif" alt="JCP Info" height="18" width="150">
+
+            <li><a href="/en/procedures/overview" class="p7PMtrg">About JCP</a>
+                <ul>
+                    <li><a href="/en/procedures/overview">Program Overview</a></li>
+                    <li><a href="/en/procedures/jcp2">JCP Process Document</a></li>
+                    <li><a href="/en/whatsnew/calendar">Calendar</a></li>
+                    <li><a href="/en/participation/members">JCP Members</a></li>
+                    <li><a href="/en/participation/committee">Executive Committee</a></li>
+                    <li><a href="/en/whatsnew/elections">Elections</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/en/participation/overview" class="p7PMtrg">Get Involved</a>
+		<ul>
+                    <li><a href="/en/participation/overview">Overview</a></li>
+                    <li><a href="/en/participation/membership">Becoming a JCP Member</a></li>
+		</ul>
+            </li>
+
+            <li><a href="/en/resources/contents" class="p7PMtrg">Community Resources</a>
+                <ul>
+                    <li><a href="/en/resources/contents">Overview</a></li>
+                    <li><a href="/en/resources/tutorials">Tutorials</a></li>
+                    <li><a href="/en/resources/multimedia">JCP Podcasts</a></li>
+                    <li><a href="/en/resources/guide">Spec Lead Guide</a></li>
+                    <li><a href="/en/resources/tdk">TCK Tool & Info</a></li>
+                    <li><a href="/en/resources/license_reference">License Reference</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/en/press/pmo" class="p7PMtrg">Community News</a>
+                <ul>
+                    <li><a href="/en/press/pmo">News</a></li>
+                    <li><a href="/en/press/news/awards/awards_main">Programs &amp; Awards</a></li>
+                    <li><a href="/en/press/releases">Press Releases</a></li>
+                    <li><a href="/en/press/success">Success Stories</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/en/introduction/faq">FAQ</a></li>
+
+            <li><a href="/en/resources/contacts">Contact Us</a></li>
+
+            <div style="clear: both;"><img src="/images/spacer.gif" alt="" height="25" width="1"></div>
+
+            <!--[if lte IE 6]><style>#p7PMnav a{height:1em;}#p7PMnav li{height:1em;float:left;clear:both;width:100%}</style><![endif]-->
+            <!--[if IE 6]><style>#p7PMnav li{clear:none;}</style><![endif]-->
+            <!--[if IE 7]><style>#p7PMnav a{zoom:100%;}#p7PMnav li{float:left;clear:both;width:100%;}</style><![endif]-->
+        </ul>
+
+        
+
+        <!--begin ad space -->
+        <div class="ads">
+            <a href="http://java.com/java/download/index.jsp?cid=jdp78399" target="_blank"><img style="display: ;" src="/images/ad_banner2.gif" alt="Ad Banner" border="1" height="70" width="150"></a>
+        </div>
+        <!--end ad space -->
+
+<!-- ** Menu End ** //-->
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;<br>
+
+    
+
+                    &nbsp;<br>
+                    <img src="/images/common/trans.gif" alt="" width="1" height="150"><br>
+
+              
+
+
+
+                </td>
+                <!-- ** END: Navigation Column ** //-->
+
+                <!-- ** BEGIN: Gutter Column ** //-->
+		<td width="10" nowrap><img src="/images/common/trans.gif" alt="" width="10" height="1"></td>
+                <!-- ** END: Gutter Column ** //-->
+
+                <!-- ** BEGIN: Content Column ** //-->
+                <td width="100%" valign="top">
+
+    
+<script type="text/javascript">
+
+String.prototype.trim = function() {
+        return this.replace(/^\s+|\s+$/g,"");
+}
+String.prototype.ltrim = function() {
+        return this.replace(/^\s+/,"");
+}
+String.prototype.rtrim = function() {
+        return this.replace(/\s+$/,"");
+}
+
+function validate_search() {
+	if (document.search.id.value == "Search JSRs" || document.search.id.value.trim().length == 0) {
+		alert("Search terms must be entered first");
+		return false;
+	}
+	return true;
+}
+
+function validate_findjsr() {
+	if (document.findjsr.id.value == "Search JSRs" || document.findjsr.id.value.trim().length == 0) {
+		alert("Search terms must be entered first");
+		return false;
+	}
+	return true;
+}
+
+function nullify_if_equal(field, str) {
+	// alert("val=" + field.value);
+	if (field.value == str) {
+		field.value = "";
+	}
+}
+
+</script>
+<!-- ** END: header.jsp ** //-->
+
+
+
+
+
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+	<title>JCP.next.5 JSR</title>
+
+</head>
+<body lang="en-US" dir="ltr">
+<h1>Section 1. Identification</h1>
+<p><strong>Submitting Member:</strong> Oracle</p>
+<p><strong>Name of Contact Person:</strong> Heather VanCura 
+</p>
+<p><strong>E-Mail Address:</strong> heather.vancura@oracle.com</p>
+<p><strong>Telephone Number:</strong> +1 408 276 6063</p>
+<p><strong>Fax Number:</strong> +1 408 276 6063</p>
+<br>
+
+<p><strong>Specification Lead:</strong> Heather VanCura</p>
+<p><strong>E-Mail Address:</strong> heather.vancura@oracle.com</p>
+<p><strong>Telephone Number:</strong> +1 408 276 6063</p>
+<p><strong>Fax Number:</strong> +1 408 276 6063</p>
+<br>
+
+<p><strong>Initial Expert Group Membership:</strong> 
+</p>
+<p>The initial Expert Group consists of all members of the JCP
+Executive Committee. At the time of writing these are: 
+</p>
+<p>ARM, Azul Systems, Credit Suisse, Eclipse Foundation, Fujitsu,
+Gemalto M2M, Goldman Sachs, Hazelcast, Hewlett Packard Enterprise,
+Ivar Grimstad, IBM, Intel, JetBrains, Werner Keil, London Java
+Community, MicroDoc, NXP Semiconductors, Oracle, Red Hat, SAP,
+Software AG, SouJava, Tomitribe, Twitter, V2COM.</p>
+<br>
+
+<p><strong>Supporting this JSR:</strong> 
+</p>
+<p>All members of the JCP Executive Committees support this JSR.
+
+<br><br>
+<h2 class="western">Section 2: Request</h2>
+
+<h4 class="western">2.1 Please describe the proposed Specification:</h4>
+<p>This JSR will make changes to the Process Document and potentially
+also to the Executive Committee's Standing Rules with the goals of
+further improving the organization's processes, correcting problems
+that have become apparent over recent years, and clarifying language
+to reduce ambiguity.</p>
+
+<h4 class="western">2.2 What is the target Java platform? (i.e.,
+desktop, server, personal, embedded, card, etc.)</h4>
+<p>The updated version of the Process Document will apply to all new
+JSRs commenced after its completion and to future Maintenance
+Releases of existing JSRs. The Executive Committee intends to
+strongly encourage - though it cannot require - that it should also
+be adopted by in-progress JSRs. 
+</p>
+
+<h4 class=western">2.3 The Executive Committees would like to ensure JSR
+submitters think about how their proposed technology relates to all
+of the Java platform editions. Please provide details here for which
+platform editions are being targeted by this JSR, and how this JSR
+has considered the relationship with the other platform editions.</h4>
+
+<p>This JSR will address all Java platform editions.</p>
+
+<h4 class="western">2.4 What need of the Java community will be
+addressed by the proposed specification?</h4>
+
+<p>
+<a href="https://jcp.org/en/jsr/detail?id=358">JSR 358</a> was
+intended to perform a complete overhaul of the JCP's processes and
+its legal foundations as defined in the JSPA. On learning that we
+would be unable to modify the JSPA at this time, we withdrew that JSR
+with the intent of taking up its content again at a future date. We
+propose in this JSR to take up some of those JSR 358 changes that can
+be implemented simply by modifying the Process Document.
+
+<p>
+The primary focus of the JSR will be on collaborative reference
+implementation (RI) development, with the goal of ensuring that none
+of the JCP's processes inhibit collaborative development processes. 
+The JSR will implement changes that will build on the reforms that
+began with JSR 348 and continued with JSR 364, making the work of the
+JCP more open and transparent, and enabling broad participation.
+
+<p>Items for discussion include:</p>
+
+Potential language around collaborative RI development.
+
+<p>
+Potential changes to the stages of a JSR lifecycle as a result of the
+collaborative development process (see section 3.4 of Process
+document) and consider potential for multiple final releases of a
+JSR.<br>
+
+<p>
+- Add language that Spec Leads should provide access to the TCK to JSR
+Expert Group Members and Contributors for examination purposes only.<br>
+- Add language that Spec Leads should specify Terms of Use for their
+JSR collaboration projects that comply with the JSPA.<br>
+- Possible modifications to Renewal Ballots, specifically for Dormant JSRs.
+
+<p>
+Potential changes to the Maintenance process:<br>
+
+<p>
+- Maintenance Lead specify at Maintenance Release whether future changes are expected.<br>
+- End of Life for JSRs.<br>
+- Expert Group dissolution at Final Release.<br>
+- Ease the transition of a JSR from one Sped Lead to another.<br>
+- Addition of an Errata process.
+
+<p>
+Add language that allows free redistribution of the Process Document.
+
+<p>
+Clarify JSR voting rules for EC members.
+
+<h4 class="western">2.5 Why isn't this need met by existing specifications?</h4>
+<p>See above. 
+
+<h4 class="western">2.6 Please give a short description of the
+underlying technology or technologies:</h4>
+<p>Not applicable. 
+
+<h4 class="western">2.7 Is there a proposed package name for the API
+Specification? (i.e., javapi.something, org.something, etc.)</h4>
+<p>Not applicable. 
+
+<h4 class="western">2.8 Does the proposed specification have any
+dependencies on specific operating systems, CPUs, or I/O devices that
+you know of?</h4>
+<p>Not applicable.</p>
+
+<h4 class="western">2.9 Are there any security issues that cannot be
+addressed by the current security model?</h4>
+<p>Not applicable.</p>
+
+<h4 class="western">2.10 Are there any internationalization or
+localization issues?</h4>
+<p>Not applicable.</p>
+
+<h4 class="western">2.11 Are there any existing specifications that
+might be rendered obsolete, deprecated, or in need of revision as a
+result of this work?</h4>
+<p>This JSR will produce new versions of the JCP Process document and
+(if necessary) the EC Standing Rules. As explained in section 2.2 the
+new version of the Process Document will not replace the existing one
+but they will <em>deprecate</em> it. Any new version of the Standing
+Rules will immediately replace the existing version.</p>
+<h4 class="western">2.12 Please describe the anticipated schedule for
+the development of this specification.</h4>
+
+<p>
+<strong>JSR submittal: </strong>May 2017<br>
+<strong>Early Draft Review: </strong>September 2017<br>
+<strong>Public Draft Review: </strong>January 2018<br>
+<strong>Proposed Final Draft: </strong>May 2018<br>
+<strong>Final Approval Ballot: </strong>June 2018
+
+<h4 class="western">2.13 Please describe the anticipated working model for the Expert Group working on developing this specification.</h4>
+<p>
+The EC will form the Expert Group for this JSR. The Chair of the JCP 
+will act as Spec Lead and the PMO will provide administrative
+assistance as necessary. In addition to working on this JSR during
+regularly-scheduled EC meetings, additional teleconferences will be
+scheduled as necessary. Since it is likely that only a subset of EC
+members will attend these additional meetings, their results will be
+reported back to the full Executive Committees for review and
+approval. In addition to teleconferences and face-to-face meetings,
+the Expert Group will make extensive use of email and collaborative
+tools such a Wiki and issue-tracker, as explained in the next
+section. 
+
+<h4 class="western">2.14 Provide detailed answers to the transparency checklist, making sure to include URLs as appropriate:</h4>
+<p>A GitHub project will host all communication mechanisms. The
+home-page of this project will contain pointers to the mailing-lists,
+Wiki, document archive, discussion forum, and issue tracker, and will
+explain how members of the public can observe and participate in the
+activities of the Expert Group. 
+</p>
+<p>- Is the schedule for the JSR publicly available, current, and
+updated regularly? 
+</p>
+<p>The document archive will contain a copy of the schedule, which
+will be updated as necessary. 
+</p>
+<p>- Can the public read and/or write to a wiki for the JSR? 
+</p>
+<p>We will use the Wiki as a one-way channel of communication (from
+the EG to the public.) The public will be able to read all our
+documents, and to respond with comments via the public mailing-list. 
+</p>
+<p>- Is there a publicly accessible discussion board for the JSR that
+you read and respond to regularly? 
+</p>
+<p>We will provide a discussion forum, but the experience of earlier
+JCP.next JSRs suggests that the public would prefer to use a
+mailing-list: https://groups.io/g/jcp. 
+</p>
+<p>- Have you spoken at conferences and events about the JSR
+recently? 
+</p>
+<p>Not yet, but as with previous JCP.next JSRs this will be a major
+topic whenever members of the PMO speak at conferences and meet with
+Java User Groups. 
+</p>
+<p>- Are you using open-source processes for the development of the
+RI and/or the TCK? 
+</p>
+<p>Not applicable. 
+</p>
+<p>- What are the Terms of Use required to use the collaboration
+tools you have prepared to use with the Expert Group, so that
+prospective EG members can judge whether they are compatible with the
+JSPA? 
+</p>
+<p>The standard GitHub Terms of Use will apply. 
+</p>
+<p>- Does the Community tab for my JSR have links to and information
+about all public communication mechanisms and sites for the
+development of my JSR? 
+</p>
+<p>It will point to the project home-page for the JSR, which will in
+turn provide all necessary information about the communication
+mechanisms used by the Expert Group. 
+</p>
+<h4 class="western">2.15 Please describe how the RI and TCK will de
+delivered, i.e. as part of a profile or platform edition, or
+stand-alone, or both. Include version information for the profile or platform in your answer.</h4>
+
+<p>Since this is a Process-change JSR no RI will be produced.
+However, according to the requirements of JCP 2.10 a <em>JSR Review
+and Evaluation form</em> will be developed. This form will enable the
+EC to verify that new requirements specified in the Process Document
+have been implemented correctly.</p>
+
+<h4 class="western">2.16 Please state the rationale if previous
+versions are available stand-alone and you are now proposing in 2.13
+to only deliver RI and TCK as part of a profile or platform edition
+(See sections 1.1.5 and 1.1.6 of the JCP 2 document). 
+</h4>
+<p>Not applicable. 
+
+<h4 class="western">2.17 Please provide a description of the business
+terms for the Specification, RI and TCK that will apply when this JSR
+is final.</h4>
+<p>Not applicable. 
+</p>
+<h4 class="western">2.18 Please describe the communications channel
+you have established for the public to observe Expert Group
+deliberations, provide feedback, and view archives of all Expert
+Group communications.</h4>
+
+<p>The Expert Group will conduct business on a public mailing list. 
+
+<h4 class="western">2.19 What is the URL of the Issue Tracker that
+the public can read, and how does the public log issues in the Issue
+Tracker?</h4>
+<p>A GitHub issue tracker will be used. The public will be able to
+log issues directly into the issue-tracker. 
+</p>
+<p><strong>2.20 Please provide the location of the publicly
+accessible document archive you have created for the Expert Group.</strong></p>
+<p>All documents will be archived on the JSR GitHub project page. 
+
+<br><br>
+<h2 class="western">Section 3: Contributions</h2>
+
+<h4 class="western">3.1 Please list any existing documents,
+specifications, or implementations that describe the technology.
+Please include links to the documents if they are publicly available.</h4>
+<ul>
+	<li/>
+<p style="margin-bottom: 0in">The <a href="http://jcp.org/en/procedures/jcp2_8">Process
+	Document</a> 
+	</p>
+	<li/>
+<p>The <a href="http://jcp.org/en/procedures/ec_standing_rules">EC
+	Standing Rules</a> 
+	</p>
+</ul>
+<h4 class="western">3.2 Explanation of how these items might be used
+as a starting point for the work.</h4>
+<p>The documents referenced above describe the current structure and
+operation of the JCP and form the basis for evolving the rules of the
+community.</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+</body>
+</html>
+
+
+
+<!-- ** BEGIN: footer.jsp ** //-->
+
+
+
+
+
+
+
+
+</td>
+</tr>
+</table>
+
+<!-- ** END: Content Table ** //-->
+
+<!-- ** BEGIN: Footer Table ** //-->
+
+<div id="footer" style="clear: both;">
+    <div class="footleft">
+        <a href="/en/resources/contacts">Contact Us</a>
+    </div>
+	
+    <div class="botbar"><img src="/images/spacer.gif" alt="" height="23" width="1"></div>
+
+    <div class="footleft2">
+         &copy; 2019, Oracle Corporation and/or its affiliates. 
+        <a href="/en/home/terms">Terms of Use</a>. <a href="http://www.oracle.com/us/legal/privacy/index.html">Privacy Policy</a>. <a href="http://www.oracle.com/us/legal/third-party-trademarks/third-party-trademarks-078568.html">Trademarks</a>
+    </div>
+
+    <div class="footright">
+        <img src="/images/common/logo_oracle_footer.gif" alt="Oracle Corporation" height="22" width="91">
+    </div>
+
+    <div style="clear: both;"><img src="/images/spacer.gif" alt="" height="30" width="1"></div>
+</div>
+
+<!-- ** END: Footer Table ** //-->
+
+
+
+<!-- ** Menu Start ** //-->
+
+
+
+</body>
+</html>
+<!-- ** END: footer.jsp ** //-->
+

@@ -1,0 +1,438 @@
+
+<!-- ** BEGIN: header.jsp ** //-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3c.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+<head>
+    
+
+   
+    <link href="/includes/css/menu.css" rel="stylesheet" type="text/css"></link>
+    <link href="/includes/css/style.css" rel="stylesheet" type="text/css"></link>
+    <!--[if lt IE 6]><link href="/includes/css/style5.css" rel="stylesheet" type="text/css" ></link><![endif]-->
+    <!--[if gte IE 5]><link href="/includes/css/style6.css" rel="stylesheet" type="text/css" ></link><![endif]-->
+    <link href="/includes/css/tabs.css"  rel="stylesheet" type="text/css"></link>
+
+    <script type="text/javascript" src="/includes/scripts/tabs.js"></script>
+    <script type="text/javascript" src="/includes/scripts/menu.js"></script>
+   
+
+    
+
+    
+        <title>The Java Community Process(SM) Program - JCP Procedures - How the Process Works</title>
+    
+
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+
+
+<body onload="P7_initPM(0,1,0,0,-1)">
+
+    <a name="top"></a>
+
+    <div id="header">
+	<div id="logo">
+		<a href="/en/home/index"><img src="/images/spacer.gif" alt="Java Community Process" height="81" width="151"></a>
+	</div>
+	<div id="tools">
+		<div class="search">
+			<form name="search" action="/en/jsr/summary" method="get" onsubmit="return validate_search()">
+				<input name="id" value="Search JSRs" size="16" class="form" onfocus="nullify_if_equal(this, 'Search JSRs')" type="text">
+				<a href="javascript:document.search.submit()" onclick="return validate_search()"><img src="/images/button_go.gif" width="21" height="16" border="0" alt="Submit this Search" name="sub_search"></a>
+			</form>
+		</div>
+		<div class="tools">
+			<a href="/en/press/pressroom">Press Room</a> &nbsp;|&nbsp;
+			<a href="http://java.com/java/download/index.jsp?cid=jdp78399">Get Java Here</a> &nbsp;|&nbsp;
+			<!-- <a href="javascript:void(0)">Print Format</a> &nbsp;|&nbsp;&nbsp; -->
+		</div>
+
+	</div>
+	<div style="clear: right;"></div>
+
+        
+
+	<div class="topbar"><img src="/images/spacer.gif" alt="" height="3" width="154"></div>
+	<div id="update"> </div>
+    </div>
+
+
+    
+
+        <!-- ** BEGIN: Content Table ** //-->
+
+        <table width="100%" border="0" cellpadding="0" cellspacing="0">
+
+            <tr>
+
+                <!-- ** BEGIN: Navigation Column ** //-->
+                <td width="150" id="leftcontent" valign="top">
+                    <!-- Navigation Placeholder //-->
+
+                    
+
+                    <div class="bar"><img src="/images/hr_dots1.gif" alt="" height="3" width="150"></div>
+
+        <!-- begin find JSRs form -->
+        <!-- IMPORTANT! do not convert this form to Struts < html : form > tag.  javascript change of form.action property fails. -->
+        <img src="/images/hd_find-jsrs.gif" alt="Find JSRs" height="18" width="150">
+        <form name="findjsr" action="/en/jsr/summary" method="get" class="pt5" onsubmit="return validate_findjsr()">
+            <input name="id" size="18" class="form" value="Search JSRs" onfocus="nullify_if_equal(this, 'Search JSRs')" type="text">
+	    <a href="javascript:document.findjsr.submit()" onclick="return validate_findjsr()"><img src="/images/button_go.gif" width="21" height="16" border="0" alt="Submit this Search" name="sub_search"></a>
+        </form><br><br>
+
+        <!-- ** Menu Start ** //-->
+
+        <ul id="p7PMnav">
+            <li><a href="/en/jsr/platform">JSRs by Platform</a></li>
+            <li><a href="/en/jsr/tech">JSRs by Technology</a></li>
+            <li><a href="/en/jsr/stage">JSRs by Stage</a></li>
+            <li><a href="/en/jsr/ec">JSRs by Committee</a></li>
+            <li><a href="/en/jsr/all">List of All JSRs</a></li>
+
+            <!--end find JSRs form -->
+            <div style="clear: both;"><img src="/images/spacer.gif" alt="" height="25" width="1"></div>
+
+            <!--begin my JCP -->
+            <img src="/images/hd_my-jcp.gif" alt="My JCP" height="18" width="150">
+            
+
+          <form name="login" method="get" action="/en/user/login" >
+            <input name="Sign-in" type="submit" title="Sign-in" value="Sign-in" />
+          </form>
+
+            <div style="clear:both"><img src="/images/global/spacer.gif" width="1" height="3" alt=""></div>
+            <div class="noNav">
+                <a href="/en/user/register">Register for Site</a>
+            </div>
+
+             <div class="bar"><img src="/images/hr_dots1.gif" alt="" height="3" width="150"></div>
+           <div class="noNav" style="color: #666666; padding: 0;">
+              Use of JCP site is subject to the
+              <a href="/en/home/terms" style="display:inline;padding: 0">JCP Terms of Use</a> and the
+              <a href="http://www.oracle.com/us/legal/privacy/index.html" style="display:inline;padding: 0" href="">Oracle Privacy Policy</a>
+          </div>
+
+            
+
+            <div style="clear:both"><img src="/images/global/spacer.gif" width="1" height="25" alt=""></div>
+
+            <!--begin JCP info -->
+            <img src="/images/hd_jcp-info.gif" alt="JCP Info" height="18" width="150">
+
+            <li><a href="/en/procedures/overview" class="p7PMtrg">About JCP</a>
+                <ul>
+                    <li><a href="/en/procedures/overview">Program Overview</a></li>
+                    <li><a href="/en/procedures/jcp2">JCP Process Document</a></li>
+                    <li><a href="/en/whatsnew/calendar">Calendar</a></li>
+                    <li><a href="/en/participation/members">JCP Members</a></li>
+                    <li><a href="/en/participation/committee">Executive Committee</a></li>
+                    <li><a href="/en/whatsnew/elections">Elections</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/en/participation/overview" class="p7PMtrg">Get Involved</a>
+		<ul>
+                    <li><a href="/en/participation/overview">Overview</a></li>
+                    <li><a href="/en/participation/membership">Becoming a JCP Member</a></li>
+		</ul>
+            </li>
+
+            <li><a href="/en/resources/contents" class="p7PMtrg">Community Resources</a>
+                <ul>
+                    <li><a href="/en/resources/contents">Overview</a></li>
+                    <li><a href="/en/resources/tutorials">Tutorials</a></li>
+                    <li><a href="/en/resources/multimedia">JCP Podcasts</a></li>
+                    <li><a href="/en/resources/guide">Spec Lead Guide</a></li>
+                    <li><a href="/en/resources/tdk">TCK Tool & Info</a></li>
+                    <li><a href="/en/resources/license_reference">License Reference</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/en/press/pmo" class="p7PMtrg">Community News</a>
+                <ul>
+                    <li><a href="/en/press/pmo">News</a></li>
+                    <li><a href="/en/press/news/awards/awards_main">Programs &amp; Awards</a></li>
+                    <li><a href="/en/press/releases">Press Releases</a></li>
+                    <li><a href="/en/press/success">Success Stories</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/en/introduction/faq">FAQ</a></li>
+
+            <li><a href="/en/resources/contacts">Contact Us</a></li>
+
+            <div style="clear: both;"><img src="/images/spacer.gif" alt="" height="25" width="1"></div>
+
+            <!--[if lte IE 6]><style>#p7PMnav a{height:1em;}#p7PMnav li{height:1em;float:left;clear:both;width:100%}</style><![endif]-->
+            <!--[if IE 6]><style>#p7PMnav li{clear:none;}</style><![endif]-->
+            <!--[if IE 7]><style>#p7PMnav a{zoom:100%;}#p7PMnav li{float:left;clear:both;width:100%;}</style><![endif]-->
+        </ul>
+
+        
+
+        <!--begin ad space -->
+        <div class="ads">
+            <a href="http://java.com/java/download/index.jsp?cid=jdp78399" target="_blank"><img style="display: ;" src="/images/ad_banner2.gif" alt="Ad Banner" border="1" height="70" width="150"></a>
+        </div>
+        <!--end ad space -->
+
+<!-- ** Menu End ** //-->
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;<br>
+
+    
+
+                    &nbsp;<br>
+                    <img src="/images/common/trans.gif" alt="" width="1" height="150"><br>
+
+              
+
+
+
+                </td>
+                <!-- ** END: Navigation Column ** //-->
+
+                <!-- ** BEGIN: Gutter Column ** //-->
+		<td width="10" nowrap><img src="/images/common/trans.gif" alt="" width="10" height="1"></td>
+                <!-- ** END: Gutter Column ** //-->
+
+                <!-- ** BEGIN: Content Column ** //-->
+                <td width="100%" valign="top">
+
+    
+<script type="text/javascript">
+
+String.prototype.trim = function() {
+        return this.replace(/^\s+|\s+$/g,"");
+}
+String.prototype.ltrim = function() {
+        return this.replace(/^\s+/,"");
+}
+String.prototype.rtrim = function() {
+        return this.replace(/\s+$/,"");
+}
+
+function validate_search() {
+	if (document.search.id.value == "Search JSRs" || document.search.id.value.trim().length == 0) {
+		alert("Search terms must be entered first");
+		return false;
+	}
+	return true;
+}
+
+function validate_findjsr() {
+	if (document.findjsr.id.value == "Search JSRs" || document.findjsr.id.value.trim().length == 0) {
+		alert("Search terms must be entered first");
+		return false;
+	}
+	return true;
+}
+
+function nullify_if_equal(field, str) {
+	// alert("val=" + field.value);
+	if (field.value == str) {
+		field.value = "";
+	}
+}
+
+</script>
+<!-- ** END: header.jsp ** //-->
+
+
+
+
+<!-- page headline -->
+
+<!-- end page headline -->
+
+		<div class="header2">JCP Procedures</div>
+		<div class="header1">Overview</div>
+
+<div class="anybar"><img src="/images/global/bar_green.gif" alt="" width="12" height="4"></div>
+<p>
+
+
+
+
+ 
+<span class="headLinks"><font size="-1">
+<span title="December 17, 2018"><a href="jcp2_11">JCP&nbsp;2.11</a></span>&nbsp;|
+&nbsp;<span title="March 21, 2016"><a href="jcp2_10">JCP&nbsp;2.10</a></span>&nbsp;|
+&nbsp;<span title="August 15, 2012"><a href="jcp2_9">JCP&nbsp;2.9</a></span>&nbsp;|
+&nbsp;<span title="October 18, 2011"><a href="jcp2_8">JCP&nbsp;2.8</a></span>&nbsp;|
+&nbsp;<span title="May 15, 2009"><a href="jcp2_7">JCP&nbsp;2.7</a></span>&nbsp;|
+&nbsp;<span title="March 9, 2004"><a href="jcp2_6">JCP&nbsp;2.6</a></span>&nbsp;|
+&nbsp;<span title="October 29, 2002"><a href="jcp2_5">JCP&nbsp;2.5</a></span>&nbsp;|
+&nbsp;<span title="July 10, 2001"><a href="jcp2_1">JCP&nbsp;2.1</a></span>&nbsp;|
+&nbsp;<span title="June 2, 2000"><a href="jcp2.0">JCP&nbsp;2.0</a></span>&nbsp;|
+&nbsp;<span title="December 1998"><a href="jcp1_0">JCP&nbsp;1.0</a></span>
+
+</font></span>
+&nbsp;<br>
+
+
+		&nbsp;<br>
+The Java Community Process (JCP) Program is the process by which the international Java community standardizes and ratifies the specifications for Java technologies. The JCP ensures high-quality specifications are developed using an inclusive, consensus-based approach. Specifications ratified by the JCP must be accompanied by a Reference Implementation (to prove the Specification can be implemented) and a Technology Compatibility Kit (a suite of tests, tools, and documentations that is used to test implementations for compliance with the Specification).<P>
+Experience has shown that the best way to produce a technology specification is to use an open and inclusive process to co-develop a specification and implementation, informed by a group of industry experts with a variety of viewpoints, community and public opportunities to review and comment, and a strong technical lead to ensure both the technical goals and integration with other relevant specifications and user expectations.<P>
+An <a href="/en/participation/committee">Executive Committee (EC)</a> representing a cross-section of both major stakeholders and other members of the Java community is responsible for approving the passage of Specifications through the JCP's various stages and for reconciling discrepancies between Specifications and their associated test suites.
+<P>
+		Once you learn the overall process of the JCP, it's easy to understand where and how you might <a href="/en/participation/overview">fit in and contribute</a>. Here are several topics to help you with the procedures.<br>
+		
+		&nbsp;<br>
+		<div class="header3">JCP 2 Procedures</div>
+<div class="anybar"><img src="/images/global/bar_green.gif" alt="" width="12" height="4"></div>
+
+		On June 2, 2000, <a href="/en/procedures/jcp2.0">JCP 2.0</a> replaced the previous <a href="/aboutJava/communityprocess/java_community_process.html">JCP 1.0</a> version for new submissions. Further refinements to the voting rules resulted in <a href="/en/procedures/jcp2_1">JCP 2.1</a>, introduced on July 10, 2001. A major revision of the licensing rules for the Spec, RI and TCK as well as IP policy changes and process changes was put in place by <a href="/en/procedures/jcp2_5">JCP 2.5</a>, launched on October 29, 2002. The process was revised in May 2006 with the release of <a href="/en/procedures/jcp2_6">JCP 2.6</a>, and again in May 2009 with <a href="/en/procedures/jcp2_7">JCP 2.7</a>. In October 2011, <a href="/en/procedures/jcp2_8">JCP 2.8</a> introduced a new set of transparency requirements for JSRs. In August 2012, <a href="/en/procedures/jcp2_9">JCP 2.9</a> introduced changes to the formation of the Executive Committee. In April 2016, <a href="/en/procedures/jcp2_10">JCP 2.10</a> introduced and defined different types of JCP Membership. The current version, <a href="/en/procedures/jcp2_11">JCP 2.11</a>, both streamlined the process by removing requirements for additional review periods and introduced the ideas of iterative JSRs and Errata Maintenance Releases. The program's complete rules can be found in the <a href="/en/procedures/jcp2">JCP 2: Process Document</a>.
+<BR>
+&nbsp;<br>
+<img src="/images/JSR_Life_Cycle_Dec2018.png"><BR>&nbsp;<BR>
+
+		<div class="header3">The Four Major Steps in the Java Community Process</div>
+		Learn how a Java Specification Request (JSR) moves through its four essential steps to become a final specification and potentially become part of the Java platform, from the Initial Proposal to the Early Draft to the Public Draft and Maintenance.
+
+
+&nbsp;<P>
+		<div class="header3">1. Initiation (<a href="jcp2#3.3">jcp.org/en/procedures/jcp2#3.3</a>):</div>
+		
+		&nbsp;<br>
+		A specification is initiated by <a href="/en/participation/members">community members</a> and approved for development by the <a href="/en/participation/committee">Executive Committee</a>. At times, there are new JSRs being accepted every week. <br>
+		
+		&nbsp;<br>
+		See the list of new JSRs recently submitted to the JCP <a href="../jsr/stage?listBy=jsr">here</a>.<br>
+		
+		<blockquote>
+	<b>Definition of Terms for Submitting a New or Revised JSR</b><br>
+		
+		&nbsp;<br>
+		Learn <a href="../introduction/glossary">the language of the JCP procedures</a> as a first step.<br>
+		
+		&nbsp;<br>
+		<b>JSR Submission Template</b><br><br>
+		Members may submit a new JSR. If you are a Full Member, use the <a href="../jsr/proposal">JSR Proposal form</a> to submit your JSR with all of the required information. If you are not a Member, read <a href="/en/participation/membership">the instructions on how to become a member</a>.<P> 
+                New JSRs are posted for JSR Review for 2 or 4 weeks, during which time the public can provide feedback on the proposed specification and licensing/business terms. The JSR Review period is followed by a 2-week JSR Approval Ballot, when the Executive Committee votes to approve or reject the proposal. 
+		</blockquote>
+		
+		<div class="header3">2. Draft Releases (<a href="/en/procedures/jcp2#3.4">jcp.org/en/procedures/jcp2#3.4</a>):</div>
+		&nbsp;<br>
+		Once a JSR is approved, a group of experts is formed to develop a progressive drafts of the specification that anyone with an internet connection can review. Members who have signed a JSPA and wish to nominate a representative to serve on one or more of the Expert Groups or be listed as a Contributor can do so by submitting a nomination request.
+<P> 
+When an Expert Group completes the first draft of their specification, they will make it available to the public for Early Draft Review. The Expert Group uses the feedback from the review to revise and refine the draft. 
+<P> 
+<P>
+<a href="/en/jsr/stage?listBy=community">List of current Early Draft Reviews</a><BR>
+&nbsp;<br>
+		Next, a JSR draft specification goes out for review by the public. At the end of this Public Review, the Executive Committee decides if the draft should proceed to the next step with the Public Review Ballot. 
+
+<a href="/en/jsr/stage?listBy=public">List of current Public Reviews</a><BR>
+&nbsp;
+<BR>
+
+<div class="header3">3. Final Release (<a href="/en/procedures/jcp2#3.5">jcp.org/en/procedures/jcp2#3.5</a></div>
+The Expert Group uses the public feedback to further revise the document into a Proposed Final Draft. The Specification Lead then sees that the Reference Implementation and its associated Technology Compatibility Kit are completed before sending the specification to the Executive Committee for final approval. Once approved, the final Specification, Reference Implementation and Technology Compatibility Kit are published, and the Specification Lead arranges for a Maintenance Lead. 
+
+<P>
+<a href="/en/jsr/stage?listBy=proposed">List of current Proposed Final Drafts</a>.
+<P>
+<a href="/en/jsr/stage?listBy=final">List of Final Releases</a>.
+&nbsp;<br>
+		<div class="header3">4. Maintenance (<a href="/en/procedures/jcp2#3.6">jcp.org/en/procedures/jcp2#3.6</a>):</div>
+		
+		&nbsp;<br>
+		The Maintenance Lead tracks requests for clarification, interpretation, enhancements and revisions in an Issue Tracker. Then the Maintenance Lead initiates a review of the proposed changes. The Executive Committee votes to approve all proposed changes to a specification to be carried out immediately or reject the changes and thus either require the Maintenance Lead to submit a revised list of changes, or defer the changes until the specification can be revised by an Expert Group in a new JSR. If the Executive Committee approves the ballot, then the Maintenance Lead produces an updated Specification, Reference Implementation, and Technology Compatibility Kit as required to accommodate those approved changes. Challenges to one or more tests in a specification's Technology Compatibility Kit are ultimately decided by the Executive Committee if they cannot be otherwise resolved. <br>
+		
+		&nbsp;<br>
+		<a href="/en/jsr/stage?listBy=maint">List of current Maintenance Reviews</a><br>
+		
+		&nbsp;<br>
+		<div class="header3">JSR Voting Results</div>
+		&nbsp;<br>
+		<a href="/en/jsr/vote_summary">JSR Voting results can be seen here.</a><br>
+		
+		&nbsp;<br>
+		<div class="header3">JCP Background</div>
+		
+		&nbsp;<br>
+		Read a quick <a href="/aboutJava/communityprocess/background.html">overview on how and why the JCP was begun</a>.<br>
+		
+		&nbsp;<br>
+		<div class="header3">Translations/Changes between JCP versions</div>
+
+		&nbsp;<br>
+		Understand the <a href="/aboutJava/communityprocess/translations.html">differences between the old and new versions of the JCP process</a>. <br>
+		
+		&nbsp;<br>
+
+<!-- ** BEGIN: footer.jsp ** //-->
+
+
+
+
+
+
+
+
+</td>
+</tr>
+</table>
+
+<!-- ** END: Content Table ** //-->
+
+<!-- ** BEGIN: Footer Table ** //-->
+
+<div id="footer" style="clear: both;">
+    <div class="footleft">
+        <a href="/en/resources/contacts">Contact Us</a>
+    </div>
+	
+    <div class="botbar"><img src="/images/spacer.gif" alt="" height="23" width="1"></div>
+
+    <div class="footleft2">
+         &copy; 2019, Oracle Corporation and/or its affiliates. 
+        <a href="/en/home/terms">Terms of Use</a>. <a href="http://www.oracle.com/us/legal/privacy/index.html">Privacy Policy</a>. <a href="http://www.oracle.com/us/legal/third-party-trademarks/third-party-trademarks-078568.html">Trademarks</a>
+    </div>
+
+    <div class="footright">
+        <img src="/images/common/logo_oracle_footer.gif" alt="Oracle Corporation" height="22" width="91">
+    </div>
+
+    <div style="clear: both;"><img src="/images/spacer.gif" alt="" height="30" width="1"></div>
+</div>
+
+<!-- ** END: Footer Table ** //-->
+
+
+
+<!-- ** Menu Start ** //-->
+
+
+
+</body>
+</html>
+<!-- ** END: footer.jsp ** //-->
+

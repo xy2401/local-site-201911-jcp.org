@@ -1,0 +1,629 @@
+
+<!-- ** BEGIN: header.jsp ** //-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3c.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+<head>
+    
+
+   
+    <link href="/includes/css/menu.css" rel="stylesheet" type="text/css"></link>
+    <link href="/includes/css/style.css" rel="stylesheet" type="text/css"></link>
+    <!--[if lt IE 6]><link href="/includes/css/style5.css" rel="stylesheet" type="text/css" ></link><![endif]-->
+    <!--[if gte IE 5]><link href="/includes/css/style6.css" rel="stylesheet" type="text/css" ></link><![endif]-->
+    <link href="/includes/css/tabs.css"  rel="stylesheet" type="text/css"></link>
+
+    <script type="text/javascript" src="/includes/scripts/tabs.js"></script>
+    <script type="text/javascript" src="/includes/scripts/menu.js"></script>
+   
+
+    
+
+    
+        <title>The Java Community Process(SM) Program - communityprocess - ec-public</title>
+    
+
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+
+
+<body onload="P7_initPM(0,1,0,0,-1)">
+
+    <a name="top"></a>
+
+    <div id="header">
+	<div id="logo">
+		<a href="/en/home/index"><img src="/images/spacer.gif" alt="Java Community Process" height="81" width="151"></a>
+	</div>
+	<div id="tools">
+		<div class="search">
+			<form name="search" action="/en/jsr/summary" method="get" onsubmit="return validate_search()">
+				<input name="id" value="Search JSRs" size="16" class="form" onfocus="nullify_if_equal(this, 'Search JSRs')" type="text">
+				<a href="javascript:document.search.submit()" onclick="return validate_search()"><img src="/images/button_go.gif" width="21" height="16" border="0" alt="Submit this Search" name="sub_search"></a>
+			</form>
+		</div>
+		<div class="tools">
+			<a href="/en/press/pressroom">Press Room</a> &nbsp;|&nbsp;
+			<a href="http://java.com/java/download/index.jsp?cid=jdp78399">Get Java Here</a> &nbsp;|&nbsp;
+			<!-- <a href="javascript:void(0)">Print Format</a> &nbsp;|&nbsp;&nbsp; -->
+		</div>
+
+	</div>
+	<div style="clear: right;"></div>
+
+        
+
+	<div class="topbar"><img src="/images/spacer.gif" alt="" height="3" width="154"></div>
+	<div id="update"> </div>
+    </div>
+
+
+    
+
+        <!-- ** BEGIN: Content Table ** //-->
+
+        <table width="100%" border="0" cellpadding="0" cellspacing="0">
+
+            <tr>
+
+                <!-- ** BEGIN: Navigation Column ** //-->
+                <td width="150" id="leftcontent" valign="top">
+                    <!-- Navigation Placeholder //-->
+
+                    
+
+                    <div class="bar"><img src="/images/hr_dots1.gif" alt="" height="3" width="150"></div>
+
+        <!-- begin find JSRs form -->
+        <!-- IMPORTANT! do not convert this form to Struts < html : form > tag.  javascript change of form.action property fails. -->
+        <img src="/images/hd_find-jsrs.gif" alt="Find JSRs" height="18" width="150">
+        <form name="findjsr" action="/en/jsr/summary" method="get" class="pt5" onsubmit="return validate_findjsr()">
+            <input name="id" size="18" class="form" value="Search JSRs" onfocus="nullify_if_equal(this, 'Search JSRs')" type="text">
+	    <a href="javascript:document.findjsr.submit()" onclick="return validate_findjsr()"><img src="/images/button_go.gif" width="21" height="16" border="0" alt="Submit this Search" name="sub_search"></a>
+        </form><br><br>
+
+        <!-- ** Menu Start ** //-->
+
+        <ul id="p7PMnav">
+            <li><a href="/en/jsr/platform">JSRs by Platform</a></li>
+            <li><a href="/en/jsr/tech">JSRs by Technology</a></li>
+            <li><a href="/en/jsr/stage">JSRs by Stage</a></li>
+            <li><a href="/en/jsr/ec">JSRs by Committee</a></li>
+            <li><a href="/en/jsr/all">List of All JSRs</a></li>
+
+            <!--end find JSRs form -->
+            <div style="clear: both;"><img src="/images/spacer.gif" alt="" height="25" width="1"></div>
+
+            <!--begin my JCP -->
+            <img src="/images/hd_my-jcp.gif" alt="My JCP" height="18" width="150">
+            
+
+          <form name="login" method="get" action="/en/user/login" >
+            <input name="Sign-in" type="submit" title="Sign-in" value="Sign-in" />
+          </form>
+
+            <div style="clear:both"><img src="/images/global/spacer.gif" width="1" height="3" alt=""></div>
+            <div class="noNav">
+                <a href="/en/user/register">Register for Site</a>
+            </div>
+
+             <div class="bar"><img src="/images/hr_dots1.gif" alt="" height="3" width="150"></div>
+           <div class="noNav" style="color: #666666; padding: 0;">
+              Use of JCP site is subject to the
+              <a href="/en/home/terms" style="display:inline;padding: 0">JCP Terms of Use</a> and the
+              <a href="http://www.oracle.com/us/legal/privacy/index.html" style="display:inline;padding: 0" href="">Oracle Privacy Policy</a>
+          </div>
+
+            
+
+            <div style="clear:both"><img src="/images/global/spacer.gif" width="1" height="25" alt=""></div>
+
+            <!--begin JCP info -->
+            <img src="/images/hd_jcp-info.gif" alt="JCP Info" height="18" width="150">
+
+            <li><a href="/en/procedures/overview" class="p7PMtrg">About JCP</a>
+                <ul>
+                    <li><a href="/en/procedures/overview">Program Overview</a></li>
+                    <li><a href="/en/procedures/jcp2">JCP Process Document</a></li>
+                    <li><a href="/en/whatsnew/calendar">Calendar</a></li>
+                    <li><a href="/en/participation/members">JCP Members</a></li>
+                    <li><a href="/en/participation/committee">Executive Committee</a></li>
+                    <li><a href="/en/whatsnew/elections">Elections</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/en/participation/overview" class="p7PMtrg">Get Involved</a>
+		<ul>
+                    <li><a href="/en/participation/overview">Overview</a></li>
+                    <li><a href="/en/participation/membership">Becoming a JCP Member</a></li>
+		</ul>
+            </li>
+
+            <li><a href="/en/resources/contents" class="p7PMtrg">Community Resources</a>
+                <ul>
+                    <li><a href="/en/resources/contents">Overview</a></li>
+                    <li><a href="/en/resources/tutorials">Tutorials</a></li>
+                    <li><a href="/en/resources/multimedia">JCP Podcasts</a></li>
+                    <li><a href="/en/resources/guide">Spec Lead Guide</a></li>
+                    <li><a href="/en/resources/tdk">TCK Tool & Info</a></li>
+                    <li><a href="/en/resources/license_reference">License Reference</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/en/press/pmo" class="p7PMtrg">Community News</a>
+                <ul>
+                    <li><a href="/en/press/pmo">News</a></li>
+                    <li><a href="/en/press/news/awards/awards_main">Programs &amp; Awards</a></li>
+                    <li><a href="/en/press/releases">Press Releases</a></li>
+                    <li><a href="/en/press/success">Success Stories</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/en/introduction/faq">FAQ</a></li>
+
+            <li><a href="/en/resources/contacts">Contact Us</a></li>
+
+            <div style="clear: both;"><img src="/images/spacer.gif" alt="" height="25" width="1"></div>
+
+            <!--[if lte IE 6]><style>#p7PMnav a{height:1em;}#p7PMnav li{height:1em;float:left;clear:both;width:100%}</style><![endif]-->
+            <!--[if IE 6]><style>#p7PMnav li{clear:none;}</style><![endif]-->
+            <!--[if IE 7]><style>#p7PMnav a{zoom:100%;}#p7PMnav li{float:left;clear:both;width:100%;}</style><![endif]-->
+        </ul>
+
+        
+
+        <!--begin ad space -->
+        <div class="ads">
+            <a href="http://java.com/java/download/index.jsp?cid=jdp78399" target="_blank"><img style="display: ;" src="/images/ad_banner2.gif" alt="Ad Banner" border="1" height="70" width="150"></a>
+        </div>
+        <!--end ad space -->
+
+<!-- ** Menu End ** //-->
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;<br>
+
+    
+
+                    &nbsp;<br>
+                    <img src="/images/common/trans.gif" alt="" width="1" height="150"><br>
+
+              
+
+
+
+                </td>
+                <!-- ** END: Navigation Column ** //-->
+
+                <!-- ** BEGIN: Gutter Column ** //-->
+		<td width="10" nowrap><img src="/images/common/trans.gif" alt="" width="10" height="1"></td>
+                <!-- ** END: Gutter Column ** //-->
+
+                <!-- ** BEGIN: Content Column ** //-->
+                <td width="100%" valign="top">
+
+    
+<script type="text/javascript">
+
+String.prototype.trim = function() {
+        return this.replace(/^\s+|\s+$/g,"");
+}
+String.prototype.ltrim = function() {
+        return this.replace(/^\s+/,"");
+}
+String.prototype.rtrim = function() {
+        return this.replace(/\s+$/,"");
+}
+
+function validate_search() {
+	if (document.search.id.value == "Search JSRs" || document.search.id.value.trim().length == 0) {
+		alert("Search terms must be entered first");
+		return false;
+	}
+	return true;
+}
+
+function validate_findjsr() {
+	if (document.findjsr.id.value == "Search JSRs" || document.findjsr.id.value.trim().length == 0) {
+		alert("Search terms must be entered first");
+		return false;
+	}
+	return true;
+}
+
+function nullify_if_equal(field, str) {
+	// alert("val=" + field.value);
+	if (field.value == str) {
+		field.value = "";
+	}
+}
+
+</script>
+<!-- ** END: header.jsp ** //-->
+
+
+
+
+
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>JCP EC minutes (public): January 13-14 2015</title>
+
+<!--
+
+My personal stylesheet: <link href="../../../docs/PCurranStyles.css" rel="stylesheet" type="text/css" />
+And the jcp.org version: <link href="http://jcp.org/files/PCurranStyles.css" rel="stylesheet" type="text/css" />
+
+-->
+
+<link href="../../../docs/PCurranStyles.css" rel="stylesheet" type="text/css" />
+<link href="https://jcp.org/files/PCurranStyles.css" rel="stylesheet" type="text/css" />
+<style type="text/css">
+.large {
+	font-size: large;
+}
+</style>
+</head>
+<body>
+<h1 align="center">Executive Committee Meeting Minutes<br />
+  for January 13-14 2015</h1>
+<p align="center"><em>version 0.2: January 28 2015</em></p>
+<h2><strong>Date</strong></h2>
+<p>January 13-14 2015</p>
+<h2>Location</h2>
+<p>Face-to-face, hosted by Freescale</p>
+<h2><strong>Agenda</strong></h2>
+<ul>
+  
+  <li>[<a href="PMO-topics-January-2015.pdf">PMO Presentation</a>]</li>
+  <li>Personnel changes </li>
+  <li><a href="January-2015-ActionItems.html">Action Item review</a></li>
+  <li><a href="EC_Stats_Jan2015.pdf">EC Stats</a></li>
+  <li><a href="2014JCPYearEndSummary.pdf">PMO year-end report</a> (Heather Vancura)</li>
+  <li>PMO transparency (Greg Luck) </li>
+  <li>2015 f2f meeting dates and locations</li>
+  <li><a href="JSR-302-Review.pdf">JSR 302: Safety Critical Java Technology</a> (Doug Locke) </li>
+  <li><a href="JSR-358-January-2015.pdf">JSR 358  update</a></li>
+  <li><a href="JSR-364-January-2015.pdf">JSR 364 update</a></li>
+  <li><a href="JCP-IoT-Senger.pdf">Java and the Internet of Things</a> (Yara Senger) </li>
+  <li><a href="Freescale-Java-IoT-Jan-14-2015.pdf">Java at Freescale</a> (Maulin Patel) </li>
+  <li><a href="JSR363_EDR.pdf">JSR 363: Units of Measurement API</a> (Leonardo Lima &amp; Werner Keil)</li>
+  <li><a href="JCPWeek-2014.pdf">Corporate recruitment in Brazil</a> (Bruno Souza)</li>
+  <li><a href="java-se-update-2015-01-14.pdf">JSR 376: Java Platform Module System and Java SE 9</a> (Mark Reinhold)</li>
+</ul>
+<h2>Attendance</h2>
+<table border="1" width="50%">
+  <tr>
+    <td><div align="center"><strong>Tuesday January 13</strong></div></td>
+  </tr>
+  <tbody>
+    <tr>
+      <td><div align="center"><strong>PMO</strong></div></td>
+    </tr>
+  <tr>
+    <td><ul>
+      <li>Patrick Curran</li>
+      <li>Heather Vancura</li>
+    </ul>
+    </td>
+  </tr>
+  <tr>
+    <td><div align="center"><strong>Executive Committee </strong></div></td>
+  </tr>
+  <tr>
+    <td><ul>
+          <li class="red">ARM <em>&#8211; not  present</em></li>
+          <li>Azul Systems &#8211; Gil Tene, Matt Schuetze &#8211;<em> present</em></li>
+          <li class="red">Credit Suisse <em>&#8211; not  present</em></li>
+          <li>Eclipse &#8211; Mike Milinkovich &#8211;<em> present</em></li>
+          <li>Ericsson <em>&#8211; </em>Kristoffer Gronowski<em> -   present</em></li>
+          <li>Freescale &#8211;Greg Hemstree &#8211;<em> present</em></li>
+          <li>Fujitsu &#8211; Mike DeNicola &#8211; <em>present</em></li>
+          <li class="red">Gemalto M2M <em>&#8211; not  present</em></li>
+          <li>Goldman Sachs &#8211; John Weir &#8211; <em>present</em></li>
+          <li> Hazelcast &#8211; Greg Luck&#8211; <em> present </em></li>
+          <li>HP &#8211; Scott Jameson &#8211; <em> present </em> </li>
+          <li>IBM &#8211; Vito Spatafora, Steve Wolfe (by phone) &#8211; <em>present</em></li>
+          <li class="red">Intel &#8211; Anul Kumar &#8211; <em> by phone</em></li>
+          <li>Werner Keil &#8211; <em>presen</em>t</li>
+          <li>London Java Community &#8211; Ben Evans &#8211; <em>present</em></li>
+          <li>Geir Magnusson &#8211;<em> <em>present</em></em></li>
+          <li>MicroDoc &#8211; Hendrik Hoefer &#8211; <em>present</em></li>
+          <li>Oracle &#8211; Don Deutsch, Calinel Pasteanu &#8211;<em> present</em></li>
+          <li>RedHat &#8211; Scott Stark &#8211; <em>present</em></li>
+          <li>SAP &#8211; Sanjay Patil &#8211; <em>present</em></li>
+          <li>Software AG &#8211; Prasad Yendluri &#8211;<em> present</em></li>
+          <li>SouJava &#8211;Bruno Souza, Yara Senger &#8211; <em>present</em></li>
+          <li>TOTVS &#8211; David Britto &#8211; <em>present</em></li>
+          <li>Twitter &#8211;  Chris Aniszczyk &#8211; <em>present</em></li>
+          <li>V2COM &#8211; Leonardo Lima &#8211; <em>present</em></li>
+        </ul>
+      <p>Total attendance: 21 of 25 voting members</p></td>
+  </tr>
+  <tr>
+      <td nowrap="nowrap">Since 75% of the EC's 25 voting members were present,
+        the EC was <strong class="style2">quorate</strong> for this session</td>
+  </tr>
+  <tr>
+    <td><div align="center"><strong>Tuesday January 13</strong></div></td>
+  </tr>
+  <tr>
+    <td><div align="center"><strong>PMO</strong></div></td>
+  </tr>
+  <tr>
+    <td><ul>
+      <li>Patrick Curran</li>
+      <li>Heather Vancura</li>
+    </ul></td>
+  </tr>
+  <tr>
+    <td><div align="center"><strong>Executive Committee </strong></div></td>
+  </tr>
+  <tr>
+    <td><ul>
+      <li class="red">ARM <em>&#8211; not  present</em></li>
+      <li>Azul Systems &#8211; Gil Tene, Matt Schuetze &#8211;<em> present</em></li>
+      <li class="red">Credit Suisse <em>&#8211; not  present</em></li>
+      <li>Eclipse &#8211; Mike Milinkovich &#8211;<em> present</em></li>
+      <li>Ericsson <em>&#8211; </em>Kristoffer Gronowski<em> -   present</em></li>
+      <li>Freescale &#8211;Greg Hemstree &#8211;<em> present</em></li>
+      <li>Fujitsu &#8211; Mike DeNicola &#8211; <em>present</em></li>
+      <li class="red">Gemalto M2M <em>&#8211; not  present</em></li>
+      <li>Goldman Sachs &#8211; John Weir &#8211; <em>present</em></li>
+      <li> Hazelcast &#8211; Greg Luck&#8211; <em> present </em></li>
+      <li>HP &#8211; Scott Jameson &#8211; <em> present </em></li>
+      <li>IBM &#8211; Vito Spatafora, Steve Wolfe (by phone) &#8211; <em>present</em></li>
+      <li class="red">Intel &#8211; Anul Kumar &#8211; <em> by phone</em></li>
+      <li>Werner Keil &#8211; <em>presen</em>t</li>
+      <li>London Java Community &#8211; Ben Evans &#8211; <em>present</em></li>
+      <li>Geir Magnusson &#8211;<em> <em>present</em></em></li>
+      <li>MicroDoc &#8211; Hendrik Hoefer &#8211; <em>present</em></li>
+      <li>Oracle &#8211; Don Deutsch, Calinel Pasteanu &#8211;<em> present</em></li>
+      <li>RedHat &#8211; Scott Stark &#8211; <em>present</em></li>
+      <li class="red">SAP <em>&#8211; not  present</em></li>
+      <li class="red">Software AG &#8211; Prasad Yendluri &#8211; <em> by phone</em></li>
+      <li>SouJava &#8211;Bruno Souza, Yara Senger &#8211; <em>present</em></li>
+      <li>TOTVS &#8211; David Britto &#8211; <em>present</em></li>
+      <li>Twitter &#8211;  Chris Aniszczyk &#8211; <em>present</em></li>
+      <li>V2COM &#8211; Leonardo Lima &#8211; <em>present</em></li>
+    </ul>
+      <p>Total attendance: 19 of 25 voting members</p></td>
+  </tr>
+  <tr>
+    <td nowrap="nowrap">Since 75% of the EC's 25 voting members were present,
+      the EC was <strong class="style2">quorate</strong> for this session</td>
+  </tr>
+  </tbody>
+</table>
+<h2>Minutes</h2>
+<h3>Changes in status as a result of attendance at this meeting</h3>
+<p>The&nbsp;<a href="http://jcp.org/en/procedures/ec_standing_rules">EC Standing Rules</a>&nbsp;state the following penalties for non-attendance at EC meetings (note that those who participate in face-to-face meetings by phone are officially counted as absent):</p>
+<ul>
+  <li>Missing two meetings in a row results in a loss of voting privileges until two consecutive meetings have been attended.</li>
+  <li>Missing five meetings in a row, or missing two-thirds of the meetings in any consecutive 12-month period results in loss of the EC seat.</li>
+</ul>
+<p> There was no change in voting status as a result of this meeting, but ARM, Credit Suisse, Gemalto, and Intel will lose their voting privileges if they miss the next meeting.</p>
+<h3>Action Item review</h3>
+<p>See the <a href="January-2015-ActionItems.html">Action Item tracking file</a>.</p>
+<h3>EC Stats</h3>
+<p>Heather presented the usual <a href="EC_Stats_Jan2015.pdf">EC Stats</a><a href="EC_Stats_August2014.pdf"></a>.</p>
+<h3>PMO year-end report</h3>
+<p>Heather presented the PMO's <a href="2014JCPYearEndSummary.pdf">year-end report</a></p>
+<h3>PMO transparency</h3>
+<p>Greg Luck led a brief discussion on PMO transparency, noting that submissions to the spec-submit mailing list sometimes receive no response for a considerable period of time, making it difficult for spec leads to know where things stand. He suggested that a public issue tracker might be a simple and useful means of tracking and publicizing these submissions. The PMO agreed to discuss this internally and to respond at a future meeting. An AI has been opened to track this.</p>
+<h3>2015 f2f meeting dates and locations</h3>
+<p>After a brief discussion EC members endorsed the dates and locations for 2015 EC meetings (see the <a href="https://jcp.org/en/whatsnew/calendar">calendar on jcp.org</a>). Greg Luck reported that  Hazelcast  could host the London meeting in June.</p>
+<h3>JSR 302: Safety Critical Java Technology</h3>
+<p>Doug Locke, Spec Lead for JSR 302, presented a report on the current status of <a href="JSR-302-Review.pdf">JSR 302: Safety Critical Java Technology</a>. Members expressed great interest in the technical content of this presentation and had many questions, particularly about the process whereby Safety Critical Systems are tested and certified. On the other hand, members expressed concerns about several procedural matters that came to light:</p>
+<ol>
+  <li>Doug explained that JSR 302 will be built on top of  <a href="https://jcp.org/en/jsr/detail?id=282">JSR 282: RTSJ version 1.1</a>. Patrick asked how this would be implemented, and Doug explained that JSR 302 provides its own implementation of a subset of JSR 282. Patrick responded that the JCP's rules (as embodied in the JSPA and &quot;standard Specification license&quot;) prohibit arbitrary subsetting. Doug was unaware of this. Patrick suggested that a solution might be for JSR 282 to formally define a Profile or to otherwise &quot;legalize&quot; the particular subset that JSR 302 requires. He promised to follow up with Doug on this. An AI has been opened to track this.</li>
+  <li>Doug stated his intention to license the specification under the Apache license. Patrick explained that the spec license needs to incorporate the compatibility requirements that are spelled out in the JSPA. The PMO will follow up with Doug. An AI has been opened to track this.</li>
+  <li>Doug reported that the Expert Group had no contributor agreement in place, nor did they enforce a requirement that all contributors have signed the JSPA. Several members expressed concern about the lack of an IP &quot;audit trail&quot; and suggested that Doug rectify this.</li>
+</ol>
+<p>Members also suggested that the JSR should upgrade to JCP 2.9.</p>
+<p>During a brief follow-up discussion the next day members discussed whether processes should be put in place to guard against the possibility of another Expert Group running into similar problems (working for years on their JSR while being unaware of basic JCP policies and procedures). Patrick noted that under our existing processes such a problem would be exposed - similarly to the manner in which these problems were exposed - only when the JSR &quot;came back to life&quot; after being dormant, and was subject to a JSR Renewal Ballot. This might well be too late.</p>
+<p>Members agreed that it would be helpful to conduct an audit of apparently-inactive JSRs to ascertain whether they are in fact continuing to work; if so, the PMO would contact them and arrange for a review. Ben Evans volunteered to conduct these audits if the PMO provided a list of relevant JSRs. AIs have been opened to track these commitments. Patrick suggested that in addition it would be helpful if JUG members could briefly review active JSRs to determine the extent to which they are meeting the transparency requirements. Ben agreed to also take on this task. An AI has been opened.</p>
+<h3>JSR 358 update</h3>
+<p>Patrick introduced a discussion on JSR 358 (see <a href="JSR-358-January-2015.pdf">the presentation</a> for background), suggesting that the EC once     again discuss Oracle Legal's suggestion that RIs could be licensed     under MIT or BSD so long as all contributors had also signed either     the JSPA or the Affiliate Membership Agreement. He asked Don Deutsch     to outline Oracle's position as he had done at an earlier meeting.<br />
+  <br />
+Don reminded EC members that we have been struggling for a long time     to reconcile the standards-setting role of the JCP with the     development of RIs at external forges and wondered whether we might     be trying to do the impossible. He noted that his role at Oracle is     to oversee the company's engagement in more than a hundred different     Standards Setting Organizations (SSOs). He reported that while some     of these SSOs are working on providing open source capabilities     within their own IPR regimen he didn't know of any other SSO that     has successfully addressed incorporating independent open source     contributions.<br />
+<br />
+The key question, he argued, is how to reconcile two different IPR     regimes: the JCP's and the external forge's. He noted that Oracle     had made three different proposals, all of which the EC had     rejected: a standard Contributor Agreement, the UPL, and MIT or BSD     plus an assurance that all contributors to the RI will have signed     either the JSPA or the new Affiliate Membership Agreement.<br />
+<br />
+Don suggested that rather than focusing on the particular license     that might be applied to RIs we should focus on the heart of the     issue: the commitments that contributors make and that are necessary     in order to provide the rights implementers need.<br />
+<br />
+He pointed out that the JSPA (and the Affiliate Membership Agreement     that will be derived from it) is the IPR policy for the JCP, and     that its contents will be defined by the EC through JSR 358. Since     the purpose of this policy is to ensure that all those who     contribute to JSRs have made the appropriate IP commitments it is     not unreasonable to expect that everyone who contributes to a JSR     has signed it. This is consistent with EC members' expectations as     participants in other SSOs - that everyone who contributes to a     standard has made the necessary IP commitments.<br />
+<br />
+Don stated that Oracle's latest MIT/BSD proposal has been     characterized by EC members as &quot;MIT or BSD plus an Oracle     Contributor Agreement&quot;. This is an unfair characterization; rather,     it is MIT or BSD plus an assurance that those developing the RI have     made the IPR commitments needed by JSR implementers.<br />
+<br />
+He argued that because contributions to the RI can &quot;flow through&quot; to     the Specification, simply committing IP to the RI is not sufficient.     We need to ensure that the IP is also granted to the Specification -     only then will all implementations (including those not derived from     the RI) have the necessary rights<br />
+<br />
+From this perspective Don asked whether is it really is unreasonable     to ask that all contributors to a JSR (both directly through the JCP     and indirectly through an open source RI development process) have     made the same IPR commitments by either signing the JSPA or signing     a contributor agreement covering the aspects of the JSPA     specifically pertaining to contributions.<br />
+<br />
+Don concluded with a request for comments and feedback.<br />
+<br />
+Scott Stark responded that if RIs could be licensed under Apache it     would make the Oracle proposal more acceptable. Patrick responded     that Apache is a separate issue, and suggested focusing specifically     on the MIT/BSD plus JSPA proposal.<br />
+<br />
+Mike Milinkovich made two points:<br />
+</p>
+<ol>
+  <li>The status quo is that RIs and TCKs can be (and are) licensed         under Apache. Why would the EC agree to take away this right?</li>
+  <li>Innovation happens elsewhere - we seldom start with a blank         sheet of paper. Rather we build on existing work. Innovation         happens in open-source communities. Requiring a signed JSPA from         everyone who has contributed is not feasible. This will kill         Java.</li>
+</ol>
+<p>Patrick responded that it is the EC's responsibility to define       the terms in the JSPA. We can permit Apache licensing if we wish       (though we cannot guarantee that Apache-licensed code will be       accepted into the platform). As for the innovation question this       is indeed a concern and we should continue to address the matter.<br />
+</p>
+<p>Geir Magnusson gave JodaTime as an example of pre-existing       open-source code that evolved into a JSR.<br />
+</p>
+<p>Patrick agreed that in practice it will be impossible to get       everyone who contributed to an open-source project (or to earlier       projects that flowed into such a project) to sign the JSPA.<br />
+</p>
+<p>It was pointed out that we will need to convince open-source       people to contribute to the JCP since they have no significant       incentive to do so.<br />
+</p>
+<p>Mike Milinkovich argued that the legal risk of not having a       signed JSPA is miniscule. It is very unlikely that anyone who       contributed code under an open source license would successfully       sue for patent infringement when IP derived from that code is       included in a spec. Patrick responded that lawyers are by nature       conservative, and that any risk at all might be considered       unacceptable.<br />
+</p>
+<p>Gil Tene noted that the specific patent rights we need (for       independent implementations derived from the Spec) are not granted       by any of the popular open source licenses.<br />
+</p>
+<p>Mike Milinkovich suggested that we might have two levels of &quot;spec       cleanliness&quot;: one where all IP is known to be covered by all       necessary grants and the other where some IP grants are less       comprehensive.</p>
+<p>Patrick responded that both of Mike's suggestions (licensing       under Apache, and incorporating open-source licensed code from       contributors who have not signed the JSPA) can be addressed by       permitting the action but recognizing that there would be no guarantee       that any JSR developed in such a manner could be incorporated into       the platform.<br />
+</p>
+<p>Scott Stark said that RedHat would be willing to support the       requirement for signed JSPAs, but separately wants to push for       permitting Apache licensing. Gil Tene also expressed his support.<br />
+</p>
+<p>Mike DeNicola pointed out the approach taken by JSR 302       (discussed earlier) was an example of the &quot;wide-open approach&quot;. We       should not write rules that prohibit them from doing what they       have done. Hendrik Hoefer pointed out that although the RI is       theoretically separate from the Spec, lawyers believe that it can       influence the Spec. Scott Stark pointed out that many open source       developers don't know or care about IP or licensing. Scott Jameson       said that he couldn't see a fix that is any better than what we       have today.<br />
+</p>
+<p>Mike Milinkovich suggested a minimalistic approach: we should       make a simple statement in the JSPA and document best practices       elsewhere. He also suggested that we ought not to specify a       limited number of acceptable licenses, but instead permit the RI       to be licensed under any OSI-approved license. <br />
+</p>
+<p>Patrick suggested that we conduct a straw-poll to determine       whether EC members agreed or disagreed with Don's statement that       requiring a signed JSPA is reasonable, but the group was unable to       reach consensus on how such a poll should be phrased. After some       discussion, however, Patrick suggested - and nobody disagreed -       that a general consensus seemed to be emerging. <br />
+</p>
+<p>He proposed that in this area we should make minimal changes to       the JSPA. It should state that the Spec Lead has the       responsibility to ensure that they have all the rights necessary       not only to implement the RI but also to permit others to create       independent implementations (not derived from the RI). In addition       to the JSPA changes we should create a non-normative document (or       perhaps use the existing Spec Lead Guide) explaining that the best       way to ensure you have the necessary rights is to require that       everyone who contributes to the work of the EG or to the       development of the RI must sign either the JSPA or the Affiliate       Membership Agreement. The non-normative document might also       explain the terms under which Oracle will accept JSRs into the       platform. </p>
+During this discussion Patrick had also pointed out that other     changes to the JSPA will be needed to ensure that it does not     conflict with, inhibit, or even prohibit the practice of open-source     development of RIs. (For example, the current JSPA states that IP     does not vest until the JSR goes final.)<br />
+<br />
+He suggested further discussion (at the next meeting) on the     question of limiting the number of permitted licenses or permitting     any OSI-approved license.<br />
+<h3>JSR 364 update</h3>
+<p>Patrick provided an update on JSR 358 (see <a href="JSR-364-January-2015.pdf">the presentation</a> for background). He discussed the contents of the three new membership agreements. Members expressed frustration at not being able to review the actual documents, arguing that by the time they receive them (after Oracle's executive approval cycle) there might be no time to make changes. Patrick agreed to revisit the question of distribution with Oracle Legal. [After the meeting he obtained approval to release the documents for EC review on the understanding that the documents are preliminary and subject to change. EC members now have access to the documents, but these will not be released publicly until after all approvals have been obtained.)</p>
+<h3>Java and the Internet of Things</h3>
+<p>Yara and Vinicius Senger gave an entertaining and informative presentation on Java and the Internet of Things (see the <a href="JCP-IoT-Senger.pdf">presentation</a> for details). EC members expressed their appreciation.</p>
+<h3>Java at Freescale</h3>
+<p>Maulin Patel reported on the use of <a href="Freescale-Java-IoT-Jan-14-2015.pdf">Java at Freescale</a>. He stated the goal of enabling Java across the whole IoT space.</p>
+<p>He expressed concerns about licensing issues, and about the possibility that licensing fees might inhibit the use of Java within very low-end (and very low-cost) devices. Nevertheless, he argued that Java would bring significant advantages (a uniform development environment, security and communication libraries) to edge devices.</p>
+<p>Hendrik Hoefer argued that Java may not be appropriate in edge devices because of the cost of the additional RAM that would be required to support Java. Calinel Pasteanu responded that JavaCard might be a potential solution since an even smaller-footprint version is planned.</p>
+<p>Mike Milinkovich asked why Freescale was supporting only COAP since other protocols are also important. Maulin responded that this was the initial choice and that support for other protocols could be added later. Mike then asked why they were supporting both Java and the MBED environment. Maulin explained that they are partnering with ARM, and want to capture the largest possible developer base (MBED has a large developer community).</p>
+<h3>JSR 363: Units of Measurement API</h3>
+<p>Leonardo Lima and Werner Keil provided an update on JSR 363: Units of Measurement API (see the <a href="JSR363_EDR.pdf">presentation</a> for details).</p>
+<h3>Corporate recruitment in Brazil</h3>
+<p>Bruno Souza reported on SouJava's efforts to recruit corporate members in Brazil that began with Patrick Curran's visit for  <em>JCP Week </em>(see the <a href="JCPWeek-2014.pdf">presentation</a> for details). He reported that SouJava expects to be able to recruit several Brazilian corporations, but that the process takes time.</p>
+<h3>JSR 376: Java Platform Module System and Java SE 9</h3>
+<p>Mark Reinhold reported on current plans for Java SE 9, and then provided a detailed update on JSR 376: Java Platform Module System (see the <a href="java-se-update-2015-01-14.pdf">presentation</a> for details). EC members had many questions about the technical details of the module system. </p>
+<p>Members asked Mark whether the <a href="http://openjdk.java.net/jeps/1">OpenJDK JEP process</a> is an alternative to the JCP. Mark responded that it is not - all API changes are eventually proposed for inclusion in  JSRs. Some members expressed concerns about being presented with a fait accomplis. Mark responded that there is every expectation that changes can be introduced after a JSR has been filed. Mike Milinkovich  emphasized that we all agree that prototyping in an open source project is an appropriate and effective development model.</p>
+<p>Patrick asked whether the past conflicts between Oracle and the OSGI community have been resolved. Mark said that the feature that enables other module systems such as OSGI to 
+  locate 
+  and 
+  resolve 
+modules seems to be satisfactory to most. He emphasized the goal of interoperation.</p>
+<p>Werner Keil asked Mark if removing JEP 198 from Java 9 means that 
+  JSON JSRs like 374 would be used instead. Mark responded there are no 
+  plans to ship them with Java SE but they may be used with it where 
+appropriate.</p>
+<p>Werner also asked Mark whether new (modular) features from SE 9 could 
+  be incorporated into Java ME, which uses the traditional JAR format and 
+  class loading mechanism. Mark responded that this could be problematic 
+  since it hasn't been decided whether the module system should be applied
+to Java ME.</p>
+<p>Mike Milinkovich informed the EC that the Spec license for the module system contains language that prevents &quot;shipping&quot; support for Java SE9 modules before the JSR is completed. This will make it impossible for Eclipse to complete the complex tooling work necessary to support modules until well after Java SE9 ships. </p>
+<p>Patrick responded that this language is derived from the JSPA, and is an example of the need to modify the JSPA so that it does not inhibit or prevent the use of open source development processes that was mentioned during the discussion on JSR 358. He said that Oracle is aware of the problem and is working to address it in a modified license.</p>
+<h3>Adjourn</h3>
+<p>Patrick thanked Maulin and Freescale for their support and hospitality, and the meeting then adjourned.</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<h3>&nbsp;</h3>
+<h3>&nbsp;</h3>
+<h3>&nbsp;</h3>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<h3>&nbsp;</h3>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+</body></html>
+
+
+<!-- ** BEGIN: footer.jsp ** //-->
+
+
+
+
+
+
+
+
+</td>
+</tr>
+</table>
+
+<!-- ** END: Content Table ** //-->
+
+<!-- ** BEGIN: Footer Table ** //-->
+
+<div id="footer" style="clear: both;">
+    <div class="footleft">
+        <a href="/en/resources/contacts">Contact Us</a>
+    </div>
+	
+    <div class="botbar"><img src="/images/spacer.gif" alt="" height="23" width="1"></div>
+
+    <div class="footleft2">
+         &copy; 2019, Oracle Corporation and/or its affiliates. 
+        <a href="/en/home/terms">Terms of Use</a>. <a href="http://www.oracle.com/us/legal/privacy/index.html">Privacy Policy</a>. <a href="http://www.oracle.com/us/legal/third-party-trademarks/third-party-trademarks-078568.html">Trademarks</a>
+    </div>
+
+    <div class="footright">
+        <img src="/images/common/logo_oracle_footer.gif" alt="Oracle Corporation" height="22" width="91">
+    </div>
+
+    <div style="clear: both;"><img src="/images/spacer.gif" alt="" height="30" width="1"></div>
+</div>
+
+<!-- ** END: Footer Table ** //-->
+
+
+
+<!-- ** Menu Start ** //-->
+
+
+
+</body>
+</html>
+<!-- ** END: footer.jsp ** //-->
+

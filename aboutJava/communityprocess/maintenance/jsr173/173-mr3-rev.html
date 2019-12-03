@@ -1,0 +1,2603 @@
+
+<!-- ** BEGIN: header.jsp ** //-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3c.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+<head>
+    
+
+   
+    <link href="/includes/css/menu.css" rel="stylesheet" type="text/css"></link>
+    <link href="/includes/css/style.css" rel="stylesheet" type="text/css"></link>
+    <!--[if lt IE 6]><link href="/includes/css/style5.css" rel="stylesheet" type="text/css" ></link><![endif]-->
+    <!--[if gte IE 5]><link href="/includes/css/style6.css" rel="stylesheet" type="text/css" ></link><![endif]-->
+    <link href="/includes/css/tabs.css"  rel="stylesheet" type="text/css"></link>
+
+    <script type="text/javascript" src="/includes/scripts/tabs.js"></script>
+    <script type="text/javascript" src="/includes/scripts/menu.js"></script>
+   
+
+    
+
+    
+        <title>The Java Community Process(SM) Program - communityprocess - maintenance</title>
+    
+
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+
+
+<body onload="P7_initPM(0,1,0,0,-1)">
+
+    <a name="top"></a>
+
+    <div id="header">
+	<div id="logo">
+		<a href="/en/home/index"><img src="/images/spacer.gif" alt="Java Community Process" height="81" width="151"></a>
+	</div>
+	<div id="tools">
+		<div class="search">
+			<form name="search" action="/en/jsr/summary" method="get" onsubmit="return validate_search()">
+				<input name="id" value="Search JSRs" size="16" class="form" onfocus="nullify_if_equal(this, 'Search JSRs')" type="text">
+				<a href="javascript:document.search.submit()" onclick="return validate_search()"><img src="/images/button_go.gif" width="21" height="16" border="0" alt="Submit this Search" name="sub_search"></a>
+			</form>
+		</div>
+		<div class="tools">
+			<a href="/en/press/pressroom">Press Room</a> &nbsp;|&nbsp;
+			<a href="http://java.com/java/download/index.jsp?cid=jdp78399">Get Java Here</a> &nbsp;|&nbsp;
+			<!-- <a href="javascript:void(0)">Print Format</a> &nbsp;|&nbsp;&nbsp; -->
+		</div>
+
+	</div>
+	<div style="clear: right;"></div>
+
+        
+
+	<div class="topbar"><img src="/images/spacer.gif" alt="" height="3" width="154"></div>
+	<div id="update"> </div>
+    </div>
+
+
+    
+
+        <!-- ** BEGIN: Content Table ** //-->
+
+        <table width="100%" border="0" cellpadding="0" cellspacing="0">
+
+            <tr>
+
+                <!-- ** BEGIN: Navigation Column ** //-->
+                <td width="150" id="leftcontent" valign="top">
+                    <!-- Navigation Placeholder //-->
+
+                    
+
+                    <div class="bar"><img src="/images/hr_dots1.gif" alt="" height="3" width="150"></div>
+
+        <!-- begin find JSRs form -->
+        <!-- IMPORTANT! do not convert this form to Struts < html : form > tag.  javascript change of form.action property fails. -->
+        <img src="/images/hd_find-jsrs.gif" alt="Find JSRs" height="18" width="150">
+        <form name="findjsr" action="/en/jsr/summary" method="get" class="pt5" onsubmit="return validate_findjsr()">
+            <input name="id" size="18" class="form" value="Search JSRs" onfocus="nullify_if_equal(this, 'Search JSRs')" type="text">
+	    <a href="javascript:document.findjsr.submit()" onclick="return validate_findjsr()"><img src="/images/button_go.gif" width="21" height="16" border="0" alt="Submit this Search" name="sub_search"></a>
+        </form><br><br>
+
+        <!-- ** Menu Start ** //-->
+
+        <ul id="p7PMnav">
+            <li><a href="/en/jsr/platform">JSRs by Platform</a></li>
+            <li><a href="/en/jsr/tech">JSRs by Technology</a></li>
+            <li><a href="/en/jsr/stage">JSRs by Stage</a></li>
+            <li><a href="/en/jsr/ec">JSRs by Committee</a></li>
+            <li><a href="/en/jsr/all">List of All JSRs</a></li>
+
+            <!--end find JSRs form -->
+            <div style="clear: both;"><img src="/images/spacer.gif" alt="" height="25" width="1"></div>
+
+            <!--begin my JCP -->
+            <img src="/images/hd_my-jcp.gif" alt="My JCP" height="18" width="150">
+            
+
+          <form name="login" method="get" action="/en/user/login" >
+            <input name="Sign-in" type="submit" title="Sign-in" value="Sign-in" />
+          </form>
+
+            <div style="clear:both"><img src="/images/global/spacer.gif" width="1" height="3" alt=""></div>
+            <div class="noNav">
+                <a href="/en/user/register">Register for Site</a>
+            </div>
+
+             <div class="bar"><img src="/images/hr_dots1.gif" alt="" height="3" width="150"></div>
+           <div class="noNav" style="color: #666666; padding: 0;">
+              Use of JCP site is subject to the
+              <a href="/en/home/terms" style="display:inline;padding: 0">JCP Terms of Use</a> and the
+              <a href="http://www.oracle.com/us/legal/privacy/index.html" style="display:inline;padding: 0" href="">Oracle Privacy Policy</a>
+          </div>
+
+            
+
+            <div style="clear:both"><img src="/images/global/spacer.gif" width="1" height="25" alt=""></div>
+
+            <!--begin JCP info -->
+            <img src="/images/hd_jcp-info.gif" alt="JCP Info" height="18" width="150">
+
+            <li><a href="/en/procedures/overview" class="p7PMtrg">About JCP</a>
+                <ul>
+                    <li><a href="/en/procedures/overview">Program Overview</a></li>
+                    <li><a href="/en/procedures/jcp2">JCP Process Document</a></li>
+                    <li><a href="/en/whatsnew/calendar">Calendar</a></li>
+                    <li><a href="/en/participation/members">JCP Members</a></li>
+                    <li><a href="/en/participation/committee">Executive Committee</a></li>
+                    <li><a href="/en/whatsnew/elections">Elections</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/en/participation/overview" class="p7PMtrg">Get Involved</a>
+		<ul>
+                    <li><a href="/en/participation/overview">Overview</a></li>
+                    <li><a href="/en/participation/membership">Becoming a JCP Member</a></li>
+		</ul>
+            </li>
+
+            <li><a href="/en/resources/contents" class="p7PMtrg">Community Resources</a>
+                <ul>
+                    <li><a href="/en/resources/contents">Overview</a></li>
+                    <li><a href="/en/resources/tutorials">Tutorials</a></li>
+                    <li><a href="/en/resources/multimedia">JCP Podcasts</a></li>
+                    <li><a href="/en/resources/guide">Spec Lead Guide</a></li>
+                    <li><a href="/en/resources/tdk">TCK Tool & Info</a></li>
+                    <li><a href="/en/resources/license_reference">License Reference</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/en/press/pmo" class="p7PMtrg">Community News</a>
+                <ul>
+                    <li><a href="/en/press/pmo">News</a></li>
+                    <li><a href="/en/press/news/awards/awards_main">Programs &amp; Awards</a></li>
+                    <li><a href="/en/press/releases">Press Releases</a></li>
+                    <li><a href="/en/press/success">Success Stories</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/en/introduction/faq">FAQ</a></li>
+
+            <li><a href="/en/resources/contacts">Contact Us</a></li>
+
+            <div style="clear: both;"><img src="/images/spacer.gif" alt="" height="25" width="1"></div>
+
+            <!--[if lte IE 6]><style>#p7PMnav a{height:1em;}#p7PMnav li{height:1em;float:left;clear:both;width:100%}</style><![endif]-->
+            <!--[if IE 6]><style>#p7PMnav li{clear:none;}</style><![endif]-->
+            <!--[if IE 7]><style>#p7PMnav a{zoom:100%;}#p7PMnav li{float:left;clear:both;width:100%;}</style><![endif]-->
+        </ul>
+
+        
+
+        <!--begin ad space -->
+        <div class="ads">
+            <a href="http://java.com/java/download/index.jsp?cid=jdp78399" target="_blank"><img style="display: ;" src="/images/ad_banner2.gif" alt="Ad Banner" border="1" height="70" width="150"></a>
+        </div>
+        <!--end ad space -->
+
+<!-- ** Menu End ** //-->
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;<br>
+
+    
+
+                    &nbsp;<br>
+                    <img src="/images/common/trans.gif" alt="" width="1" height="150"><br>
+
+              
+
+
+
+                </td>
+                <!-- ** END: Navigation Column ** //-->
+
+                <!-- ** BEGIN: Gutter Column ** //-->
+		<td width="10" nowrap><img src="/images/common/trans.gif" alt="" width="10" height="1"></td>
+                <!-- ** END: Gutter Column ** //-->
+
+                <!-- ** BEGIN: Content Column ** //-->
+                <td width="100%" valign="top">
+
+    
+<script type="text/javascript">
+
+String.prototype.trim = function() {
+        return this.replace(/^\s+|\s+$/g,"");
+}
+String.prototype.ltrim = function() {
+        return this.replace(/^\s+/,"");
+}
+String.prototype.rtrim = function() {
+        return this.replace(/\s+$/,"");
+}
+
+function validate_search() {
+	if (document.search.id.value == "Search JSRs" || document.search.id.value.trim().length == 0) {
+		alert("Search terms must be entered first");
+		return false;
+	}
+	return true;
+}
+
+function validate_findjsr() {
+	if (document.findjsr.id.value == "Search JSRs" || document.findjsr.id.value.trim().length == 0) {
+		alert("Search terms must be entered first");
+		return false;
+	}
+	return true;
+}
+
+function nullify_if_equal(field, str) {
+	// alert("val=" + field.value);
+	if (field.value == str) {
+		field.value = "";
+	}
+}
+
+</script>
+<!-- ** END: header.jsp ** //-->
+
+
+
+
+
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+<!-- saved from url=(0073)http://jcp.org/aboutJava/communityprocess/maintenance/jsr181/181-2.0.html -->
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <title>Change Log for JSR-000173 Streaming API for XML</title>
+  <meta content="text/html; charset=windows-1252" http-equiv="Content-Type">
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <meta name="GENERATOR" content="MSHTML 6.00.2900.3020">
+</head>
+
+
+<body>
+
+
+
+
+
+
+
+
+
+
+
+
+<h2>
+<center>Change Log for JSR-000173 Streaming API for XML</center>
+
+
+
+
+
+
+
+
+
+
+
+
+</h2>
+
+
+
+
+
+
+
+
+
+
+
+
+This page details the proposed, accepted and deferred changes to JSR
+173 documenting the changes that will go into the next revision, per <a href="http://jcp.org/en/resources/guide12">Spec Lead Guide: Maintenance Review (MR), of
+the JCP 6.1 document</a>.
+<p>Last updated: 24 June 2009 </p>
+
+
+
+
+
+
+
+
+
+
+
+
+<h2>Description</h2>
+
+
+
+
+
+
+
+
+
+
+
+
+<p>Minor revision 1.2 of Streaming API for XML Processing for the
+Java Platform</p>
+
+
+
+
+
+
+Special notes concerning Proposed Changes 1, 2, 3:<br>
+
+
+&nbsp; &nbsp; Since StAX 1.0 standardization, usage, and the problems
+(proposed resolutions thereof below that constitute this MR) predate<br>
+
+
+&nbsp; &nbsp; annotations, and in particular @Depreciated; this MR
+proposes to depreciate erroneous/superseded APIs using the previous<br>
+
+
+&nbsp; &nbsp; JavaDoc @depreciated annotation, thus enabling the use of
+the new MR release on Java implementations prior to 5.0 (1.5).<br>
+
+
+<br>
+
+
+&nbsp; &nbsp; However the JSR MR EG may decide to forgo backwards
+compatibility prior to Java 5.0 (1.5) and employ the newer annotation
+based<br>
+
+
+&nbsp; &nbsp; depreciation mechanism. This will be resolved prior to the MR being declared final.<br>
+
+
+<br>
+
+
+
+
+
+&nbsp;&nbsp;&nbsp;<br>
+
+
+
+
+
+&nbsp;&nbsp; Proposed changes &nbsp;4, 6, 8: &nbsp;Add new methods<br>
+
+&nbsp; &nbsp; &nbsp; '[ XMLInput | XMLOutput | XMLEvent ]Factory.newFactory(String factoryId, ClassLoader classloader)' <br>
+
+&nbsp; &nbsp; &nbsp;for API consistency. &nbsp; Include JavaDocs to clarify the expected behavior of the <br>
+
+&nbsp; &nbsp;&nbsp; methods when the ClassLoader argument is null.
+&nbsp; The specified behavior is what was implied but not defined<br>
+
+
+
+
+
+&nbsp; &nbsp;&nbsp; from the corresponding&nbsp;StAX v1.0 &nbsp;newInstance(String factoryId, ClassLoader classloader)<br>
+
+
+
+
+&nbsp; &nbsp;&nbsp; methods at the time that the StAX v1.0 specification went
+final. &nbsp;<br>
+
+
+
+
+
+
+&nbsp; &nbsp; <br>
+
+&nbsp; &nbsp;Proposed changes 5, 7, 9: &nbsp;Add new no-arg
+methods&nbsp;'[ XMLInput | XMLOutput | XMLEvent ]Factory.newFactory()' <br>
+
+&nbsp; &nbsp;&nbsp; for API consistency. &nbsp; Include JavaDocs to all
+the no-arg methods that clarify the class loading behavior. &nbsp; This
+class loading behavior<br>
+
+&nbsp; &nbsp;&nbsp; description was missing from the corresponding StAX
+v1.0 no-arg 'newInstance()' methods for &nbsp;XMLOutputFactory and
+XMLEventFactory.<br>
+
+ 
+<h2><b>Maintenance Lead</b></h2>
+
+
+
+
+
+
+
+
+
+
+
+
+<p>Larry Cable, Oracle Corporation<br>
+
+
+
+
+
+
+
+
+
+
+
+
+Thorick Chow, Oracle Corporation </p>
+
+
+
+
+
+
+
+
+
+
+
+
+<h2>Feedback</h2>
+
+
+
+
+
+
+
+
+
+
+
+
+<p>Comments should be sent to <a href="mailto:jsr-173-comments@jcp.org">mailto:jsr-173-comments@jcp.org</a>.
+<br>
+
+
+
+
+
+
+
+
+
+
+
+
+</p>
+
+
+
+
+
+
+
+
+
+
+
+
+<p>
+<table style="width: 800px; height: 603px;" border="1">
+
+
+
+
+
+
+
+
+
+
+
+
+  <thead> <tr>
+
+
+
+
+
+
+
+
+
+
+
+
+    <td colspan="3">
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <h2>PROPOSED CHANGES</h2>
+
+
+
+
+
+
+
+
+
+
+
+
+    </td>
+
+
+
+
+
+
+
+
+
+
+
+
+  </tr>
+
+
+
+
+
+
+
+
+
+
+
+
+  </thead> <tbody>
+
+
+
+
+
+
+
+
+
+
+
+
+    <tr>
+
+
+
+
+
+
+
+
+
+
+
+
+      <td><b>Request</b></td>
+
+
+
+
+
+
+
+
+
+
+
+
+      <td><b>Summary &nbsp; &nbsp; &nbsp;
+&nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+&nbsp;&nbsp;</b></td>
+
+
+
+
+
+
+
+
+
+
+
+
+      <td style="width: 500px;"><b>Specification/Interface</b></td>
+
+
+
+
+
+
+
+
+
+
+
+
+    </tr>
+
+
+
+
+
+
+
+
+
+
+
+
+    <tr>
+
+
+
+
+
+
+
+
+
+
+
+
+      <td style="text-align: center;">1</td>
+
+
+
+
+
+
+
+
+
+
+
+
+      <td>XMLOutputFactory deprecate via JavaDoc the public static
+method in:&nbsp;&nbsp;&nbsp; <br>
+
+
+
+
+
+
+
+
+
+
+
+
+&nbsp;javax.xml.stream.XMLOutputFactory<br>
+
+
+
+
+
+
+
+
+      <br>
+
+
+
+
+
+
+
+
+
+
+
+
+&nbsp;&nbsp;public static XMLInputFactory <br>
+
+
+
+
+
+
+
+
+
+
+
+
+&nbsp; &nbsp; newInstance(java.lang.String <br>
+
+
+
+
+
+
+
+
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;factoryId,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;java.lang.ClassLoader
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; classLoader)<br>
+
+
+
+
+
+
+
+
+
+
+
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;throws
+FactoryConfigurationError &nbsp; </td>
+
+
+
+
+
+
+
+
+
+
+
+
+      <td style="width: 537px;">&nbsp;XMLOutputFactory
+class: add deprecated notice to method JavaDoc:<br>
+
+
+
+
+
+
+
+
+
+
+
+
+&nbsp;<br>
+
+
+
+
+
+
+
+
+
+
+
+
+@deprecated This method has been deprecated because<br>
+
+
+
+
+
+
+
+
+
+
+
+
+it returns an instance of XMLInputFactory, which is of the<br>
+
+
+
+
+
+
+
+
+
+
+
+
+wrong class. &nbsp;Use the new method <br>
+
+
+
+
+
+
+
+
+
+
+
+
+newFactory(java.lang.String factoryId,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;java.lang.ClassLoader
+classLoader) <br>
+
+
+
+
+
+
+
+
+instead.<br>
+
+
+
+
+
+
+
+
+
+
+
+
+      <br>
+
+
+
+
+
+
+
+
+
+
+
+
+&nbsp;</td>
+
+
+
+
+
+
+
+
+
+
+
+
+    </tr>
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+    <tr>
+
+
+
+
+
+
+
+
+      <td>&nbsp; &nbsp; &nbsp;2</td>
+
+
+
+
+
+
+
+
+      <td>XMLInputFactory deprecate via JavaDoc the public static
+method in:&nbsp;&nbsp;&nbsp; <br>
+
+
+
+
+
+
+
+
+
+
+
+
+&nbsp;javax.xml.stream.XMLInputFactory<br>
+
+
+
+
+
+
+
+
+      <br>
+
+
+
+
+
+
+
+
+
+
+
+
+&nbsp;&nbsp;public static XMLInputFactory <br>
+
+
+
+
+
+
+
+
+
+
+
+
+&nbsp; &nbsp; newInstance(java.lang.String<br>
+
+
+
+
+
+
+
+
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; factoryId,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;java.lang.ClassLoader
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;classLoader)<br>
+
+
+
+
+
+
+
+
+
+
+
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;throws
+FactoryConfigurationError </td>
+
+
+
+
+
+
+
+
+      <td>XMLInputFactory class: add deprecation notice to method JavaDoc:<br>
+
+
+
+
+
+
+
+
+      <br>
+@deprecated to maintain API consistency. &nbsp;All newInstance methods
+are replaced with corresponding newFactory&nbsp;methods.&nbsp; The
+replacement newFactory(String factoryId, ClassLoader classLoader)
+&nbsp;method defines no changes in behavior from this method.</td>
+
+
+
+
+
+
+
+
+    </tr>
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+    <tr>
+
+
+
+
+
+      <td>&nbsp; &nbsp; &nbsp;3</td>
+
+
+
+
+
+      <td>XMLEventFactory deprecate via JavaDoc the public static
+method in:&nbsp;&nbsp;&nbsp; <br>
+
+
+
+
+
+
+
+
+
+
+
+
+&nbsp;javax.xml.stream.XMLEventFactory<br>
+
+
+
+
+
+
+
+
+      <br>
+
+
+
+
+
+
+
+
+
+
+
+
+&nbsp;&nbsp;public static XMLEventFactory <br>
+
+
+
+
+
+
+
+
+
+
+
+
+&nbsp; &nbsp; newInstance(java.lang.String<br>
+
+
+
+
+
+
+
+
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; factoryId,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;java.lang.ClassLoader
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp;classLoader)<br>
+
+
+
+
+
+
+
+
+
+
+
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;throws
+FactoryConfigurationError</td>
+
+
+
+
+
+      <td>XMLEventFactory class: add deprecation notice to method JavaDoc:<br>
+
+
+
+
+
+
+
+
+      <br>
+
+
+
+@deprecated to maintain API consistency. &nbsp;All newInstance methods are replaced with corresponding
+newFactory&nbsp;methods.&nbsp; The replacement newFactory(String factoryId,
+ClassLoader classLoader) &nbsp;method defines no changes in behavior from
+this method.<br>
+      </td>
+
+
+
+
+
+    </tr>
+
+
+
+
+
+    
+
+
+    <tr>
+
+
+
+
+
+
+
+
+
+
+
+
+      <td style="text-align: center;">4</td>
+
+
+
+
+
+
+
+
+
+
+
+
+      <td>XMLOutputFactory add public
+static method to take the place of the method deprecated in proposal
+request
+#1:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <br>
+
+
+
+
+
+
+
+
+in class:<br>
+
+
+
+
+
+
+
+
+
+
+
+
+javax.xml.stream.XMLOutputFactory<br>
+
+
+
+
+
+
+
+
+      <br>
+
+
+
+
+
+
+
+
+
+
+
+
+&nbsp;public static XMLOutputFactory<br>
+
+
+
+
+
+
+
+
+
+&nbsp; newFactory(java.lang.String <br>
+
+
+
+
+
+
+
+
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; factoryId,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;java.lang.ClassLoader<br>
+
+
+
+
+
+
+
+
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; classLoader)<br>
+
+
+
+
+
+
+
+
+
+
+
+
+&nbsp;throws FactoryConfigurationError<br>
+
+
+
+
+
+
+
+
+
+
+
+
+      </td>
+
+
+
+
+
+
+
+
+
+
+
+
+      <td style="width: 537px;"><br>
+
+
+
+
+
+XMLOutputFactory class:
+&nbsp;add new method.<br>
+
+
+
+
+
+JavaDoc to read:<br>
+Create a new instance of the factory. &nbsp;If the classLoader argument
+is null, then the ContextClassLoader is used. &nbsp; Note that this is
+a new method that replaces the deprecated newInstance(String factoryId,
+ClassLoader classLoader) method. &nbsp;No&nbsp;changes in behavior are
+defined by this replacement method relative to the deprecated method.<br>
+
+
+
+
+
+      <br>
+
+
+
+
+
+
+
+
+
+
+
+
+&nbsp;</td>
+
+
+
+
+
+
+
+
+
+
+
+
+    </tr>
+
+
+
+
+
+
+
+
+    <tr>
+
+
+
+
+
+
+
+
+      <td>&nbsp; &nbsp; &nbsp;5</td>
+
+
+
+
+
+
+
+
+      <td>XMLOutputFactory add public
+static method for API consistency:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <br>
+
+
+
+
+
+
+
+
+in class:<br>
+
+
+
+
+
+
+
+
+
+
+
+
+javax.xml.stream.XMLOutputFactory<br>
+
+
+
+
+
+
+
+
+      <br>
+
+
+
+
+
+
+
+
+
+
+
+
+&nbsp;&nbsp; public static XMLOutputFactory<br>
+
+
+
+
+
+
+
+
+
+&nbsp; &nbsp;&nbsp; newFactory()<br>
+
+
+
+
+
+
+
+
+
+
+
+
+&nbsp;throws FactoryConfigurationError</td>
+
+
+
+
+
+
+
+
+      <td>XMLOutputFactory class:
+&nbsp;add new method.<br>
+
+
+
+
+
+JavaDoc to read:<br>
+Create a new instance of the factory. This static method creates a new
+factory instance. This method uses the following ordered lookup
+procedure to determine the XMLOutputFactory implementation class to
+load: Use the javax.xml.stream.XMLOutputFactory system property. Use
+the properties file "lib/stax.properties" in the JRE directory. This
+configuration file is in standard java.util.Properties format and
+contains the fully qualified name of the implementation class with the
+key being the system property defined above. Use the Services API (as
+detailed in the JAR specification), if available, to determine the
+classname. The Services API will look for a classname in the file
+META-INF/services/javax.xml.stream.XMLOutputFactory in jars available
+to the runtime. Platform default XMLOutputFactory instance. Once an
+application has obtained a reference to a XMLOutputFactory it can use
+the factory to configure and obtain stream instances. &nbsp;Note that
+this is a new method that replaces the deprecated
+newInstance() method. &nbsp;No changes in behavior are defined by this
+replacement method relative to
+the deprecated method.</td>
+
+
+
+
+
+
+
+
+    </tr>
+
+
+
+
+
+
+
+
+    <tr>
+
+
+
+
+
+
+
+
+      <td>&nbsp; &nbsp; &nbsp; 6</td>
+
+
+
+
+
+
+
+
+      <td>XMLInputFactory add public
+static method to take the place of the method deprecated in proposal
+request #2:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <br>
+
+
+
+
+
+
+
+
+in class:<br>
+
+
+
+
+
+
+
+
+
+
+
+
+javax.xml.stream.XMLInputFactory<br>
+
+
+
+
+
+
+
+
+      <br>
+
+
+
+
+
+
+
+
+
+
+
+
+&nbsp;public static XMLInputFactory<br>
+
+
+
+
+
+
+
+
+
+&nbsp; newFactory(java.lang.String <br>
+
+
+
+
+
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+&nbsp;&nbsp; factoryId,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+&nbsp;&nbsp;java.lang.ClassLoader<br>
+
+
+
+
+
+
+
+
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; classLoader)<br>
+
+
+
+
+
+
+
+
+
+
+
+
+&nbsp;throws FactoryConfigurationError<br>
+
+
+
+
+
+
+
+
+
+
+
+
+      </td>
+
+
+
+
+
+
+
+
+      <td>XMLInputFactory class:
+&nbsp;add new method.<br>
+
+
+
+
+
+JavaDoc to read:<br>
+Create a new instance of the factory. &nbsp;If the classLoader argument is
+null, then the ContextClassLoader is used. &nbsp; Note that this is a new
+method that replaces the deprecated newInstance(String factoryId,
+ClassLoader classLoader) method. &nbsp;No&nbsp;changes in behavior are defined
+by this replacement method relative to the deprecated method.
+
+
+
+
+      </td>
+
+
+
+
+
+
+
+
+    </tr>
+
+
+
+
+
+
+
+    <tr>
+
+
+
+
+
+
+
+      <td>&nbsp;&nbsp; &nbsp; 7</td>
+
+
+
+
+
+
+
+      <td>XMLInputFactory add public
+static method for API consistency:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <br>
+
+
+
+
+
+
+
+
+in class:<br>
+
+
+
+
+
+
+
+
+
+
+
+
+javax.xml.stream.XMLInputFactory<br>
+
+
+
+
+
+
+
+
+      <br>
+
+
+
+
+
+
+
+
+
+
+
+
+&nbsp;&nbsp; public static XMLInputFactory<br>
+
+
+
+
+
+
+
+
+
+&nbsp; &nbsp;&nbsp; newFactory()<br>
+
+
+
+
+
+
+
+
+
+
+
+
+&nbsp;throws FactoryConfigurationError</td>
+
+
+
+
+
+
+
+      <td>XMLInputFactory class:
+&nbsp;add new method.<br>
+
+
+
+
+
+JavaDoc to read:<br>
+Create a new instance of the factory. This static method creates a new
+factory instance. This method uses the following ordered lookup
+procedure to determine the XMLInputFactory implementation class to
+load: Use the javax.xml.stream.XMLInputFactory system property. Use the
+properties file "lib/stax.properties" in the JRE directory. This
+configuration file is in standard java.util.Properties format and
+contains the fully qualified name of the implementation class with the
+key being the system property defined above. Use the Services API (as
+detailed in the JAR specification), if available, to determine the
+classname. The Services API will look for a classname in the file
+META-INF/services/javax.xml.stream.XMLInputFactory in jars available to
+the runtime. Platform default XMLInputFactory instance. Once an
+application has obtained a reference to a XMLInputFactory it can use
+the factory to configure and obtain stream instances. &nbsp;&nbsp;Note
+that this is a new method that replaces the deprecated
+newInstance() method. &nbsp;No&nbsp;changes in behavior are defined by
+this replacement method relative to
+the deprecated method.</td>
+
+
+
+
+
+
+
+    </tr>
+
+
+
+
+
+    <tr>
+
+
+
+
+
+      <td>&nbsp; &nbsp; &nbsp;8</td>
+
+
+
+
+
+      <td>XMLEventFactory add&nbsp; public
+static method to take the place of the method deprecated in proposal
+request #3:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <br>
+
+
+
+
+
+
+
+
+in class:<br>
+
+
+
+
+
+
+
+
+
+
+
+
+javax.xml.stream.XMLEventFactory<br>
+
+
+
+
+
+
+
+
+      <br>
+
+
+
+
+
+
+
+
+
+
+
+
+&nbsp;public static XMLEventFactory<br>
+
+
+
+
+
+
+
+
+
+&nbsp; newFactory(java.lang.String <br>
+
+
+
+
+
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+&nbsp;&nbsp; factoryId,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+&nbsp;&nbsp;java.lang.ClassLoader<br>
+
+
+
+
+
+
+
+
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; classLoader)<br>
+
+
+
+
+
+
+
+
+
+
+
+
+&nbsp;throws FactoryConfigurationError</td>
+
+
+
+
+
+      <td>XMLEventFactory class:
+&nbsp;add new method.<br>
+
+
+
+
+
+JavaDoc to read:<br>
+Create a new instance of the factory. &nbsp;If the classLoader argument is
+null, then the ContextClassLoader is used. &nbsp; Note that this is a new
+method that replaces the deprecated newInstance(String factoryId,
+ClassLoader classLoader) method. &nbsp;No changes in behavior are defined
+by this replacement method relative to the deprecated method.
+
+
+
+
+      </td>
+
+
+
+
+
+    </tr>
+
+
+
+
+
+    <tr>
+
+
+
+
+
+      <td>&nbsp; &nbsp; &nbsp;9</td>
+
+
+
+
+
+      <td>XMLEventFactory add&nbsp; public
+static method for API consistency&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <br>
+
+
+
+
+
+
+
+
+in class:<br>
+
+
+
+
+
+
+
+
+
+
+
+
+javax.xml.stream.XMLEventFactory<br>
+
+
+
+
+
+
+
+
+      <br>
+
+
+
+
+
+
+
+
+
+
+
+
+&nbsp;&nbsp; public static XMLEventFactory<br>
+
+
+
+
+
+
+
+
+
+&nbsp; &nbsp;&nbsp; newFactory()<br>
+
+
+
+
+
+
+
+
+
+
+
+
+&nbsp;throws FactoryConfigurationError</td>
+
+
+
+
+
+      <td>XMLEventFactory class:
+&nbsp;add new method.<br>
+
+
+
+
+
+JavaDoc to read:<br>
+Create a new instance of the factory. This static method creates a new
+factory instance. This method uses the following ordered lookup
+procedure to determine the XMLEventFactory implementation class to
+load: Use the javax.xml.stream.XMLEventFactory system property. Use the
+properties file "lib/stax.properties" in the JRE directory. This
+configuration file is in standard java.util.Properties format and
+contains the fully qualified name of the implementation class with the
+key being the system property defined above. Use the Services API (as
+detailed in the JAR specification), if available, to determine the
+classname. The Services API will look for a classname in the file
+META-INF/services/javax.xml.stream.XMLEventFactory in jars available to
+the runtime. Platform default XMLEventFactory instance. Once an
+application has obtained a reference to a XMLEventFactory it can use
+the factory to configure and obtain stream instances. &nbsp;Note that
+this is a new method that replaces the deprecated
+newInstance() method. &nbsp;No&nbsp;changes in behavior are defined by
+this replacement method relative to
+the deprecated method.</td>
+
+
+
+
+
+    </tr>
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+</p>
+
+
+
+
+
+
+
+
+
+
+
+
+<p></p>
+
+
+
+
+
+
+
+
+
+
+
+
+<p></p>
+
+
+
+
+
+
+
+
+
+
+
+
+<table style="width: 794px; height: 160px;" border="1">
+
+
+
+
+
+
+
+
+
+
+
+
+  <thead> <tr>
+
+
+
+
+
+
+
+
+
+
+
+
+    <td colspan="3">
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <h2>ACCEPTED&nbsp; CHANGES</h2>
+
+
+
+
+
+
+
+
+
+
+
+
+    </td>
+
+
+
+
+
+
+
+
+
+
+
+
+  </tr>
+
+
+
+
+
+
+
+
+
+
+
+
+  </thead> <tbody>
+
+
+
+
+
+
+
+
+
+
+
+
+    <tr>
+
+
+
+
+
+
+
+
+
+
+      <td><span style="font-weight: bold;">Request</span></td>
+
+
+
+
+
+
+
+
+
+
+      <td><span style="font-weight: bold;">Summary</span></td>
+
+
+
+
+
+
+
+
+
+
+      <td><span style="font-weight: bold;">Specification/Interface</span></td>
+
+
+
+
+
+
+
+
+
+
+    </tr>
+
+
+
+
+
+
+
+
+
+
+
+
+    <tr>
+
+
+
+
+
+
+
+
+
+
+
+
+      <td style="text-align: center;"></td>
+
+
+
+
+
+
+
+
+
+
+
+
+      <td>&nbsp;&nbsp; </td>
+
+
+
+
+
+
+
+
+
+
+
+
+      <td style="width: 537px;">&nbsp;<br>
+
+
+
+
+
+
+
+
+
+
+
+
+      <br>
+
+
+
+
+
+
+
+
+
+
+
+
+&nbsp;</td>
+
+
+
+
+
+
+
+
+
+
+
+
+    </tr>
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+<p></p>
+
+
+
+
+
+
+
+
+
+
+
+
+<p></p>
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
+
+
+
+<!-- ** BEGIN: footer.jsp ** //-->
+
+
+
+
+
+
+
+
+</td>
+</tr>
+</table>
+
+<!-- ** END: Content Table ** //-->
+
+<!-- ** BEGIN: Footer Table ** //-->
+
+<div id="footer" style="clear: both;">
+    <div class="footleft">
+        <a href="/en/resources/contacts">Contact Us</a>
+    </div>
+	
+    <div class="botbar"><img src="/images/spacer.gif" alt="" height="23" width="1"></div>
+
+    <div class="footleft2">
+         &copy; 2019, Oracle Corporation and/or its affiliates. 
+        <a href="/en/home/terms">Terms of Use</a>. <a href="http://www.oracle.com/us/legal/privacy/index.html">Privacy Policy</a>. <a href="http://www.oracle.com/us/legal/third-party-trademarks/third-party-trademarks-078568.html">Trademarks</a>
+    </div>
+
+    <div class="footright">
+        <img src="/images/common/logo_oracle_footer.gif" alt="Oracle Corporation" height="22" width="91">
+    </div>
+
+    <div style="clear: both;"><img src="/images/spacer.gif" alt="" height="30" width="1"></div>
+</div>
+
+<!-- ** END: Footer Table ** //-->
+
+
+
+<!-- ** Menu Start ** //-->
+
+
+
+</body>
+</html>
+<!-- ** END: footer.jsp ** //-->
+

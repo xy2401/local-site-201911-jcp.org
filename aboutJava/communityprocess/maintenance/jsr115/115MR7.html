@@ -1,0 +1,472 @@
+
+<!-- ** BEGIN: header.jsp ** //-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3c.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+<head>
+    
+
+   
+    <link href="/includes/css/menu.css" rel="stylesheet" type="text/css"></link>
+    <link href="/includes/css/style.css" rel="stylesheet" type="text/css"></link>
+    <!--[if lt IE 6]><link href="/includes/css/style5.css" rel="stylesheet" type="text/css" ></link><![endif]-->
+    <!--[if gte IE 5]><link href="/includes/css/style6.css" rel="stylesheet" type="text/css" ></link><![endif]-->
+    <link href="/includes/css/tabs.css"  rel="stylesheet" type="text/css"></link>
+
+    <script type="text/javascript" src="/includes/scripts/tabs.js"></script>
+    <script type="text/javascript" src="/includes/scripts/menu.js"></script>
+   
+
+    
+
+    
+        <title>The Java Community Process(SM) Program - communityprocess - maintenance</title>
+    
+
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+
+
+<body onload="P7_initPM(0,1,0,0,-1)">
+
+    <a name="top"></a>
+
+    <div id="header">
+	<div id="logo">
+		<a href="/en/home/index"><img src="/images/spacer.gif" alt="Java Community Process" height="81" width="151"></a>
+	</div>
+	<div id="tools">
+		<div class="search">
+			<form name="search" action="/en/jsr/summary" method="get" onsubmit="return validate_search()">
+				<input name="id" value="Search JSRs" size="16" class="form" onfocus="nullify_if_equal(this, 'Search JSRs')" type="text">
+				<a href="javascript:document.search.submit()" onclick="return validate_search()"><img src="/images/button_go.gif" width="21" height="16" border="0" alt="Submit this Search" name="sub_search"></a>
+			</form>
+		</div>
+		<div class="tools">
+			<a href="/en/press/pressroom">Press Room</a> &nbsp;|&nbsp;
+			<a href="http://java.com/java/download/index.jsp?cid=jdp78399">Get Java Here</a> &nbsp;|&nbsp;
+			<!-- <a href="javascript:void(0)">Print Format</a> &nbsp;|&nbsp;&nbsp; -->
+		</div>
+
+	</div>
+	<div style="clear: right;"></div>
+
+        
+
+	<div class="topbar"><img src="/images/spacer.gif" alt="" height="3" width="154"></div>
+	<div id="update"> </div>
+    </div>
+
+
+    
+
+        <!-- ** BEGIN: Content Table ** //-->
+
+        <table width="100%" border="0" cellpadding="0" cellspacing="0">
+
+            <tr>
+
+                <!-- ** BEGIN: Navigation Column ** //-->
+                <td width="150" id="leftcontent" valign="top">
+                    <!-- Navigation Placeholder //-->
+
+                    
+
+                    <div class="bar"><img src="/images/hr_dots1.gif" alt="" height="3" width="150"></div>
+
+        <!-- begin find JSRs form -->
+        <!-- IMPORTANT! do not convert this form to Struts < html : form > tag.  javascript change of form.action property fails. -->
+        <img src="/images/hd_find-jsrs.gif" alt="Find JSRs" height="18" width="150">
+        <form name="findjsr" action="/en/jsr/summary" method="get" class="pt5" onsubmit="return validate_findjsr()">
+            <input name="id" size="18" class="form" value="Search JSRs" onfocus="nullify_if_equal(this, 'Search JSRs')" type="text">
+	    <a href="javascript:document.findjsr.submit()" onclick="return validate_findjsr()"><img src="/images/button_go.gif" width="21" height="16" border="0" alt="Submit this Search" name="sub_search"></a>
+        </form><br><br>
+
+        <!-- ** Menu Start ** //-->
+
+        <ul id="p7PMnav">
+            <li><a href="/en/jsr/platform">JSRs by Platform</a></li>
+            <li><a href="/en/jsr/tech">JSRs by Technology</a></li>
+            <li><a href="/en/jsr/stage">JSRs by Stage</a></li>
+            <li><a href="/en/jsr/ec">JSRs by Committee</a></li>
+            <li><a href="/en/jsr/all">List of All JSRs</a></li>
+
+            <!--end find JSRs form -->
+            <div style="clear: both;"><img src="/images/spacer.gif" alt="" height="25" width="1"></div>
+
+            <!--begin my JCP -->
+            <img src="/images/hd_my-jcp.gif" alt="My JCP" height="18" width="150">
+            
+
+          <form name="login" method="get" action="/en/user/login" >
+            <input name="Sign-in" type="submit" title="Sign-in" value="Sign-in" />
+          </form>
+
+            <div style="clear:both"><img src="/images/global/spacer.gif" width="1" height="3" alt=""></div>
+            <div class="noNav">
+                <a href="/en/user/register">Register for Site</a>
+            </div>
+
+             <div class="bar"><img src="/images/hr_dots1.gif" alt="" height="3" width="150"></div>
+           <div class="noNav" style="color: #666666; padding: 0;">
+              Use of JCP site is subject to the
+              <a href="/en/home/terms" style="display:inline;padding: 0">JCP Terms of Use</a> and the
+              <a href="http://www.oracle.com/us/legal/privacy/index.html" style="display:inline;padding: 0" href="">Oracle Privacy Policy</a>
+          </div>
+
+            
+
+            <div style="clear:both"><img src="/images/global/spacer.gif" width="1" height="25" alt=""></div>
+
+            <!--begin JCP info -->
+            <img src="/images/hd_jcp-info.gif" alt="JCP Info" height="18" width="150">
+
+            <li><a href="/en/procedures/overview" class="p7PMtrg">About JCP</a>
+                <ul>
+                    <li><a href="/en/procedures/overview">Program Overview</a></li>
+                    <li><a href="/en/procedures/jcp2">JCP Process Document</a></li>
+                    <li><a href="/en/whatsnew/calendar">Calendar</a></li>
+                    <li><a href="/en/participation/members">JCP Members</a></li>
+                    <li><a href="/en/participation/committee">Executive Committee</a></li>
+                    <li><a href="/en/whatsnew/elections">Elections</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/en/participation/overview" class="p7PMtrg">Get Involved</a>
+		<ul>
+                    <li><a href="/en/participation/overview">Overview</a></li>
+                    <li><a href="/en/participation/membership">Becoming a JCP Member</a></li>
+		</ul>
+            </li>
+
+            <li><a href="/en/resources/contents" class="p7PMtrg">Community Resources</a>
+                <ul>
+                    <li><a href="/en/resources/contents">Overview</a></li>
+                    <li><a href="/en/resources/tutorials">Tutorials</a></li>
+                    <li><a href="/en/resources/multimedia">JCP Podcasts</a></li>
+                    <li><a href="/en/resources/guide">Spec Lead Guide</a></li>
+                    <li><a href="/en/resources/tdk">TCK Tool & Info</a></li>
+                    <li><a href="/en/resources/license_reference">License Reference</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/en/press/pmo" class="p7PMtrg">Community News</a>
+                <ul>
+                    <li><a href="/en/press/pmo">News</a></li>
+                    <li><a href="/en/press/news/awards/awards_main">Programs &amp; Awards</a></li>
+                    <li><a href="/en/press/releases">Press Releases</a></li>
+                    <li><a href="/en/press/success">Success Stories</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/en/introduction/faq">FAQ</a></li>
+
+            <li><a href="/en/resources/contacts">Contact Us</a></li>
+
+            <div style="clear: both;"><img src="/images/spacer.gif" alt="" height="25" width="1"></div>
+
+            <!--[if lte IE 6]><style>#p7PMnav a{height:1em;}#p7PMnav li{height:1em;float:left;clear:both;width:100%}</style><![endif]-->
+            <!--[if IE 6]><style>#p7PMnav li{clear:none;}</style><![endif]-->
+            <!--[if IE 7]><style>#p7PMnav a{zoom:100%;}#p7PMnav li{float:left;clear:both;width:100%;}</style><![endif]-->
+        </ul>
+
+        
+
+        <!--begin ad space -->
+        <div class="ads">
+            <a href="http://java.com/java/download/index.jsp?cid=jdp78399" target="_blank"><img style="display: ;" src="/images/ad_banner2.gif" alt="Ad Banner" border="1" height="70" width="150"></a>
+        </div>
+        <!--end ad space -->
+
+<!-- ** Menu End ** //-->
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;<br>
+
+    
+
+                    &nbsp;<br>
+                    <img src="/images/common/trans.gif" alt="" width="1" height="150"><br>
+
+              
+
+
+
+                </td>
+                <!-- ** END: Navigation Column ** //-->
+
+                <!-- ** BEGIN: Gutter Column ** //-->
+		<td width="10" nowrap><img src="/images/common/trans.gif" alt="" width="10" height="1"></td>
+                <!-- ** END: Gutter Column ** //-->
+
+                <!-- ** BEGIN: Content Column ** //-->
+                <td width="100%" valign="top">
+
+    
+<script type="text/javascript">
+
+String.prototype.trim = function() {
+        return this.replace(/^\s+|\s+$/g,"");
+}
+String.prototype.ltrim = function() {
+        return this.replace(/^\s+/,"");
+}
+String.prototype.rtrim = function() {
+        return this.replace(/\s+$/,"");
+}
+
+function validate_search() {
+	if (document.search.id.value == "Search JSRs" || document.search.id.value.trim().length == 0) {
+		alert("Search terms must be entered first");
+		return false;
+	}
+	return true;
+}
+
+function validate_findjsr() {
+	if (document.findjsr.id.value == "Search JSRs" || document.findjsr.id.value.trim().length == 0) {
+		alert("Search terms must be entered first");
+		return false;
+	}
+	return true;
+}
+
+function nullify_if_equal(field, str) {
+	// alert("val=" + field.value);
+	if (field.value == str) {
+		field.value = "";
+	}
+}
+
+</script>
+<!-- ** END: header.jsp ** //-->
+
+
+
+
+
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<HEAD>
+	<META HTTP-EQUIV="CONTENT-TYPE" CONTENT="text/html; charset=windows-1252">
+	<TITLE>Change Log for JSR-000115 Java Authorization Contract for Containers</TITLE>
+</HEAD>
+<BODY LANG="en-US" DIR="LTR">
+<H2 ALIGN=CENTER>Change Log for JSR-000115 Java<SUP><FONT SIZE=1>TM</FONT></SUP>
+Authorization Contract for Containers 
+</H2>
+<P>This page details the proposed, accepted and deferred changes to
+JSR 115, documenting the changes that will go into the next revision,
+per <A HREF="http://jcp.org/en/procedures/jcp2#4.2">Section 4.2 of
+the JCP 2.7 document</A>.</P>
+<P>Last updated: 6 November 2009</P>
+<P STYLE="margin-bottom: 0in"><B>PROPOSED CHANGES</B></P>
+<DIV ALIGN=RIGHT>
+	<TABLE BORDER=1 CELLPADDING=2 CELLSPACING=3>
+		<COL WIDTH=973>
+		<TR>
+			<TD WIDTH=973>
+				<H2>Changes made throughout the Document</H2>
+				<P STYLE="margin-bottom: 0in">&bull; Changed the version of the
+				specification from 1.3 to 1.4.</P>
+				<P STYLE="margin-bottom: 0in">&bull; Changed the JCP version to
+				2.7</P>
+				<H2>Changes to Policy Configuration Contract</H2>
+				<P ALIGN=LEFT STYLE="margin-bottom: 0in"><A HREF="ejbs-in-web-modules.pdf">EJBs
+				in Web Modules</A>:</P>
+				<P ALIGN=LEFT STYLE="margin-bottom: 0in">&bull; <FONT FACE="TimesNewRoman, serif"><FONT SIZE=2 STYLE="font-size: 11pt">Added
+				a footnote in Section 3.1.1 &ldquo;PolicyContexts and Servlet
+				Policy Context Identifiers &ldquo;, to indicate that EJBs
+				contained within a .war are an exception to the statement that a
+				single policy context contains the policy statements
+				corresponding to all the resources in one or more modules.</FONT></FONT></P>
+				<P ALIGN=LEFT STYLE="margin-bottom: 0in"><BR>
+				</P>
+				<P ALIGN=LEFT STYLE="margin-bottom: 0in"><A HREF="servlet-policy-context-id.pdf">Servlet
+				Policy Context Identifier</A>s:</P>
+				<P STYLE="margin-bottom: 0in">&bull; <FONT FACE="TimesNewRoman, serif"><FONT SIZE=2 STYLE="font-size: 11pt">In
+				Section 3.1.2, &ldquo;Servlet Policy Context Identifiers&rdquo;,
+				added paragraph to ensure that EJBs defined in web modules are
+				assigned to a separate policy context to ensure that the EJB
+				context can be put in service before the policy context of the
+				web module (which may depend on being able to call the EJB).</FONT></FONT></P>
+				<P STYLE="margin-bottom: 0in"><BR>
+				</P>
+				<P ALIGN=LEFT STYLE="margin-bottom: 0in"><A HREF="programmatic-servlet-registrations.pdf">Programmatic
+				Servlet Registrations:</A></P>
+				<P ALIGN=LEFT STYLE="margin-bottom: 0in">&bull; <FONT FACE="TimesNewRoman, serif"><FONT SIZE=2 STYLE="font-size: 11pt">Added
+				Section 3.1.3.1, &ldquo;Programmatic Servlet Registrations&rdquo;,
+				to describe how the Servlet policy translation defined by this
+				subcontract can be applied to the security configuration
+				resulting from the programmatic registration and security
+				configuration enabled by Servlet 3.0. Also added a description of
+				how an existing policy context may be retranslated while
+				preserving its links to other policy contexts.</FONT></FONT></P>
+				<P ALIGN=LEFT STYLE="margin-bottom: 0in"><BR>
+				</P>
+				<P ALIGN=LEFT STYLE="margin-bottom: 0in"><A HREF="ejb-policy-context-id.pdf">EJB
+				Policy Context Identifiers:</A></P>
+				<P STYLE="margin-bottom: 0in">&bull; <FONT FACE="TimesNewRoman, serif"><FONT SIZE=2 STYLE="font-size: 11pt">In
+				Section 3.1.4, &ldquo;EJB Policy Context Identifiers&rdquo;,
+				added paragraph to ensure that EJBs defined in web modules are
+				assigned to a separate policy context to ensure that the EJB
+				context can be put in service before the policy context of the
+				web module (which may depend on being able to call the EJB).</FONT></FONT></P>
+				<P STYLE="margin-bottom: 0in"><BR>
+				</P>
+				<P ALIGN=LEFT STYLE="margin-bottom: 0in"><A HREF="deploying-an-application-or-module.pdf">Deploying
+				an Application or Module:</A></P>
+				<P STYLE="margin-bottom: 0in">&bull; <FONT FACE="TimesNewRoman, serif"><FONT SIZE=2 STYLE="font-size: 11pt">Clarified
+				Section 3.1.94 &ldquo;Deploying an Application or Module&rdquo;,
+				to allow translations, links, and commits of individual modules
+				to be interleaved as necessary to support runtime initialization
+				of Servlet policy (as required by Servlet 3.0) while preserving
+				the ability of a ServletContextListener to make a local call to
+				an EJB in the same application (and without getting an access
+				exception).</FONT></FONT></P>
+				<P STYLE="margin-bottom: 0in"><BR>
+				</P>
+				<P ALIGN=LEFT STYLE="margin-bottom: 0in"><A HREF="deploying-to-an-existing-policy-configuration.pdf"><FONT FACE="TimesNewRoman"><FONT SIZE=2 STYLE="font-size: 11pt">Deploying
+				to an Existing Policy Configuration: </FONT></FONT></A>
+				</P>
+				<P>&bull; <FONT FACE="TimesNewRoman, serif"><FONT SIZE=2 STYLE="font-size: 11pt">In
+				the optional Section 3.1.8, &ldquo;Deploying to an existing
+				Policy Configuration&rdquo;, added an additional paragraph to
+				describe what must be done to capture the effects of any
+				programmatic registrations and security configurations that may
+				happen during initialization</FONT></FONT><FONT FACE="TimesNewRoman"><FONT SIZE=2 STYLE="font-size: 11pt">.</FONT></FONT></P>
+				<P ALIGN=LEFT STYLE="margin-bottom: 0in"><A HREF="redeploying-a-module.pdf"><FONT FACE="TimesNewRoman"><FONT SIZE=2 STYLE="font-size: 11pt">Redeploying
+				a Module: </FONT></FONT></A>
+				</P>
+				<P>&bull; <FONT FACE="TimesNewRoman, serif"><FONT SIZE=2 STYLE="font-size: 11pt">Simplified
+				Section 3.1.9, &ldquo;Redeploying a Module&rdquo;, by having it
+				refer to Section 3.1.6, &ldquo;Deploying an Application or
+				Module&rdquo;, which, as described above, has been changed to
+				handle Servlet 3.0.</FONT></FONT></P>
+				<P ALIGN=LEFT STYLE="margin-bottom: 0in"><A HREF="PolicyConfiguration.pdf"><FONT FACE="TimesNewRoman"><FONT SIZE=2 STYLE="font-size: 11pt">API
+				- PolicyConfiguration interface: </FONT></FONT></A>
+				</P>
+				<P>&bull; <FONT FACE="Times New Roman, serif"><FONT SIZE=2 STYLE="font-size: 11pt">Added
+				clarifications to removeUncheckedPolicy, removeExcludedPolicy,
+				and removeRole methods to indicate that these methods have no
+				effect on the linkages among policy contexts.</FONT></FONT></P>
+				<P ALIGN=LEFT STYLE="margin-bottom: 0in"><A HREF="PolicyConfigurationFactory.pdf"><FONT FACE="TimesNewRoman"><FONT SIZE=2 STYLE="font-size: 11pt">API
+				- PolicyConfigurationFactory: </FONT></FONT></A>
+				</P>
+				<P>&bull; <FONT FACE="Times New Roman, serif"><FONT SIZE=2 STYLE="font-size: 11pt">Added
+				clarification to the getPolicyConfiguration method to indicate
+				that it removes policy statements and linkages when the value of
+				the remove parameter is true.</FONT></FONT></P>
+			</TD>
+		</TR>
+	</TABLE>
+</DIV>
+<P><B>ACCEPTED CHANGES</B> 
+</P>
+<TABLE WIDTH=100% BORDER=1 CELLPADDING=2 CELLSPACING=2>
+	<TR>
+		<TD>
+			<P><A HREF="./115-mr1.zip">Changes from 1st Maintenance
+			Review</a>, accepted on 2 March 2004<BR>
+                      <A HREF="./JSR115ChangeLog-old.html">Changes
+			from 2nd Maintenance Review</a>, accepted on 27 April 2004<BR>
+<A HREF="./115-mr3.zip">Changes
+			from 3rd Maintenance Review</a>, accepted on 13 September 2005<BR>
+<A HREF="./115-mr4.zip">Changes
+			from 4th Maintenance Review</a>, accepted on 11 May 2006<BR>
+<A HREF="./115MR5.html">Changes
+			from the 5th Maintenance Review</a>, accepted on 26 August 2008<BR>
+<a href="./115MR6.html">Changes from the 6th Maintenance Review</a>, accepted on 2 June 2009</P>
+		</TD>
+	</TR>
+</TABLE>
+<P STYLE="margin-bottom: 0in"><B>DEFERRED CHANGES</B> 
+</P>
+<TABLE WIDTH=100% BORDER=1 CELLPADDING=2 CELLSPACING=2>
+	<TR>
+		<TD>
+			<P>&nbsp;</P>
+		</TD>
+	</TR>
+</TABLE>
+<P><BR><BR>
+</P>
+</BODY>
+</HTML>
+
+
+
+
+
+<!-- ** BEGIN: footer.jsp ** //-->
+
+
+
+
+
+
+
+
+</td>
+</tr>
+</table>
+
+<!-- ** END: Content Table ** //-->
+
+<!-- ** BEGIN: Footer Table ** //-->
+
+<div id="footer" style="clear: both;">
+    <div class="footleft">
+        <a href="/en/resources/contacts">Contact Us</a>
+    </div>
+	
+    <div class="botbar"><img src="/images/spacer.gif" alt="" height="23" width="1"></div>
+
+    <div class="footleft2">
+         &copy; 2019, Oracle Corporation and/or its affiliates. 
+        <a href="/en/home/terms">Terms of Use</a>. <a href="http://www.oracle.com/us/legal/privacy/index.html">Privacy Policy</a>. <a href="http://www.oracle.com/us/legal/third-party-trademarks/third-party-trademarks-078568.html">Trademarks</a>
+    </div>
+
+    <div class="footright">
+        <img src="/images/common/logo_oracle_footer.gif" alt="Oracle Corporation" height="22" width="91">
+    </div>
+
+    <div style="clear: both;"><img src="/images/spacer.gif" alt="" height="30" width="1"></div>
+</div>
+
+<!-- ** END: Footer Table ** //-->
+
+
+
+<!-- ** Menu Start ** //-->
+
+
+
+</body>
+</html>
+<!-- ** END: footer.jsp ** //-->
+

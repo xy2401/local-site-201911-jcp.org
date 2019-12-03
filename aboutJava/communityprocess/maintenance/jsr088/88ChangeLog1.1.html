@@ -1,0 +1,1050 @@
+
+<!-- ** BEGIN: header.jsp ** //-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3c.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+<head>
+    
+
+   
+    <link href="/includes/css/menu.css" rel="stylesheet" type="text/css"></link>
+    <link href="/includes/css/style.css" rel="stylesheet" type="text/css"></link>
+    <!--[if lt IE 6]><link href="/includes/css/style5.css" rel="stylesheet" type="text/css" ></link><![endif]-->
+    <!--[if gte IE 5]><link href="/includes/css/style6.css" rel="stylesheet" type="text/css" ></link><![endif]-->
+    <link href="/includes/css/tabs.css"  rel="stylesheet" type="text/css"></link>
+
+    <script type="text/javascript" src="/includes/scripts/tabs.js"></script>
+    <script type="text/javascript" src="/includes/scripts/menu.js"></script>
+   
+
+    
+
+    
+        <title>The Java Community Process(SM) Program - communityprocess - maintenance</title>
+    
+
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+
+
+<body onload="P7_initPM(0,1,0,0,-1)">
+
+    <a name="top"></a>
+
+    <div id="header">
+	<div id="logo">
+		<a href="/en/home/index"><img src="/images/spacer.gif" alt="Java Community Process" height="81" width="151"></a>
+	</div>
+	<div id="tools">
+		<div class="search">
+			<form name="search" action="/en/jsr/summary" method="get" onsubmit="return validate_search()">
+				<input name="id" value="Search JSRs" size="16" class="form" onfocus="nullify_if_equal(this, 'Search JSRs')" type="text">
+				<a href="javascript:document.search.submit()" onclick="return validate_search()"><img src="/images/button_go.gif" width="21" height="16" border="0" alt="Submit this Search" name="sub_search"></a>
+			</form>
+		</div>
+		<div class="tools">
+			<a href="/en/press/pressroom">Press Room</a> &nbsp;|&nbsp;
+			<a href="http://java.com/java/download/index.jsp?cid=jdp78399">Get Java Here</a> &nbsp;|&nbsp;
+			<!-- <a href="javascript:void(0)">Print Format</a> &nbsp;|&nbsp;&nbsp; -->
+		</div>
+
+	</div>
+	<div style="clear: right;"></div>
+
+        
+
+	<div class="topbar"><img src="/images/spacer.gif" alt="" height="3" width="154"></div>
+	<div id="update"> </div>
+    </div>
+
+
+    
+
+        <!-- ** BEGIN: Content Table ** //-->
+
+        <table width="100%" border="0" cellpadding="0" cellspacing="0">
+
+            <tr>
+
+                <!-- ** BEGIN: Navigation Column ** //-->
+                <td width="150" id="leftcontent" valign="top">
+                    <!-- Navigation Placeholder //-->
+
+                    
+
+                    <div class="bar"><img src="/images/hr_dots1.gif" alt="" height="3" width="150"></div>
+
+        <!-- begin find JSRs form -->
+        <!-- IMPORTANT! do not convert this form to Struts < html : form > tag.  javascript change of form.action property fails. -->
+        <img src="/images/hd_find-jsrs.gif" alt="Find JSRs" height="18" width="150">
+        <form name="findjsr" action="/en/jsr/summary" method="get" class="pt5" onsubmit="return validate_findjsr()">
+            <input name="id" size="18" class="form" value="Search JSRs" onfocus="nullify_if_equal(this, 'Search JSRs')" type="text">
+	    <a href="javascript:document.findjsr.submit()" onclick="return validate_findjsr()"><img src="/images/button_go.gif" width="21" height="16" border="0" alt="Submit this Search" name="sub_search"></a>
+        </form><br><br>
+
+        <!-- ** Menu Start ** //-->
+
+        <ul id="p7PMnav">
+            <li><a href="/en/jsr/platform">JSRs by Platform</a></li>
+            <li><a href="/en/jsr/tech">JSRs by Technology</a></li>
+            <li><a href="/en/jsr/stage">JSRs by Stage</a></li>
+            <li><a href="/en/jsr/ec">JSRs by Committee</a></li>
+            <li><a href="/en/jsr/all">List of All JSRs</a></li>
+
+            <!--end find JSRs form -->
+            <div style="clear: both;"><img src="/images/spacer.gif" alt="" height="25" width="1"></div>
+
+            <!--begin my JCP -->
+            <img src="/images/hd_my-jcp.gif" alt="My JCP" height="18" width="150">
+            
+
+          <form name="login" method="get" action="/en/user/login" >
+            <input name="Sign-in" type="submit" title="Sign-in" value="Sign-in" />
+          </form>
+
+            <div style="clear:both"><img src="/images/global/spacer.gif" width="1" height="3" alt=""></div>
+            <div class="noNav">
+                <a href="/en/user/register">Register for Site</a>
+            </div>
+
+             <div class="bar"><img src="/images/hr_dots1.gif" alt="" height="3" width="150"></div>
+           <div class="noNav" style="color: #666666; padding: 0;">
+              Use of JCP site is subject to the
+              <a href="/en/home/terms" style="display:inline;padding: 0">JCP Terms of Use</a> and the
+              <a href="http://www.oracle.com/us/legal/privacy/index.html" style="display:inline;padding: 0" href="">Oracle Privacy Policy</a>
+          </div>
+
+            
+
+            <div style="clear:both"><img src="/images/global/spacer.gif" width="1" height="25" alt=""></div>
+
+            <!--begin JCP info -->
+            <img src="/images/hd_jcp-info.gif" alt="JCP Info" height="18" width="150">
+
+            <li><a href="/en/procedures/overview" class="p7PMtrg">About JCP</a>
+                <ul>
+                    <li><a href="/en/procedures/overview">Program Overview</a></li>
+                    <li><a href="/en/procedures/jcp2">JCP Process Document</a></li>
+                    <li><a href="/en/whatsnew/calendar">Calendar</a></li>
+                    <li><a href="/en/participation/members">JCP Members</a></li>
+                    <li><a href="/en/participation/committee">Executive Committee</a></li>
+                    <li><a href="/en/whatsnew/elections">Elections</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/en/participation/overview" class="p7PMtrg">Get Involved</a>
+		<ul>
+                    <li><a href="/en/participation/overview">Overview</a></li>
+                    <li><a href="/en/participation/membership">Becoming a JCP Member</a></li>
+		</ul>
+            </li>
+
+            <li><a href="/en/resources/contents" class="p7PMtrg">Community Resources</a>
+                <ul>
+                    <li><a href="/en/resources/contents">Overview</a></li>
+                    <li><a href="/en/resources/tutorials">Tutorials</a></li>
+                    <li><a href="/en/resources/multimedia">JCP Podcasts</a></li>
+                    <li><a href="/en/resources/guide">Spec Lead Guide</a></li>
+                    <li><a href="/en/resources/tdk">TCK Tool & Info</a></li>
+                    <li><a href="/en/resources/license_reference">License Reference</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/en/press/pmo" class="p7PMtrg">Community News</a>
+                <ul>
+                    <li><a href="/en/press/pmo">News</a></li>
+                    <li><a href="/en/press/news/awards/awards_main">Programs &amp; Awards</a></li>
+                    <li><a href="/en/press/releases">Press Releases</a></li>
+                    <li><a href="/en/press/success">Success Stories</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/en/introduction/faq">FAQ</a></li>
+
+            <li><a href="/en/resources/contacts">Contact Us</a></li>
+
+            <div style="clear: both;"><img src="/images/spacer.gif" alt="" height="25" width="1"></div>
+
+            <!--[if lte IE 6]><style>#p7PMnav a{height:1em;}#p7PMnav li{height:1em;float:left;clear:both;width:100%}</style><![endif]-->
+            <!--[if IE 6]><style>#p7PMnav li{clear:none;}</style><![endif]-->
+            <!--[if IE 7]><style>#p7PMnav a{zoom:100%;}#p7PMnav li{float:left;clear:both;width:100%;}</style><![endif]-->
+        </ul>
+
+        
+
+        <!--begin ad space -->
+        <div class="ads">
+            <a href="http://java.com/java/download/index.jsp?cid=jdp78399" target="_blank"><img style="display: ;" src="/images/ad_banner2.gif" alt="Ad Banner" border="1" height="70" width="150"></a>
+        </div>
+        <!--end ad space -->
+
+<!-- ** Menu End ** //-->
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;<br>
+
+    
+
+                    &nbsp;<br>
+                    <img src="/images/common/trans.gif" alt="" width="1" height="150"><br>
+
+              
+
+
+
+                </td>
+                <!-- ** END: Navigation Column ** //-->
+
+                <!-- ** BEGIN: Gutter Column ** //-->
+		<td width="10" nowrap><img src="/images/common/trans.gif" alt="" width="10" height="1"></td>
+                <!-- ** END: Gutter Column ** //-->
+
+                <!-- ** BEGIN: Content Column ** //-->
+                <td width="100%" valign="top">
+
+    
+<script type="text/javascript">
+
+String.prototype.trim = function() {
+        return this.replace(/^\s+|\s+$/g,"");
+}
+String.prototype.ltrim = function() {
+        return this.replace(/^\s+/,"");
+}
+String.prototype.rtrim = function() {
+        return this.replace(/\s+$/,"");
+}
+
+function validate_search() {
+	if (document.search.id.value == "Search JSRs" || document.search.id.value.trim().length == 0) {
+		alert("Search terms must be entered first");
+		return false;
+	}
+	return true;
+}
+
+function validate_findjsr() {
+	if (document.findjsr.id.value == "Search JSRs" || document.findjsr.id.value.trim().length == 0) {
+		alert("Search terms must be entered first");
+		return false;
+	}
+	return true;
+}
+
+function nullify_if_equal(field, str) {
+	// alert("val=" + field.value);
+	if (field.value == str) {
+		field.value = "";
+	}
+}
+
+</script>
+<!-- ** END: header.jsp ** //-->
+
+
+
+
+
+
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+<meta name="collection" content="reference">
+   <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+   <meta name="Author" content="rebecca searls">
+   <meta name="GENERATOR" content="Mozilla/4.76 [en] (X11; U; SunOS 5.8 sun4u) [Netscape]">
+</head>
+<body>
+
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote><b><font size=+1>Java 2 Enterprise Edition Deployment API 1.1</font></b>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>Sept 26, 2002</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+<b><font size=+1>Description</font></b>
+<br>Maintenance version of the Java 2 Enterprise Edition Deployment API
+specification, version 1.1
+<br>&nbsp;
+<p><b><font size=+1>Specification Lead</font></b>
+<br>Rebecca Searls, Sun Microsystems, Inc.
+<p><b><font size=+1>Feedback</font></b>
+<br>Comments should be sent to <i>j2ee-deployment-comments@sun.com</i>
+<p><b><font size=+1>Rationale for accepted changes</font></b>
+<br>This maintenance release addresses the new requirements the J2EE 1.4
+platform places on the deployment process and adds clarifications to several
+topics in the initial specification.
+<ul>
+<li>
+The deployment descriptor file format has moved from DTD to XML Schema.&nbsp;
+Under this new format, multiple attributes on an XML element&nbsp; must
+be supported, and XPath strings&nbsp; must include namespace designators.</li>
+
+<li>
+The Web Services Specification, JSR-109, requires support for multiple
+XML instance documents.</li>
+
+<li>
+Optional Packages requires support for accessing the appropriate information
+in a module's manifest file.</li>
+
+<li>
+The method that returns the deployment descriptor version must be made
+generic to support both DTD and XML Schema formats.</li>
+</ul>
+
+<p><br><b><font size=+1>Accepted Changes</font></b>
+<br>&nbsp;
+<blockquote><b>XML Schema</b>
+<br>XML Schema supports the assigning of multiple attributes to an element.&nbsp;
+Code will be added to the DDBean to support retrieval of attributes.</blockquote>
+
+<blockquote>
+<blockquote>
+<blockquote>interface DDBean
+<br>{
+<br>&nbsp;&nbsp;&nbsp; <font size=-1>/**</font>
+<br><font size=-1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; * Returns the list
+of attribute names associated with XML element.</font>
+<br>&nbsp;&nbsp;&nbsp;&nbsp; <font size=-1>*</font>
+<br><font size=-1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; * @return a list
+of attribute names on this element.&nbsp; Null</font>
+<br><font size=-1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; * is returned if
+there are no attributes.</font>
+<br><font size=-1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; */</font>
+<br>&nbsp;&nbsp;&nbsp; String[] getAttributeNames();
+<p>&nbsp;&nbsp;&nbsp; <font size=-1>/**</font>
+<br><font size=-1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; * Returns the string value
+of the named attribute.</font>
+<br>&nbsp;&nbsp;&nbsp; <font size=-1>*</font>
+<br><font size=-1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; * @return the value of
+the attribute.&nbsp; Null is returned</font>
+<br><font size=-1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; *&nbsp;&nbsp; if there
+is no such attribute.</font>
+<br><font size=-1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; */</font>
+<br>&nbsp;&nbsp;&nbsp; String getAttributeValue(String attrName);
+<br>}
+<br>&nbsp;</blockquote>
+</blockquote>
+</blockquote>
+
+<blockquote><b>Namespaces in Xpath Support</b>
+<br>DTD-based and XML Schema-based deployment descriptors have different
+XPath naming requirements. This is due to the use of namespaces in XML
+Schema but not in DTD-based deployment descriptors.&nbsp; The namespace
+feature requires the addition of a namespace prefix to each XML element
+in the XPath of a J2EE XMLSchema-based instance document. Each element
+in an XPath must be specifically qualified with the namespace prefix that
+is bound to the namespace's URI.&nbsp;&nbsp; The format is:
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&lt; prefix>:&lt;XML tag>
+<p>Prefix is a name associated with the namespace URI.&nbsp; The&nbsp;
+colon (:) is a separator between the prefix and the XML tag.
+<p>A namespace is uniquely identified using a URI.&nbsp; A prefix may be
+associated with a namespace URI.&nbsp; The reserved attribute <b><i>xmlns</i></b>
+is used to define a namespace without an associated prefix; the reserved
+attribute <b><i>xmlns:</i></b> is used to defined a namespace with an associated
+prefix.&nbsp; A namespace defined without a prefix is treated as part of
+the default namespace.&nbsp; The element in which this namespace is specified
+and all the contents within the element are associated with the XML Schema
+Namespace.&nbsp; If there is no prefix defined for a namespace,&nbsp; the
+&lt;prefix>: is not used in the XPath element qualifier, only the &lt;XML
+tag> is given.&nbsp; Since namespaces are not supported in DTD-based deployment
+descriptors, the &lt;prefix>:&nbsp; is never used in the XPath element
+qualifier for deployment descriptors of this type.
+<p>The required namespace for J2EE XML Schema-based deployment descriptors
+is <i>http://java.sun.com/xml/ns/j2ee</i>.&nbsp;&nbsp; There is no required
+prefix for this namespace.&nbsp;&nbsp; The prefix&nbsp; can either&nbsp;
+be specified by the creator of the instance document or it can be&nbsp;
+left unspecified and thus&nbsp; part of the default namespace.
+<p>To build proper XPath strings, a J2EE Product Provider plugin will need
+to determine the active namespaces&nbsp; for elements in a deployment descriptor
+instance document, by analyzing the attributes on the instance document
+elements.
+<p>In the example below, two active namespaces are defined in the root
+element of the instance document:
+<br>&nbsp;
+<ul>
+<li>
+The J2EE namespace is defined without a prefix:</li>
+</ul>
+<i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+xmlns="http://java.sun.com/xml/ns/j2ee".</i>
+<ul>
+<li>
+The namespace, <i>http://foobar.com</i> is defined with prefix <i>foobar,:</i></li>
+</ul>
+<i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+xmlns:foobar="http://foobar.com".</i>
+<p>The AbsoluteLocationPath to element <i>foobar:comment</i> would be
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+/web-app/deployment-extension/extension-element/foobar:comment
+<p>&nbsp;&nbsp;&nbsp; From the element above, the RelativeLocationPath
+to <i>foobar:version</i> would be:
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+foobar:product/foobar:version
+<blockquote>
+<blockquote>&lt;web-app xmlns="http://java.sun.com/xml/ns/j2ee"
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; xmlns:foobar="http://foobar.com"
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd
+http://foobar.com
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; http://foobar.com/foobar.xsd"
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; version="2.4">
+<br>&nbsp;&nbsp;&nbsp; &lt;servlet>
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;servlet-name>MyInventoryServlet&lt;/servlet-name>
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&lt;servlet-class>com.acme.Inventory&lt;/servlet-class>
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&lt;init-param>
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&lt;param-name>debug&lt;/param-name>
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&lt;param-value>0&lt;/param-value>
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&lt;/init-param>
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&lt;init-param>
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&lt;param-name>defaultCompany&lt;/param-name>
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&lt;param-value>ToysRUs&lt;/param-value>
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&lt;/init-param>
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&lt;load-on-startup>1&lt;/load-on-startup>
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;/servlet>
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+:
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+:
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+:
+<br>&nbsp;&nbsp;&nbsp; &lt;deployment-extension namespace="http://foobar.com"
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+mustUnderstand="false">
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;extension-element xsi:type="foobar:mytype">
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&lt;foobar:comment>This component is generated byFoobar company
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&lt;/foobar:comment>
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&lt;foobar:product>Foobar Build Environment&lt;/foobar:product>
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&lt;foobar:version>100.5&lt;/foobar:version>
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;/extension-element>
+<br>&nbsp;&nbsp;&nbsp; &lt;/deployment-extension>
+<br>&lt;/web-app></blockquote>
+</blockquote>
+
+<p><br>An alternative implementation of the previous example is to define
+the <i>foobar</i> namespace in the <i>deployment-extension</i> element.&nbsp;&nbsp;
+The J2EE Product Provider plugin would have had to analyze the attributes
+on the root element and the <i>deployment-extension</i> element in order
+to generate the XPath strings.
+<p>A vendor plugin could get the <i>foobar:version</i>&nbsp; data with
+the following steps.
+<br>&nbsp;
+<ul>
+<li>
+Determine the J2EE namespace prefix from the root element.</li>
+
+<li>
+Create the AbsoluteLocationPath <i>/web-app/deployment-extension.</i></li>
+
+<li>
+Evaluate each <i>deployment-extension</i> element for the foobar namespace
+name.</li>
+
+<li>
+Determine the prefix of the foobar namespace.</li>
+
+<li>
+Create the RelativeLocationPath,&nbsp;<i> extension-element/foobar:comment
+/foobar:product/foobar:version.</i></li>
+</ul>
+
+<br>&nbsp;
+<blockquote>
+<blockquote>&lt;web-app xmlns="http://java.sun.com/xml/ns/j2ee"
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; version="2.4">
+<br>&nbsp;&nbsp;&nbsp; &lt;servlet>
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;servlet-name>MyInventoryServlet&lt;/servlet-name>
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&lt;servlet-class>com.acme.Inventory&lt;/servlet-class>
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&lt;init-param>
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&lt;param-name>debug&lt;/param-name>
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&lt;param-value>0&lt;/param-value>
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&lt;/init-param>
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&lt;init-param>
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&lt;param-name>defaultCompany&lt;/param-name>
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&lt;param-value>ToysRUs&lt;/param-value>
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&lt;/init-param>
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&lt;load-on-startup>1&lt;/load-on-startup>
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;/servlet>
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+:
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+:
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+:
+<br>&nbsp;&nbsp;&nbsp; &lt;deployment-extension namespace="http://foobar.com"
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+xmlns:foobar="http://foobar.com"
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+xsi:schemaLocation=http://foobar.com http://foobar.com/foobar.xsd"
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+mustUnderstand="false">
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;extension-element xsi:type="foobar:mytype">
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&lt;foobar:comment>This component is generated byFoobar company
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&lt;/foobar:comment>
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&lt;foobar:product>Foobar Build Environment&lt;/foobar:product>
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&lt;foobar:version>100.5&lt;/foobar:version>
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;/extension-element>
+<br>&nbsp;&nbsp;&nbsp; &lt;/deployment-extension>
+<br>&lt;/web-app></blockquote>
+</blockquote>
+</blockquote>
+
+<blockquote><b>Web Services (JSR-109) Support</b>
+<br>Web Services, JSR-109, adds new deployment descriptor files to the
+J2EE module package.&nbsp; There are deployment descriptor files with defined
+names, webservices.xml and webservicesclient.xml, and WSDL documents whose
+names are identified by an XML tag in the web services deployment descriptor.&nbsp;
+The following changes will be made to the interfaces in order to provide
+multiple deployment descriptor file support for these files.
+<p>The deployment characteristics for a web service are defined in both
+the module specific deployment descriptor and the web service deployment
+descriptor. The&nbsp; DeploymentConfiguration.getDConfigBeanRoot method
+must be used to pass the module specific deployment descriptor.&nbsp; See
+the corresponding component specification for the details.&nbsp; The web
+services deployment descriptors, webservice.xml and webserviceclient.xml
+must be passed to the plugin by the method DConfigBeanRoot.getDConfigBean.
+<p>The DeployableObject.getDDBeanRoot is to be used to return a DDBeanRoot
+object for non deployment descriptor XML instance documents such as WSDL
+files.
+<br>&nbsp;</blockquote>
+
+<blockquote>
+<blockquote>
+<blockquote>interface DConfigBeanRoot
+<br>{
+<br>&nbsp;&nbsp;&nbsp; <font size=-1>/**</font>
+<br><font size=-1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; * Return a DConfigBean
+for a deployment descriptor that is not the module's</font>
+<br><font size=-1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; * primary deployment
+descriptor.&nbsp;&nbsp; Web services provides a deployment descriptor</font>
+<br><font size=-1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; * in addition to
+the module's primary deployment descriptor.&nbsp; Only the DDBeanRoot</font>
+<br><font size=-1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; * for this category
+of secondary deployment descriptors are to be passed as arguments</font>
+<br><font size=-1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; * through this method.</font>
+<br><font size=-1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; *</font>
+<br><font size=-1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; * Web service has
+two deployment descriptor files, one that defines the web service</font>
+<br><font size=-1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; * and one that defines
+a client of a web service.&nbsp; See the Web Service specification for</font>
+<br><font size=-1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; * the details.</font>
+<br>&nbsp;&nbsp;&nbsp;&nbsp; <font size=-1>*</font>
+<br><font size=-1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; * @param ddBeanRoot
+represents the root element of a deployment descriptor file.</font>
+<br>&nbsp;&nbsp;&nbsp;&nbsp; <font size=-1>*</font>
+<br><font size=-1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; *&nbsp; @return
+a DConfigBean to be used for processing this deployment descriptor data.
+Null may be returned</font>
+<br><font size=-1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; *&nbsp;&nbsp;&nbsp;
+if no DConfigBean is required for this deployment descriptor.</font>
+<br><font size=-1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; */</font>
+<br>&nbsp;&nbsp;&nbsp;&nbsp; DConfigBean&nbsp; getDConfigBean(DDBeanRoot
+ddBeanRoot)
+<br>&nbsp;}
+<p>interface DeployableObject
+<br>&nbsp;{
+<br>&nbsp;&nbsp;&nbsp;&nbsp; <font size=-1>/**</font>
+<br><font size=-1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; * Returns
+a DDBeanRoot object for the XML instance document named.</font>
+<br><font size=-1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; * This method
+should be used to return DDBeanRoot objects for non deployment</font>
+<br><font size=-1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; * descriptor
+XML instance documents such as WSDL files.</font>
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <font size=-1>*</font>
+<br><font size=-1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; * @param filename
+the full path name from the root of the module of the xml</font>
+<br><font size=-1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; *&nbsp; instance
+document for which a DDBeanRoot object is to be returned.</font>
+<br><font size=-1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; * @return
+a DDBeanRoot object for the XML data.</font>
+<br><font size=-1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; * @throws
+java.io.FileNotFoundException, if the named file can not be found</font>
+<br><font size=-1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; * @throws
+javax.enterprise.deploy.model.exceptions.DDBeanCreationException</font>
+<br><font size=-1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; * if an error
+is encountered creating the DDBeanRoot object.</font>
+<br><font size=-1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; */</font>
+<br>&nbsp;&nbsp;&nbsp;&nbsp; DDBeanRoot getDDBeanRoot(String filename)
+throws
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; java.io.FileNotFoundException,
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; javax.enterprise.deploy.model.exceptions.DDBeanCreationException;
+<br>&nbsp;}
+<p>&nbsp;&nbsp; interface DDBeanRoot extends DDBean
+<br>&nbsp;&nbsp; {
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <font size=-1>/**</font>
+<br><font size=-1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+* Returns the filename relative to the root of the module of the XML instance
+document this</font>
+<br><font size=-1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+*&nbsp; DDBeanRoot represents.</font>
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <font size=-1>*</font>
+<br><font size=-1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+*&nbsp; @return String the filename relative to the root of the module</font>
+<br><font size=-1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+*/</font>
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; String getFilename();
+<br>&nbsp;&nbsp; }</blockquote>
+</blockquote>
+</blockquote>
+
+<blockquote>A new exceptions directory will be added to the javax.enterprise.deploy.model
+package.
+<br>The new class DDBeanCreateException will be added to this directory.
+<br>&nbsp;
+<blockquote>
+<blockquote>package javax.enterprise.deploy.model.exceptions;
+<p><font size=-1>&nbsp; /**</font>
+<br><font size=-1>&nbsp;&nbsp;&nbsp; * This exception reports errors in
+generating a DDBean.</font>
+<br><font size=-1>&nbsp;&nbsp;&nbsp; *</font>
+<br><font size=-1>&nbsp;&nbsp;&nbsp; */</font>
+<br>&nbsp;&nbsp; public class DDBeanCreateException extends java.lang.Exception
+{
+<p>&nbsp;&nbsp;&nbsp; <font size=-1>/**</font>
+<br><font size=-1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; * Creates new &lt;code>DDBeanCreateException&lt;/code>
+without detail message.</font>
+<br><font size=-1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; */</font>
+<br>&nbsp;&nbsp;&nbsp; public DDBeanCreateException() {
+<br>&nbsp;&nbsp;&nbsp; }
+<p>&nbsp;&nbsp;&nbsp; <font size=-1>/**</font>
+<br><font size=-1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; * Constructs an
+&lt;code>DDBeanCreateException&lt;/code> with the</font>
+<br><font size=-1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; * specified detail
+message.</font>
+<br><font size=-1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; * @param msg the
+detail message.</font>
+<br><font size=-1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; */</font>
+<br>&nbsp;&nbsp;&nbsp; public DDBeanCreateException(String msg) {
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; super(msg);
+<br>&nbsp;&nbsp;&nbsp; }
+<br>}
+<br>&nbsp;</blockquote>
+</blockquote>
+
+<p><br><b>General Archive Access</b>
+<br>The following changes will be added to support Optional Packages and
+web services and to provide
+<br>backward compatibility to pre-1.4 archives.</blockquote>
+
+<blockquote>
+<blockquote>
+<blockquote>import java.util.Enumeration;
+<br>import java.io.InputStream;
+<br>import java.io.IOException;
+<p>public interface DeployableObject
+<br>{
+<br>&nbsp; <font size=-1>/**</font>
+<br><font size=-1>&nbsp;&nbsp;&nbsp; *&nbsp; Returns an enumeration of
+the module file entries.&nbsp; All elements in the</font>
+<br><font size=-1>&nbsp;&nbsp;&nbsp; *&nbsp; enumeration are of type String.&nbsp;
+Each String represents a file name relative</font>
+<br><font size=-1>&nbsp;&nbsp;&nbsp; *&nbsp; to the root of the module.</font>
+<br><font size=-1>&nbsp;&nbsp; *</font>
+<br><font size=-1>&nbsp;&nbsp; * @return an enumeration of the archive
+file entries.</font>
+<br><font size=-1>&nbsp;&nbsp; */</font>
+<br>&nbsp; public Enumeration entries();
+<p>&nbsp; /<font size=-1>**</font>
+<br><font size=-1>&nbsp;&nbsp; * Returns the InputStream for the given
+entry name.</font>
+<br><font size=-1>&nbsp;&nbsp; * The file name must be relative to the
+root of the module.</font>
+<br><font size=-1>&nbsp;&nbsp; *</font>
+<br><font size=-1>&nbsp;&nbsp; * @param name the file name relative to
+the root of the module.</font>
+<br><font size=-1>&nbsp;&nbsp; *</font>
+<br><font size=-1>&nbsp;&nbsp; * @return the InputStream for the given
+entry name or null if not found.</font>
+<br><font size=-1>&nbsp;&nbsp; */</font>
+<br>&nbsp; public InputStream getEntry(String name);
+<br>}</blockquote>
+</blockquote>
+</blockquote>
+
+<blockquote><b>Deployment Descriptor version support change</b>
+<br>To support multiple deployment descriptor files, the placement of the
+method to return the instance document version must change.&nbsp; Each
+DDBeanRoot is associated with a specific deployment descriptor document.&nbsp;
+The method to retrieve the document version must reside in the DDBeanRoot
+object.</blockquote>
+
+<blockquote>
+<blockquote>
+<blockquote>public interface DeployableObject
+<br>{
+<br>&nbsp;&nbsp;&nbsp; <font size=-1>/**</font>
+<br><font size=-1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; * A convenience
+method to return the deployment descriptor</font>
+<br><font size=-1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; * document version
+number of the primary deployment descriptor</font>
+<br><font size=-1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; * for the module
+(e.g. web.xml, ejb-jar.xml, ra.xml, application.xml,</font>
+<br><font size=-1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; * and&nbsp; application-client.xml.)&nbsp;
+The version number for documents</font>
+<br><font size=-1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; * webservices.xml
+, webservicesclient.xml and the like are not returned</font>
+<br><font size=-1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; * by this method.&nbsp;
+DDBeanRoot.getDDBeanRootVersion should be used</font>
+<br><font size=-1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; * instead.</font>
+<br><font size=-1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; *</font>
+<br><font size=-1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; * This method is
+being deprecated.&nbsp; DDBeanRoot.getDDBeanRootVersion</font>
+<br><font size=-1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; * should be used
+instead.</font>
+<br>&nbsp;&nbsp;&nbsp;&nbsp; <font size=-1>*</font>
+<br><font size=-1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; *&nbsp;&nbsp; @deprecated
+As of version 1.1, replace by DDBeanRoot.getDDBeanRootVersion()</font>
+<br>&nbsp;&nbsp;&nbsp;&nbsp; <font size=-1>*</font>
+<br><font size=-1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; * @return a string
+that is the version number of the XML instance document.</font>
+<br><font size=-1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; *&nbsp; Null is
+returned if no version number can be found.</font>
+<br><font size=-1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; */</font>
+<br>&nbsp;&nbsp;&nbsp; String getModuleDTDVersion()
+<br>}
+<br>&nbsp;
+<p>Interface DDBeanRoot
+<br>{
+<br>&nbsp;&nbsp;&nbsp; <font size=-1>/* *</font>
+<br><font size=-1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; *A convenience method
+to return the version number of an</font>
+<br><font size=-1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; * XML instance document.&nbsp;
+This method is replacing the</font>
+<br><font size=-1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; * method DeployableObject.getModuleDTDVersion,
+because</font>
+<br><font size=-1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; * it returns the
+version number of any J2EE XML instance document</font>
+<p><font size=-1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; * @return a
+string that is the version number of the XML instance document.</font>
+<br><font size=-1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; *&nbsp; Null
+is returned if no version number can be found.</font>
+<br><font size=-1>&nbsp;&nbsp;&nbsp;&nbsp; */</font>
+<br>&nbsp;&nbsp;&nbsp; String getDDBeanRootVersion();
+<br>}</blockquote>
+</blockquote>
+</blockquote>
+
+<p><br><b><font size=+1>Document Clarifications</font></b>
+<blockquote><b>Invalid J2EE version designator, V1_3_1</b>
+<br>The documentation will be changed to state that this constant should
+never be used.</blockquote>
+
+<blockquote><b>getId Method clarification</b>
+<br>The documentation for method getId will read:</blockquote>
+
+<blockquote>
+<blockquote>&nbsp;Returns a tool-specific reference for attribute ID on
+an element in the deployment descriptor.&nbsp; This attribute is defined
+for J2EE 1.2 and 1.3 components.</blockquote>
+</blockquote>
+
+<blockquote><b>Clarification of how a J2EE server vendor should package
+its plugin</b>
+<br>The following section will be added to the specification to describe
+how a server vendor should package its <i>javax.enterprise.deploy.spi</i>
+package implementation.
+<blockquote>A Server vendor plugin is packaged into one or more JAR files
+with a .<b>jar</b> extension.&nbsp; The JAR file or files contain an implementation
+of the <i>javax.enterprise.deploy.spi</i> package and utility classes.
+The APIs must be implemented in the vendor's namespace.
+<p>The entry point class to the server plugin is an implementation of the
+<i>DeploymentFactory</i>
+interface.&nbsp; There can be one or more <i>DeploymentFactory</i> implementation
+classes in the plugin.&nbsp; Each implementation must be identified by
+a fully qualified class name in the JAR file's manifest file by the attribute,
+<i>J2EE-DeploymentFactory-Implementation-Class</i>.
+<p>The plugin should not assume that any packages other than the J2SE version
+required by the plugin's J2EE platform or higher and the <i>javax.enterprise.deploy</i>
+package will be available.&nbsp; The plugin should not provide the J2EE
+APIs in the JAR files provided to the tool.&nbsp; Plugins should not attempt
+to load application classes in the tool.&nbsp; The plugin may send the
+application classes to the server and load them there for (e.g.) reflection,
+but the plugin should not try to use reflection on application classes
+in the plugin&nbsp; because doing so is not portable.
+<p>The manner in which a vendor's plugin JAR file(s) are made available
+to the tool is not specified.&nbsp; Some J2EE Product vendors may direct
+the user to download the plugin from a web site, others may require the
+user to copy it from their local server installation, and another may provide
+an initial JAR file whose <i>DeploymentFactory</i> implementation contains
+an automated mechanism that downloads the JAR file(s) on a tool's initial
+request for a <i>DeploymentFactory</i>.
+<br>&nbsp;</blockquote>
+</blockquote>
+
+<blockquote><b>Clarification of how a J2EE tool vendor should access server
+vendor's plugin</b>
+<br>The following section will be added to the specification to describe
+how a deployment tool should load a server vendor's plugin.
+<blockquote>The manner in which a tool makes a server plugin accessible
+in its classpath is not specified.&nbsp; One tool vendor may designate
+a directory in which all plugin JAR file(s) are saved.&nbsp; It could then
+process all the JAR files in the directory.&nbsp;&nbsp; Another may retain
+a repository of plugin names and directory locations which it processes.&nbsp;
+A third vendor may require the user to identify the location of the plugin
+whenever it runs.
+<p>The tool vendor is required to provide the J2SE version required by
+the plugin or higher and the <i>javax.enterprise.deploy</i>.&nbsp; See
+<i>getDConfigBean</i>Version
+in Section 4.2 for information on how to get the plugin version.
+<p>The entry point to a server plugin is the implementation of the <i>DeploymentFactory</i>
+interface.&nbsp; A server vendor must provide at least one implementation
+of the <i>DeploymentFactory</i> interface.&nbsp; The fully qualified name
+of each <i>DeploymentFactory </i>implementation in a JAR file must be identified
+in the <i>J2EE-DeploymentFactory-Implementation-Class</i> attribute of
+the JAR file's manifest file.</blockquote>
+&nbsp;&nbsp; A description will be added to section 9.3 clarifying how
+the manifest key, <i>J2EE-DeploymentFactory-Implementation-Class,</i> is
+to be used.</blockquote>
+
+<blockquote><b>Clarification of Target examples</b>
+<br>In section 6.2 the example 2 comment will be changed to read as follows:
+<blockquote>Example 2 illustrates a J2EE product that defines one Target&nbsp;
+object.&nbsp; Three servers use the same directory for the target's archive
+repository.&nbsp; This example demonstrates a target functioning as a staging
+area from which multiple servers pull applications to install and run.</blockquote>
+
+<p><br>In section 6.2 the example 3 comment will be changed to read as
+follows:
+<blockquote>Example 3 shows one J2EE product vendor that define a unique
+server to be defined by a server paired with a database. In this example
+a single server is paired with two separate databases: thus there are two
+separate servers by this vendor's definition.&nbsp; A unique target has
+been defined for each server in this example.</blockquote>
+</blockquote>
+
+<blockquote><b>Clarification of distribute/start and stop/undeploy</b>
+<br>The following clarification as to the initialization and shutdown of
+an application's running environment will be added to Chapter 4.
+<blockquote>The time at which an application's running environment is initialized
+or shut down is not specified.&nbsp; A vendor may choose to initialize
+an application's running environment when the archive is distributed to
+the system or wait until the start action is called.&nbsp; The only requirement
+is that the application is not available to clients until the start action
+is called.&nbsp; Similarly a vendor may choose to shut down a running application's
+environment when stop is called or wait until undeploy is called. The only
+requirement is that the application is made unavailable to clients when
+the stop action is called.</blockquote>
+<b>Clarification of DDBean.getXpath</b>
+<br>The documentation will be changed to read:
+<blockquote>Returns the original xpath string provided by the DConfigBean.</blockquote>
+</blockquote>
+
+<blockquote><b>Correct API documentation</b>
+<br>Correct the documentation in file DConfigBean.java that refers to DeploymentConfigurator
+to read DeploymentConfiguration.</blockquote>
+
+<blockquote><b>Clarification of ClientConfiguration</b>
+<br>Clarify that the Serializable nature of the ClientConfiguration is
+limited across VM activations of the AppClientContainer.</blockquote>
+
+<blockquote><b>Web Services support</b>
+<br>Documentation will be added at appropriate places in the specification
+and API documentation to address the issues of web service support.
+<p><b>XML Schema support</b>
+<br>Documentation will be added at appropriate places throughout the document
+to address the issues of XML&nbsp; Schema support.&nbsp; See
+<b>Namespaces
+in Xpath Support </b>above for the description of namespace support.
+<p><b>Clarification UI Contract between Tool and Plugin</b>
+<br>The following clarification will be added to the specification.
+<p>JavaBean components present the dynamic deployment configuration information
+for a J2EE plugin to the deployer.&nbsp; The JavaBeans architecture was
+chosen because of its versatility in providing both simple and complex
+components.&nbsp; JavaBeans also enable the development of property sheets
+and property editors, as well as sophisticated customization wizards.
+<p>The JavaBean GUI mechanism, that a plugin provider implements in order
+to enable their <i>DConfigBeans</i> to be displayed by a deploy tool, is
+not specified.&nbsp; The plugin provider may choose to provide a Customizer
+for one <i>DConfigBean</i>, a Property Editor for a complex datatype for
+the Property Sheet of another <i>DConfigBean</i>, and to use the default
+Property Editors for the Property Sheet of yet a third <i>DConfigBean</i>.
+See the JavaBeans API Specification version 1.01.
+<p>The manner in which a tool analyzes a <i>DConfigBean</i> and displays
+it is not specified.&nbsp; It is recommended that any Customizer or Property
+Editor provided by the plugin vendor take precedence over similar functionality
+provided by the tool vendor.
+<p>It is expected that a Property Editor will be provided by a plugin vendor
+for any complex datatype in a <i>DConfigBean</i> that is to be edited by
+the Deployer.&nbsp; The Property Editor should be implemented and made
+<br>available to a tool according to the guidelines defined in the JavaBeans
+API Specification version 1.01.
+<br>&nbsp;
+<br>&nbsp;
+<p><b>DConfigBean API documentation change</b>
+<br>The DConfigBean API documentation header will be changed to the following:
+<p>The <i>DConfigBean</i> is a deployment configuration bean (<i>DConfigBean</i>)
+that is associated with one or more deployment descriptor beans, (<i>DDBean</i>).&nbsp;&nbsp;
+A <i>DConfigBean</i> represents a logical grouping of deployment configuration
+data to be presented to the Deployer. A <i>DConfigBean</i> provides zero
+or more XPaths that identifies the XML information it requires. A <i>DConfigBean</i>
+may contain other DConfigBeans and regular JavaBeans. The topmost <i>DConfigBean</i>
+is a <i>DConfigBeanRoot</i> object which represents a single XML instance
+document.
+<p>A <i>DConfigBean</i> is created by calling <i>DConfigBean.getDConfigBean(DDBean)</i>,
+where <i>DConfigBean</i> is the object that provided the XPath which the
+<i>DDBean</i>
+represents.
+<p>A DConfigBean is a JavaBean component that presents the dynamic deployment
+configuration information for a J2EE plugin to the deployer.&nbsp; The
+JavaBean architecture was chosen because of its versatility in providing
+both simple and complex components. JavaBeans also enable the development
+of property sheets and property editors, as well as sophisticated customization
+wizards.
+<p>It is expected that a plugin vendor will provide a Property Editor for
+any complex datatype in a DConfigBean that a deployer needs to be edit
+through a property sheet. The Property Editor should be implemented and
+made available to a tool according to the guidelines defined in the JavaBeans
+API Specification version 1.01.
+<p><b>DConfigBeanRoot API documentation change</b>
+<br>The DConfigBeanRoot API documentation header will be changed to the
+following:
+<p>A J2EE component module consists of one or more deployment descriptor
+files and zero or more non-deployment descriptor XML instance documents.&nbsp;
+A module must contain a component-specific deployment descriptor file (see
+the component specification for details). It may contain one or more secondary
+deployment descriptor files that define extra functionality on the component
+and zero or more non-deployment descriptor XML instance documents (see
+the Web Services specification).
+<p>The <i>DConfigBeanRoot</i> object is a deployment configuration bean
+(<i>DConfigBean</i>) that is associated with the root of the component's
+deployment descriptor. It must be created by calling the <i>DeploymentConfiguration.getDConfigBean(DDBeanRoot)
+</i>method
+where <i>DDBeanRoot</i> represents the&nbsp; component's deployment descriptor.
+<p>A <i>DConfigBean</i> object is associated with a deployment descriptor
+that&nbsp; extends a component's functionality.&nbsp; It must be created
+by calling the <i>DConfigBeanRoot.getDConfigBean(DDBeanRoot) </i>method.
+This <i>DConfigBean</i> object&nbsp; is a child of the compontent's <i>DConfigBeanRoot</i>
+object.&nbsp; The <i>DDBeanRoot</i>&nbsp; argument represents the&nbsp;
+secondary deployment descriptor.&nbsp; Deployment&nbsp; descriptor files&nbsp;
+such as&nbsp; <i>webservice.xml</i> and <i>webserviceclient.xml</i> are
+examples of secondary deployment descriptor files.
+<p>The server plugin must request a <i>DDBeanRoot</i> object for any non-deployment
+descriptor XML instance document data it requires.&nbsp; The plugin must
+call method <i>DeployableObject.getDDBeanRoot(String)</i> where String
+is the full path name from the root of the module to the file to be represented.
+A WSDL file is an example of a non-deployment descriptor XML instance document.
+<br>&nbsp;
+<br>&nbsp;</blockquote>
+
+<br>&nbsp;
+</body>
+<script language="JavaScript" src="/js/omi/jsc/s_code_remote.js"></script></html>
+
+
+
+<!-- ** BEGIN: footer.jsp ** //-->
+
+
+
+
+
+
+
+
+</td>
+</tr>
+</table>
+
+<!-- ** END: Content Table ** //-->
+
+<!-- ** BEGIN: Footer Table ** //-->
+
+<div id="footer" style="clear: both;">
+    <div class="footleft">
+        <a href="/en/resources/contacts">Contact Us</a>
+    </div>
+	
+    <div class="botbar"><img src="/images/spacer.gif" alt="" height="23" width="1"></div>
+
+    <div class="footleft2">
+         &copy; 2019, Oracle Corporation and/or its affiliates. 
+        <a href="/en/home/terms">Terms of Use</a>. <a href="http://www.oracle.com/us/legal/privacy/index.html">Privacy Policy</a>. <a href="http://www.oracle.com/us/legal/third-party-trademarks/third-party-trademarks-078568.html">Trademarks</a>
+    </div>
+
+    <div class="footright">
+        <img src="/images/common/logo_oracle_footer.gif" alt="Oracle Corporation" height="22" width="91">
+    </div>
+
+    <div style="clear: both;"><img src="/images/spacer.gif" alt="" height="30" width="1"></div>
+</div>
+
+<!-- ** END: Footer Table ** //-->
+
+
+
+<!-- ** Menu Start ** //-->
+
+
+
+</body>
+</html>
+<!-- ** END: footer.jsp ** //-->
+

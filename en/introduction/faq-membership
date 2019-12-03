@@ -1,0 +1,639 @@
+
+
+<!-- ** BEGIN: header.jsp ** //-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3c.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+<head>
+    
+
+   
+    <link href="/includes/css/menu.css" rel="stylesheet" type="text/css"></link>
+    <link href="/includes/css/style.css" rel="stylesheet" type="text/css"></link>
+    <!--[if lt IE 6]><link href="/includes/css/style5.css" rel="stylesheet" type="text/css" ></link><![endif]-->
+    <!--[if gte IE 5]><link href="/includes/css/style6.css" rel="stylesheet" type="text/css" ></link><![endif]-->
+    <link href="/includes/css/tabs.css"  rel="stylesheet" type="text/css"></link>
+
+    <script type="text/javascript" src="/includes/scripts/tabs.js"></script>
+    <script type="text/javascript" src="/includes/scripts/menu.js"></script>
+   
+
+    
+
+    
+        <title>The Java Community Process(SM) Program - Introduction - faq-membership</title>
+    
+
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+
+
+<body onload="P7_initPM(0,1,0,0,-1)">
+
+    <a name="top"></a>
+
+    <div id="header">
+	<div id="logo">
+		<a href="/en/home/index"><img src="/images/spacer.gif" alt="Java Community Process" height="81" width="151"></a>
+	</div>
+	<div id="tools">
+		<div class="search">
+			<form name="search" action="/en/jsr/summary" method="get" onsubmit="return validate_search()">
+				<input name="id" value="Search JSRs" size="16" class="form" onfocus="nullify_if_equal(this, 'Search JSRs')" type="text">
+				<a href="javascript:document.search.submit()" onclick="return validate_search()"><img src="/images/button_go.gif" width="21" height="16" border="0" alt="Submit this Search" name="sub_search"></a>
+			</form>
+		</div>
+		<div class="tools">
+			<a href="/en/press/pressroom">Press Room</a> &nbsp;|&nbsp;
+			<a href="http://java.com/java/download/index.jsp?cid=jdp78399">Get Java Here</a> &nbsp;|&nbsp;
+			<!-- <a href="javascript:void(0)">Print Format</a> &nbsp;|&nbsp;&nbsp; -->
+		</div>
+
+	</div>
+	<div style="clear: right;"></div>
+
+        
+
+	<div class="topbar"><img src="/images/spacer.gif" alt="" height="3" width="154"></div>
+	<div id="update"> </div>
+    </div>
+
+
+    
+
+        <!-- ** BEGIN: Content Table ** //-->
+
+        <table width="100%" border="0" cellpadding="0" cellspacing="0">
+
+            <tr>
+
+                <!-- ** BEGIN: Navigation Column ** //-->
+                <td width="150" id="leftcontent" valign="top">
+                    <!-- Navigation Placeholder //-->
+
+                    
+
+                    <div class="bar"><img src="/images/hr_dots1.gif" alt="" height="3" width="150"></div>
+
+        <!-- begin find JSRs form -->
+        <!-- IMPORTANT! do not convert this form to Struts < html : form > tag.  javascript change of form.action property fails. -->
+        <img src="/images/hd_find-jsrs.gif" alt="Find JSRs" height="18" width="150">
+        <form name="findjsr" action="/en/jsr/summary" method="get" class="pt5" onsubmit="return validate_findjsr()">
+            <input name="id" size="18" class="form" value="Search JSRs" onfocus="nullify_if_equal(this, 'Search JSRs')" type="text">
+	    <a href="javascript:document.findjsr.submit()" onclick="return validate_findjsr()"><img src="/images/button_go.gif" width="21" height="16" border="0" alt="Submit this Search" name="sub_search"></a>
+        </form><br><br>
+
+        <!-- ** Menu Start ** //-->
+
+        <ul id="p7PMnav">
+            <li><a href="/en/jsr/platform">JSRs by Platform</a></li>
+            <li><a href="/en/jsr/tech">JSRs by Technology</a></li>
+            <li><a href="/en/jsr/stage">JSRs by Stage</a></li>
+            <li><a href="/en/jsr/ec">JSRs by Committee</a></li>
+            <li><a href="/en/jsr/all">List of All JSRs</a></li>
+
+            <!--end find JSRs form -->
+            <div style="clear: both;"><img src="/images/spacer.gif" alt="" height="25" width="1"></div>
+
+            <!--begin my JCP -->
+            <img src="/images/hd_my-jcp.gif" alt="My JCP" height="18" width="150">
+            
+
+          <form name="login" method="get" action="/en/user/login" >
+            <input name="Sign-in" type="submit" title="Sign-in" value="Sign-in" />
+          </form>
+
+            <div style="clear:both"><img src="/images/global/spacer.gif" width="1" height="3" alt=""></div>
+            <div class="noNav">
+                <a href="/en/user/register">Register for Site</a>
+            </div>
+
+             <div class="bar"><img src="/images/hr_dots1.gif" alt="" height="3" width="150"></div>
+           <div class="noNav" style="color: #666666; padding: 0;">
+              Use of JCP site is subject to the
+              <a href="/en/home/terms" style="display:inline;padding: 0">JCP Terms of Use</a> and the
+              <a href="http://www.oracle.com/us/legal/privacy/index.html" style="display:inline;padding: 0" href="">Oracle Privacy Policy</a>
+          </div>
+
+            
+
+            <div style="clear:both"><img src="/images/global/spacer.gif" width="1" height="25" alt=""></div>
+
+            <!--begin JCP info -->
+            <img src="/images/hd_jcp-info.gif" alt="JCP Info" height="18" width="150">
+
+            <li><a href="/en/procedures/overview" class="p7PMtrg">About JCP</a>
+                <ul>
+                    <li><a href="/en/procedures/overview">Program Overview</a></li>
+                    <li><a href="/en/procedures/jcp2">JCP Process Document</a></li>
+                    <li><a href="/en/whatsnew/calendar">Calendar</a></li>
+                    <li><a href="/en/participation/members">JCP Members</a></li>
+                    <li><a href="/en/participation/committee">Executive Committee</a></li>
+                    <li><a href="/en/whatsnew/elections">Elections</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/en/participation/overview" class="p7PMtrg">Get Involved</a>
+		<ul>
+                    <li><a href="/en/participation/overview">Overview</a></li>
+                    <li><a href="/en/participation/membership">Becoming a JCP Member</a></li>
+		</ul>
+            </li>
+
+            <li><a href="/en/resources/contents" class="p7PMtrg">Community Resources</a>
+                <ul>
+                    <li><a href="/en/resources/contents">Overview</a></li>
+                    <li><a href="/en/resources/tutorials">Tutorials</a></li>
+                    <li><a href="/en/resources/multimedia">JCP Podcasts</a></li>
+                    <li><a href="/en/resources/guide">Spec Lead Guide</a></li>
+                    <li><a href="/en/resources/tdk">TCK Tool & Info</a></li>
+                    <li><a href="/en/resources/license_reference">License Reference</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/en/press/pmo" class="p7PMtrg">Community News</a>
+                <ul>
+                    <li><a href="/en/press/pmo">News</a></li>
+                    <li><a href="/en/press/news/awards/awards_main">Programs &amp; Awards</a></li>
+                    <li><a href="/en/press/releases">Press Releases</a></li>
+                    <li><a href="/en/press/success">Success Stories</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/en/introduction/faq">FAQ</a></li>
+
+            <li><a href="/en/resources/contacts">Contact Us</a></li>
+
+            <div style="clear: both;"><img src="/images/spacer.gif" alt="" height="25" width="1"></div>
+
+            <!--[if lte IE 6]><style>#p7PMnav a{height:1em;}#p7PMnav li{height:1em;float:left;clear:both;width:100%}</style><![endif]-->
+            <!--[if IE 6]><style>#p7PMnav li{clear:none;}</style><![endif]-->
+            <!--[if IE 7]><style>#p7PMnav a{zoom:100%;}#p7PMnav li{float:left;clear:both;width:100%;}</style><![endif]-->
+        </ul>
+
+        
+
+        <!--begin ad space -->
+        <div class="ads">
+            <a href="http://java.com/java/download/index.jsp?cid=jdp78399" target="_blank"><img style="display: ;" src="/images/ad_banner2.gif" alt="Ad Banner" border="1" height="70" width="150"></a>
+        </div>
+        <!--end ad space -->
+
+<!-- ** Menu End ** //-->
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;<br>
+
+    
+
+                    &nbsp;<br>
+                    <img src="/images/common/trans.gif" alt="" width="1" height="150"><br>
+
+              
+
+
+
+                </td>
+                <!-- ** END: Navigation Column ** //-->
+
+                <!-- ** BEGIN: Gutter Column ** //-->
+		<td width="10" nowrap><img src="/images/common/trans.gif" alt="" width="10" height="1"></td>
+                <!-- ** END: Gutter Column ** //-->
+
+                <!-- ** BEGIN: Content Column ** //-->
+                <td width="100%" valign="top">
+
+    
+<script type="text/javascript">
+
+String.prototype.trim = function() {
+        return this.replace(/^\s+|\s+$/g,"");
+}
+String.prototype.ltrim = function() {
+        return this.replace(/^\s+/,"");
+}
+String.prototype.rtrim = function() {
+        return this.replace(/\s+$/,"");
+}
+
+function validate_search() {
+	if (document.search.id.value == "Search JSRs" || document.search.id.value.trim().length == 0) {
+		alert("Search terms must be entered first");
+		return false;
+	}
+	return true;
+}
+
+function validate_findjsr() {
+	if (document.findjsr.id.value == "Search JSRs" || document.findjsr.id.value.trim().length == 0) {
+		alert("Search terms must be entered first");
+		return false;
+	}
+	return true;
+}
+
+function nullify_if_equal(field, str) {
+	// alert("val=" + field.value);
+	if (field.value == str) {
+		field.value = "";
+	}
+}
+
+</script>
+<!-- ** END: header.jsp ** //-->
+
+
+
+
+
+
+
+
+
+		<div class="header2">Introduction</div>
+		<div class="header1">FAQ: Membership Questions</div>		
+		&nbsp;<br>
+<div class="anybar"><img src="/images/global/bar_green.gif" alt="" width="12" height="4"></div>
+<p>
+
+
+
+
+
+<span class="headLinks"><font size="-1">
+<a href="faq">General&nbsp;questions</a>&nbsp;| &nbsp;Membership&nbsp;questions&nbsp;| &nbsp;<a href="faq-jsr">JSR&nbsp;and&nbsp;Expert&nbsp;Group&nbsp;questions</a>&nbsp;| &nbsp;<a href="faq-speclead">Spec&nbsp;Lead&nbsp;process&nbsp;questions</a>&nbsp;| &nbsp;<a href="faq-sso">Login&nbsp;questions</a>&nbsp;| &nbsp;<a href="faq-site">Web&nbsp;Site&nbsp;questions</a>&nbsp;| &nbsp;<a href="glossary">Glossary</a>
+
+</font></span>
+&nbsp;<br>
+
+	&nbsp;<BR>
+
+                <div class="header3">Membership Questions</div>
+
+                <ul>
+                <li><a href="#member">I want to become a Member of the JCP. What are my options?</a>
+                <li><a href="#process">What's the process for becoming a Member?</a>
+                <li><a href="#associate">I want to become an Associate Member of the JCP. How do I do this?</a>
+                <li><a href="#partner">My organization wants to become a Partner Member of the JCP. What do I need to do?</a>
+                <li><a href="#full">My organization wants to become a Full Member of the JCP. How can it become a Full Member?</a>
+                <li><a href="#eca">As an individual, I want to become a Full Member of the JCP. What do I need to do?</a>
+                <LI><a href="#noeca">As an individual, I want to become a Full Member of the JCP, but my employer won't sign the Employer Contribution Agreement. What do I do?</a>
+                <LI><a href="#docusign">What is DocuSign and why am I getting e-mail from @docusign.com?</a>
+                <LI><a href="#esignprocess">What is the process for using DocuSign to sign a JCP Membership agreement?</a>
+                <li><a href="#membertck">OK, now I've signed a legal agreement and I'm a JCP Member. Where do I go to access TCKs/RIs?</a>
+                <li><a href="#membereg">I submitted my legal agreement to become a JCP Member a week ago. When will I get on the Expert Group for JSR XXX?</a>
+                <li><a href="#noeglink">I want to join an Expert Group or nominate as a Contributor, but there is no link "I would like to join this Expert Group" on the JSR page. What do I do?</a>
+                <li><a href="#egnomstatus">I nominated myself to become a Contributor or Expert
+Group member. How can I tell what the status of my nomination is?</a>
+                <li><a href="#memberassociation">My organization is a Full Member. How do I participate in the JCP as part of that Membership?</a>
+                <li><a href="#changeemail">I represent my company's JCP Membership. How do I change the e-mail address associated with my JCP account?</a>
+                <li><a href="#nofee">I'm filling out the JSPA for Full Membership. Why do I have to fill out the "Accounts Payable" section of Exhibit A if there's no Process Cost Sharing Fee?</a>
+                <li><a href="#changeemp">I have been participating as a representative of a Full Member, but now I've changed my employer. My new is employer is also a Full Member.  What do I do?</a>
+                <li><a href="#indchangeemp">I am a Full Member as an individual, and now I have changed my employer. What do I do?</a>
+                <li><a href="#registeredtomember">I have already registered for an account on jcp.org. Now my organization has become a JCP Member. How can I show that I am representing my organization in the JCP? </a>
+                <li><a href="#changefromindtocorp">I am currently an individual JCP Member (Associate or Full Member), but I want to change my membership to represent my employer, who is a Full Member.  What do I do?</a>
+                <li><a href="#indnomtocorp">I am an individual Member of the JCP (Associate or Full Member), but now my employer is joining the JCP and I want to participate under that Membership. What do I do to change from being an individual Member to a representative of my employer's Membership?</a>
+                <li><a href="#transferaccount">I  changed from representing one JCP Membership to another. How do I transfer my account from one Member to the other? </a>
+                <li><a href="#cancel">I want to cancel my JCP Membership. What do I do?</a>
+		<li><a href="#reactivate">I did not respond to the requests to renew my JCP Membership and I want to become a member again.  What do I do?</a>
+                <li><a href="#acquirednonmember">My company is a Full Member, but it has been acquired by another company which is not a JCP Member. What do I do? </a>
+                <li><a href="#acquiredmember">My company is a Full Member, but it has been acquired by another Full Member company. What do we do? </a>
+
+                </ul><P>
+	
+		<div class="header3">Agreement Questions</div>
+                <ul>
+                <li><a href="#ama">What is the Associate Membership Agreement (AMA)?</a>
+                <li><a href="#pma">What is the Partner Membership Agreement (PMA)?</a>
+                <li><a href="#jspa">What is the Java Specification Participation Agreement (JSPA)?</a>
+                <li><a href="#jspa1">What is JSPA 1, what is JSPA 2?</a>
+                <li><a href="#jspadifferences">What are some of the differences between JSPA 1 and JSPA 2?</a> 
+                <li><a href="#indtoassociate">I was already a JCP Member as an individual. Why do I need to sign a new agreement to continue?</a>
+                <li><a href="#multiplejspas">I, or my company, already signed an agreement. Why would I have to sign another one?</a>
+                <li><a href="#billtwice">If I or my company has two agreements in place will I be billed twice?</a>
+                <li><a href="#changejspa">Is there any reason an in-flight JSR should change JSPA versions?</a>
+                <li><a href="#oraclejspa">Which agreement applies to new JSRs submitted by Oracle?</a>
+                <li><a href="#howtoknow">How will I know which agreement is required for a JSR?</a>
+                <li><a href="#canceloldjspa">Will the PMO cancel my old agreements?</a>
+                <li><a href="#lawyerquestions">My lawyer has many questions. How do I get those answered?</a>
+                </ul>
+
+
+                <div class="header3">Membership Questions</div>
+                
+                <a name="member"></a><B>Q: I want to become a Member of the JCP. What are my options?</B><BR>
+                <B>A:</b> There are three classes of JCP Membership: Associate, Partner, and Full. Individuals can become an Associate Member, or get their employers to sign an Employer Contributor Agreement so that they can become Full Members. Java User Groups and other organizations may join as Partner Members. Companies and individuals can join as Full Members. The differences are explained in more detail on the <a href="/en/participation/overview">participation overview page</a>. <BR>&nbsp;<BR>
+
+                <a name="process"></a><B>Q: What's the process for becoming a Member?</b><BR>
+                <B>A:</b> First, choose the type of Membership. Each option has different privileges. Once you've selected the applicable Membership you want, you will log in to the site and fill out a form. This form creates a personalized Membership agreement for you, which you can sign manually or electronically. If you choose to sign electronically, you will receive an e-mail message from @docusign.com prompting you to sign the agreement. If you choose to sign manually, you will receive a message from @jcp.org with a .pdf attachment, which you can print, sign, and send back to the Program Management Office. Once your agreement is fully signed, you will be a Member of the JCP.<BR>&nbsp;<BR>
+                <a name="associate"></a><B>Q: I want to become an Associate Member of the JCP. How do I do this?</b><BR>
+                <B>A:</b> 
+Follow the directions listed on the <a href="/en/participation/membership_ind">Instructions for Associate Membership page</a>. You will use the online form to fill out an Associate Membership Agreement. <BR>
+                &nbsp;<BR>
+
+                <a name="partner"></a><B>Q: My organization wants to become a Partner Member of the JCP. What do I need to do?</b><BR>
+                <B>A:</b> Follow the directions listed on the <a href="/en/participation/jug">Instructions for Partner Membership page</a>. You will use the online form to fill out a Partner Membership Agreement.<BR>
+                &nbsp;<BR>
+
+                <a name="full"></a><B>Q: My organization wants to become a Full Member of the JCP. How can it become a Full Member?</b><BR>
+                <B>A:</b> Your organization can become a Full Member as long as it has legal entity status. Follow the directions listed on the <a href="/en/participation/membership2">Instruction for Full Membership page</a>. You will use the online form to fill out a Java Specification Participation Agreement. If necessary, you can later specify someone else who has signature authority to sign legal documents for your organization.<BR>&nbsp;<BR>
+ 
+                <a name="eca"></a><B>Q: As an individual, I want to become a Full Member of the JCP. What do I need to do?</b><BR>
+                <B>A:</b> Follow the directions for <a href="/en/participation/membership2#individuals">individuals to become Full Members</a>. Make sure that your current employer fills out the <a href="/en/participation/eca">Employer Contribution Agreement (ECA)</a>.<BR>
+                &nbsp;<BR>
+
+                <a name="noeca"></a><B>Q: As an individual, I want to become a Full Member of the JCP, but my employer won't sign the Employer Contribution Agreement. What do I do?</b><BR>
+                <B>A:</b> If your employer will not sign the Employer Contribution Agreement, you can <a href="/en/participation/membership_ind">become an Associate Member</a> instead.<BR>
+                &nbsp;<BR>
+
+                <a name="docusign"></a><B>Q: What is DocuSign and why am I getting e-mail from @docusign.com?</b><BR>
+                <B>A:</b> DocuSign is the electronic signature service the JCP uses for its Membership agreements. You will get an e-mail message from DocuSign when:
+                  <ul>
+                  <li>you fill out a Membership form to join the JCP and the agreement is ready to sign
+                  <li>someone in your organization delegates the signature of a JCP Membership agreement to you
+                  <li>a JCP Membership agreement you initiated or were delegated has been completely signed and filed 
+                  </ul>
+
+                <a name="esignprocess"></a><B>Q: What is the process for using DocuSign to sign a JCP Membership agreement?</B><BR>
+                <B>A:</B> You or someone in your organization submits a JCP Membership form. This generates a request to the Program Management Office (PMO). The PMO then reviews the request to catch any incomplete or incorrectly filled-out information. Then, when the PMO has approved your request, the submitter receives an e-mail message from @docusign.com prompting signature of the agreement. The submitter can click a link in the e-mail message to go to the DocuSign service web site, fill in any remaining fields and sign the agreement, or the submitter can click a different link to delgate the signature authority to someone else in your organization instead. Once you or your designee has signed the agreement, DocuSign prompts Oracle to counter-sign the agreement. Once Oracle has counter-signed the agreement, the submitter and everyone else who has had signature authority over the agreement receives another e-mail message from @docusign.com with a link for downloading the completed Membership agreement. With this notification, the PMO creates your JCP Membership (or updates it, if you were already a JCP Member).<BR>
+                &nbsp;
+                <BR>
+
+                <a name="membertck"></a><B>Q: OK, now I've signed a legal agreement and I'm a JCP Member. Where do I go to access TCKs/RIs?</b><BR>
+                <B>A:</b> Each Technology Compatibility Kit and Reference Implementation is licensed by the Maintenance Leads of the specific, finalized JSR. JCP Membership does not grant any special access to these.
+ <BR>
+                &nbsp;<BR>
+            
+                <a name="membereg"></a><B>Q: I submitted a legal agreement to become a JCP Member a week ago. When will I get on the Expert Group for JSR XXX?</b><BR>
+                <B>A:</b> Becoming a JCP Member is not a guarantee that you will be accepted onto an Expert Group. If you have not already done so, you need to nominate yourself to serve on the Expert Group, by filling out the Expert Group nomination form (follow the link "I would like to join this Expert Group" on the JSR detail page http://jcp.org/en/jsr/detail?id=XXX, where "XXX" is the JSR number of the JSR in question). The Spec Lead, in conjunction with his Expert Group (if there is one already) then decides whether or not to admit you on to the Expert Group. Only when the Spec Lead confirms your addition to the Expert Group will you be added.<BR>
+                &nbsp;<BR>
+
+                <a name="noeglink"></a><B>Q: I want to join an Expert Group or nominate as a Contributor, but there is no link "I would like to join this Expert Group" on the JSR page. What do I do?</b><BR>
+                <B>A:</b> At some point in every JSR's development, the Spec Lead and Expert Group decide to stop actively seeking new experts, and the link to join the EG is removed. Then, at Final Release, Expert Groups are officially disbanded, so if the JSR in question has reached Final Release, there is no EG to join! But if the JSR has not reached Final Release, you may contact the Spec Lead directly to see if your addition to the group would be welcome. <BR>
+                &nbsp;<BR>
+
+                <a name="egnomstatus"></a><B>Q: I nominated myself to become a Contributor or an Expert Group member. How can I tell what the status of my nomination is?</b><BR>
+                <B>A:</b> Log in to jcp.org, then click "My JSRs" in the left nav. The resulting page shows all of the JSRs you lead, all the JSRs for which you are an expert, and all of your pending nominations. Each pending nomination will show how the Spec Lead and the PMO has voted, and a legend on that page shows what each vote means. If you have any questions about a vote, contact the Spec Lead or the PMO directly.
+<BR>&nbsp;<BR>
+
+                 <a name="memberassociation"></a><B>Q: My organization is a Full Member. How do I participate in the JCP as part of that Membership?</b><BR>
+                 <B>A:</b> First, if you haven't already registered, do so now: <a href="https://jcp.org/en/user/register">https://jcp.org/en/user/register</a>. Then log in, click <a href="/en/user/my">"My Profile,"</a> then click "request Member association." On the resulting form, select your organization from the list and click "submit."<BR>
+This will 
+generate an e-mail message to the primary contact of your organization. Then the primary contact will confirm you as a representative of your organization.
+<BR>&nbsp;<BR>
+
+                <a name="changeemail"></a><B>Q: I represent my company's JCP Membership. How do I change the e-mail address associated with my JCP account?</b><BR>
+                <B>A:</b> As an individual representing your company's JCP membership, you must get approval from your JCP primary contact in order to change your JCP email address.  Let your JCP primary contact know that you wish to change your JCP email address, and if they approve, ask them to send an email to the JCP PMO (pmo<faketag>&#64;</faketag>
+jcp.org) with the changes.  To see who your primary contact is, log in, click on <a href="/en/user/my">"My Profile,"</a> and then "View Membership Info."  Your primary contact will be listed under the heading 'Primary Contact Information' just above the table showing all people associated with your JCP Member organization.
+<BR>&nbsp;<BR>
+ 
+	
+                <a name="nofee"></a><B>Q: I'm filling out the JSPA for Full Membership. Why do I have to fill out the "Accounts Payable" section of Exhibit A if there's no Process Cost Sharing Fee?</b><BR>
+                <B>A:</b> The Accounts Payable section of Exhibit A is the only place in the agreement where you can specify your postal address. The PMO uses your postal address to determine in which country you reside for demographics purposes, as well as for such things as invitations to Member-only events.<BR>
+                 &nbsp;<BR>
+               
+                <a name="changeemp"></a><B>Q: I have been participating as a representative of a Full Member, but now I've changed my employer.  My new employer is also a Full Member.  What do I do?</B><BR>
+                <B>A:</b> First, send an email to the PMO via admin@jcp.org to notify the change of your employment. The PMO will inactivate your account associated with your previous employer.  Next, <a href="/en/user/register">register</a> yourself with the JCP, using your current employer's email address .  Note that you will not be able to re-use your existing JCP account associated with your previous employer.  Once the new account is created, log in, click <a href="/en/user/my">"My Profile,"</a> then click "request Member association." On the resulting form, select your current employer from the list and click "submit."  This will generate an e-mail message to the Primary Contact of your current employer.  The Primary Contact will then confirm you as a representative of that organization.  If you were on non-Final JSR Expert Groups, you will be removed from these Expert Groups.  You will need to request to be added back to the Expert Groups by filling out the <a href="/en/jsr/egnom">Expert Group nomination form</a>.<BR>
+                &nbsp;<BR>
+
+                <a name="indchangeemp"></a><B>Q: I am a Full Member as an individual, and now I've changed my employer. What do I do?</b><BR>
+                <B>A:</B> Any time you change jobs, your new employer must <a href="/en/participation/eca">fill out an Employer Contribution Agreement</a> for you to continue as a Full Member.<BR>&nbsp;<BR>
+   
+                <a name="registeredtomember"></a><B>Q: I have already registered for an account on jcp.org. Now my organization has become a JCP Member. How can I show that I am representing my organization in the JCP? </b><BR>
+                <B>A:</b> Registering does not automatically make you a representative of a JCP Member, even if you registered for the sole purpose of representing that JCP Member. To represent your organization, you will need to do the following:<BR>
+1. Make sure that your organization has completed the <a href=/en/participation/membership">process to become a JCP Member</a>.<BR>
+2. Log in to jcp.org and go to <a href="/en/user/my">"My Profile."</a><BR>
+3. Click the link "Request Member association," select your organization from the list, and click the "Submit" button. This action prompts the primary contact of your organization to confirm you as a representative. Once the primary contact confirms you, you will be shown as a representative of that organization and can participate in JSRs as part of that Membership. 
+<BR>
+&nbsp;
+<BR>
+ 
+                <a name="changefromindtocorp"></a><B>Q: I am currently an individual JCP Member (Associate or Full Member), but I want to change my membership to represent my employer, who is a Full Member.  What do I do?</B><BR>
+                <B>A:</b> 1. <a href="/en/user/register">Register</a> yourself anew with the JCP, this time using the e-mail address associated with your employer.  Note that you will not be able to re-use your existing JCP account associated with your individual JCP Membership.<BR>
+2.  Once the new account is created, request member association with your employer: log in with the new account, click <a href="/en/user/my">"My Profile,"</a> then click "request Member association." On the resulting form, select your organization from the list and click "submit."  This will generate an e-mail message to the Primary Contact of your organization.  The Primary Contact will then confirm you as a representative of your organization.<BR>
+3. Write a message to admin<faketag>&#64;</faketag>jcp.org requesting cancellation of your individual membership, with the subject line "Replace individual membership with [name of employer]'s membership." If you were on non-Final JSR Expert Groups, you will be removed from these Expert Groups as an individual Member.<BR>
+4. If you intend to represent your employer on those Expert Groups, you will need to request to be added back to the Expert Groups by filling out the <a href="/en/jsr/egnom">Expert Group nomination form</a> using your new account associated with your employer.<BR>
+                &nbsp;<BR>
+
+<a name="indnomtocorp"></a><B>Q: I am an individual Member of the JCP (Associate or Full), but now my employer is joining the JCP and I want to participate under that Membership. What do I do to change from being an individual Member to a representative of my employer's Membership?</b><BR>
+A: 1. Make sure that your employer completes the process of <a href="/en/participation/membership2">becoming a Full Member</a>.<BR>
+2. Once your employer is a Full Member, <a href="/en/user/register">register for a new JCP account</a> using your e-mail address provided by your employer. <BR>
+3. Request member association with your employer: login, go to <a href="/en/user/my">"My Profile,"</a> then click "Request Member association," then select your employer from the list and submit the form. <BR>
+4. Write a message to admin<faketag>&#64;</faketag>jcp.org requesting the cancellation of your individual membership in favor of your employer's membership, with the subject line "replace individual membership with <name of employer>'s membership." <BR>
+5. Resubmit any pending <a href="/en/jsr/egnom">Contributor or Expert Group nominations</a> using your new account, making sure to describe the expertise of your organization. <BR>
+&nbsp;
+<BR>
+
+                <a name="transferaccount"></a><B>Q: I  changed from representing one JCP Membership to another. How do I transfer my account from one Member to the other? </b><BR>
+                <B>A:</B> You don't. Once associated with a JCP Membership, an account is permanently attached to that Member. You will need to <a href="/en/user/register">create a new account</a> and associate it with the second Membership. Note, however, that you can re-use your username. To do so, log in to the old account, click "My Profile," then "Edit Profile." On that form, you can specify a new username for the old account. Once you've changed that user ID, you can log in to your new profile and edit it to have the desired username.<BR>
+&nbsp;
+<BR>
+ 
+                <a name="cancel"></a><B>Q: I want to cancel my JCP Membership. What do I do?  </B><BR>
+                <B>A:</b> Send a notification to the PMO via admin<faketag>&#64;</faketag>jcp.org and your Membership will be cancelled. Note that, with cancellation, you will removed as Spec Lead for any non-Final JSRs. Your representatives will be removed from all non-Final JSR Expert Groups. You will not be expected to pay a Process Cost Sharing Fee for any period past your cancellation date. <BR>
+                &nbsp;<BR>
+
+		<a name="reactivate"></a><B>Q: I did not respond to the requests to renew my JCP Membership and I want to become a member again.  What do I do? </B><BR>
+		<B>A:</b> Send an email to the PMO via admin<faketag>&#64;</faketag>jcp.org with your account username and email address registered for that account.  The PMO will then follow-up with you. <BR>
+		&nbsp;<BR>
+
+                <a name="acquirednonmember"></a><B>Q: My company is a JCP Member, but it has been acquired by another company which is not a JCP Member. What do I do? </b><BR>
+                <B>A:</b> First, notify the PMO at admin<faketag>&#64;</faketag>jcp.org that the acquisition has happened. We will follow up with you and your company's Primary Contact to ascertain whether you are retiring the original company name or not. If not, then the JSPA and the JCP Membership must be reassigned to the acquiring company, or canceled. If the original JCP Member company will still exist, then the acquiring company has a choice to assign the JSPA and Membership "upwards" to itself (which would still cover wholly-owned subsidiaries like your company) or keep the JSPA and Membership limited to the original title. Such determinations must be done by someone with signature authority at the acquiring company, generally a Director position or higher. <BR>
+                &nbsp;<BR>
+
+                <a name="acquiredmember"></a><B>Q: My company is a JCP Member, but it has been acquired by another JCP Member company. What do we do? </b><BR>
+                <B>A:</b> First, notify the PMO at admin<faketag>&#64;</faketag>jcp.org that the acquisition has happened. The PMO will contact the Primary Contacts of both companies to determine whether your company's Membership details will be folded into the acquiring company's Membership, or whether your company's Membership will simply be canceled. If the participants are folded into the acquiring company's Membership, the Primary Contact may specify which people will represent the company in future. The Primary Contact may also request to have some of the participants listed as representing the acquired company, even though there will be only one actual Membership. If the Membership is canceled, you will need to re-register for jcp.org as a representative of your new employer.<BR>
+                 &nbsp;<BR>
+
+
+<div class="header3">Agreement Questions</div>
+	
+		&nbsp;<br>
+
+                <a name="ama"></a><B>Q: What is the Associate Membership Agreement (AMA)?</b><BR>
+                <B>A:</B> The AMA is a legal agreement that grants Associate Membership in the JCP. Associate Membership is targeted at individual developers who wish to participate in the JCP. Such developers either have not signed the JSPA or are not employees of entities that have signed the JSPA. The AMA maintains some of the same restrictions and requirements currently under the JSPA but is considerably shorter and simpler. Unlike the JSPA, no employer approval is required.<BR>&nbsp;<BR>
+
+                <a name="pma"></a><B>Q: What is the Partner Membership Agreement (PMA)?</b><BR>
+                <B>A:</B> The PMA is a legal agreement for non-profit organizations who wish to serve on the Executive Committee. The PMA focuses on collaboration between a non-JSPA user group and the JCP Program Management Office to promote Java and encourage developer partiicpation in JCP activities. This agreements <b>does not</b> include the right to contribute intellectual property to JSRs or participate in JSR Expert Groups.<BR>&nbsp;<BR>
+
+                <a name="jspa"></a><B>Q: What is the Java Specification Participation Agreement?</b><BR>
+                <B>A:</b> The JSPA is the legal agreement that covers all Full Member participation in the Java Community Process, describing the rights and obligations when participating in the development of Java technology specifications in the JCP.<BR>
+                &nbsp;<BR>
+
+		<a name="jspa1"></a><b>Q: What is JSPA 1, what is JSPA 2?</b><br>
+		<b>A:</b> JSPA 1 is the collection of agreements before JSR 99 went Final. JSPA 2 is the agreement created by JSR 99.<br>
+		
+		&nbsp;<br>
+		<a name="jspadifferences"></a><b>Q: What are some of the differences between JSPA 1 and JSPA 2?</b><br>
+		<b>A:</b> there are many, many differences between JSPA 1 and JSPA 2. Some of the bigger and more interesting ones are:<br>
+		<ul>
+		<li>A JSPA 2 JSR's Spec License will include these compatibility rules:</li>
+			<ol type="1">
+			<li> Completely implement the specification.</li>
+			<li> No sub- or supersetting in the name space allowed.</li>
+			<li> Implementation must pass the TCK.</li>
+			</ol>
+		<li>All JSPA 2 JSRs will allow for development and distribution of compatible independent implementations.</li>
+		<li>JSPA 2 compatible independent implementations will be allowed to use an Open Source Software license such as for example the Apache license.</li>
+		<li>All JSPA 2 JSRs will make the TCK available separately from the RI.</li>
+		<li>JSPA 2 Expert Group members can withdraw contributions if the Spec Lead makes substantive changes to the business terms.</li>
+		<li>Under JSPA 2: no parallel copyrights grant to Oracle when Oracle is not the Spec Lead.</li>
+		<li>JSPA 2 TCKs are available free of charge to non-profits and qualified individuals.</li>
+		<li>JSPA 2 contains provisions for governmental participation.</li>
+		</ul>
+		
+		&nbsp;<br>
+
+                <a name="indtoassociate"></a><B>Q: I was already a JCP Member as an individual. Why do I need to sign a new agreement to continue?</B><BR>
+                <B>A:</B>: The <a href="/aboutJava/communityprocess/final/jsr364/index.html">final release of JSR 364</a> introduced JCP 2.10. <a href="/en/procedures/jcp2_10">JCP 2.10</a> requires that individuals have their employers <a href="/en/participation/eca">sign the Employer Contribution Agreement</a>, or <a href="/en/participation/membership_ind">become Associate Members</a>.<BR>&nbsp;<BR>
+
+
+		<a name="multiplejspas"></a><b>Q: I, or my company, already signed an agreement. Why would I have to sign another one?</b><br>
+		<b>A:</b> There are a number of possible reasons for this.
+<ol>
+<li>JSPA version: JSPA 1 and JSPA 2 are significantly different in what the rights and obligations of expert group members and Spec Leads are. That makes it necessary that all Expert Group members of a JSR are all operating under the same agreement. If you don't have that JSPA signed for your JCP Membership, you won't be able to participate as an expert on that JSR.<br>
+<li>Changed employment: If you changed jobs, most likely your employer has changed, too. Every time an individual Full Member changes employers, the new employer must <a href="/en/participation/eca">sign an Employer Contribution Agreement</a> for the individual's Full Membership to continue.
+<li>ECA vs. Exhibit B: If you were an individual Full Member before <a href="/en/procedures/jcp2_10">JCP 2.10</a>, your employer signed something called an Exhibit B to your JSPA, which allowed you to participate on JSRs' Expert Groups. With JCP 2.10, the Exhibit B is replaced by the Employer Contribution Agreement. Your employer needs to sign one of those in order for individual Full Membership to continue.
+<li>Employer disinterest: You may be a representative of a Full Member company, but maybe your company isn't interested in participating on a particular JSR that really interests you. In such a case, you could <a href="/en/participation/membership2">join as an individual Full Member</a>, and your employer would <a href="/en/participation/eca">sign an Employer Contribution Agreement</a> so that you could participate without representing your employer.
+<li>Changing Membership class: Perhaps you were an individual Full Member before, but now your employer will not sign the ECA for you. In that case, you would need to <a href="/en/participation/membership_ind">sign the Associate Membership Agreement</a> in order to continue as a JCP Member. 
+</ol>
+<BR>
+		
+		&nbsp;<br>
+		<a name="billtwice"></a><b>Q: If I or my company has two agreements in place will I be billed twice?</b><br>
+		<b>A:</b> No, you will not be billed at all. The Process Cost Sharing fee is waived for all JCP Members.<br>
+		
+		&nbsp;<br>
+		<a name="changejspa"></a><b>Q: Is there any reason an in-flight JSR should change JSPA versions?</b><br>
+		<b>A:</b> Yes, if the Spec Lead and all Expert Groups members agree that the terms in the different agreement are preferable, they can all choose to sign the different agreement (if they haven't already) and notify the PMO of the change. Note that some JCP versions require use of a particular JSPA, which could be another reason to move to another agreement. For instance, a JCP 1 JSr that decided to move to JCP 2.8 would have to operate under JSPA 2. <br>
+		
+		&nbsp;<br>
+
+                <a name="oraclejspa"></a><B>Q: Which agreement applies to new JSRs submitted by Oracle?</b><BR>
+                <B>A:</b> The latest agreement applies to all JSRs submitted after that agreement is available, regardless of who is the submitter and/or Spec Lead. So in 2012, JSPA 2 applies to all new JSRs.<BR>
+                &nbsp;<BR>
+
+		<a name="howtoknow"></a><b>Q: How will I know which agreement is required for a JSR?</b><br>
+		<b>A:</b> Every JSR's public web page on jcp.org indicates which agreement (JSPA 1 or JSPA 2) is in effect, as well as which JCP version that JSR is using.<br>
+		
+		&nbsp;<br>
+		<a name="canceloldjspa"></a><b>Q: Will the PMO cancel my older agreements?</b><br>
+		<b>A:</b> Yes, when you or your company is no longer participating in any JSR that requires a JSPA that isn't the latest version, any older JSPAs that are not being "used" will be canceled. When your older JSPA comes up for renewal and this is the case, the PMO will send you a notification stating the intent not to renew.<br>
+		
+		&nbsp;<br>
+		<a name="lawyerquestions"></a><b>Q: My lawyer has many questions. How do I get those answered?</b><br>
+		<b>A:</b> Send email to pmo<fake_tag>&#064;</fake_tag>jcp.org and the questions will be answered or a conference call can be scheduled if that appears more effective based on the type of questions.<br>
+		
+	<BR>&nbsp;<BR>	
+		
+                	
+<!-- ** BEGIN: footer.jsp ** //-->
+
+
+
+
+
+
+
+
+</td>
+</tr>
+</table>
+
+<!-- ** END: Content Table ** //-->
+
+<!-- ** BEGIN: Footer Table ** //-->
+
+<div id="footer" style="clear: both;">
+    <div class="footleft">
+        <a href="/en/resources/contacts">Contact Us</a>
+    </div>
+	
+    <div class="botbar"><img src="/images/spacer.gif" alt="" height="23" width="1"></div>
+
+    <div class="footleft2">
+         &copy; 2019, Oracle Corporation and/or its affiliates. 
+        <a href="/en/home/terms">Terms of Use</a>. <a href="http://www.oracle.com/us/legal/privacy/index.html">Privacy Policy</a>. <a href="http://www.oracle.com/us/legal/third-party-trademarks/third-party-trademarks-078568.html">Trademarks</a>
+    </div>
+
+    <div class="footright">
+        <img src="/images/common/logo_oracle_footer.gif" alt="Oracle Corporation" height="22" width="91">
+    </div>
+
+    <div style="clear: both;"><img src="/images/spacer.gif" alt="" height="30" width="1"></div>
+</div>
+
+<!-- ** END: Footer Table ** //-->
+
+
+
+<!-- ** Menu Start ** //-->
+
+
+
+</body>
+</html>
+<!-- ** END: footer.jsp ** //-->
+
+<BR>&nbsp;<BR>
+<BR>&nbsp;<BR>
+<BR>&nbsp;<BR>
+<BR>&nbsp;<BR>
+<BR>&nbsp;<BR>
+<BR>&nbsp;<BR>
+<BR>&nbsp;<BR>
+<BR>&nbsp;<BR>
+<BR>&nbsp;<BR>
+<BR>&nbsp;<BR>
+<BR>&nbsp;<BR>
+<BR>&nbsp;<BR>
+<BR>&nbsp;<BR>
+<BR>&nbsp;<BR>
+<BR>&nbsp;<BR>
+<BR>&nbsp;<BR>
+<BR>&nbsp;<BR>
+<BR>&nbsp;<BR>
+<BR>&nbsp;<BR>
+
+<BR>&nbsp;<BR>
+<BR>&nbsp;<BR>
+<BR>&nbsp;<BR>
+<BR>&nbsp;<BR>
+<BR>&nbsp;<BR>
+<BR>&nbsp;<BR>
+<BR>&nbsp;<BR>
+<BR>&nbsp;<BR>
+<BR>&nbsp;<BR>
+<BR>&nbsp;<BR>
+<BR>&nbsp;<BR>
+<BR>&nbsp;<BR>
+<BR>&nbsp;<BR>
+<BR>&nbsp;<BR>
+<BR>&nbsp;<BR>
+<BR>&nbsp;<BR>
+<BR>&nbsp;<BR>
+<BR>&nbsp;<BR>
+

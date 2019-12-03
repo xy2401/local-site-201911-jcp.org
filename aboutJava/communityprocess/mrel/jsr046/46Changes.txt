@@ -1,0 +1,13 @@
+Proposed Changes for Foundation Profile 1.0b maintenance release
+----------------------------------------------------------------
+
+overview.html : Add the following paragraph:
+> TCP/IP Server Socket. URIs of the form "socket:// | socket://:{port}"
+> must return an object with behavior that follows the
+> javax.microedition.io.StreamConnectionNotifier interface specification.
+> The streams provided by this connection are functionally equivalent to
+> the streams provided by the java.net.Socket class returned by the
+> java.net.ServerSocket.accept() method when the ServerSocket(int)
+> constructor is used to create the ServerSocket instance.
+
+(Apply proposed changes for Connected Device Configuration 1.0b maintenance release.)

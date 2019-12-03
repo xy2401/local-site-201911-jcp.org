@@ -1,0 +1,368 @@
+
+<!-- ** BEGIN: header.jsp ** //-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3c.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+<head>
+    
+
+   
+    <link href="/includes/css/menu.css" rel="stylesheet" type="text/css"></link>
+    <link href="/includes/css/style.css" rel="stylesheet" type="text/css"></link>
+    <!--[if lt IE 6]><link href="/includes/css/style5.css" rel="stylesheet" type="text/css" ></link><![endif]-->
+    <!--[if gte IE 5]><link href="/includes/css/style6.css" rel="stylesheet" type="text/css" ></link><![endif]-->
+    <link href="/includes/css/tabs.css"  rel="stylesheet" type="text/css"></link>
+
+    <script type="text/javascript" src="/includes/scripts/tabs.js"></script>
+    <script type="text/javascript" src="/includes/scripts/menu.js"></script>
+   
+
+    
+
+    
+        <title>The Java Community Process(SM) Program - communityprocess - maintenance</title>
+    
+
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+
+
+<body onload="P7_initPM(0,1,0,0,-1)">
+
+    <a name="top"></a>
+
+    <div id="header">
+	<div id="logo">
+		<a href="/en/home/index"><img src="/images/spacer.gif" alt="Java Community Process" height="81" width="151"></a>
+	</div>
+	<div id="tools">
+		<div class="search">
+			<form name="search" action="/en/jsr/summary" method="get" onsubmit="return validate_search()">
+				<input name="id" value="Search JSRs" size="16" class="form" onfocus="nullify_if_equal(this, 'Search JSRs')" type="text">
+				<a href="javascript:document.search.submit()" onclick="return validate_search()"><img src="/images/button_go.gif" width="21" height="16" border="0" alt="Submit this Search" name="sub_search"></a>
+			</form>
+		</div>
+		<div class="tools">
+			<a href="/en/press/pressroom">Press Room</a> &nbsp;|&nbsp;
+			<a href="http://java.com/java/download/index.jsp?cid=jdp78399">Get Java Here</a> &nbsp;|&nbsp;
+			<!-- <a href="javascript:void(0)">Print Format</a> &nbsp;|&nbsp;&nbsp; -->
+		</div>
+
+	</div>
+	<div style="clear: right;"></div>
+
+        
+
+	<div class="topbar"><img src="/images/spacer.gif" alt="" height="3" width="154"></div>
+	<div id="update"> </div>
+    </div>
+
+
+    
+
+        <!-- ** BEGIN: Content Table ** //-->
+
+        <table width="100%" border="0" cellpadding="0" cellspacing="0">
+
+            <tr>
+
+                <!-- ** BEGIN: Navigation Column ** //-->
+                <td width="150" id="leftcontent" valign="top">
+                    <!-- Navigation Placeholder //-->
+
+                    
+
+                    <div class="bar"><img src="/images/hr_dots1.gif" alt="" height="3" width="150"></div>
+
+        <!-- begin find JSRs form -->
+        <!-- IMPORTANT! do not convert this form to Struts < html : form > tag.  javascript change of form.action property fails. -->
+        <img src="/images/hd_find-jsrs.gif" alt="Find JSRs" height="18" width="150">
+        <form name="findjsr" action="/en/jsr/summary" method="get" class="pt5" onsubmit="return validate_findjsr()">
+            <input name="id" size="18" class="form" value="Search JSRs" onfocus="nullify_if_equal(this, 'Search JSRs')" type="text">
+	    <a href="javascript:document.findjsr.submit()" onclick="return validate_findjsr()"><img src="/images/button_go.gif" width="21" height="16" border="0" alt="Submit this Search" name="sub_search"></a>
+        </form><br><br>
+
+        <!-- ** Menu Start ** //-->
+
+        <ul id="p7PMnav">
+            <li><a href="/en/jsr/platform">JSRs by Platform</a></li>
+            <li><a href="/en/jsr/tech">JSRs by Technology</a></li>
+            <li><a href="/en/jsr/stage">JSRs by Stage</a></li>
+            <li><a href="/en/jsr/ec">JSRs by Committee</a></li>
+            <li><a href="/en/jsr/all">List of All JSRs</a></li>
+
+            <!--end find JSRs form -->
+            <div style="clear: both;"><img src="/images/spacer.gif" alt="" height="25" width="1"></div>
+
+            <!--begin my JCP -->
+            <img src="/images/hd_my-jcp.gif" alt="My JCP" height="18" width="150">
+            
+
+          <form name="login" method="get" action="/en/user/login" >
+            <input name="Sign-in" type="submit" title="Sign-in" value="Sign-in" />
+          </form>
+
+            <div style="clear:both"><img src="/images/global/spacer.gif" width="1" height="3" alt=""></div>
+            <div class="noNav">
+                <a href="/en/user/register">Register for Site</a>
+            </div>
+
+             <div class="bar"><img src="/images/hr_dots1.gif" alt="" height="3" width="150"></div>
+           <div class="noNav" style="color: #666666; padding: 0;">
+              Use of JCP site is subject to the
+              <a href="/en/home/terms" style="display:inline;padding: 0">JCP Terms of Use</a> and the
+              <a href="http://www.oracle.com/us/legal/privacy/index.html" style="display:inline;padding: 0" href="">Oracle Privacy Policy</a>
+          </div>
+
+            
+
+            <div style="clear:both"><img src="/images/global/spacer.gif" width="1" height="25" alt=""></div>
+
+            <!--begin JCP info -->
+            <img src="/images/hd_jcp-info.gif" alt="JCP Info" height="18" width="150">
+
+            <li><a href="/en/procedures/overview" class="p7PMtrg">About JCP</a>
+                <ul>
+                    <li><a href="/en/procedures/overview">Program Overview</a></li>
+                    <li><a href="/en/procedures/jcp2">JCP Process Document</a></li>
+                    <li><a href="/en/whatsnew/calendar">Calendar</a></li>
+                    <li><a href="/en/participation/members">JCP Members</a></li>
+                    <li><a href="/en/participation/committee">Executive Committee</a></li>
+                    <li><a href="/en/whatsnew/elections">Elections</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/en/participation/overview" class="p7PMtrg">Get Involved</a>
+		<ul>
+                    <li><a href="/en/participation/overview">Overview</a></li>
+                    <li><a href="/en/participation/membership">Becoming a JCP Member</a></li>
+		</ul>
+            </li>
+
+            <li><a href="/en/resources/contents" class="p7PMtrg">Community Resources</a>
+                <ul>
+                    <li><a href="/en/resources/contents">Overview</a></li>
+                    <li><a href="/en/resources/tutorials">Tutorials</a></li>
+                    <li><a href="/en/resources/multimedia">JCP Podcasts</a></li>
+                    <li><a href="/en/resources/guide">Spec Lead Guide</a></li>
+                    <li><a href="/en/resources/tdk">TCK Tool & Info</a></li>
+                    <li><a href="/en/resources/license_reference">License Reference</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/en/press/pmo" class="p7PMtrg">Community News</a>
+                <ul>
+                    <li><a href="/en/press/pmo">News</a></li>
+                    <li><a href="/en/press/news/awards/awards_main">Programs &amp; Awards</a></li>
+                    <li><a href="/en/press/releases">Press Releases</a></li>
+                    <li><a href="/en/press/success">Success Stories</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/en/introduction/faq">FAQ</a></li>
+
+            <li><a href="/en/resources/contacts">Contact Us</a></li>
+
+            <div style="clear: both;"><img src="/images/spacer.gif" alt="" height="25" width="1"></div>
+
+            <!--[if lte IE 6]><style>#p7PMnav a{height:1em;}#p7PMnav li{height:1em;float:left;clear:both;width:100%}</style><![endif]-->
+            <!--[if IE 6]><style>#p7PMnav li{clear:none;}</style><![endif]-->
+            <!--[if IE 7]><style>#p7PMnav a{zoom:100%;}#p7PMnav li{float:left;clear:both;width:100%;}</style><![endif]-->
+        </ul>
+
+        
+
+        <!--begin ad space -->
+        <div class="ads">
+            <a href="http://java.com/java/download/index.jsp?cid=jdp78399" target="_blank"><img style="display: ;" src="/images/ad_banner2.gif" alt="Ad Banner" border="1" height="70" width="150"></a>
+        </div>
+        <!--end ad space -->
+
+<!-- ** Menu End ** //-->
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;<br>
+
+    
+
+                    &nbsp;<br>
+                    <img src="/images/common/trans.gif" alt="" width="1" height="150"><br>
+
+              
+
+
+
+                </td>
+                <!-- ** END: Navigation Column ** //-->
+
+                <!-- ** BEGIN: Gutter Column ** //-->
+		<td width="10" nowrap><img src="/images/common/trans.gif" alt="" width="10" height="1"></td>
+                <!-- ** END: Gutter Column ** //-->
+
+                <!-- ** BEGIN: Content Column ** //-->
+                <td width="100%" valign="top">
+
+    
+<script type="text/javascript">
+
+String.prototype.trim = function() {
+        return this.replace(/^\s+|\s+$/g,"");
+}
+String.prototype.ltrim = function() {
+        return this.replace(/^\s+/,"");
+}
+String.prototype.rtrim = function() {
+        return this.replace(/\s+$/,"");
+}
+
+function validate_search() {
+	if (document.search.id.value == "Search JSRs" || document.search.id.value.trim().length == 0) {
+		alert("Search terms must be entered first");
+		return false;
+	}
+	return true;
+}
+
+function validate_findjsr() {
+	if (document.findjsr.id.value == "Search JSRs" || document.findjsr.id.value.trim().length == 0) {
+		alert("Search terms must be entered first");
+		return false;
+	}
+	return true;
+}
+
+function nullify_if_equal(field, str) {
+	// alert("val=" + field.value);
+	if (field.value == str) {
+		field.value = "";
+	}
+}
+
+</script>
+<!-- ** END: header.jsp ** //-->
+
+
+
+
+
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML><HEAD><TITLE>JSR-281 Maintenance Release Change Log</TITLE>
+<META http-equiv=Content-Type content="text/html; charset=iso-8859-1">
+</HEAD>
+<body>
+<H2>JSR-281 Maintenance Release Change Log</H2>
+<table border=1 cellpadding=5>
+<tr><th>Item#</th><th>Type of change. If <em>REJECTED</em> it is not in the specification</th><th>Change</th><th>Requirement (if any)</th><th>Description (if needed)</th><th>Change</th></tr>
+<tr><td>1348</td><td><em>REJECTED</em></td><td>The initial texts of the JSR could be better written</td><td>-</td><td>-</td><td>None</td></tr>
+<tr><td>1355</td><td>Error</td><td>Spec references for REFER are useless</td><td>-</td><td>-</td><td>Clarify references to RFC. Only textual, no API change.</td></tr>
+<tr><td>1357</td><td><em>REJECTED</em></td><td>SIP INFO is not supported</td><td>The JSR 281 shall support the SIP INFO method</td><td>To enable for new services in IMS, this method need support in the API.</td><td>None</td></tr>
+<tr><td>1649</td><td>New req</td><td>Media and codecs: adding MMTel specific properties</td><td>The JSR 281 shall support 3GPP 26.114</td><td>-</td><td>Add new streaming media profile "mmtel" (new value for the 'mprof' registry property). More attributes reserved in Session- and MediaDescriptor. setBandwidthInfo gets reserved, and throws exception if modified in mmtel and vs profiles.</td></tr>
+<tr><td>1771</td><td>Clarification</td><td>Permission class definition is required for MSA and MIDP3</td><td>-</td><td>Add permission class definitions of MIDP3 to comply with MSA2</td><td>Updated the table security chapter in overview.html to map MIDP2 permission strings to MIDP3 permission classes.</td></tr>
+<tr><td>1772</td><td>Clarification</td><td>Media types (MSA and MIDP3 alignment)</td><td>-</td><td>Clarify relation of media types of MSA2 to JSR 281</td><td>Only textual, no API change. Media types are specified in relation to media profiles descriptions.</td></tr>
+<tr><td>1774</td><td>Clarification</td><td>API may implement change media with UPDATE or re-INVITE. Re-INVITE is preferred when adding media.</td><td>-</td><td>A session can be updated using either a re-INVITE or UPDATE.</td><td>Javadoc updated for SessionUpdateReceived: This method is called when a media has been added to the session, and the application may accept or reject it. Impl guidelines has a section on session updates, which type of update generates which call back and how to handle a mix of update types.</td></tr>
+<tr><td>1938</td><td>New req</td><td>Not possible for an application to set final response codes.</td><td>The JSR 281 shall allow an application to set SIP response codes where applicable.</td><td>-</td><td>For methods that reject an incoming ServiceMethod, it will be possible to supply a response code explaining the reason for the rejection. Session.reject(int) - New method. Session.rejectWithDiversion(String) - New method. Session - Added statusCode constants</td></tr>
+<tr><td>1939</td><td><em>REJECTED</em></td><td>Support to set device-level q-value</td><td>The JSR shall support setting device Q-value according to RFC3841 Caller Preferences Framework.</td><td>This makes it possible for a user to indicate the preference of a device according to RFC 3841</td><td>None</td></tr>
+<tr><td>1940</td><td>Clarification</td><td>MSRP to follow model of RFC 4145 for NAT traversal.</td><td>The implementation of MSRP shall support connection model of RFC 4145</td><td>Clarify requirements on the TCP connection model used in MSRP</td><td>No API change expected, but impl guidelines updated in a chapter on NAT traversal.</td></tr>
+<tr><td>1942</td><td>Clarification</td><td>TCP connection setup using c-line IP address and m-line port</td><td>The implementation of MSRP shall use the c-line address and m-line port, rather than the a=path line.</td><td>Propose alternative way of using the c-line IP address and m-line port to enable OMA IM.</td><td>No API change expected, but impl guidelines updated in a chapter on NAT traversal.</td></tr>
+<tr><td>2012</td><td>Error</td><td>createReference and createCapability in Session need to throw ImsException if they cannot be created.</td><td>-</td><td>-</td><td>Add missing exceptions to API. Updated Session.java to throw ImsException.</td></tr>
+<tr><td>2023</td><td>New req</td><td>Support display name for user id arguments throughout the spec</td><td>The JSR 281 shall support display names for SIP URIs where applicable</td><td>Allow display names to be used where applicable.</td><td>API changes: The From and To arguments of service methods accept display names together with the URIs. Connector.open allows display name in userId= parameter. ServiceMethod.getRemoteUserId returns an array of strings of asserted identities known about the remote. Added example about display name in CoreService.java Clarified impl guidelines that Connector.open userId= parameter maps to P-Preferred-Identity. Display name is supported for TEL URIs as well. Added MO anonymity based on the domain name anonymous.invalid</td></tr>
+<tr><td>2026</td><td><em>REJECTED</em></td><td>Home- or geolocal numbers in phone-context</td><td>The JSR shall interprete local number tel URIs in geo-local and home-local contexts according to 3GPP TS 23.228, 3GPP TS 24.229 and RFC 3966.</td><td>-</td><td>None</td></tr>
+<tr><td>2027</td><td><em>REJECTED</em></td><td>default application</td><td>The JSR shall allow an IMS application with no capabilities in the registry. </td><td>This is needed to handle legacy applications that are not within the caller preferences framework.</td><td>None</td></tr>
+<tr><td>2040</td><td><em>REJECTED</em></td><td>IllegalArgumentException is thrown if file could not be found. </td><td>-</td><td>FramedMedia.sendFile and receiveFile may need to be clarified about which exception is thrown if the file cannot be found.</td><td>None</td></tr>
+<tr><td>2041</td><td>Error</td><td>Syntax of CoreService IARI, ICSI and FT fields, and make sure to specify which delimiters are allowed to separate the identifiers within each of these fields.</td><td>-</td><td>The Registry is used to encode feature tags, ICSI and IARI.</td><td>No API changes. Clarified ICSI, IARI and Feature tags are whitespace separated in registry. javax.microedition.ims: The JSR 281 IMS Application Registry, Static Installation CoreService, Dynamic Installation CoreService, configuration.setRegistry example.</td></tr>
+<tr><td>2065</td><td>Error</td><td>Define exactly when when the transferProgress shall be called.</td><td>-</td><td>TransferProgress callback is repeatedly called to track transfer of large content in FramedMedia.</td><td>New section in impl guidelines for FramedMedia describing when to call the listener. The impl guidelines sets no parameter for how often it should be called, only after each chunk has been sent. MSRP sets each chunk to be 2k, but it may be impl dependent. No API change.</td></tr>
+<tr><td>2091</td><td>Error</td><td>Inadequate error message from creating ServiceMethods.</td><td>-</td><td>Improve error messages from the service methods.</td><td>New interface Reason.java supported in ServiceClosed and CoreServiceException only. No change for service methods, since we can pick out reasons using the message interface. Reason.java introduced.</td></tr>
+<tr><td>2105</td><td>Clarification</td><td>Connector.open registers additional public user identities</td><td>-</td><td>It is possible to do multiple connector.open with different userId parameters.</td><td>Impl guidelines: If the device supports explicit registration of additional public user identities, then the device attempts to register them. Otherwise not.</td></tr>
+<tr><td>2107</td><td>Error</td><td>missing method Configuration.hasRegistry</td><td>-</td><td>The method is needed in applications.</td><td>Method added.</td></tr>
+<tr><td>2108</td><td><em>REJECTED</em></td><td>Allow AppId argument to setRegistry (etc) to be a connector string</td><td>-</td><td>Makes development of application easier.</td><td>None</td></tr>
+<tr><td>2140</td><td>New req</td><td>Media and codecs: enhance interoperability.</td><td>The JSR 281 shall support the media handling of 3GPP TS 26.235 and 3GPP TS 26.114</td><td>The media interoperability requirements were too weak in the final release.</td><td>Text on Streaming Media profiles introduced together with requirements. Registry updated with mprof attribute that encodes the streaming media profile name. Impl guidelines: When the IMS engine creates the codec offer on MO side for streaming media, it considers what is available in the media profile and allows only them.
+</td></tr>
+<tr><td>2141</td><td>New req</td><td>The API has no HOLD function, this could mean that the codec-resource is not released when SDP direction is change: SendRecv->sendOnly. On a platform with limited resources it may prevent a new outgoing call during Hold e.g. going from 2-party to 3-party.</td><td>The JSR 281 shall enable an application to put its media in a HOLD state.</td><td>Used to pause sending content over a media component</td><td>Clarified how direction influences Media and Player states together with a description in StreamMedia. Exceptions for when getting Players are modified, especially that you can get them regardless of media directions.</td></tr>
+<tr><td>2144</td><td>New req</td><td>No application dependant response is possible to INVITE i.e. no listener triggered by receiving an INVITE</td><td>The JSR 281 shall allow the terminating side to make an application-specific answer to an offer from the originating side according to RFC3264.</td><td>Important addition to enable new services and advanced applications.</td><td>This is Early session framework effectively enabling RFC3264 offer/answer model for applications in the JSR. New interfaces EarlySession, EarlySessionListener introduced to cover the space between INVITE and 200 Ok on MT side. A new media state introduced for media components on MT side (state-offer). Also new call back interface SessionEarlyListener for Session to cover the same space for reINVITE for the MT side. These things were done separately from Session to avoid a complete redesign of the session and media handling in the JSR.</td></tr>
+<tr><td>2145</td><td>New req</td><td>The headers in a SIP response message cannot be updated (only headers in a SIP request can be updated).</td><td>The JSR 281 shall support read and write to SIP headers in SIP response messages</td><td>-</td><td>Added method getNextResponse in ServiceMethod interface. Added text and table in Impl Guidelines for ServiceMethod </td></tr>
+<tr><td>2146</td><td>New req</td><td>It is not possible to populate the Replaces parameter in Refer-To header in REFER (used when going from 2-party to 3-party). This includes both inserting and reading the replaces header, and also its inclusion in the header portion of a SIP URI header.</td><td>JSR 281 shall support processing of the replaces parameter of the refer-to header in REFER requests according to RFC3515.</td><td>This eliminates the need to have duplicate media streams while transfering a call to a server.</td><td>CoreService.createReference() updated so referMethod can be null. New methods Reference.setReplaces(), Reference.getReplaces(). Changes to: Reference.refer() now takes boolean argument, ReferenceListener.referenceDelivered() has state can be Referring or Terminated. Reference: Updated picture of statemachine to match above.</td></tr>
+<tr><td>2147</td><td>New req</td><td>Early media is not supported, the media player is not realized until the media session is established (200 OK to initial INVITE).</td><td>The JSR 281 shall support playing out media contents available before called user accepts session</td><td>Support the concept of "Early media"</td><td>Make media players of StreamMedia go into REALIZED state as soon as they can, rather than being dependent on session establishment. Solution requires adding new boolean methods exists(), canRead(), canWrite() to Media interface where the app will know if it is <em>allowed</em> to operate on the media flow, and a new interface MediaListener that reports if the allow change. Impl guideline describes how the IMS engine shall compute boolean values. Javadoc updated for all media types, though no more methods have been added there. Rationale is in Media javadoc, and exceptions for all methods that write or read to media objects are revised. Despite the additions, the interfaces are simpler to use.</td></tr>
+<tr><td>2148</td><td><em>REJECTED</em></td><td>No listener triggered on originating side by 181 (Call is being forwarded).</td><td>The JSR 281 shall notify the MO application of  received progress reports before session is established.</td><td>-</td><td>None</td></tr>
+<tr><td>2151</td><td>New req</td><td>Video adaption with SIP UPDATE.</td><td>The JSR 281 shall apply UPDATE when minor media change is required that does not need user intervention. </td><td>-</td><td>No API change needed. Impl guideline describes that this type of update should be done separately from application-initiated updates.</td></tr>
+<tr><td>2152</td><td><em>REJECTED</em></td><td>The API supports SIP and TEL URIs, but it is not referencing the latest (any) TEL URI RFC.</td><td>-</td><td>-</td><td>None</td></tr>
+<tr><td>2341</td><td>New req</td><td>Suppress implicit subscription to refer event package</td><td>The JSR 281 shall enable an application to choose if implicit subscription for REFER should be done (RFC4488)</td><td>-</td><td>Add boolean arg to CoreService.createReference that flags whether to make the implicit subscription or not.</td></tr>
+<tr><td>2342</td><td>New req</td><td>Enable multiple refer</td><td>The JSR 281 shall enable an application to implement multiple refer according to RFC5368</td><td>-</td><td>The procedure should be described in javadoc for reference so the application does it properly. The argument referToUserId renamed to referTo and method Reference.getReferToUserId renamed to getReferTo, and examples provided.</td></tr>
+<tr><td>2344</td><td>Clarification</td><td>Handling of multiple body parts in a message is too unspecified</td><td>-</td><td>It is not sufficiently defined how Message with MessageBodyPart is mapped to SIP messages on the sending side, and how SIP message with multipart body is mapped to a Message with MessageBodyParts on receiving side. On top of this, it is not specified how the content types should be handled.</td><td>No API change, but Javadoc needs to be clarified.</td></tr>
+</table>
+</body>
+</HTML>
+
+
+
+<!-- ** BEGIN: footer.jsp ** //-->
+
+
+
+
+
+
+
+
+</td>
+</tr>
+</table>
+
+<!-- ** END: Content Table ** //-->
+
+<!-- ** BEGIN: Footer Table ** //-->
+
+<div id="footer" style="clear: both;">
+    <div class="footleft">
+        <a href="/en/resources/contacts">Contact Us</a>
+    </div>
+	
+    <div class="botbar"><img src="/images/spacer.gif" alt="" height="23" width="1"></div>
+
+    <div class="footleft2">
+         &copy; 2019, Oracle Corporation and/or its affiliates. 
+        <a href="/en/home/terms">Terms of Use</a>. <a href="http://www.oracle.com/us/legal/privacy/index.html">Privacy Policy</a>. <a href="http://www.oracle.com/us/legal/third-party-trademarks/third-party-trademarks-078568.html">Trademarks</a>
+    </div>
+
+    <div class="footright">
+        <img src="/images/common/logo_oracle_footer.gif" alt="Oracle Corporation" height="22" width="91">
+    </div>
+
+    <div style="clear: both;"><img src="/images/spacer.gif" alt="" height="30" width="1"></div>
+</div>
+
+<!-- ** END: Footer Table ** //-->
+
+
+
+<!-- ** Menu Start ** //-->
+
+
+
+</body>
+</html>
+<!-- ** END: footer.jsp ** //-->
+

@@ -1,0 +1,728 @@
+
+
+
+
+<!-- ** BEGIN: header.jsp ** //-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3c.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+<head>
+    
+
+   
+    <link href="/includes/css/menu.css" rel="stylesheet" type="text/css"></link>
+    <link href="/includes/css/style.css" rel="stylesheet" type="text/css"></link>
+    <!--[if lt IE 6]><link href="/includes/css/style5.css" rel="stylesheet" type="text/css" ></link><![endif]-->
+    <!--[if gte IE 5]><link href="/includes/css/style6.css" rel="stylesheet" type="text/css" ></link><![endif]-->
+    <link href="/includes/css/tabs.css"  rel="stylesheet" type="text/css"></link>
+
+    <script type="text/javascript" src="/includes/scripts/tabs.js"></script>
+    <script type="text/javascript" src="/includes/scripts/menu.js"></script>
+   
+
+    
+
+    
+        <title>The Java Community Process(SM) Program - JSRs: Java Specification Requests - results</title>
+    
+
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+
+
+<body onload="P7_initPM(0,1,0,0,-1)">
+
+    <a name="top"></a>
+
+    <div id="header">
+	<div id="logo">
+		<a href="/en/home/index"><img src="/images/spacer.gif" alt="Java Community Process" height="81" width="151"></a>
+	</div>
+	<div id="tools">
+		<div class="search">
+			<form name="search" action="/en/jsr/summary" method="get" onsubmit="return validate_search()">
+				<input name="id" value="Search JSRs" size="16" class="form" onfocus="nullify_if_equal(this, 'Search JSRs')" type="text">
+				<a href="javascript:document.search.submit()" onclick="return validate_search()"><img src="/images/button_go.gif" width="21" height="16" border="0" alt="Submit this Search" name="sub_search"></a>
+			</form>
+		</div>
+		<div class="tools">
+			<a href="/en/press/pressroom">Press Room</a> &nbsp;|&nbsp;
+			<a href="http://java.com/java/download/index.jsp?cid=jdp78399">Get Java Here</a> &nbsp;|&nbsp;
+			<!-- <a href="javascript:void(0)">Print Format</a> &nbsp;|&nbsp;&nbsp; -->
+		</div>
+
+	</div>
+	<div style="clear: right;"></div>
+
+        
+
+	<div class="topbar"><img src="/images/spacer.gif" alt="" height="3" width="154"></div>
+	<div id="update"> </div>
+    </div>
+
+
+    
+
+        <!-- ** BEGIN: Content Table ** //-->
+
+        <table width="100%" border="0" cellpadding="0" cellspacing="0">
+
+            <tr>
+
+                <!-- ** BEGIN: Navigation Column ** //-->
+                <td width="150" id="leftcontent" valign="top">
+                    <!-- Navigation Placeholder //-->
+
+                    
+
+                    <div class="bar"><img src="/images/hr_dots1.gif" alt="" height="3" width="150"></div>
+
+        <!-- begin find JSRs form -->
+        <!-- IMPORTANT! do not convert this form to Struts < html : form > tag.  javascript change of form.action property fails. -->
+        <img src="/images/hd_find-jsrs.gif" alt="Find JSRs" height="18" width="150">
+        <form name="findjsr" action="/en/jsr/summary" method="get" class="pt5" onsubmit="return validate_findjsr()">
+            <input name="id" size="18" class="form" value="Search JSRs" onfocus="nullify_if_equal(this, 'Search JSRs')" type="text">
+	    <a href="javascript:document.findjsr.submit()" onclick="return validate_findjsr()"><img src="/images/button_go.gif" width="21" height="16" border="0" alt="Submit this Search" name="sub_search"></a>
+        </form><br><br>
+
+        <!-- ** Menu Start ** //-->
+
+        <ul id="p7PMnav">
+            <li><a href="/en/jsr/platform">JSRs by Platform</a></li>
+            <li><a href="/en/jsr/tech">JSRs by Technology</a></li>
+            <li><a href="/en/jsr/stage">JSRs by Stage</a></li>
+            <li><a href="/en/jsr/ec">JSRs by Committee</a></li>
+            <li><a href="/en/jsr/all">List of All JSRs</a></li>
+
+            <!--end find JSRs form -->
+            <div style="clear: both;"><img src="/images/spacer.gif" alt="" height="25" width="1"></div>
+
+            <!--begin my JCP -->
+            <img src="/images/hd_my-jcp.gif" alt="My JCP" height="18" width="150">
+            
+
+          <form name="login" method="get" action="/en/user/login" >
+            <input name="Sign-in" type="submit" title="Sign-in" value="Sign-in" />
+          </form>
+
+            <div style="clear:both"><img src="/images/global/spacer.gif" width="1" height="3" alt=""></div>
+            <div class="noNav">
+                <a href="/en/user/register">Register for Site</a>
+            </div>
+
+             <div class="bar"><img src="/images/hr_dots1.gif" alt="" height="3" width="150"></div>
+           <div class="noNav" style="color: #666666; padding: 0;">
+              Use of JCP site is subject to the
+              <a href="/en/home/terms" style="display:inline;padding: 0">JCP Terms of Use</a> and the
+              <a href="http://www.oracle.com/us/legal/privacy/index.html" style="display:inline;padding: 0" href="">Oracle Privacy Policy</a>
+          </div>
+
+            
+
+            <div style="clear:both"><img src="/images/global/spacer.gif" width="1" height="25" alt=""></div>
+
+            <!--begin JCP info -->
+            <img src="/images/hd_jcp-info.gif" alt="JCP Info" height="18" width="150">
+
+            <li><a href="/en/procedures/overview" class="p7PMtrg">About JCP</a>
+                <ul>
+                    <li><a href="/en/procedures/overview">Program Overview</a></li>
+                    <li><a href="/en/procedures/jcp2">JCP Process Document</a></li>
+                    <li><a href="/en/whatsnew/calendar">Calendar</a></li>
+                    <li><a href="/en/participation/members">JCP Members</a></li>
+                    <li><a href="/en/participation/committee">Executive Committee</a></li>
+                    <li><a href="/en/whatsnew/elections">Elections</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/en/participation/overview" class="p7PMtrg">Get Involved</a>
+		<ul>
+                    <li><a href="/en/participation/overview">Overview</a></li>
+                    <li><a href="/en/participation/membership">Becoming a JCP Member</a></li>
+		</ul>
+            </li>
+
+            <li><a href="/en/resources/contents" class="p7PMtrg">Community Resources</a>
+                <ul>
+                    <li><a href="/en/resources/contents">Overview</a></li>
+                    <li><a href="/en/resources/tutorials">Tutorials</a></li>
+                    <li><a href="/en/resources/multimedia">JCP Podcasts</a></li>
+                    <li><a href="/en/resources/guide">Spec Lead Guide</a></li>
+                    <li><a href="/en/resources/tdk">TCK Tool & Info</a></li>
+                    <li><a href="/en/resources/license_reference">License Reference</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/en/press/pmo" class="p7PMtrg">Community News</a>
+                <ul>
+                    <li><a href="/en/press/pmo">News</a></li>
+                    <li><a href="/en/press/news/awards/awards_main">Programs &amp; Awards</a></li>
+                    <li><a href="/en/press/releases">Press Releases</a></li>
+                    <li><a href="/en/press/success">Success Stories</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/en/introduction/faq">FAQ</a></li>
+
+            <li><a href="/en/resources/contacts">Contact Us</a></li>
+
+            <div style="clear: both;"><img src="/images/spacer.gif" alt="" height="25" width="1"></div>
+
+            <!--[if lte IE 6]><style>#p7PMnav a{height:1em;}#p7PMnav li{height:1em;float:left;clear:both;width:100%}</style><![endif]-->
+            <!--[if IE 6]><style>#p7PMnav li{clear:none;}</style><![endif]-->
+            <!--[if IE 7]><style>#p7PMnav a{zoom:100%;}#p7PMnav li{float:left;clear:both;width:100%;}</style><![endif]-->
+        </ul>
+
+        
+
+        <!--begin ad space -->
+        <div class="ads">
+            <a href="http://java.com/java/download/index.jsp?cid=jdp78399" target="_blank"><img style="display: ;" src="/images/ad_banner2.gif" alt="Ad Banner" border="1" height="70" width="150"></a>
+        </div>
+        <!--end ad space -->
+
+<!-- ** Menu End ** //-->
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;<br>
+
+    
+
+                    &nbsp;<br>
+                    <img src="/images/common/trans.gif" alt="" width="1" height="150"><br>
+
+              
+
+
+
+                </td>
+                <!-- ** END: Navigation Column ** //-->
+
+                <!-- ** BEGIN: Gutter Column ** //-->
+		<td width="10" nowrap><img src="/images/common/trans.gif" alt="" width="10" height="1"></td>
+                <!-- ** END: Gutter Column ** //-->
+
+                <!-- ** BEGIN: Content Column ** //-->
+                <td width="100%" valign="top">
+
+    
+<script type="text/javascript">
+
+String.prototype.trim = function() {
+        return this.replace(/^\s+|\s+$/g,"");
+}
+String.prototype.ltrim = function() {
+        return this.replace(/^\s+/,"");
+}
+String.prototype.rtrim = function() {
+        return this.replace(/\s+$/,"");
+}
+
+function validate_search() {
+	if (document.search.id.value == "Search JSRs" || document.search.id.value.trim().length == 0) {
+		alert("Search terms must be entered first");
+		return false;
+	}
+	return true;
+}
+
+function validate_findjsr() {
+	if (document.findjsr.id.value == "Search JSRs" || document.findjsr.id.value.trim().length == 0) {
+		alert("Search terms must be entered first");
+		return false;
+	}
+	return true;
+}
+
+function nullify_if_equal(field, str) {
+	// alert("val=" + field.value);
+	if (field.value == str) {
+		field.value = "";
+	}
+}
+
+</script>
+<!-- ** END: header.jsp ** //-->
+
+
+
+
+<b>
+  <font color="#663399" size="+1">
+    JSR #376<br>
+    Java<sup><font size="-2">TM</font></sup> Platform Module System<br>
+    Public Review Reconsideration Ballot<br>
+  </font>
+  Ballot duration: 2017-06-13&nbsp;&nbsp; to: 2017-06-26<br>
+</b>
+
+<P>
+
+
+
+
+
+
+
+These are the final results of the Public Review Reconsideration Ballot for JSR #376.
+
+	
+
+The EC has  approved this ballot.
+
+	
+
+
+</P>
+
+<h3>Votes</h3><BR>
+<table width="600" border="0" cellspacing="0" cellpadding="3">
+  <tr>
+    <td>
+
+<B>EC</B>
+
+<table width="600" border="1" cellspacing="0" cellpadding="5">
+  <tr>
+
+  <td>
+    <table width="100%">
+      <tr>
+        <td align="left"><font size="2">Arm Limited</font></td>
+        <td align="right"><img src="/images/common/yes.gif" width="23" height="23" alt="Yes"></td>
+      </tr>
+    </table>
+  </td>
+
+  <td>
+    <table width="100%">
+      <tr>
+        <td align="left"><font size="2">Azul Systems, Inc.</font></td>
+        <td align="right"><img src="/images/common/yes.gif" width="23" height="23" alt="Yes"></td>
+      </tr>
+    </table>
+  </td>
+
+  <td>
+    <table width="100%">
+      <tr>
+        <td align="left"><font size="2">Credit Suisse</font></td>
+        <td align="right"><img src="/images/common/yes.gif" width="23" height="23" alt="Yes"></td>
+      </tr>
+    </table>
+  </td>
+
+  <td>
+    <table width="100%">
+      <tr>
+        <td align="left"><font size="2">Eclipse Foundation, Inc</font></td>
+        <td align="right"><img src="/images/common/yes.gif" width="23" height="23" alt="Yes"></td>
+      </tr>
+    </table>
+  </td>
+  </tr>
+  <tr>
+
+  <td>
+    <table width="100%">
+      <tr>
+        <td align="left"><font size="2">Fujitsu Limited</font></td>
+        <td align="right"><img src="/images/common/yes.gif" width="23" height="23" alt="Yes"></td>
+      </tr>
+    </table>
+  </td>
+
+  <td>
+    <table width="100%">
+      <tr>
+        <td align="left"><font size="2">Gemalto M2M GmbH</font></td>
+        <td align="right"><img src="/images/common/yes.gif" width="23" height="23" alt="Yes"></td>
+      </tr>
+    </table>
+  </td>
+
+  <td>
+    <table width="100%">
+      <tr>
+        <td align="left"><font size="2">Goldman Sachs & Co.</font></td>
+        <td align="right"><img src="/images/common/yes.gif" width="23" height="23" alt="Yes"></td>
+      </tr>
+    </table>
+  </td>
+
+  <td>
+    <table width="100%">
+      <tr>
+        <td align="left"><font size="2">Grimstad, Ivar</font></td>
+        <td align="right"><img src="/images/common/yes.gif" width="23" height="23" alt="Yes"></td>
+      </tr>
+    </table>
+  </td>
+  </tr>
+  <tr>
+
+  <td>
+    <table width="100%">
+      <tr>
+        <td align="left"><font size="2">Hazelcast</font></td>
+        <td align="right"><img src="/images/common/yes.gif" width="23" height="23" alt="Yes"></td>
+      </tr>
+    </table>
+  </td>
+
+  <td>
+    <table width="100%">
+      <tr>
+        <td align="left"><font size="2">Hewlett Packard Enterprise</font></td>
+        <td align="right"><img src="/images/common/yes.gif" width="23" height="23" alt="Yes"></td>
+      </tr>
+    </table>
+  </td>
+
+  <td>
+    <table width="100%">
+      <tr>
+        <td align="left"><font size="2">IBM</font></td>
+        <td align="right"><img src="/images/common/yes.gif" width="23" height="23" alt="Yes"></td>
+      </tr>
+    </table>
+  </td>
+
+  <td>
+    <table width="100%">
+      <tr>
+        <td align="left"><font size="2">Intel Corp.</font></td>
+        <td align="right"><img src="/images/common/yes.gif" width="23" height="23" alt="Yes"></td>
+      </tr>
+    </table>
+  </td>
+  </tr>
+  <tr>
+
+  <td>
+    <table width="100%">
+      <tr>
+        <td align="left"><font size="2">JetBrains s.r.o.</font></td>
+        <td align="right"><img src="/images/common/yes.gif" width="23" height="23" alt="Yes"></td>
+      </tr>
+    </table>
+  </td>
+
+  <td>
+    <table width="100%">
+      <tr>
+        <td align="left"><font size="2">Keil, Werner</font></td>
+        <td align="right"><img src="/images/common/yes.gif" width="23" height="23" alt="Yes"></td>
+      </tr>
+    </table>
+  </td>
+
+  <td>
+    <table width="100%">
+      <tr>
+        <td align="left"><font size="2">London Java Community</font></td>
+        <td align="right"><img src="/images/common/yes.gif" width="23" height="23" alt="Yes"></td>
+      </tr>
+    </table>
+  </td>
+
+  <td>
+    <table width="100%">
+      <tr>
+        <td align="left"><font size="2">MicroDoc</font></td>
+        <td align="right"><img src="/images/common/yes.gif" width="23" height="23" alt="Yes"></td>
+      </tr>
+    </table>
+  </td>
+  </tr>
+  <tr>
+
+  <td>
+    <table width="100%">
+      <tr>
+        <td align="left"><font size="2">NXP Semiconductors</font></td>
+        <td align="right"><img src="/images/common/yes.gif" width="23" height="23" alt="Yes"></td>
+      </tr>
+    </table>
+  </td>
+
+  <td>
+    <table width="100%">
+      <tr>
+        <td align="left"><font size="2">Oracle</font></td>
+        <td align="right"><img src="/images/common/yes.gif" width="23" height="23" alt="Yes"></td>
+      </tr>
+    </table>
+  </td>
+
+  <td>
+    <table width="100%">
+      <tr>
+        <td align="left"><font size="2">Red Hat</font></td>
+        <td align="right"><img src="/images/common/abstain.gif" width="23" height="23" alt="Abstain"></td>
+      </tr>
+    </table>
+  </td>
+
+  <td>
+    <table width="100%">
+      <tr>
+        <td align="left"><font size="2">SAP SE</font></td>
+        <td align="right"><img src="/images/common/yes.gif" width="23" height="23" alt="Yes"></td>
+      </tr>
+    </table>
+  </td>
+  </tr>
+  <tr>
+
+  <td>
+    <table width="100%">
+      <tr>
+        <td align="left"><font size="2">Software AG</font></td>
+        <td align="right"><img src="/images/common/yes.gif" width="23" height="23" alt="Yes"></td>
+      </tr>
+    </table>
+  </td>
+
+  <td>
+    <table width="100%">
+      <tr>
+        <td align="left"><font size="2">SouJava</font></td>
+        <td align="right"><img src="/images/common/yes.gif" width="23" height="23" alt="Yes"></td>
+      </tr>
+    </table>
+  </td>
+
+  <td>
+    <table width="100%">
+      <tr>
+        <td align="left"><font size="2">Tomitribe</font></td>
+        <td align="right"><img src="/images/common/yes.gif" width="23" height="23" alt="Yes"></td>
+      </tr>
+    </table>
+  </td>
+
+  <td>
+    <table width="100%">
+      <tr>
+        <td align="left"><font size="2">Twitter, Inc.</font></td>
+        <td align="right"><img src="/images/common/yes.gif" width="23" height="23" alt="Yes"></td>
+      </tr>
+    </table>
+  </td>
+  </tr>
+  <tr>
+
+  <td>
+    <table width="100%">
+      <tr>
+        <td align="left"><font size="2">V2COM</font></td>
+        <td align="right"><img src="/images/common/yes.gif" width="23" height="23" alt="Yes"></td>
+      </tr>
+    </table>
+  </td>
+
+</table>
+<br>
+
+
+
+</td>
+<td width="20"><img src="/images/common/pixel.gif" width="20" height="1" alt=""></td>
+<td valign="top">
+  <table border="0" cellspacing="0" cellpadding="5" height="100%">
+    <tr align="left">
+      <td colspan="2">
+        <b>Icon Legend</b>
+      </td>
+    </tr>
+    <tr valign="top">
+      <td alt="left">Yes</td>
+      <td align="right"><img src="/images/common/yes.gif" width="23" height="23" alt="Yes"></td>
+    </tr>
+    <tr valign="top">
+      <td align="left">No</td>
+      <td align="right"><img src="/images/common/no.gif" width="23" height="23" alt="No"></td>
+    </tr>
+    <tr valign="top">
+      <td>Abstain</td>
+      <td align="right"><img src="/images/common/abstain.gif" width="23" height="23" alt="Abstain"></td>
+    </tr>
+    <tr valign="top">
+      <td>Not voted</td>
+      <td align="right"><img src="/images/common/none21.gif" width="23" height="23" alt="Not voted"></td>
+   </tr>
+ </table>
+</td>
+</tr>
+</table>
+<br>
+
+
+<HR NOSHADE ALIGN="left" WIDTH="70%">
+<h3>View Vote Log</h3>
+<BR>
+
+<FORM>
+
+
+<strong>EC</strong><br>
+<TEXTAREA ROWS="10" COLS="80" WRAP="soft" READONLY>On 2017-06-25 Fujitsu Limited voted Yes with no comment.
+------------------------------------------------------------------------------
+On 2017-06-26 SAP SE voted Yes with the following comment:
+SAP is pleased to see the considerable efforts spent by the expert group since the last vote for both, reaching consensus on the open technical questions as well as communicating the current state of the discussions to the community. We think that the JPMS is on a good way now and hope that the current modus operandi will be maintained not only until the final release of JSR 376 with Java 9 but also for the envisioned updates and refinements of the JPMS in upcoming releases of Java.
+------------------------------------------------------------------------------
+On 2017-06-14 Oracle voted Yes with no comment.
+------------------------------------------------------------------------------
+On 2017-06-26 Keil, Werner voted Yes with the following comment:
+Glad to see, most key concerns were resolved or are promised to be resolved as soon as possible. I think that modularity will be beneficial to many parts of the Java ecosystem both smaller devices and larger systems like Java EE.
+------------------------------------------------------------------------------
+On 2017-06-19 Eclipse Foundation, Inc voted Yes with the following comment:
+The Eclipse community believes that sufficient progress has been made on the JPMS and Java language specifications to warrant approval. Thanks to all of those who made this possible.
+------------------------------------------------------------------------------
+On 2017-06-23 Credit Suisse voted Yes with no comment.
+------------------------------------------------------------------------------
+On 2017-06-26 Tomitribe voted Yes with the following comment:
+As stated in our first vote and blog, we saw great value in the 30-day clock getting the EC and EG on the same page with a clear result.  The spec lead has done an outstanding job of handling the flood of feedback that resulted and should be congratulated.  We believe several of the decisions made, such as permitting illegal access by default but with clear warnings will lead to a smoother transition that still creates pressure for movement into modularity.  Though some may have viewed the original vote as negative, it should be seen as a success of the JCP process and a sign of strength for Java overall.
+------------------------------------------------------------------------------
+On 2017-06-23 JetBrains s.r.o. voted Yes with no comment.
+------------------------------------------------------------------------------
+On 2017-06-23 Arm Limited voted Yes with no comment.
+------------------------------------------------------------------------------
+On 2017-06-13 IBM voted Yes with the following comment:
+IBM supports the revised JPMS specification moving to Proposed Final Draft, with credit due to Oracle as the specification leader and those in the JSR 376 Expert Group who dedicated their time to reaching this milestone.
+
+As described in our public statement, which can be read at https://ibm.co/2r6Od8a, IBM values the new compatibility and migration enhancements for enterprise applications added to the specification, and the disposition of outstanding issues as agreed amongst the Expert Group.  We see this release of JPMS as the strong foundation for a new Java SE platform architecture, and expect to build upon this with feedback and experience from our customers and the community.
+------------------------------------------------------------------------------
+On 2017-06-16 Gemalto M2M GmbH voted Yes with no comment.
+------------------------------------------------------------------------------
+On 2017-06-19 V2COM voted Yes with no comment.
+------------------------------------------------------------------------------
+On 2017-06-23 Red Hat voted Abstain with the following comment:
+Red Hat is voting Abstain at this time because although we think there has been positive progress within the EG to reach consensus since the last vote, we believe that there are a number of items within the current proposal which will impact wider community adoption that could have been addressed within the 30 day extension period for this release. However, we do not want to delay the Java 9 release and are happy with the more aggressive schedule proposed by the Specification Lead and EG for subsequent versions of Java because getting real world feedback on the modularity system will be key to understanding whether and where further changes need to occur. We hope that the Project Lead and EG will continue to be as open to input from the wider Java community as they have been in the last 30 days and look forward to the evolution of Java being driven by data from users and communities beyond OpenJDK.
+
+We would also like to take the opportunity to thank the EG, the Oracle Specification Lead and others who assisted in the numerous meetings which have taken place in the last 30 days. This increased collaboration and positive approaches to discussing and resolving issues has been welcomed by ourselves and the wider Java community.
+------------------------------------------------------------------------------
+On 2017-06-19 Goldman Sachs & Co. voted Yes with no comment.
+------------------------------------------------------------------------------
+On 2017-06-19 NXP Semiconductors voted Yes with no comment.
+------------------------------------------------------------------------------
+On 2017-06-19 Software AG voted Yes with no comment.
+------------------------------------------------------------------------------
+On 2017-06-26 Twitter, Inc. voted Yes with the following comment:
+First, we would like to thank the JSR 376 Expert Group (EG) members for all their hard work during the past 1.5 months to improve the JPMS specification. We have been encouraged by the progress that has been made.
+ 
+We are glad that several ambiguities have been clarified (#RestrictedKeywords, #CompilationWithConcealedPackages, and #ResolutionAtCompileTime) and a few important changes have been made (#ModuleNameInManifest and Relax Strong Encapsulation) in the revised JSR 376 specification. We are also happy that there is now greater consensus among the JSR 376 EG members that the current JPMS specification is ready for release as part of JDK 9.
+ 
+We are disappointed that the community will not immediately see the benefits that they are expecting JPMS to provide (#AvoidConcealedPackageConflicts, in particular). But we understand that the most requested features will require a lot more discussion and due-diligence than is allowed in the JDK 9 timeframe. We hope that the first version of JPMS will provide a good basis for such features to be worked on and introduced in future JDK releases.
+
+------------------------------------------------------------------------------
+On 2017-06-26 SouJava voted Yes with the following comment:
+SouJava is very happy to see that the trust we deposited on the EG and Spec Lead on the first vote was not misplaced. 
+
+The work that was done this past 30-40 days was an effective effort to solve the raised issues. We felt heard during this drill, and had all our issues addressed, either immediately, or on the roadmap. 
+
+As a lesson for future JSRs: the Java Language is a fundamental piece of the Java ecosystem. JSRs that touch the Java Language Specification, should be very careful that proposed changes be reflected in the early drafts. Creating confusion around such a fundamental part of Java is very detrimental to the whole Java ecosystem. We are glad that those issues have been resolved now.
+
+All in all, the work done by the Spec Lead and the EG these past weeks, together with all the feedback received, was a proof of the how strong the Java community is and how the JCP process is important and functional. Congratulations to all that made this possible. 
+------------------------------------------------------------------------------
+On 2017-06-13 Intel Corp. voted Yes with no comment.
+------------------------------------------------------------------------------
+On 2017-06-14 MicroDoc voted Yes with no comment.
+------------------------------------------------------------------------------
+On 2017-06-14 London Java Community voted Yes with the following comment:
+The LJC votes yes and echos IBM's thanks to Oracle (as the specification leader) and those in the JSR 376 Expert Group who dedicated their time to reworking and clarifying areas of the specification that we were concerned about.
+
+The LJCs concerns (https://londonjavacommunity.wordpress.com/2017/05/09/explanation-of-our-no-vote-on-jsr-376-java-platform-module-system/) over interoperability with the Java ecosystems defacto build tool / module repository (Apache Maven) have been addressed as have the concerns over the ability for independent implementations of the compiler to be built (noticeably ejc).
+
+The disposition of outstanding issues as agreed amongst the Expert Group was handled really well and it was heartening to see the evident collaboration as described in the detailed minutes of the EG's meetings in the past month.
+
+We see this release of JPMS as the strong foundation for a new Java SE platform architecture, and expect to build upon this with feedback and experience from Java User Group members.
+------------------------------------------------------------------------------
+On 2017-06-14 Azul Systems, Inc. voted Yes with no comment.
+------------------------------------------------------------------------------
+On 2017-06-14 Grimstad, Ivar voted Yes with the following comment:
+I am glad to see that the issues resulting in the no vote are now being addressed. Thanks to the EG and spec lead for taking the concerns seriously and for the effort put into the specification!
+------------------------------------------------------------------------------
+On 2017-06-20 Hazelcast voted Yes with the following comment:
+Hazelcast voted yes as we think positive progress has been achieved over the last weeks. Even though there are still some issues open we have the feeling that those issues are minor and can be addressed in a later release of the JPMS.
+------------------------------------------------------------------------------
+On 2017-06-22 Hewlett Packard Enterprise voted Yes with no comment.
+------------------------------------------------------------------------------
+</TEXTAREA>
+<br><br>
+
+
+
+
+<!-- ** BEGIN: footer.jsp ** //-->
+
+
+
+
+
+
+
+
+</td>
+</tr>
+</table>
+
+<!-- ** END: Content Table ** //-->
+
+<!-- ** BEGIN: Footer Table ** //-->
+
+<div id="footer" style="clear: both;">
+    <div class="footleft">
+        <a href="/en/resources/contacts">Contact Us</a>
+    </div>
+	
+    <div class="botbar"><img src="/images/spacer.gif" alt="" height="23" width="1"></div>
+
+    <div class="footleft2">
+         &copy; 2019, Oracle Corporation and/or its affiliates. 
+        <a href="/en/home/terms">Terms of Use</a>. <a href="http://www.oracle.com/us/legal/privacy/index.html">Privacy Policy</a>. <a href="http://www.oracle.com/us/legal/third-party-trademarks/third-party-trademarks-078568.html">Trademarks</a>
+    </div>
+
+    <div class="footright">
+        <img src="/images/common/logo_oracle_footer.gif" alt="Oracle Corporation" height="22" width="91">
+    </div>
+
+    <div style="clear: both;"><img src="/images/spacer.gif" alt="" height="30" width="1"></div>
+</div>
+
+<!-- ** END: Footer Table ** //-->
+
+
+
+<!-- ** Menu Start ** //-->
+
+
+
+</body>
+</html>
+<!-- ** END: footer.jsp ** //-->
+

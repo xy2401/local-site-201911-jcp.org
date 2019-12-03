@@ -1,0 +1,552 @@
+
+<!--%@ page contentType="text/html" %-->
+
+<!-- ** BEGIN: header.jsp ** //-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3c.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+<head>
+    
+
+   
+    <link href="/includes/css/menu.css" rel="stylesheet" type="text/css"></link>
+    <link href="/includes/css/style.css" rel="stylesheet" type="text/css"></link>
+    <!--[if lt IE 6]><link href="/includes/css/style5.css" rel="stylesheet" type="text/css" ></link><![endif]-->
+    <!--[if gte IE 5]><link href="/includes/css/style6.css" rel="stylesheet" type="text/css" ></link><![endif]-->
+    <link href="/includes/css/tabs.css"  rel="stylesheet" type="text/css"></link>
+
+    <script type="text/javascript" src="/includes/scripts/tabs.js"></script>
+    <script type="text/javascript" src="/includes/scripts/menu.js"></script>
+   
+
+    
+
+    
+        <title>The Java Community Process(SM) Program - Press & Success - News Stories</title>
+    
+
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+
+
+<body onload="P7_initPM(0,1,0,0,-1)">
+
+    <a name="top"></a>
+
+    <div id="header">
+	<div id="logo">
+		<a href="/en/home/index"><img src="/images/spacer.gif" alt="Java Community Process" height="81" width="151"></a>
+	</div>
+	<div id="tools">
+		<div class="search">
+			<form name="search" action="/en/jsr/summary" method="get" onsubmit="return validate_search()">
+				<input name="id" value="Search JSRs" size="16" class="form" onfocus="nullify_if_equal(this, 'Search JSRs')" type="text">
+				<a href="javascript:document.search.submit()" onclick="return validate_search()"><img src="/images/button_go.gif" width="21" height="16" border="0" alt="Submit this Search" name="sub_search"></a>
+			</form>
+		</div>
+		<div class="tools">
+			<a href="/en/press/pressroom">Press Room</a> &nbsp;|&nbsp;
+			<a href="http://java.com/java/download/index.jsp?cid=jdp78399">Get Java Here</a> &nbsp;|&nbsp;
+			<!-- <a href="javascript:void(0)">Print Format</a> &nbsp;|&nbsp;&nbsp; -->
+		</div>
+
+	</div>
+	<div style="clear: right;"></div>
+
+        
+
+	<div class="topbar"><img src="/images/spacer.gif" alt="" height="3" width="154"></div>
+	<div id="update"> </div>
+    </div>
+
+
+    
+
+        <!-- ** BEGIN: Content Table ** //-->
+
+        <table width="100%" border="0" cellpadding="0" cellspacing="0">
+
+            <tr>
+
+                <!-- ** BEGIN: Navigation Column ** //-->
+                <td width="150" id="leftcontent" valign="top">
+                    <!-- Navigation Placeholder //-->
+
+                    
+
+                    <div class="bar"><img src="/images/hr_dots1.gif" alt="" height="3" width="150"></div>
+
+        <!-- begin find JSRs form -->
+        <!-- IMPORTANT! do not convert this form to Struts < html : form > tag.  javascript change of form.action property fails. -->
+        <img src="/images/hd_find-jsrs.gif" alt="Find JSRs" height="18" width="150">
+        <form name="findjsr" action="/en/jsr/summary" method="get" class="pt5" onsubmit="return validate_findjsr()">
+            <input name="id" size="18" class="form" value="Search JSRs" onfocus="nullify_if_equal(this, 'Search JSRs')" type="text">
+	    <a href="javascript:document.findjsr.submit()" onclick="return validate_findjsr()"><img src="/images/button_go.gif" width="21" height="16" border="0" alt="Submit this Search" name="sub_search"></a>
+        </form><br><br>
+
+        <!-- ** Menu Start ** //-->
+
+        <ul id="p7PMnav">
+            <li><a href="/en/jsr/platform">JSRs by Platform</a></li>
+            <li><a href="/en/jsr/tech">JSRs by Technology</a></li>
+            <li><a href="/en/jsr/stage">JSRs by Stage</a></li>
+            <li><a href="/en/jsr/ec">JSRs by Committee</a></li>
+            <li><a href="/en/jsr/all">List of All JSRs</a></li>
+
+            <!--end find JSRs form -->
+            <div style="clear: both;"><img src="/images/spacer.gif" alt="" height="25" width="1"></div>
+
+            <!--begin my JCP -->
+            <img src="/images/hd_my-jcp.gif" alt="My JCP" height="18" width="150">
+            
+
+          <form name="login" method="get" action="/en/user/login" >
+            <input name="Sign-in" type="submit" title="Sign-in" value="Sign-in" />
+          </form>
+
+            <div style="clear:both"><img src="/images/global/spacer.gif" width="1" height="3" alt=""></div>
+            <div class="noNav">
+                <a href="/en/user/register">Register for Site</a>
+            </div>
+
+             <div class="bar"><img src="/images/hr_dots1.gif" alt="" height="3" width="150"></div>
+           <div class="noNav" style="color: #666666; padding: 0;">
+              Use of JCP site is subject to the
+              <a href="/en/home/terms" style="display:inline;padding: 0">JCP Terms of Use</a> and the
+              <a href="http://www.oracle.com/us/legal/privacy/index.html" style="display:inline;padding: 0" href="">Oracle Privacy Policy</a>
+          </div>
+
+            
+
+            <div style="clear:both"><img src="/images/global/spacer.gif" width="1" height="25" alt=""></div>
+
+            <!--begin JCP info -->
+            <img src="/images/hd_jcp-info.gif" alt="JCP Info" height="18" width="150">
+
+            <li><a href="/en/procedures/overview" class="p7PMtrg">About JCP</a>
+                <ul>
+                    <li><a href="/en/procedures/overview">Program Overview</a></li>
+                    <li><a href="/en/procedures/jcp2">JCP Process Document</a></li>
+                    <li><a href="/en/whatsnew/calendar">Calendar</a></li>
+                    <li><a href="/en/participation/members">JCP Members</a></li>
+                    <li><a href="/en/participation/committee">Executive Committee</a></li>
+                    <li><a href="/en/whatsnew/elections">Elections</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/en/participation/overview" class="p7PMtrg">Get Involved</a>
+		<ul>
+                    <li><a href="/en/participation/overview">Overview</a></li>
+                    <li><a href="/en/participation/membership">Becoming a JCP Member</a></li>
+		</ul>
+            </li>
+
+            <li><a href="/en/resources/contents" class="p7PMtrg">Community Resources</a>
+                <ul>
+                    <li><a href="/en/resources/contents">Overview</a></li>
+                    <li><a href="/en/resources/tutorials">Tutorials</a></li>
+                    <li><a href="/en/resources/multimedia">JCP Podcasts</a></li>
+                    <li><a href="/en/resources/guide">Spec Lead Guide</a></li>
+                    <li><a href="/en/resources/tdk">TCK Tool & Info</a></li>
+                    <li><a href="/en/resources/license_reference">License Reference</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/en/press/pmo" class="p7PMtrg">Community News</a>
+                <ul>
+                    <li><a href="/en/press/pmo">News</a></li>
+                    <li><a href="/en/press/news/awards/awards_main">Programs &amp; Awards</a></li>
+                    <li><a href="/en/press/releases">Press Releases</a></li>
+                    <li><a href="/en/press/success">Success Stories</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/en/introduction/faq">FAQ</a></li>
+
+            <li><a href="/en/resources/contacts">Contact Us</a></li>
+
+            <div style="clear: both;"><img src="/images/spacer.gif" alt="" height="25" width="1"></div>
+
+            <!--[if lte IE 6]><style>#p7PMnav a{height:1em;}#p7PMnav li{height:1em;float:left;clear:both;width:100%}</style><![endif]-->
+            <!--[if IE 6]><style>#p7PMnav li{clear:none;}</style><![endif]-->
+            <!--[if IE 7]><style>#p7PMnav a{zoom:100%;}#p7PMnav li{float:left;clear:both;width:100%;}</style><![endif]-->
+        </ul>
+
+        
+
+        <!--begin ad space -->
+        <div class="ads">
+            <a href="http://java.com/java/download/index.jsp?cid=jdp78399" target="_blank"><img style="display: ;" src="/images/ad_banner2.gif" alt="Ad Banner" border="1" height="70" width="150"></a>
+        </div>
+        <!--end ad space -->
+
+<!-- ** Menu End ** //-->
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;<br>
+
+    
+
+                    &nbsp;<br>
+                    <img src="/images/common/trans.gif" alt="" width="1" height="150"><br>
+
+              
+
+
+
+                </td>
+                <!-- ** END: Navigation Column ** //-->
+
+                <!-- ** BEGIN: Gutter Column ** //-->
+		<td width="10" nowrap><img src="/images/common/trans.gif" alt="" width="10" height="1"></td>
+                <!-- ** END: Gutter Column ** //-->
+
+                <!-- ** BEGIN: Content Column ** //-->
+                <td width="100%" valign="top">
+
+    
+<script type="text/javascript">
+
+String.prototype.trim = function() {
+        return this.replace(/^\s+|\s+$/g,"");
+}
+String.prototype.ltrim = function() {
+        return this.replace(/^\s+/,"");
+}
+String.prototype.rtrim = function() {
+        return this.replace(/\s+$/,"");
+}
+
+function validate_search() {
+	if (document.search.id.value == "Search JSRs" || document.search.id.value.trim().length == 0) {
+		alert("Search terms must be entered first");
+		return false;
+	}
+	return true;
+}
+
+function validate_findjsr() {
+	if (document.findjsr.id.value == "Search JSRs" || document.findjsr.id.value.trim().length == 0) {
+		alert("Search terms must be entered first");
+		return false;
+	}
+	return true;
+}
+
+function nullify_if_equal(field, str) {
+	// alert("val=" + field.value);
+	if (field.value == str) {
+		field.value = "";
+	}
+}
+
+</script>
+<!-- ** END: header.jsp ** //-->
+
+
+<!-- begin content here -->
+
+<div style="margin-left:3%;margin-right:20%;">
+
+<div class="header1">The JCP Program Targets Corporate Members of a Particular Kind</div>
+&nbsp;<br>	
+
+The Java Community Process (JCP) Program Management Office (PMO) has relied on mature enterprises -- such as Oracle, Nokia, IBM, Motorola, and Siemens -- to form the backbone of the community. Since those corporations have the deep, stable pockets of resources, time, and energy to meet the demands of a standards body, it was only logical that corporate members like them would be the first and most stalwart of the JCP community. In recent years, to cultivate diversity the PMO has focused more on recruiting worldwide representatives from organizations and individuals in developer, academic, and user spheres.?Now, the pendulum is swinging again, with new interest in recruiting corporations for the ongoing refreshment of the JCP community. 
+<p>
+Previously, Java vendors were the more prevalent type of corporate member active in the JCP community. According to Heather VanCura, group manager of the JCP PMO, the focus of the recruitment has shifted to corporations that are end users of the technology. Heather says, ?There seems to be some interest from the corporations and end users or consumers of Java on the enterprise side. This is a newer perspective that is valuable to add into the mix of community involvement and input.??There are already some instances of these member companies having joined the JCP program from the financial services sector, such as Bank of America, UBS, Goldman Sachs, and Credit Suisse, and it is an area that is ?ripe for expansion as an area of focus within the JCP constituency,? she says. 
+</p>
+<p>
+Corporations of the type are often already aware of the JCP program. A variety of issues can cause such potential members to hesitate -- sometimes for years -- before signing up. At certain points in the evolution of JCP history, the PMO and Executive Committee (EC) have taken steps to eliminate barriers or lower them to more tolerable levels. Here are the stories of eight corporate members, both recent and longer term, large and small, all users of Java technology, who joined the JCP community and reaped the benefits of membership in the JCP program. 
+</p>
+
+<div class="header2">Pushing Beyond Barriers, Corporate Members Reap the Benefits of Belonging</div>
+&nbsp;<br>	
+
+<table width="120" border="0" align="left" cellpadding="2" cellspacing="2">
+  <tr align="left" valign="top">
+  <td><img src="/images/press/John_Rizzo.jpg"></td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr align="left" valign="top">
+    <td align="center"><font size="-1">John Rizzo</font></td>
+    <td><img src="/images/common/trans.gif" width="18" height="23"></td>
+  </tr>
+</table>
+
+For <strong>Aplix Corporation</strong>, the legal documents required for joining the JCP program at the time ?were not very well defined, and they were vague. Also, the process at the time was loose,? says John Rizzo, vice president of Technology Strategy and EC representative for Aplix. The corporation decided to join the community despite the paperwork, right around the time Mobile Information Device Profile (MIDP) was first launched in 2000. Since then, Aplix has landed a seat on the ME EC, participated in more than fifteen Java Platform Micro Edition (ME) JSRs, and led the specification of the next generation of Java ME, MIDP3 (JSR 271). Ultimately, strategic need overpowered the early reluctance. ?As a company who at the time was delivering on embedded Java solutions into the CE space, we felt it was important to at least track the direction of the technology. The need to be in the mix as the technology formed was greater then the objections to the requirements to join. Back then, Java ME was just forming, and the possibility of influencing its direction was very high,? says John Rizzo. ?Later, as Java ME became a prominent product line for Aplix, we continued to participate in order to bring market insight to the JCP and to influence the direction of the technology.?Our goal to this day is still one of tracking and influencing. Very early, we were able to track the ebb and flow of the adopters of Java ME. This information has helped us to better target our development and market investments.? To date, Aplix has shipped over 700 million devices and, to promote Java ME, works in other organizations as well, such as LiMo Foundation and Symbian Foundation.
+<p>
+The barriers are real to those who have trouble getting over them. Those legal documents improved over time, but they still remain such a source of confusion and anxiety that the Executive Committee plans to revise them completely in the next year or two as part of JCP.next. But for some companies, such as Azul, the need to be part of the standardization process is so critical that nothing else matters. 
+</p>
+<p>
+<table width="120" border="0" align="right" cellpadding="2" cellspacing="2">
+  <tr align="left" valign="top">
+  <td><img src="/images/press/Gil_Tene.jpg"></td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr align="left" valign="top">
+    <td align="center"><font size="-1">Gil Tene</font></td>
+    <td><img src="/images/common/trans.gif" width="18" height="23"></td>
+  </tr>
+</table>
+
+In 2002, <strong>Azul Systems</strong> was founded, became a  Java SE licensee, and joined the JCP community. ?We saw no barriers to joining the JCP. The process required to join was very straightforward,? says Gil Tene. ?The Java Platform is at the heart of everything we do at Azul.  The JCP serves an important function for evolving the Java platform, and it?s something we want to be very involved with. Involvement in standardization and evolution efforts of the Java platform are important to our business.? The company?s involvement in the JCP program has deepened with time. Over the last ten years as a Java SE Licensee and JCP member, Azul has developed and brought to market Java Virtual Machines focused on executing enterprise applications. ?Our efforts tend to stretch and extend the envelope of what Java runtimes are capable of, and as a result we have introduced both functional and metric enhancements to the Java runtime. We?ve actively contributed fixes to the SE Reference Implementation in the past, and we intend to continue to contribute to the SE platform through our participation in the OpenJDK project.? Moreover, Azul was recently elected to the Java Platform Standard Edition (SE) / Enterprise Edition (EE) Executive Committee, with the intention to be ?active participants,? says Gil. Clearly, Azul is a corporate member with a lot to contribute to the JCP program. ?We have pioneered a number of industry firsts related to behavior of the Java SE platform in enterprise environments, and plan to continue to develop and bring to market innovations in the Java runtime, while at the same time maintaining strict platform compatibility and working with the JCP community to advance new standards as necessary,? Gil says.
+</p>
+<p>
+<table width="120" border="0" align="left" cellpadding="2" cellspacing="2">
+  <tr align="left" valign="top">
+  <td><img src="/images/press/John_Weir.jpg"></td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr align="left" valign="top">
+    <td align="center"><font size="-1">John Weir</font></td>
+    <td><img src="/images/common/trans.gif" width="18" height="23"></td>
+  </tr>
+</table>
+
+By 2006, <strong>Goldman Sachs</strong> had also become a member of the JCP program, but hesitated to get publicly involved in the platform evolution, instead relying on its many relationships with both vendors and Sun/Oracle to influence the direction of the platform as guided by its internal Java Engineering team. When presented with the opportunity five years later to participate in the EC, the company decided it was time to become more public in its participation, move beyond a conference presence, and become active contributors in the JSR process by running for a seat on the EC. A major ?consumer of Java,? Goldman Sachs is a prime example of the type of corporation the PMO is recruiting. In nominating the company for a ratified seat during the 2011 special election, Oracle wrote, ?With this nomination, Oracle continues to deliver on its commitment to expand the representation of tech-savvy, non-vendor businesses with a very strong commitment to the success of Java.? Goldman Sachs is a global financial services enterprise managing more than 130 million lines of Java code. The 3,000-plus developers in its Java user group implements systems that are leveraged by over 10,000 end-users. ?Taking a seat on the EC and committing to the work and effort involved was a public way of not only showing our support, but also ? getting into the debate around the process and the future of the Java platform,? says John Weir, managing director and CTO of Operations Technology and EC representative of Goldman Sachs. The JCP community stands to benefit greatly from Goldman Sachs? <em>practice</em> of high collaboration within broad discussion and debate, <em>expertise</em> from their technology fellows who are leading thinkers in disciplines across the entire technology spectrum, and <em>view</em> that demand for more scale drives innovation. ?We want to be able to bring this expertise pool to the active review of the various JSRs?, and, with our very strong commercial focus, to provide feedback to the relevant Expert Groups,? says John. ?In addition, the step to public commitment to engage in the process also ensured active commitment to helping develop the platform through the JSR process, and Goldman Sachs now has active members in several ongoing JSRs.?
+</p>
+<p>
+<table width="120" border="0" align="right" cellpadding="2" cellspacing="2">
+  <tr align="left" valign="top">
+  <td><img src="/images/press/James_Hunt.jpg"></td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr align="left" valign="top">
+    <td align="center"><font size="-1">James Hunt</font></td>
+    <td><img src="/images/common/trans.gif" width="18" height="23"></td>
+  </tr>
+</table>
+
+<strong>aicas GmbH</strong> joined the JCP program about three years ago despite having reservations over Oracle's licensing policy for Java technology.  What tipped the balance in favor of joining is that James Hunt, aicas GmbH cofounder and CEO, had been deeply involved with standards for Java technology for realtime and embedded systems, particularly JSRs 282 and 302.??We decided that aicas needed to be involved directly to have a greater influence on those standards,? James says. aicas has plenty to contribute, with a decade of experience embedding Java in realtime systems. The company?s virtual machine, JamaicaVM, runs not only on standard platforms such as Windows and Linux, but also on a wide range of RTOSes such as VxWorks, QNX, Integrity, RTMES, and Thread-X. Since becoming a JCP member, aicas has run in the hotly contested 2011 EC election and become Spec Lead for the stalled JSR 50, Distributed Real-Time Specification. ?I plan to push that forward, [and we] would also like to broaden our role of supporting extensions to Java for embedded, realtime, and safety-critical systems. ?These systems could greatly benefit from Java technology, but have some special requirements that need support,? says James. aicas is concerned that Java technology ?seems to be losing its momentum in the phone market to rival technology such as HTML 5 and Android, but Java offers a much better development platform. ?We would like to see more effort from the community to bring Java ME up to the level of Java SE.? 
+</p>
+<br>
+<p>
+<table width="120" border="0" align="left" cellpadding="2" cellspacing="2">
+  <tr align="left" valign="top">
+  <td><img src="/images/press/Victor_Grazi.jpg"></td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr align="left" valign="top">
+    <td align="center"><font size="-1">Victor Grazi</font></td>
+    <td><img src="/images/common/trans.gif" width="18" height="23"></td>
+  </tr>
+</table>
+
+<table width="120" border="0" align="right" cellpadding="2" cellspacing="2">
+  <tr align="left" valign="top">
+  <td><img src="/images/press/Susanne_Cech_Previtali.jpg"></td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr align="left" valign="top">
+    <td align="center"><font size="-1">Dr. Susanne Cech-Previtali</font></td>
+    <td><img src="/images/common/trans.gif" width="18" height="23"></td>
+  </tr>
+</table>
+
+<strong>Credit Suisse</strong>, is another JCP corporate member, as of 2010. The company relies on Java technology to maintain its position on the frontier of technology within the financial industry. Credit Suisse was the first Swiss bank to provide a Web-based payments solution for its customers (1997), offered YouTrade as one of the first client-trading applications on the market (1999), and developed an internal standard based on Java EE called the Java Application Platform (JAP) -- one of the first large-scale SOA implementations -- which established many of the platform-as-a-service concepts. Credit Suisse today invests more than 250 million dollars each year to develop new Java EE applications, resulting in over 30 million lines of Java code. The company?s view that the JCP Executive Committee was dominated by vendors made it pause before joining the JCP program. ?Major customers of Java technologies as the end users were not integrated in the process?and as such could not participate in guiding the development and evolution of Java technology,? says Victor Grazi, vice president IB Architecture and one of the Credit Suisse representatives on the EC. The bank overcame that objection on the strength of its own practice of standing ?in close relationship with the vendors. Our experiences and feedback with the concrete application of the Java technologies in, for example, our Java Application Platform, are also interesting and relevant for the vendors,? says Victor. Credit Suisse now sees its role within the JCP community and, more specifically, the EC as ?a representative customer interested in building mission-critical applications on strong, open, and stable standards to secure our investments,? says Dr. Susanne Cech-Previtali, who also represents Credit Suisse on the JCP EC. Even before landing a ratified seat on the SE/EE EC in 2010, Credit Suisse had contributed to the development of Java EE specifications by serving on customer advisory boards and stating their requirements for extensions to core Java related products. In particular, Credit Suisse served on the Expert Groups for JSR 107, Java Caching API; JSR 127, Java Server Faces; and JSR 352, Batch Applications for the Java Platform. Credit Suisse is also Spec Lead for JSR 354, Money and Currency API. 
+</p>
+<p>
+The annual JavaOne conference is a convenient time for entities to sign up to join the Java Communication Process program, a time when people can meet the PMO, EC representatives, and a variety of other current members in person to get questions answered and to sign paperwork. Around the time of the JavaOne 2011 conference, ARM Limited, CloudBees, and Twitter joined the JCP program. 
+</p>
+<p>
+<table width="120" border="0" align="left" cellpadding="2" cellspacing="2">
+  <tr align="left" valign="top">
+  <td><img src="/images/press/Rob_Barnes.jpg"></td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr align="left" valign="top">
+    <td align="center"><font size="-1">Rob Barnes</font></td>
+    <td><img src="/images/common/trans.gif" width="18" height="23"></td>
+  </tr>
+</table>
+
+<strong>ARM Limited</strong> carefully assessed all the costs required of JCP program members before making a commitment. Rob Barnes, European Embedded Segment director, says, ?ARM will only commit to doing something if we can provide the support required to do a good job. Resource is very limited, and it?s only been recently we felt it was possible to apply the required resource for such activity.? In the end, ARM was convinced they could help their partners best by working closely with the JCP community. ?It's essential we help companies build the right products at the right time for the right price. Being on the JCP, ARM should get greater insight into the future developments of Java and help guide the ARM partners to implement high performance Java on a wide range of ARM cores,? says Rob. By getting involved with the community, ARM is poised to take greater advantage of a considerable synergy of opportunities. Rob says, ?Java reach is growing into a large number of new applications while the ARM ecosystem is shipping over eight billion units a year. Many devices in emerging technologies are memory limited, and optimising software and standards will be essential for user experience. ARM would like to help specify the right solutions for a given market and help our partners reduce time to market by utilising standards and creating a great user experience.? 
+</p>
+<p>
+<table width="120" border="0" align="right" cellpadding="2" cellspacing="2">
+  <tr align="left" valign="top">
+  <td><img src="/images/press/Steve_Harris.jpg"></td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr align="left" valign="top">
+    <td align="center"><font size="-1">Steven Harris</font></td>
+    <td><img src="/images/common/trans.gif" width="18" height="23"></td>
+  </tr>
+</table>
+
+<strong>CloudBees</strong>, a startup, was founded in 2010. Steven Harris, senior vice president of Products, says that at first, the $5,000 fee required to join as a corporate member kept CloudBees from signing on to the JCP program. In fact, people within the company had already joined as individuals and were participating in Expert Groups by 2011, when CloudBees?joined the JCP as a company. There was never any doubt about the value of the JCP program. ?There are lots of great forums for driving Java technologies forward, led by companies, open source projects, and communities. ?There are lots of forums for driving standards forward, many of which are key to Java. ?Still, when you want to define a uniform, interoperable standard as to what Java actually is, what the component technologies are that comprise the various platforms, and what the platforms themselves are, you need to be at the table in the JCP. The JCP is still the best and only way to make that happen, with a wide variety of stakeholders and viewpoints.? For CloudBees to overcome the obstacle of cost, timing became the driving factor. Steven explains, ?There are a lot of important inflection points coming up for Java now. ?The ones that are most directly important to CloudBees revolve around how Java evolves to address the cloud and PaaS. ?We feel that PaaS is the future platform for middleware, so we felt it was important to be engaged at a strategic level.?
+</p>
+<p>
+<table width="120" border="0" align="left" cellpadding="2" cellspacing="2">
+  <tr align="left" valign="top">
+  <td><img src="/images/press/Chris_Aniszczyk.jpg"></td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr align="left" valign="top">
+    <td align="center"><font size="-1">Chris Aniszczyk</font></td>
+    <td><img src="/images/common/trans.gif" width="18" height="23"></td>
+  </tr>
+</table>
+
+The social networking enterprise, <strong>Twitter</strong>, was also aware of the JCP program for some time before eventually deciding to join. ?There was an initial perception that the JCP wasn?t a completely functional and active organization,? says Chris Aniszczyk, the open source manager at Twitter. ?However, with the advent of JCP.Next (JSR 348) and a new push by Oracle since the latest JDK release, it made sense to join the effort.? In October 2011, Twitter signed the papers to become a member, then promptly entered -- and won -- the race for an elected seat on the SE/EE EC. This member has a lot to gain by jumping directly into the deep end of the JCP community pool. ?Twitter is ever more reliant on JVM-based technologies, so the ability to influence the evolution of the platform is perceived as significant, if not critical for us,? says Chris. In terms of EC involvement, Twitter plans to be ?diligent reviewers of all JSRs that are brought before JCP for the ballot. We are also looking forward to collaborating in the work group that will further the needed process changes beyond the scope of JSR 348.? Twitter intends to expand efforts at the source as well. ?As we identify needs for Java-based technologies that can be potentially useful to a broader developer audience, we will submit and foster relevant JSRs, or join the Expert Groups for existing JSRs,? Chris says.
+</p>
+<br>
+<div class="header2">Recruitment Brings Value to the JCP Community</div>
+&nbsp;<br>	
+
+In previous years, word-of-mouth has been the most effective method of recruiting Individuals and Java User Group (JUG) members, followed by personal referrals made by current JCP members and the PMO?s accessible presence at industry events, says Heather VanCura. Those strategies are also expected to work well in targeting corporations that have a sizable focus on in-house Java development and a large staff of Java engineers. The PMO is reaching out not only to new potential members in this category, but has plans to contact those who have recently decided not to renew. 
+<p>
+ll past and present corporate members of the JCP community are highly valued by the PMO. This year?s focus on enrolling a different kind of corporate member arose from an awareness that this perspective is not as well represented in the JSR Expert Groups and Executive Committees as it needs to be. How are these corporate members who are end users of Java technology uniquely poised to aid the Java standardization effort? Usually it comes down to some combination of networking relationships, technical savvy, and determination to smooth the way for the continuing Java evolution. 
+</p>
+<p>
+Victor Grazi believes Credit Suisse can strengthen the customer?s perspective within the EC, especially in key areas such as security, UI capabilities, multi tenancy, performance, transactions management, fault tolerance, ease of development, deployment, and operations. Moreover, the bank wants to help identify better ways to structure, decompose, and integrate applications on a large scale. ?Perhaps the biggest strength we intend to bring to the EC is our ability to help identify and define user and architecture requirements,? says Victor. Credit Suisse is on-board with the overall goal of the community, which Victor expresses concisely: ?Good collaboration inside the Executive Committee is important to drive together the future of Java and to ensure the evolution and innovation of this language and to provide a platform for a range of different requirements, from small mobile devices to enterprise-scale applications.?
+</p>
+<p>
+Twitter is ready to share the company?s experience with scalability issues. Chris Aniszczyk says, ?Internally, we like to say that we face Twitter-scale problems when developing software for our community. We have experience in building scalable software on top of the JVM and would like to ensure the JVM remains a vibrant place to build such software. Furthermore, we also have experience developing in a polyglot fashion on top of the JVM using languages such as Java, Scala, and Clojure in production.? Twitter anticipates working with the diverse membership to move the JVM platform forward. 
+</p>
+<p>
+ARM Limited has a connected community of over 900 companies ranging from hardware IP, semiconductor vendors, software suppliers, and original equipment manufacturers (OEMs), with a design philosophy of low power and high performance. With this wealth of technological relationships in place, ?the ARM community is ideally placed to help guide future requirements of the JCP for a given market,? says Rob Barnes. 
+</p>
+<p>
+According to John Rizzo, Aplix is in a unique position as a provider and partner to many of the JME adopters. He says, ?From that perspective we were able to bring a neutral voice of the market to the table. We also have had deep relations with application developers over the years and have been a voice for that community as well.? Lately, Aplix has also become an application development house and content provider.?With that blend of connections and content, Aplix is now a Spec Lead and EC member, ?helping to shape what the JCP will look and act like in the future. We are drawing on the past for what worked and what did not work in order to do this.??
+</p>
+<p>
+Steven Harris sees CloudBees? involvement with cloud/PaaS and related groups as a potent combination that can benefit the JCP program. ?Our feisty startup is populated with some experienced Java hands who have done some pioneering technology work in their time. ?So, I believe that our participation in Expert Goups helps mix the pragmatic with the longer term view of cloud and PaaS in a way that brings value. We are very active at conferences and in open source communities,? encouraging FOSS products and communities, the Jenkins community with its continuous integration server, and Java User Groups. ?It's one thing to hang around the bar at a conference and pop off opinions about Java and where it should go. ?It's another thing to sit at a virtual table with your partners, competitors, and vendor behemoths and deliver on the details. ?This is really only something you can do in the JCP,? says Steven. 
+</p>
+
+<div class="header2">JCP Welcomes Corporate Startups at Every Level</div>
+&nbsp;<br>	
+
+Although corporate members have historically provided the backbone  to drive the JCP program, it has become clear over the years that including various kinds of members makes for a more robust community. As Gil Tene of Azul  Systems says, ?It is critically important to the future success of Java that the overall community be very involved in its evolution.? Simply put, standards are more likely to address all essential requirements when development occurs under the influence of diverse, informed perspectives. 
+<p>
+
+Within the JCP community, all corporate members are treated the same. They all sign the same JSPA, pay the same fee, and have the same rights and privileges. However, members who represent large or mature enterprises are different in significant ways from smaller, newer startup companies. This distinction, largely taken for granted, became the object of discussion during the Executive Committee?s face-to-face Q&A session held before the public during JavaOne 2011. 
+</p>
+<p>
+
+At that meeting, someone voiced the belief that voices of small corporations are probably drowned out on the EC. As the very vocal representative of Aplix, a small, young company serving on the ME EC, John Rizzo immediately refuted that conclusion from his own experience in affecting the direction of JCP.next. ?Your place at the table is really measured by your commitment to the task at hand,? he says. The opportunity to influence the direction of the JCP program is open to those who choose to take it.
+</p>
+<p>
+
+The startup perspective is not only heard and respected within the JCP community in general and EC in particular, but is an important counterbalance to the natural stance of larger, more mature institutions. Various current corporate members identified one or more positive strengths that healthy startups bring to the Java standards development process:
+</p>
+
+<ul>
+
+<li><strong>Aggressive</strong>. It is critically important to the future success of Java that the overall community be very involved in its evolution. Startups approach projects more aggressively, developing technology and innovations ?at a more rapid rate than larger companies. Bringing these innovations to market faster is good for Java overall.? -- Gil Tenes of Azul
+</li>
+
+<li><strong>Agile</strong>. ?As a startup, you can move quickly, have little legacy, but you have less mass. ?You have to choose your battles more carefully and focus, to make the best use of the more limited resources you have.  This tension is really at the heart of the changes that need to come about in Java because of the cloud and PaaS, and it offers an opportunity for startups like CloudBees to have as big an impact as the large enterprise packaged-software vendor incumbents.? -- Steven Harris of CloudBees
+</li>
+
+<li><strong>Creative</strong>. Because startup corporations face a variety of different challenges, they are ready to ?think outside of the box.? -- Victor Grazi of Credit Suisse
+</li>
+
+<li><strong>Decisive</strong>. ?As a smaller company we have been able to move much faster in our decision making in terms of how to deal with JCP issues and challenges.? -- John Rizzo of Aplix
+</li>
+
+<li><strong>Deep Focus</strong>. Effective startups can?t afford to chase tangential interests. Instead, they focus on a limited number of very specific topics and, as such, provide ?a deep expert knowledge in these areas.? -- Victor Grazi of Credit Suisse
+</li>
+
+<li><strong>Flexible</strong>. ?Startup companies are usually more flexible and have the ability to create technology demonstrators much faster.? -- Rob Barnes of ARM
+</li>
+
+<li><strong>Innovative</strong>. In general, startups tend to emphasize newness, ?an increased feature set? over stability. -- Chris Aniszczyk of Twitter
+</li>
+
+<li>
+<strong>Intrepid</strong>. Small businesses have a vision for going where no one has gone before. They are typically more interested ?in pushing Java technology into areas (such as static compilation, building standalone executables, and getting Java ME back in sync with Java SE) that are not well supported by the big players.? -- James Hunt of aicas GmbH
+</li>
+
+<li><strong>Practitioners</strong>.??When you consider non-Java-vendors, like Twitter as a recent example engaging in the JCP, or some of the large financial institutions, they really bring a ?Java practitioner? sensibility to the table that has been underrepresented in the past.? -- Steven Harris of CloudBees
+</li>
+</ul>
+
+
+<p>
+
+There?s a reason why startups aren?t as prominent in the JCP community, and it has nothing to do with the value they would offer the program and everything to do with their own survival needs. Neither the $5000 entrance fee nor the energy and personnel required for participation are trivial demands to make of a startup like CloudBees (founded 2010, 15 employees) or Azul Systems (founded 2002, under 200 employees), for example. According to Gil Tenes of Azul, ?The disadvantage of being a startup involved in the JCP is that there are very real resources that are required to be an active and productive participant, and resources are usually in short supply at startups.? 
+</p>
+<p>
+
+John Rizzo of Aplix agrees. ?While I can point to the value of the freshness that start-up voices will bring to the table, start-ups generally are in critical delivery mode. It will be hard for the JCP EC to keep a start-up at the table and focused.? John offers one possible solution that may not have been explored yet. ?I would suggest that start-ups be given a voice at the table in a different way. I feel that bringing a large start-up investor (VC) to the table would serve us better. We could target a VC that has in its portfolio start-ups that are consuming Java technology. This way the VC could from time to time bring those companies to the table to refresh the EC's thinking. Follow the money.?
+</p>
+<p>
+
+And that?s the kind of creative thinking that can keep the JCP community fresh for a long time to come. Everyone has a place at the table, and as the focus expands from recruiting JUGs to include more focus on corporations, perhaps it will broaden further to start-ups and venture capitalists in the near future.
+</p>
+
+</div>		
+		
+<!-- ** BEGIN: footer.jsp ** //-->
+
+
+
+
+
+
+
+
+</td>
+</tr>
+</table>
+
+<!-- ** END: Content Table ** //-->
+
+<!-- ** BEGIN: Footer Table ** //-->
+
+<div id="footer" style="clear: both;">
+    <div class="footleft">
+        <a href="/en/resources/contacts">Contact Us</a>
+    </div>
+	
+    <div class="botbar"><img src="/images/spacer.gif" alt="" height="23" width="1"></div>
+
+    <div class="footleft2">
+         &copy; 2019, Oracle Corporation and/or its affiliates. 
+        <a href="/en/home/terms">Terms of Use</a>. <a href="http://www.oracle.com/us/legal/privacy/index.html">Privacy Policy</a>. <a href="http://www.oracle.com/us/legal/third-party-trademarks/third-party-trademarks-078568.html">Trademarks</a>
+    </div>
+
+    <div class="footright">
+        <img src="/images/common/logo_oracle_footer.gif" alt="Oracle Corporation" height="22" width="91">
+    </div>
+
+    <div style="clear: both;"><img src="/images/spacer.gif" alt="" height="30" width="1"></div>
+</div>
+
+<!-- ** END: Footer Table ** //-->
+
+
+
+<!-- ** Menu Start ** //-->
+
+
+
+</body>
+</html>
+<!-- ** END: footer.jsp ** //-->
+
+		

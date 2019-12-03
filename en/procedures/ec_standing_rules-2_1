@@ -1,0 +1,662 @@
+
+<!-- ** BEGIN: header.jsp ** //-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3c.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+<head>
+    
+
+   
+    <link href="/includes/css/menu.css" rel="stylesheet" type="text/css"></link>
+    <link href="/includes/css/style.css" rel="stylesheet" type="text/css"></link>
+    <!--[if lt IE 6]><link href="/includes/css/style5.css" rel="stylesheet" type="text/css" ></link><![endif]-->
+    <!--[if gte IE 5]><link href="/includes/css/style6.css" rel="stylesheet" type="text/css" ></link><![endif]-->
+    <link href="/includes/css/tabs.css"  rel="stylesheet" type="text/css"></link>
+
+    <script type="text/javascript" src="/includes/scripts/tabs.js"></script>
+    <script type="text/javascript" src="/includes/scripts/menu.js"></script>
+   
+
+    
+
+    
+        <title>The Java Community Process(SM) Program - JCP Procedures - ec_standing_rules-2_1</title>
+    
+
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+
+
+<body onload="P7_initPM(0,1,0,0,-1)">
+
+    <a name="top"></a>
+
+    <div id="header">
+	<div id="logo">
+		<a href="/en/home/index"><img src="/images/spacer.gif" alt="Java Community Process" height="81" width="151"></a>
+	</div>
+	<div id="tools">
+		<div class="search">
+			<form name="search" action="/en/jsr/summary" method="get" onsubmit="return validate_search()">
+				<input name="id" value="Search JSRs" size="16" class="form" onfocus="nullify_if_equal(this, 'Search JSRs')" type="text">
+				<a href="javascript:document.search.submit()" onclick="return validate_search()"><img src="/images/button_go.gif" width="21" height="16" border="0" alt="Submit this Search" name="sub_search"></a>
+			</form>
+		</div>
+		<div class="tools">
+			<a href="/en/press/pressroom">Press Room</a> &nbsp;|&nbsp;
+			<a href="http://java.com/java/download/index.jsp?cid=jdp78399">Get Java Here</a> &nbsp;|&nbsp;
+			<!-- <a href="javascript:void(0)">Print Format</a> &nbsp;|&nbsp;&nbsp; -->
+		</div>
+
+	</div>
+	<div style="clear: right;"></div>
+
+        
+
+	<div class="topbar"><img src="/images/spacer.gif" alt="" height="3" width="154"></div>
+	<div id="update"> </div>
+    </div>
+
+
+    
+
+        <!-- ** BEGIN: Content Table ** //-->
+
+        <table width="100%" border="0" cellpadding="0" cellspacing="0">
+
+            <tr>
+
+                <!-- ** BEGIN: Navigation Column ** //-->
+                <td width="150" id="leftcontent" valign="top">
+                    <!-- Navigation Placeholder //-->
+
+                    
+
+                    <div class="bar"><img src="/images/hr_dots1.gif" alt="" height="3" width="150"></div>
+
+        <!-- begin find JSRs form -->
+        <!-- IMPORTANT! do not convert this form to Struts < html : form > tag.  javascript change of form.action property fails. -->
+        <img src="/images/hd_find-jsrs.gif" alt="Find JSRs" height="18" width="150">
+        <form name="findjsr" action="/en/jsr/summary" method="get" class="pt5" onsubmit="return validate_findjsr()">
+            <input name="id" size="18" class="form" value="Search JSRs" onfocus="nullify_if_equal(this, 'Search JSRs')" type="text">
+	    <a href="javascript:document.findjsr.submit()" onclick="return validate_findjsr()"><img src="/images/button_go.gif" width="21" height="16" border="0" alt="Submit this Search" name="sub_search"></a>
+        </form><br><br>
+
+        <!-- ** Menu Start ** //-->
+
+        <ul id="p7PMnav">
+            <li><a href="/en/jsr/platform">JSRs by Platform</a></li>
+            <li><a href="/en/jsr/tech">JSRs by Technology</a></li>
+            <li><a href="/en/jsr/stage">JSRs by Stage</a></li>
+            <li><a href="/en/jsr/ec">JSRs by Committee</a></li>
+            <li><a href="/en/jsr/all">List of All JSRs</a></li>
+
+            <!--end find JSRs form -->
+            <div style="clear: both;"><img src="/images/spacer.gif" alt="" height="25" width="1"></div>
+
+            <!--begin my JCP -->
+            <img src="/images/hd_my-jcp.gif" alt="My JCP" height="18" width="150">
+            
+
+          <form name="login" method="get" action="/en/user/login" >
+            <input name="Sign-in" type="submit" title="Sign-in" value="Sign-in" />
+          </form>
+
+            <div style="clear:both"><img src="/images/global/spacer.gif" width="1" height="3" alt=""></div>
+            <div class="noNav">
+                <a href="/en/user/register">Register for Site</a>
+            </div>
+
+             <div class="bar"><img src="/images/hr_dots1.gif" alt="" height="3" width="150"></div>
+           <div class="noNav" style="color: #666666; padding: 0;">
+              Use of JCP site is subject to the
+              <a href="/en/home/terms" style="display:inline;padding: 0">JCP Terms of Use</a> and the
+              <a href="http://www.oracle.com/us/legal/privacy/index.html" style="display:inline;padding: 0" href="">Oracle Privacy Policy</a>
+          </div>
+
+            
+
+            <div style="clear:both"><img src="/images/global/spacer.gif" width="1" height="25" alt=""></div>
+
+            <!--begin JCP info -->
+            <img src="/images/hd_jcp-info.gif" alt="JCP Info" height="18" width="150">
+
+            <li><a href="/en/procedures/overview" class="p7PMtrg">About JCP</a>
+                <ul>
+                    <li><a href="/en/procedures/overview">Program Overview</a></li>
+                    <li><a href="/en/procedures/jcp2">JCP Process Document</a></li>
+                    <li><a href="/en/whatsnew/calendar">Calendar</a></li>
+                    <li><a href="/en/participation/members">JCP Members</a></li>
+                    <li><a href="/en/participation/committee">Executive Committee</a></li>
+                    <li><a href="/en/whatsnew/elections">Elections</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/en/participation/overview" class="p7PMtrg">Get Involved</a>
+		<ul>
+                    <li><a href="/en/participation/overview">Overview</a></li>
+                    <li><a href="/en/participation/membership">Becoming a JCP Member</a></li>
+		</ul>
+            </li>
+
+            <li><a href="/en/resources/contents" class="p7PMtrg">Community Resources</a>
+                <ul>
+                    <li><a href="/en/resources/contents">Overview</a></li>
+                    <li><a href="/en/resources/tutorials">Tutorials</a></li>
+                    <li><a href="/en/resources/multimedia">JCP Podcasts</a></li>
+                    <li><a href="/en/resources/guide">Spec Lead Guide</a></li>
+                    <li><a href="/en/resources/tdk">TCK Tool & Info</a></li>
+                    <li><a href="/en/resources/license_reference">License Reference</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/en/press/pmo" class="p7PMtrg">Community News</a>
+                <ul>
+                    <li><a href="/en/press/pmo">News</a></li>
+                    <li><a href="/en/press/news/awards/awards_main">Programs &amp; Awards</a></li>
+                    <li><a href="/en/press/releases">Press Releases</a></li>
+                    <li><a href="/en/press/success">Success Stories</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/en/introduction/faq">FAQ</a></li>
+
+            <li><a href="/en/resources/contacts">Contact Us</a></li>
+
+            <div style="clear: both;"><img src="/images/spacer.gif" alt="" height="25" width="1"></div>
+
+            <!--[if lte IE 6]><style>#p7PMnav a{height:1em;}#p7PMnav li{height:1em;float:left;clear:both;width:100%}</style><![endif]-->
+            <!--[if IE 6]><style>#p7PMnav li{clear:none;}</style><![endif]-->
+            <!--[if IE 7]><style>#p7PMnav a{zoom:100%;}#p7PMnav li{float:left;clear:both;width:100%;}</style><![endif]-->
+        </ul>
+
+        
+
+        <!--begin ad space -->
+        <div class="ads">
+            <a href="http://java.com/java/download/index.jsp?cid=jdp78399" target="_blank"><img style="display: ;" src="/images/ad_banner2.gif" alt="Ad Banner" border="1" height="70" width="150"></a>
+        </div>
+        <!--end ad space -->
+
+<!-- ** Menu End ** //-->
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;<br>
+
+    
+
+                    &nbsp;<br>
+                    <img src="/images/common/trans.gif" alt="" width="1" height="150"><br>
+
+              
+
+
+
+                </td>
+                <!-- ** END: Navigation Column ** //-->
+
+                <!-- ** BEGIN: Gutter Column ** //-->
+		<td width="10" nowrap><img src="/images/common/trans.gif" alt="" width="10" height="1"></td>
+                <!-- ** END: Gutter Column ** //-->
+
+                <!-- ** BEGIN: Content Column ** //-->
+                <td width="100%" valign="top">
+
+    
+<script type="text/javascript">
+
+String.prototype.trim = function() {
+        return this.replace(/^\s+|\s+$/g,"");
+}
+String.prototype.ltrim = function() {
+        return this.replace(/^\s+/,"");
+}
+String.prototype.rtrim = function() {
+        return this.replace(/\s+$/,"");
+}
+
+function validate_search() {
+	if (document.search.id.value == "Search JSRs" || document.search.id.value.trim().length == 0) {
+		alert("Search terms must be entered first");
+		return false;
+	}
+	return true;
+}
+
+function validate_findjsr() {
+	if (document.findjsr.id.value == "Search JSRs" || document.findjsr.id.value.trim().length == 0) {
+		alert("Search terms must be entered first");
+		return false;
+	}
+	return true;
+}
+
+function nullify_if_equal(field, str) {
+	// alert("val=" + field.value);
+	if (field.value == str) {
+		field.value = "";
+	}
+}
+
+</script>
+<!-- ** END: header.jsp ** //-->
+
+
+<!-- begin content here -->
+
+<div CLASS="header2">
+  JCP Procedures
+</div>
+<div CLASS="header1">
+   EC Standing Rules
+</div>
+<div class="anybar"><img src="/images/global/bar_green.gif" alt="" width="12" height="4"></div>
+
+<p>
+
+
+
+
+
+<span class="headLinks"><font size="-1">
+<span title="August 20, 2018"><a href="ec_standing_rules-2_3">EC&nbsp;Standing&nbsp;Rules&nbsp;2.3</a></span>&nbsp;|
+&nbsp;<span title="October 18, 2012"><a href="ec_standing_rules-2_2">EC&nbsp;Standing&nbsp;Rules&nbsp;2.2</a></span>&nbsp;|
+&nbsp;<span title="July 27, 2012">EC&nbsp;Standing&nbsp;Rules&nbsp;2.1</span>&nbsp;|
+&nbsp;<span title="October 18, 2011"><a href="ec_standing_rules-2_0">EC&nbsp;Standing&nbsp;Rules&nbsp;2.0</a></span>
+
+</font></span>
+&nbsp;<br>
+
+<P>
+
+<div class="header2">JCP Executive Committee Standing Rules</div><BR>
+
+<p>These are the normative Standing Rules governing the actions of the Executive Committee.  You can also read <a href="/aboutJava/communityprocess/JCP_EC_Standing_Rules-v2.1.pdf">the .pdf version of the EC Standing Rules here</a>, view <a href="/en/procedures/ec_standing_rules-2_0">the previous version of the standing rules</a>, or return to
+<a href="/en/procedures/jcp2">the JCP process document</a>.<P>
+
+<div class="header4">Version 2.1 (July 27, 2012)</div>
+<p>Comments to: <a href="mailto:pmo@jcp.org">pmo@jcp.org</a><br>
+Copyright (c) 1996 - 2012 Oracle America, Inc.
+</p>
+<div class="header2">CONTENTS</div>
+<br>
+<div class="header4"><a href="#Definitions"><span style="font-size:110%;">DEFINITIONS</span></a> </div>
+<div class="header4"><a href="#Meetings"><span style="font-size:110%;">EC MEETINGS</font></a><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#Arrangements">MEETING ARRANGEMENTS</a><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#Agenda">AGENDA</a><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#Voting">VOTING</a><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#Evotes">ELECTRONIC VOTING</a></div>
+<div class="header4"><a href="#AppendixA"><span style="font-size:110%;">APPENDIX A: REVISING THIS DOCUMENT</span></a></div>
+<div class="header4"><a href="#AppendixB"><span style="font-size:110%;">APPENDIX B: MOTION GUIDELINES</span></a></div>
+<br>
+<div class="header2"><a name="Definitions" id="Definitions"></a>DEFINITIONS</div>
+<p>The definitions found in the JCP Process Document also apply to this document.</p>
+<p>The use of the term <b>day</b> or <b>days</b> in this document refers to calendar 
+  days unless otherwise specified.</p>
+<div class="header2"><a name="Meetings" id="Meetings"></a>EC MEETINGS</div>
+<br>
+<div class="header3"><a name="Arrangements" id="Arrangements"></a>MEETING ARRANGEMENTS</div>
+<p>The Executive Committees of the JCP meet jointly about once a month, either 
+  in person or in teleconference, to fulfill the responsibilities defined here 
+  and in the JCP Process document.</p>
+<p>All EC meeting materials, including agendas, presentations, minutes, and attendance 
+  statistics, are published on the EC public web site located at <a href="http://jcp.org/en/participation/committee">http://jcp.org/en/participation/committee</a>.</p>
+<p>In exceptional cases, at the request of an EC member (with no need for a second,) 
+  an EC may agree to go into private session in order to cover a specific topic, 
+  and only for the duration of that coverage. Private sessions are strongly discouraged. 
+  Minutes are taken during private sessions but are not published publicly; this 
+  is the only case in which two separate minutes are maintained.</p>
+<p> EC meetings are chaired by the Chair, who also keeps minutes. All minutes 
+  shall be marked "preliminary, not approved" until 
+  approved by the EC at the next meeting. After approval, the minutes shall be 
+  marked "approved" and shall be posted to the 
+  appropriate web site no later than fourteen calendar days after approval.</p>
+<p>EC meetings are conducted in a spirit of collaboration and cooperation, with 
+  the goal of reaching broad agreement taking priority over strict adherence to 
+  formal procedures.</p>
+<p>Attendance at meetings is mandatory:</p>
+<ul>
+  <li>If possible, a telephone bridge will be provided for the convenience of 
+    those who are unable to attend face-to-face meetings in person. However, 
+    this will be placed in listen-only mode, permitting remote attendees to listen 
+    but not to verbally participate in the meeting. If possible an asynchronous 
+    communication mechanism such as a chat room or IRC channel will be provided 
+    to enable those who are not physically present to express their views. This 
+    will be monitored, but there is no guarantee that comments received in this 
+    manner will be addressed in real-time. Remote observers will not be counted 
+    as present at the meeting.</li>
+  <li>Missing two meetings in a row (whether teleconference or face-to-face meetings) 
+    results in the loss of voting privileges in all JSR ballots and EC votes that 
+    have not yet started. An EC member who has lost voting privileges cannot make 
+    or second a motion. Privileges are regained after full attendance at two consecutive 
+    meetings.</li>
+  <li>Missing five meetings in a row, or missing more than two-thirds of all meetings 
+    in any consecutive twelve-month period, results in loss of EC membership.</li>
+  <li>Members who are unable to attend an EC meeting due to extraordinary circumstances 
+    may appeal to the Chair for a waiver of the non-attendance penalty. Any such 
+    waiver may be granted purely at the Chair's discretion, possibly after consultation 
+    with the EC.</li>
+  <li>The PMO shall provide regular attendance reports to the EC, and shall issue 
+    warnings to those who are at risk of losing membership.</li>
+</ul>
+<p>Quorum for EC meetings is 75% of EC voting members for each EC (in other words, 
+  75% of the voting members of each EC must be present, rather than 75% of the 
+  total voting membership.) It is possible for one EC to be quorate and the other 
+  not. Depending on the matter under consideration the Chair may deem it appropriate 
+  for the quorate EC to conduct a vote. Otherwise, in the absence of a quorum 
+  the EC may have discussion, but can take no action and make no decision until 
+  the next quorate meeting or until an electronic ballot is carried out (see below, 
+  Electronic Voting.)</p>
+<p>EC meetings must be scheduled at least 10 days in advance for teleconference 
+  meetings and at least 30 days in advance for face-to-face meetings, at which 
+  time the meeting location must be also announced.</p>
+<p>In addition to the regular monthly meetings the ECs shall organize the following 
+  meetings with the help of the PMO:</p>
+<ol>
+  <li> a semi-annual teleconference open to all JCP members. The agenda for this 
+    meeting shall incorporate, at the EC's discretion, topics suggested by the 
+    membership in response to the meeting invitation, which shall solicit such 
+    input with sufficient advance notice, as well as provide clear instructions 
+    on how to join the meeting;</li>
+  <li> if an appropriate venue such the JavaOne conference or equivalent is available 
+    for co-location, an annual face to face meeting with all JCP members. Whenever 
+    possible no fee should be charged for attending this meeting. As above, the 
+    agenda for this annual meeting shall include, at the EC's discretion, topics 
+    suggested by the membership.</li>
+</ol>
+<p>To facilitate the organization and receipt of topic suggestions as specified 
+  above, and to enable JCP members and the public to provide feedback to the EC, 
+  the EC shall set up a (possibly moderated) public mailing list with a corresponding 
+  public archive.</p>
+<p>EC members shall at all times adhere to the following policies in connection 
+  with their JCP activities:</p>
+<ol type = a>
+  <li>Executive Committee voting members should cast their JSR ballots with the 
+    goal of promoting the efficient evolution of the Java platform.</li>
+  <li>Any communications among Executive Committee members in the course of their 
+    JCP activities should take into account the caveats expressed with respect 
+    to antitrust laws in section 6.3, &quot;EC Duties and Responsibilities&quot; 
+    of the Process Document, item (11.)</li>
+</ol>
+<br>
+<div class="header3"><a name="Agenda" id="Agenda"></a>AGENDA</div>
+<p>The Chair and EC members may submit agenda items (either for discussion of 
+  for action) by emailing those items to the EC mailing list at any time. Agenda 
+  items shall be scheduled for the next available meeting, depending on availability 
+  and timing.</p>
+<p>A preliminary agenda must be submitted by the Chair at least 7 days before 
+  the meeting. EC members may suggest additional items for the agenda at that 
+  time, if they have not already done so in previous meetings or emails.</p>
+<p>The Chair should email the final agenda 4 days before a meeting. Absent an 
+  agenda, the EC members present at a meeting may agree on one at that time, and 
+  proceed accordingly.</p>
+<p>The final meeting agenda should clearly identify which items are for discussion 
+  and which are for action, and it should be posted to the public site.</p>
+<p>Agenda items may be changed or added at the beginning of the meeting if no 
+  one disagrees.</p>
+<p>Meeting materials (presentations, statistics, documents) must be posted on 
+  the EC site (<a href="http://jcp.org/en/ec/my">http://jcp.org/en/ec/my</a>) 
+  at least 3 calendar days in advance of the meeting. Meeting materials may not 
+  be made public until after the meeting, lest they be part of a private session. 
+  Otherwise, an agenda item for which its supporting materials are not ready on 
+  time may be removed from consideration by the Chair or at the request of an 
+  EC member. However, the agenda item may be still considered, with the late materials, 
+  if no one disagrees.</p>
+<p>Supporting materials for any agenda item may be updated at the beginning of 
+  the meeting if no one disagrees.</p>
+<p>Agenda items for discussion shall be opened to the floor for discussion and 
+  comment.</p>
+<p>Agenda items for action shall be opened to the floor for discussion and comment, 
+  with the goal being to reach general agreement on the proposed action. When 
+  such agreement is reached after a long discussion, the Chair shall present to 
+  the EC members a clear statement of what will be recorded in the minutes as 
+  the result of such discussion.</p>
+<div class="header3"><a name="Voting" id="Voting"></a>VOTING</div>
+<p>All JSR ballots shall be conducted electronically, as specified in the JCP 
+  Process Document, and the results made public.</p>
+<p>All decisions of the EC, except those pertaining to JSRs, should be made by 
+  general agreement whenever possible. EC members who disagree with an EC decision 
+  but are willing to drop their objection in order to reach general agreement 
+  may have a brief statement included in the minutes.</p>
+<p>In the absence of general agreement any EC voting member, or the Chair, may 
+  request that a vote be conducted.</p>
+<p>Any motion on the agenda that cannot be acted on for lack of quorum may be 
+  brought to an electronic vote at the request of the proposer, following the 
+  process specified in the Section &quot;Electronic Voting.&quot;</p>
+<p>All EC decisions are advisory in nature except as they pertain to formal ballots 
+  as defined in the Process Document.</p>
+<p>The table in Appendix B shall be used as a guide in determining the order of 
+  precedence for motions and the voting required for the motion to pass. Electronic 
+  voting periods last 14 days except where noted otherwise in this document.</p>
+<p>EC voting members may cast three types of votes: "yes", "no" and &quot;abstain.&quot; 
+  &quot;No&quot; votes should be accompanied by an explanation of the changes 
+  - if any - that would permit a change of the vote to "yes". Abstentions are 
+  discouraged but may be used by members who are unwilling to support the motion 
+  and who do not wish to block further progress. Abstentions should be accompanied 
+  by comments.</p>
+<p>For the purpose of calculating the voting result only &quot;yes&quot; and &quot;no&quot; 
+  votes are taken into account.</p>
+<p>Except where noted otherwise in this document an EC vote - whether electronic 
+  or not - is approved if (a) a majority of the votes cast are "yes" votes, and 
+  (b) a minimum of 5 "yes" votes are cast.</p>
+<p>The full text of EC motions and the detailed results (including how each member 
+  voted) shall be recorded in the meeting minutes.</p>
+<div class="header3"><a name="Evotes" id="Evotes"></a>ELECTRONIC VOTING</div>
+<p>Although there is a strong preference for in-session voting whenever possible, 
+  any EC member may request that a motion be voted on through electronic means. 
+  The topic addressed by the motion, as well as the general nature of the motion, 
+  must have been discussed at an EC meeting prior to the electronic vote.</p>
+<p>An electronic vote can be requested either by proposing a motion during a meeting 
+  or by sending an email to the EC mailing list with the words &quot;EC Vote Request&quot; 
+  in the subject title. In either case another EC member must second the request. 
+  The request must include a clearly labeled motion to be voted on by the EC. 
+  It is considered good practice to discuss a motion at an EC meeting, or to circulate 
+  it for comment on the EC mailing list, before requesting a vote.</p>
+<p>Within 7 days of receipt of the request and the second, the PMO shall send 
+  email to the EC mailing list starting the electronic vote on the motion. The 
+  voting period duration is 14 days to ensure that all voting members have time 
+  to consider the motion before voting.</p>
+<p>The PMO may conduct the vote by instructing EC voting members to vote through 
+  a PMO-provided or designated website or may instruct the EC to vote by email. 
+  In either case, EC voting members may change their vote up to the end of the 
+  voting period. The PMO tabulates the results.</p>
+<p>Options for votes (i.e. yes, no, abstain) and the number of votes needed to 
+  pass are the same as during meetings.</p>
+<p>The PMO shall report the results within 7 calendar days, either to the EC mailing 
+  list or at an EC meeting, at which time the full text of the motion and the 
+  detailed results (including how each member voted) shall be recorded in the 
+  meeting minutes.</p>
+<div class="header2"><a name="AppendixA" id="AppendixA"></a>APPENDIX A: REVISING THIS DOCUMENT</div>
+<p>To revise this document, a formal proposal must be submitted to the EC in the 
+  form of a Final Draft. The draft shall be published by the PMO for 30 day review 
+  during which EC members and the public can comment on the proposal. The EC shall 
+  formally track comments as Expert Groups are required to do for JSRs.</p>
+<p>At the end of the review period, and after proper disposition of comments and 
+  possible revision of the Draft, it shall be subjected to a vote by both ECs. 
+  In order for the vote to pass, for each EC the following must be true: (a) a 
+  majority of the votes cast are "yes", and (b) there is a minimum of 5 "yes" 
+  votes. If the vote fails, revised Final Drafts may be submitted for additional 
+  votes at any subsequent time.</p>
+<div class="header2"><a name="AppendixB" id="AppendixB"></a>APPENDIX B: MOTION GUIDELINES</div>
+<table border="1" cellspacing="0" style="border-collapse:collapse">
+<tr>
+<td>
+<p class="s5">Motion</p>
+</td>
+<td>
+<p class="s5">Voting</p>
+</td>
+<td>
+<p class="s5">Notes</p>
+</td>
+</tr>
+<tr>
+<td>
+<p class="s6">Adjourn</p>
+</td>
+<td>
+<p class="s6">Simple majority</p>
+</td>
+<td>
+<p class="s6">Cannot be amended, debated or reconsidered, but can
+be made again after further business. In the fairness of time, the
+chair may adjourn a meeting once the time for that meeting has
+expired</p>
+</td>
+</tr>
+<tr>
+<td>
+<p class="s6">Lay on the Table</p>
+<p class="s6">(suspend discussion)</p>
+</td>
+<td>
+<p class="s6">2/3 majority</p>
+</td>
+<td>
+<p class="s6">Cannot be amended, debated or reconsidered if passed. Tabled motion 
+        automatically dies at the end of the meeting. In the fairness of time, 
+        the chair may table a motion once the allotted time for that agenda item 
+        has passed.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p class="s6">Call the Question</p>
+</td>
+<td>
+<p class="s6">2/3 majority</p>
+</td>
+<td>
+<p class="s6">Not debatable, needs no second. Speaker is not
+allowed to make a statement and then immediately call the question.
+Ask if there are any objections to voting now; if so, vote on
+calling the question; if not, take the main vote.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p class="s6">Amend</p>
+</td>
+<td>
+<p class="s6">Simple majority</p>
+</td>
+<td>
+<p class="s6">May itself be amended. Proposer of motion may amend
+his own motion or accept friendly amendment without vote, provided
+there is no objection.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p class="s6">Main Motion</p>
+</td>
+<td>
+<p class="s6">2/3 majority</p>
+</td>
+<td>
+<p class="s6">Motions to do nothing are not allowed. Guidance to
+the PMO, as defined by this document and the JCP Process Document,
+is provided through the mechanism of motions.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p class="s6">Take from the Table (resume discussion)</p>
+</td>
+<td>
+<p class="s6">Simple majority</p>
+</td>
+<td>
+<p class="s6">Cannot be debated, amended or reconsidered, if
+passed.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p class="s6">Reconsider</p>
+</td>
+<td>
+<p class="s6">Simple majority</p>
+</td>
+<td>
+<p class="s6">Cannot be amended or reconsidered. Debatable only if
+the original motion was debatable. Must be made by one who voted on
+the prevailing side of the original motion.</p>
+</td>
+</tr>
+</table>
+
+</div>		
+		
+<!-- ** BEGIN: footer.jsp ** //-->
+
+
+
+
+
+
+
+
+</td>
+</tr>
+</table>
+
+<!-- ** END: Content Table ** //-->
+
+<!-- ** BEGIN: Footer Table ** //-->
+
+<div id="footer" style="clear: both;">
+    <div class="footleft">
+        <a href="/en/resources/contacts">Contact Us</a>
+    </div>
+	
+    <div class="botbar"><img src="/images/spacer.gif" alt="" height="23" width="1"></div>
+
+    <div class="footleft2">
+         &copy; 2019, Oracle Corporation and/or its affiliates. 
+        <a href="/en/home/terms">Terms of Use</a>. <a href="http://www.oracle.com/us/legal/privacy/index.html">Privacy Policy</a>. <a href="http://www.oracle.com/us/legal/third-party-trademarks/third-party-trademarks-078568.html">Trademarks</a>
+    </div>
+
+    <div class="footright">
+        <img src="/images/common/logo_oracle_footer.gif" alt="Oracle Corporation" height="22" width="91">
+    </div>
+
+    <div style="clear: both;"><img src="/images/spacer.gif" alt="" height="30" width="1"></div>
+</div>
+
+<!-- ** END: Footer Table ** //-->
+
+
+
+<!-- ** Menu Start ** //-->
+
+
+
+</body>
+</html>
+<!-- ** END: footer.jsp ** //-->
+
+		

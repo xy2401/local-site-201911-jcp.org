@@ -1,0 +1,85 @@
+
+Proposed Change Log for CLDC 1.1.1
+-----------------------------------
+
+The following list of proposed changes was developed in collaboration with the JSR 271 expert group to support the forthcoming MIDP3 specification.  Major highlights include:
+
+- The addition of various permission classes to express security checks in the Generic Connection Framework and java.lang APIs.
+
+- The addition of inverse trigonometric functions to facilitate location-based services.
+
+- A restriction on the behavior of eager-linking virtual machine implementations, in order to guarantee that applications can safely wrap references to optional package APIs in a try/catch block.
+
+-------------------------------------------------------------------
+
+Add the following security classes per JDK 1.3.1 spec:
+  java.lang.RuntimePermission (with only "exitVM" and "modifyThread" targets.)
+  java.security.AccessControlException
+  java.security.AccessController (with only checkPermission(Permission) method)
+  java.security.BasicPermission
+  java.security.Permission
+  java.security.PermissionCollection
+  java.util.PropertyPermission
+(Note: The java.security.Guard and java.io.Serializable interfaces are not implemented by the above classes.  Likewise, the checkGuard() method is not defined by java.secuirity.Permission or its subclasses.)
+
+Add the following classes per the JDK 1.3.1 spec:
+  java.lang.UnsupportedOperationException
+  java.lang.IllegalStateException
+  java.util.Timer (minus Timer(boolean isDaemon) constructor)
+  java.util.TimerTask
+
+Add the following methods per the JDK 1.3.1 spec:
+  java.lang.Thread.checkAccess()
+  java.lang.Throwable.printStackTrace(PrintStream)
+
+Add the following methods to the java.lang.Math class, per the JDK 1.3.1 spec:
+  asin(double)
+  acos(double)
+  atan(double)
+  atan2(double, double)
+
+Add '@throws SecurityException' to specs for:
+   java.lang.System.getProperty(String)
+   java.lang.Runtime.exit(int)
+   java.lang.System.exit(int)
+   java.lang.Thread.interrupt()
+   java.lang.Thread.setPriority(int)
+
+Define the following abstract class in javax.microedition.io as the superclass of all GCF-related permissions:
+   GCFPermission (extends Permission)
+
+Define the following security permission classes in javax.microedition.io to guard access to GCF on a per-protocol basis
+   CommProtocolPermission (extends GCFPermission)
+   DatagramProtocolPermission (extends GCFPermission)
+   FileProtocolPermission (extends GCFPermission)
+   HttpProtocolPermission (extends GCFPermission)
+   HttpsProtocolPermission (extends GCFPermission)
+   SocketProtocolPermission (extends GCFPermission)
+   SSLProtocolPermission (extends GCFPermission)
+
+Add the following statement to the class specification of javax.microedition.io.Connector:
+"The creation of a new Connection object is subject to a security check to verify that the caller has the security Permission associated with the requested protocol scheme. If the caller lacks the necessary permission, the invoked Connector method throws SecurityException."
+
+
+Add package.html file describing the javax.microedition.io package, including the following statement:
+"Classes for the Generic Connection framework.
+
+The Generic Connection Framework provides a simplified mechanism for applications to use various types of I/O protocols in resource-constrained environments. I/O is performed by means of Connections obtained through the Connector factory class. Connections are dynamically created based on URIs of the form: {scheme}:[{target}][{params}].
+
+Access to a particular protocol is controlled through subclasses of GCFPermission. For a given protocol scheme, a corresponding security permission, {Scheme}ProtocolPermission, is used to guard access to the protocol.
+
+The Generic Connection Framework may be extended through the definition of additional protocol schemes. A specification that extends the Generic Connection Framework should define both the connection type and GCFPermission subclass associated with the new protocol in a package unique to the specification.
+
+Please see the Connector class for more information."
+
+
+Add the following to the specification for javax.microedition.io.Datagram.setAddress(String):
+"If the connection has been opened in "server" mode, the address will be null."
+
+
+In the PDF document, add Section 5.4, "Linking", stating the following:
+"This specification adds a requirement to the Java Virtual Machine Specification, Second Edition, regarding an implementation's flexibility as to when linking activities take place. (See JVMS sections 2.17.3 and 5.4.) The CLDC 1.1.1 specification requires that any LinkageError detected during resolution of a symbolic reference (directly or indirectly) must be thrown at a point in the program where an instruction is executed that uses the symbolic reference."
+
+Add the following to section 5.3.4 of the PDF document:
+
+"Requirements on eager-linking virtual machines.  The CLDC 1.1.1 specification adds a requirement to the Java Virtual Machine Specification regarding an implementation's flexibility as to when linking activities take place. (See JVMS sections 2.17.3 and 5.4.)  The CLDC 1.1.1 specification requires that any LinkageError detected during resolution of a symbolic reference (directly or indirectly) must be thrown at a point in the program where an instruction is executed that uses the symbolic reference.A virtual machine conforming to the CLDC 1.1.1 specification may choose to optimize its execution through "eager linking," that is, by resolving the symbolic references in a class file as soon as the class is loaded, rather than waiting until the reference is used at runtime.  Such virtual machine implementations must still ensure that applications receive linkage errors at the point that the reference is used, rather than beforehand.  By doing so, eager-linking virtual machines allow an application to safely reference an optional API in a try/catch block and to catch java.lang.NoClassDefFoundError if it is thrown."

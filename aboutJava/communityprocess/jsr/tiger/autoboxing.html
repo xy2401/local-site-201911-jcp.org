@@ -1,0 +1,586 @@
+
+<!-- ** BEGIN: header.jsp ** //-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3c.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+<head>
+    
+
+   
+    <link href="/includes/css/menu.css" rel="stylesheet" type="text/css"></link>
+    <link href="/includes/css/style.css" rel="stylesheet" type="text/css"></link>
+    <!--[if lt IE 6]><link href="/includes/css/style5.css" rel="stylesheet" type="text/css" ></link><![endif]-->
+    <!--[if gte IE 5]><link href="/includes/css/style6.css" rel="stylesheet" type="text/css" ></link><![endif]-->
+    <link href="/includes/css/tabs.css"  rel="stylesheet" type="text/css"></link>
+
+    <script type="text/javascript" src="/includes/scripts/tabs.js"></script>
+    <script type="text/javascript" src="/includes/scripts/menu.js"></script>
+   
+
+    
+
+    
+        <title>The Java Community Process(SM) Program - communityprocess - jsr</title>
+    
+
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+
+
+<body onload="P7_initPM(0,1,0,0,-1)">
+
+    <a name="top"></a>
+
+    <div id="header">
+	<div id="logo">
+		<a href="/en/home/index"><img src="/images/spacer.gif" alt="Java Community Process" height="81" width="151"></a>
+	</div>
+	<div id="tools">
+		<div class="search">
+			<form name="search" action="/en/jsr/summary" method="get" onsubmit="return validate_search()">
+				<input name="id" value="Search JSRs" size="16" class="form" onfocus="nullify_if_equal(this, 'Search JSRs')" type="text">
+				<a href="javascript:document.search.submit()" onclick="return validate_search()"><img src="/images/button_go.gif" width="21" height="16" border="0" alt="Submit this Search" name="sub_search"></a>
+			</form>
+		</div>
+		<div class="tools">
+			<a href="/en/press/pressroom">Press Room</a> &nbsp;|&nbsp;
+			<a href="http://java.com/java/download/index.jsp?cid=jdp78399">Get Java Here</a> &nbsp;|&nbsp;
+			<!-- <a href="javascript:void(0)">Print Format</a> &nbsp;|&nbsp;&nbsp; -->
+		</div>
+
+	</div>
+	<div style="clear: right;"></div>
+
+        
+
+	<div class="topbar"><img src="/images/spacer.gif" alt="" height="3" width="154"></div>
+	<div id="update"> </div>
+    </div>
+
+
+    
+
+        <!-- ** BEGIN: Content Table ** //-->
+
+        <table width="100%" border="0" cellpadding="0" cellspacing="0">
+
+            <tr>
+
+                <!-- ** BEGIN: Navigation Column ** //-->
+                <td width="150" id="leftcontent" valign="top">
+                    <!-- Navigation Placeholder //-->
+
+                    
+
+                    <div class="bar"><img src="/images/hr_dots1.gif" alt="" height="3" width="150"></div>
+
+        <!-- begin find JSRs form -->
+        <!-- IMPORTANT! do not convert this form to Struts < html : form > tag.  javascript change of form.action property fails. -->
+        <img src="/images/hd_find-jsrs.gif" alt="Find JSRs" height="18" width="150">
+        <form name="findjsr" action="/en/jsr/summary" method="get" class="pt5" onsubmit="return validate_findjsr()">
+            <input name="id" size="18" class="form" value="Search JSRs" onfocus="nullify_if_equal(this, 'Search JSRs')" type="text">
+	    <a href="javascript:document.findjsr.submit()" onclick="return validate_findjsr()"><img src="/images/button_go.gif" width="21" height="16" border="0" alt="Submit this Search" name="sub_search"></a>
+        </form><br><br>
+
+        <!-- ** Menu Start ** //-->
+
+        <ul id="p7PMnav">
+            <li><a href="/en/jsr/platform">JSRs by Platform</a></li>
+            <li><a href="/en/jsr/tech">JSRs by Technology</a></li>
+            <li><a href="/en/jsr/stage">JSRs by Stage</a></li>
+            <li><a href="/en/jsr/ec">JSRs by Committee</a></li>
+            <li><a href="/en/jsr/all">List of All JSRs</a></li>
+
+            <!--end find JSRs form -->
+            <div style="clear: both;"><img src="/images/spacer.gif" alt="" height="25" width="1"></div>
+
+            <!--begin my JCP -->
+            <img src="/images/hd_my-jcp.gif" alt="My JCP" height="18" width="150">
+            
+
+          <form name="login" method="get" action="/en/user/login" >
+            <input name="Sign-in" type="submit" title="Sign-in" value="Sign-in" />
+          </form>
+
+            <div style="clear:both"><img src="/images/global/spacer.gif" width="1" height="3" alt=""></div>
+            <div class="noNav">
+                <a href="/en/user/register">Register for Site</a>
+            </div>
+
+             <div class="bar"><img src="/images/hr_dots1.gif" alt="" height="3" width="150"></div>
+           <div class="noNav" style="color: #666666; padding: 0;">
+              Use of JCP site is subject to the
+              <a href="/en/home/terms" style="display:inline;padding: 0">JCP Terms of Use</a> and the
+              <a href="http://www.oracle.com/us/legal/privacy/index.html" style="display:inline;padding: 0" href="">Oracle Privacy Policy</a>
+          </div>
+
+            
+
+            <div style="clear:both"><img src="/images/global/spacer.gif" width="1" height="25" alt=""></div>
+
+            <!--begin JCP info -->
+            <img src="/images/hd_jcp-info.gif" alt="JCP Info" height="18" width="150">
+
+            <li><a href="/en/procedures/overview" class="p7PMtrg">About JCP</a>
+                <ul>
+                    <li><a href="/en/procedures/overview">Program Overview</a></li>
+                    <li><a href="/en/procedures/jcp2">JCP Process Document</a></li>
+                    <li><a href="/en/whatsnew/calendar">Calendar</a></li>
+                    <li><a href="/en/participation/members">JCP Members</a></li>
+                    <li><a href="/en/participation/committee">Executive Committee</a></li>
+                    <li><a href="/en/whatsnew/elections">Elections</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/en/participation/overview" class="p7PMtrg">Get Involved</a>
+		<ul>
+                    <li><a href="/en/participation/overview">Overview</a></li>
+                    <li><a href="/en/participation/membership">Becoming a JCP Member</a></li>
+		</ul>
+            </li>
+
+            <li><a href="/en/resources/contents" class="p7PMtrg">Community Resources</a>
+                <ul>
+                    <li><a href="/en/resources/contents">Overview</a></li>
+                    <li><a href="/en/resources/tutorials">Tutorials</a></li>
+                    <li><a href="/en/resources/multimedia">JCP Podcasts</a></li>
+                    <li><a href="/en/resources/guide">Spec Lead Guide</a></li>
+                    <li><a href="/en/resources/tdk">TCK Tool & Info</a></li>
+                    <li><a href="/en/resources/license_reference">License Reference</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/en/press/pmo" class="p7PMtrg">Community News</a>
+                <ul>
+                    <li><a href="/en/press/pmo">News</a></li>
+                    <li><a href="/en/press/news/awards/awards_main">Programs &amp; Awards</a></li>
+                    <li><a href="/en/press/releases">Press Releases</a></li>
+                    <li><a href="/en/press/success">Success Stories</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/en/introduction/faq">FAQ</a></li>
+
+            <li><a href="/en/resources/contacts">Contact Us</a></li>
+
+            <div style="clear: both;"><img src="/images/spacer.gif" alt="" height="25" width="1"></div>
+
+            <!--[if lte IE 6]><style>#p7PMnav a{height:1em;}#p7PMnav li{height:1em;float:left;clear:both;width:100%}</style><![endif]-->
+            <!--[if IE 6]><style>#p7PMnav li{clear:none;}</style><![endif]-->
+            <!--[if IE 7]><style>#p7PMnav a{zoom:100%;}#p7PMnav li{float:left;clear:both;width:100%;}</style><![endif]-->
+        </ul>
+
+        
+
+        <!--begin ad space -->
+        <div class="ads">
+            <a href="http://java.com/java/download/index.jsp?cid=jdp78399" target="_blank"><img style="display: ;" src="/images/ad_banner2.gif" alt="Ad Banner" border="1" height="70" width="150"></a>
+        </div>
+        <!--end ad space -->
+
+<!-- ** Menu End ** //-->
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;<br>
+
+    
+
+                    &nbsp;<br>
+                    <img src="/images/common/trans.gif" alt="" width="1" height="150"><br>
+
+              
+
+
+
+                </td>
+                <!-- ** END: Navigation Column ** //-->
+
+                <!-- ** BEGIN: Gutter Column ** //-->
+		<td width="10" nowrap><img src="/images/common/trans.gif" alt="" width="10" height="1"></td>
+                <!-- ** END: Gutter Column ** //-->
+
+                <!-- ** BEGIN: Content Column ** //-->
+                <td width="100%" valign="top">
+
+    
+<script type="text/javascript">
+
+String.prototype.trim = function() {
+        return this.replace(/^\s+|\s+$/g,"");
+}
+String.prototype.ltrim = function() {
+        return this.replace(/^\s+/,"");
+}
+String.prototype.rtrim = function() {
+        return this.replace(/\s+$/,"");
+}
+
+function validate_search() {
+	if (document.search.id.value == "Search JSRs" || document.search.id.value.trim().length == 0) {
+		alert("Search terms must be entered first");
+		return false;
+	}
+	return true;
+}
+
+function validate_findjsr() {
+	if (document.findjsr.id.value == "Search JSRs" || document.findjsr.id.value.trim().length == 0) {
+		alert("Search terms must be entered first");
+		return false;
+	}
+	return true;
+}
+
+function nullify_if_equal(field, str) {
+	// alert("val=" + field.value);
+	if (field.value == str) {
+		field.value = "";
+	}
+}
+
+</script>
+<!-- ** END: header.jsp ** //-->
+
+
+
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+</head>
+ <body>
+<h1>Autoboxing support for the Java<sup>tm</sup> Programming Language</h1>
+<br>
+The need to explicitly convert data of primitive type to reference arises
+frequently and is often burdensome. The most typical examples are adding
+primitive data to collections. �The explicit conversions required are verbose
+and induce clutter in the program text.<br>
+<br>
+We propose to modify the Java<sup>TM</sup> programming language to allow automatic conversion
+of data of primitive type to the corresponding wrapper type. <br>
+This proposal �eliminates� annoying casts and conversions from source code,
+and synergizes with the planned addition of generics to the language. The
+mechanism for achieving this is the introduction of a new conversion, known
+as <b><i>boxing conversion</i></b>, which may be used as part of assignment
+conversion �and method invocation conversion (and possibly elsewhere).<br>
+<br>
+This proposal does not include the dual facility of auto-unboxing. �However,
+the expert group may choose to contemplate that facility as well, if its
+inclusion can be done in a manner that is not overly disruptive to the language
+as a whole.<br>
+<br>
+<h2>Proposed Changes to Java Language Specification</h2>
+This section provides draft text for sections of the Java Language Specification
+(JLS) that will need to be changed if this proposal is adopted. This text
+is tentative, and there may be additional sections of the JLS, not included
+here,� that may require modification. Nevertheless, these sections provide
+a good depature point for the work of the expert group.<br>
+<br>
+ // New section, after current 5.1.6<br>
+ �<br>
+<h4> JLS 5.1.7 Boxing Conversion</h4>
+<br>
+ Boxing conversion converts values of primitive type to corresponding values
+of reference type. The <br>
+ precise rules are as follows:<br>
+<br>
+ If i is a value of type boolean, then boxing conversion converts i into
+a reference r of class and type <br>
+ Boolean, <br>
+ such that r.value() == i.<br>
+ If i is a value of type byte, then boxing conversion converts i into a reference
+r of class and type <br>
+ Byte, such that r.value() == i.<br>
+ If i is a value of type char, then boxing conversion converts i into a reference
+r of class and type <br>
+ Character, such that r.value() == i.<br>
+ If i is a value of type short, then boxing conversion converts i into a
+reference r of class and type <br>
+ Short, such that r.value() == i.<br>
+ If i is a value of type int, then boxing conversion converts i into a reference
+r of class and type <br>
+ Integer, such that r.value() == i.<br>
+ If i is a value of type long, then boxing conversion converts i into a reference
+r of class and type <br>
+ Long, such that r.value() == i.<br>
+ If i is a value of type float, then boxing conversion converts i into a
+reference r of class and type <br>
+ Float, such that r.value() == i.<br>
+ If i is a value of type double, then boxing conversion converts i into a
+reference r of class and type <br>
+ Double, such that r.value() == i.<br>
+ If i is a value of any other type, boxing conversion is equivalent to an
+identity conversion (5.1.1).<br>
+<br>
+ // Comment:<br>
+<br>
+ // Note that this formulation disallows any assumptions about the identity
+of the boxed values on the <br>
+ // programmer's part.� This would allow (but not require) sharing of some
+or all of these references <br>
+ // (canonical booleans, for example).<br>
+<br>
+ // New section, before current 5.1.7<br>
+<br>
+<h4> JLS 5.1.8. Unboxing conversion</h4>
+<br>
+ Unboxing conversion converts values of reference type to corresponding values
+of primitive type. The precise rules are as follows:<br>
+<br>
+ If r is a reference of type Boolean, then unboxing conversion converts r
+into a value v of type boolean, <br>
+ such that r.value() == v.<br>
+ If r is a reference of type Byte, then unboxing conversion converts r into
+a value v of type byte, <br>
+ such that r.value() == v.<br>
+ If r is a reference of type Character, then unboxing conversion converts
+r into a value v of type char, <br>
+ such that r.value() == v.<br>
+ If r is a reference of type Short, then unboxing conversion converts r into
+a value v of type short, <br>
+ such that r.value() == v.<br>
+ If r is a reference of type Integer, then unboxing conversion converts r
+into a value v of type int, <br>
+ such that r.value() == v.<br>
+ If r is a reference of type Long, then unboxing conversion converts r into
+a value v of type long, <br>
+ such that r.value() == v.<br>
+ If r is a reference of type Float, then unboxing conversion converts r into
+a value v of type float, <br>
+ such that r.value() == v.<br>
+ If r is a reference of type Double, then unboxing conversion converts r
+into a value v of type double, <br>
+ such that r.value() == v.<br>
+<br>
+ // Corrections to 5.1.5 Forbidden conversions (some forbidden conversions
+are no longer forbidden).<br>
+ // Specifically, bullets 1, 2, 5 and 6 are dropped. The resulting section
+follows.<br>
+<br>
+ // Was 5.1.7; renumbered<br>
+<br>
+<h4> 5.1.9 Forbidden Conversions</h4>
+<br>
+ There is no permitted conversion from the null type to any primitive type.
+<br>
+ There is no permitted conversion to the null type other than the identity
+conversion. <br>
+ There is no permitted conversion other than string conversion from class
+type S to a different class <br>
+ type T if S is not a subclass of T and T is not a subclass of S. <br>
+ There is no permitted conversion from class type S to interface type K if
+S is final and does not <br>
+ implement K. <br>
+ There is no permitted conversion from class type S to any array type if
+S is not Object. <br>
+ There is no permitted conversion other than string conversion from interface
+type J to class type T if T <br>
+ is final and does not implement J. <br>
+ There is no permitted conversion from interface type J to interface type
+K if J and K contain methods <br>
+ with the same signature but different return types. <br>
+ There is no permitted conversion from any array type to any class type other
+than Object or String. <br>
+ There is no permitted conversion from any array type to any interface type,
+except to the interface <br>
+ types java.io.Serializable and Cloneable, which are implemented by all arrays.
+<br>
+ There is no permitted conversion from array type SC[] to array type TC[]
+if there is no permitted <br>
+ conversion other than a string conversion from SC to TC. <br>
+<br>
+<h4> JLS 5.2 Assignment Conversion</h4>
+<br>
+ <i>Assignment conversion</i> occurs when the value of an expression is assigned
+<font color="#0000ff"><u>(�15.26)</u></font> to a variable: the type of the
+expression must be converted to the type of the variable. Assignment contexts
+allow the use of an identity conversion <font color="#0000ff"><u>(�5.1.1)</u></font>
+, a widening primitive conversion <font color="#0000ff"><u>(�5.1.2)</u></font>
+, a widening reference conversion <font color="#0000ff"><u>(�5.1.4)</u></font>
+,� or boxing conversion <font color="#0000ff"><u>(�5.1.7)</u></font>.<br>
+<br>
+<h4> JLS 5.3 Method Invocation Conversion</h4>
+<br>
+ <i>Method invocation conversion</i> is applied to each argument value in
+a method or constructor invocation (<font color="#0000ff"><u>�15.9</u></font>
+, <font color="#0000ff"><u>�15.12</u></font>): the type of the argument expression
+must be converted to the type of the corresponding parameter. Method invocation
+contexts allow the use of an identity conversion <font color="#0000ff"><u>
+(�5.1.1)</u></font>, a widening primitive conversion <font color="#0000ff"><u>
+(�5.1.2)</u></font>, a widening reference conversion <font color="#0000ff"><u>
+(�5.1.4)</u></font>,� or boxing conversion <font color="#0000ff"><u>(�5.1.7)</u></font>
+.<br>
+<br>
+ // Effects on overloading are discussed in JLS 15.12.2.2, see below<br>
+<br>
+<h4> JLS 5.5 Casting Conversion</h4>
+<br>
+ // Comment: Add references to boxing and unboxing conversion.<br>
+ // The first few paragraphs of the section are given below<br>
+<br>
+ Casting conversion is applied to the operand of a cast operator (15.16):
+the type of the operand <br>
+ expression must be converted to the type explicitly named by the cast operator.
+Casting contexts allow the use of an identity conversion (5.1.1), a widening
+primitive conversion (5.1.2), a narrowing <br>
+ primitive conversion (5.1.3), a widening reference conversion (5.1.4), a
+narrowing reference <br>
+ conversion (5.1.5), a boxing conversion (5.1.7) or an unboxing conversion
+(5.1.8). Thus casting <br>
+ conversions are more inclusive than assignment or method invocation conversions:
+a cast can do any permitted conversion other than a string conversion.<br>
+ Value set conversion (5.1.10) is applied after the type conversion.<br>
+<br>
+ Some casts can be proven incorrect at compile time; such casts result in
+a compile-time error.<br>
+<br>
+ A value of a primitive type can be cast to another primitive type by identity
+conversion, <br>
+ if the types are the same, or by a widening primitive conversion or a narrowing
+primitive conversion.<br>
+<br>
+ A value of a primitive type can be cast to a reference type by boxing conversion
+(5.1.7). <br>
+ A value of a reference type can be cast to a primitive type by unboxing
+conversion (5.1.8).<br>
+<br>
+ <br>
+<h4> JLS 15.12.2.2� Choose the Most Specific Method</h4>
+<br>
+ IIf more than one method declaration is both accessible and applicable to
+a method invocation, it is necessary to choose one to provide the descriptor
+for the run-time method dispatch. The Java programming language uses the
+rule that the <i>most specific</i> method is chosen. <br>
+ The informal intuition is that one method declaration is more specific than
+another if any invocation handled by the first method could be passed on
+to the other one without a compile-time type error. <br>
+ The precise definition is as follows. Let <i>m</i> be a name and suppose
+that there are two declarations of methods named <i>m</i>, each having <i>
+n</i> parameters. Suppose that one declaration appears within a class or
+interface <i>T</i> and that the types of the parameters are <i>T1</i>, .
+. . , <i>Tn</i>; suppose moreover that the other declaration appears within
+a class or interface <i>U</i> and that the types of the parameters are <i>
+U1</i>, . . . , <i>Un</i>. Then the method <i>m</i> declared in <i>T</i>
+is <i>more specific</i> than the method <i>m</i> declared in <i>U</i> if
+and only if both of the following are true: <br>
+<br>
+ <font face="Symbol">�<x-tab>�������</x-tab></font><i>T</i> can be converted
+to <i>U</i> by method invocation conversion. <br>
+ <font face="Symbol">�<x-tab>�������</x-tab></font><i>Tj</i> can be converted
+to <i>Uj</i> by method invocation conversion, for all <i>j</i> from <font face="Courier New, Courier">
+1 to <i>n</i>. <br>
+ </font>A method is said to be <i>maximally specific</i> for a method invocation
+if it is applicable and accessible and there is no other applicable and accessible
+method that is more specific. <br>
+ If there is exactly one maximally specific method, then it is in fact <i>
+the most specific</i> method; it is necessarily more specific than any other
+method that is applicable and accessible. It is then subjected to some further
+compile-time checks as described in <font color="#0000ff"><u>�15.12.3</u></font>
+. <br>
+ It is possible that no method is the most specific, because there are two
+or more maximally specific methods. In this case: <br>
+<br>
+ <font face="Symbol">�<x-tab>�������</x-tab></font>If all the maximally specific
+methods have the same signature, then:  
+<dl>
+<font face="Symbol"> </font><dd><font face="Symbol">�<x-tab>�������</x-tab></font>
+If one of the maximally specific methods is not declared <font face="Courier New, Courier">
+abstract</font>, it is the most specific method.<font face="Courier New, Courier">
+ </font><font face="Symbol"> </font></dd>
+  <dd><font face="Symbol">�<x-tab>�������</x-tab></font>Otherwise, all the
+maximally specific methods are necessarily declared <font face="Courier New, Courier">
+abstract</font>. The most specific method is chosen arbitrarily among the
+maximally specific methods. However, the most specific method is considered
+to throw a checked exception if and only if that exception is declared in
+the throws clauses of each of the maximally specific methods.<font face="Courier New, Courier">
+ </font> </dd>
+    </dl>
+    <font face="Symbol">�<x-tab>�������</x-tab></font>Otherwise, if exactly
+one of the maximally specific methods is applicable without use of boxing
+conversion, it is the most specific method.<br>
+ Otherwise, we say that the method invocation is <i>ambiguous</i>, and a
+compile-time error occurs. <br>
+
+<br><br>
+<font size=-2>Copyright 2001-2002 Sun Microsystems, Inc., 901 San Antonio
+Road, Palo Alto, California 94303 U.S.A. All rights reserved.</font>
+ 
+    </body>
+    </html>
+
+
+
+
+<!-- ** BEGIN: footer.jsp ** //-->
+
+
+
+
+
+
+
+
+</td>
+</tr>
+</table>
+
+<!-- ** END: Content Table ** //-->
+
+<!-- ** BEGIN: Footer Table ** //-->
+
+<div id="footer" style="clear: both;">
+    <div class="footleft">
+        <a href="/en/resources/contacts">Contact Us</a>
+    </div>
+	
+    <div class="botbar"><img src="/images/spacer.gif" alt="" height="23" width="1"></div>
+
+    <div class="footleft2">
+         &copy; 2019, Oracle Corporation and/or its affiliates. 
+        <a href="/en/home/terms">Terms of Use</a>. <a href="http://www.oracle.com/us/legal/privacy/index.html">Privacy Policy</a>. <a href="http://www.oracle.com/us/legal/third-party-trademarks/third-party-trademarks-078568.html">Trademarks</a>
+    </div>
+
+    <div class="footright">
+        <img src="/images/common/logo_oracle_footer.gif" alt="Oracle Corporation" height="22" width="91">
+    </div>
+
+    <div style="clear: both;"><img src="/images/spacer.gif" alt="" height="30" width="1"></div>
+</div>
+
+<!-- ** END: Footer Table ** //-->
+
+
+
+<!-- ** Menu Start ** //-->
+
+
+
+</body>
+</html>
+<!-- ** END: footer.jsp ** //-->
+

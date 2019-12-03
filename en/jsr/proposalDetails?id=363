@@ -1,0 +1,876 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- ** BEGIN: header.jsp ** //-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3c.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+<head>
+    
+
+   
+    <link href="/includes/css/menu.css" rel="stylesheet" type="text/css"></link>
+    <link href="/includes/css/style.css" rel="stylesheet" type="text/css"></link>
+    <!--[if lt IE 6]><link href="/includes/css/style5.css" rel="stylesheet" type="text/css" ></link><![endif]-->
+    <!--[if gte IE 5]><link href="/includes/css/style6.css" rel="stylesheet" type="text/css" ></link><![endif]-->
+    <link href="/includes/css/tabs.css"  rel="stylesheet" type="text/css"></link>
+
+    <script type="text/javascript" src="/includes/scripts/tabs.js"></script>
+    <script type="text/javascript" src="/includes/scripts/menu.js"></script>
+   
+
+    
+
+    
+        <title>The Java Community Process(SM) Program - JSRs: Java Specification Requests - proposalDetails JSR# 363</title>
+    
+
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+
+
+<body onload="P7_initPM(0,1,0,0,-1)">
+
+    <a name="top"></a>
+
+    <div id="header">
+	<div id="logo">
+		<a href="/en/home/index"><img src="/images/spacer.gif" alt="Java Community Process" height="81" width="151"></a>
+	</div>
+	<div id="tools">
+		<div class="search">
+			<form name="search" action="/en/jsr/summary" method="get" onsubmit="return validate_search()">
+				<input name="id" value="Search JSRs" size="16" class="form" onfocus="nullify_if_equal(this, 'Search JSRs')" type="text">
+				<a href="javascript:document.search.submit()" onclick="return validate_search()"><img src="/images/button_go.gif" width="21" height="16" border="0" alt="Submit this Search" name="sub_search"></a>
+			</form>
+		</div>
+		<div class="tools">
+			<a href="/en/press/pressroom">Press Room</a> &nbsp;|&nbsp;
+			<a href="http://java.com/java/download/index.jsp?cid=jdp78399">Get Java Here</a> &nbsp;|&nbsp;
+			<!-- <a href="javascript:void(0)">Print Format</a> &nbsp;|&nbsp;&nbsp; -->
+		</div>
+
+	</div>
+	<div style="clear: right;"></div>
+
+        
+
+	<div class="topbar"><img src="/images/spacer.gif" alt="" height="3" width="154"></div>
+	<div id="update"> </div>
+    </div>
+
+
+    
+
+        <!-- ** BEGIN: Content Table ** //-->
+
+        <table width="100%" border="0" cellpadding="0" cellspacing="0">
+
+            <tr>
+
+                <!-- ** BEGIN: Navigation Column ** //-->
+                <td width="150" id="leftcontent" valign="top">
+                    <!-- Navigation Placeholder //-->
+
+                    
+
+                    <div class="bar"><img src="/images/hr_dots1.gif" alt="" height="3" width="150"></div>
+
+        <!-- begin find JSRs form -->
+        <!-- IMPORTANT! do not convert this form to Struts < html : form > tag.  javascript change of form.action property fails. -->
+        <img src="/images/hd_find-jsrs.gif" alt="Find JSRs" height="18" width="150">
+        <form name="findjsr" action="/en/jsr/summary" method="get" class="pt5" onsubmit="return validate_findjsr()">
+            <input name="id" size="18" class="form" value="Search JSRs" onfocus="nullify_if_equal(this, 'Search JSRs')" type="text">
+	    <a href="javascript:document.findjsr.submit()" onclick="return validate_findjsr()"><img src="/images/button_go.gif" width="21" height="16" border="0" alt="Submit this Search" name="sub_search"></a>
+        </form><br><br>
+
+        <!-- ** Menu Start ** //-->
+
+        <ul id="p7PMnav">
+            <li><a href="/en/jsr/platform">JSRs by Platform</a></li>
+            <li><a href="/en/jsr/tech">JSRs by Technology</a></li>
+            <li><a href="/en/jsr/stage">JSRs by Stage</a></li>
+            <li><a href="/en/jsr/ec">JSRs by Committee</a></li>
+            <li><a href="/en/jsr/all">List of All JSRs</a></li>
+
+            <!--end find JSRs form -->
+            <div style="clear: both;"><img src="/images/spacer.gif" alt="" height="25" width="1"></div>
+
+            <!--begin my JCP -->
+            <img src="/images/hd_my-jcp.gif" alt="My JCP" height="18" width="150">
+            
+
+          <form name="login" method="get" action="/en/user/login" >
+            <input name="Sign-in" type="submit" title="Sign-in" value="Sign-in" />
+          </form>
+
+            <div style="clear:both"><img src="/images/global/spacer.gif" width="1" height="3" alt=""></div>
+            <div class="noNav">
+                <a href="/en/user/register">Register for Site</a>
+            </div>
+
+             <div class="bar"><img src="/images/hr_dots1.gif" alt="" height="3" width="150"></div>
+           <div class="noNav" style="color: #666666; padding: 0;">
+              Use of JCP site is subject to the
+              <a href="/en/home/terms" style="display:inline;padding: 0">JCP Terms of Use</a> and the
+              <a href="http://www.oracle.com/us/legal/privacy/index.html" style="display:inline;padding: 0" href="">Oracle Privacy Policy</a>
+          </div>
+
+            
+
+            <div style="clear:both"><img src="/images/global/spacer.gif" width="1" height="25" alt=""></div>
+
+            <!--begin JCP info -->
+            <img src="/images/hd_jcp-info.gif" alt="JCP Info" height="18" width="150">
+
+            <li><a href="/en/procedures/overview" class="p7PMtrg">About JCP</a>
+                <ul>
+                    <li><a href="/en/procedures/overview">Program Overview</a></li>
+                    <li><a href="/en/procedures/jcp2">JCP Process Document</a></li>
+                    <li><a href="/en/whatsnew/calendar">Calendar</a></li>
+                    <li><a href="/en/participation/members">JCP Members</a></li>
+                    <li><a href="/en/participation/committee">Executive Committee</a></li>
+                    <li><a href="/en/whatsnew/elections">Elections</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/en/participation/overview" class="p7PMtrg">Get Involved</a>
+		<ul>
+                    <li><a href="/en/participation/overview">Overview</a></li>
+                    <li><a href="/en/participation/membership">Becoming a JCP Member</a></li>
+		</ul>
+            </li>
+
+            <li><a href="/en/resources/contents" class="p7PMtrg">Community Resources</a>
+                <ul>
+                    <li><a href="/en/resources/contents">Overview</a></li>
+                    <li><a href="/en/resources/tutorials">Tutorials</a></li>
+                    <li><a href="/en/resources/multimedia">JCP Podcasts</a></li>
+                    <li><a href="/en/resources/guide">Spec Lead Guide</a></li>
+                    <li><a href="/en/resources/tdk">TCK Tool & Info</a></li>
+                    <li><a href="/en/resources/license_reference">License Reference</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/en/press/pmo" class="p7PMtrg">Community News</a>
+                <ul>
+                    <li><a href="/en/press/pmo">News</a></li>
+                    <li><a href="/en/press/news/awards/awards_main">Programs &amp; Awards</a></li>
+                    <li><a href="/en/press/releases">Press Releases</a></li>
+                    <li><a href="/en/press/success">Success Stories</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/en/introduction/faq">FAQ</a></li>
+
+            <li><a href="/en/resources/contacts">Contact Us</a></li>
+
+            <div style="clear: both;"><img src="/images/spacer.gif" alt="" height="25" width="1"></div>
+
+            <!--[if lte IE 6]><style>#p7PMnav a{height:1em;}#p7PMnav li{height:1em;float:left;clear:both;width:100%}</style><![endif]-->
+            <!--[if IE 6]><style>#p7PMnav li{clear:none;}</style><![endif]-->
+            <!--[if IE 7]><style>#p7PMnav a{zoom:100%;}#p7PMnav li{float:left;clear:both;width:100%;}</style><![endif]-->
+        </ul>
+
+        
+
+        <!--begin ad space -->
+        <div class="ads">
+            <a href="http://java.com/java/download/index.jsp?cid=jdp78399" target="_blank"><img style="display: ;" src="/images/ad_banner2.gif" alt="Ad Banner" border="1" height="70" width="150"></a>
+        </div>
+        <!--end ad space -->
+
+<!-- ** Menu End ** //-->
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;<br>
+
+    
+
+                    &nbsp;<br>
+                    <img src="/images/common/trans.gif" alt="" width="1" height="150"><br>
+
+              
+
+
+
+                </td>
+                <!-- ** END: Navigation Column ** //-->
+
+                <!-- ** BEGIN: Gutter Column ** //-->
+		<td width="10" nowrap><img src="/images/common/trans.gif" alt="" width="10" height="1"></td>
+                <!-- ** END: Gutter Column ** //-->
+
+                <!-- ** BEGIN: Content Column ** //-->
+                <td width="100%" valign="top">
+
+    
+<script type="text/javascript">
+
+String.prototype.trim = function() {
+        return this.replace(/^\s+|\s+$/g,"");
+}
+String.prototype.ltrim = function() {
+        return this.replace(/^\s+/,"");
+}
+String.prototype.rtrim = function() {
+        return this.replace(/\s+$/,"");
+}
+
+function validate_search() {
+	if (document.search.id.value == "Search JSRs" || document.search.id.value.trim().length == 0) {
+		alert("Search terms must be entered first");
+		return false;
+	}
+	return true;
+}
+
+function validate_findjsr() {
+	if (document.findjsr.id.value == "Search JSRs" || document.findjsr.id.value.trim().length == 0) {
+		alert("Search terms must be entered first");
+		return false;
+	}
+	return true;
+}
+
+function nullify_if_equal(field, str) {
+	// alert("val=" + field.value);
+	if (field.value == str) {
+		field.value = "";
+	}
+}
+
+</script>
+<!-- ** END: header.jsp ** //-->
+
+
+
+
+
+        <!--  BEGIN NAVIGATION TABS -->
+        <div id="p7TP1">
+                <div class="p7TP_tabs">
+                        <div id="p7tpb1_1" class="down"><a class="down">JSR</a></div>
+                        <div><a href="/en/egc/view?id=363">Community</a></div>
+                        <div><a href="/en/eg/eghome?id=363">Expert Group</a></div>
+			
+
+                <br class="p7TPclear" />
+                </div>
+
+                <div class="p7TPcontent">
+                        <div id="p7tpc1_1">
+
+			
+                                <a href="summary?id=363">Summary</a>
+			
+			
+                                &nbsp;|&nbsp;
+				<span>Proposal</span>
+			
+			
+                                &nbsp;|&nbsp;
+                                <a href="detail?id=363">Detail (Summary &amp; Proposal)</a>
+			
+		
+                        
+                                &nbsp;|&nbsp;
+                                <a href="nominations?id=363">Nominations</a>
+			
+		
+                        </div>
+
+                </div>
+                <!--[if lte IE 6]><style type="text/css">.p7TPpanel div,.p7TPpanel a{height:1%;}.p7TP_tabs a{white-space:nowrap;}</style><![endif]-->
+        </div>
+        <script type="text/javascript">
+                P7_initTP(1,0);
+        </script>
+        <!--  END NAVIGATION TABS -->
+
+
+<div class="anybar"><img src="/images/global/bar_green.gif" alt="" width="12" height="4"></div>
+
+<div class="header2">JSRs: Java Specification Requests</div>
+<div class="header1">JSR 363: Units of Measurement API</div>
+<div class="anybar"><img src="/images/global/bar_green.gif" alt="" width="12" height="4"></div>
+<br>
+
+
+
+
+<!-- ********************************************** -->
+<!--  JSRProposal Info                              -->
+<!-- ********************************************** -->
+<p>
+
+
+<a href="https://jcp.org/aboutJava/communityprocess/implementations/jsr363/index.html">List of compatible implementations for JSR 363</a>
+<P>
+
+
+<a name="updates"><font size="+2">Updates to the Original JSR</font></a><p>
+The following changes have been made to the <a href="#orig">original proposal</a>.<P>
+
+<B><u>2017.07.14</u></b>:<BR>
+All links to java.net have been updated/replaced.<P>
+
+<B><u>2016.02.16</u></b>:<BR>
+All references to "unitsofmeasurement.org" have been replaced with "unitsofmeasurement.github.io."
+<P>
+
+<B><u>2014.10.20</u></b>:
+
+<H4>2.17 Please provide a description of the business terms for the Specification, RI and TCK that will apply when this JSR is final.</H4>
+
+We will be using the <a href="http://jcp.org/aboutJava/communityprocess/speclead/final-license.txt">Standard Spec License</a> for the JSR specification, and a <a href="http://opensource.org/licenses/BSD-3-Clause">BSD 3-Clause License</a> for the RI and TCK.
+<P>
+
+<B><U>2014.06.10</U></b>:<BR>
+
+<H4>2.15 Please describe how the RI and TCK will de delivered, i.e. as part of a profile or platform edition, or stand-alone, or both. Include version information for the profile or platform in your answer.
+</H4>
+The RI will be implemented inside the open source project unitsofmeasurement. We target stand-alone releases.<P>
+
+The minimum Java version for ME will be CLDC 8, making it compatible with Java SE 7 (Embedded).
+
+<P><HR><P>
+
+<a name="orig"><font size="+2">Original Java Specification Request (JSR)</font></a><p>
+<FONT SIZE="-1">
+
+<!-- BEGIN-SUB TOPICS -->
+
+          <A HREF="#1"> Identification</A>  |
+          <A HREF="#2"> Request</A>  |
+          <A HREF="#3"> Contributions</A>  
+<BR>
+
+<!-- END-SUB TOPICS -->
+
+</FONT>
+<P>
+
+<!-- BEGIN TEMPLATE -->
+
+<!-- SECTION 1 -->
+
+<A NAME="1"></A>
+
+<P><FONT size=+2>Section 1. Identification</FONT>
+
+<P><b>Submitting Member:</b> Werner Keil</P>
+
+<P><b>E-Mail Address:</b> werner.keil<faketag>&#64;</faketag>gmail.com</P>
+
+<P><b>Telephone Number:</b> +43 676 484 1153</P>
+
+<P><b>Fax Number:</b> -</P>
+
+<BR>
+<P><b>Specification Leads:</b> Jean-Marie Dautelle, Werner Keil, Leonardo de Moura Rocha Lima (V2COM)</P>
+
+<P><b>E-Mail Addresses:</b> jean-marie.dautelle<faketag>&#64;</faketag>airbus.com, werner.keil<faketag>&#64;</faketag>gmail.com, llima<faketag>&#64;</faketag>v2com.mobi</P>
+
+<P><b>Telephone Numbers:</b> +33 6 45 45 40 63, +49 176 36954273, +55 11 3031 3322</P>
+
+<P><b>Fax Numbers:</b> +33 1 69 75 58 85, -, +55 11 3031 3322</P>
+
+<BR>
+
+<P><B>Initial Expert Group Membership:</B>
+</P>
+
+<P><ul>
+	<li>
+		<span>Jean-Marie Dautelle</span>
+	</li>
+	<li>
+		<span>Martin Desruisseaux</span>
+	</li>
+	<li>
+		<span>Werner Keil </span>
+	</li>
+	<li>
+		<span>Karen Legrand </span>
+	</li>
+	<li>
+		<span>Daniel Leuck </span>
+	</li>
+	<li>
+		<span>Chris Senior</span>
+	</li>
+	<li>
+		<span>Mohamed Taman</span>
+	</li>
+	<li>
+		<span>V2COM</span>
+	</li>
+</ul>
+</P>
+
+<P><B>Supporting this JSR:</B>
+
+</P>
+
+<P>
+Alcatel Lucent <BR>
+Austrian Standards Institute <BR>
+British Telecom<BR>
+Bundesamt f&uuml;r Eich- und Vermessungswesen (BEV)<BR>
+CERN<BR>
+ENEA (Italian National Agency for new technologies, Energy and Environment)<BR>
+Fraunhofer-Gesellschaft<BR>
+Gemalto M2M<BR>
+Jeff Genender<BR>
+Geomatys<BR>
+IEM<BR>
+ISO/TC 12<BR>
+JUG Chennai<BR>
+Guillaume Laforge<BR>
+John Paul Morrison<BR>
+MoroccoJUG<BR>
+O2 Telefonica<BR>
+The Open Geospatial Consortium (OGC)<BR>
+Opower<BR>
+Samsung<BR>
+SFR Group<BR>
+SouJava<BR>
+Thales Group<BR>
+Verticon, Inc.<BR>
+
+</p>
+
+<BR><BR>
+
+<!-- SECTION 2 -->
+
+<A NAME="2"></A>
+
+<P>
+<FONT SIZE="+2">Section 2: Request</FONT><P>
+</P>
+
+<H4>2.1 Please describe the proposed Specification:</H4>
+
+<P>
+<span>This JSR specifies one or more Java packages for the programmatic handling of physical quantities and their expression as numbers of units. The specification includes:</span>
+</p>
+<ul>
+	<li>
+		<span>Interfaces and abstract classes for unit of measurement operations:</span>
+		<ul>
+			<li>
+				<span>Checking of unit compatibility</span>
+			</li>
+			<li>
+				<span>Expression of a quantity in various units</span>
+			</li>
+			<li>
+				<span>Arithmetic operations on units and quantities</span>
+			</li>
+		</ul>
+	</li>
+	<li>
+		<span>Concrete classes implementing the standard types of units (such as base, supplementary, and derived) and unit conversions.</span>
+	</li>
+	<li>
+		<span>Classes for parsing unit specifications in string form and for formatting string representations of quantities</span>
+	</li>
+	<li>
+		<span>&nbsp;A set of predefined units based on at least one of</span>
+		<ul>
+			<li>
+				<span>ISO 80000</span>
+			</li>
+			<li>
+				<span>UN/CEFACT</span>
+			</li>
+			<li>
+				<span>Unified Code for Units of Measure (UCUM)</span>
+			</li>
+			<li>
+				<span>Unicode CLDR 24 and above</span>
+			</li>
+		</ul>
+	</li>
+</ul>
+<p>
+	<span>The API is targeted to the resource-constrained devices such as smart meters, medical devices, or similar and needs to be memory-efficient to run on. On the other hand it must perform to cope with incoming sensor data.</span>
+ </P>
+
+<H4>2.2 What is the target Java platform? (i.e., desktop, server, personal, embedded, card, etc.)</H4>
+
+<P>Embedded (ME, SE)</P>
+
+<H4>2.3 The Executive Committees would like to ensure JSR submitters think about how their proposed technology relates to all of the Java platform editions. Please provide details here for which platform editions are being targeted by this JSR, and how this JSR has considered the relationship with the other platform editions.</H4>
+
+<P>	<span>The packages are primarily targeted at Java ME Embedded (CLDC, MEEP). This JSR should have few or no dependencies outside the packages and types defined by CLDC 8. Where applicable a RI may have dependencies in a different platform, if such specialized RI for Java SE Embedded was desired. The core API must be portable across all supported platforms and profiles.</span>
+</P>
+
+<H4>2.4 What need of the Java community will be addressed by the proposed specification?</H4>
+
+<P>
+<span>Java developers who work with physical quantities (such as developers in the scientific, engineering, medical, and manufacturing domains) need to be able to handle measurements of these quantities in their programs. Inadequate models of physical measurements can lead to significant programmatic errors. In particular, the practice of modeling a measure as a simple number with no regard to the units it represents creates fragile code. Another developer or another part of the code may misinterpret the number as representing a different unit of measurement. For example, it may be unclear whether a person's mass is expressed in pounds, kilograms, or stones.</span>
+</p>
+<p>
+	<span>Developers must either use inadequate models of measurements, or must create their own solutions. It is less than ideal for every developer to solve this problem. A common solution can be safer and can save development time for domain-specific work. This JSR proposes to establish safe and useful methods for modeling physical quantities.</span>
+</p>
+<p>
+	<span>Several popular programming languages like C++, F# (both natively) or C# (through extra libraries) provide this functionality now. We'd like to leverage Java especially in the IoT and Embedded sector with similar Units of Measurement support.</span>
+</P>
+
+<H4>2.5 Why isn't this need met by existing specifications?</H4>
+
+<P>
+	<span>There are no specifications or common standards for handling units in Java.</span>
+</p>
+<p>
+	<span>The closest could be ICU4J version 52.1 and above, but the footprint of the entire library is significant (10MB), making it too big for even many Java SE Embedded use cases. Its creators aim at i18n and formatting, parsing, but deliberately left out other aspects like type-consistency or arithmetic operations as they are not in scope of Unicode. The Java Mobile Sensor API (JSR 256) had a similar rudimentary notion of units for look-up and parsing, but lacked e.g. a Quantity or Measure type ICU4J defines. JSR 256 is no longer supported by Java ME Embedded in CLDC 8 / MEEP 8, which is where this JSR comes into play.</span>
+</P>
+
+<H4>2.6 Please give a short description of the underlying technology or technologies:</H4>
+
+<P>
+	<span>Developers frequently encounter the need to model units of measure, because objects in the real world are subject to these measures. When working with units, developers need to understand the mathematics of units, how to convert between systems, and how to format and parse string representations of units. Most of this work can be consolidated into one or two Java packages, which is a primary aim of this JSR. This package will help developers create safe, correct software to deal with common problem of modeling units.</span>
+</p>
+<p>
+	<span>Units give us a way to measure the physical world. There are many different units, partly because the world has different types of properties, such as length and mass, which are not interchangeable in normal physics. This type of property is sometimes called a "quantity" or a "dimension". The word "dimension" fits because of the orthogonality of these properties. For example "mass" and "length" cannot be exchanged. Further, when we multiply physical measures the dimensions add up as exponents. For example, length times length becomes length&sup2;.</span>
+</p>
+<p>
+	<span>A large body of work exists that specifies the dimensions, meanings, and names of various physical quantities. In particular, the 11th General Conference on Weights and Measures in 1960 recommended a practical system of units of measurement, and gave it the name Systeme International d'Units (SI). SI defines units for the base dimensions of length, mass, time, electric current, thermodynamic temperature, amount of substance, and luminous intensity. SI also recognizes names and meaning of derived dimensions, such as area, volume, and force. For some (but not all) of these derived dimensions SI defines units, such as "liter" for a unit of volume and "newton" for a unit of force. SI does not have a special name for area, although other systems of measurement do (as in "acre").</span>
+</p>
+<p>
+	<span>Despite the rising prominence of the metric system (the SI system), many developers have to work with non-SI units, such as feet, miles, acres, and gallons. A measurement can be expressed as a number of any unit, so long as the unit has the same dimension as the measured quantity. For example, any measure of volume can be expressed as a number of liters or gallons, because liters and gallons are units of volume, and all volumes have the dimension of length3. Therefore, a measure expressed as a number of liters can be &#39;converted&#39; to a number of gallons. Converting measures from one system of units to another is a common problem, but is subject to mathematics that can help to eliminate errors.</span>
+
+</P>
+
+<H4>2.7 Is there a proposed package name for the API Specification? (i.e., <TT>javapi.something</TT>, <TT>org.something</TT>, etc.)</H4>
+
+<P>javax.measure</P>
+
+<H4>2.8 Does the proposed specification have any dependencies on specific operating systems, CPUs, or I/O devices that you know of?</H4>
+
+<P>No</P>
+
+<H4>2.9 Are there any security issues that cannot be addressed by the current security model?</H4>
+
+<P>No</P>
+
+<H4>2.10 Are there any internationalization or localization issues?</H4>
+
+<P>
+	<span>There are some internationalization issues that this JSR will address:</span>
+</p>
+<ul>
+	<li>
+		<span>Which systems of units should be supported:</span>
+		<ul>
+			<li>
+				<span>The RI should support units in the SI system</span>
+			</li>
+			<li>
+				<span>The British Imperial System and U.S. Customary Units may also be supported, at least by optional modules (similar to JSR 361 / MEEP parts of API can be optional to suit smaller devices)</span>
+			</li>
+		</ul>
+	</li>
+	<li>
+		<span>Some units have locale-dependent spellings, such as &#39;liter&#39; and &#39;litre&#39;.</span>
+		<ul>
+			<li>
+				<span>Where it won&#39;t exceed available footprint the JSR will use Unicode CLDR like selected parts of the JDK or other JSRs already do. CLDR 24 or above support all relevant SI and other units including spelling and pluralization in at least 70 different languages. What suits the needs of the JSR we intend to leverage.</span>
+			</li>
+		</ul>
+	</li>
+</ul>
+</P>
+
+<H4>2.11 Are there any existing specifications that might be rendered obsolete, deprecated, or in need of revision as a result of this work?</H4>
+
+<P>
+Not directly. To some extent this JSR is a replacement for JSR 275, which was rejected for various reasons, many process-related, see<a href="https://jcp.org/en/jsr/detail?id=275">&nbsp;https://jcp.org/en/jsr/detail?id=275</a></span><span>&nbsp;with a large number of even those voting against it recommending a successor to be filed. As Java ME Embedded (CLDC 8/MEEP) won't use JSR 256 it aims at some of its goals, too, but in a "Sensor Web" way rather than for a single device or JVM.</P>
+
+<H4>2.12 Please describe the anticipated schedule for the development of this
+specification.</H4>
+
+<P>
+	<span>Q1 2014: finalize expert group</span>
+</p>
+<p>
+	<span>Q2 2014: Early Draft of spec and API</span>
+</p>
+<p>
+	<span>Q3 2014: Public Review</span>
+</p>
+<p>
+	<span>Q1 2015: Final Release</span>
+
+</P>
+
+<H4>2.13 Please describe the anticipated working model for the Expert Group working on developing this
+specification.</H4>
+
+<P>The primary means of communication will be via mailing lists units-dev&#64;googlegroups.com for EG Members and similar active contributors and units-users&#64;googlegroups.com for observers and other users of the API) and conference calls/hangouts, or meetings on IRC channels if deemed appropriate.
+Face-to-face meetings will be scheduled if needed and accessible by enough members.</P>
+
+<H4>2.14 Provide detailed answers to the transparency checklist, making sure to
+include URLs as appropriate:</H4>
+
+<P>
+	<span>The Units Of Measurement interfaces and their implementation in the JScience and UOMo projects are developed in an open source process. We intend to use the existing infrastructures:</span>
+</p>
+<ul>
+	<li>
+		<span><a href="https://code.google.com/p/unitsofmeasure/">https://code.google.com/p/unitsofmeasure/</a> as an inspiration for the API.</span>
+	</li>
+	<li>
+		<span>CI server and Maven repository provided by the GeoAPI project.</span>
+	</li>
+	<li>
+		<span><strike>Wiki on Java.net: </span><span>http://unitsofmeasurement.java.net</strike><BR>
+Wiki on GitHub: <a href="https://github.com/unitsofmeasurement/unit-api/wiki">https://github.com/unitsofmeasurement/unit-api/wiki</a></span>
+	</li>
+</ul>
+<p>
+	<span>These projects are already publicly visible and accessible. In addition, the following communications already exist or will be established:</span>
+</p>
+<ul>
+	<li>
+		<span>The Expert Group business is regularly reported on publicly readable aliases </span><span><a href="mailto:units-dev&#64;googlegroups.com">units-dev&#64;googlegroups.com</a></span><span>, </span><span><a href="mailto:units-users&#64;googlegroups.com">units-users&#64;googlegroups.com</a></span><span>.</span>
+	</li>
+	<li>
+		<span>The schedule for the JSR is publicly available and updated regularly.</span>
+	</li>
+	<li>
+		<span>An issue-tracker can be shared with the Unit of Measurement project on Google Code: </span><span><a href="https://code.google.com/p/unitsofmeasure/issues/list">https://code.google.com/p/unitsofmeasure/issues/list</a></span><span>. Where better suited we may use GitHub (</span><span><a href="https://github.com/unitsofmeasurement">https://github.com/unitsofmeasurement</a></span><span>) or Java.net (JIRA) instead.</span>
+	</li>
+	<li>
+		<span>The unitsofmeasurement project has a track record in using open-source processes for almost half a decade.</span>
+	</li>
+	<li>
+		<span>The spec leaders demonstrated responsiveness to posts on the discussion board in JSR-275, which had the most active discussion board on </span><span><a href="http://jcp.org/">jcp.org</a></span><span>&nbsp;so far.</span>
+	</li>
+	<li>
+		<span>Werner Keil is a respected speaker at numerous conferences and JCP EC Member since 2008. He joined JSR-275 as EG Member and Co Spec Lead in 2005 and has spoken about that JSR and subsequent projects like Unit-API or Eclipse UOMo ever since. Jean-Marie Dautelle has been involved in Java and the JCP since JSR-1 (Real Time) and gained reputation e.g. as the only Individual EC Member to ever host an EC F2F (the "Boston Barn Meeting") Leonardo de Moura Rocha Lima spoke at JavaOne 2013 about related topics like Java ME and Smart Grid.</span>
+	</li>
+</ul>
+<p>
+	<span></span>
+</p>
+<p>
+	<span>The terms of use required by the collaboration tools are the Google code ones (</span><span><a href="https://code.google.com/intl/de/projecthosting/terms.html">https://code.google.com/intl/de/projecthosting/terms.html</a></span><span>) and GitHub Terms of Use (</span><span><a href="https://help.github.com/articles/github-terms-of-service">https://help.github.com/articles/github-terms-of-service</a></span><span>)</span>
+</P>
+
+<H4>2.15 Please describe how the RI and TCK will de delivered, i.e. as part of a profile or platform edition, or stand-alone, or both. Include version information for the profile or platform in your answer.
+</H4>
+
+<P>	<span>The RI will be implemented inside the open source project &#39;unitsofmeasurement.github.io&#39;. We target stand-alone releases.</span>
+</p>
+<p>
+	<span><strike>The minimum Java version for ME will be CLDC 8, for SE the minimum version is Java SE (Embedded) 8.</span></strike><br>
+The minimum Java version for ME will be CLDC 8, making it compatible with Java SE 7 (Embedded).<P>
+(<font color="red">Note</font> that this information <a href="#updates">has been updated</a> from this original proposal on 2014.06.10)<P>
+
+</P>
+
+<H4>2.16 Please state the rationale if previous versions are available stand-alone and you are now proposing in 2.13 to only deliver RI and TCK as part of a profile or platform edition (See sections 1.1.5 and 1.1.6 of the JCP 2 document).
+</H4>
+
+<P>There is no previous version.</P>
+
+<H4>2.17 Please provide a description of the business terms for the Specification, RI and TCK that will apply when this JSR is final.</H4>
+
+<P>
+	<strike><span>We will be using the Standard Spec License for the JSR specification:</span><span><a href="https://jcp.org/aboutJava/communityprocess/speclead/final-license.txt">&nbsp;</a></span><span><a href="https://jcp.org/aboutJava/communityprocess/speclead/final-license.txt">http://jcp.org/aboutJava/communityprocess/speclead/final-license.txt</a></span><span>, and the Apache 2.0 License for the RI and TCK:</span><span><a href="http://www.apache.org/licenses/LICENSE-2.0.html"<
+/a>>&nbsp;http://www.apache.org/licenses/LICENSE-2.0.html</a></span></strike><P>
+
+<font color="red">Note</font> that this section <a href="#updates">has been updated</a> from this original proposal.
+<P>
+We will be using the <a href="http://jcp.org/aboutJava/communityprocess/speclead/final-license.txt">Standard Spec License</a> for the JSR specification, and a <a href="http://opensource.org/licenses/BSD-3-Clause">BSD 3-Clause License</a> for the RI and TCK.
+</P>
+
+<H4>2.18 Please describe the communications channel you have established for the public to observe Expert Group deliberations, provide feedback, and view archives of all Expert Group communications.</H4>
+
+<P>
+The communication channels will be forum/mailing lists units-dev&#64;googlegroups.com for EG Members and similar active contributors and units-users&#64;googlegroups.com for users/observers. As well as Twitter via &#64;UnitAPI.
+
+
+
+
+</P>
+
+<H4>2.19 What is the URL of the Issue Tracker that the public can read, and how does the public log issues in the Issue Tracker?</H4>
+
+<P>
+An issue-tracker can be shared with the Unit of Measurement project on Google Code: <a href="https://code.google.com/p/unitsofmeasure/issues/list">https://code.google.com/p/unitsofmeasure/issues/list</a>.
+Where better suited we may use GitHub (<a href="https://github.com/unitsofmeasurement">https://github.com/unitsofmeasurement</a>) or Java.net (JIRA)
+The only requirement to log issues is a working user account.
+</P>
+
+<H4>2.20 Please provide the location of the publicly accessible document archive you have created for the Expert Group.</H4>
+
+<P>
+The 'unitsofmeasurement.github.io' project uses the publicly accessible archive at Google Code:
+<a href="https://code.google.com/p/unitsofmeasure/downloads/list">https://code.google.com/p/unitsofmeasure/downloads/list</a>
+In addition to that <strike>java.net https://java.net/projects/unitsofmeasurement/downloads</strike> Bintray <a href="https://bintray.com/unitsofmeasurement/downloads">https://bintray.com/unitsofmeasurement/downloads</a> and hosting provided by the GeoAPI project may offer additional storage where required.
+</P>
+
+
+<BR><BR>
+<BR><BR>
+
+<!-- SECTION 3 -->
+
+<A NAME="3"></A>
+
+<P>
+<FONT SIZE="+2">Section 3: Contributions</FONT><P>
+</P>
+
+<H4>3.1 Please list any existing documents, specifications, or implementations that describe the technology. Please include links to the documents if they are publicly available.</H4>
+
+<P>
+	<span><a href="http://www.unitsofmeasurement.org/">Units of Measurement API</a></span>
+</p>
+<p>
+	<span><a href="http://www.eclipse.org/uomo">Eclipse UOMo</a></span>
+</p>
+<p>
+	<span><a href="http://www.jscience.org/">JScience</a></span>
+</p>
+<p>
+	<span><a href="http://www.geoapi.org/">GeoAPI</a></span>
+</p>
+<p>
+	<span><a href="http://site.icu-project.org/">ICU &ndash; International Components for Unicode</a></span>
+</p>
+
+<h5><a name="h.abp057ugd7xm"></a><span>Underlying standards and specifications</span></h5>
+<p>
+	<span><a href="http://en.wikipedia.org/wiki/ISO/IEC_80000">ISO/IEC 80000</a></span>
+</p>
+<p>
+	<span><a href="http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes">UN/CEFACT Common Codes</a></span>
+</p>
+<p>
+	<span><a href="http://www.opengeospatial.org/domain/swe">OGC Sensor Web Enablement</a></span>
+</p>
+<p>
+	<span><a href="http://martinfowler.com/eaaDev/quantity.html">Martin Fowler: Quantity</a></span>
+</p>
+<p>
+	<span><a href="http://cldr.unicode.org/">Unicode CLDR</a></span>
+</p>
+<p>
+	<span><a href="http://unitsofmeasure.org">Unified Code for Units of Measure</a></span>
+</p>
+<p>
+	<span><a href="http://hl7.org/implement/standards/FHIR-Develop/datatypes.html#quantity">HL7 FHIR: Quantity</a></span>
+
+</P>
+
+<H4>3.2 Explanation of how these items might be used as a starting point for the work.</H4>
+
+<P>All authors and active contributors to above frameworks are involved. Those supporting the JSR are interested in contributing their solutions, already use one or more of the APIs mentioned or earlier JSRs like 275.</P>
+
+<BR><BR>
+</p>
+
+
+
+
+
+
+
+
+<!-- ** BEGIN: footer.jsp ** //-->
+
+
+
+
+
+
+
+
+</td>
+</tr>
+</table>
+
+<!-- ** END: Content Table ** //-->
+
+<!-- ** BEGIN: Footer Table ** //-->
+
+<div id="footer" style="clear: both;">
+    <div class="footleft">
+        <a href="/en/resources/contacts">Contact Us</a>
+    </div>
+	
+    <div class="botbar"><img src="/images/spacer.gif" alt="" height="23" width="1"></div>
+
+    <div class="footleft2">
+         &copy; 2019, Oracle Corporation and/or its affiliates. 
+        <a href="/en/home/terms">Terms of Use</a>. <a href="http://www.oracle.com/us/legal/privacy/index.html">Privacy Policy</a>. <a href="http://www.oracle.com/us/legal/third-party-trademarks/third-party-trademarks-078568.html">Trademarks</a>
+    </div>
+
+    <div class="footright">
+        <img src="/images/common/logo_oracle_footer.gif" alt="Oracle Corporation" height="22" width="91">
+    </div>
+
+    <div style="clear: both;"><img src="/images/spacer.gif" alt="" height="30" width="1"></div>
+</div>
+
+<!-- ** END: Footer Table ** //-->
+
+
+
+<!-- ** Menu Start ** //-->
+
+
+
+</body>
+</html>
+<!-- ** END: footer.jsp ** //-->
+
+

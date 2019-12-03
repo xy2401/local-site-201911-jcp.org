@@ -1,0 +1,1787 @@
+
+<!-- ** BEGIN: header.jsp ** //-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3c.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+<head>
+    
+
+   
+    <link href="/includes/css/menu.css" rel="stylesheet" type="text/css"></link>
+    <link href="/includes/css/style.css" rel="stylesheet" type="text/css"></link>
+    <!--[if lt IE 6]><link href="/includes/css/style5.css" rel="stylesheet" type="text/css" ></link><![endif]-->
+    <!--[if gte IE 5]><link href="/includes/css/style6.css" rel="stylesheet" type="text/css" ></link><![endif]-->
+    <link href="/includes/css/tabs.css"  rel="stylesheet" type="text/css"></link>
+
+    <script type="text/javascript" src="/includes/scripts/tabs.js"></script>
+    <script type="text/javascript" src="/includes/scripts/menu.js"></script>
+   
+
+    
+
+    
+        <title>The Java Community Process(SM) Program - communityprocess - maintenance</title>
+    
+
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+
+
+<body onload="P7_initPM(0,1,0,0,-1)">
+
+    <a name="top"></a>
+
+    <div id="header">
+	<div id="logo">
+		<a href="/en/home/index"><img src="/images/spacer.gif" alt="Java Community Process" height="81" width="151"></a>
+	</div>
+	<div id="tools">
+		<div class="search">
+			<form name="search" action="/en/jsr/summary" method="get" onsubmit="return validate_search()">
+				<input name="id" value="Search JSRs" size="16" class="form" onfocus="nullify_if_equal(this, 'Search JSRs')" type="text">
+				<a href="javascript:document.search.submit()" onclick="return validate_search()"><img src="/images/button_go.gif" width="21" height="16" border="0" alt="Submit this Search" name="sub_search"></a>
+			</form>
+		</div>
+		<div class="tools">
+			<a href="/en/press/pressroom">Press Room</a> &nbsp;|&nbsp;
+			<a href="http://java.com/java/download/index.jsp?cid=jdp78399">Get Java Here</a> &nbsp;|&nbsp;
+			<!-- <a href="javascript:void(0)">Print Format</a> &nbsp;|&nbsp;&nbsp; -->
+		</div>
+
+	</div>
+	<div style="clear: right;"></div>
+
+        
+
+	<div class="topbar"><img src="/images/spacer.gif" alt="" height="3" width="154"></div>
+	<div id="update"> </div>
+    </div>
+
+
+    
+
+        <!-- ** BEGIN: Content Table ** //-->
+
+        <table width="100%" border="0" cellpadding="0" cellspacing="0">
+
+            <tr>
+
+                <!-- ** BEGIN: Navigation Column ** //-->
+                <td width="150" id="leftcontent" valign="top">
+                    <!-- Navigation Placeholder //-->
+
+                    
+
+                    <div class="bar"><img src="/images/hr_dots1.gif" alt="" height="3" width="150"></div>
+
+        <!-- begin find JSRs form -->
+        <!-- IMPORTANT! do not convert this form to Struts < html : form > tag.  javascript change of form.action property fails. -->
+        <img src="/images/hd_find-jsrs.gif" alt="Find JSRs" height="18" width="150">
+        <form name="findjsr" action="/en/jsr/summary" method="get" class="pt5" onsubmit="return validate_findjsr()">
+            <input name="id" size="18" class="form" value="Search JSRs" onfocus="nullify_if_equal(this, 'Search JSRs')" type="text">
+	    <a href="javascript:document.findjsr.submit()" onclick="return validate_findjsr()"><img src="/images/button_go.gif" width="21" height="16" border="0" alt="Submit this Search" name="sub_search"></a>
+        </form><br><br>
+
+        <!-- ** Menu Start ** //-->
+
+        <ul id="p7PMnav">
+            <li><a href="/en/jsr/platform">JSRs by Platform</a></li>
+            <li><a href="/en/jsr/tech">JSRs by Technology</a></li>
+            <li><a href="/en/jsr/stage">JSRs by Stage</a></li>
+            <li><a href="/en/jsr/ec">JSRs by Committee</a></li>
+            <li><a href="/en/jsr/all">List of All JSRs</a></li>
+
+            <!--end find JSRs form -->
+            <div style="clear: both;"><img src="/images/spacer.gif" alt="" height="25" width="1"></div>
+
+            <!--begin my JCP -->
+            <img src="/images/hd_my-jcp.gif" alt="My JCP" height="18" width="150">
+            
+
+          <form name="login" method="get" action="/en/user/login" >
+            <input name="Sign-in" type="submit" title="Sign-in" value="Sign-in" />
+          </form>
+
+            <div style="clear:both"><img src="/images/global/spacer.gif" width="1" height="3" alt=""></div>
+            <div class="noNav">
+                <a href="/en/user/register">Register for Site</a>
+            </div>
+
+             <div class="bar"><img src="/images/hr_dots1.gif" alt="" height="3" width="150"></div>
+           <div class="noNav" style="color: #666666; padding: 0;">
+              Use of JCP site is subject to the
+              <a href="/en/home/terms" style="display:inline;padding: 0">JCP Terms of Use</a> and the
+              <a href="http://www.oracle.com/us/legal/privacy/index.html" style="display:inline;padding: 0" href="">Oracle Privacy Policy</a>
+          </div>
+
+            
+
+            <div style="clear:both"><img src="/images/global/spacer.gif" width="1" height="25" alt=""></div>
+
+            <!--begin JCP info -->
+            <img src="/images/hd_jcp-info.gif" alt="JCP Info" height="18" width="150">
+
+            <li><a href="/en/procedures/overview" class="p7PMtrg">About JCP</a>
+                <ul>
+                    <li><a href="/en/procedures/overview">Program Overview</a></li>
+                    <li><a href="/en/procedures/jcp2">JCP Process Document</a></li>
+                    <li><a href="/en/whatsnew/calendar">Calendar</a></li>
+                    <li><a href="/en/participation/members">JCP Members</a></li>
+                    <li><a href="/en/participation/committee">Executive Committee</a></li>
+                    <li><a href="/en/whatsnew/elections">Elections</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/en/participation/overview" class="p7PMtrg">Get Involved</a>
+		<ul>
+                    <li><a href="/en/participation/overview">Overview</a></li>
+                    <li><a href="/en/participation/membership">Becoming a JCP Member</a></li>
+		</ul>
+            </li>
+
+            <li><a href="/en/resources/contents" class="p7PMtrg">Community Resources</a>
+                <ul>
+                    <li><a href="/en/resources/contents">Overview</a></li>
+                    <li><a href="/en/resources/tutorials">Tutorials</a></li>
+                    <li><a href="/en/resources/multimedia">JCP Podcasts</a></li>
+                    <li><a href="/en/resources/guide">Spec Lead Guide</a></li>
+                    <li><a href="/en/resources/tdk">TCK Tool & Info</a></li>
+                    <li><a href="/en/resources/license_reference">License Reference</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/en/press/pmo" class="p7PMtrg">Community News</a>
+                <ul>
+                    <li><a href="/en/press/pmo">News</a></li>
+                    <li><a href="/en/press/news/awards/awards_main">Programs &amp; Awards</a></li>
+                    <li><a href="/en/press/releases">Press Releases</a></li>
+                    <li><a href="/en/press/success">Success Stories</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/en/introduction/faq">FAQ</a></li>
+
+            <li><a href="/en/resources/contacts">Contact Us</a></li>
+
+            <div style="clear: both;"><img src="/images/spacer.gif" alt="" height="25" width="1"></div>
+
+            <!--[if lte IE 6]><style>#p7PMnav a{height:1em;}#p7PMnav li{height:1em;float:left;clear:both;width:100%}</style><![endif]-->
+            <!--[if IE 6]><style>#p7PMnav li{clear:none;}</style><![endif]-->
+            <!--[if IE 7]><style>#p7PMnav a{zoom:100%;}#p7PMnav li{float:left;clear:both;width:100%;}</style><![endif]-->
+        </ul>
+
+        
+
+        <!--begin ad space -->
+        <div class="ads">
+            <a href="http://java.com/java/download/index.jsp?cid=jdp78399" target="_blank"><img style="display: ;" src="/images/ad_banner2.gif" alt="Ad Banner" border="1" height="70" width="150"></a>
+        </div>
+        <!--end ad space -->
+
+<!-- ** Menu End ** //-->
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;<br>
+
+    
+
+                    &nbsp;<br>
+                    <img src="/images/common/trans.gif" alt="" width="1" height="150"><br>
+
+              
+
+
+
+                </td>
+                <!-- ** END: Navigation Column ** //-->
+
+                <!-- ** BEGIN: Gutter Column ** //-->
+		<td width="10" nowrap><img src="/images/common/trans.gif" alt="" width="10" height="1"></td>
+                <!-- ** END: Gutter Column ** //-->
+
+                <!-- ** BEGIN: Content Column ** //-->
+                <td width="100%" valign="top">
+
+    
+<script type="text/javascript">
+
+String.prototype.trim = function() {
+        return this.replace(/^\s+|\s+$/g,"");
+}
+String.prototype.ltrim = function() {
+        return this.replace(/^\s+/,"");
+}
+String.prototype.rtrim = function() {
+        return this.replace(/\s+$/,"");
+}
+
+function validate_search() {
+	if (document.search.id.value == "Search JSRs" || document.search.id.value.trim().length == 0) {
+		alert("Search terms must be entered first");
+		return false;
+	}
+	return true;
+}
+
+function validate_findjsr() {
+	if (document.findjsr.id.value == "Search JSRs" || document.findjsr.id.value.trim().length == 0) {
+		alert("Search terms must be entered first");
+		return false;
+	}
+	return true;
+}
+
+function nullify_if_equal(field, str) {
+	// alert("val=" + field.value);
+	if (field.value == str) {
+		field.value = "";
+	}
+}
+
+</script>
+<!-- ** END: header.jsp ** //-->
+
+
+
+
+
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=us-ascii">
+<title>JSR 82 maintenance release</title>
+<style type="text/css">
+    body { font: 10pt sans-serif; }
+    a:link { text-decoration: none; }
+    a:visited { text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    dt { margin-top: 0.5em; }
+    dd { margin-left: 4em; margin-bottom: 0.5em; }
+    li { margin-bottom: 0; }
+    h4 { font-size: 10pt; }
+    table { border: 1px solid; border-collapse: collapse; }
+    td { border: 1px solid; }
+    th { border: 1px solid; }
+    .indent { margin-left: 3em; }
+    .issue { background-color: #00CCCC; }
+</style>
+</head>
+<body>
+<h1>JSR 82 maintenance review 4</h1>
+
+<p>
+$Id: changes.html 407 2010-03-31 11:14:34Z tpr $
+</p>
+
+<p>
+JSR 82: Java APIs for Bluetooth Wireless Technology
+</p>
+
+<p>
+The maintenance lead is Tim Renouf of Aplix Corp, <code>tpr@aplixcorp.com</code>.
+</p>
+
+<p>
+This maintenance review proposes changes to update JSR 82 1.1.1 to JSR 82 1.2.
+</p>
+
+<h2>Comments received by maintenance lead</h2>
+
+<table>
+<tr>
+<th>comment
+<th>disposition
+
+<tr>
+<td>
+artf3091 : Introduce class-based permissions for CLDC 1.1.1 &amp;
+MIDP 3.0 integration
+<td>
+included
+
+<tr>
+<td>
+artf2540 : A.10.1 JAM Operation for Blacklist devices needs updating.
+The current specification states that the JAM does not accept connections for
+Push requests for devices on the blacklist. This is not consistent with the MIDP
+specification.  Instead, the specification needs to change to state that the
+JAM does not start the MIDlet if the device is on the blacklist.
+<td>
+included
+
+<tr>
+<td>
+<p>
+artf2665 : Section A.6.1 contains vague statements.
+This section contains the following statement:
+"Note that in case of dynamic registration the JAM MUST NOT start to listen to the registered connection immediately, 
+but rather after MIDlet termination (see Section A.9, where exact rules for the JAM behavior are defined)."
+</p>
+<p>
+It is unclear when the JAM should start listening for the MIDlet.  Based on section A.9, it appears as though there is 
+an assumption that the MIDlet that is registering the connection is the same as the push MIDlet.  This may not be true. 
+If these are not the same MIDlet, the JAM should start listening for the connection once it is registered.
+</p>
+<td>
+included
+
+<tr>
+<td>
+artf2941 : Different Exceptions are specified for an "authorize=XXX" statement in a client string.
+The JSR-82 specification specifies two different 
+exceptions (IllegalArgumentException and BluetoothConnectionException) if "authorize=XXX" is contained in a client 
+connection string.  This needs to be clarified in the specification.  In particular, the IllegalArgumentException should
+ be used since it has been tested for the last 2 years.
+<td>
+included
+
+<tr>
+<td>
+artf2550 : L2CapConnection.send() incorrectly listed as non-blocking,
+artf2546 : Remove Appendix B.
+<td>
+included
+
+<tr>
+<td>
+artf2940 : TransmitMTU needs to be clearly defined as positive.
+There exists tests to verify that the 
+transmitMTU in an L2CAP connection string is positive, but the JSR-82 specification does not clearly state this.  Add a 
+statement to this effect to the specification.
+<td>
+included
+
+<tr>
+<td>
+artf2909 : Typos in the Javadoc:
+There is a typo in the ClientSession.put() Javadoc.  It currently reads:
+"If the headers argument may be null."
+This should read:
+"The headers argument may be null."
+A second typo needs to be fixed:
+SessionNotifier second acceptAndOpen
+"Note : once an application invokes close() on a any SessionNotifier, L2CAP"
+"a" is extra, should be: "on any"
+<td>
+included
+
+<tr>
+<td>
+Make L2CAP SHOULD rather than MUST, to allow JSR 82 implementation on a
+platform does not expose L2CAP to applications.
+<td>
+included
+
+<tr>
+<td>
+Remove reserved ranges from L2CAP PSM values, to allow a Java application
+to use a Bluetooth protocol that is built on top of L2CAP using a PSM
+value in the "reserved" range.
+<td>
+included
+
+<tr>
+<td>
+Change restrictions on the incoming MTU: Allow the implementation to set
+the MTU to more than DEFAULT_MTU if the underlying stack allows it, to
+improve throughput.
+<td>
+included
+
+<tr>
+<td>
+artf2614 : Update JSR-82 specification to address new security
+capabilities in BT v2.1
+<td>
+deferred: Not enough evidence that any changes are needed or what the
+changes would be.
+
+<tr>
+<td>
+artf2722 :
+Modify the Operation.getResponseCode() description to add the word final. In
+other words, change the first sentence to:
+"Returns the final response code received from the server." 
+<td>
+rejected: The current wording seems clear enough
+
+</table>
+
+
+<h2>Changelog for maintenance review 4</h2>
+
+<p>
+These are the proposed changes from JSR 82 Java APIs for Bluetooth Wireless
+Technology version 1.1.1 to version 1.2.
+</p>
+
+<table>
+<tr>
+<th>#
+<th>change description
+<th>reason
+<th>spec version
+<th>status
+
+<tr>
+<td>artf3091
+<td>
+<p>
+Introduce classes
+javax.bluetooth.Btl2capProtocolPermission,
+javax.bluetooth.BtsppProtocolPermission,
+javax.obex.BtgoepProtocolPermission,
+javax.obex.IrdaobexProtocolPermission,
+javax.obex.TcpobexProtocolPermission,
+each extending GCFPermission, and each with a
+URI string but no actions list. The URI string has the same form as in the
+corresponding protocol, with wildcard matching specified in a way suggested
+by analogous permission classes in CLDC 1.1.1. In the table in 9.2, add a
+new middle column to the table "Permission class (CLDC 1.1.1)" so the table
+now specifies the correspondence between MIDP 2 permissions,
+CLDC 1.1.1 permission classes and permitted API calls.
+See below for full details.
+</p>
+<p>
+<b>Update 2010-03-31</b>:
+Roger Riggs from Oracle pointed out that the new permission classes
+should be in packages defined in JSR 82, not in
+javax.microedition.io. The change described above and
+in more detail below now does this.
+</p>
+<p>
+<b>Update 2010-03-31</b>:
+In the table in 9.2, the row for a tcpobex client connection permission
+gave a MIDP 3 permission of
+<code>javax.obex.TcpobexProtocolPermission("tcpobex://*")</code>.
+Andrey Nazarov from Oracle pointed out that this would default to
+port 650, and would not allow any other port. The entry has now been
+corrected to
+<code>javax.obex.TcpobexProtocolPermission("tcpobex://*:*")</code>.
+</p>
+
+<td>
+Introduce class-based permissions for CLDC 1.1.1 &amp;
+MIDP 3.0 integration
+<td>
+1.2
+<td>
+proposed
+
+<tr>
+<td>
+artf2540
+<td>
+A.10.1 change from
+<blockquote>
+If an initiator of a registered Bluetooth connection fails to pass the
+AllowedSender filter, the JAM MUST NOT accept the connection. A push MIDlet
+MUST NOT be launched.
+</blockquote>
+to
+<blockquote>
+If an initiator of a registered Bluetooth connection fails to pass the
+AllowedSender filter, a push MIDlet MUST NOT be launched.
+</blockquote>
+<td>
+The wording is inconsistent with the MIDP spec.
+<td>
+1.2
+<td>
+proposed
+
+<tr>
+<td>
+artf2665
+<td>
+A.6.1 first paragraph last sentence: add a clause, shown here emphasized:
+<blockquote>
+Note that in case of dynamic registration
+<em>where the registering MIDlet is the same as the newly registered
+push MIDlet, or part of the same MIDlet suite,</em>
+the JAM MUST NOT start to listen to
+the registered connection immediately, but rather after MIDlet termination (see
+Section A.9, where exact rules for the JAM behavior are defined).
+</blockquote>
+<td>
+Section A.6.1 contains vague statements not consistent with A.9.
+<td>
+1.2
+<td>
+proposed
+
+<tr>
+<td>
+artf2941
+<td>
+8.2.5 Client Requests in the Connection String, paragraph after bullet list:
+<blockquote>
+With this API, the only device that needs to grant permission to use a service
+is the device that offers that service. Consequently, the parameter
+<code>authorize</code> is not allowed in client connections. A
+<code>BluetoothConnectionException</code> is thrown if either
+<code>authorize=true</code> or <code>authorize=false</code> appears in a client
+connection string.
+</blockquote>
+change <code>BluetoothConnectionException</code> to
+<code>IllegalArgumentException</code>.
+<td>
+Different Exceptions are specified for an "authorize=XXX" statement in a client
+string
+<td>
+1.2
+<td>
+proposed
+
+<tr>
+<td>
+artf2550,
+artf2546
+<td>
+Remove appendix B.
+<td>
+Appendix B incorrectly lists L2CapConnection.send() as non-blocking, and
+otherwise only repeats information available elsewhere in the specification.
+<td>
+1.2
+<td>
+proposed
+
+<tr>
+<td>
+artf2940
+<td>
+11.3.1 L2CAP Server and Client Connection URLs: Just before the fourth para
+on p89 (starting "If a connection fails,"), insert a new para:
+<blockquote>
+If the client or server application requests a TransmitMTU value of 0,
+the <code>Connector.open</code> MUST fail.
+</blockquote>
+<td>
+TransmitMTU needs to be clearly defined as positive
+<td>
+1.2
+<td>
+proposed
+
+<tr>
+<td>
+artf2909
+<td>
+<p>
+Javadoc ClientSession.put(): Change
+<blockquote>
+    If the headers argument may be null.
+</blockquote>
+to
+<blockquote>
+    The headers argument may be null.
+</blockquote>
+</p>
+
+<p>
+Javadoc SessionNotifier.acceptAndOpen(ServerRequestHandler handler, Authenticator auth):
+remove the extra "a" from
+<blockquote>
+Note&nbsp;: once an application invokes close() on a any SessionNotifier, L2CAP...
+</blockquote>
+</p>
+<td>
+Remove Javadoc typos.
+<td>
+1.2
+<td>
+proposed
+
+<tr>
+<td>
+<td>
+<p>
+2.2.3 Bluetooth System Requirements, second bullet, third sub-bullet,
+add the condition in parentheses:
+<blockquote>
+<ul>
+<li>Logical Link Control and Adaptation Protocol (L2CAP)
+<em>(if the JSR 82 implementation provides L2CAP)</em>
+</ul>
+</blockquote>
+</p>
+
+<p>
+2.3 Scope, first list, point 2: Append a sentence:
+<blockquote>
+An implementation of this specification SHOULD provide L2CAP. However an
+implementation may be unable to provide L2CAP if the underlying operating
+system and drivers do not expose sufficient functionality.
+</blockquote>
+</p>
+
+<p>
+2.3 Scope, third list, point 3, change from
+<blockquote>
+Establish RFCOMM, L2CAP and OBEX connections
+</blockquote>
+to
+<blockquote>
+Establish RFCOMM, L2CAP <em>(where provided)</em>and OBEX connections
+</blockquote>
+</p>
+
+<p>
+11.2 API Overview: Insert new second para:
+<blockquote>
+An implementation of this specification SHOULD provide L2CAP. However an
+implementation may be unable to provide L2CAP if the underlying operating
+system and drivers do not expose sufficient functionality.
+Where L2CAP is not provided, any attempt to create an L2CAP connection
+using <code>Connector.open</code> MUST fail. The L2CAP-related interfaces
+specified in the Javadoc MUST be provided anyway.
+</blockquote>
+</p>
+
+<p>
+Page 24, table 3-2, bluetooth.l2cap.receiveMTU.max: Append a sentence to
+the description:
+<blockquote>
+This property is not present if L2CAP is not supported.
+</blockquote>
+and add a new property bluetooth.l2cap.supported with the description
+<blockquote>
+Is L2CAP supported? Valid values are either "true" or "false".
+</blockquote>
+</p>
+
+<p>
+Javadoc for LocalDevice.getProperty, property bluetooth.l2cap.receiveMTU.max:
+Append the same sentence as above to the description.
+</p>
+
+<p>
+Javadoc for LocalDevice.getProperty:
+Add a new property bluetooth.l2cap.supported with the same description
+as above.
+</p>
+
+<td>
+Allow implementation of JSR 82 on platforms where the OS does not expose
+L2CAP to applications.
+<td>
+1.2
+<td>
+proposed
+
+<tr>
+<td>
+<td>
+<p>
+11.3.1 L2CAP Server and Client Connection URLs, in the BNF on page 87:
+Just above the &ldquo;receiveMTU = ...&rdquo; rule, add a new rule
+<blockquote>
+<code>psm = ";psm=" 1*(HEXDIG)   ; see constraints below</code>
+</blockquote>
+Modify the &ldquo;srvParams = ...&rdquo; rule as follows by inserting extra
+text shown here emphasized:
+<blockquote>
+<code>srvParams = name / master / encrypt / authorize / authenticate
+            <em>/ psm</em> / receiveMTU / transmitMTU</code>
+</blockquote>
+In the paragraph at the top of p88, modify to the following, splitting the
+paragraph in two:
+<blockquote>
+<p>
+The <code>psm</code> in the preceding <em>client</em> connection string
+description represents the Protocol Service Multiplexor (PSM) value
+for the service. L2CAP server applications on a device can identify
+themselves with a PSM value, which is <em>by default</em> assigned by
+the implementation<em>, but is overridden by the value specified as a
+hexadecimal integer in the <code>psm</code> parameter, if any,
+in the server connection string. If the implementation is unable to
+use the value given in the <code>psm</code> parameter, then
+<code>Connector.open</code> fails and throws an exception</em>.
+</p>
+<p>
+Legal PSM values are in the range (<i>0x0005</i>..0xFFFF),
+and the least significant byte must be odd and all other bytes must be even.
+<em>When a server connection string does not have a <code>psm</code>
+parameter, the server PSM value assigned by the implementation must be
+no less than 0x1001.</em>
+</p>
+</blockquote>
+</p>
+
+<p>
+11.3.2 L2CAP Service Record, table on page 90, in the &ldquo;PSM value&rdquo;
+row, change the contents of the last cell in the row:
+<blockquote>
+Value <strike>assigned and</strike> inserted by the implementation<em>;
+the value is obtained from the
+server connection string&rsquo;s <code>psm</code> parameter if any,
+or, if none, assigned by the implementation</em>. Used by btl2cap clients to
+identify the service to connect to.
+</blockquote>
+</p>
+
+<p>
+9.2 Bluetooth Permissions: Add two new MIDP2 permissions
+javax.microedition.io.Connector.bluetooth.client.reserved and
+javax.microedition.io.Connector.bluetooth.server.reserved,
+as detailed below with the other changes to that table.
+</p>
+
+<td>
+Allow Java application programmers to implement other protocols on top
+of L2CAP that use a PSM value in the "reserved" range.
+<td>
+1.2
+<td>
+proposed
+
+
+<tr>
+<td>
+<td>
+11.2.1 Channel Configuration, "This API assumes that" list, second bullet:
+Change second sentence from:
+<blockquote>
+The application can specify the incoming MTU that it would like to use for the
+connection. If an application does not specify this value, then the DEFAULT_MTU
+of 672 bytes or the Bluetooth stack max MTU is used, whichever is smaller.
+</blockquote>
+to
+<blockquote>
+The application can specify the incoming MTU that it would like to use for the
+connection. If an application does not specify this value, then
+<em>the implementation chooses a value that is no less than the DEFAULT_MTU
+of 672 bytes and no greater than the Bluetooth stack max MTU; if the max MTU
+is less than 672 bytes, then the max MTU is used.</em>
+</blockquote>
+<td>
+Allow the JSR 82 implementation to use the maximum throughput available
+with the Bluetooth stack.
+<td>
+1.2
+<td>
+proposed
+
+<tr>
+<td>
+<td>
+<p>
+Table 3-2, bluetooth.api.version and obex.api.version, change "1.1.1"
+to "1.2".
+</p>
+<p>
+Javadoc for LocalDevice.getProperty, property bluetooth.api.version, change
+"1.1.1" to "1.2".
+</p>
+<td>
+Allow applications to discover which version of JSR 82 is implemented.
+<td>
+1.2
+<td>
+proposed
+
+</table>
+
+
+
+
+<h3>Full list of changes for class-based permissions</h3>
+
+<p>
+9: Change title to "MIDP 2 and CLDC 1.1.1 Security"
+</p>
+<p>
+9.1 Introduction: Add mention of CLDC 1.1.1 as follows (splitting the single
+paragraph, and adding the text that is here emphasized for clarity):
+</p>
+<blockquote>
+<p>
+This chapter describes the Bluetooth Permissions that are an extension of the
+framework first defined in MIDP 2.0.1<em>, and the class-based permissions
+that are an extension of the framework first defined in CLDC 1.1.1 and
+referenced by MIDP 3.0</em>.
+</p>
+<p>
+The MIDP 2.0.1 specification defines the
+framework for authenticating the source of a MIDlet suite and authorizing the
+MIDlet suite to perform protected functions by granting permissions that it may
+have requested based on the security policy on the device. It also identifies
+functions that are deemed security vulnerable and defines permissions for those
+protected functions. Additionally, MIDP 2.0.1 specifies the common rules for
+APIs that can be used together with the MIDP but are specified outside the
+MIDP. The MIDP 2.0.1 specification does not mandate a single trust model but
+rather allows the model to accord with the device trust policy. This chapter
+defines the recommended security policy for Bluetooth. The Function group
+definitions referred to below can be found in MIDP 2.0.1 or later.
+</p>
+<p>
+<em>The CLDC 1.1.1 specification (referenced by MIDP 3.0) similarly defines
+a framework, but with class-based permissions. The table below lists the
+classes defined for this purpose when JSR 82 is combined with CLDC 1.1.1.
+The classes are actually defined in this specification's accompanying
+Javadoc.</em>
+</p>
+</blockquote>
+
+<p>
+9.2 Bluetooth Permissions: Rename "Permission" column to
+"Permission Name (MIDP 2)", and insert a new column
+"Permission Class (CLDC 1.1.1)".
+</p>
+<p>
+Also add new MIDP2 permissions
+javax.microedition.io.Connector.bluetooth.client.reserved
+and javax.microedition.io.Connector.bluetooth.server.reserved. This
+is for the &ldquo;allow Java application programmers to implement
+other protocols on top of L2CAP that use a PSM value in the
+&lsquo;reserved&rsquo; range&rdquo; change.
+</p>
+<table>
+
+<tr>
+<th>Permission name (MIDP 2)
+<th>Permission class (CLDC 1.1.1)
+<th>Permitted API calls
+<th>Function group
+
+<tr>
+<td rowspan=2>javax.microedition.io.Connector.bluetooth.client
+<td>javax.bluetooth.BtsppProtocolPermission("btspp://*:*")
+<td>Connector.open("btspp://&lt;server&nbsp;BD_ADDR>...")
+<td rowspan=3>Local Connectivity
+
+<tr>
+<td>javax.bluetooth.Btl2capProtocolPermission("btl2cap://*:1001-FFFF")
+<td rowspan=2>Connector.open("btl2cap://&lt;server&nbsp;BD_ADDR>...")
+
+<tr>
+<td>javax.microedition.io.Connector.bluetooth.client.reserved
+<td>javax.bluetooth.Btl2capProtocolPermission("btl2cap://*:5-FFF")
+
+<tr>
+<td rowspan=2>javax.microedition.io.Connector.obex.client
+<td>javax.obex.BtgoepProtocolPermission("btgoep://*:*")
+<td>Connector.open("btgoep://&lt;server&nbsp;BD_ADDR>...")
+<td rowspan=2>Local Connectivity
+
+<tr>
+<td>javax.obex.IrdaobexProtocolPermission("irdaobex://*")
+<td>Connector.open("irdaobex://discover...")
+<br>Connector.open("irdaobex://addr...")
+<br>Connector.open("irdaobex://conn...")
+<br>Connector.open("irdaobex://name...")
+
+<tr>
+<td>javax.microedition.io.Connector.obex.client.tcp
+<td>javax.obex.TcpobexProtocolPermission("tcpobex://*:*")
+<td>Connector.open("tcpobex://&lt;server IP_ADDR>...")
+<td>Net Access
+
+<tr>
+<td rowspan=2>javax.microedition.io.Connector.bluetooth.server
+<td>javax.bluetooth.BtsppProtocolPermission("btspp://localhost:*")
+<td>Connector.open("btspp://localhost:...")
+<td rowspan=3>Local Connectivity
+
+<tr>
+<td>javax.bluetooth.Btl2capProtocolPermission("btl2cap://localhost:*")
+<td rowspan=2>Connector.open("btl2cap://localhost:...")
+
+<tr>
+<td>javax.microedition.io.Connector.bluetooth.server.reserved
+<td>javax.bluetooth.Btl2capProtocolPermission("btl2cap://localhost:*;psm=5-FFF")
+
+<tr>
+<td rowspan=2>javax.microedition.io.Connector.obex.server
+<td>javax.obex.BtgoepProtocolPermission("btgoep://localhost:*")
+<td>Connector.open("btgoep://localhost...")
+<td rowspan=2>Local Connectivity
+
+<tr>
+<td>javax.obex.IrdaobexProtocolPermission("irdaobex://localhost")
+<td>Connector.open("irdaobex://localhost...")
+
+<tr>
+<td>javax.microedition.io.Connector.obex.server.tcp
+<td>javax.obex.TcpobexProtocolPermission("tcpobex://:*")
+<td>Connector.open("tcpobex://:&lt;PORT>")
+<br>Connector.open("tcpobex://")
+<td>Net Access
+
+</table>
+
+<p>
+Add new classes to Javadoc as follows.
+</p>
+
+<h4>javax.obex.BtgoepProtocolPermission</h4>
+
+<pre>
+package javax.obex;
+import javax.microedition.io.GCFPermission;
+
+/**
+ * This class represents access
+ * rights to connections via the "btgoep"
+ * protocol. A &lt;code>BtgoepProtocolPermission&lt;/code> consists of a URI string
+ * but no actions list.
+ * &lt;p>
+ * The class must be present if the platform has &lt;code>GCFPermission&lt;/code>,
+ * and must be not present otherwise.
+ * &lt;p>
+ * The URI string specifies a Bluetooth Generic Object Exchange Protocol
+ * connection, as described in JSR 82 1.2 section 12.4.1 &lt;em>OBEX Over RFCOMM&lt;/em>, with
+ * additional changes to allow wildcard matching: the part of the
+ * &lt;code>{target}&lt;/code>
+ * before the ':' character, or the part of the &lt;code>{target}&lt;/code> after the ':'
+ * character, or both, may each be replaced by a '*' wildcard character. The
+ * semantics of wildcard matching are specified below in the
+ * &lt;code>implies&lt;/code> method.
+ * &lt;p>
+ * Examples:
+ * &lt;/p>
+ * &lt;table>
+ * &lt;tr>&lt;td>
+ * &lt;code>btgoep://0050C000321B:12&lt;/code>
+ * &lt;td>matches a client URI with that Bluetooth
+ * address and channel identifier, ignoring params
+ * &lt;tr>&lt;td>
+ * &lt;code>btgoep://0050C000321B:12;encrypt=true&lt;/code>
+ * &lt;td>matches a client URI with that
+ * Bluetooth address and channel identifier, and with encrypt=true, ignoring
+ * other params
+ * &lt;tr>&lt;td>
+ * &lt;code>btgoep://*:*&lt;/code>
+ * &lt;td>matches any client URI
+ * &lt;tr>&lt;td>
+ * &lt;code>btgoep://*:*;encrypt=true&lt;/code>
+ * &lt;td>matches any client URI with encrypt=true, ignoring
+ * other params
+ * &lt;tr>&lt;td>
+ * &lt;code>btgoep://*:12&lt;/code>
+ * &lt;td>matches any client URI with a channel identifier of 12
+ * &lt;tr>&lt;td>
+ * &lt;code>btgoep://localhost:*&lt;/code>
+ * &lt;td>matches any server URI
+ * &lt;/table>
+ */
+public final class BtgoepProtocolPermission extends GCFPermission {
+
+    /**
+     * Creates a new &lt;code>BtgoepProtocolPermission&lt;/code> with the specified URI as
+     * name. The URI string must conform to the specification given
+     * above, and is normalized (per the rules of
+     * &lt;a href="http://www.ietf.org/rfc/rfc3986.txt">RFC 3986&lt;/a>)
+     * to facilitate subsequent comparisons.
+     *
+     * @param uri the URI string
+     * @throws IllegalArgumentException if uri is malformed
+     * @throws NullPointerException if uri is null.
+     */
+    public BtgoepProtocolPermission(String uri) { }
+
+    /**
+     * Checks if this &lt;code>BtgoepProtocolPermission&lt;/code> object
+     * "implies" the specified permission.
+     * &lt;p>
+     * The method acts as if it follows these steps to determine whether
+     * this object implies p:
+     * &lt;/p>
+     * &lt;ul>
+     * &lt;li>
+     * If p is not an instanceof BtgoepProtocolPermission, return false.
+     * &lt;li>
+     * If this object has any &lt;code>{params}&lt;/code>, and any one of
+     * the params does not
+     * match the setting in p (using the default value if the param is not
+     * specified in p), then return false.
+     * &lt;li>
+     * If this object's &lt;code>{target}&lt;/code> matches p's &lt;code>{target}&lt;/code>,
+     * return true.
+     * &lt;li>
+     * If this object's &lt;code>{target}&lt;/code> is "*:*", and p is a client URI,
+     * return true.
+     * &lt;li>
+     * If this object's &lt;code>{target}&lt;/code> consists of "*:" followed by
+     * a channel identifier, and p is a client URI with a matching channel
+     * identifier, return true.
+     * &lt;li>
+     * If this object's &lt;code>{target}&lt;/code> consists of "localhost:*",
+     * and p is a server URI, return true.
+     * &lt;li>
+     * Otherwise return false.
+     * &lt;/ul>
+     *
+     * @param p the permission to check against.
+     *
+     * @return true if the specified permission is implied by this
+     * object, false if not.
+     */
+    public boolean implies(Permission p) { return false; }
+
+    /**
+     * Checks two &lt;code>BtgoepProtocolPermission&lt;/code> objects for equality.
+     *
+     * @param obj the object we are testing for equality with this object.
+     *
+     * @return true if obj is a &lt;code>BtgoepProtocolPermission&lt;/code>
+     * and has the same URI string as this object.
+     */
+    public boolean equals(Object obj) { return false; }
+
+    /**
+     * Returns the hash code value for this object.
+     *
+     * @return a hash value for this object.
+     */
+    public int hashCode() { return 0; }
+
+    /**
+     * Returns the canonical string representation of the actions, which
+     * currently is the empty string "", since there are no actions defined for
+     * &lt;code>BtgoepProtocolPermission&lt;/code>.
+     *
+     * @return the empty string "".
+     */
+    public String getActions() { return null; }
+
+    /**
+     * Returns a new &lt;code>PermissionCollection&lt;/code> for storing
+     * &lt;code>BtgoepProtocolPermission&lt;/code> objects.
+     *
+     * &lt;code>BtgoepProtocolPermission&lt;/code> objects must be stored in a manner that allows
+     * them to be inserted into the collection in any order, but that also
+     * enables the &lt;code>PermissionCollection&lt;/code> implies method to be implemented in an
+     * efficient (and consistent) manner.
+     *
+     * @return a new &lt;code>PermissionCollection&lt;/code> suitable for storing
+     * &lt;code>BtgoepProtocolPermission&lt;/code> objects.
+     */
+    public PermissionCollection newPermissionCollection() { return null; }
+}
+</pre>
+
+
+
+<h4>javax.bluetooth.Btl2capProtocolPermission</h4>
+
+<pre>
+package javax.bluetooth;
+import javax.microedition.io.GCFPermission;
+
+/**
+ * This class represents access rights to connections via the "btl2cap"
+ * protocol. &lt;code>A Btl2capProtocolPermission&lt;/code> consists of a URI string
+ * but no actions list.
+ * &lt;p>
+ * The class must be present if the platform has &lt;code>GCFPermission&lt;/code>,
+ * and must be not present otherwise.
+ * &lt;p>
+ * The URI string specifies a Bluetooth L2CAP connection, as described in JSR
+ * 82 1.2 section 11.3 &lt;em>L2CAP Connection Interface&lt;/em>,
+ * with additional changes to
+ * allow wildcard matching: the part of the &lt;code>{target}&lt;/code>
+ * before the ':' character, or the part of the &lt;code>{target}&lt;/code> after the ':'
+ * character, or both, may each be replaced by a '*' wildcard character.
+ * The part of the &lt;code>{target}&lt;/code> after the ':' character in a client connection
+ * string may be replaced by a range, consisting of two hexadecimal numbers
+ * separated by a hyphen. If a &lt;code>psm&lt;/code> parameter is included
+ * in a server connection
+ * string, its value may be replaced by a range, consisting of two hexadecimal
+ * numbers separated by a hyphen.
+ * The semantics of wildcard matching are specified below in the
+ * &lt;code>implies&lt;/code> method.
+ * &lt;p>
+ * Examples:
+ * &lt;/p>&lt;table>
+ * &lt;tr>&lt;td>
+ * &lt;code>btl2cap://0050C000321B:10B3&lt;/code>
+ * &lt;td>matches a client URI with that Bluetooth
+ * address and PSM value, ignoring params
+ *
+ * &lt;tr>&lt;td>
+ * &lt;code>btl2cap://0050C000321B:*&lt;/code>
+ * &lt;td>matches a client URI with that Bluetooth
+ * address and any PSM value, ignoring params
+ *
+ * &lt;tr>&lt;td>
+ * &lt;code>btl2cap://0050C000321B:1001-FFFF&lt;/code>
+ * &lt;td>matches a client URI with that Bluetooth
+ * address and a PSM value in the range 1001-FFFF, ignoring params
+ *
+ * &lt;tr>&lt;td>
+ * &lt;code>btl2cap://*:10B3&lt;/code>
+ * &lt;td>matches a client URI with any Bluetooth
+ * address and a PSM value of 10B3, ignoring params
+ *
+ * &lt;tr>&lt;td>
+ * &lt;code>btl2cap://0050C000321B:10B3;encrypt=true&lt;/code>
+ * &lt;td>matches a client URI with that
+ * Bluetooth address and PSM value, and with encrypt=true, ignoring
+ * other params
+ *
+ * &lt;tr>&lt;td>
+ * &lt;code>btl2cap://*:*&lt;/code>
+ * &lt;td>matches any client URI
+ *
+ * &lt;tr>&lt;td>
+ * &lt;code>btl2cap://*:*;encrypt=true&lt;/code>
+ * &lt;td>matches any client URI with encrypt=true,
+ * ignoring other params
+ *
+ * &lt;tr>&lt;td>
+ * &lt;code>btl2cap://*:1001-FFFF&lt;/code>
+ * &lt;td>matches any client URI with a PSM value in the range
+ * 1001-FFFF
+ *
+ * &lt;tr>&lt;td>
+ * &lt;code>btl2cap://localhost:3B9FA89520078C303355AAA694238F08&lt;/code>
+ * &lt;td>matches a server URI
+ * with the stated UUID, ignoring params
+ *
+ * &lt;tr>&lt;td>
+ * &lt;code>btl2cap://localhost:*&lt;/code>
+ * &lt;td>matches any server URI that does not have a psm
+ * param, or has one that specifies a PSM value in the range 1001-FFFF
+ * (so not including the reserved PSM range)
+ *
+ * &lt;tr>&lt;td>
+ * &lt;code>btl2cap://localhost:*;name=L2CAPEx&lt;/code>
+ * &lt;td>matches a server URI with any UUID and
+ * with the stated name value, ignoring other params, except that there must be
+ * no psm param, or one that specifies a PSM value in the range 1001-FFFF
+ * (so not including the reserved PSM range)
+ *
+ * &lt;tr>&lt;td>
+ * &lt;code>btl2cap://localhost:*;psm=5-FFFF&lt;/code>
+ * &lt;td>matches any server URI that specifies a
+ * PSM value, even in the PSM reserved range
+ *
+ * &lt;tr>&lt;td>
+ * &lt;code>btl2cap://localhost:*;psm=1021-102F&lt;/code>
+ * &lt;td>matches any server URI with a
+ * specified PSM value in the range 1021-102F
+ * &lt;/table>
+ */
+public final class Btl2capProtocolPermission extends GCFPermission {
+
+    /**
+     * Creates a new &lt;code>Btl2capProtocolPermission&lt;/code> with the specified URI as
+     * name. The URI string must conform to the specification given
+     * above, and is normalized (per the rules of
+     * &lt;a href="http://www.ietf.org/rfc/rfc3986.txt">RFC 3986&lt;/a>)
+     * to facilitate subsequent comparisons.
+     *
+     * @param uri the URI string
+     * @throws IllegalArgumentException if uri is malformed
+     * @throws NullPointerException if uri is null.
+     */
+    public Btl2capProtocolPermission(String uri) {}
+
+    /**
+     * Checks if this &lt;code>Btl2capProtocolPermission&lt;/code> object "implies" the
+     * specified permission.
+     * &lt;p>
+     * The method acts as if it follows these steps to determine whether
+     * this object implies p:
+     * &lt;/p>
+     * &lt;ul>
+     * &lt;li>
+     * If p is not an instanceof Btl2capProtocolPermission, return false.
+     * &lt;li>
+     * If this object's &lt;code>{target}&lt;/code> and p's &lt;code>{target}&lt;/code> both start with
+     * "localhost:" (they are both server URIs), and this object has a
+     * 'psm' param that is a range (two hexadecimal numbers separated by
+     * a hyphen), and either p does not have a "psm" param, or it does
+     * but its value is not in the range, then return false.
+     * &lt;li>
+     * If this object's &lt;code>{target}&lt;/code> and p's &lt;code>{target}&lt;/code> both start with
+     * "localhost:" (they are both server URIs), and this object has a
+     * 'psm' param that is not a range, and p does not have a matching
+     * 'psm' param, then return false.
+     * &lt;li>
+     * If this object's &lt;code>{target}&lt;/code> and p's &lt;code>{target}&lt;/code> both start with
+     * "localhost:" (they are both server URIs), and this object has no
+     * 'psm' param, and p does have a "psm" param whose value is not
+     * in the range 1001-FFFF, then return false.
+     * &lt;li>
+     * If this object has any &lt;code>{params}&lt;/code>, and any one of the params other
+     * than "psm" does not match the setting in p (using the default value
+     * if the param is not specified in p), then return false.
+     * &lt;li>
+     * If this object's &lt;code>{target}&lt;/code> matches p's &lt;code>{target}&lt;/code>, return true.
+     * &lt;li>
+     * If this object's &lt;code>{target}&lt;/code> is "*:*", and p is a client URI, return
+     * true.
+     * &lt;li>
+     * If this object's &lt;code>{target}&lt;/code> consists of "*:" followed by a PSM
+     * value, and p is a client URI with a matching PSM value, return true.
+     * &lt;li>
+     * If this object's &lt;code>{target}&lt;/code> consists of a Bluetooth address followed
+     * by ":*", and p is a client URI with a matching Bluetooth address,
+     * return true.
+     * &lt;li>
+     * If this object's &lt;code>{target}&lt;/code> consists of "*:" followed by a PSM
+     * range (two PSM values separated by a hyphen), and p is a client
+     * URI with a PSM value in that range, return true.
+     * &lt;li>
+     * If this object's &lt;code>{target}&lt;/code> consists of "localhost:*", and p is a
+     * server URI, return true.
+     * &lt;li>
+     * Otherwise return false.
+     * &lt;/ul>
+     *
+     * @param p the permission to check against.
+     *
+     * @return true if the specified permission is implied by this
+     * object, false if not.
+     */
+    public boolean implies(Permission p) { return false; }
+
+    /**
+     * Checks two &lt;code>Btl2capProtocolPermission&lt;/code> objects for equality.
+     *
+     * @param obj the object we are testing for equality with this object.
+     *
+     * @returns true if obj is a &lt;code>Btl2capProtocolPermission&lt;/code> and has the same
+     * URI string as this object.
+     */
+    public boolean equals(Object obj) { return false; }
+
+    /**
+     * Returns the hash code value for this object.
+     *
+     * @return a hash value for this object.
+     */
+    public int hashCode() { return 0; }
+
+    /**
+     * Returns the canonical string representation of the actions, which
+     * currently is the empty string "", since there are no actions defined for
+     * &lt;code>Btl2capProtocolPermission&lt;/code>.
+     *
+     * @return the empty string "".
+     */
+    public String getActions() { return null; }
+
+    /**
+     * Returns a new &lt;code>PermissionCollection&lt;/code> for storing
+     * &lt;code>Btl2capProtocolPermission&lt;/code> objects.
+     * &lt;p>
+     * &lt;code>Btl2capProtocolPermission&lt;/code> objects must be stored in a
+     * manner that allows them to be inserted into the collection in any order,
+     * but that also enables the &lt;code>PermissionCollection&lt;/code> implies
+     * method to be implemented in an efficient (and consistent) manner.
+     *
+     * @return a new &lt;code>PermissionCollection&lt;/code> suitable for storing
+     * &lt;code>Btl2capProtocolPermission&lt;/code> objects.
+     */
+    public PermissionCollection newPermissionCollection() { return null; }
+}
+</pre>
+
+
+<h4>javax.bluetooth.BtsppProtocolPermission</h4>
+
+<pre>
+package javax.bluetooth;
+import javax.microedition.io.GCFPermission;
+
+/**
+ * This class represents access rights to connections via the "btspp"
+ * protocol. A &lt;code>BtsppProtocolPermission&lt;/code> consists of a URI string
+ * but no actions list.
+ * &lt;p>
+ * The class must be present if the platform has &lt;code>GCFPermission&lt;/code>,
+ * and must be not present otherwise.
+ * &lt;p>
+ * The URI string specifies a Bluetooth L2CAP connection, as described in JSR
+ * 82 1.2 section 10.3 &lt;em>L2CAP Connection Interface&lt;/em>, with additional changes to
+ * allow wildcard matching: the part of the &lt;code>{target}&lt;/code>
+ * before the ':' character, or the part of the &lt;code>{target}&lt;/code> after the ':'
+ * character, or both, may each be replaced by a '*' wildcard character. The
+ * semantics of wildcard matching are specified below in the implies method.
+ * &lt;p>
+ * Examples:
+ * &lt;/p>
+ * &lt;table>
+ * &lt;tr>&lt;td>
+ * &lt;code>btspp://0050C000321B:12&lt;/code>
+ * &lt;td>matches a client URI with that Bluetooth
+ * address and channel identifier, ignoring params
+ * 
+ * &lt;tr>&lt;td>
+ * &lt;code>btspp://0050C000321B:12;encrypt=true&lt;/code>
+ * &lt;td>matches a client URI with that
+ * Bluetooth address and channel identifier, and with encrypt=true, ignoring
+ * other params
+ *
+ * &lt;tr>&lt;td>
+ * &lt;code>btspp://*:*&lt;/code>
+ * &lt;td>matches any client URI
+ *
+ * &lt;tr>&lt;td>
+ * &lt;code>btspp://*:*;encrypt=true&lt;/code>
+ * &lt;td>matches any client URI with encrypt=true, ignoring
+ * other params
+ *
+ * &lt;tr>&lt;td>
+ * &lt;code>btspp://*:12&lt;/code>
+ * &lt;td>matches any client URI with a channel identifier of 12
+ *
+ * &lt;tr>&lt;td>
+ * &lt;code>btspp://localhost:*&lt;/code>
+ * &lt;td>matches any server URI
+ * &lt;/table>
+ */
+public final class BtsppProtocolPermission extends GCFPermission {
+
+    /**
+     * Creates a new &lt;code>BtsppProtocolPermission&lt;/code> with the specified URI as
+     * name. The URI string must conform to the specification given
+     * above, and is normalized (per the rules of
+     * &lt;a href="http://www.ietf.org/rfc/rfc3986.txt">RFC 3986&lt;/a>)
+     * to facilitate subsequent comparisons.
+     *
+     * @param uri the URI string
+     * @throws IllegalArgumentException if uri is malformed
+     * @throws NullPointerException if uri is null.
+     */
+    public BtsppProtocolPermission(String uri) {}
+
+    /**
+     * Checks if this &lt;code>BtsppProtocolPermission&lt;/code> object "implies" the
+     * specified permission.
+     * &lt;p>
+     * The method acts as if it follows these steps to determine whether
+     * this object implies p:
+     * &lt;p>
+     * &lt;ul>
+     * &lt;li>If p is not an instanceof BtsppProtocolPermission, return false.
+     *
+     * &lt;li>If this object has any &lt;code>{params}&lt;/code>, and any one of the params does not
+     * match the setting in p (using the default value if the param is not
+     * specified in p), then return false.
+     *
+     * &lt;li>If this object's &lt;code>{target}&lt;/code> matches p's &lt;code>{target}&lt;/code>, return true.
+     *
+     * &lt;li>If this object's &lt;code>{target}&lt;/code> is "*:*", and p is a client URI, return
+     * true.
+     *
+     * &lt;li>If this object's &lt;code>{target}&lt;/code> consists of "*:" followed by a channel
+     * identifier, and p is a client URI with a matching channel identifier,
+     * return true.
+     *
+     * &lt;li>If this object's &lt;code>{target}&lt;/code> consists of "localhost:*", and p is a
+     * server URI, return true.
+     *
+     * &lt;li>Otherwise return false.
+     * &lt;/ul>
+     *
+     * @param p the permission to check against.
+     *
+     * @return true if the specified permission is implied by this
+     * object, false if not.
+     */
+    public boolean implies(Permission p) { return false; }
+
+    /**
+     * Checks two &lt;code>BtsppProtocolPermission&lt;/code> objects for equality.
+     *
+     * @param obj the object we are testing for equality with this object.
+     * @returns true if obj is a &lt;code>BtsppProtocolPermission&lt;/code> and has the same
+     * URI string as this object.
+     */
+    public boolean equals(Object obj) { return false; }
+
+    /**
+     * Returns the hash code value for this object.
+     *
+     * @return a hash value for this object.
+     */
+    public int hashCode() { return 0; }
+
+    /**
+     * Returns the canonical string representation of the actions, which
+     * currently is the empty string "", since there are no actions defined for
+     * &lt;code>BtsppProtocolPermission&lt;/code>.
+     *
+     * @return the empty string "".
+     */
+    public String getActions() { return null; }
+
+    /**
+     * Returns a new &lt;code>PermissionCollection&lt;/code> for storing
+     * &lt;code>BtsppProtocolPermission&lt;/code> objects.
+     * &lt;p>
+     * &lt;code>BtsppProtocolPermission&lt;/code> objects must be stored in a manner that allows
+     * them to be inserted into the collection in any order, but that also
+     * enables the &lt;code>PermissionCollection&lt;/code> implies method to be implemented in an
+     * efficient (and consistent) manner.
+     *
+     * @return a new PermissionCollection suitable for storing
+     * &lt;code>BtsppProtocolPermission&lt;/code> objects.
+     */
+    public PermissionCollection newPermissionCollection() { return null; }
+}
+</pre>
+
+
+<h4>javax.obex.IrdaobexProtocolPermission</h4>
+
+<pre>
+package javax.obex;
+import javax.microedition.io.GCFPermission;
+
+/**
+ * This class represents access rights to connections via the "irdaobex"
+ * protocol. An &lt;code>IrdaobexProtocolPermission&lt;/code> consists of a URI string
+ * but no actions list.
+ * &lt;p>
+ * The class must be present if the platform has &lt;code>GCFPermission&lt;/code>,
+ * and must be not present otherwise.
+ * &lt;p>
+ * The URI string specifies an OBEX over IRDA connection, as described in JSR
+ * 82 1.2 section 12.4.3 &lt;em>OBEX Over IrDA&lt;/em>, with an additional change to allow wildcard matching:
+ * the whole &lt;code>{target}&lt;/code> may be replaced by a '*' wildcard character. The
+ * semantics of wildcard matching are specified below in the implies method.
+ * &lt;p>
+ * Examples:
+ * &lt;/p>&lt;table>
+ * &lt;tr>&lt;td>
+ * &lt;code>irdaobex://discover&lt;/code>
+ * &lt;td>matches any client discover URI, ignoring params
+ *
+ * &lt;tr>&lt;td>
+ * &lt;code>irdaobex://discover;ias=MyAppOBEX,OBEX,OBEX:IrXfer&lt;/code>
+ * &lt;td>matches any client
+ * discover URI with that value of the &lt;code>ias&lt;/code> param, ignoring other params
+ *
+ * &lt;tr>&lt;td>
+ * &lt;code>irdaobex://*&lt;/code>
+ * &lt;td>matches any client URI, ignoring params
+ * 
+ * &lt;tr>&lt;td>
+ * &lt;code>irdaobex://localhost&lt;/code>
+ * &lt;td>matches any server URI, ignoring params
+ * &lt;/table>
+ */
+public final class IrdaobexProtocolPermission extends GCFPermission {
+
+    /**
+     * Creates a new &lt;code>IrdaobexProtocolPermission&lt;/code> with the specified URI as
+     * name. The URI string must conform to the specification given
+     * above, and is normalized (per the rules of
+     * &lt;a href="http://www.ietf.org/rfc/rfc3986.txt">RFC 3986&lt;/a>)
+     * to facilitate subsequent comparisons.
+     * &lt;p>
+     * @param uri the URI string
+     * @throws IllegalArgumentException if uri is malformed
+     * @throws NullPointerException if uri is null.
+     */
+    public IrdaobexProtocolPermission(String uri) {}
+
+    /**
+     * Checks if this &lt;code>IrdaobexProtocolPermission&lt;/code> object "implies" the
+     * specified permission.
+     * &lt;p>
+     * The method acts as if it follows these steps to determine whether
+     * this object implies p:
+     * &lt;ul>
+     * &lt;li>If p is not an instanceof IrdaobexProtocolPermission, return false.
+     *
+     * &lt;li>If this object has any &lt;code>{params}&lt;/code>, and any one of the params does not
+     * match the setting in p (using the default value if the param is not
+     * specified in p), then return false.
+     *
+     * &lt;li>If this object's &lt;code>{target}&lt;/code> matches p's &lt;code>{target}&lt;/code>, ignoring hint bits in
+     * either, then return true.
+     *
+     * &lt;li>If this object's &lt;code>{target}&lt;/code> is "*", and p is a client URI, return
+     * true.
+     *
+     * &lt;li>Otherwise return false.
+     * &lt;/ul>
+     *
+     * @param p the permission to check against.
+     *
+     * @return true if the specified permission is implied by this
+     * object, false if not.
+     */
+    public boolean implies(Permission p) { return false; }
+
+    /**
+     * Checks two &lt;code>IrdaobexProtocolPermission&lt;/code> objects for equality.
+     *
+     * @param obj the object we are testing for equality with this object.
+     * @return true if obj is a &lt;code>IrdaobexProtocolPermission&lt;/code> and has the same
+     * URI string as this object.
+     */
+    public boolean equals(Object obj) { return false; }
+
+    /**
+     * Returns the hash code value for this object.
+     *
+     * @returns a hash value for this object.
+     */
+    public int hashCode() { return 0; }
+
+    /**
+     * Returns the canonical string representation of the actions, which
+     * currently is the empty string "", since there are no actions defined for
+     * IrdaobexProtocolPermission.
+     *
+     * @return the empty string "".
+     */
+    public String getActions() { return null; }
+
+    /**
+     * Returns a new &lt;code>PermissionCollection&lt;/code> for storing
+     * &lt;code>IrdaobexProtocolPermission&lt;/code> objects.
+     * &lt;p>
+     * &lt;code>IrdaobexProtocolPermission&lt;/code> objects must be stored in a manner that allows
+     * them to be inserted into the collection in any order, but that also
+     * enables the &lt;code>PermissionCollection&lt;/code> implies method to be implemented in an
+     * efficient (and consistent) manner.
+     *
+     * @returns a new &lt;code>PermissionCollection&lt;/code> suitable for storing
+     * &lt;code>IrdaobexProtocolPermission&lt;/code> objects.
+     */
+    public PermissionCollection newPermissionCollection() { return null; }
+}
+</pre>
+
+<h4>javax.obex.TcpobexProtocolPermission</h4>
+
+<pre>
+package javax.obex;
+import javax.microedition.io.GCFPermission;
+
+/**
+ * This class represents access rights to connections via the "tcpobex"
+ * protocol. A &lt;code>TcpobexProtocolPermission&lt;/code> consists of a URI string
+ * but no actions list.
+ * &lt;p>
+ * The class must be present if the platform has &lt;code>GCFPermission&lt;/code>,
+ * and must be not present otherwise.
+ * &lt;p>
+ * The URI string specifies an OBEX over TCP connection, as described in JSR 82
+ * 1.2 section 12.4.2 &lt;em>OBEX Over TCP/IP&lt;/em>, with additional changes to allow wildcard matching:
+ * &lt;ul>
+ * &lt;li>the IP address part of the {target} may be replaced by a '*' wildcard
+ * character;
+ *
+ * &lt;li>the port number part of the {target} may be specified as '*', or
+ * have the form 'M-' or '-N' or 'M-N' (where M and N are port numbers).
+ * &lt;/ul>
+ * The semantics of wildcard matching are specified below in the implies
+ * method.
+ * &lt;p>
+ * Examples:
+ * &lt;/p>&lt;table>
+ * &lt;tr>&lt;td>
+ * &lt;code>tcpobex://132.53.12.154:5005&lt;/code>
+ * &lt;td>matches that client URI, ignoring params
+ *
+ * &lt;tr>&lt;td>
+ * &lt;code>tcpobex://132.53.12.154&lt;/code>
+ * &lt;td>matches that client URI, with implied or explicit port number 650,
+ * ignoring params
+ *
+ * &lt;tr>&lt;td>
+ * &lt;code>tcpobex://*&lt;/code>
+ * &lt;td>matches any client URI with implied or explicit port number 650,
+ * ignoring params
+ *
+ * &lt;tr>&lt;td>
+ * &lt;code>tcpobex://*:500-999&lt;/code>
+ * &lt;td>matches any client URI with a port number in the range
+ * 500-999, including one with an implied port number of 650, ignoring params
+ *
+ * &lt;tr>&lt;td>
+ * &lt;code>tcpobex://*:*&lt;/code>
+ * &lt;td>matches any client URI ignoring params
+ *
+ * &lt;tr>&lt;td>
+ * &lt;code>tcpobex://:5005&lt;/code>
+ * &lt;td>matches that server URI, ignoring params
+ *
+ * &lt;tr>&lt;td>
+ * &lt;code>tcpobex://:*&lt;/code>
+ * &lt;td>matches any server URI, ignoring params
+ * &lt;/table>
+ */
+public final class TcpobexProtocolPermission extends GCFPermission {
+
+    /**
+     * Creates a new &lt;code>TcpobexProtocolPermission&lt;/code> with the specified URI as
+     * name. The URI string must conform to the specification given
+     * above, and is normalized to facilitate subsequent comparisons in a way
+     * that follows the rules of
+     * &lt;a href="http://www.ietf.org/rfc/rfc3986.txt">RFC 3986&lt;/a>,
+     * plus the additional procedures described in the JSR 139 (CLDC 1.1.1)
+     * document &lt;em>URI Normalization&lt;/em> (where the implied port number
+     * is 650 if none is specified).
+     *
+     * @param uri the URI string
+     * @throws IllegalArgumentException if uri is malformed
+     * @throws NullPointerException if uri is null.
+     */
+    public TcpobexProtocolPermission(String uri) {}
+
+    /**
+     * Checks if this &lt;code>TcpobexProtocolPermission&lt;/code> object "implies" the
+     * specified permission.
+     * &lt;p>
+     * The method acts as if it follows these steps to determine whether
+     * this object implies p:
+     * &lt;ul>
+     * &lt;li>If p is not an instanceof &lt;code>TcpobexProtocolPermission&lt;/code>, return false.
+     *
+     * &lt;li>If this object has any &lt;code>{params}&lt;/code>, and any one of the params does not
+     * match the setting in p (using the default value if the param is not
+     * specified in p), then return false.
+     *
+     * &lt;li>If this object's &lt;code>{target}&lt;/code> matches p's &lt;code>{target}&lt;/code> return true.
+     *
+     * &lt;li>If this object's port number is a range that does not include
+     * p's port number, then return false.
+     *
+     * &lt;li>If this object's port number is a single port number that does not
+     * match p's port number, then return false.
+     *
+     * &lt;li>If this
+     * object's IP address is '*' and p is a client URI, then return true.
+     *
+     * &lt;li>If this object's IP address matches p's IP address (including the case
+     * of neither having an IP address due to being server URIs),
+     * then return true.
+     *
+     * &lt;li>Otherwise return false.
+     * &lt;/ul>
+     *
+     * @param p the permission to check against.
+     *
+     * @return true if the specified permission is implied by this
+     * object, false if not.
+     */
+    public boolean implies(Permission p) { return false; }
+
+    /**
+     * Checks two &lt;code>TcpobexProtocolPermission&lt;/code> objects for equality.
+     *
+     * @param obj the object we are testing for equality with this object.
+     * @return true if obj is a &lt;code>TcpobexProtocolPermission&lt;/code> and has the same
+     * URI string as this object.
+     */
+    public boolean equals(Object obj);
+
+    /**
+     * Returns the hash code value for this object.
+     *
+     * @return a hash value for this object.
+     */
+    public int hashCode() { return 0; }
+
+    /**
+     * Returns the canonical string representation of the actions, which
+     * currently is the empty string "", since there are no actions defined for
+     * &lt;code>TcpobexProtocolPermission&lt;/code>.
+     *
+     * @return the empty string "".
+     */
+    public String getActions() { return null; }
+
+    /**
+     * Returns a new &lt;code>PermissionCollection&lt;/code> for storing
+     * &lt;code>TcpobexProtocolPermission&lt;/code> objects.
+     * &lt;p>
+     * &lt;code>TcpobexProtocolPermission&lt;/code> objects must be stored in a manner that allows
+     * them to be inserted into the collection in any order, but that also
+     * enables the &lt;code>PermissionCollection&lt;/code> implies method to be implemented in an
+     * efficient (and consistent) manner.
+     *
+     * @return a new &lt;code>PermissionCollection&lt;/code> suitable for storing
+     * &lt;code>TcpobexProtocolPermission&lt;/code> objects.
+     */
+    public PermissionCollection newPermissionCollection() { return null; }
+}
+</pre>
+
+
+
+
+
+<!-- ** BEGIN: footer.jsp ** //-->
+
+
+
+
+
+
+
+
+</td>
+</tr>
+</table>
+
+<!-- ** END: Content Table ** //-->
+
+<!-- ** BEGIN: Footer Table ** //-->
+
+<div id="footer" style="clear: both;">
+    <div class="footleft">
+        <a href="/en/resources/contacts">Contact Us</a>
+    </div>
+	
+    <div class="botbar"><img src="/images/spacer.gif" alt="" height="23" width="1"></div>
+
+    <div class="footleft2">
+         &copy; 2019, Oracle Corporation and/or its affiliates. 
+        <a href="/en/home/terms">Terms of Use</a>. <a href="http://www.oracle.com/us/legal/privacy/index.html">Privacy Policy</a>. <a href="http://www.oracle.com/us/legal/third-party-trademarks/third-party-trademarks-078568.html">Trademarks</a>
+    </div>
+
+    <div class="footright">
+        <img src="/images/common/logo_oracle_footer.gif" alt="Oracle Corporation" height="22" width="91">
+    </div>
+
+    <div style="clear: both;"><img src="/images/spacer.gif" alt="" height="30" width="1"></div>
+</div>
+
+<!-- ** END: Footer Table ** //-->
+
+
+
+<!-- ** Menu Start ** //-->
+
+
+
+</body>
+</html>
+<!-- ** END: footer.jsp ** //-->
+

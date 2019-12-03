@@ -1,0 +1,763 @@
+
+<!-- ** BEGIN: header.jsp ** //-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3c.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+<head>
+    
+
+   
+    <link href="/includes/css/menu.css" rel="stylesheet" type="text/css"></link>
+    <link href="/includes/css/style.css" rel="stylesheet" type="text/css"></link>
+    <!--[if lt IE 6]><link href="/includes/css/style5.css" rel="stylesheet" type="text/css" ></link><![endif]-->
+    <!--[if gte IE 5]><link href="/includes/css/style6.css" rel="stylesheet" type="text/css" ></link><![endif]-->
+    <link href="/includes/css/tabs.css"  rel="stylesheet" type="text/css"></link>
+
+    <script type="text/javascript" src="/includes/scripts/tabs.js"></script>
+    <script type="text/javascript" src="/includes/scripts/menu.js"></script>
+   
+
+    
+
+    
+        <title>The Java Community Process(SM) Program - communityprocess - elections</title>
+    
+
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+
+
+<body onload="P7_initPM(0,1,0,0,-1)">
+
+    <a name="top"></a>
+
+    <div id="header">
+	<div id="logo">
+		<a href="/en/home/index"><img src="/images/spacer.gif" alt="Java Community Process" height="81" width="151"></a>
+	</div>
+	<div id="tools">
+		<div class="search">
+			<form name="search" action="/en/jsr/summary" method="get" onsubmit="return validate_search()">
+				<input name="id" value="Search JSRs" size="16" class="form" onfocus="nullify_if_equal(this, 'Search JSRs')" type="text">
+				<a href="javascript:document.search.submit()" onclick="return validate_search()"><img src="/images/button_go.gif" width="21" height="16" border="0" alt="Submit this Search" name="sub_search"></a>
+			</form>
+		</div>
+		<div class="tools">
+			<a href="/en/press/pressroom">Press Room</a> &nbsp;|&nbsp;
+			<a href="http://java.com/java/download/index.jsp?cid=jdp78399">Get Java Here</a> &nbsp;|&nbsp;
+			<!-- <a href="javascript:void(0)">Print Format</a> &nbsp;|&nbsp;&nbsp; -->
+		</div>
+
+	</div>
+	<div style="clear: right;"></div>
+
+        
+
+	<div class="topbar"><img src="/images/spacer.gif" alt="" height="3" width="154"></div>
+	<div id="update"> </div>
+    </div>
+
+
+    
+
+        <!-- ** BEGIN: Content Table ** //-->
+
+        <table width="100%" border="0" cellpadding="0" cellspacing="0">
+
+            <tr>
+
+                <!-- ** BEGIN: Navigation Column ** //-->
+                <td width="150" id="leftcontent" valign="top">
+                    <!-- Navigation Placeholder //-->
+
+                    
+
+                    <div class="bar"><img src="/images/hr_dots1.gif" alt="" height="3" width="150"></div>
+
+        <!-- begin find JSRs form -->
+        <!-- IMPORTANT! do not convert this form to Struts < html : form > tag.  javascript change of form.action property fails. -->
+        <img src="/images/hd_find-jsrs.gif" alt="Find JSRs" height="18" width="150">
+        <form name="findjsr" action="/en/jsr/summary" method="get" class="pt5" onsubmit="return validate_findjsr()">
+            <input name="id" size="18" class="form" value="Search JSRs" onfocus="nullify_if_equal(this, 'Search JSRs')" type="text">
+	    <a href="javascript:document.findjsr.submit()" onclick="return validate_findjsr()"><img src="/images/button_go.gif" width="21" height="16" border="0" alt="Submit this Search" name="sub_search"></a>
+        </form><br><br>
+
+        <!-- ** Menu Start ** //-->
+
+        <ul id="p7PMnav">
+            <li><a href="/en/jsr/platform">JSRs by Platform</a></li>
+            <li><a href="/en/jsr/tech">JSRs by Technology</a></li>
+            <li><a href="/en/jsr/stage">JSRs by Stage</a></li>
+            <li><a href="/en/jsr/ec">JSRs by Committee</a></li>
+            <li><a href="/en/jsr/all">List of All JSRs</a></li>
+
+            <!--end find JSRs form -->
+            <div style="clear: both;"><img src="/images/spacer.gif" alt="" height="25" width="1"></div>
+
+            <!--begin my JCP -->
+            <img src="/images/hd_my-jcp.gif" alt="My JCP" height="18" width="150">
+            
+
+          <form name="login" method="get" action="/en/user/login" >
+            <input name="Sign-in" type="submit" title="Sign-in" value="Sign-in" />
+          </form>
+
+            <div style="clear:both"><img src="/images/global/spacer.gif" width="1" height="3" alt=""></div>
+            <div class="noNav">
+                <a href="/en/user/register">Register for Site</a>
+            </div>
+
+             <div class="bar"><img src="/images/hr_dots1.gif" alt="" height="3" width="150"></div>
+           <div class="noNav" style="color: #666666; padding: 0;">
+              Use of JCP site is subject to the
+              <a href="/en/home/terms" style="display:inline;padding: 0">JCP Terms of Use</a> and the
+              <a href="http://www.oracle.com/us/legal/privacy/index.html" style="display:inline;padding: 0" href="">Oracle Privacy Policy</a>
+          </div>
+
+            
+
+            <div style="clear:both"><img src="/images/global/spacer.gif" width="1" height="25" alt=""></div>
+
+            <!--begin JCP info -->
+            <img src="/images/hd_jcp-info.gif" alt="JCP Info" height="18" width="150">
+
+            <li><a href="/en/procedures/overview" class="p7PMtrg">About JCP</a>
+                <ul>
+                    <li><a href="/en/procedures/overview">Program Overview</a></li>
+                    <li><a href="/en/procedures/jcp2">JCP Process Document</a></li>
+                    <li><a href="/en/whatsnew/calendar">Calendar</a></li>
+                    <li><a href="/en/participation/members">JCP Members</a></li>
+                    <li><a href="/en/participation/committee">Executive Committee</a></li>
+                    <li><a href="/en/whatsnew/elections">Elections</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/en/participation/overview" class="p7PMtrg">Get Involved</a>
+		<ul>
+                    <li><a href="/en/participation/overview">Overview</a></li>
+                    <li><a href="/en/participation/membership">Becoming a JCP Member</a></li>
+		</ul>
+            </li>
+
+            <li><a href="/en/resources/contents" class="p7PMtrg">Community Resources</a>
+                <ul>
+                    <li><a href="/en/resources/contents">Overview</a></li>
+                    <li><a href="/en/resources/tutorials">Tutorials</a></li>
+                    <li><a href="/en/resources/multimedia">JCP Podcasts</a></li>
+                    <li><a href="/en/resources/guide">Spec Lead Guide</a></li>
+                    <li><a href="/en/resources/tdk">TCK Tool & Info</a></li>
+                    <li><a href="/en/resources/license_reference">License Reference</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/en/press/pmo" class="p7PMtrg">Community News</a>
+                <ul>
+                    <li><a href="/en/press/pmo">News</a></li>
+                    <li><a href="/en/press/news/awards/awards_main">Programs &amp; Awards</a></li>
+                    <li><a href="/en/press/releases">Press Releases</a></li>
+                    <li><a href="/en/press/success">Success Stories</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/en/introduction/faq">FAQ</a></li>
+
+            <li><a href="/en/resources/contacts">Contact Us</a></li>
+
+            <div style="clear: both;"><img src="/images/spacer.gif" alt="" height="25" width="1"></div>
+
+            <!--[if lte IE 6]><style>#p7PMnav a{height:1em;}#p7PMnav li{height:1em;float:left;clear:both;width:100%}</style><![endif]-->
+            <!--[if IE 6]><style>#p7PMnav li{clear:none;}</style><![endif]-->
+            <!--[if IE 7]><style>#p7PMnav a{zoom:100%;}#p7PMnav li{float:left;clear:both;width:100%;}</style><![endif]-->
+        </ul>
+
+        
+
+        <!--begin ad space -->
+        <div class="ads">
+            <a href="http://java.com/java/download/index.jsp?cid=jdp78399" target="_blank"><img style="display: ;" src="/images/ad_banner2.gif" alt="Ad Banner" border="1" height="70" width="150"></a>
+        </div>
+        <!--end ad space -->
+
+<!-- ** Menu End ** //-->
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;<br>
+
+    
+
+                    &nbsp;<br>
+                    <img src="/images/common/trans.gif" alt="" width="1" height="150"><br>
+
+              
+
+
+
+                </td>
+                <!-- ** END: Navigation Column ** //-->
+
+                <!-- ** BEGIN: Gutter Column ** //-->
+		<td width="10" nowrap><img src="/images/common/trans.gif" alt="" width="10" height="1"></td>
+                <!-- ** END: Gutter Column ** //-->
+
+                <!-- ** BEGIN: Content Column ** //-->
+                <td width="100%" valign="top">
+
+    
+<script type="text/javascript">
+
+String.prototype.trim = function() {
+        return this.replace(/^\s+|\s+$/g,"");
+}
+String.prototype.ltrim = function() {
+        return this.replace(/^\s+/,"");
+}
+String.prototype.rtrim = function() {
+        return this.replace(/\s+$/,"");
+}
+
+function validate_search() {
+	if (document.search.id.value == "Search JSRs" || document.search.id.value.trim().length == 0) {
+		alert("Search terms must be entered first");
+		return false;
+	}
+	return true;
+}
+
+function validate_findjsr() {
+	if (document.findjsr.id.value == "Search JSRs" || document.findjsr.id.value.trim().length == 0) {
+		alert("Search terms must be entered first");
+		return false;
+	}
+	return true;
+}
+
+function nullify_if_equal(field, str) {
+	// alert("val=" + field.value);
+	if (field.value == str) {
+		field.value = "";
+	}
+}
+
+</script>
+<!-- ** END: header.jsp ** //-->
+
+
+
+
+
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2//EN">
+<html>
+<head>
+	<!--#config timefmt="%d-%b-%y" -->
+	<title>Java Community Process: EC Elections candidates for 2011</title>
+</head>
+
+<body alink="#ff0000" bgcolor="#ffffff" link="#0000ff" text="#000000" vlink="#660066">
+	<!-- server side include for top part of page -->
+	<!--#include virtual="/share/include/normal.header.v4.0.html"--><!-- end server side include for top of page --><!-- begin table for main body navigation and content -->
+	<table border="0" cellpadding="0" cellspacing="0" width="100%">
+	  <tbody>
+	    <tr align="left" valign="top">
+			<td> <img src="/images/pixel.gif" alt="" height="20" width="1"><br clear="all">
+	<!-- server side include for main java.sun.com navigation -->
+	<!--#include virtual="/share/include/navigate.v4.0.html"--><!-- end server side include for main java.sun.com navigation -->
+			</td>
+			<td valign="top" width="100%">
+
+<div style="margin-left:3%; margin-right:20%;">
+
+<!-- page headline -->
+<div class="header1">
+Meet the Candidates for the 2011 Executive Committee Election<BR>
+</div>
+<br>
+<!-- end page headline -->
+<!-- optional subnav links -->
+      <p></font></p>
+<!-- end optional subnav links -->
+<!-- main page content --><font size="-1">
+
+
+<p>
+The competition is intense for this year�s election of new and incumbent candidates to the Java Community Process (JCP) program�s Executive Committee (EC). Only a few seats are open, and the candidates are eager and willing to serve in this capacity. 
+</p>
+
+<p>
+Besides wanting to influence technology standards for the future, many of the candidates expressed a goal to participate in the next steps for revising the JCP constitution. In particular, they want to oversee the planned merger of the Micro Edition (ME) and the Java Standard Edition/Enterprise Edition (SE/EE) Executive Committees. Some even relish the prospect of revising the Java Specification Participation Agreement (JSPA). 
+</p>
+
+<p>
+Ongoing Executive Committee functions are listing on the <a href="/en/participation/committee">EC participation page</a>, each EC Member is expected to:
+<ul>
+	<li>Select Java Specification Requests (JSRs) for development within the JCP.</li>
+	<li>Approve draft Specifications for Public Review.</li>
+	<li>Give final approval to completed Specifications and their associated Reference Implementations (RIs) and Technology Compatibility Kits (TCKs).</li>
+	<li>Decide appeals of first-level TCK test challenges.</li>
+	<li>Review maintenance revisions and possibly require some to be carried out in a new JSR.</li>
+	<li>Approve transfer of maintenance duties between Members.</li>
+	<li>Provide guidance to the Program Management Office (PMO).</li>
+</ul>
+</p>
+<p>
+Fulfilling these kinds of duties includes attendance. Because the EC operates in an open, transparent manner, incumbent candidates have a <a href="/en/participation/attendance">track record</a> of participation in the EC meetings, which might offer additional insights into their potential influence and effectiveness. 
+</p>
+
+<p>
+And now, meet the candidates:
+<br><br>
+
+<a href="#me_ratified">ME EC Ratified Election Seat Candidates</a>: IBM/Mark Rogalski, Nokia/Erkki Rysa, SK Telecom/Dr. Hoojong Kim<br>
+<a href="#me_open">ME EC Open Election Seat Candidates</a>: aicas GmbH/Dr. James J. Hunt, ARM Limited/Andrew Sloss, Cox Communications/Craig Smithpeters, Werner Keil, Dr. Alex Terrazas<br>
+<a href="#se_ratified">SE/EE EC Ratified Election Seat Candidates</a>: Ericsson AB/Magnus L�nnroth, Intel/Anil Kumar, SAP/Steve Winkler<br>
+<a href="#se_open">SE/EE EC Open Election Seat Candidates</a>: Azul Systems/Gil Tene, Central Ohio JUG/Dan Sline, CloudBees/Steven G. Harris, John Harby, Kushan Jayathilake, Software AG/Greg Luck, TongTech/Li Ming, Gaurav Tripathi, Twitter/Attila Szegedi<br>
+</p>
+
+<div class="header2"><font size="+1">ME EC Ratified Election Seat Candidates</font><a name="me_ratified"></a></div>
+<br>
+
+	<div class="header3">IBM represented by Mark Rogalski</div>
+
+<p>
+<span style="font-weight:bold;">IBM</span> has contributed to the Java Community, influencing almost every aspect of the platform's evolution over the years since 1996. The company has been a key participant and leader on numerous JSRs since 1998, and a contributing member on both Executive Committees since their inception in 2000. By making Java-dependent hardware and software, IBM is investing heavily in the success of Java technology. In the Java ME space, IBM provides VM ports to more than twenty environments, together with support for a broad range of configurations, profiles, and JSRs. IBM has contributed significantly to the API specifications of the Java ME, SE, and EE platforms, as well as in numerous other Java specifications such as the Java Foundation Classes, Accessibility APIs, and improving internationalization support in Java. IBM has the distinction of having served as Spec Lead on JSR 1. In total, IBM is Spec Lead on three J2ME JSRs, and participates in seventeen J2ME JSR Expert Groups, including those related to CDC and modularity. IBM was nominated for the JCP Member of the Year award for 2004 and 2011, and in 2008 won Most Outstanding Java SE/EE Spec Lead for work on JSR 286. 
+</p>
+<p>
+<table style="float:left;" cellspacing="10" cellspacing="10">
+<tr align="left" valign="top"><td>
+<! -- EC contact photo and name -->
+<img src="./2011/Mark_Rogalski_nom.jpg" width="150px"><BR>Mark Rogalski
+</td><td>
+<span style="font-size:small;">
+<span style="font-weight:bold;">Mark Rogalski</span> represents IBM as an IBM Software Architect for mobile collaboration applications. He has spent the last fifteen years of his twenty-year tenure with IBM working on Java-based software for various types of devices including set-top boxes, bar code scanners, smart phones, and tablets.
+</span></td></tr>
+<tr><td style="height:10;"></td></tr>
+</table>
+</p>
+
+
+	<div class="header3">Nokia represented by Erkki Rysa</div>
+
+<p>
+<span style="font-weight:bold;">Nokia</span> has been nominated for many JCP awards. In 2003, at the first-ever JCP awards ceremony, Nokia�s JSR 184 won the Most Innovative J2ME JSR award. The company was nominated for JCP Member of the Year in 2005 and 2008. In 2008, Nokia�s JSR 287 was nominated Most Innovative Java ME JSR. In 2004, 2006, and 2008, Nokia won the Most Outstanding Java ME Spec Lead award for work on JSRs 226, 248, and 293, respectively. (Twenty percent of the Star Spec Leads in the Spec Lead Hall of Fame represent Nokia.) Nokia is committed to connecting people to what matters to them by combining advanced mobile technology with personalized services. More than a billion people connect to one another with a Nokia device, from affordable voice-optimized mobile phones to advanced Internet-connected smartphones sold in virtually every market in the world. Nokia is the world's largest manufacturer of mobile phones, and most of the phone models sold provide a Java ME platform for third-party developers.
+</p>
+<p>
+<table style="float:left;" cellspacing="10" cellspacing="10">
+<tr align="left" valign="top"><td>
+<! -- EC contact photo and name -->
+<img src="./2011/Erkki_Rysa_nom.jpg" width="150px"><BR>Erkki Rysa
+</td><td>
+<span style="font-size:small;">
+<span style="font-weight:bold;">Erkki Rysa</span> is a Senior Technology Manager in the CTO unit of Nokia Corporation in Finland. He has worked for Nokia for the last seventeen years in various software development, technology management, and standardization roles. He is highly involved in the JCP community as the Specification/Maintenance Lead for JSRs 180, 232, 234, 248, and 249. Led by Erkki, JSR 234 won Most Innovative JSR for J2ME Platform in 2004, and Erkki was nominated Most Outstanding Java ME Spec Lead in 2009 for his open, transparent methods of working on JSR 249. He has also been involved in many other JSRs led by Nokia and other JCP members. 
+</span></td></tr>
+<tr><td style="height:10;"></td></tr>
+</table>
+</p>
+
+	<div class="header3">SK Telecom represented by Hoojong Kim</div>
+
+<p>
+<span style="font-weight:bold;">SK Telecom</span> has launched the SKVM that is a runtime Java environment for embedded systems for mobile devices. The company has released more than 5000 handsets since its first commercialization in 2001. The SKVM Java platform enables various kinds of applications and contents to run on mobile handsets. Under its environment, services and applications such as games, Instant Messenger, real-time car navigation, data streaming, real-time graphic-based commerce, entertainment, and information can run on mobile handsets. SK Telecom has actively participated in the JCP community. The company has been the Spec Lead for JSRs 298, 324, and 327. JSR 327 was nominated Most Innovative JSR for 2009 and 2010. With experience in JSR development as well as service platform commercialization, SK Telecom expects to provide opportunities for various existing Java technologies to naturally expand into new fields, such as the automotive industry. 
+</p>
+<p>
+<table style="float:left;" cellspacing="10" cellspacing="10">
+<tr align="left" valign="top"><td>
+<! -- EC contact photo and name -->
+<img src="./2011/Hoojong_Kim_nom.jpg" width="150px"><BR>Hoojong Kim
+</td><td>
+<span style="font-size:small;">
+<span style="font-weight:bold;">Dr. Hoojong Kim</span> represents SK Telecom as Senior Vice President and Head of Global Technology R&D Center, where he is responsible for technology and solution development of terminals and platforms. With more than twenty years of experience in the mobile industry, his efforts help develop and secure key technologies for 3G terminals. In the past ten years, he has been in a charge of mobile device and platform technology development, which enhances mobile multimedia services and offers consistently personalized service through any device. His current research interests are developing a business model for the future mobile services, principally on the convergence of telecommunication. Hoojong represented SK Telecom in IMT-2000 and evolution researches and has actively served as a Board member of LiMo, WAC, and Mobile Platform Standardization Forum.
+</span></td></tr>
+<tr><td style="height:10;"></td></tr>
+</table>
+</p>
+
+	<div class="header3">aicas GMbH represented by Dr. James J. Hunt</div>
+
+<p>
+<span style="font-weight:bold;">aicas GmbH</span>. aicas produces Java analysis and development tools for realtime and embedded systems. Headquartered in Karlsruhe, Germany, the firm has been serving the marketplace since 2001. The company provides products and services for the military/aerospace, industrial automation, and automotive markets, as well as companies in the medical device sectors. JamaicaVM, its flagship product, is a hard realtime Virtual Machine incorporating deterministic garbage collection for running realtime Java programs. 
+</p>
+<p>
+<table style="float:left;" cellspacing="10" cellspacing="10">
+<tr align="left" valign="top"><td>
+<! -- EC contact photo and name -->
+<img src="./2011/James_Hunt_nom.jpg" width="150px"><BR>James Hunt
+</td><td>
+<span style="font-size:small;">
+<span style="font-weight:bold;">Dr. James J. Hunt</span> is cofounder and CEO of aicas. He has a BS in Computer Science (CS) and Physics from Yale, an MA CS from BU, and a Doctorate in CS from Karlsruhe. At MIT Lincoln Laboratory, he developed CAD software for wafer-scale integrated circuits (RVLSI) and a parallel Lisp system for signal processing. He is the technical lead for the CHARTER project researching Java-based safety-critical systems. He is an active member of the SC-205 Plenary for avionics software safety standard. In his position paper, James said, �I would like to support both incorporating J2SE 1.6 language features in Java ME and improving the compatibility between J2ME and J2SE. � The long term viability of Java as a commercial development language depends on maintaining the highest possible level of compatibility without losing the flexibility needed to address the multitude of application domains that could benefit from Java technology.� 
+</span></td></tr>
+<tr><td style="height:10;"></td></tr>
+</table>
+</p>
+
+<div class="header2"><font size="+1">ME EC Open Election Seat Candidates</font><a name="me_open"></a></div>
+<br>
+
+	<div class="header3">ARM Limited represented by Andrew Sloss</div>
+
+<p>
+<span style="font-weight:bold;">ARM Limited</span> is excited by the opportunity to serve on the ME EC. ARM views Java as playing a critical role in the software ecosystem. ARM�s motivation is to make sure its 250 semiconductor partners (collectively shipping more than six billion units in 2010) have the most highly supported Java solution available, to help drive Java into new and compelling embedded markets, and to help the convergence of ME and SE by moving ARM to micro-servers. ARM has collaborated on Java technology since 1996 by supporting JSRs 163, 184, 271, and 297.  
+</p>
+<p>
+<table style="float:left;" cellspacing="10" cellspacing="10">
+<tr align="left" valign="top"><td>
+<! -- EC contact photo and name -->
+<img src="./2011/Andrew_Sloss_nom.jpg" width="150px"><BR>Andrew Sloss
+</td><td>
+<span style="font-size:small;">
+<span style="font-weight:bold;">Andrew Sloss</span> is a Consultant Engineer at ARM Inc, where he has worked for over fifteen years supporting and developing ARM processor-based embedded products. Andrew co-authored <i>ARM System Developer's Guide: Designing and Optimizing System Software</i>. He graduated from the University of Hertfordshire in Computer Science and has spent twenty years in the Computer/Embedded field working for a mixture of startups and larger companies, namely Acorn Computers, EO Inc (an AT&T startup), Firepower Systems (a Canon startup) and Motorola. Andrew is also the ARM Binding�s Chairperson for UEFI. He is a Fellow of the British Computer Society and a part-time Lecturer in Embedded Systems at the University of Washington Extension. Andrew said in the October 20 <i>Meet the Candidates</i> conference call, �Our motivation for applying to the EC is that we represent 200 semiconductor licensees. We have a high motivation to make Java work extremely well on our chips. Our processors get more capable every year, so we�re especially interested in a merger of the ME and SE/EE ECs.� 
+</span></td></tr>
+<tr><td style="height:10;"></td></tr>
+</table>
+</p>
+
+	<div class="header3">Cox Communications represented by Craig Smithpeters</div>
+
+
+<p>
+<span style="font-weight:bold;">Cox Communications</span> is leading the charge to leverage Java as the central core of next generation products for their customers. The company has extensive experience with products built on both J2EE and J2ME. Cox has demonstrated technology thought leadership in many industry and standards organizations over the years, including the JCP program. 
+</p>
+<p>
+<table style="float:left;" cellspacing="10" cellspacing="10">
+<tr align="left" valign="top"><td>
+<! -- EC contact photo and name -->
+<img src="./2011/Craig_Smithpeters_nom.jpg" width="150px"><BR>Craig Smithpeters
+</td><td>
+<span style="font-size:small;">
+<span style="font-weight:bold;">Craig Smithpeters</span> is an inventor representing Cox Communications. He was the original Spec Lead for JSR 242, Digital Set Top Box Profile - "On Ramp to OCAP," which was nominated Most Innovative JSR for J2ME Platform in 2004. Craig has filed numerous patents related to television and digital video recording. [[[LINK �Craig� to community focus story http://www.jcp.org/en/press/news/commFocus04-05smithpeters ]]
+</span></td></tr>
+<tr><td style="height:10;"></td></tr>
+</table>
+</p>
+
+	<div class="header3">Werner Keil</div>
+
+<p>
+<table style="float:left;" cellspacing="10" cellspacing="10">
+<tr align="left" valign="top"><td>
+<! -- EC contact photo and name -->
+<img src="./2011/Werner_Keil_nom.jpg" width="150px">
+</td><td>
+<span style="font-size:small;">
+<span style="font-weight:bold;">Werner Keil</span> is an individual member of the JCP program. Werner has worked with Java technology from the first JDK, creating solutions in paradigms of what is currently referred to as portals and social networks. He was elected to the JCP SE/EE EC three years ago at a critical, difficult phase and helped many JSRs along, including Java EE 6 and JCP 2.8. In this election, Werner is running for the ME EC for two reasons. First, he has worked in mobile/telco for the past three years and, second, he wants to support the EC�s upcoming task to merge the two Executive Committees �until that work is done and the JCP as well as Java itself unified.� He has contributed to a variety of JSRs, including 321 (Trusted Java), 331, 333, 342 (Java EE 7), 344, 346 (CDI 1.1), and 348 (JCP.next). Werner is a Distinct Architect for a Financial Services company. He has helped Global 500 Enterprises across industries, as well as leading IT vendors. He has worked for more than twenty years as program manager, coach, software architect, and consultant for finance, telco/mobile, media, and the public sector. Werner is also an Eclipse Committer and UOMo Project Lead. In his position statement, Werner said, �The modularization of Java is also just about to begin. As well as significant development in areas like Mobile, Embedded and Distributed Computing. To be faced by a new, modular Java with features like Sensor Support proposed in V8 blurring the boundaries between ME, SE and EE towards the age of Ubiquitous Computing, the Next Web (also known as Semantic Web) and the Internet of Things.� 
+</span></td></tr>
+<tr><td style="height:10;"></td></tr>
+</table>
+</p>
+
+	<div class="header3">Dr. Alex Terrazas</div>
+
+<p>
+<table style="float:left;" cellspacing="10">
+<tr align="left" valign="top"><td>
+<! -- EC contact photo and name -->
+<img src="./2011/Alex_Terrazas_nom.jpg" width="150px">
+</td><td>
+<span style="font-size:small;">
+<span style="font-weight:bold;">Dr. Alex Terrazas</span> is an individual member of the JCP program. Six months ago, Alex was elected to an ME EC seat that had vacated, and he participated in JSR 348, Towards a New Version of the Java Community Process. Alex is interested in Kinect, JavaFX, Java TV, and Java ME on mobile phones and embedded systems. Before joining the EC, he used Java ME on feature phones to deliver behavior modification programs, funded by the National Institutes of Health (NIH). Alex has realized that Java ME is very powerful and can run effectively on embedded devices; he wants to help �evangelize Java on embedded� and make a strong contribution to �Moving Java Forward.� He coauthored <i>Java Media APIs: Cross-Platform Imaging, Media, and Visualization</i> on Java 3D, Java Advanced Imaging, and the Java Media Framework. Through his VR research at NIH, Alex used Java3D to control the presentation of 3D and VR stimuli, and he used Java3D environments in a functional MRI scanner. Alex�s career has focused on technology development based on brain science (e.g., computer vision, neural networks, and information theory). He holds a PhD in Psychology and Neural Systems from the University of Arizona. 
+<br><br>
+Although Alex is running for the ME EC seat as an individual, his current work title is Vice President of Innovation at the Nielsen Company, a corporation that does not inhabit the Java space. Having been an executive, entrepreneur, and academic, Alex offers a multi-faceted perspective to the ME EC. Alex is determined to simplify �the evil JSPA� to reduce barriers for joining the JCP program. In his position paper, Alex said, �there are some good ways to break up the JSPA into components that can be passed incrementally. �[W]e should insist on plain English translation of the legal terms using boxes that describe what the text means�. [W]e should include use cases and examples from the real world to describe how the JSPA relates to different entities. I propose that we rewrite the JSPA in three deliverables�member, Expert Group member, and Spec Lead.�
+</span></td></tr>
+<tr><td style="height:10;"></td></tr>
+</table>
+</p>
+
+<div class="header2"><font size="+1">SE/EE EC Ratified Election Seat Candidates</font><a name="se_ratified"></a></div>
+<br>
+
+	<div class="header3">Ericsson AB represented by Magnus L�nnroth</div>
+
+<p>
+<span style="font-weight:bold;">Ericsson AB</span> has been nominated for many JCP awards over the years. In 2006, the company won Member of the Year and was a co-nominee for the same award in 2009. Ericsson is big on standardization, participating in various forums, such as 3GPP and IEEE. Within the JCP community, Ericsson is engaged in all aspects of Java standardization and especially in defining the next version of the Java EE platform. The company participated in over forty JSRs, and has been the Spec Lead for several JSRs, including 29, 281 (nominated Most Outstanding Java ME Spec Lead in 2008 and 2009), 319 (nominated Most Innovative Java SE/EE JSR in 2008), and 325 (nominated Most Innovative Java ME JSR in 2009). Ericsson contributes in other ways, such as releasing the company�s SIP-servlet container to the open source community. Ericsson asserts that Java EE servers and SIP servlets are a logical choice to enable quick development of new services within the telecommunication industry. Ericsson promises to work for openness and transparency within the Java standardization effort and to continue contributing within standardization and open source communities. 
+</p>
+<p>
+<table style="float:left;" cellspacing="10">
+<tr align="left" valign="top"><td>
+<! -- EC contact photo and name -->
+<img src="./2011/Magnus_Lonnroth_nom.jpg" width="150px"><BR>Magnus L�nnroth
+</td><td>
+<span style="font-size:small;">
+<span style="font-weight:bold;">Magnus L�nnroth</span> is a new representative for Ericsson, where he has been employed for eight years. He has specialized in middleware/Internet and database technologies. This patent holder spent 25 years creating commercial software, pioneering database-driven Web technology, server-side Java, and Java/CORBA integration while at Oracle, and leading the implementation of very large Java-based mobile data services at Drutt and later Ericsson. �Java is a crucial and strategic language for us, the lang of choice for server-side software development,� said Magnus during the October 20 <i>Meet the Candidates</i> conference call. He is a strong supporter of open technologies and was a charter member of the World Wide Web Consortium's Mobile Web Initiative (W3C MWI), with four years working on the Steering Council. 
+</span></td></tr>
+<tr><td style="height:10;"></td></tr>
+</table>
+</p>
+
+	<div class="header3">Intel Corporation represented by Anil Kumar</div>
+
+<p>
+<span style="font-weight:bold;">Intel Corporation</span> has actively contributed to the JCP program since 2002, participating in more than twenty JSRs and earning a nomination for JCP Member of the Year in 2008. Employee Wayne Carr won JCP Participant of the Year in 2007 for work on JSRs 250, 270, and 277 and for his efforts to make the JCP program �more transparent, open, and fair� -- key words for this company. In serving as a JCP EC member for nearly a decade, Intel has consistently supported openness and fairness, while helping Java technology move forward to address the latest trends and complex future needs. The company has worked with major JVM vendors on Java optimizations, published numerous research papers, and participated in major conferences, offering both presentations and keynotes. A significant population of developers and end-users run Java technologies on Intel architecture platforms, providing Intel with unique perspectives on the Java platform. Intel has an interest in seeing a �seamless continuum of experience� for users of Java applications ranging from customer-specific to large servers, and implemented along the whole gamut of tablets, phones, data servers, and clouds. 
+</p>
+<p>
+<table style="float:left;" cellspacing="10">
+<tr align="left" valign="top"><td>
+<! -- EC contact photo and name -->
+<img src="./2011/Anil_Kumar_nom.jpg" width="150px"><BR>Anil Kumar
+</td><td>
+<span style="font-size:small;">
+Intel�s new representative, <span style="font-weight:bold;">Anil Kumar</span>, has been at the company for more than fourteen years, working in various roles in the Software and Services Group. Although he is new to the JCP community, within the Java ecosystem, he has contributed to various standards organizations, establishing benchmarks such as SPECjbb2005, SPECjvm2008, and SPECjEnterprise2010. He also improved the user experience and resource utilization in certain customer applications and helped the default performance for hardware and software configurations. His past experience in areas such as graphics, memory, platform evaluation, software development, virtualization, and cloud, along with an in-depth computer architecture background, places him in a strong position for contributing to mainstream Java as well as future emerging heterogeneous environments. �Intel fought for the openness of the JCP,� said Anil during the <i>Meet the Candidates</i> session at JavaOne 2011. Anil looks forward to continuing that effort by helping define additional reforms beyond JSR 348 to make the JCP even more open, transparent, and productive.
+</span></td></tr>
+<tr><td style="height:10;"></td></tr>
+</table>
+</p>
+
+	<div class="header3">SAP represented by Steve Winkler</div>
+
+<p>
+<span style="font-weight:bold;">SAP</span> helps companies of all sizes and industries run better. With over 160,000 enterprise customers, including Coca-Cola, SAP is the world�s leading provider of business software. Although SAP had built its own proprietary language in the 1970s, the company became aware of its limitations and began wholehearted support of Java in the 1990s. Now a significant portion of their customer base runs SAP or SAP partner solutions based on Java. SAP has participated in the JCP program since 2001, with SAP engineers leading JSR 265, API for Utilizing Web Services Policy, and participating in more than 50 additional JSRs, including 198, 208, 222, 224, and 255. SAP is committed to ensuring the continued success of the Java platform for their customers, partners, and the community at large. 
+</p>
+<p>
+<table style="float:left;" cellspacing="10">
+<tr align="left" valign="top"><td>
+<! -- EC contact photo and name -->
+<img src="./2011/Steve_Winkler_nom.jpg" width="150px"><BR>Steve Winkler
+</td><td>
+<span style="font-size:small;">
+SAP�s new representative, <span style="font-weight:bold;">Steve Winkler</span>, is a technology strategist focused on open standards and open source in the SAP Office of the CTO. He has over sixteen years of Java programming experience, including the design and development of an enterprise-class, Java-based XML Messaging System that enables the communication of SAP systems with non-SAP systems. Since 2004 he has been an active participant in numerous community-driven standards bodies, including the JCP program.
+</span></td></tr>
+<tr><td style="height:10;"></td></tr>
+</table>
+</p>
+
+<div class="header2"><font size="+1">SE/EE EC Open Election Seat Candidates</font><a name="se_open"></a></div>
+<br>
+
+	<div class="header3">Azul Systems represented by Gil Tene</div>
+
+<p>
+<span style="font-weight:bold;">Azul Systems</span> has been a Java licensee and JCP community member since 2002. Global 2000 enterprises run mission-critical Java workloads on Azul�s JVM and Java Virtualization products, including some of the world�s largest web portals, ecommerce websites, financial risk analysis, trading platforms, business-to-business gateways, insurance claims, and supply chain management applications. Azul demonstrated expertise in design and optimization of systems stack components for Java execution, including OS, virtualization, hardware, and the Java runtime (JVM). The company regularly participates in industry events, and has delivered over 100 technical presentations in Java-related conferences. Azul has also signed the OpenJDK Community TCK License Agreement (OCTLA) with Oracle in order to take an active role in the JDK project. In running for the JCP Executive Committee, Azul intends to actively participate in proposing, reviewing, and ratifying JSRs, and to help set the future direction of the JCP program and JSR technologies. 
+</p>
+<p>
+<table style="float:left;" cellspacing="10">
+<tr align="left" valign="top"><td>
+<! -- EC contact photo and name -->
+<img src="./2011/Gil_Tene_nom.jpg" width="150px"><BR>Gil Tene
+</td><td>
+<span style="font-size:small;">
+�We want to shift from following downstream standardization to driving technology upstream,� said representative <span style="font-weight:bold;">Gil Tene</span> during the <i>Meet the Candidates</i> session at JavaOne 2011. �We want to see change in the JCP program, where vendors who build product are involved,� he added in the October 20 <i>Meet the Candidates</i> conference call. A former Navy Officer, Gil is CTO and co-founder at Azul Systems, which he started with the goal of eliminating common Java responsiveness, performance, and scale barriers. At Azul, Gil pioneered several Java industry firsts in its products, including Pauseless Garbage Collection, Elastic Memory, and Java Virtualization. With over two decades of experience in the software industry, Gil is a frequent speaker at Java industry events. He holds a BSEE from the Technion, and has been awarded 24 patents in computer-related technologies. 
+</span></td></tr>
+<tr><td style="height:10;"></td></tr>
+</table>
+</p>
+
+	<div class="header3">Central Ohio JUG represented by Dan Sline</div>
+
+<p>
+<span style="font-weight:bold;">The Central Ohio Java Users Group (COJUG)</span> has been around for approximately fourteen years, meeting twice monthly to share knowledge on Java-related topics and to provide professional networking opportunities. If called to serve on the JCP Executive Committee, COJUG intends to ensure that (1) proposed JSRs are implemented in ways that improve the language for current and future releases, (2) JSR requirements are implemented in a manner consistent with the spirit of Java, (3) implemented JSRs are not counterproductive to the Java language, (4) new releases of features and functionality roll out in a timely manner, and (5) JVM-based language JSRs are supported. Moreover, COJUG plans to act as a voice for the Java community as a whole, not just for COJUG.
+</p>
+<p>
+<table style="float:left;" cellspacing="10">
+<tr align="left" valign="top"><td>
+<! -- EC contact photo and name -->
+<img src="./2011/Dan_Sline_nom.jpg" width="150px"><BR>Dan Sline
+</td><td>
+<span style="font-size:small;">
+COJUG representative <span style="font-weight:bold;">Dan Sline</span> has been an active Java User Leader since 2008, with his role as JCP Liaison for various Java User Groups. Dan enjoys speaking at conferences. He led the �Improving Your Java User Group� BOF Panel at Java One 2009. In addition to his four BOF sessions at JavaOne 2011 (on Griffon, Web Service Security, Groovy Web Services, and Security JVM Scripting languages), Dan also led the �Java User Group and the JCP� panel discussion. In recent months, he made contributions to JSR 348, Towards a new version of the Java Community Process. A Sun Certified Java Developer (SCJD), Dan has been using Java and its related technologies since 2000, and he has over sixteen years in software development working with various industries. He is a VP and Architect with JPMorgan Chase. He is also a graduate of the Expert Engineer Program (one of 240 Expert Engineers out of 24,000 IT Professionals) within JPMorgan Chase. He holds a BS in Business Management with Minors in Math and Computing from Ithaca College and an MS in Management Information Systems from Texas A&M University.
+</span></td></tr>
+<tr><td style="height:10;"></td></tr>
+</table>
+</p>
+
+	<div class="header3">CloudBees represented by Steven G. Harris</div>
+
+<p>
+<span style="font-weight:bold;">CloudBees</span> is a Java-centric startup founded by former JBoss CTO Sacha Labourey. The company is focused on servicing the complete Java application lifecycle for cloud development and deployment. CloudBees is now the world premier expert on Jenkins, the most widely used continuous integration server. The team includes developers with deep Java roots and years of experience actively serving the open source community. The cloud is changing the way Java applications are developed and deployed, and CloudBees provides a viewpoint that will help the EC ensure Java remains the best platform in the emerging cloud and PaaS world. As a company betting on the future of Java, two major issues motivate CloudBees� participation in the EC: an interest in helping drive consensus around the remaining JCP.next changes to the �underlying structures within which the JCP operates,� and a need to oversee the emergence of modules in the base platform.
+
+</p>
+<p>
+<table style="float:left;" cellspacing="10">
+<tr align="left" valign="top"><td>
+<! -- EC contact photo and name -->
+<td><img src="./2011/Steve_Harris_nom.jpg" width="150px"><BR>Steven G. Harris
+</td><td>
+<span style="font-size:small;">
+�There�s a lot of open source sensibilities being brought to the table,� said CloudBees representative and SVP of products <span style="font-weight:bold;">Steven G. Harris</span> during the October 20 <i>Meet the Candidates</i> conference call. He added, �We�re convinced that the cloud is the new platform. It�s important that we inject some cloud DNA, some startup DNA into the Executive Committee.� Before joining CloudBees, he acted as point person and development lead on Java server technology and standards activities for most of his thirteen years at Oracle. At Oracle, he was responsible for the Java EE platform and commercial products based on it. From the earliest days of the JCP program, Steve participated in the Java community and with other vendors. �I bring perspective that makes me a better advocate now that I�m outside [of Oracle], but understanding the inside,� said Steve during the <i>Meet the Candidates</i> session at JavaOne 2011. 
+</span></td></tr>
+<tr><td style="height:10;"></td></tr>
+</table>
+</p>
+
+	<div class="header3">John Harby</div>
+
+<p>
+<table style="float:left;" cellspacing="10">
+<tr align="left" valign="top"><td>
+<! -- EC contact photo and name -->
+<img src="./2011/John_Harby_nom.jpg" width="150px">
+</td><td>
+<span style="font-size:small;">
+As of 2001, <span style="font-weight:bold;">John Harby</span> has been an individual participant in several JCP Expert Groups. Having worked with Java technology since 1995, he has participated in several OASIS Technical Committees. John is currently an independent consultant in the Java Middleware space working in many different domains. Previously, he was a Senior Architect in the Hewlett Packard web services lab that was responsible for the first web services implementation, winning a Smithsonian award for that platform. He was also a member of the WebLogic team at BEA. In 2004, he co-authored The Middleware Company <i>SOA Blueprints Initiative Definition</i>. As stated during the October 20 <i>Meet the Candidates</i> conference call, John is currently involved with mobile from the server perspective, and he seeks to liase with the mobile industry because he sees mobile increasing with smart phones. He wants to make it easier for developers and help streamline some complexities in the web services area that don�t need to be there. 
+</span></td></tr>
+<tr><td style="height:10;"></td></tr>
+</table>
+</p>
+
+	<div class="header3">Kushan Jayathilake</div>
+
+<p>
+<table style="float:left;" cellspacing="10">
+<tr align="left" valign="top"><td>
+<! -- EC contact photo and name -->
+<img src="./2011/Kushan_Jayathilake_nom.png" width="150px">
+</td><td>
+<span style="font-size:small;">
+<span style="font-weight:bold;">Kushan Jayathilake</span> is an independent competitor, currently working for Virtusa Corporation as a Senior Engineer for the JEE platform. As a software consultant, Kushan has expertise in JSP, JSF, JAXB, Digester, JBoss RichFaces, Spring, Hibernate ORM, Hibernate Validators, JPA, EJB2.1, EJB 3.1, ANT, Ruby on Rails, JBoss 4.2, JBoss 5.1, Apache Axis 2, Oracle 10g, MySQL, and Postgres DB. 
+</span></td></tr>
+<tr><td style="height:10;"></td></tr>
+</table>
+</p>
+
+	<div class="header3">Software AG represented by Greg Luck</div>
+
+<p>
+A major Java middleware provider, <span style="font-weight:bold;">Software AG</span> is Europe's second largest software company. With products such as Natural/Adabas, webMethods, Terracotta, and many others, Software AG operates broadly across business middleware. Java is a new focus for the company, but the webMethods product itself implements JSRs, said representative Greg Luck during the <i>Meet the Candidates</i> session at JavaOne 2011. 
+</p>
+<p>
+<table style="float:left;" cellspacing="10">
+<tr align="left" valign="top"><td>
+<! -- EC contact photo and name -->
+<td><img src="./2011/Greg_Luck_nom.jpg" width="150px"><BR>Greg Luck
+</td><td>
+<span style="font-size:small;">
+<span style="font-weight:bold;">Greg Luck</span> is a well-known Java architect, speaker, and writer. He founded Ehcache in 2003 and today acts as CTO Ehcache, Terracotta within Software AG. Within the JCP community, he is Spec Lead of two JSRs. JSR107, JCACHE - Java Temporary Caching API, is nearing completion, and JSR 350, Java State Management, is ramping up. At  the <i>Meet the Candidates</i> session, Greg explained his motivation for serving on the EC: to see that the JCP program and JSRs are more relevant to the developers who will implement them. Also, he wants to use Apache for his JSR�s RI and TCK. Greg is not new to standards bodies; he has also been an Advisory Board member for Glassfish. Before starting up his own company, Greg was Chief Architect at Wotif.com, one of Australia's largest dot-coms. Before that, he was an architect at ThoughtWorks in the US and Australia. He blogs at http://gregluck.com/blog/. 
+</span></td></tr>
+<tr><td style="height:10;"></td></tr>
+</table>
+</p>
+
+
+	<div class="header3">TongTech Ltd represented by Li Ming</div>
+
+<p>
+<span style="font-weight:bold;">TongTech Co., Ltd.</span>, is an ISV of middleware products, based in China. Most of the company�s products are developed in Java SE/EE. TongTech is the number-one local middleware provider. The company was founded November 1992.
+
+</p>
+<p>
+<span style="font-weight:bold;">Li Ming</span> represents TongTech. He is the Chief Product Officer of TongTech.
+
+
+	<div class="header3">Gaurav Tripathi</div>
+
+<p>
+<table style="float:left;" cellspacing="10">
+<tr align="left" valign="top"><td>
+<! -- EC contact photo and name -->
+<img src="./2011/Gaurav_Tripathi_nom.jpg" width="150px">
+</td><td>
+<span style="font-size:small;">
+<span style="font-weight:bold;">Gaurav Tripathi</span> works at one of the leading IT conglomerates as a Solutions Architect. His primary job responsibility is to provide architecture consulting of large-scale/complex Enterprise Applications and Application Portfolio Optimization, IT Strategy, Technology roadmaps. He is certified by Oracle as an Enterprise Architect and is also certified by the TOGAF Foundation. Gaurav is keenly interested in issues related to participation and contribution towards architecture governance, mentoring, technical training, and blogging. He maintains a blog at http://visitgaurav.blogspot.com/. 
+</span></td></tr>
+<tr><td style="height:10;"></td></tr>
+</table>
+</p>
+
+
+	<div class="header3">Twitter represented by Attila Szegedi</div>
+
+<p>
+<span style="font-weight:bold;">Twitter Inc.</span> is a new member of the JCP program. The company is relying more and more on the JVM as its runtime, with most of the new software being written in Java or Scala. Twitter is solving challenging design problems at its operational scale and is developing libraries for scalable IO, monitoring, and management. The company started diversifying in programming languages; in addition to Java and Scala, their systems are being written in Ruby, Python, JavaScript, and Clojure on JVM. Twitter has a strong record of community involvement, and much of their software is open sourced.
+</p>
+<p>
+<table style="float:left;" cellspacing="10">
+<tr align="left" valign="top"><td>
+<! -- EC contact photo and name -->
+<img src="./2011/Attila_Szegedi_nom.jpg" width="150px"><BR>Attila Szegedi
+</td><td>
+<span style="font-size:small;">
+<span style="font-weight:bold;">Attila Szegedi</span> is a software engineer in Twitter's Runtime Systems division, serving as the cross-team expert for JVM topics in general, and specializing in JVM performance optimizations and multi-language development. He is also a contributor to and former maintainer of Mozilla Rhino, a JavaScript runtime for the JVM, a contributor to Kiji, Twitter's server-optimized Ruby runtime, and the author of <i>Dynalink: the Dynamic Linker Framework for Languages on the JVM</i>. During the JavaOne 2011 <i>Meet the Candidates</i> introduction held at the Mason Street Caf� Community Hub, Artilla said, �We need to ensure we have features we need since Twitter is betting the house on JVM. We think of JVM as a platform, and we�re concerned with scalability and interoperability. We discovered solutions that we think would be helpful to standardize. I look forward to participating and cooperating and learning from existing and old JCP members. I�m hoping that serving on the EC is a great opportunity to ramp up our expertise in this area.� 
+</span></td></tr>
+<tr><td style="height:10;"></td></tr>
+</table>
+</p>
+		
+		
+</div>		
+		
+<!-----------------------DIVIDER--------------------------->
+<!-- end main page content -->
+			</td>
+<!-- gutter spacing for right side of the page --> 
+			<td width="30"><img src="/images/pixel.gif" alt="" height="1" width="30"> </td>
+		</tr>
+</tbody>
+</table>
+<!-- server side include for page footer -->
+<!--#include virtual="/share/include/normal.footer.v4.0.html"--><!-- end server side include for footer -->
+<BR>
+<BR>
+
+</body>
+</html>
+		
+
+
+<!-- ** BEGIN: footer.jsp ** //-->
+
+
+
+
+
+
+
+
+</td>
+</tr>
+</table>
+
+<!-- ** END: Content Table ** //-->
+
+<!-- ** BEGIN: Footer Table ** //-->
+
+<div id="footer" style="clear: both;">
+    <div class="footleft">
+        <a href="/en/resources/contacts">Contact Us</a>
+    </div>
+	
+    <div class="botbar"><img src="/images/spacer.gif" alt="" height="23" width="1"></div>
+
+    <div class="footleft2">
+         &copy; 2019, Oracle Corporation and/or its affiliates. 
+        <a href="/en/home/terms">Terms of Use</a>. <a href="http://www.oracle.com/us/legal/privacy/index.html">Privacy Policy</a>. <a href="http://www.oracle.com/us/legal/third-party-trademarks/third-party-trademarks-078568.html">Trademarks</a>
+    </div>
+
+    <div class="footright">
+        <img src="/images/common/logo_oracle_footer.gif" alt="Oracle Corporation" height="22" width="91">
+    </div>
+
+    <div style="clear: both;"><img src="/images/spacer.gif" alt="" height="30" width="1"></div>
+</div>
+
+<!-- ** END: Footer Table ** //-->
+
+
+
+<!-- ** Menu Start ** //-->
+
+
+
+</body>
+</html>
+<!-- ** END: footer.jsp ** //-->
+

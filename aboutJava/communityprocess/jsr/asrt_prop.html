@@ -1,0 +1,866 @@
+
+<!-- ** BEGIN: header.jsp ** //-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3c.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+<head>
+    
+
+   
+    <link href="/includes/css/menu.css" rel="stylesheet" type="text/css"></link>
+    <link href="/includes/css/style.css" rel="stylesheet" type="text/css"></link>
+    <!--[if lt IE 6]><link href="/includes/css/style5.css" rel="stylesheet" type="text/css" ></link><![endif]-->
+    <!--[if gte IE 5]><link href="/includes/css/style6.css" rel="stylesheet" type="text/css" ></link><![endif]-->
+    <link href="/includes/css/tabs.css"  rel="stylesheet" type="text/css"></link>
+
+    <script type="text/javascript" src="/includes/scripts/tabs.js"></script>
+    <script type="text/javascript" src="/includes/scripts/menu.js"></script>
+   
+
+    
+
+    
+        <title>The Java Community Process(SM) Program - communityprocess - jsr</title>
+    
+
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+
+
+<body onload="P7_initPM(0,1,0,0,-1)">
+
+    <a name="top"></a>
+
+    <div id="header">
+	<div id="logo">
+		<a href="/en/home/index"><img src="/images/spacer.gif" alt="Java Community Process" height="81" width="151"></a>
+	</div>
+	<div id="tools">
+		<div class="search">
+			<form name="search" action="/en/jsr/summary" method="get" onsubmit="return validate_search()">
+				<input name="id" value="Search JSRs" size="16" class="form" onfocus="nullify_if_equal(this, 'Search JSRs')" type="text">
+				<a href="javascript:document.search.submit()" onclick="return validate_search()"><img src="/images/button_go.gif" width="21" height="16" border="0" alt="Submit this Search" name="sub_search"></a>
+			</form>
+		</div>
+		<div class="tools">
+			<a href="/en/press/pressroom">Press Room</a> &nbsp;|&nbsp;
+			<a href="http://java.com/java/download/index.jsp?cid=jdp78399">Get Java Here</a> &nbsp;|&nbsp;
+			<!-- <a href="javascript:void(0)">Print Format</a> &nbsp;|&nbsp;&nbsp; -->
+		</div>
+
+	</div>
+	<div style="clear: right;"></div>
+
+        
+
+	<div class="topbar"><img src="/images/spacer.gif" alt="" height="3" width="154"></div>
+	<div id="update"> </div>
+    </div>
+
+
+    
+
+        <!-- ** BEGIN: Content Table ** //-->
+
+        <table width="100%" border="0" cellpadding="0" cellspacing="0">
+
+            <tr>
+
+                <!-- ** BEGIN: Navigation Column ** //-->
+                <td width="150" id="leftcontent" valign="top">
+                    <!-- Navigation Placeholder //-->
+
+                    
+
+                    <div class="bar"><img src="/images/hr_dots1.gif" alt="" height="3" width="150"></div>
+
+        <!-- begin find JSRs form -->
+        <!-- IMPORTANT! do not convert this form to Struts < html : form > tag.  javascript change of form.action property fails. -->
+        <img src="/images/hd_find-jsrs.gif" alt="Find JSRs" height="18" width="150">
+        <form name="findjsr" action="/en/jsr/summary" method="get" class="pt5" onsubmit="return validate_findjsr()">
+            <input name="id" size="18" class="form" value="Search JSRs" onfocus="nullify_if_equal(this, 'Search JSRs')" type="text">
+	    <a href="javascript:document.findjsr.submit()" onclick="return validate_findjsr()"><img src="/images/button_go.gif" width="21" height="16" border="0" alt="Submit this Search" name="sub_search"></a>
+        </form><br><br>
+
+        <!-- ** Menu Start ** //-->
+
+        <ul id="p7PMnav">
+            <li><a href="/en/jsr/platform">JSRs by Platform</a></li>
+            <li><a href="/en/jsr/tech">JSRs by Technology</a></li>
+            <li><a href="/en/jsr/stage">JSRs by Stage</a></li>
+            <li><a href="/en/jsr/ec">JSRs by Committee</a></li>
+            <li><a href="/en/jsr/all">List of All JSRs</a></li>
+
+            <!--end find JSRs form -->
+            <div style="clear: both;"><img src="/images/spacer.gif" alt="" height="25" width="1"></div>
+
+            <!--begin my JCP -->
+            <img src="/images/hd_my-jcp.gif" alt="My JCP" height="18" width="150">
+            
+
+          <form name="login" method="get" action="/en/user/login" >
+            <input name="Sign-in" type="submit" title="Sign-in" value="Sign-in" />
+          </form>
+
+            <div style="clear:both"><img src="/images/global/spacer.gif" width="1" height="3" alt=""></div>
+            <div class="noNav">
+                <a href="/en/user/register">Register for Site</a>
+            </div>
+
+             <div class="bar"><img src="/images/hr_dots1.gif" alt="" height="3" width="150"></div>
+           <div class="noNav" style="color: #666666; padding: 0;">
+              Use of JCP site is subject to the
+              <a href="/en/home/terms" style="display:inline;padding: 0">JCP Terms of Use</a> and the
+              <a href="http://www.oracle.com/us/legal/privacy/index.html" style="display:inline;padding: 0" href="">Oracle Privacy Policy</a>
+          </div>
+
+            
+
+            <div style="clear:both"><img src="/images/global/spacer.gif" width="1" height="25" alt=""></div>
+
+            <!--begin JCP info -->
+            <img src="/images/hd_jcp-info.gif" alt="JCP Info" height="18" width="150">
+
+            <li><a href="/en/procedures/overview" class="p7PMtrg">About JCP</a>
+                <ul>
+                    <li><a href="/en/procedures/overview">Program Overview</a></li>
+                    <li><a href="/en/procedures/jcp2">JCP Process Document</a></li>
+                    <li><a href="/en/whatsnew/calendar">Calendar</a></li>
+                    <li><a href="/en/participation/members">JCP Members</a></li>
+                    <li><a href="/en/participation/committee">Executive Committee</a></li>
+                    <li><a href="/en/whatsnew/elections">Elections</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/en/participation/overview" class="p7PMtrg">Get Involved</a>
+		<ul>
+                    <li><a href="/en/participation/overview">Overview</a></li>
+                    <li><a href="/en/participation/membership">Becoming a JCP Member</a></li>
+		</ul>
+            </li>
+
+            <li><a href="/en/resources/contents" class="p7PMtrg">Community Resources</a>
+                <ul>
+                    <li><a href="/en/resources/contents">Overview</a></li>
+                    <li><a href="/en/resources/tutorials">Tutorials</a></li>
+                    <li><a href="/en/resources/multimedia">JCP Podcasts</a></li>
+                    <li><a href="/en/resources/guide">Spec Lead Guide</a></li>
+                    <li><a href="/en/resources/tdk">TCK Tool & Info</a></li>
+                    <li><a href="/en/resources/license_reference">License Reference</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/en/press/pmo" class="p7PMtrg">Community News</a>
+                <ul>
+                    <li><a href="/en/press/pmo">News</a></li>
+                    <li><a href="/en/press/news/awards/awards_main">Programs &amp; Awards</a></li>
+                    <li><a href="/en/press/releases">Press Releases</a></li>
+                    <li><a href="/en/press/success">Success Stories</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/en/introduction/faq">FAQ</a></li>
+
+            <li><a href="/en/resources/contacts">Contact Us</a></li>
+
+            <div style="clear: both;"><img src="/images/spacer.gif" alt="" height="25" width="1"></div>
+
+            <!--[if lte IE 6]><style>#p7PMnav a{height:1em;}#p7PMnav li{height:1em;float:left;clear:both;width:100%}</style><![endif]-->
+            <!--[if IE 6]><style>#p7PMnav li{clear:none;}</style><![endif]-->
+            <!--[if IE 7]><style>#p7PMnav a{zoom:100%;}#p7PMnav li{float:left;clear:both;width:100%;}</style><![endif]-->
+        </ul>
+
+        
+
+        <!--begin ad space -->
+        <div class="ads">
+            <a href="http://java.com/java/download/index.jsp?cid=jdp78399" target="_blank"><img style="display: ;" src="/images/ad_banner2.gif" alt="Ad Banner" border="1" height="70" width="150"></a>
+        </div>
+        <!--end ad space -->
+
+<!-- ** Menu End ** //-->
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;<br>
+
+    
+
+                    &nbsp;<br>
+                    <img src="/images/common/trans.gif" alt="" width="1" height="150"><br>
+
+              
+
+
+
+                </td>
+                <!-- ** END: Navigation Column ** //-->
+
+                <!-- ** BEGIN: Gutter Column ** //-->
+		<td width="10" nowrap><img src="/images/common/trans.gif" alt="" width="10" height="1"></td>
+                <!-- ** END: Gutter Column ** //-->
+
+                <!-- ** BEGIN: Content Column ** //-->
+                <td width="100%" valign="top">
+
+    
+<script type="text/javascript">
+
+String.prototype.trim = function() {
+        return this.replace(/^\s+|\s+$/g,"");
+}
+String.prototype.ltrim = function() {
+        return this.replace(/^\s+/,"");
+}
+String.prototype.rtrim = function() {
+        return this.replace(/\s+$/,"");
+}
+
+function validate_search() {
+	if (document.search.id.value == "Search JSRs" || document.search.id.value.trim().length == 0) {
+		alert("Search terms must be entered first");
+		return false;
+	}
+	return true;
+}
+
+function validate_findjsr() {
+	if (document.findjsr.id.value == "Search JSRs" || document.findjsr.id.value.trim().length == 0) {
+		alert("Search terms must be entered first");
+		return false;
+	}
+	return true;
+}
+
+function nullify_if_equal(field, str) {
+	// alert("val=" + field.value);
+	if (field.value == str) {
+		field.value = "";
+	}
+}
+
+</script>
+<!-- ** END: header.jsp ** //-->
+
+
+
+
+
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2//EN">
+<HTML>
+<HEAD>
+<!--#config timefmt="%d-%b-%y" -->
+
+<!------------------------------->
+<!--      ABOUT THIS HTML      -->
+<!------------------------------->
+<!-- FOLLOW THESE COMMENTS FOR -->
+<!--   INFORMATION ABOUT THE   -->
+<!-- STRUCTURE OF OUR TEMPLATES-->
+<!------------------------------->
+
+<!------------------------------->
+<!--   INSERT YOUR TITLE HERE  -->
+<!------------BEGIN-TITLE-------->
+
+<TITLE>Proposal: A Simple Assertion Facility For the Java&#153;
+Programming Language</TITLE>
+
+<!-------------END-TITLE--------->
+<!--        END OF TITLE       -->
+<!------------------------------->
+
+</HEAD>
+<BODY BGCOLOR="#FFFFFF"  TEXT="#000000">
+
+<!-- begin main page table -->
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="0">
+<TR>
+<TD WIDTH="157" VALIGN="TOP">
+
+<!------------------------------->
+<!--  SERVER SIDE INCLUDE FOR  -->
+<!--  NAVIGATION MENU AT LEFT  -->
+<!------------------------------->
+
+<!--#include virtual="/share/include/navigate.html"-->
+
+</TD>
+<TD WIDTH="452" VALIGN="TOP">
+<!--  begin header table -->
+<TABLE BORDER="0" WIDTH="452">
+
+<!------------------------------->
+<!--  SERVER SIDE INCLUDE FOR  -->
+<!--  HEADER AT TOP OF PAGE    -->
+<!------------------------------->
+
+<!--#include virtual="/share/include/normal.header.html"-->
+
+<!-- breadcrumb trail -->
+<TR>
+<TD ALIGN="RIGHT" HEIGHT="25" VALIGN="TOP">
+
+</TD>
+</TR>
+<TR>
+<TD>
+<P>
+</TD>
+</TR>
+<TR>
+<TD ALIGN="RIGHT" COLSPAN="2">
+
+<!-- page headline -->
+
+<!------------------------------->
+<!--EDIT THE PAGE HEADLINE HERE-->
+<!------------BEGIN-HEADLINE----->
+
+<FONT SIZE="+2">
+Proposal: A Simple Assertion Facility For the Java&#153;
+Programming Language
+</FONT><br>
+
+<!-------------END-HEADLINE------>
+<!--    END OF PAGE HEADLINE   -->
+<!------------------------------->
+
+</TD>
+</TR>
+<TR>
+<TD ALIGN="RIGHT" VALIGN="TOP" HEIGHT="30" COLSPAN="2">
+<font size="-1">
+<!-- subcategories of the current topic -->
+
+<!------------------------------->
+<!-- MAKE DUPLICATE LINKS HERE -->
+<!--OF LINKS THAT OCCUR THROUGH-->
+<!--  OUT THE BODY OF THIS DOC -->
+<!------------BEGIN-SUB TOPICS--->
+
+<BR>
+
+
+<!-------------END-SUB TOPICS---->
+<!--    END OF SUBTOPICS       -->
+<!------------------------------->
+
+</font>
+<p>
+</TD>
+</TR>
+</TABLE>
+<TABLE BORDER="0" WIDTH="452">
+<TR>
+<TD WIDTH="452" COLSPAN="2">
+
+
+<!-- Begin Page Data -->
+
+<!------------------------------->
+<!--  EDIT PAGE CONTENT HERE   -->
+<!------------BEGIN-CONTENT------>
+
+<h2>Introduction</h2>
+
+We propose to add a simple <i>assertion facility</i> to the Java programming
+language.  An <i>assertion</i> is a statement containing a boolean expression
+that the programmer believes to be <tt>true</tt> at the time the statement is
+executed.  For example, after unmarshalling all of the arguments from a data
+buffer, a programmer might assert that the number of bytes of data remaining
+in the buffer is zero.  The system executes the assertion by evaluating the
+boolean expression and reporting an error if it evaluates to <tt>false</tt>.
+By verifying that the boolean expression is indeed <tt>true</tt>, the system
+corroborates the programmer's knowledge of the program and increases his
+confidence that the program is free of bugs.  Assertion checking may be
+disabled for increased performance.  Typically, assertion-checking is enabled
+during program development and testing, and disabled during deployment.
+
+<p>Because assertions may be disabled, programs must <i>not</i> assume that the
+expressions contained in assertions will be evaluated.  Thus, it is 
+<i>extremely</i> bad practice for these expressions to have any <i>side
+effects</i>: evaluating the boolean expression should never affect any state
+that is visible after the evaluation is complete.   (It is not, in
+general, possible for the compiler to enforce a prohibition on 
+side-effects in assertions, so the language specification does not
+disallow the practice.)
+
+<p>Along similar lines, assertions should <i>not</i> be used for
+argument-checking in public methods. Argument-checking is typically
+part of the contract of a method, and this contract must be upheld whether
+assertions are enabled or disabled.  Another problem with using assertions for
+argument checking is that erroneous arguments should result in an appropriate
+runtime exception (e.g.,  <tt>IllegalArgumentException</tt>,
+<tt>IndexOutOfBoundsException</tt>, <tt>NullPointerException</tt>).  An
+assertion failure will not throw an appropriate exception.  (Again, it is not,
+in general, possible for the compiler to enforce a prohibition on 
+the use of assertions for argument checking on public methods, so the
+language specification will not disallow the practice.)
+
+<h2>Syntax</h2>
+
+A new keyword would be added to the  language: <tt>assert</tt>.  The use of
+this keyword is governed by two new productions in the grammar:
+<pre>
+    <i>StatementWithoutTrailingSubstatement:</i>
+        <i>&lt;All current possibilities, as per JLS, Section 14.4&gt;</i>
+        <i>AssertStatement</i>
+
+    <i>AssertStatement:</i>
+        assert(<i>Expression</i>) ;
+        assert(<i>Expression</i>, <i>Expression</i>) ;
+</pre>
+In both forms of the <tt>assert</tt> statement, the initial
+<i>Expression</i> must have type <tt>boolean</tt> or a compile-time error
+occurs.  In the second form of the <tt>assert</tt> statement, the second
+<i>Expression</i> must have a reference type or a compile-time error
+occurs.
+
+<h2>Semantics</h2>
+
+Assertions may be <i>enabled</i> or <i>disabled</i> on a per-class basis.  At
+the time that a class is loaded, its class loader determines whether
+assertions are enabled or disabled as described <a href="#below">below</a>.
+Once a class has been loaded, its <i>assertion status</i> (enabled or
+disabled) does <i>not</i> change as long as it remains loaded.
+
+<p>If assertions are disabled in a class, all of the assertions contained in
+methods of that class have <i>no</i> effect at runtime.  In particular, the
+"arguments" to the assert statements (the boolean <i>Expression</i> and the
+reference-type <i>Expression</i>, if present) are <i>not</i> evaluated.
+
+<p>If assertions are enabled in a class, the execution of an <tt>assert</tt>
+statement proceeds as follows: 
+<ol>
+<li>Evaluate the boolean <i>Expression</i> in the
+<tt>assert</tt> statement.  If evaluation of the <i>Expression</i>
+completes abruptly for some reason, the <tt>assert</tt> statement
+completes abruptly for the same reason.
+
+<li>If the resulting boolean value is <tt>false</tt>:
+
+<ol type=a>
+<li>If the <tt>assert</tt> statement is of the second form (with a
+reference-type <i>Expression</i>), evaluate the reference type
+<i>Expression</i> and invoke the <tt>toString()</tt> method on the result.
+
+<li>If the computation in the previous step completes abruptly for some
+reason, or if the <tt>assert</tt> statement is of the first form (with only a
+boolean <i>Expression</i>), obtain an <tt>AssertionError</tt> object with no
+"detail message"; otherwise construct an <tt>AssertionError</tt> object with
+with the <tt>String</tt> object computed in the previous step as its detail
+message.
+
+<li>Throw the <tt>AssertionError</tt> object computed in the previous step.
+</ol>
+</ol>
+
+<h2><a name="below">Enabling and Disabling Assertions</a></h2>
+
+Each class loader maintains a <i>default assertion status</i>, a boolean value
+that determines whether assertions are, by default, enabled or disabled in new
+classes that are subsequently loaded by the class loader.  A newly created
+class loader's default assertion status is <tt>false</tt> (disabled).  It can
+be changed at any time by invoking a new method in class <tt>ClassLoader</tt>:
+
+<pre>
+    /**
+     * Sets the <i>default assertion status</i> for this class loader.
+     * This setting determines whether classes loaded by this class loader
+     * will have assertions enabled or disabled by default.  This setting
+     * may be overridden on a per-package basis with the 
+     * setDefaultAssertionStatus(String, boolean) method, or on a 
+     * per-class basis, with the setAssertionStatus(String, boolean) method.
+     *
+     * @param enabled <tt>true</tt> if classes loaded by this class loader
+     *        will henceforth have assertions enabled by default,
+     *        <tt>false</tt> if they will have assertions disabled by default.
+     */
+    public void setDefaultAssertionStatus(boolean enabled);
+</pre>
+
+If, at the time that a class is loaded, its class loader has been given
+specific instructions regarding the assertion status of the class's package
+name or its class name (via either of the two new methods described below),
+those instructions take precedence over the class loader's default assertion
+status.  Otherwise, the class's assertions are enabled or disabled as
+specified by its class loader's default assertion status.
+
+<p>The following method allows the invoker to set a per-package default
+assertion status:
+<pre>
+    /**
+     * Sets the <i>package-default assertion status</i> for the named
+     * package in this class loader.  The package-default assertion status
+     * determines the <i>assertion status</i> for classes belonging to the
+     * named package that are loaded in the future.  This setting takes
+     * precedence over the class loader's default assertion status, and
+     * may be overridden on a per-class basis by invoking the
+     * <tt>setAssertionStatus</tt> method.
+     *
+     * @param packageName the name of the package whose default assertion
+     *        status  is to be set.
+     * @param enabled <tt>true</tt> if classes loaded by this class loader
+     *        and belonging to the named package will henceforth have
+     *        assertions enabled by default, <tt>false</tt> if they will
+     *        have assertions disabled by default.
+     */
+    public boolean setDefaultAssertionStatus(String packageName,
+                                             boolean enabled);
+</pre>
+
+The following method is used to set assertion status on a per-class basis:
+<pre>
+    /**
+     * Sets the <i>assertion status</i> for the named class in this class
+     * loader.  This method overrides the class loader default and
+     * package default (if applicable).  This method is permitted only
+     * if the named class has not yet been loaded by this class loader.
+     * Once a class is loaded, its assertion status may not change.
+     *
+     * The assertion status of an anonymous inner class cannot be set 
+     * with this method.  Anonymous inner classes automatically take on
+     * the assertion status of their immediate outer class.  Named inner
+     * classes take on the assertion status of their immediate outer class
+     * by default, but this default may be overridden with this method.
+     *
+     * @param className the fully qualified class name of the class whose
+     *        assertion status is to be set.
+     * @param enabled <tt>true</tt> if the named class is to have assertions
+     *        enabled when (and if) it is loaded by this class loader,
+     *        <tt>false</tt> if the class is to have assertions disabled.
+     * @throws IllegalStateException if the named class has already been
+     *         loaded.
+     * @see    setDefaultAssertionStatus(boolean)
+     */
+    public boolean setAssertionStatus(String className, boolean enabled);
+</pre>
+
+<p>Two switches would be added to our java interpreters to selectively
+enable or disable assertions.  (These command-line switches are <i>not</i>
+part of the specification for assertions, but are just illustrative of how an
+implementation of the Java runtime environment might enable and disable
+assertions.  We do not specify flags as part of the Java platform, they
+are just documented as things known to our tools.)
+
+<p>The following switch enables assertions at various granularities:
+<pre>
+java [ -enableassertions | -ea  ] [:&lt;package name&gt;".*" | :&lt;class name&gt; ]
+</pre>
+With no arguments, the switch enables assertions by default.  With one
+argument ending in <tt>".*"</tt>, it enables assertions in the named
+package by default.  With one argument not ending in <tt>".*"</tt>, it
+enables assertions in the named class.
+
+<p>The following switch disables assertions in similar fashion:
+<pre>
+java [ -disableassertions | -da ] [ :&lt;package name&gt;".*" | :&lt;class name&gt; ]
+</pre>
+If a single command line contains multiple instances of these switches,
+they are processed in order before loading any classes.  So, for example, to
+run a program with assertions enabled only in package
+<tt>com.wombat.fruitbat</tt>, the following command could be used:
+<pre>
+java -da -ea:com.wombat.fruitbat.*      ...
+</pre>
+To run a program with assertions enabled only in package
+<tt>com.wombat.fruitbat</tt> but disabled in class
+<tt>com.wombat.fruitbat.Brickbat</tt>, the  following
+command could be used:
+<pre>
+java -da -ea:com.wombat.fruitbat.* -da:com.wombat.fruitbat.Brickbat   ...
+</pre>
+
+Also, a system-specific mechanism, such as a well-known <tt>Properties</tt>
+file, can be used to persistently specify a set of packages or classes that
+should have assertions turned on (or off).
+Installation scripts could set such properties appropriately.  For example,
+installing a production release might turn off assertions in all of its
+packages for enhanced performance, while installing a Beta release might
+turn on assertions to provide more thorough testing.  (There are dangers
+associated with this approach: turning off asserts could expose
+timing-dependent bugs.)  Command line switches take precedence over
+persistent specifications.
+
+<h2>New Error Class</h2>
+
+The following error class is added to package <tt>java.lang</tt>:
+<pre>
+class AssertionError extends Error () {
+    public AssertionError(Class clazz, java.lang.reflect.Method method,
+                          String fileName, int lineNumber);
+    /**
+     * Returns the method containing the failed assertion.
+     */
+    java.lang.reflect.Method getMethod();
+
+    /**
+     * Returns the name of the "source unit" containing the source code of
+     * the failed assertion.  The exact interpretation of this value is
+     * implementation-dependent, to allow for repository-based
+     * implementations, classes for which no source code exists, and
+     * the like.  Implementations are encouraged to return reasonably
+     * complete information.  For example, a fully qualified file name
+     * is more appropriate than a "simple file name."
+     *
+     * If no file name information exists, this method should return
+     * the empty string (<tt>""</tt>).
+     */
+    String getSourceName();
+
+    /**
+     * Returns the line number in the "source unit" of the line containing
+     * the failed assertion.  The exact interpretation of this value is
+     * implementation-dependent, to allow for repository-based
+     * implementations, classes for which no source code exists, and the
+     * like.
+     *
+     * If no line number information exists, this method should return -1.
+     */
+    int getLineNumber();
+}
+</pre>
+
+<h2>Implementation Notes</h2>
+
+It is highly desirable that the execution of disabled assertions have little
+or no cost at runtime.  Further, it is highly desirable that the assertion
+facility require minimal change to existing JVM implementations and no change
+to the class file format.  An implementation that meets these criteria is
+sketched below.
+
+<p>Class <tt>ClassLoader</tt> gets three new private fields, which it uses to
+keep track of the <i>desired assertion status</i> of classes not yet loaded:
+<pre>
+    private boolean defaultAssertionStatus = false;
+
+    // Maps String packageName to Boolean assertionStatus
+    private Map packageDefaultAssertionStatus = new HashMap();
+
+    // Maps String fullyQualifiedClassName to Boolean assertionStatus
+    private Map classAssertionStatus          = new HashMap();
+</pre>
+These fields are maintained by the three new public <tt>ClassLoader</tt>
+methods, in the obvious fashion.  In fact, the <i>only</i> thing that these
+methods do is to modify these fields (or the maps they reference).
+
+<p>The compiler adds a "synthetic" field to every class
+(except anonymous inner classes), containing the <i>actual
+assertion status</i> of the class (and any anonymous inner classes).
+<pre>
+    final private static boolean $assertionsEnabled =
+        ClassLoader.desiredAssertionStatus(className);
+</pre>
+The name of this field need not be part of the specification: it is
+local to the class and can vary from implementation to implementation and
+class to class.
+
+<p>The method <tt>ClassLoader.desiredAssertionStatus(className)</tt> returns
+the desired assertion status for the named class by consulting the three new
+<tt>ClassLoader</tt> fields (described above) in the obvious fashion.  (The
+behavior is slightly more complicated in the case of named inner classes.
+This detail is omitted for brevity.)  I'm afraid that this method must be
+public, as it's invoked from every every package.  If it is possible to avoid
+this through some (ab)use of native methods, I believe that is probably the
+right thing to do.
+
+<p>The <tt>assert</tt> statement, then, is merely syntactic sugar for this
+<tt>if</tt> statement:
+<pre>
+if ($assertionsEnabled && !(<i>Expression</i>))
+    throw new AssertionError(<i>Expression</i>);
+</pre>
+This implementation works equally well in static and instance methods (and
+constructors and static blocks, for that matter). 
+
+<p>The runtime does not need to treat this code specially in order to "strip
+out" assertions from classes where they're disabled!  Because
+<tt>$assertionsEnabled</tt> is final, the JIT can easily determine that the
+entire <tt>if</tt> statement is a no-op, and eliminate it in the compiled code
+that it generates.  I believe that present day JITs (including HotSpot) do
+this optimization (though I've yet to confirm this).
+
+<p>Note also that <tt>$assertionsEnabled</tt> resolves to the so-named field in
+the "declaring class" for the containing method.  The resulting behavior is
+clearly desirable, though it may be somewhat surprising.  If one class extends
+another, and assertions are enabled only in the subclass, assertions contained
+in (any) inherited superclass methods will not be executed.
+
+<p>Note that I'm glossing over the details of computing the correct
+<tt>AssertionError</tt> object to throw (as specified in the
+<a href="#semantics">Semantics</a> section of this proposal).  It should be
+clear, however, that this presents no real difficulties.
+
+<p>It is unfortunate that
+<tt>ClassLoader.desiredAssertionStatus(className)</tt> must be made public.
+The desirable semantics for a public method differ slightly from what's
+required to make the implementation work, but performance concerns probably
+dictate that we stick with what's required (which is to return the assertion
+status that would apply if the class were to be loaded at the time of the
+invocation, whether or not it's already loaded).  If the class is already
+loaded at the time of the invocation, its actual assertion status may differ
+from the value returned by the invocation, though it typically won't.
+
+<p>As described above, this implementation requires no change to the JVM
+implementation, but does not support control over assertions in "low-level"
+system classes (<tt>ClassLoader</tt> and any classes that are loaded before
+<tt>ClassLoader</tt>).  In order to support this level of control (via command
+line switches to <tt>java</tt>), minimal changes to the JVM implementation
+would be required.  The maps maintained in
+<tt>packageDefaultAssertionStatus</tt> and <tt>classAssertionStatus</tt> would
+be internal (C/C++) hash tables, and the public methods that manipulate these
+maps would become (or would rely on) native methods.  There is no reason even
+to consider doing this if none of these "system kernel classes" contain any
+assertions.
+
+<h2>Open Issues</h2>
+<ol>
+<li>It would be nice if there were a simply way to enable assertions 
+for an entire "package tree", such as javax.swing.*.  In other words,
+one should be able to specify, either on the command line or via an API,
+that assertions in a particular package and all of its subpackages
+are enabled.  The current proposal does not provide any way of doing this.
+
+<li>It is somewhat surprising that an exception encountered during the
+evaluation of the second (<tt>String</tt>) expression in a two-expression
+<tt>assert</tt> statement is intercepted.  On the other hand, it seems wrong
+not to throw an <tt>AssertionError</tt> once it has been determined that an
+assertion has failed.
+
+<li>The proposal currently contains no way to query the assertion status of a
+class (enabled or disabled).  Is there any compelling reason to provide
+a method to return this information?
+
+</ol>
+
+<BR><BR>
+
+<!-------------END-CONTENT------->
+<!--     END OF PAGE DATA      -->
+<!------------------------------->
+
+<!-- End Page Data -->
+
+<TABLE BORDER="0" WIDTH="452">
+<TR>
+<TD ALIGN="RIGHT" VALIGN="TOP">
+
+<!------------------------------->
+<!--PLACE LINKS HERE TO RELATED-->
+<!--   DOCUMENTS NOT ALREADY   -->
+<!--    LINKED IN SUBTOPICS    -->
+<!------------BEGIN-RELATED------>
+
+See Also<BR>
+<FONT SIZE="-1">
+          <A HREF="/aboutJava/communityprocess/java_community_process.html"> Details of the Community Process</A> <BR>
+
+          <A HREF="/aboutJava/communityprocess/jsr.html"> New Specification Proposals</A> <BR>
+
+          <A HREF="/aboutJava/communityprocess/cafe.html"> Open Calls for Experts</A> 
+
+</font>
+
+<!-------------END-RELATED------->
+<!--   END OF REALTED LINKS    -->
+<!------------------------------->
+
+<p>
+</TD>
+</TR>
+</TABLE>
+
+
+</TD>
+</TR>
+</TABLE>
+
+</TD>
+</TR>
+</TABLE>
+<!-- Footer table -->
+
+<!------------------------------->
+<!--  SERVER SIDE INCLUDE FOR  -->
+<!--  FOOTER AT BOTTOM OF PAGE -->
+<!------------------------------->
+
+<!--#include virtual="/share/include/normal.footer.html"-->
+
+</BODY>
+</HTML>
+
+
+
+<!-- ** BEGIN: footer.jsp ** //-->
+
+
+
+
+
+
+
+
+</td>
+</tr>
+</table>
+
+<!-- ** END: Content Table ** //-->
+
+<!-- ** BEGIN: Footer Table ** //-->
+
+<div id="footer" style="clear: both;">
+    <div class="footleft">
+        <a href="/en/resources/contacts">Contact Us</a>
+    </div>
+	
+    <div class="botbar"><img src="/images/spacer.gif" alt="" height="23" width="1"></div>
+
+    <div class="footleft2">
+         &copy; 2019, Oracle Corporation and/or its affiliates. 
+        <a href="/en/home/terms">Terms of Use</a>. <a href="http://www.oracle.com/us/legal/privacy/index.html">Privacy Policy</a>. <a href="http://www.oracle.com/us/legal/third-party-trademarks/third-party-trademarks-078568.html">Trademarks</a>
+    </div>
+
+    <div class="footright">
+        <img src="/images/common/logo_oracle_footer.gif" alt="Oracle Corporation" height="22" width="91">
+    </div>
+
+    <div style="clear: both;"><img src="/images/spacer.gif" alt="" height="30" width="1"></div>
+</div>
+
+<!-- ** END: Footer Table ** //-->
+
+
+
+<!-- ** Menu Start ** //-->
+
+
+
+</body>
+</html>
+<!-- ** END: footer.jsp ** //-->
+
